@@ -949,6 +949,7 @@
         "ga.limadgacha": "<color=#FF7E1F>{0}</color>",
         "ga.percent": "<color=#FFD800>{0}</color>",
         "ga.attention": "<color=#FF3126>{0}</color>",
+        "ga.classicgacha": "<color=#00A8FF>{0}</color>",
         "attainga.desc": "<color=#FF0000>{0}</color>",
         "attainga.desc2": "<color=#FFD800>{0}</color>",
         "attainga.attention": "<color=#E1322C>{0}</color>",
@@ -971,6 +972,9 @@
         "lv.mhitem": "<color=#A57F5B>{0}</color>",
         "lv.mhtx": "<color=#1B1B1B>{0}</color>",
         "lv.mhfs": "<color=#A57F5B>{0}</color>",
+        "ba.grt": "<color=#FFAB27>{0}</color>",
+        "ba.exl": "<color=#14F0AF>{0}</color>",
+        "ba.hrd": "<color=#DA2536>{0}</color>",
         "act.spreward": "<color=#FF5001>{0}</color>",
         "act.timelimit": "<color=#ffe300>{0}</color>",
         "vc.text": "<color=#898989>{0}</color>",
@@ -1067,8 +1071,12 @@
     "TSO": 1608192000,
     "isDynIllustEnabled": true,
     "isDynIllustStartEnabled": true,
+    "isClassicQCShopEnabled": true,
     "isRoguelikeTopicFuncEnabled": true,
     "isRoguelikeAvgAchieveFuncEnabled": true,
+    "isClassicPotentialItemFuncEnabled": true,
+    "isClassicGachaPoolFuncEnabled": true,
+    "isVoucherClassicItemDistinguishable": true,
     "voucherSkinRedeem": 1,
     "voucherSkinDesc": "【時裝自選憑證】僅可以兌換當期時裝商店中售賣的時裝，且<color=#ffa633>不可兌換</color>含有動態形象的時裝。若已購買了時裝商店中所有的服裝或時裝商店中無時裝售賣時，則【時裝自選憑證】<color=#ffa633>無法使用</color>。\n\n此外，若今後有其他<color=#ffa633>不可使用</color>【時裝自選憑證】兌換的時裝出現時，屆時會告知博士，敬請注意。",
     "charmEquipCount": 5,
@@ -1227,6 +1235,21 @@
             "termId": "ba.weightless",
             "termName": "失重",
             "description": "重量下降一個等級（同名效果不可疊加）"
+        },
+        "ba.berserk": {
+            "termId": "ba.berserk",
+            "termName": "堅忍",
+            "description": "根據已損失的生命值獲得相應比例的屬性加成，損失一定比例時達最大加成（同類屬性取最高）"
+        },
+        "ba.steal": {
+            "termId": "ba.steal",
+            "termName": "偷取",
+            "description": "減少目標的基礎屬性作為自身加成，目標減少和自身加成的屬性不超過指定上限（同類屬性取最高）"
+        },
+        "ba.weaken": {
+            "termId": "ba.weaken",
+            "termName": "虛弱",
+            "description": "使目標攻擊力降低相應比例（同名效果取最高）"
         },
         "cc.bd_A_1": {
             "termId": "cc.bd_A_1",
@@ -1388,6 +1411,16 @@
             "termName": "歲",
             "description": "包含以下幹員\n年、夕、令、重岳"
         },
+        "cc.g.glasgow": {
+            "termId": "cc.g.glasgow",
+            "termName": "格拉斯哥幫",
+            "description": "包含以下幹員\n推進之王，摩根，達格達，因陀羅"
+        },
+        "cc.g.rh": {
+            "termId": "cc.g.rh",
+            "termName": "萊茵生命",
+            "description": "包含以下幹員\n赫默，伊芙利特，塞雷婭，白面鴞，梅爾，麥哲倫，多蘿西，星源"
+        },
         "cc.c.abyssal2_1": {
             "termId": "cc.c.abyssal2_1",
             "termName": "特殊加成",
@@ -1466,7 +1499,7 @@
         "cc.sk.manu2": {
             "termId": "cc.sk.manu2",
             "termName": "萊茵科技類技能",
-            "description": "包含以下技能\n萊茵科技·α、萊茵科技·β"
+            "description": "包含以下技能\n萊茵科技·α、萊茵科技·β、萊茵科技·γ"
         },
         "cc.sk.manu3": {
             "termId": "cc.sk.manu3",
@@ -1500,6 +1533,70 @@
         }
     },
     "storyReviewUnlockItemLackTip": "事相碎片數量不足，請前往採購憑證區或活動期間商店獲取",
-    "dataVersion": "32.4.0",
-    "resPrefVersion": "35d5d0"
+    "dataVersion": "33.1.0",
+    "resPrefVersion": "37d0d0",
+    "announceWebBusType": "ak_announcement",
+    "subProfessionDamageTypePairs": {
+        "notchar1": 0,
+        "notchar2": 0,
+        "none1": 0,
+        "none2": 0,
+        "pioneer": 1,
+        "charger": 1,
+        "tactician": 1,
+        "bearer": 1,
+        "centurion": 1,
+        "fighter": 1,
+        "artsfghter": 2,
+        "instructor": 1,
+        "lord": 1,
+        "sword": 1,
+        "musha": 1,
+        "fearless": 1,
+        "reaper": 1,
+        "librator": 1,
+        "protector": 1,
+        "guardian": 1,
+        "unyield": 1,
+        "artsprotector": 1,
+        "duelist": 1,
+        "fortress": 1,
+        "fastshot": 1,
+        "closerange": 1,
+        "aoesniper": 1,
+        "longrange": 1,
+        "reaperrange": 1,
+        "siegesniper": 1,
+        "bombarder": 1,
+        "corecaster": 2,
+        "splashcaster": 2,
+        "funnel": 2,
+        "phalanx": 0,
+        "mystic": 2,
+        "chain": 2,
+        "blastcaster": 2,
+        "physician": 3,
+        "ringhealer": 3,
+        "healer": 3,
+        "wandermedic": 3,
+        "slower": 2,
+        "underminer": 2,
+        "bard": 0,
+        "blessing": 2,
+        "summoner": 2,
+        "craftsman": 1,
+        "executor": 1,
+        "pusher": 1,
+        "stalker": 1,
+        "hookmaster": 1,
+        "geek": 1,
+        "merchant": 1,
+        "traper": 1,
+        "dollkeeper": 1,
+        "incantationmedic": 2,
+        "agent": 1,
+        "shotprotector": 1,
+        "chainhealer": 3,
+        "crusher": 1
+    }
 }
