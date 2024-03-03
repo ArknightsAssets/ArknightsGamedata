@@ -25,8 +25,17 @@ jobs:
         run: python -m pip install arkprts[all]
       - name: install flatbuffers
         run: sudo apt-get install -y flatbuffers-compiler
+      - name: Set flags
+        run: |
+            CN_VER=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/MooncellWiki/OpenArknightsFBS/commits?sha=main | jq -j '.[0].sha')
+            YS_VER=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/MooncellWiki/OpenArknightsFBS/commits?sha=YoStar | jq -j '.[0].sha')
+            if [[ $GITHUB_EVENT_NAME == 'workflow_dispatch' || $(cat "fbs_version.txt") == "$CN_VER,$YS_VER" ]]; then
+                echo "FLAGS=--force" >> $GITHUB_ENV
+            fi
       - name: Update files
-        run: python -m arkprts.assets . --server all --log-level DEBUG
+        run: python -m arkprts.assets . --server all --log-level DEBUG ${{ env.FLAGS }}
+      - name: Save FBS version
+        run: echo $(git -C "/tmp/ArknightsFBS/cn/OpenArknightsFBS" rev-parse HEAD),$(git -C "/tmp/ArknightsFBS/yostar/OpenArknightsFBS" rev-parse HEAD) > fbs_version.txt
 
       - name: Format files
         run: find -name *.json -exec python -m json.tool {} {} --no-ensure-ascii \;
