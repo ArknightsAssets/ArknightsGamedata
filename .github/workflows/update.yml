@@ -39,9 +39,10 @@ jobs:
 
       - name: Format files
         run: find -name *.json -exec python -m json.tool {} {} --no-ensure-ascii \;
+      - name: Check changed directories
+        run: git add . && echo "CHANGED_SERVERS=$(git status --porcelain | grep -o -E 'en/|jp/|kr/|cn/|tw/' | sed 's/\/$//' | sort -u | tr '\n' ',' | sed 's/,$//')" >> $GITHUB_ENV
 
       - name: Push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Arknights update
-          commit_user_name: Silence
+          commit_message: Arknights update ${{ env.CHANGED_SERVERS }}
