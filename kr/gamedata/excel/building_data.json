@@ -11053,6 +11053,116 @@
                     ]
                 }
             ]
+        },
+        "char_4088_hodrer": {
+            "charId": "char_4088_hodrer",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_par&per[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "trade_ord_par&per[001]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": {}
+                }
+            ]
+        },
+        "char_4110_delphn": {
+            "charId": "char_4110_delphn",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "hire_spd&clue2[260]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_tra_limit&spd[010]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_494_vendla": {
+            "charId": "char_494_vendla",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "dorm_rec_all[023]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "dorm_rec_all&tired[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": {}
+                }
+            ]
+        },
+        "char_4107_vrdant": {
+            "charId": "char_4107_vrdant",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "workshop_formula_cost3[101]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "workshop_formula_device[060]",
+                            "cond": {
+                                "phase": "PHASE_1",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     },
     "buffs": {
@@ -11643,6 +11753,18 @@
             "buffCategory": "FUNCTION",
             "roomType": "CONTROL",
             "description": "제어 센터에 배치 시, 모든 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.05</> (동종 효과 중 가장 높은 수치만 적용)"
+        },
+        "control_tra_limit&spd[010]": {
+            "buffId": "control_tra_limit&spd[010]",
+            "buffName": "계략의 달인",
+            "buffIcon": "control",
+            "skillIcon": "bskill_ctrl_g_limit&spd",
+            "sortId": 1304,
+            "buffColor": "#005752",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "CONTROL",
+            "description": "제어 센터에 배치 시, 같은 무역소에 배치된 <$cc.g.glasgow><@cc.kw>글래스고</></> 오퍼레이터 <@cc.vup>1</>명당 오더 수주 효율 <@cc.vup>+10%</>"
         },
         "power_rec_spd&cost[000]": {
             "buffId": "power_rec_spd&cost[000]",
@@ -13480,6 +13602,30 @@
             "roomType": "TRADING",
             "description": "무역소에 배치 시, 함께 배치된 <$cc.g.glasgow><@cc.kw>글래스고</></> 오퍼레이터 1명당 해당 무역소의 오더 수주 효율 <@cc.vup>+20%</>, <@cc.kw>시즈</>와 함께 무역소에 배치될 경우 오더 수주 효율이 추가로 <@cc.vup>+35%</>"
         },
+        "trade_ord_par&per[000]": {
+            "buffId": "trade_ord_par&per[000]",
+            "buffName": "자수성가 α",
+            "buffIcon": "trading",
+            "skillIcon": "bskill_tra_par&per1",
+            "sortId": 6120,
+            "buffColor": "#0075a9",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "TRADING",
+            "description": "무역소에 배치 시, 오더 수주 효율 <@cc.vup>+25%</>, <@cc.kw>이네스</>가 <$cc.c.room3><@cc.kw>작업 시설</></>에 배치 시(어시스턴트 미포함), 오더 수주 효율이 추가로 <@cc.vup>+5%</>"
+        },
+        "trade_ord_par&per[001]": {
+            "buffId": "trade_ord_par&per[001]",
+            "buffName": "자수성가 β",
+            "buffIcon": "trading",
+            "skillIcon": "bskill_tra_par&per2",
+            "sortId": 6121,
+            "buffColor": "#0075a9",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "TRADING",
+            "description": "무역소에 배치 시, 오더 수주 효율 <@cc.vup>+30%</>, <@cc.kw>이네스</>와 <@cc.kw>W</>가 <$cc.c.room3><@cc.kw>작업 시설</></>에 배치 시(어시스턴트 미포함), 오더 수주 효율이 각각 추가로 <@cc.vup>+5%</>"
+        },
         "workshop_proc_probability[000]": {
             "buffId": "workshop_proc_probability[000]",
             "buffName": "집중 α",
@@ -13839,6 +13985,18 @@
             "buffCategory": "FUNCTION",
             "roomType": "WORKSHOP",
             "description": "가공소에 배치 후 컨디션 <@cc.kw>2</> 소모하는 <@cc.kw>스킬개론</> 가공 시 컨디션 소모 <@cc.vup>-1</>"
+        },
+        "workshop_formula_cost3[101]": {
+            "buffId": "workshop_formula_cost3[101]",
+            "buffName": "신중한 가공",
+            "buffIcon": "workshop",
+            "skillIcon": "bskill_ws_evolve_cost",
+            "sortId": 7306,
+            "buffColor": "#e3eb00",
+            "textColor": "#333333",
+            "buffCategory": "FUNCTION",
+            "roomType": "WORKSHOP",
+            "description": "가공소에 배치 후 컨디션 <@cc.kw>2</> 소모하는 <@cc.kw>정예화 재료</> 가공 시 컨디션 소모 <@cc.vup>-1</>"
         },
         "workshop_formula_cost&dorm[000]": {
             "buffId": "workshop_formula_cost&dorm[000]",
@@ -14295,6 +14453,18 @@
             "buffCategory": "FUNCTION",
             "roomType": "WORKSHOP",
             "description": "가공소에 배치 후 <@cc.kw>열합금 팩</> 재료 가공 시, 부산물 산출 확률 <@cc.vup>100%</> 상승"
+        },
+        "workshop_formula_device[060]": {
+            "buffId": "workshop_formula_device[060]",
+            "buffName": "DIY 아케톤 응집체 α",
+            "buffIcon": "workshop",
+            "skillIcon": "bskill_ws_Ketone",
+            "sortId": 7548,
+            "buffColor": "#e3eb00",
+            "textColor": "#333333",
+            "buffCategory": "FUNCTION",
+            "roomType": "WORKSHOP",
+            "description": "가공소에 배치 후 <@cc.kw>아케톤 응집체</>류 재료 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승"
         },
         "workshop_formula_rub[000]": {
             "buffId": "workshop_formula_rub[000]",
@@ -15856,6 +16026,30 @@
             "roomType": "DORMITORY",
             "description": "숙소에 배치 시, <@cc.kw>시즈</>가 해당 숙소에 배치된 <$cc.g.glasgow><@cc.kw>글래스고</></> 오퍼레이터에 대한 컨디션 회복 효과를 추가로 <@cc.vup>+0.3</>"
         },
+        "dorm_rec_all[023]": {
+            "buffId": "dorm_rec_all[023]",
+            "buffName": "향기 치료 α",
+            "buffIcon": "dormitory",
+            "skillIcon": "bskill_dorm_all4",
+            "sortId": 5424,
+            "buffColor": "#21cdcb",
+            "textColor": "#ffffff",
+            "buffCategory": "RECOVERY",
+            "roomType": "DORMITORY",
+            "description": "숙소에 배치 시, 해당 숙소 안에 배치된 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.15</> (동종 효과 중 가장 높은 수치만 적용) "
+        },
+        "dorm_rec_all&tired[000]": {
+            "buffId": "dorm_rec_all&tired[000]",
+            "buffName": "향기 치료 β",
+            "buffIcon": "dormitory",
+            "skillIcon": "bskill_dorm_all_tired",
+            "sortId": 5336,
+            "buffColor": "#21cdcb",
+            "textColor": "#ffffff",
+            "buffCategory": "RECOVERY",
+            "roomType": "DORMITORY",
+            "description": "숙소에 배치 시, 해당 숙소 내 모든 오퍼레이터의 시간당 컨디션 회복 속도 <@cc.vup>+0.15</>, 해당 숙소 내 컨디션이 <@cc.vup>18</> 이하인 오퍼레이터의 회복 효과가 추가로 <@cc.vup>+0.1</> (동종 효과 중 가장 높은 수치만 적용)"
+        },
         "hire_spd[000]": {
             "buffId": "hire_spd[000]",
             "buffName": "인사관리 α",
@@ -16179,6 +16373,18 @@
             "buffCategory": "FUNCTION",
             "roomType": "HIRE",
             "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <@cc.vup>+20%</>, <$cc.bd_ash><@cc.rem>정보 저장</></> <@cc.vup>1</>점당 누적 속도가 추가로 <@cc.vup>+5%</>, <$cc.bd_tachanka><@cc.rem>우르수스 특제 음료</></> <@cc.vup>1</>병당 누적 속도가 추가로 <@cc.vup>+5%</>"
+        },
+        "hire_spd&clue2[260]": {
+            "buffId": "hire_spd&clue2[260]",
+            "buffName": "새로 사귄 옛 친구",
+            "buffIcon": "hire",
+            "skillIcon": "bskill_hire_spd&glasgow",
+            "sortId": 8242,
+            "buffColor": "#565656",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "HIRE",
+            "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <@cc.vup>+20%</>, 레퍼런스 서칭 <@cc.vup>1</>회 완료 시마다 <$cc.g.glasgow><@cc.kw>글래스고</></> 단서 획득 확률 증가 (확률은 작업 시간과 모집 인원의 영향을 받음)"
         },
         "meet_spd[000]": {
             "buffId": "meet_spd[000]",
@@ -18306,7 +18512,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -19329,7 +19535,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -20755,7 +20961,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -20817,7 +21023,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -20910,7 +21116,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -21530,7 +21736,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -21995,7 +22201,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -23018,7 +23224,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -23824,7 +24030,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -24413,7 +24619,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILINGDECAL",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -25521,6 +25727,533 @@
                 "isOnly": -1,
                 "quantity": 1
             },
+            "furni_KFC_priceList_01": {
+                "id": "furni_KFC_priceList_01",
+                "sortId": 285,
+                "name": "패스트푸드점 메뉴판",
+                "iconId": "furni_KFC_priceList_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILING",
+                "subType": 38,
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_1",
+                "width": 12,
+                "depth": 6,
+                "height": 4,
+                "comfort": 290,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 메뉴판. 좋아하는 음식, 맛있는 음식, 먹고 싶은 음식, 모두 다 메뉴에 있으니 마음껏 주문하세요.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_cashierDesk_01": {
+                "id": "furni_KFC_cashierDesk_01",
+                "sortId": 286,
+                "name": "패스트푸드점 카운터",
+                "iconId": "furni_KFC_cashierDesk_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_1",
+                "width": 12,
+                "depth": 2,
+                "height": 5,
+                "comfort": 365,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 카운터. “안녕하세요. 로도스 키친 패스트푸드점에 오신걸 환영합니다~”",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_displayCabinet_01": {
+                "id": "furni_KFC_displayCabinet_01",
+                "sortId": 287,
+                "name": "패스트푸드점 음식 진열대",
+                "iconId": "furni_KFC_displayCabinet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CABINET",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_1",
+                "width": 6,
+                "depth": 2,
+                "height": 6,
+                "comfort": 255,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 매장용 음식 진열대. 곧 판매될 음식을 보온하여, 침 흘리며 기다리고 있는 고객들이 빠른 메뉴 선택을 할 수 있도록 돕는 효과도 있다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_blackWall_01": {
+                "id": "furni_KFC_blackWall_01",
+                "sortId": 288,
+                "name": "패스트푸드점 목재 파티션",
+                "iconId": "furni_KFC_blackWall_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "PARTITION",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_1",
+                "width": 1,
+                "depth": 6,
+                "height": 10,
+                "comfort": 260,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 매장용 목재 파티션. 공간은 분리할 수 있지만, 맛있는 것에 대한 열정은 막을 수가 없다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_banner_01": {
+                "id": "furni_KFC_banner_01",
+                "sortId": 289,
+                "name": "패스트푸드점 광고판",
+                "iconId": "furni_KFC_banner_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "BOARD_D",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_2",
+                "width": 3,
+                "depth": 2,
+                "height": 5,
+                "comfort": 225,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 매장용 광고판. 최근 가장 중요한 프로모션과 혜택에 대한 내용을 담고 있다. 광고판을 보지 않더라도 점원이 고객에게 다시 설명해 줄 것이다 .",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_partitionWall_01": {
+                "id": "furni_KFC_partitionWall_01",
+                "sortId": 290,
+                "name": "패스트푸드점 파티션",
+                "iconId": "furni_KFC_partitionWall_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "PARTITION",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_2",
+                "width": 1,
+                "depth": 6,
+                "height": 10,
+                "comfort": 260,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 매장용 대형 파티션. 식당 내 취식 공간과 카운터 영역을 구분하는 데 사용된다. 주변을 둘러보면 익숙한 오퍼레이터를 볼 수 있을 것이다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_fence_01": {
+                "id": "furni_KFC_fence_01",
+                "sortId": 291,
+                "name": "패스트푸드점 게시판",
+                "iconId": "furni_KFC_fence_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "PARTITION",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_2",
+                "width": 4,
+                "depth": 1,
+                "height": 10,
+                "comfort": 200,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 포스터가 붙어있는 게시판. 듣기론, 매주 오퍼레이터들이 꼽은 메뉴가 게시판에 붙는다고 하던데.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_diningTable_01": {
+                "id": "furni_KFC_diningTable_01",
+                "sortId": 292,
+                "name": "패스트푸드점 2인용 테이블",
+                "iconId": "furni_KFC_diningTable_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": true,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_3",
+                "width": 8,
+                "depth": 4,
+                "height": 3,
+                "comfort": 315,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 매장용 테이블. 이곳에서 오퍼레이터들은 맛있는 것을 즐길 뿐만 아니라, 로도스 아일랜드에서 벌어지는 재미있는 이야기를 나눈다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_barTable_01": {
+                "id": "furni_KFC_barTable_01",
+                "sortId": 293,
+                "name": "패스트푸드점 다인용 테이블",
+                "iconId": "furni_KFC_barTable_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": true,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_3",
+                "width": 7,
+                "depth": 5,
+                "height": 4,
+                "comfort": 365,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 매장용 바테이블. 너무 많이 주문했다고요? 그럼 옆에 앉은 동료에게 나눠주세요!",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_barrier_01": {
+                "id": "furni_KFC_barrier_01",
+                "sortId": 294,
+                "name": "패스트푸드점 파티션",
+                "iconId": "furni_KFC_barrier_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "PARTITION",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_3",
+                "width": 1,
+                "depth": 5,
+                "height": 4,
+                "comfort": 215,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 파티션. 위에는 화분이 놓여져 있다. 마음씨 착한 오퍼레이터들이 이 화분의 꽃이 필 날을 기대하며 가꾸고 있다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_cupFilling_01": {
+                "id": "furni_KFC_cupFilling_01",
+                "sortId": 295,
+                "name": "패스트푸드점 음료기기",
+                "iconId": "furni_KFC_cupFilling_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "DEVICE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_3",
+                "width": 1,
+                "depth": 2,
+                "height": 4,
+                "comfort": 130,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 매장용 음료기기. 개인 컵 사용 가능!",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_poster_01": {
+                "id": "furni_KFC_poster_01",
+                "sortId": 296,
+                "name": "패스트푸드점 포스터벽",
+                "iconId": "furni_KFC_poster_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "ORTHER_WD",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_2",
+                "width": 4,
+                "depth": 1,
+                "height": 10,
+                "comfort": 240,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 매장용 포스터 벽. 맛있는 것도 좋지만, 영양도 챙겨야 하는 법!",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_sticker_01": {
+                "id": "furni_KFC_sticker_01",
+                "sortId": 297,
+                "name": "패스트푸드점 포인트벽지",
+                "iconId": "furni_KFC_sticker_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "POSTER",
+                "location": "POSTER",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_1",
+                "width": 12,
+                "depth": 1,
+                "height": 10,
+                "comfort": 330,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 매장용 포인트 벽지. 포인트 벽지로 벽을 채워놓길 참 잘한거 같다. 당신의 생각은?",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_spotlight_01": {
+                "id": "furni_KFC_spotlight_01",
+                "sortId": 298,
+                "name": "패스트푸드점 스포트라이트",
+                "iconId": "furni_KFC_spotlight_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLLAMP",
+                "subType": "NONE",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_4",
+                "width": 16,
+                "depth": 1,
+                "height": 2,
+                "comfort": 240,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 매장용 스포트라이트. 한줄기 빛이 벽면을 내리쬐니, 뱃속이 꼬르륵거린다. 먹을 때가 됐다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_ceilingLight_01": {
+                "id": "furni_KFC_ceilingLight_01",
+                "sortId": 299,
+                "name": "패스트푸드점 천장등",
+                "iconId": "furni_KFC_ceilingLight_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_4",
+                "width": 2,
+                "depth": 2,
+                "height": 3,
+                "comfort": 70,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점의 천장등. 따뜻한 빛이 음식을 비추고 있다. “배고파?”",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 2,
+                "quantity": 2
+            },
+            "furni_KFC_wallpaper_01": {
+                "id": "furni_KFC_wallpaper_01",
+                "sortId": 300,
+                "name": "패스트푸드점 매장 벽지",
+                "iconId": "furni_KFC_wallpaper_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLPAPER",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "WALL",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_4",
+                "width": 34,
+                "depth": 1,
+                "height": 10,
+                "comfort": 240,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "시선을 사로잡는 로도스 키친 패스트푸드점 매장용 벽지. 로도스 키친에서 수집한 자료에 의하면 이런 컬러의 벽면은 손님의 식욕을 돋구는 역할을 한다고 한다. 효과는 당연 만점이다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_KFC_floor_01": {
+                "id": "furni_KFC_floor_01",
+                "sortId": 301,
+                "name": "패스트푸드점 목재 바닥재",
+                "iconId": "furni_KFC_floor_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "FLOOR",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "FLOOR",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_KFC",
+                "groupId": "furni_set_KFC_4",
+                "width": 34,
+                "depth": 10,
+                "height": 1,
+                "comfort": 240,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "로도스 키친 패스트푸드점 매장에 깔아 놓은 목재 바닥. 모든 바닥재 이음새 부분까지 깨끗이 청소하여 새것처럼 보인다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 1
+            },
             "furni_penguin_recordPlayer_01": {
                 "id": "furni_penguin_recordPlayer_01",
                 "sortId": 302,
@@ -25684,7 +26417,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -25870,7 +26603,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -25963,7 +26696,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -26242,7 +26975,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -26366,7 +27099,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -26924,7 +27657,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -27327,7 +28060,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -27823,7 +28556,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -28443,7 +29176,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -28660,7 +29393,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -29807,7 +30540,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -30365,7 +31098,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -31667,7 +32400,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -31822,7 +32555,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -32566,7 +33299,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -33248,7 +33981,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -33527,7 +34260,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILINGDECAL",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -33682,7 +34415,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -34147,7 +34880,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -34333,7 +35066,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -34364,7 +35097,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -34395,7 +35128,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -34612,7 +35345,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -35201,7 +35934,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -35759,7 +36492,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -35883,7 +36616,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -36627,7 +37360,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILINGDECAL",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -37340,7 +38073,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -37650,7 +38383,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -37681,7 +38414,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -38053,7 +38786,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -38115,7 +38848,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -38146,7 +38879,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -38797,7 +39530,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -38859,7 +39592,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -39479,7 +40212,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -39851,7 +40584,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -40192,7 +40925,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -40750,7 +41483,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -40812,7 +41545,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -41308,7 +42041,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -41339,7 +42072,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -41711,7 +42444,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -41742,7 +42475,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -41990,7 +42723,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -42269,7 +43002,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -43292,7 +44025,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -43850,7 +44583,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -44315,7 +45048,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -44346,7 +45079,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -44842,7 +45575,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -45679,7 +46412,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -46020,7 +46753,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -46051,7 +46784,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -46733,7 +47466,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -47167,7 +47900,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -47508,7 +48241,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -48283,7 +49016,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -48469,7 +49202,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -49057,7 +49790,7 @@
                 "iconId": "furni_gangster_ceilingLamp_02",
                 "interactType": "NONE",
                 "musicId": "",
-                "type": "CEILING",
+                "type": "CEILINGLAMP",
                 "subType": "NONE",
                 "location": "CEILING",
                 "category": "FURNITURE",
@@ -49150,7 +49883,7 @@
                 "iconId": "furni_gangster_LampCase_01",
                 "interactType": "NONE",
                 "musicId": "",
-                "type": "CEILING",
+                "type": "CEILINGLAMP",
                 "subType": "NONE",
                 "location": "CEILING",
                 "category": "FURNITURE",
@@ -49274,7 +50007,7 @@
                 "iconId": "furni_court_ceilingLamp_01",
                 "interactType": "NONE",
                 "musicId": "",
-                "type": "CEILING",
+                "type": "CEILINGLAMP",
                 "subType": "NONE",
                 "location": "CEILING",
                 "category": "FURNITURE",
@@ -49677,8 +50410,8 @@
                 "iconId": "furni_court_ceiling_01",
                 "interactType": "NONE",
                 "musicId": "",
-                "type": "CEILINGLAMP",
-                "subType": "NONE",
+                "type": "CEILING",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -50639,7 +51372,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -50794,7 +51527,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -51476,7 +52209,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 34,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -52344,7 +53077,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -52499,7 +53232,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -52685,7 +53418,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -52747,7 +53480,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -53305,7 +54038,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -53987,7 +54720,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -54111,7 +54844,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -54204,7 +54937,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -54296,7 +55029,7 @@
                 "iconId": "furni_cultureroom_ceilingLight_01",
                 "interactType": "NONE",
                 "musicId": "",
-                "type": "CEILING",
+                "type": "CEILINGLAMP",
                 "subType": "NONE",
                 "location": "CEILING",
                 "category": "FURNITURE",
@@ -54545,7 +55278,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -55537,7 +56270,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -56622,7 +57355,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -56901,7 +57634,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -57118,7 +57851,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "CURTAIN",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -57521,7 +58254,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -57768,8 +58501,8 @@
                 "iconId": "furni_BSsafehouse_ceilingLamp_01",
                 "interactType": "NONE",
                 "musicId": "",
-                "type": "CEILINGLAMP",
-                "subType": "NONE",
+                "type": "CEILING",
+                "subType": 37,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -58317,6 +59050,719 @@
                 "processedByProductGroup": {},
                 "canBeDestroy": false,
                 "isOnly": 1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_ceilingLamp1_01": {
+                "id": "furni_hodrerStudy_ceilingLamp1_01",
+                "sortId": 1360,
+                "name": "작업 구역 천장등",
+                "iconId": "furni_hodrerStudy_ceilingLamp1_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_1",
+                "width": 5,
+                "depth": 5,
+                "height": 4,
+                "comfort": 150,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "정밀 작업에 적합한 광원으로, 따뜻하고 안정적이며 믿을만하다. 환기 시스템이 탑재되어 있어 작업 중에 발생하는 휘발성 기체나 금속 분진을 즉시 외부로 배출할 수 있다.\n외드레르는 종종 불빛 아래에서 바쁘게 움직이지만, 그의 그림자는 늘 고요하기만 하다. 하지만 아쉽게도, 이러한 순간들은 그리 오래 지속되지 않았다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 123,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_repairBench_01": {
+                "id": "furni_hodrerStudy_repairBench_01",
+                "sortId": 1361,
+                "name": "무기 점검대",
+                "iconId": "furni_hodrerStudy_repairBench_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_1",
+                "width": 4,
+                "depth": 4,
+                "height": 9,
+                "comfort": 345,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "무기의 유지 및 보수에 사용되는 완벽한 기능을 갖춘 작은 점검대. 곳곳이 닳아 있거나 핏자국이 남아 있다.\n아주 오래전에 이네스가 바로 이 점검대에서 처음으로 바느질을 배웠는데, 그때는 아직 이 점검대가 이네스에게 많이 높았을 때였다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 255,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_storageTable_01": {
+                "id": "furni_hodrerStudy_storageTable_01",
+                "sortId": 1362,
+                "name": "'아마도 분재'",
+                "iconId": "furni_hodrerStudy_storageTable_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "PLANT",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_1",
+                "width": 3,
+                "depth": 2,
+                "height": 3,
+                "comfort": 130,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "직접 조립한 공구 수납용 캐비닛. 윗부분에 고철을 용접해 만든 화분에는, 실내 유일한 녹색 식물이 자리하고 있다.\n카즈델 슬럼가 내, 여전히 존재하고 있는지조차 알 수 없는 그 집에서 처음으로 심은 감자는 이미 싹이 튼 감자가 아니었다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 108,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_wallShelf1_01": {
+                "id": "furni_hodrerStudy_wallShelf1_01",
+                "sortId": 1363,
+                "name": "작업 구역 수납 보드",
+                "iconId": "furni_hodrerStudy_wallShelf1_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "SHELF",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_1",
+                "width": 4,
+                "depth": 1,
+                "height": 6,
+                "comfort": 150,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "자주 사용하는 공구를 걸어 두는 수납 보드. 재활용된 강철로 만들어져 매우 무겁지만 공간 활용에는 제격이다.\n과거에는 이곳에 모인 용병들이 각자의 장비를 걸어놓곤 했지만, 지금은 전부 여기저기에 흩어져 있다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 135,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_tallStool_01": {
+                "id": "furni_hodrerStudy_tallStool_01",
+                "sortId": 1364,
+                "name": "간이 용접 의자",
+                "iconId": "furni_hodrerStudy_tallStool_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "STOOL",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": true,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_1",
+                "width": 2,
+                "depth": 2,
+                "height": 2,
+                "comfort": 120,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "산업용 폐기물로 만든 용접 의자. 매우 견고하며, 마감재로 사용한 가죽은 특수 광택 처리가 되어 있어서 반짝반짝 빛이 난다.\n카즈델에서는 10~16살 정도 된 아이들이 주술 공업용 화로 주변을 배회하며 폐기물을 주우면서 먼지로 가득한 자신들의 삶을 바꾸려고 애쓴다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 110,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_groundMat_01": {
+                "id": "furni_hodrerStudy_groundMat_01",
+                "sortId": 1365,
+                "name": "작업 구역 카펫",
+                "iconId": "furni_hodrerStudy_groundMat_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CARPET",
+                "subType": "NONE",
+                "location": "CARPET",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_1",
+                "width": 7,
+                "depth": 7,
+                "height": 1,
+                "comfort": 100,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "오염과 열에 강한 카펫. 발자국과 기름때로 얼룩져 있다. 다행인 점은, 이 복제품의 검붉은색은 핏자국이 아니라는 점이다.\n죽음의 문턱에 서있는 느낌은 어떨까라는 질문에 외드레르는 자신의 몸 아래 깔린 카펫이 서서히 축축해져 가는 듯한 느낌이라고 말했다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 90,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_glassWall_01": {
+                "id": "furni_hodrerStudy_glassWall_01",
+                "sortId": 1366,
+                "name": "'생활의 문짝'",
+                "iconId": "furni_hodrerStudy_glassWall_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "PARTITION",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_2",
+                "width": 2,
+                "depth": 7,
+                "height": 9,
+                "comfort": 345,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "생활 공간과 업무 공간을 구분하는 묵직한 양방향 문. 가운데 거대한 유리창이 있어 아무리 기름칠을 충분히 한다고 해도 문을 여닫을 때마다 소음이 발생한다.\n한쪽은 생활을 위해, 다른 한쪽은 그 생활을 가능케 하는 것을 위해…… 사실 살카즈 용병에게 있어서, 이 두 공간의 구별은 큰 의미가 없다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 255,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_dataTablet_01": {
+                "id": "furni_hodrerStudy_dataTablet_01",
+                "sortId": 1367,
+                "name": "자료 정리용 보드",
+                "iconId": "furni_hodrerStudy_dataTablet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "BOARD_WD",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_3",
+                "width": 6,
+                "depth": 1,
+                "height": 3,
+                "comfort": 125,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "용병에게 필수품인 자료 정리용 보드. 작전이 시작되기 전에 타깃의 정보와 위치를 확인하는 용도로 쓰인다. 사실 지도를 펼쳐서 사용할 수 있긴 하지만, 약간의 의식감이 필요하다.\n주인이 돌아오면 위에 있는 사진도 제거된다. 물론 그것의 주인이 영원히 돌아오지 않을 때도 있다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 113,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_wallLamp_01": {
+                "id": "furni_hodrerStudy_wallLamp_01",
+                "sortId": 1368,
+                "name": "지하실 벽등",
+                "iconId": "furni_hodrerStudy_wallLamp_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLLAMP",
+                "subType": "NONE",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_2",
+                "width": 2,
+                "depth": 2,
+                "height": 3,
+                "comfort": 75,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "벽면에 설치된 램프. 전선은 노출되어 있고 불빛은 흐릿하다. 금속 고리에는 닳아빠진 붉은 천이 묶여 있다.\n이네스는 붉은 천을 묶어주던 그 녀석을 기억하고 있다. 그녀의 매듭 솜씨는 늘 서툴렀다. 그리고 이네스는 자신의 팔을 속박하던 밧줄에서 벗어나, 꿈속에서 사라질 수 있게 해주었다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 68,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_sideTable_01": {
+                "id": "furni_hodrerStudy_sideTable_01",
+                "sortId": 1369,
+                "name": "'이동 우체통'",
+                "iconId": "furni_hodrerStudy_sideTable_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_2",
+                "width": 3,
+                "depth": 3,
+                "height": 4,
+                "comfort": 175,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "이동식 미니 테이블. 위에는 가득 쌓인 편지와 작은 램프가 놓여 있다.\n역사에 흥미가 있는 살카즈는 외드레르 뿐만이 아니기에 가끔 오래된 역사의 흔적을 보내오기도 하지만, 답장을 채 보내기도 전에 역사에 녹아들어 버리는 경우가 많다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 145,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_workTable_01": {
+                "id": "furni_hodrerStudy_workTable_01",
+                "sortId": 1370,
+                "name": "서류 작업용 탁자",
+                "iconId": "furni_hodrerStudy_workTable_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_3",
+                "width": 8,
+                "depth": 3,
+                "height": 4,
+                "comfort": 310,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "책과 자료로 가득 찬 탁자. 직접 조립한 흔적이 명확하게 남아 있다. 살카즈와 관련된 출판물이 있지만, 살카즈의 언어로 쓰여 있는 건 매우 드물다.\n용병이 무슨 글을 쓰냐고? 어쩌면 기록하는 것이야말로 우리의 본능일지도 모르지.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 230,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_leatherChair_01": {
+                "id": "furni_hodrerStudy_leatherChair_01",
+                "sortId": 1371,
+                "name": "중고 가죽 의자",
+                "iconId": "furni_hodrerStudy_leatherChair_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "CHAIR",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_2",
+                "width": 3,
+                "depth": 3,
+                "height": 3,
+                "comfort": 155,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "제법 많은 수의 주인을 거쳐 간, 매우 튼튼한 중고 의자.\n한때는 많은 용병에 의해 사용되었으나, 시간이 흐르며 이 의자를 사용하는 이들의 수가 점점 줄어들었다. 현재 주인은 W로, W는 이 의자의 안락함에 상당히 만족하는 듯하다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 128,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_carpet_01": {
+                "id": "furni_hodrerStudy_carpet_01",
+                "sortId": 1372,
+                "name": "녹슨 느낌의 카펫",
+                "iconId": "furni_hodrerStudy_carpet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CARPET",
+                "subType": "NONE",
+                "location": "CARPET",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_3",
+                "width": 17,
+                "depth": 9,
+                "height": 1,
+                "comfort": 185,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "오래된 카펫. 오랜 세월 사용한 흔적이 마치 녹처럼 보인다. 왜인지는 모르겠지만, 이 방은 꽤 화목해 보인다.\n카즈델 사람들의 삶을 어떤 색깔로 표현하는 게 좋겠냐고? 녹처럼 보이는 게 핏빛보다는 훨씬 낫겠지.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 153,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_ceilingLamp2_01": {
+                "id": "furni_hodrerStudy_ceilingLamp2_01",
+                "sortId": 1373,
+                "name": "'우리의 현황'",
+                "iconId": "furni_hodrerStudy_ceilingLamp2_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_3",
+                "width": 12,
+                "depth": 4,
+                "height": 3,
+                "comfort": 215,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "파이프와 철판을 대충 용접하여 조립한 램프 받침대. 허술해 보이는 외형과는 달리 아늑한 빛을 발산하고 있다.\n제아무리 위태로운 구조일지라도, 이것은 용병들의 밤을 확실하게 환하게 만들어 준다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 160,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_cabinet_01": {
+                "id": "furni_hodrerStudy_cabinet_01",
+                "sortId": 1374,
+                "name": "중고 자료 서랍",
+                "iconId": "furni_hodrerStudy_cabinet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CABINET",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_2",
+                "width": 3,
+                "depth": 2,
+                "height": 7,
+                "comfort": 185,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "무거운 철제 자료 캐비닛. 내부엔 여러 살카즈 부족의 역사적 자료로 가득 차 있다. 대부분 부족의 이름은 해독하는 것조차 힘들다.\n과거를 쫓는 사람은 대부분 비관적이다. 제아무리 화려했던 과거를 찾아다니는 거라고 해도, 그것은 이미 시간 속에 묻혀 버렸기에.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 153,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_stove_01": {
+                "id": "furni_hodrerStudy_stove_01",
+                "sortId": 1375,
+                "name": "휴대용 스토브",
+                "iconId": "furni_hodrerStudy_stove_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "COOKING",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_4",
+                "width": 3,
+                "depth": 2,
+                "height": 3,
+                "comfort": 130,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "휴대성과 조립의 용이함이 특징인 간편 스토브. 까딱 잘못하면 화재를 일으킬 것만 같다. 위에 놓인 물건은 어떤 위험인물의 것일 수도 있으므로, 건들지 않는 것을 권장한다.\n“뭐야? 스토브 안에 종이가 있잖아? 연료도 없는데 잘 됐다. 외드레르, 배고파? 서프라이즈~ 저기 삶은 감자 있으니까 먹어.”",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 108,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_bookshelf_01": {
+                "id": "furni_hodrerStudy_bookshelf_01",
+                "sortId": 1376,
+                "name": "'다용도'",
+                "iconId": "furni_hodrerStudy_bookshelf_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "CHAIR",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": true,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_2",
+                "width": 3,
+                "depth": 3,
+                "height": 5,
+                "comfort": 175,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "재활용 가능한 여러 자재를 모아 제작한 책장. 위에는 이네스가 그림자를 더 선명하게 관찰하기 위해 설치한 램프가 달려있다.\n책장 하단의 상자에는 각국에서 출판한 '역사 전집'으로 가득 차 있다. 젊은 외드레르는 카라반에 책장을 실어 올 것을 요청했고, 들인 공에 비해 정작 책을 읽은 건 딱 한 번뿐이었다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 130,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_ceilingLamp3_01": {
+                "id": "furni_hodrerStudy_ceilingLamp3_01",
+                "sortId": 1377,
+                "name": "간이 서재 전등",
+                "iconId": "furni_hodrerStudy_ceilingLamp3_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_4",
+                "width": 1,
+                "depth": 1,
+                "height": 4,
+                "comfort": 40,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "언제 어디서 뜯어냈는지 모르는 부품으로, 용병들이 천장에 매달자, 놀랍게도 그것은 빛을 발하기 시작했다. 매우 밝을 뿐만 아니라, 뜨겁기까지 하다.\n이네스가 외드레르에게 이렇게 사용해도 되냐고 묻자, 외드레르는 상관없다고 답했다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 38,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_wallShelf2_01": {
+                "id": "furni_hodrerStudy_wallShelf2_01",
+                "sortId": 1378,
+                "name": "'물건 올리지 마시오'",
+                "iconId": "furni_hodrerStudy_wallShelf2_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "SHELF",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_4",
+                "width": 6,
+                "depth": 2,
+                "height": 3,
+                "comfort": 140,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "정교하고 아름다운 목재 전등. 따뜻한 빛을 뿜어낸다. 전등 상자 위에는 항상 잡동사니로 가득 차 있었는데, 어느 날 위에 쓰여 있던 경고 문구가 드러났다. “물건 올리지 마시요!”\n외드레르가 이네스에게 이렇게 사용해도 되냐고 묻자, 이네스는 상관없다고 답했다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 128,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_sofaBed_01": {
+                "id": "furni_hodrerStudy_sofaBed_01",
+                "sortId": 1379,
+                "name": "용병의 침대",
+                "iconId": "furni_hodrerStudy_sofaBed_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "BEDDING",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_4",
+                "width": 7,
+                "depth": 3,
+                "height": 3,
+                "comfort": 250,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "끌차를 개조한 소파 침대. 천은 시간의 흔적을 담아 해져버렸지만 여전히 넓고 부드럽다. 바퀴가 고장 난 탓에 침대는 절대 스스로 움직이지 않을 것이다.\n과거부터 지금까지, 이 침대에서만큼은 악몽을 피해 갈 수 있었다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 185,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_clothesTree_01": {
+                "id": "furni_hodrerStudy_clothesTree_01",
+                "sortId": 1380,
+                "name": "파이프 거치대",
+                "iconId": "furni_hodrerStudy_clothesTree_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "DRESSING",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_4",
+                "width": 2,
+                "depth": 2,
+                "height": 5,
+                "comfort": 130,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "강철 파이프와 철 조각을 용접해서 제작한 선반. 평소 옷과 모자를 걸어놓는 용도로 사용된다.\n“내가 여기에 작업 구역 앞치마 걸어놓지 말라고 말했지! 몇 번째야 이게!”",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 108,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_wallpaper_01": {
+                "id": "furni_hodrerStudy_wallpaper_01",
+                "sortId": 1381,
+                "name": "지하실 벽지",
+                "iconId": "furni_hodrerStudy_wallpaper_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLPAPER",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "WALL",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_3",
+                "width": 34,
+                "depth": 1,
+                "height": 10,
+                "comfort": 225,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "용병들이 카즈델 지하실에서 살던 시절의 벽지를 재현한 것으로, 잿빛 벽은 예전과 같은 모습이다.\n비록 이젠 창문을 통해 먼지로 자욱한 카즈델을 볼 수 없게 되었지만, 용병들은 먼지로 자욱한 카즈델의 하늘이 익숙하다는 사실을 부정할 수 없었다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 168,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "quantity": 1
+            },
+            "furni_hodrerStudy_floor_01": {
+                "id": "furni_hodrerStudy_floor_01",
+                "sortId": 1382,
+                "name": "지하실 카펫",
+                "iconId": "furni_hodrerStudy_floor_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "FLOOR",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "FLOOR",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_hodrerStudy",
+                "groupId": "furni_set_hodrerStudy_3",
+                "width": 34,
+                "depth": 10,
+                "height": 1,
+                "comfort": 225,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "용병들이 카즈델 지하실에서 살던 시절의 바닥을 재현한 것으로, 이곳에 살았던 이들이 어떠한 흔적을 남겼는지 물어보지 말 것.\n외드레르는 이미 오랜 시간 그곳을 찾아가지 않았고, 이네스는 이곳을 작은 가게로 바꾸는 편이 더 어울릴 거라고 생각했다. 두 사람은 구운 감자를 팔자는 W의 말은 무시했다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 168,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
                 "quantity": 1
             },
             "furni_oct1st_deckChair_01": {
@@ -60063,7 +61509,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 33,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -60590,7 +62036,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 38,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -63310,6 +64756,68 @@
                 "isOnly": 1,
                 "quantity": 0
             },
+            "furni_terratimes_RhodesIsland_01": {
+                "id": "furni_terratimes_RhodesIsland_01",
+                "sortId": 11078,
+                "name": "플레이트 《방주》",
+                "iconId": "furni_terratimes_RhodesIsland_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "PLAQUE",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "",
+                "groupId": "",
+                "width": 4,
+                "depth": 1,
+                "height": 2,
+                "comfort": 75,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "대지 위를 걸으며, 미래를 향해 나아간다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 0
+            },
+            "furni_terracommericials_HotWaterKettle_01": {
+                "id": "furni_terracommericials_HotWaterKettle_01",
+                "sortId": 11079,
+                "name": "플레이트 《갈구》",
+                "iconId": "furni_terracommericials_HotWaterKettle_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "PLAQUE",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "",
+                "groupId": "",
+                "width": 4,
+                "depth": 1,
+                "height": 2,
+                "comfort": 75,
+                "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "평범함 속에서 희망과 진실을 기다린다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "quantity": 0
+            },
             "furni_contract_s0_01": {
                 "id": "furni_contract_s0_01",
                 "sortId": 12001,
@@ -64434,7 +65942,7 @@
                 "interactType": "NONE",
                 "musicId": "",
                 "type": "CEILING",
-                "subType": "NONE",
+                "subType": 35,
                 "location": "CEILING",
                 "category": "FURNITURE",
                 "validOnRotate": false,
@@ -65544,7 +67052,7 @@
             },
             "furni_animation_monitor_01": {
                 "id": "furni_animation_monitor_01",
-                "sortId": 20001,
+                "sortId": 20002,
                 "name": "근위국 키오스크",
                 "iconId": "furni_animation_monitor_01",
                 "interactType": "ANIMATOR",
@@ -65561,7 +67069,7 @@
                 "width": 6,
                 "depth": 3,
                 "height": 7,
-                "comfort": 300,
+                "comfort": 1,
                 "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
                 "description": "용문 근위국 내부에서 사용되는 스탠드형 무인단말기로, 근위국과 용문의 소식을 사람들에게 전하는 데 사용된다.\n키오스크의 정보는 갱신이 늦어지는 일이 많으며, 그 때문에 종종 때 지난 오래된 소식을 송출하는 경우가 생기기도 한다.",
                 "obtainApproach": "특전에서 획득",
@@ -65575,7 +67083,7 @@
             },
             "furni_animation_frostnovaDevice_01": {
                 "id": "furni_animation_frostnovaDevice_01",
-                "sortId": 20002,
+                "sortId": 20003,
                 "name": "'얼음의 흔적'",
                 "iconId": "furni_animation_frostnovaDevice_01",
                 "interactType": "MUSIC",
@@ -65592,7 +67100,7 @@
                 "width": 6,
                 "depth": 6,
                 "height": 7,
-                "comfort": 600,
+                "comfort": 1,
                 "usage": "숙소를 꾸며 분위기 수치를 높일 수 있다.",
                 "description": "비자연적으로 생성된 관상용 오리지늄 얼음 결정으로, 매우 차갑지만 손으로 만지지 못할 정도는 아니다.\n겨울에 내린 눈꽃이 친구에게 주는 선물. 언젠간 사라지겠지만, 그게 지금은 아니다.",
                 "obtainApproach": "특전에서 획득",
@@ -68171,6 +69679,148 @@
                     "furni_spirit_carpet_01",
                     "furni_spirit_wallpaper_01",
                     "furni_spirit_floor_01"
+                ]
+            },
+            "furni_set_KFC": {
+                "id": "furni_set_KFC",
+                "sortId": 18,
+                "name": "로도스 키친 인기 패스트푸드점",
+                "themeType": "LINKAGE",
+                "desc": "로도스 아일랜드 식당 중 하나. 다양한 인기 패스트푸드를 판매한다. 오늘은 뭘로 먹을래?",
+                "quickSetup": [
+                    {
+                        "furnitureId": "furni_KFC_priceList_01",
+                        "pos0": 21,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_cashierDesk_01",
+                        "pos0": 21,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_displayCabinet_01",
+                        "pos0": 21,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_blackWall_01",
+                        "pos0": 33,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_banner_01",
+                        "pos0": 20,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_partitionWall_01",
+                        "pos0": 20,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_fence_01",
+                        "pos0": 16,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_diningTable_01",
+                        "pos0": 12,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_barTable_01",
+                        "pos0": 5,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_barrier_01",
+                        "pos0": 4,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_cupFilling_01",
+                        "pos0": 0,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_poster_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_sticker_01",
+                        "pos0": 21,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_spotlight_01",
+                        "pos0": 4,
+                        "pos1": 8,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_ceilingLight_01",
+                        "pos0": 6,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_ceilingLight_01",
+                        "pos0": 12,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_wallpaper_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_KFC_floor_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    }
+                ],
+                "groups": [
+                    "furni_set_KFC_1",
+                    "furni_set_KFC_2",
+                    "furni_set_KFC_3",
+                    "furni_set_KFC_4"
+                ],
+                "furnitures": [
+                    "furni_KFC_priceList_01",
+                    "furni_KFC_cashierDesk_01",
+                    "furni_KFC_displayCabinet_01",
+                    "furni_KFC_blackWall_01",
+                    "furni_KFC_banner_01",
+                    "furni_KFC_partitionWall_01",
+                    "furni_KFC_fence_01",
+                    "furni_KFC_diningTable_01",
+                    "furni_KFC_barTable_01",
+                    "furni_KFC_barrier_01",
+                    "furni_KFC_cupFilling_01",
+                    "furni_KFC_poster_01",
+                    "furni_KFC_sticker_01",
+                    "furni_KFC_spotlight_01",
+                    "furni_KFC_ceilingLight_01",
+                    "furni_KFC_wallpaper_01",
+                    "furni_KFC_floor_01"
                 ]
             },
             "furni_set_penguin": {
@@ -77349,6 +78999,184 @@
                     "furni_BSsafehouse_wallpaper_01",
                     "furni_BSsafehouse_floor_01"
                 ]
+            },
+            "furni_set_hodrerStudy": {
+                "id": "furni_set_hodrerStudy",
+                "sortId": 80,
+                "name": "용병들의 안식처",
+                "themeType": "NORMAL",
+                "desc": "외드레르의 묘사에 따라 재현한 과거 그가 카즈델에서 머무른 안식처. 이네스가 꽤 많은 디테일을 추가했다. 기억에 없는 물건이라면 함부로 건들지 않는 것을 권장한다. 그 물건들은 W가 추가한 것들이라 언제 폭발할지 모른다.",
+                "quickSetup": [
+                    {
+                        "furnitureId": "furni_hodrerStudy_ceilingLamp1_01",
+                        "pos0": 5,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_repairBench_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_storageTable_01",
+                        "pos0": 0,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_wallShelf1_01",
+                        "pos0": 6,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_tallStool_01",
+                        "pos0": 5,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_groundMat_01",
+                        "pos0": 2,
+                        "pos1": 1,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_glassWall_01",
+                        "pos0": 10,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_dataTablet_01",
+                        "pos0": 16,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_wallLamp_01",
+                        "pos0": 12,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_sideTable_01",
+                        "pos0": 13,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_workTable_01",
+                        "pos0": 15,
+                        "pos1": 1,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_leatherChair_01",
+                        "pos0": 16,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_carpet_01",
+                        "pos0": 11,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_ceilingLamp2_01",
+                        "pos0": 16,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_cabinet_01",
+                        "pos0": 23,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_stove_01",
+                        "pos0": 20,
+                        "pos1": 7,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_bookshelf_01",
+                        "pos0": 24,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_ceilingLamp3_01",
+                        "pos0": 31,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_wallShelf2_01",
+                        "pos0": 28,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_sofaBed_01",
+                        "pos0": 27,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_clothesTree_01",
+                        "pos0": 32,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_wallpaper_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_hodrerStudy_floor_01",
+                        "pos0": 0,
+                        "pos1": 10,
+                        "dir": 0
+                    }
+                ],
+                "groups": [
+                    "furni_set_hodrerStudy_1",
+                    "furni_set_hodrerStudy_2",
+                    "furni_set_hodrerStudy_3",
+                    "furni_set_hodrerStudy_4"
+                ],
+                "furnitures": [
+                    "furni_hodrerStudy_ceilingLamp1_01",
+                    "furni_hodrerStudy_repairBench_01",
+                    "furni_hodrerStudy_storageTable_01",
+                    "furni_hodrerStudy_wallShelf1_01",
+                    "furni_hodrerStudy_tallStool_01",
+                    "furni_hodrerStudy_groundMat_01",
+                    "furni_hodrerStudy_glassWall_01",
+                    "furni_hodrerStudy_dataTablet_01",
+                    "furni_hodrerStudy_wallLamp_01",
+                    "furni_hodrerStudy_sideTable_01",
+                    "furni_hodrerStudy_workTable_01",
+                    "furni_hodrerStudy_leatherChair_01",
+                    "furni_hodrerStudy_carpet_01",
+                    "furni_hodrerStudy_ceilingLamp2_01",
+                    "furni_hodrerStudy_cabinet_01",
+                    "furni_hodrerStudy_stove_01",
+                    "furni_hodrerStudy_bookshelf_01",
+                    "furni_hodrerStudy_ceilingLamp3_01",
+                    "furni_hodrerStudy_wallShelf2_01",
+                    "furni_hodrerStudy_sofaBed_01",
+                    "furni_hodrerStudy_clothesTree_01",
+                    "furni_hodrerStudy_wallpaper_01",
+                    "furni_hodrerStudy_floor_01"
+                ]
             }
         },
         "groups": {
@@ -78334,6 +80162,63 @@
                     "furni_spirit_wallpaper_01",
                     "furni_spirit_floor_01",
                     "furni_spirit_carpet_01"
+                ]
+            },
+            "furni_set_KFC_1": {
+                "id": "furni_set_KFC_1",
+                "sortId": 1,
+                "name": "패스트푸드점 카운터",
+                "themeId": "furni_set_KFC",
+                "comfort": 280,
+                "count": 5,
+                "furniture": [
+                    "furni_KFC_priceList_01",
+                    "furni_KFC_cashierDesk_01",
+                    "furni_KFC_displayCabinet_01",
+                    "furni_KFC_blackWall_01",
+                    "furni_KFC_sticker_01"
+                ]
+            },
+            "furni_set_KFC_2": {
+                "id": "furni_set_KFC_2",
+                "sortId": 2,
+                "name": "패스트푸드점 광고설비",
+                "themeId": "furni_set_KFC",
+                "comfort": 135,
+                "count": 4,
+                "furniture": [
+                    "furni_KFC_banner_01",
+                    "furni_KFC_fence_01",
+                    "furni_KFC_partitionWall_01",
+                    "furni_KFC_poster_01"
+                ]
+            },
+            "furni_set_KFC_3": {
+                "id": "furni_set_KFC_3",
+                "sortId": 3,
+                "name": "패스트푸드점 식사장소",
+                "themeId": "furni_set_KFC",
+                "comfort": 170,
+                "count": 4,
+                "furniture": [
+                    "furni_KFC_diningTable_01",
+                    "furni_KFC_barTable_01",
+                    "furni_KFC_cupFilling_01",
+                    "furni_KFC_barrier_01"
+                ]
+            },
+            "furni_set_KFC_4": {
+                "id": "furni_set_KFC_4",
+                "sortId": 4,
+                "name": "패스트푸드점 매장 인테리어",
+                "themeId": "furni_set_KFC",
+                "comfort": 105,
+                "count": 4,
+                "furniture": [
+                    "furni_KFC_wallpaper_01",
+                    "furni_KFC_floor_01",
+                    "furni_KFC_spotlight_01",
+                    "furni_KFC_ceilingLight_01"
                 ]
             },
             "furni_set_penguin_1": {
@@ -81853,6 +83738,69 @@
                     "furni_BSsafehouse_ceilingLamp_02",
                     "furni_BSsafehouse_column_01"
                 ]
+            },
+            "furni_set_hodrerStudy_1": {
+                "id": "furni_set_hodrerStudy_1",
+                "sortId": 1,
+                "name": "'목숨을 소중히 여기세요'",
+                "themeId": "furni_set_hodrerStudy",
+                "comfort": 220,
+                "count": 6,
+                "furniture": [
+                    "furni_hodrerStudy_ceilingLamp1_01",
+                    "furni_hodrerStudy_repairBench_01",
+                    "furni_hodrerStudy_storageTable_01",
+                    "furni_hodrerStudy_tallStool_01",
+                    "furni_hodrerStudy_wallShelf1_01",
+                    "furni_hodrerStudy_groundMat_01"
+                ]
+            },
+            "furni_set_hodrerStudy_2": {
+                "id": "furni_set_hodrerStudy_2",
+                "sortId": 2,
+                "name": "'중고 물품 구매'",
+                "themeId": "furni_set_hodrerStudy",
+                "comfort": 270,
+                "count": 6,
+                "furniture": [
+                    "furni_hodrerStudy_glassWall_01",
+                    "furni_hodrerStudy_wallLamp_01",
+                    "furni_hodrerStudy_sideTable_01",
+                    "furni_hodrerStudy_leatherChair_01",
+                    "furni_hodrerStudy_bookshelf_01",
+                    "furni_hodrerStudy_cabinet_01"
+                ]
+            },
+            "furni_set_hodrerStudy_3": {
+                "id": "furni_set_hodrerStudy_3",
+                "sortId": 3,
+                "name": "'의미 없는 글쓰기'",
+                "themeId": "furni_set_hodrerStudy",
+                "comfort": 280,
+                "count": 6,
+                "furniture": [
+                    "furni_hodrerStudy_floor_01",
+                    "furni_hodrerStudy_wallpaper_01",
+                    "furni_hodrerStudy_carpet_01",
+                    "furni_hodrerStudy_ceilingLamp2_01",
+                    "furni_hodrerStudy_dataTablet_01",
+                    "furni_hodrerStudy_workTable_01"
+                ]
+            },
+            "furni_set_hodrerStudy_4": {
+                "id": "furni_set_hodrerStudy_4",
+                "sortId": 4,
+                "name": "'영원히 오지 않는 진정한 휴식'",
+                "themeId": "furni_set_hodrerStudy",
+                "comfort": 150,
+                "count": 5,
+                "furniture": [
+                    "furni_hodrerStudy_sofaBed_01",
+                    "furni_hodrerStudy_ceilingLamp3_01",
+                    "furni_hodrerStudy_wallShelf2_01",
+                    "furni_hodrerStudy_stove_01",
+                    "furni_hodrerStudy_clothesTree_01"
+                ]
             }
         },
         "types": {
@@ -82097,6 +84045,42 @@
                 "name": "기타",
                 "type": "DECORATION",
                 "sortId": 16
+            },
+            "33": {
+                "subType": 33,
+                "name": "걸이",
+                "type": "CEILING",
+                "sortId": 1
+            },
+            "34": {
+                "subType": 34,
+                "name": "커튼",
+                "type": "CEILING",
+                "sortId": 2
+            },
+            "35": {
+                "subType": 35,
+                "name": "설비",
+                "type": "CEILING",
+                "sortId": 3
+            },
+            "37": {
+                "subType": 37,
+                "name": "광원",
+                "type": "CEILING",
+                "sortId": 4
+            },
+            "36": {
+                "subType": 36,
+                "name": "위기협약",
+                "type": "CEILING",
+                "sortId": 5
+            },
+            "38": {
+                "subType": 38,
+                "name": "기타",
+                "type": "CEILING",
+                "sortId": 6
             }
         },
         "defaultFurnitures": {
@@ -83421,83 +85405,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 84,
+                    "weight": 71,
                     "itemId": "30014",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30024",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30034",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30044",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30054",
                     "itemCount": 1
                 },
                 {
-                    "weight": 42,
+                    "weight": 35,
                     "itemId": "30064",
                     "itemCount": 1
                 },
                 {
-                    "weight": 72,
+                    "weight": 61,
                     "itemId": "30074",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30084",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30094",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30104",
                     "itemCount": 1
                 },
                 {
-                    "weight": 72,
+                    "weight": 61,
                     "itemId": "31014",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31024",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "31034",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31044",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31054",
                     "itemCount": 1
                 },
                 {
-                    "weight": 67,
+                    "weight": 57,
                     "itemId": "31064",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31074",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 50,
+                    "itemId": "31084",
                     "itemCount": 1
                 }
             ],
@@ -83545,83 +85539,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 84,
+                    "weight": 71,
                     "itemId": "30014",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30024",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30034",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30044",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30054",
                     "itemCount": 1
                 },
                 {
-                    "weight": 42,
+                    "weight": 35,
                     "itemId": "30064",
                     "itemCount": 1
                 },
                 {
-                    "weight": 72,
+                    "weight": 61,
                     "itemId": "30074",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30084",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30094",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30104",
                     "itemCount": 1
                 },
                 {
-                    "weight": 72,
+                    "weight": 61,
                     "itemId": "31014",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31024",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "31034",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31044",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31054",
                     "itemCount": 1
                 },
                 {
-                    "weight": 67,
+                    "weight": 57,
                     "itemId": "31064",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31074",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 50,
+                    "itemId": "31084",
                     "itemCount": 1
                 }
             ],
@@ -83669,83 +85673,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 84,
+                    "weight": 71,
                     "itemId": "30014",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30024",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30034",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30044",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30054",
                     "itemCount": 1
                 },
                 {
-                    "weight": 42,
+                    "weight": 35,
                     "itemId": "30064",
                     "itemCount": 1
                 },
                 {
-                    "weight": 72,
+                    "weight": 61,
                     "itemId": "30074",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30084",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30094",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30104",
                     "itemCount": 1
                 },
                 {
-                    "weight": 72,
+                    "weight": 61,
                     "itemId": "31014",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31024",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "31034",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31044",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31054",
                     "itemCount": 1
                 },
                 {
-                    "weight": 67,
+                    "weight": 57,
                     "itemId": "31064",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31074",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 50,
+                    "itemId": "31084",
                     "itemCount": 1
                 }
             ],
@@ -83788,83 +85802,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 84,
+                    "weight": 71,
                     "itemId": "30014",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30024",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30034",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30044",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30054",
                     "itemCount": 1
                 },
                 {
-                    "weight": 42,
+                    "weight": 35,
                     "itemId": "30064",
                     "itemCount": 1
                 },
                 {
-                    "weight": 72,
+                    "weight": 61,
                     "itemId": "30074",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30084",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30094",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30104",
                     "itemCount": 1
                 },
                 {
-                    "weight": 72,
+                    "weight": 61,
                     "itemId": "31014",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31024",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "31034",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31044",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31054",
                     "itemCount": 1
                 },
                 {
-                    "weight": 67,
+                    "weight": 57,
                     "itemId": "31064",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31074",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 50,
+                    "itemId": "31084",
                     "itemCount": 1
                 }
             ],
@@ -83902,83 +85926,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 84,
+                    "weight": 71,
                     "itemId": "30014",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30024",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30034",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30044",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30054",
                     "itemCount": 1
                 },
                 {
-                    "weight": 42,
+                    "weight": 35,
                     "itemId": "30064",
                     "itemCount": 1
                 },
                 {
-                    "weight": 72,
+                    "weight": 61,
                     "itemId": "30074",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30084",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "30094",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "30104",
                     "itemCount": 1
                 },
                 {
-                    "weight": 72,
+                    "weight": 61,
                     "itemId": "31014",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31024",
                     "itemCount": 1
                 },
                 {
-                    "weight": 56,
+                    "weight": 47,
                     "itemId": "31034",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31044",
                     "itemCount": 1
                 },
                 {
-                    "weight": 63,
+                    "weight": 53,
                     "itemId": "31054",
                     "itemCount": 1
                 },
                 {
-                    "weight": 67,
+                    "weight": 57,
                     "itemId": "31064",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31074",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 50,
+                    "itemId": "31084",
                     "itemCount": 1
                 }
             ],
@@ -84008,6 +86042,274 @@
             ],
             "requireStages": {}
         },
+        "64": {
+            "sortId": 2095,
+            "formulaId": "64",
+            "rarity": 0,
+            "itemId": "31084",
+            "count": 1,
+            "goldCost": 300,
+            "apCost": 1440000,
+            "formulaType": "F_EVOLVE",
+            "buffType": "W_EVOLVE",
+            "extraOutcomeRate": 0.1,
+            "extraOutcomeGroup": [
+                {
+                    "weight": 50,
+                    "itemId": "30013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30083",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "30093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
+                    "itemCount": 1
+                }
+            ],
+            "costs": [
+                {
+                    "id": "31083",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "31073",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "31063",
+                    "count": 1,
+                    "type": "MATERIAL"
+                }
+            ],
+            "requireRooms": [
+                {
+                    "roomId": "WORKSHOP",
+                    "roomLevel": 3,
+                    "roomCount": 1
+                }
+            ],
+            "requireStages": [
+                {
+                    "stageId": "easy_13-13",
+                    "rank": 2
+                }
+            ]
+        },
+        "63": {
+            "sortId": 2096,
+            "formulaId": "63",
+            "rarity": 0,
+            "itemId": "31074",
+            "count": 1,
+            "goldCost": 300,
+            "apCost": 1440000,
+            "formulaType": "F_EVOLVE",
+            "buffType": "W_EVOLVE",
+            "extraOutcomeRate": 0.1,
+            "extraOutcomeGroup": [
+                {
+                    "weight": 50,
+                    "itemId": "30013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30083",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "30093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
+                    "itemCount": 1
+                }
+            ],
+            "costs": [
+                {
+                    "id": "31073",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "30033",
+                    "count": 2,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "30013",
+                    "count": 1,
+                    "type": "MATERIAL"
+                }
+            ],
+            "requireRooms": [
+                {
+                    "roomId": "WORKSHOP",
+                    "roomLevel": 3,
+                    "roomCount": 1
+                }
+            ],
+            "requireStages": [
+                {
+                    "stageId": "easy_13-04",
+                    "rank": 2
+                }
+            ]
+        },
         "61": {
             "sortId": 2097,
             "formulaId": "61",
@@ -84021,83 +86323,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -84145,83 +86457,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -84269,83 +86591,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -84393,83 +86725,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -84517,83 +86859,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -84641,83 +86993,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -84765,83 +87127,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -84884,83 +87256,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -85003,83 +87385,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -85122,83 +87514,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -85359,83 +87761,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -85596,83 +88008,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -85833,83 +88255,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -86070,83 +88502,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -86307,83 +88749,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
@@ -86544,83 +88996,93 @@
             "extraOutcomeRate": 0.1,
             "extraOutcomeGroup": [
                 {
-                    "weight": 60,
+                    "weight": 50,
                     "itemId": "30013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 50,
+                    "weight": 42,
                     "itemId": "30033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30063",
                     "itemCount": 1
                 },
                 {
-                    "weight": 45,
+                    "weight": 42,
                     "itemId": "30073",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "30083",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "30093",
                     "itemCount": 1
                 },
                 {
-                    "weight": 30,
+                    "weight": 25,
                     "itemId": "30103",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31013",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31023",
                     "itemCount": 1
                 },
                 {
-                    "weight": 40,
+                    "weight": 36,
                     "itemId": "31033",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31043",
                     "itemCount": 1
                 },
                 {
-                    "weight": 36,
+                    "weight": 31,
                     "itemId": "31053",
                     "itemCount": 1
                 },
                 {
-                    "weight": 32,
+                    "weight": 28,
                     "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
                     "itemCount": 1
                 }
             ],
