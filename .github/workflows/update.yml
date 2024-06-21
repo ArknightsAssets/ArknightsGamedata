@@ -24,7 +24,9 @@ jobs:
       - name: Install arkprts
         run: python -m pip install arkprts[all]
       - name: install flatbuffers
-        run: sudo apt-get install -y flatbuffers-compiler
+        run: |
+          wget -O flatc.zip https://github.com/google/flatbuffers/releases/download/v24.3.25/Linux.flatc.binary.clang++-15.zip 
+          unzip flatc.zip && chmod +x flatc && sudo mv flatc /usr/bin/flatc
       - name: Set flags
         run: |
             CN_VER=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/MooncellWiki/OpenArknightsFBS/commits?sha=main | jq -j '.[0].sha')
