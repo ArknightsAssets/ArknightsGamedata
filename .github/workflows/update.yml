@@ -26,7 +26,7 @@ jobs:
       - name: install flatbuffers
         run: |
           wget -O flatc.zip https://github.com/google/flatbuffers/releases/download/v24.3.25/Linux.flatc.binary.clang++-15.zip 
-          unzip flatc.zip && chmod +x flatc && sudo mv flatc /usr/bin/flatc
+          unzip flatc.zip && chmod +x flatc && sudo mv flatc /usr/bin/flatc && rm flatc.zip
       - name: Set flags
         run: |
             CN_VER=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/MooncellWiki/OpenArknightsFBS/commits?sha=main | jq -j '.[0].sha')
