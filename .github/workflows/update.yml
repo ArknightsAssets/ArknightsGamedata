@@ -27,18 +27,12 @@ jobs:
         run: |
           wget -O flatc.zip https://github.com/google/flatbuffers/releases/download/v24.3.25/Linux.flatc.binary.clang++-15.zip 
           unzip flatc.zip && chmod +x flatc && sudo mv flatc /usr/bin/flatc && rm flatc.zip
-      - name: Set flags
-        run: |
-            CN_VER=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/MooncellWiki/OpenArknightsFBS/commits?sha=main | jq -j '.[0].sha')
-            YS_VER=$(curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/MooncellWiki/OpenArknightsFBS/commits?sha=YoStar | jq -j '.[0].sha')
-            if [[ $GITHUB_EVENT_NAME == 'workflow_dispatch' || $(cat "fbs_version.txt") == "$CN_VER,$YS_VER" ]]; then
-                echo "FLAGS=--force" >> $GITHUB_ENV
-            fi
       - name: Update files
-        run: python -m arkprts.assets . --server all --log-level DEBUG ${{ env.FLAGS }}
+        run: python -m arkprts.assets . --server all --log-level DEBUG --force
       - name: Save FBS version
-        run: echo $(git -C "/tmp/ArknightsFBS/cn/OpenArknightsFBS" rev-parse HEAD),$(git -C "/tmp/ArknightsFBS/yostar/OpenArknightsFBS" rev-parse HEAD) > fbs_version.txt
-
+        run: |
+            version=$(cat ~/.local/share/arkprts/ArknightsFBS/cn/OpenArknightsFBS/commit.txt),$(cat ~/.local/share/arkprts/ArknightsFBS/yostar/OpenArknightsFBS/commit.txt),$(cat ~/.local/share/arkprts/ArknightsFlatbuffers/commit.txt)
+            echo $version > fbs_version.txt
       - name: Format files
         run: find -name *.json -exec python -m json.tool {} {} --no-ensure-ascii \;
       - name: Check changed directories
