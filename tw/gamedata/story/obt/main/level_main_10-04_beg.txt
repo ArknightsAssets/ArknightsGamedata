@@ -1,0 +1,473 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_ventilatingduct_climb", volume=1,loop=true, channel="bgs")]
+[playMusic(intro="$ponder_intro", key="$ponder_loop", volume=0.4)]
+[PlaySound(key="$blooddrop")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Image(image="27_i20", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+管道。幽深的，一眼望不到頭的管道。
+這些管道連通了整座城市。它們是倫蒂尼姆的血管，源源不斷地將能量輸送至倫蒂尼姆的心臟，也就是我們所在的位置。
+不要畏懼你眼前的黑暗。太陽在每個傍晚落下，而陰影會在城市的脈管中永生。
+當光明被奪走，你需要更信任你的雙耳、你的鼻腔、你的其餘感官。
+請仔細聆聽吧。機械轟鳴即是血液奔湧，齒輪轉動應和呼吸節律。
+[PlaySound(key="$blooddrop")]
+是的，倫蒂尼姆是活著的。無論我們在不在那高高的座椅上，它都有著自己的生命力。
+如果有一天，你又一次來到這裡......無論那時在背後追逐著你的是什麼，你都無需感到害怕。
+因為你奔跑在倫蒂尼姆的身體裡。
+維娜，你回家了。
+[stopSound(channel="bgs", fadetime=2)]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[image]
+[Delay(time=1)]
+[Background(image="27_g7_subway",screenadapt="coverall")]
+[PlayMusic(intro="$escape_intro", key="$escape_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[Character(name="avg_npc_407_1#4$1")]
+[name="推進之王"]......
+[Character(name="avg_npc_402_1#1$1")]
+[name="？？？"]好了，各位，我們可以先在這裡停一停。
+[Character(name="avg_npc_411_1#6$1")]
+[name="可露希爾"]呃，這是什麼怪地方？
+[Character(name="avg_npc_411_1#6$1")]
+[name="可露希爾"]我們從上面一路爬下來，好像鑽進了一個什麼管道......
+[Character(name="avg_npc_411_1#6$1")]
+[multiline(name="可露希爾")]路是寬敞了不少，可是好黑呀......
+[Character(name="avg_npc_411_1#5$1")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[multiline(name="可露希爾")]嗚哇！你不會是想把我們拐到什麼廢棄工地，然後殺人滅口吧！
+[Character(name="avg_npc_402_1#11$1")]
+[name="？？？"]......哈？咳咳，也許，你說得沒錯。
+[Character(name="avg_155_tiger_1#7$1")]
+[name="因陀羅"]喂，你小子到底什麼來頭？別以為我們真的會聽你擺佈！
+[Character(name="avg_npc_402_1#8$1")]
+[name="？？？"]嗯......保險起見，這個問題我需要先問問你們。
+[Character(name="avg_npc_402_1#6$1")]
+[name="？？？"]你們到底是什麼人？為什麼想要混進倫蒂尼姆？
+[Character(name="avg_npc_394_1#7$1")]
+[name="阿米婭"] ......在我們做出任何回答之前，請你放開我們的人。
+[dialog]
+[Character(name="avg_npc_394_1#7$1",focus=-1)]
+[Decision(options="是啊，我還在你手裡呢。;......;快把我放了。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_npc_402_1#6$1")]
+[name="？？？"]這兜帽朋友是你們的指揮官？
+[Character(name="avg_npc_402_1#6$1")]
+[name="？？？"]沒錯，我看到是誰在戰鬥中發號施令了。但是卡特斯小姐，你才是那個帶隊的人，對吧？
+[Character(name="avg_npc_402_1#6$1")]
+[name="？？？"]別露出這麼驚訝的眼神。你們是藏了幾手，可我們是......是本地人，這套玩得比你們熟得多。
+[Character(name="avg_npc_394_1#5$1")]
+[name="阿米婭"] 本地人......你們是倫蒂尼姆的居民？
+[Character(name="avg_npc_394_1#1$1")]
+[name="阿米婭"] 剛才那場混戰，你們也有參與？
+[Character(name="avg_npc_402_1#6$1")]
+[name="？？？"]別猜。卡特斯小姐，我們彼此還不夠信任。
+[Character(name="avg_npc_402_1#6$1")]
+[name="？？？"]只是和深池還有薩卡茲動了下武，並不能說明什麼。他們之間也常常打架，這並不意味著我們應當和他們某一方交朋友。
+[Character(name="avg_npc_407_1#4$1")]
+[name="推進之王"]......倫蒂尼姆的血管。
+[Character(name="avg_npc_402_1#6$1")]
+[name="？？？"]你......你說什麼？
+[Character(name="avg_npc_407_1#1$1")]
+[name="推進之王"]我們已經來到倫蒂尼姆城內了。
+[Character(name="avg_npc_402_1#6$1")]
+[name="？？？"]你怎麼知道？！
+[Character(name="avg_npc_407_1#1$1")]
+[name="推進之王"]......這些通道。它們內外連通，能讓我們繞開薩卡茲的守衛，直接從牆外抵達城內。
+[Character(name="avg_npc_407_1#1$1")]
+[name="推進之王"]我們走了多久？二十分鐘？
+[Character(name="avg_npc_407_1#2$1")]
+[name="推進之王"]我想，我們正處在倫蒂尼姆薩迪恩區的某一項關鍵設施的地下。
+[Character(name="avg_npc_402_1#6$1")]
+[name="？？？"]呃......
+[Character(name="avg_npc_407_1#1$1")]
+[name="推進之王"]這設施離高牆不算遠。而且，它是一個樞紐，從這裡出發，能去很多地方......
+[Character(name="avg_npc_407_1#1$1")]
+[name="推進之王"]......鐵軌。
+[Character(name="avg_npc_407_1#1$1")]
+[name="推進之王"]再往前一到兩公里，我們頭頂就是車站。
+[Character(name="avg_npc_402_1#2$1")]
+[name="？？？"]......
+[Character(name="avg_npc_402_1#1$1")]
+[name="？？？"]你對倫蒂尼姆很熟悉。你也在這裡生活過？
+[dialog]
+[Delay(TIME=0.51)]
+[Character(name="avg_npc_407_1#6$1")]
+[delay(time=0.51)]
+[Character(name="avg_npc_407_1#1$1",fadetime=0.5)]
+[delay(time=0.51)]
+[name="推進之王"]本地人。
+[Character(name="avg_npc_402_1#1$1")]
+[name="？？？"]難怪。我早就想說了，你的錘子讓我特別有親切感，菲林女士......呃，你是菲林吧？
+[Character(name="avg_npc_407_1#1$1")]
+[name="推進之王"]......你們是什麼，我就是什麼。
+[Character(name="avg_npc_402_1#3$1")]
+[name="？？？"]唉，要是你們真是薩卡茲派來的間諜，我是不是該後悔了？
+[Character(name="avg_npc_394_1#7$1")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="阿米婭"] 不要傷害博士——！
+[dialog]
+[Character(name="avg_npc_394_1#7$1",focus=-1)]
+[Decision(options="他傷害不了我。;後悔也晚了。", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_npc_402_1#2$1")]
+[name="？？？"]......呃？！你......你什麼時候把無人機控制住了？
+[Character(name="avg_npc_402_1#2$1")]
+[name="？？？"]竟、竟然徒手捏在手裡！你不怕我手裡有遙控器，直接引爆無人機上的炸彈？
+[dialog]
+[Character(name="avg_npc_402_1#2$1",focus=-1)]
+[Decision(options="你沒有遙控器。;這無人機是個只會飛的半成品。", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_npc_402_1#3$1")]
+[name="？？？"]哇，這下糟了。
+[Character(name="avg_npc_402_1#2$1")]
+[name="？？？"]你什麼時候發現的？在我和你們說話的時候，還是在帶你們進地下通道的時候？
+[Character(name="avg_npc_402_1#2$1")]
+[name="？？？"]還是說更早......等等，你真的......在我抓住你的時候，就已經知道這無人機沒有威脅了？
+[Character(name="avg_npc_402_1#2$1")]
+[name="？？？"]那你還任由我拉著你走來走去？！
+[dialog]
+[Character(name="avg_npc_402_1#2$1",focus=-1)]
+[Decision(options="我要評估下你的意圖。;你以為我的同伴沒看出來嗎？", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_npc_407_1#1$1")]
+[name="推進之王"]......假如你真表現出了傷害博士的意圖，在你的手碰到遙控器之前，我的錘子會先到你跟前。
+[Character(name="avg_npc_405_1#1$1")]
+[name="摩根"]我說你呀，你要是抓一個傻一點的，比如我旁邊這個只會打拳的，搞不好還真能讓她上當哦？
+[Character(name="avg_155_tiger_1#6$1")]
+[name="因陀羅"]你說什麼？你真以為他能靠近我？
+[Character(name="avg_npc_411_1#7$1")]
+[name="可露希爾"]啊......這麼說，我偷偷準備好的無線電干擾器派不上用場了？
+[Character(name="avg_npc_394_1#1$1")]
+[name="阿米婭"] ——“本地人”先生。
+[Character(name="avg_npc_394_1#3$1")]
+[name="阿米婭"] 我想，這場互相試探的鬧劇是時候結束了。
+[Character(name="avg_npc_394_1#13$1")]
+[name="阿米婭"] 敵人的炮火雖然沒法追到這裡，可我們面臨的共同威脅並未遠去。
+[name="阿米婭"] 請問我們是否已經展現了足夠的誠意？
+[name="阿米婭"] 從剛見面開始，我們有無數機會對你動手。即便我們真的是薩卡茲的間諜，眼下也已經摸清楚了大致的方向，沒有必要再與你多費口舌。
+[Character(name="avg_npc_394_1#7$1")]
+[name="阿米婭"] 博士之所以能忍耐著扮演人質的角色，我們之所以願意隨你走入這地下通道，都是因為我們願意相信你沒有惡意。
+[Character(name="avg_npc_394_1#1$1")]
+[name="阿米婭"] 相應地，你是不是也可以再多信任我們一些，告訴我們你的真實意圖？
+[Character(name="avg_npc_402_1#6$1")]
+[name="？？？"]嗯，這些話聽起來很有說服力。畢竟，眼下我也算你們的人質了。
+[Character(name="avg_npc_402_1#6$1")]
+[name="？？？"]洛洛，出來吧。
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[character(name="avg_4040_rockr_1#1$1",fadetime=1.5)]
+[delay(time=2)]
+[name="洛洛"]......
+[playsound(key="$d_avg_drone")]
+[delay(time=1)]
+[Character(name="avg_npc_411_1#5$1")]
+[name="可露希爾"]無、無無無人機......？這麼多？！這陣勢是把我們都瞄準了？我們豈不是......豈不是隨時都可能被射成馬蜂窩？
+[Character(name="avg_npc_402_1#3$1")]
+[name="？？？"]洛洛，別費勁指著他們了。
+[Character(name="avg_npc_402_1#3$1")]
+[name="？？？"]不管他們有沒有發現你和無人機，以他們的實力，真打起來的話，我可是壓根沒有逃命的機會啊。
+[Character(name="avg_4040_rockr_1#1$1")]
+[name="洛洛"]心裡有數的話，下回就別拉上我玩這無聊的遊戲了。
+[Character(name="avg_npc_402_1#8$1")]
+[name="？？？"]好吧，你說得對。
+[Character(name="avg_npc_402_1#2$1")]
+[name="？？？"]嗯，兜帽朋友，你能把洛克十七也還給我嗎？對，就你手裡那個無人機......我剛做了一半，你真捏壞了它，洛洛會生氣的。
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[Character(name="avg_npc_402_1#1$1")]
+[name="？？？"]呼......現在，我們該重新認識一下了。
+[Character(name="avg_npc_402_1#5$1")]
+[name="？？？"]我叫費斯特，這位是洛洛，我的搭檔。
+[Character(name="avg_npc_402_1#6$1")]
+[name="費斯特"]我們隸屬於......倫蒂尼姆市民自救軍。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="27_g4_giantwall",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]你覺得，在倫蒂尼姆這座城市裡，有多少我們看不見的角落？
+[Character(name="avg_npc_393_1#1$1")]
+[name="赫德雷"]......無法計數。
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]幾百上千的老工廠，四成已經廢棄，六成還在使用。
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]還在使用的那些多半是建在更老的工廠舊址上，每一處廠房都像一個裝滿了數百年工業垃圾的迷宮。
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]一座又一座廠房中間，填塞著更多貧民窟。就連城防軍高層都說不出來，這些民用工業區和老物流區到底有多少人口。
+[Character(name="avg_npc_404_1#6$1")]
+[name="曼弗雷德"]有時候，我會覺得這裡和我們的卡茲戴爾並沒有多少區別。
+[Character(name="avg_npc_404_1#3$1")]
+[name="曼弗雷德"]他們只是多造了一層光鮮的外殼，好把那些腐臭的部分埋得更深一些，以免熏到了那些體面的大人物。
+[Character(name="avg_npc_393_1#5$1")]
+[name="赫德雷"]......想在三天之內從卡茲戴爾貧民窟裡抓出一群鬧事的人，難度無異於單槍匹馬打劫一支有教宗騎士坐鎮的拉特蘭使節團。
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]那還是建立在我們都出生在卡茲戴爾的基礎上。
+[Character(name="avg_npc_404_1#7$1")]
+[name="曼弗雷德"]倫蒂尼姆......誰敢說自己熟悉倫蒂尼姆？
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]我們擊潰議會的衛隊，拿下七成倫蒂尼姆城防軍的控制權，花了多久？
+[Character(name="avg_npc_393_1#1$1")]
+[name="赫德雷"]不到一周。
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]我們吊死了幾個領頭反對的貴族，數十次打退他們花錢雇來的烏合之眾，直到把他們管得服服貼貼，又花了多久？
+[Character(name="avg_npc_393_1#1$1")]
+[name="赫德雷"]一個半月。
+[Character(name="avg_npc_404_1#2$1")]
+[name="曼弗雷德"]可我們在薩迪恩區，和那群自詡反抗軍的人在大街小巷裡來回拉鋸，已經過去好幾個月。
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]半年時間，我們幾乎控制住了倫蒂尼姆的其他全部區塊。
+[Character(name="avg_npc_404_1#2$1")]
+[name="曼弗雷德"]唯獨這裡。
+[Character(name="avg_npc_404_1#2$1")]
+[name="曼弗雷德"]一塊半廢棄的民用工業用地，從南到北，環繞倫蒂尼姆中心的山體，連通著無人問津的老物流區......
+[Character(name="avg_npc_393_1#1$1")]
+[name="赫德雷"]“倫蒂尼姆的歷史由此發源。”
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]每一本史書上都會這麼寫。
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]我知道諸王之中，有一位或者幾位對我至今的戰果很不滿意。
+[Character(name="avg_npc_393_1#5$1")]
+[name="赫德雷"]你說過。他們一直想徹底封鎖這塊城區。
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]他們太容易被激怒。一旦指揮權落到他們手裡，他們就會用倫蒂尼姆人的屍體在薩迪恩區與其他區塊之間築起高牆。
+[Character(name="avg_npc_393_1#1$1")]
+[name="赫德雷"]至少攝政王支援你。
+[Character(name="avg_npc_404_1#2$1")]
+[name="曼弗雷德"]不，赫德雷，是我要盡全力支持將軍。
+[Character(name="avg_npc_404_1#2$1")]
+[name="曼弗雷德"]王庭總是不理解將軍的苦心......他們並不理解眼前的平衡是多麼脆弱。
+[Character(name="avg_npc_404_1#2$1")]
+[name="曼弗雷德"]你知道我為何堅持暫時只啟動城防副炮嗎？
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]倘若我現在就啟動主炮......城外的大公爵會不會一齊向城內邁步？
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]倘若我們真的大肆屠殺倫蒂尼姆平民，城內的貴族與投向我們的城防軍，會不會再起異心，與我們鱗死網破？
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]倘若我們徹底放棄這塊工業區，沒了每天用列車送往碎片大廈的材料，將軍的計畫又要被迫延遲多久？
+[Character(name="avg_npc_404_1#1$1")]
+[name="曼弗雷德"]諸王的驕傲不容許他們低下古老的頭顱，來多看一眼這異邦的都城。
+[Character(name="avg_npc_404_1#2$1")]
+[name="曼弗雷德"]在我看來，想徹底掌控倫蒂尼姆，最難打的仗就在眼前。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="27_g7_subway",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[Character(name="avg_npc_402_1#1$1")]
+[name="費斯特"]薩卡茲會叫我們反抗軍，我們對這個稱謂也沒什麼意見。
+[Character(name="avg_npc_402_1#1$1")]
+[name="費斯特"]如果只有站出來反抗他們才能救我們自己的話，那最普通的倫蒂尼姆人都會拿起武器。
+[Character(name="avg_npc_407_1#5$1")]
+[name="推進之王"]......你知道倫蒂尼姆其他區塊的情況如何嗎？
+[Character(name="avg_npc_402_1#4$1")]
+[name="費斯特"]不會比這裡更好。
+[Character(name="avg_npc_402_1#3$1")]
+[name="費斯特"]所有人，要嘛為薩卡茲工作，要嘛丟掉性命。
+[Character(name="avg_npc_402_1#6$1")]
+[name="費斯特"]陸陸續續有消息從北邊傳過來，我只聽說那裡的薩卡茲軍隊手段比這裡的還狠。
+[Character(name="avg_155_tiger_1#2$1")]
+[name="因陀羅"]維娜，留下來的貝爾德她們豈不是......
+[Character(name="avg_npc_405_1#8$1")]
+[name="摩根"]別著急。
+[Character(name="avg_155_tiger_1#7$1")]
+[name="因陀羅"]我怎麼能不急！五年，我們走了五年，我都不知道她們是不是已經......
+[Character(name="avg_npc_407_1#9$1")]
+[name="推進之王"]......我們會找到她們的。
+[Character(name="avg_npc_407_1#6$1")]
+[name="推進之王"]很快，我們會把她們一個個找回來。
+[Character(name="avg_155_tiger_1#6$1")]
+[name="因陀羅"]好，維娜，我相信你。不管她們在哪裡，不管她們是生是......
+[Character(name="avg_155_tiger_1#2$1")]
+[name="因陀羅"]唉！我不在你面前說喪氣話！
+[Character(name="avg_npc_402_1#1$1")]
+[name="費斯特"]女士們，只要你們的朋友還活著，我們總有辦法聯繫上她們。
+[Character(name="avg_npc_407_1#8$1")]
+[name="推進之王"]你們......不光在薩迪恩區活動？
+[Character(name="avg_npc_402_1#1$1")]
+[name="費斯特"]我們可以在倫蒂尼姆的任何地方，甚至城外。
+[Character(name="avg_npc_402_1#1$1")]
+[name="費斯特"]他們每抓走我們中的一個，就會有十個人站出來加入我們。
+[Character(name="avg_npc_402_1#1$1")]
+[name="費斯特"]洛洛是土生土長的薩迪恩區人，她是我們的元老成員之一，她最清楚，我們的隊伍是怎樣一點點壯大的。
+[Character(name="avg_4040_rockr_1#7$1")]
+[name="洛洛"]......連你都當上小隊長了，我看人員增長速度是有點快。
+[Character(name="avg_npc_402_1#9$1")]
+[name="費斯特"]哈哈，是誰帶你打了十一場勝仗啊，副隊長？
+[Character(name="avg_4040_rockr_1#7$1")]
+[name="洛洛"]只是到處把人救到地下，這也算勝仗嗎？
+[Character(name="avg_npc_402_1#7$1")]
+[name="費斯特"]能在薩卡茲眼皮子底下搶回一條命，保留一些暗地裡活動的機會......不就是勝利？
+[Character(name="avg_npc_402_1#1$1")]
+[name="費斯特"]你們都瞧見了，薩卡茲還沒有徹底掌控薩迪恩區。
+[Character(name="avg_npc_402_1#1$1")]
+[name="費斯特"]這裡的地形與人流都足夠亂，如果薩卡茲想掌握地上地下的每一塊能讓人呼吸的空間，他們得用自己的雙腳丈量個好幾年。
+[Character(name="avg_npc_402_1#1$1")]
+[name="費斯特"]而且......這裡也是最後一支倫蒂尼姆城防軍的隊伍與薩卡茲作戰的地方。
+[Character(name="avg_npc_396_1#1$1")]
+[name="達格達"] 看樣子他們也輸了。
+[Character(name="avg_npc_402_1#4$1")]
+[name="費斯特"]唉，真打輸了也就輸了。
+[Character(name="avg_npc_402_1#4$1")]
+[name="費斯特"]那場戰鬥結束得很快......有點太快了。在所有人反應過來之前，薩卡茲就已經站在了城牆上。
+[Character(name="avg_npc_396_1#7$1")]
+[name="達格達"] 全都是因為那幫叛徒！他們蛀空了我們的精銳部隊。
+[Character(name="avg_npc_402_1#5$1")]
+[name="費斯特"]女士，你曾經是軍隊的人？
+[Character(name="avg_npc_396_1#3$1")]
+[name="達格達"] ......
+[Character(name="avg_npc_396_1#1$1")]
+[name="達格達"] 不，我不算是。我只是......呃，和她們一樣的本地人。
+[Character(name="avg_npc_402_1#1$1")]
+[name="費斯特"]好吧，本地人。
+[Character(name="avg_npc_402_1#6$1")]
+[name="費斯特"]我們都知道軍隊內部確實有叛徒，數量還不少。
+[Character(name="avg_npc_402_1#6$1")]
+[name="費斯特"]叛徒們和部分貴族率領著大部分城防軍一起投向了薩卡茲。
+[Character(name="avg_npc_402_1#6$1")]
+[name="費斯特"]除了薩迪恩區，在大街小巷上巡邏的依然可能是“倫蒂尼姆城防軍”。只是他們的長官，已經成了薩卡茲宴會上的常客。
+[Character(name="avg_npc_396_1#1$1")]
+[name="達格達"] 那在附近作戰的最後一支隊伍......
+[Character(name="avg_npc_402_1#6$1")]
+[name="費斯特"]他們堅持到了最後，每一個士兵都付出了慘痛的代價。
+[Character(name="avg_npc_402_1#6$1")]
+[name="費斯特"]我不清楚他們之中有多少還活著......但是我想，經歷了那樣無望的戰鬥之後，每看一眼如今倫蒂尼姆的高牆，他們都會很痛苦吧。
+[musicvolume(volume=0.2, fadetime=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Delay(time=1)]
+[Background(image="27_g9_lightinduarea_street_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[musicvolume(volume=0.4, fadetime=1)]
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=1)]
+[name="號角"] 不必這麼警惕。抬起頭，把手從弩上鬆開，姿勢稍微放鬆一些。
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=2)]
+[name="倫蒂尼姆市民？"] 咳，咳咳。
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=1)]
+[name="號角"] 附近的居民習慣了各式各樣的人從這裡經過。他們並不會幫我們，但只要不是性命受到威脅，他們也絕不會聽命於深池和薩卡茲。
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=2)]
+[name="倫蒂尼姆市民？"] 在這些敵人眼皮底下生活......恐怕很不容易。
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=1)]
+[name="號角"] 你知道他們以前是怎麼看待我們的嗎？
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=2)]
+[name="倫蒂尼姆市民？"] 呃，我沒有想過。
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=1)]
+[name="號角"] 我以前也不會去想。
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=2)]
+[name="倫蒂尼姆市民？"] 中尉......
+[Character(name="avg_4039_horn_1#6$1",name2="avg_npc_413_1#1$1",focus=1)]
+[name="號角"] 對了，在外面不要叫我中尉。還是叫號角吧，這地方屬於不同部隊的“中尉”數量過多了。
+[Character(name="avg_4039_horn_1#6$1",name2="avg_npc_413_1#1$1",focus=2)]
+[name="倫蒂尼姆市民？"] 是，號角。我們要去哪裡？
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=1)]
+[name="號角"] 我們先去和其他同伴會合。
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=1)]
+[name="號角"] 薩卡茲的巡邏隊會在五分鐘後路過這一帶。我們分成兩隊，先後沿著前面的鐵軌往東走。
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=1)]
+[name="號角"] 三百五十米之後，你們會看到一截往上走的鐵皮樓梯。
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=1)]
+[name="號角"] 要是聽到五下金屬敲擊聲，你們就可以跟上來。三下，原地等待。兩下，立刻解散。
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=1)]
+[name="號角"] 也許你會覺得那一片廢棄廠區很眼熟......別太驚訝，那裡也是深池的駐地。
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=2)]
+[name="倫蒂尼姆市民？"] 這......豈不是會很危險？
+[Character(name="avg_4039_horn_1#1$1",name2="avg_npc_413_1#1$1",focus=1)]
+[name="號角"] 有深池在，至少薩卡茲很少來。
+[Character(name="avg_4039_horn_1#6$1",name2="avg_npc_413_1#1$1",focus=1)]
+[name="號角"] 想不想試試看捉迷藏？歡迎加入這場遊戲。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="27_g7_subway",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$farce_intro", key="$farce_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[Character(name="avg_npc_402_1#1$1")]
+[name="費斯特"]我說，你們真的只是一家普通企業？
+[dialog]
+[Character(name="avg_npc_402_1#1$1",focus=-1)]
+[Decision(options="和你是一名機械工程師一樣貨真價實。", values="1")]
+[Predicate(references="1")]
+[Character(name="avg_npc_402_1#9$1")]
+[name="費斯特"]哈哈......言簡意賅。
+[Character(name="avg_npc_402_1#9$1")]
+[name="費斯特"]既然薩卡茲都能當倫蒂尼姆的頭兒，我又有什麼理由懷疑你們的說辭呢？醫療企業的安保人員，對吧？
+[Character(name="avg_npc_402_1#9$1")]
+[name="費斯特"]我看看......一支十七個人的小隊，攜帶著軍用級的裝備，加上不錯的戰術配合，甚至還有著挺像那麼回事的無人機。
+[Character(name="avg_npc_411_1#11$1")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="可露希爾"]......“像那麼回事”？
+[Character(name="avg_npc_411_1#4$1")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="可露希爾"]什麼叫“像那麼回事”？這評價簡直太不像話了！
+[Character(name="avg_npc_402_1#3$1")]
+[name="費斯特"]欸欸，別生氣呀。
+[Character(name="avg_npc_402_1#9$1")]
+[name="費斯特"]剛剛在上面沒看清楚，要不你什麼時候再給我多看兩眼？
+[Character(name="avg_npc_411_1#11$1")]
+[name="可露希爾"]......都被薩卡茲炸毀了啊！這麼一想簡直更心疼了！
+[Character(name="avg_npc_402_1#7$1")]
+[name="費斯特"]不試著修一修嗎？你一定留了幾架殘骸吧，要不然我幫你看看，我有全套工具。
+[Character(name="avg_npc_012")]
+[name="羅德島幹員"] 可露希爾，我剛剛的確搶下來兩架......
+[dialog]
+[character]
+[delay(time=0.7)]]
+[Character(name="avg_npc_402_1#7$1",focus=-1)]
+[Decision(options="無人機是羅德島的技術。; 得先合作，再技術交流。", values="1;2")]
+[Predicate(references="1")]
+[Character(name="avg_npc_402_1#7$1")]
+[name="費斯特"]看來我得拿好東西來換？
+[Predicate(references="2")]
+[Character(name="avg_npc_402_1#11$1")]
+[name="費斯特"]哇，這麼警惕？
+[Predicate(references="1;2")]
+[Character(name="avg_npc_402_1#11$1")]
+[name="費斯特"]博士......你到底是什麼領域的博士啊？算了算了，有機會再說吧，反正我不著急。
+[Character(name="avg_npc_402_1#5$1")]
+[name="費斯特"]比起這個，你們到底是怎麼來到倫蒂尼姆的？我跟你們說了不少城內的情況了，看在雙向合作的份上，說說外面的情況吧？
+[Character(name="avg_npc_394_1#11$1")]
+[name="阿米婭"] ......這條路有點長。
+[Character(name="avg_npc_402_1#1$1")]
+[name="費斯特"]我知道，你們已經和深池交過手了。
+[Character(name="avg_npc_394_1#18$1")]
+[name="阿米婭"] 你們在城外也有眼線？
+[Character(name="avg_npc_402_1#1$1")]
+[name="費斯特"]卡特斯小姐，我們說好了，情報需要交換。
+[Character(name="avg_npc_394_1#2$1")]
+[name="阿米婭"] ......好。
+[Character(name="avg_npc_394_1#19$1")]
+[name="阿米婭"] 按時間遠近倒過來說的話，在倫蒂尼姆外面的附屬地塊，我們與深池之間確實發生了一場戰鬥......
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Character]
+[Image]

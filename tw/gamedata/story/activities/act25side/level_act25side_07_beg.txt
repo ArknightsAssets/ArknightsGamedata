@@ -1,0 +1,618 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")] 
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[charslot]
+[delay(time=1)]
+1099年11月21日
+7:11 P.M. 聚焦發生器起飛三分鐘後
+[dialog]
+[Background(image="38_g12_trimountrestarea",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$Tremont_intro",key="$Tremont_loop", volume=0)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "m", name = "avg_npc_223", duration=1, isblock=true)]
+[name="研究員"]唔......嗯......
+[name="研究員"]呼，好冷，他們又把暖氣關了。
+[name="研究員"]要投訴幾次他們才能意識到會有人夜裡在實驗室加班......
+[dialog]
+[PlaySound(key="$d_avg_telephonering", volume=0.6, loop=true, channel="a")]
+[delay(time=2)]
+[playsound(key="$d_avg_telephone")]
+[StopSound(channel="a", fadetime=0.5)]
+[delay(time=1)]
+[name="研究員"]喂，親愛的，你怎麼打電話來了？
+[name="研究員"]等一下......我去外面和你說。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="29_g7_mainstreet_n",screenadapt="coverall",xScale=1.3,yScale=1.3,y=80)]
+[PlaySound(key="$d_avg_snowstormflp", volume=1, loop=true, channel="a")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="研究員"]今天是什麼日子？
+[name="研究員"]嗯......離項目死線還有九天，我們的進度很不樂觀。
+[name="研究員"]今天我也不回去了。
+[dialog]
+[delay(time=1)]
+[name="研究員"]結婚紀念日？......嘖。
+[name="研究員"]抱歉，最近幾天實在太忙了......我知道，親愛的，那家餐館你期待了很久......我知道，我知道，對不起。
+[name="研究員"]副總統最近公開去了一趟萊茵生命，因為這事，董事會那些禿腦袋蠢貨快瘋了。
+[name="研究員"]他們勒令所有項目組都要馬上拿出階段性成果，否則就滾蛋。
+[name="研究員"]......我不是在找藉口，親愛的，這關乎......你聽我說，今天真的不行，我之後一定會想辦法補償你。
+[name="研究員"]喂？親愛的，喂？
+[dialog]
+[PlaySound(key="$d_avg_phonestop", volume=1)]
+[delay(time=2)]
+[name="研究員"]......該死。
+[name="研究員"]......如果發生點什麼就好了。
+[name="研究員"]辦公樓大爆炸，暴徒襲擊銀行，特里蒙城的履帶突然斷了半邊。
+[name="研究員"]什麼都好。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+夜色漸漸濃稠，辦公樓的燈還要亮上一夜，陰影籠罩了可憐的研究員。
+他打了個哆嗦，過幾個星期該下雪了。突然有人撞了他一下。
+[dialog]
+[charslot(slot = "m", name = "avg_npc_223")]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[delay(time=0.5)]
+[charslot(slot = "m", action="jump", posto="20,0", power=10, times=1, duration=0.5)]
+[playsound(key="$bodyfalldown3")]
+[delay(time=1.5)]
+[name="研究員"]好吧，什麼都沒有。
+[dialog]
+[charslot(duration=0.5)]
+[stopmusic(fadetime=3)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+他最終還是邁開腳步，向大樓走去。他強壓下了想要再在外面待一陣子的衝動，可此時，遠處卻有惱人的嗡鳴聲傳來。
+[PlaySound(key="$d_avg_airdefensealert", volume=1, loop=true, channel="b")]
+天災警報無徵兆地響起，要求避難的廣播在街道上回蕩，研究員下意識地想要加快腳步。
+可是他猛然注意到，周圍的人群漸漸停了下來，不約而同望向了天空。
+他再次疑惑地抬起頭。
+[dialog]
+[backgroundtween(yFrom=80,  yTo=-80, duration=2, block=false)]
+[delay(time=1.5)]
+[Image(image="38_i10", fadetime=1, screenadapt="coverall", xScale=1.1, yScale=1.1)]
+[ImageTween(xScaleFrom=1.05, yScaleFrom=1.05, xScaleTo=1, yScaleTo=1, duration=10, block=false)]
+[delay(time=1)]
+[background]
+[charslot(slot = "m", name = "avg_npc_223")]
+[name="研究員"]......那是......什麼？
+[charslot]
+[StopSound(channel="a", fadetime=1)]
+[PlaySound(key="$d_avg_airshiptakeoff", volume=0, loop=true, channel="c")]
+[SoundVolume(volume=1, channel="c",fadetime=2)]
+緩緩旋轉的巨大環形結構體正從樓宇背面浮出。
+黑暗中，隨著某些機械裝置的展開，上面反射的城市霓虹為之變化，金屬的色澤照得人睜不開眼睛。
+它是如此宏偉磅礴，如此優美典雅，只該來自於人們最瑰麗的夢中，它在雲層中穿行，它竟然......還在上升。
+[SoundVolume(volume=0, channel="c",fadetime=5)]
+[name="研究員"]一個，圈？
+[dialog]
+[StopSound(channel="a", fadetime=2)]
+[StopSound(channel="b", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+7:13 P.M. 聚焦發生器飛行中
+[dialog]
+[Background(image="38_g1_rhinemeetingroom",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "r", name = "avg_npc_524_1$1", focus="none")]
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", focus="l")]
+[name="小賈斯汀"]我很感興趣，當然，我很感興趣。
+[charslot(slot = "r", name = "avg_npc_524_1$1", focus="r")]
+[name="緊張的創業者"]真的嗎？太好了！如果我們的項目能得到萊茵的贊助......
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", focus="l")]
+[name="小賈斯汀"]請坐吧，女士，要喝點什麼嗎？
+[charslot(slot = "r", name = "avg_npc_524_1$1", focus="r")]
+[name="緊張的創業者"]啊......白開水就好，賈斯汀先生。
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", focus="l")]
+[name="小賈斯汀"]別這麼見外，您可以喊我小賈斯汀。
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", focus="l")]
+[name="小賈斯汀"]要來杯酒嗎？高盧帝國雖然毀於戰火，但感謝參戰的將軍們，他們依然為我們留下了那些最好的葡萄產區。
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", focus="l")]
+[name="小賈斯汀"]請。
+[charslot(slot = "r", name = "avg_npc_524_1$1", focus="r")]
+[name="緊張的創業者"]好、好的，謝謝。
+[dialog]
+[charslot(slot = "r",  focus="none")]
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", focus="l")]
+[name="小賈斯汀"]請進。
+[dialog]
+[charslot]
+[PlaySound(key="$dooropenquite", volume=1)]
+[charslot(slot = "m", name = "avg_npc_529_1#1$1", duration=1, isblock=true)]
+[name="商務科文員"]主任，您辦公室裡的電話一直在響。
+[charslot(slot = "m", name = "avg_npc_892_1#2$1")]
+[name="小賈斯汀"]告訴他們，我現在正忙。
+[charslot(slot = "m", name = "avg_npc_529_1#1$1")]
+[name="商務科文員"]有些......您的朋友正在找您。
+[charslot(slot = "m", name = "avg_npc_892_1#2$1")]
+[name="小賈斯汀"]班傑明市長、克里斯市議員、費羅警長、柯萊特中校，還有誰？
+[charslot(slot = "m", name = "avg_npc_529_1#1$1")]
+[name="商務科文員"]負責工業區安全保護的那位劉易斯先生。
+[charslot(slot = "m", name = "avg_npc_892_1#7$1")]
+[name="小賈斯汀"]哼。
+[charslot(slot = "m", name = "avg_npc_529_1#1$1")]
+[name="商務科文員"]他們說——這位女士是？
+[charslot(slot = "m", name = "avg_npc_524_1$1")]
+[name="緊張的創業者"]啊，抱歉！我在外面等著！
+[charslot(slot = "m", name = "avg_npc_892_1#7$1")]
+[name="小賈斯汀"]沒關係，您不用回避。
+[name="小賈斯汀"]請繼續。
+[charslot(slot = "m", name = "avg_npc_529_1#1$1")]
+[name="商務科文員"]啊，好的。
+[name="商務科文員"]......他們表示，他們對您之前存在七號地塊裡的東西非常不滿，他們原本以為只是一些，更“平常”的項目。
+[name="商務科文員"]柯萊特中校去了劉易斯先生那裡，恐怕明天所有七號地塊的監視文件就會丟失了。
+[name="商務科文員"]市長和市議員退回了這幾年我們送去的所有手提箱，並聲明往後的競選活動不會再尋求您的幫助。
+[name="商務科文員"]警長先生做了些很......激進的表述，聽說他已經緊急拿到了州檢察官的逮捕令，恐怕現在正在來這裡的路上。
+[name="商務科文員"]我已經通知了防衛科，但拖延不了他們多少時間。
+[charslot]
+[charslot(slot = "r", name = "avg_npc_524_1$1", focus="none")]
+[charslot(slot = "l", name = "avg_npc_892_1#2$1", focus="l")]
+[name="小賈斯汀"]我還以為我和他們之間的關係足夠親密呢。
+[charslot(slot = "l", name = "avg_npc_892_1#9$1", focus="l")]
+[name="小賈斯汀"]唉，友情還真是脆弱，是吧，女士？
+[charslot(slot = "r", name = "avg_npc_524_1$1", focus="r")]
+[name="緊張的創業者"]賈斯汀先生，我、我只是來尋求您的投資，這些事，我恐怕不該摻和......
+[charslot(slot = "l", name = "avg_npc_892_1#9$1", focus="l")]
+[name="小賈斯汀"]您就不好奇嗎？這些精英、官僚、黑制服和白手套，萊茵生命到底能有什麼東西，居然把他們嚇得肯在晚上從床上爬起來工作？
+[charslot(slot = "r", name = "avg_npc_524_1$1", focus="r")]
+[name="緊張的創業者"]我......我不知道，能、能無限延長生命的納米機器人......之類的？
+[charslot(slot = "l", name = "avg_npc_892_1#9$1", focus="l")]
+[name="小賈斯汀"]是個好想法，要是有人拿來招股書和技術原型，我一定會投。
+[charslot(slot = "r", name = "avg_npc_524_1$1", focus="r")]
+[name="緊張的創業者"]哈......哈哈......
+[name="緊張的創業者"]不過，我確實有點好奇——
+[name="緊張的創業者"]您怎麼會主動找上我......
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", focus="l")]
+[name="小賈斯汀"]您聽說過斯塔德氏病嗎，女士？
+[charslot(slot = "r", name = "avg_npc_524_1$1", focus="r")]
+[name="緊張的創業者"]啊？我、我在資料上看見過，好像是一種罕見的血液遺傳病。
+[name="緊張的創業者"]很罕見，很致命，很頑固。患有這種疾病的人，預期壽命一般不超過四十五歲，而且遺傳給後代的機率極大。
+[name="緊張的創業者"]想必是萊茵生命開發了——
+[charslot(slot = "l", name = "avg_npc_892_1#2$1", focus="l")]
+[name="小賈斯汀"]不用這麼急著討好您的潛在投資人。
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", focus="l")]
+[name="小賈斯汀"]不過，是的，和童話一樣，治療斯塔德氏病的特效藥問世了，雖然這項研究與萊茵生命無關，但確實有很多人因此獲益。
+[charslot(slot = "l", name = "avg_npc_892_1#8$1", focus="l")]
+[name="小賈斯汀"]只可惜，還是來得晚了一些，老賈斯汀在特效藥研製完成前三天死於斯塔德氏病造成的器官衰竭。
+[charslot(slot = "r", name = "avg_npc_524_1$1", focus="r")]
+[name="緊張的創業者"]老賈斯汀？您說的是......
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", focus="l")]
+[name="小賈斯汀"]沒錯，而他的兒子，小賈斯汀，在懷著恐懼掙扎了十多年後，突然被告知，從此他可以像個普通人一樣活著了。
+[name="小賈斯汀"]啪，糾纏我家族的夢魘就此消失，就像它從未存在過一樣。
+[name="小賈斯汀"]我後來才知道，這種藥物的關鍵成分，來源於實習研究員一次錯誤的試劑配製。
+[charslot(slot = "l", name = "avg_npc_892_1#9$1", focus="l")]
+[name="小賈斯汀"]命運，哈，命運。
+[charslot(slot = "r", name = "avg_npc_524_1$1", focus="r")]
+[name="緊張的創業者"]我......但起碼您擺脫了這種疾病。
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", focus="l")]
+[name="小賈斯汀"]因為一次偶然的愚蠢失誤？
+[name="小賈斯汀"]那些無能者稱呼這為“命運的捉弄”，甚至暗自欣喜，暗自得意。
+[name="小賈斯汀"]他們視其為偶然性的饋贈。
+[charslot(slot = "l", name = "avg_npc_892_1#7$1", focus="l")]
+[name="小賈斯汀"]而我——
+[charslot(slot = "l", name = "avg_npc_892_1#4$1", focus="l")]
+[name="小賈斯汀"]我無法容忍，我決不允許。
+[name="小賈斯汀"]我要把這東西牢牢地握在自己的手裡，我會掌控它，我會支配它。
+[name="小賈斯汀"]我會向它指明前進的方向。
+[dialog]
+[stopmusic(fadetime=1)]
+[charslot(slot = "r", focus="n")]
+[PlaySound(key="$d_avg_airdefensealert", volume=1, loop=true, channel="b")]
+[delay(time=2)]
+[charslot(slot = "r", name = "avg_npc_524_1$1", focus="r")]
+[name="緊張的創業者"]天災警報？怎麼偏偏是這個時候......
+[name="緊張的創業者"]賈斯汀先生，我們需要避難！
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", focus="l")]
+[name="小賈斯汀"]哈，終於。
+[dialog]
+[charslot]
+[StopSound(channel="b", fadetime=3)]
+[playMusic(key="$formal_loop", volume=0.6)]
+[PlaySound(key="$d_avg_telephonering", volume=1)]
+[delay(time=1.5)]
+[PlaySound(key="$d_avg_telephone", volume=1)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_892_1#1$1", focus="none")]
+[name="？？？"]小賈斯汀·菲茨羅伊。
+[charslot(slot = "m", name = "avg_npc_892_1#1$1")]
+[name="小賈斯汀"]您終於聯繫我了，大法官先生。
+[charslot(slot = "m", focus="none")]
+[name="？？？"]你的允諾是什麼？
+[charslot(slot = "m", name = "avg_npc_892_1#1$1")]
+[name="小賈斯汀"]它會帶領哥倫比亞前進。
+[charslot(slot = "m", focus="none")]
+[name="？？？"]用什麼保證？
+[charslot(slot = "m", name = "avg_npc_892_1#1$1")]
+[name="小賈斯汀"]我的參與還不夠嗎？
+[charslot(slot = "m", focus="none")]
+[name="？？？"]你的很多“朋友”正在警告我。
+[name="？？？"]他們說，哥倫比亞的法律不該允許你這樣的人繼續肆意妄為。
+[charslot(slot = "m", name = "avg_npc_892_1#7$1")]
+[name="小賈斯汀"]如果喜歡送出些裝滿錢的手提箱也算肆意妄為，那克麗斯騰做的算什麼？
+[name="小賈斯汀"]大法官先生，您曾和我說過，哥倫比亞的法律不是為了守護什麼假惺惺的“道德”而存在。
+[charslot(slot = "m", focus="none")]
+[name="？？？"]它必須為前行之人劈開荊棘。
+[charslot(slot = "m", name = "avg_npc_892_1#7$1")]
+[name="小賈斯汀"]那麼，您的結論呢？
+[dialog]
+[charslot(slot = "m", focus="none")]
+[delay(time=1)]
+[name="？？？"]如果哥倫比亞的法院變得軟弱退縮，那麼這裡就不再值得我繼續為之工作。
+[charslot(slot = "m", name = "avg_npc_892_1#1$1")]
+[name="小賈斯汀"]感謝您。
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_telephone", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", focus="none")]
+[charslot(slot = "r", name = "avg_npc_524_1$1", focus="r")]
+[name="緊張的創業者"]剛剛與您通話的是......一位大、大法官？
+[name="緊張的創業者"]您......萊茵生命到底在從事什麼研究？
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", focus="l")]
+[name="小賈斯汀"]放心，萊茵生命沒有法律風險，這裡是一家可信賴的公司。
+[charslot(slot = "r", name = "avg_npc_524_1$1", focus="r")]
+[name="緊張的創業者"]可是......
+[charslot(slot = "l", name = "avg_npc_892_1#9$1", focus="l")]
+[name="小賈斯汀"]啊，該回到剛才的話題了，我在那些“朋友”管著的地方到底藏了什麼。
+[name="小賈斯汀"]拉開窗簾吧，女士，您不應該錯過今夜。
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=1.5)]
+[charslot(slot = "r", posfrom="0,0", posto="300,0", focus="r", afrom=1, ato=0, duration=1.5, isblock=true)]
+[charslot(slot = "r", focus="none")]
+[PlaySound(key="$d_avg_pullcurtain", volume=1)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_airshiptakeoff", volume=0, loop=true, channel="c")]
+[SoundVolume(volume=1, channel="c",fadetime=2)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_524_1$1")]
+[name="緊張的創業者"]那是......什麼？
+[name="緊張的創業者"]如此巨大的東西，它......在飛？
+[name="緊張的創業者"]那也是......萊茵生命的項目？
+[StopSound(channel="c", fadetime=5)]
+[charslot(slot = "m", name = "avg_npc_892_1#2$1")]
+[name="小賈斯汀"]說實話，您不是一位合格的創業者。您軟弱，膽小，不夠自信，瞻前顧後，喜歡花太多時間組織措辭。
+[name="小賈斯汀"]特里蒙的投資界不喜歡您簡直是理所當然的。
+[charslot(slot = "m", name = "avg_npc_892_1#1$1")]
+[name="小賈斯汀"]好在，對於我，這些都不重要。
+[name="小賈斯汀"]萊茵生命會全資收購您的動力實驗室，我會提供給您充足的研究經費，全力支援您接下來的所有研究。
+[name="小賈斯汀"]如果運氣好的話，有朝一日升為萊茵生命的主任，開闢一個屬於您的科室，也並非不可想像。
+[name="小賈斯汀"]就和那位年輕的多蘿西女士一樣。
+[charslot(slot = "m", name = "avg_npc_524_1$1")]
+[name="緊張的創業者"]這......我不明白，今天有太多的事......
+[charslot(slot = "m", name = "avg_npc_892_1#1$1")]
+[name="小賈斯汀"]接受它。因為這不來源於偶然，這是我的判斷。
+[charslot(slot = "m", name = "avg_npc_892_1#9$1")]
+[name="小賈斯汀"]在小賈斯汀能觸及的領域，不會再有偶然了，女士。
+[name="小賈斯汀"]我幫助瘋子們成功。
+[charslot(slot = "m", name = "avg_npc_524_1$1")]
+[name="緊張的創業者"]......我知道了，賈斯汀主任。
+[name="緊張的創業者"]合作愉快。
+[charslot(slot = "m", name = "avg_npc_892_1#9$1")]
+[name="小賈斯汀"]歡迎加入萊茵生命，乾杯。
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+7:25 P.M. 聚焦發生器飛行中
+[dialog]
+[Background(image="38_g2_colombiaoffice",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",duration=1)]
+[charslot(slot = "l", name = "avg_npc_897_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="none")]
+[charslot(slot = "l", name = "avg_npc_897_1#1$1",focus="l")]
+[name="傑克遜"]看來我們終於找到它了，上校。
+[name="傑克遜"]真不容易，嗯？
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]......
+[name="布萊克"]我們確實沒有預料到，克麗斯騰為聚焦發生器準備了另一套推進裝置。
+[name="布萊克"]她將聚焦發生器藏在了一座垃圾堆裡，現在，堂而皇之地將它開過了特里蒙的上空。
+[name="布萊克"]......這是我的失職。
+[charslot(slot = "l", name = "avg_npc_897_1#2$1",focus="l")]
+[name="傑克遜"]現在談論責任問題沒什麼意義，上校。
+[name="傑克遜"]事情還是向最壞的方向推進了。
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]聚焦發生器現在仍在向能量井飛去，預計在二十分鐘後抵達能量井的正上方。
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]按照技術手冊裡的說明，它會在能量井上方五千米附近懸停，這樣能盡可能打擊到偏轉角度裡的地面目標。
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]當然，“弧光一號”現在並不在一個適合發動攻擊或者反制敵人的位置，我們原本只是計畫在特里蒙論證可行性。
+[charslot(slot = "l", name = "avg_npc_897_1#2$1",focus="l")]
+[name="傑克遜"]五千米的高度，一般的空中單位幾乎無法抵達，要是不出這次意外，你們的考慮確實很周全。
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]我們正在從特區調配能在更高空運行的特種無人機，但還需要一些時間。
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]不過，現在駐紮在特里蒙的那些普通戰鬥無人機也都已經升空，它們會盡量阻止聚焦發生器的高度繼續爬升。
+[charslot(slot = "l", name = "avg_npc_897_1#5$1",focus="l")]
+[name="傑克遜"]看起來效果有限。
+[name="傑克遜"]似乎將軍們為這個圓環準備了一套很結實的裝甲，我以為梅蘭德的這些無人機在哥倫比亞已經算得上先進了。
+[charslot(slot = "l", name = "avg_npc_897_1#2$1",focus="l")]
+[name="傑克遜"]傑出的工作，將軍們真應該受到表彰。
+[name="傑克遜"]國防部在上面下了很重的注。
+[charslot(slot = "r", name = "avg_npc_899_1#2$1",focus="r")]
+[name="布萊克"]......“現在談論責任問題沒什麼意義”，先生。
+[name="布萊克"]重要的是讓事情重新回到您的掌控之中。
+[charslot(slot = "l", name = "avg_npc_897_1#2$1",focus="l")]
+[name="傑克遜"]是回到“我們”的掌控，上校。從個人感情上，我理解軍方的訴求，自從在玻利瓦爾失敗之後，你們急於重新回到舞台上。
+[name="傑克遜"]但我們都是哥倫比亞的一分子，不是嗎？
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]當然，在我入伍時，我宣誓效忠的對象是哥倫比亞。
+[name="布萊克"]眼下，克麗斯騰依然不聯繫我們，也不應答我們所有的聯絡通訊。
+[name="布萊克"]這絕不是一個投機分子或者一個綁匪會做出的行為，但如果這是一場軍事訛詐，也說不通。
+[name="布萊克"]唯一值得慶幸的是——無論她想要做什麼，能量井始終在我們的監控之下，她不可能......
+[dialog]
+[PlaySound(key="$transmission", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_ringoff", volume=1)]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]抱歉，副總統先生，容我繼續。
+[dialog]
+[PlaySound(key="$transmission", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "l", name = "avg_npc_897_1#2$1",focus="l")]
+[name="傑克遜"]上校，看來同僚們有些緊急的消息要告訴你。
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]......
+[dialog]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]是我，我正在和副總統先生......
+[charslot(slot = "r", name = "avg_npc_899_1#6$1",focus="r")]
+[name="布萊克"]......蓄能？
+[charslot(slot = "r", name = "avg_npc_899_1#6$1",focus="r")]
+[name="布萊克"]我們不是早就全面控制能量井了嗎？怎麼還會......立刻關閉整個能量井！
+[charslot(slot = "r", name = "avg_npc_899_1#7$1",focus="r")]
+[name="布萊克"]切不斷？切不斷是什麼意思？找到那個該死的電閘或者開關什麼的，按下去不就完了嗎？
+[name="布萊克"]或者把線拔了，把能量源停機，隨便找個什麼辦法，別管會不會損壞設備！
+[charslot(slot = "r", name = "avg_npc_899_1#6$1",focus="r")]
+[name="布萊克"]......
+[name="布萊克"]......什麼？
+[name="布萊克"]你是說，你們做了一切能做的，不僅無法把能量井關閉，那東西的能量讀數還在升高？
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]......
+[name="布萊克"]......帶上我們在特里蒙全部的炸藥，炸掉那個設施。
+[charslot(slot = "l", name = "avg_npc_897_1#2$1",focus="l")]
+[name="傑克遜"]它已經在蓄能了，如果炸掉它，散逸出來的能量會毀掉整個城市，上校，梅蘭德的特工們剛剛向我匯報過這種可能性。
+[charslot(slot = "l", name = "avg_npc_897_1#5$1",focus="l")]
+[name="傑克遜"]很棘手，哈。
+[charslot(slot = "r", name = "avg_npc_899_1#7$1",focus="r")]
+[name="布萊克"]這個瘋子，她難道真的痛恨這個國家到這種地步嗎？！她到底想幹什麼！
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]等等......有一個可能。
+[name="布萊克"]——特區。
+[charslot(slot = "r", name = "avg_npc_899_1#3$1",focus="r")]
+[name="布萊克"]是特區。如果聚焦發生器偏轉足夠的角度，特區很有可能會遭受威脅！
+[name="布萊克"]我們敬愛的總統先生還在那裡，克麗斯騰......她想毀了哥倫比亞的大腦和心臟。
+[name="布萊克"]必須立刻疏散特區的所有人員。
+[dialog]
+[charslot(slot = "l", name = "avg_npc_897_1#1$1",focus="l")]
+[name="傑克遜"]別擔心，上校，總統先生剛剛聯繫過我，不會有事的。
+[name="傑克遜"]特區的軍隊已經出動，巴里將軍將會接管特區的防禦工作。她向我保證，她會誓死捍衛總統先生的安全。
+[charslot(slot = "r", name = "avg_npc_899_1#6$1",focus="r")]
+[name="布萊克"]......巴里將軍?
+[charslot(slot = "l", name = "avg_npc_897_1#1$1",focus="l")]
+[name="傑克遜"]哦，恐怕你還沒得到消息，她剛剛獲得晉升。
+[name="傑克遜"]繼續執行你的任務吧，上校，我們的祖國仍然需要你。
+[dialog]
+[delay(time=1.5)]
+[name="傑克遜"]還有什麼事嗎？
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]......
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]不，沒有了。
+[charslot(slot = "r", name = "avg_npc_899_1#3$1",focus="r")]
+[name="布萊克"]請您放心，我會親自停下這場鬧劇。
+[charslot(slot = "l", name = "avg_npc_897_1#5$1",focus="l")]
+[name="傑克遜"]不必勉強。
+[charslot(slot = "r", name = "avg_npc_899_1#1$1",focus="r")]
+[name="布萊克"]......容我告退。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r", focus="r", afrom=1, ato=0, duration=1.5, isblock=true)]
+[delay(time=1)]
+[charslot(slot = "l",focus="l")]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[delay(time=2)]
+[charslot(slot = "l", name = "avg_npc_897_1#2$1",focus="l")]
+[name="傑克遜"]這樣下令就可以了嗎，總統先生？
+[name="傑克遜"]老實說，我並不完全放心，但既然是您的判斷，我不會質疑——
+[name="傑克遜"]......
+[charslot(slot = "l", name = "avg_npc_897_1#4$1",focus="l")]
+[name="傑克遜"]我明白了，我立刻出發。
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[dialog]
+[Background(image="29_g7_mainstreet_n",screenadapt="coverall")]
+[playMusic(intro="$tense_intro", key="$tense_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "l", name = "avg_npc_901_1#1$1", focus="l")]
+[charslot(slot = "r", name = "avg_npc_901_1#1$1", focus="none")]
+[name="哥倫比亞士兵A"]你看到了嗎？那是什麼？
+[charslot(slot = "r", name = "avg_npc_901_1#1$1", focus="r")]
+[name="哥倫比亞士兵B"]是那些大人物一直在找的東西？
+[charslot(slot = "l", name = "avg_npc_901_1#1$1", focus="l")]
+[name="哥倫比亞士兵A"]那東西，飛得真高......
+[charslot(slot = "l", name = "avg_npc_901_1#1$1", focus="l")]
+[name="哥倫比亞士兵A"]它會飛到哪裡去？
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m",bstart=0.2,bend=0.7, name = "avg_1031_slent2_1#1$1", duration=1, isblock=true)]
+[name="？？？"]......城外的方向。
+[dialog]
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$1", duration=1, isblock=true)]
+[name="赫默"]看上去，那應該是個聚能裝置。
+[charslot]
+[charslot(slot = "r", name = "avg_npc_901_1#1$1", focus="none")]
+[charslot(slot = "l", name = "avg_npc_901_1#1$1", focus="l")]
+[name="哥倫比亞士兵A"]城外的方向？能量井？
+[charslot(slot = "r", name = "avg_npc_901_1#1$1", focus="r")]
+[name="哥倫比亞士兵B"]上校是怎麼稱呼這東西的來著？“弧光一號”？聚焦發生器？
+[charslot(slot = "r", name = "avg_npc_901_1#1$1", focus="r")]
+[name="哥倫比亞士兵B"]那個科學瘋子到底想幹什麼？
+[charslot]
+那個科學瘋子到底想幹什麼？
+理想，偏執，好奇，進取。
+科學家們總與這些品質聯繫在一起。
+赫默承認，作為一名科學家，作為曾經萊茵生命的一員，她第一眼看到這個正升上天空的龐然巨構，所感受到的一樣是隱隱的激動。
+和難以啟齒的自豪。
+她曾為之奮鬥的公司，正在製造，不，已經製造出了一個大地上......天空上的奇蹟，她應該感到與有榮焉......嗎？
+欺騙，算計，犧牲，謀劃。
+她馬上反應過來，這奇蹟建於什麼之上。
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$1")]
+[name="赫默"]總轄，克麗斯騰·萊特......
+[charslot(slot = "m", focus = "n")]
+她作為一名普通的研究員，和克麗斯騰並沒有打過太多的交道。只是在年終的總結大會上，才偶爾看到過那位萊茵生命總轄的身影。
+她還記得克麗斯騰的那種眼神。
+她的眼裡，只有一件事。
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$1")]
+[name="赫默"]科學家所需要考慮的只有一件事......“那就是怎麼達成它”。
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$1")]
+[name="赫默"]科學家只需要負責推動科學的前進，“光這一件事，就足夠讓我們精疲力盡了”。
+[charslot(slot = "m", name = "avg_1031_slent2_1#2$1")]
+[name="赫默"]......
+[name="赫默"]......往哪裡才是前進？
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$1")]
+[name="赫默"]哥倫比亞荒野的雨後，植物總是會瘋長。我不喜歡人們以居高臨下的態度判斷，哪些植物有用，哪些植物該被貶為雜草。
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$1")]
+[name="赫默"]我們也必須承認，無論如何，那不該被形容為“前進”。
+[dialog]
+[charslot]
+克麗斯騰，與克麗斯騰相似的那些人，披著如同克麗斯騰一樣外衣的那些人......
+他們都聲稱，自己所看向的方向，就是科學應為之前進的方向。
+她不敢說自己瞭解那位甚少露面的總轄，但是她瞭解其他的那些人，其他的那些......前進過程中的代價。
+誰來定義前進？誰來關照這種前進......是不是碾過了太多的犧牲品？
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$1")]
+[name="赫默"]科學要前進，當然。
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$1")]
+[name="赫默"]我也是研究者，我感同身受。
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$1")]
+[name="赫默"]但是，我們必須知道，這其中的代價是什麼。
+[name="赫默"]我們也必須知道——
+[name="赫默"]科學不僅僅為個人的理想或偏執服務。
+[dialog]
+[PlaySound(key="$d_avg_attack_ready", volume=1)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_drone", volume=1)]
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$2", duration=1)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_901_1#1$1", focus="l")]
+[charslot(slot = "r", name = "avg_npc_901_1#1$1", focus="none")]
+[name="哥倫比亞士兵A"]無人機？
+[name="哥倫比亞士兵A"]研究員，你想幹什麼？
+[name="哥倫比亞士兵A"]我不想找你的麻煩，上頭已經用不到你了，你應該——
+[charslot(slot = "r", name = "avg_npc_901_1#1$1", focus="r")]
+[name="哥倫比亞士兵B"]喂！我們在和你說話！
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$2")]
+[delay(time=1)]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(duration=1, isblock=true)]
+[charslot(slot = "l", name = "avg_npc_901_1#1$1", focus="l")]
+[charslot(slot = "r", name = "avg_npc_901_1#1$1", focus="none")]
+[name="哥倫比亞士兵A"]這人想幹什麼？
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[charslot(slot = "r", name = "avg_npc_901_1#1$1", focus="r")]
+[name="哥倫比亞士兵B"]鑰匙，你的車鑰匙！
+[dialog]
+[charslot(slot = "r", focus="none")]
+[PlaySound(key="$sportscarstart", volume=0.8)]
+[delay(time=2)]
+[charslot(slot = "l", name = "avg_npc_901_1#1$1", focus="l")]
+[charslot(slot = "r", name = "avg_npc_901_1#1$1", focus="none")]
+[name="哥倫比亞士兵A"]她搶了一輛我們的車？她瘋了嗎？
+[charslot(slot = "r", name = "avg_npc_901_1#1$1", focus="r")]
+[name="哥倫比亞士兵B"]該死，我們得——
+[dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "m", name = "avg_npc_895_1#3$1", duration=1, isblock=true)]
+[name="伊芙利特"]赫默！赫默！
+[charslot]
+[charslot(slot = "l", name = "avg_npc_901_1#1$1", focus="none")]
+[charslot(slot = "r", name = "avg_npc_901_1#1$1", focus="r")]
+[name="哥倫比亞士兵B"]哪來的小姑娘？這裡是軍事禁區！
+[charslot(slot = "l", name = "avg_npc_901_1#1$1", focus="l")]
+[name="哥倫比亞士兵A"]你想幹什麼！
+[charslot]
+[charslot(slot = "m", name = "avg_npc_895_1#4$1")]
+[name="伊芙利特"]別擋道！
+[dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_901_1#1$1")]
+[charslot(slot = "r", name = "avg_npc_901_1#1$1")]
+[delay(time=0.5)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_punch02", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.3, block=true)]
+[Dialog]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.5, block=true)]
+[Dialog]
+[delay(time=0.5)]
+[charslot(slot = "l", posfrom="0,0", posto="0,-100", afrom=1, ato=0, duration=1)]
+[playsound(key="$bodyfalldown2")]
+[delay(time=0.2)]
+[charslot(slot = "r", posfrom="0,0", posto="0,-100", afrom=1, ato=0, duration=1)]
+[playsound(key="$bodyfalldown2")]
+[delay(time=1.5)]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[delay(time=1)]
+[playsound(key="$d_avg_clothmovement", volume=1)]
+[name="哥倫比亞士兵B"]唔！
+[name="伊芙利特"]把你的車鑰匙也交出來！
+[charslot(slot = "m", focus="none")]
+[name="哥倫比亞士兵B"]呃，你、你會開車嗎，小姑娘？
+[name="哥倫比亞士兵B"]需不需要——
+[dialog]
+[charslot]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_punch02", volume=1)]
+[delay(time=1)]
+[playsound(key="$bodyfalldown1")]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_895_1#1$1",duration=1, isblock=true)]
+[charslot(slot = "m", name = "avg_npc_895_1#4$1")]
+[name="伊芙利特"]少廢話，本大爺自有辦法！
+[dialog]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_895_1#9$1")]
+[name="伊芙利特"]......不過，左邊的是刹車，對吧？
+[dialog]
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

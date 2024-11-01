@@ -1,0 +1,78 @@
+[HEADER(actId="act1sandbox", npcId="trap_415_trademan")] 
+[character(name="avg_npc_803_1", offsetX="100", offsetY="100")]
+[name="聯絡員"]各位好啊，我們又見面了。
+[name="聯絡員"]最近好像總是這樣在不同的地方和各位相遇，難道這就是所謂的緣分？
+[Decision(option1="你上回賣的那個東西太好用了！", value1="1.1")]
+[predicate(references="1.1")]
+[character(name="avg_npc_803_1", offsetX="100", offsetY="100")]
+[name="聯絡員"]這、這是真的嗎？
+[name="聯絡員"]那，如果各位願意提供一些使用上的意見，那就再好不過了！
+[Decision(option1="（訴說感想）", value1="2.1")]
+[predicate(references="2.1")]
+[character(name="avg_npc_803_1", offsetX="100", offsetY="100")]
+[name="聯絡員"]......
+[name="聯絡員"]............
+[name="聯絡員"]原來是這樣，非常感謝各位，這對我的工作真的非常有幫助！
+[name="聯絡員"]那天之後敝司也還在不斷地完善我們的產品功能，最近又有了新的突破！請看——
+[name="聯絡員"]我們在上一版的基礎上進行了改良，優化了諸多功能！
+[name="聯絡員"]我可以保證，這次改良後，該商品絕對是精品中的精品！各位看看？
+[Decision(option1="好，我們買了！", value1="3.1")]
+[predicate(references="3.1")]
+[Decision(option1="衝著我們上次的交情，我們出這個價！", value1="4.1")]
+[predicate(references="4.1")]
+[character(name="avg_npc_803_1", offsetX="100", offsetY="100")]
+[name="聯絡員"]欸？這、這麼多？
+[name="聯絡員"]這不太合適吧......？
+[Decision(option1="怕什麼！多的你就自己留下吧！", value1="5.1")]
+[predicate(references="5.1")]
+[character(name="avg_npc_803_1", offsetX="100", offsetY="100")]
+[name="聯絡員"]可以嗎？那，那我就......
+[name="聯絡員"]多謝各位了！各位真是我的大恩人啊！
+[name="聯絡員"]這是商品，各位拿好！果然還是各位可靠啊！
+[name="聯絡員"]別忘記使用感想與意見，那麼祝各位一路順......
+[Decision(option1="收據已經弄好了嗎？", value1="6.1")]
+[predicate(references="6.1")]
+[Decision(option1="東西也裝好了？", value1="7.1")]
+[predicate(references="7.1")]
+[Decision(option1="錢也點清楚了？", value1="8.1")]
+[predicate(references="8.1")]
+[character(name="avg_npc_803_1", offsetX="100", offsetY="100")]
+[name="聯絡員"]你們怎麼突然問這麼清楚......？
+[Decision(option1="大家看啊！這裡有個大奸商！", value1="9.1")]
+[predicate(references="9.1")]
+[Decision(option1="他這個小東西就敢賣我們這個價！", value1="10.1")]
+[predicate(references="10.1")]
+[Decision(option1="他騙我們，他......", value1="11.1")]
+[predicate(references="11.1")]
+[character(name="avg_npc_803_1", offsetX="100", offsetY="100")]
+[name="聯絡員"]欸欸欸？沒、沒有！不是這樣的！
+[name="聯絡員"]你們別喊了......！
+[name="聯絡員"]這樣下去我怎麼再做生意啊！各位拜託了......
+[name="聯絡員"]我把錢退給你！
+[name="聯絡員"]做什麼都行！別喊了！
+[Decision(option1="咳！誤會，誤會！", value1="12.1")]
+[predicate(references="12.1")]
+[character(name="avg_npc_803_1", offsetX="100", offsetY="100")]
+[name="聯絡員"]誤會！誤會！
+[name="聯絡員"]......
+[name="聯絡員"]各位，為什麼要突然害我啊！大家生意有來有往，你們這樣可是要斷了我的生路呀......！
+[name="聯絡員"]嗚，各位是要我做什麼啊......
+[Decision(option1="（半真半假地講述和“毒牙”有關的事）", value1="13.1")]
+[predicate(references="13.1")]
+[character(name="avg_npc_803_1", offsetX="100", offsetY="100")]
+[name="聯絡員"]......各位真的會把那筆交易款和我平分？
+[name="聯絡員"]我本來只是賣幾個小商品，但要是真的能拿到一半的錢......
+[name="聯絡員"]我還是不敢，再少給我點吧！那麼多錢，我拿著也害怕......就我的商品本來能值的錢就可以了......！
+[name="聯絡員"]或者還是，稍微多上那麼一點點吧！
+[Decision(option1="也可以。", value1="14.1")]
+[predicate(references="14.1")]
+[character(name="avg_npc_803_1", offsetX="100", offsetY="100")]
+[name="聯絡員"]這樣的話，或許再多一點可不可以......？
+[name="聯絡員"]各、各位別喊！我知道了！就這麼定下了！
+[name="聯絡員"]只要看到你們的信號，就把他往陷阱那裡引，我記住了！
+[name="聯絡員"]不會出人命吧？只是教訓他一下，對吧？
+[name="聯絡員"]那，各位，我們那天再見吧！
+[SetConditionProgress(conditionKey="route_trademan", itemCount="3")]
+[SetConditionProgress(conditionKey="route_trademan_interval", itemCount="0")]
+[withdraw(charId="trap_415_trademan")]
+[End]

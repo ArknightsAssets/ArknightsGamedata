@@ -1,0 +1,471 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_black",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=2)]
+[Subtitle(text="黑色填滿了整個狹小的空間，隔絕了光線、空氣與聲響。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="想用嘴呼喊。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="源石引擎運作帶來的高溫塞住了喉管，沒有聲音能發出來。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="想用手敲打。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="堅硬的鋼鐵緊緊壓住了四肢，連躲閃的餘地都沒有，談何反抗。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="要是能落下眼淚就好了。從小媽媽就說，淚水是很好的武器。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="可是眼睛不願意。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="數百年來，它們看過太多崩塌的山和乾涸的水，也見證了太多親人的消逝。", x=300, y=370, alignment="center", size=24, delay=0.04, width=800)]
+[Subtitle(text="它們變得越來越乾燥，就像移動城市碾過的土地。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="29_g8_alley_n",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(intro="$chasing_intro", key="$chasing_loop", volume=0.7)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[character(name="avg_npc_532_1#1$1",name2="avg_npc_521_1#1$1",focus=2)]
+[name="Mechanist"]第六具動力甲，確認癱瘓。
+[character(name="avg_npc_532_1#1$1",name2="avg_npc_521_1#1$1",focus=1)]
+[name="塞雷婭"]這些就是全部？
+[character(name="avg_npc_532_1#1$1",name2="avg_npc_521_1#1$1",focus=2)]
+[name="Mechanist"]看起來是這樣。他們成功拖住了我們十三分鐘。
+[name="Mechanist"]等等——
+[name="Mechanist"]掃描結果顯示，還有第七具！
+[dialog]
+[character]
+[playsound(key="$d_avg_mechawalk")]
+[character(name="avg_npc_526_1#1$1",fadetime=2.5)]
+[delay(time=3.5)]
+[name="奇怪的動力甲"]——
+[Character(name="avg_npc_526_1#1$1")]
+[Dialog]
+[delay(time=0.7)]
+[playsound(key="$d_avg_mecharun")]
+[characteraction(name="middle", type="move", xpos=300, fadetime=1,block=false)]
+[Character(fadetime=0.5)]
+[delay(time=1.1)]
+[character(name="avg_npc_521_1#1$1")]
+[name="Mechanist"]博士小心！它往你的方向去了！
+[dialog]
+[character]
+[Character(name="char_empty", name2="char_empty")]
+[characteraction(name="left", type="move", xpos=-200, fadetime=0.3, block=true)]
+[delay(time=0.51)]
+[characteraction(name="left", type="move", xpos=200, fadetime=1, block=false)]
+[Character(name="avg_npc_526_1#1$1", name2="char_empty",fadetime=0.7)]
+[delay(time=0.8)]
+[name="奇怪的動力甲"]——
+[Dialog]
+[characteraction(name="left", type="move", xpos=100, fadetime=0.6, block=false)]
+[delay(time=0.61)]
+[Character(name="avg_npc_526_1#1$1", name2="char_empty")]
+[PlaySound(key="$rungeneral", volume=1)]
+[characteraction(name="right", type="move", xpos=200, fadetime=0.3, block=true)]
+[delay(time=0.51)]
+[characteraction(name="right", type="move", xpos=-200, fadetime=0.51, block=false)]
+[Character(name="avg_npc_526_1#1$1", name2="avg_npc_532_1#4$1",fadetime=0.7)]
+[delay(time=0.51)]
+[PlaySound(key="$fightgeneral", volume=0.6)]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.51)]
+[Character(name="avg_npc_526_1#1$1", name2="avg_npc_532_1#4$1",focus=2)]
+[name="塞雷婭"]讓我來。
+[Character(name="avg_npc_526_1#1$1", name2="avg_npc_532_1#4$1")]
+[dialog]
+[characteraction(name="left", type="move", xpos=-60, fadetime=0.51, block=false)]
+[PlaySound(key="$fightgeneral", volume=0.6)]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.52)]
+你看不清塞雷婭是怎麼移動的，在你的雙腿反應過來之前，她已經站在了你的面前。
+你知道，在哥倫比亞的街道上，她從來不會帶上那面萊茵製造的盾牌。
+她會把自己變成盾。
+從她交疊的小臂上，琺瑯質迅速生長開，替你擋下了動力甲的一擊。
+[Character(name="avg_npc_532_1#8$1")]
+[name="塞雷婭"]害蟲。
+[dialog]
+[Characteraction(name="middle", type="move",xpos=-100,fadetime=1)]
+[character(fadetime=0.4)]
+[delay(time=1.1)]
+你聽到塞雷婭低聲說。
+她一直這麼看待這些失控的哥倫比亞技術。
+從她的表情與姿態中，你讀出了她下一步的動作。
+在準備消滅害蟲的時候，塞雷婭從來不會浪費時間。
+她的手即將觸到動力甲的前胸，那裡很快就會出現一個黑漆漆的空洞——
+面前這具動力甲會被摧毀，或者說，“死去”。
+一個念頭在你的腦子裡躥了上來。
+[dialog]
+[MusicVolume(volume=0.1, fadetime=1)]
+[Decision(options="停下，塞雷婭！", values="1")]
+[Predicate(references="1")]
+塞雷婭也許只聽到了你喊出來的第一個音節，但她的確收了手。
+這是你們長期並肩作戰累積下來的信任。
+[dialog]
+[PlaySound(key="$e_atk_circleatk_h")] 
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[delay(time=1.1)]
+她的拳頭錯開了核心，可攻擊的餘波依舊震碎了動力甲的上半截外殼。
+從無數飛濺的金屬碎片中，你看到了一抹亮色。
+就像......髮絲。
+[character(name="avg_npc_521_1#1$1")]
+[name="Mechanist"]博士，危險！別靠近——
+[Character(name="avg_npc_532_1#5$1")]
+[name="塞雷婭"]那是......
+[dialog]
+[dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[Character]
+[playMusic(intro="$drift_intro", key="$drift_loop", volume=0.7)]
+[Image(image="29_i02",xScale=1.5,yScale=1.5, fadetime=0)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=0.8, yScaleTo=0.8, duration=40, block=false)]
+[Blocker(a=0, fadetime=1, block=true)]
+[Delay(time=1)]
+動力甲正在倒下。
+更多碎片飛了出來，很快，你看到了更多髮絲，一點皮膚，然後是一隻眼睛。
+那隻眼睛看向了你。
+憤怒，驚恐，迷茫......你在一瞬間讀出了很多情緒。
+而在所有情緒隨著偽裝的外殼一起剝落之後，你發現它在向你求救。
+於是，你伸出了一隻手。
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[Character]
+[Image]
+[delay(time=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Decision(options="你好，繆爾賽思。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="29_g4_corridor",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.7)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[Character(name="avg_npc_535_1#7$1")]
+[name="桑尼"]邁爾，這是怎麼回事？
+[Character(name="avg_npc_534_1#1$1")]
+[name="拓荒隊成員"]我不知道......我不知道，領隊......
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]你先放開摩爾醫生。
+[Character(name="avg_npc_534_1#1$1")]
+[name="拓荒隊成員"]醫生......
+[Character(name="avg_128_plosis_1#8$1")]
+[name="白面鴞"]......
+[Character(name="avg_npc_534_1#1$1")]
+[name="拓荒隊成員"]我不能放開她。
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]你不聽我的命令？
+[Character(name="avg_npc_534_1#1$1")]
+[name="拓荒隊成員"]領隊，你為什麼還跟她們站在一起？
+[name="拓荒隊成員"]你不是說，我們必須狠下心來對她們下手嗎？你不是說......我們只是她們豢養的實驗動物嗎？
+[name="拓荒隊成員"]是你勸我跟你一塊幹的。我本來......我很喜歡摩爾醫生。
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]......沒想到，最先站出來反對我的人會是你。
+[name="桑尼"]我甚至想過會是薩姆，或者其他人......邁爾，你從來都最聽我的話。
+[Character(name="avg_npc_534_1#1$1")]
+[name="拓荒隊成員"]你也說過，我太聽話了。
+[name="拓荒隊成員"]以前我聽老闆的，在工廠裡得了礦石病......來了這裡，我就聽你的。
+[name="拓荒隊成員"]你們都是有本事的人，聰明，讀書多。我覺得聽你們的不會錯。
+[name="拓荒隊成員"]但現在......我們都要死了。
+[name="拓荒隊成員"]桑尼，我們都快被這幾個做研究的人害死了！她們還覺得自己能控制一切！
+[Character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]......
+[Character(name="avg_npc_534_1#1$1")]
+[name="拓荒隊成員"]不信的話，你搜一下她，她身上一定有錄音用的機器，她這一路上跟著我們就是為了觀察我們，也觀察那些銀色的怪物！
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]......烏比卡博士，要是有脫困的方法，你該開口了。
+[Character(name="avg_108_silent_1#6$1")]
+[name="赫默"]埃琳娜......
+[Character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]奧利維亞，我的確沒有把實驗資訊告訴你......
+[name="埃琳娜"]但我絕對不會騙你。
+[name="埃琳娜"]桑尼，邁爾，我也沒有騙過你們。
+[Character(name="avg_135_halo_1#3$1")]
+[name="埃琳娜"]我......真的不知道對付它們的方法。
+[Character(name="avg_135_halo_1#8$1")]
+[name="埃琳娜"]我記錄它們的資料，研究它們，都是因為我也想解決眼前的問題......我說過了，這是我工作的一部分。
+[Character(name="avg_108_silent_1#6$1")]
+[name="赫默"]嗯......
+[Character(name="avg_108_silent_1#10$1")]
+[name="赫默"]邁爾先生，我想埃琳娜沒有撒謊。
+[name="赫默"]你能把喬伊絲還給我們了嗎？
+[Character(name="avg_npc_534_1#1$1")]
+[name="拓荒隊成員"]哈......哈哈哈......
+[dialog]
+[character]
+拓荒者盯著白面鴞，突然抬手。
+一聲叫喊凝在了赫默嗓子眼，無人機接收到了主人的意志，狠狠撞向拓荒者的身體。
+可他只是從白面鴞手上取下了一樣東西。
+那是他在幾個小時前親手給她戴上的緊急醫療環。
+[Character(name="avg_128_plosis_1#8$1")]
+[name="白面鴞"]......
+[Character(name="avg_npc_534_1#1$1")]
+[name="拓荒隊成員"]我......我都幹了些什麼啊？
+[name="拓荒隊成員"]摩爾醫生......
+[name="拓荒隊成員"]你會怪我嗎？你會不會後悔曾經對我那麼好？
+[name="拓荒隊成員"]我這樣的人......根本不配被你拯救。
+[dialog]
+[character]
+醫生回到了她的朋友們身邊。她依然安靜，美麗，無瑕。
+可是所有人都無處可逃了。這座實驗室就是一個為他們提前準備好的墓穴。
+沒有人能得救，這該死的環只是那該死的公司給他們套上的鐐銬。
+他們都得不到自由，除非......
+拓荒者突然把緊急醫療環整個塞進了嘴裡。
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]邁爾！
+[Character(name="avg_npc_534_1#1$1")]
+[name="拓荒隊成員"]領、領隊......
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]你在幹什麼？快吐出來！
+[Character(name="avg_108_silent_1#5$1")]
+[name="赫默"]這醫療環......
+[Character(name="avg_135_halo_1#7$1")]
+[name="埃琳娜"]裡面還剩大量止痛劑。
+[Character(name="avg_135_halo_1#6$1")]
+[name="埃琳娜"]一口氣吞掉這麼多，心臟根本受不了，他會休克的！
+[Character(name="avg_npc_534_1#1$1")]
+[name="拓荒隊成員"]我見過......有人偷偷地把這個吞下去......
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]他們都死了！
+[Character(name="avg_npc_534_1#1$1")]
+[name="拓荒隊成員"]那他們很......幸運。
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]該死，你給我吐出來！
+[name="桑尼"]我按住他的嘴，薩姆，你給我揍他肚子！
+[Dialog]
+[character]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$fightgeneral",volume=1)] 
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[Delay(time=0.51)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$fightgeneral",volume=1)] 
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[Delay(time=0.51)]
+[Character(name="avg_npc_534_1#1$1")]
+[characteraction(name="middle", type="jump" , power=5, times=2, fadetime=0.51,block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="拓荒隊成員"]咳咳......咳咳咳！
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]再加把勁，我看到醫療環的形狀了！
+[Character(name="avg_135_halo_1#6$1")]
+[name="埃琳娜"]奧利維亞，我們一起幫他——
+[Character(name="avg_135_halo_1#12$1")]
+[name="埃琳娜"]......奧利維亞？
+[Character(name="avg_108_silent_1#10$1")]
+[name="赫默"]......喬伊絲。
+[dialog]
+[Character(name="avg_128_plosis_1#8$1")]
+[name="白面鴞"]......
+[dialog]
+[delay(time=0.51)]
+[Character(name="avg_128_plosis_1#1$1")]
+[stopmusic(fadetime=1)]
+[name="白面鴞"]——程式啟動。
+[Character(name="avg_135_halo_1#7$1")]
+[name="埃琳娜"]她醒了？！
+[Character(name="avg_128_plosis_1#5$1")]
+[name="白面鴞"]好黑啊......
+[Character(name="avg_128_plosis_1#1$1")]
+[name="白面鴞"]外面......為什麼這麼黑？
+[Character(name="avg_135_halo_1#12$1")]
+[name="埃琳娜"]黑、黑嗎？可是走廊上的燈都開著啊。
+[name="埃琳娜"]喬伊絲，你的眼睛......是不是出問題了？
+[Character(name="avg_128_plosis_1#1$1")]
+[playMusic(intro="$drift_intro", key="$drift_loop", volume=0.6)]
+[name="白面鴞"]......光。
+[name="白面鴞"]想要光......有光的地方......很溫暖。
+[name="白面鴞"]一起往前走......
+[name="白面鴞"]不害怕......
+[Character(name="avg_135_halo_1#12$1")]
+[name="埃琳娜"]你......你能聽見我們說話嗎？
+[Character(name="avg_108_silent_1#10$1")]
+[name="赫默"]她不能。
+[Character(name="avg_135_halo_1#12$1")]
+[name="埃琳娜"]這是怎麼回事？
+[Character(name="avg_108_silent_1#10$1")]
+[name="赫默"]我也不知道怎麼回事，但這不像喬伊絲說出來的話。
+[Character(name="avg_135_halo_1#12$1")]
+[name="埃琳娜"]呃，她的病......
+[Character(name="avg_108_silent_1#10$1")]
+[name="赫默"]我非常熟悉喬伊絲，她手術前後都不是這個語氣。
+[Character(name="avg_135_halo_1#12$1")]
+[name="埃琳娜"]......確實。
+[Character(name="avg_108_silent_1#3$1")]
+[name="赫默"]你很意外。你並不知道喬伊絲身上發生了什麼。
+[name="赫默"]這說明情況早就脫離了你的控制。
+[Character(name="avg_108_silent_1#10$1")]
+[name="赫默"]埃琳娜，關於這項實驗......你真的該開口了。
+[Character(name="avg_135_halo_1#12$1")]
+[name="埃琳娜"]難道多蘿西真的......
+[Character(name="avg_135_halo_1#3$1")]
+[name="埃琳娜"]無論如何，我都不想看到任何人因為這個實驗受傷，尤其是喬伊絲。
+[name="埃琳娜"]也許你是對的，我們本該一起解決這個問題......
+[dialog]
+[character]
+[name="溫柔的女聲"]沒關係，埃琳娜，不必再猶豫了。
+[name="溫柔的女聲"]是我邀請大家到這裡來的，無論是赫默醫生還是我的拓荒者朋友們，大家都有權知道真相。
+[Character(name="avg_npc_535_1#7$1")]
+[name="桑尼"]你一直在......監控我們？
+[Character(name="avg_npc_535_1#7$1",focus=-1)]
+[name="溫柔的女聲"]我很擔心你們。
+[name="溫柔的女聲"]在你們停下腳步說話的時候，需要有人替你們關上門......
+[Character(name="avg_npc_535_1#7$1")]
+[name="桑尼"]你擋住了那些銀色怪物？
+[Character(name="avg_npc_535_1#7$1",focus=-1)]
+[name="溫柔的女聲"]桑尼，請不要這麼稱呼他們。
+[name="溫柔的女聲"]他們能聽見。
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]......
+[dialog]
+[character]
+[name="溫柔的女聲"]埃琳娜，親愛的助手，我要再拜託你一件事。
+[name="溫柔的女聲"]請把大家帶來見我。
+[name="溫柔的女聲"]你不方便解釋的事情，我可以解釋。
+[name="溫柔的女聲"]而且......你很清楚，我的實驗室是最安全的。
+[dialog]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="29_g3_cottage",screenadapt="showall")]
+[Delay(time=1)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.7)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[character(name="avg_1027_greyy2_1#1$2")]
+[name="格雷伊"]外面已經沒有敵人了。
+[name="格雷伊"]大概是都追著領隊先生還有赫默醫生他們走了......
+[character(name="avg_1027_greyy2_1#6$2")]
+[name="格雷伊"]......通訊依然中斷。
+[name="格雷伊"]應該是針對所有常見通訊設備的干擾，要是Mechanist先生在這裡的話，說不定還能想想辦法......
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[delay(time=2)]
+[character(name="avg_1027_greyy2_1#4$2")]
+[name="格雷伊"]是誰呀？
+[name="格雷伊"]難道是......領隊先生？
+[name="？？？"]別動。
+[name="格雷伊"]這個聲音......
+[name="格雷伊"]瑪麗女士？
+[dialog]
+[character]
+[character(name="avg_npc_527_1#1$1",fadetime=1.5)]
+[delay(time=2)]
+[character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#4$2",focus=1)]
+[name="瑪麗"]你的記性還不錯。
+[character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#6$2",focus=2)]
+[name="格雷伊"]您......您怎麼會在這裡？
+[character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#6$2",focus=1)]
+[name="瑪麗"]那傢伙躲哪去了？
+[character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#5$2",focus=2)]
+[name="格雷伊"]那傢伙......您是指桑尼先生？
+[character(name="avg_npc_527_1#5$1",name2="avg_1027_greyy2_1#5$2",focus=1)]
+[name="瑪麗"]叫他趕緊給我出來。在一個孩子背後躲躲藏藏，這像什麼樣子？！
+[character(name="avg_npc_527_1#5$1",name2="avg_1027_greyy2_1#6$2",focus=2)]
+[name="格雷伊"]那個，女士，我已經長大了......
+[character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#6$2",focus=1)]
+[name="瑪麗"]嗯，剛長大。
+[name="瑪麗"]說吧，孩子，他們都去了哪裡？
+[character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#5$2",focus=2)]
+[name="格雷伊"]拓荒者們就在附近的屋子裡......
+[character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#5$2",focus=1)]
+[name="瑪麗"]你知不知道，當你不好意思的時候，你的耳朵會有反應？
+[character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#4$2",focus=2)]
+[name="格雷伊"]啊......啊？
+[character(name="avg_npc_527_1#2$1",name2="avg_1027_greyy2_1#4$2",focus=1)]
+[name="瑪麗"]騙你的。
+[name="瑪麗"]但你也太好騙了點，對吧？
+[character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#4$2",focus=1)]
+[name="瑪麗"]你最好還是把你瞭解的情況都說出來，這對我們來說都最簡單。
+[name="瑪麗"]否則的話，這供電是你修的，你已經能算作妨礙執法了。
+[name="瑪麗"]要是我沒法把真正的壞蛋帶出去，我也可以選擇帶你走。
+[character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#5$2",focus=2)]
+[name="格雷伊"]不，請不要這麼做......
+[name="格雷伊"]我、我不想給博士添麻煩。
+[character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#5$2",focus=1)]
+[name="瑪麗"]那你還猶豫什麼呢？說吧。
+[character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#6$2",focus=2)]
+[name="格雷伊"]女士，我不確定您會不會相信......
+[name="格雷伊"]我們剛才被一種從未見過的、會變形的銀色物體襲擊了。
+[dialog]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Background(image="29_g4_corridor",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[character(name="avg_npc_535_1#11$1",name2="avg_135_halo_1#8$1",focus=1)]
+[name="桑尼"]所以，她在裡面。
+[character(name="avg_npc_535_1#11$1",name2="avg_135_halo_1#8$1",focus=2)]
+[name="埃琳娜"]是的，這裡就是多蘿西的實驗室，也是整個實驗區的中心。
+[character(name="avg_npc_535_1#11$1",name2="avg_135_halo_1#8$1",focus=1)]
+[name="桑尼"]你確定？
+[Character(name="avg_108_silent_1#10$1")]
+[name="赫默"]桑尼先生，你怎麼了？臉色突然這麼難看......
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]......沒什麼。
+[name="桑尼"]人在靠近真相的時候總是會有些緊張。
+[name="桑尼"]薩姆，記得我跟你說過的話吧？做好準備。
+[Character(name="avg_npc_534_1#1$1")]
+[name="拓荒隊成員"]好的，領隊。
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]烏比卡博士，你能打開這扇門嗎？
+[Character(name="avg_135_halo_1#8$1")]
+[name="埃琳娜"]當然。
+[character(name="avg_108_silent_1#6$1",name2="avg_135_halo_1#8$1",focus=1)]
+[name="赫默"]（埃琳娜。）
+[character(name="avg_108_silent_1#6$1",name2="avg_135_halo_1#8$1",focus=2)]
+[name="埃琳娜"]（嗯？）
+[character(name="avg_108_silent_1#6$1",name2="avg_135_halo_1#8$1",focus=1)]
+[name="赫默"]（拓荒者們的神情不對勁......）
+[character(name="avg_108_silent_1#6$1",name2="avg_135_halo_1#3$1",focus=2)]
+[name="埃琳娜"]（但我們已經走到這裡了啊。）
+[name="埃琳娜"]（奧利維亞，你剛才說服了我。我以為我們都是來解決問題的。）
+[character(name="avg_108_silent_1#6$1",name2="avg_135_halo_1#3$1",focus=1)]
+[name="赫默"]（我不確定......）
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]博士，我們都在等著。
+[character]
+[name="溫柔的女聲"]我也是。
+[name="溫柔的女聲"]各位，請進。
+[dialog]
+[character]
+埃琳娜的手並沒有落到掌紋鎖上。
+但在真正的主人的控制下，實驗室的門還是在所有人面前打開了。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Background(image="29_g5_laboratory",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[Character(name="avg_4048_doroth_1#1$1")]
+[name="多蘿西"]大家好。
+[name="多蘿西"]我就是萊茵生命源石技藝應用科的主任，也是359號實驗基地的負責人。
+[name="多蘿西"]歡迎各位來到我的實驗室。
+[Character(name="avg_npc_535_1#11$1")]
+[stopmusic(fadetime=1)]
+[name="桑尼"]......終於見到你了。
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="桑尼"]薩姆，動手！
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Image]

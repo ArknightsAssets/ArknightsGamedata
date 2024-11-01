@@ -1,0 +1,892 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="showall")]
+[Delay(time=1)]
+[playMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[interlude(maskid = "ui_cutin_mask_vertical", style = 1, size = "400, 720",offset = "-120,0", channel = 2)]
+[interlude(channel = 2, type = 2, name = "bg_barracks", afrom = 0, ato = 1, aduration = 3, sfrom = "1.4,1.4", sto = "1.4,1.4",pfrom = "0,-200", pto = "0,-200", duration = 0,sduration = 0)]
+[delay(time=3)]
+[interlude(channel = 2, type = 1, slot = "m", offset = "-100,-20", name = "cutin_char_14",sfrom = "1,1", sto = "1,1",  aduration = 2,block=false)]
+[interlude(channel = 2, type = 1, slot = "m", pfrom = "-100,-20", pto = "-140,-20", duration = 40)]
+[delay(time=3)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="我有時候會想，如果這片大地真的有一位創造者，那麼他確實足夠殘酷。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="他發明了一種十足可悲的疾病，你能感覺到自己的身體被蠶食，被取代，被這些結晶一點點地填滿，替換，你卻對此無可奈何。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n你能感覺得到，你的“自己”每一天都在被驅趕出這副軀體。",block = true)]
+[Sticker(id="st1", multi = true, text="\n你只能接受。",block = true)]
+[Sticker(id="st1", multi = true, text="\n我們只能接受。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="而有關“礦石病”的這種創想，甚至可稱是這片大地上，比較溫柔的一個。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n“感染者”“非感染者”，九和我說過，對於我們的迫害，與文明史等長。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="那麼……“窮人”與“富豪”呢？“奴隸”與“貴族”呢？", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n“外邦人”和“本邦人”，“殘疾者”和“健全者”，甚至“怪人”和“正常人”……",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="寄生於身體上的疾病確實很可怕，但酷烈的疾病如此之多，礦石病只是其中最顯眼的那個罷了。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n他真正卑劣的發明，是貧窮，是戰爭，是人們永遠無法被填滿的欲望，是攀附於苦難之上的惡意和虛偽，是我們永遠無法跨越的隔閡。",block = true)]
+[Sticker(id="st1", multi = true, text="\n但我們其實知道，這些東西並不由那位造物主發明而來。",block = true)]
+[Sticker(id="st1", multi = true, text="\n人們自己發明了這些。",block = true)]
+[Sticker(id="st1")]
+[Dialog]
+[Delay(time=1)]
+[Sticker(id="st1", multi = true, text="你和我，發明了這些。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[interlude(channel = 2,clear = true)]
+[Background(image="bg_coldforest", screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1065_1#10$1")]
+[delay(time=1)]
+[playMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1065_1#10$1",focus="m")]
+[name="Guard"]好消息，還是壞消息？
+[charslot(slot="m",name="avg_npc_334",focus="m")]
+[name="雷德"]好消息是，那個作坊確實還完整，它藏在森林裡，沒被薩卡茲或者大公爵搶下當作兵營。
+[name="雷德"]壞消息是，裡面有人居住，我們看到了燈光。我靠近了那裡，表明了身份，燈光卻熄滅了。
+[charslot(slot="m",name="avg_npc_1065_1#10$1",focus="m")]
+[name="Guard"]可能是難民，或者逃兵。
+[name="Guard"]熄滅燈光……他們對我們警惕性很高。
+[charslot(slot="m",name="avg_npc_080",focus="m")]
+[name="整合運動戰士"]我們做好準備了，我們的戰士足以應付大多數的情況。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="九"]不，先不著急，熄滅燈光也可能僅僅是出於謹慎，或者害怕。
+[name="九"]別太早下定論。
+[charslot(slot="m",name="avg_npc_1065_1#1$1",focus="m")]
+[name="Guard"]況且，雷德背著那麼長一把刀，任誰都會加倍小心。
+[name="Guard"]我去吧，我去和他們談談。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="九"]你一個人？
+[charslot(slot="m",name="avg_npc_1065_1#1$1",focus="m")]
+[name="Guard"]夠了，人越多，他們越緊張。況且，如果那些人真的有敵意，也不會因為我們去了幾個人而變化。
+[charslot(slot="m",name="avg_npc_1065_1#10$1",focus="m")]
+[name="Guard"]南邊的天空從前幾天開始一直是殷紅色，珀茜瓦爾他們之前還發現過一座奇怪的法陣……
+[charslot(slot="m",name="avg_npc_1065_1#1$1",focus="m")]
+[name="Guard"]我們必須把握時間。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="九"]……這有一定風險。
+[charslot(slot="m",name="avg_npc_1065_1#8$1",focus="m")]
+[name="Guard"]我知道。
+[name="Guard"]但我們從切爾諾伯格走出來了。
+[charslot(slot="m",name="avg_npc_043_1#2",focus="m")]
+[name="九"]好吧。
+[name="九"]我們會在外圍準備好接應，隨時突圍。
+[charslot(slot="m",name="avg_npc_1065_1#1$1",focus="m")]
+[name="Guard"]那邊在被維多利亞的整合運動佔領之前，是個私酒廠，對吧？
+[charslot(slot="m",name="avg_npc_1065_1#8$1",focus="m")]
+[name="Guard"]我已經聞到酒精的味道了。羅曼內奇會喜歡的。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="43_g10_breweryinforest", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="這曾經確實是一座釀酒廠。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n為了逃避昂貴的領主稅，這樣的私酒廠在維多利亞並不算罕見，這些設備也確實能部分用於最粗劣的感染者藥物的配製。",block = true)]
+[Sticker(id="st1", multi = true, text="\n無非是把幾種草藥浸泡，混合，蒸餾，至於提純……別想了。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="我開始佩服那些維多利亞的整合運動了。他們找到這個地方，還把這個地方一度改造成了個藥物批發中心。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n他們是聽說了什麼開始自稱整合運動，又在什麼時候建立了這一切的？我都不確定。",block = true)]
+[Sticker(id="st1", multi = true, text="\n我只知道，這座建築現在只是個爬滿藤蔓的老房子。",block = true)]
+[Sticker(id="st1", multi = true, text="\n周圍沒有一點動靜，屋子裡也沒有亮起燈光。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="有人影從窗口一閃而過，雷德說的沒錯，這裡的確有人，而且已經發現我了。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n我拍了拍衣服上的塵土，整理了下頭髮，盡量讓自己顯得精神一點。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Dialog]
+[PlaySound(key="$doorknockquite", volume=0.6)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1065_1#1$1",focus="m")]
+[name="Guard"]你好，有人嗎？
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="無人回應。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="avg_npc_1065_1#1$1",focus="m")]
+[name="Guard"]你好，我叫Guard，我們的隊伍就在附近，你們之前已經發現他們了，對吧？
+[name="Guard"]別緊張，我們沒有敵意。
+[name="Guard"]這個作坊曾經是維多利亞整合運動的製藥工坊。
+[name="Guard"]這裡曾經給很多倫蒂尼姆附近的感染者帶去了希望，這裡的藥物甚至在倫蒂尼姆那些工業區下水道裡的工人們之間流通。
+[name="Guard"]不論你們是誰，你們都知道，這場戰爭在催生大量的感染者，比以往多得多。
+[name="Guard"]我們想要重新運轉這裡，這能幫助到很多人。
+[multiline(name="Guard")]既然你們已經佔據了這裡……
+[charslot(slot="m",name="avg_npc_1065_1#8$1",focus="m")]
+[multiline(name="Guard")]我們需要你們的協助。
+[name="Guard"]我們可以提供藥物，或者其他物資，這是一場合理的交易。
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="依然無人回應。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_doorknob")]
+[playsound(key="$d_avg_scabbard",volume=0.6,delay=0.9)]
+[Delay(time=1)]
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="門把手在轉動，我握住了劍柄。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n在我們之前的經歷中，很可能接下來會迎面遞過來一把草叉，或一柄斧頭。我甚至已經對這種境遇起不了憤怒的情緒。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Dialog]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Delay(time=1)]
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="門開了。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Dialog]
+[charslot(slot="m",name="char_1011_wizard_1",duration=1)]
+[Delay(time=1.5)]
+[playMusic(intro="$darkness02_intro", key="$darkness02_loop", volume=0.6)]
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="整合運動？"]整合運動，嗯？
+[charslot(slot="m",name="avg_npc_1065_1#4$1",focus="m")]
+[name="Guard"]這身衣服……你是？
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="整合運動？"]梅斯。
+[name="梅斯"]進來吧。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="43_g12_breweryinforest_inside", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_inside",loop=true, channel="crwd1", volume=0.4)]
+[stopSound(channel="crwd1", fadetime=4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_416_1#1$1",duration=0.7)]
+[charslot(slot="r",name="avg_npc_418_1#1$1",duration=0.7)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot="l",name="avg_npc_002",duration=1)]
+[charslot(slot="r",name="avg_npc_659_1#1$1",duration=1)]
+[Delay(time=2)]
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="藏在這裡的人比我想像的多，組成也很複雜。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n能明顯地看出，有些聚在一起的人是感染者，另一些靠在牆邊的人，大概只是從城裡逃出來的普通難民。",block = true)]
+[Sticker(id="st1", multi = true, text="\n所有人都沉默地看著這邊，看著我和身前這個穿著整合運動制服的女人。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Dialog]
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]別看了，讓開。
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="人群向後退卻，梅斯帶著我穿行在他們的目光之間。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n這些人……很恐懼。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="avg_npc_1065_1#1$1",focus="m")]
+[name="Guard"]你是這裡的負責人？
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]這裡歸我管。
+[name="梅斯"]我們找個沒人的地方。
+[Dialog]
+[PlaySound(key="$d_avg_walk_stage")]
+[charslot(duration=1)]
+[Delay(time=2)]
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="……維多利亞的整合運動，珀茜瓦爾也是維多利亞的整合運動。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n我們的組織確實沒有“審批手續”，我們的名聲傳開之後，整合運動的旗號不僅僅在一個地方被舉起。",block = true)]
+[Sticker(id="st1", multi = true, text="\n這也意味著，確實曾有一些僅以報復為目的的暴行，打著整合運動的名號在各處發生。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="就像曾在切爾諾伯格發生的那些事。我開始看著這位……梅斯。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n她似乎有點緊張，她的走路姿勢很不自然。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="43_g12_breweryinforest_inside", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="這裡是這間作坊的最深處。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="l",name="avg_npc_1065_1#1$1",focus="r")]
+[charslot(slot="r",name="char_1011_wizard_1",focus="r")]
+[name="梅斯"]就這裡吧，平常沒人會來這。
+[name="梅斯"]所以，你是整合運動，貨真價實的整合運動，你們從北方來？
+[name="梅斯"]……烏薩斯？
+[charslot(slot="l",name="avg_npc_1065_1#1$1",focus="l")]
+[name="Guard"]是的，烏薩斯，哥倫比亞，現在我們到了維多利亞。
+[charslot(slot="r",name="char_1011_wizard_1",focus="r")]
+[name="梅斯"]不近。
+[charslot(slot="l",name="avg_npc_1065_1#10$1",focus="l")]
+[name="Guard"]你的這身衣服是……
+[charslot(slot="r",name="char_1011_wizard_1",focus="r")]
+[name="梅斯"]我……自己用床單改的。
+[name="梅斯"]我以前遇到過一批烏薩斯人，他們說你們就是這副打扮。我應該沒弄錯標誌。
+[charslot(slot="l",name="avg_npc_1065_1#8$1",focus="l")]
+[name="Guard"]似乎有點大。
+[charslot(slot="r",name="char_1011_wizard_1",focus="r")]
+[name="梅斯"]……你是來嘲笑我的手藝的？
+[charslot(slot="l",name="avg_npc_1065_1#1$1",focus="l")]
+[name="Guard"]所以你才管住了這裡，畢竟你穿了身兇名在外的“整合運動”的衣服。
+[charslot(slot="r",name="char_1011_wizard_1",focus="r")]
+[name="梅斯"]直入主題吧，我的時間不多。
+[name="梅斯"]你們想重新運轉這間作坊？想用這些罐子製藥？
+[charslot(slot="l",name="avg_npc_1065_1#1$1",focus="l")]
+[name="Guard"]是的，如果這裡重新被整合運動掌控的消息能在周圍傳開……
+[charslot(slot="r",name="char_1011_wizard_1",focus="r")]
+[name="梅斯"]不行。
+[name="梅斯"]這裡的情況比你們想像的複雜，這裡什麼人都有。
+[name="梅斯"]每天感染者和非感染者打的架就已經鬧得我心力交瘁了，幫感染者製藥？你乾脆直接炸了這裡。
+[name="梅斯"]他們之間的平衡很難維持。
+[charslot(slot="l",name="avg_npc_1065_1#5$1",focus="l")]
+[name="Guard"]……
+[charslot(slot="l",name="avg_npc_1065_1#1$1",focus="l")]
+[name="Guard"]你是個整合運動，對吧？起碼自稱是個整合運動。
+[charslot(slot="r",name="char_1011_wizard_1",focus="r")]
+[name="梅斯"]大概吧。
+[charslot(slot="l",name="avg_npc_1065_1#10$1",focus="l")]
+[name="Guard"]你們遇到了什麼？
+[charslot(slot="r",name="char_1011_wizard_1",focus="r")]
+[name="梅斯"]還能是什麼，無家可歸的感染者，戰爭難民，失去了一切的人，我們總需要一個能夠遮風避雨的屋檐。
+[name="梅斯"]我和另外幾個感染者是最先來的。我們發現了這裡有間破房子。
+[name="梅斯"]後來人越來越多，也來了些……很不老實的傢伙。現在，我們不收外人。
+[name="梅斯"]能看到你們，整合運動的同伴，我很高興。但我不想讓這裡的人懷疑。
+[charslot(slot="l",name="avg_npc_1065_1#10$1",focus="l")]
+[name="Guard"]懷疑？
+[charslot(slot="r",name="char_1011_wizard_1",focus="r")]
+[name="梅斯"]懷疑現在我和你正在密謀清理掉我們之中的那些非感染者。
+[name="梅斯"]不管是不是你騙我們開門的藉口，我們可以交換物資。但在此之外的……免談。
+[charslot(slot="l",name="avg_npc_1065_1#1$1",focus="l")]
+[name="Guard"]……這裡還有很多非感染者，那麼我理解你的想法。
+[name="Guard"]但我仍然建議你能和這裡的人們商量一下再做決定，只要這裡的藥物生產能夠重啟，我們可以達成長期的——
+[charslot(slot="r",name="char_1011_wizard_1",focus="r")]
+[name="梅斯"]不，不用了。
+[name="梅斯"]現在，離開吧。見到你很高興。
+[name="梅斯"]你們要打下這裡，也可以。只要你們打得下來。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="我看不清她面具背後的表情。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n也許這個人只是在虛張聲勢。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="l",name="avg_npc_1065_1#5$1",focus="l")]
+[name="Guard"]我知道了。
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="但我仍舊轉過身，準備先離開這裡。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]喂，整合運動！
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_1065_1#1$1",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_1065_1#1$1",focus="m")]
+[name="Guard"]怎麼了？
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]塔露拉在你們的隊伍裡？
+[charslot(slot="m",name="avg_npc_1065_1#1$1",focus="m")]
+[name="Guard"]……是的。
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="又是一個塔露拉的崇拜者？", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n她確實堪稱我們的旗幟，如今這也是她的牢籠。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]我聽說，她有一座移動城市。
+[name="梅斯"]她的移動城市裡，只接受感染者嗎？
+[name="梅斯"]……
+[name="梅斯"]沒感染的人，能去那裡嗎？
+[name="梅斯"]我聽整……以前路過的商隊說起過，那裡是個好地方。
+[name="梅斯"]我——我們這裡，有一些境況不太好的人，出身荒野的流民，再無親人的孤兒，說起整合運動的城市，大家都眉飛色舞。
+[name="梅斯"]……可是，你們只和感染者站在一起，對吧？
+[charslot(slot="m",name="avg_npc_1065_1#10$1",focus="m")]
+[name="Guard"]……城市？
+[name="Guard"]可能有一些誤會——
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot]
+[Delay(time=0.2)]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(slot="m",name="avg_npc_416_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="恐懼的難民"]梅斯！你到底知不知道他們幹的事？
+[name="恐懼的難民"]是不是你讓他們幹的！你瘋了？！
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]你在說什麼？
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="恐懼的難民"]他們——那幫蠢貨！
+[name="恐懼的難民"]那個人也許是個正在這裡打仗的士兵！或者是個什麼會惹來麻煩的大人物！
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="恐懼的難民"]也許，兩個小時之後，就會有一大批武裝到牙齒的薩卡茲把我們都殺光！
+[charslot(slot="m",name="avg_npc_1065_1#10$1",focus="m")]
+[playMusic(key="$formal_loop", volume=0.6)]
+[name="Guard"]到底怎麼了？
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="恐懼的難民"]你……你也是個和梅斯一樣的整合運動？
+[name="恐懼的難民"]都是你，你們的人——
+[name="恐懼的難民"]那些感染者，在倉庫裡打死了一個薩卡茲！
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]——
+[name="梅斯"]該死！
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="恐懼的難民"]他……他也是感染者，會炸，對吧？！
+[name="恐懼的難民"]我們得把那傢伙處理掉！
+[charslot(slot="m",name="avg_npc_1065_1#10$1",focus="m")]
+[name="Guard"]……
+[charslot(slot="m",name="avg_npc_1065_1#10$1",focus="m")]
+[name="Guard"]我需要去看看情況。
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]那，快點！你應該能幫得上忙！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_towerinside", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="地上，躺著一具薩卡茲屍體。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n……我認識這個傢伙。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="那個騎著摩托車的薩卡茲，到處倒賣死人玩意的流浪者。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n他是被活活打死的，四肢呈現出不自然的扭曲。",block = true)]
+[Sticker(id="st1", multi = true, text="\n他的雙手被鐵絲牢牢綁住，他應該試圖反抗過，手腕上已經鮮血淋漓。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="周圍的人，並不亢奮，甚至有些沉默。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n冰冷將我包裹，令人一時失聲。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="avg_npc_421_1#1$1",focus="m")]
+[name="冷漠的感染者"]他……他死了。薩卡茲也沒有很強壯。
+[name="冷漠的感染者"]給你……他身上的藥，和硬麵包。
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="行兇的感染者情況並不好，我看得出來。他冷漠地掰開一塊麵包，遞給旁人。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="avg_npc_002",focus="m")]
+[name="憤怒的感染者"]活該。
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="有人吐了一口唾沫。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n也有人發現了我，朝我走來，嘴裡還塞著半塊從死人身上搶來的麵包。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="avg_npc_002",focus="m")]
+[name="憤怒的感染者"]你！你是整合運動，對不對？
+[name="憤怒的感染者"]之前梅斯一直不告訴我們加入你們的辦法！
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="我沉默了許久，才終於從情緒中緩過神來。我摁下他激動的手，他的手上有源石結晶。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="avg_npc_1065_1#10$1",focus="m")]
+[name="Guard"]你們為什麼打他？
+[name="Guard"]他脅迫了你們嗎？他試圖攻擊你們嗎？
+[charslot(slot="m",name="avg_npc_002",focus="m")]
+[name="憤怒的感染者"]哦，為什麼。
+[Dialog]
+[playsound(key="$d_avg_chairrub",volume=0.8)]
+[charslot(duration=0.5)]
+[Delay(time=1)]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="他突然間就像失去了興致一樣，搖擺地走到一旁的木箱邊，坐下。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="avg_npc_002",focus="m")]
+[name="憤怒的感染者"]薩卡茲燒我們的農場，凌辱我的女兒的時候，問過為什麼嗎？
+[charslot(slot="m",name="avg_npc_1065_1#10$1",focus="m")]
+[name="Guard"]……他不是軍人，他不是什麼從卡茲戴爾來的殺人魔，他確實就是個在這片戰場上倒賣東西的流浪者。
+[name="Guard"]你們……甚至接受過他的幫助。
+[charslot(slot="m",name="avg_npc_421_1#1$1",focus="m")]
+[name="冷漠的感染者"]喂，怎麼回事？他也是整合運動？
+[charslot(slot="m",name="avg_npc_1065_1#1$1",focus="m")]
+[name="Guard"]我“是”整合運動。
+[name="Guard"]……那你們應該知道整合運動為什麼而戰。
+[charslot(slot="m",name="avg_npc_421_1#1$1",focus="m")]
+[name="冷漠的感染者"]當然，你們整合運動是為了幫所有感染者！
+[charslot(slot="m",name="avg_npc_1065_1#5$1",focus="m")]
+[name="Guard"]這個被你們折磨至死的人，這個還沒來得及給自己起名字的人……
+[name="Guard"]他難道不是個感染者嗎？
+[charslot(slot="m",name="avg_npc_002",focus="m")]
+[name="憤怒的感染者"]可他是個薩卡茲。
+[charslot(slot="m",name="avg_npc_1065_1#5$1",focus="m")]
+[name="Guard"]……
+[Dialog]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]	
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[Subtitle(text="“藥物和同情無法真正地幫助感染者，但是團結與力量可以。”", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]	
+[delay(time=1)]
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="團結……團結。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n感染者沒有祖國，你我共享一樣的命運，一樣的悲哀。",block = true)]
+[Sticker(id="st1", multi = true, text="\n這些人不明白，這些人……從沒想過。",block = true)]
+[Sticker(id="st1", multi = true, text="\n那，我們呢？",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="隊伍裡的烏薩斯老兵，會對卡西米爾的感染者溫柔相待嗎？薩科塔感染者能和薩卡茲共處嗎？", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n即使在羅德島，我也……",block = true)]
+[Sticker(id="st1", multi = true, text="\n……",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="在那之後呢？假如有一天，我們成功了，烏薩斯的皇帝承諾不再屠殺感染者，願意給我們土地和城市。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n在那個美好到不可能實現的未來……",block = true)]
+[Sticker(id="st1")]
+[stopmusic(fadetime=1)]
+[Sticker(id="st1", multi = true, text="整合運動，感染者們，是不是也會開始自相殘殺？", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n然後分裂，然後毀滅，再一次給他們排擠我們的機會？",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Dialog]
+[PlayMusic(intro="$tense_intro", key="$tense_loop", volume=0.6)]
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]喂，Guard，他的屍體……在發光，他快要崩解了！
+[charslot(slot="m",name="avg_npc_1065_1#10$1",focus="m")]
+[name="Guard"]——
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="我沒想到他之前的病情已經這麼嚴重了。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n還是說，他真的沒給自己留一點藥，就為了多存點錢，為了一個，不屬於他的未來？",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="avg_npc_1065_1#3$1",focus="m")]
+[name="Guard"]離開這裡！立刻！
+[charslot(slot="m",name="avg_npc_421_1#1$1",focus="m")]
+[name="冷漠的感染者"]跑——跑！
+[Dialog]
+[PlaySound(key="$d_avg_crowdrun",volume=0.8)] 
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_1065_1#6$1",focus="m")]
+[name="Guard"]梅斯！你們這裡怎麼處理感染者？！
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]那個房間，那個最裡面的！
+[name="梅斯"]快，我們得把他扔進去！
+[name="梅斯"]該死，該死……我得後退一點，防護……防護，口鼻，還有傷口——
+[Dialog]
+[PlaySound(key="$d_gen_dooropen",volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.5)]
+[Sticker(id="st1", multi = true, text="我和梅斯抬著薩卡茲的屍體，踹開了那扇最裡面的門。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Dialog]
+[PlaySound(key="$d_avg_medicalbeep", channel="a", loop=true)]
+[Sticker(id="st1", multi = true, text="打開門，我隨身的源石環境監測儀響個不停，我從沒聽見過這麼密集的警報聲。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n這裡……",block = true)]
+[Sticker(id="st1", multi = true, text="\n這裡到底已經處理過多少感染者？",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="房間裡的每一個角落，都鋪滿了厚厚的源石粉塵，已經有晶簇在房間的角落裡形成。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n“危險”已經不足以形容事態的緊迫。",block = true)]
+[Sticker(id="st1", multi = true, text="\n我不知道這裡什麼時候會到達極限，但……再往裡塞一個正在崩解的感染者，絕對不是什麼好主意。",block = true)]
+[Sticker(id="st1")]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[stopsound(channel="a", fadetime=0.5)]
+[charslot]
+[Background(image="bg_towerinside", screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1065_1#3$1",focus="m")]
+[name="Guard"]不行，走，走！
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]你幹什麼？！你怎麼把屍體——
+[charslot(slot="m",name="avg_npc_1065_1#3$1",focus="m")]
+[name="Guard"]這裡的源石沉積太嚴重了，這裡到底處理過多少感染者？
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]我……以前——那些年都是在這間房間！
+[charslot(slot="m",name="avg_npc_1065_1#3$1",focus="m")]
+[name="Guard"]源石粉塵已經揚起來了，這裡已經沒辦法再承受一次這麼猛烈的崩解了！
+[name="Guard"]立刻讓所有人離開這裡，立刻！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="43_g12_breweryinforest_inside", screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_416_1#1$1")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="恐懼的難民"]……什、什麼？
+[charslot(slot="m",name="avg_npc_1065_1#3$1",focus="m")]
+[name="Guard"]你聽不懂嗎？這裡的源石環境已經極端不穩定，隨時有引發爆炸的可能！
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="恐懼的難民"]離開？去哪？
+[name="恐懼的難民"]外面都是——
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]別廢話！
+[name="梅斯"]這些人可是真正的整合運動，他們有一座*維多利亞粗口*的移動城市！
+[charslot(slot="m",name="avg_npc_1065_1#3$1",focus="m")]
+[name="Guard"]跑起來，讓所有的人都跑起來！
+[name="Guard"]我已經聯絡了我們在外圍的隊伍，他們會接收這裡的人！
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]嘖，這裡的蒸餾器裡還有殘餘的烈酒，如果爆炸，這裡會被燒得一乾二淨！
+[name="梅斯"]那個東西——
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.7)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1065_1#10$1",focus="m")]
+[name="Guard"]喂，梅斯，你要去哪裡？
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=1)]
+[delay(time=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="43_g12_breweryinforest_inside", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="整合運動打扮的女人正在吃力地操作著工坊最深處的機器。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]你來幹什麼？
+[name="梅斯"]我正在——唔——幫我扳一下那個操縱桿——
+[charslot(slot="m",name="avg_npc_1065_1#6$1",focus="m")]
+[name="Guard"]你是這個作坊的成員？但你不是感染者！
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]謝謝你沒有拆穿我！唔——再用力！
+[charslot(slot="m",name="avg_npc_1065_1#6$1",focus="m")]
+[name="Guard"]你這件整合運動的衣服是哪來的？
+[name="Guard"]這裡曾經是整合運動的據點，這裡死過很多人——我的耐心不多！
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]我——我什麼都沒做！
+[charslot(slot="m",name="avg_npc_1065_1#6$1",focus="m")]
+[name="Guard"]每個人都這麼說。
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]我以前是……這裡的操作工，那些整合運動佔領了酒廠，他們要人為他們操作這些機器！
+[name="梅斯"]我……只是，那些領主雇來的傭兵突襲了這裡，我逃了……我確實不是感染者，我為什麼要和那些整合運動一起死在這裡！
+[charslot(slot="m",name="avg_npc_1065_1#6$1",focus="m")]
+[name="Guard"]那你為什麼回來？
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]……
+[name="梅斯"]為什麼要回來？
+[playMusic(intro="$drift_intro", key="$drift_loop", volume=0.6)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="梅斯"]因為我無處可去！該死，還能有什麼原因，淪落到在私酒廠裡賣命的人，還能有什麼地方可以去？！
+[name="梅斯"]我沒感染，可我有的時候，寧願自己是個整合運動！他們，他們起碼有可以反抗的東西，他們起碼有個目標！
+[name="梅斯"]再用力——這操縱桿，卡住了！
+[name="梅斯"]先把這玩意——卸料口的開關打開，曾經在這裡的那些整合運動，他們留在這裡的原料還剩下不少！
+[name="梅斯"]那醫生告訴過我，這是他們嘗試了很久的，最廉價的止痛劑配方，只能止痛，但也夠了，對吧？
+[name="梅斯"]用這個……我能換個真正的整合運動資格嗎？
+[name="梅斯"]我想……我也許可以在你們的移動城市裡，分間房子？
+[charslot(slot="m",name="avg_npc_1065_1#5$1",focus="m")]
+[name="Guard"]……
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="移動城市。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Dialog]
+[PlaySound(key="$d_avg_flapradio", volume=1)]
+[PlaySound(key="$d_avg_drone", volume=1,delay=1)]
+[CameraShake(duration=1, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.5)]
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="我嘆了口氣，狠狠飛起一腳。這一腳震得我生疼。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="拉杆終於鬆動。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n機器的運轉聲傳來。巨大的貨斗倒向一邊，從中紛紛揚揚飛下的，是無數……花瓣。",block = true)]
+[Sticker(id="st1", multi = true, text="\n她慌忙地撿拾著地上散落的這些草藥，小心地收進懷中。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="如果不看我現在正身處的地方，這也許是個……美好的場景。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n就像那座城市。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Dialog]
+[charslot(slot="m",name="avg_npc_1065_1#1$1",focus="m")]
+[name="Guard"]我們並沒有移動城市。
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]可是，那些整合運動都說——
+[name="梅斯"]可是你們……可……
+[name="梅斯"]……哈哈……也是……
+[name="梅斯"]那可是……移動城市，一座城市，我們……
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="無家可歸的人，無處可去的人，這片大地上的感染者正越來越多。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n並不是這種疾病在越發猖獗，只是這片大地正越發殘酷。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="大人物們不厭其煩地歌頌我們身處的“現代”，這是前所未有的時代，高速戰艦，移動城市，城際網路，工業區——", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n我們的時代多麼燦爛——",block = true)]
+[Sticker(id="st1", multi = true, text="\n我們的時代多麼可悲。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="“站在一起”。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n感染者們，就能自然地站在一起嗎？",block = true)]
+[Sticker(id="st1", multi = true, text="\n我們和誰站在一起，只是感染者嗎？",block = true)]
+[Sticker(id="st1", multi = true, text="\n那座……我們理想中的移動城市，有他們的容身之所嗎？",block = true)]
+[Sticker(id="st1", multi = true, text="\n一座移動城市，足以容納所有的一切嗎？",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Dialog]
+[delay(time=1)]
+[PlaySound(key="$d_avg_clothmovementsp",volume=0.8)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1065_1#1$1",focus="m")]
+[name="Guard"]帶好這些草藥，我們馬上離開。
+[name="Guard"]你其實不用申請加入整合運動，只要你願意和我們並肩作戰，你就已經是了。
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]可……我不是感染者。
+[charslot(slot="m",name="avg_npc_1065_1#1$1",focus="m")]
+[name="Guard"]想要反抗的人也未必只有感染者。
+[name="Guard"]還有，我需要你幫助我指認那些殺了那個薩卡茲的人。
+[charslot(slot="m",name="avg_npc_1065_1#6$1",focus="m")]
+[name="Guard"]他們需要受到懲罰。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_sp_ballista")]
+[playsound(key="$d_gen_explo_n",volume=0.8,delay=0.6)]
+[CameraShake(duration=1.5, xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1065_1#3$1",focus="m")]
+[name="Guard"]跑起來，快點！
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=1)]
+[delay(time=2)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="43_g12_breweryinforest_inside", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[bgeffect(name="$eb_dust_01",layer=1)]
+[PlayMusic(intro="$calamity_intro", key="$calamity_loop", volume=0.6)]
+[PlaySound(key="$d_avg_erthshkng",loop=true,channel="bgs",volume=1)]
+[CameraShake(duration=-1, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=false, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="我們快速穿行在這些巨大的罐體之間，有的地方已經開始崩塌，空氣中瀰漫著刺鼻的酒味，已經有煙霧從遠處飄來。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n這個作坊，維多利亞整合運動的起點，很快就會熊熊燃燒。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="avg_npc_1065_1#3$1",focus="m")]
+[name="Guard"]前面就是出口了，加快腳步。
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="猛烈的熱浪襲來，梅斯沒有站穩，懷抱的草藥被熱風高高捲起。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot(slot="m",name="char_1011_wizard_1",focus="m")]
+[name="梅斯"]啊！我的——
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_mechadown",volume=0.7)]
+[PlaySound(key="$d_avg_dropspanner",volume=0.9,delay=0.5)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[Dialog]
+[bgeffect]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[StopSound(channel="bgs", fadetime=2)]
+[CameraShake(duration=0.1, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="我們的頭頂，傳來了金屬的斷裂聲。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1")]
+[Dialog]
+[delay(time=1)]
+[Sticker(id="st1", multi = true, text="唉，好吧，我推開她。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n然後，竭盡全力躍起，將那些花瓣歸入掌中。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Image(image="43_i02",screenadapt="coverall",fadetime=0,block=true)]
+[Background(image="bg_light",screenadapt="coverall")]
+[delay(time=1)]
+[PlaySound(key="$p_skill_explocar", volume=0.5)]
+[playMusic(intro="$distressed_intro", key="$distressed_loop", volume=0.6)]
+[CameraShake(duration=4, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=2)]
+[charslot]
+[dialog]
+[Sticker(id="st1", multi = true, text="崩塌。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n好熱。",block = true)]
+[Sticker(id="st1", multi = true, text="\n太陽在燃燒，我在燃燒。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="那裡是出口嗎？", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n還差一點，只有幾步了。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="可他們還在我的背後看著，那些目光……他們在審視我嗎？還是在審視我這場微不足道的死亡？", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n他們究竟，對我懷有怎樣的期待？",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="我沒辦法去想……我沒辦法不去想。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n也許，我辜負了他們的死，他們應該希望我的終點更有意義。",block = true)]
+[Sticker(id="st1", multi = true, text="\n比如，我不知道，倒在聖駿堡皇宮外的階梯上？反正不是在這裡，為一個剛認識的非感染者而死，手中還握著一些破碎的花瓣。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="在這裡結束，我怎麼能面對他們。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n可我始終需要面對。",block = true)]
+[Sticker(id="st1")]
+[Dialog]
+[Blocker(a=1, r=0.8, g=0.8, b=0.8, fadetime=3, block=true)]
+[image]
+[delay(time=1)]
+[Blocker(a=0, r=0.8, g=0.8, b=0.8, fadetime=1, block=true)]
+[delay(time=1)]
+[name="Guard"]拿去……收好。
+[name="Guard"]出口就在前面，這次別再撒了，有些花瓣可能……被我捏碎了，把它們給一個叫九的人，她有辦法。
+[name="Guard"]別再猶豫了，快點。
+[Dialog]
+[Blocker(a=1, r=0.8, g=0.8, b=0.8, fadetime=1.5, block=true)]
+[charslot]
+[image]
+[Image(image="43_i02",screenadapt="coverall",fadetime=0,block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0.8, g=0.8, b=0.8, fadetime=3, block=true)]
+[delay(time=1)]
+[charslot]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="好熱。好燙。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n我想起了我第一次知道自己得了礦石病的那個下午。",block = true)]
+[Sticker(id="st1", multi = true, text="\n我到底是因為什麼而感染？我至今都沒弄清楚。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="也許是那次在河水中摔倒，劃破我腿的不是礫石，而是活性源石結晶。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n也許是那次在礦坑裡，吸入的那些粉塵。",block = true)]
+[Sticker(id="st1", multi = true, text="\n也許是工廠裡那些工業廢料，也許。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[delay(time=0.5)]
+[Background(image="bg_black",screenadapt="coverall")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=0.5)]
+[Sticker(id="st1", multi = true, text="只是，我回到家的時候，滿屋子的煙味還沒散去，我的行李已經被整理好，擺在了平常大家一起吃飯的桌子上。", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n我找到了一片鹽鹼湖，可是運氣不好，可能是我選錯了地方，那次沒有船。",block = true)]
+[Sticker(id="st1", multi = true, text="\n我至今都感謝，那個在我坐在湖邊時，過來和我搭話的羅德島幹員。",block = true)]
+[Sticker(id="st1")]
+[Dialog]
+[delay(time=2)]
+[PlaySound(key="$d_avg_devicebeep", volume=1)]
+[delay(time=1)]
+[name="Guard"]九，雷德，珀茜瓦爾，塔露拉，呃哈……
+[name="Guard"]我不確定你們找到我的時候，我有沒有被火燒成灰，但願這個錄音機能留得下來。
+[name="Guard"]你們說——
+[name="Guard"]我們為所有的“感染者”而戰嗎？
+[name="Guard"]哪怕他們是無恥者，是上位者，甚至……是帝王？
+[name="Guard"]或者說……我們所團結的人，我們希望與之並肩披荊斬棘的人——
+[name="Guard"]只有感染者嗎？
+[name="Guard"]只有……他們嗎？
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

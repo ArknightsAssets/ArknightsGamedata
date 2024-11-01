@@ -1,0 +1,64 @@
+[HEADER(actId="act1sandbox", npcId="trap_433_sandsdr")] 
+[character(name="avg_npc_801_1", offsetX="100", offsetY="100")]
+[name="“沙卒”"]各位就是老伊辛口中的那個部落吧？
+[name="“沙卒”"]能為各位提供幫助，是我的榮幸。
+[character(name="char_empty_b", offsetX="100", offsetY="100")]
+[name=""]竟然......這麼輕易地就見到了“沙卒”本人？
+[name=""]那位老人看來真的沒有騙我們。
+[name=""]只是，就這樣見到了黑市的幕後人，還是有些......
+[character(name="avg_npc_801_1", offsetX="100", offsetY="100")]
+[name="“沙卒”"]啊，不用緊張。沁礁黑市只是一個能夠為各位提供物資管道的地方，我也只是一個生意人。
+[name="“沙卒”"]各位付出金錢，得到幫助，而我也能從其中得到一部分的利益。
+[name="“沙卒”"]這就是我很樂意與各位接觸的原因——我與各位，有很多交易可做。
+[name="“沙卒”"]各位也不需要著急，這只不過是我們第一次見面。
+[Decision(option1="（收下）", value1="1.1")]
+[predicate(references="1.1")]
+[AddItem(itemId="sandbox_0_building_8", itemCount="4")]
+[character(name="char_empty_b", offsetX="100", offsetY="100")]
+[name=""]【獲得了4個都市風壁障Ⅰ】
+[character(name="avg_npc_801_1", offsetX="100", offsetY="100")]
+[name="“沙卒”"]——只是見面禮罷了。
+[name="“沙卒”"]不過各位看起來，似乎還有什麼想問？
+[name="“沙卒”"]請儘管問吧，我不希望給各位留有太多的疑惑。
+[Decision(option1="您為什麼選了我們？", value1="2.1")]
+[predicate(references="2.1")]
+[character(name="avg_npc_801_1", offsetX="100", offsetY="100")]
+[name="“沙卒”"]......很直接的提問。
+[name="“沙卒”"]如果我說，是很早就盯上了你們呢？
+[name="“沙卒”"]......
+[name="“沙卒”"]我看到各位之中已經有人緊張了起來——把武器放下吧，你們還沒有能在這裡與我發生衝突的資本。
+[name="“沙卒”"]沁礁黑市，自然是為了生意。
+[name="“沙卒”"]一個能在黃沙中立足的部落，當然值得我的注意——我能看到各位在以後能為我帶來的利益。
+[name="“沙卒”"]這樣的回答，各位滿意嗎？
+[Decision(option1="滿意。", value1="3.1", option2="不滿意。", value2="3.2")]
+[predicate(references="3.1")]
+[character(name="avg_npc_801_1", offsetX="100", offsetY="100")]
+[name="“沙卒”"]那，祝我們合作愉快。
+[character(name="avg_npc_801_1", offsetX="100", offsetY="100")]
+[name="“沙卒”"]來吧，趁我還有些時間，告訴我，各位回去後要做的事，已經有目標了嗎？
+[name="“沙卒”"]以及在此之前，我還想再提供一條小小的情報......
+[name="“沙卒”"]王酋大人對發生在他土地上的一切事情都無比感興趣，各位也不例外，那條小溪就是最好的證明。
+[name="“沙卒”"]這和我的個人利益無關，只是一個對要在這裡生活的人們的善意勸告。
+[SetConditionProgress(conditionKey="route_main", itemCount="6")]
+[withdraw(charId="trap_433_sandsdr")]
+[End]
+[predicate(references="3.2")]
+[character(name="avg_npc_801_1", offsetX="100", offsetY="100")]
+[name="“沙卒”"]唔。
+[name="“沙卒”"]只是一個新生的部落而已，各位這樣我倒是有些感興趣了。
+[name="“沙卒”"]雖然你們的人數並不多，但生命總是珍貴的。除此之外，你們還有什麼可以作為與我交易的籌碼？
+[Decision(option1="不甘心。", value1="4.1")]
+[predicate(references="4.1")]
+[character(name="avg_npc_801_1", offsetX="100", offsetY="100")]
+[name="“沙卒”"]只是一個剛剛在此安定下來的部落，只為了一條小溪旁的貧瘠土地，你們就遭到了王酋的警告......
+[name="“沙卒”"]為此而不甘心啊。
+[name="“沙卒”"]作為第一次見面的自我介紹，各位已經做得很好了。
+[name="“沙卒”"]那麼，我很樂意為各位提供幫助。
+[character(name="avg_npc_801_1", offsetX="100", offsetY="100")]
+[name="“沙卒”"]來吧，趁我還有些時間，告訴我，各位回去後要做的事，已經有目標了嗎？
+[name="“沙卒”"]以及在此之前，我還想再提供一條小小的情報......
+[name="“沙卒”"]王酋大人對發生在他土地上的一切事情都無比感興趣，各位也不例外，那條小溪就是最好的證明。
+[name="“沙卒”"]這和我的個人利益無關，只是一個對要在這裡生活的人們的善意勸告。
+[SetConditionProgress(conditionKey="route_main", itemCount="6")]
+[withdraw(charId="trap_433_sandsdr")]
+[End]

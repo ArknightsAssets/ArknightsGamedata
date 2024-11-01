@@ -1,0 +1,465 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[delay(time=1)]
+嗯，我是一次就學會了，你大哥也是。
+但是沒關係，你年紀最小，現在當然沒辦法做得像我們一樣好啦。
+我們慢慢來，一次不行就兩次，一天不行就兩天。
+[stopmusic(fadetime=3)]
+只要最後學會就好啦，快一點慢一點又有什麼關係呢？
+[Dialog]
+[delay(time=1)]
+[Background(image="bg_warehouse",screenadapt="coverall")]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="char_259_Jessica_1",fadetime=0.5)]
+[delay(time=1)]
+[name="潔西卡"]     報告......！最後一箱蝕刻子彈完成入庫，設備與物資已經全部歸位。
+[Character]
+[name="測試負責人"]		收到。
+[name="測試負責人"]		潔西卡，你真要走了？
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]	    欸？嗯，是的，抱歉......
+[Character]
+[name="測試負責人"]		唉，新兵通過培訓考核可不容易，你剛加入黑鋼，不應該正是意氣風發、準備拼搏一番的時候嗎？
+[name="測試負責人"]		而且你可是那個耶蘭德教出來的新人啊。
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]	    但是我只是勉勉強強通過考核......耶蘭德教官對我也......呃。
+[Character]
+[name="測試負責人"]		新人嘛，總不能想著任何事情都一蹴而就。
+[name="測試負責人"]		為什麼這麼堅定地要離開黑鋼？是之前出任務受傷讓你覺得害怕了嗎？
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]	    不，當時那只是點小傷......我......
+[name="潔西卡"] 	......對不起。
+[Character]
+[name="測試負責人"]		......唉，好吧。各人都有私事，你為難的話我就不多問了。
+[name="測試負責人"]		剛才測試的防爆盾牌，你覺得怎麼樣？
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"] 	啊？嗯......應該是採用了雷神工業最新研發的材料，感覺對各類投擲物都能有效防護。
+[name="潔西卡"]	    但是整體有些重......啊，對、對不起，我應該每天多做兩組力量訓練的......
+[Character]
+[name="測試負責人"]		對於菲林而言，它的設計確實有些笨重，你的判斷一如既往地很準確。
+[name="測試負責人"]		辛苦你了，潔西卡。多虧你扛著它完成全部測試，我們才能獲得這麼多資料。
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]	    沒、沒事的，這是我的工作......最後一次工作。
+[Character]
+[name="測試負責人"]		是啊，可惜了這麼好的測試員。
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]	    我......
+[name="潔西卡"]	    我還不夠好，對不起......
+[name="潔西卡"]	    ......我該去人事部了。
+[Character]
+[name="測試負責人"]		唉，好吧。後會有期，潔西卡。
+[playsound(key="$d_gen_walk_n", loop=true, channel="bgs",volume=1)]
+[character(fadetime=0.5)]
+[Delay(time=0.5)]
+[StopSound(channel="bgs")]
+[Dialog]
+[Delay(time=1.5)]
+[playsound(key="$doorknockquite")]
+[Delay(time=0.6)]
+[playsound(key="$d_gen_walk_n")]
+[Character(name="char_107_liskam_1",fadetime=1)]
+[Delay(time=1)]
+[name="？？？"]		請問，潔西卡在這裡嗎？
+[Character(name="char_107_liskam_1",focus=3)]
+[name="測試負責人"]		潔西卡？她剛離開，應該是去人事部了吧。您找她有事的話，我見到她可以幫忙傳個話。
+[Character(name="char_107_liskam_1")]
+[name="？？？"]		沒事，我自己去找她。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[character]
+[Background(image="bg_offce",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_cloakmovement")]
+[Character(name="char_259_Jessica_1",fadetime=0.5)]
+[name="潔西卡"]	    （應該是在這裡等吧......）
+[Dialog]
+[playsound(key="$d_gen_walk_n", loop=true, channel="bgs",volume=0.2)]
+[character(fadetime=0.5)]
+[Delay(time=0.5)]
+[SoundVolume(channel="bgs", volume=2, fadetime=3)]
+[Delay(time=3)]
+[StopSound(channel="bgs")]
+[name="雷神工業代表"]	......多謝，與黑鋼的技術合作一直都是雷神工業最重要的一部分業務，我們尤其感激您在其中的推動，“橋夾”先生。
+[name="黑鋼內環成員"]	哈哈，那都是多少年前的事情了。再說了，除了雷神工業，我想也很難有其他軍火供應商的技術實力能滿足黑鋼的需求。
+[name="雷神工業代表"]	這倒是。直到現在，蝕刻子彈的設計與改良都仍然是我們的研發重點之一。
+[name="雷神工業代表"]	下個季度訂單對接時，期待還能與您進行如此輕鬆的會面。
+[name="黑鋼內環成員"]	當然。
+[name="雷神工業代表"]	好，那我這邊就先告辭了。
+[name="黑鋼內環成員"]	哦，你要去找他的小女兒......布林雷應該還好吧？替我向他致以問候。
+[name="雷神工業代表"]	哈哈，多謝您的關心，我會向布林雷先生傳達。
+[Dialog]
+[Delay(time=0.6)]
+[playsound(key="$dooropenquite")]
+[Delay(time=1)]
+[Character(name="avg_npc_222",fadetime=1)]
+[Delay(time=1)]
+[name="雷神工業代表"]	您好，“潔西卡”小姐，我是......
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]     瑞、瑞蒙先生，您好，我當然記得您。
+[name="潔西卡"]     請不要對我這麼客氣......
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=2)]
+[name="雷神工業代表"]	哈哈，不愧是布林雷的千金，果然很有頭腦，也不擺架子。
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	    我......
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=2)]
+[name="雷神工業代表"]	怎麼樣？您在這裡過得還好嗎？
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	    嗯......黑鋼的訓練方式很嚴謹，我感覺自己正在不斷進步。當然，與合格的雇傭兵相比，我還差得很遠......
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=2)]
+[name="雷神工業代表"]	看來您也覺得不虛此行，那真是太好了。
+[name="雷神工業代表"]	您和您父親應該有兩年沒見了吧，布林雷先生一直盼著您回家呢。
+[name="雷神工業代表"]	離職手續都辦理妥當了吧？您的行李在哪裡？我叫人去把它們搬上運輸載具。
+[Character(name="char_259_Jessica_1#3", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	    瑞蒙先生，等、等一下......
+[Character(name="char_259_Jessica_1#3", name2="avg_npc_222",focus=2)]
+[name="雷神工業代表"]	有什麼事？您說。
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	    您上次來的時候只說，父親希望我回家......但如果我在黑鋼國際找到了自己的道路，我也可以留在這裡。
+[name="潔西卡"]	    所以我想知道......
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=2)]
+[name="雷神工業代表"]	是這樣，布林雷先生當初很認可您的野心，同意您加入黑鋼，拓寬自己的視野，開創自己的事業。
+[name="雷神工業代表"]	上一次他得知您的才能在黑鋼被埋沒，雖然感到惋惜，但仍然給了您三個月的時間來決定是否繼續留在黑鋼。
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	    ......我明白，我的表現還是不夠得到父親的認可。
+[name="潔西卡"]	    對不起，我確實努力過了，但是......
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=2)]
+[name="雷神工業代表"]	抱歉，潔西卡小姐，這些話我可能已經說過數次了，但還是希望您聽一聽。您的父親認為您應該回家，是出於多方面的考慮。
+[name="雷神工業代表"]	您現在就職於裝備與應用技術部門，對於黑鋼來說，這充分發揮了您的出身賦予您的優勢，但對於您自己來說，這不可不謂是大材小用。
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	    您知道我並非什麼人才......
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=2)]
+[name="雷神工業代表"]	您在黑鋼所能接觸到的最新設備，也不過是雷神工業經過無數次內部測驗產出的成果。
+[name="雷神工業代表"]	您既然對這一方面有興趣，想要有所作為，為什麼不回到雷神工業大展拳腳呢？
+[name="雷神工業代表"]	更何況，這可是您家族的企業啊。
+[name="雷神工業代表"]	在您父親身邊，您一定會有足夠的資源和充分自我發揮的空間。
+[name="雷神工業代表"]	不必從普通的裝備測試員開始打拼，也不會像現在這樣，長時間得不到重視。
+[name="雷神工業代表"]	看看您現在的處境，這多不像一個布林雷家的孩子啊。
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	對、對不起......是我太沒用了......
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=2)]
+[name="雷神工業代表"]	哎呀，潔西卡小姐，請您不要這樣妄自菲薄。
+[name="雷神工業代表"]	說起來，聽說您在最近的外勤任務中受了傷，是嗎？
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	嗯，是我自己訓練不夠到位，實戰中過於緊張......對不起，我還要多加磨煉。
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=2)]
+[name="雷神工業代表"]	原來如此。您看，雇傭兵這一職業終究是有生命風險的。
+[name="雷神工業代表"]	即使訓練方式再怎麼嚴謹，您也可能受傷。
+[name="雷神工業代表"]	我也有一個小女兒，因此格外理解布林雷先生是如何愛女心切，還請您不要見怪。
+[name="雷神工業代表"]	布林雷先生當然鼓勵他的孩子們自己外出闖蕩，如果您能像您的姐姐那樣獨自幹出一番事業的話，他也十分欣賞。
+[name="雷神工業代表"]	但您畢竟是最小的孩子，布林雷先生還是希望您能參照過來人的經驗，少吃一些苦頭，少走一些彎路，趁早回家。
+[name="雷神工業代表"]	和您的哥哥姐姐們相比，您不那麼擅長跟人交際，也並未鑽研過機械設計。
+[name="雷神工業代表"]	要靠身體素質和戰鬥本領打出一片天地，對您來說也還有些困難。
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	您說得對......
+[name="潔西卡"]	對不起，瑞蒙先生......我總是讓您和父親失望。
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=2)]
+[name="雷神工業代表"]	沒有的事。還有，您回去之後雷神工業也可以為您量身打造一套裝備。
+[name="雷神工業代表"]	您如果有更優良的防護裝備，在那種小規模衝突裡本來是不會出事的。
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	可是就算有最好的裝備......我又能拿它們去做什麼呢？
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=2)]
+[name="雷神工業代表"]	只要您喜歡擺弄這些凝聚了設計師心血的產品就好，不必特意考慮要拿它們去做什麼。
+[name="雷神工業代表"]	對了，巴倫基地位置偏遠，您在這裡還能吃到金牌廚師製作的點心嗎？
+[name="雷神工業代表"]	我記得前幾年您來辦公室的時候，布林雷先生特地囑咐我訂了一桌茶點。
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	這個......訓練期間伙食控制很嚴格......
+[name="潔西卡"]	雖然我也會買一點零食......嗚，要是我能更自律就好了。
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=2)]
+[name="雷神工業代表"]	請別苛責自己，我認為您已經很努力了，潔西卡小姐。
+[name="雷神工業代表"]	我向您訓練期間的教官耶蘭德先生詢問過，他對您似乎沒有太多印象，只提到您訓練時很刻苦。
+[name="雷神工業代表"]	連耶蘭德這樣赫赫有名的精銳傭兵都認為您的表現無可指摘。雖然您沒有特別驚人的表現，但您的努力訓練幫助您勉強通過了考核。
+[name="雷神工業代表"]	您又有什麼可自責的呢？
+[Character(name="char_259_Jessica_1#5", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	耶蘭德教官......
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	對不起......我想到他就有點緊張......
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=2)]
+[name="雷神工業代表"]	哎呀，這正是布林雷先生擔憂的事情。您在這裡經歷了許多痛苦。
+[name="雷神工業代表"]	不過我很高興看到您忍受了下來。您已經得到了充分的歷練，磨礪了優秀的品格，如今再回到家族，想必......
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	——抱、抱歉。
+[name="潔西卡"]	我的離職流程還沒有結束......而且，在離開之前，我還想......跟我的朋友們告別一下。可以再給我一點時間嗎？
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=2)]
+[name="雷神工業代表"]	哎呀，這恐怕會打亂日程，您的父親在等著您回家呢......不過當然啦，以您的安排為主。
+[Character(name="char_259_Jessica_1", name2="avg_npc_222",focus=1)]
+[name="潔西卡"]	好、好的，對不起......
+[name="潔西卡"]	我現在就去人事部......
+[stopmusic(fadetime=1)]
+[dialog]
+[PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[character]
+[Background(image="bg_desert_1",xScale=1.1,yScale=1.1)]
+[delay(time=1)]
+[BackgroundTween(xFrom=0, xTo=-50, duration=2,ease="OutQuad",block=false)]
+[CameraShake(duration=4.5, xstrength=8, ystrength=6, vibrato=30, randomness=50, fadeout=true, block=false)]
+[playsound(key="$runsand", loop=true, channel="bgs",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_desert_1",screenadapt="coverall",fadetime=2)]
+[StopSound(channel="bgs", fadetime=1)]
+[playsound(key="$d_avg_snowstormlp", loop=true, channel="bgs",volume=0.1)]
+[SoundVolume(channel="bgs",volume=0.5, fadetime=3)]
+[Character(name="char_empty")]
+[playsound(key="$runsand")]
+[Character(name="char_259_Jessica_1#4",fadetime=1.5)]
+[delay(time=2)]
+[name="潔西卡"]	......呼......哈。
+[name="潔西卡"]	......荒地的風。
+[Character(name="char_259_Jessica_1#5")]
+[name="潔西卡"]	......
+[Character(name="char_259_Jessica_1#5",focus=3)]
+無人的室外訓練場一角，潔西卡閉上眼睛，用力地呼吸著帶有源石火藥味道的空氣。
+為了通過淘汰率近八成的新兵考核，她默默在這裡消耗了無數休息時間。
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]	    （這片沒有盡頭的大地，我算見識過了嗎？）
+[name="潔西卡"]	    （......不算吧。）
+[name="潔西卡"]	    （只是參與了幾場小規模衝突的處理，除此之外的時間，都待在基地裡訓練、測試。）
+[Character(name="char_259_Jessica_1",focus=3)]
+兩年前，她前所未有地鼓起勇氣，為了自己即將邁出的下一步而去和父親對話。
+家裡已經給她選定了進修的學校和專業，也為她規劃好了畢業之後的工作，但她想給黑鋼國際投遞履歷。
+她對父親說，她還不知道自己能做好什麼事情，所以還想進一步磨煉自己。
+而且，父親總說這片大地沒有盡頭，人們的生活也有無數種可能性。
+所以她想去見識別人的生活，找到自己的可能性。
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]	    （不過，行李早就收拾好了。）
+[name="潔西卡"]	    （要告別的人......好像也沒有。）
+[name="潔西卡"]     對不起......我什麼都沒能做到......
+[SoundVolume(channel="bgs",volume=0.3, fadetime=1)]
+[Character(name="char_259_Jessica_1#5")]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=50, randomness=90, fadeout=true, block=false)]
+[name="潔西卡"]	    啊——！
+[stopmusic]
+[Dialog]
+[PlaySound(key="$d_avg_kneelsnow_s")]
+[Character(name="char_259_Jessica_1", name2="char_empty")]
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",fadetime=1)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_kneelsnow_s")]
+[PlayMusic(intro="$sjoyasorrow_intro", key="$sjoyasorrow_loop", volume=0.4,fadetime=5)]
+[Delay(time=1)]
+[Character(name="char_259_Jessica_1#3", name2="char_107_liskam_1")]
+[Delay(time=1)]
+[Character(name="char_259_Jessica_1#3", name2="char_107_liskam_1",focus=2)]
+[name="？？？"]		......你怎麼了？
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	    啊、啊......
+[characteraction(name="left", type="move", xpos=-100, fadetime=1, block=false)]
+[name="潔西卡"]	    真對不起！我、我只是......
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)]
+[characteraction(name="right", type="move", xpos=-150, fadetime=1, block=false)]
+[name="？？？"]		稍等，別跑啊。
+[character]
+[Character(name="char_107_liskam_1",fadetime=0.5)]
+[name="雷蛇"]	    我來自B.P.R.S.部門，代號“雷蛇”......你是，潔西卡，對嗎？
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	    是！您、您好......雷蛇前輩......！
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]       我正在找你。
+[name="雷蛇"]	    你部門同事說你去訓練場了，訓練場那邊的工作人員又說沒見過你。還好我路過室外測試場地時看了一眼，恰好看到你。
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	    對不起......
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	    我希望能跟你本人溝通一下。
+[name="雷蛇"]	    由於我個人職務變動，我現在需要一名副手。在篩選了黑鋼的人才資料庫檔案之後，我比較希望你能夠來擔任這個職位。
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"] 	好、好的......啊？
+[name="潔西卡"]	    您的意思是......擔任您的副手？我？
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	    嗯。我需要有優秀綜合能力的人員。
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	    可是我不覺得自己......
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	    除了資料庫中的考核資料，我對你的能力水準不算很瞭解。不過我和約瑟夫聊了一下，他也認為你很適合這個職位。
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"] 	約瑟夫......耶蘭德教官？他明明說自己對我沒什麼印象......
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)].
+[name="雷蛇"]	    嗯？不，前兩天我們正好有空一起吃飯，他覺得你會是個很好的副手，跟我做事的風格很搭。
+[name="雷蛇"]	    他說，你也是那種，覺得自己絕對不可能通過黑鋼的選拔測試，但還是天天跑訓練場的人。
+[name="雷蛇"]	......你還好嗎？你看起來很痛苦。
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	    抱、抱歉......！
+[name="潔西卡"]	    我其實已經準備離開黑鋼了......
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	    ......不甘心嗎？
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	    欸？
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	    你看起來很留戀這片訓練場。為什麼要走？
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	    ......因為我做得不好。
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	    你的槍退還回去了嗎？
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	    還，還沒有......
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	    那就拔槍，讓我看看。就當是實戰演習。
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"] 	在、在這裡？可是這裡沒有防護......
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	    不用擔心，我有盾。再說，你在實戰訓練裡對約瑟夫發起的攻擊，有哪一次沒被他化解嗎？
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	    ......那，那不好意思了！
+[dialog]
+[Character(name="char_259_Jessica_1#4", name2="char_107_liskam_1")]
+[characteraction(name="left", type="move", xpos=-15, fadetime=0.3, block=true)]
+[playsound(key="$shotgunreload")]
+[Delay(time=1)]
+[characteraction(name="right", type="move", xpos=50, fadetime=1, block=true)]
+[Delay(time=0.6)]
+[Character(name="char_259_Jessica_1#4", name2="char_107_liskam_1")]
+[PlaySound(key="Sound_Beta_2/Player/p_atk/p_atk_shooting_mk1_n")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=18, vibrato=10, randomness=90, fadeout=true)]
+[PlaySound(key="Sound_Beta_2/Player/p_imp/p_imp_blunt_h")]
+[PlaySound(key="Sound_Beta_2/Player/p_atk/p_atk_shooting_p12_n")]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0, fadetime=1, block=false)]
+[characteraction(name="right", type="move", xpos=10, fadetime=0.3, block=true)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=18, vibrato=20, randomness=90, fadeout=true)]
+[PlaySound(key="Sound_Beta_2/Player/p_imp/p_imp_shield_n")]
+[Delay(time=0.6)]
+[Character(name="char_259_Jessica_1#4", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	不錯，成功擊發，射擊精度合格。
+[name="雷蛇"]	但是子彈威力......很有限。
+[Character(name="char_259_Jessica_1#4", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	嗚......
+[Character(name="char_259_Jessica_1#4", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	別緊張。
+[name="雷蛇"]	眼神也不要閃躲。盯好你的對手——
+[Character(name="char_259_Jessica_1#4", name2="char_107_liskam_1")]
+[Dialog]
+[Delay(time=0.6)]
+[Characteraction(name="right", type="jump", xpos=-300, power=4, times=2, fadetime=0.81, block=true)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="Sound_Beta_2/Player/p_atk/p_atk_shield_n")]
+[Characteraction(name="left", type="jump", xpos=-100, power=10, times=1, fadetime=1, block=true)]
+[dialog]
+[Delay(time=1)]
+[Characteraction(name="right", type="jump", xpos=80, power=4, times=1, fadetime=0.5, block=true)]
+[Character(name="char_259_Jessica_1#4", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	好反應，訓練形成的條件反射很到位。
+[name="雷蛇"]	但是實戰的情況永遠比訓練複雜得多。
+[Character(name="char_259_Jessica_1#4", name2="char_107_liskam_1")]
+[Characteraction(name="right", type="jump", xpos=-50, power=4, times=1, fadetime=0.5, block=true)]
+[PlaySound(key="$lightning_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.3, block=true)]
+[CameraShake(duration=0.3, xstrength=15, ystrength=18, vibrato=30, randomness=90, fadeout=true)]
+[CameraShake(duration=0.3, xstrength=6, ystrength=8, vibrato=15, randomness=90, fadeout=true)]
+[characteraction(name="left", type="move",xpos=-10,ypos=-50, fadetime=0.3, block=false)]
+[playsound(key="$bodyfalldown2")]
+[delay(time=0.6)]
+[Character(name="char_259_Jessica_1#4", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	嗚啊！
+[Character(name="char_259_Jessica_1#4", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	對，對不起......我沒能躲開......
+[Character(name="char_259_Jessica_1#4", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	已經合格了，你不瞭解我的源石技藝。
+[name="雷蛇"]	來，起來吧。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character]
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	我真的......合格了嗎？
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	嗯。我沒覺得你像你說的那樣，“做得不好”。你只是見得還不夠多，練習也還不夠，但新人都是這樣。
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	見得還不夠多......
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	......雷蛇前輩，我可以向您請教一個問題嗎？
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	嗯？雖然我會要求你訓練，但我並不是一個好教官......算了，你想問什麼？
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	您是......怎麼發現自己適合做雇傭兵的？
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	適合？我不知道自己適不適合，我只是想成為雇傭兵。
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]	可是——
+[MusicVolume(volume=0.1, fadetime=3)]
+[Character(name="char_259_Jessica_1")]
+可是如果不適合呢？您不害怕走彎路嗎？
+——或者，也許人們的生活並不應該被簡單規定成，挑選一條最便捷的路，然後走下去。
+[name="潔西卡"]	......謝謝。謝謝您對我的認可。
+[name="潔西卡"]	我想......
+[Character(name="char_259_Jessica_1",focus=3)]
+她握緊了拳頭，像那天站在父親辦公室門前的時候一樣。
+這是黑鋼傭兵“潔西卡”自己的想法。
+[Character(name="char_259_Jessica_1")]
+[MusicVolume(volume=0.4, fadetime=3)]
+[name="潔西卡"]	......我想從您那裡獲得這次機會。
+[Character(name="char_107_liskam_1")]
+[name="雷蛇"]	嗯，好啊。
+[name="雷蛇"]	但是我要向你事先說清楚，我所在的B.P.R.S.是一個十分特殊的部門......它不夠核心，而且工作總是非常危險。
+[name="雷蛇"]	和感染生物打交道，處理急性源石污染事件，你應該明白這其中的風險。
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]	我、我知道......
+[Character(name="char_107_liskam_1")]
+[name="雷蛇"]	通常任務中，大部分傷口都可以完全恢復；但在B.P.R.S.的任務中，較嚴重的傷口意味著你可能會感染礦石病。
+[name="雷蛇"]	我看過你的完整檔案記錄，知道你上一次任務時就受了輕傷。
+[name="雷蛇"]	當然，B.P.R.S.會配備最完善的防護措施，珍妮特主任也一直致力於優化部門的緊急事件應對措施，降低感染風險。
+[name="雷蛇"]	而且，如果你成為我的副手，我也會更加嚴格地要求你進行訓練。在你完全達到我的期望之前，我不會讓你參與高度危險的任務。
+[name="雷蛇"]	情況就是這樣。我在發起部門間調動申請之前來找你，正是想給你選擇權。
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]	謝謝您......但是我已經決定好了......！
+[name="潔西卡"]	我還想繼續增長見識，接受更嚴格的訓練......然後，找到一些問題的答案。
+[name="潔西卡"]	不，不是關於我自己的問題，是關於其他人的生活......我在任務過程中見到了一些事情，但是現在我還很困惑。
+[Character(name="char_107_liskam_1")]
+[name="雷蛇"]	這樣嗎？抱歉，我這裡可能沒辦法直接給你答案。
+[name="雷蛇"]	但是我很高興我的副手也會思考這樣的問題。
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]	您的副手......
+[Character(name="char_107_liskam_1")]
+[name="雷蛇"]	嗯。
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=2)]
+[name="雷蛇"]	你是不是要去人事部處理離職的事項？我和你一起去吧，這樣撤銷申請容易一些。
+[Character(name="char_259_Jessica_1", name2="char_107_liskam_1",focus=1)]
+[name="潔西卡"]	啊，好、好的......謝謝您！
+[name="潔西卡"]	可是瑞蒙先生那邊，我該對父親說什麼才好......
+[Dialog]
+[PlaySound(key="$d_avg_kneelsnow_s")]
+[character]
+[delay(time=1)]
+[PlaySound(key="$d_avg_kneelsnow_s")]
+[Character(name="avg_npc_222",fadetime=1)]
+[delay(time=1)]
+[name="雷神工業代表"]	潔西卡小姐，怎麼了？
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]	呃......您怎麼在這裡！
+[Character(name="avg_npc_222")]
+[name="雷神工業代表"]	我在黑鋼內部不方便四處走動，所以我就到外面來了。
+[name="雷神工業代表"]	似乎您剛剛說要撤銷離職申請？
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]	......
+[name="潔西卡"]	雷蛇前輩......
+[Character(name="char_259_Jessica_1#6")]
+[name="潔西卡"]	......不，沒事。對不起，瑞蒙先生，我不打算回家了。
+[name="潔西卡"]	請......轉告父親，“潔西卡”無論如何都想留在黑鋼國際，作為安保公司的雇傭兵，保護一些人，解決一些問題。
+[Character(name="char_259_Jessica_1")]
+[name="潔西卡"]	我還沒有找到自己的“可能性”是什麼......但我願意繼續找下去。
+[Character(name="avg_npc_222")]
+[name="雷神工業代表"]	......好。
+[name="雷神工業代表"]	我會轉告他。
+[dialog]
+[stopmusic(fadetime=3)]
+[StopSound(channel="bgs", fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[character]
+我的小女兒還是想繼續當黑鋼國際的“潔西卡”？......這股執著勁才像布林雷家的孩子。
+也難為你對她說那麼多風涼話了。但我需要知道她意志足夠堅定，不會被扔到一個地方就隨波逐流。
+是啊，我當然也不想讓她吃苦。這片大地上的困苦實在太多，她會有很多疑問，卻很難找到答案。
+但既然她想當一個挑戰者，就讓她去當吧。就算她會是家裡最後一個明白自己該做什麼的孩子......或者永遠不明白。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[Character]

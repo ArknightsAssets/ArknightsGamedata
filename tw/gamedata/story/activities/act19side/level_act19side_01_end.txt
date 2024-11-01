@@ -1,0 +1,670 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="29_g8_alley_n",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(intro="$escape_intro", key="$escape_loop", volume=0.4)]//战斗音乐
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=2)]
+[playsound(key="$mapboom", volume=0.9)]
+[Delay(time=1)]
+[Blocker(a=0.5, r=1, g=1, b=1, fadetime=0.02, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[CameraShake(duration=1, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[delay(time=1.5)]
+[playsound(key="$d_avg_mechawalk")]//预约替换沉重的机器脚步
+[character(name="avg_npc_526_1#1$1",fadetime=2.5)]
+[delay(time=3.5)]
+[playsound(key="$d_avg_overheat")]
+[CameraShake(duration=1.5, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[delay(time=3.5)]
+[name="奇怪的動力甲"]——
+[Character(name="avg_npc_521_1#1$1")]
+[name="Mechanist"]......難以置信。
+[name="Mechanist"]我明明已經啟動了信號干擾，就連可露希爾研發的最新一代無人機都不該偵測到我們的位置。
+[name="Mechanist"]這動力甲用的是什麼傳感技術？
+[Dialog]
+[Character(name="avg_npc_521_1#1$1",focus=-1)]
+[Decision(options="能癱瘓它嗎？", values="1")]
+[Predicate(references="1")]
+[Character(name="avg_npc_521_1#1$1",focus=1)]
+[name="Mechanist"]我本來不想引人注目......
+[name="Mechanist"]博士，抓緊些。
+[name="Mechanist"]百分之十功率，瞄準——
+[Dialog]
+[delay(time=0.51)]
+[characteraction(name="middle", type="move", xpos=30,fadetime=0.51)]
+[playsound(key="$e_atk_faust_h", volume=0.9)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+[character]
+[character(name="avg_npc_526_1#1$1",name2="char_empty")]
+[characteraction(name="lfte", type="move", xpos=-10,fadetime=0.51)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2.5)]
+[character]
+[Character(name="avg_npc_521_1#1$1",focus=1)]
+[name="Mechanist"]命中。
+[playsound(key="$d_avg_mechalock")]
+[delay(time=1.5)]
+[character(name="avg_npc_526_1#1$1",name2="char_empty")]
+[name="奇怪的動力甲"]——
+[Dialog]
+[delay(time=0.51)]
+[characteraction(name="lfte", type="move", xpos=20,fadetime=0.51)]
+[delay(time=0.51)]
+[characteraction(name="lfte", type="move", xpos=20,fadetime=0.51)]
+[delay(time=0.51)]
+[characteraction(name="lfte", type="move", xpos=20,fadetime=0.51)]
+[delay(time=1.5)]
+[Character(name="avg_npc_521_1#1$1",focus=1)]
+[name="Mechanist"]......
+[name="Mechanist"]偵測到右側臂甲出現明顯破損。
+[name="Mechanist"]沒有減速。在命中的那一刻，它也毫無停頓的跡象。
+[name="Mechanist"]動力甲裡面是什麼人？他難道不會覺得痛嗎？
+[Dialog]
+[Delay(time=0.7)]
+[playsound(key="$e_atk_faust_h", volume=0.9)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+[playsound(key="$e_atk_faust_h", volume=0.9)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[character(name="avg_npc_526_1#1$1")]
+[name="奇怪的動力甲"]——
+[Dialog]
+[characteraction(name="middle", type="move", xpos=-10,fadetime=0.51)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.51)]
+[Blocker(a=0.5, r=1, g=1, b=1, fadetime=0.02, block=true)]
+[characteraction(name="middle", type="move", xpos=-10,fadetime=0.51)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2.1)]
+[name="奇怪的動力甲"]——
+[Dialog]
+[delay(time=1.5)]
+[character]
+[Character(name="avg_npc_521_1#1$1",focus=1)]
+[name="Mechanist"]左側上臂破損。
+[name="Mechanist"]右側小腿破損。
+[name="Mechanist"]博士，它沒有對損傷作出任何反應。
+[name="Mechanist"]想讓它停下來，除非我能一擊癱瘓它的動力核心——
+[name="Mechanist"]可這完全說不通啊。
+[name="Mechanist"]就算是最訓練有素的士兵，也不可能有這樣的忍耐力。
+[Character(name="avg_npc_532_1#9$1",blackstart=0.4,blackend=0.7)]
+[name="？？？"]你說得沒錯。
+[name="？？？"]只要是活著的個體，幾乎都做不到完全控制自己最基礎的神經反應。
+[Dialog]
+[delay(time=0.7)]
+[PlaySound(key="$rungeneral", volume=1)]
+[characteraction(name="middle", type="move", xpos=-300, fadetime=2,block=false)]
+[Character(fadetime=0.5)]
+[delay(time=2)]
+[Character(name="avg_npc_526_1#1$1", name2="char_empty")]
+[PlaySound(key="$rungeneral", volume=1)]
+[characteraction(name="right", type="move", xpos=200, fadetime=0.3, block=true)]
+[delay(time=0.51)]
+[characteraction(name="right", type="move", xpos=-200, fadetime=1, block=false)]
+[character(name="avg_npc_526_1#1$1",name2="avg_npc_532_1#9$1",blackstart2=0.4,blackend2=0.7,fadetime=0.7)]
+[delay(time=2)]
+[characteraction(name="right", type="move", xpos=50,fadetime=0.51)]
+[delay(time=0.52)]
+[characteraction(name="right", type="move", xpos=-100,fadetime=0.2)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral",volume=1)] 
+[delay(time=0.8)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[delay(time=0.52)]
+[characteraction(name="right", type="move", xpos=100,fadetime=0.51)]
+[delay(time=0.52)]
+[characteraction(name="left", type="move", xpos=-50,fadetime=0.6)]
+[delay(time=0.62)]
+[characteraction(name="left", type="move", xpos=-50,fadetime=0.6)]
+[delay(time=0.62)]
+[name="奇怪的動力甲"]——
+[Dialog]
+[delay(time=1)]
+[characteraction(name="left", type="move", ypos=-200,fadetime=1.5)]
+[delay(time=2)]
+[characteraction(name="left", type="move", ypos=-800,fadetime=2.5)]
+[PlaySound(key="$d_avg_mechadown")]//机械倒地的声音
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2.5)]
+一隻手擊碎了動力甲的中心。無數機械碎片與火花一起噴濺而出，就如同屬於另一種生命形式的血液。
+那隻手很快就收了回去。
+被她的力道帶出來的機甲殘片，與覆在她五指上的純白硬甲一同化作了粉塵，飄灑著落下，在地面上結成薄薄一層鈣質結晶。
+動力甲躺在地上，它的能源之火已經熄滅，軀幹正中留下了一個邊緣齊整的空洞。
+[Character(name="avg_npc_521_1#1$1",focus=1)]
+[stopmusic]
+[name="Mechanist"]......徒手擊穿了動力甲的核心？
+[name="Mechanist"]很強的威力，而且確實比我的防禦炮動靜小得多。
+[name="Mechanist"]博士，看來我們不必擔心被當成爆破犯，被那個什麼源石製品管理局帶走了。
+[Dialog]
+[Character(name="avg_npc_521_1#1$1",focus=-1)]
+[Decision(options="我也不希望羅德島多出新的案底。;我一點都不想念哥倫比亞的拘留室。", values="1;2")]
+[Dialog]
+[Predicate(references="1;2")]
+[Decision(options="謝謝你，塞雷婭。", values="1")]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.4)]
+[Predicate(references="1")]
+[Character(name="avg_npc_532_1#9$1",blackstart=0.4,blackend=0.7)]
+[delay(time=0.71)]
+[character(fadetime=0.7)]
+[delay(time=0.71)]
+[Character(name="avg_npc_532_1#1$1",fadetime=0.7)]
+[delay(time=0.7)]
+[name="塞雷婭"]不必謝我，博士，還有Mechanist先生。
+[Character(name="avg_npc_532_1#3$1")]
+[name="塞雷婭"]是我將羅德島捲入萊茵內部的事務中——
+[Character(name="avg_npc_532_1#1$1")]
+[name="塞雷婭"]我有義務確保你們不受到任何傷害。
+[Dialog]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="29_g7_mainstreet_n",screenadapt="showall")]
+[Delay(time=1)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[Character(name="avg_npc_536_1#1$1")]
+[name="霍爾海雅"]......斐爾迪南猜對了。
+[name="霍爾海雅"]羅德島的人已經見到了塞雷婭。
+[Character(name="avg_npc_399_1#1$1")]
+[name="哥倫比亞雇傭兵"]要繼續追嗎，女士？
+[Character(name="avg_npc_536_1#6$1")]
+[name="霍爾海雅"]假如我把你塞進剛才的動力甲裡，你覺得自己能活下來嗎？
+[Character(name="avg_npc_399_1#1$1")]
+[name="哥倫比亞雇傭兵"]......
+[Character(name="avg_npc_536_1#3$1")]
+[name="霍爾海雅"]不必如此緊張。
+[name="霍爾海雅"]只是一個假設。
+[Character(name="avg_npc_399_1#1$1")]
+[name="哥倫比亞雇傭兵"]女士，那個塞雷婭再怎麼厲害，他們也就只有三個人。
+[name="哥倫比亞雇傭兵"]我們有這麼多人，還有秘密武器......
+[Character(name="avg_npc_536_1#1$1")]
+[name="霍爾海雅"]永遠不要低估任何人。
+[name="霍爾海雅"]和萊茵生命打了這麼久的交道，你還沒學會嗎？看起來越文弱的科學家，說不定揍起人來越狠。
+[Character(name="avg_npc_399_1#1$1")]
+[name="哥倫比亞雇傭兵"]您、您是說那個機械師，還有另一個看不見臉的學者嗎？他們難道比萊茵防衛科主任還厲害？
+[Character(name="avg_npc_536_1#3$1")]
+[name="霍爾海雅"]羅德島......人才濟濟啊。
+[Character(name="avg_npc_536_1#2$1")]
+[name="霍爾海雅"]走吧。我很喜歡剛才的假設，也有幾個想嘗試一下的新主意。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Character(name="avg_npc_522_1#6$1")]
+[Background(image="29_g9_headquarter",screenadapt="showall")]
+[Delay(time=1)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[PlaySound(key="$d_gen_transmissionget",volume=0.6)]
+[delay(time=1.5)]
+[name="斐爾迪南"]......
+[name="斐爾迪南"]晚上好，上校先生。
+[Character(name="avg_npc_522_1#6$1",focus=-1)]
+[name="上校的聲音"]......克魯尼。
+[name="上校的聲音"]解釋一下基地的事情。
+[Character(name="avg_npc_522_1#6$1")]
+[name="斐爾迪南"]只是一些小打小鬧而已......您很清楚，無論我們給的條件多麼優厚，拓荒者們都很難感到滿足。
+[name="斐爾迪南"]進取心是他們的優點，是哥倫比亞不斷發展的根基，但偶爾也會造成一些......麻煩。
+[Character(name="avg_npc_522_1#6$1",focus=-1)]
+[name="上校的聲音"]既然是麻煩，那麼，解決它。
+[name="上校的聲音"]我要看到的是你承諾的成果，而不是一則提到萊茵生命的社會新聞。
+[name="上校的聲音"]要知道，哥倫比亞的科技公司可不止你們一家。
+[Character(name="avg_npc_522_1#6$1",focus=1)]
+[name="斐爾迪南"]......明白。
+[name="斐爾迪南"]請您放心，上校。
+[name="斐爾迪南"]萊茵生命的產品一定不會讓您失望。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Character(name="avg_npc_535_1#1$1",name2="avg_npc_534_1#1$1")]
+[Background(image="29_g3_cottage",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[Character(name="avg_npc_535_1#1$1",name2="avg_npc_534_1#1$1",focus=2)]
+[name="拓荒隊成員"]領隊，有好幾個人不想幹了。
+[name="拓荒隊成員"]他們說你的法子沒有用，不會有人理睬我們。我們的聲音從來傳不出去，嘗試再多辦法都是白搭。
+[Character(name="avg_npc_535_1#11$1",name2="avg_npc_534_1#1$1",focus=1)]
+[name="桑尼"]......
+[Character(name="avg_npc_535_1#11$1",name2="avg_npc_534_1#1$1",focus=2)]
+[name="拓荒隊成員"]他們還說，別管萊茵生命想做什麼了。
+[name="拓荒隊成員"]我們就該趕緊幹完這份活，領到錢，去下一個地方接著幹。
+[name="拓荒隊成員"]那幾個......失蹤的人，就是他們的命不好。反正那些深入荒野的拓荒隊伍裡，每年死的人比我們這多多了。
+[Character(name="avg_npc_535_1#5$1",name2="avg_npc_534_1#1$1",focus=1)]
+[name="桑尼"]......別說了。
+[Character(name="avg_npc_535_1#11$1",name2="avg_npc_534_1#1$1",focus=1)]
+[name="桑尼"]告訴其他人，再等一等。我會把我們的同伴帶回來。
+[Character(name="avg_npc_535_1#11$1",name2="avg_npc_534_1#1$1",focus=2)]
+[name="拓荒隊成員"]那你有什麼打算？
+[Character(name="avg_npc_535_1#11$1",name2="avg_npc_534_1#1$1",focus=1)]
+[name="桑尼"]我出去一下。
+[Character(name="avg_npc_535_1#11$1",name2="avg_npc_534_1#1$1",focus=2)]
+[name="拓荒隊成員"]你要出去？那......那豈不是很危險？
+[name="拓荒隊成員"]要是警方派出了狙擊手，他們會不會就在等你出去......
+[Character(name="avg_npc_535_1#11$1",name2="avg_npc_534_1#1$1",focus=1)]
+[name="桑尼"]......那樣正好。
+[Character(name="avg_npc_535_1#11$1",name2="avg_npc_534_1#1$1",focus=2)]
+[name="拓荒隊成員"]正、正好？你該不會是緊張到大腦錯亂了吧？
+[Character(name="avg_npc_535_1#11$1",name2="avg_npc_534_1#1$1",focus=1)]
+[name="桑尼"]警隊的人是吧？也許是我的老熟人。她用弩射得很準，非要走到最後一步的話，我大概不會太痛苦。
+[Character(name="avg_npc_535_1#11$1",name2="avg_npc_534_1#1$1",focus=2)]
+[name="拓荒隊成員"]桑尼......
+[Dialog]
+[character]
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]烏比卡博士，摩爾醫生——
+[name="桑尼"]我需要你們跟我一起到外面走一趟。
+[Character(name="avg_128_plosis_1#8$1",name2="avg_135_halo_1#9$1",focus=1)]
+[name="白面鴞"]......
+[Character(name="avg_128_plosis_1#8$1",name2="avg_135_halo_1#9$1",focus=2)]
+[name="埃琳娜"]何必這麼惺惺作態。我們有說不的權利嗎？
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]抱歉，請再忍耐一下。
+[name="桑尼"]等親眼看到你們的處境，外面的人或許就會改主意，願意更認真地考慮我們的請求。
+[Dialog]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Character(name="avg_npc_527_1#1$1",name2="avg_npc_528_1#1$1")]
+[Background(image="29_g2_edgeofbase",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[Character(name="avg_npc_527_1#1$1",name2="avg_npc_528_1#1$1",focus=2)]
+[name="萊茵防衛科成員"]警長，有人出來了！
+[name="萊茵防衛科成員"]無人機射擊準備——
+[Character(name="avg_npc_527_1#1$1",name2="avg_npc_528_1#1$1",focus=1)]
+[name="瑪麗"]不，先停下。
+[Character(name="avg_npc_527_1#1$1",name2="avg_npc_528_1#1$1",focus=2)]
+[name="萊茵防衛科成員"]......警長？
+[Character(name="avg_npc_527_1#6$1",name2="avg_npc_528_1#1$1",focus=1)]
+[name="瑪麗"]......
+[Character(name="avg_npc_527_1#1$1",name2="avg_npc_528_1#1$1",focus=1)]
+[name="瑪麗"]我們不能傷到人質。
+[name="瑪麗"]那個......赫默醫生，過來一下。
+[Character(name="avg_npc_527_1#1$1",name2="avg_108_silent_1#1$1",focus=2)]
+[name="赫默"]女士，是有什麼新情況嗎？
+[Character(name="avg_npc_527_1#1$1",name2="avg_108_silent_1#1$1",focus=1)]
+[name="瑪麗"]你拿著望遠鏡看一眼，跟在桑......拓荒者身後的人，是不是你的那兩位同事？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Character(name="avg_npc_535_1#1$1",name2="avg_npc_534_1#1$1")]
+[Background(image="29_g1_outdoorbase",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[Character(name="avg_npc_535_1#1$1",name2="avg_npc_534_1#1$1",focus=2)]
+[name="拓荒隊成員"]領隊，通、通訊器亮了！
+[Character(name="avg_npc_535_1#11$1",name2="avg_npc_534_1#1$1",focus=1)]
+[name="桑尼"]......拿過來。
+[Dialog]
+[characteraction(name="right", type="move", xpos=-150,fadetime=0.7)]
+[Delay(time=1)]
+[characteraction(name="right", type="move", xpos=150,fadetime=0.7)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[characteraction(name="right", type="move", xpos=300, fadetime=2,block=false)]
+[character(name="avg_npc_535_1#11$1",name2="char_empty",fadetime=0.5)]
+[delay(time=2)]
+[PlaySound(key="$d_gen_transmissionget",volume=0.6)]
+[delay(time=1)]
+[CharacterCutin(widgetID="1", name="avg_npc_527_1#1$1", style="cutin", fadestyle= "horiz_expand_center", fadetime=0.5, offsetx=300, width=200, block=true)]
+[Character(name="avg_npc_535_1#11$1",name2="char_empty",focus=-1)]
+[name="瑪麗"]......
+[Character(name="avg_npc_535_1#1$1",name2="char_empty",focus=1)]
+[name="桑尼"]果然是你。
+[Character(name="avg_npc_535_1#1$1",name2="char_empty",focus=-1)]
+[name="瑪麗"]這句話該換我來說。
+[Character(name="avg_npc_535_1#1$1",name2="char_empty",focus=1)]
+[name="桑尼"]你現在是......警長了吧？我還沒有機會說一聲恭喜。
+[Character(name="avg_npc_535_1#2$1",name2="char_empty",focus=1)]
+[name="桑尼"]沒想到，你會自願在這個轄區待這麼久......拓荒區的麻煩事一直都這麼多。
+[Character(name="avg_npc_535_1#2$1",name2="char_empty",focus=-1)]
+[name="瑪麗"]我也沒想到......你會墮落成這樣。
+[name="瑪麗"]你還記得你上過的那些課嗎？那些跟法律相關的課程？
+[name="瑪麗"]你還記得......我成為警察的那一天，你都跟我說了些什麼嗎？
+[Character(name="avg_npc_535_1#8$1",name2="char_empty",focus=1)]
+[name="桑尼"]......
+[Character(name="avg_npc_535_1#8$1",name2="char_empty",focus=-1)]
+[name="瑪麗"]“太好了，我們又是搭檔了，就跟我們小時候玩的遊戲那樣，我們會一起維護哥倫比亞的秩序，將所有罪惡繩之以法——”
+[name="瑪麗"]哈......多麼諷刺啊，眼下那個最該被繩之以法的罪犯就是你自己。
+[Character(name="avg_npc_535_1#8$1",name2="char_empty",focus=1)]
+[name="桑尼"]瑪麗......
+[Character(name="avg_npc_535_1#8$1",name2="char_empty",focus=-1)]
+[name="瑪麗"]你的隊員手裡拿的是什麼東西？自製武器？
+[name="瑪麗"]快把那丟人的玩意兒放下。
+[name="瑪麗"]你把自己作踐成了這副模樣，但你還有選擇。最後的選擇。
+[name="瑪麗"]放了你身邊那兩位無辜的女士。
+[Character(name="avg_npc_535_1#11$1",name2="char_empty",focus=1)]
+[name="桑尼"]......不，暫時還不行。
+[Character(name="avg_npc_535_1#11$1",name2="char_empty",focus=-1)]
+[name="瑪麗"]該死，你正在一步步走向懸崖。
+[name="瑪麗"]在哥倫比亞，一名罪犯不想待在監獄裡的話，還能加入拓荒隊。
+[name="瑪麗"]但如果......在拓荒區，他再次違法，他會面臨什麼指控？
+[Character(name="avg_npc_535_1#8$1",name2="char_empty",focus=1)]
+[name="桑尼"]......
+[Character(name="avg_npc_535_1#8$1",name2="char_empty",focus=-1)]
+[name="瑪麗"]回答我，律師先生！
+[Character(name="avg_npc_535_1#8$1",name2="char_empty",focus=1)]
+[name="桑尼"]別那麼叫我，求你了，瑪麗......
+[Character(name="avg_npc_535_1#8$1",name2="char_empty",focus=-1)]
+[name="瑪麗"]你在逼我後悔。
+[name="瑪麗"]是的，我開始後悔......在你闖進我家裡的那天，我竟然原諒了你，而不是立刻把你抓進警局。
+[Character(name="avg_npc_535_1#4$1",name2="char_empty",focus=1)]
+[name="桑尼"]那都是過去的事了，那時候我剛剛......
+[name="桑尼"]......我很抱歉，我一直很抱歉。
+[Character(name="avg_npc_535_1#8$1",name2="char_empty",focus=1)]
+[name="桑尼"]但是，這一回我做這些是有原因的，請你一定要聽我說......
+[Dialog]
+[CharacterCutin(widgetID="1",block=true)]
+[playsound(key="$transmission", volume=0.4)]
+[delay(time=1)]
+[Dialog]
+[Character(name="avg_npc_535_1#8$1", name2="char_empty")]
+[PlaySound(key="$rungeneral", volume=1)]
+[characteraction(name="right", type="move", xpos=0, fadetime=0.3, block=true)]
+[delay(time=0.51)]
+[characteraction(name="right", type="move", xpos=-200, fadetime=1, block=false)]
+[Character(name="avg_npc_535_1#8$1", name2="avg_npc_534_1#1$1",fadetime=0.7)]
+[delay(time=2)]
+[Character(name="avg_npc_535_1#8$1",name2="avg_npc_534_1#1$1",focus=2)]
+[name="拓荒隊成員"]......領隊！
+[Character(name="avg_npc_535_1#7$1",name2="avg_npc_534_1#1$1",focus=1)]
+[name="桑尼"]怎麼了？
+[Character(name="avg_npc_535_1#7$1",name2="avg_npc_534_1#1$1",focus=2)]
+[name="拓荒隊成員"]那個醫生、醫生她......
+[Character(name="avg_npc_535_1#7$1",name2="avg_npc_534_1#1$1",focus=1)]
+[name="桑尼"]......摩爾醫生？
+[Dialog]
+[Character(name="avg_128_plosis_1#2$1")]
+[name="白面鴞"]......
+[characteraction(name="middle", type="jump" , power=5, times=2, fadetime=0.51,block=true)]
+[name="白面鴞"]配置......發生錯誤......修改......電源計畫模式......
+[Character(name="avg_135_halo_1#3$1")]
+[name="埃琳娜"]糟了，喬伊絲......
+[Character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]烏比卡博士，她怎麼了？
+[Character(name="avg_135_halo_1#3$1")]
+[name="埃琳娜"]......你可以理解成，她的病發作了。
+[Character(name="avg_npc_534_1#1$1")]
+[characteraction(name="middle", type="jump" , power=5, times=2, fadetime=0.51,block=true)]
+[name="拓荒隊成員"]什麼？！礦、礦石病嗎？
+[Dialog]
+[delay(time=0.7)]
+[characteraction(name="middle", type="move", xpos=-300, fadetime=2,block=false)]
+[Character(fadetime=0.5)]
+[delay(time=1)]
+[Character(name="avg_128_plosis_1#2$1", name2="char_empty")]
+[characteraction(name="right", type="move", xpos=200, fadetime=0.3, block=true)]
+[delay(time=0.51)]
+[characteraction(name="right", type="move", xpos=-200, fadetime=1, block=false)]
+[Character(name="avg_128_plosis_1#2$1", name2="avg_npc_534_1#1$1",fadetime=0.7)]
+[delay(time=1.5)]
+[characteraction(name="right", type="move", xpos=-200)]
+[Character(name="avg_128_plosis_1#2$1", name2="avg_npc_534_1#1$1",focus=2)]
+[name="拓荒隊成員"]快，我扶住她了！她身上有沒有藥？我......我不會注射......
+[Character(name="avg_128_plosis_1#2$1", name2="avg_npc_534_1#1$1",focus=1)]
+[name="白面鴞"]唔......
+[Character(name="avg_128_plosis_1#2$1", name2="avg_npc_534_1#1$1",focus=2)]
+[name="拓荒隊成員"]她看起來真的很難受！
+[name="拓荒隊成員"]我......我這有萊茵生命配發的緊急醫療環，你們不是說這對礦石病病情有用嗎？
+[name="拓荒隊成員"]我這就給她戴上......
+[Character(name="avg_135_halo_1#7$1")]
+[name="埃琳娜"]......
+[Character(name="avg_135_halo_1#3$1")]
+[name="埃琳娜"]你竟然願意把自己的緊急醫療裝置讓給喬伊絲？
+[name="埃琳娜"]把這個環給她的話，萬一你也突然病發，你的生存機率會大幅度降低。
+[Character(name="avg_npc_534_1#1$1")]
+[name="拓荒隊成員"]醫生一直對我們很好！
+[name="拓荒隊成員"]我一點都不想讓她出事......
+[Character(name="avg_135_halo_1#3$1")]
+[name="埃琳娜"]明明綁架我和喬伊絲的人也是你們。
+[Character(name="avg_npc_535_1#1$1")]
+[name="桑尼"]我們並不想忘恩負義。
+[Character(name="avg_npc_535_1#8$1")]
+[name="桑尼"]對不起......我們只是一群自私的普通人。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Character(name="avg_npc_527_1#6$1",name2="avg_108_silent_1#1$1")]
+[Background(image="29_g2_edgeofbase",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[Character(name="avg_npc_527_1#6$1",name2="avg_108_silent_1#1$1",focus=2)]
+[name="赫默"]......通訊是不是還在繼續？
+[Character(name="avg_npc_527_1#6$1",name2="avg_108_silent_1#4$1",focus=2)]
+[name="赫默"]女士，我想請您准許我與拓荒者們通話。
+[Character(name="avg_npc_527_1#6$1",name2="avg_108_silent_1#4$1",focus=1)]
+[name="瑪麗"]......
+[Character(name="avg_npc_527_1#6$1",name2="avg_108_silent_1#4$1",focus=2)]
+[name="赫默"]那位病發的黎博利是我的同事，也是我的好友。
+[name="赫默"]更重要的是，我是她的醫生。
+[name="赫默"]我想向拓荒者們瞭解一下她的情況。從他們的反應來看，他們對她並非漠不關心。
+[Character(name="avg_npc_527_1#1$1",name2="avg_108_silent_1#4$1",focus=1)]
+[name="瑪麗"]......隨便你。
+[name="瑪麗"]但你沒有太多時間。
+[name="瑪麗"]我剛收到上頭的指示，要是拓荒者們再不合作，我們會在十分鐘後切斷整個實驗基地的通訊......以及拓荒者生活區的供電。
+[Character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#4$2",focus=2)]
+[name="格雷伊"]切、切斷供電？
+[name="格雷伊"]荒地上晝夜溫差非常大......等到了半夜，他們會凍得受不了的！
+[Character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#5$2",focus=2)]
+[name="格雷伊"]還有，拓荒者裡有不少礦石病晚期患者......
+[Character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#6$2",focus=2)]
+[name="格雷伊"]他們需要醫療設備維繫生命！
+[Character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#6$2",focus=1)]
+[name="瑪麗"]......我知道。
+[Character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#6$2",focus=1)]
+[name="瑪麗"]所以這才稱得上警告。
+[name="瑪麗"]他們得看到萊茵生命和警方的決心。
+[name="瑪麗"]所有抗爭和訴求都必須建立在合法的基礎上......一旦走上了犯罪道路，就沒有人會聽他們解釋。
+[Character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#6$2",focus=2)]
+[name="格雷伊"]可是......您和那位拓荒者領隊不是朋友嗎？
+[Character(name="avg_npc_527_1#1$1",name2="avg_1027_greyy2_1#6$2",focus=1)]
+[name="瑪麗"]......朋友？
+[name="瑪麗"]從他自甘墮落的那一刻起，我們之間就再無話可說。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Character(name="avg_128_plosis_1#8$1")]
+[Background(image="29_g1_outdoorbase",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[Character(name="avg_128_plosis_1#8$1")]
+[name="白面鴞"]......
+[Character(name="avg_npc_535_1#1$1", name2="avg_135_halo_1#3$1",focus=1)]
+[name="桑尼"]她怎麼樣了？
+[Character(name="avg_npc_535_1#1$1", name2="avg_135_halo_1#3$1",focus=2)]
+[name="埃琳娜"]即時血液結晶密度下來了，眼動指數還是很不正常。
+[Character(name="avg_npc_535_1#7$1", name2="avg_135_halo_1#3$1",focus=1)]
+[name="桑尼"]眼動指數？
+[Character(name="avg_npc_535_1#7$1", name2="avg_135_halo_1#3$1",focus=-1)]
+[PlaySound(key="$d_gen_transmissionget",volume=0.6)]
+[name="？？？"]因為她的礦石病病灶就在腦部。
+[name="？？？"]任何病情波動都會影響她的神經系統，令她陷入深度睡眠，甚至可能誘發癲癇。
+[Character(name="avg_npc_535_1#1$1", name2="avg_135_halo_1#3$1",focus=1)]
+[name="桑尼"]呃？誰在說話？
+[Character(name="avg_npc_535_1#1$1", name2="avg_135_halo_1#3$1",focus=2)]
+[name="埃琳娜"]......通訊器還開著。
+[Dialog]
+[Character(name="avg_npc_535_1#1$1", name2="char_empty",fadetime=0.5)]
+[delay(time=0.9)]
+[MusicVolume(volume=0.2, fadetime=0.2)]
+[CharacterCutin(widgetID="1", name="avg_108_silent_1#1$1", style="cutin", fadestyle= "horiz_expand_center", fadetime=0.5, offsetx=300, width=200, block=true)]
+[Character(name="avg_npc_535_1#1$1", name2="char_empty",focus=-1)]
+[name="赫默"]你好，領隊先生。
+[name="赫默"]我是喬伊絲·摩爾的醫生，我叫赫默。
+[Character(name="avg_npc_535_1#1$1", name2="char_empty",focus=1)]
+[name="桑尼"]......赫默醫生。
+[Character(name="avg_npc_535_1#1$1", name2="char_empty",focus=-1)]
+[name="赫默"]首先，我想對你表示感謝。
+[name="赫默"]有了你和其他拓荒者的幫助，喬伊絲的狀態才能這麼快穩定下來。
+[Character(name="avg_npc_535_1#1$1", name2="char_empty",focus=1)]
+[name="桑尼"]您竟然會對綁架犯說謝謝......
+[Character(name="avg_npc_535_1#1$1", name2="char_empty",focus=-1)]
+[name="赫默"]作為回報，也請你相信我，我們真的很想幫助你們。
+[name="赫默"]還有五分鐘，通訊和你們所在生活區的供電就會被同時切斷——
+[name="拓荒隊成員"]領隊，突、突然斷電了！
+[Character(name="avg_npc_535_1#11$1", name2="char_empty",focus=1)]
+[name="桑尼"]......
+[Character(name="avg_npc_535_1#11$1", name2="char_empty",focus=-1)]
+[name="赫默"]看來他們提前行動了。
+[Character(name="avg_npc_535_1#11$1", name2="char_empty",focus=1)]
+[name="桑尼"]沒關係。我還是該謝謝您願意提醒我們。
+[Character(name="avg_npc_535_1#11$1", name2="char_empty",focus=-1)]
+[name="赫默"]我從瑪麗女士那裡聽說了，你們想和萊茵生命的高層對話。
+[name="赫默"]我能問問是什麼原因嗎？
+[Character(name="avg_npc_535_1#11$1", name2="char_empty",focus=1)]
+[name="桑尼"]......
+[name="桑尼"]我想請他們停下這個基地正在進行的實驗。
+[Character(name="avg_npc_535_1#11$1", name2="char_empty",focus=-1)]
+[name="赫默"]......停止實驗？
+[Character(name="avg_npc_535_1#11$1", name2="char_empty",focus=1)]
+[name="桑尼"]您和摩爾醫生一樣，也是位好心的醫生。但要停止這麼大的工程，您恐怕做不了主。
+[name="桑尼"]您能不能轉告萊茵生命的老總，這個實驗真的很危險？
+[Character(name="avg_npc_535_1#11$1", name2="char_empty",focus=-1)]
+[name="赫默"]桑尼先生，你有沒有證據？
+[Character(name="avg_npc_535_1#11$1", name2="char_empty",focus=1)]
+[name="桑尼"]就算我有，您又願意相信我......相信一名無路可走的拓荒者嗎？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[CharacterCutin(widgetID="1",block=true)]
+[Character(name="avg_npc_527_1#1$1",name2="avg_npc_528_1#1$1")]
+[Background(image="29_g2_edgeofbase",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[MusicVolume(volume=0.4, fadetime=0.2)]
+[Character(name="avg_npc_527_1#1$1",name2="avg_npc_528_1#1$1",focus=2)]
+[name="萊茵防衛科成員"]警長，我們準備好了，隨時可以切斷基地通訊。
+[Character(name="avg_npc_527_1#1$1",name2="avg_npc_528_1#1$1",focus=1)]
+[name="瑪麗"]......等赫默醫生說完她想說的話。
+[Character(name="avg_npc_527_1#1$1",name2="avg_npc_528_1#1$1",focus=2)]
+[name="萊茵防衛科成員"]可是主任要求通訊必須立刻......
+[Character(name="avg_npc_527_1#1$1",name2="avg_npc_528_1#1$1",focus=1)]
+[name="瑪麗"]我是警長，還是你們萊茵生命的主任是警長？
+[Character(name="avg_npc_527_1#5$1",name2="avg_npc_528_1#1$1",focus=1)]
+[name="瑪麗"]告訴那個斐爾迪南，怎麼救人是我的事，還輪不到他指手畫腳！
+[Character(name="avg_npc_527_1#5$1",name2="avg_npc_528_1#1$1",focus=2)]
+[name="萊茵防衛科成員"]主任已與您的局長打過招呼了，警長。這是他們一起制訂的計畫。
+[Character(name="avg_npc_527_1#1$1",name2="avg_npc_528_1#1$1",focus=1)]
+[name="瑪麗"]......
+[Character(name="avg_108_silent_1#7$1")]
+[name="赫默"]主任......斐爾迪南？
+[name="赫默"]我沒想到，現在的防衛科也歸能量科管了。
+[Character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]呃......
+[Character(name="avg_108_silent_1#4$1")]
+[name="赫默"]要是斐爾迪南覺得結構科也是他說了算的話，我不介意立即從萊茵生命辭職。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Character(name="avg_128_plosis_1#8$1")]
+[Background(image="29_g3_cottage",screenadapt="showall")]
+[Delay(time=1)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.4)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[Character(name="avg_128_plosis_1#8$1")]
+[name="白面鴞"]......
+[Dialog]
+[character(time=1.5)]
+[PlaySound(key="$bodyfalldown1")]
+[delay(time=2.3)]
+[Character(name="avg_135_halo_1#7$1")]
+[characteraction(name="middle", type="jump" , power=5, times=2, fadetime=0.51,block=true)]
+[name="埃琳娜"]喬伊絲......喬伊絲！
+[Character(name="avg_npc_535_1#7$1")]
+[name="桑尼"]她......睡著了？
+[Character(name="avg_135_halo_1#3$1")]
+[name="埃琳娜"]她徹底失去了意識。
+[name="埃琳娜"]如果不能得到及時治療的話，她......用不了多久就會腦死亡。
+[Character(name="avg_npc_535_1#4$1")]
+[name="桑尼"]......
+[Dialog]
+[character]
+[PlaySound(key="$d_gen_transmissionget",volume=0.6)]
+[CharacterCutin(widgetID="1", name="avg_108_silent_1#4$1", style="cutin", fadestyle= "horiz_expand_center", fadetime=0.5, offsetx=0, width=200, block=true)]
+[name="赫默"]桑尼先生，我準備立刻進入基地。
+[name="赫默"]我理解你的擔憂，所以你放心，我不會攜帶任何武器。
+[Dialog]
+[CharacterCutin(widgetID="1",block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[CharacterCutin(widgetID="1",block=true)]
+[Character(name="avg_npc_527_1#1$1",name2="avg_108_silent_1#7$1")]
+[Background(image="29_g2_edgeofbase",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[Character(name="avg_npc_527_1#5$1",name2="avg_108_silent_1#7$1",focus=1)]
+[name="瑪麗"]醫生，你別做傻事！
+[Character(name="avg_npc_527_1#5$1",name2="avg_108_silent_1#7$1",focus=2)]
+[name="赫默"]不，我很清醒。
+[name="赫默"]桑尼先生，我也不會讓任何警察......或者防衛科的人跟著。
+[Character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]赫默研究員，我會把你的行動彙報給主任......帕爾維斯主任。
+[Character(name="avg_108_silent_1#7$1")]
+[name="赫默"]我將以羅德島幹員的身份進入359號基地——
+[Character(name="avg_1027_greyy2_1#7$2")]
+[name="格雷伊"]還有我......
+[Character(name="avg_108_silent_1#2$1")]
+[name="赫默"]——我的電氣工程師同事會與我同行。
+[Character(name="avg_108_silent_1#4$1")]
+[name="赫默"]我們會為基地的礦石病患者提供無償的醫療服務。
+[name="赫默"]不止是為了我的朋友，也為你們。
+[Character(name="avg_108_silent_1#7$1")]
+[name="赫默"]我不管萊茵生命會做出什麼選擇。
+[Character(name="avg_108_silent_1#4$1")]
+[name="赫默"]我只知道，救治感染者是羅德島一貫的行為準則。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Image]

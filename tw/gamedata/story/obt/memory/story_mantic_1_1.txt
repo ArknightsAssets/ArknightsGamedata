@@ -1,0 +1,417 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")] 
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_rhodescom",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop",volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=2)]
+羅德島指揮室
+[Dialog]
+[Delay(time=1)]
+[Character(name="avg_npc_167", fadetime=1.5)]
+[delay(time=1.5)]
+[Character(name="avg_npc_167")]
+[name="Stormeye"]把她帶回來是我的失誤，抱歉。
+[Character(name="char_003_kalts_1")]
+[name="凱爾希"]我需要瞭解當時的情況。
+[Character(name="avg_npc_167")]
+[name="Stormeye"]如我在報告中所述，她昏倒在安全屋附近，奄奄一息，身上蓋著一層沙塵，和大多數在沙漠遭遇天災的人一樣。
+[name="Stormeye"]我想給她一口水喝，出於一點以前的習慣。
+[Character(name="char_003_kalts_1")]
+[name="凱爾希"]救助他人的善心沒有錯，只要能承擔相應的責任。
+[Character(name="avg_npc_167")]
+[name="Stormeye"]我承認，我沒充分考慮她可能會是什麼人。
+[name="Stormeye"]我給了她淡鹽水，把她留在村落附近的陰涼處。
+[name="Stormeye"]下一次見到她就是在飛行器上。
+[name="Stormeye"]顯然，我被她跟蹤了。
+[Character(name="char_003_kalts_1")]
+[name="凱爾希"]你當時什麼都沒有察覺到，是嗎？
+[Character(name="avg_npc_167")]
+[name="Stormeye"]返程前我執行了完整的艙內檢查，沒有異常狀況。
+[name="Stormeye"]她是在半途中突然出現的，我甚至不能確定她是否一直潛伏在飛行器內部。
+[name="Stormeye"]如果不是她當時體能不足，我沒有把握閃避她的襲擊。
+[Character(name="char_003_kalts_1")]
+[name="凱爾希"]根據我們目前的情報，她確實掌握著某種類似隱形的源石技藝，如果你能提供更多細節，我們與她的周旋也許可以輕鬆一些。
+[Character(name="avg_npc_167")]
+[name="Stormeye"]抱歉，凱爾希醫生。我確實沒有發現任何徵兆。
+[name="Stormeye"]甚至沒有看到過她在黃沙上留下腳印。
+[Character(name="char_003_kalts_1")]
+[name="凱爾希"]這或許也是有效的情報。
+[name="凱爾希"]對於她襲擊你的理由，你是否有判斷？
+[Character(name="avg_npc_167")]
+[name="Stormeye"]可能是舊仇，也可能是誤會。或者只是穿越荒漠後的應激反應。
+[Dialog]
+[Decision(options="或者只是因為你看到了她。", values="1")]
+[Predicate(references="1")]
+[Character(name="avg_npc_167")]
+[name="Stormeye"]我也這樣想過。
+[Character(name="char_003_kalts_1")]
+[name="凱爾希"]羅德島會對她的背景持續調查，但是有的答案或許只能來自她本人。
+[name="凱爾希"]為了讓你放心，Stormeye，她來到羅德島之後沒有傷害任何人。
+[name="凱爾希"]她接受了體檢，在靜脈注射過程中自行拔掉針頭離開了醫療部，隨後被安置到了單間宿舍。
+[name="凱爾希"]透過感染監控裝置返回的資料來看，目前她沒有生命危險。
+[name="凱爾希"]只是她一直拒絕與我們溝通。
+[Character(name="avg_npc_167")]
+[name="Stormeye"]好。
+[Character(name="avg_npc_167")]
+[Dialog]
+[delay(time=0.7)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[characteraction(name="middle", type="move", xpos=-300, fadetime=2,block=false)]
+[Character(fadetime=0.5)]
+[delay(time=2)]
+[character(name="char_003_kalts_1")]
+[name="凱爾希"]那麼，接下來是你關心的問題，{@nickname}。
+[name="凱爾希"]羅德島嘗試著追溯了她攜帶的那些身份牌，它們大部分比她本人的年紀更大，是數十年前地區衝突的遺留物。
+[name="凱爾希"]我們只能從中得知，她的活動範圍穿越了大半個薩爾貢。除此之外，那些身份牌之間找不到更深層的聯繫。
+[name="凱爾希"]另一方面的調查從她攜帶的武器入手。可以肯定的是，她的主要作戰方式是暗殺。
+[name="凱爾希"]她攜帶了許多精巧的小型道具，做工並不像是自製。
+[name="凱爾希"]但羅德島無法追蹤任何武器與毒劑的來源。以我們現在的情報網路，查不到一絲一毫的資訊。
+[name="凱爾希"]同時，薩爾貢的暗殺活動並不少見，所以我們也無法將她的行動與特定的某一事件對應起來。
+[name="凱爾希"]最後，從她與羅德島接觸後的行為來看，我們恐怕很難從她那裡直接問出任何資訊。
+[name="凱爾希"]她已經甦醒三天了，但一直沒有接受我們提供的食物和水。
+[name="凱爾希"]如果她對自己的過去這樣忠誠，羅德島真的能與她達成合作嗎？
+[name="凱爾希"]——這件事交由你來評判，{@nickname}。如果你有空，可以去看看她。
+[name="凱爾希"]對羅德島來說，她首先是感染者，這和她的過往無關。
+[name="凱爾希"]如果她願意配合，羅德島是可以接納她的。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="bg_black",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]	
+[name="戴白色面罩的人"]老規矩，轉酒瓶。
+[name="戴白色面罩的人"]瓶口指到的人拿走任務。
+所有人沉默地圍成一圈。瓶子並不在乎自己選擇誰，他們都一樣。
+瓶口在她面前停了下來，她取出紙條，安靜地退出人群。
+[name="戴白色面罩的人"]所有的指令都在瓶子裡的紙條上。
+隊長每一次都會說這些話，就好像默認這裡有新人。
+她不知道實際上有哪些人來了或者走了，這裡的人有時候只有三四個，有時候多達十幾個。
+她覺得隊長也不知道，因為那個戴白色面罩的人聲音也變了。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="bg_room_2",screenadapt="showall")]
+[Delay(time=1)]
+[playMusic(intro="$warm_intro", key="$warm_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[character(name="avg_215_mantic_1#1$1")]
+[name="驚慌的曼提柯女孩"]哈啊......
+[name="驚慌的曼提柯女孩"]（很危險......差點就又睡著了......）
+[character(name="avg_215_mantic_1#6$1")]
+[name="驚慌的曼提柯女孩"]（呃......我身上披著的是什麼？這件衣服質地好奇怪......）
+[character(name="char_empty")]
+[name="門外的聲音A"]我好多年沒見到曼提柯了！那個小姑娘還不願意出來嗎？
+[character(name="avg_215_mantic_1#9$1")]
+[name="驚慌的曼提柯女孩"]（監視的人來了......）
+[Dialog]
+[delay(time=0.7)]
+[characteraction(name="middle", type="move", xpos=-250, fadetime=1,block=false)]
+[Character(fadetime=0.5)]
+[delay(time=2)]
+[Character]
+[name="門外的聲音B"]請冷靜一點，華法琳醫生。被您綁......請上手術台的話，可能會激發那孩子潛藏的一些心理創傷。
+[name="門外的聲音A"]嗯？
+[name="門外的聲音A"]那凱爾希想怎麼辦？雖然我們確實有最先進的醫療技術，但是也做不到隔著房門治病。
+[name="門外的聲音B"]凱爾希醫生說的是，再給她一些時間......如果她自己不願意開門，我們也不能做什麼。
+[name="門外的聲音B"]對了，我給她找了件舊制服外套，畢竟她之前的那身衣服沒法穿了。
+[name="門外的聲音B"]那些又是沙子又是血的布料換掉之後，她看起來精神多了。
+[name="門外的聲音B"]別太擔心，您的實驗......呃，您關心的患者應該會很快恢復過來的。
+[Dialog]
+[Character(name="char_empty")]
+[characteraction(name="middle", type="move", xpos=-150, fadetime=0.3, block=true)]
+[delay(time=0.51)]
+[characteraction(name="middle", type="move", xpos=150, fadetime=1, block=false)]
+[Character(name="avg_215_mantic_1#9$1",fadetime=0.7)]
+[delay(time=2)]
+[name="驚慌的曼提柯女孩"]......安靜了。
+[name="驚慌的曼提柯女孩"]監視的人，走了嗎？
+[Character(name="avg_215_mantic_1#1$1")]
+[name="驚慌的曼提柯女孩"]他們知道......我是感染者。
+[name="驚慌的曼提柯女孩"]他們在等我投降......用治病的許諾，騙我投降。
+[Character(name="avg_215_mantic_1#6$1")]
+[name="驚慌的曼提柯女孩"]唔......！
+[name="驚慌的曼提柯女孩"]摸不到......就算在身上，用力按到痛，也摸不到裡面的源石......
+[name="驚慌的曼提柯女孩"]所以，知道我是感染者的，一定是上面的人。
+[name="驚慌的曼提柯女孩"]被發現了嗎？我沒能殺掉那個士兵......
+[name="驚慌的曼提柯女孩"]他們在考驗我......想知道我還能不能用。
+[Character(name="avg_215_mantic_1#3$1")]
+[name="驚慌的曼提柯女孩"]那樣的話，就太好了......我已經，很多天，沒有得到指令了......
+[name="驚慌的曼提柯女孩"]我會證明自己的......
+[Character(name="avg_215_mantic_1#1$1")]
+[name="驚慌的曼提柯女孩"]腿上，被戴上了奇怪的鐐銬......像是移動城市才有的科技......
+[name="驚慌的曼提柯女孩"]這裡有柔軟的床鋪......牆縫裡也看不見沙子......
+[name="驚慌的曼提柯女孩"]如同夢境中的生活......難道我已經在那位帕夏的身邊了嗎？
+[Dialog]
+[Character]
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=1)]
+[name="門外的聲音A"]喂喂，你好？在睡覺嗎？睡醒了嗎？
+[name="門外的聲音A"]我知道......肚子餓久了的話是不能一口氣吃很多東西的，所以我煮了很淡很淡的粥。
+[name="門外的聲音A"]......沒醒啊，那我放在小窗口了哦。
+[name="門外的聲音B"]嘿，小古米~今天的早餐輪到你做了嗎？早知道這樣我就早點起床啦。
+[name="門外的聲音B"]啊，你也是來找這個新人的嗎？我昨天就想問她要不要和我拼一套美甲套裝，但是她一直沒出現。
+[name="門外的聲音A"]我聽醫療部的幹員說她要好好休息，不能隨便打擾的哦。
+[name="門外的聲音B"]我也不是要上門推銷啦，只是想看看她有沒有出來活動。
+[name="門外的聲音B"]我好不容易找到一個感覺適合藍色指甲油的人，隨便放過的話很可惜欸。
+[name="門外的聲音A"]呃，宴，在這種事情上不要露出那麼認真的表情嘛。
+[Character(name="avg_215_mantic_1#1$1")]
+[name="驚慌的曼提柯女孩"]（她們習慣於用名字互稱......不像是扮演出來的。）
+[name="驚慌的曼提柯女孩"]（所以，抓到我的，是敵人......）
+[name="驚慌的曼提柯女孩"]（我的武器，被沒收了......尖銳的傢俱，這裡也沒有......）
+[Character(name="avg_215_mantic_1#11$1")]
+[name="驚慌的曼提柯女孩"]（這些人做好了審問的準備，不會讓我......提前逃跑......）
+[name="驚慌的曼提柯女孩"]（而且這裡很多人都見過我了......我已經沒用了。）
+[Character(name="avg_215_mantic_1#10$1")]
+[name="驚慌的曼提柯女孩"]（沒關係，總有一天會變成這樣的......）
+[Character]
+[name="門外的聲音A"]對了，昨天和前天放在這裡的餐盤她是不是都沒有拿？
+[name="門外的聲音B"]好像是。她也和瓦伊凡一樣可以時不時少吃一頓飯嗎？
+[name="門外的聲音A"]我不知道......餓著肚子不難過嗎？而且食物浪費掉多可惜呀。
+[name="門外的聲音A"]算啦，新朋友好像還沒有睡醒呢，我們還是不要吵到她吧。
+[Character(name="avg_215_mantic_1#1$1")]
+[name="驚慌的曼提柯女孩"]......她們也走了。
+[name="驚慌的曼提柯女孩"]那些話......真的是故意說給我聽的嗎？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="bg_corridor",screenadapt="showall")]
+[Delay(time=1)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[Character(name="char_212_ansel_1")]
+[name="安賽爾"]博士，沒想到您也會有空到幹員宿舍這邊來。
+[name="安賽爾"]畢竟每次路過您的辦公室，都能看到桌上堆滿了戰鬥資料和要處理的文書......
+[Dialog]
+[Decision(options="凱爾希建議我有空來看看她。;我很好奇她的情況。;從辦公桌前站起來走走也是一種鍛煉身體。", values="1;2;3")]
+[Predicate(references="1")]
+[Character(name="char_212_ansel_1")]
+[name="安賽爾"]凱爾希醫生竟然對您也這樣說了......
+[Predicate(references="2")]
+[Character(name="char_212_ansel_1")]
+[name="安賽爾"]啊，對，醫療部接收了那位曼提柯女孩之後，大家也都很關心她。
+[Predicate(references="3")]
+[Character(name="char_212_ansel_1")]
+[name="安賽爾"]......雖然很高興博士您接受了我的勸告，但只是走走恐怕不夠。
+[name="安賽爾"]啊，但還是先說說那位曼提柯女孩的事情吧。
+[Predicate(references="1;2;3")]
+[name="安賽爾"]從醫療幹員的角度來說，我們都想幫助那個女孩。
+[name="安賽爾"]雖然她的感染已經發展到了中期，但以羅德島目前的技術還完全可以控制，避免其進一步惡化。
+[name="安賽爾"]感染監控裝置收集到的資料顯示，她現在體內的源石結晶比較活躍，同時本人因為絕食而非常虛弱。
+[name="安賽爾"]我們都不想看到病人這樣自我消耗......
+[name="安賽爾"]不過，突然被帶到陌生的環境，醒來還發現自己躺在手術台上，覺得害怕確實很正常。
+[name="安賽爾"]我，呃，我帶著芙蓉做的健康餐，想來跟她打個招呼，表達我們的善意。
+[name="安賽爾"]博士，您有什麼想法嗎？
+[Dialog]
+[Decision(options="告訴她羅德島能夠保護她。;出於善意還是不要給她吃健康餐吧。;告訴她羅德島需要她的能力。", values="1;2;3")]
+[Predicate(references="1")]
+[Character(name="char_212_ansel_1")]
+[name="安賽爾"]保護？博士，您的意思是......她害怕的不僅僅是陌生的羅德島嗎？
+[name="安賽爾"]唔，也許她也很害怕礦石病吧。作為醫療幹員，我們會保證她的生命安全的。
+[Predicate(references="2")]
+[Character(name="char_212_ansel_1")]
+[name="安賽爾"]嗯，博士您說得對，健康餐主要成分是冷食，對幾天沒吃東西的她來說刺激性太強了，而且也不能迅速補充能量。
+[Predicate(references="3")]
+[Character(name="char_212_ansel_1")]
+[name="安賽爾"]咦，博士的意思是，您覺得她也可以成為預備幹員嗎？
+[name="安賽爾"]說實話，要是在演習裡遇到看不見的對手，我肯定會很緊張，哈哈。
+[Predicate(references="1;2;3")]
+[name="安賽爾"]呼，有博士在，總覺得說服對方的機率更大一些。
+[Dialog]
+[Decision(options="對了，別把羅德島的行動描述得太兇險。;你可以把自己信任羅德島的理由告訴她。", values="1;2")]
+[Predicate(references="1")]
+[Character(name="char_212_ansel_1")]
+[name="安賽爾"]好的，博士。
+[name="安賽爾"]其實作為預備幹員，我也不知道前輩們，還有博士您，究竟經歷過怎樣的苦戰......
+[name="安賽爾"]但是很多人都說，您救過他們。
+[Predicate(references="2")]
+[Character(name="char_212_ansel_1")]
+[name="安賽爾"]我自己嗎？我相信羅德島治療礦石病的決心，也很敬仰凱爾希老師的學識與能力。
+[name="安賽爾"]而且在一些危險行動中救治傷患時，我相信博士會指揮好一切，而我只需要做好醫療幹員該做的事情。
+[Predicate(references="1;2")]
+[name="安賽爾"]我大概會把這些告訴她。
+[name="安賽爾"]博士，您要和我一起去嗎？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character]
+[musicvolume(volume=0, fadetime=1)]
+[playMusic(intro="$drift_intro", key="$drift_loop", volume=0.2)]
+[Delay(time=2)]
+[Background(image="bg_desert_1",screenadapt="showall")]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Character]
+[name="戴白色面罩的人"]你藏在這裡幾天了？
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="驚慌的曼提柯女孩"]啊！
+[name="戴白色面罩的人"]你甚至沒有殺死一隻野獸，給自己弄點食物的能力，對嗎？
+[name="驚慌的曼提柯女孩"]我......我並不想這樣......我不是故意要藏起來的，只是誰都看不見我......
+[name="驚慌的曼提柯女孩"]我......沒有武器，也沒有碰過武器......
+[name="戴白色面罩的人"]你明明天生就有武器。
+[name="驚慌的曼提柯女孩"]我一直很小心......我的尾巴，從沒傷害過任何人！
+[name="戴白色面罩的人"]你想用你的柔弱騙取誰的同情呢？你已經沒有觀眾了。
+[name="戴白色面罩的人"]你的礦石病都發展到現在的地步了，你還覺得自己能正常地在市集上打工，從別人手裡換來食物？
+[name="驚慌的曼提柯女孩"]你......你怎麼知道......你是誰？
+[name="戴白色面罩的人"]你應該很清楚，過去的那種生活裡已經沒有你的位置了。
+[name="戴白色面罩的人"]你得學會拿起武器，這是現在的你唯一的價值。
+[name="驚慌的曼提柯女孩"]不......我不會......
+[name="戴白色面罩的人"]你看，這是礦石病的止痛藥。
+[name="戴白色面罩的人"]你想活下去，對嗎？
+[name="戴白色面罩的人"]我的隊伍恰好可以接納你這樣的怪物。
+[name="戴白色面罩的人"]加入我們吧，領袖會救你。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[playMusic(intro="$warm_intro", key="$warm_loop", volume=0.4)]
+[Delay(time=2)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="bg_room_2",screenadapt="showall")]
+[Character(name="avg_215_mantic_1#11$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="驚慌的曼提柯女孩"]嗚......
+[Dialog]
+[Character]
+熟悉的饑餓感，以及在缺水中意識緩緩枯萎的感覺。
+在長時間的蹲伏中，這種境況時有發生。她能夠判斷自己目前的身體機能，如果是在執行任務，她還不會失手。
+不過，以往的每一次任務都會指定一個交付地點，只要到了那裡，她就能得到休息。
+[Dialog]
+[Background(image="bg_room_2",screenadapt="showall", fadetime=0.5)]
+[Delay(time=0.5)]
+[Character(name="avg_215_mantic_1#1$1")]
+[name="驚慌的曼提柯女孩"]這一次的紙條上，沒有寫......
+[Character(name="avg_215_mantic_1#10$1")]
+[name="驚慌的曼提柯女孩"]啊......我明明已經沒用了，卻還希望得救......
+[Character(name="avg_215_mantic_1#11$1")]
+[name="驚慌的曼提柯女孩"]明明早就知道......隊長，是在說謊......
+[Dialog]
+[Character]
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=1)]
+[name="門外的聲音"]你好......
+[delay(time=1)]
+[name="安賽爾"]你好，我是安賽爾。
+[name="安賽爾"]抱歉，我不知道該怎麼稱呼你。不過在羅德島，有很多人不願意提起自己的姓名，於是選擇用代號來自稱。你也可以給自己取一個。
+[Character(name="avg_215_mantic_1#11$1")]
+[name="驚慌的曼提柯女孩"]（他們都說這裡是羅德島，羅德島是哪裡？）
+[name="驚慌的曼提柯女孩"]（這件衣服上也是這麼寫的......）
+[Character]
+[name="安賽爾"]我能夠理解......你醒來，發現自己在陌生的環境裡，一定會很緊張。所以我首先要澄清，我們沒有惡意。
+[name="安賽爾"]嗯......當時我就是站在旁邊做記錄的助手之一，所以我真心希望你不要誤會。
+[name="安賽爾"]我們是一家無國籍的醫療公司，旨在幫助泰拉各地的感染者。
+[name="安賽爾"]雖然你並不是主動前來求醫的，而是意外被帶到了羅德島，但由於你當時的身體狀況不佳，我們出於醫者的本職進行了臨床檢查。
+[Character(name="avg_215_mantic_1#11$1")]
+[name="驚慌的曼提柯女孩"]（他也說這裡是醫療公司......是哥倫比亞人來這裡開的公司嗎？）
+[Character]
+[name="安賽爾"]我們真的很想幫助你......不過你不願意接受的話，我們也不會強求。
+[name="安賽爾"]啊，但是羅德島眼下並不在薩爾貢境內。
+[Character(name="avg_215_mantic_1#6$1")]
+[name="驚慌的曼提柯女孩"]（不在......薩爾貢？）
+[Character]
+[name="安賽爾"]如果你想回去，我們也只能在下一次停靠移動城市的時候讓你離艦，請你自己找到回家的路。
+[name="安賽爾"]當然如果你願意留在這裡的話更好。呃，我們的體檢也不會涉及什麼個人隱私的。
+[name="安賽爾"]而且，應該已經有人向你介紹過博士了吧。
+[Character(name="avg_215_mantic_1#11$1")]
+[name="驚慌的曼提柯女孩"]（博士......確實是一個總被提到的稱號......）
+[Character]
+[name="安賽爾"]博士說，你的能力會在他的戰術裡有一席之地。
+[name="安賽爾"]因為感染者的處境並不好，我們嘗試救助感染者的時候，也難免會跟其他人產生一些衝突。
+[name="安賽爾"]所以，也需要一些有戰鬥能力和戰鬥意願的夥伴，去保護其他人。
+[Character(name="avg_215_mantic_1#1$1")]
+[name="驚慌的曼提柯女孩"]（需要的意思是......我，我還有用嗎？）
+[Character]
+[name="安賽爾"]呃，不要害怕，我想你會和我一樣先當個預備幹員吧。
+[name="安賽爾"]而且前輩們都說博士的指揮值得信任。
+[name="安賽爾"]許多從絕境中生還的前輩說，博士把他們帶了回來。
+[Character(name="avg_215_mantic_1#6$1")]
+[name="驚慌的曼提柯女孩"]（......真的？）
+[name="驚慌的曼提柯女孩"]（他們不會讓我去送死？）
+[name="驚慌的曼提柯女孩"]
+[Character(name="avg_215_mantic_1#4$1")]
+[name="驚慌的曼提柯女孩"]（清嗓子）......你、你們好。
+[Character]
+[name="安賽爾"]......博士，她好像還是沒有回應。您要先回去嗎？
+[Character(name="avg_215_mantic_1#4$1")]
+[name="驚慌的曼提柯女孩"]不，請等一等......
+[Character]
+[name="安賽爾"]現在房間裡聽不到任何動靜，也有可能對方正在睡覺。
+[Character(name="avg_215_mantic_1#4$1")]
+[name="驚慌的曼提柯女孩"]不要走......我可以證明自己......
+[name="驚慌的曼提柯女孩"]指揮者，請不要丟下我......
+[Character]
+[name="安賽爾"]我雖然很擔心她，但目前還是不要過度打擾她比較好。
+[Character(name="avg_215_mantic_1#5$1")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="驚慌的曼提柯女孩"]我在這裡......請注意到我呀......
+[name="驚慌的曼提柯女孩"]我想活下去......
+[Dialog]
+[Character]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=0.5)]
+[Background(image="bg_black",screenadapt="showall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.7)]
+[Dialog]
+[Decision(options="門似乎微微晃動了一下。;我覺得她在聽。", values="1;2")]
+[Predicate(references="1;2")]
+[Delay(time=1)]
+......
+[Dialog]
+[Decision(options="如果你不知道怎麼回答，可以先給我一個代號。;我該如何稱呼你？", values="1;2")]
+[Predicate(references="1;2")]
+[Delay(time=1)]
+[Decision(options="（將自己隨身記事的紙箋和筆遞進房門）", values="1")]
+[Predicate(references="1")]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="bg_rhodescom",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop",volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[Character(name="char_003_kalts_1", name2="char_130_doberm_ex", focus=2)]
+[name="杜賓"]是的，博士，對於羅德島的幹員們來說，這樣的突襲並非無法應付。
+[name="杜賓"]我也很認同讓一些經驗不足的幹員參與這次演習，這樣他們在戰場上面對隱形的敵人時不會太手足無措。
+[name="杜賓"]但問題在於，這個自稱“獅蠍”的殺手，我們對她還一無所知。
+[name="杜賓"]你不能把她寫的一張字條視作正式的入職申請，更不要說參與對抗演習的申請。
+[name="杜賓"]她到現在為止還沒有提起她的過去，一切背景調查得到的資訊都很模糊。
+[Dialog]
+[Decision(options="正因為她對自己的過去一言不發，我們才能信任她。", values="1")]
+[Predicate(references="1")]
+[Character(name="char_003_kalts_1", name2="char_130_doberm_ex", focus=2)]
+[name="杜賓"]你的意思是，她一旦被拉攏，就不會背叛——我明白。
+[name="杜賓"]但是首先，羅德島要怎麼拉攏她？
+[Dialog]
+[Decision(options="用這場戰鬥。", values="1")]
+[Predicate(references="1")]
+[Character(name="char_003_kalts_1", name2="char_130_doberm_ex", focus=1)]
+[name="凱爾希"]在我們的幹員有能力防禦乃至反制她襲擊的情況下，演習戰反而會變成羅德島對她表示誠意的方法。
+[name="凱爾希"]就像刺客透過將刀放在君主枕邊來告訴對方，自己隨時有能力殺了對方，只是不願意這麼做。
+[name="凱爾希"]她應該能夠理解這其中的含義。
+[Character(name="char_003_kalts_1", name2="char_130_doberm_ex", focus=2)]
+[name="杜賓"]......好吧。我可以接受。
+[name="杜賓"]我會安排對這次演習進行完整錄影，作為她檔案資料的一部分留存。
+[name="杜賓"]博士，我想你一定能從中看出許多我們需要的資訊。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Image]

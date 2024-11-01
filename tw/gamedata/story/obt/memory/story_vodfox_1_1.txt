@@ -1,0 +1,889 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[Background(image="33_g5_srcpark",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[PlaySound(key="$d_avg_rainlight_loop", volume=1, loop=true, channel="a")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]巫戀，接下來其他人要在病房裡診斷和救治那些感染者，你自己待在這裡，可以嗎？
+[name="羅德島幹員"]呃，不對，我說錯了......還有小莫提陪著你，你們一起待在這裡，應該沒問題吧？
+[character(name="avg_254_vodfox_1#1$1")]
+[name="巫戀"]......嗯。你們去解決那些人的問題吧，這裡可以交給我。
+[character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]我的意思不是要交給你什麼任務呀......
+[dialog]
+[Delay(time=1)]
+[name="羅德島幹員"]（算了，和羅德島上的許多孩子比起來，巫戀其實還挺成熟的，相信她好了。）
+[name="羅德島幹員"]好啦，那我去忙了。
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[character(fadetime=1.5)]
+[delay(time=2)] 
+[character(name="avg_254_vodfox_1#2$1")]
+[name="巫戀"]......
+[character(name="avg_254_vodfox_1#8$1")]
+[name="巫戀"]小莫提，你聽到聲音了，對嗎？
+[dialog]
+[character]
+[name="小莫提"]......
+[character(name="avg_254_vodfox_1#1$1")]
+[name="巫戀"]嗯。我知道，你不會錯過哭聲的。
+[name="巫戀"]我們走吧。
+[dialog]
+[SoundVolume(volume=0.2, channel="a",fadetime=2)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[SoundVolume(volume=1, channel="a",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]	
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]毛羅先生，請不要這樣，這會讓我很難辦的。
+[name="小鎮法官"]作為感染者，你繳納的保險金不足規定金額的百分之五十，是不能繼續工作的。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]可、可是，我明明已經交過足額的保險金了......昨天，昨天晚上您的下屬上門來收的呀。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]我的下屬？我沒有安排他們這麼做，更沒有見到你聲稱交來的那筆錢。
+[name="小鎮法官"]你看，法典此處已經寫明，保險金由法官收繳。
+[name="小鎮法官"]你必須確保錢交到我這裡，否則，我該如何更新記錄？
+[name="小鎮法官"]很抱歉，根據記錄，你目前就是拖欠保險金的狀態。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]可他們......他們上一次來的時候，說的是“法官怎麼可能親自為討債而奔波”......
+[dialog]
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=0)]
+[Delay(time=1)]
+[characteraction(name="left", type="move", xpos=100, fadetime=2, block=false)]
+[Delay(time=2.5)]
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]看著我手中的法典，再仔細回憶一下。你敢確定自己的記憶沒出錯嗎？
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]啊、啊......抱歉，是我記錯了，法官。一切全是我自己的愚蠢。
+[name="感染者毛羅"]但是，我真的交不出一分錢了......
+[dialog]
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=0)]
+[characteraction(name="left", type="move", xpos=-100, fadetime=1, block=false)]
+[Delay(time=1.5)]
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]是嗎？真遺憾。你的身體狀況也無法勝任我們提供的工作。
+[name="小鎮法官"]因此，根據律法，我只能從你的家產中沒收一部分，作為抵押。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]我、我為了湊夠那筆錢，家裡已經沒有東西可以給您沒收了......
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]哦？我認為我的眼睛比你更清楚事物的價值。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]可我們一家人也不能沒有飯吃啊......求求您，再寬限一點時間吧！
+[name="感染者毛羅"]我一定能想辦法搞到些錢......
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]我希望你尊重法典，可以嗎？
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]......是，當然。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]正巧，我眼前就有一件還算有價值的東西，法典允許你以此抵押。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]您......您是說這隻懷錶？
+[name="感染者毛羅"]......唉，您說得對！是我忘記了！
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]想起來就好。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]那麼，我們可以約定在這隻懷錶的時針走字兩圈之後再見。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]呃，謝謝您的寬容......
+[dialog]
+[delay(time=1)]
+[name="感染者毛羅"]那個，按照律法，抵押的東西，我還能贖回來嗎？那、那是我曾祖父在家族內戰裡的遺物......能讓我獲得一些尊重。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]當然。
+[dialog]
+[Character]
+[delay(time=1)]
+[playsound(key="$d_gen_walk_n")]
+[character(name="avg_254_vodfox_1#1$1",fadetime=1.5)]
+[delay(time=2)]
+[name="巫戀"]小莫提，我們要對那個人說嗎？......嗯，不說出來比較好？
+[character(name="avg_254_vodfox_1#7$1")]
+[name="巫戀"]她的身邊，已經跟著很多詛咒了。這樣下去，會發生壞事情。
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮法官"]嗯？瘋瘋癲癲的小女孩，一個人亂跑......
+[name="小鎮法官"]是在找自己的家人嗎？
+[dialog]
+[delay(time=1)]
+[name="小鎮法官"]後巷的垃圾桶，河底，墓地或花園......多半是在這些地方吧。
+[character(name="avg_254_vodfox_1#6$1")]
+[name="巫戀"]......
+[character(name="avg_254_vodfox_1#6$1")]
+[name="巫戀"]小莫提，覺得疼嗎？......在下雨，但不是因為下雨才疼的。
+[character(name="avg_254_vodfox_1#7$1")]
+[name="巫戀"]她也會疼得受不了的。
+[dialog]
+[Character(name="avg_npc_697_1#1$1")]
+[delay(time=1)]
+[name="小鎮法官"]（那個女孩，剛剛是不是說了什麼？）
+[name="小鎮法官"]......該死，這場雨害得我又犯頭疼了，不想了。
+[dialog]
+[StopSound(channel="a", fadetime=1)]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Background(image="33_g7_reception",screenadapt="coverall")]
+[Delay(time=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]	
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_699_1#1$1", focus=2)]
+[name="法官下屬"]信使剛剛來過一趟，這些都是寄給您的。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_699_1#1$1", focus=1)]
+[name="小鎮法官"]有從沃爾西尼寄來的明信片嗎？
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_699_1#1$1", focus=2)]
+[name="法官下屬"]我絕不敢擅自查看您的信件。
+[name="法官下屬"]但您做了這麼多事，一定會獲得家主的稱讚......我大膽猜測，明信片應該也到了。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_699_1#1$1", focus=1)]
+[name="小鎮法官"]嗯，先看看其他的吧......
+[dialog]
+[Character(name="avg_npc_697_1#1$1")]
+[PlaySound(key="$d_avg_paper1", volume=1)]
+[delay(time=1.5)]
+[name="小鎮法官"]造紙廠的老闆送來的禮物，東街二十家住戶的賠償金，還不錯。
+[name="小鎮法官"]鎮議事會的邀請函？這種東西，沒有必要寄給我。
+[name="小鎮法官"]這封信是為自己入獄的兒子求情......無聊。
+[dialog]
+[delay(time=1.5)]
+[name="小鎮法官"]......不，等等。
+[name="小鎮法官"]反面還有字？
+[dialog]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_paper1", volume=1)]
+[delay(time=2)]
+[name="小鎮法官"]......
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮法官"]你過來。把這件事辦了。
+[Character(name="avg_npc_699_1#1$1")]
+[name="法官下屬"]是。
+[dialog]
+[PlaySound(key="$d_avg_paper1", volume=1)]
+[delay(time=2)]
+[name="法官下屬"]......您的意思是把這個罪犯放出去？他家裡還沒給夠錢......
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮法官"]我要你看的是反面。
+[Character(name="avg_npc_699_1#1$1")]
+[name="法官下屬"]反面只有白紙啊......
+[dialog]
+[delay(time=1.5)]
+[name="法官下屬"]咳，我明白。寄信人會被乾淨俐落地處理掉，不留任何痕跡。
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮法官"]哼。
+[name="小鎮法官"]雖然用詛咒來發洩怨恨的方式很可笑，但我也不希望看到有人不尊重我的法典。
+[dialog]
+[Character(name="avg_npc_699_1#1$1")]
+[delay(time=1)]
+[name="法官下屬"]詛咒？
+[name="法官下屬"]......
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮法官"]好了，再看看下一封。
+[dialog]
+[PlaySound(key="$d_avg_paper1", volume=1)]
+[delay(time=1.5)]
+[playMusic(intro="$plot_intro", key="$plot_loop", volume=0.6)]
+[delay(time=2.5)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_smashtable", volume=1)]
+[delay(time=1.5)]
+[name="小鎮法官"]——怎麼回事？！
+[name="小鎮法官"]你，先回來。手裡的信給我。
+[Character(name="avg_npc_699_1#1$1")]
+[name="法官下屬"]是。
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮法官"]......一模一樣的內容和字跡。
+[dialog]
+[Character]
+[PlaySound(key="$d_avg_chairrub", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_paper1", volume=1)]
+[delay(time=1.2)]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_paper1", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[delay(time=2)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_smashtable", volume=1)]
+[Character(name="avg_npc_697_1#1$1")]
+[delay(time=1.5)]
+[name="小鎮法官"]每一封信，每一封信都有！
+[name="小鎮法官"]“你的惡意招來了詛咒，你的身上會發生很壞的事情。黑色羽獸糾纏著你，你會失去身上唯一閃閃發光的東西。”
+[dialog]
+[delay(time=1.5)]
+[name="小鎮法官"]......真幼稚。
+[name="小鎮法官"]給我搞清楚，這麼幼稚的事情是誰做出來的。
+[Character(name="avg_npc_699_1#1$1")]
+[name="法官下屬"]但是我確實只看見白紙......
+[dialog]
+[Character(name="avg_npc_697_1#1$1")]
+[delay(time=2)]
+[Character(name="avg_npc_699_1#1$1")]
+[name="法官下屬"]......我是說，我們一定會把惡作劇的人揪出來。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Background(image="33_g2_srcalley",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_rainlight_loop", volume=1, loop=true, channel="c")]
+[musicvolume(volume=0.6, fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮法官"]昨天的那些詛咒信，居然到現在都沒查出任何結果。這座小鎮不就只有這麼些人嗎？
+[name="小鎮法官"]唉，我身邊是不是該換幾個更得力的助手了呢？
+[dialog]
+[delay(time=1.5)]
+[name="小鎮法官"]......從那個感染者手裡拿來的懷錶，走字比標準時間慢了五分鐘啊。
+[name="小鎮法官"]不得不說，我確實一向很寬容。
+[name="小鎮法官"]希望他不要辜負我的善意。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Character(name="avg_npc_501_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="羅德島幹員"]先生，您還記得自己是什麼時候出現礦石病症狀的嗎？
+[Character(name="avg_npc_501_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]這......我不確定。也許是近幾天？
+[Character(name="avg_npc_501_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="羅德島幹員"]那您對自己感染礦石病的原因，有沒有什麼頭緒呢？
+[name="羅德島幹員"]說實話，根據我們對您做的臨時檢測來看，您和這附近的許多人一樣，是最近剛剛遭受急性感染。
+[name="羅德島幹員"]我們需要查清大規模感染的源頭，儘量遏制住礦石病在這座小鎮蔓延。
+[Character(name="avg_npc_501_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]呃，您說的這些，我不太聽得懂。
+[name="感染者毛羅"]我、我以前就在那邊餐廳的後廚工作，沒別的，別的我什麼都不知道。
+[Character(name="avg_npc_501_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="羅德島幹員"]好吧，那打擾了。
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]巫戀，你那邊有沒有感覺到什麼異常？比如像以前一樣，被活性源石影響，源石技藝失控之類的感覺......
+[name="羅德島幹員"]巫戀？你在看什麼？
+[dialog]
+[character(name="avg_254_vodfox_1#1$1")]
+[delay(time=1)]
+[name="巫戀"]......黑色的羽獸。
+[dialog]
+[character(name="avg_254_vodfox_1#7$1")]
+[delay(time=1)]
+[PlaySound(key="$d_avg_magic_3", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[Character]
+[Character(name="avg_npc_501_1#1$1", name2="char_empty")]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[characteraction(name="right", type="move", xpos=200, fadetime=0.3, block=true)]
+[delay(time=0.51)]
+[characteraction(name="right", type="move", xpos=-200, fadetime=1.5, block=false)]
+[Character(name="avg_npc_501_1#1$1", name2="avg_npc_697_1#1$1",fadetime=0.7)]
+[delay(time=2)]
+[Character(name="avg_npc_501_1#1$1", name2="avg_npc_697_1#1$1",focus=2)]
+[name="小鎮法官"]你們是什麼人？在這裡做什麼？
+[Character(name="avg_npc_501_1#1$1", name2="avg_npc_697_1#1$1",focus=1)]
+[name="羅德島幹員"]啊，您好。我們是一家醫療機構，正在與鎮醫院合作，提供一些技術支援。
+[Character(name="avg_npc_501_1#1$1", name2="avg_npc_697_1#1$1",focus=2)]
+[name="小鎮法官"]這麼說，你們是從哥倫比亞來的。
+[Character(name="avg_npc_501_1#1$1", name2="avg_npc_697_1#1$1",focus=1)]
+[name="羅德島幹員"]這倒不是......
+[Character(name="avg_npc_501_1#1$1", name2="avg_npc_697_1#1$1",focus=2)]
+[name="小鎮法官"]無論如何，我想和這位先生溝通一下，希望你們讓一讓——
+[dialog]
+[Character(name="avg_npc_501_1#1$1", name2="avg_npc_697_1#1$1",focus=0)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[characteraction(name="right", type="move", xpos=-1100, fadetime=4,block=false)]
+[delay(time=0.4)]
+[characteraction(name="left", type="jump", xpos=-50, fadetime=0.5, times=1, block=false)]
+[PlaySound(key="$bodyfalldown3", volume=1)]
+[delay(time=2)]
+[Character(name="char_empty")]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[characteraction(name="middle", type="move", xpos=200, fadetime=0.3, block=true)]
+[delay(time=0.51)]
+[characteraction(name="middle", type="move", xpos=-200, fadetime=1, block=false)]
+[Character(name="avg_npc_697_1#1$1",fadetime=0.7)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_falcon", volume=1)]
+[delay(time=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[characteraction(name="middle", type="jump", xpos=50, fadetime=0.5, times=1, block=false)]
+[PlaySound(key="$bodyfalldown3", volume=1)]
+[delay(time=0.5)]
+[name="小鎮法官"]——呸！羽獸？！
+[Dialog]
+[PlaySound(key="$d_avg_wing", volume=1)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=0.6)]
+[characteraction(name="middle", type="move", ypos=-20, fadetime=0.2, times=1, block=false)]
+[delay(time=0.2)]
+[characteraction(name="middle", type="move", ypos=20, fadetime=0.5, times=1, block=false)]
+[delay(time=1)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=0.2)]
+[characteraction(name="middle", type="move", ypos=-20, fadetime=0.2, times=1, block=false)]
+[delay(time=0.2)]
+[characteraction(name="middle", type="move", ypos=20, fadetime=0.1, times=1, block=false)]
+[delay(time=0.1)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=0.2)]
+[characteraction(name="middle", type="move", ypos=-20, fadetime=0.2, times=1, block=false)]
+[delay(time=0.2)]
+[characteraction(name="middle", type="move", ypos=20, fadetime=0.1, times=1, block=false)]
+[delay(time=1)]
+[name="小鎮法官"]滾開！滾開！別啄我！
+[dialog]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=0.2)]
+[delay(time=1)]
+[character]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[delay(time=2.5)]
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]啊，她的懷錶掉到地上了......
+[dialog]
+[character(name="avg_254_vodfox_1#9$1")]
+[delay(time=0.5)] 
+[characteraction(name="middle", type="move", xpos=5, ypos=-5, fadetime=0.4, times=0.3, isblock=true)]
+[characteraction(name="middle", type="move", xpos=-5, ypos=5, fadetime=0.4, times=0.3, isblock=true)]
+[delay(time=0.2)] 
+[Character(name="avg_npc_501_1#1$1")]
+[delay(time=0.4)] 
+[characteraction(name="middle", type="move", xpos=5, ypos=-5, fadetime=0.4, times=0.3,isblock=true)]
+[characteraction(name="middle", type="move", xpos=-5, ypos=5, fadetime=0.4, times=0.3,isblock=true)]
+[delay(time=0.2)] 
+[name="羅德島幹員"]......你扯我袖子幹什麼？
+[character(name="avg_254_vodfox_1#9$1")]
+[name="巫戀"]等在這裡，不要動。
+[character(name="avg_npc_697_1#1$1")]
+[name="小鎮法官"]咳、咳咳......總算飛走了，嘁。
+[name="小鎮法官"]不過，黑色的羽獸......
+[dialog]
+[delay(time=1)] 
+[name="小鎮法官"]......呵，怎麼可能有人敢詛咒我。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]尊敬的法官，我......呃，我能幫您點什麼？您要不要進屋來整理一下衣服......
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]不，我只希望秉公辦事。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]啊，對對，您是為了保險金而來的......給。
+[dialog]
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=0)]
+[characteraction(name="right", type="move", xpos=-50, fadetime=1, block=false)]
+[delay(time=1.5)]
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]數額不對。
+[dialog]
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=0)]
+[characteraction(name="right", type="move", xpos=50, fadetime=1, block=false)]
+[delay(time=1)]
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]這......可是您還沒有數過。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]厚度至少應該是這個信封的三倍。我想，你或許是把滯納保險金的罰款數目記錯了。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]你看，法典對此有所規定，我必須依照律法行事。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]......那一定是我記錯了，我再想辦法去別處借錢，請再給我一點時間吧。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="小鎮法官"]當然，我一向很寬容。
+[dialog]
+[character]
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮法官"]（那隻破破爛爛的金懷錶，掉到哪裡去了？）
+[dialog]
+[delay(time=1.5)] 
+[name="小鎮法官"]（詛咒......碰巧應驗了而已。怎麼可能有人相信詛咒？）
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮法官"]......那就這樣吧，兩天後我們再見。
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[character(fadetime=1.5)]
+[delay(time=2)] 
+[Character(name="avg_npc_696_1#1$1")]
+[name="感染者毛羅"]真倒楣，真倒楣！事到如今，沒別的辦法了！
+[name="感染者毛羅"]這該死的不長眼睛的羽獸！都是你們害的！要不是她心情不好，我這事今天就該擺平了！
+[character(name="avg_254_vodfox_1#1$1")]
+[name="巫戀"]......
+[character(name="avg_254_vodfox_1#8$1")]
+[name="巫戀"]小莫提，幫我把地上的懷錶撿起來。
+[dialog]
+[Character]
+[name="小莫提"]......
+[dialog]
+[PlaySound(key="$d_avg_pick_lock", volume=1, loop=true, channel="a")]
+[StopSound(channel="a", fadetime=2)]
+[delay(time=2)] 
+[character(name="avg_254_vodfox_1#9$1")]
+[name="巫戀"]嗯，沒有摔壞。
+[Dialog]
+[Character(name="avg_npc_696_1#1$1", name2="char_empty")]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[characteraction(name="right", type="move", xpos=200, fadetime=0.3, block=true)]
+[delay(time=0.51)]
+[characteraction(name="right", type="move", xpos=-200, fadetime=2, block=false)]
+[Character(name="avg_npc_696_1#1$1", name2="avg_254_vodfox_1#9$1",fadetime=0.7)]
+[delay(time=2.5)]
+[Character(name="avg_npc_696_1#1$1", name2="avg_254_vodfox_1#9$1", focus=2)]
+[name="巫戀"]給，你的東西。
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]（果然，巫戀用了她的源石技藝。所以我們都能看見那隻懷錶掉在了地上，但是那名法官看不見。）
+[name="羅德島幹員"]（小巫戀居然已經成熟到會這樣為他人著想了。）
+[name="羅德島幹員"]（不知道她有沒有意識到，自己在做一件非常勇敢的事情呢？）
+[name="羅德島幹員"]（......唉，可是就算她在羅德島已經接受了很多源石技藝的相關訓練，施展這種法術還是會對她的身體造成負荷的啊。）
+[name="羅德島幹員"]（總之，雖然她做得沒錯，但我得對她的狀況多加關注......有可能的話，也幫她一把吧。）
+[Character(name="avg_npc_696_1#1$1", name2="avg_254_vodfox_1#1$1", focus=1)]
+[name="感染者毛羅"]......啊？
+[Character(name="avg_npc_696_1#1$1", name2="avg_254_vodfox_1#1$1", focus=2)]
+[name="巫戀"]它對你來說，代表著“家族”。“一個很大的家庭”，那是很重要的東西吧。
+[Character(name="avg_npc_696_1#1$1", name2="avg_254_vodfox_1#11$1", focus=2)]
+[name="巫戀"]拿回它，不好嗎？
+[Character(name="avg_npc_696_1#1$1", name2="avg_254_vodfox_1#11$1", focus=1)]
+[name="感染者毛羅"]......你在說什麼呢，這、這不是我的東西。
+[name="感染者毛羅"]我根本沒見過它。你愛把它拿到哪裡去就拿到哪裡去吧，我反正沒見過！今天更是沒見過！
+[Character(name="avg_254_vodfox_1#2$1")]
+[name="巫戀"]......是嗎？
+[Character(name="avg_254_vodfox_1#1$1")]
+[name="巫戀"]小莫提，你今天很有精神。
+[Character(name="avg_254_vodfox_1#8$1")]
+[name="巫戀"]你吃下的是什麼？悲傷，恐懼還是怨恨？
+[dialog]
+[Character]
+[name="小莫提"]......
+[Character(name="avg_254_vodfox_1#2$1")]
+[name="巫戀"]為什麼會恐懼？我也想知道。
+[Character(name="avg_npc_696_1#1$1", name2="avg_254_vodfox_1#2$1", focus=1)]
+[name="感染者毛羅"]你、你拿了那隻懷錶，就快點走開。我要把門關上了！
+[Character(name="avg_npc_696_1#1$1", name2="avg_254_vodfox_1#1$1", focus=2)]
+[name="巫戀"]我還想知道。
+[Character(name="avg_npc_696_1#1$1", name2="avg_254_vodfox_1#1$1", focus=2)]
+[name="巫戀"]那個人手裡的書，明明一個字都沒有寫。
+[Character(name="avg_npc_696_1#1$1", name2="avg_254_vodfox_1#7$1", focus=2)]
+[name="巫戀"]你為什麼不告訴她？
+[Character(name="avg_npc_696_1#1$1", name2="avg_254_vodfox_1#7$1", focus=1)]
+[name="感染者毛羅"]......那明明是法典，怎麼會沒有字？你自己不識字而已。
+[name="感染者毛羅"]喂，那邊的醫生，你不是個成年人嗎？快把你身邊的瘋小孩帶走啊！離我和我的房子遠一點！
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]唉......
+[name="羅德島幹員"]走吧，巫戀。
+[dialog]
+[stopmusic(fadetime=2)]
+[StopSound(channel="c", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Background(image="33_g7_reception",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_699_1#1$1", focus=2)]
+[name="法官下屬"]今天本地依然風平浪靜，沒有需要審理的案件。
+[name="法官下屬"]街道上發生的都是些小事。有人在一家餐廳吃飯時遇到了搶劫犯，據說是最近滯納保險金的感染者之一。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_699_1#1$1", focus=1)]
+[name="小鎮法官"]這能保證我們按時收到錢。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_699_1#1$1", focus=2)]
+[name="法官下屬"]嗯，還有......
+[dialog]
+[delay(time=1)]
+[name="法官下屬"]好像有很多人在背後議論您。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_699_1#1$1", focus=1)]
+[name="小鎮法官"]——議論什麼？
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_699_1#1$1", focus=2)]
+[name="法官下屬"]只是一些滑稽可笑的“預言”，據說是胡亂寫在小巷海報上的。
+[name="法官下屬"]我派人去找了，沒有找到，應該已經被撕掉了。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_699_1#1$1", focus=1)]
+[name="小鎮法官"]那麼，是哪些人還沒學會如何尊重律法的意志呢？
+[name="小鎮法官"]是哪些人第一次開口提起這些胡言亂語，不是為了向我報告？
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_699_1#1$1", focus=2)]
+[name="法官下屬"]......
+[name="法官下屬"]關於這件事......實際上，好像沒有人真的說起過。
+[Character(name="avg_npc_697_1#1$1",name2="avg_npc_699_1#1$1", focus=1)]
+[name="小鎮法官"]沒有人說起，那他們要怎麼議論？
+[dialog]
+[Character(name="avg_npc_699_1#1$1")]
+[delay(time=1.5)]
+[name="法官下屬"]......一如既往。
+[name="法官下屬"]他們保持沉默，但是心中了然。
+[name="法官下屬"]您看到他們的眼神在回避什麼，就知道了。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="33_g10_smallrestaurant",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[Character(name="avg_npc_501_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]唉......
+[Character(name="avg_npc_501_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="羅德島幹員"]你在想什麼呢，剛剛我和小巫戀坐在這裡吃飯，看到你走過來，還拍了拍你兩個孩子的腦袋......
+[name="羅德島幹員"]我還以為你是進來給他們點兩份兒童餐。
+[name="羅德島幹員"]結果你居然說要搶劫？！
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Character(name="avg_npc_501_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]這就是我們的做事方式，外地人！
+[Character(name="avg_npc_501_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="羅德島幹員"]別掙扎了，我和巫戀不會讓你惹事的。這是我們的做事方式。
+[Character(name="avg_npc_501_1#1$1",name2="avg_npc_696_1#1$1", focus=2)]
+[name="感染者毛羅"]哈......昨天你們不是在場嗎？你們不是看到我拖欠了多少保險金嗎？
+[name="感染者毛羅"]你們既然說不想讓感染者死，那就別攔著我啊！
+[Character(name="avg_npc_501_1#1$1",name2="avg_npc_696_1#1$1", focus=1)]
+[name="羅德島幹員"]......
+[name="羅德島幹員"]也許我不太懂這裡的狀況，但我敢肯定，你做了這樣的壞事，遲早會被其他人報復的。
+[name="羅德島幹員"]你看，你的兩個孩子還在街道上和其他孩子一起玩。如果你現在讓這裡的一位顧客流了血，接下來他們身上會發生什麼？
+[dialog]
+[Character(name="avg_npc_696_1#1$1")]
+[delay(time=1.5)]
+[name="感染者毛羅"]......我只是在問你，我該怎麼辦。
+[name="感染者毛羅"]如果明天他們就會把我們一家人從房子裡趕出去，我怎麼去想之後的事情？
+[Character(name="avg_254_vodfox_1#1$1")]
+[name="巫戀"]......不會的。
+[Character(name="avg_254_vodfox_1#1$1")]
+[name="巫戀"]小莫提會幫忙的。
+[Character(name="avg_254_vodfox_1#1$1")]
+[name="巫戀"]幫我再找一些東西。
+[Character(name="avg_254_vodfox_1#1$1")]
+[name="巫戀"]這裡的土，裡面灌滿了怨恨和恐懼，別的材料，只需要一點點就夠了。
+[dialog]
+[Character(name="avg_npc_696_1#1$1")]
+[delay(time=1)]
+[name="感染者毛羅"]什麼？
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]呃，沒事，我去幫她......也是為了幫你。
+[Character(name="avg_npc_696_1#1$1")]
+[name="感染者毛羅"]幫我？你們能有什麼手段？
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]有時候，一個人被周圍的惡意折磨得無處可去了，就只好去相信一些最不可思議的東西，甚至是幻覺。不是嗎？
+[Character(name="avg_npc_696_1#1$1")]
+[name="感染者毛羅"]......
+[name="感染者毛羅"]......嗯。
+[name="感染者毛羅"]別像上一次一樣給我添麻煩。
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]......對了，毛羅先生，我們想跟你約定一件事。
+[name="羅德島幹員"]如果明天那名自稱法官的女士沒有來向你討債，我們想請你多說一說這裡出現大量感染者的事情，可以嗎？
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Background(image="33_g2_srcalley",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_rainlight_loop", volume=1, loop=true, channel="c")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮法官"]“你的惡行招來了詛咒。”......和上次一樣的說辭。
+[name="小鎮法官"]哈，無稽之談。
+[Character(name="avg_npc_699_1#1$1")]
+[name="法官下屬"]當然，怎麼會有人把那種惡作劇當真呢？
+[name="法官下屬"]我們還在搜尋那個可笑的始作俑者。不過......呃，困難之處在於，我們都沒有親眼見到那些詛咒的文字。
+[name="法官下屬"]雖然我們收集到了文字的具體內容，但似乎沒有人知道是誰留下的——至少沒有人願意告訴我們。
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮法官"]......
+[dialog]
+[Character]
+她意識到街道上的行人都在回避她的視線，從她身邊走過時卻又好像帶著一絲好奇與打探。
+沉默是一種秩序，但此刻的沉默讓她感到恐懼。
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮法官"]......咳。
+[name="小鎮法官"]今天這個感染者，我已經不想在他身上浪費太多時間了。如果他拿不出錢，就直接沒收他的房子吧。
+[multiline(name="小鎮法官")]我最後出面一次——
+[PlayMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[CameraShake(duration=0.5, xstrength=25, ystrength=25, vibrato=20, randomness=70, fadeout=true, block=false)]
+[multiline(name="小鎮法官",end=true)]唔！
+[dialog]
+[PlaySound(key="$d_avg_magic_3", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[characteraction(name="middle", type="move", ypos=-50, fadetime=1, block=false)]
+[Delay(time=1.5)]
+[characteraction(name="middle", type="move", ypos=-100, fadetime=0.5, block=false)]
+[character(fadetime=0.5)]
+[Delay(time=0.4)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Subtitle(text="“你的惡行招來了詛咒，這裡的土壤不願意再承擔你的重量，惡靈會讓你重重地跌倒，摔到沒有辦法走路。”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+跌倒在地的瞬間，法官的腦子裡迴響起她聽人轉述的詛咒。
+接著傳來的是小腿處的劇痛，還有路邊的竊竊私語。
+[dialog]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0.4, loop=true, channel="b")]
+[Delay(time=2)]
+[Subtitle(text="“真的和預言一樣。”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[StopSound(channel="b", fadetime=2)]
+[SoundVolume(volume=0.2, channel="c",fadetime=2)]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Background(image="33_g2_srcalley",screenadapt="coverall")]
+[Delay(time=1)]
+[SoundVolume(volume=1, channel="c",fadetime=2)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="法官下屬"]您、您還好嗎？我扶您起來，這裡有很多人在看，有損您的形象......
+[dialog]
+[Dialog]
+[Character(name="char_empty", name2="char_empty")]
+[PlaySound(key="$rungeneral", volume=1)]
+[characteraction(name="right", type="move", xpos=200, fadetime=0.3, block=true)]
+[delay(time=0.51)]
+[characteraction(name="right", type="move", xpos=-350, fadetime=1.5, block=false)]
+[Character(name="char_empty", name2="avg_npc_699_1#1$1",fadetime=0.7)]
+[delay(time=1.5)]
+[characteraction(name="right", type="move", ypos=-50, fadetime=0.5, block=false)]
+[delay(time=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Character(name="char_empty", name2="avg_npc_699_1#1$1",focus=-1)]
+[name="小鎮法官"]滾開！
+[Character(name="char_empty", name2="avg_npc_699_1#1$1",focus=2)]
+[name="法官下屬"]是。
+[dialog]
+[characteraction(name="right", type="move", xpos=100, ypos=50, fadetime=1, block=false)]
+[delay(time=2)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Character(name="char_empty", name2="avg_npc_699_1#1$1",focus=-1)]
+[name="小鎮法官"]該死......你是瞎了嗎！我摔傷了，送我去醫院！
+[Character(name="char_empty", name2="avg_npc_699_1#1$1",focus=2)]
+[name="法官下屬"]呃，是......
+[dialog]
+[Character(name="char_empty", name2="avg_npc_699_1#1$1")]
+[characteraction(name="right", type="move", xpos=-100, ypos=-50, fadetime=1.5, block=false)]
+[characteraction(name="left", type="move", ypos=-100, fadetime=0, block=false)]
+[delay(time=2)]
+[characteraction(name="right", type="move", ypos=50, fadetime=1.5, block=false)]
+[characteraction(name="left", type="move", ypos=100, fadetime=1.5, block=false)]
+[Character(name="avg_npc_697_1#1$1", name2="avg_npc_699_1#1$1",fadetime=0.7)]
+[delay(time=2.5)]
+[Character(name="avg_npc_697_1#1$1", name2="avg_npc_699_1#1$1",focus=2)]
+[name="法官下屬"]那麼感染者那邊我通知其他人去處理？反正只是件小事。
+[Character(name="avg_npc_697_1#1$1", name2="avg_npc_699_1#1$1",focus=1)]
+[name="小鎮法官"]......
+[name="小鎮法官"]這樣下去，詛咒是不是會無窮無盡？
+[Character(name="avg_npc_697_1#1$1", name2="avg_npc_699_1#1$1",focus=2)]
+[name="法官下屬"]這......詛咒怎麼可能是真的呢？
+[Character(name="avg_npc_697_1#1$1", name2="avg_npc_699_1#1$1",focus=1)]
+[name="小鎮法官"]你看不到嗎？詛咒就是真的......它追上我了！惡靈追上我了！
+[Character(name="avg_npc_697_1#1$1", name2="avg_npc_699_1#1$1",focus=2)]
+[name="法官下屬"]請您冷靜，大家都在往這邊看......
+[Character(name="avg_npc_697_1#1$1", name2="avg_npc_699_1#1$1",focus=1)]
+[name="小鎮法官"]......
+[name="小鎮法官"]總之......那個感染者的事，先放在一邊吧。我需要冷靜一段時間。
+[dialog]
+[StopSound(channel="c", fadetime=2)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="33_g8_srcroom",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[Character(name="avg_npc_696_1#1$1",fadetime=1.5)]
+[Delay(time=2.5)]
+[name="感染者毛羅"]遵照約定，我把我知道的事情告訴你們。
+[name="感染者毛羅"]說實話，你們是白費力氣。這裡根本沒有你們想像的那種地下源石礦，或者恐怖的大工廠。
+[name="感染者毛羅"]只是之前，這裡有一場持續了將近一個月的幫派鬥毆，我們這些路過的人偶然被捲了進去，僅此而已。
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]對了，之前聽到過，這裡有大量走私源石的事件......
+[name="羅德島幹員"]如果那些源石是被幫派成員用來製造爆炸物，製造工藝又不夠規範的話，確實很容易導致活性源石粉塵逸散。
+[name="羅德島幹員"]感染者沒有第一時間發現自己的身體問題，或者隱瞞病情，也很常見，因此造成了病人最近還在陸續出現的假象。
+[Character(name="avg_npc_696_1#1$1")]
+[name="感染者毛羅"]沒有人會蠢到告訴醫生，自己是被捲入幫派鬥毆而感染的。
+[name="感染者毛羅"]大家都會假裝什麼也沒看到。
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]可是，面對這樣的大規模械鬥，難道就沒有法官來制止？
+[dialog]
+[Character(name="avg_npc_696_1#1$1")]
+[delay(time=1)] 
+[name="感染者毛羅"]法官？哈哈，那些大城市的情況我不清楚，但這樣的小鎮裡，哪裡有法官。
+[name="感染者毛羅"]鬥毆的幫派背後有家族支持，他們一直打到一方完全將另一方驅逐出去，控制整個鎮子，才算結束。
+[name="感染者毛羅"]而你們遇到的那個“法官”，只是獲勝家族用來控制這座小鎮的一名普通家族成員罷了。
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]唔......抱歉，我問了無關礦石病的問題。
+[name="羅德島幹員"]多謝你協助我們完成了任務。
+[Character(name="avg_npc_696_1#1$1")]
+[name="感染者毛羅"]哈哈，是我該感謝你們，即使只是讓我的厄運晚來了一天......
+[name="感染者毛羅"]不過，跟著你的這個小女孩，似乎不接受我的感謝啊。
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]沒事的，她只是在盯著別的東西......但她一定聽到了你在說什麼。
+[name="羅德島幹員"]還有，你回去之後，記得吃這些藥控制病情。保重。
+[dialog]
+[Character(name="avg_npc_696_1#1$1")]
+[delay(time=1)] 
+[playsound(key="$d_gen_walk_n")]
+[character(fadetime=1.5)]
+[delay(time=2)] 
+[Character(name="avg_npc_501_1#1$1",name2="avg_254_vodfox_1#1$1",focus=1)]
+[name="羅德島幹員"]巫戀。
+[Character(name="avg_npc_501_1#1$1",name2="avg_254_vodfox_1#8$1",focus=2)]
+[name="巫戀"]我說過，小莫提會幫助他。你當時不相信我嗎？
+[Character(name="avg_npc_501_1#1$1",name2="avg_254_vodfox_1#8$1",focus=1)]
+[name="羅德島幹員"]不，當然不是啦。其實，是你影響的人已經太多了。
+[name="羅德島幹員"]下一次用源石技藝，一定要跟其他人商量好。
+[name="羅德島幹員"]你這麼做，萬一失控，會對其他人傷害很大......也可能對你自己傷害很大。
+[Character(name="avg_npc_501_1#1$1",name2="avg_254_vodfox_1#2$1",focus=2)]
+[name="巫戀"]這樣的話，羅德島已經對我說了很多次。
+[Character(name="avg_npc_501_1#1$1",name2="avg_254_vodfox_1#8$1",focus=2)]
+[name="巫戀"]小莫提不會受傷的話，就沒關係......
+[Character(name="avg_npc_501_1#1$1",name2="avg_254_vodfox_1#8$1",focus=1)]
+[name="羅德島幹員"]你一直說，小莫提很有精神，小莫提沒有受傷，所以沒關係。
+[name="羅德島幹員"]但其實，你已經很疲勞了。我不能讓你的疲勞積累到會損害身體的程度。
+[Character(name="avg_npc_501_1#1$1",name2="avg_254_vodfox_1#2$1",focus=2)]
+[name="巫戀"]......我知道了。
+[Character(name="avg_npc_501_1#1$1",name2="avg_254_vodfox_1#1$1",focus=2)]
+[name="巫戀"]在這裡我不會再用法術。
+[Character(name="avg_npc_501_1#1$1",name2="avg_254_vodfox_1#1$1",focus=2)]
+[name="巫戀"]還有......再給我一個蘋果。不是施術材料。
+[Character(name="avg_npc_501_1#1$1",name2="avg_254_vodfox_1#4$1",focus=2)]
+[name="巫戀"]我想多吃點東西。
+[Character(name="avg_npc_501_1#1$1",name2="avg_254_vodfox_1#4$1",focus=1)]
+[name="羅德島幹員"]哈哈，好。
+[Character(name="avg_npc_501_1#1$1",name2="avg_254_vodfox_1#4$1",focus=1)]
+[name="羅德島幹員"]我們確認了這裡感染的源頭，為剩下的感染者做完應急處理後，也該回本艦了。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Background(image="33_g1_srcstreet",xScale=1.41,yScale=1.41)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="char_empty",name2="char_empty")]
+[characteraction(name="left", type="move", xpos=200, fadetime=0.2,block=false)]
+[delay(time=0.51)]
+[Character(name="avg_npc_501_1#1$1",name2="char_empty")]
+[name="羅德島幹員"]儀器都打包好了嗎？沒有問題的話，我們就準備撤離了。
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[BackgroundTween(xFrom=0, xTo=-80, duration=2,ease="OutQuad",block=false)]
+[delay(time=0.8)]
+[Character(name="avg_npc_501_1#1$1", name2="avg_npc_697_1#1$1",fadetime=0.7)]
+[delay(time=0.2)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=20, randomness=70, fadeout=true, block=false)]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$bodyfalldown3", volume=1)]
+[characteraction(name="left", type="jump", xpos=-50, times=1, fadetime=0.5, block=false)]
+[delay(time=1.5)]
+[Character(name="avg_npc_501_1#1$1", name2="avg_npc_697_1#1$1",focus=1)]
+[name="羅德島幹員"]啊。
+[Character(name="avg_npc_501_1#1$1", name2="avg_npc_697_1#1$1",focus=2)]
+[name="小鎮“法官”"]......
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]不好意思，大家先將推車都靠邊，讓腿腳不便的病人先過去。
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮“法官”"]......你們的調查結束了嗎？我聽聞貴公司在調查那些感染者的病因，看來你們已經得到結果了？
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]啊，這個......
+[name="羅德島幹員"]畢竟我們出差一趟也是有時間限制的，在這段時間裡我們受限於能力水準，並沒有發現什麼統一的病因，實在抱歉。
+[Character(name="avg_254_vodfox_1#1$1")]
+[name="巫戀"]......
+[Character(name="avg_254_vodfox_1#1$1")]
+[name="巫戀"]小莫提。
+[Character(name="avg_254_vodfox_1#7$1")]
+[name="巫戀"]幫我把她手裡的書拿過來。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="bg_desert_1",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$warm_intro", key="$warm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]（很多人會在遇見與過去相似的環境時，被觸動心中的傷痛......不過，對巫戀來說，或許這種事從一開始就不是問題吧。）
+[name="羅德島幹員"]（雖然很古怪，不過她的確在用自己的方式成長。）
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]——咳，小巫戀，我要誇獎你了，你要做好心理準備哦。
+[Character(name="avg_254_vodfox_1#11$1")]
+[name="巫戀"]欸，為什麼？
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]你會使用法術，應該是因為你——啊不，因為小莫提在那座小鎮裡感受到了和過去相似的痛苦吧。
+[name="羅德島幹員"]人們都以敵意互相對待，互相宣洩。
+[name="羅德島幹員"]明明有很多人知道，你不是詛咒的源頭，你是無辜的......卻沒有一個人願意大聲說出這些話。
+[name="羅德島幹員"]於是在這座小鎮裡，你用自己的法術，幫那個感染者、還有其他人說出來了。
+[name="羅德島幹員"]“那是一本無字的法典”。
+[name="羅德島幹員"]你已經成熟得讓我有些驚訝啦。
+[dialog]
+[Character(name="avg_254_vodfox_1#11$1")]
+[delay(time=1.5)]
+[name="巫戀"]......你，很奇怪。
+[Character(name="avg_254_vodfox_1#8$1")]
+[name="巫戀"]那麼複雜的想法，小莫提不需要，我也不需要。
+[Character(name="avg_254_vodfox_1#1$1")]
+[name="巫戀"]小莫提想要那個法官的情感作為食糧，我讓它吃飽了，這樣不夠嗎？
+[Character(name="avg_npc_501_1#1$1")]
+[name="羅德島幹員"]啊。原來你沒有想那麼多嗎？
+[name="羅德島幹員"]我自己做了好久的判斷，才默許你動用源石技藝......
+[name="羅德島幹員"]不過，只是覺得對方欺負人，所以要施以懲罰......這個簡單的理由，也不算壞。
+[dialog]
+[delay(time=1.5)]
+[name="羅德島幹員"]——哎，等等，我怎麼會突然這麼想，突然覺得不教育你也沒關係......該不會是中了你的精神暗示吧？
+[dialog]
+[Character]
+[Character(name="avg_254_vodfox_1#1$1")]
+[delay(time=1)]
+[Character(name="avg_254_vodfox_1#9$1")]
+[delay(time=1.5)]
+[Character(name="avg_254_vodfox_1#9$1", focus=3)]
+[name="羅德島幹員"]喂，你別突然露出笑容啊？
+[dialog]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Background(image="33_g7_reception",screenadapt="coverall")]
+[Delay(time=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="avg_npc_699_1#1$1")]
+[name="“法官”下屬"]拐杖放在這裡了。
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮“法官”"]嗯，我休息一會，有什麼事我會找你。
+[Character(name="avg_npc_699_1#1$1")]
+[name="“法官”下屬"]是。
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[character(fadetime=1.5)]
+[delay(time=2)] 
+[Character(name="avg_npc_697_1#1$1")]
+[name="小鎮“法官”"]呼......這兩天沒有再聽說什麼詛咒，噩夢應該也到頭了吧。
+[name="小鎮“法官”"]周日早晨，沒有下雨的街道，總覺得空氣都比平時更加清新。
+[name="小鎮“法官”"]......嗯？
+[dialog]
+[character]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_paper1", volume=1)]
+[delay(time=1.5)]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[delay(time=1.5)]
+那本被她隨手放在桌上的法典，被一陣風吹到了新的一頁。
+嘩啦，嘩啦。
+她在書頁上看見了一行字。和此前詛咒的筆跡相同的一行字。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="“你會在星期日的早晨看見這行字，招來詛咒。”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“你會對自己惡行導致的後果感到恐懼，下定決心悔改。”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Character]
+[Image]

@@ -1,0 +1,570 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+[delay(time=1)]
+有人說，雇傭兵就像速食食品一樣。
+開袋即食，用之即棄。高效率，低風險，在戰場上是最好用的消耗品。
+只是，如果有選擇的話，任誰都會更願意吃溫熱新鮮的食物，任誰都不會願意冒著丟掉性命的風險去掙買食物的錢。
+如果有選擇的話。
+[playsound(key="$d_avg_warfireamb_loop", volume=0.5, loop=true, channel="bgs")]
+[Background(image="bg_battlefield",fadetime=1, screenadapt="coverall")]
+[Dialog]
+[delay(time=1)]
+[Blocker(a=0.8, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[playsound(key="$d_gen_transmissionget",volume=0.4)]
+[name="？？？"] 各單位注意，目標已經進入警戒範圍，預計還有一分鐘到達防禦點。
+[name="？？？"] 請各單位於三十秒內完成應急準備，重複一遍，三十秒內完成應急準備。
+[name="？？？"] 完畢。
+[StopSound(channel="bgs", fadetime=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_canteen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_gen_walk_n")]
+[Character]
+[Dialog]
+[Character(name="char_301_cutter_1",fadetime=1,block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$warm_intro", key="$warm_loop", volume=0.4,fadetime=2)]
+[name="刻刀"]  那個，我來看看有沒有什麼需要幫忙的......
+[Character(name="char_230_savage_1",fadetime=0,block=true)]
+[name="暴行"]  哎，是刻刀呀。
+[name="暴行"]  來得正好，嘗嘗我做的蔬菜烤餅，剛出爐的！
+[Character(name="char_301_cutter_1",name2="char_230_savage_1",focus=1)]
+[name="刻刀"]  謝謝，我嘗嘗。
+[name="刻刀"]  嗯......我覺得很好吃。
+[Character(name="char_301_cutter_1",name2="char_230_savage_1",focus=2)]
+[name="暴行"]  哈哈，這可是我的拿手好菜。
+[name="暴行"]  喜歡的話就多拿幾個吧，不用客氣。
+[Character(name="char_301_cutter_1",name2="char_230_savage_1",focus=1)]
+[name="刻刀"]  唔，謝謝，還是不用了。我只是來看看，有沒有我可以幫忙的事......
+[Character(name="char_301_cutter_1",name2="char_230_savage_1",focus=2)]
+[name="暴行"]  欸？可是我這裡的菜都已經準備得差不多了呢，你去角峰那邊看看吧！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(fadetime=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="char_199_yak_1#5",fadetime=0.5,block=true)]
+[delay(time=0.6)]
+[name="角峰"]  喔，是刻刀小姐啊，來得正好，嘗嘗這道謝拉格風味燴獸肉吧。
+[name="角峰"]  為了方便取材，我用鱗蜥肉代替了原來的配方，調味也相應地做了點改動，正想找人幫我嘗嘗呢。
+[Character(name="char_301_cutter_1",name2="char_199_yak_1#5",focus=1)]
+[name="刻刀"]  嗯，好的，我來試試。
+[Characteraction(name="left", type="jump", xpos=-11, power=0,times=1, fadetime=0.5, block=true)]
+[Blocker(a=0,fadetime=0.5, block=true)]
+[Characteraction(name="left", type="jump", xpos=11, power=0,times=1, fadetime=0.5, block=true)]
+[name="刻刀"]  （咀嚼咀嚼）
+[name="刻刀"]  很好吃。雖然說不上為什麼......但就是很好吃。
+[Character(name="char_301_cutter_1",name2="char_199_yak_1",focus=2)]
+[name="角峰"]  說不上為什麼好吃啊......嗯，看來是不夠有特色，還需要改進啊。
+[Character(name="char_301_cutter_1",name2="char_199_yak_1",focus=1)]
+[name="刻刀"]  不是的，只是我不太會描述......我認為角峰先生的廚藝已經非常好了！
+[name="刻刀"]  話說，角峰先生這裡有什麼需要幫忙的地方嗎？
+[Character(name="char_301_cutter_1",name2="char_199_yak_1#5",focus=2)]
+[name="角峰"]  哈哈哈，我這裡沒什麼需要幫忙的啦，菜都已經上鍋，就剩關火了。你一會去古米那裡看看吧。
+[name="角峰"]  啊對了，還請稍等，有一件事確實需要刻刀小姐的幫忙。我今天試做了好幾道新菜，就麻煩刻刀小姐幫我把把關了。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(fadetime=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="char_196_sunbr_1",fadetime=0.5, block=true)]
+[delay(time=0.6)]
+[name="古米"]  刻刀姐姐！嘗嘗古米烤的餡餅！
+[Character(name="char_301_cutter_1",name2="char_196_sunbr_1",focus=1)]
+[name="刻刀"]  快要吃飽了......
+[name="刻刀"]  古米這裡有什麼需要幫忙的嗎？
+[Character(name="char_301_cutter_1",name2="char_196_sunbr_1",focus=2)]
+[name="古米"]  古米這裡只有烤好的餡餅哦~
+[Character(name="char_301_cutter_1",name2="char_196_sunbr_1",focus=1)]
+[name="刻刀"]  那，我就嘗一個好了。
+[Character(name="char_301_cutter_1",name2="char_196_sunbr_1",focus=2)]
+[name="古米"]  好吃嗎？
+[Character(name="char_301_cutter_1",name2="char_196_sunbr_1",focus=1)]
+[name="刻刀"]  應該是......好吃的吧。
+[Character]
+[Dialog]
+[delay(time=0.6)]
+[Character(name="char_301_cutter_1",fadetime=0.5)]
+[delay(time=0.6)]
+[name="刻刀"]  嗚......吃不下了......
+[name="刻刀"]  明明只是想來幫忙，怎麼變成來提前解決午飯了......
+[name="刻刀"]  （歎氣）
+[name="刻刀"]  其實大家都很照顧我呢......
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="char_333_sidero_1#8",fadetime=0.5, block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[Delay(time=0.6)]
+[name="鑄鐵"]  我來幫忙啦！
+[Character(name="char_333_sidero_1#8",name2="char_230_savage_1",focus=2)]
+[name="暴行"]  呼，鑄鐵你可來了。快來幫幫忙吧，今天有兩個後勤幹員同時請假了，只靠我們三個可真是忙不過來了。
+[Character(name="char_333_sidero_1#8",name2="char_199_yak_1",focus=2)]
+[name="角峰"]  拼盡全力倒也能夠完成，可也實在是太勉強了......
+[Character(name="char_196_sunbr_1#6", block=true)]
+[name="古米"]  古米的手好酸......
+[Character(name="char_333_sidero_1#2",name2="char_196_sunbr_1#6",focus=1)]
+[name="鑄鐵"]  真是辛苦啦，我這就來幫忙。
+[Character(name="char_333_sidero_1#5")]
+[name="鑄鐵"]  咦，我剛在食堂裡看到刻刀了，看起來好像很失落的樣子，發生什麼事了？
+[Character(name="char_230_savage_1",fadetime=0, block=true)]
+[name="暴行"]  說起來鑄鐵不是經常來廚房，所以還不知道啊......
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+一個月前
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="char_301_cutter_1", block=true)]
+[name="刻刀"]  大家好，辛苦了......請問有什麼我可以幫忙的嗎？
+[Character(name="avg_npc_012",fadetime=0, block=true)]
+[name="後勤幹員"]  喔喔，是新來的刻刀小姐啊，正好，麻煩你把那邊的馬鈴薯切成塊好了，一會燉湯用。
+[Character(name="char_301_cutter_1",fadetime=0, block=true)]
+[name="刻刀"]  嗯，好的。
+[Dialog]
+[playsound(key="$gavel1",volume=0.5)]
+[CameraShake(duration=0.2, xstrength=0, ystrength=30, vibrato=20, randomness=50, fadeout=true, block=false)]
+[Delay(time=0.6)]
+[playsound(key="$gavel2",volume=0.5)]
+[CameraShake(duration=0.2, xstrength=0, ystrength=30, vibrato=20, randomness=50, fadeout=true, block=false)]
+[Delay(time=1)]
+[Character(name="avg_npc_012",fadetime=0, block=true)]
+[Characteraction(name="middle", type="jump", xpos=0, power=30, times=1, fadetime=0.3,block=false)]
+[name="後勤幹員"]  刻刀小姐！我是讓你把馬鈴薯切塊不是讓你把砧板切塊啊！！！
+[Character(name="char_301_cutter_1",fadetime=0, block=true)]
+[name="刻刀"]  對不起！
+[name="刻刀"]  我不是故意的，我會賠償的......
+[Character(name="avg_npc_012",fadetime=0, block=true)]
+[name="後勤幹員"]  算了算了，倒也不用......我明白了，刻刀小姐是不習慣用這種菜刀吧。那麻煩你去盯著那鍋湯好了，記得多用勺子攪拌一下，別燒焦了。
+[Character(name="char_301_cutter_1",fadetime=0, block=true)]
+[name="刻刀"]  我明白了，我一定會做好的！
+[CameraShake(duration=1, xstrength=50, ystrength=0, vibrato=3, randomness=70, fadeout=true, block=false)]
+[name="刻刀"]  攪拌，攪拌，不能煮糊，攪拌......
+[Blocker(a=0.1, r=0.7, g=0.7, b=0.7, fadetime=0.6, block=true)]
+[CameraShake(duration=1, xstrength=50, ystrength=0, vibrato=5, randomness=80, fadeout=true, block=false)]
+[name="刻刀"]  攪拌，攪拌......
+[playsound(key="$d_avg_woodcracle", loop=true, channel="bgs")]
+[Blocker(a=0.2, r=0.7, g=0.7, b=0.7, fadetime=0.6, block=true)]
+[Delay(time=0.6)]
+[Character(name="char_301_cutter_1",name2="avg_npc_012",focus=2)]
+[name="後勤幹員"]  （嗅）什麼味道？
+[Character(fadetime=0.5)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=5)]
+[Delay(time=0.6)]
+[playsound(key="$alarmenter")]
+[Blocker(a=0.4, r=0.7, g=0, b=0, fadetime=0.5, block=true)]
+[Character(name="char_empty")]
+[Character(name="avg_277_shaw_1")]
+[characteraction(name="middle", type="move", xpos=-300, fadetime=0, block=false)]
+[characteraction(name="middle", type="move", xpos=300, fadetime=1, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.6, block=true)]
+[Delay(time=0.6)]
+[playsound(key="$alarmenter")]
+[Blocker(a=0.4, r=0.7, g=0, b=0, fadetime=0.5, block=true)]
+[characteraction(name="middle", type="move", xpos=1000, fadetime=1, block=false)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character]
+[Delay(time=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="char_230_savage_1")]
+[name="暴行"]  雖然看到刻刀失落的樣子也會於心不忍，但是，作為羅德島廚房的一員，絕對不能允許那種可怕的事情再次發生了。
+[Character(name="char_196_sunbr_1#6")]
+[name="古米"]  後勤姐姐之前很認真地考慮過要在“小刻禁止入內”的標誌旁邊加上“刻刀禁止入內”的......
+[Character(name="char_199_yak_1#2")]
+[name="角峰"]  不必要的損失，還是儘量避免為好......
+[Character(name="char_333_sidero_1#2")]
+[name="鑄鐵"]  嗯，我明白了......
+[Character(name="char_333_sidero_1#7")]
+[name="鑄鐵"]  絕對不可以！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.8, block=true)]
+[Background(image="bg_corridor",screenadapt="coverall")]
+[Character]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.8, block=true)]
+[Character(name="char_301_cutter_1",name2="char_empty")]
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2")]
+[characteraction(name="right", type="move", xpos=500, fadetime=0, block=false)]
+[characteraction(name="right", type="move", xpos=-500, fadetime=1.5, block=false)]
+[PlaySound(key="$rungeneral",channel="bgs",volume=1)]
+[Delay(time=1)]
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2")]
+[Delay(time=0.6)]
+[StopSound(channel="bgs",time=1)]
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=2)]
+[name="鑄鐵"]  刻刀！站住！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=1)]
+[name="刻刀"]  哎？鑄鐵小姐？
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#7",focus=2)]
+[name="鑄鐵"]  絕對不可以半途而廢！
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[character]
+[Background(image="bg_canteen",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]   這樣真的不會給大家添麻煩嗎......
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#8",focus=2)]
+[name="鑄鐵"]   沒關係，現在離晚飯時間還早，肯定來得及收拾完的。
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#8",focus=1)]
+[name="刻刀"]   真的是，非常感謝您。
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=2)]
+[name="鑄鐵"]   不用客氣。我只是覺得，既然有想要嘗試的事，就一定要堅持到底才行。
+[name="鑄鐵"]   所以，從今天開始，我要對你進行烹飪技能的特訓！
+[name="鑄鐵"]   放心吧，有我在，絕對不會讓之前的事故重演的。
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=1)]
+[name="刻刀"]   我一定會努力的！
+[name="刻刀"]   謝謝您，鑄鐵小姐！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=2)]
+[name="鑄鐵"]   在訓練中要叫我教官！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=1)]
+[name="刻刀"]   是！教官！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#8",focus=2)]
+[name="鑄鐵"]   （哈哈，原來被稱為教官是這種感覺啊。）
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=2)]
+[name="鑄鐵"]   咳咳，教官提問！你覺得烹飪是什麼？
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=1)]
+[name="刻刀"]   把食物弄熟？
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#7",focus=2)]
+[name="鑄鐵"]   錯！大錯特錯！
+[name="鑄鐵"]   烹飪可不是把食材弄熟這麼簡單。記好了，烹飪指的是，根據食材的特性，把食物變得美味可口的手段！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#7",focus=1)]
+[name="刻刀"]   我，我記住了！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=2)]
+[name="鑄鐵"]   看來刻刀是完全沒有基礎呢，那我們就要從最基本的訓練開始了。聽我命令，立正！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=1)]
+[Characteraction(name="left", type="jump", xpos=0, power=30, times=1, fadetime=0.5,block=false)]
+[name="刻刀"]   是！教官！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=2)]
+[name="鑄鐵"]   首先，是做任何菜餚都需要用到的，也是最基本的技術——刀工。
+[name="鑄鐵"]   聽我的口令，拿刀！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=1)]
+[name="刻刀"]   是——左手還是右手......？
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=2)]
+[name="鑄鐵"]   嗯，用慣用手就好......然後用另一隻手握住這顆馬鈴薯。像我這樣，用刀沿著馬鈴薯的輪廓，輕輕削去這層皮......
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=1)]
+[CameraShake(duration=0.2, xstrength=5, ystrength=5, vibrato=5, randomness=20,fadeout=true,block=false)]
+[name="刻刀"]   沿著輪廓......輕輕......削飛了。
+[delay(time=0.5)]
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#6",focus=2)]
+[name="鑄鐵"]   怎麼會這樣......
+[name="鑄鐵"]   刻刀小姐應該很擅長用刀才對啊。
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#6",focus=1)]
+[name="刻刀"]   砍菜和砍敵人的手感完全不一樣。
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=2)]
+[name="鑄鐵"]   雖然的確如此啦......但食材可不是敵人呀。
+[name="鑄鐵"]   不管怎麼說，任何技能都有一個熟能生巧的過程。我們繼續練習吧！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=1)]
+[name="刻刀"]   好，好的！
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[character]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",fadetime=0.5)]
+[Delay(time=0.6)]
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=1)]
+[name="刻刀"]   鑄鐵小姐好厲害，我從來不敢想像，馬鈴薯泥也可以這麼好吃。
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#8",focus=2)]
+[name="鑄鐵"]   哈哈，畢竟不能浪費食物嘛......
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#6",focus=2)]
+[name="鑄鐵"]   （那麼多馬鈴薯切成那樣，我也著實想不到別的處理方法了啊。）
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=2)]
+[name="鑄鐵"]   其實烹飪也沒有那麼難啦。你看，只要熟悉了菜刀，你現在不是也可以很熟練地給馬鈴薯削皮了嘛。
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=1)]
+[name="刻刀"]   結果等著下鍋的時候又差點把鍋燒穿了......
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=2)]
+[name="鑄鐵"]   刻刀你還是太緊張啦，烹飪和刀術可不一樣，你不能指望像完成任務那樣，模仿老師的每個動作就能學會。
+[name="鑄鐵"]   烹飪啊，是要在瞭解食材的特點後，滿懷希望地把食材做成自己期待的樣子。
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#7",focus=2)]
+[name="鑄鐵"]   對！重點是心懷希望！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#7",focus=1)]
+[name="刻刀"]   好像很有道理，嗯，我記住了！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=2)]
+[name="鑄鐵"]   說起來，刻刀小姐為什麼想要學習廚藝呢？
+[name="鑄鐵"]   羅德島的食堂裡的菜式品類很多，喜歡什麼口味應該都可以找到的吧？
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=1)]
+[name="刻刀"]   因為，從來沒有吃過速食食品之外的食物，所以很想試試，親手做出可以吃的東西是什麼樣的感覺。
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#5",focus=2)]
+[name="鑄鐵"]   ？！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#5",focus=1)]
+[name="刻刀"]  似乎也不能說“從來沒有”，只是從記事起就一直跟著師父，師父又是不會做飯的。
+[name="刻刀"]  再後來，成為雇傭兵之後，就更沒有機會坐下來安穩吃一頓飯了。
+[name="刻刀"]  曾經非常好奇食物到底是怎麼做出來的，就溜去酒館的後廚裡看了看，結果被老闆當作小偷抓住了，之後被狠狠罵了一頓，哈哈哈......
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=2)]
+[name="鑄鐵"]   刻刀！！！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=1)]
+[name="刻刀"]   啊！在！！！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#7",focus=2)]
+[Characteraction(name="right", type="jump", xpos=0, power=30, times=1, fadetime=0.3,block=false)]
+[name="鑄鐵"]   我一定會教會你做菜的！
+[Characteraction(name="right", type="jump", xpos=0, power=30, times=2, fadetime=0.6,block=false)]
+[name="鑄鐵"]   就算再用十個馬鈴薯，不，就算再用上百個馬鈴薯，我也一定要教會你！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#7",focus=1)]
+[name="刻刀"]   那個，鑄鐵小姐還請冷靜一點，畢竟都是過去的事了，你看，我還是健康地活下來了——
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#7",focus=2)]
+[name="鑄鐵"]   解決掉這些馬鈴薯泥我們就接著開始訓練吧！！！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#7",focus=1)]
+[name="刻刀"]   好，好的！
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[character]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]  結果真的把廚房的馬鈴薯用光了......鑄鐵小姐說去找點別的食材......
+[Blocker(a=0.3, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[name="刻刀"]  有點累了......想睡覺......
+[name="刻刀"]  不行不行，不能辜負鑄鐵小姐的心意！
+[name="刻刀"]  現在才剛剛學會了給馬鈴薯削皮而已，怎麼可以偷懶呢！
+[name="刻刀"]  呼啊......可是下午的陽光，好舒服......
+[name="刻刀"]  有點睏了......
+[stopmusic(fadetime=3)]
+[name="刻刀"]  就休息一小會......
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic]
+[character]
+[Background(image="bg_wild_m",screenadapt="coverall")]
+[name="？？？"] 喂，醒醒。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlayMusic(intro="$patriot_intro", key="$patriot_loop", volume=0.4)]
+[Character(name="avg_npc_008")]
+[Delay(time=0.6)]
+[name="雇傭兵A"]  喂，給你。
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]  謝謝。
+[Character(name="avg_npc_008")]
+[name="雇傭兵A"]  真虧你還睡得著啊。不過也好，離出發還有點時間，儘量保留體力吧。
+[name="雇傭兵A"]  喂，那邊那個，接著。
+[Dialog]
+[Character(name="avg_npc_007",fadetime=0.5)]
+[Delay(time=0.6)]
+[PlaySound(key="$bodyfalldown2",volume=0.5)]
+[Characteraction(name="middle", type="jump", xpos=0, power=30, times=1, fadetime=0.5,block=false)]
+[Delay(time=0.6)]
+[name="雇傭兵B"]  又是罐頭？
+[Character(name="avg_npc_008",name2="avg_npc_007",focus=1)]
+[name="雇傭兵A"]  有罐頭吃就不錯了，知道在荒野上丟了物資的雇傭兵是什麼下場嗎？
+[name="雇傭兵A"]  筋疲力盡地倒在荒野上，食腐的源石蟲會把你當成屍體，從腿部開始啃你的衣服。等它開始吃你的肉的時候，你還是清醒的。
+[Character(name="avg_npc_008",name2="avg_npc_007",focus=2)]
+[name="雇傭兵B"]  啊，說起來，想吃炭烤沙蟲腿了，最好是現烤的。
+[Character(name="avg_npc_008",name2="avg_npc_007",focus=1)]
+[name="雇傭兵A"]  *哥倫比亞粗口*，別做夢了。
+[Character(name="avg_npc_008",name2="avg_npc_007",focus=2)]
+[name="雇傭兵B"]  喂，就不能烤點肉？燒鍋湯也行啊。
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]  不可以。
+[name="刻刀"]  這裡是荒野，又沒有風，點火不小心弄出煙來，好幾公里外都看得見。
+[name="刻刀"]  這就相當於對附近所有雇傭兵宣佈“這裡可能有商隊”。
+[name="刻刀"]  我們這次負責護送貨物，暴露行蹤是大忌。
+[Character(name="avg_npc_007")]
+[name="雇傭兵B"]  小姑娘還挺老練。看你年紀不大，這第幾次出來跑了？
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]  數不清了。
+[name="刻刀"]  除了詐騙和人口販賣，什麼都幹過。論入行時間，可能比你還早點。
+[Character(name="avg_npc_007")]
+[name="雇傭兵B"]  哈，口氣不小。你又是怎麼知道我是什麼時候入行的？
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]  你的刀。
+[Character(name="avg_npc_007")]
+[name="雇傭兵B"]  什麼？
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]  你的刀是雷神工業去年的設計，用的是新材料，重量是前代的一半。你掛刀的腰帶上也沒什麼磨損，應該是從來沒有用過別的刀吧。
+[Character(name="avg_npc_007")]
+[name="雇傭兵B"]  好傢伙，還真是行家。
+[name="雇傭兵B"]  實話說，我也是家裡的農田被天災毀了才出來幹這個的。要不是沒地種，誰願意幹把腦袋別褲腰帶上的營生？
+[name="雇傭兵B"]  哈，但別看我入行時間短，還從來沒有失手過。
+[name="雇傭兵B"]  一會遇上劫貨的，就讓你們瞧瞧我的本事。
+[Character(name="avg_npc_008")]
+[name="雇傭兵A"]  呸，別說晦氣的。
+[Character(name="avg_npc_007")]
+[name="雇傭兵B"]  開玩笑開玩笑......這次保密可是做得夠好的，臨出發前才把路線圖交到我們手裡。
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]  這是常用的保密方式。
+[name="刻刀"]  有的雇主會事先準備多個路線圖，全部密封起來。臨出發時再由中間人隨機挑選一張地圖交到傭兵手裡。
+[name="刻刀"]  傭兵接到地圖時，要是看到密封條有被打開過的痕跡，就可以拒絕出發。
+[name="刻刀"]  這樣可以避免傭兵和雇主直接聯絡，也排除了洩密的可能。這次的雇主倒是專業的。
+[Character(name="avg_npc_007")]
+[name="雇傭兵B"]  好傢伙，這些箱子裡裝的到底是什麼東西，值得這樣小題大做的？
+[Character(name="avg_npc_008",name2="avg_npc_007",focus=1)]
+[name="雇傭兵A"]  我們只管把貨物交到指定的地方，領錢走人就是。別的也管不著。
+[Character(name="avg_npc_007")]
+[name="雇傭兵B"]  說的也是。不過這次給的不少，箱子裡肯定是更值錢的東西吧！感覺自己身價都高貴了不少，哈哈哈哈！
+[name="雇傭兵B"]  等一拿到錢，我就在鎮上找個酒吧，先醉個一天一夜再說。
+[name="雇傭兵B"]  這樣的活再多接幾單，我就可以去南邊再買一塊地，還可以再開一個啤酒農場，哈哈哈哈！
+[name="雇傭兵B"]  你們呢？拿到錢準備幹嘛？
+[Character(name="avg_npc_008")]
+[name="雇傭兵A"]  我可沒你那興致，先找家武器鋪保養我的弩才是正事。
+[Character(name="avg_npc_007")]
+[name="雇傭兵B"]  那個小姑娘，你呢？
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]  買個新髮飾吧。
+[Character(name="avg_npc_007")]
+[name="雇傭兵B"]  噗——你說啥？
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]  之前的髮飾弄丟了，前面的頭髮會擋住眼睛，好煩......
+[Character(name="avg_npc_007")]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=10, randomness=20, fadeout=true, block=false)]
+[name="雇傭兵B"]  哈哈哈哈哈哈哈哈哈——
+[Character(name="avg_npc_008")]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=10, randomness=20, fadeout=true, block=false)]
+[name="雇傭兵A"]  噗哈哈哈哈......
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]  到底有什麼好笑的......
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character]
+[Delay(time=1)]
+[playsound(key="$d_avg_snowstormflp", loop=true, channel="bgs")]
+[Subtitle(text="雇傭兵就像速食食品一樣。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="食品的價值和用途也從來不由自己決定。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="可利用的部分被榨取殆盡後，剩下的就只是多餘的垃圾。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="可以隨意丟在曠野上，完全不用在意。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Background(image="bg_wild_a",screenadapt="coverall")]
+[PlayMusic(intro="$drift_intro", key="$drift_loop",crossfade=1, delay=0.5,volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="char_301_cutter_1",fadetime=1)]
+[Delay(time=1)]
+[name="刻刀"]  咳咳......
+[name="刻刀"]  只有我們兩個活下來了嗎......
+[Character(name="avg_npc_007")]
+[name="雇傭兵B"]  ......
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]  敵人的進攻顯然是有預謀的。
+[name="刻刀"]  雖然不知道具體發生了什麼，但一定是有人故意把我們的位置暴露出去了——
+[Dialog]
+[Character]
+[playsound(key="$runsand")]
+[Character(name="char_empty",name2="avg_npc_007")]
+[characteraction(name="right", type="move", xpos=500, fadetime=0, block=false)]
+[characteraction(name="right", type="move", xpos=-600, fadetime=1.5, block=true)]
+[Delay(time=1)]
+[Character(name="char_301_cutter_1",name2="avg_npc_007",focus=1)]
+[name="刻刀"]  你要幹什麼？別再管貨物了，我們已經暴露了，遲早會有更多人找上來的！
+[Character(name="char_301_cutter_1",name2="avg_npc_007",focus=2)]
+[name="雇傭兵B"]  讓開！
+[Character(name="char_301_cutter_1",name2="avg_npc_007",focus=1)]
+[name="刻刀"]  任務已經失敗了！趕緊去前面的城鎮想辦法處理你的傷——
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Character(name="char_301_cutter_1",name2="avg_npc_007",focus=2)]
+[name="雇傭兵B"]  你看看我脖子上這個源石結晶，我還能有命嗎！
+[name="雇傭兵B"]  我已經是要死的人了！我他媽就想要看看，我到底是為什麼東西死的！
+[Character(name="char_301_cutter_1",name2="avg_npc_007",focus=1)]
+[name="刻刀"]  你沒有必要這樣——
+[character]
+[Dialog]
+[CameraShake(duration=0.3, xstrength=8, ystrength=6, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_sp_chixiaobadao",volume=0.4)]
+[Blocker(a=0.7, r=1, g=1, b=1, fadetime=0.03, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="avg_npc_007")]
+[delay(time=0.6)]
+[name="雇傭兵B"]  哈......哈哈......哈哈哈哈哈哈哈！
+[name="雇傭兵B"]  空的，裡面是空的！
+[name="雇傭兵B"]  我們他媽的從一開始就是誘餌，那筆錢，就是用來買我們命的！
+[name="雇傭兵B"]  我真蠢，怎麼就相信了別人的鬼話，說什麼當雇傭兵隨隨便便就能賺到花不完的錢。
+[name="雇傭兵B"]  哈哈哈......可不是嘛，只要死得夠早，就用不到錢了！
+[CameraShake(duration=1, xstrength=20, ystrength=20, vibrato=20, randomness=50, fadeout=true, block=false)]
+[name="雇傭兵B"]  都該死！雇傭兵全部都該死！
+[stopmusic(fadetime=2)]
+[StopSound(channel="bgs", fadetime=1)]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[character]
+[Background(image="bg_canteen",screenadapt="coverall")]
+[Delay(time=1)]
+[name="？？？"] 喂喂，刻刀？醒醒。
+[PlayMusic(intro="$warm_intro", key="$warm_loop", volume=0.1,fadetime=0)]
+[MusicVolume(volume=0.4, fadetime=3)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="char_301_cutter_1",fadetime=0.5)]
+[Delay(time=0.6)]
+[name="刻刀"]  啊！抱歉，我剛好像睡著了？
+[Character(name="char_333_sidero_1#2")]
+[name="鑄鐵"]   最近的訓練確實有些辛苦。
+[name="鑄鐵"]   但不管怎麼說，現在可是驗收這一個月來刻苦訓練的成果的時候，要精神點啊！
+[name="鑄鐵"]   準備好了嗎？
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]   嗯......嗯！
+[name="刻刀"]  （緊張地吞咽口水）
+[name="刻刀"]  （小心翼翼地揭開鍋蓋）
+[dialog]
+[Blocker(a=0.3, r=0.95, g=0.95, b=0.95, fadetime=1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="刻刀"]  終於......完成了。
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#8",focus=2)]
+[name="鑄鐵"]   喔喔！看起來還不錯嘛！
+[name="鑄鐵"]   刻刀，我就知道你可以的！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#8",focus=1)]
+[name="刻刀"]   多謝鑄鐵小姐的幫助，只靠我一個人的話，肯定是不行的......
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#8",focus=2)]
+[name="鑄鐵"]   別說那麼多啦，快讓我嘗嘗！
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#8",focus=1)]
+[name="刻刀"]   請，請稍等！
+[name="刻刀"]   還是讓我自己先嘗嘗吧......
+[Dialog]
+[Character(name="char_301_cutter_1")]
+[Delay(time=0.6)]
+[Characteraction(name="middle", type="jump", xpos=-11, power=0,times=1, fadetime=0.5, block=true)]
+[Blocker(a=0,fadetime=0.5, block=true)]
+[Characteraction(name="middle", type="jump", xpos=11, power=0,times=1, fadetime=0.5, block=true)]
+[name="刻刀"]  （咀嚼）
+[Character(name="char_333_sidero_1#2")]
+[name="鑄鐵"]   怎麼樣？
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]   好像......
+[Character(name="char_333_sidero_1#2")]
+[name="鑄鐵"]   好像？
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]  不是很好吃......
+[Character(name="char_301_cutter_1",name2="char_333_sidero_1#2",focus=2)]
+[name="鑄鐵"]   欸？讓我嘗嘗。
+[dialog]
+[Character(name="char_333_sidero_1#2")]
+[Delay(time=0.6)]
+[Characteraction(name="middle", type="jump", xpos=-11, power=0,times=1, fadetime=0.5, block=true)]
+[Blocker(a=0,fadetime=0.5, block=true)]
+[Characteraction(name="middle", type="jump", xpos=11, power=0,times=1, fadetime=0.5, block=true)]
+[Delay(time=0.6)]
+[Character(name="char_333_sidero_1#7")]
+[name="鑄鐵"]   明明很好吃啊！刻刀你也太謙虛了吧！如果不知道的話，說是角峰大哥做的我都信。
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]   鑄鐵小姐過譽啦......
+[Character(name="char_333_sidero_1#2")]
+[name="鑄鐵"]   不對不對，應該說很有刻刀的特色！
+[name="鑄鐵"]   你說“結業料理”打算做“沙蟲罐頭燴飯”的時候我還嚇了一跳，我真的沒有想到會這麼好吃！
+[Character(name="char_333_sidero_1#8")]
+[name="鑄鐵"]   原本罐頭裡過重的調料味被米飯中和了，沙蟲肉經過重新加工後口感也變好了很多。
+[name="鑄鐵"]   唔，加進來的馬鈴薯泥也可謂神來之筆！我覺得可以考慮把這道菜列入羅德島食堂食譜！
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]   因為想到鑄鐵小姐說過的，“要把熟悉的食材做成自己期待的樣子”，想來想去，自己熟悉的食物只有沙蟲罐頭了。
+[Character(name="char_333_sidero_1#2")]
+[name="鑄鐵"]   說明你已經掌握烹飪技術的精髓啦！
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]   現在我也只會做這一道菜啊......
+[Character(name="char_333_sidero_1#2")]
+[name="鑄鐵"]   是第一道菜，也是一個全新的開始！
+[Character(name="char_301_cutter_1")]
+[name="刻刀"]   嗯，我記住了。
+[name="刻刀"]   不只是完成任務，是要帶著希望......做成自己期待的樣子......
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=3)]
+[Character]
+[Image(fadetime=2)]

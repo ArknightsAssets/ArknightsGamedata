@@ -1,0 +1,724 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")] 小车个人剧情
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_wild_a",screenadapt="coverall")]
+6:29 A.M. 天氣/陰
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$warm_intro", key="$warm_loop", volume=0.4)]
+[Character(name="avg_286_cast3_1$1",fadetime=0.7)]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 確認環境——距離第1439號塌方位置3.79公里。
+[name="Castle-3"] 掃描周圍生命體——八人，隸屬羅德島工程部應急響應施工隊。
+[name="Castle-3"] 安全等級評定為中低風險。
+[name="Castle-3"] 博士，這是個可靠的休息地點。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="麻煩你了，Castle-3。;......;我已經坐下五分鐘了。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character]
+[delay(time=0.51)]
+[Character(name="avg_npc_012",fadetime=0.7)]
+[Delay(time=0.7)]
+[name="工程幹員A"] 博士，這地方收拾得差不多了，等最前面的勘測小組發回地質報告，我們就準備繼續前進了。
+[dialog]
+[Character(name="avg_npc_012",focus=-1)]
+[Decision(options="大家辛苦了。;一夜沒睡，真是不容易啊。", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_npc_012",fadetime=1)]
+[name="工程幹員A"] 我們是習慣了，只要羅德島行駛在荒原上，就什麼突發情況都可能會有。
+[name="工程幹員A"] 為了確保航線通暢，一個月總有那麼幾天得半夜離艦緊急施工。
+[name="工程幹員A"] 再說了，這回有博士在場，提前排查了好幾處不穩定結構，這效率提升了不少，我估摸著再有個兩三小時，大家就能回艦休息了。
+[name="工程幹員A"] 博士，你是不是也很累了？
+[dialog]
+[Character(name="avg_npc_012",focus=-1)]
+[Decision(options="這是我應該做的。;難得出來，就當散散心。", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_npc_012",fadetime=1)]
+[name="工程幹員A"] 對了，還有Castle-3，你也是大功臣！
+[name="工程幹員A"] 這一帶沙地獸真是多，你不在的話，光是要把它們都趕走，就得多費很多力氣啊。
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 我會遵守指令，保障博士和大家的安全。
+[Character(name="avg_npc_012")]
+[name="工程幹員A"] Castle-3，你加入工程部門也有三年多了吧？
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 是的，距離可露希爾主人第一次啟動我升級後的系統，已經過去三年十個月零九天。
+[Character(name="avg_npc_012")]
+[name="工程幹員A"] 這麼長時間......真是比我們中的很多人都要久了啊。
+[Dialog]
+[Character]
+[Delay(time=0.51)]
+[Character(name="char_013_riop",fadetime=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[delay(time=1)]
+[name="工程幹員B"] 博士，我們準備熱點早飯吃，你要不要一起？
+[dialog]
+[Character(name="char_013_riop",focus=-1)]
+[Decision(options="請給我來一碗湯。;我不餓，喝點水就好。", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="char_013_riop",fadetime=1)]
+[name="工程幹員B"] Castle-3，你——
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 謝謝，我暫時不需要充電。
+[name="Castle-3"] 從剩餘電量來看，本設備還能正常運作八小時十七分鐘。
+[Character(name="char_013_riop")]
+[name="工程幹員B"] 哈......哈哈，本來是想問下你能不能幫忙加熱一下冷凍燻肉，畢竟我們平時和Thermal-EX一起行動慣啦。
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 很遺憾，我的型號不支援上述功能。
+[Character(name="char_013_riop")]
+[name="工程幹員B"] 唉......沒事，我想到了個別的方法。
+[Dialog]
+[Character(fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$transmission",volume=1)]
+[Delay(time=1.5)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Delay(time=1.5)]
+[Character(name="avg_npc_012")]
+[name="工程幹員A"] 喂，你們誰把剃鬚刀那傢伙的答錄機打開了？
+[Character(name="char_013_riop")]
+[name="工程幹員B"] 別著急啊，我就是想要點熱量......
+[Character(name="avg_npc_012")]
+[name="工程幹員A"] 那玩意兒年紀可比我們年紀都要大，小心它把我們營地給炸了！
+[dialog]
+[Character]
+[delay(time=1)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Delay(time=1.3)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Delay(time=1.3)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Delay(time=1.3)]
+[dialog]
+[Character(name="char_empty")]
+[Decision(options="這真是答錄機？;不是源石爆破物吧？！", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] ......從外殼震動頻率來看，該設備的內部電路老化嚴重，有小機率發生自燃。
+[name="Castle-3"] 博士，需不需要我把目標對象抹除？
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="不著急。;我們離遠一點坐吧。", values="1;2")]
+[Predicate(references="1;2")]
+[Character]
+[Delay(time=0.7)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+“♪不朽......不朽......我將成為不朽的怒風......”
+[Character(name="char_013_riop")]
+[name="工程幹員B"] 快、快按住它，它是不是要散架啦？
+[Dialog]
+[Character]
+[Delay(time=0.7)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+“♪不朽......不朽......我將成為不朽的野火......”
+[Character(name="avg_npc_012")]
+[name="工程幹員A"] 誰來救救我，我的耳朵快給震聾了！
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 收到。
+[Dialog]
+[Delay(time=0.51)]
+[PlaySound(key="$p_atk_elecball_n", volume=1)]
+[Delay(time=0.51)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Delay(time=1)]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 威脅解除。
+[Character(name="avg_npc_012",name2="char_013_riop",focus=1)]
+[name="工程幹員A"] ......唉。
+[Character(name="avg_npc_012",name2="char_013_riop",focus=2)]
+[name="工程幹員B"] 可憐的剃鬚刀。
+[Character(name="avg_npc_012",name2="char_013_riop",focus=1)]
+[name="工程幹員A"] Castle-3，這答錄機是徹底壞了嗎？
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 我拆除了它的電源。
+[name="Castle-3"] 在得到徹底維修之前，我不建議你們繼續使用這台設備。
+[Character(name="avg_npc_012",name2="char_013_riop",focus=1)]
+[name="工程幹員A"] 維修......要是真能修好的話，我們早就動手了吧？
+[name="工程幹員A"] 更不用說剃鬚刀自己......
+[name="工程幹員A"] 有的東西壞了就是壞了，再怎麼想讓它繼續陪著我們，也留不住。
+[dialog]
+[Character(name="avg_npc_012",name2="char_013_riop",focus=-1)]
+[Decision(options="答錄機......;剃鬚刀......", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_npc_012",name2="char_013_riop",focus=1)]
+[name="工程幹員A"] 是的，博士，答錄機是幹員剃鬚刀的遺物。
+[name="工程幹員A"] 你還記得剃鬚刀嗎？上次在哥倫比亞，他幫迪倫搶修過“壞傢伙”號。
+[name="工程幹員A"] 那時候他還好好的，回來之後不久，病情就急轉直下，沒幾天就走了。
+[name="工程幹員A"] 他才四十多歲......算了，不說這話。只要得了礦石病，誰都想過會有這一天。
+[name="工程幹員A"] 博士，我們吃飯。
+[Character(name="avg_npc_012",name2="char_013_riop",focus=2)]
+[name="工程幹員B"] 嗯，吃飯......肉還是涼的，不過也沒關係，有的吃就不錯啦。
+[dialog]
+[Character]
+[Decision(options="乾了這碗湯吧。;......;敬剃鬚刀。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_npc_012",name2="char_013_riop",focus=2)]
+[name="工程幹員B"] 不朽......不朽......
+[Character(name="avg_npc_012",name2="char_013_riop",focus=1)]
+[name="工程幹員A"] 你這邊吃飯邊敲碗還唱歌，跟剃鬚刀學的啊？
+[Character(name="avg_npc_012",name2="char_013_riop",focus=2)]
+[name="工程幹員B"] 他活得就像他的答錄機一樣有勁，對不對？
+[Character(name="avg_npc_012",name2="char_013_riop",focus=1)]
+[name="工程幹員A"] ......成為一團不朽的野火。
+[Character]
+[Dialog]
+[Delay(time=0.7)]
+“♪不朽......不朽......我將成為不朽的野火......”
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 博士，大家在幹什麼？
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="大家在唱歌。;大家在思念一位老朋友。", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 類似行為，我在陪同幹員賈維工作時，也在他身上見過好幾次。
+[name="Castle-3"] 然而，博士，我無法掌握這項技能。
+[name="Castle-3"] 可露希爾主人為我添加的語言模組，讓我能理解這些詞語的意思。
+[name="Castle-3"] 但我並不能體會把這些詞語以上述節奏和高低頻率表達出來，會和直接說出來有什麼差別。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="大家在唱歌。;......;重要的是情感的抒發。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 不朽。
+[name="Castle-3"] 我同樣不理解這個詞語。
+[name="Castle-3"] 沒有什麼事物是永不損壞的，哪怕是最堅硬的機器也一樣。
+[Dialog]
+[Character]
+[PlaySound(key="$transmission", volume=1)]
+[delay(time=0.51)]
+[CharacterCutin(name="char_349_chiave#1",widgetID="Chiave",offsetx=-350,fadestyle:"horiz_expand_center",fadetime=0.51,width=200,block=true)]
+[name="賈維"] Castle-3！你是不是在附近了？
+[Character(name="char_empty",name2="avg_286_cast3_1$1",focus=2,fadetime=0.51)]
+[name="Castle-3"] 是的，賈維兄弟，我和博士和施工隊在一起。你們勘測小組是否順利？
+[Character(name="char_empty",name2="avg_286_cast3_1$1",focus=1)]
+[name="賈維"] 順利順利，我都準備好了......呃，我是說，工作幹差不多了。
+[name="賈維"] 那個，小爺我啊，忘帶扳手了，你過來給我送一下如何？
+[Character(name="char_empty",name2="avg_286_cast3_1$1",focus=2)]
+[name="Castle-3"] 賈維兄弟，如果你沒有隨身攜帶重要用具，是如何完成工作的呢？
+[Character(name="char_empty",name2="avg_286_cast3_1$1",focus=1)]
+[name="賈維"] ......這你就不用管了。
+[name="賈維"] Castle-3，咳，就昨天我們約好的那個事——
+[Character(name="char_empty",name2="avg_286_cast3_1$1",focus=2)]
+[name="Castle-3"] 你是指昨天說的，你想申請一次長期外勤，並讓我陪......
+[Character(name="char_empty",name2="avg_286_cast3_1$1",focus=1)]
+[name="賈維"] 對對，不過先別說了，博士還在邊上呢——
+[name="賈維"] 博士，我讓Castle-3過來一趟，你沒意見吧？
+[dialog]
+[Character(name="char_empty",name2="avg_286_cast3_1$1",focus=1)]
+[Decision(options="沒意見。;......;你這表現有點奇怪啊。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[name="賈維"] 好了好了，我就知道你一定會批准的！
+[name="賈維"] Castle-3，你趕緊過來吧，我在前面等你——
+[Dialog]
+[CharacterCutin(widgetID="Chiave")]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=1)]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 博士，我去給賈維兄弟送工具，您更希望留在這裡，還是和我一起行動？
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="一起去吧。;正好我也想多走幾步。", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 好的，博士。
+[Dialog]
+[stopmusic(fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character]
+[Background(image="bg_corridor",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]	
+[Character(name="char_007_closre_1#1")]
+[name="可露希爾"] Castle-3還沒回來嗎？
+[name="可露希爾"] 算算日子時限差不多快到了，說好了他今天要來找我處理一下的啊。
+[name="可露希爾"] 對了，剛才我問賈維Castle-3在哪裡，他怎麼表現得奇奇怪怪的？
+[Character(name="char_007_closre_1#6")]
+[name="可露希爾"] 壞了壞了，他該不會是想偷偷帶Castle-3私奔吧？！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character]
+[Background(image="bg_desert_3",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]	
+[playMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.4)]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 博士，能在這一天和您一起行動，Castle-3感到很愉快。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="這一天？;......;Castle-3，你的表現也有點奇怪。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 博士，今天對我來說確實是特別的。
+[name="Castle-3"] 就像剛才幹員們說的那樣，我已經在羅德島上工作很久了。
+[name="Castle-3"] 和我同型號的作業平台很少能保持運作更長時間。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="我能看到你身上有很多磨損的痕跡。;......;那些標記......", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 博士，我注意到您在看我身上的刻痕。
+[name="Castle-3"] 您是否想知道它們的由來？
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="我想知道。;早就想問了。", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 這些刻痕伴隨我走過了這三年。
+[name="Castle-3"] 在我身上刻下它們的人各不相同，最初那道來自一位年輕的狙擊幹員。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character]
+[stopmusic(fadetime=1)]
+[Delay(time=2)]
+[Background(image="bg_labentrance",screenadapt="showall")]
+[PlaySound(key="$blizzard",volume=0.6,channel="1",loop=true,fadetime=2)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Character(name="avg_npc_089")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Character(name="avg_npc_089")]
+[name="狙擊幹員"] ......這些該死的強盜，怎麼這麼多？
+[Dialog]
+[Delay(time=0.51)]
+[PlaySound(key="$e_atk_arrow_h", volume=1)]
+[Delay(time=1)]
+[name="狙擊幹員"] 哈......又一個！
+[name="狙擊幹員"] 想要拿走我身上的資料......沒門！咳......咳咳......該死，剛才那一刀一定是傷到了肺......
+[name="狙擊幹員"] Castle-3......
+[Character(name="avg_npc_089",name2="avg_286_cast3_1$1",focus=2)]
+[name="Castle-3"] 我在。
+[Character(name="avg_npc_089",name2="avg_286_cast3_1$1",focus=1)]
+[name="狙擊幹員"] 過......過來......搭把手......
+[Character(name="avg_npc_089",name2="avg_286_cast3_1$1",focus=2)]
+[name="Castle-3"] 我建議您躺下休息。雖然我只是一具作戰平台，但我也能看出來，您的身體狀態已經不適合繼續戰鬥下去了。
+[Character(name="avg_npc_089",name2="avg_286_cast3_1$1",focus=1)]
+[name="狙擊幹員"] 躺下......嗎？不，還不到躺下的時候。
+[Dialog]
+[Delay(time=0.51)]
+[Character(name="avg_npc_089",name2="avg_286_cast3_1$1",focus=1)]
+[name="狙擊幹員"] Castle-3，你不介意我在你身上留個標記吧？
+[Dialog]
+[Delay(time=0.51)]
+[Characteraction(name="left",type="move",xpos=70,fadetime=0.51)]
+[Delay(time=1.5)]
+[Characteraction(name="left",type="move",xpos=-70,fadetime=0.51)]
+[Delay(time=0.51)]
+[Character(name="avg_npc_089",name2="avg_286_cast3_1$1",focus=2)]
+[name="Castle-3"] 這種程度的外殼磨損完全不會影響我的功能。
+[name="Castle-3"] 但我不明白您的行為有何意義。
+[Character(name="avg_npc_089",name2="avg_286_cast3_1$1",focus=1)]
+[name="狙擊幹員"] 沒關係......咳咳......Castle-3，其實你也知道，我快死了吧？
+[Character(name="avg_npc_089",name2="avg_286_cast3_1$1",focus=2)]
+[name="Castle-3"] 如果無法立刻得到治療，您的身體功能將會在三至五個小時內終止運作。
+[Character(name="avg_npc_089",name2="avg_286_cast3_1$1",focus=1)]
+[name="狙擊幹員"] 終止運作嗎......嗯，沒錯，對我們人類來說，這就是死亡。
+[name="狙擊幹員"] 你想讓我躺下來，就這樣等著最後一刻到來......我做不到。
+[name="狙擊幹員"] 這最後的幾個小時，我必須撐下去，做點什麼。
+[name="狙擊幹員"] ——你看這些敵人，他們不光搶羅德島的東西，還一直在騷擾附近的感染者村莊。
+[name="狙擊幹員"] 所以，在我死前，我要幹掉他們。
+[dialog]
+[Character(name="avg_npc_089")]
+[delay(time=0.51)]
+[PlaySound(key="$e_atk_arrow_h", volume=1)]
+[Delay(time=1)]
+[Character(name="avg_npc_089")]
+[name="狙擊幹員"] ......第三個。
+[name="狙擊幹員"] 一道刻痕，一次死亡。
+[name="狙擊幹員"] ——這是我用我的命換來的。
+[name="狙擊幹員"] 哪怕到了最後關頭，這也提醒著我，我的生命和我的死亡，都有意義......
+[Dialog]
+[Delay(time=0.51)]
+[Characteraction(name="middle",type="move",ypos=-50,fadetime=0.6)]
+[Delay(time=0.6)]
+[character(fadetime=0.51)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[Delay(time=1)]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] ......
+[name="Castle-3"] 獵弓先生！
+[stopsound(channel="1",fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="bg_desert_3",screenadapt="showall")]
+[Character(name="avg_286_cast3_1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[musicvolume(volume=0.4, fadetime=1)]
+[Delay(time=1)]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 最後我背著那位幹員衝了出去。很遺憾，在回到羅德島的時候，他的身體功能還是終止了。
+[name="Castle-3"] 或者使用更確切的詞語，他迎來了“死亡”。
+[playMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.4)]
+[name="Castle-3"] 可露希爾主人注意到了我身上的刻痕，她本來想幫我去掉，但我更希望留下。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="因為你想紀念那位幹員？;因為你想紀念那次事件？", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 抱歉，博士，我同樣不能理解“紀念”這個詞語。
+[name="Castle-3"] 對機器人來說，只要我的核心一天沒有損壞，我的記憶庫裡就會一直記錄著那次事件，同樣也保存著獵弓先生的所有資料。
+[name="Castle-3"] 如果您想知道我為何決定保留這些刻痕，我很難給出一個精確的回答。
+[name="Castle-3"] 可露希爾主人提出過一個可能性——
+[name="Castle-3"] 她說，我是在“模仿”。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="你在模仿那位幹員？;你在模仿刻痕行為？", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 可露希爾主人給我們這些機器都設計了這部分模組，她希望我們的行為舉止能更接近人類。
+[name="Castle-3"] 雖然我並不能完全理解獵弓先生留下的刻痕的具體意義，但我的程式功能讓我決定延續他的行為。
+[name="Castle-3"] 在那次事件之後，我每次外出執行作戰任務，都會計數自己擊退了多少敵人——
+[name="Castle-3"] 並在結束後拜託同行幹員，請他們在我的外殼上刻下相應數量的痕跡。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="你是在學習。", values="1")]
+[Predicate(references="1")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 博士，我不像Thermal-EX，我不會發熱，我的程式也並不支援我進行“學習”。
+[name="Castle-3"] 直到今天，我得出了一個並不確切的結論：獵弓先生留下來的刻痕，可能和剃鬚刀先生的答錄機是類似的東西。
+[name="Castle-3"] 就像在本設備不得不停止工作後，我佈滿刻痕的外殼也許仍然能存在一段時間，無論是在垃圾場，還是在可露希爾主人的私人倉庫裡。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="我更希望它留在特殊儲物間裡。;我會懷念與你一起經歷的每一場戰鬥。", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 謝謝您，博士。
+[name="Castle-3"] 等我的核心停止了運作，我記憶庫裡的資料也會被清除。
+[name="Castle-3"] 但您今天告訴我的這些話，對我來說有很大意義。
+[Character]
+[Dialog]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=1.5)]
+[CharacterCutin(name="char_349_chiave#3",widgetID="Chiave",offsetx=-300,fadestyle:"horiz_expand_center",fadetime=0.51,width=200,block=true)]
+[Character(name="char_empty",name2="avg_286_cast3_1$1",focus=1,fadetime=0.51)]
+[name="賈維"] Castle-3！你到哪裡了？
+[name="賈維"] 施工隊的人越來越近，等他們都到了，事情就麻煩了啊！
+[name="賈維"] 還有，剛才可露希爾發來消息，她問我你是不是跟我在一起......
+[name="賈維"] Castle-3，我們再不跑就來不及了！
+[Character(name="char_empty",name2="avg_286_cast3_1$1",focus=2)]
+[name="Castle-3"] 賈維兄弟，我沒有明白——什麼來不及了？
+[name="Castle-3"] 此外，我聽到扳手的聲音了。這是否可以說明，其實你並不需要我給你送工具？
+[Character(name="char_empty",name2="avg_286_cast3_1$1",focus=1)]
+[name="賈維"] 那就是個藉口......別管那麼多了！
+[name="賈維"] 我早就聽可露希爾說了，你的核心馬上就要壞了吧？她是不是打算把你報廢了，就跟以前我們廠裡報廢那些發動機壞了的車一樣！
+[Character(name="char_empty",name2="avg_286_cast3_1$1",focus=2)]
+[name="Castle-3"] 如果你的意思是，主人是否會在今天停止我的功能的話，確實有這個可能性。
+[dialog]
+[CharacterCutin(widgetID="Chiave")]
+[Delay(time=0.51)]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="什麼？", values="1")]
+[Predicate(references="1")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 博士，我本應早點向你說明，可我判斷，任務是第一優先。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="所以你主動提出和我一起出來？;......;所以你今天的表現也不太對勁。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 直到最後一刻，Castle-3都會是您最堅實的夥伴。
+[Character]
+[Dialog]
+[Delay(time=0.51)]
+[CharacterCutin(name="char_349_chiave#3",widgetID="Chiave",offsetx=-300,fadestyle:"fade",fadetime=0.51,width=200)]
+[Delay(time=0.51)]
+[name="賈維"] ......那是不是博士的聲音？博士為什麼也在？
+[Character(name="char_empty",name2="avg_286_cast3_1$1",focus=1)]
+[name="賈維"] Castle-3，我讓你一個人，不是，一個機器自己過來的啊！
+[name="賈維"] 博士在的話，我怎麼帶你跑？！
+[Character(name="char_empty",name2="avg_286_cast3_1$1",focus=2)]
+[name="Castle-3"] 賈維兄弟，我昨天就已經對你說過了，讓我陪你出長期外勤這個提議，幾乎不可能實行。
+[name="Castle-3"] 作為一台機器，可露希爾主人以及博士的指令是最優先的。
+[name="Castle-3"] 而且，我的核心堅持不了多久，你所描繪的我們一起跑好幾個國家的情形，是無法實現的。
+[Character(name="char_empty",name2="avg_286_cast3_1$1",focus=1)]
+[name="賈維"] 跑不了多遠，我們也可以跑啊！
+[name="賈維"] 越是命不久矣，就越要及時行樂——在自由奔跑的途中倒下，總比今天就回去，在車間裡變成一堆廢鐵要快樂吧？！
+[name="賈維"] 大不了回來之後被奧斯塔嘮叨一會，再被可露希爾暴揍一頓......都先不管了！
+[name="賈維"] 喂，博士，你也說句話啊？
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[CharacterCutin(widgetID="Chiave")]
+[Decision(options="我覺得賈維說的對。;......;Castle-3，你怎麼想？", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] ......通訊完畢。
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[name="賈維"] 喂，Castle-3——
+[Dialog]
+[Character(name="avg_286_cast3_1$1")]
+[stopmusic]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=0.51)]
+[dialog]
+[Delay(time=0.51)]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="Castle-3，你怎麼突然......", values="1")]
+[Predicate(references="1")]
+[playMusic(intro="$normal01_intro",key="$normal01_loop",volume=0.4)]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 博士，我的感測器偵測到了危險單位。
+[name="Castle-3"] ——沙地獸，一共四頭。
+[name="Castle-3"] Castle-3，等您下令。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="Castle-3，左邊！", values="1")]
+[Predicate(references="1")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 瞭解！
+[dialog]
+[PlaySound(key="$p_atk_elecball_n", volume=1)]
+[Delay(time=0.51)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Delay(time=1)]
+[name="Castle-3"] 距離最近的目標已倒下！
+[name="Castle-3"] 博士，後方岩石背面還有五頭沙地獸，正在朝我們靠近！
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="Castle-3，攻擊左前方三十度的石壁！", values="1")]
+[Predicate(references="1")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 遵命！
+[dialog]
+[delay(time=0.51)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[PlaySound(key="$p_atk_elecball_n", volume=1)]
+[delay(time=0.7)]
+[CameraShake(duration=1, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 岩壁碎裂，博士小心！
+[dialog]
+[Delay(time=0.51)]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="災害帶來的也不全是麻煩。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="Castle-3，從這裂口出去！", values="1")]
+[Predicate(references="1")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 好的，博士，請坐到我身上來！
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 博士，您一定要坐穩了。
+[Dialog]
+[Delay(time=1)]
+[PlaySound(key="$sportscarstart",volume=1)]
+[name="Castle-3"] Castle-3，最高速度，前進！
+[CameraShake(duration=3, xstrength=0, ystrength=8, vibrato=17, randomness=0, fadeout=true)]
+[stopmusic]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[CameraShake(duration=-1, xstrength=0, ystrength=8, vibrato=17, randomness=0, fadeout=false)]
+[Background(image="bg_desert_1",screenadapt="showall")]
+[PlaySound(key="$blizzard",volume=0.6,channel="1",loop=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 博士，我們甩脫那群沙地獸了。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="Castle-3，你幹得很好。;......;Castle-3，你沒有減速。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 博士，您先不要下來，只要Castle-3保持當前速度，我們就能在十分鐘後抵達本艦。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="你不去找賈維嗎？;這是自由的反方向。", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 博士，我聽懂了賈維兄弟的意思。
+[name="Castle-3"] 他是希望我能在最後的時間裡，自由地奔跑。
+[name="Castle-3"] 博士，我們此刻不正在奔跑嗎？
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="確實是在奔跑。;......;風好大。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 博士，能和您一起奔跑，Castle-3真的非常愉快。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="不朽......;這時候好像很適合唱歌。;我將成為不朽的怒風。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 我將成為不朽的野火。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="Castle-3，這又是模仿？;......;Castle-3，你學會唱歌了。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 我感覺到了我的輪子碾過荒地，風拍打著我的外殼......
+[name="Castle-3"] 還有電流通過我的核心。
+[name="Castle-3"] 博士，您讓我感受到了節奏！
+[name="Castle-3"] 我可以為您用電流聲伴奏了——
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="繼續奔跑吧，Castle-3。", values="1")]
+[Predicate(references="1")]
+[Character]
+“♪我將成為不朽的野火”
+“♪我將成為不朽的怒風”
+“♪從我的肋骨間跑出一群馱獸”
+“♪威風凜凜地衝向荒原”
+[CameraShake(duration=1, xstrength=0, ystrength=8, vibrato=17, randomness=1, fadeout=false, block=false)]
+[Dialog]
+[stopsound(channel="1",fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[CameraShake(duration=0.51, xstrength=0, ystrength=8, vibrato=17, randomness=1, fadeout=false, block=false)]
+[Character]
+[Background(image="bg_corridor",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[playMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.4)]
+[Character(name="char_007_closre_1#1")]
+[name="可露希爾"] Castle-3......咦，博士？
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 可露希爾主人，我沒有遲到吧？
+[Character(name="char_007_closre_1#1")]
+[name="可露希爾"] 沒有啊，Castle-3，你一直是最守時的！
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 好的主人，從始至終，Castle-3都不會讓您失望。
+[name="Castle-3"] 在我跟您去工作間之前，我想再跟博士說幾句話。
+[Character(name="char_007_closre_1#1")]
+[name="可露希爾"] 沒問題啊，我又不趕時間。
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] ——博士。
+[name="Castle-3"] 感謝您選擇Castle-3。
+[name="Castle-3"] 與您並肩經歷的每一場戰鬥，都是我的榮幸。
+[name="Castle-3"] Castle-3，進入休眠模式。
+[Dialog]
+[delay(time=0.51)]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[delay(time=0.51)]
+[Character(fadetime=1)]
+[Delay(time=2)]
+[Character(name="char_007_closre_1#6")]
+[name="可露希爾"] Castle-3......？
+[name="可露希爾"] 居然自己關機了......博士，今天你們一起做了什麼啊？
+[dialog]
+[Character(name="char_007_closre_1#6",focus=-1)]
+[Decision(options="我們一起完成了一個任務。;我們一起經歷了一場冒險。;我們一起合唱了一首歌。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="char_007_closre_1#6")]
+[name="可露希爾"] 我也說不上來哪裡有些奇怪......
+[Character(name="char_007_closre_1#1")]
+[name="可露希爾"] Castle-3還是Castle-3，不像Lancet-2那樣偶爾會說一些傷感的話，也不像Thermal-EX，動不動嚇我一跳。
+[Character(name="char_007_closre_1#2")]
+[name="可露希爾"] 非要說的話......好像變得更帥氣了？
+[dialog]
+[Character(name="char_007_closre_1#2",focus=-1)]
+[Decision(options="或許他學會了“死亡”的概念。;或許他感到了“生命”的不朽。;或許他為自己身為機器人的一生感到滿意。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="char_007_closre_1#6")]
+[name="可露希爾"] 欸欸？！
+[name="可露希爾"] 博士，我很驚訝，但我說不好是因為你在Castle-3身上看到了這些，還是因為Castle-3竟然讓你看到了這些。
+[dialog]
+[Character(name="char_007_closre_1#6",focus=-1)]
+[Decision(options="有什麼區別？", values="1")]
+[Predicate(references="1")]
+[Character(name="char_007_closre_1#1")]
+[name="可露希爾"] 因為偶爾我會有一種感覺......
+[name="可露希爾"] 當智慧型機器人們使用著我們的語言，嘗試理解著我們的行為與思想時，我們是不是也在透過他們看自己？
+[Character(name="char_007_closre_1#2")]
+[name="可露希爾"] 哇，突然說這種深沉的話，也太不像我了吧！{@nickname}博士，你真的不考慮和我一起研究智慧生命對吧？
+[dialog]
+[Character(name="char_007_closre_1#2",focus=-1)]
+[Decision(options="不考慮。;......;有機會再說吧。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="char_007_closre_1#1")]
+[name="可露希爾"] 唔......跟你說完這些，我又有了一些新思路......博士，我帶Castle-3回去了啊，今天的工作還挺麻煩的呢！
+[Dialog]
+[stopmusic(fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Background(image="bg_rhodescom",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[playMusic(intro="$path_intro", key="$path_loop",volume=0.4)]
+[Character(name="char_349_chiave#4")]
+[name="賈維"] 喂，博士！
+[name="賈維"] 快看看誰來了——
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] Castle-3，等候您的命令。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="Castle-3，你沒事？;你的記憶庫還在嗎？", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 我已經運行了三次自我檢測程式，沒有發現任何記憶文件丟失。
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="那真是太好了。;......;我早就知道可露希爾不會輕易讓你報廢的。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="char_349_chiave#4")]
+[name="賈維"] 不枉小爺我急急忙忙趕回來......可累壞我了！
+[Character(name="char_349_chiave#1")]
+[name="賈維"] 本來想著能不能多留Castle-3一會，沒想到一回來就見他被大卸八塊，當時我就......
+[dialog]
+[Character(name="char_349_chiave#1",focus=-1)]
+[Decision(options="就急了？;......;就哭了？", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="char_349_chiave#1")]
+[name="賈維"] ......就差點朝可露希爾大喊大叫了。
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 賈維兄弟，根據工程部門同事的描述來看，你的行為並不能用“差點”來形容。我記憶庫裡儲存的粗口集錦都不及你的語言豐富......
+[Character(name="char_349_chiave#3")]
+[name="賈維"] 夠了夠了，快別說了，那還不是因為我擔心你嘛！
+[Character(name="char_349_chiave#1")]
+[name="賈維"] 雖說腦門上給可露希爾揍出來的包還在痛......可小爺我一點都不後悔。
+[name="賈維"] 你們幾個可是我在島上認識的最親的小弟，也就比奧斯塔和布洛卡他們差一點，當然一個都不能少！
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 謝謝你，賈維兄弟，你也是我的好小弟。
+[Character(name="char_349_chiave#1")]
+[name="賈維"] 這還差不多。
+[Character(name="char_349_chiave#2")]
+[name="賈維"] 不對啊，誰是誰小弟？Castle-3，你學壞了啊！
+[name="賈維"] 我怎麼不記得我和可露希爾有改你性格......
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 賈維兄弟，本設備並不具備“學壞”的功能。
+[Character(name="char_349_chiave#1")]
+[name="賈維"] 行吧行吧，總之，博士，你看到了啊，這傢伙剛醒過來就想來找你，讓你知道下他沒事。
+[name="賈維"] 結果就是，我們都沒鬧明白。可露希爾已經準備好了一整套升級系統，可以讓Castle-3的核心繼續跑個——
+[name="賈維"] 我也不知道能跑多久，說不定比小爺我剩下的時間還要久吧。
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 賈維兄弟，我相信，你也還能自由奔跑很久。
+[name="Castle-3"] 因為我們會一起陪著博士，而博士也會陪著我們——
+[dialog]
+[Character(name="avg_286_cast3_1$1",focus=-1)]
+[Decision(options="是的。;我們一起。;我不會放手。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_286_cast3_1$1")]
+[name="Castle-3"] 對了，博士，可露希爾主人為我添加了歌曲播放功能，賈維兄弟給我更新了一下曲庫，我現在會唱的歌變多了。
+[name="Castle-3"] ——您想聽《火山大噴發之後最偉大的奇觀》，還是《你嘗起來是這麼美味》？
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=3)]
+[Character]
+[Image]

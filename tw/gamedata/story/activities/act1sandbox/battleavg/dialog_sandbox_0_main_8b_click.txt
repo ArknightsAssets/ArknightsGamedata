@@ -1,0 +1,19 @@
+[HEADER(actId="act1sandbox", npcId="trap_433_sandsdr")] 
+[character(name="avg_npc_801_1", offsetX="100", offsetY="100")]
+[name="“沙卒”"]如果是當初我的幫助讓各位與那位姑娘產生了一些誤會，抱歉了。
+[name="“沙卒”"]如果各位需要，她接下來的行蹤消息我都可以提供給各位。
+[name="“沙卒”"]以及，我很樂意擁有像各位這樣的盟友。收下這個吧。
+[Decision(option1="（收下）", value1="1.1")]
+[predicate(references="1.1")]
+[AddItem(itemId="sandbox_0_craft_9", itemCount="1")]
+[character(name="char_empty_b", offsetX="100", offsetY="100")]
+[name=""]【獲得了跨局信物<黃沙錢幣>】
+[SetConditionProgress(conditionKey="market_sandsdr", itemCount="1")]
+[character(name="avg_npc_801_1", offsetX="100", offsetY="100")]
+[name="“沙卒”"]當然，這次合作並不是出於歉意。
+[name="“沙卒”"]“不甘心”是大多人的常態，願意邁出那一步的還是少數。
+[name="“沙卒”"]各位不需要我再多說什麼了，你們早就做好了準備。
+[SetConditionProgress(conditionKey="route_main", itemCount="9")]
+[SetConditionProgress(conditionKey="route_main_b", itemCount="2")]
+[withdraw(charId="trap_433_sandsdr")]
+[End]

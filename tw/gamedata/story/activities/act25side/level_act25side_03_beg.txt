@@ -1,0 +1,711 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="29_g6_mainstreet",screenadapt="coverall")]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[playMusic(intro="$Tremont_intro",key="$Tremont_loop", volume=0)]
+[MusicVolume(volume=0.6, fadetime=3)]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[PlaySound(key="$d_gen_walk_n", volume=0.7)]
+[charslot(slot="l",name="avg_npc_524_1#1$1",duration=0.5)]
+[charslot(slot="r",name="avg_npc_523_1#1$1",duration=0.5)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_524_1#1$1",focus="l")]
+[name="記者A"]別磨蹭了，快走。明天全媒體的頭版頭條估計都是副總統訪問萊茵，要是拍到的照片沒有其他同行的角度好，會被主編罵死。
+[Dialog]
+[charslot(slot="r",name="avg_npc_523_1#1$1",focus="r")]
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+[Delay(time=1)]
+[name="記者B"]等等，我的證件好像不見了......
+[charslot(slot="l",name="avg_npc_524_1#1$1",focus="l")]
+[name="記者A"]那怎麼辦？！這可沒法進場。
+[charslot(slot="r",name="avg_npc_523_1#1$1",focus="r")]
+[name="記者B"]你先去佔個好位置，我回去找！
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.7)]
+[charslot(slot = "right",posfrom = "0,0", posto = "300,0",afrom = 1, ato = 0,duration = 1)]
+[Delay(time=1.5)]
+[charslot(duration=1)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_npc_529_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_530_1#1$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_npc_529_1#1$1",focus="l")]
+[name="萊茵職員A"]人怎麼這麼多......
+[name="萊茵職員A"]我還想去樓下咖啡店買份早餐......進都進不去。
+[charslot(slot="r",name="avg_npc_530_1#1$1",focus="r")]
+[name="萊茵職員B"]副總統公開到訪公司，還要進行直播，各大報社的記者全都來了，沒把路堵死算不錯了。
+[Dialog]
+[charslot(duration=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_534_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="普通市民？"]......
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=0.7)]
+[charslot(slot="l",name="avg_npc_895_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_391_rosmon_1#1$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_npc_895_1#1$1",focus="l")]
+[name="伊芙利特"]迷迭香，你發現沒有？
+[charslot(slot="r",name="avg_391_rosmon_1#1$1",focus="r")]
+[name="迷迭香"]發現什麼？
+[charslot(slot="l",name="avg_npc_895_1#9$1",focus="l")]
+[name="伊芙利特"]先是那個工廠，再是萊茵生命，特里蒙老是喜歡在一個地方有事的時候，把它封鎖起來。
+[charslot(slot="r",name="avg_391_rosmon_1#1$1",focus="r")]
+[name="迷迭香"]萊茵生命和那個工廠不一樣吧？他們只是對通往萊茵生命的部分關鍵路段實施了禁行，應該是副總統的車隊會經過，出於安全考慮......
+[charslot(slot="l",name="avg_npc_895_1#9$1",focus="l")]
+[name="伊芙利特"]所以其他幾條街人就越來越多了。
+[name="伊芙利特"]封鎖起來別人就看不到了嗎？粗暴，很不聰明。
+[charslot(slot="r",name="avg_391_rosmon_1#1$1",focus="r")]
+[name="迷迭香"]......嗯。
+[charslot(slot="r",name="avg_391_rosmon_1#4$1",focus="r")]
+[name="迷迭香"]博士，你在看什麼？
+[Dialog]
+[charslot(slot="l",focus="n")]
+[Decision(options="今天會下雨嗎？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_npc_895_1#2$1",focus="l")]
+[name="伊芙利特"]今天可是個大晴天！出門的時候，酒店的電視正好在播報氣象資訊，博士你記性不好。
+[name="伊芙利特"]再說現在也不是特里蒙的雨季。
+[Dialog]
+[charslot(duration=0.5)]
+[delay(time=1)]
+確實是又一個晴日。
+特里蒙的城建規劃很精細，雖然高樓林立，但彼此錯落，避開遮擋，還是足以從容地篩下陽光，初冬的暖陽均勻地塗抹著每一條街。
+你抬頭看，一朵烏雲在很遠的地方慢吞吞地晃蕩著，風往雲的方向吹，它看起來離這座城市越來越遠。
+可它一直在視線裡。
+同時出現在你視線裡的，還有忙碌的路口、暫停的車輛、高處一閃而過的光，以及那些偽裝得很好的“行人”......
+你不動聲色，只是催了催兩個孩子快點走。
+[Dialog]
+[charslot(slot="l",name="avg_npc_895_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_391_rosmon_1#1$1",focus="r")]
+[name="迷迭香"]博士，你發現什麼了嗎？
+[Dialog]
+[charslot(slot="l",focus="n")]
+[Decision(options="可能是梅蘭德基金會的間諜。;可能是軍方的特工。;快走吧，繆爾賽思在等我們。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="l",name="avg_npc_895_1#2$1",focus="l")]
+[charslot(slot="r",name="avg_391_rosmon_1#1$1",focus="n")]
+[name="伊芙利特"]放心吧，博士，我們會保護你的。
+[Dialog]
+[charslot(slot="l",focus="n")]
+[Decision(options="別忘了今天的任務......", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_npc_895_1#7$1",focus="l")]
+[charslot(slot="r",name="avg_391_rosmon_1#1$1",focus="n")]
+[name="伊芙利特"]知道了，博士。出門前你都嘮叨好幾遍了。
+[charslot(slot="l",name="avg_npc_895_1#9$1",focus="l")]
+[name="伊芙利特"]本大爺答應的事情一定說到做到，保證聽你的指揮。
+[charslot(slot="r",name="avg_391_rosmon_1#1$1",focus="r")]
+[name="迷迭香"]我們應該到了。
+[Dialog]
+[delay(time=0.5)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="29_g9_headquarter",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(slot="m",name="avg_249_mlyss_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="繆爾賽思"]Dr.{@nickname}，又見面了。
+[name="繆爾賽思"]這次又是我在等你。
+[charslot(slot="m",focus="n")]
+[Dialog]
+[Decision(options="我應該沒有遲到。;......;我還早到了一分鐘。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_249_mlyss_1#10$1",focus="m")]
+[name="繆爾賽思"]呀，誰讓我到得比你早呢，我可是收到你的訊息就在準備了。
+[charslot(slot="m",focus="n")]
+[Dialog]
+[Decision(options="這本來就是你的公司......", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_249_mlyss_1#9$1",focus="m")]
+[playsound(key="$d_avg_paper2")]
+[name="繆爾賽思"]好了。這些是你要的東西......萊茵生命大樓的建築圖紙，以及你和你兩位小助手的通行證。
+[name="繆爾賽思"]我動用生態科的關係為你們賦予了臨時權限，今天之內，你們可以自由地出入大樓內的絕大多數地方，調取相應的資訊。
+[name="繆爾賽思"]對了，為了方便實驗材料的運送，大樓的地上樓層和地下結構都有大量隔斷的隱藏空間，我建議你分一個人專門負責地下結構。
+[charslot(slot="m",focus="n")]
+[Dialog]
+[Decision(options="那麼你呢？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_249_mlyss_1#1$1",focus="m")]
+[name="繆爾賽思"]我當然得陪同副總統先生參觀萊茵囉。
+[name="繆爾賽思"]本來克麗斯騰就不在，十科的主任也到不齊，人再少未免太不禮貌了。
+[charslot(slot="m",name="avg_249_mlyss_1#9$1",focus="m")]
+[name="繆爾賽思"]好了博士，等事情結束，我再單獨答謝你。
+[Dialog]
+[Effect(name="$e_muesys_hide",layer = 1)]
+[playsound(key="$d_avg_divebubble",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[Decision(options="怎麼總是用分身敷衍人......;伊芙利特，你可能要單獨行動了。", values="1;2")]
+[Predicate(references="1;2")]
+[stopmusic(fadetime=2)]
+[delay(time=0.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="38_g2_colombiaoffice",screenadapt="coverall")]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_893_1#9$1",duration=1)]
+[delay(time=2)]
+[name="雅拉"]比伯，你的辭職信我看過了。為什麼這麼突然？
+[charslot(slot="m",name="avg_npc_530_1#1$1")]
+[name="能量科研究員"]......很抱歉，雅拉主任。
+[name="能量科研究員"]您知道嗎，我昨天發現了一件事。
+[charslot(slot="m",name="avg_npc_893_1#9$1")]
+[name="雅拉"]說說看。
+[charslot(slot="m",name="avg_npc_530_1#1$1")]
+[name="能量科研究員"]能量科所在的那一層樓，一共有三十八盞吊燈，二十一個通風口。
+[name="能量科研究員"]以及，我們腳下的地毯雖然看上去規格是一樣的，但在格子數量和邊緣花紋上有一些差異，實際上是三種款式。
+[charslot(slot="m",name="avg_npc_893_1#11$1")]
+[name="雅拉"]比伯，我都不知道，你什麼時候打算轉行室內設計師了？
+[charslot(slot="m",name="avg_npc_530_1#1$1")]
+[name="能量科研究員"]如果您所參與的每個項目都不再確定，每天的工作只有把昨天已經寫好的報告再看一遍時，您也會這麼做的。
+[charslot(slot="m",name="avg_npc_893_1#6$1")]
+[name="雅拉"]也是辛苦你了，不僅要安撫手底下的人，還要假裝一切在正常進行。
+[charslot(slot="m",name="avg_npc_530_1#1$1")]
+[name="能量科研究員"]說實在的，雅拉主任，辛苦我倒是不怕。
+[name="能量科研究員"]科室之間本來就相對獨立，而且研究又是模組化推進的，就算359號基地出事了，甚至斐爾迪南突然離職，其他人該怎麼做，還是怎麼做。
+[name="能量科研究員"]但是，對於下面的人來說，他們知道的少，以為這次和往常沒什麼區別......科技公司嘛，總有辦法應對隔三岔五的“科研事故”。
+[name="能量科研究員"]可我知道，這次不一樣......
+[name="能量科研究員"]總轄就跟消失了一樣，斐爾迪南又突然離職，最近我每天都過得很煎熬。沒人來能量科交接，也沒人告訴我發生了什麼，我又該怎麼辦。
+[name="能量科研究員"]今天，副總統還要來訪問萊茵生命。走進實驗室，看到那些期待的眼神，我就感覺自己的胃一陣絞痛。
+[charslot(slot="m",name="avg_npc_893_1#8$1")]
+[name="雅拉"]所以你找了沃爾沃特科欽斯基的那個獵頭......是叫索尼婭對吧？
+[charslot(slot="m",name="avg_npc_530_1#1$1")]
+[name="能量科研究員"]我......是的。
+[charslot(slot="m",name="avg_npc_893_1#1$1")]
+[name="雅拉"]我並沒有在責怪你，比伯。
+[name="雅拉"]你在萊茵生命的位置能讓你看到的東西比普通員工更多，但又不知全貌，換作我也會焦慮，這很正常。
+[name="雅拉"]也怪我考慮不周，只是讓你去穩住能量科的人心，卻忽視了你本人的情緒。
+[charslot(slot="m",name="avg_npc_530_1#1$1")]
+[name="能量科研究員"]和您沒關係，是我動搖了......
+[charslot(slot="m",name="avg_npc_893_1#2$1")]
+[name="雅拉"]比伯，你認為，副總統為什麼會忽然造訪萊茵生命？
+[charslot(slot="m",name="avg_npc_530_1#1$1")]
+[name="能量科研究員"]我......不知道，但是副總統一來，他不就知道我們內部已經......
+[charslot(slot="m",name="avg_npc_893_1#9$1")]
+[name="雅拉"]副總統前幾天的發佈會，和萊茵生命有關。
+[charslot(slot="m",name="avg_npc_530_1#1$1")]
+[name="能量科研究員"]......真的嗎？
+[charslot(slot="m",name="avg_npc_893_1#9$1")]
+[name="雅拉"]暫時，我能告訴你的只有這麼多。
+[charslot(slot="m",name="avg_npc_893_1#1$1")]
+[name="雅拉"]這樣吧，我給你批一個月的帶薪休假，希望足夠你整理心情，回到自己的崗位上。
+[name="雅拉"]當然，到時候如果你依然要辭職，我不會挽留。
+[charslot(slot="m",name="avg_npc_530_1#1$1")]
+[name="能量科研究員"]......
+[charslot(slot="m",name="avg_npc_893_1#1$1")]
+[name="雅拉"]萊茵生命從草創，發展到如今十個科室，能同時運作上百個大型科研項目，不是沒有經歷過比這更風雨飄搖的階段。
+[name="雅拉"]但它何時真正倒下過？
+[name="雅拉"]我只是需要你好好想想......
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_530_1#1$1")]
+[charslot(slot="m",posfrom = "0,0", posto = "-150,0",duration=1)]
+[playsound(key="$d_gen_walk_n",volume=0.7)]
+[delay(time=1.5)]
+[charslot(duration=0.5)]
+[playsound(key="$doorclosequite",volume=0.7)]
+[delay(time=1.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_893_1#1$1",duration=0.5)]
+[delay(time=0.5)]
+[playsound(key="$d_avg_telephonebusy")]
+[delay(time=2)]
+[name="雅拉"]索尼婭，這次又麻煩你了。
+[name="雅拉"]唉，人心惶惶的時候，總得讓員工們有個發洩口。
+[name="雅拉"]比伯應該是最後一個了，他能安下心來，能量科就暫時不會有事。
+[name="雅拉"]嗯，有空一起吃飯，替我向錫人說聲謝謝。
+[Dialog]
+[playsound(key="$d_avg_telephone")]
+[delay(time=1)]
+[name="雅拉"]唉......
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$doorknockquite",volume=0.7)]
+[delay(time=1)]
+[charslot(slot = "m", focus = "m")]
+[name="雅拉"]請進。
+[Dialog]
+[charslot]
+[playsound(key="$dooropenquite",volume=0.7)]
+[charslot(slot="m",name="avg_npc_892_1#1$1",duration=1)]
+[delay(time=2)]
+[name="小賈斯汀"]剛才是這周的第幾個？
+[charslot(slot="m",name="avg_npc_893_1#9$1")]
+[name="雅拉"]你不需要操心這個。
+[charslot(slot="m",name="avg_npc_892_1#1$1")]
+[name="小賈斯汀"]如果您要給這些人調整崗位的話，請務必不要安排到商務科，我不需要這種搖擺不定的庸才。
+[charslot(slot="m",name="avg_npc_893_1#9$1")]
+[name="雅拉"]他們和你一樣，都是這家公司的基石，賈斯汀。
+[name="雅拉"]以及，我是上了年紀，但還不至於糊塗到安排一個能源動力學的博士去你手下當推銷員。
+[name="雅拉"]......副總統快到了，我不覺得你有時間在我的辦公室耍嘴皮子。
+[charslot(slot="m",name="avg_npc_892_1#1$1")]
+[name="小賈斯汀"]哈哈，我就是來跟您報備一聲，我今天約見了幾個新的投資人，而且還有好幾個重要的遠程會議要開。
+[name="小賈斯汀"]副總統是到萊茵生命進行科研考察的，我這樣的職能人員就不跟著湊熱鬧了。
+[charslot(slot="m",name="avg_npc_893_1#9$1")]
+[name="雅拉"]......
+[charslot(slot="m",name="avg_npc_892_1#1$1")]
+[name="小賈斯汀"]副總統宣佈公開訪問萊茵生命的當天，商務科的電話就被打爆了，我甚至讓人在辦公室新增了兩條專線。
+[name="小賈斯汀"]這是一個明亮的信號。特里蒙的金融圈......
+[charslot(slot="m",name="avg_npc_892_1#3$1")]
+[name="小賈斯汀"]不，不止特里蒙，也不止金融圈，整個哥倫比亞，稍微有點投資眼光的人，都在關注著我們。
+[name="小賈斯汀"]剛剛那個比伯，持有的期權不少吧？照我說，您就該准了他的辭職申請。到時候公司股價大漲，他再求著回來，您還能壓壓他的薪資。
+[charslot(slot="m",name="avg_npc_893_1#7$1")]
+[name="雅拉"]賈斯汀，萊茵生命不是你金融遊戲的玩具。
+[charslot(slot="m",name="avg_npc_892_1#9$1")]
+[name="小賈斯汀"]您這話不免讓我寒心了。
+[name="小賈斯汀"]我今天要聯繫的人裡，也包括了班傑明市長、克里斯市議員、費羅警長、柯萊特中校，甚至大法官......
+[name="小賈斯汀"]這段時間，如果不是我一直向這些朋友噓寒問暖，克麗斯騰未必能和布萊克捉那麼久的迷藏。
+[charslot(slot="m",name="avg_npc_893_1#2$1")]
+[name="雅拉"]你動用了不少資源......
+[charslot(slot="m",name="avg_npc_892_1#9$1")]
+[name="小賈斯汀"]這是我應該做的。
+[charslot(slot="m",name="avg_npc_892_1#8$1")]
+[name="小賈斯汀"]您剛剛說錯了一句話......我並不是萊茵生命的基石。
+[name="小賈斯汀"]再堅固的“基石”，也只能鋪就其他人前行的路。
+[name="小賈斯汀"]我不像您那樣，對克麗斯騰懷有那般真摯的感情。是我主動選擇了她，選擇了萊茵生命。
+[name="小賈斯汀"]我會幫她，是因為我想把自己的命運，把所有人的命運把握在手裡。
+[charslot(slot="m",name="avg_npc_892_1#7$1")]
+[name="小賈斯汀"]......這可不是遊戲。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="29_g6_mainstreet",screenadapt="coverall")]
+[charslot(slot="l",name="avg_npc_897_1#1$1")]
+[charslot(slot="r",name="avg_npc_523_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_ringoff")]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_897_1#1$1",focus="l")]
+[name="傑克遜"]是梅蘭德基金會的消息嗎？
+[charslot(slot="r",name="avg_npc_523_1#1$1",focus="r")]
+[name="副總統秘書"]是的，副總統先生。他們已經在附近的街區完成佈防，會保證您的安全。
+[charslot(slot="l",name="avg_npc_897_1#1$1",focus="l")]
+[name="傑克遜"]嗯。還有多遠？
+[charslot(slot="r",name="avg_npc_523_1#1$1",focus="r")]
+[name="副總統秘書"]車隊經過前面兩個路口，就到萊茵生命的總部大樓了。
+[name="副總統秘書"]其實您擔心的話，完全可以取消今天的參觀行程。
+[charslot(slot="l",name="avg_npc_897_1#5$1",focus="l")]
+[name="傑克遜"]如果梅蘭德基金會都不值得信任，那我取消行程未必就能自保。
+[charslot(slot="l",name="avg_npc_897_1#1$1",focus="l")]
+[name="傑克遜"]總不能真就像年輕時一樣，因為害怕考試，就蹺課去看移動採礦平台追夕陽......
+[name="傑克遜"]哥倫比亞的副總統可以那麼任性嗎？
+[charslot(slot="r",name="avg_npc_523_1#1$1",focus="r")]
+[name="副總統秘書"]那您抓緊時間小憩一會，今天......想必沒有閒下來的時候。
+[charslot(slot="l",name="avg_npc_897_1#1$1",focus="l")]
+[name="傑克遜"]你還記得我在昨天的晚宴上是怎麼描述特里蒙的嗎？
+[charslot(slot="r",name="avg_npc_523_1#1$1",focus="r")]
+[name="副總統秘書"]“哥倫比亞的未來之星”。您說，您喜歡這座年輕的城市，一如您喜歡這個年輕的國家。
+[charslot(slot="l",name="avg_npc_897_1#2$1",focus="l")]
+[name="傑克遜"]哦，其實我一點也不喜歡這裡。
+[name="傑克遜"]這裡沒有馱獸，沒有揚起的沙塵，沒有為了一點“愚蠢”的理由而進行的決鬥，沒有拓荒精神。
+[name="傑克遜"]只有提著咖啡袋子的上班族，切割了天空的高樓，還有......（抽鼻子）乾淨到讓人不安的空氣。
+[charslot(slot="r",name="avg_npc_523_1#1$1",focus="r")]
+[name="副總統秘書"]聽說特里蒙的城市內循環採用了......
+[charslot(slot="l",name="avg_npc_897_1#7$1",focus="l")]
+[name="傑克遜"]哦，帕瓦爾，別向我解釋原理，我接下來還要聽很多類似的介紹。
+[charslot(slot="r",name="avg_npc_523_1#1$1",focus="r")]
+[name="副總統秘書"]其實您不喜歡和科學家打交道？
+[charslot(slot="l",name="avg_npc_897_1#7$1",focus="l")]
+[name="傑克遜"]倒也不能這麼說。
+[name="傑克遜"]他們是單純的。他們會滔滔不絕地介紹自己的產品、藍圖或者理想，有些聽起來極其誇張或瘋狂，但多數時間我並不是特別懂......
+[name="傑克遜"]我可以走神，只需要在結尾的時候，握著他們的手表示支持。
+[name="傑克遜"]這樣的工作，比起和特區那幫老東西打交道，算是輕鬆不少。
+[charslot(slot="r",name="avg_npc_523_1#1$1",focus="r")]
+[name="副總統秘書"]您代表著這個國家，民眾樂於看見哥倫比亞對於科學的支持，這有助於保持您的政治形象，對接下來的競選有幫助。
+[charslot(slot="l",name="avg_npc_897_1#5$1",focus="l")]
+[name="傑克遜"]副總統競選，哥倫比亞政壇最大的事件......但我在想，我其實並不應該為此投入太多心力。
+[charslot(slot="r",name="avg_npc_523_1#1$1",focus="r")]
+[name="副總統秘書"]您這幾年卓有建樹，民調支持率並不低......
+[name="副總統秘書"]支持您的幾位議員此前也與萊茵生命那位左右逢源的沃爾珀主任有過接觸，取得這些科技公司的支持並不容易，您已經積累了一些優勢。
+[charslot(slot="l",name="avg_npc_897_1#2$1",focus="l")]
+[name="傑克遜"]不，我是說，比起馬克·麥克斯——永遠需要他帶領哥倫比亞走向正確未來的總統先生。
+[name="傑克遜"]全國矚目的副總統競選，在我看來，實在是令人羞慚。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="29_g11_monitoringroom",screenadapt="coverall")]
+[playMusic(intro="$suspenseful_intro",key="$suspenseful_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_899_1#1$1",duration=1)]
+[delay(time=2)]
+[name="布萊克"]這塊螢幕對應的是哪個區域？
+[charslot(slot="m",name="avg_npc_901_1#1$1")]
+[name="哥倫比亞士兵"]......萊茵生命後方的緊急貨運通道。
+[charslot(slot="m",name="avg_npc_899_1#1$1")]
+[name="布萊克"]將鏡頭的角度向左偏轉一點，再放大......嗯，這樣就沒有死角了。
+[charslot(duration=0.5)]
+[playsound(key="$keyboard")]
+士兵快速操作，他有些緊張，從剛剛開始，上校便一直站在他的身後，眉頭鎖得很緊。
+以萊茵生命大樓為中心，周圍五個街區都已經處在監視範圍內。
+不少螢幕裡人潮湧動，雖然政府已經對關鍵路段實施禁行，但看起來附近的人流依然擁擠。
+當然，人多眼雜，這也方便他們開展行動。
+士兵逐一掃視著每一塊監視螢幕，連眼睛都不敢眨。
+[charslot(slot="m",name="avg_npc_899_1#1$1")]
+[name="布萊克"]現場佈置得怎麼樣了？
+[charslot(slot="m",name="avg_npc_901_1#1$1")]
+[name="哥倫比亞士兵"]所有的潛伏單位和接應單位都已經就緒。
+[charslot(slot="m",name="avg_npc_899_1#1$1")]
+[name="布萊克"]嗯，很好。
+[name="布萊克"]斐爾迪南在哪裡？
+[charslot(slot="m",name="avg_npc_901_1#1$1")]
+[name="哥倫比亞士兵"]他在打電話。
+[charslot(slot="m",name="avg_npc_899_1#6$1")]
+[name="布萊克"]打電話？
+[charslot(slot="m",name="avg_npc_901_1#1$1")]
+[name="哥倫比亞士兵"]是的，需要把他叫過來嗎？
+[charslot(slot="m",name="avg_npc_899_1#1$1")]
+[name="布萊克"]算了，不用通知他。
+[name="布萊克"]他以前提到過的那些他在防衛科的好同事，情況怎麼樣？
+[charslot(slot="m",name="avg_npc_901_1#1$1")]
+[name="哥倫比亞士兵"]我們已經“接手”。
+[charslot(slot="m",name="avg_npc_899_1#5$1")]
+[name="布萊克"]很好。
+[charslot(slot = "m", focus = "n")]
+小小的影子從左下角的螢幕快速經過，然後，更多的螢幕裡出現了同樣的景象，那是一面插在車頭的哥倫比亞國旗......
+以及幾輛規格統一的黑色載具，前後保持著相同的間隔，秩序井然。
+[Dialog]
+[charslot(slot="m",name="avg_npc_899_1#1$1")]
+[playsound(key="$d_gen_transmissionget")]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_899_1#7$1")]
+[name="布萊克"]開始行動。
+[charslot(slot="m",name="avg_npc_901_1#1$1")]
+[name="哥倫比亞士兵"]注意，副總統的車隊已經進入視野，開始行動。
+[charslot(slot="m",name="avg_npc_899_1#5$1")]
+[name="布萊克"]傑克遜，預祝你訪問愉快。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0)]
+[Background(image="29_g9_headquarter",screenadapt="coverall")]
+[playMusic(key="$formal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=2)]
+[delay(time=1)]
+[playsound(key="$d_avg_cardoorc")]
+[delay(time=1)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="r",name="avg_npc_897_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_npc_524_1#1$1",duration=0.5)]
+[delay(time=0.5)]
+[playsound(key="$skill_flash",volume=0.3,channel="x")]
+[playsound(key="$skill_flash",volume=0.3,channel="y",delay=0.15)]
+[charslot(slot="l",focus="l")]
+[name="記者"]副總統先生，有消息稱，日前發生在十三區特萊頓工廠的爆炸事件，與萊茵生命有關......
+[name="記者"]目前這種輿論正在發酵，您在此時選擇專程到訪萊茵生命，是對這類猜測的駁斥嗎？
+[Dialog]
+[charslot(slot="l",focus="a")]
+[charslot(slot="m",name="avg_npc_523_1#1$1",posfrom = "-600,0", posto = "-500,0",duration=0.6)]
+[delay(time=1)]
+[charslot(slot="l",focus="m")]
+[name="記者？"]麻煩讓讓。
+[charslot(slot="l",focus="l")]
+[name="記者"]十三區目前還處於臨時管控狀態，請問軍方的行為您是否提前知悉，是否有您的授意，以及，十三區到底還要多久才能解除管控？
+[name="記者"]萊茵生命的總轄克麗斯騰今天是否會出現，接待副總統先生？
+[Dialog]
+[charslot(slot="l",focus="m")]
+[charslot(slot = "m",posfrom = "-500,0", posto = "-450,0",duration = 0.5)]
+[delay(time=0.5)]
+[charslot(slot="l",focus="m")]
+[name="記者？"]讓讓......副總統先生，關於您後續在特里蒙的行程......
+[Dialog]
+[charslot(slot="r",focus="r")]
+[name="傑克遜"]......
+[Dialog]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_529_1#1$1",duration=0.5,posfrom = "-150,0", posto = "-200,0")]
+[delay(time=1)]
+[name="萊茵職員"]請大家稍安勿躁。
+[Dialog]
+[StopSound(channel="bgs", fadetime=1)]
+[delay(time=1)]
+[name="萊茵職員"]副總統先生在結束訪問的行程後，會留出時間接受大家的採訪。
+[name="萊茵職員"]萊茵生命已經騰出了專門的地方用作臨時的記者招待區，請大家跟我走，不要影響職員們的正常工作，謝謝配合。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[playsound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(slot="m",name="avg_npc_523_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="記者？"]......沒人？
+[Dialog]
+[delay(time=0.5)]
+[name="記者？"]糟糕！
+[Dialog]
+[CameraShake(duration=0.3, xstrength=20, ystrength=15, vibrato=20, randomness=90, fadeout=true, block=false)]
+[charslot(slot="l",name="avg_npc_530_1#1$1",duration=0.3,posfrom = "-100,0", posto = "0,0")]
+[charslot(slot="r",name="avg_npc_530_1#1$1",duration=0.3,posfrom = "100,0", posto = "0,0")]
+[delay(time=0.3)]
+[charslot(slot="m",action="shake", power=15, times=20,duration=0.5)]
+[playsound(key="$d_avg_clothmovement")]
+[delay(time=0.6)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="l",duration=0.5,posfrom = "0,0", posto = "0,-100")]
+[charslot(slot="m",duration=0.5,posfrom = "0,0", posto = "0,-100")]
+[charslot(slot="r",duration=0.5,posfrom = "0,0", posto = "0,-100")]
+[delay(time=0.3)]
+[charslot(duration=0.5)]
+[playsound(key="$bodyfalldown1")]
+[delay(time=1)]
+[charslot]
+[name="萊茵職員？"]堵住他的嘴。
+[name="記者？"]唔——
+[name="萊茵職員？"]把武器藏在收音設備裡，真有你的。帶走搜身，檢查他還有沒有別的武器。
+[name="萊茵職員？"]證件有誤......想辦法將招待區記者的證件全部核對一遍，不要太明顯。
+[Dialog]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_530_1#1$1",duration=0.5)]
+[delay(time=1)]
+[playsound(key="$transmission")]
+[delay(time=0.5)]
+[name="萊茵職員？"]我這邊已經解決，沒有鬧出動靜。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_npc_901_1#1$1")]
+[Background(image="38_g13_trimountlivingroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="狙擊手"]A1，A2，A3失去訊號......
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="狙擊手"]我們在各個點的佈置被完全掌握了？！
+[Dialog]
+[playsound(key="$d_gen_transmissionget")]
+[delay(time=0.5)]
+[name="狙擊手"]呼叫基地，呼叫基地，是否繼續執行狙擊計劃，等待指示——
+[Dialog]
+[charslot(slot="r",name="avg_npc_534_1#1$1",posfrom = "200,0", posto = "-50,0",duration=0.4)]
+[delay(time=0.2)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$knifegore")]
+[delay(time=0.3)]
+[charslot(slot="r",posfrom = "-50,0", posto = "0,0",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",afrom = 1, ato = 0,posfrom = "0,0", posto = "0,-80",duration = 0.4)]
+[delay(time=0.4)]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$bodyfalldown3")]
+[charslot(slot="r",focus="n")]
+[name="狙擊手"]咕......
+[Dialog]
+[charslot(slot="r",focus="r")]
+[playsound(key="$d_avg_clothmovement")]
+[charslot(slot="r",posfrom = "0,0", posto = "0,-50",duration=0.5)]
+[delay(time=1)]
+[charslot(slot="r",posfrom = "0,-50", posto = "0,0",duration=0.5)]
+[delay(time=1)]
+[name="市民？"]這是第九處。
+[name="市民？"]不愧是經常和恐怖分子打交道的人，對如何製造恐怖襲擊也很有心得。
+[Dialog]
+[playsound(key="$d_gen_transmissionget")]
+[CharacterCutin(widgetID="1", name="avg_npc_900_1#1$1", style="cutin", fadestyle= "horiz_expand_center", fadetime=0.5, offsetx=-200, width=200, block=true)]
+[delay(time=1)]
+[charslot(slot="r",focus="n")]
+[name="錫人"]匯報情況。
+[charslot(slot="r",focus="r")]
+[name="市民？"]以萊茵生命為圓心，射程範圍內所有的制高點均已清掃完畢。
+[name="市民？"]對方一共佈置了九個狙擊點，現場發現了十一名以不同職業作偽裝的刺客，均已制服。
+[charslot(slot="r",focus="n")]
+[name="錫人"]繼續對萊茵生命周圍展開搜索，道路、車輛、行人......不要放過任何一個可疑對象。
+[charslot(slot="r",focus="r")]
+[name="市民？"]明白。
+[name="市民？"]副總統已經進入萊茵大樓，大樓內部，我們不方便直接佈置警備，由您親自行動嗎？
+[charslot(slot="r",focus="n")]
+[name="錫人"]......不。
+[name="錫人"]我收到了一位同事的訊息，要先去一趟其他地方。
+[name="錫人"]將獲得的情報共用給羅德島的Dr.{@nickname}，必要時刻聽從他的指揮。
+[charslot(slot="r",focus="r")]
+[name="市民？"]我知道了。
+[stopmusic(fadetime=2)]
+[CharacterCutin(widgetID="1", fadetime=0.5,block=false)]
+[playsound(key="$d_gen_transmissionget")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_npc_526_1#1$1")]
+[playMusic(intro="$escape_intro",key="$escape_loop", volume=0.6)]
+[Background(image="38_g3_rhinelab_corridor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_mechadown")]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m",posfrom = "0,0", posto = "0,-150",afrom = 1, ato = 0,duration = 1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_391_rosmon_1#6$2",duration=0.5)]
+[delay(time=1)]
+[name="迷迭香"]這是第七具。
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="迷迭香，你還好吧？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",focus="m")]
+[charslot(slot="m",name="avg_391_rosmon_1#1$2")]
+[name="迷迭香"]只是量產的動力甲而已，博士......
+[name="迷迭香"]不會動用太多的力量......別太擔心。
+[dialog]
+[playsound(key="$d_avg_scan")]
+[delay(time=2)]
+[name="迷迭香"]......
+[name="迷迭香"]博士，這些與防衛科丟失的自律機甲的編號吻合，但是數量對不上，還差五具。
+[name="迷迭香"]繼續找嗎，博士？要在它們還沒出秘密通道前全部解決，對吧？
+[name="迷迭香"]要是、要是真出現在所有人面前......就算傷不到副總統，也會引起足夠大的騷亂。
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="辛苦了，迷迭香。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",focus="m")]
+[name="迷迭香"]博士，你怎麼想到利用繆爾賽思的權限先查防衛科的裝備出入庫記錄的？
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="窮舉法？沒想到一下子就碰到了正確答案。;刺客應該不會偽裝成研究員向副總統潑腐蝕性溶劑。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_391_rosmon_1#9$2")]
+[name="迷迭香"]嗯。原來是這樣。
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="有些古怪。這些自律機甲的行動很保守。", values="1")]
+[Predicate(references="1")]
+[Decision(options="與其說是在準備一場刺殺，更像是......", values="1")]
+[Predicate(references="1")]
+[playsound(key="$d_gen_walk_n")]
+[delay(time=2)]
+[charslot(slot="m",focus="m")]
+[charslot(slot="m",name="avg_391_rosmon_1#6$2")]
+[name="迷迭香"]博士，有動靜。
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="是動力甲嗎？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_391_rosmon_1#7$2")]
+[name="迷迭香"]不是。這個時間點，從秘密通道經過......
+[Dialog]
+[charslot]
+[MusicVolume(volume=0, fadetime=1)]
+[playsound(key="$b_char_defboost")]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Decision(options="迷迭香，住手。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_391_rosmon_1#4$2")]
+[name="迷迭香"]......
+[Dialog]
+[charslot]
+[MusicVolume(volume=0.6, fadetime=2)]
+[charslot(slot="m",name="avg_npc_896_1#3$1",duration=1)]
+[delay(time=2)]
+[name="塞雷婭"]......
+[charslot(slot="m",name="avg_npc_896_1#1$1")]
+[name="塞雷婭"]博士，迷迭香幹員......你們怎麼在這？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_896_1#5$1")]
+[name="塞雷婭"]原來如此......抱歉，博士，我潛回萊茵替凱爾希調取資料，所以暫時隱藏了通訊訊號。
+[charslot(slot="m",name="avg_npc_896_1#1$1")]
+[name="塞雷婭"]至於凱爾希，我也不知道她去了哪裡。
+[charslot(slot="m",name="avg_391_rosmon_1#1$2")]
+[name="迷迭香"]剩下的自律機甲......
+[charslot(slot="m",name="avg_npc_896_1#1$1")]
+[name="塞雷婭"]遇上你和博士之前，我已經有所察覺，跟上來處理了五具。防衛科一共丟失了十二具機甲，數量無誤。
+[name="塞雷婭"]所以，我去找了一個人。
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_528_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="l",name="avg_npc_896_1#1$1")]
+[charslot(slot="r",name="avg_npc_528_1#1$1",focus="n")]
+[name="塞雷婭"]我猜，你不想再體驗一次從動力甲裡被拽出來的感覺了，雷吉。
+[charslot(slot="r",focus="r")]
+[name="防衛科成員"]......
+[charslot(slot="r",focus="l")]
+[name="塞雷婭"]告訴我，斐爾迪南究竟給你下了什麼指令。
+[charslot(slot="r",focus="r")]
+[name="防衛科成員"]......他只是希望我為他行個方便，借他幾台自律機甲。
+[charslot(slot="r",focus="l")]
+[name="塞雷婭"]斐爾迪南的話不值得信任。
+[charslot(slot="r",focus="r")]
+[name="防衛科成員"]......那麼您呢？
+[name="防衛科成員"]我又該怎麼去相信，一次又一次地無視了自己訂下的規則，隨意出現在萊茵的內部，拋下了所有責任的您？
+[name="防衛科成員"]您離開的這幾年，是他臨時接手了防衛科，是他給我們發工資。
+[name="防衛科成員"]他也會記得我們每個人的名字、喜歡做什麼，還會為我們送禮物。
+[name="防衛科成員"]斐爾迪南或許確實是個混蛋。
+[name="防衛科成員"]但是，塞雷婭主任，您必須要知道一件事——
+[name="防衛科成員"]我們是靠他才付得起午餐錢。
+[charslot(slot="r",focus="l")]
+[name="塞雷婭"]眼下，副總統還在萊茵內部，你應該知道出了差錯會是什麼後果。
+[name="塞雷婭"]我們必須檢查斐爾迪南在萊茵可能動過的所有東西。
+[charslot(slot="r",focus="r")]
+[name="防衛科成員"]只有這十台自律機甲，我向您保證。
+[Dialog]
+[charslot]
+[Decision(options="十台？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_391_rosmon_1#10$2")]
+[name="迷迭香"]我捏碎了七台，塞雷婭女士摧毀了五台......
+[charslot]
+[charslot(slot="l",name="avg_npc_896_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_npc_528_1#1$1",focus="r")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="防衛科成員"]這不可能！
+[name="防衛科成員"]斐爾迪南只向我借了十台，我親自監督他輸入的指令！
+[Dialog]
+[charslot(slot="r",focus="n")]
+[Decision(options="塞雷婭，在你看來，斐爾迪南是個什麼樣的人？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_npc_896_1#5$1",focus="l")]
+[name="塞雷婭"]剛愎自用，自以為高人一等。
+[name="塞雷婭"]但我也必須承認，他比其他和他相似的人唯一高明的地方在於——
+[charslot(slot="l",name="avg_npc_896_1#1$1",focus="l")]
+[name="塞雷婭"]如果其他人只會說空話，那麼，他是那個會履行自己空話的人。
+[Dialog]
+[charslot(slot="r",focus="n")]
+[Decision(options="如果我沒猜錯的話，起碼......", values="1")]
+[Predicate(references="1")]
+[Decision(options="那十台機甲，不是來刺殺副總統的。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_npc_896_1#3$1",focus="l")]
+[name="塞雷婭"]你說什麼？
+[Dialog]
+[charslot(slot="r",focus="n")]
+[Decision(options="至於多出的兩台......;看來，他和軍方也在互相提防。;斐爾迪南不希望副總統在萊茵生命被刺殺。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[delay(time=0.5)]
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[Image]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

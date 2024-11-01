@@ -1,0 +1,102 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")] 
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_rhodesroom",screenadapt="coverall")]
+[playMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="char_007_closre_1")]
+[name="可露希爾"]   結束了，博士。別發呆啊，體驗如何？
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   此人定是深受震撼，需要冷靜。
+[dialog]
+[character]
+[delay(time=1)]
+[Decision(options="我的時間就白白花掉了？;......;有點怪，彷彿有點想再來一把。",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   我從你的身上感受到一些困惑。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   果然，以你對藝術的感悟力和鑑賞力，還是不能對你抱太高期待。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   有什麼疑問，說出來，本大師可以為你解答。
+[dialog]
+[character]
+[Decision(options="怎麼看出“藝術永存！正義永存！”的？;說好的“遊戲難度適當，平衡性極好”呢？;精美的畫面和逼真的人物在哪裡？",values="1;2;3")]
+[Predicate(references="1")]
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   你身為羅德島的作戰指揮官，怎會如此愚鈍！
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   我本人的形象是否出現在了遊戲中？
+[dialog]
+[character]
+[Decision(options="......",values="4")]
+[Predicate(references="4")]
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   我——斷罪大師——“藝術”與“正義”的繼承者、保護者、代言人，在遊戲中出現，且必須被保護，不能倒下。這意味著什麼？
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   這意味著藝術與正義永不倒下！
+[Predicate(references="2")]
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   有什麼問題嗎？
+[Character(name="char_007_closre_1#2")]
+[name="可露希爾"]   博士不能因為我局內得分始終在排行榜前列，就懷疑難度曲線有問題哦。
+[Character(name="char_007_closre_1#5")]
+[name="可露希爾"]   嘿嘿，人家畢竟是研發人員，當然更懂《狂彈要塞》的玩法嘛！
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   身為羅德島的作戰指揮官，與其猜疑可露希爾，不如好好反思自己的遊戲實力！
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   我恨不得立刻將你斷罪！
+[Predicate(references="3")]
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   不是說了嘛，我們請了夕小姐來為遊戲中的場景給出美術參考。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   但她暫時還沒有同意。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   她遲早會同意的，她是個熱愛藝術的人，我看得出來。
+[Predicate(references="4;2;3")]
+[Character(name="char_007_closre_1#2")]
+[name="可露希爾"]   博士，《狂彈要塞！羅德大兵集結》目前只是測試版本，我們計畫本輪試玩結束後，進行進一步的優化。
+[Character(name="char_007_closre_1#5")]
+[name="可露希爾"]   所以博士你有什麼想法，都可以提。這對我們很重要。
+[dialog]
+[character]
+[Decision(options="我工作沒做完，之後補交感想。（亢奮）;我工作沒做完，之後補交感想。（冷漠）",values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   那今天你就先回去，我晚上會去找你的。畢竟現在你也是我的同伴，提升同伴的審美能力，還是很有必要。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   不懂藝術，是一種罪孽啊！
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[character]
+[delay(time=1)]
+[Background(image="bg_corridor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="char_134_ifrit_5#4",fadetime=1,block=true)]
+[delay(time=1)]
+[name="伊芙利特"]   啊......博士！
+[name="伊芙利特"]  你也是被可露希爾姐叫來測試新遊戲的嗎？
+[Character(name="char_134_ifrit_5#10")]
+[name="伊芙利特"]  博士已經試玩過了嗎？這遊戲叫什麼名字?
+[dialog]
+[character]
+[Decision(options="狂躁大兵......啥來著。;羅德......啥來著......要塞。;......啥大提鞋來著。",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="char_134_ifrit_5#9")]
+[name="伊芙利特"]   ......
+[name="伊芙利特"]   至少，我還是先試試......
+[dialog]
+[character(fadetime=1,block=true)]
+[delay(time=2)]
+[name="屋內可露希爾的聲音"]   你來了！恭喜你成為《狂彈要塞！羅德大兵集結》的第五十三位玩家，伊芙利特幹員。
+[name="屋內斷罪者的聲音"]   在你正式測試遊玩之前，作為《狂彈要塞！羅德大兵集結》的首席策劃兼藝術顧問，我有必要向你闡述一下本款遊戲的設計理念與亮點！
+[dialog]
+[Decision(options="伊芙利特，加油。",values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Character]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[Image]

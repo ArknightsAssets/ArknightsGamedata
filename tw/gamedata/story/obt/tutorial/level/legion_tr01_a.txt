@@ -1,0 +1,68 @@
+[HEADER(is_tutorial=true)] 爬塔教学关卡01_a
+[Battle.Pause]
+[PopupDialog(dialogHead="$avatar_jesica")] 我無法擊破敵人的裝甲！請求火力支援！
+[PopupDialog(dialogHead="$avatar_doberm")] 潔西卡，幹得不錯。經歷了這麼多次模擬作戰，還是有所成長的。
+[PopupDialog(dialogHead="$avatar_jesica")] 唉!？
+[PopupDialog(dialogHead="$avatar_doberm")] 呼叫守林人，T032<@tu.kw>待部署區域</>請求支援，請立即前往。
+[PopupDialog(dialogHead="$avatar_milu")] 收到。
+[Battle.Pause(pause=false)]
+[Delay(time=2)]
+[Battle.Pause(pause=true)]
+[PopupDialog(dialogHead="$avatar_milu")] 呼叫杜賓教官，守林人已達到指定位置。
+[PopupDialog(dialogHead="$avatar_doberm")] 注意，本次作戰條件較為苛刻，只能部署兩名幹員。不過，你可以與潔西卡進行“<@tu.kw>接力</>”，直接部署在她的位置上。
+[PopupDialog(dialogHead="$avatar_jesica")] “<@tu.kw>接力</>”？與以往的作戰部署相比，有什麼不一樣嗎？
+[PopupDialog(dialogHead="$avatar_doberm")] 這是一種全新的戰術。潔西卡注意，當守林人部署在你的位置時，你需要馬上撤退。
+[Tutorial(focusX=35, focusY=63, focusWidth=69, focusHeight=125, anchor="BottomLeft", \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_jesica")] \
+是直接撤往<@tu.kw>休整區</>嗎？
+[PopupDialog(dialogHead="$avatar_doberm")] 沒錯，記得抓緊時間好好調整狀態。預備區人手不足時，休整區待命的幹員需要全部補充進來。
+[PopupDialog(dialogHead="$avatar_jesica")] 明白了！
+[PopupDialog(dialogHead="$avatar_doberm")] 另外，PRTS為大家配備了一種全新的“<@tu.kw>戰術裝備</>”。它可以使接力的幹員繼承被接力者的部分能力，從而獲得<@tu.kw>增強</>。
+[Battle.LockFunction(mask="SYSTEM_MENU")]
+[Battle.LockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=false)]
+[Tutorial(waitForSignal="put_down", dialogHead="$avatar_doberm", animStyle="Drag", \
+          startX=-122, startY=60, startAnchor="BottomRight", endX=-185, endY=-40)] \
+博士，現在請將守林人部署在潔西卡的位置。
+[Tutorial(waitForSignal="select_direction", dialogHead="$avatar_doberm", animStyle="Drag", \
+          startX=-70, startY=-50, endX=250, endY=-50)] \
+就是這樣，<@tu.kw>選擇方向</>。
+[InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Battle.Pause(pause=false)]
+[Delay(time=6)]
+[Battle.Pause(pause=true)]
+[PopupDialog(dialogHead="$avatar_milu")] 我的攻擊速度好像變快了，是因為潔西卡留給我的<@tu.kw>戰術裝備</>嗎？
+[Tutorial(focusX=-180, focusY=-37, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_doberm")] \
+是的，你身上的戰術裝備已經啟動了，仔細看圍繞在你身邊的<@tu.kw>深色裝備</>。
+[PopupDialog(dialogHead="$avatar_milu")] 原來如此。
+[Battle.LockFunction(mask="SYSTEM_MENU")]
+[Battle.LockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=false)]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Tutorial(waitForSignal="char_info", focusX=-180, focusY=-37, focusWidth=150, focusHeight=150, \
+          animStyle="Click", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_doberm")] \
+另外，博士，請你聚焦守林人。
+[InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Battle.LockFunction(mask="CHARACTER_MENU")]
+[Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", \
+          protectTime=0.5, dialogHead="$avatar_doberm")] \
+很好，這裡詳細顯示了守林人當前繼承的戰術裝備的具體效果。
+[Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", \
+          protectTime=0.5, dialogHead="$avatar_doberm")] \
+撤退幹員的職業不同，接力幹員所繼承的戰術裝備也不同。比如潔西卡是<@tu.kw>狙擊</>幹員，守林人便獲得了一件<@tu.kw>狙擊裝備</>。
+[Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", \
+          protectTime=0.5, dialogHead="$avatar_doberm")] \
+但請注意，每位幹員最多只能繼承<@tu.kw>五件</>戰術裝備。
+[PopupDialog(dialogHead="$avatar_milu")] 所以之後有其他幹員繼續來接力時，他也將<@tu.kw>繼承</>潔西卡和我留下的戰術裝備。
+[PopupDialog(dialogHead="$avatar_doberm")] 正是如此。
+[Blocker(fadetime=0.3, block=true, a=0)]

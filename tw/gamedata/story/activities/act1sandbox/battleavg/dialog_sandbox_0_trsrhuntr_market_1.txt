@@ -1,0 +1,23 @@
+[HEADER(actId="act1sandbox", npcId="trap_435_trsrhuntr")] 
+[character(name="avg_npc_805_1", offsetX="100", offsetY="100")]
+[name="尋寶人"]薩爾貢的黃沙下到處都是寶藏，你們要是發現了看上去值錢的東西，可以找我幫你們鑑定一下。
+[Decision(option1="支付15粗製赤金開始鑑定", value1="1.1", option2="不進行鑑定", value2="1.2")]
+[predicate(references="1.1", selectableCondition="c0&&c1")]
+[AddItem(itemId="sandbox_0_gold", itemCount="-15")]
+[AddItem(itemId="sandbox_0_craft_5", itemCount="-1")]
+[character(name="avg_npc_805_1", offsetX="100", offsetY="100")]
+[name="尋寶人"]看起來像是相當實用的東西......
+[character(name="avg_npc_805_1", offsetX="100", offsetY="100")]
+[name="尋寶人"]是荒地秘匣：支援霧機，收下吧，它是你們的了。
+[Decision(option1="收下鑑定後的物品", value1="2.1")]
+[predicate(references="2.1")]
+[AddItem(itemId="sandbox_0_tactical_1", itemCount="1")]
+[SetConditionProgress(conditionKey="market_trsrhuntr_interval", itemCount="0")]
+[withdraw(charId="trap_435_trsrhuntr")]
+[End]
+[predicate(references="1.2")]
+[SetConditionProgress(conditionKey="market_trsrhuntr_interval", itemCount="0")]
+[withdraw(charId="trap_435_trsrhuntr")]
+[End]
+[Condition(references="c0", key="itemGT", itemId="sandbox_0_gold", value="15")]
+[Condition(references="c1", key="itemGT", itemId="sandbox_0_craft_5", value="1")]

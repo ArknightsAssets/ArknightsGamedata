@@ -1,0 +1,237 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")] 
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_rhodescom",screenadapt="coverall")]
+[playMusic(intro="$mist_intro", key="$mist_loop", volume=0.8)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Character(name="avg_npc_380_1",blackstart=0.2,blackend=0.7,fadetime=1)]
+[delay(time=2)]
+[name="斷罪者"]   你沒有洩密吧？
+[dialog]
+[character]
+[Character(name="char_007_closre_1",blackstart=0.2,blackend=0.7,fadetime=1)]
+[delay(time=2)]
+[name="可露希爾"]   系統上沒有相關事務記錄，之前做的時候也回避了其他人......
+[Character(name="avg_npc_380_1",blackstart=0.2,blackend=0.7)]
+[name="斷罪者"]   ID怎麼沒藏起來！
+[Character(name="char_007_closre_1",blackstart=0.2,blackend=0.7)]
+[name="可露希爾"]   啊，稍等！重來一次重來一次。
+[dialog]
+[character]
+[dialog]
+[playsound(key="$keyboard")]
+[delay(time=1)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[delay(time=1)]
+[Character(name="avg_npc_380_1",blackstart=0.2,blackend=0.7,fadetime=1)]
+[delay(time=2)]
+[name="？？？"]   做得好。
+[Character(name="char_007_closre_1",blackstart=0.2,blackend=0.7)]
+[name="？？？"]   嗚嗚嗚嗚，多少個日夜，終於——
+[Character(name="avg_npc_380_1",blackstart=0.2,blackend=0.7)]
+[name="？？？"]   不必如此激動。自我答應和你合作開始，成功便是註定的。好好準備接下來的試驗吧。
+[Character(name="char_007_closre_1",blackstart=0.2,blackend=0.7)]
+[name="？？？"]   對對對！接下來的試驗，至關重要......把他們都抓過來，如果有誰不願意......
+[Character(name="avg_npc_380_1",blackstart=0.2,blackend=0.7)]
+[name="？？？"]   此言差矣！即使是試驗，也並非所有人都夠格的，被選中，那是他們的榮幸！
+[Character(name="char_007_closre_1",blackstart=0.2,blackend=0.7)]
+[name="？？？"]   我到時候一定要把他們的表情都拍下來存檔！
+[Character(name="avg_npc_380_1",blackstart=0.2,blackend=0.7)]
+[name="？？？"]   接受恐懼、震撼、惶惑、癲狂、憂思的洗禮吧！這些愚昧的傢伙！
+[Dialog]
+[Delay(time=1)]
+[stopmusic(fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[character]
+[delay(time=1)]
+[Background(image="bg_rhodesroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[playMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[Character(name="char_007_closre_1#2")]
+[name="可露希爾"]   ......
+[Character(name="char_007_closre_1#5")]
+[name="可露希爾"]   總之，恭喜你成為我們的體驗者，博士。
+[name="可露希爾"]   體驗我們的——
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="可露希爾"]   《狂彈要塞！羅德大兵集結》！
+[character]
+[dialog]
+[Decision(options="......我能走嗎？;很榮幸，但是這是啥？;這名字是誰取的？",values="1;2;3")]
+[Predicate(references="1")]
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   你為什麼是這種反應！
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   作為指揮官，身體弱就罷了，怎能毫無對藝術的崇敬嚮往之心！
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   如果不是今天需要你幫忙，我早已將你斷罪！
+[Predicate(references="2")]
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   你的態度，我姑且算是滿意。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   但也別太得意了。
+[Predicate(references="3")]
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   那還用問......當然是靈感與思想齊飛的本斷罪大師啊！
+[Predicate(references="1;2;3")]
+[character]
+[dialog]
+[Decision(options="可露希爾，這就是“需要緊急處理的事務”？",values="1")]
+[Predicate(references="1")]
+[Character(name="char_007_closre_1")]
+[name="可露希爾"]   這就得說到，有不少幹員反映，出外勤任務動不動就耗時幾個月，持續面對嚴苛危險的工作環境，會造成巨大的身心壓力。
+[name="可露希爾"]   不在本艦，很難有效地維持自身的工作狀態。
+[dialog]
+[character]
+[Decision(options="第一次見可露希爾說這麼正經的話！;你竟然真的在為羅德島的工作環境考慮！",values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="char_007_closre_1#4")]
+[name="可露希爾"]   博士你這是什麼反應嘛，我可沒有撒謊哦......
+[name="可露希爾"]   所以我想到，如果通訊終端能更新一下，將互動功能做一些優化，提高一下現有介面的使用舒適度，再加裝一些簡單的娛樂程式！
+[Character(name="char_007_closre_1#5")]
+[name="可露希爾"]   幹員們肯定能任務、休息兩不誤！
+[Character(name="char_007_closre_1#2")]
+[name="可露希爾"]   這個提案中最關鍵的部分是......
+[dialog]
+[character]
+[Decision(options="如何升級通訊終端？;如何改變大家的使用習慣？",values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="char_007_closre_1#5")]
+[name="可露希爾"]   到底應該安裝一款什麼樣的遊戲。
+[character]
+[dialog]
+[Decision(options="......",values="1")]
+[Predicate(references="1")]
+[Character(name="char_007_closre_1")]
+[name="可露希爾"]   這款遊戲的研發，關係到大家日後的行動效率。這還不算“需要緊急處理的事務”嗎？
+[Character(name="char_007_closre_1")]
+[name="可露希爾"]   我特意找到斷罪者配合我完成了遊戲設計。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   正好近來無罪可斷。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   哎呀，不必和此人解釋過多。總之，《狂彈要塞！羅德大兵集結》已經初步研發完成，目前進入到測試環節。
+[character]
+[dialog]
+[Decision(options="所以我今天是來參與測試的。",values="1")]
+[Predicate(references="1")]
+[Character(name="char_007_closre_1#4")]
+[name="可露希爾"]   是的。考慮到之後正式上線的火爆，我們不得不現在提前進行壓力測試。
+[name="可露希爾"]   為了讓我們收集資料提前應對粉絲的追捧，博士你可以不用藏著掖著，有什麼讚美之詞就儘管說，我們都做好心理準備了！
+[dialog]
+[character]
+[Decision(options="好像哪裡不對，不過還是開始吧。;你說的有點道理，那就開始吧。",values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[character]
+[delay(time=1)]
+[Character(name="avg_npc_380_1")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="斷罪者"]   等一下！別急著開始！
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   作為《狂彈要塞！羅德大兵集結》的首席策劃兼藝術顧問，我有必要向你闡述一下本作的設計理念與亮點！
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   本作的靈感，來自於初代斷罪大師的經歷......
+[Dialog]
+[MusicVolume(volume=0, fadetime=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[character]
+[Subtitle(text="故事發生在古王國“阿加門”。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="一群邪惡藝術家成為了王國的統治者，壟斷了高端藝術的創作，並強迫全國人民只能以番茄為食。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="積年累月，廣大的藝術家無法忍受精神的貧瘠與身體的羸弱。終於，他們集體將手中的番茄砸向邪惡藝術家。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="那是某個四月的第一天，成千上萬的番茄劃過天空。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[MusicVolume(volume=0.6, fadetime=1)]
+[Character(name="char_007_closre_1")]
+[name="可露希爾"]   你之前說的故事，好像不是這個版本......
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   是嗎？
+[Character(name="char_007_closre_1")]
+[name="可露希爾"]   算了，說重點。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   可露希爾說要做一款遊戲，我瞬間想到了那個畫面。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   至於細節方面，可露希爾認真研發、仔細打磨，使灌注了美麗與思念的本人的藝術構思得以具象化。這是工匠精神的一體兩面。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   所以，雖說是試玩版本，它也已經是立於巔峰之作。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   操作流暢，手感極佳。
+[Character(name="char_007_closre_1#5")]
+[name="可露希爾"]   那是自然。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   難度適當，遊戲平衡性極好。既滿足了高水準玩家的需求，也照顧到了遊戲天賦比較弱的玩家的上手體驗。
+[Character(name="char_007_closre_1#2")]
+[name="可露希爾"]   沒的說。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   我們還邀請夕小姐為遊戲內的場景給出美術參考......
+[Character(name="char_007_closre_1")]
+[name="可露希爾"]   ......
+[Character(name="char_007_closre_1")]
+[name="可露希爾"]   但她暫時還沒有答應。
+[Character(name="char_007_closre_1")]
+[name="可露希爾"]   只是暫時。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   反正你能在遊戲內看見異常精美的畫面和高度真實的人物形象，感受到強烈的沉浸效果。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   所以，享受那份緊張感吧！手心生汗，內心讚歎！
+[dialog]
+[character]
+[Decision(options="......;真是期待。;行了，那就快點開始吧。",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="char_007_closre_1#2")]
+[name="可露希爾"]   博士，這邊請。
+[Character(name="avg_npc_380_1")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="斷罪者"]   等一下！
+[Character(name="char_007_closre_1")]
+[name="可露希爾"]   又怎麼了？
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   還沒說完！還有最為重要的事情沒有說明！
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   咳咳......遊戲不僅僅是遊戲，它更是一種藝術形式，與雕塑、文學、繪畫一樣，需要作者將理念與思想灌注其中。
+[Character(name="char_007_closre_1")]
+[name="可露希爾"]   （啊？......那我們想傳遞的理念和思想是？）
+[Character(name="avg_npc_380_1")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="斷罪者"]   嗯？可露希爾你居然沒有感受到嗎？我要認真審視你是否有資格繼續做我的搭檔了！
+[Character(name="char_007_closre_1#6")]
+[name="可露希爾"]   ......
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   當然是藝術永存！正義永存！以上排序不分先後！
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   遊戲內人物的身形、動作，均化用自本人的斷罪拳法，盡顯優美與典雅。
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   你將能深刻感受到正義的力量。即使眼下的泰拉大地被陰雲籠罩，但正義永不會被吞噬！邪惡終將被斷罪！
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   《狂彈要塞！羅德大兵集結》的意義，除了讓幹員們在工作之餘得到調適，更重要的，是讓大家的信念更加堅定！
+[Character(name="char_007_closre_1#6")]
+[name="可露希爾"]   ......（啊，有嗎？）
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   所以，你已經全身心準備好了嗎？
+[dialog]
+[character]
+[Decision(options="......;準備好了，斷罪者老師。;是不是你還有其他的話要說。",values="1;2;3")]
+[Predicate(references="1")]
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   我再給你講講我們創作過程中的——
+[Predicate(references="2")]
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   等等！讓我最後再講講我們創作過程中的——
+[Predicate(references="3")]
+[Character(name="avg_npc_380_1")]
+[name="斷罪者"]   是的！我再給你講講我們創作過程中的——
+[Predicate(references="1;2;3")]
+[Character(name="char_007_closre_1#2")]
+[name="可露希爾"]   好了好了，斷罪者。沒看見博士已經躍躍欲試了嘛！等博士試玩結束後，我們再慢慢交流！
+[name="可露希爾"]   博士，歡迎來作為第五十二個測試者試玩由可露希爾與斷罪者聯合研發的全新遊戲——《狂彈要塞！羅德大兵集結》！
+[Character(name="char_007_closre_1#5")]
+[name="可露希爾"]   現在我們正式開始！
+[dialog]
+[character]
+[Decision(options="已經是第五十二個了嗎？！",values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Character]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[Image]

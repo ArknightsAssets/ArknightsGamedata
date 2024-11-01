@@ -1,0 +1,253 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="24_g11_snowylane",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$exciting_intro", key="$exciting_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=2)]
+[character(name="avg_npc_283_1#1$1",name2="avg_npc_284_1#1$1",fadetime=0.7)]
+[delay(time=0.7)]
+[character(name="avg_npc_283_1#1$1",name2="avg_npc_284_1#1$1",focus=1)]
+[name="遲鈍的戰士"]哎，聽說，要我們監視的這位叫什麼博士的貴客，被希瓦艾什家那邊的人襲擊了？
+[character(name="avg_npc_283_1#1$1",name2="avg_npc_284_1#1$1",focus=2)]
+[name="多事的戰士"]你怎麼才聽說啊，大夥兒都早就傳遍啦。
+[character(name="avg_npc_283_1#1$1",name2="avg_npc_284_1#1$1",focus=1)]
+[name="遲鈍的戰士"]......那你講講，這到底是怎麼回事啊，這個博士原本不是恩希歐迪斯請去的客人嗎？
+[character(name="avg_npc_283_1#1$1",name2="avg_npc_284_1#1$1",focus=2)]
+[name="多事的戰士"]唉，我這裡聽來的版本啊，是說那幫襲擊者都覺得阿克托斯老爺在接走這個博士後買通了他。
+[character(name="avg_npc_283_1#1$1",name2="avg_npc_284_1#1$1",focus=1)]
+[name="遲鈍的戰士"]啊？阿克托斯老爺哪會做這種事情！
+[character(name="avg_npc_283_1#1$1",name2="avg_npc_284_1#1$1",focus=2)]
+[name="多事的戰士"]笨，這不明擺著是那幫襲擊的人在胡說八道嘛！
+[character(name="avg_npc_283_1#1$1",name2="avg_npc_284_1#1$1",focus=2)]
+[name="多事的戰士"]要我說啊，搞不好恩希歐迪斯在聽到阿克托斯老爺要接走博士時，就直接將計就計準備要誣陷老爺了。
+[character(name="avg_npc_283_1#1$1",name2="avg_npc_284_1#1$1",focus=2)]
+[name="多事的戰士"]這幫來襲擊的人，搞不好都是恩希歐迪斯安排的。
+[character(name="avg_npc_283_1#1$1",name2="avg_npc_284_1#1$1",focus=1)]
+[name="遲鈍的戰士"]哎你這麼一說，好像是這個道理啊。
+[character(name="avg_npc_283_1#1$1",name2="avg_npc_284_1#1$1",focus=1)]
+[name="遲鈍的戰士"]那我們還費這功夫監視這個博士幹嘛啊，他怎麼看也不像和恩希歐迪斯一夥的啊。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="24_g5_guestroom",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$darkalley_intro", key="$darkalley_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[character(name="avg_npc_261_1#2$1")]
+[name="瓦萊絲"]之前不瞭解博士的為人，我等或許對博士多有得罪，還望包涵。
+[character(name="avg_npc_261_1#2$1")]
+[name="瓦萊絲"]博士是恩希歐迪斯的貴客，有些話或許我不應當講......
+[character(name="avg_npc_261_1#1$1")]
+[name="瓦萊絲"]但此次針對博士的襲擊確有一些蹊蹺。
+[dialog]
+[character(name="avg_npc_261_1#1$1",focus=-1)]
+[Decision(options="確實很蹊蹺。", values="1")]
+[Predicate(references="1")]
+[Decision(options="有人在利用這些人。;我無法準確推測其用意。;這些人的行動並不合理。", values="4;5;6")]
+[Predicate(references="4")]
+[character(name="avg_npc_261_1#5$1")]
+[name="瓦萊絲"]恩希歐迪斯......
+[dialog]
+[character(name="avg_npc_261_1#5$1",focus=-1)]
+[Decision(options="不，他難以從中獲利。", values="4")]
+[Predicate(references="4")]
+[Decision(options="（我也知道更明確的嫌疑人，但是......）", values="4")]
+[Predicate(references="4")]
+[Predicate(references="5")]
+[character(name="avg_npc_261_1#2$1")]
+[name="瓦萊絲"]我以為他們肯定是想打傷博士，好讓恩希歐迪斯有藉口向佩爾羅契家發難，指責我們沒保護好博士。
+[dialog]
+[character(name="avg_npc_261_1#2$1",focus=-1)]
+[Decision(options="這說不通。", values="5")]
+[Predicate(references="5")]
+[Decision(options="犯罪遠比失職更招人唾棄。", values="5")]
+[Predicate(references="5")]
+[Predicate(references="6")]
+[character(name="avg_npc_261_1#3$1")]
+[name="瓦萊絲"]我也覺得，他們明明已經得到了魏斯代表恩希歐迪斯傳達的資訊，卻還是表示不信任博士。
+[character(name="avg_npc_261_1#8$1")]
+[name="瓦萊絲"]這感覺就像......
+[dialog]
+[character(name="avg_npc_261_1#8$1",focus=-1)]
+[Decision(options="有人預先料到恩希歐迪斯的打算。", values="6")]
+[Predicate(references="6")]
+[Decision(options="並以此為前提對他們進行煽動。", values="6")]
+[Predicate(references="6")]
+[Predicate(references="4;5;6")]
+[character(name="avg_npc_261_1#8$1")]
+[name="瓦萊絲"]唔......
+[character]
+[name="？？？"]哈，說得好。
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[character(name="avg_npc_254_1#1$1",fadetime=1,block=true)]
+[delay(time=1)]
+[name="阿克托斯"]瓦萊絲，都說你棋下得好，腦子好使。照我看啊，你還得向這位博士學學。
+[character(name="avg_npc_261_1#1$1")]
+[name="瓦萊絲"]老爺說得是。
+[character(name="avg_npc_254_1#1$1")]
+[name="阿克托斯"]啊，對了，瓦萊絲。你替我傳下去，告訴他們之後都不用再盯著這個博士了，好好看家就行。
+[character(name="avg_npc_254_1#1$1")]
+[name="阿克托斯"]至於這位博士帶來的護衛，之後也允許他們自由出入這裡好了。
+[character(name="avg_npc_261_1#1$1")]
+[name="瓦萊絲"]是。
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[character(fadetime=1.5)]
+[delay(time=2)]
+[character(name="avg_npc_254_1#10$1")]
+[name="阿克托斯"]你們剛才聊的，我在走廊上也碰巧聽到些。
+[character(name="avg_npc_254_1#10$1")]
+[name="阿克托斯"]我對你們玩的推理遊戲沒什麼興趣，線索倒是可以給你們一些。
+[character(name="avg_npc_254_1#2$1")]
+[name="阿克托斯"]耶拉岡德在上。博士，就當我為佩爾羅契家先前的無禮賠個不是——
+[character(name="avg_npc_254_1#7$1")]
+[name="阿克托斯"]在這裡我以佩爾羅契家主之名向耶拉岡德起誓，這次襲擊絕不是我阿克托斯唆使挑起。
+[character(name="avg_npc_254_1#7$1")]
+[name="阿克托斯"]博士你要是信得過，也大可以認為我佩爾羅契家絕對沒有哪個崽子膽敢背著我搞這等下三爛的襲擊。
+[dialog]
+[character(name="avg_npc_254_1#7$1",focus=-1)]
+[Decision(options="感謝你的信任，阿克托斯先生。;感謝你的線索，阿克托斯先生。", values="1;2")]
+[Predicate(references="1")]
+[character(name="avg_npc_254_1#1$1")]
+[name="阿克托斯"]哦？我可沒說我相信了你啊，博士。
+[character(name="avg_npc_254_1#10$1")]
+[name="阿克托斯"]不過我倒是能肯定，至少你沒有在給我搞鬼。
+[Predicate(references="2")]
+[character(name="avg_npc_254_1#11$1")]
+[name="阿克托斯"]哈哈哈哈，好。
+[Predicate(references="1;2")]
+[character(name="avg_npc_254_1#1$1")]
+[name="阿克托斯"]博士，雖然我只是個粗人，可就連我也看得出來，謝拉格有不尋常的事情在發生。
+[character(name="avg_npc_254_1#1$1")]
+[name="阿克托斯"]恩希歐迪斯這小子，突然說要還政，又突然把諾希斯趕走，再把你給擺到這個位置上。
+[character(name="avg_npc_254_1#1$1")]
+[name="阿克托斯"]你又偏偏在處理這個還政時被人襲擊了。
+[character(name="avg_npc_254_1#2$1")]
+[name="阿克托斯"]說老實話，我沒法不去懷疑恩希歐迪斯，可他也確實沒有露出半點破綻。
+[character(name="avg_npc_254_1#2$1")]
+[name="阿克托斯"]但這麼不明不白地乾等著耶拉岡德交予我們的土地和人民遇險，真叫我不甘心......
+[dialog]
+[character(name="avg_npc_254_1#2$1",focus=-1)]
+[Decision(options="那麼，阿克托斯先生......", values="1")]
+[Predicate(references="1")]
+[character(name="avg_npc_254_1#4$1")]
+[name="阿克托斯"]怎麼了？
+[dialog]
+[character(name="avg_npc_254_1#4$1",focus=-1)]
+[Decision(options="我們的和解也可能意味著......;如果對手能預想到你的反應就說明......", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="對手不再需要拿我充當障眼法了。;對手已經準備完畢，時間不多了。", values="1;2")]
+[Predicate(references="1;2")]
+[character(name="avg_npc_254_1#7$1")]
+[name="阿克托斯"]什麼？！
+[Dialog]
+[character]
+[CameraShake(duration=1, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n",volume=0.6)]
+[delay(time=2.5)]
+“轟”的一聲，巨大的悶響在遠處炸開。
+屋外的人交頭接耳，討論著是不是要下雪了。
+屋裡的人低頭不語，肩負著沒有實體的重壓。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="24_g8_nobleroom",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$darkness02_intro", key="$darkness02_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#1$1",fadetime=0.7)]
+[delay(time=0.7)]
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#1$1",focus=1)]
+[name="菈塔托絲"]諾希斯·埃德懷斯閣下。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#1$1",focus=2)]
+[name="諾希斯"]菈塔托絲·布朗陶大人。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#1$1",focus=2)]
+[name="諾希斯"]看來，我終於獲得了與你當面交談的資格，是嗎？
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#1$1",focus=1)]
+[name="菈塔托絲"]那副佯裝出來的傲氣並不能隱瞞什麼，諾希斯。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#1$1",focus=1)]
+[name="菈塔托絲"]你也是個聰明人，我們明人不說暗話。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#1$1",focus=1)]
+[name="菈塔托絲"]要不是想從我這裡得到什麼，你根本不會像這樣一而再，再而三地來訪。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#2$1",focus=2)]
+[name="諾希斯"]呵，如果你只是想宣示自己掌握著主動權，那麼我想我該告辭了。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#2$1",focus=1)]
+[name="菈塔托絲"]別急，諾希斯，我有一些問題想要向你討教。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#2$1",focus=1)]
+[name="菈塔托絲"]當我第一次聽說埃德懷斯家的人跟著恩希歐迪斯回到了謝拉格時，老實說，我不太吃驚。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#2$1",focus=1)]
+[name="菈塔托絲"]我以為你掌握了能夠證明埃德懷斯家不曾加害希瓦艾什家的證據，或者，你抓住了恩希歐迪斯的把柄。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#2$1",focus=1)]
+[name="菈塔托絲"]但無論你還是恩希歐迪斯都緘口不談當年之事，任由希瓦艾什家的領民痛罵你厚顏無恥。
+[character(name="avg_npc_253_1#10$1",name2="avg_206_gnosis_1#2$1",focus=1)]
+[name="菈塔托絲"]究竟是什麼在支撐著你？我很好奇。
+[character(name="avg_npc_253_1#10$1",name2="avg_206_gnosis_1#1$1",focus=2)]
+[name="諾希斯"]......他曾向我許諾一個未來。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#1$1",focus=1)]
+[name="菈塔托絲"]未來？
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#1$1",focus=2)]
+[name="諾希斯"]謝拉格的未來。一個能讓我在研究中施展才學而不必擔心成果被剽竊、濫用、埋沒的新興工業科技國家。
+[character(name="avg_npc_253_1#7$1",name2="avg_206_gnosis_1#1$1",focus=1)]
+[name="菈塔托絲"]僅僅是這樣？
+[character(name="avg_npc_253_1#7$1",name2="avg_206_gnosis_1#4$1",focus=2)]
+[name="諾希斯"]所以我一開始就並不指望你能夠理解，菈塔托絲，你永遠也不會成為一名研究者。
+[character(name="avg_npc_253_1#7$1",name2="avg_206_gnosis_1#4$1",focus=2)]
+[name="諾希斯"]你可能很難理解，有著充足的資源與權力支持，又有著正當的目的，在完全安心的前提下探索技術的創新與應用會有多麼令人心醉。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#4$1",focus=1)]
+[name="菈塔托絲"]所以你們是達成了一項交易。你向他提供技術，他為你提供舞台。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#4$1",focus=1)]
+[name="菈塔托絲"]然後呢？
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#4$1",focus=1)]
+[name="菈塔托絲"]你應該不會是想告訴我，他真的就只是為了保全自身，要把你推出來當替死鬼。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#4$1",focus=1)]
+[name="菈塔托絲"]你們喀蘭貿易對利害的權衡不會只有這種程度吧？
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#1$1",focus=2)]
+[name="諾希斯"]你對喀蘭貿易倒是充滿信心。兩年前何不接受邀請，向恩希歐迪斯投誠呢？
+[character(name="avg_npc_253_1#7$1",name2="avg_206_gnosis_1#1$1",focus=1)]
+[name="菈塔托絲"]少說蠢話。恩希歐迪斯縱有天大的本事，也沒法改變這千年來深入謝拉格人骨髓裡的信仰。
+[character(name="avg_npc_253_1#7$1",name2="avg_206_gnosis_1#1$1",focus=1)]
+[name="菈塔托絲"]喀蘭貿易只能生長到它被三族議會和蔓珠院允許的大小，謝拉格根本不可能變成什麼工業科技國家——
+[character(name="avg_npc_253_1#2$1",name2="avg_206_gnosis_1#1$1",focus=1)]
+[name="菈塔托絲"]——等等。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#1$1",focus=1)]
+[name="菈塔托絲"]所以他找到新籌碼了？
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#2$1",focus=2)]
+[name="諾希斯"]你說得對。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#5$1",focus=2)]
+[name="諾希斯"]恩希歐迪斯沒有辦法讓謝拉格人違背耶拉岡德，他只能找到一個平衡點。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#5$1",focus=2)]
+[name="諾希斯"]但他已經在這個平衡點停滯了太久。哪怕我幾次三番試圖推動他，他也無動於衷。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#1$1",focus=2)]
+[name="諾希斯"]直到事情終於出現了轉機。
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#1$1",focus=2)]
+[name="諾希斯"]恩希亞的礦石病症狀得到了控制，儘管無法治癒，但她已經能活蹦亂跳地回到他的身邊......
+[character(name="avg_npc_253_1#1$1",name2="avg_206_gnosis_1#1$1",focus=2)]
+[name="諾希斯"]並且興奮地告訴他，或許可以拓寬與對方的合作，用更低廉的成本，更好地控制住礦石病的擴散和危害。
+[character(name="avg_npc_253_1#5$1",name2="avg_206_gnosis_1#1$1",focus=1)]
+[name="菈塔托絲"]不，恩希歐迪斯他不會......
+[character(name="avg_npc_253_1#2$1",name2="avg_206_gnosis_1#7$1",focus=2)]
+[name="諾希斯"]他當然會。謝拉格的國門一旦打開，就不可能再完全封閉。
+[character(name="avg_npc_253_1#2$1",name2="avg_206_gnosis_1#7$1",focus=2)]
+[name="諾希斯"]謝拉格的感染者數量只會日漸增加，這是大地諸國的客觀情況，在謝拉格不斷發展的過程中，處理礦石病的能力終將成為新的籌碼。
+[character(name="avg_npc_253_1#2$1",name2="avg_206_gnosis_1#7$1",focus=2)]
+[name="諾希斯"]他即將讓謝拉格人在信仰與技術中選擇一個，而僅憑信仰已經不再能保護他們遠離礦石病。
+[character(name="avg_npc_253_1#7$1",name2="avg_206_gnosis_1#7$1",focus=1)]
+[name="菈塔托絲"]......空口無憑，你說的這些都沒有證據。
+[character(name="avg_npc_253_1#7$1",name2="avg_206_gnosis_1#9$1",focus=2)]
+[name="諾希斯"]......跟我來吧，帶上你的人，多帶點能打的，我給你看一些東西。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Image]

@@ -1,0 +1,29 @@
+[HEADER(actId="act1sandbox", npcId="trap_434_klmantc")] 
+[character(name="avg_npc_802_1", offsetX="125", offsetY="100")]
+[name="曼提柯殺手"]部落中出現了這樣的說法......但，你們不希望冤枉任何人......？
+[name="曼提柯殺手"]......
+[name="曼提柯殺手"]謝謝你們......願意來問我。
+[character(name="avg_npc_165", offsetX="100", offsetY="50")]
+[name="巴塞爾"]有這種說法的只是幾個人，但他們每天都在說這些，我們還是要處理一下。我們信你，因為你之前救過我們的命。
+[name="巴塞爾"]只要你表達一個態度，剩下的問題我們會解決好的。
+[Decision(option1="那個叫蓋斯的小夥子你還記得嗎？", value1="1.1")]
+[predicate(references="1.1")]
+[Decision(option1="他為了這事還和那些亂說的人打了一架。", value1="2.1")]
+[predicate(references="2.1")]
+[character(name="avg_npc_802_1", offsetX="125", offsetY="100")]
+[name="曼提柯殺手"]......有幾個人這樣說了嗎......？果然是這樣......
+[name="曼提柯殺手"]我還是，不能得到大家的信任......我是一個，從外面來的人......
+[name="曼提柯殺手"]......
+[name="曼提柯殺手"]......對，是的......就是我做的......
+[name="曼提柯殺手"]對不起......
+[Decision(option1="等等！你去哪裡？", value1="3.1")]
+[predicate(references="3.1")]
+[Decision(option1="......我們這些建築不是為了讓你躲藏用的！", value1="4.1")]
+[predicate(references="4.1")]
+[character(name="avg_npc_165", offsetX="100", offsetY="50")]
+[name="巴塞爾"]什麼意思？......她這是承認了？不可能啊！
+[name="巴塞爾"]她躲起來了......這個源石技藝怎麼這麼好用？！
+[name="巴塞爾"]等等......我看到她了！她往那邊去了！
+[SetConditionProgress(conditionKey="route_klmantic", itemCount="9")]
+[withdraw(charId="trap_434_klmantc")]
+[End]

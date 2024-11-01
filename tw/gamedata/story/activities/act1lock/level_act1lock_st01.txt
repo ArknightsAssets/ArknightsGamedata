@@ -1,0 +1,128 @@
+[HEADER(key="title_test", is_skippable=false, fit_mode="BLACK_MASK")] 开头avg
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_rhodescom",screenadapt="coverall")]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="char_003_kalts_1",fadetime=1,block=true)]
+[delay(time=1)]
+[PlaySound(key="$doorknockquite", volume=0.6)]
+[delay(time=0.5)]
+[name="凱爾希"]  請進。
+[PlaySound(key="$dooropenquite", volume=0.6)]
+[dialog]
+[Character(name="avg_482_pallas_1",fadetime=1,block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[Delay(time=1)]
+[name="帕拉斯"]  啊，凱爾希女士。博士，您也在。
+[name="帕拉斯"]  我們曾在廊上打過幾次招呼，那時候您和我還並未足夠熟悉。既然我被傳喚而來，想必“盛會的邀約”已經傳達到您的耳中了。
+[dialog]
+[Decision(options="“盛會的邀約”......？",values="1")]
+[Predicate(references="1")]
+[Character(name="char_003_kalts_1")]
+[name="凱爾希"]  本次聯鎖安保競賽，是首次在米諾斯舉辦的安保競賽。
+[name="凱爾希"]  實際上，這次邀請羅德島參賽，與賽事委員會和米諾斯方面負責人接洽的種種行動，都是由祭司帕拉斯對接完成的。
+[Character(name="char_003_kalts_1",name2="avg_482_pallas_1#5",focus=2)]
+[name="帕拉斯"]  能夠接納我進行隱蔽的治療，羅德島已經給予了我諸多恩惠。
+[name="帕拉斯"]  參與不同的盛典、享受節日盛典的喜慶、進行武力的比拼是每一位勇士發自心底的期盼，也是對榮耀的渴望。
+[name="帕拉斯"]  對於賜予我恩惠的朋友，我自然熱情於將同樣令人心情愉快的、互有益處的盛會情報傳遞給他們。
+[Character(name="char_003_kalts_1",name2="avg_482_pallas_1#5",focus=1)]
+[name="凱爾希"]  情況就是這樣，Dr.{@nickname}。詳細的事情會由本次競賽活動特別甄選代表——帕拉斯，和你慢慢詳說。我還有別的事情要處理。
+[Character(name="char_003_kalts_1",name2="avg_482_pallas_1",focus=2)]
+[name="帕拉斯"]  也祝您有心情愉快的一天，凱爾希女士。
+[dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.4, block=true)]
+[Background(image="bg_corridor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.4, block=true)]
+[Character(name="avg_482_pallas_1#13",fadetime=1,block=true)]
+[Delay(time=1)]
+[name="帕拉斯"]  ......
+[dialog]
+[Decision(options="......",values="1")]
+[Predicate(references="1")]
+[Character(name="avg_482_pallas_1")]
+[name="帕拉斯"]  哎......不論多少次，和凱爾希女士交談還是頗感壓力。
+[name="帕拉斯"]  但願博士的性格要更加主動一些，交流起來能夠更加融洽。
+[name="帕拉斯"]  就讓我們愉快地赴往盛典，完成一次驚豔的亮相，讓眾人領受來自羅德島的優越素質與能力吧！來，博士，現在就......
+[PlaySound(key="$rungeneral", volume=0.6)]
+[dialog]
+[character]
+[Character(name="char_empty",fadetime=0.7)]
+[characteraction(name="middle", type="move", xpos=-200, fadetime=0.3, block=true)]
+[delay(time=0.51)]
+[characteraction(name="middle", type="move", xpos=200, fadetime=0.6, block=false)]
+[Character(name="char_333_sidero_1",fadetime=0.7)]
+[delay(time=0.6)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="鑄鐵"]  哈、哈......在此以前，還請你......站住！
+[delay(time=0.6)]
+[Character(name="char_333_sidero_1",name2="avg_482_pallas_1#9",focus=2)]
+[name="帕拉斯"]  嗯？
+[Character(name="char_333_sidero_1",name2="avg_482_pallas_1#6",focus=2)]
+[name="帕拉斯"]  啊，來自科林尼亞的戰士。你又在我的身前顯現了。
+[Character(name="char_333_sidero_1",name2="avg_482_pallas_1#5",focus=2)]
+[name="帕拉斯"]  自我們離開艦橋前往辦公室的途中失去聯絡後，我還幾番尋找過你，為何剛才要離我而去呢？
+[Character(name="char_333_sidero_1",name2="avg_482_pallas_1#5",focus=1)]
+[name="鑄鐵"]  不要在博士面前搬弄是非。是你自己一邊走路一邊到處瞧，自說自話地找人閒聊了一陣子，然後突然就從艦橋上消失了。
+[Character(name="char_333_sidero_1",name2="avg_482_pallas_1#6",focus=2)]
+[name="帕拉斯"]  自然，不應放棄每一次與勇士相逢的機會！
+[name="帕拉斯"]  人生本就是匆匆行進，如若能用言語和他人心靈相通，哪怕隻言片語所產生的聯繫，也比錯過後的傷感要美好。
+[dialog]
+[Decision(options="（帕拉斯在說什麼？）;你們好像說的不是一回事。;......",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="char_333_sidero_1",name2="avg_482_pallas_1#6",focus=1)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="鑄鐵"]  ......總之，雖然你不知道彎彎繞繞去了哪裡，既然已經找到了博士，接下來就請好好完成自己的任務。
+[name="鑄鐵"]  咳，要做的事情，第一，和博士詳細說明本次聯鎖競賽的主題——“荷謨伊智境”的有關情報。
+[name="鑄鐵"]  第二，提出建議參賽的人選並查詢近期是否有訓練和參賽的時間......
+[Character(name="char_333_sidero_1",name2="avg_482_pallas_1#13",focus=2)]
+[name="帕拉斯"]  可憐的，實力單薄的祭司帕拉斯啊。從前的你被教條式的生活所禁錮，終日於神廟中循規蹈矩。現如今，命運將再次使你過上這般日子嗎？
+[Character(name="char_333_sidero_1",name2="avg_482_pallas_1#7",focus=2)]
+[name="帕拉斯"]  不，勇敢的帕拉斯。抗拒，要勇於對抗那些最枯燥的條理！
+[Character(name="char_333_sidero_1",name2="avg_482_pallas_1#7",focus=1)]
+[name="鑄鐵"]  祭司......大人，正事要緊，還請你說些能夠讓博士和我能聽懂的話。
+[Character(name="char_333_sidero_1",name2="avg_482_pallas_1#7",focus=2)]
+[name="帕拉斯"]  嗚......既然如此，我也只能忍受這般不甘的生活。
+[Character(name="avg_482_pallas_1")]
+[name="帕拉斯"]  博士，如若對這次競賽的事宜還有疑惑，還請將疑問悉數告知於我。言語將化作靈羽獸傳到您的耳邊，使您的智慧不被蒙蔽。
+[dialog]
+[Decision(options="還是告訴我聯鎖競賽的事情吧。;謝謝。",values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_482_pallas_1")]
+[name="帕拉斯"]  嗯，從哪裡說起好呢......本次聯鎖安保競賽舉辦地設於米諾斯荷謨伊地區。
+[name="帕拉斯"]  畢竟，聯鎖競賽的概念起源於米諾斯，這次借著重新修建荷謨伊軍事訓練基地的機會，非常順利地準備好了舉辦競賽的所有條件。
+[name="帕拉斯"]  既有豐厚的獎金和物資，還能在參與過程中提升實力，最重要的是......
+[name="帕拉斯"]  這是僅限於商業組織之間的競賽，不會被別有用心的官方組織忌憚。
+[dialog]
+[Decision(options="......真的嗎？",values="1")]
+[Predicate(references="1")]
+[Character(name="avg_482_pallas_1")]
+[name="帕拉斯"]  放心吧，智慧且謹慎的博士啊。陰謀無法在米諾斯的大地上生存，那是一片被英雄祝福的土地。
+[name="帕拉斯"]  只要您前去拜訪，便能體會到米諾斯人對競技精神的推崇，而非那些殘忍的利益之爭。
+[name="帕拉斯"]  對正在重回強大的米諾斯而言，再沒有比讓這份精神在大地上傳播、使在動亂中的平和更加穩固更重要的事情了。
+[Character(name="char_333_sidero_1",name2="avg_482_pallas_1",focus=1)]
+[name="鑄鐵"]  除了......科林尼亞。
+[Character(name="char_333_sidero_1",name2="avg_482_pallas_1",focus=2)]
+[name="帕拉斯"]  當然，總會有向商貿繁盛妥協的人在。
+[name="帕拉斯"]  不過，已經毅然離開科林尼亞的戰士啊，你所懷有的赤子之心，現在不是已然在羅德島上更好地展現了嗎？
+[Character(name="char_333_sidero_1",name2="avg_482_pallas_1",focus=1)]
+[name="鑄鐵"]  ......嗯。
+[Character(name="avg_482_pallas_1")]
+[name="帕拉斯"]  事不宜遲。行動起來吧，博士，我們還有許多事務要準備。
+[name="帕拉斯"]  不論是人員和戰術的安排和準備，亦或是裝備的維護與配備，都是在出發前必須確定的。
+[dialog]
+[Decision(options="帕拉斯，你覺得羅德島有多大的勝算？",values="1")]
+[Predicate(references="1")]
+[Character(name="avg_482_pallas_1#14")]
+[name="帕拉斯"]  無需擔憂，博士。
+[name="帕拉斯"]  站在你身前的，是祭司帕拉斯。受到英雄的指引，我來到羅德島，代表羅德島參賽——
+[name="帕拉斯"]  我知曉羅德島的實力。我們，羅德島的勇士們，將會前去取得我們想要的一切。
+[name="帕拉斯"]  勝算......博士，那些虛無縹緲的數字和統計毫無意義。
+[name="帕拉斯"]  若說勝算，為取得勝利，那麼最為關鍵的秘寶，便將是我們本身。
+[Dialog]
+[Character]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[Image]

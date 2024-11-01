@@ -1,0 +1,679 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[character(fadetime=0)]
+[Background(image="29_g7_mainstreet_n",screenadapt="coverall")]
+[PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6, crossfade=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[delay(time=1)]
+[character(name="char_249_muesys_1#5")]
+[name="繆爾賽思"]你有多久沒回來了，塞雷婭主任？
+[character(name="avg_npc_532_1#6$1")]
+[name="塞雷婭"]......嗯？
+[character(name="char_249_muesys_1#4")]
+[name="繆爾賽思"]恍神了？
+[character(name="char_249_muesys_1#4")]
+[name="繆爾賽思"]真是難得啊......在想基地裡的事？
+[character(name="avg_npc_532_1#1$1")]
+[name="塞雷婭"]你還記得海頓一號實驗室嗎？
+[character(name="char_249_muesys_1#4")]
+[name="繆爾賽思"]當然，伊芙利特就是從那地方出來的吧？我們倆還一起去現場調查過呢。
+[character(name="avg_npc_532_1#1$1")]
+[name="塞雷婭"]類似的廢墟，後來我找到了好幾百處。
+[character(name="avg_npc_532_1#1$1")]
+[name="塞雷婭"]與軍方合作風險極高。過去的萊茵生命習慣於躲在層層合約之後，操控其他實驗室來進行這些危險的實驗。
+[character(name="avg_npc_532_1#1$1")]
+[name="塞雷婭"]可這一回，斐爾迪南選擇了自己衝鋒陷陣。
+[character(name="avg_npc_532_1#10$1")]
+[name="塞雷婭"]這意味著，稍有不慎，萊茵生命就會變成下一處廢墟。
+[character(name="char_249_muesys_1#4")]
+[name="繆爾賽思"]要是真的失敗了的話......斐爾迪南也會變成躺在廢墟裡的屍體吧？他的真實死因甚至不會出現在報紙上。
+[character(name="avg_npc_532_1#9$1")]
+[name="塞雷婭"]斐爾迪南沒有退路了。這次實驗，他只能成功。
+[character(name="char_249_muesys_1#4")]
+[name="繆爾賽思"]唔......
+[character(name="char_249_muesys_1#4")]
+[name="繆爾賽思"]你是在擔心赫默他們嗎？
+[character(name="avg_npc_532_1#9$1")]
+[name="塞雷婭"]......
+[character(name="avg_npc_532_1#1$1")]
+[name="塞雷婭"]我是在分析風險。
+[character(name="char_249_muesys_1#5")]
+[name="繆爾賽思"]沒想到你也會嘴硬啊。
+[character(name="char_249_muesys_1#5")]
+[name="繆爾賽思"]好啦好啦，她會沒事的，為了伊芙芙，她這些年可是越來越堅強啦！
+[character(name="avg_npc_532_1#1$1")]
+[name="塞雷婭"]你在安慰我嗎，繆爾賽思主任？
+[character(name="avg_npc_532_1#1$1")]
+[name="塞雷婭"]沒這個必要。
+[character(name="avg_npc_532_1#1$1")]
+[name="塞雷婭"]我從來沒有懷疑過赫默和白面鴞的能力。她們會承擔起自己的責任，我們也一樣。
+[dialog]
+[character]
+[Decision(options="我們會好好配合的。;我也相信幹員們的能力。;塞雷婭越來越有人情味了。",values="1;2;3")]
+[Predicate(references="1")]
+[character(name="char_249_muesys_1#5")]
+[name="繆爾賽思"]我有沒有說過，我一直很欣賞羅德島的工作方式？
+[Predicate(references="2")]
+[character(name="char_249_muesys_1#6")]
+[name="繆爾賽思"]哎呀，太會說話了，我開始考慮跳槽了哦。
+[Predicate(references="3")]
+[character(name="char_249_muesys_1#3")]
+[name="繆爾賽思"]對吧對吧，你也有這樣的感覺是吧？
+[character(name="char_249_muesys_1#1")]
+[name="繆爾賽思"]果然，這不是我的錯覺。
+[Predicate(references="1;2;3")]
+[character(name="avg_npc_521_1#1$1")]
+[name="Mechanist"]......偵測到多具動力甲靠近的信號。
+[character(name="avg_npc_521_1#1$1")]
+[name="Mechanist"]博士，那位黎博利雇傭兵又追上來了。
+[character(name="avg_npc_532_1#8$1")]
+[name="塞雷婭"]或者她本就守在附近。
+[character(name="char_249_muesys_1#4")]
+[name="繆爾賽思"]Dr.{@nickname}，你確定克麗斯騰就在這裡嗎？
+[character(name="char_249_muesys_1#7")]
+[name="繆爾賽思"]塞雷婭說的沒錯，斐爾迪南承受不了這次失敗，可我們也沒有試錯的時間了吧？
+[dialog]
+[character]
+[Decision(options="斐爾迪南不想讓別人找到總轄。",values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="只有一個地方最容易掌控。;只有一個地方最能掩人耳目。",values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[Character]
+[Image(image="29_i11",fadetime=0)]
+[ImageTween(xFrom=-120, xTo=0,yFrom=-30,yTo=0,duration=40,xScaleFrom=1.2,xScaleTo=0.85,yScaleFrom=1.2,yScaleTo=0.85, block=false)]
+[Blocker(a=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[character(name="avg_npc_521_1#1$1")]
+[name="Mechanist"]......萊茵總部。
+[character(name="char_249_muesys_1#4")]
+[name="繆爾賽思"]最符合條件的還真是這裡啊。
+[character(name="char_249_muesys_1#4")]
+[name="繆爾賽思"]在發現聯絡不上克麗斯騰之後，我去過她家，去過實驗基地，還把她最常去的地方都找了個遍......
+[character(name="char_249_muesys_1#4")]
+[name="繆爾賽思"]所有萊茵職員都知道，總轄極少老老實實待在辦公室裡。
+[character(name="char_249_muesys_1#4")]
+[name="繆爾賽思"]每天在辦公樓裡來來回回詢問總轄下落的員工們，誰能想到她可能就在我們頭頂？
+[character(name="avg_npc_521_1#1$1")]
+[name="Mechanist"]掃描完畢。
+[character(name="avg_npc_521_1#1$1")]
+[name="Mechanist"]博士，如你所料，萊茵內部跨樓層的出入通道處有大量武裝人員把守。
+[character(name="avg_npc_532_1#8$1")]
+[name="塞雷婭"]目前的萊茵總部應該已在斐爾迪南掌控中。
+[character(name="avg_npc_532_1#8$1")]
+[name="塞雷婭"]包括我與繆爾賽思在內，我們需要小心行事。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[character(fadetime=0)]
+[Image]
+[Background(image="29_g4_corridor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[PlayMusic(intro="$tense_intro", key="$tense_loop", volume=0.7, crossfade=1, delay=0.5)]
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]......抓住他們。
+[character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]糟了......
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]還愣著幹什麼？！
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[playsound(key="$e_atk_magic_n", volume=1)]
+[playsound(key="$e_atk_magic_m", volume=1)]
+[playsound(key="$p_atk_elecball_n", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=false)]
+[Delay(time=1)]
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]全體注意，實驗區入口處出現異常情況，一名拓荒者和一名萊茵研究員......唔呃！
+[dialog]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=40, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral",volume=1)] 
+[delay(time=1)]
+[dialog]
+[PlaySound(key="$bodyfalldown1")]
+[CameraShake(duration=1, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true)]
+[character(fadetime=0.7)]
+[delay(time=1)]
+[character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]到頭來還是得動手傷人，我......
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]......正當防衛。我會為你作證。
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]左邊有緊急出口，我們往那裡跑！先出去再說——
+[dialog]
+[character]
+[PlaySound(key="$rungeneral", volume=1)]
+[delay(time=1)]
+[character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]有人追上來了！
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]做好準備。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[playsound(key="$e_atk_magic_n", volume=1)]
+[playsound(key="$e_atk_magic_m", volume=1)]
+[playsound(key="$p_atk_elecball_n", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=false)]
+[Delay(time=1)]
+[character(name="avg_135_halo_1#7$1")]
+[name="埃琳娜"]等等，怎麼會是你？！
+[dialog]
+[character]
+[character(name="avg_1027_greyy2_1#7$2",fadetime=1)]
+[delay(time=1)]
+[name="格雷伊"]埃、埃琳娜小姐......
+[character(name="avg_135_halo_1#7$1")]
+[name="埃琳娜"]我沒有傷到你吧？
+[character(name="avg_1027_greyy2_1#9$2")]
+[name="格雷伊"]還好，我猜到您會動手，所以做了一些準備。
+[dialog]
+[character]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[character(name="avg_npc_527_1#5$1",fadetime=1)]
+[delay(time=1)]
+[name="瑪麗"]都不許動。
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]你是......
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]特里蒙城警察局，瑪麗·班納。
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]我正在抓捕一名犯下綁架罪與故意傷人罪的嫌犯，麻煩你們配合一下。
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]嫌犯？
+[character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]......瑪麗。
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]要逮到你可真不容易啊，對吧，“領隊”先生？
+[character(name="avg_npc_527_1#5$1")]
+[name="瑪麗"]把你的武器扔到地上，然後舉起雙手。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[character(fadetime=0)]
+[Background(image="29_g1_outdoorbase",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlayMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6, crossfade=1)]
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]抬起右手。
+[character(name="avg_npc_534_1#1$1")]
+[name="拓荒隊成員"]......
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]請抬起右手。
+[character(name="avg_108_silent_1#5$1")]
+[name="赫默"]......注射器？
+[character(name="avg_108_silent_1#5$1")]
+[name="赫默"]等一下，你們打算做什麼？
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]身體檢查。
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]該實驗區有危險物質洩漏的可能性，按照規定，需要對所有人員啟動預防程序。
+[character(name="avg_108_silent_1#7$1")]
+[name="赫默"]能不能讓我看一眼注射藥劑？
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]情況緊急，麻煩讓開。
+[character(name="avg_128_plosis_1#1$1")]
+[name="白面鴞"]警告，流程與以往記錄不符。
+[character(name="avg_108_silent_1#7$1")]
+[name="赫默"]你們的這種行為完全不符合規定......
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]規定？我不需要一個......被逐出萊茵的研究員來教我什麼是規定。
+[character(name="avg_108_silent_1#7$1")]
+[name="赫默"]唔......
+[character]
+[name="多蘿西"]那我呢？
+[dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[character(name="avg_4048_doroth_1#3$1",fadetime=1)]
+[delay(time=1)]
+[name="多蘿西"]我有沒有資格要求你交出注射器？
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]弗蘭克斯主任......
+[character(name="avg_4048_doroth_1#3$1")]
+[name="多蘿西"]我是359號基地的負責人。請立刻向我報告你們的行動目的。
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]......抱歉，主任。本基地的一切事務已由斐爾迪南主任接管。
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]沒有他的命令，您也無權過問我們的行動。
+[character(name="avg_4048_doroth_1#3$1")]
+[name="多蘿西"]我沒記錯的話，在萊茵生命，只有總轄能夠更換實驗項目負責人。
+[character(name="avg_4048_doroth_1#3$1")]
+[name="多蘿西"]斐爾迪南憑什麼越俎代庖？
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]我也沒有辦法回答您的疑問。
+[Dialog]
+[PlaySound(key="$transmission", volume=0.9)]
+[delay(time=1)]
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]差不多夠了......
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]任務完成，全體撤退。
+[character(name="avg_108_silent_1#7$1")]
+[name="赫默"]......走了？
+[character(name="avg_128_plosis_1#1$1")]
+[name="白面鴞"]是的，防衛科的人正在飛速撤離基地。
+[character(name="avg_108_silent_1#7$1")]
+[name="赫默"]我本來以為他們要抓走拓荒者們......難道是我誤解了斐爾迪南？
+[character(name="avg_4048_doroth_1#1$1")]
+[name="多蘿西"]斐爾迪南他......
+[character(name="avg_npc_534_1#1$1")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=40, fadeout=true, block=false)]
+[name="拓荒隊成員"]呃呃呃——！
+[dialog]
+[PlaySound(key="$bodyfalldown1")]
+[CameraShake(duration=1, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true)]
+[character(fadetime=0.7)]
+[delay(time=1)]
+[character(name="avg_128_plosis_1#1$1")]
+[name="白面鴞"]赫默醫生，接受過注射的拓荒者們全體陷入了昏迷。
+[character(name="avg_108_silent_1#4$1")]
+[name="赫默"]立刻實施救援！
+[character(name="avg_108_silent_1#5$1")]
+[name="赫默"]弗蘭克斯主任，你知不知道該怎麼應急處理......弗蘭克斯主任？
+[character(name="avg_4048_doroth_1#1$1")]
+[name="多蘿西"]......
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[character(fadetime=0)]
+[Background(image="29_g4_corridor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[character(name="avg_1027_greyy2_1#4$2")]
+[name="格雷伊"]女士，我還以為我們是來救桑尼先生的......
+[character(name="avg_npc_527_1#5$1")]
+[name="瑪麗"]別以為那短短幾句話就能讓我改變看法！
+[character(name="avg_npc_535_1#1$1")]
+[name="桑尼"]......你收到我給你寫的信了。
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]博取同情的招數用過一次就沒有效果了，羅馬諾。
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]我只慶幸沒讓你逃出去，否則的話，我可不知道還會遇到什麼“驚喜”。
+[character(name="avg_npc_535_1#8$1")]
+[name="桑尼"]你不相信我......
+[character(name="avg_npc_527_1#5$1")]
+[name="瑪麗"]我憑什麼要相信你？！
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]四年前，你不想被抓進收治區，我相信了你，幫你四處躲藏——
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]然後你是怎麼對我的？
+[character(name="avg_npc_535_1#8$1")]
+[name="桑尼"]我那時候快瘋了，礦石病和保險費逼瘋了我，我不得不......
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]你打破了窗戶，闖進我的房間，逼我把所有值錢的東西交給你——就為了那該死的保險費，你覺得交夠了錢，他們就能讓你回去當律師！
+[character(name="avg_npc_535_1#4$1")]
+[name="桑尼"]......
+[character(name="avg_npc_527_1#5$1")]
+[name="瑪麗"]你知不知道奶奶受了多大驚嚇，在那之後就一病不起？你還記不記得她有多喜歡你，從小對你比對我還要好？！
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]你又知不知道，在你因為害怕而匆匆一走了之後，我是怎麼一邊擔心你被其他警察抓到，一邊冒著丟工作的風險替你掩飾......
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]你什麼都不知道。
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]你就是個冷血自私的罪犯，我從來都不該對你心軟......
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]警長！
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]不管你們倆有什麼前塵舊怨，我們都必須離開這裡，立刻，馬上——
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]你在為這個綁架了你的人說情？
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]聽我說，真正有問題的是萊茵生命......
+[dialog]
+[character]
+[stopmusic(fadetime=3)]
+[playsound(key="$smallearthquake", volume=0.6)]
+[CameraShake(duration=2, xstrength=4, ystrength=4, vibrato=20, randomness=30, fadeout=false)]
+[delay(time=2)]
+[character(name="avg_1027_greyy2_1#4$2")]
+[name="格雷伊"]這震動......
+[character(name="avg_npc_535_1#7$1")]
+[name="桑尼"]呃......是從裡面傳出來的？
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]......多蘿西的實驗室。
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]跑！！！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[character(fadetime=0)]
+[Background(image="29_g1_outdoorbase",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlayMusic(intro="$tense_intro", key="$tense_loop", volume=0.6, crossfade=1)]
+[playsound(key="$smallearthquake", volume=1)]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=20, randomness=30, fadeout=false)]
+[delay(time=2)]
+[character(name="avg_4048_doroth_1#1$1")]
+[name="多蘿西"]真的......發生了......
+[character(name="avg_108_silent_1#7$1")]
+[name="赫默"]劇烈的震動......影響範圍這麼大......是天災？
+[character(name="avg_108_silent_1#7$1")]
+[name="赫默"]不，不是天災，是實驗室......
+[dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[Character]
+[Image(image="29_i04",fadetime=0)]
+[ImageTween(xFrom=-80, xTo=0,yFrom=150,yTo=0,duration=50,xScaleFrom=1.2,xScaleTo=0.85,yScaleFrom=1.2,yScaleTo=0.85, block=false)]
+[CameraShake(duration=30, xstrength=4, ystrength=4, vibrato=20, randomness=30, fadeout=false)]
+[playsound(key="$d_avg_rockfall", volume=0.6)]
+[playsound(key="$smallearthquake", volume=0.6)]
+[playsound(key="$d_avg_collapse", volume=0.6)]
+[Blocker(a=0, fadetime=3, block=true)]
+[delay(time=1)]
+實驗區的中央，本應無比堅固的建築物上出現了一道裂痕。
+那並不是震動導致的。
+建築是被硬生生撕開的——從內部最深的地方。
+有什麼東西正在“破殼而出”，一點一點，又無比迅速。
+[dialog]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[playsound(key="$d_avg_rockfall", volume=0.6)]
+刹那間，一半樓層都已被吞吃殆盡。
+廢墟之上，銀白色將整個基地容納入自己的懷抱。
+新生的龐然大物輕盈地轉動著自己幾何形的軀幹，冷冷地注視著地面上的所有人。
+[name="多蘿西"]......
+[dialog]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[playsound(key="$d_avg_collapse", volume=0.6)]
+眼前的這一幕並沒有超出她的理解。
+她知曉一切的原理，計算過所有的可能性。
+但她依然忘了呼吸，忘了眨眼，忘了腳下震顫的大地，以及周遭呼嘯的狂風。
+她一直以來的夢想從一沓圖紙、一句承諾變成了活生生的現實。
+[name="多蘿西"]非常美麗......
+但也異常恐怖。
+[playsound(key="$d_avg_rockfall", volume=0.6)]
+[playsound(key="$smallearthquake", volume=0.6)]
+[CameraShake(duration=2, xstrength=4, ystrength=4, vibrato=20, randomness=30, fadeout=false)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Image]
+[character(fadetime=0)]
+[Background(image="29_g1_outdoorbase",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[character(name="avg_108_silent_1#4$1")]
+[name="赫默"]快趴下——
+[character(name="avg_4048_doroth_1#4$1")]
+[name="多蘿西"]......
+[character(name="avg_108_silent_1#4$1",name2="avg_4048_doroth_1#4$1")]
+[Dialog]
+[characteraction(name="left", type="jump", xpos=100, power=0, times=1, fadetime=0.1, block=true)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$fightgeneral",volume=1)] 
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[characteraction(name="left", type="jump", xpos=250, power=5, times=1, fadetime=1,block=true)]
+[characteraction(name="right", type="move", xpos=300, power=0, times=1, fadetime=1, block=true)]
+[Character(fadetime=0.5)]
+[dialog]
+[Character]
+[CameraShake(duration=2, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_sp_ballista")]
+[PlaySound(key="$d_avg_rockfall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.4, r=1, g=1, b=1, fadetime=1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=2)]
+[character(name="avg_108_silent_1#4$1")]
+[CameraShake(duration=0.5, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="赫默"]你剛才站的位置非常危險......只差一點點，你就會被磚瓦砸傷！
+[character(name="avg_4048_doroth_1#1$1")]
+[name="多蘿西"]......來不及了。
+[character(name="avg_108_silent_1#4$1")]
+[name="赫默"]什麼來不及了？
+[character(name="avg_4048_doroth_1#2$1")]
+[name="多蘿西"]醫生，你沒能真的阻止我。我的實驗......還是成功了。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[character(fadetime=0)]
+[Background(image="29_g11_monitoringroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]斐爾迪南主任，實驗區那東西——
+[character(name="avg_npc_522_1#6$1")]
+[name="斐爾迪南"]你很恐懼。
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]恐懼......呵呵，怎麼會？多麼震撼人心的成果啊！我、我衷心地為您......和弗蘭克斯主任感到高興。
+[character(name="avg_npc_522_1#1$1")]
+[name="斐爾迪南"]你的牙齒正在打顫。
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]哈......哈哈......
+[character(name="avg_npc_522_1#1$1")]
+[name="斐爾迪南"]很好。
+[character(name="avg_npc_522_1#1$1")]
+[name="斐爾迪南"]畏懼未知而龐大之物，這是弱小者的本能。
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]您說得對，在您的成果面前，我們的敵人......哥倫比亞的敵人都將感到恐懼，並為之顫抖！
+[character(name="avg_npc_522_1#1$1")]
+[name="斐爾迪南"]威懾敵人？
+[character(name="avg_npc_522_1#1$1")]
+[name="斐爾迪南"]這是那幫軍人成天操心的事。他們資助我，我給他們武器——各取所需而已。
+[character(name="avg_npc_522_1#1$1")]
+[name="斐爾迪南"]不過你提醒了我。
+[character(name="avg_npc_522_1#1$1")]
+[name="斐爾迪南"]是時候進行下一個階段的實驗了。
+[character(name="avg_npc_528_1#1$1")]
+[name="萊茵防衛科成員"]......那會不會激怒它？基地裡的人都會......
+[character(name="avg_npc_522_1#6$1")]
+[name="斐爾迪南"]他們的付出是偉大的。
+[character(name="avg_npc_522_1#6$1")]
+[name="斐爾迪南"]記住他們的名字。
+[character(name="avg_npc_522_1#6$1")]
+[name="斐爾迪南"]作為真正意義上的開拓者，他們將會被載入史冊。
+[character(name="avg_npc_522_1#6$1")]
+[name="斐爾迪南"]他們用無畏的精神孕育了這頭巨大的猛獸，而我們將掌握它、利用它，讓它成為我們的雙手和雙眼。
+[character(name="avg_npc_522_1#6$1")]
+[name="斐爾迪南"]就像我們的祖先，那些勇敢的開拓者驅使著馱獸，讓文明征服了荒野——
+[character(name="avg_npc_522_1#6$1")]
+[name="斐爾迪南"]我們也將驅使這頭由技術創造的猛獸，開拓更多前人未至之境。
+[character(name="avg_npc_522_1#4$1")]
+[name="斐爾迪南"]——我們將成為先驅者，拓展文明的邊界。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[character(fadetime=0)]
+[Background(image="29_g1_outdoorbase",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]這......是那些銀色怪物？它們變得......如此巨大......
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]——
+[dialog]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[PlaySound(key="$d_avg_arrowshot", volume=1)]
+[PlaySound(key="$e_atk_arrow_h", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[PlaySound(key="$d_avg_arrowshot", volume=1)]
+[PlaySound(key="$e_atk_arrow_h", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=false)]
+[delay(time=1)]
+[character(name="avg_135_halo_1#6$1")]
+[name="埃琳娜"]這些普通的攻擊都沒有用！
+[character(name="avg_npc_527_1#5$1")]
+[name="瑪麗"]該死的——怪物！
+[dialog]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[PlaySound(key="$d_avg_arrowshot", volume=1)]
+[PlaySound(key="$e_atk_arrow_h", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=false)]
+[delay(time=2)]
+[character(name="avg_1027_greyy2_1#4$2")]
+[name="格雷伊"]你們看到那些箭了嗎？
+[dialog]
+[character]
+先後射出去的三支箭正在整齊劃一地逼近銀色幾何體，它們飛得越來越慢，直到慢得可以忽略不計。
+但它們並沒有墜落。
+在銀色光芒的包裹下，它們在同一個瞬間消失在了眾人的視線裡。
+[character(name="avg_npc_527_1#4$1")]
+[name="瑪麗"]......這怪物會變魔術？
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]是分解。
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]好在它看起來很安靜......
+[dialog]
+[character]
+[delay(time=1)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[PlaySound(key="$d_avg_arrowshot", volume=1)]
+[PlaySound(key="$e_atk_arrow_h", volume=1)]
+[PlaySound(key="$elecsparklaser", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=false)]
+[delay(time=1)]
+[character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]都閃開！
+[dialog]
+[character]
+[Dialog]
+[CameraShake(duration=1, xstrength=8, ystrength=6, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$d_avg_mechadown")]
+[PlaySound(key="$d_sp_ballista")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.25, block=true)]
+[delay(time=1)]
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]唔呃......那是能量炮？還是弩箭？從哪裡發出來的......速度太快，連我都看不清楚......
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]它的移動和攻擊方式都無法用常理解釋。
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]又或者......對它而言，移動和攻擊根本就是一回事......
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]假設這真是......多蘿西實驗的最終完成品，那整個基地都被納入了它的感知範圍。
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]只要它產生了想法，它就能在瞬間改變自己認知域中的所有物體的物理性質......
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]換成好懂一點的說法，我們都成了一個發瘋的小孩手裡的橡皮泥，是吧？
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]......差不多。
+[character(name="avg_135_halo_1#6$1")]
+[name="埃琳娜"]不要再攻擊它，警長，否則的話，它會在幾分鐘內把整個基地夷為平地！
+[character]
+[Dialog]
+[CameraShake(duration=1, xstrength=8, ystrength=6, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$d_sp_ballista")]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.4, block=true)]
+[CameraShake(duration=1, xstrength=8, ystrength=6, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$d_sp_ballista")]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[character(name="avg_135_halo_1#12$1")]
+[name="埃琳娜"]警長，你該不會......
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]我該不會還帶著一批搭載大量爆破物的無人機？
+[character(name="avg_npc_527_1#5$1")]
+[name="瑪麗"]怎麼可能！
+[character(name="avg_1027_greyy2_1#7$2")]
+[name="格雷伊"]難道是那些萊茵生命的人......他們不會是來幫我們對付這個實驗品的吧？
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]當然不是。
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]你們還記得我剛才說的話嗎？
+[character(name="avg_npc_535_1#7$1")]
+[name="桑尼"]......將整個基地夷為平地那部分？
+[character]
+[Dialog]
+[CameraShake(duration=1, xstrength=8, ystrength=6, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$d_sp_ballista")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.25, block=true)]
+[dialog]
+[Character]
+[CameraShake(duration=2, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_rockfall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.4, r=1, g=1, b=1, fadetime=1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]已經開始了......
+[character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]是我眼花了嗎？還是那輛吊車......變成了一個規則的球體？
+[character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]要不了多久，居住地也會遭殃！
+[character(name="avg_npc_527_1#4$1")]
+[name="瑪麗"]該死，要是這個基地完蛋了，特里蒙......其他城市的人還都被蒙在鼓裡。
+[character(name="avg_npc_527_1#5$1")]
+[name="瑪麗"]他們不知道自己可能會在睡夢中被一群愚蠢科學家造出來的怪物揉成團！
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]......
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]我們必須馬上離開這裡。
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]......消息。
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]我們得把消息傳出去。他早就想好了要走到這一步......
+[character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]到底誰要走到這一步？是多蘿西·弗蘭克斯指使的嗎？
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]不，不是的。
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]——是一個騙了我很久，把我耍得團團轉的人。
+[name="埃琳娜"]他想把你們拓荒者的遭遇......還有整個基地發生的事情全部抹消。
+[name="埃琳娜"]萊茵生命的人都有可能站在他那邊......
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]警局大概也都被買通了。
+[character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]我打賭沒有任何一家媒體敢報導這條新聞。
+[character(name="avg_1027_greyy2_1#7$2")]
+[name="格雷伊"]埃琳娜小姐，您知道我們該把資訊傳給誰。
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]......羅德島。
+[character(name="avg_1027_greyy2_1#7$2")]
+[name="格雷伊"]我這就去找赫默醫生。這將是我們本次行動最關鍵的任務。
+[character(name="avg_135_halo_1#6$1")]
+[name="埃琳娜"]那樣的話， 你會被困在這裡......你們甚至會有生命危險！
+[character(name="avg_1027_greyy2_1#9$2")]
+[name="格雷伊"]......我相信博士，也相信您，埃琳娜小姐。
+[character(name="avg_1027_greyy2_1#9$2")]
+[name="格雷伊"]我們一定能做到。
+[dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[character(fadetime=1)]
+[delay(time=1.5)]
+[character(name="avg_135_halo_1#11$1")]
+[name="埃琳娜"]......相信我？
+[name="埃琳娜"]我能做的事......
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]監控站......我得去監控站。
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]......需要搭車嗎？
+[character(name="avg_135_halo_1#9$1")]
+[name="埃琳娜"]那邊的載具......
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]我問你們萊茵生命借的。
+[character(name="avg_npc_527_1#1$1")]
+[name="瑪麗"]正好，我也要回去找這次事件真正的犯人。我們應該順路吧？
+[character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]能不能算我一個？
+[character(name="avg_npc_535_1#11$1")]
+[name="桑尼"]不管怎麼說，警官，我還是你抓住的嫌犯......
+[dialog]
+[character]
+瑪麗沒有回答，但是她向桑尼伸出了手。
+一旁的埃琳娜也做出了一模一樣的舉動。
+桑尼拉住了兩隻手，躍上發動了的載具。
+[dialog]
+[PlaySound(key="$sportscarstart")]
+[delay(time=1)]
+[PlaySound(key="$drift")]
+警察，拓荒者，研究員——三個人一起衝向基地邊緣。
+背後的風沙一路追趕，卻沒能將他們留下。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Image]

@@ -1,0 +1,424 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="21_G7_decisivebattlealley_d",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_867_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="m")]
+[name="“灰禮帽”"]很爽快，羅德島的博士。
+[name="“灰禮帽”"]一處安全地點的位置已經發送到了亞歷山德莉娜的終端上，請在那裡待命。我不能保證你們任何超出安排的行動的安全。
+[charslot(slot="m",name="avg_npc_407_1#5$1",focus="m")]
+[name="推進之王"]終端？什麼時候......？!
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="m")]
+[name="“灰禮帽”"]你們有幾個厲害的傢伙，這很好，這應該是達成我們共同目標的助力，而不是破壞我們合作的阻礙。
+[name="“灰禮帽”"]對吧？
+[Dialog]
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="none")]
+[Decision(options="這不僅僅取決於我們。;......;把脅迫稱作合作是維多利亞人的傳統嗎？", values="1;2;3")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="m")]
+[name="“灰禮帽”"]當然，我們需要慢慢建立信任。
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="m")]
+[name="“灰禮帽”"]謹慎的沉默，我很欣賞。
+[Predicate(references="3")]
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="m")]
+[name="“灰禮帽”"]很遺憾，是的。
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_867_1#1$1",focus="m")]
+[name="“灰禮帽”"]請等候下一次的聯絡。
+[Dialog]
+[PlaySound(key="$d_avg_walk_stage",channel="n",loop=false)]
+[stopsound(channel="n",fadetime=2.5)]
+[charslot(slot="m",name="avg_npc_867_1#1$1",afrom=1,ato=0,duration=1)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_395_1#1$1",focus="m")]
+[name="阿斯卡綸"]......
+[name="阿斯卡綸"]博士，我需要去聯繫可露希爾，我們需要重新評估一下羅德島的通訊安全，在此之前，請保持無線電靜默。
+[charslot(slot="m",name="avg_npc_395_1#7$1",focus="m")]
+[name="阿斯卡綸"]當然，還有......處理本艦在維多利亞境內停留的手續問題。
+[Dialog]
+[charslot(slot="m",name="avg_npc_395_1#7$1",afrom=1,ato=0,duration=0.5)]
+[Delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_npc_394_1#21$1",focus="m")]
+[name="阿米婭"]伊內絲小姐，謝謝你。
+[Dialog]
+[charslot]
+[Decision(options="你好，伊內絲，我們是第一次見面嗎？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4087_ines_1#1$1",focus="m")]
+[name="伊內絲"]恐怕不是。
+[Dialog]
+[charslot(slot="m",name="avg_4087_ines_1#1$1",focus="none")]
+[Decision(options="我喪失了一些......記憶。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4087_ines_1#1$1",focus="m")]
+[name="伊內絲"]......我知道。
+[name="伊內絲"]對於這次的你，是第一次見面。
+[charslot(slot="m",name="avg_4087_ines_1#14$1",focus="m")]
+[name="伊內絲"]你真的......失憶了嗎？還是，這也是你計劃的一部分。
+[Dialog]
+[charslot(slot="m",name="avg_4087_ines_1#14$1",focus="none")]
+[Decision(options="我確實忘記了很多事情。;......;你是怎麼認為的？", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_4087_ines_1#14$1",focus="m")]
+[name="伊內絲"]......
+[charslot(slot="m",name="avg_4087_ines_1#1$1",focus="m")]
+[name="伊內絲"]我從不輕易下判斷，Dr.{@nickname}。我能感覺到，你確實發生了一些......變化。
+[name="伊內絲"]我們之後的相處時間，還有很多。
+[name="伊內絲"]相比於聽那些口頭上的宣言，我更傾向於自己去看。
+[charslot(slot="m",name="avg_npc_394_1#18$1",focus="m")]
+[name="阿米婭"]伊內絲小姐，你對博士......
+[charslot(slot="m",name="avg_4087_ines_1#11$1",focus="m")]
+[name="伊內絲"]放心吧，阿米婭，我會收好我的偏見。
+[charslot(slot="m",name="avg_4087_ines_1#1$1",focus="m")]
+[name="伊內絲"]暫時。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="27_g7_subway", screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_229_1#1")]
+[charslot(slot="r",name="avg_npc_398_1#1$1")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="r",name="avg_npc_398_1#1$1",focus="r")]
+[name="自救軍戰士"]撤離已經基本完成了！
+[charslot(slot="l",name="avg_npc_229_1#6",focus="l")]
+[name="號角"]很好，我們也必須離開這裡。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_650_1#3$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$e_skill_ignite_cast", volume=0.6)]
+[PlaySound(key="$p_aoe_nmag_h", volume=1,delay=0.6)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.1, block=true)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.2, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Delay(time=0.2)]
+[musicvolume(volume=0, fadetime=0.5)]
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_419_1#1$1",focus="all")]
+[charslot(slot="r",name="avg_npc_419_1#1$1",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="l",name="avg_npc_419_1#1$1",afrom=1,ato=0,duration=0.5)]
+[charslot(slot="r",name="avg_npc_419_1#1$1",afrom=1,ato=0,duration=0.5)]
+[Delay(time=1.5)]
+[musicvolume(volume=0.6, fadetime=1)]
+[charslot]
+[charslot(slot="m",name="avg_npc_414_1#1$1",focus="m")]
+[name="羅本"]那個羅德島的薩卡茲，是叫Logos嗎？
+[charslot(slot="m",name="avg_npc_229_1#1",focus="m")]
+[name="號角"]我還以為，在與Misery先生並肩作戰這麼久以後，我們都已經不會再為羅德島的作戰方式感到驚訝了。
+[charslot(slot="m",name="avg_npc_414_1#1$1",focus="m")]
+[name="羅本"]也對。不管那位Logos先生是什麼身份，他的那些咒術都幫了我們大忙。
+[charslot(slot="m",name="avg_npc_398_1#1$1",focus="m")]
+[name="自救軍戰士"]......哈，而且他玩飛鏢很有一手。
+[name="自救軍戰士"]我有幸跟他比過幾次，他的準頭可能和他的那些法術一樣恐怖。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[charslot(slot="m",name="avg_npc_650_1#1$1",duration=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_650_1#1$1",focus="m")]
+[name="Logos"]......我的一位朋友，教過我一些小技巧罷了。
+[name="Logos"]那傢伙圓凳滑行賽比不過我，但玩起飛鏢來......不差。
+[name="Logos"]號角女士，薩卡茲的部隊已經暫時退卻，抓緊機會。
+[charslot(slot="m",name="avg_npc_229_1#1",focus="m")]
+[name="號角"]根據計劃，羅德島和自救軍會通過補給線，撤往那條運輸通道的起點，一個叫布倫特伍德的鎮子附近，並嘗試重新建立安全屋。
+[name="號角"]我們去那裡與他們會合。
+[name="號角"]我建議向城牆的方向突圍，諾伯特區被拋離了，薩卡茲雖然合攏了城牆，但還來不及新建一個地塊填補那裡。
+[name="號角"]那些裸露的地下結構會幫上我們的忙的。
+[Dialog]
+[charslot]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_657_1#1$1",posfrom="200,0",posto="0,0",afrom=0,ato=1,duration=1,isblock=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_657_1#1$1",posfrom="0,0",posto="-300,0",duration=0.7)]
+[charslot(slot="m",name="avg_npc_657_1#1$1",afrom=1,ato=0,duration=0.4,isblock=true)]
+[Delay(time=1)]
+[Dialog]
+[charslot]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_650_1#4$1",focus="m")]
+[name="Logos"]......
+[charslot(slot="m",name="avg_npc_650_1#3$1",focus="m")]
+[name="Logos"]看來，我又遇到了一位故人。
+[charslot(slot="m",name="avg_npc_398_1#1$1",focus="m")]
+[name="自救軍戰士"]是那位教飛鏢的朋友嗎？
+[charslot(slot="m",name="avg_npc_650_1#3$1",focus="m")]
+[name="Logos"]很遺憾，並不是。
+[name="Logos"]與這位故人不同，我的朋友們至死如一。
+[name="Logos"]各位，我在城內恐怕還有些小事需要處理，號角女士有能力帶你們離開倫蒂尼姆。我的同事Misery也會在必要時刻支援你們。
+[charslot(slot="m",name="avg_npc_229_1#1",focus="m")]
+[name="號角"]......我明白了。
+[name="號角"]各位，保持隱蔽，跟我來。
+[Dialog]
+[playsound(key="$d_gen_soldiersrun",volume=0.7)]
+[charslot(slot="m",name="avg_npc_229_1#1",afrom=1,ato=0,duration=1)]
+[Delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="27_g7_subway", screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_650_1#1$1")]
+[charslot(slot="r",name="avg_npc_657_1#8$1")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_650_1#1$1",focus="l")]
+[name="Logos"]往日的山巔當真如此值得懷念？淚與血並不值得你為之著迷。
+[charslot(slot="r",name="avg_npc_657_1#8$1",focus="r")]
+[name="“茉莉”"]我承認，我對這些並沒有如此興致盎然。
+[name="“茉莉”"]但倘若，只剩下山巔可供棲身，只有榮光可得溫暖呢？
+[charslot(slot="l",name="avg_npc_650_1#1$1",focus="l")]
+[name="Logos"]......
+[name="Logos"]我以為我已經追獵了足夠多的你。
+[charslot(slot="r",name="avg_npc_657_1#6$1",focus="r")]
+[name="“茉莉”"]三十一個“茉莉”，你很努力，女妖。
+[charslot(slot="l",name="avg_npc_650_1#2$1",focus="l")]
+[name="Logos"]但你還是得逞了，你幫助特雷西斯瓦解了自救軍。
+[charslot(slot="r",name="avg_npc_657_1#6$1",focus="r")]
+[name="“茉莉”"]工作而已。
+[charslot(slot="l",name="avg_npc_650_1#2$1",focus="l")]
+[name="Logos"]......我會撬開倫蒂尼姆的每一片瓦，找到每一個躲藏在暗處的你的碎片，變形者。
+[name="Logos"]你仍拒絕相信改變的可能，這從來就是你的選擇。
+[Dialog]
+[charslot(slot="r",name="avg_npc_657_1#6$1",focus="all")]
+[delay(time=0.2)]
+[charslot(slot="r",name="avg_npc_657_1#6$1",afrom=1,ato=0,duration=0.5)]
+[delay(time=0.5)]
+[playsound(key="$d_avg_humanchange")]
+[charslot(slot="r",name="avg_npc_426_1#1$1",afrom=0,ato=1,duration=1)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_426_1#1$1",focus="r")]
+[name="變形者集群"]你是不是有些太自大了，年輕的女妖？我們瞭解變化，我們自變化中而來。
+[name="變形者集群"]但變化不過是適應的手段，任何改變都有其最終的目的。
+[name="變形者集群"]在薩卡茲還未獲得如此模樣之時，我們便行走於大地之上。
+[name="變形者集群"]理念、信仰、宗旨、口號，無一逃得過歲月的沖刷。
+[charslot(slot="r",name="avg_npc_426_1#10$1",focus="r")]
+[name="變形者集群"]你那些自以為新鮮的發想早有人想過，你那些自以為高尚的道途早有人踐行。
+[charslot(slot="r",name="avg_npc_426_1#1$1",focus="r")]
+[name="變形者集群"]他們如今在哪裡？
+[name="變形者集群"]我們卻仍站在你的面前。
+[name="變形者集群"]這便是最好的證明。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="37_g1_glasgowboxinggym", screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_punchsp2")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+“砰！”
+[Dialog]
+[PlaySound(key="$d_avg_punchsp1", volume=0.3)]
+[PlaySound(key="$d_avg_punch02", volume=0.4,delay=0.2)]
+[CameraShake(duration=0.6, xstrength=30, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+“砰、砰！”
+[Dialog]
+[charslot(slot="l",name="avg_npc_862_1#11$1",duration=0.7)]
+[charslot(slot="r",name="avg_npc_863_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_862_1#11$1",focus="l")]
+[name="卡鐸爾"]呼——
+[charslot(slot="r",name="avg_npc_863_1#1$1",focus="r")]
+[name="貝爾德"]你該節省些體力，卡鐸爾，你吃的已經夠多的了。
+[name="貝爾德"]戴菲恩已經反映過好幾次你的食量問題了，現在可比不得以往。
+[charslot(slot="l",name="avg_npc_862_1#1$1",focus="l")]
+[name="卡鐸爾"]放輕鬆點，貝爾德，情況還沒有那麼糟。
+[name="卡鐸爾"]那幫魔族佬沒他們看起來的那麼強大，他們只是打了我們一個措手不及。
+[name="卡鐸爾"]運輸工會的馬歇爾找我聊過一次，他們那裡也團結了一批人。只要我們再多拉些人入夥，那幫薩卡茲也並非不可戰勝。
+[name="卡鐸爾"]就像以前我們幾個幫派團結起來對付那些條子們一樣。
+[name="卡鐸爾"]背後突襲，乾淨俐落，“咻咻”，“啪”！
+[charslot(slot="l",name="avg_npc_862_1#4$1",focus="l")]
+[name="卡鐸爾"]幾拳放倒，就這麼簡單。
+[charslot(slot="r",name="avg_npc_863_1#1$1",focus="r")]
+[name="貝爾德"]薩卡茲的軍隊可不是條子。
+[charslot(slot="l",name="avg_npc_862_1#11$1",focus="l")]
+[name="卡鐸爾"]我知道，他們很厲害。
+[name="卡鐸爾"]但我們不怕流血，不怕犧牲！我們會越過倒下的同胞，再把拳頭狠狠砸在他們的臉上——
+[charslot(slot="l",name="avg_npc_862_1#1$1",focus="l")]
+[name="卡鐸爾"]就像拳館的名字，“揍歪下巴”！
+[name="卡鐸爾"]我和馬歇爾盤算過了，我們絕對能贏！
+[charslot(slot="r",name="avg_npc_863_1#9$1",focus="r")]
+[name="貝爾德"]和你收藏的那些龍門劣質錄製影片裡一樣，嗯？
+[charslot(slot="l",name="avg_npc_862_1#10$1",focus="l")]
+[name="卡鐸爾"]我是認真的，我在諾伯特區街頭摸爬滾打的時間比你短不了多少。
+[name="卡鐸爾"]我們得為自己謀一條出路，就像以前一樣。
+[name="卡鐸爾"]你們的那位推進之王當時就這麼離開了格拉斯哥幫，我們那些地盤都拱手讓給了別人，是你和我想盡辦法重新在這裡站穩了腳跟。
+[charslot(slot="l",name="avg_npc_862_1#1$1",focus="l")]
+[name="卡鐸爾"]現在無非像以前一樣，團結起來，做好準備，然後揍翻他們，反正我們一直是這麼過來的。
+[name="卡鐸爾"]不管外面情況怎樣，街頭總有街頭的辦法。
+[charslot(slot="l",name="avg_npc_862_1#11$1",focus="l")]
+[name="卡鐸爾"]接下來，只要尋找到一個時機......
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[charslot(slot="l",name="avg_npc_862_1#11$1",focus="none")]
+[PlaySound(key="$d_avg_knockdoorfast", volume=0.5)]
+[Delay(time=1.5)]
+[charslot(slot="r",name="avg_npc_863_1#9$1",focus="r")]
+[name="貝爾德"]看來戴菲恩他們回來了。
+[Dialog]
+[charslot]
+[PlaySound(key="$dooropenquite", volume=1)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_866_1#6$1",duration=0.7)]
+[charslot(slot="r",name="avg_npc_177",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_866_1#6$1",focus="l")]
+[name="戴菲恩"]......
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_862_1#1$1",focus="m")]
+[name="卡鐸爾"]禿頭佩爾鬆口了嗎？就算是眼下的情況，我們給的價格也相當高，他應該——
+[charslot(slot="m",name="avg_npc_862_1#5$1",focus="m")]
+[name="卡鐸爾"]怎麼了？這是......血？
+[playMusic(intro="$calamity_intro", key="$calamity_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_866_1#6$1",focus="m")]
+[name="戴菲恩"]禿頭佩爾死了。
+[charslot(slot="m",name="avg_npc_862_1#5$1",focus="m")]
+[name="卡鐸爾"]！
+[charslot(slot="m",name="avg_npc_862_1#8$1",focus="m")]
+[name="卡鐸爾"]薩卡茲——
+[charslot(slot="m",name="avg_npc_177",focus="m")]
+[name="膽怯的市民"]不，不是薩卡茲！該死的，我不知道那些都是誰，我們到那家店的時候就已經打起來了！
+[name="膽怯的市民"]他們殺紅了眼！我親眼看到有個拿撬棍的傢伙，把另一個人按在地上，那傢伙甚至——
+[CameraShake(duration=0.3, xstrength=12, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="膽怯的市民"]嘔——咳咳咳！
+[charslot(slot="m",name="avg_npc_866_1#6$1",focus="m")]
+[name="戴菲恩"]情況很糟，大概是哪個餓瘋了的流浪漢盯上了佩爾的店，那蠢貨還把麵包放在玻璃櫥窗裡。
+[name="戴菲恩"]結果可想而知。
+[name="戴菲恩"]你可以猜猜，現在這一片被封鎖的街區裡，這種“流浪漢”有多少。
+[charslot(slot="m",name="avg_npc_862_1#12$1",focus="m")]
+[name="卡鐸爾"]......
+[charslot(slot="m",name="avg_npc_862_1#8$1",focus="m")]
+[name="卡鐸爾"]這些該死的瘋子，大概是什麼違禁品把他們的腦子燒壞了！
+[charslot(slot="m",name="avg_npc_866_1#7$1",focus="m")]
+[name="戴菲恩"]......我認識那個拿撬棍的傢伙，是個賣尾巴毛髮護理膏的推銷員，平時臉上總掛著笑容。
+[name="戴菲恩"]我買過幾次他的產品，他給我打了折，不過談不上好用。
+[charslot(slot="m",name="avg_npc_866_1#6$1",focus="m")]
+[name="戴菲恩"]剛才......我看見他雙眼通紅，嘴角淌著血，那把撬棍已經被他砸得變了形。我幾乎......認不出他來了。
+[name="戴菲恩"]恐慌在蔓延，卡鐸爾。
+[charslot(slot="m",name="avg_npc_862_1#12$1",focus="m")]
+[name="卡鐸爾"]——運輸工會的人說過這種情況，他們說可能有些膽小鬼會發瘋，可是怎麼......
+[Dialog]
+[charslot]
+[PlaySound(key="$bottlebroken", volume=0.6)]
+[PlaySound(key="$d_avg_glass_break", volume=1,delay=0.4)]
+[PlaySound(key="$d_avg_windowbreak", volume=1,delay=0.9)]
+[CameraShake(duration=1.5, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_knockdoorfast", volume=0.7)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_866_1#3$1",focus="m")]
+[name="戴菲恩"]抵住門！
+[charslot(slot="m",name="avg_npc_177",focus="m")]
+[name="膽怯的市民"]我，我......
+[charslot(slot="m",name="avg_npc_863_1#7$1",focus="m")]
+[name="貝爾德"]還愣著幹什麼，快點來幫忙！卡鐸爾，去把沙發推過來！
+[charslot(slot="m",name="avg_npc_862_1#7$1",focus="m")]
+[name="卡鐸爾"]混蛋，你們找死嗎？你們*維多利亞粗口*想幹嘛？
+[charslot(slot="m",name="avg_npc_862_1#7$1",focus="none")]
+[name="門外的聲音"]......
+[charslot(slot="m",name="avg_npc_862_1#7$1",focus="m")]
+[name="卡鐸爾"]滾開，這裡還*維多利亞粗口*有活人呢，這裡是格拉斯哥幫的地盤！
+[charslot(slot="m",name="avg_npc_862_1#7$1",focus="none")]
+[name="門外的聲音"]......
+[charslot(slot="m",name="avg_npc_862_1#7$1",focus="m")]
+[name="卡鐸爾"]貝爾德，小心！
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_axeimp", volume=1)]
+[PlaySound(key="$d_avg_doorbreak", volume=1,delay=0.4)]
+[Blocker(a=1, r=0.95, g=0.95, b=0.95, fadetime=0.1, block=true)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.3, block=true)]
+[Delay(time=1.2)]
+一柄消防斧將拳館厚重的門板劈開一道縫隙，鋒利的斧刃擦著貝爾德的髮梢而過。
+幾根髮絲飄落。
+[charslot(slot="m",name="avg_npc_862_1#7$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=12, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="卡鐸爾"]我說了，這裡還*維多利亞粗口*有活人呢！
+[Dialog]
+[PlaySound(key="$d_avg_woodenladder", volume=0.4)]
+[PlaySound(key="$d_gen_doorclose", volume=0.6,delay=0.3)]
+[CameraShake(duration=0.7, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.2)]
+卡鐸爾抵住門，兩隻手緊緊攥住穿過門板的斧刃，門外的人試了幾次，都沒有成功把斧子重新抽出。
+[charslot(slot="m",name="avg_npc_862_1#7$1",focus="m")]
+[name="卡鐸爾"]不管你是誰，給我滾！否則我會把這把斧頭嵌進你的腦袋裡！我說到做到！
+[charslot(slot="m",name="avg_npc_862_1#7$1",focus="none")]
+[name="門外的聲音"]......
+[Dialog]
+[charslot]
+[PlaySound(key="$gavel1",volume=0.5)]
+[PlaySound(key="$sheildimpact", volume=0.6,delay=0.3)]
+[PlaySound(key="$d_gen_doorclose", volume=0.6,delay=0.8)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=true)]
+斧子又搖晃了幾下，幾次沉重的踹門聲過後，門外的人終於放棄了努力，紛亂的腳步聲逐漸遠去。
+[Dialog]
+[charslot(slot="m",name="avg_npc_177",focus="m")]
+[name="膽怯的市民"]你手上......你的手指......
+[charslot(slot="m",name="avg_npc_862_1#8$1",focus="m")]
+[name="卡鐸爾"]......
+[charslot(slot="m",name="avg_npc_862_1#3$1",focus="m")]
+[name="卡鐸爾"]謝天謝地，拳館最不缺的就是繃帶。
+[charslot(slot="m",name="avg_npc_862_1#8$1",focus="m")]
+[name="卡鐸爾"]貝爾德，戴菲恩，我們得重新清點一遍所有物資。
+[name="卡鐸爾"]我去卸幾個沙袋下來，重新加固一下大門。
+[charslot(slot="m",name="avg_npc_177",focus="m")]
+[name="膽怯的市民"]這......這些人，他們難道都瘋了嗎？！
+[name="膽怯的市民"]他們......諾伯特區本該都是有道德的市民，基本上......警察呢？他們平時開罰單比誰都勤快！
+[charslot(slot="m",name="avg_npc_862_1#8$1",focus="m")]
+[name="卡鐸爾"]我要是個沒來得及溜出地塊的倒楣條子，現在一定揣好武器把自己鎖在家裡。
+[charslot(slot="m",name="avg_npc_862_1#12$1",focus="m")]
+[name="卡鐸爾"]我......之後我得再去運輸工會一趟，馬歇爾的話住在這裡的人們總還是認的。
+[name="卡鐸爾"]他——大家平常都願意聽他的，他能想出辦法來的。
+[name="卡鐸爾"]該死......該死！薩卡茲還在外面，這幫人昏了頭，怎麼能——
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(slot="m",name="avg_npc_862_1#12$1",afrom=1,ato=0,duration=1)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="l",name="avg_npc_177",duration=0.5,focus="l")]
+[charslot(slot="r",name="avg_npc_863_1#7$1",duration=0.5,focus="l")]
+[Delay(time=0.6)]
+[charslot(slot="l",name="avg_npc_177",focus="l")]
+[name="膽怯的市民"]我們......接下來怎麼辦？卡鐸爾之前說，只要等......
+[charslot(slot="r",name="avg_npc_863_1#7$1",focus="r")]
+[name="貝爾德"]一個機會？
+[name="貝爾德"]“下個院士”先生，你知道十五年前諾伯特區的那場大火嗎？
+[charslot(slot="l",name="avg_npc_177",focus="l")]
+[name="膽怯的市民"]啊，我聽說過，好像是在碼頭......
+[charslot(slot="r",name="avg_npc_863_1#7$1",focus="r")]
+[name="貝爾德"]燒掉整個碼頭並沒有什麼困難的。
+[name="貝爾德"]熱得要死的天氣，堆滿刨花的庫房，和一顆沒掐滅的煙頭，就足以釀成那一切。
+[charslot(slot="r",name="avg_npc_863_1#8$1",focus="r")]
+[name="貝爾德"]這種火，沒人能撲得滅的。
+[name="貝爾德"]我們只能眼睜睜看著一切都燒成灰燼。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=3)]
+[charslot]
+[Image]

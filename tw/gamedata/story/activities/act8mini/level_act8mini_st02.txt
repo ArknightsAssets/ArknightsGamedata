@@ -1,0 +1,820 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")] 
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+4:11 P.M. 天氣/陰 能見度十公里
+羅德島本艦，醫療艙
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.4)]
+[Dialog]
+[delay]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_infirmary",screenadapt="coverall")]
+[Character(name="char_003_kalts_1#1",fadetime=0,block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[name="凱爾希"]可以把電極片取下來了。
+[dialog]
+[Decision(options="結果怎麼樣？;......;我的腦袋又熱又脹，很不舒服。", values="1;2;3")]
+[Predicate(references="1;2")]
+[Character(name="char_003_kalts_1#3")]
+[name="凱爾希"]並沒有什麼新的進展。
+[Predicate(references="3")]
+[Character(name="char_003_kalts_1#3")]
+[name="凱爾希"]休息一會，這些症狀會很快消失。
+[Predicate(references="1;2;3")]
+[name="凱爾希"]Dr.{@nickname}，這一個多月裡，我對你的大腦進行了七次掃描，每一次結果都大同小異。
+[name="凱爾希"]你的內側顳葉並沒有問題，而你其他腦區的神經元也和大多數年輕人一樣活躍。
+[Character(name="char_003_kalts_1#1")]
+[name="凱爾希"]所以，根據我的判斷，接下來你不必頻繁地前來醫療艙接受這些令你不適的檢測了。
+[dialog]
+[Decision(options="那我的記憶是怎麼回事？", values="1")]
+[Predicate(references="1")]
+[name="凱爾希"]毫無疑問，你失去了很多記憶——哪怕是你，也無法透過精心偽裝來操控所有的檢測結果。
+[name="凱爾希"]那些記憶是情節性的，關於你對自己身份的主觀意識，更關於你在切爾諾伯格的石棺內沉睡之前的所有經歷。
+[name="凱爾希"]與之相對，你的程序記憶恢復得極快。
+[name="凱爾希"]無論是依據阿米婭和杜賓的報告，還是我的觀察，這個結論是明確的。
+[name="凱爾希"]你在切爾諾伯格事件中表現出來的戰地指揮能力並不比以前遜色多少。
+[dialog]
+[Decision(options="為什麼會這樣？;......;這麼說，我還有用？", values="1;2;3")]
+[Predicate(references="1")]
+[name="凱爾希"]記憶損傷的原因有很多種，有些是不可抗力，有些卻是主觀的。
+[name="凱爾希"]醫學檢測手段只能排除器質性的病變。
+[Predicate(references="2")]
+[name="凱爾希"]當然，你遠比過去沉默。
+[name="凱爾希"]考慮到你的語言中樞並未受損，我只能猜測，情節性記憶的缺失令你的性格發生了一些變化。
+[Predicate(references="3")]
+[name="凱爾希"]你對羅德島的意義遠不止有用那麼粗淺。
+[name="凱爾希"]即使你真的喪失了全部記憶，成為了一個懵懂的普通人，阿米婭也不會後悔救你，羅德島上也永遠有你的容身之所。
+[Predicate(references="1;2;3")]
+[name="凱爾希"]無論如何，我相信，你保有的技能將如過去那樣發揮關鍵作用。
+[dialog]
+[Decision(options="我想幫到你。;我想幫到阿米婭。", values="1;2")]
+[Predicate(references="1;2")]
+[name="凱爾希"]我知道。
+[name="凱爾希"]而且我也看到了你的努力。
+[name="凱爾希"]離開龍門之後，我們這段時間都行駛在荒地上，幹員們需要休整的機會，阿米婭也能適當休息。
+[Character(name="char_003_kalts_1#4")]
+[name="凱爾希"]你同樣需要喘口氣，不是嗎？
+[dialog]
+[Decision(options="我是想要一點時間來適應。;......;我還不想在這裡止步。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="char_003_kalts_1#1")]
+[name="凱爾希"]有PRTS幫助你，想必你用不了多少時間就能適應羅德島上的工作。
+[name="凱爾希"]然而我不希望你逼迫自己。
+[name="凱爾希"]從一場巨大的災難中艱難歸來的，不止羅德島，還有你，Dr.{@nickname}。
+[name="凱爾希"]你身體的指征基本恢復了正常，可你的記憶依舊受損，你的精神狀態也稱不上穩定。
+[Character(name="char_003_kalts_1#2")]
+[name="凱爾希"]作為一名病人，操勞過度對你來說沒好處。
+[dialog]
+[Decision(options="你也是病人。;阿米婭也是病人。", values="1;2")]
+[Predicate(references="1")]
+[Character(name="char_003_kalts_1#3")]
+[name="凱爾希"]我？多謝關心。
+[Character(name="char_003_kalts_1#1")]
+[name="凱爾希"]我不能說自己習慣了礦石病，但我向你保證，我一定是最後需要擔心的那一個。
+[Predicate(references="2")]
+[name="凱爾希"]阿米婭知道你擔心她，她最近比以前更關注自己的身體了。
+[name="凱爾希"]我不得不承認，有些話由你說出來，確實比我來說更有用。
+[Predicate(references="1;2")]
+[name="凱爾希"]Dr.{@nickname}，你在短短一個月內就接手了艦內各部門的人員調配工作。
+[name="凱爾希"]除此以外，我也經常看到你和作戰幹員一起回顧過去的戰鬥，並進一步探討戰術優化的可能性。
+[name="凱爾希"]就算是在接受檢查的剛才，你也不曾停下閱讀。你看的是前幾天剛報到的新幹員提交的每日簡報吧？
+[Character(name="char_003_kalts_1#3")]
+[name="凱爾希"]而且，我看過你的筆記。
+[name="凱爾希"]那些關於幹員們最瑣碎的細節的記錄，思考戰術時偶然間的靈光一現......
+[name="凱爾希"]以及羅德島業務效率的計算公式，乃至我看不出意義的塗鴉，都是你投入工作的證明。
+[name="凱爾希"]雖然大部分任務都能依靠PRTS輔助完成，但我想這是你更喜歡的工作方式。
+[dialog]
+[Decision(options="只是理清思路的方式。;PRTS上的數據缺了點人情味。;你沒看到我對你的抱怨吧？！", values="1;2;3")]
+[Predicate(references="1")]
+[name="凱爾希"]隨著筆記厚度增加，你的思路的確有所進步。
+[Predicate(references="2")]
+[name="凱爾希"]PRTS只是工具。不過度依賴工具，是工作的好習慣。
+[Predicate(references="3")]
+[name="凱爾希"]原來那是抱怨？我更樂意把那些話當成你對我的誇獎。
+[Predicate(references="1;2;3")]
+[name="凱爾希"]你的各方面能力都在迅速地恢復，這不止是你的技能記憶得到了保留的緣故，更是由於你非同一般的努力。
+[name="凱爾希"]有意識地鍛煉將會幫助你的大腦迅速回到沉睡之前的狀態，甚至有可能令你的記憶比我預期的更快恢復。
+[dialog]
+[Decision(options="你希望我儘快恢復嗎？", values="1")]
+[Predicate(references="1")]
+[name="凱爾希"]我是你的醫生，沒有醫生不希望病人早日康復。
+[name="凱爾希"]只是，如果你因為拼命工作而累倒了，阿米婭的狀態也會受到影響。
+[dialog]
+[Decision(options="你只關心阿米婭？;......;我知道了，你關心我。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="char_003_kalts_1#3")]
+[name="凱爾希"]偶爾流露的這種情緒使你與過去的你有很大不同，這一點很有趣，但如果你展現情緒的對象是我，那就沒什麼必要。
+[name="凱爾希"]我對你說過很多次，確保你的身心健康始終是我的職責之一。
+[Character(name="char_003_kalts_1#4")]
+[name="凱爾希"]所以，是的，即便不是在戰場上，而是在這裡，我也關心著你。
+[dialog]
+[Decision(options="真稀奇，你會這麼和我說話。;......;好。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="char_003_kalts_1#2")]
+[name="凱爾希"]今天的檢查已經結束。
+[Character(name="char_003_kalts_1#3")]
+[name="凱爾希"]正如我之前說的，下周同一時間，你不用再來這裡報到。
+[name="凱爾希"]每天上午和晚上的定時檢查還要持續一段時間。Lancet-2會替我照看你。
+[name="凱爾希"]一旦發現你的生理狀態不支援你繼續工作，你就必須立刻回到醫療艙。
+[name="凱爾希"]現在，你能回去工作了，博士。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character]
+[Background(image="bg_corridor",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+4:32 P.M. 天氣/陰 能見度七公里
+羅德島本艦，艦橋外走廊
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[character(name="char_183_skgoat_1",fadetime=1.5)]
+[delay(time=3)]
+[Character(name="avg_npc_088",name2="char_183_skgoat_1",focus=1)]
+[name="領航員A"]地靈小姐，你怎麼來了？
+[Character(name="avg_npc_088",name2="char_183_skgoat_1",focus=2)]
+[name="地靈"]上午提交的地質監測報告，我更新了下。
+[Character(name="avg_npc_088",name2="char_183_skgoat_1",focus=1)]
+[name="領航員A"]這麼快就有更新？地靈小姐，這可不像你啊。
+[Character(name="avg_npc_088",name2="char_183_skgoat_1",focus=2)]
+[name="地靈"]資料變化很快。否則的話，我也不至於錯過午覺。
+[name="地靈"]麻煩把報告交給你們組長。最下面有我的建議。
+[Character(name="avg_npc_088",name2="char_183_skgoat_1",focus=1)]
+[name="領航員A"]好的。大風預警是吧？
+[name="領航員A"]沒問題，工程部門提前兩天加固了防風板，後勤人員也已經通知了各位幹員遠離甲板風險區。
+[stopmusic(fadetime=2)]
+[Character(name="avg_npc_088",name2="char_183_skgoat_1",focus=2)]
+[name="地靈"]不止。你往下看。
+[Character(name="avg_npc_088",name2="char_183_skgoat_1",focus=1)]
+[playMusic(intro="$mist_intro", key="$mist_loop", volume=0.4)]
+[name="領航員A"]呃......航線前方可能出現強風暴？建議降速行駛或者繞行？
+[name="領航員A"]地靈小姐，你說的這個風暴，災害等級有多高？
+[Character(name="avg_npc_088",name2="char_183_skgoat_1",focus=2)]
+[name="地靈"]......我不知道。
+[name="地靈"]我只是基於資料的異常提出了一個可能性。我觀測到，前方不止一個氣旋正在生成，而且增強速度超出預期。
+[Character(name="avg_npc_088",name2="char_183_skgoat_1",focus=1)]
+[name="領航員A"]這個結論會不會太模糊了一些。
+[name="領航員A"]這條路線是在一個月前定下的，經過了各方的批准確認和推行，如果現在臨時變動也會產生極大的影響。
+[name="領航員A"]上次會議地靈小姐也參與了吧，我們選擇的路線風險評估是極低危，過去十年間，從龍門到萊塔尼亞的官方商隊都常從這裡通行。
+[Character(name="avg_npc_088",name2="char_183_skgoat_1",focus=2)]
+[name="地靈"]是的。理論上，我們已經避開了天災多發區，遇險機率很低。
+[Character(name="avg_npc_088",name2="char_183_skgoat_1",focus=1)]
+[name="領航員A"]這麼說來，你也沒把握？
+[name="領航員A"]上頭對我們的要求是儘快遠離烏薩斯和龍門，要是臨時決定繞路走，恐怕會耽擱時間。
+[Character(name="avg_npc_088",name2="char_183_skgoat_1",focus=2)]
+[name="地靈"]......算了，我只需要確保你收到過我的預警。
+[name="地靈"]至於你們怎麼判斷，這不在我的職責範圍內，我無權干涉。
+[Character(name="avg_npc_088",name2="char_183_skgoat_1",focus=1)]
+[name="領航員A"]地靈小姐，請別急著走，按照流程，我去通知組長，我們討論一下......
+[dialog]
+[Decision(options="來不及了。", values="1")]
+[Predicate(references="1")]
+[Character(name="avg_npc_088",fadetime=0,block=true)]
+[name="領航員A"]咦，博士？！您怎麼會出現在這裡？
+[name="領航員A"]在正常航行的時候，您不是都在自己的辦公室裡嗎？
+[dialog]
+[Decision(options="我正準備上艦橋。", values="1")]
+[Predicate(references="1")]
+[name="領航員A"]那可真是太巧了......
+[name="領航員A"]您拿走了這份報告，是想親自去和我們組長說明情況嗎？
+[dialog]
+[Decision(options="風暴就在眼前，他很快就會察覺。;情況緊急，我直接和阿米婭說。", values="1;2")]
+[Predicate(references="1;2")]
+[name="領航員A"]什麼，這麼嚴重嗎？那可糟了......
+[Character(name="char_183_skgoat_1",fadetime=0,block=true)]
+[name="地靈"]博士，你相信我？
+[dialog]
+[Decision(options="我相信事實。;我相信我的幹員。", values="1;2")]
+[Predicate(references="1;2")]
+[name="地靈"]那我和你一起去艦橋，我會繼續觀測氣旋的即時情況，隨時向你和阿米婭小姐報告。
+[dialog]
+[Decision(options="辛苦了，這樣最好。;不用加班費？", values="1;2")]
+[Predicate(references="1;2")]
+[name="地靈"]這在我的職責範圍內。
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_bridge",screenadapt="coverall")]
+[character]
+4:39 P.M. 天氣/陰 能見度四公里
+羅德島本艦，艦橋
+[Dialog]
+[Character(name="char_013_riop",name2="char_002_amiya_1",focus=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="中控人員"]報告，前方風速正在迅速增強！
+[name="中控人員"]能見度持續下降中，按照這個起風的速度，過不了幾分鐘就會跌破一公里！
+[Character(name="char_013_riop",name2="char_002_amiya_1",focus=2)]
+[name="阿米婭"]有沒有啟動沙暴模式的輔助駕駛功能？
+[Character(name="char_013_riop",name2="char_002_amiya_1",focus=1)]
+[name="中控人員"]已經按您的安排提前啟動了。
+[name="中控人員"]但是，阿米婭小姐，我擔心這不是普通沙暴......
+[playMusic(intro="$tense_intro", key="$tense_loop", volume=0.4)]
+[Character(name="avg_npc_012")]
+[name="領航員B"]天啊！
+[characteraction(name="middle", type="jump", power=5, times=2, fadetime=0.51,block=true)]
+[dialog]
+[delay(time=1)]
+[Character(name="avg_npc_012",name2="char_002_amiya_1#6",focus=2)]
+[name="阿米婭"]帕維爾，你看到了什麼？
+[Character(name="avg_npc_012",name2="char_002_amiya_1#6",focus=1)]
+[name="領航員B"]感測器偵測到前方雷暴雲團！
+[Character(name="avg_npc_012",name2="char_002_amiya_1#6",focus=2)]
+[name="阿米婭"]——
+[character(name="char_002_amiya_1#7")]
+[name="阿米婭"]打開廣播，通知全艦，羅德島馬上將會經過雷暴區域，警戒等級提高一級！
+[name="阿米婭"]中控人員，立刻降速！
+[dialog]
+[character]
+[CameraShake(duration=2, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=3)]
+[character(name="char_002_amiya_1#5")]
+[name="阿米婭"]唔......晃得好厲害......
+[character(name="char_002_amiya_1#2")]
+[name="阿米婭"]情況怎麼樣？
+[Character(name="char_013_riop",name2="char_002_amiya_1",focus=1)]
+[name="中控人員"]舷側板壓強正在迅速飆升！
+[name="中控人員"]最外側防風板損傷百分之七十，基本失效！
+[name="中控人員"]還有......船體附近檢測到多處異常熱源，能量幅度逼近警戒閾值！
+[character(name="char_002_amiya_1#2")]
+[name="阿米婭"]這個意思難道是......
+[dialog]
+[Decision(options="你想的沒錯，是天災。", values="1")]
+[Predicate(references="1")]
+[character(name="char_002_amiya_1#5")]
+[name="阿米婭"]啊，Dr.{@nickname}！
+[name="阿米婭"]怎麼......回事？
+[dialog]
+[Decision(options="沒有時間解釋了。;是超級單體雷暴。", values="1;2")]
+[Predicate(references="1;2")]
+[character(name="char_002_amiya_1")]
+[name="阿米婭"]好......我知道了。
+[dialog]
+[delay(time=0.5)]
+[character(name="char_002_amiya_1#7")]
+[playsound(key="$d_gen_transmissionget")]
+[name="阿米婭"]全艦啟動紅色天災警戒！
+[name="阿米婭"]一層甲板除艦橋成員外全部撤離，二至六層非工程人員集中到中央區避險！
+[name="阿米婭"]中控人員，暫時保持最低速度航行......
+[character(name="char_002_amiya_1")]
+[name="阿米婭"]領航員，這場雷沙暴會持續多久？
+[character(name="avg_npc_012")]
+[name="領航員B"]這種突發風暴，大概一兩個小時就能過去......
+[Character(name="avg_npc_088")]
+[name="領航員A"]組長，這不好說，還是聽聽博士和地靈小姐的建議吧。
+[dialog]
+[Decision(options="地靈，把你測算的結果告訴大家。", values="1")]
+[Predicate(references="1")]
+[Character(name="char_183_skgoat_1",fadetime=0,block=true)]
+[name="地靈"]好的，博士。
+[name="地靈"]帕維爾先生，博士給你的是我在一個小時前完成的報告。
+[Character(name="avg_npc_012",name2="char_183_skgoat_1",focus=1)]
+[name="領航員B"]......兩公里內有多個小型氣旋？這可不是什麼好兆頭！
+[name="領航員B"]這天災不是一般的雷沙暴......恐怕會演變成烈度最高的風災！
+[Character(name="avg_npc_012",name2="char_183_skgoat_1",focus=2)]
+[name="地靈"]能不能借用一下艦橋上的感測器？
+[Character(name="avg_npc_012",name2="char_183_skgoat_1",focus=1)]
+[name="領航員B"]當然，地靈小姐，我本來也該看出來的......
+[Character(name="avg_npc_012",name2="char_183_skgoat_1",focus=2)]
+[name="地靈"]不必愧疚，帕維爾先生，這次現象極端異常，不在常規天災預測範疇內，就連最老道的天災信使也很難及時看出端倪。
+[name="地靈"]要不是博士支持，我也險些把上述異常值當作誤差略過去。
+[dialog]
+[Decision(options="事情還來得及往好的方向發展。;......;我有一種很不好的預感。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_npc_012",name2="char_183_skgoat_1",focus=2)]
+[name="地靈"]博士，阿米婭小姐，前方那幾個小型氣旋正在增強輻合。
+[name="地靈"]也就是說，多漩渦氣旋的核心即將生成。
+[name="地靈"]一旦核心生成，預估氣旋直徑將達兩公里，持續時間至少七至八小時。
+[character(name="char_002_amiya_1")]
+[name="阿米婭"]如果羅德島保持速度接近風暴核心，會怎麼樣？
+[Character(name="char_013_riop",name2="char_002_amiya_1",focus=1)]
+[name="中控人員"]萬一撞上氣旋，羅德島的艦體可能和被捲起的活性源石粉塵發生高速碰撞，等效於上百個最高當量源石炸彈在舷牆上同時引爆。
+[name="中控人員"]至於後果，阿米婭小姐，我申請不去想像。
+[Character(name="char_013_riop",name2="char_002_amiya_1",focus=2)]
+[name="阿米婭"]還來得及調轉方向嗎？
+[Character(name="char_013_riop",name2="char_002_amiya_1",focus=1)]
+[name="中控人員"]我儘量試試......
+[Character(name="char_013_riop",name2="avg_npc_012",focus=2)]
+[name="領航員B"]風暴核心變向很快，最大速度能達到近千公里每小時。
+[Character(name="char_013_riop",name2="avg_npc_012",focus=1)]
+[name="中控人員"]那我不用試了。
+[name="中控人員"]阿米婭小姐，就算全速撤離，沒選對方向的話，羅德島也跑不過這風暴。
+[Character(name="char_002_amiya_1",name2="avg_npc_012",focus=1)]
+[name="阿米婭"]看來我們只能停在原地。
+[name="阿米婭"]帕維爾先生，我需要艦體損傷評估。
+[Character(name="char_002_amiya_1",name2="avg_npc_012",focus=2)]
+[name="領航員B"]根據過往經驗，假如我們在類似規模的雷沙暴裡待滿七個小時，一至六層甲板平均會有百分之十五左右的損傷......
+[name="領航員B"]其中一層甲板受損將最嚴重，而且不排除會出現人員傷亡。
+[Character(name="char_002_amiya_1#4",name2="avg_npc_012",focus=1)]
+[name="阿米婭"]......這將是羅德島本艦近一年來遭受的最大損失。
+[name="阿米婭"]但似乎沒有其他辦法了......
+[dialog]
+[Decision(options="還有辦法。", values="1")]
+[Predicate(references="1")]
+[character(name="char_002_amiya_1#2")]
+[name="阿米婭"]博士？
+[dialog]
+[Decision(options="我們沒必要承受這損失。;你也不希望停下修一個月的船吧？", values="1;2")]
+[Predicate(references="1;2")]
+[character(name="char_002_amiya_1")]
+[name="阿米婭"]是的，要是在荒地裡停下，羅德島或許還會遭遇其他風險。
+[dialog]
+[Decision(options="我們還有一個選擇。;既然沒法撤退也不想停下，我們還能做什麼呢？", values="1;2")]
+[Predicate(references="1;2")]
+[character(name="char_002_amiya_1")]
+[name="阿米婭"]博士，你是想說，我們繼續前進？
+[Character(name="char_013_riop",name2="char_002_amiya_1",focus=1)]
+[name="中控人員"]不行，能見度太低了！
+[name="中控人員"]就算有輔助駕駛，我也找不到路，我們薩爾貢人都知道，像這樣一頭紮進沙暴就是找死！
+[Character(name="char_013_riop",name2="char_002_amiya_1",focus=2)]
+[name="阿米婭"]卡瑪爾先生，你的顧慮我能理解。
+[name="阿米婭"]但是，我相信博士。
+[character(name="char_002_amiya_1#7")]
+[name="阿米婭"]Dr.{@nickname}，你有把握帶領羅德島駛過天災區嗎？
+[dialog]
+[Decision(options="我需要地靈繼續測算氣旋即時座標。;有。;我需要PRTS幫我計算地表源石能量波形。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[character(name="char_002_amiya_1#7")]
+[name="阿米婭"]好，請大家一起配合博士。
+[Character(name="char_013_riop",name2="char_002_amiya_1",focus=1)]
+[name="中控人員"]用這麼短的時間算出一條安全的路線，這聽起來有點像開玩笑。
+[Character(name="char_013_riop",name2="char_002_amiya_1",focus=2)]
+[name="阿米婭"]博士的話，一定可以。
+[Character(name="char_013_riop",name2="char_002_amiya_1",focus=1)]
+[name="中控人員"]我倒是聽說過博士的厲害......可是開船不同於戰地指揮啊！
+[Character(name="char_013_riop",name2="avg_npc_012",focus=2)]
+[name="領航員B"]我也沒什麼把握......當然，我並不懷疑博士的能力，只是這種即時計算的方法，我聞所未聞......
+[dialog]
+[Character(name="char_183_skgoat_1")]
+[delay(time=1)]
+[name="地靈"]......說不定真能行得通。
+[Character(name="char_183_skgoat_1",name2="avg_npc_012",focus=2)]
+[name="領航員B"]地靈小姐，你能看懂博士飛快寫出來的這些公式？
+[Character(name="char_183_skgoat_1",name2="avg_npc_012",focus=1)]
+[name="地靈"]看不懂。
+[name="地靈"]不過我覺得有些熟悉。
+[name="地靈"]對了......類似的公式，我前兩天聽一位新來的天才後輩提起過，只是博士寫的要複雜且富有變化得多。
+[dialog]
+[Decision(options="路線給領航員了。;需要即時變向的話還請中控人員配合。;阿米婭，準備好了。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[character(name="char_002_amiya_1")]
+[name="阿米婭"]那我們就要前進了！
+[dialog]
+[Decision(options="我輔助你進行指揮。;交給我吧。", values="1;2")]
+[Predicate(references="1;2")]
+[Predicate(references="1")]
+[name="阿米婭"]不，博士，這樣效率太低了。
+[name="阿米婭"]羅德島眼下的情況只需要一名指揮官。
+[Predicate(references="2")]
+[name="阿米婭"]好的，博士，請再往前走一些，到我的位置上來。
+[Predicate(references="1;2")]
+[character(name="char_002_amiya_1#7")]
+[name="阿米婭"]Dr.{@nickname}，從看到你出現在艦橋上的那一刻起，我就相信情況一定會有轉機。
+[name="阿米婭"]艦橋上的各位請注意——
+[name="阿米婭"]從現在開始，羅德島本艦的指揮權將完全移交給Dr.{@nickname}！
+[dialog]
+[Decision(options="通知可露希爾，各艙室進入節能模式！;集中供能給引擎！", values="1;2")]
+[Predicate(references="1;2")]
+[character(name="avg_npc_012")]
+[name="領航員B"]是，博士！
+[playsound(key="$d_gen_transmissionget")]
+[Delay(time=1)]
+[character(name="char_002_amiya_1")]
+[name="阿米婭"]可露希爾傳來通訊，引擎準備好了，她還想祝這個“發瘋一樣”的奇思妙想能成功......
+[Character(name="char_002_amiya_1",name2="char_183_skgoat_1",focus=2)]
+[name="地靈"]偶爾瘋狂一下，感覺還不錯。
+[Character(name="char_002_amiya_1",name2="char_013_riop",focus=2)]
+[name="中控人員"]早知道要像這樣開船，我甚至想來一點酒精。
+[dialog]
+[Decision(options="羅德島，全速前進！", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[Character]
+[CameraShake(duration=-1, xstrength=30, ystrength=30, vibrato=30, randomness=60, fadeout=false, block=false)]
+[Image(image="bg_0_rhodes", fadetime=0, xScale=1.4, yScale=1.4,x=100)]
+[PlaySound(key="$smallearthquake",channel="bgs", volume=1,block=false,loop=false)]
+[ImageTween(image="bg_0_rhodes", fadetime=0.5, xScaleFrom=1.4, yScaleFrom=1.4, xScaleTo=1.2, yScaleTo=1.2,xFrom=100,xTo=-50,duration=30)]
+[Blocker(a=0, fadetime=1, block=true)]
+[Blocker(a=0, fadetime=1, block=true)]
+[name="中控人員"]這速度簡直要讓我流鼻血！
+[name="領航員B"]那是因為我的手肘撞到你鼻子上了......抱歉，晃成這樣，我實在控制不住我的四肢。
+[name="中控人員"]抗震阻尼器失靈了？
+[name="領航員B"]看來不光是我，整艘船都在散架。
+[name="領航員B"]地靈小姐，你的眼睛竟然還沒離開過螢幕......
+[name="地靈"]二號氣旋持續往東南三十度移動，三號氣旋......四號氣旋......
+[name="阿米婭"]博士，抓住我的手！
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[CameraShake(duration=0.2, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Character]
+[delay(time=0.6)]
+[image]
+[dialog]
+[Decision(options="阿米婭，我抓住你了。", values="1")]
+[Predicate(references="1")]
+[Background]
+[delay(time=0.5)]
+[Blocker(a=0.4, r=255,g=0,b=0, fadetime=0, block=true)]
+[PlaySound(key="$fightgeneral", volume=1)]
+[Blocker(a=0, r=255,g=0,b=0, fadetime=0.5, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.1, block=true)]
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0, block=true)]
+[Background(image="bg_bridge",screenadapt="coverall")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[character(name="char_002_amiya_1#5")]
+[name="阿米婭"]博士，我是不是踩到了你的腳背......
+[dialog]
+[Decision(options="沒關係，還能抓更緊一些。;......;你的耳朵扎得我臉好癢。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[character(name="char_002_amiya_1#4")]
+[name="阿米婭"]現在是不是晃得沒那麼厲害了？
+[dialog]
+[Decision(options="向右轉向！！！", values="1")]
+[Predicate(references="1")]
+[dialog]
+[CameraShake(duration=1, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[Character(name="char_013_riop")]
+[name="中控人員"]哈......剛才那一下，我壓根沒注意到有這麼強的風過來，要是被捲進去，這個速度能不能穩住艦身都是個問題！
+[Character(name="char_013_riop",name2="avg_npc_012",focus=2)]
+[name="領航員B"]......是下擊暴流觸地了？
+[character(name="char_183_skgoat_1")]
+[name="地靈"]距離風暴核心的形成只剩兩分鐘。
+[dialog]
+[Decision(options="保持當前朝向前進！", values="1")]
+[Predicate(references="1")]
+[Character(name="char_013_riop")]
+[name="中控人員"]等一下，我看到氣旋了！
+[name="中控人員"]左邊有一個，右邊也有一個！
+[name="中控人員"]我們正在被包夾，再來個兩三分鐘，羅德島就會撞上去！
+[dialog]
+[Decision(options="前進。", values="1")]
+[Predicate(references="1")]
+[Character(name="char_013_riop")]
+[name="中控人員"]不可能躲得開，留給我們的空間太小了！
+[dialog]
+[Decision(options="相信我。", values="1")]
+[Predicate(references="1")]
+[Character(name="char_013_riop")]
+[name="中控人員"]博士，我是想要信你！！！
+[name="中控人員"]但我沒那麼相信我自己！
+[name="中控人員"]算了，阿米婭小姐都聽你的，我當然也聽你，我就算綁也要把我這隻手綁在操作杆上一推到底！
+[name="中控人員"]就是我好後悔答應喬治那臭小子跟他換班啊......
+[dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[Character]
+[CameraShake(duration=-1, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=false, block=false)]
+[delay(time=0.5)]
+[Image(image="avg_7_9",xScale=1.2,yScale=1.2, fadetime=0)]
+[PlaySound(key="$blizzard",channel="bgs", volume=1,block=false,loop=false)]
+[ImageTween(xFrom=-128, xTo=128, duration=5, block=false)]
+[Blocker(a=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Background(image="bg_black",screenadapt="coverall",fadetime=2)]
+[name="地靈"]七十五米，五十米，三十米......
+[name="領航員B"]（緊張吞咽）我從來沒在這麼近的地方觀察過天災氣旋......
+[name="阿米婭"]博士......
+[dialog]
+[Decision(options="阿米婭，你害怕了？;......;我的手被抓得好痛。", values="1;2;3")]
+[Predicate(references="1")]
+[name="阿米婭"]我是有些緊張，但我不害怕。
+[Predicate(references="2")]
+[name="阿米婭"]我有些緊張。不過博士放心，我不害怕。
+[Predicate(references="3")]
+[name="阿米婭"]抱歉，博士，我有些緊張。但我不害怕。
+[Predicate(references="1;2;3")]
+[name="阿米婭"]過去，和博士一起，我見證了許多類似的時刻。
+[name="阿米婭"]越是逼近絕望，大家懷著希望見到的景象就越壯麗。
+[name="阿米婭"]博士，這是你教會我的。
+[dialog]
+[Decision(options="希望來自於直到最後一刻都不放棄的努力。", values="1")]
+[Predicate(references="1")]
+[name="阿米婭"]是的，博士，你曾經說過一模一樣的話。
+[dialog]
+[PlaySound(key="$alarmenter",channel="bgs", volume=1,block=false,loop=true)]
+[Blocker(a=0.4, r=255,g=0,b=0, fadetime=0.7, block=true)]
+[Blocker(a=0, r=255,g=0,b=0, fadetime=0.7, block=true)]
+[Blocker(a=0.4, r=255,g=0,b=0, fadetime=0.7, block=true)]
+[StopSound(channel="bgs", fadetime=0)]
+[Blocker(a=0, r=255,g=0,b=0, fadetime=0.7, block=true)]
+[Blocker(a=0.4, r=255,g=0,b=0, fadetime=0.7, block=false)]
+[playsound(key="$d_gen_transmissionget")]
+“紅色警報，紅色警報......”
+“全員注意，撞擊準備！”
+[name="阿米婭"]這一次危機，我們還是會一起挺過去的！
+[Image(fadetime=1)]
+[Musicvolume(volume=0,fadetime=1)]
+[Background(image="bg_black",screenadapt="coverall",fadetime=2)]
+[dialog]
+[character]
+[delay(time=1)]
+[CameraShake(duration=1, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[stopmusic(fadetime=3)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[delay(time=2.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[delay(time=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Background(image="bg_0_rhodes3",screenadapt="coverall",fadetime=5)]
+[CameraShake(duration=3, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[delay(time=2)]
+[dialog]
+[playMusic(intro="$warm_intro", key="$warm_loop", volume=0.4)]
+[Decision(options="是的，我們挺過去了。;看。;我算得分毫不差。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[name="阿米婭"]風小了......天空的顏色也變了。
+[name="領航員B"]報告，羅德島已經離開天災區域！！
+[name="領航員B"]所有甲板損傷程度低於百分之五，而且也沒人受傷！
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[StopSound(channel="bgs", fadetime=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[Character]
+[Background(image="bg_bridge",screenadapt="coverall")]
+[delay(time=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Musicvolume(volume=0.4,fadetime=1)]
+[character(name="char_002_amiya_1#4")]
+[name="阿米婭"]太好了......
+[Character(name="char_013_riop",name2="avg_npc_012",focus=1)]
+[name="中控人員"]我的鼻子疼疼疼......帕維爾，你知不知道你又撞到我鼻子了？
+[Character(name="char_013_riop",name2="avg_npc_012",focus=2)]
+[name="領航員B"]撞了又怎麼樣？我們活過來了啊！
+[Character(name="char_013_riop",name2="avg_npc_012",focus=1)]
+[name="中控人員"]行吧，你欠我一頓酒。
+[Character(name="char_013_riop",name2="avg_npc_012",focus=2)]
+[name="領航員B"]要喝什麼隨便說，我都差點犯大錯誤了。
+[name="領航員B"]博士，多虧你來了！
+[Character(name="char_183_skgoat_1")]
+[name="地靈"]博士，精彩絕倫的演算。
+[Character(name="char_013_riop")]
+[name="中控人員"]博士，你的指揮風格一直這麼驚險刺激的嗎？哈哈，以後記得多帶我體驗體驗！
+[Character(name="avg_npc_088")]
+[name="領航員A"]博士，你究竟怎麼做到的？你就像會什麼預言法術一樣，突然就趕在我們撞上天災之前那一刻來了艦橋！
+[dialog]
+[Decision(options="其實我也很緊張。;......;我們是不是該慶祝一下？", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[character(name="char_002_amiya_1#2")]
+[name="阿米婭"]博士......
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="阿米婭突然抱住了你，你意識到，放在你腰間的雙手比剛才駛向風暴的時候還要用力。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=1)]
+[character(name="char_002_amiya_1#10")]
+[name="阿米婭"]謝謝......謝謝你能夠站在我身邊。
+[stopmusic(fadetime=3)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="bg_room_2")]
+[Delay(time=3)]
+[playMusic(intro="$newhope01_intro", key="$newhope01_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[Character(name="char_003_kalts_1#3",fadetime=0.3,block=true)]
+[name="凱爾希"]不錯的表現。
+[dialog]
+[Decision(options="只是我應該做的。;......;多謝表揚。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[name="凱爾希"]源石自我複製速度和能量增幅的關係——你把這部分知識應用到了風災軌跡測算中。
+[name="凱爾希"]過去你也展現過類似的能力，幫助當時的同伴降低了災害損失。因此，有人會把你叫做天災專家。
+[name="凱爾希"]但這裡只有你和我，我們都知道你真正專精的是什麼。
+[dialog]
+[Decision(options="我專精什麼？;......;又來，我不知道。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[name="凱爾希"]那個公式......你還記得它。
+[dialog]
+[Decision(options="我之前並不記得。;它自己從我腦子裡跳了出來。", values="1;2")]
+[Predicate(references="1;2")]
+[name="凱爾希"]那是曾經的你親手創造的公式。
+[name="凱爾希"]你在過去一個月內調取了大量關於源石和天災的資料，你的筆記上也留下了大量演算過程。
+[name="凱爾希"]或許是危機使你的大腦提取了深層回憶，又或許是你在自己留下的知識裡再度發現了它。
+[name="凱爾希"]你能想起這公式，證明你確實還保留著關於源石本質的基礎認識。
+[name="凱爾希"]也就是說，你從未忘記過你身為源石研究者的身份。
+[dialog]
+[Decision(options="我想繼續研究它。;這就像是我的使命。", values="1;2")]
+[Predicate(references="1;2")]
+[name="凱爾希"]你把研究源石看作自己的使命，然而，我們的行動從來不該只被使命束縛。
+[name="凱爾希"]Dr.{@nickname}，是什麼使你研究源石的意願如此強烈？
+[dialog]
+[Decision(options="你和阿米婭都得了礦石病。;這片大地上充滿了因源石而起的苦難。;我想結束這場災難。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[name="凱爾希"]曾經我也聽過一個回答。
+[name="凱爾希"]那個回答，和你今天說的這句話，很相似，但又完全不同。
+[name="凱爾希"]說出這句話的人，對未知的真理有著本能的渴求，也會為了拯救生命而奮不顧身。
+[name="凱爾希"]然而有時候，拯救也意味著摧毀——這是同一個人告訴我的。
+[name="凱爾希"]所以，那個回答至今是不是仍在你的大腦深處？
+[dialog]
+[Decision(options="我不記得也算在嗎？;......;你說是就是。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[name="凱爾希"]阿米婭說，你今天在艦橋上的表現，就像個真正的“預言家”。
+[dialog]
+[Decision(options="我只是功課做得好。;......;你在盯著我看什麼？", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[name="凱爾希"]Dr.{@nickname}，我理應相信科學。
+[name="凱爾希"]當第一次針對你大腦的檢查結果出來的時候，我擔心過程是否會有誤差，因此有了第二次，第三次......乃至第七次。
+[name="凱爾希"]我的理智告訴我，三次重複結果就足以證明，你並沒有撒謊。
+[name="凱爾希"]你確確實實喪失了相當多的記憶，你不記得你對特蕾西婭做了什麼，也忘記了自己為什麼會站在這裡。
+[name="凱爾希"]這一切，都讓你和過去我熟悉的那個人出現了很大的......偏差。
+[name="凱爾希"]可就像我讓你做了第七次測試一樣，此時此刻，我再一次產生了懷疑，站在我面前的究竟是誰？
+[name="凱爾希"]有多少過去留了下來，又有多少嶄新的正在萌生？
+[dialog]
+[Decision(options="你又感情用事了。;做七次檢查真的很難受！", values="1;2")]
+[Predicate(references="1")]
+[name="凱爾希"]或許，我不否認。你的事總能很輕易地挑動我的情緒。
+[name="凱爾希"]但這也是出於極致的理性。
+[name="凱爾希"]我希望你理解，檢測可以有誤差，而在你的事情上，我不能再承受誤差。
+[Predicate(references="2")]
+[name="凱爾希"]關於這一點，我向你道歉。
+[name="凱爾希"]不過更好地掌握你的記憶恢復情況，對你的身體也有切實的好處。
+[Predicate(references="1;2")]
+[dialog]
+[Decision(options="有個問題，我想問很久了。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="撇去醫生的立場，你希望我恢復記憶嗎？", values="1")]
+[Predicate(references="1")]
+[name="凱爾希"]......事物常有兩面性，人的情感也一樣。
+[name="凱爾希"]我並未掩飾自己對過去的你的恨意，但是......無論我有多麼不想承認，恨並不是全部。
+[dialog]
+[Decision(options="你想要過去那個人的全部能力。;你在懷念那個你仇恨的人？;你想知道過去的真相。", values="1;2;3")]
+[Predicate(references="1")]
+[name="凱爾希"]如果我只是需要力量，我相信現在的你同樣能做到，甚至......你能做得更好。
+[Predicate(references="2")]
+[Character(name="char_003_kalts_1#3")]
+[name="凱爾希"]......懷念？
+[name="凱爾希"]這個詞還是太簡單了。這片大地上的語言發展了數千年，我仍然未能挑出一個最合適的詞語，來概括我在想及你的許多時刻的思緒。
+[Predicate(references="3")]
+[name="凱爾希"]我無疑想得到這個答案。
+[name="凱爾希"]從你嘴裡說出來是最好的，但我不會放棄從其他途徑尋找真相。
+[Predicate(references="1;2;3")]
+[name="凱爾希"]現在，輪到我提問了。
+[name="凱爾希"]Dr.{@nickname}，你想恢復記憶嗎？
+[dialog]
+[Decision(options="我想。;我不想。", values="1;2")]
+[Predicate(references="1;2")]
+[name="凱爾希"]無論你回答的是想還是不想，我都看到了你的猶豫。
+[name="凱爾希"]一旦恢復記憶，你的很多疑問都會得到解答，但不是每一個答案都會令你滿意。
+[name="凱爾希"]你會知道所有傾瀉向現在的你的情感源自何處，無論是我和W的恨，阿米婭的無條件信任，還是......更久遠的那些。
+[name="凱爾希"]過量的記憶，過於強烈的情緒，會瞬間撐滿你的整個大腦——
+[name="凱爾希"]相信我，這種時候的感受不止有疲憊。
+[name="凱爾希"]而更令你恐懼的是，在過去當真找上你的時候，你需要做出選擇。
+[name="凱爾希"]萬一回憶太強烈，輕而易舉地覆蓋了你現在的種種努力，將你徹底拉回那個爬了無數年都未曾爬出來的深淵呢？
+[name="凱爾希"]現在的你一旦被打敗，你辛苦建立起的一切都將會崩塌，你可能再也無法屬於你自己。
+[name="凱爾希"]所以，我再問你一次——
+[name="凱爾希"]Dr.{@nickname}，你準備好了嗎？
+[dialog]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+[name="凱爾希"]如果我們的運氣足夠好的話，你不用在短時間內回答這個問題。
+[name="凱爾希"]Dr.{@nickname}，我要謝謝你，這一個多月來，你讓我看到了一些新的可能性。
+[name="凱爾希"]尤其是今天，我得知了你還記得那個公式。
+[Character(name="char_003_kalts_1#4")]
+[name="凱爾希"]原來，在為那一天做著準備的人，不止有你我。
+[Character(name="char_003_kalts_1")]
+[name="凱爾希"]我早就懷疑過，家用生理修復儀不會出現刪除記憶的故障——
+[name="凱爾希"]尤其是，它不可能有選擇地刪除最可能影響到你如何選擇的那部分，卻保留了對你來說更有意義的這部分。
+[name="凱爾希"]Dr.{@nickname}......
+[name="凱爾希"]我想，她甚至比我過去理解的還要更信任你一些。
+[name="凱爾希"]既然如此，我們也該繼續努力。
+[name="凱爾希"]就像我無數次說過的那樣，我會幫助你，只要我們還站在一起。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="bg_rhodescom",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+7:43 P.M. 天氣/陰
+羅德島本艦，指揮室
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=1)]
+[name="？？？"]前輩，您在嗎？
+[dialog]
+[Decision(options="艾雅法拉？請進。", values="1")]
+[Predicate(references="1")]
+[Character(name="char_empty")]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[characteraction(name="middle", type="move", xpos=200, fadetime=0.3, block=true)]
+[delay(time=0.51)]
+[characteraction(name="middle", type="move", xpos=-200, fadetime=1, block=false)]
+[Character(name="char_180_amgoat_1")]
+[delay(time=2)]
+[name="艾雅法拉"]前輩，他們說您想見我......
+[dialog]
+[Decision(options="這個給你。", values="1")]
+[Predicate(references="1")]
+[name="艾雅法拉"]是我加入行動部門的申請書......咦，批准了？
+[Character(name="char_180_amgoat_1#6")]
+[name="艾雅法拉"]太好了，大家都說因為我的病情，您和阿米婭小姐一定不會同意的。
+[dialog]
+[Decision(options="我說服了阿米婭。", values="1")]
+[Predicate(references="1")]
+[Character(name="char_180_amgoat_1#1")]
+[name="艾雅法拉"]竟然是您特別批准的？謝謝......
+[dialog]
+[Decision(options="你今天早上提交的簡報幫助羅德島度過了一次危機。", values="1")]
+[Predicate(references="1")]
+[Character(name="char_180_amgoat_1#5")]
+[name="艾雅法拉"]您說的危機是......下午那場天災嗎？
+[name="艾雅法拉"]前輩，您看了我的分析？
+[dialog]
+[Decision(options="你對源石礦脈擴張跡象的觀測很準確。;你透過地表源石活性增強現象預測了天災。", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="char_180_amgoat_1#1")]
+[name="艾雅法拉"]我只是提出了一個猜想。
+[name="艾雅法拉"]他們都說這一帶地表附近的源石礦密度很低，可相同的情況我在萊塔尼亞南部的火山附近遇上過......
+[name="艾雅法拉"]即使是少量源石，在條件恰當的時候也會在短時間內迅速增殖。
+[name="艾雅法拉"]前兩天，完成了日常治療之後，我按照慣例在宿舍附近散步，在舷窗上沾到的沙塵樣本上觀察到了接近的現象。
+[name="艾雅法拉"]在沙地裡，源石能量爆發會導致地面溫度迅速升高，從而導致大型風災的可能性大幅上升......
+[Character(name="char_180_amgoat_1#3")]
+[name="艾雅法拉"]欸......不好意思，前輩，我一說起這些就停不下來......
+[dialog]
+[Decision(options="請繼續。", values="1")]
+[Predicate(references="1")]
+[Character(name="char_180_amgoat_1#2")]
+[name="艾雅法拉"]剩下的您都在簡報裡看過了吧？
+[name="艾雅法拉"]前輩，真的沒想到，您明明這麼忙，還會看我們隨手寫的報告。
+[dialog]
+[Decision(options="我還讀了下你的論文。;你的研究很有趣。;我說過我很努力，可還是有很多人以為我會法術。", values="1;2;3")]
+[Predicate(references="1;2")]
+[Character(name="char_180_amgoat_1#1")]
+[name="艾雅法拉"]前輩，您對我的研究感興趣？
+[Predicate(references="3")]
+[Character(name="char_180_amgoat_1#4")]
+[name="艾雅法拉"]真的有這麼神奇的源石技藝嗎？
+[name="艾雅法拉"]......
+[name="艾雅法拉"]............
+[dialog]
+[delay(time=1)]
+[Character(name="char_180_amgoat_1#6")]
+[characteraction(name="middle", type="jump", power=20, fadetime=0.5,block=false)]
+[name="艾雅法拉"]啊......我明白了，前輩，您是在開玩笑。
+[Character(name="char_180_amgoat_1#1")]
+[Predicate(references="1;2;3")]
+[name="艾雅法拉"]要是您沒這麼忙，我真希望能留下來，再和您好好聊一聊。
+[Predicate(references="1;2;3")]
+[Character(name="char_180_amgoat_1#1")]
+[dialog]
+[Decision(options="等我完成這些工作。;你先隨便看看。", values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="char_180_amgoat_1#1")]
+[name="艾雅法拉"]前輩，您桌上的書可真多......
+[name="艾雅法拉"]《大炎風情志》《不含傳說的高塔》《哥倫比亞司法觀察筆記》《征服與同化》......前輩，這些都是您平時讀的書嗎？
+[name="艾雅法拉"]種類真廣，一點都不像我認識的教授們的書櫃。
+[dialog]
+[Decision(options="我想你最感興趣的是這本。", values="1")]
+[Predicate(references="1")]
+[name="艾雅法拉"]這是您的......天災研究筆記？
+[dialog]
+[Decision(options="只是一些閱讀筆記。;我簡單寫了一些猜想。;算是一份草稿。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="char_180_amgoat_1#6")]
+[name="艾雅法拉"]謝謝......太謝謝了。前輩，我一定會好好研究的！
+[Character(name="char_180_amgoat_1#1")]
+[name="艾雅法拉"]我有問題的話，還可以來找您交流嗎？
+[dialog]
+[Decision(options="隨時可以。;歡迎。;只要我能快點完成其他工作。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="年輕的學者緊緊抱著你給她的筆記，抬起頭，堅定地望向你。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=1)]
+[Character(name="char_180_amgoat_1#1")]
+[name="艾雅法拉"]前輩......對我來說，來到羅德島之後有許多驚喜。
+[name="艾雅法拉"]礦石病的穩定讓我對自己的未來多了很多信心，而像您一樣的人更是讓我看到了自己繼續走下去的希望。
+[name="艾雅法拉"]如果您都這麼努力，我們又有什麼理由放棄？
+[name="艾雅法拉"]——前輩。
+[Character(name="char_180_amgoat_1#6")]
+[name="艾雅法拉"]以後的日子裡，也請您指引著羅德島前行。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=3)]
+[Character]
+[Image]

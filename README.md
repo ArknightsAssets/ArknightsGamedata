@@ -1,4 +1,4 @@
-Arknights resources (for now only `gamedata/excel/*.json`) downloaded using [arkprts](https://github.com/thesadru/arkprts) (name pending...) through Github actions.
+Arknights resources downloaded using [arkprts](https://github.com/thesadru/arkprts) through Github actions.
 
 Check out [ArknightsGameData](https://github.com/Kengxxiao/ArknightsGameData) and [ArknightsGameResource](https://github.com/yuanyan3060/ArknightsGameResource) for alternative repositories.
 

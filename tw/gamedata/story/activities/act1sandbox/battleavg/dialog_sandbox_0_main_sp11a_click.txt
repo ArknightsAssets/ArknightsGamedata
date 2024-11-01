@@ -1,0 +1,18 @@
+[HEADER(actId="act1sandbox", npcId="trap_435_trsrhuntr")] 
+[character(name="avg_npc_805_1", offsetX="100", offsetY="100")]
+[name="尋寶人"]我就知道，你們還是想要我這個專業人士的幫助的，對不對？
+[name="尋寶人"]請各位相信，我一定能破解上面所寫的訊息！
+[Decision(option1="只是偶然路過。", value1="1.1", option2="那還是拜託你了！", value2="1.2")]
+[predicate(references="1.1")]
+[character(name="avg_npc_805_1", offsetX="100", offsetY="100")]
+[name="尋寶人"]唉......好吧。
+[withdraw(charId="trap_435_trsrhuntr")]
+[End]
+[predicate(references="1.2")]
+[character(name="avg_npc_805_1", offsetX="100", offsetY="100")]
+[name="尋寶人"]太感謝了！我一定不會辜負各位的信任的！
+[name="尋寶人"]過幾天，我一定帶著已經翻譯好的訊息再來找各位！
+[SetConditionProgress(conditionKey="route_main", itemCount="13")]
+[SetConditionProgress(conditionKey="route_main_a", itemCount="6")]
+[withdraw(charId="trap_435_trsrhuntr")]
+[End]

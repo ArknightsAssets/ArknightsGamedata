@@ -1,0 +1,29 @@
+[HEADER(actId="act1sandbox", npcId="trap_434_klmantc")] 
+[character(name="avg_npc_802_1", offsetX="125", offsetY="100")]
+[name="曼提柯殺手"]這些物品有你們需要的嗎......？
+[Decision(option1="購買6個蟹腿（粗製赤金-15）", value1="1.1", option2="購買3個圓圓肉片（粗製赤金-15）", value2="1.2", option3="購買3個帶骨腿肉（粗製赤金-25）", value3="1.3", option4="結束交易", value4="1.4")]
+[predicate(references="1.1", selectableCondition="c1")]
+[AddItem(itemId="sandbox_0_gold", itemCount="-15")]
+[AddItem(itemId="sandbox_0_crab", itemCount="6")]
+[character(name="avg_npc_802_1", offsetX="125", offsetY="100")]
+[name="曼提柯殺手"]以後找到了什麼，我都會再拿來給你們的......
+[End]
+[predicate(references="1.2", selectableCondition="c2")]
+[AddItem(itemId="sandbox_0_gold", itemCount="-15")]
+[AddItem(itemId="sandbox_0_venison", itemCount="3")]
+[character(name="avg_npc_802_1", offsetX="125", offsetY="100")]
+[name="曼提柯殺手"]以後找到了什麼，我都會再拿來給你們的......
+[End]
+[predicate(references="1.3", selectableCondition="c0")]
+[AddItem(itemId="sandbox_0_gold", itemCount="-25")]
+[AddItem(itemId="sandbox_0_beef", itemCount="3")]
+[character(name="avg_npc_802_1", offsetX="125", offsetY="100")]
+[name="曼提柯殺手"]以後找到了什麼，我都會再拿來給你們的......
+[End]
+[predicate(references="1.4")]
+[character(name="avg_npc_802_1", offsetX="125", offsetY="100")]
+[name="曼提柯殺手"]以後找到了什麼，我都會再拿來給你們的......
+[End]
+[Condition(references="c1", key="itemGT", itemId="sandbox_0_gold", value="15")]
+[Condition(references="c2", key="itemGT", itemId="sandbox_0_gold", value="15")]
+[Condition(references="c0", key="itemGT", itemId="sandbox_0_gold", value="25")]

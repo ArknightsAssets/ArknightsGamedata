@@ -1,0 +1,857 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")] 卡西米尔2-9-1
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_23_G09",screenadapt="coverall")]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[character(name="avg_237_gravel_1",fadetime=1)]
+[delay(time=1)]
+[name="礫"]  ......好消息，博士。
+[name="礫"]  監正會同意羅德島各位的外出申請了，“讓重要的合作夥伴遊覽城市也是必要的”。
+[name="礫"]  本來，如果沒有這一系列事件發生的話，您可以在大騎士領更自由一些的。
+[dialog]
+[character]
+[PlaySound(key="$dooropenquite", volume=0.6)]
+[delay(time=1)]
+[playsound(key="$d_gen_walk_n")]
+[character(name="char_002_amiya_1",name2="char_120_hibisc_1", fadetime=1.5)]
+[delay(time=2)]
+[character(name="char_002_amiya_1#6",name2="char_120_hibisc_1", focus=1)]
+[name="阿米婭"]  博士？您找我們嗎？
+[character(name="char_002_amiya_1#6",name2="char_120_hibisc_1", focus=2)]
+[name="芙蓉"]  啊！騎士姐姐！正好我還有剩下的健康餐，你打包帶回家嗎？
+[character(name="avg_237_gravel_1#5")]
+[name="礫"]  ......
+[Character(name="char_179_cgbird_1")]
+[name="夜鶯"]  ......您好，礫小姐，博士。
+[Dialog]
+[Decision(options="難得有機會去卡西米爾的其他地方參觀。;想不想出去逛逛？;休——假——時——間——", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[stopmusic(fadetime=1)]
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Background(image="bg_23_G01",screenadapt="coverall")]
+[playMusic(intro="$m_bat_game02_intro", key="$m_bat_game02_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[character(name="avg_npc_121",fadetime=1.5)]
+[delay(time=1.5)]
+[name="大嘴莫布"]  激烈的戰鬥！讓人不敢相信自己的眼睛！
+[PlaySound(key="$livecrowd", volume=0.4, loop=false, channel="people")]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=80, fadeout=true, block=false)]
+[name="大嘴莫布"]  不對！應該說，一位名不見經傳的夢魘！首次闖入特錦賽，竟然就能與冠軍分庭抗禮！
+[name="大嘴莫布"]  鮮紅的鎧甲在賽場上碰撞，讓今夜的月光也黯然失色！
+[character(name="avg_npc_121#3")]
+[name="大嘴莫布"]  不用說，我想觀眾也感受到了，拓拉！“草原之恐”逐魘騎士！他那瘋狂的意志令人為之著迷沉醉！
+[name="大嘴莫布"]  經歷了與耀騎士的那場決鬥之後，人氣居高不下的逐魘騎士！究竟能不能為他成為大騎士的故事中，再添一筆！？
+[name="大嘴莫布"]  順帶一提，古代人娛樂公司正在舉行“騎士封號有獎競猜”！凡是能猜中騎士封號的觀眾，都能獲得精美禮品一份！
+[dialog]
+[character]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=0.1, block=false)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$sheildimpact",volume=1)] 
+[Blocker(a=0, fadetime=0.1, block=false)]
+[CameraShake(duration=0.3, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=0.1, block=false)]
+[CameraShake(duration=0.4, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[delay(time=1)]
+[character(name="avg_npc_214_1#2$1",fadetime=1)]
+[delay(time=1)]
+[name="血騎士"]  你的氣勢哪裡去了？夢魘？
+[character(name="avg_npc_225")]
+[name="逐魘騎士"]  ......唔。
+[name="逐魘騎士"]  米諾斯人......在我的同胞鞭笞往日的時代，你們的英雄已經淪為了詩人口中的典故......
+[Dialog]
+[Character(name="avg_npc_225", name2="char_empty")]
+[characteraction(name="right", type="move", xpos=200, fadetime=0.3, block=true)]
+[delay(time=0.51)]
+[characteraction(name="right", type="move", xpos=-300, power=5, fadetime=0.3, block=false)]
+[characteraction(name="left", type="jump", xpos=100, power=5, fadetime=0.3, block=false)]
+[Character(name="avg_npc_225", name2="avg_npc_214_1#2$1",fadetime=0.51)]
+[delay(time=0.51)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$sheildimpact",volume=1)] 
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[CameraShake(xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+[Dialog]
+[Character(name="avg_npc_225", name2="avg_npc_214_1#2$1",focus=2)]
+[name="血騎士"]  廢話囉嗦。
+[name="血騎士"]  那你的可汗如今在哪？你那些引以為豪的同胞活在大地何處？
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[PlaySound(key="$sheildimpact",volume=1)] 
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[characteraction(name="right", type="jump", xpos=100, power=5, fadetime=0.5,block=true)]
+[characteraction(name="left", type="jump", xpos=-100, power=5, fadetime=0.5,block=true)]
+[dialog]
+[delay(time=1)]
+[character(name="avg_npc_225")]
+[name="逐魘騎士"]  ......
+[character(name="avg_npc_214_1#2$1")]
+[name="血騎士"]  一個活在過去的夢魘，一個可憐人罷了。
+[character(name="avg_npc_225")]
+[name="逐魘騎士"]  ......米諾斯人，感染者，你為什麼而戰？
+[character(name="avg_npc_214_1#2$1")]
+[name="血騎士"]  生存。
+[name="血騎士"]  他們把我奉為感染者的英雄......把我當做歷史的標杆，但我的初衷，僅僅是活著。
+[character(name="avg_npc_225")]
+[name="逐魘騎士"]  ......感染者的英雄？
+[name="逐魘騎士"]  原來如此......你也在為你的同胞而戰嗎？
+[character(name="avg_npc_214_1#2$1")]
+[name="血騎士"]  同胞......？不，我們並無血緣，也沒有相同的故鄉，我們只是不幸患上了同一種疾病而已。
+[name="血騎士"]  他們的遭遇令我感到悲憫，所以我去拯救他們，為所有人尋覓出路。
+[character(name="avg_npc_225")]
+[name="逐魘騎士"]  不是同胞......你卻還要，拯救他們。
+[name="逐魘騎士"]  ......可笑。
+[name="逐魘騎士"]  你的確強大......但是，卡西米爾的草原難道已經被感染者和異國人瓜分了嗎？
+[name="逐魘騎士"]  卡西米爾人，庫蘭塔，他們在哪！？
+[name="逐魘騎士"]  難道我千里迢迢來到騎士之國，是為了和感染者、米諾斯人和自己的同族決鬥的嗎！？
+[name="逐魘騎士"]  ——奇恥大辱！
+[dialog]
+[Character]
+[Character(name="avg_npc_225", name2="avg_npc_214_1#2$1",fadetime=0.51)]
+[delay(time=0.51)]
+[characteraction(name="right", type="move", xpos=-100, power=5, fadetime=0.51,block=true)]
+[characteraction(name="left", type="move", xpos=100, power=5, fadetime=0.51,block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[PlaySound(key="$sheildimpact", volume=1)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[CameraShake(duration=0.4, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[characteraction(name="left", type="move", xpos=-100, power=5, fadetime=0.8,block=true)]
+[characteraction(name="right", type="move", xpos=100, power=5, fadetime=0.8,block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[delay(time=1)]
+[stopmusic(fadetime=1)]
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Background(image="bg_23_G07",screenadapt="coverall")]
+[playMusic(intro="$relax_intro", key="$relax_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[character(name="char_120_hibisc_1", fadetime=1)]
+[delay(time=1)]
+[name="芙蓉"]  哇哇哇......這、這裡就是卡西米爾的商業中心嗎？
+[character(name="avg_237_gravel_1",name2="char_120_hibisc_1", focus=1)]
+[name="礫"]  嚴格來說，這裡只是大騎士領大小數百個商業中心中的一個。
+[name="礫"]  因為距離比較近，所以我推薦來這裡罷了。
+[character(name="avg_237_gravel_1",name2="char_120_hibisc_1", focus=2)]
+[name="芙蓉"]  但是垃圾食品是不是太多了！我一眼看過去，視野裡就有三家爆米花店、兩家披薩店和四家漢堡店哦！
+[name="芙蓉"]  這是不行的！
+[character(name="char_002_amiya_1#10")]
+[name="阿米婭"]  啊哈哈......因為這附近有一座騎士競技場嗎？
+[character(name="avg_237_gravel_1")]
+[name="礫"]  當然。競技場算是每一個商業圈的核心。
+[name="礫"]  圍繞著騎士們的廝殺拓展商業，就是這麼一回事。
+[Character(name="char_179_cgbird_1")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="夜鶯"]  ......！
+[name="夜鶯"]  ......這是......臨光的玩偶？
+[character(name="char_120_hibisc_1")]
+[name="芙蓉"]  啊！好可愛！
+[character(name="char_002_amiya_1#6")]
+[name="阿米婭"]  ......等等，這家店，難道全是......
+[dialog]
+[character]
+[character(name="avg_npc_001", fadetime=1)]
+[delay(time=1)]
+[name="店主"]  唷，幾位客人，是耀騎士的粉絲？
+[name="店主"]  那你可來對地方啦，這裡是耀騎士周邊專賣！黏土小人、毛絨玩偶、臨光家族徽章應有盡有！
+[name="店主"]  順便一提，如果耀騎士能打敗風騎士再度進入決賽，供應商還考慮製作精煉源石雕刻紀念品！現在可以先付定金哦？
+[name="店主"]  反正耀騎士一定會贏嘛！哈哈哈！
+[Dialog]
+[Decision(options="(替夜鶯買一個玩偶。);(詢問定金是多少。);(反問對方耀騎士用過的盾牌能不能當做鎮店之寶。)", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Predicate(references="1")]
+[name="店主"]  謝謝惠顧！
+[Predicate(references="2")]
+[name="店主"]  是——啊，您是用外幣結算的嗎？龍門幣？那您可能還得先去一趟銀行。
+[name="店主"]  我幫你換算一下，大概一百三十萬龍門幣左右吧？
+[Predicate(references="3")]
+[name="店主"]  盾牌？耀騎士什麼時候用過盾牌？
+[name="店主"]  不過，我們這裡有戰錘、雙刃劍和最新的劍槍模型。您要不看看？
+[Predicate(references="1;2;3")]
+[stopmusic(fadetime=1)]
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Background(image="bg_23_G08",screenadapt="coverall")]
+[character(name="avg_npc_121#3")]
+[playMusic(intro="$exciting_intro", key="$exciting_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[PlaySound(key="$livecrowd", volume=0.4, loop=false, channel="people")]
+[name="大嘴莫布"]  難捨難分！逐魘騎士的一擊凌厲攻擊再度被血騎士擋下，而冠軍就像是切開豆腐般，將人工地形夷為平地！
+[name="大嘴莫布"]  時間已經過去了十分鐘！風暴般的交鋒仍在繼續！究竟是誰，會在這彷彿永不停歇的攻擊中展露疲態！？
+[character(name="avg_npc_121#2")]
+[name="大嘴莫布"]  ——說話間！冠軍再次使用了法術！躲過了對手的一記掃擊！
+[name="大嘴莫布"]  難道雙方還在小心翼翼地試探對方嗎！？冠軍與夢魘，至今還沒人主動施放自己的源石技藝——
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background(image="bg_23_G01",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=0.1, block=false)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$sheildimpact", volume=1)]
+[Blocker(a=0, fadetime=0.1, block=false)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$swordtsing3", volume=0.9)]
+[Blocker(a=0, fadetime=0.1, block=false)]
+[CameraShake(duration=0.3, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[delay(time=1)]
+[character(name="avg_npc_225", fadetime=1)]
+[delay(time=1.5)]
+[name="逐魘騎士"]  ......米諾斯人，你受過怎樣的訓練？
+[character(name="avg_npc_214_1#2$1")]
+[name="血騎士"]  很遺憾，在成為騎士之前，我並沒有經歷過像樣的戰鬥訓練。
+[name="血騎士"]  成為騎士之後，也只是邊打邊學。
+[character(name="avg_npc_225")]
+[name="逐魘騎士"]  ......天生的戰士。
+[character(name="avg_npc_214_1#2$1")]
+[name="血騎士"]  年輕人。
+[name="血騎士"]  我不是你的導師，但是，如果你渴望一個對手，我可以教你一件事情。
+[name="血騎士"]  虛張聲勢的恐懼，對任何一個努力活在當下的人來說，都毫無意義。
+[playsound(key="$d_gen_walk_n")]
+血騎士後退了半步。
+鮮血滲出他的鎧甲，在空中凝聚成流。
+紅光包裹在他的武器上，就像審判的利刃。
+[character(name="avg_npc_214_1#2$1")]
+[name="血騎士"]  回答我，夢魘，在你夢裡的歷史中，在那上千年前至今的歷史之中——
+[name="血騎士"]  可曾有感染者的丁點生機？
+[character(name="avg_npc_225")]
+[name="逐魘騎士"]  ......你......
+[character(name="avg_npc_214_1#2$1")]
+[name="血騎士"]  別感到怯懦，夢魘！自稱怯薛的夢魘！
+[name="血騎士"]  你的可汗在哪！讓他上前來！
+[musicvolume(volume=0,fadetime=0.5)]
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background(image="bg_23_G01",screenadapt="coverall")]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Character(name="avg_1014_nearl2_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="耀騎士"]  你的可汗在哪裡？
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background(image="bg_23_G05",screenadapt="coverall")]
+[Character(name="avg_npc_120")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="老騎士"]  你的可汗在哪裡？
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background(image="bg_county_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+可汗的歷史已經過去上千年了。
+你只能在歷史書上找到他，孩子。
+怯薛？那些人是可汗的侍從，他們是這片大地上最勇武的戰士。
+可汗征服過很多地方，但是，也幹過許多傷害他人的事情。
+散播恐懼是夢魘的天性，征服欲幾乎是可汗的食糧。
+但是呢，拓拉。
+你生在這片大地之上，你會找到你自己的——
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="bg_23_G01",screenadapt="coverall")]
+[delay(time=1)]
+[musicvolume(volume=0.4,fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[character(name="avg_npc_225")]
+[name="逐魘騎士"]  ......父親，勁敵，導師，理想。
+[name="逐魘騎士"]  我竟然......試圖在這座城市尋找這些？
+[name="逐魘騎士"]  不！夢該醒了。
+[name="逐魘騎士"]  這只是留念，我為自己畫下的天途的道路，早有註定。
+[Dialog]
+[character]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="年輕的獵人踏上天途♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="從夢裡出發，去往黃金的彼岸♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="夢魘。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="一匹夢魘佇立在賽場上。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="四肢放鬆，破綻百出，頭盔下的視線不知掃視著何處。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="他哼著一首古老的歌謠。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="直到黑夜將他的視野塗抹♪直到骨塔矗立在心頭♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="直到毒參扼住朦朧的故土♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[delay(time=0.6)]
+[name="血騎士"]  ......
+[name="逐魘騎士"]  ......
+[name="血騎士"]  禱告結束了？
+[name="逐魘騎士"]  我的家人都死了。我的同族都迷失了。
+[playsound(key="$d_avg_originiumcastshort")]
+[name="逐魘騎士"]  ——可汗就在我的刀尖之上。
+[dialog]
+[Background]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Image(image="23_I08",x=0,y=0,xScale=0.83, yScale=0.83)]
+[Blocker(a=0, fadetime=3, block=false)]
+[delay(time=1)]
+[name="逐魘騎士"]  我——
+[delay(time=1)]
+[name="逐魘騎士"]  ——就是我自己的可汗！
+[delay(time=2)]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="逐魘騎士"]  來！
+[Dialog]
+[Dialog]
+[stopmusic(fadetime=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image]
+[Character]
+[Background(image="bg_23_G05",screenadapt="coverall")]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[playMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.4)]
+[Character(name="avg_npc_208_1#2",fadetime=1)]
+[delay(time=1)]
+[name="莫妮克"]  ......天氣，晴。無風日，適合射箭的日子。
+[name="莫妮克"]  目標，羅德島領袖兩人，種族不明的頭罩人，還有一個卡特斯。
+[Character(name="avg_npc_208_1#4")]
+[name="莫妮克"]  心情......很糟糕。因為每一次都有人妨礙工作。
+[dialog]
+[character]
+[playsound(key="$d_gen_walk_n")]
+[character(name="char_147_shining_1",fadetime=1.5)]
+[delay(time=2)]
+[name="閃靈"]  ......
+[Character(name="avg_npc_208_1#4")]
+[name="莫妮克"]  ......補充，心情非常糟糕。
+[character(name="char_147_shining_1")]
+[name="閃靈"]  你有寫日記的習慣嗎？
+[Character(name="avg_npc_208_1")]
+[name="莫妮克"]  誰會故意留下這些東西，送給監正會幫忙定罪嗎？
+[character(name="char_147_shining_1")]
+[name="閃靈"]  那看來，你是個會把個人情緒帶入工作的人。
+[Character(name="avg_npc_208_1#2")]
+[name="莫妮克"]  ......赦罪師，耀騎士，還有那個給人感覺很古怪的卡特斯。
+[name="莫妮克"]  羅德島到底是什麼？
+[character(name="char_147_shining_1")]
+[name="閃靈"]  之前一直沒有機會問問你們......你們......
+[name="閃靈"]  從哪裡聽到“赦罪師”這個名字的？
+[Character(name="avg_npc_208_1#2")]
+莫妮克不是沒有見過面前的薩卡茲出手。
+出色的劍術，夾雜著一些無法理解的源石技藝，也許是巫術，和耀騎士一起擋住了玄鐵一箭。
+她心底裡其實想過，也許那時候的“出手阻攔”還不是這個薩卡茲的全部面貌。
+但是現在，她確信了一件事。
+[name="莫妮克"]  ......我不可能告訴你的。
+[character(name="char_147_shining_1")]
+[name="閃靈"]  我也沒有心慈手軟到，目睹一個殺手對博士和阿米婭張弓搭箭，還能放她走的。
+[PlaySound(key="$b_char_defboost", volume=0.4)]
+[delay(time=1)]
+[name="閃靈"]  加上，之前的招呼，我們似乎沒有還禮，有失禮儀。
+[Character(name="avg_npc_208_1#3")]
+[name="莫妮克"]  ......輝光......？
+[name="莫妮克"]  耀騎士的同伴，都喜歡這麼閃亮亮的嗎？我都審美疲勞了。
+[name="莫妮克"]  （很溫和......甚至感覺不到攻擊性......薩卡茲的巫術？）
+[name="莫妮克"]  （不......）
+[name="莫妮克"]  （她的神色......她對自己的劍感到悲哀嗎？）
+[character(name="char_147_shining_1")]
+[name="閃靈"]  ......
+[Character(name="avg_npc_208_1#6")]
+[name="莫妮克"]  ......不回話嗎。
+[name="莫妮克"]  好吧，讓我來試試，你究竟有幾斤幾兩。
+[stopmusic(fadetime=1)]
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Background(image="bg_23_G08",screenadapt="coverall")]
+[playMusic(intro="$exciting_intro", key="$exciting_loop", volume=0.4)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[character(name="avg_npc_121#2")]
+[name="大嘴莫布"]  ——發、發生了什麼？
+[name="大嘴莫布"]  是我眼花了嗎？賽場上突然彌漫起了黑霧——這並不罕見，但是，黑霧裡出現的，是什麼——？
+[name="大嘴莫布"]  那是——旗、旗幟嗎？不，那是軍隊！？
+[Character(name="avg_1014_nearl2_1#4$1")]
+[name="耀騎士"]  ......
+[name="耀騎士"]  這就是......你的執念嗎？
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background(image="bg_23_G01",screenadapt="coverall")]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[character(name="avg_npc_225")]
+[name="逐魘騎士"]  ——
+[character(name="avg_npc_214_1#2$1")]
+[name="血騎士"]  ......可惜。
+[name="血騎士"]  那些在觀眾席上遠觀的騎士們，是體會不到我現在的感覺的吧。
+[name="血騎士"]  長旗飄揚，號角聲響，一支軍隊......一個民族，一段歷史。
+[name="血騎士"]  可是——
+[name="血騎士"]  ——這就是你放棄當下，像個瘋子一樣尋死的理由嗎？
+[character(name="avg_npc_225")]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="逐魘騎士"]  ——呵！
+[dialog]
+[character]
+[name="大嘴莫布"]  夢魘騎士發動了襲擊！但、但是黑霧籠罩著賽場，我們看不清究竟發生了什麼！？
+[name="大嘴莫布"]  是不是有什麼在黑霧裡前進！？難道逐魘騎士真正的法術，是召喚自己的先祖嗎！？
+[character(name="avg_npc_214_1#2$1")]
+[name="血騎士"]  可笑。
+[name="血騎士"]  你只是缺乏直面命運的勇氣罷了。
+血騎士揮舞巨斧，他知道，他並非真的面對一支古老的怯薛軍隊。
+一個想要自我毀滅的年輕人。
+一個試圖召回前世的年輕人。
+漆黑的霧氣淹沒了血騎士如血的鎧甲。
+震動，疼痛，都讓人明白，這些召喚物並非虛體或幻覺。
+血騎士仍舊佇立不動，他在等待，在等待夢魘本人的襲擊。
+[name="逐魘騎士"]  （古老的語言）倒下吧，英雄！
+[dialog]
+[Character(name="avg_npc_225", name2="avg_npc_214_1#2$1")]
+[characteraction(name="right", type="move", xpos=-100, power=5, fadetime=0.2, times=0.3, block=true)]
+[characteraction(name="left", type="move", xpos=100, power=5, fadetime=0.2, times=0.3, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=0.8, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=0, block=true)]
+[CameraShake(duration=0.2, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[characteraction(name="right", type="jump", xpos=100, power=5, fadetime=0.2, times=0.3, block=true)]
+[characteraction(name="left", type="jump", xpos=-100, power=5, fadetime=0.2, times=0.3, block=true)]
+[delay(time=1)]
+[character(name="avg_npc_214_1#2$1")]
+血騎士悶哼一聲。
+即使是卡西米爾最頂級的鎧甲，也在頃刻間發出哀嚎。
+刀刃劈開了鎧甲，強壯如血騎士也險些單膝跪地。
+[name="血騎士"]  ......
+[character(name="avg_npc_225")]
+[name="逐魘騎士"]  ——！傷口不夠深，唔！
+[character(name="avg_npc_214_1#2$1")]
+[name="血騎士"]  你，傷了我。
+[name="血騎士"]  但我的血，也撫上了你的武器。
+[character(name="avg_npc_225")]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="逐魘騎士"]  （陷阱——！？）
+[character(name="avg_npc_214_1#2$1")]
+[name="血騎士"]  不必羞恥，缺乏實戰經驗本來就是你的弱點。
+[name="血騎士"]  你離所謂的“怯薛”，似乎還差得很遠。
+[dialog]
+[Character(name="avg_npc_225", name2="avg_npc_214_1#2$1")]
+[characteraction(name="right", type="move", xpos=-100, power=5, fadetime=0.2, times=0.3, block=true)]
+[characteraction(name="left", type="move", xpos=100, power=5, fadetime=0.2, times=0.3, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=0.8, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=0, block=true)]
+[CameraShake(duration=0.4, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[characteraction(name="right", type="jump", xpos=100, power=5, fadetime=0.5,block=true)]
+[characteraction(name="left", type="jump", xpos=-100, power=5, fadetime=0.5,block=true)]
+[delay(time=1)]
+[stopmusic(fadetime=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character]
+[Background(image="bg_23_G05",screenadapt="coverall")]
+[Character(name="avg_npc_208_1")]
+[playMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.4)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=0.1, block=false)]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[name="莫妮克"]  ......你和耀騎士擋下玄鐵一箭的畫面，確實讓人印象深刻，哪怕是銀槍的天馬也不可能輕易擋下玄鐵的懲罰。
+[name="莫妮克"]  情報人員和我說，你們和耀騎士自稱“使徒”，是一個治療感染者的組織。
+[Character(name="avg_npc_208_1#4")]
+[name="莫妮克"]  “醫師”，呵，看來，我該把這個情報人員丟進鉗獸籠。
+[character(name="char_147_shining_1")]
+[name="閃靈"]  ......很遺憾，我並不喜歡戰鬥。
+[Character(name="avg_npc_208_1#2")]
+[name="莫妮克"]  ......是嗎。
+[name="莫妮克"]  我以前是個維多利亞的軍人。
+[name="莫妮克"]  因為沒有貴族身份，當不上軍官，最後在聯合軍演上被商業聯合會挖來了。
+[name="莫妮克"]  那個時候，我的上司們大概還在竊喜少了一個刺頭吧。
+[character(name="char_147_shining_1")]
+[name="閃靈"]  ......
+[Character(name="avg_npc_208_1#6")]
+[name="莫妮克"]  所以，我對自己的射術還是很自信的。
+[name="莫妮克"]  這個距離，正面接下我三箭，我就放棄對羅德島的計畫，怎麼樣？
+[character(name="char_147_shining_1")]
+[name="閃靈"]  我如何相信你？
+[Character(name="avg_npc_208_1")]
+[name="莫妮克"]  ......信不信由你，無胄盟有無數種辦法對付羅德島。
+[name="莫妮克"]  比如在他們現在毫無戒心拿在手上的玩偶，塗抹上一些有揮發性的藥物......
+[character(name="char_147_shining_1")]
+[name="閃靈"]  ......
+[Character(name="avg_npc_208_1#4")]
+[name="莫妮克"]  別拿這種眼神看我，安排這種事並不困難。
+[character(name="char_147_shining_1")]
+[name="閃靈"]  三箭。
+[Character(name="avg_npc_208_1#3")]
+[name="莫妮克"]  ......三箭。
+[name="莫妮克"]  呼......
+[Character(name="avg_npc_208_1#5")]
+[name="莫妮克"]  第一箭。
+莫妮克張弓搭箭，維多利亞最標準的姿勢。
+那些在軍隊裡的日子，年輕的莫妮克即是如此百步穿楊，深得賞識。
+[dialog]
+[PlaySound(key="$d_avg_arrowshot")]
+[delay(time=2)]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true)]
+[name="莫妮克"]  ......！
+[dialog]
+[character(name="char_147_shining_1")]
+[delay(time=1)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=0.1, block=false)]
+[CameraShake(duration=0.3, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[name="閃靈"]  這一箭，太淺。
+眼前的薩卡茲甚至沒有拔劍。
+[Character(name="avg_npc_208_1#4")]
+出乎預料的結果使莫妮克頓時感到胸中一陣悶熱，不甘湧上心頭。
+[name="莫妮克"]  ......第二箭。
+再一次拉弓。
+曾在某個雨夜，莫妮克襲擊了一位一階征戰騎士。
+對方不是什麼名聲大噪的英雄，卻也是個實打實的烏卡戰爭老兵。
+靈敏的反應令他察覺到了暗箭，雙方扭打起來，跌落山崖。
+早春的卡西米爾樹林，春寒料峭，一場密林中的追逐戰，持續了七天七夜。
+在四肢的疼痛和耳旁的嗡鳴聲幾乎到達極限的時刻，她張弓搭箭，結果了正在水源旁飲水的目標。
+[character(name="char_147_shining_1")]
+[name="閃靈"]  ......姿勢變了，眼神也變了。
+[name="閃靈"]  你就像一個伺機待發的獵人。
+[dialog]
+[PlaySound(key="$d_avg_arrowshot")]
+[delay(time=2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[CameraShake(duration=0.3, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[Character(name="avg_npc_208_1#5")]
+[name="莫妮克"]  ——！
+被彈開的箭矢在半空中折成兩節。
+一節插在地上，一節沒入草坪，驚起幾隻閒聊的羽獸。
+[character(name="char_147_shining_1")]
+[name="閃靈"]  但我並不想成為獵物。
+[Character(name="avg_npc_208_1#3")]
+[name="莫妮克"]  ......赦罪師都是你這樣的劍客？
+[Character(name="avg_npc_208_1#2")]
+[name="莫妮克"]  或者該問，羅德島像你這樣的人有很多嗎？
+[character(name="char_147_shining_1")]
+[name="閃靈"]  ......
+[Character(name="avg_npc_208_1#4")]
+[name="莫妮克"]  （......羅德島的風險評估是不是要重做一下......）
+[name="莫妮克"]  ......實話說吧，解決羅德島是董事會的任務。
+[name="莫妮克"]  但很快，我就不再聽命行動了。
+[character(name="char_147_shining_1")]
+[name="閃靈"]  ......
+[Character(name="avg_npc_208_1")]
+[name="莫妮克"]  不信？
+[character(name="char_147_shining_1")]
+[name="閃靈"]  不......實際上，我並不感到意外。
+[name="閃靈"]  我們的領導人，已經預見到了這一可能性。
+[name="閃靈"]  所以你想說什麼？你想說這場決鬥，是建立在你的自尊心上？
+[Character(name="avg_npc_208_1#6")]
+[name="莫妮克"]  我想說......你該試著使出全力，薩卡茲。
+[Character(name="avg_npc_208_1#5")]
+[name="莫妮克"]  最後一箭。
+[dialog]
+[PlaySound(key="$d_avg_arrowshot")]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true)]
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_23_G01",screenadapt="coverall")]
+[character(name="avg_npc_225")]
+[playMusic(intro="$exciting_intro", key="$exciting_loop", volume=0.4)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="逐魘騎士"]  ......呃！
+[character(name="avg_npc_214_1#2$1")]
+[name="血騎士"]  結束了。
+[Dialog]
+[Character(name="avg_npc_225",name2="avg_npc_214_1#2$1")]
+[characteraction(name="right", type="jump",xpos=-100, power=5, block=true, fadetime=0.2, times=0.2)]
+[characteraction(name="left", type="jump",xpos=100,  power=5, block=true, fadetime=0.2, times=0.2)]
+[CameraShake(duration=1, xstrength=8, ystrength=6, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$sheildimpact")] 
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=0.25, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$sheildimpact")] 
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=0.25, block=true)]
+[CameraShake(duration=0.2, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=true)]
+[delay(time=0.51)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$d_sp_ballista")]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[CameraShake(duration=0.5, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.51)]
+[characteraction(name="left", type="jump",xpos=-100, power=5, block=true, fadetime=0.2, times=0.3)]
+[characteraction(name="right", type="jump",xpos=100,  power=5, block=true, fadetime=0.2, times=0.3)]
+[delay(time=0.51)]
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background(image="bg_23_G08",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$livecrowd", volume=0.4, loop=false, channel="people")]
+[character(name="avg_npc_121")]
+[name="大嘴莫布"]  絕地反擊！勢大力沉的一擊，將縈繞賽場的黑霧徹底打散！
+[name="大嘴莫布"]  如同浪濤般的聲勢，將逐魘騎士製造的幻覺在頃刻間摧毀！
+[name="大嘴莫布"]  失策啊夢魘！棋差一著！面對掌握鮮血法術的血騎士，輕敵近身正是他最慘痛的失誤！！
+[Character(name="avg_1014_nearl2_1#1$1")]
+[name="瑪嘉烈"]  ......那會是幻覺嗎？那幾乎就是......一場戰爭。
+[musicvolume(volume=0,fadetime=1)]
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background(image="bg_23_G01",screenadapt="coverall")]
+[character(name="avg_npc_225")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="逐魘騎士"]  ......嘎啊......啊啊，啊啊......
+[character(name="avg_npc_121")]
+[name="大嘴莫布"]  什麼！？如此近距離的衝擊，逐魘騎士竟然還站在賽場上！？
+[name="大嘴莫布"]  不可思議！難道他還有反擊的——
+[character(name="avg_npc_214_1#2$1")]
+[name="血騎士"]  ——我是血騎士，向裁判團申請溝通。
+[name="血騎士"]  ......是的，他已經昏過去了，再慢會有生命危險，宣佈結果吧。
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background(image="bg_23_G08",screenadapt="coverall")]
+[musicvolume(volume=0.4,fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[character(name="avg_npc_121")]
+[name="大嘴莫布"]  ——裁判團作出了判決！毫無疑問，卡西米爾特別錦標賽首位進軍決賽的騎士已經誕生！
+[name="大嘴莫布"]  夢魘與冠軍的決鬥！恐懼與恐懼的較量！已經得出了結果——！
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="大嘴莫布"]  請允許我榮幸地宣佈，獲勝者是——
+[PlaySound(key="$livecrowd", volume=0.4, loop=false, channel="people")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Dialog]
+[character]
+在莫布宣佈獲勝者的姓名之前，賽場的角落，那扎眼的隔欄之後。
+有一位感染者騎士率先站了起來。
+[dialog]
+[Character(name="char_empty", name2="avg_npc_221", fadetime=1)]
+[PlaySound(key="$livecrowd", volume=0.4, loop=false, channel="people")]
+[CameraShake(duration=0.2, xstrength=30, ystrength=30, vibrato=20, randomness=80, fadeout=true, block=false)]
+[delay(time=1)]
+[name="感染者騎士A"]  血騎士！
+[Dialog]
+[PlaySound(key="$livecrowd", volume=0.4, loop=false, channel="people")]
+[delay(time=0.51)]
+[Character(name="avg_npc_220", name2="avg_npc_221",fadetime=0.7)]
+[delay(time=1)]
+[Character(name="avg_npc_220", name2="avg_npc_221",focus=1)]
+[CameraShake(duration=0.2, xstrength=30, ystrength=30, vibrato=20, randomness=80, fadeout=true, block=false)]
+[name="感染者騎士B"]  血騎士！血騎士！血騎士！
+[Character(name="avg_1014_nearl2_1#1$1")]
+[name="瑪嘉烈"]  都是......感染者？
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Background(image="bg_23_G05",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Character(name="avg_npc_220",fadetime=1.5)]
+[delay(time=2)]
+[name="感染者騎士"]  血騎士贏了！血騎士萬歲！
+[Character(name="avg_npc_006")]
+[name="觀賽的感染者"]  血騎士！血騎士！
+[name="觀賽的感染者"]  血騎士！血騎士！
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="血騎士！血騎士！血騎士！", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="血騎士！血騎士！血騎士！", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=1)]
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_23_G01",screenadapt="coverall")]
+[character(name="avg_npc_214_1#2$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="血騎士"]  ......
+血騎士！血騎士！血騎士！
+血騎士！血騎士！血騎士！
+血騎士緩緩舉起了手，向觀眾示意。
+隨後他回過頭，看著仍舊沒有倒下的夢魘。
+視線上抬，在夢魘的背後，極遠方的觀眾席上，有著另一位騎士與血騎士視線相交。
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background(image="bg_23_G08",screenadapt="coverall")]
+[Character(name="avg_1014_nearl2_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[name="耀騎士"]  ......
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background(image="bg_23_G01",screenadapt="coverall")]
+[character(name="avg_npc_214_1#2$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[name="血騎士"]  ......
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background(image="bg_23_G08",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+血騎士！血騎士！血騎士！
+[character(name="avg_npc_121")]
+[name="大嘴莫布"]  呃......
+[name="大嘴莫布"]  （職業素養告訴我，在觀眾呐喊的時候我不該用麥克風插嘴，但是，好像大都是感染者......沒問題嗎？）
+[stopmusic(fadetime=1)]
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Background(image="bg_23_G09",screenadapt="coverall")]
+[PlayMusic(intro="$distressed_intro", key="$distressed_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="電視裡的聲音"]  血騎士！血騎士！血騎士！
+[dialog]
+[character(name="avg_npc_215_1#1",fadetime=1.5)]
+[delay(time=2)]
+[name="燭騎士"]  ......這就是卡西米爾感染者的英雄，瑪嘉烈。
+[name="燭騎士"]  你打算，怎麼對付那個與你重疊的形象？
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_23_G02",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="電視裡的聲音"]  血騎士！血騎士！血騎士！
+[dialog]
+[character(name="avg_npc_210_1#5",fadetime=1.5)]
+[delay(time=1.5)]
+[name="伊奧萊塔·羅素"]  這就是感染者......狄開俄波利斯。
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_23_G03",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="電視裡的聲音"]  血騎士！血騎士！血騎士！
+[dialog]
+[Character(name="avg_npc_211_1#5", name2="avg_npc_212_1", fadetime=1.5)]
+[delay(time=2)]
+[Character(name="avg_npc_211_1#5", name2="avg_npc_212_1", focus=1,)]
+[name="發言人馬克維茨"]  ......英雄，血騎士。真是誇張的號召力。
+[name="發言人馬克維茨"]  耀騎士雖然是一個抗爭的典範，但說到底，真正為感染者謀取了生存空間的，是血騎士狄開俄波利斯。
+[name="發言人馬克維茨"]  ......但是，他向我們俯首稱臣已經很久了。
+[Character(name="avg_npc_211_1#5", name2="avg_npc_212_1", focus=2)]
+[name="發言人麥基"]  ......我以一介媒體從業者的身份，對你的提案深感佩服，馬克維茨先生。
+[name="發言人麥基"]  但你也知道，這些......輿論只是一層軟保險。想確保事情萬無一失，我們得準備一些硬性措施。
+[Character(name="avg_npc_211_1#7", name2="avg_npc_212_1", focus=1)]
+[name="發言人馬克維茨"]  當然。
+[name="發言人馬克維茨"]  我只是不希望所有人都......無路可退罷了。
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_23_G07",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="avg_npc_032")]
+[delay(time=0.51)]
+[name="興奮的觀眾"]  血騎士！血騎士贏了！！
+[name="興奮的觀眾"]  啊哈哈，我就知道血騎士是不可戰勝的！血騎士是不可戰勝的！
+[dialog]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="興奮的觀眾"]  唔哦，怎麼了？
+[name="興奮的觀眾"]  那邊的屋頂......升起太陽了嗎？
+[Dialog]
+[Character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_23_G05",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="avg_npc_208_1#5")]
+[name="莫妮克"]  ——
+[name="莫妮克"]  你——
+[character(name="char_147_shining_1")]
+薩卡茲就像是忌諱自己的法術被看見一般，默默垂下了眼瞼。
+短暫的光輝，如落日，依舊縈繞在薩卡茲的劍尖。
+像是想起了什麼似的，薩卡茲立刻改變了持劍的姿勢——將其抱入懷中。
+就好像那把劍不該出鞘。
+[Character(name="avg_npc_208_1#5")]
+[name="莫妮克"]  ......
+[name="莫妮克"]  ......剛才......你是怎麼......
+[name="莫妮克"]  是薩卡茲的巫術嗎？不，但是方才我分明感到了......
+生命的呼吸？不。靈魂的力量？不。
+某種更本質的，只在夢境與醉酒後的幻覺中能碰觸到的無形幻象。
+[character(name="char_147_shining_1")]
+但毫無疑問，這個薩卡茲方才......在揮舞晨昏。
+[Character(name="avg_npc_208_1")]
+[name="莫妮克"]  ......
+[name="莫妮克"]  ......嘁。
+[Character(name="avg_npc_208_1#4")]
+[name="莫妮克"]  剛才那一劍......你這傢伙......
+[name="莫妮克"]  你本可以殺了我！
+[character(name="char_147_shining_1")]
+[name="閃靈"]  只是接下你三箭而已，無胄盟。
+[name="閃靈"]  當然，如果你食言的話，我會的。
+[Character(name="avg_npc_208_1#4")]
+[name="莫妮克"]  你——
+被抓住的感覺。
+不能隨意後退，會被追上......被什麼追上？這個薩卡茲？還是她的劍？
+還是她所抓住的......生命的本質？
+[name="莫妮克"]  ......
+[character(name="char_147_shining_1")]
+[name="閃靈"]  ......還要繼續嗎？
+[Character(name="avg_npc_208_1#2")]
+[name="莫妮克"]  ......不。
+[name="莫妮克"]  工作，也是要講究契約精神的。
+[dialog]
+[PlaySound(key="$d_gen_transmissionget", volume=0.6)]
+[name="莫妮克"]  收隊，停止對羅德島一行人的跟蹤。
+[PlaySound(key="$transmission", volume=0.6)]
+[delay(time=0.8)]
+[character(name="char_147_shining_1")]
+[name="閃靈"]  謝謝。
+[Character(name="avg_npc_208_1#2")]
+[name="莫妮克"]  ......問你一個無關緊要的問題。
+[character(name="char_147_shining_1")]
+[name="閃靈"]  出於對你信守承諾的尊重，我會考慮回答你。
+[Character(name="avg_npc_208_1#2")]
+[name="莫妮克"]  對你們薩卡茲而言，削去雙角有什麼......含義嗎？
+[character(name="char_147_shining_1")]
+[name="閃靈"]  ......因人而異。也許有些人認為，薩卡茲的身份本身就是詛咒，也許會透過這種方式隱藏身份。
+[name="閃靈"]  或者，是某些巫術的媒介，某種法術的依託。
+[name="閃靈"]  又或者......是某些異類部族的傳統。可能性有很多，但絕無定論。
+[Character(name="avg_npc_208_1#2")]
+[name="莫妮克"]  ......
+[character(name="char_147_shining_1")]
+[name="閃靈"]  怎麼了嗎？
+[Character(name="avg_npc_208_1#2")]
+[name="莫妮克"]  ......不，沒什麼。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Image]

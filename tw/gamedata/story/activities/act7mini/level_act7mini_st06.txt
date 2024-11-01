@@ -1,0 +1,557 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")] 
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+06:50 A.M.  天氣/晴
+羅德島本艦，幹員宿舍
+[PlaySound(key="$rungeneral", volume=0.6)]
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_room_2",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="avg_173_slchan_1",fadetime=1,block=true)]
+[Delay(time=1)]
+[name="崖心"]  早上好！
+[name="崖心"]  咦，門沒鎖......那我就打擾啦。
+[name="崖心"]  訊使哥！角峰叔！你們在哪呀——
+[Character(name="avg_173_slchan_1#2")]
+[name="崖心"]  唔，沒人在嗎？
+[Character(name="avg_173_slchan_1")]
+[name="崖心"]  按照角峰叔他們的習慣，這個點確實是該起床了才對......不在房間的話，難道是已經出去了？
+[name="崖心"]  不行，我得去看看！
+[dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_corridor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="char_empty")]
+[PlaySound(key="$rungeneral", volume=0.6)]
+[characteraction(name="middle", type="move", xpos=200, fadetime=0.3, block=true)]
+[delay(time=0.51)]
+[characteraction(name="middle", type="move", xpos=-200, fadetime=1, block=false)]
+[Character(name="avg_173_slchan_1",fadetime=0.7)]
+[delay(time=2)]
+[Character(name="char_198_blackd_1",fadetime=1,block=true)]
+[Delay(time=1)]
+[name="訊使"]  嗯？恩希亞小姐，這麼一大早什麼事......等等，別在走廊裡這樣跑，太危險了！
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Character(name="avg_173_slchan_1")]
+[name="崖心"]  啊！發現訊使哥了！
+[name="崖心"]  放心，不會有事的啦——嗚哇！
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=1)]
+[name="訊使"]  哎，小心！
+[dialog]
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=2)]
+[characteraction(name="right", type="jump", power=20, fadetime=0.5,block=false)]
+[delay(time=1)]
+[delay(time=1)]
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  呼......好險，好險，這裡怎麼會有一個包裹啊？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#5",focus=2)]
+[name="崖心"]  謝謝啦，訊使哥。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#5",focus=1)]
+[name="訊使"]  真是的，都說了要小心了，萬一真的摔倒了該怎麼辦？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  嘿嘿，我就知道訊使哥你一定能接住我嘛。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=1)]
+[name="訊使"]  唉。恩希亞小姐都成為幹員了，怎麼還是冒冒失失的......
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[Character(name="char_199_yak_1#3",fadetime=1,block=true)]
+[Delay(time=1)]
+[name="角峰"]  怎麼了，訊使，發生了什麼事？
+[Character(name="char_198_blackd_1",name2="char_199_yak_1#3",focus=1)]
+[name="訊使"]  角峰大哥。
+[Character(name="avg_173_slchan_1",name2="char_199_yak_1#3",focus=1)]
+[name="崖心"]  早啊，角峰叔！
+[Character(name="avg_173_slchan_1",name2="char_199_yak_1#5",focus=2)]
+[name="角峰"]  是二小姐啊，早上好。
+[name="角峰"]  最近在羅德島的生活還習慣嗎？難得二小姐會這麼早起......是準備出任務嗎？
+[Character(name="char_198_blackd_1",name2="char_199_yak_1#5",focus=1)]
+[name="訊使"]  也有可能單純是不習慣這裡的床？畢竟恩希亞小姐對睡眠環境的品質要求很高啊。
+[name="訊使"]  老宅裡恩希亞小姐的床，還是很小的時候角峰大哥幫忙挑的吧？那之後小姐一直不肯更換......還非要抱著自己的小毯子才肯睡呢。
+[Character(name="char_198_blackd_1",name2="char_199_yak_1#4",focus=2)]
+[name="角峰"]  唔，這倒也是......
+[Character(name="avg_173_slchan_1#2",name2="char_199_yak_1#4",focus=1)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  等、等下，訊使哥不要亂說， 我才沒有那麼嬌氣啦！
+[Character(name="avg_173_slchan_1#4",name2="char_199_yak_1#4",focus=1)]
+[name="崖心"]  不要小看冒險家哦？早睡早起而已，我還是做得到的！在山上要是因為睡不著而沒法補充體力，可沒法成為優秀的登山者！
+[name="崖心"]  就算是再冷、再空氣稀薄的環境，我也是能睡著的！
+[Character(name="avg_173_slchan_1#4",name2="char_199_yak_1#5",focus=2)]
+[name="角峰"]  恩希亞小姐......真的長大了啊。
+[Character(name="avg_173_slchan_1",name2="char_199_yak_1#5",focus=1)]
+[name="崖心"]  （小聲）而且，我的毯子也好好地帶過來了，才不會睡不著呢。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=1)]
+[name="訊使"]  啊，結果還是帶來了啊。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  有什麼關係嘛！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  好了好了，不說這個了！
+[name="崖心"]  訊使哥和角峰叔這麼早就出門，還帶著包裹，接下來是要出任務？
+[name="崖心"]  唔，看這個行李的量，應該不是短程的......是不是還要回老家那邊？
+[Character(name="avg_173_slchan_1",name2="char_199_yak_1",focus=2)]
+[name="角峰"]  是啊，一會就要準備出發了。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=1)]
+[name="訊使"]  是哦，有些東西要送回去一趟。銀灰老爺那裡也有不少事情要處理，我和角峰大哥都得回去幫忙。
+[name="訊使"]  恩希亞小姐是有什麼東西要交給我們帶給銀灰老爺嗎？我和角峰大哥很樂意效勞哦。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  嗯，雖然也確實有東西想給老哥啦，但是......但這次不止是這個！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=1)]
+[name="訊使"]  不止......？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#3",focus=2)]
+[name="崖心"]  就是，呃。
+[name="崖心"]  啊呀，訊使哥，你來一下......！
+[Character(name="avg_173_slchan_1",name2="char_199_yak_1#3",focus=1)]
+[name="崖心"]  角峰叔我們一會食堂集合，我和訊使哥先走一步！之後替我向老哥和靈知哥問個好！
+[delay(time=0.5)]
+[PlaySound(key="$rungeneral", volume=0.6)]
+[characteraction(name="left", type="move", xpos=-300, fadetime=1,block=false)]
+[Character(name="char_empty", name2="char_199_yak_1#3", focus=1)]
+[dialog]
+[delay(time=2)]
+[Character(fadetime=0.6)]
+[Character(name="char_198_blackd_1")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="訊使"]  哎，等等，恩希亞小姐，輕點，衣服要被拉下來了......！
+[Character(name="char_198_blackd_1")]
+[Dialog]
+[delay(time=0.7)]
+[PlaySound(key="$rungeneral", volume=0.6)]
+[characteraction(name="middle", type="move", xpos=-300, fadetime=1,block=false)]
+[Character(fadetime=0.5)]
+[delay(time=2)]
+[Character(name="char_199_yak_1#4")]
+[name="角峰"]  ......
+[name="角峰"]  恩希亞小姐......
+[dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_bridge",screenadapt="coverall")]
+[PlaySound(key="$rungeneral", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="avg_173_slchan_1",fadetime=1,block=true)]
+[Delay(time=1)]
+[name="崖心"]  呼......好，到這裡應該就沒問題了。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=1)]
+[name="訊使"]  特地避開角峰大哥，是有什麼要單獨和我說的事情嗎......？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[name="崖心"]  確實是有點事......
+[name="崖心"]  那我說了？訊使哥，你會替我保密吧？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  這個嘛，要看到底是什麼事情了，如果是什麼可能會有危險的事情的話，我恐怕會告訴銀灰老爺哦？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  欸——怎麼這樣！你和角峰叔怎麼都這麼向著老哥！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=1)]
+[name="訊使"]  啊哈哈，畢竟銀灰老爺他也是為了恩希亞小姐好嘛。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  哼哼......算了，我真的說了哦，不是什麼危險的事，所以絕對不能告訴老哥！
+[name="崖心"]  那個啊，訊使哥，你們這次有上聖山的計畫嗎？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=1)]
+[name="訊使"]  目前倒是沒聽說。不過，一切都還要看銀灰老爺的安排，靈知先生和鐧小姐那裡或許也說不定還有什麼新計畫。
+[name="訊使"]  怎麼突然問起這個......又是和恩雅小姐有關？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[name="崖心"]  嗯。瞞不過訊使哥。
+[name="崖心"]  其實我給恩雅姐寫了封信......
+[name="崖心"]  還在家的時候，老哥管得太嚴，沒辦法偷偷跑去看恩雅姐，就連臨走來羅德島前都沒能見她一面。
+[name="崖心"]  來了羅德島之後就更沒機會了，我都好久沒見到恩雅姐了！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  恩希亞小姐......
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[name="崖心"]  所以......訊使哥，能不能拜託你幫我把這封信送到聖山上？
+[name="崖心"]  我就是想問問姐她現在怎麼樣了，做聖女會不會很辛苦，然後告訴她別擔心我......只有這些，我信裡一定不會亂說什麼的！
+[name="崖心"]  老哥他不管這個，他已經好久沒和我好好說過話了，角峰叔肯定也只會勸我再等一等......
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  所以拜託了！訊使哥，只能拜託你了！
+[dialog]
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=1)]
+[delay(time=1.5)]
+[name="訊使"]  ......抱歉，恩希亞小姐。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=2)]
+[name="崖心"]  ......
+[name="崖心"]  果然還是......不行？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=1)]
+[name="訊使"]  不是我不願意，只是......最近謝拉格的局勢變動複雜，蔓珠院那邊，不會允許我們和聖女接觸。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=2)]
+[name="崖心"]  欸？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=1)]
+[name="訊使"]  所以就算送信過去，恐怕恩雅小姐也很難收到。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  我、我沒聽過這個，老哥都沒告訴我這些......
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  知道得太多不見得是好事，老爺他也是為了恩希亞小姐好，不希望您太過煩惱。包括將您送到羅德島，也是為了保護您。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[name="崖心"]  ......他總是這樣。
+[name="崖心"]  說要保護我們，什麼都不讓我知道，結果姐她還是去了聖山，離開了家。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  恩雅小姐她，那時候也是不得已的......
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[name="崖心"]  ......
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#3",focus=2)]
+[name="崖心"]  呼......好了好了！都到此為止！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#3",focus=1)]
+[name="訊使"]  哎？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  別這副表情啊，訊使哥，既然你都這樣說了，那送信這事就算了！
+[name="崖心"]  我不甘心也沒辦法，不是嗎？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=1)]
+[name="訊使"]  小姐......
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  但是說好了，不能把這件事告訴老哥哦？他知道了肯定又要囉嗦，我可不想再被他念，耳朵都要長繭了！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=1)]
+[name="訊使"]  銀灰老爺要是聽到小姐這樣的評價，可要傷心了。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  老哥他才不會呢！他忙得很，哼。
+[name="崖心"]  那我不耽誤你們出門啦，我要先去找可露希爾，問問她之前要採購的東西到了沒......呃，不過這個時間去找她，她會不會直接把我趕出門？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=1)]
+[name="訊使"]  按照可露希爾小姐的生活習慣，現在很有可能才剛睡著，估計敲門也不會有人應呢。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  也對，那還是待會再去。
+[name="崖心"]  啊對了，這次記得幫我多帶些瘤奶疙瘩和手撕肉回來，外面都沒得賣，我好久沒吃到了！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=1)]
+[name="訊使"]  哈哈，放心吧，角峰大哥列了一長串清單，小姐喜歡的東西一樣都不會落下的。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#5",focus=2)]
+[name="崖心"]  太好了，那祝你們一路順利！角峰叔一定在食堂等急了，快過去吧！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#5",focus=1)]
+[name="訊使"]  那就承您吉言了。我們會儘快回來的。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  走好走好。
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[dialog]
+[characteraction(name="left", type="move", xpos=-300, fadetime=2,block=false)]
+[character(name="char_empty",name2="avg_173_slchan_1",fadetime=0.5)]
+[delay(time=2)]
+[Character(name="avg_173_slchan_1")]
+[name="崖心"]  （揮手）
+[Character(name="avg_173_slchan_1#4")]
+[name="崖心"]  ......
+[name="崖心"]  呼......果然還是不行。雖然猜到了，但還是很難不失望啊。
+[name="崖心"]  哼，笨蛋老哥，放訊使哥和角峰叔來管我也沒用，我才不會放棄呢。
+[name="崖心"]  雪山需要的登山器材，不知道可露希爾採購到了沒有......哎呀，等不及了，可露希爾到底幾點才會起床啊！
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  恩雅姐......等著我！
+[dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_forest",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="char_016_medic")]
+[name="醫療幹員"]  最後一名傷者包紮好了，太好了，大家都沒受什麼嚴重的傷。
+[name="醫療幹員"]  這次任務也順利完成了！接下來我們要穿過這片樹林，從萊塔尼亞和維多利亞邊界這裡回程......
+[Character(name="char_016_medic",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  啊，不好意思，我就不跟著大家一起走了。
+[Character(name="char_016_medic",name2="avg_173_slchan_1",focus=1)]
+[name="醫療幹員"]  咦，崖心小姐，是還有什麼事要做嗎？
+[Character(name="char_016_medic",name2="avg_173_slchan_1#3",focus=2)]
+[name="崖心"]  嗯。稍微有點事情要處理。
+[Character(name="char_016_medic",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  別擔心，只是要稍微繞點路，解決一點私事而已，不會很晚回來的！
+[Character(name="char_016_medic",name2="avg_173_slchan_1",focus=1)]
+[name="醫療幹員"]  可是......
+[Character(name="char_016_medic",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  放心放心，接下來我會以我的私人名義行動，不會給羅德島添麻煩......詳細的回頭我會直接和凱爾希醫生說明！
+[Character(name="char_016_medic",name2="avg_173_slchan_1",focus=1)]
+[name="醫療幹員"]  我在擔心的也不是這個......
+[name="醫療幹員"]  哎......好吧，崖心小姐，那你一定要注意安全呀。
+[Character(name="char_016_medic",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  沒問題！
+[dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_corridor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[Character(name="avg_npc_012")]
+[name="近衛幹員"]  嗯？這不是訊使嘛！
+[Character(name="char_198_blackd_1",name2="avg_npc_012",focus=1)]
+[name="訊使"]  中午好。
+[Character(name="char_198_blackd_1",name2="avg_npc_012",focus=2)]
+[name="近衛幹員"]  唷。有段時間沒見了，這是剛回來？
+[Character(name="char_198_blackd_1",name2="avg_npc_012",focus=1)]
+[name="訊使"]  嗯，這次回去事情有點多，處理花掉的時間比預計的久了不少。
+[Character(name="char_198_blackd_1",name2="avg_npc_012",focus=2)]
+[name="近衛幹員"]  角峰和崖心那個小姑娘也和你一起的？
+[Character(name="char_198_blackd_1",name2="avg_npc_012",focus=1)]
+[name="訊使"]  角峰大哥確實是和我一起，但是小姐並沒有和我們一起。
+[name="訊使"]  （說起來，這次回來還沒看到恩希亞小姐......）
+[Character(name="char_198_blackd_1",name2="avg_npc_012",focus=2)]
+[name="近衛幹員"]  是這樣？抱歉，那可能是我誤會了。
+[name="近衛幹員"]  前段時間看那個小姑娘收拾了一大包雪山用登山裝備，穿得像模像樣地出門，還以為她是要和你們一起回去呢。
+[Character(name="char_198_blackd_1",name2="avg_npc_012",focus=1)]
+[name="訊使"]  登山裝備......而且還是雪山用的？這......確定嗎？
+[Character(name="char_198_blackd_1",name2="avg_npc_012",focus=2)]
+[name="近衛幹員"]  錯不了。不瞞你說，就因為我也有這愛好，平常用具上還經常和小姑娘一起商量著買呢，能打折省不少錢！
+[name="近衛幹員"]  沒記錯的話，你們老家那邊確實挺多雪山的吧？
+[Character(name="char_198_blackd_1",name2="avg_npc_012",focus=1)]
+[name="訊使"]  啊，嗯，確實不少。
+[name="訊使"]  （恩希亞小姐，該不會......）
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="訊使"]  （為了給恩雅小姐送信，直接爬雪山？......恩希亞小姐的話，好像確實有可能......）
+[name="訊使"]  （......不會是真的吧？）
+[Character(name="char_198_blackd_1",name2="avg_npc_012",focus=2)]
+[name="近衛幹員"]  下次要是有機會，我還想著能不能給自己放個假去你們那邊逛逛，我還沒試過攀雪山呢，到時候就要麻煩你們當地人啦。
+[Character(name="char_198_blackd_1",name2="avg_npc_012",focus=1)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="訊使"]  （不行，果然還是沒法放心！）
+[name="訊使"]  （得趕快去確認......早該想到的，恩希亞小姐怎麼可能那麼簡單就放棄！）
+[name="訊使"]  （如果真的是這樣，一定要攔住她才行！）
+[Character(name="char_198_blackd_1",name2="avg_npc_012",focus=1)]
+[name="訊使"]  不好意思，我先走一步！
+[delay(time=0.5)]
+[PlaySound(key="$rungeneral", volume=0.6)]
+[characteraction(name="left", type="move", xpos=-300, fadetime=1,block=false)]
+[Character(name="char_empty", name2="avg_npc_012", focus=1)]
+[dialog]
+[delay(time=2)]
+[Character(fadetime=0.6)]
+[Character(name="avg_npc_012")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="近衛幹員"]  哎，等下，你跑什麼啊，就這麼不歡迎我去玩的嗎？！
+[dialog]
+[character]
+[name="訊使"]  抱歉有點緊急的事情要確認——
+[name="訊使"]  謝拉格很歡迎大家來做客！下次有機會一定帶您觀光！
+[stopmusic(fadetime=1)]
+[dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_desert_1",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$drift_intro", key="$drift_loop", volume=0.4)]
+[Character(name="avg_173_slchan_1",fadetime=1,block=true)]
+[Delay(time=1)]
+[name="崖心"]  從這條路走......然後往西邊......
+[name="崖心"]  哦！看到了看到了。
+[name="崖心"]  那個白色的小尖尖......原來從外面看謝拉格的雪山是這個感覺啊。
+[name="崖心"]  唔，從遠處看還真看不出來這山峰爬起來有多難，甚至看起來還挺可愛的嘛，我們的聖山。
+[name="崖心"]  實際上，要爬上那個尖尖的山峰，可是難得很，沒親自嘗試過的人絕對不會明白。
+[name="崖心"]  ......就像是我們銀灰家一樣。
+[name="崖心"]  外人肯定不會明白......
+[Character(name="avg_173_slchan_1", focus=-1)]
+[name="？？？"]  唔，傷腦筋了。我和角峰大哥難道也被恩希亞小姐算作外人了嗎？
+[name="？？？"]  雖然也是事實，但聽起來還是有點讓人傷心。
+[Character(name="avg_173_slchan_1#2")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="崖心"]  ——！
+[PlaySound(key="$rungeneral", volume=0.6)]
+[dialog]
+[Character(name="char_198_blackd_1",fadetime=1,block=true)]
+[Delay(time=1)]
+[name="訊使"]  終於趕上了。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  訊使哥？！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=1)]
+[name="訊使"]  多虧恩希亞小姐對地形不熟悉，這一部分的路線走得很謹慎，耽擱了不少時間，要不然我可能還追不上呢。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=2)]
+[name="崖心"]  等一下，為、為什麼訊使哥會在這裡啊！
+[name="崖心"]  我明明——唔。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=1)]
+[name="訊使"]  現在捂嘴也太遲了哦，“明明沒有告訴任何人自己的計畫”，您是想這麼說嗎？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#3",focus=2)]
+[name="崖心"]  唔唔......
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#3",focus=1)]
+[name="訊使"]  發現我不會幫忙送信之後，就準備好了雪山專用的登山用具，還接了地點距離謝拉格最近的任務。
+[name="訊使"]  在任務完成之後讓小隊其他人先行回到羅德島，自己獨自繞路“解決私事”......
+[name="訊使"]  不愧是恩希亞小姐，行動力非比尋常。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#3",focus=2)]
+[name="崖心"]  但這不還是被抓到了......
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#3",focus=1)]
+[name="訊使"]  找到這麼多線索，再看不出您的打算，那就只能說是我太笨了。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[name="崖心"]  呃。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  恩希亞小姐，您是打算再一次徒手攀上聖山？
+[name="訊使"]  還是說，您打算隻身闖入聖女居所，就為了給恩雅小姐一封信，因此而絲毫不顧自己的安危？
+[name="訊使"]  萬一您在蔓珠院出了什麼事該怎麼辦，您考慮過嗎？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[name="崖心"]  ......
+[name="崖心"]  從小我偷偷溜出去玩，就總是會被老哥和訊使哥抓包，我沒想過能瞞得過你們。
+[name="崖心"]  你說的沒錯，這就是我的打算。既然我能挑戰聖山一次，就能挑戰它第二次。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="訊使"]  我不能贊同。這太危險了！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  可是我沒法就那樣什麼都不做！
+[name="崖心"]  我沒辦法......我沒辦法看到老哥和恩雅姐之間越變越差，卻必須當作什麼也沒看見！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  ......
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[name="崖心"]  恩雅姐離開家的那天，我就躲在旁邊。我知道姐她是不願意的，我們都以為哥哥一定會保護我們，但他卻沒有阻止......他沒有阻止那些人帶恩雅姐走。
+[name="崖心"]  我本以為恩雅姐會哭，但她沒有。
+[name="崖心"]  我看著她出門，心裡卻覺得恩雅姐還不如哭出來。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  ......
+[name="訊使"]  銀灰老爺......也有他的難處。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[name="崖心"]  我知道，雖然你們從來都什麼也不告訴我，但我不傻，我看得出來。
+[name="崖心"]  自他從維多利亞回來之後，創辦了那個公司之後，連著訊使哥和角峰叔你們也忙起來，這我都知道。
+[name="崖心"]  我不想怪老哥。但是訊使哥，你見過謝拉格的聖女嗎？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  恩雅小姐？......不，您是說，“聖女”。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[name="崖心"]  沒錯。我們謝拉格的聖女。
+[name="崖心"]  我曾經遠遠地看過一次。
+[name="崖心"]  本來，我很高興有機會能見到恩雅姐，但......那時我卻只見到了像是被冰霜凝固一樣的聖山聖女，對方遠遠地看過來，就好像根本沒有看我一樣。
+[name="崖心"]  從那個時候我就知道，恩雅姐在聖山上，過的一定不是她真正想要的生活。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  ......或許站在現在各自的立場之上，我們都很難理解對方的心境......但我覺得，恩雅小姐，也已經不是當初可以比擬的了。
+[name="訊使"]  聖女對於謝拉格的意義非凡，恩雅小姐的近況，或許沒有那麼糟糕。她能夠掌握的，是一整個聖教，是謝拉格的信仰......
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[name="崖心"]  不一樣的。這不一樣。
+[name="崖心"]  別人可以說聖女是高貴的，是榮耀的，可以不懂我們的心情，但我看到的不止這些——我們明明是兄弟姐妹！
+[name="崖心"]  兄弟姐妹之間再不去瞭解彼此，或許、或許還會有把對方視作仇敵的一天，那到底要怎麼辦才好？！
+[name="崖心"]  我不能等到這一天真的到來。我怕......所以我必須要做點什麼。
+[name="崖心"]  至少，至少我得親自問問恩雅姐，她到底過得好不好......
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  如果，答案是否定的呢？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  那我就是爬上聖山，靠偷靠搶，也把她偷出來，搶出來！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  ......
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  我是認真的。我真的會這樣做！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  ......噗，哈哈哈。
+[name="訊使"]  真是的，事情哪有那麼簡單呢......
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=2)]
+[name="崖心"]  啊，怎麼在這種時候笑我啊，這可是在表決心欸，太過分了吧訊使哥！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=1)]
+[name="訊使"]  偷人搶人的決心嗎？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#3",focus=2)]
+[name="崖心"]  呃，那只是設想最壞的情況嘛。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#3",focus=1)]
+[name="訊使"]  那可真是，只能祈禱這個最壞的情況永遠不會到來了。恩希亞小姐爬上山去偷人出來的樣子......哎呀，想想頭都開始痛了。
+[name="訊使"]  看來，不管我再說什麼，您也不會改變主意，是嗎？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[name="崖心"]  沒錯。
+[name="崖心"]  不是說笑，我說到做到！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  就算我還是要阻攔，甚至把這件事告訴銀灰老爺——
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[name="崖心"]  就算老哥也反對，就算他要把我關起來，我也不會放棄。千萬別小看我哦，想要關住我可沒那麼簡單！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  唉......
+[delay(time=1.5)]
+[name="訊使"]  沒辦法了，恩希亞小姐確實一向是說到做到的脾氣，攔也攔不住。就連銀灰老爺都沒辦法，看來我也只能投降啦。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  ！
+[name="崖心"]  你的意思是......
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=1)]
+[name="訊使"]  把信件交給我吧。
+[name="訊使"]  比起之後都要提心吊膽，不知道什麼時候您就會胡來，倒還不如我幫您想想辦法，還更穩妥一些。
+[name="訊使"]  唉，真是會給我出難題啊，恩希亞小姐。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#5",focus=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  謝謝你，訊使哥！！
+[name="崖心"]  老哥要是真的不同意，被他發現了要罰你，你就說都是我強迫你做的！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#5",focus=1)]
+[name="訊使"]  哈哈，老爺要是能有這麼簡單被說服就好了。
+[name="訊使"]  不過......這或許也不是件壞事。（小聲）
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  嗯？你說什麼？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=1)]
+[name="訊使"]  沒什麼。一點自言自語而已。
+[name="訊使"]  不過事先說好，就算我答應會幫忙，最多也只能試試把信送到那附近的修道院，再看看有沒有辦法私下送進山裡。
+[name="訊使"]  那裡已經是距蔓珠院掌控區域最近的地方，再往山上走......就不是能隨意進出的區域了。
+[name="訊使"]  恩雅小姐能否真的收到恩希亞小姐您的信，我也無法保證。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  沒問題！訊使哥願意幫忙已經很好了，至少我們可以努力試試......如果這樣行不通，我就再想別的辦法！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=1)]
+[name="訊使"]  直接爬上去這一條最好還是別想了。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#5",focus=2)]
+[name="崖心"]  嘿嘿！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#5",focus=1)]
+[name="訊使"]  （哈哈......看這個樣子，是完全沒有放棄的意思呢。）
+[name="訊使"]  （要是真有這樣一天，銀灰老爺可有的頭痛了......）
+[stopmusic(fadetime=1.5)]
+[dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_canteen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$warm_intro", key="$warm_loop", volume=0.4)]
+[Character(name="char_007_closre_1#5",fadetime=1,block=true)]
+[Delay(time=1)]
+[name="可露希爾"]  再來一碗！
+[Character(name="char_007_closre_1#5",name2="avg_173_slchan_1#3",focus=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  可惡，我已經吃不下了......是我輸了。
+[Character(name="char_007_closre_1#4",name2="avg_173_slchan_1#3",focus=1)]
+[name="可露希爾"]  哼哼，誰叫你要和餓了三天的工程師比胃口，這點只是小意思啦，我感覺自己餓得能直接吞下一整頭肉獸！
+[Character(name="char_007_closre_1#4",name2="avg_173_slchan_1#2",focus=2)]
+[name="崖心"]  你又把自己關在工坊裡了？這次又是在做什麼？
+[name="崖心"]  等等，都沒人給你送飯嗎，怎麼就餓了三天......你的那些小機器呢？
+[Character(name="char_007_closre_1#4",name2="avg_173_slchan_1#2",focus=1)]
+[name="可露希爾"]  嘿嘿，一不小心把大門的門禁等級調成了最高，還戴了耳機，結果完全沒聽見敲門聲。
+[name="可露希爾"]  我也不是故意的呀！這次和整合運動那些人的衝突損壞了不少器械，修得我頭都痛了，不聽點音樂可沒辦法工作。
+[Character(name="char_007_closre_1#4",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  難怪......幸好阿米婭今天去把你揪出來了。
+[Character(name="char_007_closre_1#5",name2="avg_173_slchan_1",focus=1)]
+[name="可露希爾"]  好了好了，吃飯的時候禁止嘮叨！
+[Character(name="char_007_closre_1",name2="avg_173_slchan_1",focus=1)]
+[name="可露希爾"]  說起來，你這次又要買新的登山用具？半年前幫你弄來的那批雪山裝備，怎麼之後沒見你用啊？
+[name="可露希爾"]  啊，如果是有什麼品質問題的話儘管和我說，我去敲......不是，我去和廠商理論理論。
+[Character(name="char_007_closre_1",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  那個啊，不是，東西沒什麼問題，是我暫時用不上了而已啦。
+[Character(name="char_007_closre_1",name2="avg_173_slchan_1",focus=1)]
+[name="可露希爾"]  唔......
+[Character(name="char_007_closre_1",name2="avg_173_slchan_1",focus=-1)]
+[name="訊使"]  您要是真的用上了，我反而會比較擔心啊。
+[Character(name="avg_173_slchan_1#2")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  這個聲音是......訊使哥！
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[dialog]
+[Character(name="char_198_blackd_1",fadetime=1,block=true)]
+[Delay(time=1)]
+[name="訊使"]  午安，兩位。
+[Character(name="char_007_closre_1",name2="char_198_blackd_1",focus=1)]
+[name="可露希爾"]  哦，中午好。剛出任務回來啊，怎麼就你一個人？
+[Character(name="char_007_closre_1",name2="char_198_blackd_1",focus=2)]
+[name="訊使"]  其他人先去找博士了。
+[name="訊使"]  至於我嘛，是來轉交點東西。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=2)]
+[name="崖心"]  恩雅姐——咳咳，“她”又有回信了？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1",focus=1)]
+[name="訊使"]  沒錯哦。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#3",focus=2)]
+[name="崖心"]  太好了！那還像之前一樣，我們去那邊說！訊使哥......訊使哥？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=2)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="崖心"]  你怎麼好像......臉色不太好。該、該不會是恩雅姐她出了什麼事？！還是說老哥那邊——
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=1)]
+[name="訊使"]  哎，別慌，不是這樣......
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=2)]
+[name="崖心"]  那到底是怎麼了呀！
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#4",focus=1)]
+[name="訊使"]  ......
+[name="訊使"]  嗯......事情有點難解釋。總之，恩希亞小姐，這裡有一樣東西，銀灰老爺要托你轉交。
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=2)]
+[name="崖心"]  需要我，轉交？
+[Character(name="char_198_blackd_1",name2="avg_173_slchan_1#2",focus=1)]
+[name="訊使"]  是的。
+[dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="char_198_blackd_1")]
+[name="訊使"]  這是一封，要交給博士的邀請函——
+[Dialog]
+[Character]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[Image]

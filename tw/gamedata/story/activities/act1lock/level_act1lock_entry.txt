@@ -1,0 +1,146 @@
+[HEADER(key="title_test", is_skippable=false, fit_mode="BLACK_MASK")] 固定开头avg
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_rhodescom",screenadapt="coverall")]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="？？？"]  ......這樣的提案......是出於對我們的信任，亦或是另有所圖？
+[name="？？？"]  ......我不能夠確定，但是，這無疑是一次......機會。
+[name="？？？"]  ......那麼，就確定這次由“這個人”來......
+[dialog]
+[Decision(options="（誰的聲音？）",values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$dooropenquite", volume=0.6)]
+[delay(time=1)]
+[Character(name="char_002_amiya_1",fadetime=1,block=true)]
+[Delay(time=1)]
+[Character(name="char_002_amiya_1#10")]
+[name="阿米婭"]  啊，博士，你來了。
+[Character(name="char_130_doberm_ex")]
+[name="杜賓"]  博士。
+[Character(name="char_003_kalts_1")]
+[name="凱爾希"]  來得正好，Dr.{@nickname}。
+[dialog]
+[Decision(options="我遲到了？",values="1")]
+[Predicate(references="1")]
+[Character(name="char_003_kalts_1")]
+[name="凱爾希"]  看來你對自己的散漫多少有些自知之明。
+[dialog]
+[Decision(options="......;明明是你沒有通知我有事要商量......",values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="char_002_amiya_1#3")]
+[name="阿米婭"]  放心吧，博士，今天十分準時。
+[Character(name="char_002_amiya_1")]
+[name="阿米婭"]  實際上，我和凱爾希、杜賓教官正在商量的是有關“聯鎖競賽”的事情。
+[dialog]
+[Decision(options="聯鎖......競賽？",values="1")]
+[Predicate(references="1")]
+[Character(name="char_130_doberm_ex")]
+[name="杜賓"]  沒錯，更詳細地說，是“聯鎖安保競賽”。
+[Character(name="char_130_doberm_ex#3")]
+[name="杜賓"]  它起源於古時米諾斯。熱愛舉辦各類競賽進行活動的米諾斯人，為各城邦之間進行和諧的安保演練、切磋而創辦了官方安保競賽。
+[name="杜賓"]  放在現代來說，更加類似於“軍事演練”。不過，現在的聯鎖競賽已經沒有官方成分了。
+[Character(name="char_130_doberm_ex")]
+[name="杜賓"]  自從重新舉辦以後，它已經成為了非官方組織的商業競賽。
+[name="杜賓"]  參與競賽的商業安保組織成立了聯合賽事委員會，負責與各地區官方組織接洽，以保證聯鎖安保競賽能夠在各地區定期舉辦。
+[Character(name="char_002_amiya_1#2")]
+[name="阿米婭"]  大概是因為合作組織的推薦，這一次，羅德島也收到了參加聯鎖競賽的邀請。
+[dialog]
+[Decision(options="那就參加吧！;參加競賽......會有什麼好處嗎？",values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="char_002_amiya_1#2")]
+[name="阿米婭"]  嗯。至關重要的一點是，賽事方提供的獎金和物資十分豐厚！
+[Character(name="char_002_amiya_1#3")]
+[name="阿米婭"]  對羅德島來說，這也是最重要的一點。
+[Character(name="char_130_doberm_ex")]
+[name="杜賓"]  另外，官方地區和組織認為舉辦競賽能夠提升當地影響力，以及為當地創造更多的合作機會和商業往來，所以十分樂意提供最先進、完備的訓練設施和比賽場所。
+[name="杜賓"]  聯鎖競賽的比賽機制，將要求參賽隊伍有分散小隊或合擊作戰的意識，為獲得更高的積分和排名需要在戰術上進行細緻的規劃。
+[Character(name="char_130_doberm_ex#3")]
+[name="杜賓"]  為了進一步增強羅德島的幹員們的整體實力，參與競賽的確是不可多得的訓練機會。
+[dialog]
+[Decision(options="那一定要參與啊。",values="1")]
+[Predicate(references="1")]
+[Character(name="char_002_amiya_1#3", name2="char_003_kalts_1", focus=1)]
+[name="阿米婭"]  哼哼，凱爾希，你看，我就說博士一定會答應的。
+[Character(name="char_002_amiya_1#3", name2="char_003_kalts_1", focus=2)]
+[name="凱爾希"]  好啊，Dr.{@nickname}，這可是你自己攬下的工作，可不能後悔。
+[dialog]
+[Decision(options="嗯？;......",values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="char_002_amiya_1")]
+[name="阿米婭"]  實際上，博士，聯鎖競賽想要取得好的名次和更多報酬，一名強大的指揮官是必不可少的。
+[name="阿米婭"]  想要參加競賽，就必須要由博士您來帶頭。
+[dialog]
+[Decision(options="由我來指揮？;......",values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="char_130_doberm_ex")]
+[name="杜賓"]  是的，博士，在聯鎖競賽的比賽過程中，您的指揮和判斷是不可缺少的環節。
+[dialog]
+[Decision(options="好吧，又增加工作量了......;我需要注意些什麼？",values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="char_130_doberm_ex")]
+[name="杜賓"]  在聯鎖安保競賽中，我們將面對“假想敵”隊伍，從假想敵的手中獲取賽事獎章和物資。
+[name="杜賓"]  想要更高效地在限定時間中獲得更多獎章，換取更多的物資和獎金的話，將需要配置不同的小隊去往不同的“據點”進行駐守。
+[name="杜賓"]  只有經賽事裁判確認駐守成功，才會在最終的挑戰中增加更強大的假想敵，擊敗這些特殊的假想敵將獲得更多的賽事獎章。
+[name="杜賓"]  不過，對付更加強大的假想敵會耗費博士您更多的精力，如果感到力不從心，可以選擇更加穩妥的方式獲得獎章。
+[Character(name="char_130_doberm_ex#2")]
+[name="杜賓"]  具體情況，就需要博士您在現場明智的判斷了。
+[Character(name="char_002_amiya_1#7")]
+[name="阿米婭"]  不能專注進行指揮導致失誤反倒得不償失。不過，我相信博士一定能佈置最合適的戰術！
+[dialog]
+[Decision(options="我會努力的。",values="1")]
+[Predicate(references="1")]
+[Character(name="char_130_doberm_ex")]
+[name="杜賓"]  除此以外，為了配合聯鎖競賽的主題和可能出現的假想敵的狀況，羅德島每次將派遣特別甄選代表，陪伴博士您一同前往參賽。
+[Character(name="char_002_amiya_1#3")]
+[name="阿米婭"]  請放心，博士，特別甄選代表是我、凱爾希和杜賓教官一起考核並選任的幹員，一定會在作戰中擁有大展身手的機會！
+[dialog]
+[Decision(options="你們不一起去嗎？",values="1")]
+[Predicate(references="1")]
+[Character(name="char_002_amiya_1#5")]
+[name="阿米婭"]  ......
+[Character(name="char_003_kalts_1")]
+[name="凱爾希"]  ......
+[Character(name="char_130_doberm_ex#4")]
+[name="杜賓"]  ......
+[Character(name="char_003_kalts_1")]
+[name="凱爾希"]  這種事不要來麻煩我。
+[Character(name="char_002_amiya_1#5")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="阿米婭"]  實、實際上，我還有好多工作沒來得及做完......
+[Character(name="char_130_doberm_ex")]
+[name="杜賓"]  訓練幹員是我的任務，但我不能永遠盯著他們。幹員們如何和指揮互相配合，在作戰中怎樣才能大顯身手，這些是你應當考慮的，博士。
+[dialog]
+[Decision(options="......好吧。;怎麼有種把麻煩事丟給我來做的感覺。",values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="char_002_amiya_1#7")]
+[name="阿米婭"]  參加聯鎖競賽需要儲備多支小隊的戰力，博士，不如趁現在好好想想該如何指揮幹員們的行動，制定一份完備的參賽成員名單......
+[PlaySound(key="$doorknockquite", volume=0.6)]
+[dialog]
+[Character(name="char_002_amiya_1#6")]
+[name="阿米婭"]  啊，來得正好！
+[Character(name="char_002_amiya_1#2")]
+[name="阿米婭"]  博士，本次特別甄選代表已經到了。
+[dialog]
+[Decision(options="這也太快了吧！;你們是不是早就商量好了？;......",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="char_002_amiya_1#10")]
+[name="阿米婭"]  嘿嘿，接下來，就麻煩您和特別甄選代表一起商量一下競賽相關事宜吧。
+[Character(name="char_003_kalts_1")]
+[name="凱爾希"]  Dr.{@nickname}，記住。
+[dialog]
+[Decision(options="記......記住什麼？;好。;......",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="char_003_kalts_1")]
+[name="凱爾希"]  既然參加了競賽，就要做到最好。
+[name="凱爾希"]  每一任主辦方的承辦競賽的需求各不相同，假想敵們的行動方式也千差萬別。
+[Character(name="char_003_kalts_1#3")]
+[name="凱爾希"]  找出他們的弱點。看清他們的目的。不要掉入他們的詭計。
+[Character(name="char_003_kalts_1#4")]
+[name="凱爾希"]  ——然後，取勝。
+[Dialog]
+[Character]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[Image]

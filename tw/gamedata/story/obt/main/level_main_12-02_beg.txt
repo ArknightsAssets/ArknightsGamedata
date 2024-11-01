@@ -1,0 +1,410 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="27_g6_hideout",screenadapt="showall")]
+[Delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_401_1#10$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_401_1#10$1",focus="m")]
+[name="克洛維希婭"]阿米婭，博士，你們來了。
+[charslot(slot="m",name="avg_npc_401_1#5$1",focus="m")]
+[name="克洛維希婭"]哈哈，如你們所見，我們的士氣......很低迷。
+[name="克洛維希婭"]這裡亂糟糟的，請別介意。自從阿勒黛......離開後，我們的後勤補給一直是個問題。
+[charslot(slot="m",name="avg_npc_401_1#1$1",focus="m")]
+[name="克洛維希婭"]不過，在眼下的麻煩面前，這算是最好解決的一個了。
+[name="克洛維希婭"]在上一場戰鬥中，我們的減員很嚴重。我們曾經以為這些犧牲不會白費，只要阻止薩卡茲推進那些工程，一切就還有挽回餘地。
+[name="克洛維希婭"]很遺憾，他們的行動比我們預計的快得多。
+[charslot(slot="m",name="avg_npc_401_1#9$1",focus="m")]
+[name="克洛維希婭"]薩卡茲們......他們不僅有碎片大廈，他們還製造了那艘“飛空艇”。
+[charslot(slot="m",name="avg_npc_401_1#1$1",focus="m")]
+[name="克洛維希婭"]簡報已經分發到了大家手上，飛空艇不加掩飾地襲擊了溫德米爾公爵的軍隊，和平的假像已不復存在。
+[charslot(slot="m",name="avg_npc_401_1#5$1",focus="m")]
+[name="克洛維希婭"]而碎片大廈......薩卡茲既然主動挑起了這場戰爭，那麼，他們對於碎片大廈的掌控......很可能比我們預想的進度還要快。
+[name="克洛維希婭"]我不敢賭。
+[charslot(slot="m",name="avg_npc_407_1#9$1",focus="m")]
+[name="推進之王"]......阿勒黛和我提起過這把劍的傳說。
+[charslot(slot="m",name="avg_npc_407_1#1$1",focus="m")]
+[name="推進之王"]她說可以劈開天災的諸王之息是維多利亞最牢固的盾，足以抵擋被牽引而來的風暴。
+[charslot(slot="m",name="avg_npc_401_1#1$1",focus="m")]
+[name="克洛維希婭"]那她也一定告訴過你，正因為能激發這種力量的人實在罕有，才有了王宮地下“劍座”的存在。
+[charslot(slot="m",name="avg_npc_396_1#10$1",focus="m")]
+[name="達格達"]推進之王，你真的沒從這把劍裡感受到什麼嗎？
+[name="達格達"]也許是......我不知道，一種召喚？或者微微發熱的感覺？或者是突然能夠運用什麼厲害的源石技藝之類的。
+[charslot(slot="m",name="avg_npc_396_1#9$1",focus="m")]
+[name="達格達"]說不定，你確實可以......
+[Dialog]
+[charslot(slot="m",name="avg_npc_407_1#6$1",focus="m")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_clothmovementsp",volume=0.8)]
+[PlaySound(key="$d_avg_swordy",volume=0.5,delay=0.2)]
+[Delay(time=1.5)]
+[name="推進之王"]......
+[charslot(slot="m",name="avg_npc_407_1#1$1",focus="m")]
+[name="推進之王"]不，什麼都沒有。
+[name="推進之王"]這把劍很冷，很硬，揮動起來比錘子要輕一點，不太好掌控力道。
+[charslot(slot="m",name="avg_npc_396_1#10$1",focus="m")]
+[name="達格達"]沒有別的嗎？哪怕只是一點點彆扭的地方——
+[charslot(slot="m",name="avg_npc_407_1#1$1",focus="m")]
+[name="推進之王"]......它在上戰場前應該好好地打磨一下，已經有點鈍了。
+[charslot(slot="m",name="avg_npc_401_1#7$1",focus="m")]
+[name="克洛維希婭"]看來，我們暫時沒辦法指望這把劍能夠直接派上用場，為我們免除碎片大廈的威脅了。
+[Dialog]
+[charslot(slot="m",name="avg_npc_401_1#7$1",focus="none")]
+[Decision(options="但它也不會再成為大公爵們互相傾軋的籌碼。;薩卡茲們在啟用碎片大廈前也許會多一些顧慮。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_401_1#1$1",focus="m")]
+[name="克洛維希婭"]是的，羅德島的博士，這把劍掌握在我們手中總比在其他勢力手中要好，我們最起碼可以避免它淪為這場戰爭的幫兇，這已經足夠重要。
+[charslot(slot="m",name="avg_npc_407_1#1$1",focus="m")]
+[name="推進之王"]......足夠重要，是嗎，這已經足夠重要。
+[charslot(slot="m",name="avg_npc_407_1#2$1",focus="m")]
+[name="推進之王"]（小聲）阿勒黛，如果我能......
+[charslot(slot="m",name="avg_npc_394_1#21$1",focus="m")]
+[name="阿米婭"]不用灰心，推進之王小姐，也許你只是還沒掌握方法，或者是還不到時候。
+[charslot(slot="m",name="avg_npc_407_1#3$1",focus="m")]
+[name="推進之王"]......
+[charslot(slot="m",name="avg_npc_411_1#1$1",focus="m")]
+[name="可露希爾"]那條補給線我已經分析得差不多了，博士。
+[name="可露希爾"]起點基本上可以確定是在倫蒂尼姆郊外的布倫特伍德，而終點有很多個。
+[name="可露希爾"]除了海布里區的軍工廠之外，很有可能有一條路線直接延伸到碎片大廈地下。
+[charslot(slot="m",name="avg_npc_411_1#8$1",focus="m")]
+[name="可露希爾"]嘖，我們發現得太晚了，如果早一個月——不，哪怕早十天，事情可能都不會發展到如今的地步。
+[charslot(slot="m",name="avg_npc_395_1#1$1",focus="m")]
+[name="阿斯卡綸"]但這條補給線的情報仍然有意義，博士。
+[name="阿斯卡綸"]如果這是一條足夠承擔重型物資運輸的線路，並且能夠直通碎片大廈地底——
+[Dialog]
+[charslot(slot="m",name="avg_npc_395_1#1$1",focus="none")]
+[Decision(options="那麼，運別的也行。;這是個反攻的機會。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_395_1#9$1",focus="m")]
+[name="阿斯卡綸"]沒錯。
+[charslot(slot="m",name="avg_npc_395_1#1$1",focus="m")]
+[name="阿斯卡綸"]戰爭爆發後，特雷西斯的身邊很可能沒有太多戍衛，各王庭之主需要指揮自己的部屬對抗各大公爵。
+[charslot(slot="m",name="avg_npc_395_1#7$1",focus="m")]
+[name="阿斯卡綸"]巫妖的入局可能會是個問題......但據我對他們的瞭解，他們從不會真正選擇支持誰，更何況，凱爾希女士應該已經與他們的信使談過了。
+[name="阿斯卡綸"]但願他們聽進去了凱爾希女士的忠告。
+[charslot(slot="m",name="avg_npc_395_1#1$1",focus="m")]
+[name="阿斯卡綸"]接下來，我們最好——
+[musicvolume(volume=0.3, fadetime=1)]
+[charslot(slot="m",name="avg_155_tiger_1#7$1",focus="m")]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="因陀羅"]維娜，你倒是提一句諾伯特區的事呀！
+[charslot(slot="m",name="avg_155_tiger_1#9$1",focus="m")]
+[name="因陀羅"]被那幫薩卡茲混蛋拋出去的可是我們的街區！貝爾德還在那裡！
+[name="因陀羅"]該死，比起什麼補給線大反攻，我們得去幫她！
+[charslot(slot="m",name="avg_npc_396_1#9$1",focus="m")]
+[name="達格達"]請冷靜一些，我們需要考慮整體局勢......
+[charslot(slot="m",name="avg_155_tiger_1#7$1",focus="m")]
+[name="因陀羅"]怎麼，騎士閣下想教訓我以大局為重？我可管不了怎麼幹掉一個薩卡茲的老妖怪，現在老子的朋友有危險，老子的家有危險！
+[name="因陀羅"]你想讓我們袖手旁觀？！
+[charslot(slot="m",name="avg_npc_396_1#9$1",focus="m")]
+[name="達格達"]不，我知道你很焦躁，可是我們必須考慮到任何可能的情況。
+[charslot(slot="m",name="avg_npc_401_1#1$1",focus="m")]
+[name="克洛維希婭"]我同樣不建議你們獨自行動，在我們確定那位想搶奪國劍的人徹底放棄計劃之前，你們最好......
+[charslot(slot="m",name="avg_155_tiger_1#9$1",focus="m")]
+[name="因陀羅"]最好躲在地下的夾層裡當懦夫？得了吧！我們能應付那些鬼鬼祟祟的傢伙們！現在，最重要的是——
+[charslot(slot="m",name="avg_npc_407_1#1$1",focus="m")]
+[name="推進之王"]夠了，因陀羅。
+[charslot(slot="m",name="avg_155_tiger_1#2$1",focus="m")]
+[multiline(name="因陀羅")]我......
+[charslot(slot="m",name="avg_155_tiger_1#8$1",focus="m")]
+[multiline(name="因陀羅")]好吧。
+[musicvolume(volume=0.6, fadetime=1)]
+[charslot(slot="m",name="avg_npc_407_1#5$1",focus="m")]
+[name="推進之王"]針對特雷西斯的行動會在什麼時候開始？
+[charslot(slot="m",name="avg_npc_395_1#1$1",focus="m")]
+[name="阿斯卡綸"]不會太快，我們需要偵察那些補給線的具體情況。
+[name="阿斯卡綸"]碎片大廈內部的結構也需要調查。特雷西斯......很強大，任何一點鬆懈都會要了我們的命。
+[charslot(slot="m",name="avg_npc_407_1#5$1",focus="m")]
+[name="推進之王"]具體時間呢？
+[charslot(slot="m",name="avg_npc_395_1#1$1",focus="m")]
+[name="阿斯卡綸"]半個月內，我希望能在碎片大廈被他真正啟動前......了結這些事。
+[charslot(slot="m",name="avg_npc_407_1#3$1",focus="m")]
+[name="推進之王"]足夠了。
+[charslot(slot="m",name="avg_npc_407_1#1$1",focus="m")]
+[name="推進之王"]Dr.{@nickname}，我申請在這次行動之前暫時離隊。請放心，我會在任務開始時回來。
+[charslot(slot="m",name="avg_npc_401_1#7$1",focus="m")]
+[name="克洛維希婭"]所以，你還是堅持要前往諾伯特區。
+[charslot(slot="m",name="avg_npc_407_1#9$1",focus="m")]
+[name="推進之王"]......我已經失去很多朋友了，克洛維希婭。
+[charslot(slot="m",name="avg_npc_407_1#1$1",focus="m")]
+[name="推進之王"]我沒有辦法一次又一次地袖手旁觀。
+[name="推進之王"]這確實是個出於我個人情感的要求，我不會避諱這一點。
+[name="推進之王"]但與此同時，我也認為這是個機會，在我們的正式行動開始之前，解決掉一些潛藏的隱患。
+[charslot(slot="m",name="avg_npc_407_1#10$1",focus="m")]
+[name="推進之王"]......比如，那些傷害阿勒黛的人，那些想要諸王之息的人。
+[name="推進之王"]那無疑是一位大公爵，無論他接下來打算擺出什麼立場，我想......我都該和他好好“談一談”。
+[charslot(slot="m",name="avg_npc_401_1#1$1",focus="m")]
+[name="克洛維希婭"]阿斯卡綸小姐說了，我們的時間並不充裕。
+[charslot(slot="m",name="avg_npc_407_1#1$1",focus="m")]
+[name="推進之王"]我知道。
+[charslot(slot="m",name="avg_npc_407_1#3$1",focus="m")]
+[name="推進之王"]我會處理好的。
+[charslot(slot="m",name="avg_npc_401_1#9$1",focus="m")]
+[name="克洛維希婭"]......博士，你怎麼看？
+[Dialog]
+[charslot]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+[Decision(options="在那個地塊上，還有件值得注意的事。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_394_1#19$1",focus="m")]
+[name="阿米婭"]......是的，薩卡茲的飛空艇很可能停靠在現在的諾伯特區中。
+[name="阿米婭"]這也意味著......
+[stopmusic(fadetime=1.5)]
+[charslot(slot="m",name="avg_npc_394_1#18$1",focus="m")]
+[name="阿米婭"]她......特蕾西婭小姐，也許也在那裡。
+[name="阿米婭"]在這場戰爭中，我們一定會面對她，或遲或早。
+[charslot(slot="m",name="avg_npc_401_1#1$1",focus="m")]
+[name="克洛維希婭"]還有一件事，Logos先生和我提到過——
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_transmissionget",volume=1)]
+[delay(time=0.3)]
+[name="自救軍戰士"]緊急......訊......緊急......
+[name="自救軍戰士"]薩卡茲突襲......卡登區的安全屋......我們......他們的部隊......
+[name="自救軍戰士"]呃啊——
+[Dialog]
+[PlaySound(key="$transmission",volume=0.6)]
+[delay(time=1.5)]
+[PlayMusic(intro="$calamity_intro", key="$calamity_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4040_rockr_1#10$1",focus="m")]
+[name="洛洛"]卡登區？怎麼回事？
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_transmissionget",volume=1)]
+[CharacterCutin(widgetID="2", name="avg_npc_398_1#1$1", style="cutin", fadestyle= "horiz_expand_center", fadetime=0.5, offsetx=300, width=200, block=true)]
+[name="自救軍戰士"]奧克特里格區的安全屋......
+[name="自救軍戰士"]......襲擊，警報......
+[Dialog]
+[PlaySound(key="$transmission",volume=0.6)]
+[CharacterCutin(widgetID="2",fadetime=0.2,block=true)]
+[delay(time=1.5)]
+[Dialog]
+[PlaySound(key="$d_gen_transmissionget",volume=1)]
+[CharacterCutin(widgetID="3", name="avg_npc_648_1#3$1", style="cutin", fadestyle= "horiz_expand_center", fadetime=0.5, offsetx=-300, width=200, block=true)]
+[name="凱瑟琳"]費斯特！海布里區的安全屋正在遭受襲擊！
+[charslot(slot="r",name="avg_4072_ironmn_1#6$1",focus="r")]
+[name="費斯特"]你們那邊情況怎麼樣？
+[charslot(slot="r",name="avg_4072_ironmn_1#6$1",focus="none")]
+[name="凱瑟琳"]我們正在組織還擊，向地下深層撤退，情況很危急，薩卡茲很可能......
+[name="凱瑟琳"]......這絕不是一次簡單的清剿，他們準備......
+[name="凱瑟琳"]......必須......
+[Dialog]
+[PlaySound(key="$transmission",volume=0.6)]
+[CharacterCutin(widgetID="3",fadetime=0.2,block=true)]
+[delay(time=0.6)]
+[charslot(slot="r",name="avg_4072_ironmn_1#6$1",focus="r")]
+[name="費斯特"]奶奶？聽得到嗎？奶奶？
+[name="費斯特"]該死，通訊斷了！
+[charslot(slot="r",name="avg_4072_ironmn_1#10$1",focus="r")]
+[name="費斯特"]這是怎麼回事？現在已經有三座安全屋正在遭到薩卡茲的襲擊了！
+[name="費斯特"]那裡的通訊斷了，我們需要支援他們——
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_401_1#6$1",focus="m")]
+[name="克洛維希婭"]......
+[name="克洛維希婭"]不，不只是三座安全屋。
+[name="克洛維希婭"]是我們這裡的通訊被切斷了。
+[charslot(slot="m",name="avg_npc_407_1#7$1",focus="m")]
+[name="推進之王"]博士，趴下！
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_grenadethrow")]
+[playsound(key="$d_gen_explo_n",delay=1)]
+[delay(time=1)]
+[CameraShake(duration=1, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_battlefield_environment", volume=0.4, loop=true, channel="warn")]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_4040_rockr_1#10$1",duration=0.3)]
+[charslot(slot="r",name="avg_npc_401_1#7$1",duration=0.3)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_4040_rockr_1#10$1",focus="l")]
+[name="洛洛"]克洛維希婭，這是怎麼了？！
+[name="洛洛"]怎麼可能，這裡也被......這裡可是自救軍保密等級最高的區域！
+[charslot(slot="r",name="avg_npc_401_1#7$1",focus="r")]
+[name="克洛維希婭"]......Logos先生和我提到過，薩卡茲可能正在滲透我們的情報網路。
+[name="克洛維希婭"]鑒於現在的情況，我只能判斷，保密失效的等級比我們原來預計的高得多。
+[charslot(slot="r",name="avg_npc_401_1#6$1",focus="r")]
+[name="克洛維希婭"]很有可能，所有的自救軍基地都遭到了襲擊。
+[charslot(slot="l",name="avg_4040_rockr_1#3$1",focus="l")]
+[name="洛洛"]我們必須撤離！
+[charslot(slot="r",name="avg_npc_401_1#6$1",focus="r")]
+[name="克洛維希婭"]......
+[charslot(slot="r",name="avg_npc_401_1#5$1",focus="r")]
+[name="克洛維希婭"]......可是，去哪裡？
+[Dialog]
+[charslot]
+[PlaySound(key="$grenade_explosion",volume=0.7)]
+[CameraShake(duration=3, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion", volume=0.7, loop=false, channel="explo",delay=1)]
+[PlaySound(key="$d_gen_explo_n", volume=0.7, loop=false, channel="explo1",delay=2)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_229_1#7",focus="m")]
+[name="號角"]各位，薩卡茲的攻勢很猛烈，他們早就盯上這裡了，外層通道已經失守。
+[name="號角"]他們——
+[Dialog]
+[charslot]
+[PlaySound(key="$e_atk_magic_m", volume=1)]
+[playsound(key="$p_atk_elecball_n", volume=1,delay=0.2)]
+[playsound(key="$d_avg_explosion_stone", volume=1,delay=0.6)]
+[delay(time=0.8)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[CameraShake(duration=1,xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_235",focus="m")]
+[name="Misery"]......現在，中層的緩衝區也被突破了。
+[name="Misery"]博士，敵人使用了新式的薩卡茲巫術裝置。那種數量，還有威力......我們的城防軍和自救軍朋友難以應對。
+[charslot(slot="m",name="avg_npc_229_1#1",focus="m")]
+[name="號角"]坦白地說，我們沒有勝算，組織防守的羅本撐不了太久。
+[charslot(slot="m",name="avg_npc_401_1#6$1",focus="m")]
+[name="克洛維希婭"]撐不了多久......是多久。
+[charslot(slot="m",name="avg_npc_229_1#1",focus="m")]
+[name="號角"]十五分鐘......不，半個小時。
+[name="號角"]我們的時間最多只有這些。
+[charslot(slot="m",name="avg_npc_401_1#3$1",focus="m")]
+[name="克洛維希婭"]撤離，該死，我們該向哪裡撤離？自救軍現在在倫蒂尼姆沒有一處安全的去處！
+[charslot(slot="m",name="avg_npc_401_1#9$1",focus="m")]
+[name="克洛維希婭"]儀器廠的第三倉庫？四季百貨的停車場？伯恩子爵的公寓......
+[charslot(slot="m",name="avg_npc_401_1#8$1",focus="m")]
+[name="克洛維希婭"]......不行，風險都太高了。
+[charslot(slot="m",name="avg_npc_401_1#9$1",focus="m")]
+[name="克洛維希婭"]一定還有什麼地方......
+[Dialog]
+[charslot(slot="m",name="avg_npc_401_1#9$1",focus="none")]
+[Decision(options="如果倫蒂尼姆城內危機四伏，我們也許可以暫時撤出。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_401_1#4$1",focus="m")]
+[name="克洛維希婭"]撤出倫蒂尼姆？
+[charslot(slot="m",name="avg_npc_401_1#1$1",focus="m")]
+[name="克洛維希婭"]可是......
+[charslot(slot="m",name="avg_npc_411_1#1$1",focus="m")]
+[name="可露希爾"]對了！薩卡茲的那條補給線！
+[name="可露希爾"]我們可以反向利用海布里區的補給線，撤出倫蒂尼姆城！
+[name="可露希爾"]我們有太多傷患和非戰鬥人員了，走地下能夠幫助我們避免大部分戰鬥！
+[charslot(slot="m",name="avg_4072_ironmn_1#8$1",focus="m")]
+[name="費斯特"]可我們在倫蒂尼姆的這些成果......
+[charslot(slot="m",name="avg_npc_229_1#1",focus="m")]
+[name="號角"]現在的攻勢只能說明，之前他們只是覺得沒有必要摧毀我們。
+[name="號角"]在戰爭爆發的現在，軍事委員會開始真正把自救軍視作威脅了。
+[Dialog]
+[charslot(slot="m",name="avg_npc_229_1#1",focus="none")]
+[PlaySound(key="$d_gen_explo_n", volume=0.7)]
+[CameraShake(duration=1,xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=true)]
+[PlaySound(key="$d_avg_crowdrun", volume=0.8)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_229_1#7",focus="m")]
+[name="號角"]沒有猶豫的時間了。
+[name="號角"]我需要立刻去支援羅本。我們會盡可能地吸引薩卡茲的主力部隊，掩護你們撤退。
+[charslot(slot="m",name="avg_npc_401_1#9$1",focus="m")]
+[name="克洛維希婭"]......好吧。
+[charslot(slot="m",name="avg_npc_401_1#1$1",focus="m")]
+[name="克洛維希婭"]阿米婭，博士，自救軍在這場撤離中需要你們的援助。
+[charslot(slot="m",name="avg_npc_394_1#21$1",focus="m")]
+[name="阿米婭"]義不容辭，我們不會拋棄任何盟友。
+[Dialog]
+[charslot]
+[Decision(options="阿斯卡綸，組織突圍。;Misery，銷毀檔案。", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_395_1#1$1",focus="m")]
+[name="阿斯卡綸"]明白。
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_npc_235",focus="m")]
+[name="Misery"]已經在做了。
+[Predicate(references="1;2")]
+[Dialog]
+[charslot]
+[Decision(options="Logos。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_650_1#1$1",focus="m")]
+[name="Logos"]我在。
+[Dialog]
+[charslot(slot="m",name="avg_npc_650_1#1$1",focus="none")]
+[Decision(options="幫助號角小姐和她的隊伍拖延時間。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_650_1#1$1",focus="m")]
+[name="Logos"]請放心，博士。
+[name="Logos"]我會保證你們的安全。
+[name="Logos"]轉移與再加密的計劃還未來得及落實，王庭選了個最完美的時機發動清剿。
+[Dialog]
+[charslot(slot="m",name="avg_npc_650_1#1$1",focus="none")]
+[Decision(options="看來，他們比我們想像的更瞭解我們。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_650_1#2$1",focus="m")]
+[name="Logos"]特雷西斯也比他之前佯裝出來的......更敏銳。
+[name="Logos"]既然這裡已經註定失守，我想......鬧得大一些也無妨。
+[charslot(slot="m",name="avg_4040_rockr_1#4$1",focus="m")]
+[name="洛洛"]Logos先生，我們還是會回來的！
+[charslot(slot="m",name="avg_npc_650_1#1$1",focus="m")]
+[name="Logos"]你們可以重建這裡。
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.6)]
+[charslot(slot="m",name="avg_npc_650_1#1$1",afrom=1,ato=0,duration=1)]
+[Delay(time=3)]
+[charslot(slot="m",name="avg_npc_401_1#1$1",focus="m")]
+[name="克洛維希婭"]接下來，只要找到海布里區的補給線入口。
+[Dialog]
+[charslot]
+[Decision(options="費斯特，交給你了。;洛洛，你很熟悉地下的那些管線通道。", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4072_ironmn_1#1$1",focus="m")]
+[name="費斯特"]我瞭解了，各位，跟我來。
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_4040_rockr_1#1$1",focus="m")]
+[name="洛洛"]放心，我會帶著傷患們安全撤離的。
+[Predicate(references="1;2")]
+[Dialog]
+[charslot]
+[Decision(options="可露希爾，帶著傷患和非戰鬥人員跟他們走。", values="1")]
+[Predicate(references="1")]
+[Decision(options="凱爾希......就交給你和閃靈了。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_411_1#6$1",focus="m")]
+[name="可露希爾"]啊？欸？
+[charslot(slot="m",name="avg_npc_411_1#11$1",focus="m")]
+[name="可露希爾"]喂，Dr.{@nickname}，開什麼玩笑！我要是非戰鬥人員，那你也是！
+[name="可露希爾"]我絕對夠把你打趴下！是你該跟著他們撤離！
+[Dialog]
+[charslot(slot="m",name="avg_npc_411_1#11$1",focus="none")]
+[Decision(options="阿米婭和阿斯卡綸能保證我的安全。;我們來牽制薩卡茲追兵，這樣最保險。", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_394_1#21$1",focus="m")]
+[name="阿米婭"]博士......我絕不會讓您受傷。
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_npc_411_1#6$1",focus="m")]
+[name="可露希爾"]嘖，真狡猾。
+[Predicate(references="1;2")]
+[Dialog]
+[charslot(slot="m",name="avg_npc_411_1#8$1",focus="m")]
+[name="可露希爾"]所以，三支隊伍。
+[name="可露希爾"]號角、Misery、Logos他們作為對抗薩卡茲圍剿的主力行動。博士您和阿米婭與推進之王他們牽制薩卡茲的其他追兵。
+[name="可露希爾"]我和閃靈跟著自救軍的其他人，安靜地完成撤離。
+[name="可露希爾"]我們最終在哪裡會合？
+[charslot(slot="m",name="avg_npc_394_1#19$1",focus="m")]
+[name="阿米婭"]那個倫蒂尼姆郊外的鎮子......布倫特伍德。
+[charslot(slot="m",name="avg_npc_411_1#8$1",focus="m")]
+[name="可露希爾"]行動確認。
+[charslot(slot="m",name="avg_npc_394_1#19$1",focus="m")]
+[name="阿米婭"]戰爭已經爆發了。
+[name="阿米婭"]它不會放過我們每一個人。
+[charslot(slot="m",name="avg_npc_394_1#17$1",focus="m")]
+[name="阿米婭"]但我們也絕不能......鬆開希望。
+[Dialog]
+[StopSound(channel="warn", fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

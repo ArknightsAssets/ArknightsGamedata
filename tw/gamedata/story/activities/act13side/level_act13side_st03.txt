@@ -1,0 +1,946 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")] 卡西米尔 纯剧情3
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.4)]
+確認卡瓦萊利亞基陷入緊急情況。
+確認訊號代碼正確。確認部隊識別碼正確。
+全隊聽令。
+撤下偽裝，進城。
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_23_G09",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="avg_237_gravel_1")]
+[name="礫"]  ......距離電力完全恢復，還需要一點時間。
+[name="礫"]  羅德島的各位已經在指引下回到了房間休息，如果二位想要確認的話......
+[Character(name="char_002_amiya_1#7")]
+[name="阿米婭"]  ......博士，我想去看看各位。
+[name="阿米婭"]  事發突然，也許會有一些幹員弄不清狀況，這些天對感染者的抗議，也讓幹員們累積了不少壓力。
+[dialog]
+[Decision(options="那就有勞阿米婭了。;......;真的不需要我幫忙嗎？",values="1;2;3")]
+[Predicate(references="1")]
+[Character(name="char_002_amiya_1#6")]
+[name="阿米婭"]  啊，沒關係的，博士。
+[Character(name="char_002_amiya_1#4")]
+[name="阿米婭"]  這些天一直是博士在應付各種商業洽談和社交活動，其實我還挺過意不去的。
+[Character(name="char_002_amiya_1#3")]
+[name="阿米婭"]  趁著這個機會，趕緊休息一下吧。
+[Predicate(references="2")]
+[Character(name="char_002_amiya_1#3")]
+[name="阿米婭"]  ......啊哈哈，博士已經很累了吧。
+[name="阿米婭"]  畢竟從昨天開始就一直在應付那些企業家，嗓子都啞了吧？
+[Predicate(references="3")]
+[Character(name="char_002_amiya_1#3")]
+[name="阿米婭"]  沒關係，有芙蓉小姐在，應該不會出什麼差錯。
+[name="阿米婭"]  我也只是去確認一下各位的情況，很快就會回來的。
+[Predicate(references="1;2;3")]
+[Character(name="avg_237_gravel_1", name2="char_002_amiya_1", focus=1)]
+[name="礫"]  請阿米婭小姐放心吧，您不在的時間裡，我會照顧好博士的。
+[Character(name="avg_237_gravel_1", name2="char_002_amiya_1#2", focus=2)]
+[name="阿米婭"]  啊......嗯。
+[Character(name="avg_237_gravel_1", name2="char_002_amiya_1#3", focus=2)]
+[name="阿米婭"]  那麼我先下去啦。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[characteraction(name="right", type="move", xpos=300, fadetime=2,block=false)]
+[character(name="avg_237_gravel_1",name2="char_empty",fadetime=0.5)]
+[delay(time=2)]
+[Character(name="avg_237_gravel_1")]
+[name="礫"]  ......{@nickname}博士。
+[name="礫"]  最近商業聯合會有一些動向，恐怕會對羅德島不利。
+[name="礫"]  加上現在的停電事件，恐怕下一步會是更加明目張膽的陰謀。
+[name="礫"]  最近......請千萬不要離開我的視線。當然，您要是自願留在我的身邊，那是再好不過。
+[dialog]
+[Decision(options="想出去逛逛嗎？",values="1")]
+[Predicate(references="1")]
+[Character(name="avg_237_gravel_1#3")]
+[name="礫"]  ......嘻嘻，您突然這麼解風情，倒是讓我有些吃驚。
+[name="礫"]  怎麼了？難道發生了什麼好事嗎？
+[dialog]
+[Decision(options="礫小姐，您是怎麼看待商業聯合會的？",values="1")]
+[Predicate(references="1")]
+[Character(name="avg_237_gravel_1#4")]
+[name="礫"]  ......您不是問過類似的問題了嗎？怎麼，是想多聽一聽我的聲音嗎？可以哦。
+[Character(name="avg_237_gravel_1#2")]
+[name="礫"]  他們是卡西米爾的蛀蟲。
+[name="礫"]  商人們聯合起來，腐蝕騎士和城市，最終達成他們自己的目的。
+[dialog]
+[Decision(options="不。",values="1")]
+[Predicate(references="1")]
+[Decision(options="商業聯合會，如其名，只是“聯合”罷了。",values="1")]
+[Predicate(references="1")]
+[Decision(options="利益是連系他們的紐帶，他們當然可被分割。",values="1")]
+[Predicate(references="1")]
+[Decision(options="不過是與騎士們的對抗，讓他們看起來，像一個整體。",values="1")]
+[Predicate(references="1")]
+[Character(name="avg_237_gravel_1#4")]
+[name="礫"]  ......
+[name="礫"]  ......您做了什麼？
+[dialog]
+[Decision(options="商業聯合會的常務董事大致有四類人。",values="1")]
+[Predicate(references="1")]
+[Character(name="avg_237_gravel_1")]
+[name="礫"]  嘻......願聞其詳。
+[dialog]
+[Decision(options="急於推進時代，取締騎士階層的激進分子。",values="1")]
+[Predicate(references="1")]
+[Decision(options="守舊卻扎實，一步一腳印的穩健派。",values="1")]
+[Predicate(references="1")]
+[Decision(options="沒有任何立場，只要有利益就趨之若鶩的逐利者。",values="1")]
+[Predicate(references="1")]
+[Character(name="avg_237_gravel_1#4")]
+[name="礫"]  ......最後一種呢？
+[dialog]
+[Decision(options="對於如今的羅德島而言，還為時尚早。",values="1")]
+[Predicate(references="1")]
+[Decision(options="貿然接觸，反而危險。",values="1")]
+[Predicate(references="1")]
+[Character(name="avg_237_gravel_1#4")]
+[name="礫"]  ......您的意思是，聯合會內部有分歧？而您......已經抓住了那些分歧？
+[dialog]
+[Decision(options="很難說是分歧。;他們根本就不可能存在“團結”。;皆為利來，皆為利往。",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Character(name="avg_237_gravel_1#5")]
+[name="礫"]  ......但您不過初來乍到，只是透過發言人的管道，結識了一部分常務董事......
+[name="礫"]  您怎麼敢如此斷言？一旦您選錯了信任對象，其後果絕非監正會可以承擔......
+[dialog]
+[Decision(options="羅德島從未考慮過依賴他人犧牲來達成自己的目的。;您總不能認為，我是真的毫無犧牲覺悟去參加那些宴會的吧？",values="1;2")]
+[Predicate(references="1;2")]
+[Character(name="avg_237_gravel_1")]
+[name="礫"]  ......不。
+[Character(name="avg_237_gravel_1#6")]
+[name="礫"]  您當然不。
+[stopmusic(fadetime=1.5)]
+[dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_23_G04",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$normal01_intro", key="$normal01_loop", volume=0.4)]
+[PlaySound(key="$fightgeneral")] 
+[CameraShake(duration=0.2, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[PlaySound(key="$fightgeneral")] 
+[CameraShake(duration=0.3, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$swordtsing3", volume=0.9)]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[PlaySound(key="$fightgeneral")] 
+[CameraShake(duration=0.2, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Character(name="avg_npc_209_1")]
+[name="羅伊"]  你們還有時間可以浪費嗎？
+[name="羅伊"]  關於感染者的通緝令已經發出，等到大隔斷的影響過去，你們無路可逃。
+[Character(name="avg_npc_209_1#2")]
+[name="羅伊"]  啊，順便一提，之所以叫“大隔斷”，是因為在失去核心電力後各地塊會出現短暫的漂移現象......
+[Character(name="avg_npc_209_1#6")]
+[name="羅伊"]  現在，聯合會周遭的地塊連接都中斷了，你們逃不出去。
+[dialog]
+[character]
+[Character(name="avg_npc_123#6",name2="avg_npc_122#8",fadetime=1,block=true)]
+[delay(time=1)]
+[Character(name="avg_npc_123#6",name2="avg_npc_122#8",focus=1)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="格蕾納蒂"]  ......呃......該死......
+[Character(name="avg_npc_123#6",name2="avg_npc_122#8",focus=2)]
+[name="索娜"]  ......好像不是可以正面打贏的對手啊。
+[Character(name="avg_npc_209_1")]
+[name="羅伊"]  感謝你總算理解了你早該理解的事情。那我再問一遍，要不要把東西交給我？那我可以放走你們。
+[Character(name="avg_npc_122#8")]
+[name="索娜"]  嘿，無胄盟什麼時候這麼好心了？
+[Character(name="avg_npc_209_1#2")]
+[name="羅伊"]  ......心情問題吧，終於從漫長的......鬥爭裡看到了曙光。
+[name="羅伊"]  從玻利瓦爾的廢墟，到卡西米爾的平原，最後來到這裡。
+[name="羅伊"]  沒有正常人會覺得殺人是一件快樂的事情，只有那些養尊處優的蠢貨喜歡觀賞他人流血。
+[Character(name="avg_npc_209_1")]
+[name="羅伊"]  現在，你能拯救我，感染者，我也可以幫你摧毀無胄盟。
+[Character(name="avg_npc_122#2")]
+[delay(time=0.2)]
+[name="索娜"]  ......抱歉，就算你說的是真的，我也不打算把這東西交給你。
+[Character(name="avg_npc_209_1#3")]
+[name="羅伊"]  為什麼？
+[Character(name="avg_npc_122#8")]
+[name="索娜"]  我們已經厭倦了受他人操縱的日子了，無胄盟。
+[Character(name="avg_npc_123#6",name2="avg_npc_122#8",focus=2)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="索娜"]  小灰！
+[Character(name="avg_npc_123#6")]
+[name="格蕾納蒂"]  明白，看這一炮如何！？
+[Character(name="avg_npc_209_1#5")]
+[name="羅伊"]  ——唔。
+[dialog]
+[character]
+[CameraShake(duration=1, xstrength=8, ystrength=6, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$d_sp_ballista")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.25, block=true)]
+[delay(time=0.5)]
+[Character(name="avg_npc_209_1#5")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="羅伊"]  咳咳......咳咳......搞什麼。
+[Character(name="avg_npc_123#6",name2="avg_npc_122#8",focus=2)]
+[name="索娜"]  跑，小灰！
+[Character(name="avg_npc_123#6",name2="avg_npc_122#8",focus=1)]
+[name="格蕾納蒂"]  我知道！
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[characteraction(name="left", type="move", xpos=-300, fadetime=0.8,block=false)]
+[characteraction(name="right", type="move", xpos=300, fadetime=0.8,block=false)]
+[character(name="char_empty",name2="char_empty",fadetime=0.5)]
+[delay(time=2)]
+[Character(name="avg_npc_209_1#5")]
+[name="羅伊"]  ......在這座城市的構造區亂跑，小心失足跌進引擎裡，變成肉末啊。
+[name="羅伊"]  你可跑不了——
+[Character(name="avg_npc_209_1#3")]
+[name="羅伊"]  ——唔。
+[dialog]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$e_atk_arrow_h")]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=0.6, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[Character(name="avg_npc_122#6")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="索娜"]  ......！？
+[Character(name="avg_npc_123#6",name2="avg_npc_122#8",focus=2)]
+[name="索娜"]  小灰！小心！
+[Character(name="avg_npc_123#6",name2="avg_npc_122#8",focus=1)]
+[name="格蕾納蒂"]  ——
+[dialog]
+[Character]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1.5, block=true)]
+[Background]
+[Image(image="23_I12", x=-120, y=-50, xScale=1.15, yScale=1.15, fadetime=0)]
+[ImageTween(xFrom=-120, yFrom=-50, xTo=0, yTo=0, xScaleFrom=1.15, yScaleFrom=1.15, xScaleTo=0.85, yScaleTo=0.85, duration=15, block=false)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$e_atk_arrow_h")]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, fadetime=0.5, block=true)]
+[PlaySound(key="$bodyfalldown3",volume=0.3)]
+青色的箭矢貫穿了焰尾騎士的盔甲。
+索娜試圖格擋，但是巨大的衝擊力依然讓她嬌小的身軀失去控制。
+她在半空中掙扎，飛向城區地塊之間的間隙。
+[dialog]
+[name="格蕾納蒂"]  索娜——！
+[delay(time=2)]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[Background(image="bg_23_G04",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="avg_npc_209_1#2")]
+[name="羅伊"]  （......歪了點，剛才突然眼前黑了一下......）
+[Character(name="avg_npc_209_1#5")]
+[name="羅伊"]  （疲勞產生的錯覺嗎......？不，確實是被干擾了......）
+[Character(name="avg_npc_123#6")]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="格蕾納蒂"]  ——羅伊——！
+[delay(time=0.5)]
+[Character(name="avg_npc_209_1#5")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="羅伊"]  ......！
+[dialog]
+[Character(name="avg_npc_123#6")]
+[PlaySound(key="$fightgeneral")] 
+[CameraShake(duration=0.2, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[PlaySound(key="$fightgeneral")] 
+[CameraShake(duration=0.2, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[PlaySound(key="$swordtsing3")] 
+[CameraShake(duration=0.5, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[PlaySound(key="$fightgeneral")] 
+[CameraShake(duration=1, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Character(name="avg_npc_209_1#5")]
+[name="羅伊"]  失去理智了嗎。
+[dialog]
+[Character(name="avg_npc_123#6",name2="avg_npc_209_1#5",focus=0)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[CameraShake(duration=0.4, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[CameraShake(duration=1, xstrength=8, ystrength=6, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_sp_ballista")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.25, block=true)]
+[Character(name="avg_npc_209_1#5")]
+[name="羅伊"]  嘖嘖嘖，這麼近的距離開火，你是打算同歸於盡了嗎？
+[Character(name="avg_npc_123#6")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="格蕾納蒂"]  你......你竟然......對索娜......！
+[Character(name="avg_npc_209_1")]
+[name="羅伊"]  ......確實有些不小心。
+[Character(name="avg_npc_209_1#5")]
+[name="羅伊"]  還沒確認那枚晶片是不是真的被銷毀了，這很危險，我可不敢擔這個責任。
+[Character(name="avg_npc_123#6")]
+[name="格蕾納蒂"]  少廢話！
+[dialog]
+[character]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[CameraShake(duration=0.3, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[PlaySound(key="$fightgeneral")] 
+[CameraShake(duration=0.2, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[CameraShake(duration=1, xstrength=8, ystrength=6, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_sp_ballista")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.25, block=true)]
+[delay(time=0.5)]
+[Character(name="avg_npc_209_1#5")]
+[name="羅伊"]  （該怎麼辦，趕緊殺掉灰毫，想辦法下去確認一下屍體嗎？）
+[Character(name="avg_npc_209_1#2")]
+[name="羅伊"]  （不，這也太危險了，而且電力就快要恢復了，我可不想被夾在鐵板中間啊。）
+[Character(name="avg_npc_123#6")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="格蕾納蒂"]  我要你血債血償——！！
+[Character(name="avg_npc_209_1")]
+[name="羅伊"]  直來直往，失去理智之後你的動作還真是好看穿啊——
+[Character(name="avg_npc_123#6")]
+[name="格蕾納蒂"]  ——是嗎？
+[Character(name="avg_npc_209_1#5")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="羅伊"]  ！？
+[dialog]
+[CameraShake(duration=1, xstrength=8, ystrength=6, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.7, r=51, g=51, b=51, fadetime=0.5, block=true)]
+[PlaySound(key="$d_sp_ballista")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.25, block=true)]
+[Character(fadetime=0.6,block=true)]
+[delay(time=1.5)]
+[Character(name="avg_npc_209_1#5")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="羅伊"]  唔，竟然是我大意了嗎？
+[dialog]
+[Character(name="avg_npc_209_1#3")]
+[delay(time=0.5)]
+[Character(name="avg_npc_209_1#2")]
+[name="羅伊"]  ......跑了？
+[name="羅伊"]  這麼說，那股怒火是裝出來的......？
+[stopmusic(fadetime=1.5)]
+[Dialog]
+[character]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$plot_intro", key="$plot_loop", volume=0.4)]
+......為了感染者而成為騎士。
+為了感染者而奮戰至死。
+我很榮幸。
+很榮幸......死於一場榮耀的事業。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_23_G04",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="avg_npc_122#3",fadetime=1,block=true)]
+[delay(time=1)]
+[name="索娜"]  ......雖然很想大義凜然地這麼說，但是......這是什麼情況？
+[Character(name="avg_npc_122#3",name2="avg_npc_215_1#5",focus=2)]
+[name="燭騎士"]  羅伊還在這附近，他一定會發現我的法術，我們不能久留。
+[name="燭騎士"]  通知你的同伴，讓她逃走吧，如有必要，我會在暗中幫助她。
+[Character(name="avg_npc_122")]
+[playsound(key="$d_gen_transmissionget", volume=0.6)]
+[name="索娜"]  ......喂，小灰，我沒事。
+[name="索娜"]  別讓他察覺到，找機會逃走，我趁著幫你擋箭的時候把晶片扔進你兜裡了，確認一下。
+[name="索娜"]  不用回覆，我們回頭見。
+[playsound(key="$transmission", volume=0.6)]
+[dialog]
+[delay(time=0.5)]
+[Character(name="avg_npc_122#7",name2="avg_npc_215_1#5",focus=1)]
+[name="索娜"]  ......你接住的我？怎麼做到的？
+[Character(name="avg_npc_122#7",name2="avg_npc_215_1#1",focus=2)]
+[name="燭騎士"]  法術的應用方法多種多樣，經過刻苦學習的萊塔尼亞人，無論其原本法術是什麼性質，幾乎都能使用基礎的法術形式。
+[Character(name="avg_npc_122#5",name2="avg_npc_215_1#1",focus=1)]
+[name="索娜"]  ......你是，燭騎士，對吧？
+[name="索娜"]  你這樣的大騎士，為什麼要救我......救一個感染者？
+[Character(name="avg_npc_122#5",name2="avg_npc_215_1#1",focus=2)]
+[name="燭騎士"]  有個人想要見你。
+[Character(name="avg_npc_122#6",name2="avg_npc_215_1#1",focus=1)]
+[name="索娜"]  誰？
+[Character(name="avg_npc_122#6",name2="avg_npc_215_1#1",focus=2)]
+[name="燭騎士"]  還不能說。
+[Character(name="avg_npc_122#3",name2="avg_npc_215_1#1",focus=1)]
+[name="索娜"]  啊......你也知道我們正在做什麼事，癱瘓城市，襲擊聯合會......我可沒有時間郊遊喔？
+[Character(name="avg_npc_122#3",name2="avg_npc_215_1#2",focus=2)]
+[name="燭騎士"]  ......你不信任我，也情有可原。
+[Character(name="avg_npc_122#5",name2="avg_npc_215_1#2",focus=1)]
+[name="索娜"]  不，我相信你。
+[name="索娜"]  只要看有些人一眼，你就能從她的眼裡讀出他們的想法。
+[Character(name="avg_npc_122",name2="avg_npc_215_1#2",focus=1)]
+[name="索娜"]  當然，這招可不是百分之百準確的，但是現在情況緊急，對吧。
+[Dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_23_G06",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="avg_npc_222")]
+[name="企業員工"]  唉，怎麼遇上這種事，路也不通，車也叫不到，今晚又回不了家了嗎......
+[name="企業員工"]  該死的組長，說什麼報表昨天就該做完......一天能做完個鬼......
+[dialog]
+[character]
+[CameraShake(duration=1, xstrength=8, ystrength=6, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$d_sp_ballista")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.25, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[CameraShake(duration=0.3, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Character(name="avg_npc_222")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="企業員工"]  唔啊啊啊，怎、怎麼了！？？
+[dialog]
+[character]
+[Character(name="avg_npc_208_1", name2="avg_npc_213_1",fadetime=1,block=true)]
+[delay(time=1)]
+[Character(name="avg_npc_208_1#5")]
+[name="莫妮克"]  讓開，否則我就連你一起射穿。
+[Character(name="avg_npc_222")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="企業員工"]  咿————別、別，我這就讓——
+[Character(name="avg_npc_222",name2="avg_npc_213_1#3",focus=2)]
+[name="托蘭"]  別亂動，小哥，你也不想腦袋搬家吧？
+[Character(name="avg_npc_222",name2="avg_npc_213_1#3",focus=1)]
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="企業員工"]  但、但是她讓我動——
+[Character(name="avg_npc_222",name2="avg_npc_213_1",focus=2)]
+[name="托蘭"]  一個張口閉口就要殺你的人，你會相信嗎？
+[Character(name="avg_npc_222",name2="avg_npc_213_1",focus=1)]
+[name="企業員工"]  我——我——
+[Character(name="avg_npc_208_1#4")]
+[name="莫妮克"]  托蘭，躲在普通人身後，是不是有點太難看了？
+[Character(name="avg_npc_222")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="企業員工"]  啊啊啊——
+[Character(name="avg_npc_213_1")]
+[name="托蘭"]  也有點道理，我數到三？
+[dialog]
+[Character(name="avg_npc_222")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="企業員工"]  求、求求你們了，別管我，別管我！
+[Character(name="avg_npc_213_1")]
+[name="托蘭"]  一。
+[Character(name="avg_npc_222")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="企業員工"]  咿呀——
+[Character(name="avg_npc_213_1")]
+[name="托蘭"]  二。
+[dialog]
+[character]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Character(name="avg_npc_208_1#2")]
+[name="莫妮克"]  ......
+[Character(name="avg_npc_213_1")]
+[name="托蘭"]  三！
+[Dialog]
+[Character(name="avg_npc_222")]
+[delay(time=1)]
+[PlaySound(key="$rungeneral", volume=0.6)]
+[Character(fadetime=0.8,block=true)]
+[Delay(time=1.5)]
+[Character(name="avg_npc_208_1#5", name2="avg_npc_213_1#5")]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[CameraShake(duration=0.3, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.9)]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[CameraShake(duration=0.2, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$e_atk_arrow_h")]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.25, block=true)]
+[CameraShake(duration=0.6, xstrength=5, ystrength=8, vibrato=30, randomness=90, block=true)]
+[Character(name="avg_npc_222",fadetime=1,block=true)]
+[delay(time=1)]
+[name="企業員工"]  兩個瘋子，兩個瘋子——
+[name="企業員工"]  這條路通向哪——等等，那裡是——
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="企業員工"]  騎士先生！騎士老爺！
+[name="企業員工"]  我是玫瑰報業的員工，您幫幫我，您知道我們嗎？我會向編輯部推薦您的，那邊有兩個不法之徒——
+[dialog]
+[character]
+[Character(name="avg_npc_225",fadetime=1,block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[delay(time=1)]
+[name="逐魘騎士"]  ......
+[Character(name="avg_npc_222")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="企業員工"]  ——咿——
+[Character(name="avg_npc_225")]
+[name="逐魘騎士"]  ......
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[Dialog]
+[character]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_23_G06",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="avg_npc_208_1", name2="avg_npc_213_1#5",focus=2)]
+[name="托蘭"]  ......你的箭是用不完的嗎？
+[Character(name="avg_npc_208_1", name2="avg_npc_213_1#5",focus=1)]
+[name="莫妮克"]  嘖，我還是第一次好幾分鐘沒能追上獵物......了不起，托蘭·卡什。
+[name="莫妮克"]  你的目的就是拖住我嗎？
+[Character(name="avg_npc_208_1", name2="avg_npc_213_1",focus=2)]
+[name="托蘭"]  呵呵......你呢，你的目的是陪我玩嗎？
+[Character(name="avg_npc_208_1", name2="avg_npc_213_1",focus=1)]
+[name="莫妮克"]  不，你的人頭值很多錢，任何時候，我們都需要錢。
+[Character(name="avg_npc_208_1", name2="avg_npc_213_1",focus=2)]
+[name="托蘭"]  哦？你家裡有病重的弟弟嗎？還是有需要贍養的老父親？
+[Character(name="avg_npc_208_1", name2="avg_npc_213_1",focus=1)]
+[name="莫妮克"]  ......這份工作能為我帶來你無法想像的財富，賞金獵人。
+[name="莫妮克"]  我們比你們，比騎士，比任何一個卡西米爾人都更懂得這個社會的運作規則。
+[name="莫妮克"]  我們只是選了一條捷徑，等今晚的獵殺結束之後，我們將迎來新的開始。
+[Character(name="avg_npc_208_1")]
+[name="莫妮克"]  不過現在，好像又有一個蠢貨想要攪局。
+[Character(name="avg_npc_213_1#5")]
+[name="托蘭"]  ......
+[dialog]
+[character]
+[Character(name="avg_npc_225",fadetime=1,block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[delay(time=1)]
+[name="逐魘騎士"]  ......在這座，死氣沉沉的城市裡......還能見到這樣的夜空。
+[name="逐魘騎士"]  這才是我所熟悉的夜晚，讓這人造的孽物擱淺於此......放空這座城市的血，做得好，不知名的反抗者！
+[Character(name="avg_npc_213_1#4")]
+[name="托蘭"]  ......真是一位奇怪的騎士，私鬥可不賺錢啊。
+[Character(name="avg_npc_208_1#4")]
+[name="莫妮克"]  嘖，鬧劇。
+[stopmusic(fadetime=1.5)]
+[Dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_sportsbar",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$bar_intro", key="$bar_loop", volume=0.4)]
+[Character(name="avg_1014_nearl2_1#7$1",fadetime=1,block=true)]
+[delay(time=1)]
+[name="瑪嘉烈"]  大家都沒事吧！
+[Character(name="avg_npc_061#5", name2="avg_1014_nearl2_1#7$1", focus=1)]
+[name="瑪莉婭"]  姐姐！我剛把備用電池找出來......唔......這盞燈就不開了吧？感覺撐不了多久......
+[Character(name="avg_npc_064_weapon_1#5")]
+[name="佐菲婭"]  ......看來大家都沒事。老弗和科瓦爾去外面查看情況了，一會回來。
+[name="佐菲婭"]  瑪恩納呢？
+[Character(name="avg_npc_061#5", name2="avg_npc_064_weapon_1", focus=1)]
+[name="瑪莉婭"]  叔叔待在家裡，說是難得可以從工作中解脫出來，想一個人待一會......
+[name="瑪莉婭"]  閃靈姐姐和夜鶯姐姐呢？
+[Character(name="avg_npc_061#5", name2="avg_1014_nearl2_1#1$1", focus=2)]
+[name="瑪嘉烈"]  她們擔心博士被無胄盟盯上，已經趕回感染者收容中心了。
+[Character(name="avg_npc_061#7", name2="avg_1014_nearl2_1#1$1", focus=1)]
+[name="瑪莉婭"]  ......
+[Character(name="avg_npc_061#7", name2="avg_1014_nearl2_1#1$1", focus=2)]
+[name="瑪嘉烈"]  沒事的，她們都是很可靠的人。
+[Character(name="avg_npc_061#7", name2="avg_1014_nearl2_1#1$1", focus=1)]
+[name="瑪莉婭"]  不......只是......我好像還是不知道姐姐的任何事情......
+[Character(name="avg_npc_061#7", name2="avg_1014_nearl2_1#2$1", focus=2)]
+[name="瑪嘉烈"]  抱歉，是我堅持不讓你們有任何接觸的......我不能把博士他們捲入我自己的事情中來。
+[Character(name="avg_npc_061#7", name2="avg_1014_nearl2_1#6$1", focus=2)]
+[name="瑪嘉烈"]  但也許遲早有一天，你們會相逢、相識。也許有一天，瑪莉婭，你會登上那艘船。
+[Character(name="avg_npc_061#7", name2="avg_1014_nearl2_1#7$1", focus=2)]
+[name="瑪嘉烈"]  理想者的光輝終究會指引所有人，即使他們的前路各不相同，信念迥異，也沒有什麼能動搖他們心中的意志。
+[Character(name="avg_npc_061#4", name2="avg_1014_nearl2_1#7$1", focus=1)]
+[name="瑪莉婭"]  ......就像......
+[Character(name="avg_npc_061#4", name2="avg_1014_nearl2_1#6$1", focus=2)]
+[name="瑪嘉烈"]  就像騎士小說裡的騎士那樣。
+[dialog]
+[PlaySound(key="$dooropenquite", volume=0.6)]
+[character]
+[Character(name="avg_npc_120#2",fadetime=1,block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[delay(time=1)]
+[name="老騎士"]  我回來了！
+[Character(name="avg_npc_101#3")]
+[name="老工匠"]  真的一片漆黑啊......隔壁賣手電筒的今天都要斷貨了吧......
+[Character(name="avg_npc_107", name2="avg_1014_nearl2_1#1$1", focus=1)]
+[name="光頭馬丁"]  瑪嘉烈，你來了。
+[Character(name="avg_npc_120", name2="avg_1014_nearl2_1#1$1", focus=1)]
+[name="老騎士"]  現在外面是一團亂啦，我看，我們就老老實實待在這裡，等著電力恢復如何？
+[Character(name="avg_npc_120", name2="avg_npc_101#2", focus=2)]
+[name="老工匠"]  就乾等著？本來今天是不是也有比賽來著？
+[Character(name="avg_npc_101#2", name2="avg_1014_nearl2_1#1$1", focus=2)]
+[name="瑪嘉烈"]  本來是決出第一個八強騎士的日子。
+[Character(name="avg_npc_064_weapon_1#5", name2="avg_1014_nearl2_1#1$1", focus=1)]
+[name="佐菲婭"]  ......你有關注血騎士的動向嗎？
+[Character(name="avg_npc_064_weapon_1#5", name2="avg_1014_nearl2_1#1$1", focus=2)]
+[name="瑪嘉烈"]  瞭解過一些......他是這賽季從選拔階段到特錦賽的無敗王者......不僅如此......
+[name="瑪嘉烈"]  他還是感染者的英雄。
+[stopmusic(fadetime=2)]
+[Dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_23_G06",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2.5, block=true)]
+[playMusic(intro="$darkness02_intro", key="$darkness02_loop", volume=0.4)]
+[Character(name="avg_npc_122#5",name2="avg_npc_215_1#1",focus=1)]
+[name="索娜"]  ......我們要去哪？不是我抱怨，我真的沒有太多時間......
+[Character(name="avg_npc_122#5",name2="avg_npc_215_1#1",focus=2)]
+[name="燭騎士"]  就是這。
+[Character(name="avg_npc_122#6",name2="avg_npc_215_1#1",focus=1)]
+[name="索娜"]  ......冠軍牆展廳？
+[Character(name="avg_npc_122#6",name2="avg_npc_215_1#1",focus=2)]
+[name="燭騎士"]  這是一次秘密的會面，還請您不要聲張。
+[Character(name="avg_npc_122#7",name2="avg_npc_215_1#1",focus=1)]
+[name="索娜"]  是哪個騎士要見我嗎？
+[Character(name="avg_npc_122#7",name2="avg_npc_215_1#1",focus=2)]
+[name="燭騎士"]  騎士嗎......說的沒錯，確實是一位可敬的騎士。
+[Character(name="avg_npc_122#7",name2="avg_npc_215_1#1",focus=1)]
+[name="索娜"]  ......
+[Character(name="avg_npc_122#7",name2="avg_npc_215_1#1",focus=2)]
+[name="燭騎士"]  呵呵，別緊張......是位年紀有些大的女士。
+[name="燭騎士"]  你先進去吧。
+[Character(name="avg_npc_122#5",name2="avg_npc_215_1#1",focus=1)]
+[name="索娜"]  ......你不進來？
+[Character(name="avg_npc_122#5",name2="avg_npc_215_1#1",focus=2)]
+[name="燭騎士"]  她可能是卡西米爾為數不多的幾位，讓我有些害怕的人呢。
+[Character(name="avg_npc_122#6",name2="avg_npc_215_1#1",focus=1)]
+[name="索娜"]  哇哦......手握燭劍的燭騎士也會有害怕的人？那我真的沒問題嗎？
+[Character(name="avg_npc_122#6",name2="avg_npc_215_1#2",focus=2)]
+[name="燭騎士"]  ......可能不太一樣吧。
+[Character(name="avg_npc_122#6",name2="avg_npc_215_1#1",focus=2)]
+[name="燭騎士"]  畢竟名義上，她算我的半個養母。
+[Dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_23_G02",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2.5, block=true)]
+[Character(name="avg_npc_122#7")]
+[name="索娜"]  （和聯合會一樣的緊急電源......沒有被大隔斷的斷電影響嗎......）
+[Character(name="avg_npc_122#2")]
+[name="索娜"]  （騎士和......聯合會......）
+[name="索娜"]  （......還在這片黑夜裡閃著光。）
+[name="索娜"]  ......
+[dialog]
+[character]
+燈光撲閃。
+打斷了索娜的思緒。
+騎士和資本一併避開了這濃稠的夜色。
+誰會在今夜溺亡？
+[dialog]
+[Character(name="avg_npc_210_1",fadetime=1,block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[delay(time=1)]
+[name="年長的騎士"]  ......焰尾騎士，索娜。
+[name="年長的騎士"]  快過來些，讓我好好看看你。
+[Character(name="avg_npc_122#6")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="索娜"]  ——！
+[name="索娜"]  您、您是......！！
+[Character(name="avg_npc_210_1",name2="avg_npc_122#6",focus=1)]
+[name="年長的騎士"]  哎。我今天不是以公務之身來見你的。
+[name="年長的騎士"]  我聽說了......感染者騎士和監正會的一些騎士，做了筆交易。
+[name="年長的騎士"]  是騎士協會和監正會議員，德米安。
+[Character(name="avg_npc_210_1",name2="avg_npc_122#5",focus=2)]
+[name="索娜"]  ......
+[Character(name="avg_npc_210_1#2",name2="avg_npc_122#5",focus=1)]
+[name="年長的騎士"]  感染者為了能在大騎士領活下去，答應在他的配合下，進行了本次行動。
+[name="年長的騎士"]  四城大隔斷......監正會默許了這件事再次發生。
+[Character(name="avg_npc_210_1#5",name2="avg_npc_122#5",focus=1)]
+[name="年長的騎士"]  看看這面牆......這些騎士，他們本該成為真正的英雄，而不是以這種姿態，被人關注。
+[name="年長的騎士"]  唉，你不感到......悲哀嗎？
+[Character(name="avg_npc_210_1#5",name2="avg_npc_122#2",focus=2)]
+[name="索娜"]  ......悲哀，女士。
+[Character(name="avg_npc_210_1#5",name2="avg_npc_122#8",focus=2)]
+[name="索娜"]  但我為感染者們至今仍不能受到公正的待遇而悲哀，為那些沉溺在享樂與欲望之中的人們而悲哀。
+[name="索娜"]  為每一個......努力活著，卻舉步維艱的卡西米爾人......而悲哀。
+[Character(name="avg_npc_210_1",name2="avg_npc_122#8",focus=1)]
+[name="年長的騎士"]  ......真是漂亮的就職演說，小松鼠。
+[Character(name="avg_npc_210_1",name2="avg_npc_122#5",focus=2)]
+[name="索娜"]  監正會能讓我們過普通的生活嗎？
+[Character(name="avg_npc_210_1",name2="avg_npc_122#5",focus=1)]
+[name="年長的騎士"]  手續、公文、國民院認可的法律文件。當然，監正會都會為你辦妥。這是老德米安答應你的。
+[name="年長的騎士"]  可你身上的源石結晶呢？
+[Character(name="avg_npc_210_1",name2="avg_npc_122#6",focus=2)]
+[name="索娜"]  ......
+[Character(name="avg_npc_210_1",name2="avg_npc_122#6",focus=1)]
+[name="年長的騎士"]  我欣賞你們，紅松騎士團，但是你們必須克服的，是一些更模糊的問題。
+[name="年長的騎士"]  之後，德米安會和你們對接的。就相信他吧，雖然辦法笨了點，但他有的是想法。
+[Character(name="avg_npc_210_1",name2="avg_npc_122#5",focus=2)]
+[name="索娜"]  ......好。
+[Character(name="avg_npc_210_1",name2="avg_npc_122#5",focus=1)]
+[name="年長的騎士"]  ......好了，我的騎士團也快到了，趕緊去找你的同伴們會合吧。
+[name="年長的騎士"]  還有，告訴薇薇安娜一聲，讓她偶爾有空也來陪我吃頓飯吧。
+[Character(name="avg_npc_210_1",name2="avg_npc_122#2",focus=2)]
+[name="索娜"]  ......
+[Character(name="avg_npc_210_1",name2="avg_npc_122#8",focus=2)]
+[name="索娜"]  ............騎士意味著什麼，女士？
+[Character(name="avg_npc_210_1#2",name2="avg_npc_122#8",focus=1)]
+[name="年長的騎士"]  每個人都有不一樣的答案，孩子。
+[name="年長的騎士"]  你不會想聽到我的答案的，我們這些老傢伙呀，走過太多的路啦。
+[Character(name="avg_npc_210_1#6",name2="avg_npc_122#8",focus=1)]
+[name="年長的騎士"]  走吧，小松鼠，走吧。
+[name="年長的騎士"]  去看看卡西米爾的朝陽，是不是還那樣熾熱。
+[Dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_23_G04",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2.5, block=true)]
+[Character(name="avg_npc_209_1#3")]
+[name="羅伊"]  ......追丟了啊。
+[Character(name="avg_npc_209_1#2")]
+[name="羅伊"]  之後再發佈圍剿任務比較有效率嗎......
+[PlaySound(key="$d_gen_transmissionget",volume=0.6)]
+[name="羅伊"]  是我，怎麼了嗎？
+[Character(name="avg_npc_209_1#5")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="羅伊"]  ......什......多少？
+[PlaySound(key="$transmission",volume=0.6)]
+[Dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_23_G06",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$fightgeneral")] 
+[CameraShake(duration=0.3, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[PlaySound(key="$fightgeneral")] 
+[CameraShake(duration=0.4, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=true)]
+[PlaySound(key="$fightgeneral")] 
+[Blocker(a=1, r=1, g=1, b=1, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[playsound(key="$e_atk_magic_n", volume=0.4)]
+[CameraShake(duration=0.3, xstrength=4, ystrength=4, vibrato=20, randomness=30, fadeout=true)]
+[Blocker(a=0, fadetime=1.5, block=false)]
+[CameraShake(duration=2, xstrength=8, ystrength=6, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$d_sp_ballista")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.25, block=true)]
+[delay(time=1)]
+[Character(name="avg_npc_225")]
+[name="逐魘騎士"]  ......卓越的劍術。
+[Character(name="avg_npc_213_1")]
+[name="托蘭"]  唉，我可不想繼續陪你浪費時間啊，騎士老兄。
+[Character(name="avg_npc_208_1#5")]
+[name="莫妮克"]  ......這個瘋子......
+[Character(name="avg_npc_208_1#4")]
+[name="莫妮克"]  殺了托蘭之後，就立刻撤退好了。
+[PlaySound(key="$d_gen_transmissionget",volume=0.6)]
+[Character(name="avg_npc_208_1")]
+[name="莫妮克"]  ......我在陪“公會領袖”和夢魘捉迷藏，有什麼事一會再說。
+[Character(name="avg_npc_208_1#3")]
+[name="莫妮克"]  ......
+[delay(time=0.5)]
+[Character(name="avg_npc_208_1")]
+[name="莫妮克"]  不......我立刻就去。
+[PlaySound(key="$transmission",volume=0.6)]
+[Character(name="avg_npc_208_1")]
+[name="莫妮克"]  遊戲到此為止了，托蘭。
+[Character(name="avg_npc_213_1")]
+[name="托蘭"]  你要逃走？
+[Character(name="avg_npc_208_1")]
+[name="莫妮克"]  不。
+[name="莫妮克"]  還有你也是，夢魘。
+[Character(name="avg_npc_213_1#3")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="托蘭"]  ——！你是夢魘！？
+[Character(name="avg_npc_225")]
+[name="逐魘騎士"]  ......
+[Character(name="avg_npc_208_1")]
+[name="莫妮克"]  暫時停手吧。
+[name="莫妮克"]  你是......來卡瓦萊利亞基尋找同胞和試煉的，對吧？
+[Character(name="avg_npc_225")]
+[name="逐魘騎士"]  別把榮耀的傳統說得如此輕浮，卡西米爾人，你沒有這個資格。
+[Character(name="avg_npc_208_1")]
+[name="莫妮克"]  不，只是好心提醒你一句，夢魘。
+[name="莫妮克"]  別在我們這裡白費力氣。
+[Character(name="avg_npc_213_1")]
+[name="托蘭"]  這倒是句公道話。
+[Character(name="avg_npc_225")]
+[name="逐魘騎士"]  ......無憑無據......
+[Character(name="avg_npc_208_1#4")]
+[name="莫妮克"]  ......哼，後會無期，蠢貨。
+[Dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_23_G06",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="avg_npc_222")]
+[name="企業員工"]  交通還沒恢復嗎？我聽說有些地方已經通電了啊......
+[Character(name="avg_npc_219")]
+[name="卡西米爾騎士"]  這麼大的損失，難道騎士協會不應該賠償我們嗎！
+[Character(name="avg_npc_033")]
+[name="遊客"]  說得沒錯！政府應該補償旅遊津貼！
+[Character(name="avg_npc_222")]
+[name="企業員工"]  唉......冰箱裡的鮮肉沒問題吧......
+[dialog]
+[character]
+[Character(name="avg_npc_208_1")]
+[name="莫妮克"]  ......確定了嗎？
+[Character(name="avg_npc_209_1#2", name2="avg_npc_208_1", focus=1)]
+[name="羅伊"]  唉。
+[name="羅伊"]  你知道嗎，他們中的任何一個人，我們都可以獨自解決。
+[name="羅伊"]  但兩個人，就需要我們聯手。
+[name="羅伊"]  三個人，將是一場空前絕後的苦戰。
+[name="羅伊"]  如果是三個及以上......那可以視作一支戰術小隊了，無胄盟承擔不起這個損失。
+[name="羅伊"]  要是超過雙手之數，把無胄盟全體成員叫上，怕是都不夠他們殺的。
+[Character(name="avg_npc_209_1#2", name2="avg_npc_208_1", focus=2)]
+[name="莫妮克"]  這我知道，我還是見過他們的，不勞你好心提醒了。
+[name="莫妮克"]  崗哨看到多少人？
+[Character(name="avg_npc_209_1", name2="avg_npc_208_1", focus=1)]
+[name="羅伊"]  四十來個。
+[Character(name="avg_npc_209_1", name2="avg_npc_208_1#4", focus=2)]
+[name="莫妮克"]  太糟糕了......在這個節骨眼？
+[Character(name="avg_npc_209_1#2", name2="avg_npc_208_1#4", focus=1)]
+[name="羅伊"]  ......是啊。已經通知董事會了。
+[name="羅伊"]  他們是想攻陷四城聯合嗎？
+[Dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_23_G03",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character(name="avg_npc_212_1#5")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="發言人麥基"]  ......這不可能！
+[name="發言人麥基"]  不，這不可能......軍事顧問呢！監視征戰騎士的人呢！？
+[name="發言人麥基"]  之前監正會調動的那批征戰騎士，上一次彙報的時候他們在哪裡？
+[name="發言人麥基"]  ......五百七十三公里。
+[Character(name="avg_npc_212_1#2")]
+[name="發言人麥基"]  常規征戰騎士小隊的行軍速度不可能來得及......太快了，這太快了......
+[name="發言人麥基"]  難道監正會背著聯合會，調動了另一支？不對，這不可能......
+[Character(name="avg_npc_212_1#3")]
+[name="發言人麥基"]  ......慢著。
+[name="發言人麥基"]  ......銀槍皮加索斯的急行軍......最快的一次記錄是多少......？
+[Character(name="avg_npc_212_1#5")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="發言人麥基"]  可......他們......偽裝了自己的軍隊識別碼......？甚至，偽裝了自己的甲胄和長槍？
+[Dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_23_G06",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Character(name="avg_npc_219")]
+[name="卡西米爾騎士"]  嗯？是不是亮一些了？
+[Character(name="avg_npc_222")]
+[name="企業員工"]  看那邊！路那頭的光芒！那邊一定是恢復電力了！
+[Character(name="avg_npc_033")]
+[name="遊客"]  但是......燈還是滅的......
+[name="遊客"]  那更像是......月光......？
+[dialog]
+[character]
+[stopmusic(fadetime=1)]
+月光。
+通電玻璃管的興盛讓現代人逐漸遺忘了月光原本的模樣。
+這座片刻黑暗的城市——
+——已經被銀光照亮。
+[dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[Character]
+[playMusic(intro="$tense_intro", key="$tense_loop", volume=0.4)]
+[Image(image="23_I01",x=0, y=0,  xScale=0.832, yScale=0.832, fadetime=0)]
+[ImageTween(yFrom=0, yTo=45, xScaleFrom=0.832, yScaleFrom=0.832, xScaleTo=1, yScaleTo=1, duration=30)]
+[Blocker(a=0, fadetime=2, block=true)]
+[delay(time=2)]
+[name="圍觀的路人"]  .....................那、那也是騎士？
+[name="卡西米爾騎士"]  征、征戰騎士！？在這裡！？
+[dialog]
+騎士穿過人群。
+穿過這座被譽為騎士之城的城市。
+城市不承認這群騎士。
+正如騎士也不承認這座城。
+他們從遙遠的邊境要塞而來。
+他們的身上沾染著清晰可聞的泥土氣息。
+夾雜著血肉，白骨，埋葬在戰場上的無數英豪。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image]
+[Background(image="bg_23_G06",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Character(name="avg_npc_209_1")]
+[name="羅伊"]  ......通知無胄盟全體成員，不管手頭有什麼工作，全部停下。
+[name="羅伊"]  不想惹麻煩就什麼都別做，絕對別輕舉妄動。
+[Character(name="avg_npc_209_1", name2="avg_npc_208_1#3", focus=2)]
+[name="莫妮克"]  唔。
+[Character(name="avg_npc_209_1#3", name2="avg_npc_208_1#3", focus=1)]
+[name="羅伊"]  莫妮克？
+[Character(name="avg_npc_209_1#3", name2="avg_npc_208_1#3", focus=2)]
+[name="莫妮克"]  那邊......那個人......
+[dialog]
+[character]
+[delay(time=1)]
+[Character(name="avg_npc_108",fadetime=1,block=true)]
+[delay(time=1)]
+[name="瑪恩納"]  ......
+[Character(name="avg_npc_108", name2="avg_npc_213_1", focus=2)]
+[name="托蘭"]  ......懷念嗎？
+[Character(name="avg_npc_108", name2="avg_npc_213_1", focus=1)]
+[name="瑪恩納"]  不。
+[Character(name="avg_npc_108", name2="avg_npc_213_1#4", focus=2)]
+[name="托蘭"]  ......我倒是很懷念。
+[name="托蘭"]  懷念那個......還誤以為這片大地沒那麼糟糕的時候，那本來是個意氣風發的時代。
+[Character(name="avg_npc_108#3", name2="avg_npc_213_1#4", focus=1)]
+[name="瑪恩納"]  ......
+[Character(name="avg_npc_108#3", name2="avg_npc_213_1#2", focus=2)]
+[name="托蘭"]  如果你真的沒有任何想法，你是不會出現在這裡的，對吧？
+[Character(name="avg_npc_108#3", name2="avg_npc_213_1#5", focus=2)]
+[name="托蘭"]  瑪恩納，看看四周吧，這座城市睡著了，誰也未曾想過。
+[name="托蘭"]  可你呢？
+[Dialog]
+[character]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_23_G03",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$rungeneral", volume=0.6)]
+[Character(name="avg_npc_223")]
+[name="企業員工"]  報告！已經修復了一部分通訊線路——！
+[Character(name="avg_npc_212_1", name2="avg_npc_223", focus=1)]
+[name="發言人麥基"]  ——接通國民院副審官。
+[Character(name="avg_npc_212_1", name2="avg_npc_223", focus=2)]
+[name="企業員工"]  是。
+[PlaySound(key="$d_gen_transmissionget",volume=0.6)]
+[Character(name="avg_npc_212_1#2")]
+[name="發言人麥基"]  ......副審官閣下？
+[name="發言人麥基"]  你知道我要說什麼，這批征戰騎士未經許可進入大騎士領，已經觸犯了第二法案的——
+[Character(name="avg_npc_212_1#2",focus=-1)]
+[name="電話那頭的聲音"]  前國民院副審官杜克，涉嫌受賄、參與非法貿易、謀殺和瀆職等多項罪名，已被依法拘留。
+[Character(name="avg_npc_212_1#4")]
+[name="發言人麥基"]  ......
+[Character(name="avg_npc_212_1#4",focus=-1)]
+[name="電話那頭的聲音"]  冷靜選擇你說的每一句話，發言人閣下。
+[name="電話那頭的聲音"]  大騎士領因大斷電處於緊急狀態，監正會有權在城市處於緊急狀態時派軍入駐。
+[name="電話那頭的聲音"]  還有什麼疑問嗎？
+[Character(name="avg_npc_212_1#2")]
+[name="發言人麥基"]  ......沒有。打擾了，先生。
+[PlaySound(key="$transmission",volume=0.6)]
+[Character(name="avg_npc_211_1#7", name2="avg_npc_212_1#2", focus=1)]
+[name="發言人馬克維茨"]  ......麥基先生。
+[Character(name="avg_npc_211_1#7", name2="avg_npc_212_1#2", focus=2)]
+[name="發言人麥基"]  ......嗯。
+[Character(name="avg_npc_211_1#4", name2="avg_npc_212_1#2", focus=1)]
+[name="發言人馬克維茨"]  通訊基本恢復了，麥基先生。
+[name="發言人馬克維茨"]  看看他們忙碌的樣子......你覺得電話是什麼？
+[Character(name="avg_npc_211_1#4", name2="avg_npc_212_1#3", focus=2)]
+[name="發言人麥基"]  ......？當然是通訊工具......
+[Character(name="avg_npc_211_1#5", name2="avg_npc_212_1#3", focus=1)]
+[name="發言人馬克維茨"]  不。電話是現代社會的紡錘與犁，是編織這個現代社會的管道。
+[name="發言人馬克維茨"]  是偉大的象徵，麥基先生。
+[Character(name="avg_npc_212_1#4")]
+[name="發言人麥基"]  ......
+[dialog]
+麥基一言未發。
+他只是突然從馬克維茨身上感到了一種氣勢。
+這個數月前創業失敗，一事無成，唯唯諾諾的人身上，有一種近乎天然的氣勢。
+他曾在不少人身上看到過這種氣勢。
+他們大都在變遷與博弈中血肉模糊，至於活下來的那些——
+——幾乎都成為了某種形態的一部分。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Image]

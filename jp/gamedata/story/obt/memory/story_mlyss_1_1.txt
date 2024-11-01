@@ -1,0 +1,482 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="38_g10_ecolab",screenadapt="coverall")]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_typewriter",volume=0.6)] 
+[charslot(slot="l",name="avg_npc_530_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_529_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_npc_530_1#1$1",focus="l")]
+[name="生態課研究員A"]ケリー、調子はどうだ？
+[charslot(slot="r",name="avg_npc_529_1#1$1",focus="r")]
+[name="生態課研究員B"]極地エリアの植物観測データは記録し終えたところよ。新しく入れた五十三種の植物にはほとんど異常も見られないし、観察期間はひとまず乗り切ったと言えそうね。だけど、見ての通り……
+[charslot(slot="l",name="avg_npc_530_1#1$1",focus="l")]
+[name="生態課研究員A"]ああ。入口あたりにある二本のサヤケヤキ……葉がひどく丸まってしまってるのは脱水症状の表れだ。
+[name="生態課研究員A"]あの辺りのヒョウゲンワタクサも、明らかに成長期のはずなのに、綿球の数があまり増えていない。綿毛の本数も通常値を下回っているようだ。
+[charslot(slot="r",name="avg_npc_529_1#1$1",focus="r")]
+[name="生態課研究員B"]それに、一番わかりやすいのはシカクヒマワリよね。あの花は常に太陽のほうを向いて咲くはずなのに、今にも地面につきそうなくらい俯いちゃってるもの。
+[charslot(slot="l",name="avg_npc_530_1#1$1",focus="l")]
+[name="生態課研究員A"]まあ、想定の範囲だな。この極地エリアは、生態研究園の中でもまだまだ始まったばかりのプロジェクトだし、俺たちにはデータも経験も何もかもが足りないんだから。
+[name="生態課研究員A"]急いでミュルジス主任に相談してみよう。あの人なら、何が問題なのかをすぐに見抜いてくれるはずだ。
+[charslot(slot="r",name="avg_npc_529_1#1$1",focus="r")]
+[name="生態課研究員B"]（小声）そういえばミュルジス主任って、ほんと不思議なくらい植物に詳しいわよね。あんまり凄すぎるから、みんなこっそり噂してるのよ……主任は植物と話せるんじゃないかって。
+[charslot(slot="l",name="avg_npc_530_1#1$1",focus="l")]
+[name="生態課研究員A"]（小声）おいおい、冗談はよせよ。
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")] 
+[charslot(slot="m",name="avg_249_mlyss_1#9$1",duration=1)]
+[delay(time=2)]
+[name="ミュルジス"]ケリー、このエリアの循環システムだけど、パラメータを設定し直してくれる？　それと、土にもう少し菌根菌を足して、水分と養分の吸収を促してみましょう。
+[charslot]
+[charslot(slot="r",name="avg_npc_529_1#1$1",focus="all")]
+[charslot(slot="l",name="avg_npc_530_1#1$1",focus="all")]
+[name="生態課研究員A&B"]ミュルジス主任！
+[charslot(slot="r",name="avg_npc_529_1#1$1",focus="r")]
+[name="生態課研究員B"]……ですが、あの設定はマゼランさんから送られてきたデータ通りのものですよ？
+[charslot]
+[charslot(slot="m",name="avg_249_mlyss_1#9$1")]
+[name="ミュルジス"]確かに、この植物はどれもマーちゃんがサーミから送ってくれたものだけど、あの子は観測員であって、植物学にはそれほど詳しくないのよ。
+[name="ミュルジス"]サーミの環境下で採られた生体データである以上、それが精確なものになるのは、この植物たちがサーミにある時だけなの。
+[name="ミュルジス"]生態研究園は、この子たちにはちょっと「暖かすぎる」みたいね。
+[name="ミュルジス"]もう少し、温度と湿度を下げてみて。
+[charslot]
+[charslot(slot="l",name="avg_npc_530_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_529_1#1$1",focus="r")]
+[name="生態課研究員B"]わかりました、主任。
+[charslot]
+[charslot(slot="m",name="avg_249_mlyss_1#9$1")]
+[name="ミュルジス"]それじゃ、次は高原エリアのチェックよ。一緒に行きましょう。
+[dialog]
+[StopMusic(fadetime=2)]
+[charslot(slot = "m",posfrom = "0,0", posto = "200,0",afrom = 1, ato = 0,duration = 1)]
+[PlaySound(key="$d_gen_walk_n")] 
+[delay(time=1.5)]
+[charslot]
+[charslot(slot="r",name="avg_npc_529_1#1$1",focus="all")]
+[charslot(slot="l",name="avg_npc_530_1#1$1",focus="all")]
+[delay(time=0.5)]
+[charslot(slot = "r",posfrom = "0,0", posto = "200,0",afrom = 1, ato = 0,duration = 1)]
+[charslot(slot = "l",posfrom = "0,0", posto = "200,0",afrom = 1, ato = 0,duration = 1)]
+[delay(time=2.5)]
+[charslot]
+[playMusic(key="$calm_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_962_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="サヤケヤキ"]……
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_963_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="ヒョウゲンワタクサ"]……
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_966_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="シカクヒマワリ"]……
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]（心地よさそうに指を動かす）
+[charslot(slot="m",name="avg_npc_963_1#1$1")]
+[name="ヒョウゲンワタクサ"]（懸命に身体を伸ばす）
+[name="ヒョウゲンワタクサ"]気をつけなさいよ、サヤケヤキ。ずっと丸まっていた指をいきなりそんなに動かすと、葉脈が傷ついちゃうから。
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]そっちこそ、あんまり派手に動くなよ。私の顔まで綿毛が飛んでくるだろう。
+[charslot(slot="m",name="avg_npc_963_1#1$1")]
+[name="ヒョウゲンワタクサ"]でも、もう少し先に行ったら高原エリアがあるって話だから……それなら、綿毛をもっと遠くまで飛ばせば、噂のスティパカピラータとお話できるかもしれないじゃない。
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]まったく……お前はサーミを離れたばかりだから、何もかもが新鮮なんだろうがな。
+[name="サヤケヤキ"]ん？　どうした、シカクヒマワリ。やけに静かだな。
+[charslot(slot="m",name="avg_npc_963_1#1$1")]
+[name="ヒョウゲンワタクサ"]なんだかぐったりしてるわね。元気がないみたいだし。新しい環境にまだ慣れていないのかしら。
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]いや、飲まず食わずでいるのを見るに、何か不満があるんだろう。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]……
+[charslot]
+[playsound(key="$blooddrop")]
+[name="？？？"]なるほど、不満だったのね。
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]誰だ？
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]……雨が降ってきた。
+[dialog]
+[charslot]
+[playsound(key="$d_avg_rainheavy_loop", loop=true, channel="bgs")]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_963_1#1$1")]
+[name="ヒョウゲンワタクサ"]屋内なのに？　もしかしてこれが例の循環システムなのかしら？　あの人たちの話じゃ、自然の循環を再現してるらしいし。
+[dialog]
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[charslot(slot ="m", action="shake", power=10, times=30, duration=0.3)]
+[name="サヤケヤキ"]しかし、この雨は何なんだ？　水滴が枝について、振り落とせないんだが……
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]……
+[dialog]
+[charslot]
+[playsound(key="$d_avg_divebubble")]
+[StopSound(channel="bgs", fadetime=3)]
+[charslot(slot="m",name="avg_249_mlyss_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="ミュルジス"]こんにちは。改めて、自己紹介しましょうか？　あたしはミュルジスよ。
+[StopMusic(fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[playsound(key="$d_gen_walk_n",volume=0.7)]
+[playMusic(intro="$warm_intro", key="$warm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]ああ、君か。
+[charslot(slot="m",name="avg_249_mlyss_1#9$1")]
+[name="ミュルジス"]ごめんなさいね。さっきはナスティに設備の改造をお願いしに行ってたんだけど、彼女頑固者だから時間がかかっちゃって。
+[charslot(slot="m",name="avg_249_mlyss_1#1$1")]
+[name="ミュルジス"]ところで、前よりだいぶ調子が良くなったみたいね。
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]まあまあと言ったところだが。
+[charslot(slot="m",name="avg_249_mlyss_1#1$1")]
+[name="ミュルジス"]少なくとも、サヤケヤキは拗ねてわざと葉っぱを丸めたりしてないしね。
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]……
+[charslot(slot="m",name="avg_249_mlyss_1#1$1")]
+[name="ミュルジス"]そう。ともあれ、来月に第二陣の植物が届くまで、極地エリアはあたしが自分でお世話するつもりでいるわ。
+[name="ミュルジス"]今日の午後は土を取り換えてあげるわね。新しい土は、サーミの土壌サンプルを参考に調整し直してみたの。
+[charslot(slot="m",name="avg_249_mlyss_1#9$1")]
+[name="ミュルジス"]それと、今後もあなたたちに必要な養分は、あんまり「規則的」すぎないように、「雨」や「露」って形で補充するようにするわ。
+[name="ミュルジス"]ほかにも必要な物があったら、いつでも言ってね。地形や空気、土に水、そして気候……あなたたちが生きるのに最適な条件を教えてもらえたら、どんなに変わった物でも揃えてあげるから。
+[charslot(slot="m",name="avg_npc_963_1#1$1")]
+[name="ヒョウゲンワタクサ"]あなたって根気強い人なのね、ミュルジス。
+[charslot(slot="m",name="avg_249_mlyss_1#9$1")]
+[name="ミュルジス"]まあね。実は、生態研究園の計画当初から、極地エリアを作りたいとは思っていたの。だけど、生態課のメンバーは誰もサーミに行ったことがなかったから、これまでは仕方なく保留になっててね。
+[name="ミュルジス"]だけどここ数年は、ずっとライン生命での生態実験を主導してきたおかげで、基礎はしっかり固まってきたはずだから、これなら大丈夫かなと思って。
+[charslot(slot="m",name="avg_npc_963_1#1$1")]
+[name="ヒョウゲンワタクサ"]へえ。どうしてサーミだったの？
+[name="ヒョウゲンワタクサ"]多くの人にとっては、あの場所は閉鎖的で孤立していて、謎と危険に満ちた辺境の極寒地帯でしかないはずよね。
+[charslot(slot="m",name="avg_249_mlyss_1#9$1")]
+[name="ミュルジス"]正直に言うと、サーミだけってわけじゃないのよ。あたしは、テラの特殊な生態系すべてに興味を持ってるから……
+[name="ミュルジス"]とはいえサーミはその中でも一番特別なのよね。沼地、森林、氷原と規則正しく並んだ不思議な地形の組み合わせが……なんていうか少し「強引」な感じに見えて。
+[name="ミュルジス"]それに、中心地域に比べれば寒さは確かに厳しいのに、サーミの生物は種類も数も類を見ないほど豊富なの。そのこと自体が、生態学の法則には合致しないのよ。
+[name="ミュルジス"]だからあたしとしては、サーミはとっても「清潔」な場所なんだと考えてるの。
+[charslot(slot="m",name="avg_npc_963_1#1$1")]
+[name="ヒョウゲンワタクサ"]「清潔」って？
+[charslot(slot="m",name="avg_249_mlyss_1#9$1")]
+[name="ミュルジス"]あなたたちの生体サンプルを採取して検査してみたら……根系に含まれる源石粒子が、平均値を大幅に下回っていたのよ。
+[charslot(slot="m",name="avg_npc_963_1#1$1")]
+[name="ヒョウゲンワタクサ"]それってどういう意味？
+[charslot(slot="m",name="avg_249_mlyss_1#9$1")]
+[name="ミュルジス"]サーミは目下、あたしにとって一番理想的な実験環境だってこと。
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]……
+[name="サヤケヤキ"]つまり、君はこの大きなガラスの家の中に、「サーミ」を再現しようとしているのか？
+[charslot(slot="m",name="avg_249_mlyss_1#7$1")]
+[name="ミュルジス"]ガラスの家……ええ、そうね。
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]なぜそんなことを？
+[charslot(slot="m",name="avg_249_mlyss_1#1$1")]
+[name="ミュルジス"]あたしがライン生命で一番若くて権威ある生態学専門家だからよ。
+[charslot(slot="m",name="avg_249_mlyss_1#9$1")]
+[name="ミュルジス"]つまりあたしには、このガラスの家をテラで一番清潔な場所にする責任と能力があるの。そして、そうするためには、一番新鮮な空気に、最適な気候、栄養豊富な土壌と……
+[name="ミュルジス"]どんなにもろい命でも自由に生きられるくらい、豊かな生態系が必要なのよ。
+[name="ミュルジス"]これこそ、あたしがずっと……なんていうか、追い求めてきたことなのよね。
+[charslot(slot="m",name="avg_npc_963_1#1$1")]
+[charslot(slot ="m", action="shake", power=10, times=20, duration=0.3)]
+[name="ヒョウゲンワタクサ"]（思い切り綿毛を飛ばす）
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[charslot(slot ="m", action="shake", power=10, times=30, duration=0.3)]
+[name="サヤケヤキ"]（楽しげに枝葉を震わせる）
+[charslot(slot="m",name="avg_249_mlyss_1#10$1")]
+[name="ミュルジス"]ふふっ、ありがとう。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]……
+[name="シカクヒマワリ"]それって、賞賛するほどのことかな？
+[charslot(slot="m",name="avg_249_mlyss_1#7$1")]
+[name="ミュルジス"]うわっ……
+[name="ミュルジス"]シカクヒマワリ！　急に喋るからびっくりしたじゃない！
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]ここに来て半月以上経つが、ずっとこんな調子でね。
+[name="サヤケヤキ"]どうにも、いつも不機嫌なんだよ。
+[charslot(slot="m",name="avg_npc_963_1#1$1")]
+[name="ヒョウゲンワタクサ"]サーミの森から見知らぬ都市に植え替えられて、まだちょっと気持ちが塞いでるんでしょうね。
+[name="ヒョウゲンワタクサ"]来た以上は、前を向きなさい。ほら、私なんて、ここで綿毛を飛ばしたら、それが隣の水域まで飛んで、「海水のしょっぱさ」を味わうことまでできたのよ。
+[name="ヒョウゲンワタクサ"]あなただって、仮にまだサーミにいたら、とっくに何かのフンにでも変えられてたかもしれないでしょ？　あなたの種は特別だから、羽獣のエサだの、肉食動物の腹ごなしだのにひっぱりだこで……
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]ぐだぐだ言ってないで綿毛でも撒いてたら。
+[charslot(slot="m",name="avg_npc_963_1#1$1")]
+[name="ヒョウゲンワタクサ"]何よ、もう。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]――で、ミュルジス。僕がここへ来てからずっと元気がない理由、気になってるんだろ？
+[name="シカクヒマワリ"]僕たちシカクヒマワリは、常に太陽を探し求める花なんだ。確かに君の研究園には特製の照明システムがついていて、時間帯に合わせた太陽光の変化までシミュレートできている――
+[name="シカクヒマワリ"]君たちの言葉を借りれば、とても「先進的」な設備だ。
+[name="シカクヒマワリ"]……だけど、それは結局、本物の太陽じゃない。
+[charslot(slot="m",name="avg_249_mlyss_1#8$1")]
+[name="ミュルジス"]……そうね。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]太陽はガラスの家の外にある。だけど、このガラスを取り払えば、室内の土壌や空気、温度、水分、微生物群は、すべて今の状態を保てなくなるだろう。
+[name="シカクヒマワリ"]たとえ君が、サーミのあらゆる土と寒風、氷のひとかけらに至るまでを100%再現できたとしても、この場所は僕を移送する時使った標本ケースと何一つ変わらないんだ。
+[charslot(slot="m",name="avg_249_mlyss_1#8$1")]
+[name="ミュルジス"]うーん。ほかの植物に比べても、あなたの走光性はやっぱりすごく特別ね。確かに、それはどうしようもなさそうだわ。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]そういう意味で言ったんじゃないよ。
+[charslot(slot="m",name="avg_249_mlyss_1#9$1")]
+[name="ミュルジス"]ええ、わかってる。
+[name="ミュルジス"]――海、干潟、森林、砂漠、黒流樹海……大自然のベールをめくるたび、驚かされるの。
+[name="ミュルジス"]四季があり暖かく快適な気候も、極端に暑かったり、寒かったりする気候も。どんな環境も、途方もない時間をかけて自然に変化してきた結果であって……
+[name="ミュルジス"]設定通りに再現された「実験環境」じゃないのよね。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]だから、ここは「サーミ」にはなりえないんだ。
+[charslot(slot="m",name="avg_249_mlyss_1#1$1")]
+[name="ミュルジス"]んー。あなたたちを研究園の外へ連れ出して、ライン生命の本社ビルや、トリマウンツ全体を見せてあげられたらいいのに。
+[charslot(slot="m",name="avg_249_mlyss_1#9$1")]
+[name="ミュルジス"]あたしにとってのサーミが謎に包まれているのと同じように、あなたたちにとっての科学は謎に包まれたものでしょうしね。
+[name="ミュルジス"]だけど科学は、自然の境界を打ち破り、新たな環境を作り出す手助けをして……答えを探すための力にもなってくれるものなのよ。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]ミュルジス、君は自分に嘘をついているね。
+[dialog]
+[StopMusic(fadetime=2)]
+[playsound(key="$phonevibration")]
+[delay(time=1)]
+[charslot]
+[delay(time=1)]
+[playsound(key="$d_gen_transmissionget")]
+[delay(time=0.5)]
+[charslot(slot="r",name="avg_249_mlyss_1#2$1")]
+[CharacterCutin(widgetID="1", name="avg_npc_892_1#1$1", style="cutin", fadestyle= "horiz_expand_center", fadetime=0.5, offsetx=-200, width=200, block=true)]
+[delay(time=0.5)]
+[charslot(slot="r",name="avg_249_mlyss_1#2$1")]
+[name="ミュルジス"]もしもし？
+[charslot(slot = "m", focus = "n")]
+[name="？？？"]どうも、ミュルジスさん。とあるテクノロジー企業の探査用プラットフォームが、クルビア北部の山岳地帯で最後のペールシダーの群生地を発見したそうなのですが……
+[charslot(slot="r",name="avg_249_mlyss_1#2$1")]
+[name="ミュルジス"]それとあなたに何の関係があるわけ？
+[charslot(slot = "m", focus = "n")]
+[name="？？？"]その付近には山村がありましてね。しかし、該当する人口記録が随分前から期限切れになっているようなんです……どうやら、トレントンの失踪事件とも重なる部分があるようで。
+[charslot(slot="r",name="avg_249_mlyss_1#8$1")]
+[name="ミュルジス"]どうして私が業務外でそれを調べてたのを知ってるの？　退勤後の社員の行動をそこまで追うなんてヤラ主任でもしないと思うけど。
+[name="ミュルジス"]あなたって、紳士的な振る舞いとはほど遠いことをするのね、ジャスティンJr.？
+[charslot(slot = "m", focus = "n")]
+[name="ジャスティンJr."]そうピリピリしないでくださいよ。他意はありませんので。そもそも私は、あなたが追い求める物が何かなど知りませんしね。
+[name="ジャスティンJr."]ただ単に、先方との商談の際に偶然目にしただけなんです。それでこの話にあなたが興味を持ってくだされば、デートのお誘いに応じていただけるのではと思ってお声かけしたんですよ。
+[charslot(slot="r",name="avg_249_mlyss_1#2$1")]
+[name="ミュルジス"]……
+[charslot(slot="r",name="avg_249_mlyss_1#1$1")]
+[name="ミュルジス"]随分と回りくどい真似するじゃない。商務課の敏腕主任さんも案外臆病なのね。普通に誘ってくれたらいいのに。生態課の仕事って、実はそれほど忙しくもないのよ？
+[name="ミュルジス"]とにかく、今からそっちに向かうわ。本社にいる？
+[charslot(slot = "m", focus = "n")]
+[name="ジャスティンJr."]下のカフェにいますよ。前回は、私のオフィスの内装がお気に召さないご様子で、入口に立ったまま入ろうともしてもらえなかったので。
+[charslot(slot="r",name="avg_249_mlyss_1#1$1")]
+[name="ミュルジス"]あっそ。だったら今回はあなたのオフィスに行ってあげるわ。
+[dialog]
+[CharacterCutin(widgetID="1")]
+[playsound(key="$transmission")]
+[delay(time=1.5)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="38_g10_ecolab",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_249_mlyss_1#2$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]やあ、お帰り。君が突然いなくなってからもう半月は経ったか？
+[charslot(slot="m",name="avg_249_mlyss_1#2$1")]
+[name="ミュルジス"]そうね。
+[playMusic(intro="$storyendjp_intro", key="$storyendjp_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]実は、ヒョウゲンワタクサが……
+[charslot(slot="m",name="avg_249_mlyss_1#2$1")]
+[name="ミュルジス"]うん。見たわ。
+[charslot(slot="m",name="avg_249_mlyss_1#3$1")]
+[name="ミュルジス"]……
+[playsound(key="$d_avg_rainheavy_loop", loop=true, channel="bgs",volume=0.7)]
+[charslot]
+生態研究園に雨が降る。
+雨粒がサヤケヤキの葉脈へと染みこみ、シカクヒマワリの花弁を濡らし、その傍らにある枯れた植物の根へ落ちた。
+その雨は強く降り注いでこそいなかったが、止むことはないように思えた。
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]ミュルジス、泣いているのか？
+[charslot(slot="m",name="avg_249_mlyss_1#3$1")]
+[name="ミュルジス"]……
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]君のせいじゃない。
+[name="サヤケヤキ"]あのケリーという研究員も、精一杯ワタクサの面倒を見てくれていたし……
+[charslot(slot="m",name="avg_249_mlyss_1#3$1")]
+[name="ミュルジス"]ええ、わかってる。
+[name="ミュルジス"]栄養液を補充しても、土を交換しても、結局はサーミの生態系を保つ自然のシステムには適わない。極地エリアのバイオームはまだ形にもなってないし……
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]ちょっと、そんなに泣かないでよ。おかげでこっちはずぶ濡れで気持ち悪いんだから。
+[charslot(slot="m",name="avg_249_mlyss_1#3$1")]
+[name="ミュルジス"]……
+[charslot(slot="m",name="avg_249_mlyss_1#3$1")]
+[name="ミュルジス"]来月予定の第二陣、生態研究園に入れるのを遅らせたほうがいいかしら。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]へえ、君ってそんなに動じやすい人だったんだ？
+[charslot(slot="m",name="avg_249_mlyss_1#3$1")]
+[name="ミュルジス"]科学の探求は困難も多いし、たまには打ちのめされることくらいあるでしょ……
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]で、なんで泣いてるの？
+[charslot(slot="m",name="avg_249_mlyss_1#3$1")]
+[name="ミュルジス"]……
+[dialog]
+[charslot(slot="m",name="avg_249_mlyss_1#4$1")]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_249_mlyss_1#2$1")]
+[name="ミュルジス"]ジャスティンJr.と話したあと、クルビア北部の山岳地帯へ行ってみたの。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]それって、遠いところ？
+[charslot(slot="m",name="avg_249_mlyss_1#2$1")]
+[name="ミュルジス"]そうでもないわ。三、四日あれば着けるくらい……だけど、そこに一週間くらいいたから。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]そう遠くもない場所に、今になって行ってきたの？　どうして？
+[charslot(slot="m",name="avg_249_mlyss_1#4$1")]
+[name="ミュルジス"]ずっと探してきたけど、なかなか見つからなかったのよ。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]……
+[charslot(slot="m",name="avg_249_mlyss_1#3$1")]
+[name="ミュルジス"]トレントンの孤児院に、空き家になった家々、そしてトリマウンツの大学や、ライン生命のラボでも。
+[name="ミュルジス"]図書館の膨大な蔵書も当たったし、名もない碑文や進展のない実験レポートまで漁って――挙句には、自分の生体サンプルで実験だってして……
+[name="ミュルジス"]ほんとに長い間、探し続けてきたの。
+[name="ミュルジス"]そうしてやっと見つけたのが、あの場所だった。あそこに行けば、両親や自分の一族、そしてあたし自身についての答えが見つかると思ってたのよ。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]……
+[charslot(slot="m",name="avg_249_mlyss_1#3$1")]
+[name="ミュルジス"]あたしは、この大きなガラスの家を、テラで一番清潔な場所にしないといけないの。そのためには、一番新鮮な空気に、最適な気候、栄養豊富な土壌と……
+[name="ミュルジス"]どんなにもろい命でも自由に生きられるくらい、豊かな生態系が必要なのよ。
+[charslot(slot="m",name="avg_249_mlyss_1#2$1")]
+[name="ミュルジス"]……あたし自身も含めた、どんなにもろい命でも、ね。
+[name="ミュルジス"]だからあたしは、答えを見つけなきゃいけないの。自分の命がこれほど脆弱な理由を、そして自分が源石環境にこれほど敏感な理由を――
+[name="ミュルジス"]自分は何者なのか、「エルフ」とは何なのか、自分はどうやって生まれてきたのか、この大地にはまだ同類が存在しているのか、あたしの未来は……どこにあるのかをね。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]……でも、その答えは見つからず、手ぶらで帰ってきたわけだ。
+[charslot(slot="m",name="avg_249_mlyss_1#4$1")]
+[name="ミュルジス"]あそこにあったのは、荒れ果てた山村と死にゆく木々、そして質素な墓地だけだったわ……時間がすべてを葬り去ってしまったのよ。
+[name="ミュルジス"]ペールシダーの間に葬られたエルフたちが、果たして答えをくれる人だったのか、それとも、あたしと同じで見つかる望みもない答えを探し求めている人だったのか……それすら知る手立てはないの。
+[charslot(slot="m",name="avg_npc_962_1#1$1")]
+[name="サヤケヤキ"]ミュルジス、大丈夫か？
+[name="サヤケヤキ"]ひどく疲れているようだな。私の幹にもたれるといい。
+[dialog]
+[playsound(key="$d_avg_divebubble")]
+[charslot(slot="m",name="avg_249_mlyss_1#3$1")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[name="ミュルジス"]ありがとう。……シカクヒマワリ、あなたの言った通りだったわ。
+[name="ミュルジス"]生態研究園にある雪山も氷原も、本物じゃない。「サーミ」を再現するなんて、できるはずもないのよ……
+[name="ミュルジス"]だってあたしには、自分が探し求めた場所がどんなところなのかすらわかってないんだから。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]……
+[charslot]
+雨は、なおも降り続ける。
+寄る辺を失くした水滴が、園内にしとしとと降る雨の帳を作り出していた。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]もう泣かないでよ、ミュルジス。
+[name="シカクヒマワリ"]こんな雨サーミでは降らないし、これ以上泣いたら極地エリアの生態系が壊れちゃう。そうなればほかの植物まで病気になって、君もまた悲しむことになるんだよ。
+[dialog]
+[charslot]
+[StopSound(channel="bgs", fadetime=3)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_249_mlyss_1#3$1",duration=1)]
+[delay(time=2)]
+[name="ミュルジス"]……
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]実を言うとさ……
+[name="シカクヒマワリ"]ヒョウゲンワタクサは元々、寿命が短いほうなんだ。氷原に一番厳しい冬風が吹けば、茎にしがみついていられる綿毛なんて一つもないからね。
+[name="シカクヒマワリ"]何日か前には、彼女の白い綿毛が極地エリアのほぼ全部を埋め尽くしていたんだよ。僕もあの時ばかりは、ここが本当のサーミみたいに思えたんだ。
+[charslot(slot="m",name="avg_249_mlyss_1#9$1")]
+[name="ミュルジス"]……うん。ありがとう。
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]それに、好奇心旺盛な彼女にも責任はあるよ。君がいない間に、極地エリアだけじゃなく、高原エリアや海洋エリアにも綿毛を飛ばしてたんだから。とはいえまあ、念願は叶ったんじゃないの。
+[name="シカクヒマワリ"]ワタクサは研究園中の植物を全部数えてたんだ。……千種類近くはいるとかで、生態系の問題で本来なら絶滅したはずの奴らも色々いたって聞いたよ。
+[name="シカクヒマワリ"]君は自分の理想の実験環境を作りたいとか言ってたけど、実際やっていることはそれだけに留まらないよね。……やっぱり君って、あの人たちとよく似てるよ。
+[charslot(slot="m",name="avg_249_mlyss_1#8$1")]
+[name="ミュルジス"]えっ？
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]君と似たような人に会ったことがあるって言ってるの。最初からなんとなくわかってたんだけど、確信がなくてさ……
+[name="シカクヒマワリ"]だけど君たちはどちらも、僕たちのことを「感じる」ようだし、似たようなことをしてるから。ただ、君は実験室にいて、彼らは森の中にいるってだけの違いでね。
+[name="シカクヒマワリ"]彼らは植物を包帯とし、雨露を鎮痛剤として……サーミの傷を癒そうとしているんだ。
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_249_mlyss_1#7$1")]
+[name="ミュルジス"]……！
+[name="ミュルジス"]それ、本当なの？
+[charslot(slot="m",name="avg_npc_966_1#1$1")]
+[name="シカクヒマワリ"]もちろん。彼らを助けたこともあるくらいだよ。
+[dialog]
+[charslot(duration=1)]
+[delay(time=2)]
+雨が止んだ。
+ミュルジスは生態研究園の中央に立ち、目の前の植物を眺めながら物思いに耽っていた。
+[charslot(slot="m",name="avg_249_mlyss_1#2$1")]
+[name="ミュルジス"]これまでに行った二度の比較実験は結果が一致していた。それはつまり、あなたたちの植物サンプルの解剖と、スクリーニングの結果に基づく推論は、基本的に正しいということを指しているわ。
+[charslot(slot = "m", focus = "n")]
+[name="シカクヒマワリ"]……
+[charslot(slot="m",name="avg_249_mlyss_1#2$1")]
+[name="ミュルジス"]学界では今まで知られていなかった、あなたの花の種子に含まれる成分。それが、あたしの推論に決定的な根拠をもたらしてくれたのよ。
+[name="ミュルジス"]あなたは本当に特別な植物なのね。ある種の「癒し」をもたらす効果があるようだけど、それが癒すものは、あたしたちの知らない何か。自然界に存在する、ある種の自然物でしょうね。
+[charslot(slot = "m", focus = "n")]
+[name="シカクヒマワリ"]……
+[charslot(slot="m",name="avg_249_mlyss_1#4$1")]
+[name="ミュルジス"]だけど、植物自体には何かを癒そうとする自発性なんてない。
+[charslot(slot="m",name="avg_249_mlyss_1#2$1")]
+[name="ミュルジス"]ということは、あなたたちを活用していた誰かがいるはず。その人たちの存在も、サーミの生態系を保つシステムの一部なのね。
+[dialog]
+[charslot(slot="m",name="avg_249_mlyss_1#11$1")]
+[delay(time=1)]
+[name="ミュルジス"]――サーミには、あたしの仲間がいるのかしら？
+[charslot(slot = "m", focus = "n")]
+ガラス越しに陽の光が射し込み、シカクヒマワリのうつむいた花がわずかに揺れた。
+[charslot(slot="m",name="avg_249_mlyss_1#9$1")]
+[name="ミュルジス"]ありがとう、シカクヒマワリ。あたしの、空想の中のお友達。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="38_g10_ecolab",screenadapt="coverall")]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",name="avg_npc_529_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="生態課研究員"]ミュルジス主任……
+[charslot(slot="m",name="avg_249_mlyss_1#8$1")]
+[name="ミュルジス"]ん……
+[charslot(slot="m",name="avg_npc_529_1#1$1")]
+[name="生態課研究員"]そ、その……お悔やみ申し上げます！
+[charslot(slot="m",name="avg_249_mlyss_1#8$1")]
+[name="ミュルジス"]え？
+[charslot(slot="m",name="avg_npc_529_1#1$1")]
+[name="生態課研究員"]主任は植物とお話しできるんですよね？　ヒョウゲンワタクサのことは……その……
+[charslot(slot="m",name="avg_249_mlyss_1#7$1")]
+[name="ミュルジス"]ケリーったら、そんな噂信じてるの？　それって、あの爺さんヤギがスーパーサイボーグに変身して、夜な夜なサリアと喧嘩してるとかいう噂よりもずっと荒唐無稽だと思うけど……
+[charslot(slot="m",name="avg_npc_529_1#1$1")]
+[name="生態課研究員"]……す、すみません。
+[name="生態課研究員"]あっ、そうだ。主任宛てにお手紙が届いてましたよ。
+[playsound(key="$d_avg_paper1")]
+[name="生態課研究員"]『トリマウンツ工科大学報』と『バイオロジー・レビュー』、それと『ネイチャー・コミュニケーションズ』のトップジャーナル三社から寄稿の依頼です。主任の直近の成果に大変興味があるようで。
+[name="生態課研究員"]主任の植物情報分子実験は、植物生理学と植物系統学、両方の観点から実行可能性が証明されていますし、これは生態学において大きな進歩ですものね！
+[charslot(slot="m",name="avg_249_mlyss_1#1$1")]
+[name="ミュルジス"]みんなのおかげよ。感謝しないとね。
+[charslot(slot="m",name="avg_npc_529_1#1$1")]
+[name="生態課研究員"]いえいえ、そんな。ジャーナルの件、どうしましょうか？
+[charslot(slot="m",name="avg_249_mlyss_1#1$1")]
+[name="ミュルジス"]全部受けてちょうだい。ただ、寄稿が少し遅くなるかもしれないっていうのも添えてあげて。
+[charslot(slot="m",name="avg_npc_529_1#1$1")]
+[name="生態課研究員"]わかりました。休養でもなさるんですか？　長旅から戻られたばかりでもう働いてましたしね。
+[charslot(slot="m",name="avg_249_mlyss_1#9$1")]
+[name="ミュルジス"]違うのよ。サーミへ行こうと思ってね。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

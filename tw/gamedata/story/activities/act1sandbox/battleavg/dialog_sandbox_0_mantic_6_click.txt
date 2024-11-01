@@ -1,0 +1,40 @@
+[HEADER(actId="act1sandbox", npcId="trap_434_klmantc")] 
+[character(name="avg_npc_802_1", offsetX="125", offsetY="100")]
+[name="曼提柯殺手"]快，那邊還有......一些傷患！
+[character(name="char_empty_b", offsetX="100", offsetY="100")]
+[name="受驚的孩子"]媽媽！媽媽！你在哪！
+[character(name="char_empty_b", offsetX="100", offsetY="100")]
+[name="哭泣的老人"]唉......唉......怎麼會遇到這種事......
+[character(name="avg_npc_165", offsetX="100", offsetY="50")]
+[name="巴塞爾"]先帶他們去後面避難！
+[character(name="avg_npc_802_1", offsetX="125", offsetY="100")]
+[name="曼提柯殺手"]嗯......！
+[character(name="avg_npc_008", offsetX="100", offsetY="100")]
+[name="不明勢力的雇傭兵"]別動！再動我們就放箭了！
+[name="不明勢力的雇傭兵"]把你們的武器都放下來！往後退！
+[name="不明勢力的雇傭兵"]別耍花樣！
+[character(name="avg_npc_802_1", offsetX="125", offsetY="100")]
+[name="曼提柯殺手"]......他們......想走？
+[character(name="avg_npc_165", offsetX="100", offsetY="50")]
+[name="巴塞爾"]......咳......咳......
+[character(name="avg_npc_802_1", offsetX="125", offsetY="100")]
+[name="曼提柯殺手"]可以了......讓他們撤走吧......！
+[name="曼提柯殺手"]他們已經說了是自己認錯了目標，他們本來的目標不是我們部落......！
+[name="曼提柯殺手"]這些人剛才說了自己受雇於王酋，但再打下去......他們就不一定還會再說什麼了！
+[name="曼提柯殺手"]任何人都不希望自己手下勢力發展得太強大，王酋也一樣......他們不會在乎今天究竟是誰入侵了誰，只會在乎最後收上來的稅金夠不夠......
+[name="曼提柯殺手"]順著他們來，我們不會有什麼事的......！
+[character(name="avg_npc_165", offsetX="100", offsetY="50")]
+[name="巴塞爾"]......我們......要不要......？
+[Decision(option1="......不放！", value1="1.1")]
+[predicate(references="1.1")]
+[Decision(option1="我們從來沒有想過對王酋大人不敬，", value1="2.1")]
+[predicate(references="2.1")]
+[Decision(option1="也補全了之前漏交的稅款。", value1="3.1")]
+[predicate(references="3.1")]
+[Decision(option1="但自從你們踏進我們部落的那一刻起，", value1="4.1")]
+[predicate(references="4.1")]
+[Decision(option1="我們就沒有任何理由再放任何一個人出去！", value1="5.1")]
+[predicate(references="5.1")]
+[SetConditionProgress(conditionKey="mantic_6_enemy_rush", itemCount="1")]
+[withdraw(charId="trap_434_klmantc")]
+[End]

@@ -1,0 +1,38 @@
+[HEADER(actId="act1sandbox", npcId="trap_432_oldisin")] 
+[character(name="avg_npc_173", offsetX="100", offsetY="100")]
+[name="老伊辛"]唉......孩子們，我也不能幫到更多了......
+[name="老伊辛"]你們快過去吧......
+[Decision(option1="（從餘火裡拉出受傷的孩子）", value1="1.1")]
+[predicate(references="1.1")]
+[character(name="char_empty_b", offsetX="100", offsetY="100")]
+[name="受傷的孩子"]嗚嗚嗚......！媽媽被燒死了......
+[name="受傷的孩子"]媽媽被燒死了......！！
+[Decision(option1="（合力抬起倒塌的牆體）", value1="2.1")]
+[predicate(references="2.1")]
+[character(name="avg_npc_071", offsetX="100", offsetY="100")]
+[name="受傷的部族人"]......沒救了，已經死了......
+[name="受傷的部族人"]先去救那些......還活著的人吧......
+[Decision(option1="（查看臨時搭起的小棚）", value1="3.1")]
+[predicate(references="3.1")]
+[character(name="avg_npc_073", offsetX="100", offsetY="100")]
+[name="忙碌的部族人"]忍一忍，先忍一忍......
+[name="忙碌的部族人"]藥也被毀了......你先咬著毛巾......
+[character(name="char_empty_b", offsetX="100", offsetY="100")]
+[name=""]怎麼會這樣......我們怎麼......這麼晚才回來啊？
+[name=""]部落裡剩下的人都在這裡了，但是，剛剛還和我們傳遞了消息，更快回去的那些人呢？
+[name=""]......為什麼沒看到他們？
+[character(name="avg_npc_163", offsetX="75", offsetY="100")]
+[name="愛麥拉"]你們在找誰？之前回來的那一批人嗎？
+[name="愛麥拉"]他們剛剛為了保護一群孩子，擋在前面，被那些人轟爛了。救不回來，已經死了。我的愛人也......
+[name="愛麥拉"]我給他們蓋了草席，就在那邊。
+[Decision(option1="（去她所說的地方）", value1="4.1")]
+[predicate(references="4.1")]
+[character(name="avg_npc_163", offsetX="75", offsetY="100")]
+[name="愛麥拉"]你們要幹什麼？現在去看他們嗎？不許去！
+[name="愛麥拉"]那邊還有更多人等著我們去幫忙去救，你們現在去看他們只是浪費時間！巴塞爾......我的愛人死之前還在保護著這個他忠心了一輩子的部落......
+[name="愛麥拉"]和我一起到那邊去！先把他們還沒做完的事情做完！
+[SetConditionProgress(conditionKey="route_main", itemCount="11")]
+[SetConditionProgress(conditionKey="route_main_b", itemCount="4")]
+[SetConditionProgress(conditionKey="main_10b_enemy_rush", itemCount="1")]
+[withdraw(charId="trap_432_oldisin")]
+[End]

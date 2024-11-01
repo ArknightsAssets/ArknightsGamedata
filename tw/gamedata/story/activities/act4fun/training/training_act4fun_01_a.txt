@@ -1,0 +1,39 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 2023愚人节教学关1_a
+[Battle.LockFunction(mask="BATTLE_STATUS")]
+[Battle.Pause]
+[Tutorial(protectTime=0.5, dialogHead="$avatar_cammou", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+想找直播素材，從自己的見聞入手一定沒錯。我曾經去過的卡西米爾大騎士領就是一個永遠不缺素材的地方。
+[PopupDialog(dialogHead="$avatar_ulika")] 大騎士領......聽說有很多帥哥，是真的嗎？
+[Battle.Pause(pause=false)]
+[Delay(time=1)]
+[Battle.Pause(pause=true)]
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Battle.EnsureMinCost(cost=5)]
+[Tutorial(focusX=220, focusY=90, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_cammou", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+帥哥我們過一會再說，你先試著將<@tu.kw>自己</>部署到這裡，然後拍攝一些包含路人的街景吧。
+[Battle.Pause(pause=false)]
+[Delay(time=3)]
+[Battle.EnsureMinSp(charId="trap_116_stdurk", sp=5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=false)]
+[InputBlocker(blockInput=true, validX=188, validY=100, validWidth=150, validHeight=150)]
+[Tutorial(waitForSignal="char_info", focusX=225, focusY=130, focusWidth=150, focusHeight=150, \
+          animStyle="Click", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_cammou", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+點這裡準備<@tu.kw>拍照</>。
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinSp(charId="trap_116_stdurk", sp=12)]
+[Tutorial(waitForSignal="use_skill", focusX=200, focusY=-85, focusWidth=150, focusHeight=150, \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_cammou")] \
+技能準備就緒後，可以將範圍內的<@tu.kw>路人</>拍攝下來，在之後的直播中作為素材與觀眾討論。
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Delay(time=2)]
+[Battle.Pause(pause=true)]
+[PopupDialog(dialogHead="$avatar_cammou")] 你拍到的人是競技騎士，雖然裝甲看起來很拉風，但是太常見了，很難說這樣的素材會引發什麼樣的反應。
+[PopupDialog(dialogHead="$avatar_ulika")] 那豈不是要專門挑名人拍？我哪有那樣的資源啊......
+[PopupDialog(dialogHead="$avatar_cammou")] 別灰心，名人也有上街閒逛的時候嘛。

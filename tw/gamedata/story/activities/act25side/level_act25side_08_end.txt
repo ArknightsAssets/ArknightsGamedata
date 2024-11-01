@@ -1,0 +1,480 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")] 
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="38_g8_storage",screenadapt="coverall")]
+[delay(time=1)]
+[playMusic(intro="$act17_intro", key="$act17_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_energybody", volume=1)]
+[delay(time=1.5)]
+[name="？？？"]我命令你回答我，僕從。
+[dialog]
+[Decision(options="僕、僕從......？;......;我可不是凱爾希的僕從......",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "char_003_kalts_1#1", duration=1, isblock=true)]
+[name="凱爾希"]......Dr.{@nickname}失去了記憶。博士並不是你認識的那些人中的任何一個，不再是了。
+[name="凱爾希"]博士現在是泰拉的一員，羅德島的一員。
+[name="凱爾希"]我們已經共同經歷了許多，直至今日。
+[charslot]
+[name="？？？"]......羅德島？
+[name="？？？"]（未知語言）羅德島？
+[name="？？？"]......原來如此。
+[name="？？？"]所以，“失憶”。為什麼你不把所有事情重新告訴這個......“博士”？
+[charslot(slot = "m", name = "char_003_kalts_1#1")]
+[name="凱爾希"]......
+[charslot]
+[name="？？？"]啊，我知道了。
+[name="？？？"]你始終在懷疑這個“博士”的真實性。比起復原一段不再可信的記憶，你更相信一個重新認識世界的他。
+[name="？？？"]嗯......也不奇怪。地面上發生的一切都做不得假，如果真的有足夠的干預，泰拉不該是如今的形態。
+[name="？？？"]看來並沒有任何事情如我們所願。儘管你不記得了......Dr.{@nickname}。
+[name="？？？"]這是多麼難得的機會。在這裡，遇見你們。卻是這樣的情況......
+[dialog]
+[Decision(options="......",values="1")]
+[Predicate(references="1")]
+[name="？？？"]那麼，失憶的“Dr.{@nickname}”與自稱凱爾希的AMa-10，你們來這裡又是為了什麼？
+[name="？？？"]克麗斯騰讓你們感到緊張嗎？這一切超出了你們的控制嗎？
+[dialog]
+[Decision(options="你好像還沒有回答我的問題。;別這麼高高在上！;自我介紹是平等交談的開始。",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[name="？？？"]......
+[name="？？？"]我是計劃的人格模擬，數萬年來始終守望著這座黑暗的大廳，還有數十萬同胞冰冷的身體。
+[name="？？？"]我曾是最後的希望，一次悲觀的嘗試，一個虛無主義的代名詞。
+[name="？？？"]但現在，或許對渺小的你們而言......我是克麗斯騰瘋狂計劃的幫兇和幕後黑手。
+[name="？？？"]我是行將就木的“保存者”，敬畏你眼裡的所有，我是文明的消亡本身。
+[dialog]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="38_g15_energywell_glowed",screenadapt="coverall")]
+[delay(time=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$2", duration=1.5, isblock=true)]
+[name="赫默"]位置沒錯，傳導物質的反應......很強烈......
+[charslot(slot = "m", name = "avg_1031_slent2_1#4$2")]
+[name="赫默"]我——
+[dialog]
+[charslot(slot = "m", posfrom="0,0", posto="0,-80", duration=0.5)]
+[charslot(slot = "l",  name = "avg_npc_893_1#9$1", posfrom="-300,0", posto="0,-50", duration=0.5, isblock=true)]
+[PlaySound(key="$bodyfalldown3", volume=1)]
+[delay(time=1)]
+[charslot(slot = "m", posfrom="0,-80", posto="0,0", duration=1.5)]
+[charslot(slot = "l", posfrom="0,-50", posto="0,0", duration=1.5, isblock=true)]
+[charslot(slot = "m", posfrom="0,0", posto="250,0", duration=2, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_1031_slent2_1#9$2", focus="m")]
+[name="赫默"]雅拉主任......？
+[name="赫默"]您怎麼在這裡？
+[charslot(slot = "l", name = "avg_npc_893_1#9$1", focus="l")]
+[name="雅拉"]你帶著我的祝福，走到了這裡，也好。
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$2", focus="m")]
+[name="赫默"]......
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$2", focus="m")]
+[name="赫默"]您......是為了阻止我而來的。
+[charslot(slot = "l", name = "avg_npc_893_1#10$1", focus="l")]
+[name="雅拉"]你沒有鬆開我送你的武器，我很高興。
+[name="雅拉"]看起來你也並不是因為一腔熱血才站在這裡的。
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$2", focus="m")]
+[name="赫默"]是的。
+[charslot(slot = "l", name = "avg_npc_893_1#9$1", focus="l")]
+[name="雅拉"]這是你最後的機會了，孩子。
+[name="雅拉"]抽身而出，還是繼續？
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$2", focus="m")]
+[name="赫默"]我會......學著成為您所說的戰士的，雅拉主任。
+[charslot(slot = "l", name = "avg_npc_893_1#9$1", focus="l")]
+[name="雅拉"]......
+[name="雅拉"]赫默，你很清楚，克麗斯騰不會把聚焦發生器接收的能量對準大地上任何一處城鎮。
+[name="雅拉"]你沒有必要阻止她。
+[name="雅拉"]她只是和所有科學家一樣，準備向無人曾踏足的地方前進罷了。
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$2", focus="m")]
+[name="赫默"]也許吧，雅拉主任。
+[charslot(slot = "m", name = "avg_1031_slent2_1#2$2", focus="m")]
+[name="赫默"]我並不如您一樣瞭解總轄，但如果是您說的話，我願意相信。
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$2", focus="m")]
+[name="赫默"]但我會繼續試著停下這一切，就算是您擋在我面前也不例外。
+[charslot(slot = "l", name = "avg_npc_893_1#1$1", focus="l")]
+[name="雅拉"]......為什麼？
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$2", focus="m")]
+[name="赫默"]因為，如果總轄就這麼進行了她無論是什麼的實驗，並且獲得了成功——
+[name="赫默"]我們都知道，她可是萊茵生命的總轄，無論是出於情感上的信任還是理性的判斷，她都很有可能成功。
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$2", focus="m")]
+[name="赫默"]您認為，哥倫比亞的研究者們會怎麼看待她？
+[name="赫默"]您在萊茵生命的人力資源考察科工作了這麼久，這裡的人您再瞭解不過。
+[charslot(slot = "l", name = "avg_npc_893_1#8$1", focus="l")]
+[name="雅拉"]......英雄。
+[name="雅拉"]克麗斯騰會成為哥倫比亞科學界的英雄和偶像。
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$2", focus="m")]
+[name="赫默"]是啊，她會成為科學家的榜樣，成為研究者的標杆。
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$2", focus="m")]
+[name="赫默"]......然後，這樣的事就再也不會停止。
+[name="赫默"]一樁一樁，一件一件，研究者們樂此不疲。
+[name="赫默"]但是，雅拉主任，只有她是克麗斯騰·萊特，只有她。
+[charslot(slot = "m", name = "avg_1031_slent2_1#10$2", focus="m")]
+[name="赫默"]其他的那些自詡引領者與天才的人呢？其他的那些被這種所謂的“不擇手段的拓荒精神”鼓舞的人呢？
+[name="赫默"]其他那些將自己的偏執或理想付諸實踐，無所顧忌的人呢？
+[name="赫默"]那些貪婪的，狂妄的，冒進的，頑固的，與我們一樣的人呢？
+[name="赫默"]如果他們都把如同萊茵生命的總轄一般行事作為美德——
+[dialog]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$2", focus="m")]
+[name="赫默"]如果是您，一定能想像到，那是怎樣一種未來。
+[charslot(slot = "m", name = "avg_1031_slent2_1#4$2", focus="m")]
+[name="赫默"]或許我們都不用想像......
+[name="赫默"]您對萊茵生命已經做過的那些研究，也從來不是一無所知。
+[charslot(slot = "l", name = "avg_npc_893_1#9$1", focus="l")]
+[name="雅拉"]我很清楚，赫默。
+[name="雅拉"]我很清楚，特里蒙，不，哥倫比亞的國土內，曾發生過，且正發生著多少這樣的事情。
+[name="雅拉"]曾有無數瘋狂而誘人的計劃擺在我的面前，拿出這些東西的人眼神明亮，笑容真誠。
+[name="雅拉"]他們衷心地以為他們在為“純粹的科學”效力，是我們認知原野的拓荒者。
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$2", focus="m")]
+[name="赫默"]而您和您的同僚們，只需要評估他們的實驗計劃裡，宏偉藍圖下，會不會偶爾也要付出一點點“代價”和“損耗”。
+[charslot(slot = "l", name = "avg_npc_893_1#9$1", focus="l")]
+[name="雅拉"]“代價”。
+[name="雅拉"]這種代價有時是一片肥沃的土地，有時是若干個絕症病人或者死刑犯；有時是一個村落或一個城鎮，有時是某個特定的種族乃至國家。
+[charslot(slot = "l", name = "avg_npc_893_1#6$1", focus="l")]
+[name="雅拉"]在我看來，也有時，是他們自己。
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$2", focus="m")]
+[name="赫默"]您對此恐懼嗎，雅拉主任？還是，您也為了科學進步的可能性而興奮不已？
+[charslot(slot = "m", name = "avg_1031_slent2_1#10$2", focus="m")]
+[name="赫默"]雅拉主任，這世上從來沒有裝在玻璃罩裡的“純粹的科學”。
+[name="赫默"]科學在我們的手掌中，在人的手掌中。您必須知道它的溫度，它的重量，它是否灼人，它會帶來什麼痛苦或是慰藉。
+[name="赫默"]那些人永遠聲稱自己是在前進，可他們只是胡亂把腳伸向自己想踐踏的地方而已。
+[charslot(slot = "l", name = "avg_npc_893_1#8$1", focus="l")]
+[name="雅拉"]但，赫默，這就是前進。
+[name="雅拉"]沒有人知道路在哪，他們只能這麼走。
+[name="雅拉"]幸運者找對了地方，走入光明中。不幸者闖進死胡同，兜兜轉轉。
+[charslot(slot = "l", name = "avg_npc_893_1#9$1", focus="l")]
+[name="雅拉"]但你沒辦法讓他們停下的。
+[name="雅拉"]你自己也是研究者，你知道什麼最無法阻擋。
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$2", focus="m")]
+[name="赫默"]......
+[charslot(slot = "l", name = "avg_npc_893_1#1$1", focus="l")]
+[name="雅拉"]——是渴求。
+[name="雅拉"]物質束縛不了它，道德束縛不了它，規則也同樣束縛不了它。
+[name="雅拉"]這片大地上，從古至今，在克麗斯騰之前，你說的那些貪婪的、狂妄的、冒進的、頑固的人們，他們又何曾停下過？
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$2", focus="m")]
+[name="赫默"]那麼，今後，他們必須停下。
+[name="赫默"]起碼，在真正俯身看清自己的腳下到底是什麼之前，他們必須停下。
+[charslot(slot = "m", name = "avg_1031_slent2_1#2$2", focus="m")]
+[name="赫默"]雅拉主任，我覺得——科學的燃料不該是欲望與理想，也不該是計算與取捨。
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$2", focus="m")]
+[name="赫默"]科學是真切地看向每一個人。
+[charslot(slot = "l", name = "avg_npc_893_1#2$1", focus="l")]
+[name="雅拉"]......
+[charslot(slot = "l", name = "avg_npc_893_1#1$1", focus="l")]
+[name="雅拉"]赫默，你說了一句很漂亮的話，適合被掛在大學圖書館的走廊裡。
+[charslot(slot = "l", name = "avg_npc_893_1#9$1", focus="l")]
+[name="雅拉"]但恐怕沒有哪個研究者願意讓這句話出現在實驗室的牆上。
+[name="雅拉"]這是句空話。
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$2", focus="m")]
+[name="赫默"]那麼，我會讓它落實的，雅拉主任。
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$2", focus="m")]
+[name="赫默"]我不想中途放棄，我還帶著您的祝福。
+[charslot(slot = "l", name = "avg_npc_893_1#8$1", focus="l")]
+[name="雅拉"]......
+[charslot(slot = "l", name = "avg_npc_893_1#9$1", focus="l")]
+[name="雅拉"]赫默，克麗斯騰花了很長時間準備這項計劃，我不知道她為此付出了多少。
+[name="雅拉"]但她的覺悟一定不會比她的父母要少。
+[charslot(slot = "l", name = "avg_npc_893_1#11$1", focus="l")]
+[name="雅拉"]你——
+[charslot(slot = "l", name = "avg_npc_893_1#6$1", focus="l")]
+[name="雅拉"]好吧......不是你，是我。
+[name="雅拉"]......我無法眼睜睜地看著，希望又一次淪為泡影。
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$2", focus="m")]
+[name="赫默"]那麼，雅拉主任，您希望的又是什麼？見證克麗斯騰的成功，還是讓她平安無事地回來？
+[charslot(slot = "l", name = "avg_npc_893_1#6$1", focus="l")]
+[name="雅拉"]......
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$2", focus="m")]
+[name="赫默"]我認識位叫露比的研究員，她最大的希望是按時下班，順利退休。
+[name="赫默"]剛才遇到的一位士兵先生，我想他現在唯一希望的事就是從這座失控的能量井平安離開，帶著親戚們從特里蒙的科學瘋子手中逃走。
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$2", focus="m")]
+[name="赫默"]與他們相比，總轄的希望更高貴嗎？
+[name="赫默"]因為她想要的東西，足夠“進步”？
+[charslot(slot = "m", name = "avg_1031_slent2_1#2$2", focus="m")]
+[name="赫默"]還是只是因為，您與她之間的感情，足夠緊密？
+[name="赫默"]雅拉主任，您知道這並不公平。
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$2", focus="m")]
+[name="赫默"]您不能這麼自私。
+[charslot(slot = "l", name = "avg_npc_893_1#6$1", focus="l")]
+[name="雅拉"]我......
+[name="雅拉"]......
+[charslot(slot = "l", name = "avg_npc_893_1#9$1", focus="l")]
+[name="雅拉"]我......就是這麼自私，我沒辦法用道德或正義欺騙自己，然後放你過去。
+[charslot(slot = "l", name = "avg_npc_893_1#7$1", focus="l")]
+[name="雅拉"]我們必須承認感情的重量，克麗斯騰的那個夢，我沒辦法袖手旁觀。
+[name="雅拉"]......赫默，你不會不明白。
+[charslot(slot = "m", name = "avg_1031_slent2_1#10$2", focus="m")]
+[name="赫默"]可如果我們能阻止總轄，她也許還會——
+[charslot(slot = "l", name = "avg_npc_893_1#6$1", focus="l")]
+[name="雅拉"]不會的。
+[name="雅拉"]不會的，孩子。
+[name="雅拉"]我很清楚......當她開始這項計劃的時候，就沒有打算再回來了。
+[name="雅拉"]從很早之前，甚至，在我們初見時，這一切......就已經無法挽回了。
+[charslot(slot = "l", name = "avg_npc_893_1#1$1", focus="l")]
+[name="雅拉"]赫默，對於你能擋在我的面前，我很欣慰。我甚至可以說，我支援你的主張。
+[charslot(slot = "l", name = "avg_npc_893_1#6$1", focus="l")]
+[name="雅拉"]但是，作為克麗斯騰的......
+[name="雅拉"]......
+[charslot(slot = "l", name = "avg_npc_893_1#9$1", focus="l")]
+[name="雅拉"]......家人，我依然不會讓你通過。
+[charslot(slot = "l", name = "avg_npc_893_1#7$1", focus="l")]
+[name="雅拉"]就讓我看看吧，你真的......準備好承擔你所說的話了嗎？
+[name="雅拉"]你今後將要面對的，不再是一個帕爾維斯或者克麗斯騰。
+[name="雅拉"]你要面對的，是所有試圖前進的人們。
+[charslot(slot = "m", name = "avg_1031_slent2_1#2$2", focus="m")]
+[name="赫默"]......
+[charslot(slot = "m", name = "avg_1031_slent2_1#1$2", focus="m")]
+[name="赫默"]我會的，我必須準備好，我向您保證。
+[name="赫默"]科學必須前進，也勢必前進。
+[name="赫默"]也許，有的人，比如總轄，他們更擅長“前進”的部分。
+[charslot(slot = "m", name = "avg_1031_slent2_1#5$2", focus="m")]
+[name="赫默"]但也必須有人站出來，確保科學——
+[PlaySound(key="$d_avg_drone", volume=1)]
+[name="赫默"]依然在人的手中。
+[dialog]
+[charslot(slot = "m", posfrom="250,0", posto="50,0", duration=0.3)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[delay(time=0.2)]
+[PlaySound(key="$swordtsing4", volume=1)]
+[charslot(slot = "l", action="shake", power=5, times=60, duration=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="38_g8_storage",screenadapt="coverall")]
+[delay(time=3)]
+[charslot(slot = "m", name = "char_003_kalts_1#3")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "m", name = "char_003_kalts_1#3")]
+[name="凱爾希"]......“保存者”......
+[name="凱爾希"]我沒有想到，居然真的是您。
+[name="凱爾希"]可如果是您，又怎麼會......
+[charslot]
+[name="“保存者”"]協助一隻小動物的瘋狂計劃？
+[name="“保存者”"]還是目睹一個年幼文明踏出搖籃的第一步？
+[name="“保存者”"]你來得太晚了，“博士”。
+[name="“保存者”"]我的等待......已經失去了意義。
+[dialog]
+[charslot(slot = "m", focus="none")]
+[Decision(options="和眼前的事比起來，特里蒙發生的一切都好像不值一提。;......;......我需要更多解釋。",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "char_003_kalts_1#3")]
+[name="凱爾希"]是您在幫助克麗斯騰。她以某種手段與您有所接觸。
+[charslot]
+[name="“保存者”"]泰拉的歷史、文化、語言、種族、科技水準，透過哥倫比亞的網路，我已盡數知曉。
+[name="“保存者”"]可笑的是，如今地面上的資訊傳輸甚至無法做到覆蓋全球，而你們相互毀滅的手段，倒是有了合格的演化效率。
+[charslot(slot = "m", name = "char_003_kalts_1#1")]
+[name="凱爾希"]泰拉的手段過於原始且依賴源石，以這樣的轉換率，想實現克麗斯騰的嘗試......需要的能源也是匪夷所思的。
+[charslot(slot = "m", name = "char_003_kalts_1#3")]
+[name="凱爾希"]泰拉幾乎不可能有技術手段解決這一難題。除非——
+[charslot]
+[name="“保存者”"]是的。
+[name="“保存者”"]我把最後的血給了她，供養一顆新的心臟，也許好過守著一盞將熄的燈。
+[charslot(slot = "m", name = "char_003_kalts_1#3")]
+[name="凱爾希"]......
+[name="凱爾希"]您竟然，真的——
+[name="凱爾希"]......為什麼不惜如此？這是您在這麼漫長的時間裡的所有努力......全都白費了。
+[charslot]
+[name="“保存者”"]是啊，白費了。
+[name="“保存者”"]計劃被我親自關閉，指令由我親自輸入。
+[name="“保存者”"]這是我不容懊悔的判斷。
+[name="“保存者”"]很快了，很快。
+[dialog]
+[charslot]
+[CameraShake(duration=5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_collapse", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=0.5)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Blocker(a=0.9, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[delay(time=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+巨大的震動從遠處蔓延而來，地下空間的燈光閃爍了幾下。
+那位自稱“保存者”的存在沉默了片刻，又好像是深深歎了一口氣。
+[dialog]
+[Decision(options="怎、怎麼了？！;......;難道是能量井？",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[name="“保存者”"]這只是嬰兒好奇的一瞥——
+[name="“保存者”"]卻要跨越什麼樣的阻礙？
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[delay(time=2)]
+8:11 P.M. 能量井異常蓄能
+[dialog]
+[Background(image="38_g15_energywell_glowed",screenadapt="coverall")]
+[delay(time=2)]
+[PlaySound(key="$d_avg_magic_3", volume=1)]
+[delay(time=0.8)]
+[PlaySound(key="$swordtsing5", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_ftrub", volume=1)]
+[charslot(slot = "r", name = "avg_1031_slent2_1#9$2", posfrom="-600,0", posto="40,-20", duration=1, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "r", posfrom="40,-20", posto="0,0", duration=1.5, isblock=true)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", name = "avg_npc_893_1#1$1", posfrom="-300,0", posto="0,0", duration=2.5, isblock=true)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_893_1#1$1", focus="l")]
+[name="雅拉"]那家叫羅德島的企業給了你很好的訓練。
+[charslot(slot = "r", name = "avg_1031_slent2_1#9$2", focus="r")]
+[name="赫默"]呼......呼......
+[charslot(slot = "l", name = "avg_npc_893_1#1$1", focus="l")]
+[name="雅拉"]手臂還能抬得起來嗎？
+[charslot(slot = "r", name = "avg_1031_slent2_1#1$2", focus="r")]
+[name="赫默"]我沒事。
+[name="赫默"]您的手臂呢？
+[charslot(slot = "l", name = "avg_npc_893_1#1$1", focus="l")]
+[name="雅拉"]放心，我買了醫療保險。
+[charslot(slot = "l", name = "avg_npc_893_1#1$1", focus="l")]
+[name="雅拉"]還要繼續嗎？
+[charslot(slot = "r", name = "avg_1031_slent2_1#5$2", focus="r")]
+[name="赫默"]......如果您依然擋在我的面前的話。
+[charslot(slot = "l", name = "avg_npc_893_1#9$1", focus="l")]
+[name="雅拉"]好吧，那就繼續。
+[dialog]
+[PlaySound(key="$d_avg_energywell", volume=0, loop=true, channel="a")]
+[SoundVolume(volume=0.4, channel="a",fadetime=2)]
+[delay(time=1.5)]
+[playMusic(intro="$act25side_intro",key="$act25side_loop", volume=0.6)]
+[charslot(slot = "l", name = "avg_npc_893_1#7$1", focus="l")]
+[name="雅拉"]......等等，情況有些不對。
+[name="雅拉"]這裡的溫度......就算是能量井準備發射，這裡也不至於升到這種溫度。
+[charslot(slot = "r", name = "avg_1031_slent2_1#1$2", focus="r")]
+[name="赫默"]軍方為了停止蓄能，幾乎把這裡所有的能源都切斷了。
+[charslot(slot = "l", name = "avg_npc_893_1#3$1", focus="l")]
+[name="雅拉"]包括所有的安全警報和控制系統？那幫蠢貨——
+[name="雅拉"]快！我們必須離開這裡！
+[charslot(slot = "r", name = "avg_1031_slent2_1#5$2", focus="r")]
+[name="赫默"]上面還有一些駐紮的士兵，雅拉主任，拜託您帶他們離開。
+[charslot(slot = "l", name = "avg_npc_893_1#4$1", focus="l")]
+[name="雅拉"]你要去哪？
+[charslot(slot = "r", name = "avg_1031_slent2_1#1$2", focus="r")]
+[name="赫默"]控制系統的能源被切斷了，為什麼總轄還能實現對這裡的遠程操作？
+[charslot(slot = "r", name = "avg_1031_slent2_1#5$2", focus="r")]
+[name="赫默"]傳導物質的反應還在增強，我......還有機會。
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "r", afrom=1, ato=0, duration=1, focus="r", isblock=true)]
+[delay(time=1)]
+[charslot(slot = "l", focus="l")]
+[name="雅拉"]赫默！
+[dialog]
+[charslot(duration=0.5)]
+[delay(time=1)]
+[Image(image="38_i15_1", screenadapt="coverall", fadetime=2)]
+[CameraShake(duration=-1, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=false, block=false)]
+[PlaySound(key="$d_avg_collapse", volume=1)]
+[PlaySound(key="$d_avg_energywell", volume=0.8, loop=true, channel="a")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=2)]
+熱浪炙烤著雅拉的臉，那個她從前並未那麼在意的黎博利研究員，正繼續向能量井的更深層跑去。
+雅拉突然覺得，什麼東西都無法成為那個身影的阻礙。
+也許，她答應過自己的事，真的會做到。
+她想，到了那時候，自己或許能幫上一點忙。
+[dialog]
+[PlaySound(key="$d_avg_energywell", volume=1, loop=true, channel="a")]
+[CameraShake(duration=-1, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=false, block=false)]
+[PlaySound(key="$d_avg_collapse", volume=1)]
+[Image(image="38_i15_2", screenadapt="coverall", fadetime=1)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=3.5)]
+[name="雅拉"]看來發射的準備工作已經結束了。
+[name="雅拉"]“科學是真切地看向每一個人。”
+[name="雅拉"]哈，我可不是科學家。
+[dialog]
+[PlaySound(key="$d_avg_energygather", volume=1)]
+[delay(time=1.5)]
+[name="雅拉"]克麗斯騰，你會飛上你所夢想的深空之中......
+[name="雅拉"]你一定會的。
+[dialog]
+[StopSound(channel="a", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[CameraShake(duration=0.1, xstrength=0, ystrength=0, vibrato=30, randomness=90, fadeout=false, block=false)]
+[image]
+[charslot]
+[Background(image="29_g7_mainstreet_n",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "r", name = "avg_npc_891_1#1$1", duration=1, isblock=true)]
+[name="娜斯提"]......
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", duration=1.5)]
+[delay(time=2)]
+[charslot(slot = "l", name = "avg_npc_892_1#9$1", focus="l")]
+[name="小賈斯汀"]娜斯提，你沒有選個視野更好的地方嗎？
+[charslot(slot = "r", name = "avg_npc_891_1#6$1", focus="r")]
+[name="娜斯提"]......你什麼時候才能不繼續煩我？
+[charslot(slot = "l", name = "avg_npc_892_1#9$1", focus="l")]
+[name="小賈斯汀"]我去萊塔尼亞考察的時候，曾看過萊塔尼亞人的煙火慶典，他們會邀請最好的作曲家，專門為這場慶典譜曲。
+[charslot(slot = "l", name = "avg_npc_892_1#3$1", focus="l")]
+[name="小賈斯汀"]當第一朵煙火綻放，音樂家們就會一齊演奏，那場面，嘖嘖，真是漂亮。
+[charslot(slot = "r", name = "avg_npc_891_1#6$1", focus="r")]
+[name="娜斯提"]你的修辭過於貧乏，萊塔尼亞人不會喜歡你。
+[charslot(slot = "l", name = "avg_npc_892_1#1$1", focus="l")]
+[name="小賈斯汀"]是啊，不過，我們今天居然在特里蒙看到了同樣燦爛的景色。
+[name="小賈斯汀"]懸浮在天頂的圓環，無人機的子彈曳出的光雨，裝甲上濺射出的火花......
+[name="小賈斯汀"]不比煙火慶典差。
+[charslot(slot = "l", name = "avg_npc_892_1#9$1", focus="l")]
+[name="小賈斯汀"]算算時間，演奏該進入高潮部分了吧。
+[name="小賈斯汀"]應該有一個震撼人心的強音——
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[background]
+[charslot]
+[Image(image="38_i10", xScale=1.8, yScale=1.8, x=50,y=200, screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=0.5)]
+[CameraShake(duration=-1, xstrength=2, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_energybeamfire", volume=0.6)]
+[Image(image="38_i16", screenadapt="coverall", xScale=1.8, yScale=1.8, x=50,y=200,fadetime=0.2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=false)]
+[ImageTween(xTo=50,yTo=-180,duration=3.5)]
+[delay(time=3)]
+[PlaySound(key="$d_avg_beamamb", volume=1)]
+[delay(time=0.5)]
+[CameraShake(duration=1.5, xstrength=4, ystrength=30, vibrato=50, randomness=90, fadeout=true, block=false)]
+[ImageTween(xScaleFrom=1.8, yScaleFrom=1.8, xScaleTo=1.2, yScaleTo=1.2, duration=0.2, ease="InOutCubic", xTo=0,yTo=0,block=true)]
+[Image(image="38_i16", screenadapt="coverall", xScale=2.5, yScale=2.5, fadetime=0.1)]
+[ImageTween(xScaleFrom=2.5, yScaleFrom=2.5, xScaleTo=1.2, yScaleTo=1.2, duration=0.1, ease="InOutCubic", xTo=0,yTo=0,block=true)]
+[delay(time=1)]
+[CameraShake(duration=6, xstrength=30, ystrength=30, vibrato=50, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$glass", volume=1)]
+[PlaySound(key="$d_avg_collapse", volume=1)]
+[PlaySound(key="$d_gen_thunders_amb", volume=0.7)]
+[ImageTween(xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, duration=20)]
+[delay(time=3.5)]
+[name="小賈斯汀"]......
+[name="娜斯提"]......
+[name="小賈斯汀"]這......比我想像的還漂亮，萊茵生命該向城市裡所有欣賞到這一幕的人收費。
+[name="娜斯提"]......成功了，聚焦發生器的材料和結構暫時抵抗住了能量束的衝擊。
+[name="娜斯提"]接下來是充能和聚焦階段，只要能收集到這種高壓條件下的讀數......
+[name="小賈斯汀"]接下來，軍方和梅蘭德的人恐怕會抓住最後的機會，阻止聚焦的完成。
+[name="小賈斯汀"]你就不擔心總轄？
+[name="娜斯提"]她什麼時候需要我們擔心。
+[name="娜斯提"]我們是同行者，我們只是同行者。
+[name="娜斯提"]我們只需要做好自己的事，然後......祝她好運。
+[name="娜斯提"]（薩卡茲語）若有一天，卡茲戴爾亦懸於天頂，我將在火爐上鐫刻你的名字。
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

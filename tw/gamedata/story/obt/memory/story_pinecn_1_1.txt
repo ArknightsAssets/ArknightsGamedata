@@ -1,0 +1,498 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_room_2")]
+[Delay(time=1)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=2)]
+7:00 A.M. 天氣/晴朗
+羅德島宿舍
+[Dialog]
+[PlaySound(key="$doorknockquite", volume=1)]
+[Delay(time=1)]
+[name="？？？"]米娜，米娜，你醒了嗎？
+[dialog]
+[playsound(key="$d_avg_cloakmovement",block=true)]
+[character(name="avg_440_pinecn_1#4$1",fadetime=1.5,block=true)]
+[delay(time=0.51)]
+[name="松果"]唔......
+[name="松果"]床板怎麼有些晃動......
+[dialog]
+[character]
+[playsound(key="$d_gen_walk_n")]
+[Delay(time=3)]
+[playsound(key="$dooropenquite")]
+[Delay(time=1)]
+[character(name="avg_440_pinecn_1#2$1")]
+[name="松果"]呀，卡夫卡你已經回來了嗎？
+[Character(name2="avg_440_pinecn_1#2$1",name="char_214_kafka_1#1",focus=1)]
+[name="卡夫卡"]剛剛才到，我特意先來找你......喏，這是你爸爸托我帶的信。
+[Character(name2="avg_440_pinecn_1#3$1",name="char_214_kafka_1#1",focus=2)]
+[name="松果"]嗚嗚，謝謝！
+[Character(name2="avg_440_pinecn_1#3$1",name="char_214_kafka_1#1",focus=1)]
+[name="卡夫卡"]你昨天又是很晚才回來吧？
+[Character(name2="avg_440_pinecn_1#9$1",name="char_214_kafka_1#1",focus=2)]
+[name="松果"]最近事情比較多嘛......
+[Character(name2="avg_440_pinecn_1#9$1",name="char_214_kafka_1#1",focus=1)]
+[name="卡夫卡"]那你再睡一會，我去趟後勤部。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[characteraction(name="left", type="move", xpos=-300, fadetime=2,block=false)]
+[character(name="char_empty",name2="avg_440_pinecn_1#9$1",fadetime=0.5)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[delay(time=1)]
+[character]
+米娜，你好嗎？
+你媽媽想托卡夫卡捎幾件衣服給你，但我想人家回哥倫比亞還有很多事情要忙，應該不太方便，就給攔下了。
+新工作怎麼樣啊？是叫羅德島對吧，卡夫卡說你和同事們相處得很好......
+她和原先西蒙公司的領導都在那裡工作的話，想必是靠得住的地方。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Background(image="bg_corridor",screenadapt="showall")]
+[Delay(time=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]	
+8:00 A.M. 天氣/晴朗
+羅德島工程部走廊
+[Dialog]
+[character(name="avg_440_pinecn_1#1$1")]
+[name="松果"]......艦橋主體區域的立面維修基本已經完成了，還差一點點測試收尾工作，我，我待會就去。
+[Character(name="avg_npc_090",name2="avg_npc_012",focus=1)]
+[name="工程部幹員A"]已經比規定好的工期提前了整整兩天完成。
+[character(name="avg_npc_090",name2="avg_440_pinecn_1#9$1",focus=2)]
+[name="松果"]傑夫大哥，下午記得到艦橋驗收一下哦。
+[character(name="avg_npc_090",name2="avg_440_pinecn_1#9$1",focus=1)]
+[name="工程部幹員A"]沒關係，你幹活幾時出過岔子，師父我放心。
+[character(name="avg_npc_012",name2="avg_440_pinecn_1#9$1",focus=1)]
+[name="工程部幹員B"]對了松果，剛剛出門的時候是不是太著急了呀？
+[character(name="avg_npc_012",name2="avg_440_pinecn_1#2$1",focus=2)]
+[name="松果"]唔......沒有啊。
+[character(name="avg_npc_012",name2="avg_440_pinecn_1#2$1",focus=1)]
+[name="工程部幹員B"]你看你的襪子，怎麼一隻長筒襪一隻船襪，而且顏色也不太一樣......
+[Dialog]
+[character(name="avg_npc_012",name2="avg_440_pinecn_1#3$1",focus=2)]
+[characteraction(name="right", type="jump" , power=5, times=2, fadetime=0.51,block=true)]
+[name="松果"]啊呀！
+[Character(name="avg_npc_090",name2="avg_440_pinecn_1#3$1",focus=1)]
+[name="工程部幹員A"]又犯迷糊了哦，看來下午還是有驗收的必要。
+[Character(name="avg_npc_090",name2="avg_440_pinecn_1#4$1",focus=2)]
+[name="松果"]呃，襪子是襪子，工作是工作......
+[name="松果"]傑夫大哥工作也沒出過差錯，但上周，唔，不是也把手套當成麵包放進了微波爐。
+[Character(name="avg_npc_090",name2="avg_npc_012",focus=2)]
+[name="工程部幹員B"]對對對，還被可露希爾狠狠批評了一頓。
+[Character(name="avg_npc_090",name2="avg_npc_012",focus=1)]
+[name="工程部幹員A"]那是因為太睏了。
+[name="工程部幹員A"]咳咳......好了松果，說正事，這是今天的工程事務單，拿好，去忙吧。
+[Character(name="avg_npc_090",name2="avg_npc_012",focus=2)]
+[name="工程部幹員B"]松果，中午食堂見，別又忘了吃飯！
+[character(name="avg_440_pinecn_1#9$1")]
+[name="松果"]嗯嗯，好。
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[character(fadetime=1.5)]
+[delay(time=2.5)] 
+[Character(name="avg_npc_090",name2="avg_npc_012",focus=2)]
+[name="工程部幹員B"]松果來羅德島多久了？
+[Character(name="avg_npc_090",name2="avg_npc_012",focus=1)]
+[name="工程部幹員A"]大半年了吧，她報到的那天，還是我帶著去辦的入職手續。
+[name="工程部幹員A"]登記資訊、入住宿舍、參觀本艦，一路上我能看出她很好奇很緊張，但也不怎麼開口問，怯生生的。
+[name="工程部幹員A"]但是後面最簡單的環節，反而費了我們很多功夫。
+[name="工程部幹員A"]工程部幹員合約只有幾頁紙，她起碼看了七八遍，每一項條款都要和人事幹員確認，不可抗力包括哪些，有沒有隱藏違約條款。
+[name="工程部幹員A"]那個人事幹員還以為她是其他企業派來的商業間諜......
+[Character(name="avg_npc_090",name2="avg_npc_012",focus=2)]
+[name="工程部幹員B"]她剛來那陣子，工作也認真得過頭了，搞得可露希爾都不敢給她安排什麼任務。
+[Character(name="avg_npc_090",name2="avg_npc_012",focus=1)]
+[name="工程部幹員A"]與其說認真，不如說是害怕出錯，小心翼翼的。都和她在哥倫比亞的遭遇有關吧，聽卡夫卡提起過。
+[Character(name="avg_npc_090",name2="avg_npc_012",focus=2)]
+[name="工程部幹員B"]那時候可沒人敢在松果面前亂開玩笑，現在她都能把你的玩笑反彈回來了。
+[name="工程部幹員B"]哈哈哈哈，傑夫，我憋不住了。
+[Character(name="avg_npc_090",name2="avg_npc_012",focus=1)]
+[name="工程部幹員A"]別笑了......工作工作。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Background(image="bg_black",screenadapt="showall")]
+[Delay(time=0.51)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.51)]	
+[PlaySound(key="$d_avg_paper2", volume=1)]
+爸爸的病養好了，原先的項目卻停了工，連事務所都關了，一打聽，說是投資的西蒙公司出了事。
+爸爸在家待了半年，沒找到新工作，很著急，但也沒別的辦法。
+咱們這行就是這樣，和工地鬧過矛盾的，不管占不占理，總是招忌諱，人家覺得你不安分。再說哥倫比亞缺什麼都不缺工人。
+這段時間多虧了你寄回家的薪資......米娜，都怪爸爸沒用，把你也拖累了。你現在跟著羅德島天南地北地跑，應該很辛苦。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Background(image="bg_forest",screenadapt="showall")]
+[Delay(time=0.51)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+1:00 P.M. 天氣/晴朗
+羅德島療養庭院
+[Dialog]
+[Character(name="char_258_podego_1")]
+[name="波登可"]松果小姐，今天就麻煩你了。
+[name="波登可"]我是昨天來溫室檢查的時候發現的，好幾處地磚都開裂了，牆面也有不同程度的滲水。
+[Dialog]
+[Character(name="avg_440_pinecn_1#1$1")]
+[Delay(time=0.51)]
+[characteraction(name="middle", type="move", ypos=-30,fadetime=1.5,block=true)]
+[Delay(time=1.5)]
+[playsound(key="$a_bat_sleeptank")]
+[Delay(time=1)]
+[characteraction(name="middle", type="move", ypos=30,fadetime=1.5,block=true)]
+[Delay(time=0.51)]
+[Character(name="avg_440_pinecn_1#1$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]淋灌裝置能正常運轉嗎？
+[Character(name="avg_440_pinecn_1#1$1",name2="char_258_podego_1",focus=2)]
+[name="波登可"]嗯，上個月才由PRTS升級過。
+[Character(name="avg_440_pinecn_1#4$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]唔唔......地面的防潮層損耗得太嚴重了......
+[Character(name="avg_440_pinecn_1#4$1",name2="char_258_podego_1",focus=2)]
+[name="波登可"]會很麻煩嗎？
+[Character(name="avg_440_pinecn_1#7$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]在每個區域的防潮層都重新添加乾燥炭塊，再在破損的地方重新鋪上防潮地磚就可以了。
+[Character(name="avg_440_pinecn_1#9$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]不麻煩，但是需要一些時間......接下來就交給我吧。
+[Dialog]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[playsound(key="$a_bat_sleeptank")]
+[character]
+[delay(time=1)]
+[character(name="avg_440_pinecn_1#2$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.8, block=true)]
+[Delay(time=0.51)]
+[name="松果"]呼——這樣應該就沒問題了......
+[character(name="avg_440_pinecn_1#8$1")]
+[name="松果"]（嗚——肩膀好酸......）
+[character(name="char_258_podego_1")]
+[name="波登可"]足足忙了五個小時，太感謝了！我去拿了一些花餅，請一定要收下。
+[Character(name="avg_440_pinecn_1#9$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]謝謝。
+[Character(name="avg_440_pinecn_1#9$1",name2="char_258_podego_1",focus=2)]
+[name="波登可"]我送你出去吧。
+[Character(name="avg_440_pinecn_1#2$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]......
+[name="松果"]好多花啊，剛剛都沒有注意。
+[Character(name="avg_440_pinecn_1#2$1",name2="char_258_podego_1",focus=2)]
+[name="波登可"]松果很少來療養庭院吧，那我順便帶你轉一圈好了！
+[name="波登可"]這裡培育了很多珍稀的花卉哦，萊娜姐姐說療養庭院的規模比得上一座小型植物園了。
+[Character(name="avg_440_pinecn_1#2$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]好厲害......
+[Character(name="avg_440_pinecn_1#2$1",name2="char_258_podego_1",focus=2)]
+[name="波登可"]我還在玻利瓦爾的時候，喜歡看《移動城市圖誌》之類的書。
+[name="波登可"]裡面說每座大城市都建了植物園或者自然館，還會定期舉辦花卉博覽會，專門收集各種各樣珍稀的花卉讓人們觀賞。
+[name="波登可"]我當時特別想去那些地方看看。
+[Character(name="avg_440_pinecn_1#1$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]那，波登可去了嗎？
+[Character(name="avg_440_pinecn_1#1$1",name2="char_258_podego_1",focus=2)]
+[name="波登可"]沒有。剛離開老家，就遇見了萊娜姐姐，然後就跟著來羅德島了。
+[dialog]
+[character]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Delay(time=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[playsound(key="$d_gen_walk_n")]
+[delay(time=2)]
+[character(name="char_258_podego_1")]
+[name="波登可"]這是岩藤，這是異色繡球......
+[name="波登可"]這是海柳......這是山荷葉，一種很神奇的花，原本生長在東國的山區。
+[name="波登可"]你看花瓣現在是粉色對吧，可如果被雨淋濕的話，就會慢慢變得透明哦！
+[Character(name="avg_440_pinecn_1#3$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]真的嗎？
+[Character(name="avg_440_pinecn_1#3$1",name2="char_258_podego_1",focus=2)]
+[name="波登可"]嗯嗯，我第一次見到的時候，也嚇了一跳呢。松果想看嗎？我可以灑點水什麼的......
+[Character(name="avg_440_pinecn_1#3$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]呃——不用了不用了。
+[Character(name="avg_440_pinecn_1#3$1",name2="char_258_podego_1",focus=2)]
+[name="波登可"]這是灑金榕......那邊的幾盆是松蒲花，花期只有短短一周。
+[character(name="avg_440_pinecn_1#7$1")]
+[name="松果"]......
+[Dialog]
+[character(name="avg_440_pinecn_1#1$1")]
+荒野，荒野在我們前頭♪
+城市，城市在我們手中♪
+機器開過去要小心喲♪
+別壓壞了花花草草♪
+它們以後要搬進城市裡面♪
+和我們一起生活♪
+[dialog]
+[characteraction(name="middle", type="jump" , power=5, times=2, fadetime=0.51,block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=0.51)]
+[Character(name="avg_440_pinecn_1#3$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]唔唔——不好意思......
+[Character(name="avg_440_pinecn_1#3$1",name2="char_258_podego_1",focus=2)]
+[name="波登可"]很好聽呀！這首歌叫什麼名字？
+[Character(name="avg_440_pinecn_1#2$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]爸爸教我的，唔......只有這麼幾句，沒有名字。
+[character(name="avg_440_pinecn_1#8$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]以前......我和爸爸在一個工地上工作，但活很多，我們一天都說不上幾句話。
+[character(name="avg_440_pinecn_1#9$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]所以下工之後，爸爸會帶著我慢慢走回家，在路上我們經常唱這首歌解悶。
+[name="松果"]一路唱著歌，就不覺得累了。
+[character(name="avg_440_pinecn_1#9$1",name2="char_258_podego_1",focus=2)]
+[name="波登可"]松果還在哥倫比亞的時候，參與建造了很多新城市吧？
+[name="波登可"]歌詞裡提到的就是植物園和自然館吧，那真的有花卉博覽會嗎？
+[character(name="avg_440_pinecn_1#8$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]唔......
+[name="松果"]我、我不知道......歌詞是爸爸自己編的......
+[character(name="avg_440_pinecn_1#8$1",name2="char_258_podego_1",focus=2)]
+[name="波登可"]欸？
+[character(name="avg_440_pinecn_1#7$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]我們的印象中只有荒野......好多好多工程車開進荒野，把工人和建築材料一起卸下來。
+[name="松果"]施工的噪音很大，連生活在附近的羽獸都會被嚇跑，地面和天空全是灰撲撲的......然後一層一層的建築就飛快地蓋起來了。
+[character(name="avg_440_pinecn_1#2$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]工頭有時候會跟我們講建築的用途，這棟是寫字樓，這棟是實驗室，這棟是天文台......它們會拼成一個城市。
+[character(name="avg_440_pinecn_1#8$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]唔......可是我們想像不出人們住進去後到底會是什麼樣子。
+[name="松果"]工程交付後，工程車會將工人運去新的荒野......有些生了病的，沒法再工作的會被留在原地......
+[name="松果"]該怎麼說呢......我們只見過城市的圖紙，和建造城市的材料，但沒有見過城市。
+[character(name="avg_440_pinecn_1#8$1",name2="char_258_podego_1",focus=2)]
+[name="波登可"]原來是這樣。
+[character(name="avg_440_pinecn_1#2$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]......
+[character(name="avg_440_pinecn_1#9$1",name2="char_258_podego_1",focus=1)]
+[name="松果"]啊，就送到這裡吧，如果滲漏的情況沒有解決，可以隨時來找我。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[character]
+[Background(image="bg_black",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+[PlaySound(key="$d_avg_paper2", volume=1)]
+不過爸爸已經找到工作了！
+還記得彼得叔叔嗎？就是爸爸以前的工友，他現在當上了工頭。這傢伙還挺仗義的，把我叫了過去，不枉我當時經常幫他頂班！
+我們現在的項目是個小型移動城市，聽說到時候要用來臨時安置被迫遷移的人口，雖然規模不大，但是功能和福利設施都很齊全。
+彼得說，預期中這座移動城市會像一頭勤勤懇懇的馱獸，在荒野和特里蒙這樣的大城市間奔跑，收留失去家園的人們。
+至於這頭馱獸能不能順利奔跑起來，可就看咱們的了！
+想不到彼得當了工頭，說話的本領也跟著長了，不過他說的確實沒錯，我們在建一座偉大的城市，還蠻有意義的。
+咱們拓荒工人不就是這樣嘛，人不重要，但做的事情很重要。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[stopmusic(fadetime=1)]
+[Background(image="bg_trainingcom",screenadapt="showall")]
+[playMusic(intro="$relax_intro", key="$relax_loop", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]	
+7:00 P.M.
+羅德島某棄置訓練場
+[Dialog]
+[character(name="avg_440_pinecn_1#2$1")]
+[name="松果"]唔......還沒有來嗎？
+[Dialog]
+[character]
+[playsound(key="$rungeneral")]
+[character(name="char_366_acdrop",fadetime=1.5)]
+[delay(time=2)]
+[name="酸糖"]嗚呼——
+[name="酸糖"]不好意思啊，遲到了。
+[character(name="avg_440_pinecn_1#9$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]沒、沒事，我也剛從療養庭院那邊過來。
+[character(name="avg_440_pinecn_1#9$1",name2="char_366_acdrop",focus=2)]
+[name="酸糖"]松果不是沒玩過滑板嘛，我特意印了幾張在“翱翔之足”得獎的照片，你看看，我背後就是滑板場地。
+[character(name="avg_440_pinecn_1#1$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]我可以，試試看。
+[character(name="avg_440_pinecn_1#1$1",name2="char_366_acdrop",focus=2)]
+[name="酸糖"]謝謝你啊，松果，願意幫這個忙。
+[character(name="avg_440_pinecn_1#9$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]沒關係。可露希爾也說，本艦上需要更多的娛樂設施來幫大家緩解壓力......可是，室內空間會比較局促......
+[character(name="avg_440_pinecn_1#9$1",name2="char_366_acdrop",focus=2)]
+[name="酸糖"]緩衝區、單雙高低杠、直角地塊、U池、碗池、波浪池......無非是這些地形，你看著發揮吧。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[character]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2.5)]
+[character(name="avg_440_pinecn_1#2$1")]
+[name="松果"]這一塊正好是斜坡，唔唔......打磨一下地面，再在旁邊安裝一條低杠......
+[character(name="char_366_acdrop")]
+[name="酸糖"]沒錯，這樣我就可以表演那招Nosegrind了，酷！
+[character(name="avg_440_pinecn_1#11$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]那個，什麼是“翱翔之足”......
+[character(name="avg_440_pinecn_1#11$1",name2="char_366_acdrop",focus=2)]
+[name="酸糖"]當時幾個街區聯合組織的特技滑板比賽，雖然規模不大，但專業性沒的說哦。冠軍獎品是定製的高階滑板......喏，我腳下這塊就是。
+[stopmusic(fadetime=1)]
+[name="酸糖"]不過在我來羅德島治病前，比賽就已經停辦了。
+[character(name="avg_440_pinecn_1#4$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]為、為什麼呀？
+[character(name="avg_440_pinecn_1#4$1",name2="char_366_acdrop",focus=2)]
+[playMusic(intro="$distressed_intro", key="$distressed_loop", volume=0.4,fadetime=1)]
+[name="酸糖"]政府把老城區劃給大企業改建商業區了，據說要在我們平時聚會的廣場上建一個商業綜合體。
+[name="酸糖"]說是商業區，到時候不還是淨做些上不得抬面的生意......
+[name="酸糖"]不過就算是在特里蒙這樣的大都市，滑板啊塗鴉啊也只被允許出現在指定的地方......一些角落。
+[character(name="avg_440_pinecn_1#4$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]唔，這些......不都是很有趣的活動嗎？
+[character(name="avg_440_pinecn_1#4$1",name2="char_366_acdrop",focus=2)]
+[name="酸糖"]怎麼個有趣法呢？自由，冒險......大人物們不喜歡這些。
+[name="酸糖"]他們需要的是秩序，不管好的壞的。“街頭文化”，在他們看來只是個有貶義的生造詞。
+[character(name="avg_440_pinecn_1#8$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]城市，是這樣的呀......
+[character(name="avg_440_pinecn_1#8$1",name2="char_366_acdrop",focus=2)]
+[name="酸糖"]切......不過我們最後在他們的工程警示牌上塗滿了鬼臉......
+[Dialog]
+[character]
+[playsound(key="$d_gen_walk_n")]
+[character(name="avg_npc_090",fadetime=1.5)]
+[delay(time=2.5)]
+[character(name="avg_440_pinecn_1#2$1",name2="avg_npc_090",focus=1)]
+[name="松果"]傑夫大哥，你怎麼來了......是，是艦橋的維修還有什麼問題嗎？
+[character(name="avg_440_pinecn_1#2$1",name2="avg_npc_090",focus=2)]
+[name="工程部幹員A"]那邊已經驗收無誤。但是不好意思，你們的滑板場地工程，可能得停下來了。
+[character(name="avg_440_pinecn_1#1$1",name2="avg_npc_090",focus=1)]
+[name="松果"]唔，之前已經跟可露希爾報備過了。
+[character(name="avg_440_pinecn_1#1$1",name2="avg_npc_090",focus=2)]
+[name="工程部幹員A"]是這樣的，松果，這個訓練場後續將用於特種作戰演練，整個空間都會按照類比作戰環境進行改建。
+[name="工程部幹員A"]可露希爾給忙忘了......
+[character(name="char_366_acdrop")]
+[name="酸糖"]......
+[character(name="avg_440_pinecn_1#4$1")]
+[name="松果"]傑夫大哥，其實......
+[character(name="avg_440_pinecn_1#4$1",name2="char_366_acdrop",focus=2)]
+[name="酸糖"]哎呀算了，松果，滑板可是最自由的藝術，要是被場地束縛住，那我這個“翱翔之足”的冠軍不就浪得虛名了。
+[name="酸糖"]不過後勤部要是收到了“有人在走廊玩滑板太吵”的投訴可不能怪我哦。
+[character(name="avg_npc_090")]
+[name="工程部幹員A"]......
+[character(name="char_366_acdrop",name2="avg_npc_090",focus=1)]
+[name="酸糖"]那現在把這些低杠拆掉？
+[character(name="char_366_acdrop",name2="avg_npc_090",focus=2)]
+[name="工程部幹員A"]幸虧你們才剛剛開始，還沒怎麼大動場地，復原也很方便。
+[character(name="avg_440_pinecn_1#4$1")]
+[name="松果"]......
+[character(name="avg_440_pinecn_1#3$1")]
+[name="松果"]唔唔，先，先不要拆！
+[StopMusic(time=0.7)]
+[Dialog]
+[Delay(time=0.51)]
+[character(name="avg_440_pinecn_1#8$1")]
+[Delay(time=1.5)]
+[character(name="avg_440_pinecn_1#2$1")]
+[playMusic(intro="$warm_intro", key="$warm_loop",fadetime=1,volume=0.4)]
+[name="松果"]傑夫大哥，那個，訓練場後續的改建，可以，可以讓我來負責嗎？
+[name="松果"]其實，特技滑板需要的那些U池、碗池、波浪池地塊，看起來也挺像崎嶇不平的野外環境......
+[character(name="avg_440_pinecn_1#8$1")]
+[name="松果"]特技滑道，唔，有沒有可能，和改建後的訓練場結合起來呢？
+[character(name="avg_440_pinecn_1#2$1")]
+[name="松果"]可以讓我來負責嗎？我，我想讓酸糖幹員他們......有一個可以自由玩滑板的地方。
+[character(name="avg_440_pinecn_1#2$1",name2="avg_npc_090",focus=2)]
+[name="工程部幹員A"]......
+[name="工程部幹員A"]沒記錯的話，來到工程部這麼久，這還是松果第一次主動申請任務。
+[name="工程部幹員A"]不過訓練場改建可是一項大工程，你想將滑板場地融進去，沒有想像的那麼簡單，需要學習很多很多東西......
+[character(name="avg_440_pinecn_1#9$1",name2="avg_npc_090",focus=1)]
+[name="松果"]我，我可以試試。
+[character(name="avg_440_pinecn_1#9$1",name2="avg_npc_090",focus=2)]
+[name="工程部幹員A"]......
+[name="工程部幹員A"]那之後找可露希爾申請一下吧......我可以幫你做個擔保。
+[character(name="avg_440_pinecn_1#10$1",name2="avg_npc_090",focus=1)]
+[name="松果"]唔......唔？真的嗎？謝謝傑夫大哥！
+[character(name="avg_440_pinecn_1#10$1",name2="avg_npc_090",focus=2)]
+[name="工程部幹員A"]那我先走了。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[characteraction(name="right", type="move", xpos=300, fadetime=2,block=false)]
+[character(name="avg_440_pinecn_1#10$1",name2="char_empty",fadetime=0.5)]
+[delay(time=2.5)] 
+[character(name="char_366_acdrop")]
+[name="酸糖"]松果，幹嘛攬這個活？聽起來就很累。
+[character(name="avg_440_pinecn_1#7$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]唔，唔，我也不知道。就是覺得，應該要盡力試一下......
+[character(name="avg_440_pinecn_1#9$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]羅德島，也像是一座小小的城市吧......城市的話，就應該是偉大的。
+[character(name="avg_440_pinecn_1#9$1",name2="char_366_acdrop",focus=2)]
+[name="酸糖"]偉大？好彆扭的說法。
+[character(name="avg_440_pinecn_1#9$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]嗯。哥倫比亞工地上的廣告板經常用這個詞——“建造偉大的新城市，照亮哥倫比亞的荒野。”
+[name="松果"]我問過爸爸，偉大的城市，究竟，是什麼樣子的呢......
+[character(name="avg_440_pinecn_1#2$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]其實爸爸也不知道，但應該就是什麼都有吧......有植物園和自然館，會定期舉辦花卉博覽會，所有人都可以來觀賞好看的花......
+[character(name="avg_440_pinecn_1#9$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]有很大很大的圖書館，無論什麼身份的人，都可以進去看書。
+[name="松果"]有專門給大家自由玩滑板的街道，也有專門給大家盡情塗鴉的牆壁......
+[character(name="avg_440_pinecn_1#9$1",name2="char_366_acdrop",focus=2)]
+[name="酸糖"]雖然不想潑冷水，但哥倫比亞的那些城市，可沒有幾個符合標準的哦。
+[name="酸糖"]拿口號誆工人，拿理想誆年輕人，哥倫比亞就是這樣的。
+[character(name="avg_440_pinecn_1#8$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]呃，嗯......你說的對。
+[character(name="avg_440_pinecn_1#9$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]但是，但是爸爸跟我說，哥倫比亞有數不清的拓荒工人，可能很少有人覺得我們很重要，可我們做的事情一定很重要。
+[character(name="avg_440_pinecn_1#8$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]唔，我們自己，應該要相信。
+[character(name="avg_440_pinecn_1#2$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]爸爸之前生過一場很嚴重的病，好不容易才好，不過他最近又回到工地了。他還是說自己在建一座偉大的城市。
+[name="松果"]所以，我也應該要繼續努力才行......
+[character(name="avg_440_pinecn_1#9$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]既然以前建的，都不能算是偉大的城市，那至少從現在開始，我可以把羅德島變得更好。
+[name="松果"]唔，首先，要讓酸糖幹員有個可以自由玩滑板的地方。
+[character(name="avg_440_pinecn_1#9$1",name2="char_366_acdrop",focus=2)]
+[name="酸糖"]......
+[name="酸糖"]酷......我支持你！
+[name="酸糖"]對了松果，你來參加我們的“翱翔之足”大賽吧！鑑於你為比賽場地做出的卓越貢獻，可以直接進入複賽。
+[character(name="avg_440_pinecn_1#11$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]嗯......呃？
+[character(name="avg_440_pinecn_1#11$1",name2="char_366_acdrop",focus=2)]
+[name="酸糖"]既然都有了場地，那我為什麼不在羅德島恢復“翱翔之足”呢？你說對吧！
+[name="酸糖"]（反正博士和阿米婭都很好說話。）
+[character(name="avg_440_pinecn_1#9$1",name2="char_366_acdrop",focus=1)]
+[name="松果"]唔，那，那我明天就去工程部找可露希爾申請......這樣就可以儘快幫你把場地建好了。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Character]
+[Background(image="bg_room_2",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]	
+11:30 P.M.
+羅德島宿舍
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[character(name="avg_440_pinecn_1#1$1",fadetime=1.5)]
+[delay(time=2)]
+[name="松果"]艦橋、溫室、特技滑道......今天的事情終於結束了，明天要記得......
+[character(name="avg_440_pinecn_1#8$1")]
+[name="松果"]......已經這麼晚了。唔，好睏......
+[name="松果"]唔，床板忘記修了，哈——明天......
+[dialog]
+[playsound(key="$d_avg_clothmovement")]
+[character(fadetime=1.5)]
+[delay(time=2)] 
+荒野，荒野在我們前頭♪
+城市，城市在我們手中♪
+機器開過去要小心喲♪
+別壓壞了花花草草♪
+它們以後要搬進城市裡面♪
+和我們一起生活♪
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Background(image="bg_black",screenadapt="showall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1.5)]	
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[delay(time=1)]
+爸爸要去上工了，沒想到囉嗦了這麼多，也沒說什麼重要的事情。
+總而言之，米娜，要好好努力，也要好好休息。照顧好自己。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Image]
