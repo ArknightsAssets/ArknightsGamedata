@@ -2,11 +2,21 @@
     "schedule": [
         {
             "id": "openseverTaskGroup1",
+            "versionId": "OpenServer",
             "startTs": 1533841200,
-            "endTs": 1850065199,
+            "endTs": 1733191199,
             "totalCheckinDescption": "最大14日の通算ログイン報酬が入手可能！",
             "chainLoginDescription": "7日連続ログインで【クリフハート】加入！\n報酬は1回のみ受け取れます。途切れた場合、\nログイン日数はリセットされます。",
             "charImg": "openseverTaskGroup1"
+        },
+        {
+            "id": "openseverTaskGroup2",
+            "versionId": "OpenServerV2",
+            "startTs": 1733191200,
+            "endTs": 1881601199,
+            "totalCheckinDescption": "最大14日の通算ログイン報酬が入手可能！",
+            "chainLoginDescription": " 7日連続ログインで【初心者★5招聘指名券】獲得！\n報酬は1回のみ受け取れます。途切れた場合、\nログイン日数はリセットされます。 ",
+            "charImg": "openseverTaskGroup2"
         }
     ],
     "dataMap": {
@@ -311,12 +321,344 @@
                     },
                     "colorId": 2
                 }
+            ],
+            "totalCheckinCharData": {},
+            "chainLoginCharData": {}
+        },
+        "openseverTaskGroup2": {
+            "openServerMissionGroup": {
+                "id": "openseverTaskGroup2",
+                "type": "OPENSERVER",
+                "missionIds": [
+                    "openserver_1_1",
+                    "openserver_2_1",
+                    "openserver_3_1",
+                    "openserver_4_1"
+                ],
+                "startTs": -1,
+                "endTs": -1
+            },
+            "openServerMissionData": [
+                {
+                    "id": "openserver_1_1",
+                    "sortId": 0,
+                    "description": "【メインステージ0-1】をクリア",
+                    "type": "OPENSERVER",
+                    "itemBgType": "COMMON",
+                    "template": "CompleteMainStage",
+                    "templateType": "1",
+                    "param": [
+                        "1",
+                        "main_00-01"
+                    ],
+                    "missionGroup": "openseverTaskGroup2",
+                    "periodicalPoint": 0,
+                    "rewards": [
+                        {
+                            "type": "DIAMOND_SHD",
+                            "id": "4003",
+                            "count": 600
+                        }
+                    ],
+                    "haveSubMissionToUnlock": false
+                },
+                {
+                    "id": "openserver_2_1",
+                    "sortId": 0,
+                    "description": "プレイヤーLvが8に到達",
+                    "type": "OPENSERVER",
+                    "itemBgType": "COMMON",
+                    "template": "UpgradePlayer",
+                    "templateType": "0",
+                    "param": [
+                        "0",
+                        "8"
+                    ],
+                    "missionGroup": "openseverTaskGroup2",
+                    "periodicalPoint": 0,
+                    "rewards": [
+                        {
+                            "type": "DIAMOND_SHD",
+                            "id": "4003",
+                            "count": 600
+                        }
+                    ],
+                    "haveSubMissionToUnlock": false
+                },
+                {
+                    "id": "openserver_3_1",
+                    "sortId": 0,
+                    "description": "【メインステージ1-12】をクリア",
+                    "type": "OPENSERVER",
+                    "itemBgType": "COMMON",
+                    "template": "CompleteMainStage",
+                    "templateType": "1",
+                    "param": [
+                        "1",
+                        "main_01-12"
+                    ],
+                    "missionGroup": "openseverTaskGroup2",
+                    "periodicalPoint": 0,
+                    "rewards": [
+                        {
+                            "type": "DIAMOND_SHD",
+                            "id": "4003",
+                            "count": 600
+                        }
+                    ],
+                    "haveSubMissionToUnlock": false
+                },
+                {
+                    "id": "openserver_4_1",
+                    "sortId": 0,
+                    "description": "制御中枢をLv.2にする",
+                    "type": "OPENSERVER",
+                    "itemBgType": "COMMON",
+                    "template": "HasRoom",
+                    "templateType": "0",
+                    "param": [
+                        "0",
+                        "1",
+                        "2",
+                        "CONTROL"
+                    ],
+                    "missionGroup": "openseverTaskGroup2",
+                    "periodicalPoint": 0,
+                    "rewards": [
+                        {
+                            "type": "DIAMOND_SHD",
+                            "id": "4003",
+                            "count": 600
+                        }
+                    ],
+                    "haveSubMissionToUnlock": false
+                }
+            ],
+            "checkInData": [
+                {
+                    "order": 1,
+                    "item": {
+                        "itemId": "4001",
+                        "itemType": "GOLD",
+                        "count": 20000
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 2,
+                    "item": {
+                        "itemId": "2003",
+                        "itemType": "CARD_EXP",
+                        "count": 20
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 3,
+                    "item": {
+                        "itemId": "3301",
+                        "itemType": "MATERIAL",
+                        "count": 30
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 4,
+                    "item": {
+                        "itemId": "7001",
+                        "itemType": "TKT_RECRUIT",
+                        "count": 5
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 5,
+                    "item": {
+                        "itemId": "voucher_recruitR6_pick5301",
+                        "itemType": "VOUCHER_PICK",
+                        "count": 1,
+                        "name": "招聘指名券"
+                    },
+                    "colorId": 2
+                },
+                {
+                    "order": 6,
+                    "item": {
+                        "itemId": "4001",
+                        "itemType": "GOLD",
+                        "count": 30000
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 7,
+                    "item": {
+                        "itemId": "2004",
+                        "itemType": "CARD_EXP",
+                        "count": 15
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 8,
+                    "item": {
+                        "itemId": "3302",
+                        "itemType": "MATERIAL",
+                        "count": 20
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 9,
+                    "item": {
+                        "itemId": "4001",
+                        "itemType": "GOLD",
+                        "count": 40000
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 10,
+                    "item": {
+                        "itemId": "advanced_material_issue_voucher",
+                        "itemType": "MATERIAL_ISSUE_VOUCHER",
+                        "count": 4,
+                        "name": "素材交換券"
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 11,
+                    "item": {
+                        "itemId": "3303",
+                        "itemType": "MATERIAL",
+                        "count": 8
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 12,
+                    "item": {
+                        "itemId": "advanced_material_issue_voucher",
+                        "itemType": "MATERIAL_ISSUE_VOUCHER",
+                        "count": 4,
+                        "name": "素材交換券"
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 13,
+                    "item": {
+                        "itemId": "2004",
+                        "itemType": "CARD_EXP",
+                        "count": 20
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 14,
+                    "item": {
+                        "itemId": "voucher_levelmax_5",
+                        "itemType": "VOUCHER_LEVELMAX_5",
+                        "count": 1,
+                        "name": "特訓装置"
+                    },
+                    "colorId": 2
+                }
+            ],
+            "chainLoginData": [
+                {
+                    "order": 1,
+                    "item": {
+                        "itemId": "voucher_elite_II_5",
+                        "itemType": "VOUCHER_ELITE_II_5",
+                        "count": 1,
+                        "name": "特訓招待状"
+                    },
+                    "colorId": 2
+                },
+                {
+                    "order": 2,
+                    "item": {
+                        "itemId": "4002",
+                        "itemType": "DIAMOND",
+                        "count": 5
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 3,
+                    "item": {
+                        "itemId": "classic_gacha_10",
+                        "itemType": "CLASSIC_TKT_GACHA_10",
+                        "count": 1,
+                        "name": "10回中堅スカウト"
+                    },
+                    "colorId": 2
+                },
+                {
+                    "order": 4,
+                    "item": {
+                        "itemId": "7003",
+                        "itemType": "TKT_GACHA",
+                        "count": 2
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 5,
+                    "item": {
+                        "itemId": "7003",
+                        "itemType": "TKT_GACHA",
+                        "count": 2
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 6,
+                    "item": {
+                        "itemId": "7003",
+                        "itemType": "TKT_GACHA",
+                        "count": 2
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 7,
+                    "item": {
+                        "itemId": "voucher_item_4pick1_5301",
+                        "itemType": "VOUCHER_PICK",
+                        "count": 1,
+                        "name": "招聘指名券"
+                    },
+                    "colorId": 2
+                }
+            ],
+            "totalCheckinCharData": [
+                "char_202_demkni",
+                "char_293_thorns",
+                "char_103_angel",
+                "char_172_svrash",
+                "char_017_huang",
+                "char_264_f12yin"
+            ],
+            "chainLoginCharData": [
+                "char_173_slchan",
+                "char_128_plosis",
+                "char_140_whitew",
+                "char_143_ghost"
             ]
         }
     },
     "constant": {
         "firstDiamondShardMailCount": 3800,
-        "initApMailEndTs": 1582052399
+        "initApMailEndTs": 1582052399,
+        "resFullOpenUnlockStageId": "main_00-10",
+        "resFullOpenDuration": 14,
+        "resFullOpenTitle": "資源ステージ期間限定全開放",
+        "resFullOpenDesc": "0-10クリアで物資調達ステージ解放\n1-10クリアでSoC捜索ステージ解放\nその他イベントで「資源調達」ステージが全て開放されている期間中は一時停止します。",
+        "resFullOpenGuideGroupThreshold": "guide_g_8",
+        "resFullOpenStartTime": 1733191200
     },
     "playerReturn": {
         "constData": {
@@ -1999,7 +2341,7 @@
             {
                 "groupId": "return_login_g_1",
                 "startTime": 1705345200,
-                "endTime": 1916074799,
+                "endTime": 1733165999,
                 "rewardList": [
                     {
                         "sortId": 1,
@@ -2100,6 +2442,125 @@
                     {
                         "sortId": 7,
                         "isImportant": true,
+                        "rewardList": [
+                            {
+                                "id": "7003",
+                                "count": 1,
+                                "type": "TKT_GACHA"
+                            },
+                            {
+                                "id": "ap_supply_lt_120",
+                                "count": 1,
+                                "type": "AP_SUPPLY"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "groupId": "return_login_g_2",
+                "startTime": 1733166000,
+                "endTime": 1916074799,
+                "rewardList": [
+                    {
+                        "sortId": 1,
+                        "isImportant": false,
+                        "rewardList": [
+                            {
+                                "id": "ap_supply_lt_120",
+                                "count": 1,
+                                "type": "AP_SUPPLY"
+                            },
+                            {
+                                "id": "32001",
+                                "count": 1,
+                                "type": "MATERIAL"
+                            }
+                        ]
+                    },
+                    {
+                        "sortId": 2,
+                        "isImportant": false,
+                        "rewardList": [
+                            {
+                                "id": "classic_gacha",
+                                "count": 1,
+                                "type": "CLASSIC_TKT_GACHA"
+                            },
+                            {
+                                "id": "4001",
+                                "count": 30000,
+                                "type": "GOLD"
+                            }
+                        ]
+                    },
+                    {
+                        "sortId": 3,
+                        "isImportant": false,
+                        "rewardList": [
+                            {
+                                "id": "7003",
+                                "count": 1,
+                                "type": "TKT_GACHA"
+                            },
+                            {
+                                "id": "2003",
+                                "count": 20,
+                                "type": "CARD_EXP"
+                            }
+                        ]
+                    },
+                    {
+                        "sortId": 4,
+                        "isImportant": false,
+                        "rewardList": [
+                            {
+                                "id": "classic_gacha",
+                                "count": 1,
+                                "type": "CLASSIC_TKT_GACHA"
+                            },
+                            {
+                                "id": "4001",
+                                "count": 30000,
+                                "type": "GOLD"
+                            }
+                        ]
+                    },
+                    {
+                        "sortId": 5,
+                        "isImportant": false,
+                        "rewardList": [
+                            {
+                                "id": "7003",
+                                "count": 1,
+                                "type": "TKT_GACHA"
+                            },
+                            {
+                                "id": "ap_supply_lt_120",
+                                "count": 1,
+                                "type": "AP_SUPPLY"
+                            }
+                        ]
+                    },
+                    {
+                        "sortId": 6,
+                        "isImportant": false,
+                        "rewardList": [
+                            {
+                                "id": "classic_gacha",
+                                "count": 1,
+                                "type": "CLASSIC_TKT_GACHA"
+                            },
+                            {
+                                "id": "3303",
+                                "count": 10,
+                                "type": "MATERIAL"
+                            }
+                        ]
+                    },
+                    {
+                        "sortId": 7,
+                        "isImportant": false,
                         "rewardList": [
                             {
                                 "id": "7003",
@@ -3661,7 +4122,7 @@
                 "desc": "公開求人追加出現対象：ブレミシャイン、アオスタ、バブル",
                 "diffMissionCount": 0,
                 "startTime": 1730358000,
-                "endTime": 1916074799,
+                "endTime": 1737010799,
                 "imageId": "page_050_normalgacha",
                 "iconId": "page_050_normalgacha_icon",
                 "missionList": [
@@ -3764,6 +4225,134 @@
                         "missionId": "back_perm_88",
                         "groupId": "return_g_18",
                         "sortId": 88,
+                        "jumpType": "RECRUIT_BUILD",
+                        "desc": "公開求人を累計25回完成する",
+                        "rewardList": [
+                            {
+                                "id": "return_credit_token2",
+                                "count": 3,
+                                "type": "RETURN_CREDIT"
+                            },
+                            {
+                                "id": "31063",
+                                "count": 2,
+                                "type": "MATERIAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "groupId": "return_g_20",
+                "sortId": 8,
+                "tabTitle": "公開求人",
+                "title": "公開求人更新",
+                "desc": "公開求人追加出現対象：マドロック、ウィスパーレイン、ジャッキー",
+                "diffMissionCount": 0,
+                "startTime": 1737010800,
+                "endTime": 1916074799,
+                "imageId": "page_053_normalgacha",
+                "iconId": "page_053_normalgacha_icon",
+                "missionList": [
+                    {
+                        "missionId": "back_perm_91",
+                        "groupId": "return_g_20",
+                        "sortId": 91,
+                        "jumpType": "RECRUIT_BUILD",
+                        "desc": "公開求人を1回完成する",
+                        "rewardList": [
+                            {
+                                "id": "return_credit_token2",
+                                "count": 1,
+                                "type": "RETURN_CREDIT"
+                            },
+                            {
+                                "id": "4001",
+                                "count": 5000,
+                                "type": "GOLD"
+                            }
+                        ]
+                    },
+                    {
+                        "missionId": "back_perm_92",
+                        "groupId": "return_g_20",
+                        "sortId": 92,
+                        "jumpType": "RECRUIT_BUILD",
+                        "desc": "公開求人を累計5回完成する",
+                        "rewardList": [
+                            {
+                                "id": "return_credit_token2",
+                                "count": 1,
+                                "type": "RETURN_CREDIT"
+                            },
+                            {
+                                "id": "2004",
+                                "count": 5,
+                                "type": "CARD_EXP"
+                            }
+                        ]
+                    },
+                    {
+                        "missionId": "back_perm_93",
+                        "groupId": "return_g_20",
+                        "sortId": 93,
+                        "jumpType": "RECRUIT_BUILD",
+                        "desc": "公開求人を累計10回完成する",
+                        "rewardList": [
+                            {
+                                "id": "return_credit_token2",
+                                "count": 1,
+                                "type": "RETURN_CREDIT"
+                            },
+                            {
+                                "id": "30033",
+                                "count": 2,
+                                "type": "MATERIAL"
+                            }
+                        ]
+                    },
+                    {
+                        "missionId": "back_perm_94",
+                        "groupId": "return_g_20",
+                        "sortId": 94,
+                        "jumpType": "RECRUIT_BUILD",
+                        "desc": "公開求人を累計15回完成する",
+                        "rewardList": [
+                            {
+                                "id": "return_credit_token2",
+                                "count": 2,
+                                "type": "RETURN_CREDIT"
+                            },
+                            {
+                                "id": "31033",
+                                "count": 2,
+                                "type": "MATERIAL"
+                            }
+                        ]
+                    },
+                    {
+                        "missionId": "back_perm_95",
+                        "groupId": "return_g_20",
+                        "sortId": 95,
+                        "jumpType": "RECRUIT_BUILD",
+                        "desc": "公開求人を累計20回完成する",
+                        "rewardList": [
+                            {
+                                "id": "return_credit_token2",
+                                "count": 2,
+                                "type": "RETURN_CREDIT"
+                            },
+                            {
+                                "id": "30023",
+                                "count": 2,
+                                "type": "MATERIAL"
+                            }
+                        ]
+                    },
+                    {
+                        "missionId": "back_perm_96",
+                        "groupId": "return_g_20",
+                        "sortId": 96,
                         "jumpType": "RECRUIT_BUILD",
                         "desc": "公開求人を累計25回完成する",
                         "rewardList": [
