@@ -1,0 +1,901 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_labcorridor",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)] 
+[playsound(key="$d_avg_sldrsldng",channel="1")]
+[charslot(slot="l",name="avg_4124_iana_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_4123_ela_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[stopsound(fadetime=1,channel="1")]
+[playsound(key="$d_gen_transmissionget",channel="1")]
+[charslot(slot="r",name="avg_4123_ela_1#1$1",focus="r")]
+[name="ELA"]我們已進入磁山二號，重複一遍，我們已進入磁山二號。
+[name="ELA"]DOC，你和FUZE那邊情況如何？
+[charslot(slot="r",name="avg_4123_ela_1#1$1",focus="none")]
+[name="DOC"]已確認外圍安全。
+[name="DOC"]考慮到磁山二號實驗室的特殊性，我建議從現在開始會合，一起行動。
+[charslot(slot="r",name="avg_4123_ela_1#1$1",focus="r")]
+[name="ELA"]好。
+[name="ELA"]IANA，報告一下無人機偵察結果。
+[charslot(slot="l",name="avg_4124_iana_1#1$1",focus="l")]
+[name="IANA"]和我們上次撤離時幾乎沒有差別，儀表讀數相差無幾，設施內部也沒有發現其他人活動。
+[charslot(slot="l",name="avg_4124_iana_1#7$1",focus="l")]
+[name="IANA"]看來我們上次離開之後，磁山二號的封鎖做得很徹底。
+[charslot(slot="r",name="avg_4123_ela_1#7$1",focus="r")]
+[name="ELA"]也就是說，根本沒人。
+[name="ELA"]我們的任務是來尋找失蹤的ASH小隊，沒人算不上好消息。
+[charslot(slot="r",name="avg_4123_ela_1#1$1",focus="r")]
+[name="ELA"]注意警戒，會合後我們直接往列維的主實驗室原址前進。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_caveentrance",screenadapt="coverall")]
+[charslot]
+[Delay(time=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="l",name="avg_4124_iana_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_4123_ela_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="r",name="avg_4123_ela_1#7$1",focus="r")]
+[name="ELA"]我們到了。
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="l",name="avg_4126_fuze_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_4125_rdoc_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="r",name="avg_4125_rdoc_1#1$1",focus="r")]
+[name="DOC"]你確定？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4123_ela_1#1$1",focus="m")]
+[name="ELA"]沒錯，根據地圖，這裡就是列維的主實驗室應該在的地方。
+[charslot(slot="m",name="avg_4124_iana_1#7$1",focus="m")]
+[name="IANA"]當時我們只比寇恩他們晚了一步，先是感到一陣震動，然後……
+[name="IANA"]不知道是列維那個瘋子幹的還是儀器本身出了問題，總之，整個主實驗室憑空消失了。
+[Dialog]
+[charslot(slot="m",name="avg_4125_rdoc_1#13$1",focus="m")]
+[name="DOC"]確定是“憑空消失”？
+[Dialog]
+[charslot(slot="m",name="avg_4124_iana_1#1$1",focus="m")]
+[name="IANA"]結合當時的情況和專家的意見，這是最合理的解釋。
+[Dialog]
+[charslot(slot="m",name="avg_4125_rdoc_1#13$1",focus="m")]
+[name="DOC"]但這太不現實了。
+[charslot(slot="m",name="avg_4126_fuze_1#1$1",focus="m")]
+[name="FUZE"]沒有哪種現實中的爆炸能完全抹去一座實驗室的所有痕跡，留下巨大的空洞，外面的人卻只覺得震了兩下。
+[Dialog]
+[charslot]
+[stopmusic(fadetime=1.5)]
+[playsound(key="$smallearthquake")]
+[bgeffect(name="$eb_dust_01",layer=1)]
+[CameraShake(duration=-1, xstrength=5, ystrength=10, vibrato=15, randomness=70, fadeout=false, block=false)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_4125_rdoc_1#6$1",focus="m")]
+[name="DOC"]地震？還是你們說的……？
+[charslot(slot="m",name="avg_4124_iana_1#3$1",focus="m")]
+[name="IANA"]不，不是地震！
+[charslot(slot="m",name="avg_4123_ela_1#4$1",focus="m")]
+[name="ELA"]震動極有可能與失蹤事件有關！
+[name="ELA"]各位，原地尋找掩體，等待震動平息！
+[Dialog]
+[playsound(key="$a_bat_buildingshaking_2")]
+[CameraShake(duration=4, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[bgeffect]
+[charslot]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=2, block=true)]
+[Background(image="48_g7_galleriesstaircase",screenadapt="coverall")]
+[Delay(time=2.5)]
+[playMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[playsound(key="$d_gen_soldiersrun")]
+[charslot(slot="l",name="avg_npc_1271_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1272_1#1$1",duration=1.5)]
+[Delay(time=3.5)]
+[charslot(slot="r",focus="r")]
+[name="痛苦的軍人"]隊長，請問藝術館到底有多少層？我腳都要走斷了。
+[charslot(slot="l",focus="l")]
+[name="帶隊的軍官"]呼……反正往上爬，爬到頂樓就對了，雷內爾就在那裡。
+[charslot(slot="r",focus="r")]
+[name="痛苦的軍人"]我們就不能搭電梯嗎？為什麼要在這裡一圈一圈地爬樓梯？
+[charslot(slot="l",focus="l")]
+[name="帶隊的軍官"]你以為我不想嗎？
+[name="帶隊的軍官"]出發前我們摸清了這裡的安保布置。
+[name="帶隊的軍官"]那傢伙狡猾得很，建築內只有這部樓梯和一部他自己用的電梯可以通到頂樓，每層電梯口都有人把守。
+[name="帶隊的軍官"]樓梯是防守最為薄弱的一環，我們只能從這裡突破。
+[charslot(slot="r",focus="r")]
+[name="痛苦的軍人"]他不就是個來這裡撈錢的卡西米爾人嗎？身後連個撐腰的人都沒有，不過是強迫他簽份轉讓協議，我們何苦做得這麼謹慎？
+[charslot(slot="l",focus="l")]
+[name="帶隊的軍官"]呵，這個地方有錢撐腰還不夠嗎？
+[name="帶隊的軍官"]樓下那個，快點走兩步，別東張西望的了！
+[charslot(slot="l",focus="none")]
+[name="懈怠的軍人"]隊長，真的走不動了……我寧願坐電梯去跟他的安保人員拼刀拼弩。
+[charslot(slot="l",focus="l")]
+[name="帶隊的軍官"]噓……
+[charslot(slot="l",focus="none")]
+[name="懈怠的軍人"]隊長……？
+[charslot(slot="l",focus="l")]
+[name="帶隊的軍官"]（小聲）我們馬上就到那傢伙辦公室了！腳步放輕……
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_ltroom",screenadapt="coverall")]
+[charslot]
+[Delay(time=2.5)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1211_1#8$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[playsound(key="$doorknockquite")]
+[Delay(time=1.5)]
+[charslot]
+[playsound(key="$dooropenquite")]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1213_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_1211_1#10$1",focus="m")]
+[name="雷內爾"]信？米沃什，我記得前幾天跟你說過了，寄給我的信你直接看就好，不必來問我。
+[charslot(slot="m",name="avg_npc_1213_1#1$1",focus="m")]
+[name="米沃什"]可這上面寫的是“望您親啟”哦，雷內爾。
+[charslot(slot="m",name="avg_npc_1211_1#10$1",focus="m")]
+[name="雷內爾"]信是從哪寄來的？
+[charslot(slot="m",name="avg_npc_1213_1#1$1",focus="m")]
+[name="米沃什"]這一封是從卡西米爾……好像是你叔叔的。
+[charslot(slot="m",name="avg_npc_1211_1#2$1",focus="m")]
+[name="雷內爾"]哦，知道了，是來要遺產的。
+[charslot(slot="m",name="avg_npc_1213_1#1$1",focus="m")]
+[name="米沃什"]還有一封……來自多索雷斯市政府。
+[charslot(slot="m",name="avg_npc_1211_1#10$1",focus="m")]
+[name="雷內爾"]同一個城區寄信件給我？看來裡面講的事也不怎麼重要，八成又是無聊的宴會邀請函。
+[charslot(slot="m",name="avg_npc_1213_1#1$1",focus="m")]
+[name="米沃什"]說不定坎黛拉也會去，我們可以跟她聊聊開幕式的事情。藝術館已經竣工，開幕式就在不久後，你在上面花費了許多心血……
+[name="米沃什"]我希望它能足夠震撼。
+[charslot(slot="m",name="avg_npc_1211_1#1$1",focus="m")]
+[name="雷內爾"]過來，米沃什，和我站在一起。
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[Delay(time=2.5)]
+男人走上前去，站到和紅髮沃爾珀肩並肩的位置上。
+兩人一同端詳起房間深處大概兩人高的藝術作品。
+[Dialog]
+[charslot(slot="l",name="avg_npc_1213_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1211_1#10$1",duration=1.5)]
+[Delay(time=1.5)]
+[charslot(slot="r",name="avg_npc_1211_1#10$1",focus="r")]
+[name="雷內爾"]米沃什，你覺得我將這件作品命名為“秩序的崩塌”怎麼樣？
+[charslot(slot="l",name="avg_npc_1213_1#1$1",focus="l")]
+[name="米沃什"]呃……挺好的，你打算放在開幕式？
+[charslot(slot="r",name="avg_npc_1211_1#9$1",focus="r")]
+[name="雷內爾"]我們一向有話直說，不是嗎？
+[charslot(slot="l",name="avg_npc_1213_1#1$1",focus="l")]
+[name="米沃什"]……那個扭曲的弧線代表的是“崩塌”嗎？
+[charslot(slot="r",name="avg_npc_1211_1#1$1",focus="r")]
+[name="雷內爾"]不，那代表了整個社會對人的一瞥。
+[name="雷內爾"]一種帶著強烈規訓意味的、將一切不合規者審判為瘋狂的凝視，一種只有在大靜謐發生之後的伊比利亞才能誕生的畫作裡的線條。
+[charslot(slot="l",name="avg_npc_1213_1#1$1",focus="l")]
+[name="米沃什"]嗯……伊比利亞審判庭，確實，秩序的象徵。
+[charslot(slot="r",name="avg_npc_1211_1#1$1",focus="r")]
+[name="雷內爾"]……
+[charslot(slot="l",name="avg_npc_1213_1#7$1",focus="l")]
+[name="米沃什"]那右邊……形狀難以形容的角錐，代表的難道是萊塔尼亞的尖塔？
+[charslot(slot="r",name="avg_npc_1211_1#1$1",focus="r")]
+[name="雷內爾"]不，你想想薩爾貢千年的風沙，王酋、帕夏、黃金之城……對異域的想像同樣是一種內在秩序的建構。
+[charslot(slot="r",name="avg_npc_1211_1#9$1",focus="r")]
+[name="雷內爾"]那是一種行將就木的想像力，起先還保持著一定的寬度，可最後除了陳腔濫調之外一無所有。
+[charslot(slot="l",name="avg_npc_1213_1#1$1",focus="l")]
+[name="米沃什"]哦……沒錯，很有道理。
+[charslot(slot="r",name="avg_npc_1211_1#9$1",focus="r")]
+[name="雷內爾"]其實……剛剛那些話都是我唬爛的。
+[charslot(slot="l",name="avg_npc_1213_1#10$1",focus="l")]
+[name="米沃什"]呃……
+[name="米沃什"]……畢竟你的藝術總是那麼特立獨行，從材質到表達都是。
+[name="米沃什"]這玩意你是用多少高爾夫球搭的？一千顆？兩千顆？
+[charslot(slot="r",name="avg_npc_1211_1#1$1",focus="r")]
+[name="雷內爾"]那不重要，我們需要關注的只有最後一顆。怎麼樣，要不要幫我放上去，完成這件作品？
+[charslot(slot="l",name="avg_npc_1213_1#1$1",focus="l")]
+[name="米沃什"]哦，放上去會發生什麼？
+[charslot(slot="r",name="avg_npc_1211_1#9$1",focus="r")]
+[name="雷內爾"]這件作品會完成，也會在完成的那一刻——
+[Dialog]
+[playsound(key="$d_gen_soldiersrun",volume=0.2)]
+[charslot(slot="r",name="avg_npc_1211_1#10$1",focus="r")]
+[Delay(time=2.5)]
+[charslot]
+男人還沒來得及把話講完，便看到辦公室門縫下走動的陰影。
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[playsound(key="$d_avg_doorbreak",volume=1)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=true)]
+不等他反應，那道門便被人踹開，連帶著整個房間都輕微晃動，令他面前本就岌岌可危的雕塑坍塌了一半，高爾夫球散落一地。
+[Dialog]
+[charslot(slot="l",name="avg_npc_1213_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1211_1#10$1",focus="l")]
+[name="米沃什"]……崩塌？
+[Dialog]
+[charslot]
+[playMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[playsound(key="$d_gen_soldiersrun")]
+[charslot(slot="l",name="avg_npc_1272_1#1$1",posfrom="-100,0",posto="-100,0",duration=1.5)]
+[charslot(slot="m",name="avg_npc_1271_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1272_1#1$1",posfrom="100,0",posto="100,0",duration=1.5)]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_npc_1271_1#1$1",focus="m")]
+[name="帶隊的軍官"]雷內爾，還有那個小秘書，抱頭蹲下，別想亂動。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1213_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1211_1#10$1",focus="l")]
+[name="米沃什"]什麼人？
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1272_1#1$1",posfrom="-100,0",posto="-100,0",focus="m")]
+[charslot(slot="m",name="avg_npc_1271_1#1$1",focus="m")]
+[charslot(slot="r",name="avg_npc_1272_1#1$1",posfrom="100,0",posto="100,0",focus="m")]
+[name="帶隊的軍官"]我們是什麼人不重要，你和你老闆得跟我們走一趟，否則別怪我們不客氣。
+[Dialog]
+[charslot]
+[playsound(key="$a_bat_buildingshaking_1",volume=0.3)]
+[CameraShake(duration=1.5, xstrength=10, ystrength=15, vibrato=30, randomness=90, fadeout=false, block=true)]
+似乎有什麼東西在快速接近天花板。
+管他呢，大概是什麼巨大的羽獸吧，帶領的軍官想著，舉起手裡的弩，隔著半座高爾夫球雕塑對準了雷內爾——
+[Dialog]
+[playsound(key="$a_bat_buildingshaking_1")]
+[CameraShake(duration=0.5, xstrength=10, ystrength=15, vibrato=30, randomness=90, fadeout=false, block=true)]
+然後，他聽見，就在“碩果僅存”的雕塑正上方，天花板上傳來一聲巨響。
+[Dialog]
+[playsound(key="$a_bat_buildingshaking_2")]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=false, block=true)]
+接著又是一聲。
+[Dialog]
+[playsound(key="$d_avg_towercllps")]
+[PlaySound(key="$bodyfalldown1", volume=1,channel="3")]
+[PlaySound(key="$bodyfalldown2", volume=1,channel="4")]
+[CameraShake(duration=1, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=false, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.5, r=1, g=1, b=1, fadetime=2, block=true)]
+這次，伴著板材被砸穿的巨響，天花板上出現一個大洞。
+穿過夾雜著各種碎片的煙塵，幾團黑影接連掉在雷內爾辦公室的地上，將剩下半座雕塑砸得稀爛，高爾夫球在房間裡四處彈飛。
+軍人剛想罵兩句粗口，話卻突然卡在了喉嚨裡。
+他發現那幾團黑影突然動了起來。
+[Dialog]
+[playsound(key="$d_avg_clothmovement")]
+[charslot(slot="m",name="avg_4123_ela_1#10$1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4123_ela_1#10$1",focus="m")]
+[name="ELA"]各位，你們還好嗎？
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_4126_fuze_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_4124_iana_1#10$1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="r",name="avg_4124_iana_1#10$1",focus="r")]
+[name="IANA"]還好，一點輕微擦傷。
+[charslot(slot="l",name="avg_4126_fuze_1#1$1",focus="l")]
+[name="FUZE"]我沒問題。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4123_ela_1#1$1",focus="m")]
+[name="ELA"]DOC？
+[Dialog]
+[charslot]
+[name="DOC"]呃……我還好……
+[Dialog]
+[charslot(slot="r",name="avg_4124_iana_1#1$1",posfrom="100,0",posto="0,0",duration=1.5)]
+[charslot(slot="r",afrom=0,ato=1,duration=1)]
+[Dialog]
+[Delay(time=1.5)]
+[charslot(slot="r",name="avg_4124_iana_1#4$1",focus="r")]
+IANA試圖把還坐在地上的DOC扶起來，隨即看到DOC手裡拿著一枚高爾夫球，額頭上是被那枚高爾夫球壓出來的圓圓的紅印。
+[Dialog]
+[playsound(key="$d_avg_clothmovement")]
+[charslot(slot="l",name="avg_4125_rdoc_1#7$1",posfrom="0,-30",posto="0,30",duration=1.5)]
+[charslot(slot="l",afrom=0,ato=1,duration=1)]
+[Dialog]
+[Delay(time=1.5)]
+[charslot(slot="l",name="avg_4125_rdoc_1#7$1",focus="l")]
+[name="DOC"]一切正常，除了被不知道哪裡來的高爾夫球壓了一下。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4123_ela_1#1$1",focus="m")]
+[name="ELA"]下一個問題。
+[name="ELA"]除了我們好像落進了高爾夫球籃裡之外，有人明白剛剛還發生了什麼事嗎——
+[Dialog]
+[charslot]
+[stopmusic(fadetime=1.5)]
+[charslot(slot="l",name="avg_npc_1272_1#1$1",posfrom="-100,0",posto="-100,0",duration=1.5)]
+[charslot(slot="m",name="avg_npc_1271_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1272_1#1$1",posfrom="100,0",posto="100,0",duration=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1271_1#1$1",focus="m")]
+[name="帶隊的軍官"]……
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1213_1#4$1",focus="all")]
+[charslot(slot="r",name="avg_npc_1211_1#5$1",focus="all")]
+[name="米沃什&雷內爾"]……
+[Dialog]
+[charslot(slot="l",name="avg_npc_1272_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1271_1#1$1",focus="l")]
+[name="疑惑的軍人"]老大，我們當時怎麼就沒想到從頂層突入呢？那不就不用爬樓梯了。
+[charslot(slot="r",name="avg_npc_1271_1#1$1",focus="r")]
+[name="帶隊的軍官"]閉嘴，來者不善，準備進攻！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4123_ela_1#6$1",focus="m")]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_arrow_rain")]
+[playMusic(intro="$mutate_intro", key="$mutate_loop", volume=0.6)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",posfrom="0,0",posto="30,-20",duration=0.3)]
+[Delay(time=0.8)]
+[name="ELA"]弩箭？
+[Dialog]
+[playsound(key="$d_avg_gunequip")]
+[charslot(slot="m",posfrom="30,-20",posto="0,0",duration=0.5)]
+[Delay(time=0.8)]
+[name="ELA"]……準備迎敵。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1213_1#4$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1211_1#1$1",focus="r")]
+[name="雷內爾"]呵，看這劍拔弩張的場面，你們應該不是一起來的吧。
+[name="雷內爾"]你帶武器了嗎，米沃什？
+[charslot(slot="l",name="avg_npc_1213_1#2$1",focus="l")]
+[name="米沃什"]（聳肩）沒帶上來。
+[charslot(slot="r",name="avg_npc_1211_1#1$1",focus="r")]
+[name="雷內爾"]那就沒辦法了。
+[name="雷內爾"]諸位，如果你們都想綁架我，我建議你們先比個高下，畢竟……我人只有一個。
+[Dialog]
+[charslot(slot="r",posfrom="0,0",posto="50,0",duration=1)]
+[Delay(time=1.5)]
+[playsound(key="$d_avg_winglssice")]
+[Delay(time=2.5)]
+[charslot(slot="r",posfrom="50,0",posto="0,0",duration=1)]
+[Delay(time=1)]
+[charslot(slot="r",name="avg_npc_1211_1#1$1",focus="r")]
+[name="雷內爾"]米沃什，怎麼樣，要不要也來一杯？
+[charslot(slot="l",name="avg_npc_1213_1#1$1",focus="l")]
+[name="米沃什"]免了，我還得保護你。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4125_rdoc_1#6$1",focus="m")]
+[name="DOC"]綁架？
+[charslot(slot="m",name="avg_4126_fuze_1#1$1",focus="m")]
+[name="FUZE"]獸耳綁架派對？真夠新鮮的。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1271_1#1$1",focus="m")]
+[name="帶隊的軍官"]別在那窸窸窣窣了！放下銃械，乖乖從雷內爾旁邊滾開，否則別怪我們的傢伙不長眼！
+[charslot(slot="m",name="avg_4124_iana_1#3$1",focus="m")]
+[name="IANA"]不管是不是綁架，對面都要衝我們來了。
+[Dialog]
+[charslot]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[PlaySound(key="$d_avg_arrow_rain", volume=1,channel="1")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_4123_ela_1#4$1",focus="m")]
+[name="ELA"]就地尋找掩體！
+[name="ELA"]IANA、DOC，優先帶非武裝人員撤離！我和FUZE掩護你們！
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_sldrpllgn", volume=1,channel="1")]
+[PlaySound(key="$d_avg_sldrpllgn", volume=1,channel="2",delay=0.3)]
+[PlaySound(key="$d_avg_ghtsvnzrld", volume=1,channel="3",delay=0.5)]
+[Delay(time=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="1")]
+[PlaySound(key="$d_avg_frdrgntk", volume=1,channel="3",delay=0.1)]
+[PlaySound(key="$d_avg_frdrgntk", volume=1,channel="4",delay=0.2)]
+[PlaySound(key="$d_avg_frdrgntk", volume=1,channel="5",delay=0.3)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_1272_1#1$1")]
+[charslot(slot="r",name="avg_npc_1272_1#1$1")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="1")]
+[PlaySound(key="$d_avg_frdrgntk", volume=1,channel="3",delay=0.1)]
+[PlaySound(key="$d_avg_frdrgntk", volume=1,channel="4",delay=0.2)]
+[PlaySound(key="$d_avg_frdrgntk", volume=1,channel="5",delay=0.3)]
+[charslot(slot="l",posfrom="0,0",posto="0,-50",duration=0.8)]
+[charslot(slot="l",afrom=1,ato=0,duration=0.5)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.5)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="1")]
+[PlaySound(key="$d_avg_frdrgntk", volume=1,channel="3",delay=0.1)]
+[PlaySound(key="$d_avg_frdrgntk", volume=1,channel="4",delay=0.2)]
+[PlaySound(key="$d_avg_frdrgntk", volume=1,channel="5",delay=0.3)]
+[charslot(slot="r",posfrom="0,0",posto="0,-50",duration=0.8)]
+[charslot(slot="r",afrom=1,ato=0,duration=0.5)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1271_1#1$1",focus="m")]
+[name="帶隊的軍官"]沒有光環，不是薩科塔……和黑鋼的人也不像！
+[name="帶隊的軍官"]這群笨蛋，就因為銃械看起來很拉風，連命都不要了？
+[name="帶隊的軍官"]上，給我上！不能讓他們帶著雷內爾跑了！
+[Dialog]
+[charslot]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_arrow_rain", volume=1,channel="1")]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="2",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="3",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="4",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_4123_ela_1#4$1",focus="m")]
+[name="ELA"]IANA，十點鐘方向！
+[Dialog]
+[charslot]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.17, fadetime=0.5)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.17, fadetime=0.5)]
+[PlaySound(key="$d_avg_sldrrldn", volume=1,channel="2")]
+[BackgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.5, yScaleTo=1.5, duration=0, block=false,screenadapt="coverall")]
+[charslot(slot="m",name="avg_4124_iana_1#6$1",scale=1.05,posfrom="80,-350",posto="-80,-350",duration=1.5)]
+[charslot(slot="m",action="zoom", poszoom = "0.5,0.5",scale=1.8,duration=0)]
+[Delay(time=1.55)]
+[curtain(fadetime=0.8)]
+[PlaySound(key="$d_avg_sldrpllgn", volume=1,channel="1")]
+[charslot(slot="m",scale=3,posfrom="-80,-350",posto="-240,-350",duration=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=0.5)]
+[Delay(time=1.55)]
+[charslot]
+[BackgroundTween(xScaleFrom=1.5, yScaleFrom=1.5, xScaleTo=1, yScaleTo=1, duration=0, block=false,screenadapt="coverall")]
+[charslot(slot="m",name="avg_npc_1272_1#1$1",focus="m")]
+[Delay(time=0.1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[PlaySound(key="$d_avg_ghtsvnzrtk", volume=1,channel="2")]
+[charslot(slot="m",posfrom="0,0",posto="0,-50",duration=0.8)]
+[charslot(slot="m",afrom=1,ato=0,duration=0.5)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.5)]
+[charslot]
+[charslot(slot="m",name="avg_4124_iana_1#3$1",focus="m")]
+[name="IANA"]敵人倒下！
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1272_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1271_1#1$1",focus="l")]
+[name="機警的軍人"]老大，不對勁，這些人的銃械不是劣質品！
+[charslot(slot="r",name="avg_npc_1271_1#1$1",focus="r")]
+[name="帶隊的軍官"]怕什麼，我們還有後援！
+[name="帶隊的軍官"]預備隊，別在走廊裡清閒了，趕快進來趕緊收工！
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_soldiersrun")]
+[charslot(slot="l",name="avg_npc_1272_1#1$1",posfrom="-100,0",posto="-100,0",duration=1.5)]
+[charslot(slot="m",name="avg_npc_1272_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1272_1#1$1",posfrom="100,0",posto="100,0",duration=1.5)]
+[Delay(time=3)]
+[charslot]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_arrow_rain", volume=1,channel="1")]
+[PlaySound(key="$d_avg_ghtsvnzrtk", volume=1,channel="2",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_ghtsvnzrtk", volume=1,channel="3",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_ghtsvnzrtk", volume=1,channel="4",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_4125_rdoc_1#3$1",focus="m")]
+[name="DOC"]無法到達非武裝人員所在地點！對面人數太多，我和IANA被壓制在掩體後方了——
+[name="DOC"]換彈！
+[charslot(slot="m",name="avg_4124_iana_1#6$1",focus="m")]
+[name="IANA"]交給我！
+[Dialog]
+[PlaySound(key="$d_avg_gnrtrpn", volume=1)]
+[Delay(time=2.5)]
+[charslot(slot="m",posfrom="0,0",posto="-20,0",duration=0.3,isblock=true)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="m",posfrom="-20,0",posto="0,0",duration=0.3,isblock=true)]
+[charslot(slot="m",name="avg_4124_iana_1#3$1",focus="m")]
+[name="IANA"]手榴彈已擲出！
+[Dialog]
+[charslot]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[PlaySound(key="$d_avg_explosion")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[playsound(key="$d_gen_soldiersrun")]
+[charslot(slot="l",name="avg_npc_1272_1#1$1",posfrom="-100,0",posto="-100,0",duration=1.5)]
+[charslot(slot="m",name="avg_npc_1272_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1272_1#1$1",posfrom="100,0",posto="100,0",duration=1.5)]
+[Delay(time=3.5)]
+[charslot]
+[charslot(slot="m",name="avg_4124_iana_1#6$1",focus="m")]
+[name="IANA"]嘖……手榴彈效果不佳！敵人對爆炸的耐受力比預想程度更高！
+[charslot(slot="m",name="avg_4123_ela_1#4$1",focus="m")]
+[name="ELA"]收到。FUZE，煙霧彈。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4126_fuze_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_gnrtrpn", volume=1)]
+[charslot(slot="m",posfrom="0,0",posto="-5,0",duration=0.3,isblock=true)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="m",posfrom="-5,0",posto="0,0",duration=0.3,isblock=true)]
+[charslot(slot="m",name="avg_4126_fuze_1#1$1",focus="m")]
+[name="FUZE"]煙霧彈已擲出。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1272_1#1$1",posfrom="-100,0",posto="-100,0")]
+[charslot(slot="m",name="avg_npc_1272_1#1$1")]
+[charslot(slot="r",name="avg_npc_1272_1#1$1",posfrom="100,0",posto="100,0")]
+[Delay(time=0.05)]
+[PlaySound(key="$d_avg_gnrtrllng", volume=1,channel="1")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_gnrtrsmkk", volume=1,channel="2")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.7, r=1, g=1, b=1, fadetime=1, block=true)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot="m",name="avg_4126_fuze_1#1$1",focus="m")]
+[name="FUZE"]煙霧彈沒辦法從根本上解決問題。需要霰射炸藥嗎？我這裡還有不少。
+[charslot(slot="m",name="avg_4123_ela_1#6$1",focus="m")]
+[name="ELA"]是個好主意，不過雷電地雷更適合這裡。
+[name="ELA"]IANA、DOC，去帶非武裝人員尋找掩體！我和FUZE負責火力壓制！
+[Dialog]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_4126_fuze_1#1$1",focus="m")]
+[name="FUZE"]開火，開火！
+[Dialog]
+[charslot]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_arrow_rain", volume=1,channel="1")]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="2",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="3",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="4",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1213_1#3$1",focus="m")]
+[name="米沃什"]別過來！
+[charslot(slot="m",name="avg_4124_iana_1#6$1",focus="m")]
+[name="IANA"]只是來帶你們轉移到隱蔽地點，不要抵抗！
+[charslot(slot="m",name="avg_npc_1213_1#3$1",focus="m")]
+[name="米沃什"]為什麼要轉——
+[charslot(slot="m",name="avg_4124_iana_1#3$1",focus="m")]
+[name="IANA"]小心！
+[Dialog]
+[charslot(slot="m",name="avg_npc_1213_1#6$1",focus="m")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=1, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[PlaySound(key="$e_skill_skulsrsword", volume=1)]
+[charslot(slot="m",posfrom="0,0",posto="-50,0",duration=0.3)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[delay(time=1)]
+[name="米沃什"]偷襲？！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1272_1#1$1",focus="m")]
+[name="機警的軍人"]看來你不光當秘書，還是個保鏢？
+[charslot(slot="m",name="avg_npc_1213_1#6$1",focus="m")]
+[name="米沃什"]……廢話真多。
+[charslot(slot="m",name="avg_4125_rdoc_1#4$1",focus="m")]
+[name="DOC"]先生，退開，這樣我們沒辦法瞄準——
+[Dialog]
+[charslot]
+[delay(time=0.1)]
+[charslot(slot="m",name="avg_npc_1213_1#6$1",focus="m")]
+[delay(time=0.1)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[charslot(slot="m",posfrom="0,0",posto="-100,-50",duration=0.8)]
+[PlaySound(key="$fightgeneral",volume=1)] 
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[Delay(time=1.2)]
+[charslot(duration=1.5)]
+[PlaySound(key="$bodyfalldown1", volume=1,channel="2")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1272_1#1$1",focus="m")]
+[name="機警的軍人"]用酒瓶和正經的武器對拼？你還早咧——
+[Dialog]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[PlaySound(key="$d_avg_gunshot", volume=1,channel="2")]
+[charslot(slot="m",posfrom="0,0",posto="0,-50",duration=0.5)]
+[charslot(slot="m",afrom=1,ato=0,duration=0.3)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_4125_rdoc_1#4$1",focus="m")]
+[name="DOC"]你也還早呢。
+[name="DOC"]IANA，我來背這個被打暈的人，你去引導那個穿白衣服的傢伙！
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1272_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1271_1#1$1",focus="r")]
+[name="帶隊的軍官"]他們要帶著雷內爾躲起來！攔住他們！
+[charslot(slot="l",name="avg_npc_1272_1#1$1",focus="l")]
+[name="油滑的軍人"]老大，不行！他們連發銃的射速太快，我們近不了身！
+[charslot(slot="r",name="avg_npc_1271_1#1$1",focus="r")]
+[name="帶隊的軍官"]*粗口*，他們沒開火的時候你們在幹什麼？！
+[charslot(slot="l",name="avg_npc_1272_1#1$1",focus="l")]
+[name="油滑的軍人"]這幾個人太會找死角了！還有他們的配合——
+[charslot(slot="r",name="avg_npc_1271_1#1$1",focus="r")]
+[name="帶隊的軍官"]我們這麼多人，你跟我說四個人的配合？！
+[Dialog]
+[charslot]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_arrow_rain", volume=1,channel="1")]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="2",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="3",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="4",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Delay(time=0.8)]
+[CameraShake(duration=1.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_arrow_rain", volume=1,channel="1")]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="2",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="3",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.01, block=true)]
+[PlaySound(key="$d_avg_frdrgntkln", volume=1,channel="4",delay=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[Delay(time=0.8)]
+[charslot(slot="m",name="avg_4125_rdoc_1#4$1",focus="m")]
+[name="DOC"]我們已找到掩體，可以抵擋一段時間！
+[charslot(slot="m",name="avg_4126_fuze_1#1$1",focus="m")]
+[name="FUZE"]換彈！
+[Dialog]
+[charslot(slot="m",name="avg_npc_1271_1#1$1",focus="m")]
+[name="帶隊的軍官"]那個男的啞火了，快上！
+[charslot(slot="m",name="avg_4123_ela_1#4$1",focus="m")]
+[name="ELA"]IANA，煙霧彈！
+[Dialog]
+[charslot(slot="m",name="avg_4124_iana_1#3$1",focus="m")]
+[Delay(time=0.2)]
+[charslot(slot="m",posfrom="0,0",posto="-5,0",duration=0.3,isblock=true)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="m",posfrom="-5,0",posto="0,0",duration=0.3,isblock=true)]
+[name="IANA"]煙霧彈已擲出！
+[Dialog]
+[charslot]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_gnrtrllng", volume=1,channel="1")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_gnrtrsmkk", volume=1,channel="2")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.7, r=1, g=1, b=1, fadetime=1, block=true)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1271_1#1$1",focus="m")]
+[name="帶隊的軍官"]咳、咳……又是煙霧彈？你們也就這點能耐了——
+[Dialog]
+[charslot(slot="m",name="avg_4123_ela_1#6$1",focus="m")]
+[name="ELA"]雷電地雷已擲出……
+[name="ELA"]……已黏上。
+[name="ELA"]這是給你們的紀念品。
+[charslot(slot="m",name="avg_4123_ela_1#4$1",focus="m")]
+[name="ELA"]FUZE，閃開！
+[Dialog]
+[charslot(slot="m",name="avg_4126_fuze_1#1$1",focus="m")]
+[Delay(time=0.5)]
+[PlaySound(key="$rungeneral", volume=1,channel="1")]
+[charslot(slot="m",posfrom="0,0",posto="100,0",duration=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=0.5)]
+[Delay(time=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot]
+[charslot(slot="l",name="avg_npc_1272_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1271_1#1$1",focus="l")]
+[name="油滑的軍人"]老大，剩下那兩個也要躲起來了！
+[charslot(slot="r",name="avg_npc_1271_1#1$1",focus="r")]
+[name="帶隊的軍官"]給我把他們一網打盡——
+[Dialog]
+[CameraShake(duration=2, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_strmbmbo")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[PlaySound(key="$d_avg_stkmyer")]
+[Delay(time=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$bodyfalldown1", volume=1,channel="1")]
+[Delay(time=2.5)]
+[PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4125_rdoc_1#1$1",duration=1.5)]
+[Delay(time=1.5)]
+[name="DOC"]這些人一擁而上，完全沒想過防備爆炸物，簡直毫無戰術意識。
+[charslot(slot="m",name="avg_4123_ela_1#1$1",focus="m")]
+[name="ELA"]先繳械再說吧。DOC，傷兵救護也交給你了。
+[name="ELA"]已淨空。
+[charslot(slot="m",name="avg_4124_iana_1#1$1",focus="m")]
+[name="IANA"]已淨空。
+[charslot(slot="m",name="avg_4126_fuze_1#1$1",focus="m")]
+[name="FUZE"]已淨空。
+[charslot(slot="m",name="avg_4125_rdoc_1#1$1",focus="m")]
+[name="DOC"]已淨空，無人員死亡，算是個好消息。
+[name="DOC"]我們固然沒有刻意瞄準要害，但這些人皮糙肉厚得也的確有些超乎想像。連剛剛那個近距離吃了一發霰彈的傢伙也僥倖沒有生命危險。
+[charslot(slot="m",name="avg_4123_ela_1#1$1",focus="m")]
+[name="ELA"]確實是好消息。
+[charslot(slot="m",name="avg_4125_rdoc_1#9$1",focus="m")]
+[name="DOC"]還有另一個消息，不知道是好是壞，但很奇怪。這些人頭上的獸耳……仔細看可以看到血管……
+[charslot(slot="m",name="avg_4123_ela_1#5$1",focus="m")]
+[name="ELA"]什麼？？
+[charslot(slot="m",name="avg_4126_fuze_1#1$1",focus="m")]
+[name="FUZE"]我可不知道列維還在研究這種事情。
+[charslot(slot="m",name="avg_4124_iana_1#1$1",focus="m")]
+[name="IANA"]ELA，我的指南針失效，DOC，你身上的呢？
+[charslot(slot="m",name="avg_4125_rdoc_1#11$1",focus="m")]
+[name="DOC"]如果我們真的還在烏拉爾山南部的磁山二號附近……
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1,channel="1")]
+[charslot(duration=1.5)]
+[Delay(time=2)]
+DOC轉頭看向身後，風剛好把窗簾吹了起來。
+幾人走上陽台，得以眺望先前一直無暇顧及的窗外景象。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Image(image="48_i01", xScale=1.4, yScale=1.4,screenadapt="showall")]
+[ImageTween(image="48_i01",xFrom=-70, yFrom=-30, xTo=0, yTo=0,xScaleFrom=1.4, yScaleFrom=1.4, xScaleTo=1, yScaleTo=1,duration=45)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1.5)]
+夕陽從林立的高樓中間緩緩下落，把不知是海還是大湖的水域染得一片橘紅。
+水邊的沙灘上，冰淇淋車播放著音樂，幾個穿著清涼的遊客稀稀拉拉地躺在水邊，享受著假日傍晚的慵懶氣息。
+在幾人身後，房間裡唯一一個還能正常走路的人踱了過來。
+[name="FUZE"]這是個*粗口*的烏拉爾山。
+[name="ELA"]至少可以確定，我們確實不在任務原定區域了。
+[name="IANA"]……傳送？
+[name="ELA"]那我們被傳送到了哪裡？馬爾地夫？
+[name="IANA"]這裡確實像個專門供人旅遊度假的地方，但……不像。我不覺得這裡是馬爾地夫。
+[name="ELA"]或許我們能問問那兩位不幸的受害者——哦，已經來了。
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[Image]
+[Background(image="48_g11_deluxeroom_n",screenadapt="coverall")]
+[delay(time=1)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_4123_ela_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_npc_1211_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="l",name="avg_4123_ela_1#1$1",focus="l")]
+[name="ELA"]先生，請問一下，您是哪位，這是哪裡，那些武裝人員又是怎麼回事？
+[charslot(slot="r",name="avg_npc_1211_1#1$1",focus="r")]
+[name="雷內爾"]幾位為我的作品製造了一個出人意料的結局，出於“感激”，我很高興能替各位介紹。
+[charslot(slot="r",name="avg_npc_1211_1#9$1",focus="r")]
+[name="雷內爾"]不過，正式開始介紹前，請允許我糾正各位的一個錯誤……我從來都不是什麼不幸的受害者。
+[name="雷內爾"]過去不是，現在不是，未來不是——從來都不是。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4124_iana_1#1$1",focus="m")]
+[name="IANA"]我們可以進入正題了嗎？
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_4123_ela_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1211_1#9$1",focus="r")]
+[name="雷內爾"]好吧，各位，歡迎踏上玻利瓦爾的黑色心臟……
+[name="雷內爾"]歡迎來到多索雷斯。
+[charslot(slot="r",name="avg_npc_1211_1#1$1",focus="r")]
+[name="雷內爾"]我是雷內爾·科瓦爾斯基。
+[charslot(slot="l",name="avg_4123_ela_1#1$1",focus="l")]
+[name="ELA"]那麼，雷內爾先生，你可以叫我ELA。
+[charslot(slot="l",name="avg_4123_ela_1#6$1",focus="l")]
+[name="ELA"]不過，考慮到我們需要快速把握現在的情況，我希望能省去介紹環節，我來問問題，你來回答，可以嗎？
+[charslot(slot="r",name="avg_npc_1211_1#1$1",focus="r")]
+[name="雷內爾"]沒問題，看來我也沒什麼選擇。
+[charslot(slot="l",name="avg_4123_ela_1#6$1",focus="l")]
+[name="ELA"]雷內爾先生，請問多索雷斯屬於哪個國家？
+[charslot(slot="r",name="avg_npc_1211_1#1$1",focus="r")]
+[name="雷內爾"]名義上屬於玻利瓦爾。
+[charslot(slot="l",name="avg_4123_ela_1#7$1",focus="l")]
+[name="ELA"]玻利瓦爾……玻利維亞？我不記得玻利維亞有座叫多索雷斯的城市。IANA，你有印象嗎？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4124_iana_1#10$1",focus="m")]
+[name="IANA"]……不。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_4123_ela_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1211_1#1$1",focus="l")]
+[name="ELA"]……我換個問法。我們身處哪個大洲？南美洲？
+[charslot(slot="r",name="avg_npc_1211_1#5$1",focus="r")]
+[name="雷內爾"]“大洲”？我不明白你的意思。如果你的意思是“大片的陸地”，那不就是泰拉嗎？
+[charslot(slot="l",name="avg_4123_ela_1#7$1",focus="l")]
+[name="ELA"]Gówno……
+[charslot(slot="r",name="avg_npc_1211_1#5$1",focus="r")]
+[name="雷內爾"]（卡西米爾語）家鄉話？還真是意外呢。
+[charslot(slot="l",name="avg_4123_ela_1#1$1",focus="l")]
+[name="ELA"]家鄉話？
+[charslot(slot="r",name="avg_npc_1211_1#1$1",focus="r")]
+[name="雷內爾"]沒什麼，你可以繼續提問。
+[charslot(slot="l",name="avg_4123_ela_1#10$1",focus="l")]
+[name="ELA"]……難以相信我居然真的想問這個問題……
+[name="ELA"]雷內爾先生，我們身處的是否還是那顆被稱為地球的行星？
+[charslot(slot="r",name="avg_npc_1211_1#11$1",focus="r")]
+[name="雷內爾"]“地球”，“行星”……說實話，ELA小姐，我本來只等著解答你的問題。但聽了你的問題之後，我的問題也多起來了。
+[charslot(slot="l",name="avg_4123_ela_1#10$1",focus="l")]
+[name="ELA"]……
+[charslot(slot="l",name="avg_4123_ela_1#1$1",focus="l")]
+[name="ELA"]IANA，也許你會有一些更好的問法……
+[charslot(slot="l",name="avg_4123_ela_1#5$1",focus="l")]
+[name="ELA"]IANA？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4124_iana_1#4$1",duration=1.5)]
+[Delay(time=2)]
+IANA沒有回話。
+她瞪大雙眼，直勾勾地看向與夕陽落下方向相反的天際線。
+[Dialog]
+[charslot(duration=1.5)]
+[Delay(time=2)]
+眾人隨著IANA目視的方向看去。
+一明一暗，兩輪月亮正在緩緩升起。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="48_g3_galleriessquare_n",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1212_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="打扮誇張的杜林人"]真是運氣差，才畫了一個輪廓就被發現了……
+[charslot(slot="m",name="avg_npc_1212_1#6$1")]
+[name="打扮誇張的杜林人"]差點就被抓到了……烏泱泱追出來一大群人，嚇死了嚇死了。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1212_1#6$1",focus="none")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="藝術館保全"]給我站住，你這丫頭，在藝術館牆上亂塗亂畫還想跑。
+[charslot(slot="m",name="avg_npc_1212_1#4$1")]
+[name="打扮誇張的杜林人"]不好，他找過來了，我得趕緊走了。
+[charslot(slot="m",name="avg_npc_1212_1#7$1")]
+[name="打扮誇張的杜林人"]哼，就算你今天運氣好……雷內爾。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[charslot]
+[Image]
