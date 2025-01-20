@@ -1,0 +1,39 @@
+[header(actId="sandbox_1", npcId="trap_467_ttuye")]
+[summontrap(x="18", y="7", charId="trap_467_ttuye", isChar="FALSE", dir="LEFT")]
+[summonenemy(enemyId="enemy_7035_epasng", x="18", y="5", endX="15", endY="6")]
+[move(enemyId="enemy_7035_epasng", x="17", y="5")]
+[camerafocusto(offsetX="17", offsetY="6", scale="FAR", time="5")]
+[delay(time="2")]
+[foginview(id="rect1", leftBottomX=12, leftBottomY=3, rightUpX=22, rightUpY=9)]
+[name="異客", avatarId="char_472_pasngr", isAvatarRight="FALSE"]這裡應該就是您要尋找的地方，茂盛的植被，古老的神殿。
+[name="圖耶", avatarId="char_402_tuye", isAvatarRight="FALSE"]好消息，我看到了阿達克利斯部落模樣的聚落。壞消息，聚落裡不知為何空無一人了。
+[decision(option1="或許我們應該再靠近看看。", value1="1.1")]
+[predicate(references="1.1")]
+[camerafocusto(offsetX="14", offsetY="6", scale="FAR", time="5")]
+[move(enemyId="enemy_7035_epasng", x="15", y="6")]
+[delay(time="2")]
+[summonenemy(enemyId="enemy_1096_ccwitch_2", x="12", y="5", endX="14", endY="5")]
+[move(enemyId="enemy_1096_ccwitch_2", x="13", y="5")]
+[summonenemy(enemyId="enemy_7023_gatbb", x="12", y="6", endX="14", endY="6")]
+[move(enemyId="enemy_7023_gatbb", x="13", y="6")]
+[summonenemy(enemyId="enemy_1096_ccwitch", x="12", y="7", endX="14", endY="7")]
+[move(enemyId="enemy_1096_ccwitch", x="13", y="7")]
+[name="神廟守衛", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]你們這些無恥的竊賊，竟敢再次回到這裡，褻瀆我們的女神？
+[name="異客", avatarId="char_472_pasngr", isAvatarRight="FALSE"]看來這是一場<color=#d8d769>埋伏</color>。
+[decision(option1="不，更像是一場誤會。", value1="2.1")]
+[predicate(references="2.1")]
+[decision(option1="我們只是來這尋求幫助的！", value1="3.1")]
+[predicate(references="3.1")]
+[name="神廟守衛", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]我已經受夠了這樣的謊言，先是王酋軍，又是奇怪的菲林，這清靜之所從未如此熱鬧。
+[name="神廟守衛", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]亮出兵器吧。
+[name="異客", avatarId="char_472_pasngr", isAvatarRight="TRUE"]請您後退，接下來的戰鬥就交給我和圖耶小姐吧。
+[playanim(id="trap_467_ttuye", anim="Idle", dir="RIGHT")]
+[withdraw(id="enemy_1096_ccwitch")]
+[withdraw(id="enemy_1096_ccwitch_2")]
+[withdraw(id="enemy_7023_gatbb")]
+[withdraw(id="enemy_7035_epasng")]
+[withdraw(id="trap_467_ttuye")]
+[fognotinview(id="rect1")]
+[resetcamera(time="1")]
+[save]
+[end]

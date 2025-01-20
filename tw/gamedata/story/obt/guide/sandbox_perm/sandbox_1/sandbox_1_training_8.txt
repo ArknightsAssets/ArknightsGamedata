@@ -1,0 +1,16 @@
+[HEADER(is_skippable=false, is_tutorial=true)] 事件
+[SandboxV2.EnsureDungeonQuest(questId="training_8", isForceTutorial=true)]
+[SandboxV2.EnsureDungeonStable]
+[Delay(time=0.5)]
+[SandboxV2.DungeonFocusNode(focusType="FOCUS_BY_NODE_ID", focusNodeId="nE1BC")]
+[Tutorial(target="btn_sandbox_dungeon_center_node", waitForSignal="sandbox_v2_dungeon_event_state_routed", animStyle="Click",            focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.8, dialogHead="$avatar_zumama",           dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 這裡好像發生了什麼，讓我們去一探究竟。
+[Tutorial(target="btn_sandbox_event_left_desc_pnl", animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.8, dialogHead="$avatar_zumama")] 當我們造訪擁有奇遇類標誌的區塊節點時，會在那裡遭遇一些事情。
+[Tutorial(target="btn_sandbox_event_right_desc_pnl", animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.8, dialogHead="$avatar_zumama", focusHeight=250)] 我們可以根據自己的想法應對這些事。
+[Tutorial(target="btn_sandbox_event_first_choice_btn", waitForSignal="sandbox_v2_dungeon_event_state_choice_selected", animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.8, dialogHead="$avatar_zumama")] 有些選擇需要消耗我們的決斷數。
+[Tutorial(target="btn_sandbox_event_first_choice_confirm_btn", waitForSignal="sandbox_v2_gain_item_page_routed", animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.8, dialogHead="$avatar_zumama")] 這次我們就選擇消耗決斷數拿走這些粗製赤金吧。
+[Tutorial(protectTime=0.8, dialogHead="$avatar_zumama", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 這樣就拿到粗製赤金了。
+[SandboxV2.CloseGainItemPage]
+[Tutorial(waitForSignal="sandbox_v2_dungeon_event_state_routed", dialogHead="$avatar_zumama")]
+[Tutorial(target="btn_sandbox_event_first_choice_btn", waitForSignal="sandbox_v2_dungeon_event_state_choice_selected", animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.8, dialogHead="$avatar_zumama")] 完成了我們的選擇後就可以看到對應的結果，點擊“好的”來結束這次奇遇吧。
+[Tutorial(target="btn_sandbox_event_first_choice_confirm_btn", animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.8, dialogHead="$avatar_zumama", focusHeight=100)] 
+[SandboxV2.EnsureDungeonStable]

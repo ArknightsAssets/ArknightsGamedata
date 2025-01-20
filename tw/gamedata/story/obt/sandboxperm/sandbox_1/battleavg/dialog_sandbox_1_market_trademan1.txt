@@ -1,0 +1,12 @@
+[header(actId="sandbox_1", npcId="")] 
+[name="聯絡員", avatarId="trap_415_trademan", isAvatarRight="FALSE"]你們好啊，按照你們指的路，我終於找到了你們所說的落腳地。不過如果你們現在要看新貨的話，暫時還沒有……
+[decision(option1="所以，在這裡感覺還好嗎？", value1="1.1", option2="那我們下次再來。", value2="1.2")]
+[predicate(references="1.1", visibleCondition="!c0")]
+[name="聯絡員", avatarId="trap_415_trademan", isAvatarRight="FALSE"]非常舒適，很難想像這附近還有如此讓我心情愉悅的地方，為表感謝，我要送你們一個小小的禮物。
+[additem(itemId="sandbox_1_craft_7", itemCount="1")]
+[decision(option1="謝謝你的禮物。", value1="2.1")]
+[predicate(references="2.1")]
+[end]
+[predicate(references="1.2")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_1_craft_7", value="1")]

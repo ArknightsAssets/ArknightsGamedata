@@ -1,0 +1,27 @@
+[header(actId="sandbox_1", npcId="")] 
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]怎麼……還不來……這女孩……找我……
+[decision(option1="老爺子，你在嘮叨什麼呢？", value1="1.1")]
+[predicate(references="1.1")]
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]啊！你嚇死我了，你找我做什麼？森蚺讓你來的？
+[decision(option1="這次是<color=#d8d769>鮮切蟹生</color>。", value1="2.1", option2="沒有，只是路過。", value2="2.2")]
+[predicate(references="2.1", selectableCondition="c0")]
+[additem(itemId="sandbox_1_food_4", itemCount="-1")]
+[decision(option1="希望你能喜歡。", value1="3.1")]
+[predicate(references="3.1")]
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]這塊肉……它熟了嗎？
+[decision(option1="我特意保留了一些原味。", value1="4.1")]
+[predicate(references="4.1")]
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]啊……我嚐嚐……嗯……
+[decision(option1="怎麼樣？", value1="5.1")]
+[predicate(references="5.1")]
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]比上次好點，但我還是不滿意。
+[decision(option1="你吃的時候都露出笑容了！", value1="6.1")]
+[predicate(references="6.1")]
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]笑就一定代表我覺得好吃嗎？
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]哼，說了不滿意就是不滿意！沒想好之前不要再來打擾我了！
+[withdraw(id="trap_468_tpriest", withoutAnim="FALSE")]
+[save]
+[end]
+[predicate(references="2.2")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_1_food_4", value="1")]

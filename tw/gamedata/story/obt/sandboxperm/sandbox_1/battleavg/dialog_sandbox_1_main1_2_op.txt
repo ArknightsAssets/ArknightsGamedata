@@ -1,0 +1,40 @@
+[header(actId="sandbox_1", npcId="trap_415_trademan")]
+[foginview(leftBottomX="4", leftBottomY="5", rightUpX="10", rightUpY="8", id="fog_1")]
+[summontrap(x="8", y="6", charId="trap_415_trademan", isChar="FALSE", dir="LEFT")]
+[summontrap(x="5", y="6", charId="trap_467_ttuye", isChar="FALSE", dir="RIGHT")]
+[camerafocusto(offsetX="7", offsetY="6", time="0.2", scale="FAR")]
+[uioperation(target="main", item="", enable="False")]
+[camerafocusto(id="trap_415_trademan", offsetX="-1", scale="CLOSE", time="1")]
+[name="聯絡員", avatarId="trap_415_trademan", isAvatarRight="TRUE"]想不到在這片雨林中也能見到其他旅行者，各位好啊~
+[camerafocusto(id="trap_467_ttuye", offsetX="1", scale="MID", time="1")]
+[name="圖耶", avatarId="char_402_tuye", isAvatarRight="FALSE"]你是哪位，為什麼會出現在這裡？
+[camerafocusto(id="trap_415_trademan", offsetX="-1", scale="CLOSE", time="1")]
+[name="聯絡員", avatarId="trap_415_trademan", isAvatarRight="TRUE"]請允許我介紹一下自己，我只是太陽谷機械工業的一個小小僱員，不遠千里為大家帶來我們公司的產品。
+[name="聯絡員", avatarId="trap_415_trademan", isAvatarRight="TRUE"]走過路過，都應該來看一眼，品質優秀價格實惠，更重要的是售後無憂！
+[name="聯絡員", avatarId="trap_415_trademan", isAvatarRight="FALSE"]如果顧客有需要，我們不遠萬里也會去到他們身邊。
+[decision(option1="你要不先從泥潭裡出來？", value1="1.1")]
+[predicate(references="1.1")]
+[decision(option1="感覺你正在裡面緩緩下沉。", value1="2.1")]
+[predicate(references="2.1")]
+[name="聯絡員", avatarId="trap_415_trademan", isAvatarRight="FALSE"]哦，沒關係，我自己能想辦法出來。只、只是，你們知道哪裡有地方可以落腳歇息嗎？
+[decision(option1="向北走就是我們的營地。", value1="3.1")]
+[predicate(references="3.1")]
+[decision(option1="只是我們有什麼好處？", value1="4.1")]
+[predicate(references="4.1")]
+[name="聯絡員", avatarId="trap_415_trademan", isAvatarRight="FALSE"]你們給我行方便我也會給你們行方便，相信我，絕不會讓你們吃虧。
+[name="聯絡員", avatarId="trap_415_trademan", isAvatarRight="FALSE"]對了，友情提示，這附近有一座採石場可以弄點石材，你們可以去那裡碰碰運氣。
+[decision(option1="謝謝你，聯絡員先生。", value1="5.1")]
+[predicate(references="5.1")]
+[decision(option1="期待我們在營地的會面。", value1="6.1")]
+[predicate(references="6.1")]
+[withdraw(id="trap_467_ttuye")]
+[uioperation(target="main", item="", enable="False")]
+[delay(time="3")]
+[emoji(target="trap_415_trademan", emoji="common_bubble_happy")]
+[delay(time="2")]
+[name="聯絡員", avatarId="trap_415_trademan", isAvatarRight="FALSE"]嘿，終於等到你們了，來自羅德島的大客戶，不枉我在這裡守這麼多天。
+[withdraw(id="trap_415_trademan")]
+[fognotinview(id="fog_1")]
+[resetcamera(time="1")]
+[save]
+[end]

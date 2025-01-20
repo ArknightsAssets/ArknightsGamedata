@@ -1,0 +1,27 @@
+[HEADER(is_tutorial=true, is_skippable=true, is_autoable=false)] 活动25side教学关02_b
+[Battle.Pause]
+[InputBlocker(blockInput=true, black=0.2)]
+[Tutorial(focusX=-90, focusY=-45, focusWidth=100, focusHeight=100, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_jesica")]完、完蛋了！它怎麼開始噴髒水了！
+[PopupDialog(dialogHead="$avatar_nian", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]唉，書呆子造的玩意，只能抽水不能淨水！如果泵站身後本來就是<@tu.kw>被病害污染</>的田地，抽水的時候自然也會<@tu.kw>導致病害傳播</>！
+[PopupDialog(dialogHead="$avatar_nian", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]當然，無論怎麼傳播，病害的污染程度都<@tu.kw>不會超過</>其源頭。
+[PopupDialog(dialogHead="$avatar_nian", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]與此同時，要記住<@tu.kw>只有淨水</>才能淨化病害，降低污染！
+[Battle.Pause(pause=false)]
+[Delay(time=1)]
+[Battle.Pause(pause=true)]
+[PopupDialog(dialogHead="$avatar_jesica")]年小姐！天師們又送新的泵站過來了！
+[PopupDialog(dialogHead="$avatar_nian", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]動作倒是迅速。那，聽我指令。
+[InputBlocker(blockInput=false)]
+[Battle.LockFunction(mask="SYSTEM_MENU")]
+[Battle.EnsureMinCost(cost=10)]
+[Tutorial(waitForSignal="put_down", dialogHead="$avatar_nian", animStyle="Drag", \
+          startX=-60, startY=60, startAnchor="BottomRight", endX=230, endY=45)] \
+把新到的泵站<@tu.kw>放到這裡</>
+[Tutorial(waitForSignal="select_direction", dialogHead="$avatar_nian", animStyle="Drag", \
+          startX=230, startY=45, endX=230, endY=-100)] \
+<@tu.kw>向下部署</>
+[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[InputBlocker(blockInput=true, black=0.2)]
+[PopupDialog(dialogHead="$avatar_nian")]這樣，加上我站在這裡，這片田地就不用擔心了。
+[PopupDialog(dialogHead="$avatar_nian")]快把剩下的敵人消滅乾淨吧！

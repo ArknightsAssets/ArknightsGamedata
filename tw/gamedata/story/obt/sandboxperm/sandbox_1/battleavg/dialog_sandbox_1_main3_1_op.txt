@@ -1,0 +1,41 @@
+[header(actId="sandbox_1", npcId="trap_471_tegmaus")]
+[summontrap(x="8", y="7", charId="trap_471_tegmaus", isChar="FALSE", dir="RIGHT")]
+[foginview(leftBottomX="5", leftBottomY="5", rightUpX="11", rightUpY="12", id="fog_1")]
+[camerafocusto(id="trap_471_tegmaus", scale="CLOSE", time="1")]
+[name="佩佩", avatarId="bavg_npc_001", isAvatarRight="FALSE"]看來你們找到了那半塊“圓盤”，不錯嘛，比我預想中還要快。你們途中受到攻擊了嗎？
+[decision(option1="我們遇上了一伙王酋軍。", value1="1.1")]
+[predicate(references="1.1")]
+[decision(option1="但不是很多。", value1="2.1")]
+[predicate(references="2.1")]
+[name="佩佩", avatarId="bavg_npc_001", isAvatarRight="FALSE"]唉，我還以為自己能吸引走他們全部的注意力呢。
+[playanim(id="trap_471_tegmaus", anim="Attack", dir="RIGHT", looporidle="Idle")]
+[name="佩佩", avatarId="bavg_npc_001", isAvatarRight="FALSE"]怪我，看來我的計劃並沒有想像中完善，以後我會想辦法彌補你們的。
+[decision(option1="你還沒有告訴我們答案。", value1="3.1")]
+[predicate(references="3.1")]
+[decision(option1="這半塊圓盤是做什麼的？", value1="4.1")]
+[predicate(references="4.1")]
+[playanim(id="trap_471_tegmaus", anim="Special_Begin", looporidle="Special_Loop", dir="RIGHT")]
+[name="佩佩", avatarId="bavg_npc_001", isAvatarRight="FALSE"]嗯……如果你們想繼續探究的話，說不定要和我踏上一段更加危險的旅程哦。
+[decision(option1="它似乎還是“慟號”的來源？", value1="5.1")]
+[predicate(references="5.1")]
+[name="佩佩", avatarId="bavg_npc_001", isAvatarRight="FALSE"]我提醒你們，現在回去還來得及，下次追來的王酋軍可就不止那一點了。
+[decision(option1="我們不會輕易放棄。", value1="6.1")]
+[predicate(references="6.1")]
+[name="佩佩", avatarId="bavg_npc_001", isAvatarRight="FALSE"]唉，真是一點辦法都沒有，你們要是想一起就一起吧，到時候可不要後悔。
+[playanim(id="trap_471_tegmaus", anim="Special_End", looporidle="Idle", dir="RIGHT")]
+[delay(time="2")]
+[decision(option1="所以，計劃是什麼？", value1="7.1")]
+[predicate(references="7.1")]
+[name="佩佩", avatarId="bavg_npc_001", isAvatarRight="FALSE"]我和你們同行，一起去北邊的薩利瑪禁地。有了這兩半圓盤，就能打開那個地方了。
+[decision(option1="藏寶的地方？", value1="8.1")]
+[predicate(references="8.1")]
+[name="佩佩", avatarId="bavg_npc_001", isAvatarRight="FALSE"]確實，裡面的東西非常珍貴。
+[decision(option1="那王酋軍也會很期待。", value1="9.1")]
+[predicate(references="9.1")]
+[name="佩佩", avatarId="bavg_npc_001", isAvatarRight="FALSE"]是啊，所以我們還是早點出發吧，免得被王酋軍發現了。
+[withdraw(id="trap_471_tegmaus")]
+[delay(time="3")]
+[fognotinview(id="fog_1")]
+[resetcamera(time="1")]
+[save]
+[end]

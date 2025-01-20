@@ -1,0 +1,77 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="47_g30_oasis2",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[charslot]
+[name="年老的族長"]這是我第一次見到有人能擊退王酋的爪牙們，十分感謝你們。
+[charslot(slot="m",name="char_416_zumama_1#2",focus="m")]
+[name="森蚺"]雖然成功抵禦了這次攻擊，但我想王酋軍不會善罷甘休，營地裡的人手還不夠，我們需要更多的援助。
+[charslot]
+[name="年老的族長"]說起來，埃克盧穆伊綠洲的一個阿達克利斯部落曾與我們有過交往，他們或許可以提供幫助。
+[charslot(slot="m",name="char_416_zumama_1",focus="m")]
+[name="森蚺"]有他們的支持，我們將在接下來的戰鬥中獲得更大的優勢。
+[charslot(slot="m",name="char_416_zumama_1",focus="m")]
+[name="森蚺"]再者，他們長年生活在這裡，一定有更多關於寶藏的線索。
+[charslot(slot="m",name="char_416_zumama_1#4",focus="m")]
+[name="森蚺"]但到底是什麼樣的寶藏能吸引來這麼多的王酋軍？
+[charslot(slot="m",name="avg_402_tuye_1#8$1",focus="m")]
+[name="圖耶"]我們盤問過幾個王酋軍俘虜，他們也不瞭解“寶藏”到底是什麼。
+[charslot(slot="m",name="char_416_zumama_1#6",focus="m")]
+[name="森蚺"]這群人連“寶藏”是什麼都不知道？！
+[charslot(slot="m",name="avg_402_tuye_1#8$1",focus="m")]
+[name="圖耶"]嗯，幾個人還交代說，抓人也好，劫掠也好，都只是為了找“寶藏”，自己找不到就逼當地人找。
+[charslot(slot="m",name="char_416_zumama_1#4",focus="m")]
+[name="森蚺"]這手段還真是野蠻……現在王酋軍四處侵擾，那個部落是否還安好……誰也不清楚。
+[charslot]
+[name="年老的族長"]他們在綠洲裡建造了自己的神廟，找到神廟就能找到他們。
+[charslot(slot="m",name="avg_402_tuye_1#6$1",focus="m")]
+[name="圖耶"]但我還是覺得當務之急是將目前的狀況彙報給本艦，等待他們的支援。
+[charslot(slot="m",name="char_416_zumama_1",focus="m")]
+[name="森蚺"]放心，求援的信件我已經寄出，耐心等待援助的到來吧。
+[Dialog]
+[charslot]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background(image="bg_desert_1",screenadapt="coverall")]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_215_mantic_1#3$1",focus="m")]
+[name="獅蠍"]那個……這就是全部的支援物資了，也請您詳細核查這份清單。
+[Dialog]
+[charslot]
+[Decision(options="大家一路上辛苦了。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_402_tuye_1#5$1",focus="m")]
+[name="圖耶"]想不到本艦這次派了這麼多人來幫忙。
+[charslot(slot="m",name="avg_215_mantic_1#10$1",focus="m")]
+[name="獅蠍"]是……是啊，還有一位先生正在搬運行李，稍後就到……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="char_472_pasngr_n_1",focus="m",duration=2)]
+[delay(time=4)]
+[charslot(slot="m",name="char_472_pasngr_n_1",focus="r")]
+[Decision(options="哦，異客先生，原來是你。", values="1")]
+[Predicate(references="1")]
+[Decision(options="好久不見。", values="1")]
+[Predicate(references="1")]
+[Decision(options="辛苦走這一趟了。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="char_472_pasngr_n_1",focus="m")]
+[name="異客"]您太客氣了，能在此次外勤任務中幫助到您是我的榮幸。
+[charslot(slot="m",name="char_472_pasngr_n_1",focus="m")]
+[name="異客"]不過有件小事要和您提前說一下，這次前來，我還有一些私事需要處理，到時候請您允許我暫時離開。
+[Dialog]
+[charslot(slot="m",name="char_472_pasngr_n_1",focus="r")]
+[Decision(options="當然，沒有問題。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

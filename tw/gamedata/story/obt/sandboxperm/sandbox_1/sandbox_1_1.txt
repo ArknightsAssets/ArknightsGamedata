@@ -1,0 +1,124 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="47_g31_temple",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1200_1#1$1",focus="m",duration=1)]
+[delay(time=1)]
+[name="佩佩"]放心，那些傢伙是真的滾蛋了，不會跟著我們進來的。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1200_1#1$1",focus="r")]
+[Decision(options="我想他們也很難鑽進來。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1200_1#11$1",focus="m")]
+[name="佩佩"]雖然這些不斷生長的水晶擋住了入口，但也保證了裡面的陳設不被人破壞，能完整地保存下來。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1200_1#11$1",focus="r")]
+[Decision(options="現在你能給一個答案了嗎？", values="1")]
+[Predicate(references="1")]
+[Decision(options="它們到底是用來做什麼的？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1200_1#1$1",focus="m")]
+[name="佩佩"]接下來你們可得好好扶住自己的下巴，千萬別讓它掉下來。
+[Dialog]
+[charslot]
+[PlaySound(key="$b_char_rock")]
+[delay(time=2)]
+[PlaySound(key="$b_char_rock")]
+[delay(time=3)]
+女孩輕輕將兩半厚重的圓盤卡進古老見證所中央的祭壇上，每一塊凸起的形狀都剛好能與底盤上的某處凹陷對應。
+擺放完成後，女孩逆時針輕輕推動圓盤，幾乎沒費什麼力氣。
+只是這微小的力度，便足以讓圓盤飛速旋轉，你們甚至能從腳底感受到圓盤旋轉所帶動的地面顫動。
+[Dialog]
+[PlaySound(key="$d_avg_rockfall", volume=1)]
+[CameraShake(duration=2, xstrength=15, ystrength=15, vibrato=30, randomness=40, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[character]
+在沉寂多年後，這座見證所被重新賦予活力，清水漸漸盈滿水池，道道光芒在晶石中流竄，而你們腳下的顫動也越來越明顯。
+最終，顫動停止，所有的光線匯聚在水池正中，塑成一個高大的身影。
+[dialog]
+[Image(image="pic_sandbox_1_5", fadetime=1, xScale=1.2, yScale=1.2,x=-50,screenadapt="coverall")]
+[ImageTween(image="pic_sandbox_1_5",xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, xTo=0, yTo=0,screenadapt="coverall",duration=20,block=false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[delay(time=1.5)]
+[charslot]
+[name="光影中的聲音"]……你……來了。
+[Dialog]
+[name="佩佩"]吾主……
+[name="佩佩"]請您饒恕我對此清淨之地的冒犯。
+[charslot]
+[name="光影中的聲音"]你遵守約定，來到此地尋找我。
+[charslot]
+[name="光影中的聲音"]我亦會實踐諾言，將鑰匙藏於光陰之中。
+[charslot]
+[name="光影中的聲音"]它會指引你去往“那個地方”，其間珍奇我願悉數贈與你的後裔。
+[charslot]
+[name="光影中的聲音"]願我從時間盡頭的偶爾一眼，能在他們的臉上瞥見你的模樣。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[character]
+[Image]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+男人的身影淡去，光影變化，重新在池水中組成一片微縮的峽谷。
+短短數十秒，山川移形，河流易位，峽谷中的樹木快速生長復又枯萎，所有的一切都在光陰的蠶食中面目全非。
+[charslot(slot="m",name="avg_npc_1200_1#1$1",focus="m")]
+[name="佩佩"]抱歉，旅人，這次與你們結伴的旅程結束了，很高興能認識你們。如果有機會，希望能夠再與你們同行。
+[dialog]
+[charslot(slot="m",name="avg_npc_1200_1#1$1",focus="r")]
+[Decision(options="那本筆記……", values="1")]
+[Predicate(references="1")]
+[Decision(options="你是故意留在神殿裡的？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1200_1#8$1",focus="m")]
+[name="佩佩"]你們察覺到了？
+[charslot(slot="m",name="avg_npc_1200_1#1$1",focus="m")]
+[name="佩佩"]我聽那位聯絡員說，羅德島的人正在尋找擊敗王酋軍的辦法，他們中有些很聰明的傢伙，或許可以幫到我。
+[dialog]
+[charslot(slot="m",name="avg_npc_1200_1#1$1",focus="r")]
+[Decision(options="我們幫你找到了見證所。", values="1")]
+[Predicate(references="1")]
+[Decision(options="你的答謝又是什麼呢？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1200_1#1$1",focus="m")]
+[name="佩佩"]這是我的贈禮，將它帶給當地的信使，他會為你們帶來一些幫助。
+[dialog]
+[charslot(slot="m",name="avg_npc_1200_1#1$1",focus="r")]
+[Decision(options="你呢？還要留在這裡？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1200_1#2$1",focus="m")]
+[name="佩佩"]是的，我快要接近那個答案了，我得留在這裡繼續尋找。
+[dialog]
+[charslot(slot="m",name="avg_npc_1200_1#2$1",focus="r")]
+[Decision(options="圖像變化太快了。", values="1")]
+[Predicate(references="1")]
+[Decision(options="你很難在其中尋找訊息。", values="1")]
+[Predicate(references="1")]
+[Decision(options="這會讓你頭暈眼花。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1200_1#1$1",focus="m")]
+[name="佩佩"]我不會放棄的。
+[charslot(slot="m",name="avg_npc_1200_1#1$1",focus="m")]
+[name="佩佩"]這是我的執念，我與家族的執念。
+[charslot(slot="m",name="avg_npc_1200_1#1$1",focus="m")]
+[name="佩佩"]我甘願蹉跎。
+[dialog]
+[charslot(slot="m",name="avg_npc_1200_1#1$1",focus="r")]
+[Decision(options="祝你好運。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1200_1#5$1",focus="m")]
+[name="佩佩"]有緣再見。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

@@ -1,0 +1,42 @@
+[header(actId="sandbox_1", npcId="trap_466_tzumama")]
+[summontrap(x="7", y="4", charId="trap_466_tzumama", isChar="FALSE", dir="RIGHT")]
+[summontrap(x="9", y="4", charId="trap_467_ttuye", isChar="FALSE", dir="LEFT")]
+[camerafocusto(offsetX="8", offsetY="4", time="0.2", scale="MID")]
+[uioperation(target="main", item="", enable="False")]
+[camerafocusto(id="trap_466_tzumama", scale="CLOSE", time="1")]
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]終於，我們到了這個傳說中的“好地方”。
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]考慮到我們核心工作的特殊性，我們在正常的營地外又多收拾了一片空地出來，以後除了招待客人外……
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]物資調配，設備升級，倉庫管理也會集中在這裡……只要你有需要，之後也隨時可以來這裡找我。
+[camerafocusto(id="trap_467_ttuye", scale="CLOSE", time="1.5")]
+[playanim(id="trap_467_ttuye", anim="Special_Begin", looporidle="Special_Loop", dir="LEFT")]
+[name="圖耶", avatarId="char_402_tuye", isAvatarRight="TRUE"]既然祖瑪瑪選擇了在這裡維護營地正常運作，那麼探索周圍、收集資源的任務就交給我好了。
+[name="圖耶", avatarId="char_402_tuye", isAvatarRight="TRUE"]房車已經修整完畢，現在能夠適用於更加複雜的地形，只要備好燃料，我明天一早就能出發。
+[decision(option1="這麼快就要啟程？", value1="1.1")]
+[predicate(references="1.1")]
+[camerafocusto(id="trap_466_tzumama", scale="CLOSE", time="1.5")]
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]沒有辦法，我們路上耽擱了太久，倉庫裡的儲備已經見底了。
+[camerafocusto(id="trap_467_ttuye", scale="CLOSE", time="1.5")]
+[name="圖耶", avatarId="char_402_tuye", isAvatarRight="TRUE"]我之前在營地西側的拉布-阿拉契什圖雨林地帶進行了簡單的探索，情報稱其中有著很多資源。
+[name="圖耶", avatarId="char_402_tuye", isAvatarRight="TRUE"]這次探索我們會繼續深入，看看能不能帶回急需的物資。
+[camerafocusto(id="trap_466_tzumama", scale="CLOSE", time="1.5")]
+[playanim(id="trap_466_tzumama", anim="Attack", dir="RIGHT", looporidle="Idle")]
+[delay(time="1")]
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]對了，這張地圖給你們。如果想採伐到符合我們建造標準的木頭，你們會需要它的。
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]這可是我好不容易搞來的，千萬別丟了。
+[decision(option1="謝謝。", value1="2.1")]
+[predicate(references="2.1")]
+[additem(itemId="sandbox_1_craft_1", itemCount="1")]
+（你獲得了阿爾薩蘭林地分布圖，現在可以採伐木材了。）
+[camerafocusto(id="trap_467_ttuye", offsetX="-1", scale="MID", time="1")]
+[decision(option1="今天大家早點休息吧。", value1="3.1")]
+[predicate(references="3.1")]
+[decision(option1="明天還有很多要忙的。", value1="4.1")]
+[predicate(references="4.1")]
+[playanim(id="trap_467_ttuye", anim="Special_End", looporidle="Idle", dir="LEFT")]
+[delay(time="1")]
+[withdraw(id="trap_467_ttuye")]
+[withdraw(id="trap_466_tzumama")]
+[delay(time="1")]
+[resetcamera(time="1")]
+[save]
+[end]

@@ -1,0 +1,61 @@
+[header(actId="sandbox_1", npcId="trap_435_trsrhuntr")]
+[summontrap(charId="trap_467_ttuye", dir="LEFT", x="11", y="9", isChar="False")]
+[summontrap(charId="trap_435_trsrhuntr", dir="RIGHT", x="10", y="11", isChar="False")]
+[summonenemy(enemyId="enemy_7024_clking", x="9", y="11", endX="14", endY="6")]
+[summonenemy(enemyId="enemy_7025_clbb", x="8", y="11", endX="14", endY="6")]
+[camerafocusto(offsetX="10", offsetY="10", time="2", scale="FAR")]
+[foginview(leftBottomX="6", leftBottomY="7", rightUpX="14", rightUpY="12", id="fog_1")]
+[name="雜耍藝人", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]很好，你們成功獲得了那兩塊寶石，現在把它們交給我，快點！
+[decision(option1="得加錢。", value1="1.1")]
+[predicate(references="1.1")]
+[name="雜耍藝人", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]好啊，這個呢，這個你們要不要？交易所貴客憑證，這夠不夠？
+[additem(itemId="sandbox_1_craft_9", itemCount="1")]
+[name="尋寶人", avatarId="bavg_npc_003", isAvatarRight="FALSE"]千萬別這麼做，他們得到寶石後會將整個晶洞破壞殆盡的！
+[decision(option1="寶石你拿去，快點放了她。", value1="2.1")]
+[predicate(references="2.1")]
+[name="雜耍藝人", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]看這晶瑩剔透的模樣，等我們獻給王酋，他一定會重賞我們，說不定還能封我個官當當。
+[name="雜耍藝人助手", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]太好了，老闆，我們再也不用過那種四處逃竄的日子了。
+[name="圖耶", avatarId="char_402_tuye", isAvatarRight="TRUE"]（小聲）如果你們不到處禍害別人的話，也不用四處逃竄啊。
+[name="雜耍藝人", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]趁我心情好，趕緊帶著那女人滾吧，別留在這裡礙眼。
+[decision(option1="我們走吧。", value1="3.1")]
+[predicate(references="3.1")]
+[name="尋寶人", avatarId="bavg_npc_003", isAvatarRight="FALSE"]……謝謝你們。
+[decision(option1="至少我們救下了你。", value1="4.1")]
+[predicate(references="4.1")]
+[playanim(id="trap_467_ttuye", anim="Idle", dir="RIGHT")]
+[delay(time="0.5")]
+[withdraw(id="trap_467_ttuye")]
+[withdraw(id="trap_435_trsrhuntr")]
+[delay(time="3")]
+[camerafocusto(offsetX="9", offsetY="11", time="1", scale="MID")]
+[name="雜耍藝人", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]看看它們這美麗的小模樣，就像我即將發達的未來一樣燦爛。
+[name="雜耍藝人助手", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]老闆，讓我們也瞅瞅。
+[playanim(id="enemy_7024_clking", anim="Attack", dir="LEFT", looporidle="Idle")]
+[delay(time="1")]
+[name="雜耍藝人", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]拿好了，可千萬別摔著。
+[name="雜耍藝人助手", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]多漂亮啊……
+[summontrap(charId="trap_470_tmantic", dir="LEFT", x="10", y="11", isChar="False")]
+[executeactionarray(target="trap_470_tmantic", key="effect_mantic[hidden]")]
+[delay(time="0.5")]
+[name="？？？", avatarId="char_215_mantic", isAvatarRight="FALSE"]（……時機到了……）
+[name="？？？", avatarId="char_215_mantic", isAvatarRight="FALSE"]（就是現在！）
+[playanim(id="trap_470_tmantic", anim="Attack", dir="LEFT")]
+[delay(time="1")]
+（寶石碎裂聲）
+[name="雜耍藝人", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]我的寶石！混帳！你怎麼敢！！
+[name="雜耍藝人", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]不是讓你拿好嗎！
+[name="雜耍藝人助手", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]老闆，冤枉啊！
+[name="雜耍藝人助手", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]怎、怎麼回事，我什麼也沒幹啊，它、它就這麼碎在我手心裡了……
+[name="雜耍藝人", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]不，不！！！
+[uioperation(target="main", enable="False")]
+[withdraw(id="enemy_7024_clking")]
+[withdraw(id="enemy_7025_clbb")]
+[delay(time="3")]
+[name="？？？", avatarId="char_215_mantic", isAvatarRight="FALSE"]（任務完成。）
+[name="？？？", avatarId="char_215_mantic", isAvatarRight="FALSE"]（該離開了……）
+[withdraw(id="char_215_mantic")]
+[delay(time="3")]
+[fognotinview(id="fog_1")]
+[resetcamera(time="1")]
+[save]
+[end]

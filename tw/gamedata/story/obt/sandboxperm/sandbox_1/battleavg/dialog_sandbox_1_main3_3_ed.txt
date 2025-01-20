@@ -1,0 +1,35 @@
+[header(actId="sandbox_1", npcId="trap_471_tegmaus")]
+[summontrap(x="13", y="3", charId="trap_471_tegmaus", isChar="FALSE", dir="LEFT")]
+[summontrap(x="14", y="4", charId="trap_467_ttuye", isChar="FALSE", dir="LEFT")]
+[summonenemy(enemyId="enemy_7024_clking", x="10", y="4", endX="15", endY="3")]
+[move(enemyId="enemy_7024_clking", x="11", y="4")]
+[summonenemy(enemyId="enemy_7025_clbb", x="9", y="3", endX="15", endY="3")]
+[move(enemyId="enemy_7025_clbb", x="10", y="3")]
+[camerafocusto(offsetX="12", offsetY="4", time="2", scale="FAR")]
+[delay(time="1")]
+[foginview(leftBottomX="8", leftBottomY="2", rightUpX="15", rightUpY="7", id="fog_1")]
+[name="圖耶", avatarId="char_402_tuye", isAvatarRight="TRUE"]聽說你們在很多地方都進行過巡演，看台上台下這配合的熟練程度，應該是用這樣的方法偷了不少錢吧。
+[name="雜耍藝人", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]你們這些多管閒事的人真是煞風景，還是早點滾蛋吧。難道沒有人告訴你們，在別人的地盤上要謹慎行事嗎？
+[playanim(id="trap_471_tegmaus", anim="Attack", dir="LEFT")]
+[name="佩佩", avatarId="bavg_npc_001", isAvatarRight="TRUE"]你真的要在一半手下被打得鼻青臉腫的時候說狠話嗎？
+[name="雜耍藝人助手", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]（小聲）老闆，他們之間有很多厲害的，不宜戀戰，我們還是快走吧。
+[name="雜耍藝人", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]哼，勸你們別再往前了。幾天前，這裡來了一位到處亂走的女人。
+[decision(option1="又是來找寶藏的？", value1="1.1")]
+[predicate(references="1.1")]
+[name="雜耍藝人", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]嘿嘿，一些不老實的客人會遭遇什麼？不用我說，你們自己想想。
+[withdraw(id="enemy_7024_clking")]
+[name="雜耍藝人助手", avatarId="bavg_enemy_common", isAvatarRight="FALSE"]老闆，等等我！
+[withdraw(id="enemy_7025_clbb")]
+[name="圖耶", avatarId="char_402_tuye", isAvatarRight="FALSE"]到處亂走的女人？他們說的是誰？那位聯絡員拜託我們找的朋友？
+[playanim(id="trap_471_tegmaus", anim="Idle", dir="RIGHT")]
+[decision(option1="應該就是那個人。", value1="2.1")]
+[predicate(references="2.1")]
+[name="佩佩", avatarId="bavg_npc_001", isAvatarRight="FALSE"]不急，他們逃跑的方向和我們的目的地一致。
+[name="佩佩", avatarId="bavg_npc_001", isAvatarRight="FALSE"]我們遲早還會再遇到的。
+[withdraw(id="trap_471_tegmaus")]
+[withdraw(id="trap_467_ttuye")]
+[delay(time="3")]
+[fognotinview(id="fog_1")]
+[resetcamera(time="1")]
+[save]
+[end]

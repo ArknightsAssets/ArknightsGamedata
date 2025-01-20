@@ -1,0 +1,58 @@
+[HEADER(is_tutorial=true, is_skippable=false)] xb1教学关2
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.lockFunction(mask="BATTLE_STATUS")]
+[InputBlocker(blockInput=true)]
+[Delay(time=6)]
+[Battle.Pause]
+[Tutorial(dialogHead="$avatar_zumama")]伐木完成後還需要周圍的幹員背負起掉落的木材才能完成採集。
+[Tutorial(dialogHead="$avatar_zumama")]每位幹員能背負的資源數量取決於自身的<@tu.kw>阻擋數</>。
+[InputBlocker(blockInput=true, cardIndex=5, validWidth=112, validHeight=116)]
+[Battle.EnsureMinCost(cost=17)]
+[Tutorial(waitForSignal="put_down", dialogHead="$avatar_zumama", animStyle="Drag", \
+          startX=-611, startY=61, startAnchor="BottomRight", endAnchor="Center", endX=-110, endY=50)] \
+先把幹員部署在樹木周圍，伐木的同時為搬運木材做準備吧。
+[InputBlocker(blockInput=true)]
+[Delay(time=0.5)]
+[InputBlocker(blockInput=true, tileY=3, tileX=2, validWidth=169, validHeight=153)]
+[Tutorial(waitForSignal="select_direction", dialogHead="$avatar_zumama", animStyle="Drag", \
+          startX=-12, startY=47, endX=-14, endY=230)] \
+<@tu.kw>向上</>部署！
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Delay(time=9)]
+[Battle.Pause]
+[Tutorial(focusX=-46, focusY=136, focusWidth=94, focusHeight=82, anchor="Center",\
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_zumama", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+伐木完成後，在樹木周圍的幹員將會自動背負起木材。
+[Tutorial(protectTime=0.5, dialogHead="$avatar_zumama", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+只要背負起了資源，幹員無論是撤退還是被擊倒，資源都會被成功搬運回來。
+[Tutorial(protectTime=0.5, dialogHead="$avatar_zumama", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+另外，在戰鬥結束時，在場的所有幹員背負的資源也會被統一收集起來。
+[Tutorial(protectTime=0.5, dialogHead="$avatar_zumama", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+現在，試著撤回已經背負了木材的幹員。
+[SandboxBattle.LockCamera(enable=false)] 
+[InputBlocker(blockInput=true, tileY=3, tileX=2, validWidth=40, validHeight=40)]
+[Tutorial(protectTime=0.5, tileY=3, tileX=2, waitForSignal="char_info", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", focusWidth=100, focusHeight=100,)]
+[SandboxBattle.LockCamera(enable=true)] 
+[Delay(time=0.5)]
+[InputBlocker(blockInput=true, validX=-77, validY=142, validWidth=96, validHeight=73)]
+[Tutorial(focusX=-77, focusY=142, focusWidth=96, focusHeight=73, waitForSignal="withdraw", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black")] 
+[InputBlocker(blockInput=true)]
+[Tutorial(protectTime=0.5, dialogHead="$avatar_zumama")]這樣一來就成功採集到木材了。
+[Tutorial(protectTime=0.5, dialogHead="$avatar_zumama")]每個資源點都有一定量的資源，直到全部採集完畢，資源點才會消失。
+[Tutorial(focusX=-14, focusY=-34, focusWidth=255, focusHeight=49, anchor="Top", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_zumama", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+在野外不宜長時間作戰，你們應當抓緊時間，盡量多採集木材。
+[Battle.Pause(pause=false)]
+[SandboxBattle.CameraFocusTo(offsetY=4, offsetX=13, time=2)]
+[Delay(time=2)]
+[Battle.Pause]
+[Tutorial(protectTime=0.5, dialogHead="$avatar_zumama", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+……總會有意想不到的來訪者來打擾我們的工作。
+[Tutorial(protectTime=0.5, dialogHead="$avatar_zumama", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+你們繼續採集木材，敵人就交給我吧。
+[Battle.Pause(pause=false)]

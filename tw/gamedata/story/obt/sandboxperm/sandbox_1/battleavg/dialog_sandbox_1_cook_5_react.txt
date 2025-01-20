@@ -1,0 +1,28 @@
+[header(actId="sandbox_1", npcId="")] 
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]你又端來了什麼？
+[decision(option1="我保證它足夠好吃。", value1="1.1", option2="沒有，只是路過。", value2="1.2")]
+[predicate(references="1.1", selectableCondition="c0")]
+[additem(itemId="sandbox_1_craft_17", itemCount="-1")]
+（你提交了“森蚺”牌高壓復焗濃湯）
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]哼，我才不信……
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]嗯……？
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]咦……？
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]嘶……
+[decision(option1="你這是什麼表情？", value1="2.1")]
+[predicate(references="2.1")]
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]這不是你自己做的吧？和上次不一樣哦！
+[decision(option1="沒錯，感謝森蚺小姐。", value1="3.1")]
+[predicate(references="3.1")]
+[decision(option1="她負責了最關鍵的步驟。", value1="4.1")]
+[predicate(references="4.1")]
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]嗯……不錯，還以為那女孩早把我忘到腦袋後面了。
+[decision(option1="所以這道菜你還滿意嗎？", value1="5.1")]
+[predicate(references="5.1")]
+[name="大祭司", avatarId="bavg_npc_002", isAvatarRight="FALSE"]我不跟你說，讓那女孩自己來問我。
+[additem(itemId="sandbox_1_condiment", itemCount="3")]
+[withdraw(id="trap_468_tpriest", withoutAnim="FALSE")]
+[save]
+[end]
+[predicate(references="1.2")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_1_craft_17", value="1")]

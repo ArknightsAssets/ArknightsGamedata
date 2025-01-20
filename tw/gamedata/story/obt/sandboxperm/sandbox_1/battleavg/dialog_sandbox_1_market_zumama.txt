@@ -1,0 +1,30 @@
+[header(actId="sandbox_1", npcId="")] 
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]我們建立了初步的資訊偵察機制，這裡的基本資訊和王酋軍的動向我都一清二楚。有什麼問題你們儘管問。
+[decision(option1="想瞭解這裡的區域劃分。", value1="1.1", option2="我們是來感謝你的付出的。", value2="1.2", option3="今天這裡和往日不太一樣。", value3="1.3", option4="謝謝，我們有其他事要做。", value4="1.4")]
+[predicate(references="1.1")]
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]舒巴特-阿爾薩蘭地區大致分為五個區域。西側為拉布-阿拉契什圖雨林，又稱黃綠茂林，有著相當豐富的基礎資源和適宜的生態環境，很適合作為探索的起點。
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]往南走是鹽河荒灘，據說有著相當豐富的石材，和雨林地區相連。
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]東部似乎是綠洲，據說分布著大量的鐵礦，但如何進入是一個問題。
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]至於西北地區，傳聞那裡充滿了危險，更多的資訊有待進一步探討。
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]目前我們還沒有對北方的修驗環廊進行探索，一旦有更新的資訊我會立刻和你們分享。
+[end]
+[predicate(references="1.2", visibleCondition="c0&&!c5")]
+[decision(option1="這是我們採的<color=#d8d769>木屑菌</color>。", value1="2.1")]
+[predicate(references="2.1")]
+[additem(itemId="sandbox_1_mushroom", itemCount="-1")]
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]謝謝你們的禮物，不過我得繼續工作了。
+[addfavor(trapId="trap_466_tzumama", val="10")]
+[end]
+[predicate(references="1.3", visibleCondition="c1&&!c4")]
+[decision(option1="似乎多了一點什麼？", value1="3.1")]
+[predicate(references="3.1")]
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]被發現了。這次輪到我送你們禮物啦。
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]這是我的<color=#d8d769>密林作戰斧</color>，希望它能幫助你們。
+[additem(itemId="sandbox_1_craft_14", itemCount="1")]
+[end]
+[predicate(references="1.4")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_1_mushroom", value="1")]
+[condition(references="c5", key="checkfavor", trapId="trap_466_tzumama", val="50", containsEq=1)]
+[condition(references="c1", key="checkfavor", trapId="trap_466_tzumama", val="50", containsEq=1)]
+[condition(references="c4", key="itemGE", itemId="sandbox_1_craft_14", value="1")]
