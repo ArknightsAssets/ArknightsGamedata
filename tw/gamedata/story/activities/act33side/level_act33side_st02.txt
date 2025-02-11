@@ -1,0 +1,684 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[charslot(slot = "left", name = "avg_npc_1360_1#1$1",duration = 1.5,bstart=0.1,bend=0.4)]
+[charslot(slot = "right", name = "avg_npc_083",duration = 1.5)]
+[delay(time=2.5)]
+[charslot(slot = "right",focus="r")]
+[name="普瑞賽斯"]我為你準備了一份禮物，{@nickname}。
+[name="普瑞賽斯"]你聽到了什麼？
+[charslot(slot = "l",focus="l")]
+[name="？？？"]這是……
+[charslot(slot = "right",focus="r")]
+[name="普瑞賽斯"]還記得嗎？這是AMa-10誕生時產生的偏振，你說你在它的波形中找到了一段旋律。當然，我也加入了一些“個人創作”。
+[name="普瑞賽斯"]我調整了遠行星軌道陣列的方向來捕獲不同的迴響，和聲提取自恒星熄滅時的中微子餘韻，配器是航船穿過星門時留下的重力褶皺。
+[name="普瑞賽斯"]啊……我就知道你會喜歡，{@nickname}。
+[charslot(slot = "l",focus="l")]
+[name="？？？"]宇宙的歌唱……哪怕在此時此刻依舊無比動人。
+[name="？？？"]但這樣做便打破了由我們親手制定的準則，普瑞賽斯。這些設施本應永遠運行在預設的軌跡裡。
+[charslot(slot = "right",focus="r")]
+[name="普瑞賽斯"]群星正在褪色。這個世界已經沒有準則了，不是嗎？
+[name="普瑞賽斯"]這裡很快也會安靜下來，就像我們從未來過一樣。
+[charslot(slot = "l",focus="l")]
+[name="？？？"]……
+[charslot(slot = "right",focus="r")]
+[name="普瑞賽斯"]陪我走走吧，在歸於寂靜前。
+[name="普瑞賽斯"]我希望……我們還會一起親眼看到這個世界的未來，{@nickname}。
+[PlaySound(key="$d_avg_signlntrfrnc", volume=0.8)]
+[bgeffect(name="$eb_signalInterference",layer=1)]
+[charslot]
+[dialog]
+[Delay(time=3)]
+[Sticker(id="st1", text="“會的……我會在那個世界等你。”", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_rhodescom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlayMusic(intro="$tech_intro", key="$tech_loop", volume=0.6)]
+[Delay(time=1)]
+[interlude(maskid = "ui_cutin_mask_horizon", style = 1, size = "1280, 100",offset = "0,0", channel = 2)]
+[interlude(channel = 2, type = 2, name = "bg_black", afrom = 0, ato = 1, aduration = 0.3,sfrom = "1.3,1.3", sto = "1.3,1.3", sduration = 0, block = false)]
+[Sticker(id="st1",  text="四年前", duration=1,x=300,y=325, alignment="center", size=24, delay=0, width=700,block="false")]
+[Sticker(id="st2", text="1090年夏" ,duration=1,x=300,y=365, alignment="center",size=24, delay=0, width=700)]
+[Sticker(id="st1", duration=1)]
+[Sticker(id="st2", duration=1)]
+[interlude(channel = 2, clear = true)]
+[Delay(time=1.5)]
+卡茲戴爾地區，巴別塔羅德島本艦
+[dialog]
+[charslot(slot="m",name="avg_npc_050",duration=1)]
+[delay(time=2)]
+[name="可露希爾"]呼！電力通道改造總算完成了，這下總能扛得住衝擊了吧？應該吧……
+[name="可露希爾"]凱爾希竟敢抓我連續工作四十八個小時……等這事情結束了，我一定在殿下面前狠狠告她的狀！
+[dialog]
+[playsound(key="$d_gen_transmissionget")]
+[CharacterCutin(widgetID="1", name="avg_npc_1311_1#1$1", style="cutin", fadestyle= "horiz_expand_center", fadetime=0.5, offsetx=-400, width=300, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "m", focus = "n")]
+[name="Scout"]確認進入本艦通訊範圍，訊號清晰。你藏起來的迷你基站很好用，可露希爾。
+[charslot(slot = "m", focus = "m")]
+[name="可露希爾"]那還用說！這可是連殿下都沒見過的好東西！
+[charslot(slot = "m", focus = "n")]
+[name="Scout"]殿下她們的“研究”結束了嗎？
+[charslot(slot = "m", focus = "m")]
+[name="可露希爾"]前幾次產生的能量湧動差點讓羅德島熄火，我還在加固艦船應對下一次衝擊。
+[name="可露希爾"]想要掩蓋本艦鬧出的動靜可費了我不少的心思，萬一被軍事委員會的探子抓住漏洞——
+[dialog]
+[playsound(key="$d_gen_transmissionget")]
+[CharacterCutin(widgetID="2", name="avg_4132_ascln_1#1$1", style="cutin", fadestyle= "horiz_expand_center", fadetime=0.5, offsetx=400, width=300, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "m", focus = "n")]
+[name="阿斯卡綸"]放心。我已經肅清了周圍所有目標，專心準備就行。
+[name="阿斯卡綸"]Scout，彙報。
+[name="Scout"]潛入任務已經完成，正在將情報傳回巴別塔。
+[name="阿斯卡綸"]城內情況呢？
+[name="Scout"]這幾年變化不大。天災不多，沒怎麼移動。
+[name="Scout"]說實話，我們現在的狀況很不樂觀，如果軍事委員會繼續擠壓我們的戰略空間——
+[name="阿斯卡綸"]相信殿下和凱爾希醫生吧。
+[name="Scout"]……也是。她們為今天的實驗準備了這麼長時間，就是為了能扭轉不利的局面。
+[charslot(slot = "m", focus = "m")]
+[name="可露希爾"]對了，Scout，你拿到我家裡保存的設備了嗎！
+[charslot(slot = "m", focus = "n")]
+[name="Scout"]已經交付信使運往巴別塔。
+[charslot(slot = "m", focus = "m")]
+[name="可露希爾"]太好了，有了凱爾希和我聯手製造的秘密武器，一定可以徹底拿下船上那個奇怪的控制系統。
+[charslot(slot = "m", focus = "n")]
+[name="阿斯卡綸"]我會接應信使，確認包裹安全後再送回本艦。
+[name="阿斯卡綸"]這段時間還在排查對失蹤工程師下手的暗樁，本艦的威脅還沒有完全清除。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[CharacterCutin(widgetID="2",fadetime=0)]
+[CharacterCutin(widgetID="1",fadetime=0)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_4131_odda_1#10$1",duration=1)]
+[delay(time=1.5)]
+[name="奧達"]可露希爾小姐，我按你說的拿了更多的材料過來，好重！
+[charslot(slot="m",name="avg_npc_050")]
+[name="可露希爾"]謝謝啦，奧達！唔，看上去我還能再給殿下和凱爾希做一些保險措施。
+[name="可露希爾"]再額外安裝一條備用線路吧，這次千萬不要再出意外了……
+[charslot(slot="m",name="avg_4131_odda_1#1$1")]
+[name="奧達"]還有哪裡需要我幫忙嗎，可露希爾小姐？
+[charslot(slot="m",name="avg_npc_050")]
+[name="可露希爾"]奧達，你也趕快和其他人一起撤離到安全區域去吧。下一波衝擊……預計在三十分鐘之後發生。
+[dialog]
+[charslot(slot="m",name="avg_4131_odda_1#1$1")]
+[delay(time=0.5)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=1.5)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_050")]
+[name="可露希爾"]現在一切就緒了。
+[name="可露希爾"]唔，有點好奇呢……凱爾希和殿下對能源模組和防禦模組的秘密改造，還有那些奇奇怪怪的調查，到底是為了什麼神秘的實驗啊？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_abyss_1",screenadapt="coverall", xScale=1.08, yScale=1.08)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "left", name = "avg_003_kalts_1#11$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1296_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_003_kalts_1#11$1",focus="l")]
+[name="凱爾希"]他是對源石最了解的人。
+[charslot(slot = "right", name = "avg_npc_1296_1#8$1",focus="r")]
+[name="特蕾西婭"]……
+[charslot(slot = "left", name = "avg_003_kalts_1#11$1",focus="l")]
+[name="凱爾希"]如果需要解決因源石而誕生的苦難……
+[name="凱爾希"]他是最合適的人選。
+[charslot(slot = "right", name = "avg_npc_1296_1#8$1",focus="r")]
+[name="特蕾西婭"]我不得不說，你總是能帶來一些連魔王都不敢輕易相信的事情……
+[charslot(slot = "right", name = "avg_npc_1296_1#10$1",focus="r")]
+[name="特蕾西婭"]那些裝置真的還能運作嗎……你依然對他的甦醒抱有信心？
+[name="特蕾西婭"]泰拉的絕大多數生命形式都不可能抵抗如此漫長時間跨度的侵蝕。
+[charslot(slot = "left", name = "avg_003_kalts_1#3$1",focus="l")]
+[name="凱爾希"]……
+[charslot(slot = "left", name = "avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]現在的泰拉無疑是個奇蹟。你也是，特蕾西婭。
+[name="凱爾希"]但過去在他們的眼裡，圍繞著太陽運作的整個星系，都渺小無比。
+[charslot(slot = "right", name = "avg_npc_1296_1#8$1",focus="r")]
+[name="特蕾西婭"]……你現在有點緊張喔。還有一些焦慮和不安。
+[name="特蕾西婭"]你還有什麼要擔心的事情嗎？
+[charslot(slot = "left", name = "avg_003_kalts_1#14$1",focus="l")]
+[name="凱爾希"]……有。
+[name="凱爾希"]但我……不能說。
+[charslot(slot = "right", name = "avg_npc_1296_1#7$1",focus="r")]
+[name="特蕾西婭"]沒關係！抱歉，我不該讓你分心的，專注些。我感受得到。
+[charslot(slot = "right", name = "avg_npc_1296_1#8$1",focus="r")]
+[name="特蕾西婭"]……
+[name="特蕾西婭"]“凱爾希”……你愛著這個名字吧。
+[charslot(slot = "left", name = "avg_003_kalts_1#3$1",focus="l")]
+[name="凱爾希"]……
+[charslot(slot = "left", name = "avg_003_kalts_1#2$1",focus="l")]
+[name="凱爾希"]我……幾乎已經忘記了那段歲月的其他所有。
+[charslot(slot = "left", name = "avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]但我唯獨記得，在那麼遠那麼遠的過去，有個人，將這個名字送給了我——
+[name="凱爾希"]“凱爾希”。
+[name="凱爾希"]那是我們最後一次見面。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[image(image="49_i06_1",screenadapt="coverall")]
+[Sticker(id="st1", text="“凱爾希……我時間不多了。", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,block = true,duration=0.5)]
+[Sticker(id="st1",duration=0.5)]
+[Delay(time=0.6)]
+[Sticker(id="st1", text="“去尋找生命的痕跡，去尋找希望與未來。", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,block = true,duration=0.5)]
+[Sticker(id="st1",duration=0.5)]
+[Delay(time=0.6)]
+[Sticker(id="st1", text="“凱爾希……自己去得出答案吧。", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,block = true,duration=0.5)]
+[Sticker(id="st1",duration=0.5)]
+[Delay(time=0.6)]
+[Sticker(id="st1", text="“去找到你自己。”", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,block = true,duration=0.5)]
+[Sticker(id="st1",duration=0.5)]
+[Delay(time=1.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="特蕾西婭"]那又何必再猶豫呢，凱爾希。
+[name="凱爾希"]我知道，只是……
+[name="凱爾希"]……我始終有一個預感……擔憂，或者說推測。
+[name="凱爾希"]在大地的起點，生命方才開始萌芽的某個時間點，這裡，發生了一些永遠無法扭轉的事情。
+[name="凱爾希"]我卻不得而知。
+[name="特蕾西婭"]如果是連凱爾希醫生都能交付信任的人，我倒是完全不擔心。
+[name="特蕾西婭"]況且，按照凱爾希醫生謹慎的個性，早就安排好的應對措施從來都不必讓我操心。
+[name="凱爾希"]很遺憾，特蕾西婭。
+[name="凱爾希"]唯獨在這件事上，無論做了多少緊急備案，我都沒有確鑿的把握。
+[name="凱爾希"]……特蕾西婭，我無法保證自己永遠能做出最理性的選擇。
+[name="凱爾希"]而這次……我想去相信。
+[name="特蕾西婭"]那就做你想做的吧，我就在這裡，陪著你。
+[stopmusic(fadetime=2)]
+凱爾希的手已經觸摸到了這扇沉寂了不知多少歲月的門。
+羅德島迎來了新一輪的震動。
+[CameraShake(duration=2, xstrength=3, ystrength=5, vibrato=50, randomness=90, fadeout=true, block=false)]
+門，鬆動了。
+[dialog]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="“源石會成為我們文明凝結而成的信標……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“如有一天，寰宇中的其他生命形式重臨死去的家園，求索破局之法，", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“他們會見證……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“我們輝煌過，", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“我們抵抗過，", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“我們安眠於此。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“我們也曾於湮滅之前遞與後來者贈禮——", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“——希望。”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[image(image="49_i06_1",screenadapt="coverall")]
+[imgeffect(name="$ib_gateopen", image="49_i06_2")]
+[Dialog]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_gateopen", volume=1)]
+[Delay(time=2)]
+[image(image="49_i06_2",screenadapt="coverall",fadetime=5)]
+[Delay(time=2)]
+[PlayMusic(intro="$lab_intro", key="$lab_loop", volume=0.6)]
+[Delay(time=2)]
+[name="？？？"]（未知語言）這裡……
+[name="？？？"]（未知語言）時間……已經……到了嗎？
+[playsound(key="$d_avg_labamb", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=2)]
+[dialog]
+[Delay(time=2)]
+[PlaySound(key="$alarmenter", volume=0.8)]
+[Blocker(a=0.3, r=1,g=0.2,b=0.2, fadetime=0.7, block=true)]
+[Blocker(a=0, r=1,g=0.2,b=0.2, fadetime=0.7, block=true)]
+警告：未知能源啟動。
+[dialog]
+[PlaySound(key="$alarmenter", volume=0.8)]
+[Blocker(a=0.3, r=1,g=0.2,b=0.2, fadetime=0.7, block=true)]
+[Blocker(a=0, r=1,g=0.2,b=0.2, fadetime=0.7, block=true)]
+警告：PRTS系統權限讀取中……
+[dialog]
+[PlaySound(key="$alarmenter", volume=0.8)]
+[Blocker(a=0.3, r=1,g=0.2,b=0.2, fadetime=0.7, block=true)]
+[Blocker(a=0, r=1,g=0.2,b=0.2, fadetime=0.7, block=true)]
+警告：PRTS系統權限讀——
+PRTS系統權限已重置。管理員權限已確認。
+通訊模組全頻段開啟，通訊接收模組超頻完成。
+[PlaySound(key="$d_avg_scan")] 
+檢索：保存者……無訊號。
+檢索：深藍之樹……無訊號。
+檢索：天堂支點……無訊號。
+檢索：（未知雜音）……無訊號。
+……
+檢索已完成，全頻段無訊號。
+是否重試——
+[name="？？？"]（未知語言）沒有……回應……
+[name="？？？"]（未知語言）只有……我……
+[name="？？？"]（未知語言）時間……過了多久？
+[PlaySound(key="$d_avg_scan")] 
+檢索程式記錄文件中……
+最新更新：四百七十五萬五千九百五十四天前。
+[name="？？？"]……
+檢測到生命徵象數據劇烈異常。自動載入修復模組。
+修復中——
+[name="？？？"]（未知語言）我……醒來太早……還是……太晚？
+[name="？？？"]（未知語言）源石……處在哪個階段？
+[PlaySound(key="$d_avg_scan")] 
+檢索源石檢測歷史資料……無回應。
+[StopSound(channel="bgs", fadetime=2)]
+源石檢測模組已離線。
+[name="？？？"]……
+[name="？？？"]（未知語言）“泰拉”……
+[name="？？？"]（未知語言）為什麼儲存……如此之多的……冗餘資訊……
+[name="？？？"]（未知語言）這……未記錄在數據庫……新的語言？
+[name="？？？"]（未知語言）文明……已經……誕生……？
+[name="？？？"]（未知語言）只……剩……我自己……她呢，普瑞賽斯，我的……
+[name="凱爾希"]（未知語言）我可以回答你的困惑。那些資料，是我先前儲存在PRTS中的。
+[name="？？？"]（未知語言）……你？
+停留於過去之人的眼中閃過了一絲陌生，一絲疑惑，還有……一絲警惕。
+凱爾希敏銳地捕捉到了石棺中人的眼神。
+而特蕾西婭捕捉到了凱爾希的緊張。
+[name="？？？"]（未知語言）等等……
+[name="？？？"]……
+[name="？？？"]……
+[name="？？？"]（未知語言）雖然你變了許多……
+[name="凱爾希"]……
+剛剛甦醒的人好似在石棺中做了一個短短的夢。
+入夢前與自己告別的生命，在夢醒時刻依舊守候在自己的身旁。
+[name="？？？"]（未知語言）……你沒有離開。
+[name="凱爾希"]（未知語言）不……自從離開這裡，到如今我重新站在你的面前——
+[name="凱爾希"]（未知語言）我已經漫步了萬餘年光陰。
+[name="凱爾希"]（未知語言）不過，我依舊未曾忘記你留給我的問題——
+凱爾希等待著，忐忑著，她需要確定……
+確定她的希望未曾發生過什麼可怕的變化。
+[name="？？？"]……
+[name="？？？"]（未知語言）那不是……問題，那是……我的期盼……
+[name="？？？"]（未知語言）那你……已經尋找到自己生命的意義了嗎？
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="“凱爾希……”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[imgeffect]
+[Delay(time=1)]
+[image]
+[charslot(slot = "m", name = "avg_003_kalts_1#11$1")]
+[Background(image="bg_abyss_1",screenadapt="coverall", xScale=1.08, yScale=1.08)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlayMusic(intro="$warm_intro", key="$warm_loop", volume=0.6)]
+[Delay(time=1)]
+[name="凱爾希"]（未知語言）尋找生命延續的意義——這依舊是我需要在未來繼續踏上的道路。
+[name="凱爾希"]（未知語言）你還記得……
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1360_1#1$1",duration=1)]
+[delay(time=2)]
+[name="？？？"]（未知語言）我記得……於我而言，與你的告別彷彿仍在昨日，又像是遙遠到不切實際……
+[name="？？？"]（未知語言）但於你而言……
+[charslot(slot = "m", name = "avg_003_kalts_1#11$1")]
+[name="凱爾希"]（未知語言）我未曾有一刻忘記你為我做的努力。
+[name="凱爾希"]（未知語言）除了生命之外，你贈與了我另一件最為寶貴的東西——自由，Dr.{@nickname}。
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="？？？"]（未知語言）還是……稱呼我為博士吧，凱爾希。
+[name="博士"]（未知語言）先讓我……離開……
+[charslot(slot = "m", name = "avg_003_kalts_1#4$1")]
+[name="凱爾希"]（未知語言）你依舊很虛弱，我可以扶——
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="博士"]（未知語言）不必了……
+[name="博士"]（未知語言）凱爾希，我有……太多的困惑。
+[name="博士"]（未知語言）源石如何了……我沒有找到記錄。
+[charslot(slot = "m", name = "avg_003_kalts_1#5$1")]
+[name="凱爾希"]……
+[name="凱爾希"]（未知語言）源石依然在外面的大地上生長。
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="博士"]（未知語言）所以我醒得太早了。
+[charslot(slot = "m", name = "avg_003_kalts_1#9$1")]
+[name="凱爾希"]……
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="博士"]（未知語言）你吃了很多苦，凱爾希。
+[name="博士"]（未知語言）我從你的眼神裡已經能夠猜出來。你需要我的幫助？所以喚醒了我？
+[charslot(slot = "m", name = "avg_003_kalts_1#11$1")]
+[name="凱爾希"]（未知語言）是我們需要你的幫助。
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="博士"]（未知語言）喔。那位“惡魔”？
+[name="博士"]（未知語言）在你身後的那位朋友身上，我不光看到了源石以意料之外的形式存在……
+[name="博士"]（未知語言）她還擁有……嗯，“文明的存續”。
+[charslot(slot = "m", name = "avg_003_kalts_1#4$1")]
+[name="凱爾希"]（未知語言）如今文明發展的軌跡很……複雜。
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="博士"]（未知語言）名字，他們的文明中是否也存在類似指代其存在的稱呼？
+[charslot(slot = "m", name = "avg_003_kalts_1#11$1")]
+[name="凱爾希"]特蕾西婭。
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="博士"]特……蕾……西……婭……
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=1)]
+醒來的人走到了特蕾西婭的面前，平伸出了自己的雙手，露出掌心。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[image(image="49_i21_1",screenadapt="coverall")]
+[ImageTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.1, yScaleTo=1.1, duration=30, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+特蕾西婭伸出了自己的手，她輕捧起了來自過去之人的雙手。
+博士感受到了暖意。
+[name="特蕾西婭"]是的，特蕾西婭。
+兩個文明的觸碰，特蕾西婭卻從來自過去之人的眼中看到了憂傷。
+特蕾西婭從眼前之人的手中，感受不到溫度。
+[name="博士"]源石……與……你……一體。
+[name="特蕾西婭"]……你了解我們的語言？
+[name="博士"]我從……記錄……中……學習。不是……難事。
+[name="特蕾西婭"]不可思議！我還想學習你們的語言，凱爾希說——
+[name="博士"]我的世界……已經失落。屬於過往的語言……應該留在過往的時間中。
+[name="博士"]我……對你們感到好奇。你發現……甚至進入了“文明的存續”。
+[name="博士"]我想……向你……請教——
+[name="博士"]關於你們文明的，一切。
+[name="博士"]如此，我才能找到屬於我……過去世界的蛛絲馬跡。
+[name="特蕾西婭"]……我知道了。
+[name="特蕾西婭"]唔，“博士”，是這麼說吧。請原諒我的冒犯，不要放開我的手。
+[name="特蕾西婭"]我會向你展示——
+博士情不自禁地被這位形似惡魔的生靈的雙眼所吸引。
+在惡魔的眼中，失去自己世界的人看到了——
+[stopmusic(fadetime=2)]
+生命。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[image]
+[Background(image="45_g10_iceonlake",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlayMusic(key="$calm_loop", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1296_1#1$1",duration=1)]
+[delay(time=2)]
+[name="特蕾西婭"]文明自生物的本能中孕育，優勝劣汰。
+[name="特蕾西婭"]強者捕食弱者，生存的循環由此而生。
+[dialog]
+[charslot]
+[playsound(key="$d_avg_pcknmgrwl")]
+[delay(time=1)]
+[name="馱獸"]（虛弱的哀鳴）
+[CameraShake(duration=0.5,xstrength=10, ystrength=5, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_watersubcreate")]
+落入冰面之下的馱獸，用自己的頭顱將一隻幼崽從水中頂起，送上冰面。
+小馱獸在冰面上蹣跚著，走向了遠處準備好誘餌等待著的獵人。
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_284_1#1$1",duration=0.5)]
+[delay(time=0.7)]
+[name="謝拉格獵人"]它過來了，準備好。
+[charslot]
+[dialog]
+[CameraShake(duration=0.5,xstrength=20, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_clothmovement")]
+[delay(time=1)]
+獵人在冰面碎裂之前抓住了饑餓的小馱獸。
+[charslot(slot="m",name="avg_npc_284_1#1$1")]
+[name="謝拉格獵人"]幸好，我們至少救下了一個。
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1296_1#8$1",duration=1)]
+[delay(time=2)]
+[name="特蕾西婭"]叛逆。違背生存本能的叛逆才是我們文明進化的契機。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[Background(image="bg_desert_3",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="特蕾西婭"]而好奇心，以燃燒生命為代價的好奇心才是我們文明前行的階梯。
+[dialog]
+[charslot]
+追尋流星的拓荒者，背負著同伴的屍體繼續向前挪行。
+[dialog]
+[charslot(slot="m",name="avg_npc_534_1#1$1",duration=1)]
+[delay(time=2)]
+[name="疲憊的拓荒者"]呼……呼……*哥倫比亞粗口*，為什麼你就不能多堅持一天！
+[name="疲憊的拓荒者"]明明報紙上都說了那是萊特夫婦失事的飛行器，不是流星，你還不死心一定要看個究竟！
+[name="疲憊的拓荒者"]不過是從天空墜下的失敗者，到底有什麼值得你拿命去拼？
+[name="疲憊的拓荒者"]那些墜到大地上的石頭嗎？你到底想向我證明什麼？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1296_1#8$1")]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="特蕾西婭"]我也曾在黑王冠中見過太陽被吞噬，黑暗徹底籠罩整片大地。
+[name="特蕾西婭"]但即使是最為絕望的時刻，也依舊有人試圖點亮光明。
+[dialog]
+[charslot]
+[charslot(slot = "left", name = "avg_npc_071",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_070",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_npc_071",focus="l")]
+[name="好奇的阿達克利斯人"]還是黑的！太陽真的死了！
+[charslot(slot = "right", name = "avg_npc_070",focus="r")]
+[name="大膽的阿達克利斯人"]唉，太陽死的時間也太長了……我們得搶救它！要是太陽活不過來，那我們尾巴的粗細豈不是爭不出個結果？
+[charslot(slot = "left", name = "avg_npc_071",focus="l")]
+[name="好奇的阿達克利斯人"]怎麼救？
+[charslot(slot = "right", name = "avg_npc_070",focus="r")]
+[name="大膽的阿達克利斯人"]爬到最高的山上，舉著火把點燃它。
+[charslot(slot = "left", name = "avg_npc_071",focus="l")]
+[name="好奇的阿達克利斯人"]要是手舉累了怎麼辦？
+[charslot(slot = "right", name = "avg_npc_070",focus="r")]
+[name="大膽的阿達克利斯人"]嗯……那就建一個我的雕像，讓我的雕像替我舉著火把。
+[charslot(slot = "left", name = "avg_npc_071",focus="l")]
+[name="好奇的阿達克利斯人"]好主意！旁邊還可以再建一個我的雕像舉另一個火把，要是你的火把熄滅了，我的火把就能再點燃你的火把。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1296_1#8$1")]
+[Background(image="49_g5_furnaceplatform",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlayMusic(intro="$newhope01_intro", key="$newhope01_loop", volume=0.6)]
+[Delay(time=1)]
+[name="特蕾西婭"]燃燒帶來光明，光明引導我們走向希望。
+[name="特蕾西婭"]而我的同胞們，也將死亡視作希望的另一種詮釋。
+[name="特蕾西婭"]當身體走向寂滅之後，在魂靈熔爐的火焰中與城市融為一體，是唯有值得尊敬之人才能享受的榮譽。
+[name="特蕾西婭"]他們會成為源石結晶生長出來，與卡茲戴爾融為一體。
+[name="特蕾西婭"]新生的幼童會在飄落的粉塵中成長，聆聽著眾魂的聲音繼續背負著苦難前行。
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1360_1#1$1",duration=1)]
+[delay(time=2)]
+[name="博士"]愚昧和進步混雜不清……循環往復，百轉千折……
+[name="博士"]多麼……美。
+[name="博士"]……多麼令人，懷念。
+[name="博士"]你們……泰拉似乎重新回到了正軌……步入啟蒙。
+[charslot(slot="m",name="avg_npc_1296_1#1$1")]
+[name="特蕾西婭"]何以定義“愚昧”？又如何證明“啟蒙”的進步？
+[name="特蕾西婭"]在我看來，這些都是我們文明的一部分。
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="博士"]但你引導我看到的……他們大多與你們的種族……大相徑庭。
+[charslot(slot="m",name="avg_npc_1296_1#3$1")]
+[name="特蕾西婭"]征服者和被征服者，在文明的演變中都已經被這片大地烙印上無法磨滅的痕跡……
+[charslot(slot="m",name="avg_npc_1296_1#1$1")]
+[name="特蕾西婭"]為了生存，我堅信最終所有的分歧都將被統一，所有的族群都將融為一體。
+[name="特蕾西婭"]在我所看向的未來，整片大地終將成為一個整體。
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="博士"]……振奮人心的信念……很了不起。
+[name="博士"]我能感覺到，你……熱愛這片大地。
+[name="博士"]不論歧視、戰爭或是災難……你所愛的都早已超脫了單一的個體或族群。
+[name="博士"]但當你……超越了你身處文明的極限時……沒有人能理解你的愛。
+[name="博士"]反而，他們……會憎惡你。
+[charslot(slot="m",name="avg_npc_1296_1#2$1")]
+[name="特蕾西婭"]……
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="博士"]那你是否清楚，走到你所期盼的未來……要經歷什麼？
+[charslot(slot="m",name="avg_npc_1296_1#8$1")]
+[name="特蕾西婭"]如果這是必經之路，我會欣然接受。
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="博士"]……特蕾西婭。一個泰拉人。
+[name="博士"]難怪凱爾希信任你。她不惜冒險喚醒我，也想要幫助你。
+[name="博士"]是啊。總有這樣的人，在每一個時代迎來終點的時刻，會試著力挽狂瀾。
+[name="博士"]但絕大多數時候，故事的結局並不美好。
+[charslot(slot="m",name="avg_npc_1296_1#3$1")]
+[name="特蕾西婭"]……
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="博士"]但我敬佩你，絕無虛言。
+[name="博士"]畢竟某種程度上，你與我所熟識的一些人極為相似。
+[name="博士"]我已經無法與他們重聚……
+[name="博士"]……
+[name="博士"]……也許我還需要些時間整理思緒。
+[name="博士"]但無妨。我想我應該……先聽聽你們的想法。
+[name="博士"]你們需要我做什麼？
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="bg_abyss_1",screenadapt="coverall", xScale=1.08, yScale=1.08)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[PlayMusic(intro="$warm_intro", key="$warm_loop", volume=0.6)]
+[charslot(slot = "left", name = "avg_003_kalts_1#4$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1360_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "avg_003_kalts_1#4$1",focus="l")]
+[name="凱爾希"]博士。你需要休息。
+[charslot(slot = "right",focus="r")]
+[name="博士"]沒關係。
+[name="博士"]凱爾希，她真的帶給我很多的驚喜，也留給我更多的困難。
+[name="博士"]抱歉……是“困惑”。
+[name="博士"]我對薩卡茲的語言，還沒有完全熟悉。
+[name="博士"]她讓我看到很多意料之外的東西。你也……從她身上看到了許多吧。
+[charslot(slot = "left", name = "avg_003_kalts_1#11$1",focus="l")]
+[name="凱爾希"]我與她為敵，與她相識，理解她的願望，敬畏她的責任……
+[name="凱爾希"]那頂黑色的王冠與特蕾西婭分享了其所背負的悠久歷史與見聞，她也逐漸擁有了非他人所能企及的遠見。
+[name="凱爾希"]我想，也許這是最好的機會了，和她一起，和巴別塔一起，和泰拉一起。
+[charslot(slot = "right",focus="r")]
+[name="博士"]“和泰拉一起”。
+[name="博士"]你現在是屬於“這片大地”的凱爾希了。
+[charslot(slot = "left", name = "avg_003_kalts_1#11$1",focus="l")]
+[name="凱爾希"]我也希望你能同我們前行。
+[charslot(slot = "right",focus="r")]
+[name="博士"]嗯……
+[name="博士"]我很羡慕你，也相信你，凱爾希。
+[name="博士"]但我只是一個研究者，或許我能幫上的忙，並沒有你們所期盼的那麼多。
+[charslot]
+[charslot(slot="m",name="avg_npc_1296_1#1$1")]
+[name="特蕾西婭"]礦石病，天災，我們束手無策的災難給這片大地帶來了諸多苦難……而泰拉的科技幾乎完全建立在源石的基礎上。
+[name="特蕾西婭"]能源的爭奪、感染者歧視、戰爭和種族間的隔閡都在更進一步地撕扯這片土地……
+[charslot(slot="m",name="avg_npc_1296_1#6$1")]
+[name="特蕾西婭"]我們努力過，但是收效甚微……因為我們對源石一無所知。我們對這片大地一無所知。
+[name="特蕾西婭"]天空和海洋究竟發生了什麼？古老的遺跡究竟從何而來？我們……又是如何誕生？
+[charslot(slot="m",name="avg_npc_1296_1#1$1")]
+[name="特蕾西婭"]我們希望你能為我們找出一個答案。
+[charslot(slot = "m", name = "avg_npc_1360_1#1$1")]
+[name="博士"]……其中一部分，我想凱爾希已經與你分享過了。
+[name="博士"]而關於源石，很可惜，現在的我無法給出答案。至少不是全部。
+[name="博士"]我甦醒時試圖讀取源石進展的日誌，但很奇怪，一無所獲。
+[name="博士"]而你帶領我對泰拉的一瞥讓我產生了更多的困惑。
+[name="博士"]如今源石的發展……並不完全符合想像，我需要一些時間。
+[name="博士"]我需要自己去探索這片大地如今的樣貌，了解源石對文化、生命以及環境具體造成了何等的影響。
+[name="博士"]這或許會花上幾年，甚至更久……更何況，在耗費了龐大的精力後，你們也許會得到一個絕望的回答。
+[name="博士"]我曾向人許下承諾，現在看來，也許留給我，或是留給她的只有……遺憾。
+[name="博士"]所以我不會輕言許諾，凱爾希。請原諒……
+[charslot(slot = "m", name = "avg_003_kalts_1#13$1")]
+[name="凱爾希"]那麼，我們等你。
+[name="凱爾希"]無論你的回答是什麼，巴別塔會堅持到你歸來的那天，博士。
+[charslot(slot = "m", name = "avg_npc_1360_1#1$1")]
+[name="博士"]……謝謝。
+[name="博士"]那麼……抱歉……我感到了一點……饑餓。
+[name="博士"]我透過PRTS看到，本艦是有臨時餐廳的……
+[charslot(slot="m",name="avg_npc_1296_1#8$1")]
+[name="特蕾西婭"]確實有，不過可能有點雜亂，不如我帶你——
+[charslot(slot = "m", name = "avg_npc_1360_1#1$1")]
+[name="博士"]不了，謝謝，特蕾西婭。
+[name="博士"]這裡對我來說，也有著特別的意義。就讓我一個人……慢慢走過去吧。
+[charslot(slot="m",name="avg_npc_1296_1#8$1")]
+[name="特蕾西婭"]……好。請小心，博士。
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1360_1#1$1")]
+[charslot(duration=1)]
+[playsound(key="$d_gen_walk_n")]
+[delay(time=3)]
+[charslot(slot = "left", name = "avg_003_kalts_1#11$1",duration = 0.5)]
+[charslot(slot = "right", name = "avg_npc_1296_1#1$1",duration = 0.5)]
+[delay(time=1)]
+[charslot(slot = "right", name = "avg_npc_1296_1#1$1",focus="r")]
+[name="特蕾西婭"]……
+[charslot(slot = "left", name = "avg_003_kalts_1#11$1",focus="l")]
+[name="凱爾希"]甦醒的壓力不小，他的身體還沒有恢復到健全的狀態。但他適應得很快。比我想的快得多。
+[name="凱爾希"]他說想要學習關於泰拉的一切。
+[charslot(slot = "right", name = "avg_npc_1296_1#1$1",focus="r")]
+[name="特蕾西婭"]他學習的速度同樣很快。
+[name="特蕾西婭"]要是孩子們和博士一樣，也許他們有機會掌握更多的語言，去往大地的更多地方旅行呢。
+[charslot(slot = "left", name = "avg_003_kalts_1#11$1",focus="l")]
+[name="凱爾希"]特蕾西婭，你應該先回去找其他人，應該還有不少巴別塔的事務需要議長親自表態才能……
+[charslot(slot = "right", name = "avg_npc_1296_1#3$1",focus="r")]
+[name="特蕾西婭"]……
+[charslot(slot = "left", name = "avg_003_kalts_1#14$1",focus="l")]
+[name="凱爾希"]特蕾西婭？
+[charslot(slot = "right", name = "avg_npc_1296_1#1$1",focus="r")]
+[name="特蕾西婭"]……凱爾希，我在想一件事。可能是我多慮了，但我想告訴你。
+[name="特蕾西婭"]博士似乎對泰拉變成今天的模樣，深感意外。
+[charslot(slot = "left", name = "avg_003_kalts_1#14$1",focus="l")]
+[name="凱爾希"]……
+[charslot(slot = "right", name = "avg_npc_1296_1#1$1",focus="r")]
+[name="特蕾西婭"]你曾說，他是對源石最了解的人。博士也說過，源石的發展……“並不完全符合想像”。
+[charslot(slot = "right", name = "avg_npc_1296_1#10$1",focus="r")]
+[name="特蕾西婭"]那源石本該是什麼模樣？這片大地本該是什麼模樣？
+[name="特蕾西婭"]……薩卡茲本該是什麼模樣？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Background(image="bg_rhodescom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_1296_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_4132_ascln_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_npc_1296_1#1$1",focus="l")]
+[name="特蕾西婭"]博士已經準備好出發了？
+[charslot(slot = "right", name = "avg_4132_ascln_1#1$1",focus="r")]
+[name="阿斯卡綸"]是的。他申請了一輛載具，一些防身武器，其他什麼都沒帶。
+[name="阿斯卡綸"]他說自己能避開作戰區。
+[charslot(slot = "left", name = "avg_npc_1296_1#1$1",focus="l")]
+[name="特蕾西婭"]我知道了，按照博士的想法執行就好。
+[charslot(slot = "right", name = "avg_4132_ascln_1#3$1",focus="r")]
+[name="阿斯卡綸"]殿下，我想跟上他。他的來歷很……我不放心。
+[charslot(slot = "left", name = "avg_npc_1296_1#8$1",focus="l")]
+[name="特蕾西婭"]……阿斯卡綸，你離開過卡茲戴爾這片土地嗎？
+[charslot(slot = "right", name = "avg_4132_ascln_1#7$1",focus="r")]
+[name="阿斯卡綸"]離開？如果算上小時候追著獵物離開我們的活動範圍，我離開過。
+[charslot(slot = "left", name = "avg_npc_1296_1#8$1",focus="l")]
+[name="特蕾西婭"]那可並不算數。
+[name="特蕾西婭"]去吧，跟上博士。保護他，但不要打擾他。
+[charslot(slot = "right", name = "avg_4132_ascln_1#4$1",focus="r")]
+[name="阿斯卡綸"]我會監視好博士——
+[charslot(slot = "left", name = "avg_npc_1296_1#8$1",focus="l")]
+[name="特蕾西婭"]不，阿斯卡綸，放輕鬆點。我並不是想讓你監視他。
+[name="特蕾西婭"]我想讓你去看看家園之外的人如何生活，這是一個很好的機會。
+[charslot(slot = "right", name = "avg_4132_ascln_1#8$1",focus="r")]
+[name="阿斯卡綸"]生活？
+[charslot(slot = "left", name = "avg_npc_1296_1#8$1",focus="l")]
+[name="特蕾西婭"]在我們的家園之外，戰爭和苦難從不是生活常態。美食，服飾，藝術和文化……我們可以擁有很多。
+[charslot(slot = "right", name = "avg_4132_ascln_1#3$1",focus="r")]
+[name="阿斯卡綸"]……
+[charslot(slot = "left", name = "avg_npc_1296_1#8$1",focus="l")]
+[name="特蕾西婭"]我們中的許多人知道這一點，但更多的人選擇忽視這個事實。因為我們大多時候並沒有選擇的餘地。
+[charslot(slot = "right", name = "avg_4132_ascln_1#7$1",focus="r")]
+[name="阿斯卡綸"]……
+[charslot(slot = "left", name = "avg_npc_1296_1#8$1",focus="l")]
+[name="特蕾西婭"]阿斯卡綸，別露出這種表情，聽我說。
+[name="特蕾西婭"]最初你因為反對特雷西斯的舉措而跟隨我，那，這次分裂結束之後呢？
+[name="特蕾西婭"]你之後該做什麼？無數與你有同樣想法的薩卡茲們，下一站又在哪裡？
+[name="特蕾西婭"]所以離開戰爭、離開我們的家園去看看這片土地之外的景色，阿斯卡綸。
+[name="特蕾西婭"]去看看我們本應該擁有的生活。
+[charslot(slot = "right", name = "avg_4132_ascln_1#2$1",focus="r")]
+[name="阿斯卡綸"]……如果這是您的期望。
+[charslot(slot = "left", name = "avg_npc_1296_1#8$1",focus="l")]
+[name="特蕾西婭"]嗯！
+[name="特蕾西婭"]一路順風。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

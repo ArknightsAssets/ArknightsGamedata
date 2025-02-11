@@ -913,7 +913,7 @@
     "reMax": 100.0,
     "diamondToShdRate": 180,
     "requestSameFriendCD": 14400,
-    "baseMaxFriendNum": 15,
+    "baseMaxFriendNum": 65,
     "hardDiamondDrop": 1,
     "instFinDmdShdCost": 80,
     "easyCrystalBonus": 0,
@@ -1021,6 +1021,18 @@
         "lv.mhtx": "<color=#1B1B1B>{0}</color>",
         "lv.mhfs": "<color=#A57F5B>{0}</color>",
         "cc.miu": "<color=#8F7156>{0}</color>",
+        "ping.low": "<color=#7fa826>{0}</color>",
+        "ping.medium": "<color=#ec7a00>{0}</color>",
+        "ping.high": "<color=#ff3d3d>{0}</color>",
+        "match.success": "<color=#36BBCC>{0}</color>",
+        "map.normal": "<color=#36BBCC>{0}</color>",
+        "map.football": "<color=#36BBCC>{0}</color>",
+        "map.defence": "<color=#36BBCC>{0}</color>",
+        "milestone": "<color=#D4133C>{0}</color>",
+        "dm.award": "<color=#36BBCC>{0}</color>",
+        "dm.condition": "<color=#C9C9C9>{0}</color>",
+        "tutor": "<color=#36BBCC>{0}</color>",
+        "lv.muitem": "<color=#D4133C>{0}</color>",
         "ba.grt": "<color=#FFAB27>{0}</color>",
         "ba.exl": "<color=#14F0AF>{0}</color>",
         "ba.hrd": "<color=#DA2536>{0}</color>",
@@ -1270,6 +1282,11 @@
             "termName": "法術脆弱",
             "description": "受到的法術傷害提升相應比例（同名效果取最高）"
         },
+        "ba.elementfragile": {
+            "termId": "ba.elementfragile",
+            "termName": "元素脆弱",
+            "description": "受到的元素傷害提升相應比例（同名效果取最高）"
+        },
         "ba.dying": {
             "termId": "ba.dying",
             "termName": "重傷",
@@ -1455,6 +1472,11 @@
             "termName": "烏薩斯學生自治團",
             "description": "包含以下幹員\n早露、凜冬、真理、古米、烈夏"
         },
+        "cc.g.A1": {
+            "termId": "cc.g.A1",
+            "termName": "A1小隊",
+            "description": "包含以下幹員\n芙蓉、炎熔、米格魯、芬、克洛絲"
+        },
         "cc.g.R6": {
             "termId": "cc.g.R6",
             "termName": "虹彩小隊",
@@ -1558,7 +1580,7 @@
         "cc.c.sui2_1": {
             "termId": "cc.c.sui2_1",
             "termName": "特殊比較規則",
-            "description": "與控制中樞內其他幹員技能提供的<$cc.c.room2><@cc.kw>其他設施</></>每小時心情恢復值總和進行對比，取最高生效"
+            "description": "在<@cc.kw>公事公辦</>，<@cc.kw>孤光共照</>，<@cc.kw>巴別塔之幟</>提供的<$cc.c.room2><@cc.kw>其他設施</></>每小時心情恢復值中取最高生效"
         },
         "cc.m.pow1": {
             "termId": "cc.m.pow1",
@@ -1618,7 +1640,7 @@
         "cc.tag.op": {
             "termId": "cc.tag.op",
             "termName": "作業平台",
-            "description": "包含以下幹員\nLancet-2、Castle-3、THRM-EX、正義騎士號、Friston-3"
+            "description": "包含以下幹員\nLancet-2、Castle-3、THRM-EX、正義騎士號、Friston-3、PhonoR-0"
         },
         "cc.tag.knight": {
             "termId": "cc.tag.knight",
@@ -1642,8 +1664,8 @@
         }
     },
     "storyReviewUnlockItemLackTip": "事相碎片數量不足，請前往採購憑證區或活動期間商店獲取",
-    "dataVersion": "39.2.0",
-    "resPrefVersion": "47d0d0",
+    "dataVersion": "40.1.0",
+    "resPrefVersion": "49d0d0",
     "announceWebBusType": "ak_announcement",
     "defaultMinContinuousBattleTimes": 1,
     "defaultMaxContinuousBattleTimes": 6,
@@ -1713,7 +1735,8 @@
         "ritualist": "MAGICAL",
         "hunter": "PHYSICAL",
         "primcaster": "MAGICAL",
-        "loopshooter": "PHYSICAL"
+        "loopshooter": "PHYSICAL",
+        "hammer": "PHYSICAL"
     },
     "classicProtectChar": [
         "char_252_bibeak",
