@@ -1,0 +1,835 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="50_g16_scourgeswamp",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(key="$darkness_03_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=2)]
+行動開始後十三小時
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]情況正變得越來越糟。
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="m")]
+[name="凱爾希"]新生的峽谷，改道的河流……曾經供巨型城市通行的航道，已經被撕碎、重組，變成了無人能知曉全貌的樣子。
+[name="凱爾希"]曾經的地圖成了一張廢紙，每一條小徑都需要重新尋覓。
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]但“提卡茲之血”無疑就在這個方向，我與它之間的紐帶正在顫動。
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="m")]
+[name="凱爾希"]越靠近戰場中心，一切“訊息”與源石的結合率就越高。
+[name="凱爾希"]岩石，泥土，水源與生靈……在泰拉，源石的影響無處不在，可也許早沒有人能記起，它作用的根本機制是什麼。
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="none")]
+[Decision(options="凱爾希，你剛剛提到了“訊息”？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]……
+[name="凱爾希"]也許，你很快就會知道了，博士。
+[charslot(slot="m",name="avg_003_kalts_1#4$1",focus="m")]
+[name="凱爾希"]又或者……不，沒什麼。
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="m")]
+[name="凱爾希"]這一片還在蔓延的、被源石充分浸染的土地在客觀上確實有利於特雷西斯的軍事行動，維多利亞人的陣線幾乎被徹底摧毀。
+[name="凱爾希"]但如今這些源石活性化的程度遠非之前看似可怕的“天災打擊”可以相比。
+[name="凱爾希"]特雷西斯絕不可能僅僅為了一點點的戰術優勢，就選擇如此魯莽地利用源石，他知道這會帶來的後果。
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="none")]
+[Decision(options="聽起來我們這一路上會遇到很多困難。", values="1")]
+[Predicate(references="1")]
+[charslot]
+[PlaySound(key="$d_avg_mudtire_loop",channel="1")]
+[Delay(time=2.5)]
+[stopSound(channel="1")]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_394_1#13$1",focus="m")]
+[name="阿米婭"]那邊開過來一輛載具？
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]“停止”。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_magic_5")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[delay(time=1)]
+[PlaySound(key="$drift")]
+[Delay(time=1.5)]
+貨車跌跌撞撞地停了下來，從上面走下來幾個熟面孔。
+[Dialog]
+[PlaySound(key="$d_avg_cardoorc")]
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",duration="1.5")]
+[charslot(slot="l",name="avg_npc_054",posfrom="-200,0",posto="-200,0",duration="1.5")]
+[charslot(slot="r",name="avg_npc_932_1#1$1",posfrom="200,0",posto="200,0",duration="1.5")]
+[Delay(time=2)]
+[charslot(slot="r",name="avg_npc_932_1#1$1",posfrom="200,0",posto="200,0",focus="r")]
+[name="“老財”"]女妖老爺……還有，“魔王”大人。
+[charslot(slot="l",name="avg_npc_054",posfrom="-200,0",posto="-200,0",focus="l")]
+[name="“礦工”"]我就讓你別開這條路！這下徹底跑不掉了吧！
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="m")]
+[name="“司機”"]可他們又不是什麼壞人……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_394_1#1$1",focus="m")]
+[name="阿米婭"]你們……不是應該留在“生命脊椎”上嗎？
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_054",posfrom="-200,0",posto="-200,0",focus="r")]
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_932_1#1$1",posfrom="200,0",posto="200,0",focus="r")]
+[name="“老財”"]哎喲……我，我就坦白了吧……
+[name="“老財”"]女妖老爺，魔王殿下……我們實在是太害怕了，留在那個骨頭架子上，不知道還會碰上什麼事，我們就逃了出來……
+[name="“老財”"]我知道這是大罪！可是……我們也派不上用場，對吧？
+[name="“老財”"]求求您，別……別處決我們，我們願意挨鞭子！挨多少都行！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_394_1#11$1",focus="m")]
+[name="阿米婭"]……我不會處決你們，也從未打算過讓你們為我戰鬥。
+[charslot(slot="m",name="avg_npc_394_1#17$1",focus="m")]
+[name="阿米婭"]如果你們想要離開，就離開吧。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_054",posfrom="-200,0",posto="-200,0",focus="r")]
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_932_1#1$1",posfrom="200,0",posto="200,0",focus="r")]
+[name="“老財”"]謝謝您，謝謝您！果然，魔王殿下都是智慧又慈悲的——
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="m")]
+[name="“司機”"]可以讓我們和你們一起走嗎？
+[charslot(slot="r",name="avg_npc_932_1#1$1",posfrom="200,0",posto="200,0",focus="r")]
+[name="“老財”"]噓——別說啦！魔王殿下饒我們一命已經是大恩大德了，你還想怎麼樣？
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="m")]
+[name="“司機”"]別傻了老財，就靠我們三個，還有這輛破車，說不定就在哪被炸彈炸死了。
+[name="“司機”"]魔王殿下，懇請您，帶著我們離開這片戰場吧。我會獻上我的所有，只要您能讓這兩個傢伙活下來，我會……我會對您效忠。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_394_1#11$1",focus="m")]
+[name="阿米婭"]你們……不，不是這個問題。如果你們跟著我們，同樣會很危險。
+[name="阿米婭"]博士，你覺得我們該怎麼辦？
+[Dialog]
+[charslot(slot="m",name="avg_npc_394_1#11$1",focus="none")]
+[Decision(options="他們恐怕很難靠自己活著走出這片戰場。;他們有可能會向軍事委員會透露我們的行蹤。;他們的貨車不錯，可以搶過來。", values="1;2;3")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_394_1#11$1",focus="m")]
+[name="阿米婭"]嗯……
+[Dialog]
+[Predicate(references="2")]
+[charslot(slot="l",name="avg_npc_054",posfrom="-200,0",posto="-200,0",focus="r")]
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_932_1#1$1",posfrom="200,0",posto="200,0",focus="r")]
+[name="“老財”"]不不不！怎麼會呢？
+[name="“老財”"]我發誓，我們真的不再幹傭兵這行了，再也不了！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_394_1#11$1",focus="m")]
+[name="阿米婭"]考慮到這一點，還是讓他們與我們同行比較穩妥。
+[Dialog]
+[Predicate(references="3")]
+[charslot(slot="m",name="avg_npc_394_1#14$1",focus="m")]
+[name="阿米婭"]博士……我們真的要這麼做嗎……？
+[charslot(slot="m",name="avg_npc_394_1#15$1",focus="m")]
+[name="阿米婭"]不……博士又在和我開玩笑了。
+[Dialog]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_394_1#17$1",focus="m")]
+[name="阿米婭"]好吧，司機小姐，我們可以帶你們走一段。
+[name="阿米婭"]穿過這片戰區後，你們就徹底離開維多利亞吧。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_054",posfrom="-200,0",posto="-200,0",focus="l")]
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_932_1#1$1",posfrom="200,0",posto="200,0",focus="l")]
+[name="“礦工”"]謝謝你們。
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="m")]
+[name="“司機”"]感謝……這輛載具還能載你們一程。
+[charslot(slot="r",name="avg_npc_932_1#1$1",posfrom="200,0",posto="200,0",focus="r")]
+[name="“老財”"]哎喲，這這這，魔王大人這樣仁義，我真的是不知道怎麼報答您了——
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1072_1#2$1",focus="m")]
+[name="Logos"]硬幣。
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="“老財”"]啊？
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]我交予你的硬幣。
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="“老財”"]我都忘了，哈哈，幸好沒丟。來，給您！
+[name="“老財”"]我知道錯了！為女妖大人服務應當是我的榮幸，我怎敢再收您的好處？
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]……
+[Dialog]
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="none")]
+[Decision(options="你好像嚇到他了。;你很想要回自己的硬幣。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1072_1#2$1",focus="m")]
+[name="Logos"]希望我在你心中並非如此吝嗇的形象。
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]我需要確保，他們還是“他們”本人。
+[name="Logos"]不必緊張，我無惡意。
+[Dialog]
+[charslot]
+Logos動了動手指，躺在掌心的硬幣瞬間消失了，轉眼間，硬幣又出現在了老財的手裡。
+老財盯了會那隻往常一抬起來就地動山搖的手，看了看自己手中的硬幣，又看了看女妖一本正經的面容，頗有些不知所措。
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="“老財”"]這、這是變魔術？
+[name="“老財”"]……哈哈，這可太精彩了，女妖大人還真是多才多藝！
+[name="“老財”"]我……那個，我去幫司機發動車子！
+[Dialog]
+[playsound(key="$rungeneral",volume=1,channel=1)]
+[charslot(duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]……
+[Dialog]
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="none")]
+[Decision(options="很有意思的表演。;表演似乎沒能起到效果。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]嗯。我只見Scout和Outcast示範過幾回，可能動作不夠純熟，所以沒起到很好的效果。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="none")]
+[Decision(options="沒想到你還有這樣的一面。;難不成，其實你很喜歡開玩笑？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1072_1#3$1",focus="m")]
+[name="Logos"]博士，有時候我也會遺憾於我們之間相處的許多記憶消散無蹤。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1072_1#3$1",focus="none")]
+[Decision(options="我們很少聊起往事……;總是找不到恰當的時機聊這些。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1072_1#4$1",focus="m")]
+[name="Logos"]倘若我們之後有時間閒談敘舊，或許您也會對自己過去的逸聞感到驚喜。
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]現在，我們出發吧。
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[playsound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_394_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="阿米婭"]這附近……什麼聲音都沒有。
+[name="阿米婭"]這裡安靜得出奇。我聽不到我們的呼吸聲和載具行進聲，我甚至感覺不到……自己的心跳。
+[name="阿米婭"]是某種源石技藝嗎？有人想要隱藏自己的行動，於是小心地遮蔽了這裡所有的聲息？
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]不，阿米婭，仔細去聽。
+[name="Logos"]並非是聲音棄絕了這裡，只是另一種轟鳴太過龐大，以至於再沒有其他任何存在可以與之匹敵。
+[name="Logos"]這裡的死亡……震耳欲聾。
+[charslot(slot="m",name="avg_npc_394_1#5$1",focus="m")]
+[name="阿米婭"]你們看，那裡——
+[name="阿米婭"]那邊的葉子……
+[Dialog]
+[charslot]
+有一枚葉片，極低處的一枚葉片，正染上一種詭異而絢爛的色彩，像是畫家隨意塗抹的顏料，也像是油脂在陽光下奇異的反光。
+[Dialog]
+[Decision(options="像是某種法術的痕跡。;……;像是某種真菌感染。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]……
+[name="Logos"]它在腐敗。
+[name="Logos"]衰朽張開巨口，啃食著它所能看見的一切，只留下斑斕的齧痕。
+[Dialog]
+[charslot]
+[PlayMusic(intro="$plot_intro", key="$plot_loop", volume=0.6,crossfade=1)]
+只是幾句話的工夫，明快卻反常的色澤就蔓延到了整棵植株，乃至整片灌木叢。
+原本肥厚的葉片化為泛著白沫的液體滴落，只剩下交錯的葉脈微微顫動。
+如同鱗肉被享用殆盡後殘存的鱗骨，被棄置一旁。
+風更緊了，彷彿扯著皮肉。
+那是食客因仍未滿足而發出的嘆息。
+[charslot(slot="m",name="avg_npc_394_1#20$1",focus="m")]
+[name="阿米婭"]Logos先生，沼澤裡！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1072_1#1$1",posfrom="100,0",posto="0,0",duration=0.8)]
+[charslot(slot="m",afrom=0,ato=1,duration=0.5)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_magic_2",channel="1")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1,g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[charslot]
+銀白色的咒文流瀉而出，湧向沼澤的深處。
+[Dialog]
+[CameraShake(duration=1, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[delay(time=2.5)]
+[Decision(options="解決掉了嗎？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]……不。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_walk_water",channel="1")]
+[Delay(time=3)]
+一道窒塞的水聲蕩漾開來，在死寂的空間中打著轉。
+有人從淤泥中拔出腳，再踩下。渾濁的水波翻湧，直抵岸邊。
+[charslot(slot="m",name="avg_npc_394_1#13$1",focus="m")]
+[name="阿米婭"]做好戰鬥準備。博士，不要離開我的視線！
+[Dialog]
+[charslot]
+[PlaySound(key="$e_atk_magic_m",channel="1")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.8, r=0,g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.8)]
+[charslot]
+[PlaySound(key="$d_gen_explo_n",channel="2")]
+[CameraShake(duration=1,xstrength=40 ,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1,g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.8)]
+黑色的法術被投入沼澤的深處，轟鳴轉瞬即逝，彷彿被人咽下。
+[Dialog]
+[PlaySound(key="$d_avg_walk_water",channel="1")]
+[Delay(time=3)]
+那雙腳再度抬起又踏出，仍是之前的節奏，仍是之前的水紋。
+破碎的衣角漂浮於濁流之上，波紋與波紋相撞，化為雜亂的線條。
+[Dialog]
+[PlaySound(key="$d_avg_ghostscream",channel="1")]
+[CameraShake(duration=1.5,xstrength=40 ,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=true)]
+[name="？？？"]……
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="m")]
+[name="凱爾希"]Mon3tr。
+[charslot(slot="m",name="npc_10002",focus="m")]
+[PlaySound(key="$char_Mon3tr")]
+[name="Mon3tr"]（謹慎的低吼）
+[Dialog]
+[charslot]
+[PlaySound(key="$p_skill_Mon3trburst",channel="4")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_spellattack_1",channel="1")]
+[CameraShake(duration=0.5,xstrength=40 ,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1,g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.51)]
+[stopmusic(fadetime=1.5)]
+耀眼的光芒從Mon3tr的口中噴射而出，仿若長矛的光束卻迷失在了沼澤之中。
+水聲終於起了變化。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1331_1#1$1",bstart=0.3,bend=0.5,duration=1)]
+[Delay(time=1.3)]
+[name="？？？"]嗬——
+[Dialog]
+[charslot]
+[PlayMusic(intro="$warchaos_intro", key="$warchaos_loop",volume=0.6)]
+[PlaySound(key="$rungeneral",channel="1")]
+[CameraShake(duration=3,xstrength=20 ,ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+一連串急促的腳步聲乍然響起，所有丟失已久的聲音猛然重回這片土地之上，這麼地鮮明，這麼地刺耳。
+[Dialog]
+[charslot(slot="l",name="avg_npc_1331_1#1$1",posfrom="-150,0",posto="0,0",bstart=0.3,bend=0.5,duration=0.5)]
+[charslot(slot="r",name="npc_10002",posfrom="150,0",posto="0,0",duration=0.5)]
+[charslot(slot="l",afrom=0,ato=1,bstart=0.3,bend=0.5,duration=0.3)]
+[charslot(slot="r",afrom=0,ato=1,duration=0.3)]
+[delay(time=0.25)]
+[CameraShake(duration=-1,xstrength=40 ,ystrength=40, vibrato=30, randomness=90, fadeout=false, block=false)]
+[PlaySound(key="$p_skill_Mon3trburst",channel="1")]
+[PlaySound(key="$swordtsing3")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.02, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.25, block=true)]
+[delay(time=1)]
+[CameraShake(duration=1,xstrength=40 ,ystrength=40,  vibrato=40, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$swordtsing2")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.02, block=true)]
+[charslot(slot="l",name="avg_npc_1331_1#1$1",posfrom="0,0",posto="-150,0",bstart=0.3,bend=0.5,duration=0.5)]
+[charslot(slot="r",name="npc_10002",posfrom="0,0",posto="150,0",duration=0.5)]
+[charslot(slot="l",afrom=1,ato=0,bstart=0.3,bend=0.5,duration=0.3)]
+[charslot(slot="r",afrom=1,ato=0,duration=0.3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.25, block=true)]
+[delay(time=1)]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1331_1#1$1",posfrom="150,0",posto="0,0",bstart=0.3,bend=0.5,duration=0.5)]
+[charslot(slot="m",afrom=0,ato=1,duration=0.3)]
+[delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[charslot(slot="m",name="avg_npc_1331_1#1$1",duration=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[name="？？？"]……
+[name="？？？"]死亡……追上你們了。
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="“老財”"]什麼鬼東西，別過來！
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="m")]
+[name="“司機”"]當心！
+[Dialog]
+[charslot(slot="m",name="avg_npc_1331_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_darkwhisper",channel="LZ")]
+[CameraShake(duration=1,xstrength=20 ,ystrength=20,  vibrato=40, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+[stopsound(channel="LZ")]
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]“牢籠”。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1331_1#1$1",focus="m")]
+[PlaySound(key="$e_atk_magic_m",channel="1")]
+[CameraShake(duration=1,xstrength=30 ,ystrength=30,  vibrato=40, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1,g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1072_1#5$1",focus="m")]
+[name="Logos"]Sudaram……“靈幛”。
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]纏裹已死之軀的衣袍。
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="m")]
+[name="凱爾希"]他的軀體早就朽壞了，普通的攻擊並不能造成決定性的影響。
+[charslot(slot="m",name="avg_003_kalts_1#7$1",focus="m")]
+[name="凱爾希"]這是一種食腐者與生俱來的巫術，或者說……一種古老的傳統。
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="m")]
+[name="凱爾希"]食腐者們吞噬生命，滋養肉體，但普通肉體的成長終有盡頭。
+[name="凱爾希"]在達到臨界點後，強大的食腐者會用自己的身體給養弱小的同胞，換來極致的速度與令人恐懼的力量，以及凡軀所無法承受的巫術能量。
+[name="凱爾希"]他們將成為更強大的生物，食腐者的社會也得以發展。就像落葉滋養土地，土地供養新的生命，死與生，構成循環。
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]“漲潮”。
+[Dialog]
+[PlaySound(key="$e_atk_magic_m",channel="1")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1,g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.5)]
+[charslot]
+[PlaySound(key="$watercannon_cast",channel="2")]
+[CameraShake(duration=1, ystrength=40, vibrato=40, randomness=90, fadeout=true, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1,g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+沼澤中的泥水飛速揚起，如幕布般，當頭罩住了食腐者的軀幹。
+與此同時，咒文纏繞在所有人的身側，抵擋住了腐敗在這一刻的入侵。
+[charslot(slot="m",name="avg_npc_394_1#13$1",focus="m")]
+[name="阿米婭"]這邊，快，我們進林子裡去！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_coldforest",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playsound(key="$rungeneral",volume=1,channel=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]別踏入泥濘。
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_darkwhisper",volume=1,channel=1)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1.5)]
+黑濛濛的地面像是張開了一張嘴，沼澤在上升，或者是空中繚繞的霧氣在下沉。人們的行動變得遲緩，就連喘氣都費勁。
+一個念頭開始佔據所有人的大腦——“活著”竟是一件很費勁的事，轉過頭去擁抱“死亡”，則將獲得一場安眠。
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="m")]
+[name="凱爾希"]Mon3tr——護住博士。
+[charslot(slot="m",name="npc_10002",focus="m")]
+[PlaySound(key="$char_Mon3tr")]
+[name="Mon3tr"]（急促的低吼）
+[charslot(slot="m",name="avg_npc_394_1#13$1",focus="m")]
+[name="阿米婭"]他過來了！
+[Dialog]
+[charslot]
+唯一的聲響，來自那把突然落下的生鏽長刀。
+與死亡同行的食腐者已來到跟前。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[charslot(slot="m",name="avg_npc_1331_1#1$1",duration=0.5)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=1, block=true)]
+[name="“靈幛”"]——
+[Dialog]
+[charslot(slot="m",name="npc_10002",focus="m")]
+[Delay(time=0.3)]
+[Effect(name="$e_slash_02_l",x = -11.1, y = 83.6, rox =68.25, roy = -6.93, roz = 77.87,layer = 2)]
+[Delay(time=0.2)]
+[CameraShake(duration=1, ystrength=20, vibrato=20, randomness=90, fadeout=true, block=false)]
+[Effect(name="$e_spark_02_large",x = 0, y = 0, layer = 3)]
+[PlaySound(key="$e_skill_skulsrsword")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.02, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=1)]
+[PlaySound(key="$char_Mon3tr")]
+[name="Mon3tr"]（尖銳的嘶鳴）
+[charslot(slot="m",name="avg_npc_394_1#18$1",focus="m")]
+[name="阿米婭"]Mon3tr……也感到了痛苦？
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]任何生命，都會凋零。
+[charslot(slot="m",name="avg_npc_1072_1#2$1",focus="m")]
+[name="Logos"]一旦被食腐者的巫術捕獲，我們的生命力會化作養分，不斷地流失。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1331_1#1$1")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[charslot(duration=0.3)]
+[Blocker(a=0.5, r=0,g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_394_1#5$1",focus="m")]
+[name="阿米婭"]好快……！
+[charslot(slot="m",name="avg_npc_394_1#15$1",focus="m")]
+[name="阿米婭"]他是從泥裡鑽出來的嗎？還是從樹上結出來的？
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="m")]
+[name="凱爾希"]都有可能。
+[name="凱爾希"]從生到死，從榮到枯，整個循環過程都可能被食腐者汲取，變成孕育食腐者的種子。
+[charslot(slot="m",name="avg_npc_394_1#11$1",focus="m")]
+[name="阿米婭"]我能感覺到，源源不斷的巫術力量正在向我們湧來。
+[name="阿米婭"]並不僅僅來自這一名敵人本身……沼澤裡，樹林中，哪裡都是。
+[charslot(slot="m",name="avg_npc_1072_1#2$1",focus="m")]
+[name="Logos"]我們已經身處食腐者的輓幛中。
+[name="Logos"]他將死亡懸於我們頭頂。
+[name="Logos"]只有撕開這層巫術屏障，才能擊敗他。
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="“老財”"]呼……呼……礦工，我是不是要死了？
+[charslot(slot="m",name="avg_npc_054",focus="m")]
+[name="“礦工”"]……
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="m")]
+[name="“司機”"]他太累了，老財，拉著我，我們不能分開。我……
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.5, r=0,g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_npc_394_1#15$1",focus="m")]
+[name="阿米婭"]司機小姐！抓著我的手，不要倒下去！
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="m")]
+[name="“司機”"]我……
+[charslot(slot="m",name="avg_npc_394_1#15$1",focus="m")]
+[name="阿米婭"]她的意識在下沉，我快抓不住她了！
+[charslot(slot="m",name="avg_003_kalts_1#7$1",focus="m")]
+[name="凱爾希"]普通的治療缺乏意義。食腐者的巫術正在吞噬所有人。
+[Dialog]
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="m")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.5, r=0,g=0, b=0, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=1, block=true)]
+[name="“司機”"]放開……放開我吧。
+[name="“司機”"]我不能……害你……
+[name="“司機”"]哈……你可以丟下我們的。
+[name="“司機”"]我知道的，要不是我們，你和女妖大人可以更加輕鬆地……戰鬥。
+[charslot(slot="m",name="avg_npc_394_1#15$1",focus="m")]
+[name="阿米婭"]不。
+[charslot(slot="m",name="avg_npc_394_1#13$1",focus="m")]
+[name="阿米婭"]我承諾過會帶你們走出戰場，我們是一起的。
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="m")]
+[name="“司機”"]這樣……嗎？
+[name="“司機”"]也好。
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]血的味道，正在彌漫。
+[charslot(slot="m", name = "avg_npc_394_1#11$1",focus="m")]
+[name="阿米婭"]是司機小姐他們受傷了……
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]不。是血的……巫術。
+[charslot(slot="m", name = "avg_npc_394_1#11$1",focus="m")]
+[name="阿米婭"]嗯？
+[charslot(slot="m", name = "avg_npc_394_1#15$1",focus="m")]
+[name="阿米婭"]是……血魔嗎？這片樹林裡除了食腐者，還有血魔？
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_blood")]
+[delay(time=0.5)]
+[Blocker(a=0.1, r=1, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1.2)]
+薄薄的血霧在四周浮起。
+和他們見過的，鮮血之主的法術完全不同。它是微弱的，像是從鋪天蓋地的腐敗之霧中硬擠出來了幾縷絲線。
+但這些絲線，輕輕挑動了凝滯的空氣。
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]阿米婭，感受風的流向。
+[Dialog]
+[PlaySound(key="$d_avg_magic_2",channel="1")]
+[Blocker(a=0.1, r=1,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.5, r=1,g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0.1, r=1,g=0, b=0, fadetime=1, block=true)]
+[name="Logos"]我會令這層“輓幛”的編織痕跡暴露出來，找到最脆弱的部分。
+[charslot(slot="m", name = "avg_npc_394_1#15$1",focus="m")]
+[name="阿米婭"]……我明白了。
+[Dialog]
+[charslot]
+黑色的法術在阿米婭身前凝成一支長矛。
+Logos抬起手，指向濃霧深處。
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]“穿刺”。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1331_1#1$1",focus="m")]
+[Delay(time=0.3)]
+[PlaySound(key="$d_avg_magic_4",channel="1")]
+[Effect(name="$e_lance_hit_01",x = 0, y = 0, layer = 2)]
+[CameraShake(duration=1, xstrength=40,  ystrength=40, vibrato=40, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.1, r=1,g=0, b=0, fadetime=0, block=true)]
+[PlaySound(key="$e_skill_skulsrsword",channel="2")]
+[Blocker(a=0.5, r=1,g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1.5)]
+[name="“靈幛”"]（沉悶的低吼）
+[name="“靈幛”"]報喪者。
+[name="“靈幛”"]你……抵擋腐敗的蔓延。
+[name="“靈幛”"]但，無力逆轉。
+[name="“靈幛”"]死亡……
+[name="“靈幛”"]會為你收殮。
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]我從未懷疑過這一點。
+[name="Logos"]“散落”。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1331_1#1$1",focus="m")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_magic_3",channel="1")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[charslot(duration=0.5)]
+[Blocker(a=0.5, r=1,g=1, b=1, fadetime=0.05, block=true)]
+[PlaySound(key="$d_avg_clothmovement",channel="2")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1.5)]
+長刀插進泥土，宛如墓碑。
+食腐者身上的衣袍獵獵作響。
+幾乎只是一瞬間，那高大的身軀就崩解了，只留下數十條殘缺的布條緩緩地飄落。
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="“老財”"]他、他死了嗎？
+[name="“老財”"]終於可以喘口氣——
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_cnstrctnck",channel="1")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_clnchfst",channel="2")]
+[Delay(time=0.5)]
+咔咔。
+骨頭與骨頭之間的摩擦聲。
+[Dialog]
+[PlaySound(key="$d_avg_cnstrctnck",channel="1")]
+[CameraShake(duration=1, xstrength=30,  ystrength=30, vibrato=40, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.5)]
+一隻枯槁的手從泥地裡伸出來。
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="“老財”"]啊？啊——！
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="m")]
+[name="“司機”"]小心。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_magic_3")]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1,g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.51)]
+[stopmusic(fadetime=1.5)]
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="“老財”"]爛了……？
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="m")]
+[name="“司機”"]至少看起來是這樣。
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="“老財”"]呼……司機，你什麼時候變得這麼厲害了？
+[charslot(slot="m", name = "avg_npc_1338_1#1$1",focus="m")]
+[name="“司機”"]魔王殿下，我們是不是該走了？
+[charslot(slot="m", name = "avg_npc_394_1#2$1",focus="m")]
+[name="阿米婭"]嗯，在食腐者再次醒過來，追上我們之前……我們最好離開這裡。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="50_g24_wildernesswarcircle_ex",screenadapt="coverall")]
+[Delay(time=2)]
+[PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playsound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_394_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="阿米婭"]這裡居然有一座血魔的法陣。
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]它依然在運作。
+[charslot(slot="m",name="avg_npc_394_1#2$1",focus="m")]
+[name="阿米婭"]我們和“靈幛”作戰的時候，憑空出現的血魔法術……是不是就是它的作用？
+[charslot(slot="m",name="avg_003_kalts_1#2$1",focus="m")]
+[name="凱爾希"]恐怕沒有那麼簡單。
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]阿米婭，你很清楚。剛剛的法術，就來自血魔。
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_clothmovement",volume=1,channel="1")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_cnstrctnck",channel="1")]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_394_1#5$1",focus="m")]
+[name="阿米婭"]是……血魔的子裔？
+[charslot(slot="m",name="avg_npc_394_1#18$1",focus="m")]
+[name="阿米婭"]我設想過，血魔大君已經離開了這片戰場，但他的恩賜不會輕易消失。
+[charslot(slot="m",name="avg_npc_394_1#15$1",focus="m")]
+[name="阿米婭"]沒關係，和之前一樣，我會盡我的力量，讓這些被扭曲的生命安息。
+[charslot(slot="m",name="avg_npc_394_1#5$1",focus="m")]
+[name="阿米婭"]Logos先生，請和我一起——
+[charslot(slot="m",name="avg_npc_1072_1#1$1",focus="m")]
+[name="Logos"]……阿米婭。
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_clothmovement",volume=1,channel="1")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_cnstrctnck",channel="1")]
+[Delay(time=1.5)]
+響動越來越清晰了，就來自那些布滿血痕的巨石背後。這是肢體與地面摩擦的聲音，在之前的戰鬥中，他們聽到過無數次。
+阿米婭注意到Logos的眼神。
+他沒有看向石柱，他看的是阿米婭，眼底飛快地掠過了一絲情緒。
+那是悲傷。阿米婭一下就辨認了出來。
+這場戰爭開始以來，她已經感受過太多次。有的時候來自敵人，更多時候……都是來自身邊的同伴。
+[stopmusic(fadetime=1.5)]
+[charslot(slot="m",name="avg_npc_394_1#18$1",focus="m")]
+[name="阿米婭"]……司機小姐。
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_1338_1#1$2",duration=1.5)]
+[Delay(time=2)]
+[PlayMusic(intro="$drift_intro", key="$drift_loop", volume=0.6)]
+[name="“司機”"]……
+[name="“司機”"]魔王殿下。
+[charslot(slot="m",name="avg_npc_394_1#18$1",focus="m")]
+[name="阿米婭"]什麼時候的事？是在……我們和食腐者戰鬥那會嗎？
+[charslot(slot="m",name="avg_npc_1338_1#1$2",focus="m")]
+[name="“司機”"]嗯。
+[name="“司機”"]離開骸骨的時候，我帶了一塊……先前軍事委員會叫我們運的石頭在身上。
+[name="“司機”"]我想，之前它讓我們變厲害了，說不定真打起來了也能派上用場。
+[name="“司機”"]你看，的確起了點作用，對吧？
+[name="“司機”"]能跟著你一起打贏那個古怪的敵人，換作以前，我想都不敢想。
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]你使用了血魔遺留的血色結晶。
+[name="凱爾希"]是用它刺破了你的身體嗎？不，那還不至於催生這麼激烈的變化。
+[name="凱爾希"]你吞服了一部分碎屑。
+[charslot(slot="m",name="avg_003_kalts_1#2$1",focus="m")]
+[name="凱爾希"]你主動接納了杜卡雷的鮮血和法術。
+[charslot(slot="m",name="avg_npc_1338_1#1$2",focus="m")]
+[name="“司機”"]我本就有血魔的血脈，雖然稀薄得很……但我還是能感受到大君的召喚，哪怕只是微乎其微。
+[name="“司機”"]我見過那些蠕蟲從死去的薩卡茲雇傭兵身上爬出來。所以，你們不必擔心我不知道後果。
+[name="“司機”"]只是，與其跟一條真正的蟲子一樣，無聲無息地陷在爛泥裡死掉，我寧可接受更強的力量，作為一個不那麼丟人的薩卡茲，死在戰場上。
+[name="“司機”"]那個時候我也是這麼想的。幾個月前，我正在荒野裡漫無目的地開著車，從廣播裡聽到了倫蒂尼姆的事……
+[name="“司機”"]不知怎麼就朝著這個方向一路開過來了。
+[name="“司機”"]老財說我騎士故事讀多了……他胡說。誰都知道，卡茲戴爾不需要騎士。
+[name="“司機”"]我不過是想確認，自己的人生是不是也可以在某條路上行進，會有一個終點，而不是被單純地浪費掉。
+[name="“司機”"]直到我遇見了你。“魔王走過的地方就是道路”——我們一起，呃，在這條路上並肩戰鬥過了。
+[name="“司機”"]現在，戰鬥暫時結束了。我的同伴也大多活了下來。
+[name="“司機”"]魔王殿下，你可以處置我了。
+[Dialog]
+[charslot]
+[playsound(key="$rungeneral",volume=1,channel=1)]
+[charslot(slot="m",name="avg_npc_932_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="“老財”"]處、處置？這是什麼意思？
+[name="“老財”"]司機，你怎麼變成了這副……這副……
+[charslot(slot="m",name="avg_npc_1338_1#1$2",focus="m")]
+[name="“司機”"]是不是很可怕？
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="“老財”"]……
+[name="“老財”"]魔王殿下，求求您，幫幫司機吧！還、還有，女妖大人，我把這枚硬幣還給您，這是我身上僅剩的財產了。
+[charslot(slot="m",name="avg_npc_1072_1#2$1",focus="m")]
+[name="Logos"]她的狀態是巫術誘發，卻並非巫術導致。
+[charslot(slot="m",name="avg_npc_1072_1#2$1",focus="m")]
+[name="Logos"]即便是我和阿米婭，乃至凱爾希醫生，都做不到逆轉你們所見的結果。
+[charslot(slot="m",name="avg_npc_932_1#1$1",focus="m")]
+[name="“老財”"]那怎麼辦啊？你們難道要殺了她，就像殺了那些紅色蟲子一樣嗎？
+[charslot(slot="m",name="avg_npc_1338_1#1$2",focus="m")]
+[name="“司機”"]老財，讓開吧。這是我自願的。
+[name="“司機”"]魔王殿下，我聽說……在過去，薩卡茲最英勇的戰士，在死前有資格得到魔王賜予的“願景”。
+[name="“司機”"]我不知道，呃，不知道自己算不算。
+[charslot(slot="m",name="avg_npc_394_1#11$1",focus="m")]
+[name="阿米婭"]……
+[Dialog]
+[charslot]
+阿米婭抬起手。
+黑色的法術在她指尖積聚。
+司機絕望地笑了起來，下意識看向卡特斯的頭頂，尋找那頂傳說中的黑色冠冕。
+[charslot(slot="m",name="avg_npc_1338_1#1$2",focus="m")]
+[name="“司機”"]我的……魔王……
+[name="“司機”"]我會看到什麼呢？但願……不會是在卡茲戴爾開我的破車吧，哈哈。
+[charslot(slot="m",name="avg_npc_394_1#11$1",focus="m")]
+[name="阿米婭"]司機小姐，能不能告訴我你的名字？
+[charslot(slot="m",name="avg_npc_1338_1#1$2",focus="m")]
+[name="“司機”"]這也是儀式的一部分嗎？
+[charslot(slot="m",name="avg_npc_394_1#17$1",focus="m")]
+[name="阿米婭"]唔……知道名字，會方便很多。
+[charslot(slot="m",name="avg_npc_1338_1#1$2",focus="m")]
+[name="“司機”"]……瑪瑞拉。很普通的名字。
+[charslot(slot="m",name="avg_npc_394_1#17$1",focus="m")]
+[name="阿米婭"]（卡西米爾語）瑪瑞拉。
+[name="阿米婭"]我在卡西米爾待的時間不太久，可能發音不夠好。
+[charslot(slot="m",name="avg_npc_1338_1#1$2",focus="m")]
+[name="“司機”"]不，很好。媽媽死後，已經很久沒有人這樣溫柔地叫我了。
+[charslot(slot="m",name="avg_npc_394_1#17$1",focus="m")]
+[name="阿米婭"]嗯，瑪瑞拉，我拒絕你的請求。
+[charslot(slot="m",name="avg_npc_1338_1#1$2",focus="m")]
+[name="“司機”"]你拒絕為我賜下慰藉？也是，我本來就算不了什麼戰士……
+[charslot(slot="m",name="avg_npc_394_1#17$1",focus="m")]
+[name="阿米婭"]不是的，瑪瑞拉。我拒絕讓你死在這裡，死在我手上。
+[name="阿米婭"]你並沒有變成血魔的造物。
+[name="阿米婭"]你只是，外貌發生了一些變化。我並未感知到你變得更邪惡，或者更瘋狂。
+[name="阿米婭"]就算多了一點……遠古血脈留下的痕跡，你也依舊是你自己。
+[name="阿米婭"]你無需被懲罰，也不該由我來嘉獎。
+[charslot(slot="m",name="avg_npc_1338_1#1$2",focus="m")]
+[name="“司機”"]你是魔王……
+[charslot(slot="m",name="avg_npc_394_1#21$1",focus="m")]
+[name="阿米婭"]請叫我阿米婭吧。
+[name="阿米婭"]瑪瑞拉小姐，我是有過一些苦惱，因為你們……呃，並不是羅德島的幹員。
+[name="阿米婭"]我剛剛也在想，究竟該以什麼方式與你們相處。但其實，這根本算不上什麼問題。
+[charslot(slot="m",name="avg_npc_394_1#16$1",focus="m")]
+[name="阿米婭"]如果你願意為我們的共同目標戰鬥，那我就歡迎你。
+[Dialog]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[Subtitle(text="年輕的卡特斯保持著伸手的姿勢，眨了眨她的藍眼睛。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="薩卡茲女性握住了那纖細的手指。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="明明並沒有感到多麼悲傷，兩行鮮紅的淚水依然滾過了她的臉頰。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_003_kalts_1#13$1")]
+[charslot(slot="r",name="avg_npc_1072_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="l",name="avg_003_kalts_1#13$1",focus="l")]
+[name="凱爾希"]……
+[Dialog]
+[charslot(slot="l",name="avg_003_kalts_1#13$1",focus="none")]
+[Decision(options="你在看阿米婭？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_003_kalts_1#11$1",focus="l")]
+[name="凱爾希"]這些年，阿米婭的變化很大。
+[Dialog]
+[charslot(slot="l",name="avg_003_kalts_1#11$1",focus="none")]
+[Decision(options="阿米婭變得更成熟了。;阿米婭從來都是合格的領袖。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="r",name="avg_npc_1072_1#1$1",focus="r")]
+[name="Logos"]血魔儀式的核心發生了改變。
+[name="Logos"]不再僅是薩卡茲力量的增幅器，也不再單純收集能量。
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]它在將薩卡茲的血脈與源石……與“阿喃那”進一步相連。
+[name="凱爾希"]“提卡茲之血”正以某種形式發揮作用。
+[charslot(slot="l",name="avg_003_kalts_1#3$1",focus="l")]
+[name="凱爾希"]薩卡茲血脈的力量將直接催動源石擴散，寄宿於源石之中的“訊息”也將反向強化血脈……不僅是力量，還有一些表徵。
+[Dialog]
+[charslot(slot="l",name="avg_003_kalts_1#3$1",focus="none")]
+[Decision(options="這法術效果有些熟悉。", values="1")]
+[Predicate(references="1")]
+[Decision(options="那個薩盧斯就融合了很多血脈。;赦罪師擅長用這種方式催動血脈力量。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]我們要做好準備。
+[charslot(slot="l",name="avg_003_kalts_1#7$1",focus="l")]
+[name="凱爾希"]“阿喃那”……帶來的威脅極有可能超出所有人的預期。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[charslot]
+[Image]

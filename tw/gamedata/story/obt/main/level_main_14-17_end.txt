@@ -1,0 +1,704 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_corridor",screenadapt="coverall", block=true)]
+[focusout(duration=0.5, type="bg", from=0, to=1)]
+[curtain(direction = 0,fillfrom = 0.15,fillto = 0.15,fadetime=0.01,grad=true)]
+[curtain(direction = 4,fillfrom = 0.15,fillto = 0.15,fadetime=0.01,grad=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[delay(time=1)]
+我回到了這裡。
+自己好像已經離開了很久，很久都沒有回到這艘船上，睡過一個好覺。
+博士，凱爾希醫生，推進之王小姐……
+外面的戰爭停止了嗎？終於，可以休息一會了。
+可以去餐廳喝一碗熱乎乎的蔬菜湯，然後回到宿舍躺在自己的床上。
+特蕾西婭小姐呢？這個時候，她應該——
+……
+不……不對……
+特蕾西婭小姐已經離開了。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_room_2", screenadapt="coverall", block=true)]
+[curtain(direction = 0,fillfrom = 0.15,fillto = 0.15,fadetime=0.01,grad=true)]
+[curtain(direction = 4,fillfrom = 0.15,fillto = 0.15,fadetime=0.01,grad=true)]
+[delay(time=1)]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+房間是空的，沒有人等待自己回來。
+可自己分明記得，曾經有一個人坐在這裡，在許多夜晚，講過許多故事哄自己入睡。
+現在，這裡什麼都沒有剩下。
+等一下……床上為什麼放著一件衣服？
+一件白色的禮裙，衣領上縫上了好看的襟花。針腳細密，是很熟悉的手藝。
+“阿米婭，很適合穿白色的衣服呢。”
+特蕾西婭小姐……？
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[curtain]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[name="遙遠的聲音"]……博士！
+[name="變近的聲音"]你能聽到我的聲音嗎？
+[name="凱爾希"]博士！
+[Dialog]
+[PlaySound(key="$d_gen_dooropen", volume=1)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=2, block=true)]
+[Background(image="bg_corridor",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[focusout(duration=0.1, type="bg", from=0, to=1)]
+[focusout(duration=0.1, type="char", from=0, to=1)]
+[delay(time=0.5)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]博士……
+[name="凱爾希"]你果然，在這裡……
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="n")]
+[Decision(options="（好難受。）;（剛才發生了什麼事？）;（我現在又在哪裡？）", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]你看起來身體狀況不是很好。
+[name="凱爾希"]我可能沒有辦法在這裡對你進行身體檢查，博士，請保持清醒，看著我。
+[name="凱爾希"]你……有沒有回想起什麼？
+[Dialog]
+[charslot]
+你聽到女性嚴厲但關懷的話語，努力地睁大眼睛。
+[Dialog]
+[focusout(duration=1.5, type="char", from=1, to=0)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+視野漸漸清晰，身體的部分機能也正在逐漸恢復。
+你緩緩開口——
+[Dialog]
+[Decision(options="（未知語言）凱爾希……;（未知語言）我這是在哪裡？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#6$1",focus="m")]
+[name="凱爾希"]——！
+[Dialog]
+[charslot]
+破碎的意識拼湊起來，斷裂的思緒恢復條理，你現在可以確信，自己正站在堅實的地面上。
+你環顧四周，你很確定這就是你熟悉的環境，你在這裡度過了很長一段時光。
+ 而眼前的女性看向你的眼神變得陌生，甚至是，帶有敵意。
+[Dialog]
+[Decision(options="（未知語言）我是誰……;……;我是誰？", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Dialog]
+[musicvolume(volume=0.3, fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.8, fadetime=0)]
+[Image(image="50_i11", screenadapt="coverall", fadetime=0)]
+[Delay(time=0.2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.8, fadetime=0)]
+[Image(image="50_i15",screenadapt="coverall",fadetime=0,block=true)]
+[Delay(time=0.2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=0.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.8, fadetime=0)]
+[Image(image="50_i16", screenadapt="coverall", fadetime=0)]
+[Delay(time=0.2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[image]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+我是羅德島的Dr.{@nickname}。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="bg_corridor",screenadapt="coverall", block=true)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[musicvolume(volume=0.6, fadetime=1)]
+[Delay(time=0.5)]
+[Dialog]
+[Decision(options="阿米婭！;凱爾希！我們為什麼在羅德島？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#14$1",focus="m")]
+[name="凱爾希"]你……
+[name="凱爾希"]……看上去，你還記得你是誰。
+[name="凱爾希"]阿米婭不在我們身邊，可以確定的是，這一定不是原本的羅德島。
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#14$1",focus="n")]
+[Decision(options="我們和其他人走散了？;Logos、W又在哪裡？", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]來到這裡後我見到的只有你。
+[charslot(slot="m",name="avg_003_kalts_1#14$1",focus="m")]
+[name="凱爾希"]你對這一切，真的毫無頭緒？
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#14$1",focus="n")]
+[Decision(options="我正一頭霧水。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="m")]
+[name="凱爾希"]……
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="n")]
+[Decision(options="你是不是……;……不相信我？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#6$1",focus="m")]
+[name="凱爾希"]……一定程度的戒備在這種情況下是必要的。
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="m")]
+[name="凱爾希"]小心，博士。無論如何，我們要離開這件事。
+[name="凱爾希"]這裡不是我們熟悉的環境，不知道會遇到什麼意外狀況。
+[name="凱爾希"]我還是會盡量保護你，不要離我太遠。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_trainingcom",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlayMusic(key="$wasteland_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_arrow_rain", volume=0.6)]
+[PlaySound(key="$d_avg_metallicclick", volume=0.9,delay=0.2)]
+[PlaySound(key="$swordtsing1", volume=0.6,delay=0.4)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "char_124_kroos_1#3",focus="m")]
+[name="克洛絲"]不……不行了……
+[name="克洛絲"]連下個月的運動量都要用光了。
+[charslot(slot = "m", name = "char_123_fang_1",focus="m")]
+[name="芬"]不可以這樣，克洛絲！
+[name="芬"]現在是實戰演習，要把訓練室當作戰場！
+[charslot(slot = "m", name = "char_122_beagle_1",focus="m")]
+[name="米格魯"]隊長打人好狠……
+[charslot(slot = "m", name = "char_123_fang_1",focus="m")]
+[name="芬"]都打起精神來，教官給我們安排的訓練任務還有很多。
+[charslot(slot = "m", name = "char_124_kroos_1#3",focus="m")]
+[name="克洛絲"]有什麼關係嘛……反正教官又不在——
+[charslot(slot = "m", name = "char_124_kroos_1#1",focus="m")]
+[name="克洛絲"]啊，是博士！
+[Dialog]
+[charslot]
+[Decision(options="早安，克洛絲。;大家……都在這裡？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "char_123_fang_1",focus="m")]
+[name="芬"]克洛絲！
+[charslot(slot = "m", name = "char_124_kroos_1#1",focus="m")]
+[name="克洛絲"]沒關係的，博士一定不會跟教官打小報告的。
+[name="克洛絲"]先在這裡，舒服的躺上一會——
+[Dialog]
+[charslot]
+[name="嚴厲的聲音"]我記得給你們安排的訓練任務不是潛行偽裝吧？
+[Dialog]
+[charslot(slot = "m", name = "char_123_fang_1",focus="m")]
+[name="芬"]……完了。
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n", volume=0.6)]
+[charslot(slot = "m", name = "char_014_riope",duration=1)]
+[Delay(time=2)]
+[charslot(slot = "m", name = "char_014_riope",focus="m")]
+[name="Ace"]A1小隊全體都有，立正！
+[Dialog]
+[charslot]
+[name="小隊眾人"]是！
+[Dialog]
+[charslot(slot = "m", name = "char_014_riope",focus="m")]
+[name="Ace"]每個人，繞場地跑一百圈，然後體能訓練組合五十次，現在！
+[Dialog]
+[charslot]
+[name="小隊眾人"]是……
+[Dialog]
+[PlaySound(key="$d_avg_soldiersstep",channel="step1",loop=false, volume=0.7)]
+[stopsound(channel="step1",fadetime=4)]
+[Delay(time=2)]
+[charslot(slot = "m", name = "char_014_riope",focus="m")]
+[name="Ace"]讓你見笑了，博士。
+[name="Ace"]羅德島確實有太長時間沒有經歷過戰事，這些年輕的戰士們有些懈怠了。
+[name="Ace"]我會負責讓她們緊張起來。
+[Dialog]
+[charslot(slot = "m", name = "char_014_riope",focus="n")]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[Decision(options="能維持這樣的平靜，也很好……", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "char_014_riope",focus="m")]
+[name="Ace"]當然，但也必須為可能到來的危險做準備。
+[name="Ace"]沒事的，這裡的訓練不勞你費心，我會處理好的。
+[name="Ace"]這段時間你辛苦了，博士，去休息吧。
+[name="Ace"]放心，我們都會守在這裡。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2)]
+[Decision(options="凱爾希……你看到了嗎？;我是不是在做夢？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#14$1",focus="m")]
+[name="凱爾希"]我看到的畫面與你一致，他們確實存在於此。
+[name="凱爾希"]不會有這樣清晰的夢境，這也並非你的回憶。
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#14$1",focus="n")]
+[Decision(options="如果這一切都是真的就好了……;不，這一定不是真的。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]保持清醒，博士。
+[name="凱爾希"]我們還要繼續向前走。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_bar_1",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_inside", volume=0.4, loop=true, channel="a")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_coin", volume=1)]
+[Delay(time=1)]
+[StopSound(channel="a", fadetime=1.5)]
+[charslot(slot = "m", name = "avg_npc_245_1#6",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_245_1#6",focus="m")]
+[name="Outcast"]稀客，博士。
+[name="Outcast"]有時間坐下來喝一杯嗎？今晚所有的酒都算在我的帳上。
+[Dialog]
+[charslot]
+[Decision(options="好熱鬧。;這麼多人？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_249_1$1",focus="m")]
+[name="Touch"]你忘了嗎博士，今天舉辦的是Outcast的退休儀式。
+[charslot(slot = "m", name = "avg_npc_252",focus="m")]
+[name="Sharp"]敬我們尊敬的老前輩。
+[Dialog]
+[charslot]
+[PlaySound(key="$clink")]
+[PlaySound(key="$clink", loop=false, channel="1",delay=0.04)]
+[PlaySound(key="$clink", loop=false, channel="2",delay=0.06)]
+[PlaySound(key="$clink", loop=false, channel="3",delay=0.08)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_245_1#6",focus="m")]
+[name="Outcast"]夠了Sharp，你也沒比我小多少。
+[Dialog]
+[charslot]
+[Decision(options="感謝你對羅德島的付出，Outcast。;退休快樂。", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_095",focus="m")]
+[name="Pith"]我們會記得你的事蹟和精湛的射術的，敬你。
+[charslot(slot = "m", name = "char_017_homura_3#10",focus="m")]
+[name="煌"]Outcast也要走了……
+[name="煌"]以後再也沒有人，在週末晚上陪我……嗝……喝酒了……
+[charslot(slot = "m", name = "avg_npc_245_1#6",focus="m")]
+[name="Outcast"]嘿，我只是退休，拉特蘭的追悼會都不會這麼傷感。
+[name="Outcast"]再說，就算我今晚醉過去，明天一早再也沒有醒來，我這一生也已經足夠精彩了。
+[name="Outcast"]與大家同行的時光是我最珍貴的寶物，我會把這段回憶連我的守護銃一起帶到墳墓裡去。
+[name="Outcast"]只是以後教年輕人射擊的工作就交給巡林者了。
+[charslot(slot = "m", name = "char_017_homura_3#7",focus="m")]
+[name="煌"]你醉了Outcast，他用的是銃，怎麼能教——嗝——薩科塔的弩。
+[charslot(slot = "m", name = "avg_npc_095",focus="m")]
+[name="Pith"]少喝點，都說傻話了。
+[charslot(slot = "m", name = "avg_npc_245_1#6",focus="m")]
+[name="Outcast"]不都是睜一隻眼閉一隻眼，沒太大差別。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_245_1#6",focus="n")]
+[PlaySound(key="$bottlebroken", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_245_1#1",focus="m")]
+[name="Outcast"]哦，今晚酒吧的客人不止我們呢。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_bar_1",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_155_tiger_1#9$1")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_155_tiger_1#9$1",focus="m")]
+[name="因陀羅"]認真點達格達！
+[name="因陀羅"]讓我瞧瞧，接受冊封的塔樓騎士的拳頭到底有多重！
+[charslot(slot = "m", name = "avg_npc_396_1#3$1",focus="m")]
+[name="達格達"]……這是你自找的。
+[Dialog]
+[playsound(key="$d_avg_clnchfst")]
+[PlaySound(key="$d_avg_clothmovementsp",volume=0.8,delay=0.5)]
+[Delay(time=0.5)]
+[charslot(duration=0.5)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_863_1#3$1",focus="m")]
+[name="貝爾德"]嘿！這裡不是拳館，我們是來羅德島做客的，別太過分！
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_punch")]
+[PlaySound(key="$fightgeneral",volume=0.8,delay=0.4)]
+[PlaySound(key="$d_avg_glassbroken", volume=0.6,delay=0.5)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_397_1#8$1",focus="m")]
+[name="阿勒黛"]我也有過這樣的時候。
+[charslot(slot="m",name="avg_npc_407_1#3$1",focus="m")]
+[name="維娜"]正式成為蒸汽騎士，就要和我們這些街頭混混決裂了？
+[charslot(slot="m",name="avg_npc_397_1#8$1",focus="m")]
+[name="阿勒黛"]別打趣我……你真的想好了，維娜？
+[charslot(slot="m",name="avg_npc_407_1#3$1",focus="m")]
+[name="維娜"]沒什麼好猶豫的，在諾伯特區的這段日子是我有生以來最開心的時光，我沒有必要再回到那座宮殿裡去。
+[name="維娜"]亞歷山德莉娜·維娜·維多利亞是王室後裔，也是一名普通的、光榮的維多利亞人。
+[name="維娜"]阿勒黛，今後你就是光榮的蒸汽騎士，而我則是光榮的“推進之王”。
+[name="維娜"]我相信現在這樣的生活，就是最好的安排。
+[charslot(slot="m",name="avg_npc_397_1#2$1",focus="m")]
+[name="阿勒黛"]和平的生活，彌足珍貴。
+[charslot(slot="m",name="avg_npc_407_1#3$1",focus="m")]
+[name="維娜"]敬生活。
+[charslot(slot="m",name="avg_npc_397_1#8$1",focus="m")]
+[name="阿勒黛"]敬維多利亞。
+[Dialog]
+[charslot]
+[PlaySound(key="$clink")]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_407_1#3$1",focus="m")]
+[name="維娜"]等你有心情的時候，我們到處走走吧。比如說，一起去拿石頭丟那些公爵家的窗戶怎麼樣？
+[Dialog]
+[charslot]
+[Decision(options="真好啊。;……;這不是真的。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]你還記得他們每個人，你真切地為他們的遭遇感到遺憾。
+[name="凱爾希"]否則你不會看到這些畫面。
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]你現在心情如何，博士？
+[name="凱爾希"]欣慰，困惑還是憤怒？
+[Predicate(references="3")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]這些都是你的潛意識中你所期待的畫面。
+[name="凱爾希"]你希望這一切都是真的，對嗎？
+[Predicate(references="1;2;3")]
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="n")]
+[Decision(options="我還會在這裡見到誰？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]只有你自己會知道。
+[name="凱爾希"]繼續走吧，博士。
+[name="凱爾希"]無論你看到什麼，直面它，跨過它。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_corridor",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_078#2",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_078#2",focus="m")]
+[name="塔露拉"]博士，好久不見，我回來了。
+[Dialog]
+[charslot(slot="m",name="avg_npc_078#2",focus="n")]
+[Decision(options="……;……塔露拉？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_078#2",focus="m")]
+[name="塔露拉"]呵呵，只是一段時間不見，不認識我了？
+[name="塔露拉"]這次去烏薩斯北邊建立感染者收治中心，還是花了不少功夫。
+[name="塔露拉"]還好城鎮的工人很支持我們，當地的領主不得不妥協，我們爭取到了足夠的土地。
+[Dialog]
+[charslot(slot="m",name="avg_npc_078#2",focus="n")]
+[Decision(options="整合運動不存在了……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_078#2",focus="m")]
+[name="塔露拉"]博士，你又在開玩笑了，還是沒有睡醒？
+[name="塔露拉"]整合運動不存在的話，和羅德島合作，在烏薩斯幫助治療感染者的又是誰？
+[Dialog]
+[charslot(slot="m",name="avg_npc_078#2",focus="n")]
+[Decision(options="那科西切呢？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_078#2",focus="m")]
+[name="塔露拉"]怎麼突然提起那條死掉的“黑蛇”？
+[name="塔露拉"]是又想讓我說謝謝嗎？行啊。畢竟，是羅德島幫我和烏薩斯永遠擺脫了那個禍首，給無數人的未來起了個好頭。
+[Dialog]
+[charslot(duration=0.5)]
+[musicvolume(volume=0, fadetime=1)]
+[Delay(time=1)]
+[name="冰冷的聲音"]博士。
+[Dialog]
+[Decision(options="不……;（不要回頭。）", values="1;2")]
+[Predicate(references="1;2")]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="fwalk")]
+[stopsound(fadetime=2, channel="fwalk")]
+[charslot(slot="m",name="avg_1505_frstar_1#1$1",duration=1)]
+[Delay(time=2)]
+[musicvolume(volume=0.6, fadetime=1)]
+[charslot(slot="m",name="avg_1505_frstar_1#1$1",focus="m")]
+[name="霜星"]博士？
+[Dialog]
+[charslot]
+[Decision(options="………………", values="1")]
+[Predicate(references="1")]
+[Decision(options="霜星……", values="1")]
+[Predicate(references="1")]
+[Decision(options="你不該出現在這裡。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1505_frstar_1#1$1",focus="m")]
+[name="霜星"]……為什麼？
+[name="霜星"]不是你要我完成任務之後，立刻來找你報告的嗎？
+[Dialog]
+[charslot(slot="m",name="avg_1505_frstar_1#1$1",focus="n")]
+[Decision(options="羅德島的……任務？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1505_frstar_1#1$1",focus="m")]
+[name="霜星"]當然是羅德島的任務。我一直都是羅德島的一員。
+[Dialog]
+[charslot(slot="m",name="avg_1505_frstar_1#1$1",focus="n")]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1505_frstar_1#1$1",focus="m")]
+[name="霜星"]你看起來很奇怪。我離太近，讓你覺得冷了？
+[stopmusic(fadetime=2)]
+[Dialog]
+[charslot]
+[Decision(options="不對。;不對……;不對！！", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Dialog]
+[PlaySound(key="$d_avg_dreambroken", volume=1)]
+[PlaySound(key="$d_avg_phntsmglsbrek", volume=1,delay=3)]
+[focusout(duration=3, type="bg", from=0, to=1, block=false)]
+[delay(time=3)]
+[CameraShake(duration=2, xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Background(image="50_g14_rhodescorridor_ex",screenadapt="coverall", block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=3, block=true)]
+[focusout(duration=2, type="bg", from=1, to=0, block=true)]
+[PlayMusic(intro="$ponder_intro", key="$ponder_loop", volume=0.6)]
+[delay(time=2)]
+一個個鮮活的人褪去了真實的外表，化為漆黑模糊的影子。
+它們看上去並不危險，只是圍繞在你身邊，緩緩遊蕩。
+[Dialog]
+[Decision(options="凱爾希……這些都是什麼？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="m")]
+[name="凱爾希"]這並非幻境，或是夢境。在某種意義上講，這一切同樣是真實存在的。
+[name="凱爾希"]存在於你的想像中，是你過去遇到過的人與事，按你最期待的樣子發展出的幻景。
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="n")]
+[Decision(options="這是對我們經歷過的一切的玷污。;你為什麼還能這麼冷靜？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_003_kalts_1#5$1",focus="m")]
+[name="凱爾希"]這些畫面對我的觸動並不比你弱，博士。
+[name="凱爾希"]但是歸根結底，這些還是由你自己創造的畫面。
+[name="凱爾希"]是源石，按照你潛意識深處的期待和想要彌補某些遺憾的想法，“複製”出的景象。
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]你依然深刻地記得與羅德島同行經歷過的一切，你同樣擺脫了美好謊言的欺瞞。
+[name="凱爾希"]我現在才可以確信，現在的你，還是羅德島的博士。
+[Dialog]
+[charslot]
+[Decision(options="源石？可以做到這種事？;為什麼是按我所期待的？", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[Subtitle(text="<color=#000000>你所有的願望，我都能夠實現。</color>", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[delay(time=0.5)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.7, block=true)]
+[delay(time=1)]
+[Dialog]
+[Decision(options="普瑞……賽斯……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#6$1",focus="m")]
+[name="凱爾希"]你果然已經……
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]博士，我曾經對你說過，關於你自身的謎題，無法透過他人之口告訴你，只有靠你自己來解開。
+[name="凱爾希"]或許我們現在離那個終點很近了。
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="n")]
+[Decision(options="如果這一切都是我的期望，那你……;我至少可以確定，你不是我幻想的樣子。", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]我以為你與我相處的經驗足以讓你做出準確的判斷。
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="m")]
+[name="凱爾希"]我希望讓你做出這個判斷的，是你的理智，而不是其他。
+[Predicate(references="1;2")]
+[Dialog]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",focus="n")]
+[Decision(options="如果這裡的畫面都是為了彌補遺憾……", values="1")]
+[Predicate(references="1")]
+[Decision(options="我會在這裡見到特蕾西婭嗎？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_003_kalts_1#14$1",focus="m")]
+[name="凱爾希"]我無法確定特蕾西婭身在何處，又在做些什麼。
+[name="凱爾希"]但我們所處的環境，一定與她有關。
+[Dialog]
+[charslot]
+[stopmusic(fadetime=1.5)]
+[name="溫柔的聲音"]博士。
+[Dialog]
+[Decision(options="——！", values="1")]
+[Predicate(references="1")]
+[PlayMusic(key="$calm_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",duration=1)]
+[delay(time=1.5)]
+[Dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="n")]
+[Decision(options="阿米婭！", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="阿米婭"]博士，凱爾希醫生。太好了，你們都在。
+[Dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="n")]
+[Decision(options="（猶豫）;（毫不猶豫地上前）", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="阿米婭"]放心吧，博士，我是阿米婭，貨真價實。
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#9$1",focus="m")]
+[name="阿米婭"]嗚……博士，我一直在找你。
+[Predicate(references="1;2")]
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="你看起來有些不一樣。;這身衣服是……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]這是特蕾西婭小姐留給我的衣服。
+[Dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="n")]
+[Decision(options="她果然在這裡？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]我沒有見到她。這艘“羅德島”上也並沒有她的氣息。
+[Dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="n")]
+[Decision(options="你沒有遇到危險吧？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="阿米婭"]我很好。
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[multiline(name="阿米婭")]很多回憶流向了我……
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[multiline(name="阿米婭")]唔，不只是回憶，還有情感，各種各樣的，豐富情感。
+[name="阿米婭"]我想，我們見到的這些人，他們確實是活著的。
+[charslot(slot="m",name="avg_1037_amiya3_1#2$1",focus="m")]
+[name="阿米婭"]可這種形式的“活著”，令我……悲傷。
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="阿米婭"]穿過這條走廊，見到你之後，我明白了過來。
+[name="阿米婭"]博士，我觸碰到的情感，有著同一個源頭。
+[Dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="n")]
+[Decision(options="……我。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="阿米婭"]嗯。
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="阿米婭"]我……“碰”到你了，博士。以前都沒過……
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="n")]
+女孩牽住了你的手，和過去一樣，或許更小心、更用力。
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="阿米婭"]我知道的。博士和過去相比有了很多變化。
+[name="阿米婭"]但我們一起經歷了這麼多，我更確信的是……站在我面前的，一直都是我最信任的你。
+[charslot(slot="m",name="avg_1037_amiya3_1#9$1",focus="m")]
+[name="阿米婭"]回憶說不定會騙人，情感絕不可能作假。
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="阿米婭"]還有許多事情……可能我現在也無法弄清楚。有些疑問，可能要等到再次見到特蕾西婭小姐才能得到解答。
+[name="阿米婭"]無論接下來將會發生什麼，無論我們會面臨多麼悲傷的結局……
+[name="阿米婭"]博士，你會和我站在一起，對吧？
+[Dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="n")]
+[Decision(options="我會。", values="1")]
+[Predicate(references="1")]
+[Decision(options="我是羅德島的Dr.{@nickname}。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#11$1",focus="m")]
+[name="阿米婭"]嗯……好的，現在這樣就好。
+[name="阿米婭"]那我們先去找到特蕾西婭小姐吧。
+[charslot(slot="m",name="avg_003_kalts_1#14$1",focus="m")]
+[name="凱爾希"]我們先想辦法離開這裡。
+[name="凱爾希"]答案不在這裡。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="50_g11_rhodesdeck_ex",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4133_logos_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4133_logos_1#1$1",focus="m")]
+[name="Logos"]雖說並非幻術所致，但天與地，生與死……
+[charslot(slot="m",name="avg_4133_logos_1#12$1",focus="m")]
+[name="Logos"]無一不是虛假。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_1035_wisdel_1#1$2",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1035_wisdel_1#11$2",focus="m")]
+[name="W"]呵呵，就算走出那悶死人的假畫廊，也只能待在一個更大的舞台上兜兜轉轉嗎？
+[name="W"]誰給我們裝上這層幕布？這品味可一點都說不上好。
+[Dialog]
+[charslot(slot="m",name="avg_1035_wisdel_1#11$2",focus="n")]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=1,channel="step1",loop=false)]
+[PlaySound(key="$d_avg_walk_stage",volume=1,channel="step2",loop=false)]
+[PlaySound(key="$d_gen_walk_n",volume=0.6,channel="step3",loop=false)]
+[stopsound(channel="step1",fadetime=2.5)]
+[stopsound(channel="step2",fadetime=2.5)]
+[stopsound(channel="step3",fadetime=2.5)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_1035_wisdel_1#1$2",focus="m")]
+[name="W"]唷，主角們可算到場啦。
+[name="W"]老女人，快，動一下妳那無所不知的腦子，先回答那個最關鍵的問題——
+[charslot(slot="m",name="avg_1035_wisdel_1#14$2",focus="m")]
+[name="W"]我們，現在，到底，在哪？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[verticalbg(imagegroup="50_g22_1/50_g22_2", solidwidth=1280, solidheight="1512/1512",y=1905)]
+[largebgtween(duration =20,yFrom =560, yTo =860, block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[Delay(time=10)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[verticalbg(imagegroup="50_g22_1/50_g22_2", solidwidth=1280, solidheight="1512/1512",y=1905)]
+[largebgtween(duration =20,yFrom =1660, yTo =1890, block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[Delay(time=10)]
+一葉小舟，漂泊在漫無邊際的金色海洋上。
+[name="凱爾希"]這裡是，“源石”的內部。
+[name="凱爾希"]“源石”的內部，存在著一個“宇宙”。
+[Dialog]
+[delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[largebg]
+[stopmusic(fadetime=2)]

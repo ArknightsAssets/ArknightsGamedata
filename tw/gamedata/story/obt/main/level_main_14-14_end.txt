@@ -1,0 +1,854 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_corridor_2",screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.7, fadetime=0)]
+[charslot(slot = "m", name = "avg_npc_1343_1#7$1")]
+[Delay(time=1)]
+[playMusic(intro="$dignified_intro", key="$dignified_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1343_1#7$1",focus="m")]
+[name="W"]你說你們不會抵抗——
+[name="W"]你們想用死來解脫——
+[name="W"]我不信。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1307_1#1$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_knife", volume=1)]
+[PlaySound(key="$d_avg_blddpgrn",volume=1,delay=0.5)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=1,g=0.2, b=0.2, fadetime=0, block=true)]
+[Blocker(a=0.6, r=1,g=0.2, b=0.2, fadetime=0.03, block=true)]
+[Blocker(a=0, r=1,g=0.2, b=0.2, fadetime=0.5, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[name="將死的刺客"]……
+她將匕首遞進了刺客的胸膛，特意避開致命的要害。
+她想聽到躲藏在面罩下的懦夫的哀嚎。
+她緩緩轉動著匕首。哪怕只是一聲怯懦的氣音……
+她渴望聽到。
+但什麼也沒有。
+[name="將死的刺客"]……
+[charslot(slot = "m", name = "avg_npc_1343_1#11$1",focus="m")]
+[name="W"]你不會現在就死。這麼簡單就死……
+[name="W"]你們……帶走了殿下——
+[name="W"]死，太輕易了……
+[name="W"]你說你們接下任務時已經不準備活著——
+[charslot(slot = "m", name = "avg_npc_1343_1#7$1",focus="m")]
+[name="W"]我不信。
+[name="W"]你也想活對不對？你不想逃嗎？
+[Dialog]
+[charslot]
+她想要他們逃，她渴望他們逃。
+這樣她才能追逐，才能獵殺，才能讓他們在無盡的絕望裡死去。
+她要飲用他們的絕望。
+可這樣也不夠。遠遠不夠。到底怎麼樣才夠呢？
+[charslot(slot = "m", name = "avg_npc_1343_1#11$1",focus="m")]
+[name="W"]來，拿著這枚手榴彈。它馬上就會爆炸。
+[name="W"]我就蹲在這裡，向我證明。
+[name="W"]你也可以扔掉它。
+[name="W"]扔掉它，你會活著。
+[name="W"]我不殺你，我會放你走。
+[Dialog]
+[charslot]
+[name="將死的刺客"]……
+[charslot(slot = "m", name = "avg_npc_1343_1#7$1",focus="m")]
+[name="W"]……
+[charslot(slot = "m", name = "avg_npc_1343_1#3$1",focus="m")]
+[CameraShake(duration=0.5,xstrength=25,ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="W"]扔啊！
+[Dialog]
+[charslot]
+[name="將死的刺客"]……
+[name="將死的刺客"]這東西爆炸應該會讓我什麼都不留下吧？
+[charslot(slot = "m", name = "avg_npc_1343_1#7$1",focus="m")]
+[name="W"]……
+[Dialog]
+[charslot]
+[name="將死的刺客"]好。
+[name="將死的刺客"]你該站遠點。
+她不相信。她想要找到眼前之人假裝的痕跡。
+只要他猶豫。只要他想要活下去——
+[Dialog]
+[PlaySound(key="$grenade_explosion",volume=0.7)]
+[CameraShake(duration=-1,xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=false, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=2, block=true)]
+[delay(time=1)]
+[CameraShake(duration=0.1,xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=true)]
+白光從她的面前綻放，爆炸的原點在那隻緊緊攥著手榴彈的手裡。
+火光從她的臉龐掠過，但她卻感受不到絲毫的滿足。
+[Dialog]
+[delay(time=1)]
+遠遠不夠……
+[Dialog]
+[PlaySound(key="$d_gen_explo_n", volume=1)]
+[delay(time=2)]
+[Decision(options="夠了，W！;他都化成灰了！", values="1;2")]
+[Predicate(references="1;2")]
+不，還不夠。
+遠遠不夠。
+我還準備了更多東西——
+[Dialog]
+[PlaySound(key="$d_avg_explosion_stone", volume=0.8)]
+[PlaySound(key="$d_avg_explosion", volume=0.7,delay=1)]
+[delay(time=2)]
+[Decision(options="W！;……W。", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="37_g9_airshipdockcorridor", screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[charslot(slot="m",name="avg_1035_wisdel_1#15$1",focus="m")]
+[delay(time=0.5)]
+[playMusic(intro="$ponder_intro", key="$ponder_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_1035_wisdel_1#15$1",focus="n")]
+她看到了黑色的潮水在爆炸的餘燼中翻湧，退去。
+那個人呢？已經完全找不到痕跡了嗎？
+[charslot(slot="m",name="avg_1035_wisdel_1#15$1",focus="m")]
+[name="W"]……我是不是一口氣把儲備用得太多了？
+[charslot(slot="m",name="avg_1035_wisdel_1#14$1",focus="m")]
+[name="W"]管它呢，存著不用才是浪費。
+[charslot(slot="m",name="avg_1035_wisdel_1#12$1",focus="m")]
+[name="W"]你沒事了？
+[Dialog]
+[charslot(slot="m",name="avg_1035_wisdel_1#12$1",focus="n")]
+[Decision(options="我……沒事。", values="1")]
+[Predicate(references="1")]
+[Decision(options="你剛才……怎麼了？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1035_wisdel_1#12$1",focus="m")]
+[name="W"]沒怎麼啊，不是在救你嗎？
+[charslot(slot="m",name="npc_10002",focus="m")]
+[PlaySound(key="$Mon3tr_n")]
+[name="Mon3tr"]（低沉的嘶鳴）
+[charslot(slot="m",name="avg_1035_wisdel_1#12$1",focus="m")]
+[name="W"]小怪物，你記得這些人吧？
+[name="W"]這些在過去就該全死掉的幽靈……
+[charslot(slot="m",name="npc_10002",focus="m")]
+[PlaySound(key="$p_skill_Mon3trburst", volume=0.4)]
+[name="Mon3tr"]（憤怒的高吼）
+[Dialog]
+[charslot]
+[Decision(options="……過去就該死掉的人？;你認識這些……幽靈？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1035_wisdel_1#12$1",focus="m")]
+[name="W"]你不認識嗎？
+[Dialog]
+[charslot(slot="m",name="avg_1035_wisdel_1#12$1",focus="n")]
+[Decision(options="我……應該認識嗎？;你現在冷靜得……有點讓我害怕。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1035_wisdel_1#12$1",focus="m")]
+[name="W"]……
+[charslot(slot="m",name="avg_1035_wisdel_1#1$1",focus="m")]
+[name="W"]呵。你最好不認識。
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="m")]
+[name="W"]我不知道這是死魂靈的什麼把戲。
+[name="W"]還是在殿下所在的這艘船上——
+[name="W"]但他死定了。
+[Dialog]
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="n")]
+[Decision(options="恐怕沒有這麼簡單……;我預感，之後還會出現更多……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1035_wisdel_1#11$1",focus="m")]
+[name="W"]那我求之不得。
+[name="W"]我現在對這次行動，越來越有興趣了。
+[charslot(slot="m",name="avg_1035_wisdel_1#12$1",focus="m")]
+[name="W"]走吧。是這個方向嗎？
+[Dialog]
+[charslot(slot="m",name="avg_1035_wisdel_1#12$1",focus="n")]
+[Decision(options="對，這邊。;不，那邊。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1035_wisdel_1#12$1",focus="m")]
+[name="W"]你走前面。
+[charslot(slot="m",name="avg_1035_wisdel_1#1$1",focus="m")]
+[name="W"]怕什麼，這個小怪物會陪著你。
+[name="W"]待在我的視野內，我才能隨時反應。
+[Dialog]
+[charslot(slot="m",name="avg_1035_wisdel_1#1$1",focus="n")]
+[Decision(options="……;……好吧。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1035_wisdel_1#1$1",focus="m")]
+[name="W"]和我合作也沒有多麼困難，對吧？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="37_g9_airshipdockcorridor",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+廊道上充斥著死亡的味道。死寂，讓人噁心。
+不用別人的幫助，她也能確定，他們離死魂靈的核心越來越近。
+殿下怎麼會願意待在這種地方？
+殿下也會在那裡嗎？
+殿下，還記得我嗎？
+她有很多的問題，但是想得越多，她反而越難以興奮。
+不能讓殿下看到她這樣低沉的樣子……
+殿下總是會笑著對她說，她多笑笑就好看多了。她記得很清楚——
+[stopmusic(fadetime=1)]
+[charslot(slot="m",name="avg_1035_wisdel_1#13$1",focus="m")]
+[name="W"]我正想你們呢，混蛋們。
+[Dialog]
+[charslot]
+[playMusic(intro="$frontline_intro", key="$frontline_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1307_1#1$1",duration=0.7)]
+[charslot(slot="r",name="avg_npc_1307_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_1307_1#1$1",focus="all")]
+[name="飛空艇的“幽靈”"]到此為止。
+[name="飛空艇的“幽靈”"]到此為止……
+[name="飛空艇的“幽靈”"]前面不能通過。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="m")]
+[name="W"]{@nickname}，別停。
+[name="W"]走廊的盡頭一定就是我們要找的地方。
+[name="W"]你只需要抓緊小怪物，其他什麼都不用管。
+[name="W"]我保證，他們在碰到你之前就會全都變成灰燼。
+[Dialog]
+[charslot]
+[PlaySound(key="$grenade_explosion")]
+[PlaySound(key="$d_sp_ballista",volume=0.6,delay=0.2)]
+[CameraShake(duration=1,xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_1307_1#1$1",focus="all")]
+[charslot(slot="r",name="avg_npc_1307_1#1$1",focus="all")]
+[name="飛空艇的“幽靈”"]你一個人總有顧不上的時候。
+[Dialog]
+[charslot(slot="l",name="avg_npc_1307_1#1$1",focus="all")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_shdwblwvr", volume=0.6)]
+[charslot(slot="r",name="avg_npc_1307_1#1$1",afrom=1,ato=0,duration=0.5)]
+[Delay(time=0.7)]
+[charslot]
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="m")]
+[name="W"]——？
+[Dialog]
+[charslot(slot="m",name="npc_10002",focus="m")]
+[Delay(time=0.2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$e_skill_skulsrsword",volume=0.8)]
+[PlaySound(key="$swordtsing5", volume=0.9,delay=0.2)]
+[CameraShake(duration=1, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Effect(name="$e_spark_02_large",layer = 2)]
+[Effect(name="$e_spark_01_mid",roy=-90,layer = 3)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="npc_10002",focus="m")]
+[PlaySound(key="$p_skill_Mon3trburst", volume=0.4)]
+[name="Mon3tr"]（憤怒的嘶吼）
+[Dialog]
+[charslot]
+[Decision(options="Mon3tr，我沒事！", values="1")]
+[Predicate(references="1")]
+[Decision(options="W，再幫我拖延一些時間，我有辦法能解決！", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1035_wisdel_1#4$1",focus="m")]
+[name="W"]我不是小兔子！不用你告訴我怎麼做！
+[name="W"]你要做什麼就乾脆點，別廢話。
+[Dialog]
+[charslot]
+[Decision(options="……我相信你。;好，我繼續往前走。", values="1;2")]
+[Predicate(references="1;2")]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[charslot(slot="l",name="avg_npc_1307_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_1307_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1307_1#1$1",focus="m")]
+[name="飛空艇的“幽靈”"]你們去處理博士。
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="m")]
+[name="W"]喂，你們不會真以為我會就這麼扔著那個人不管吧？
+[charslot(slot="m",name="avg_npc_1307_1#1$1",focus="m")]
+[name="飛空艇的“幽靈”"]……
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="m")]
+[name="W"]和死魂靈那個發瘋的老東西待久了讓你們腦子也不會用了嗎？
+[charslot(slot="m",name="avg_1035_wisdel_1#13$1",focus="m")]
+[name="W"]我可是提前給他留了一堆禮物。
+[name="W"]眼睛閉緊了，{@nickname}——
+[name="W"]“砰”！
+[Dialog]
+[charslot]
+[PlaySound(key="$e_skill_explodebris",volume=0.8)]
+[CameraShake(duration=-1,xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=false, block=false)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0, block=true)]
+[Blocker(a=1, r=0.95, g=0.95, b=0.95, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.05, block=true)]
+[Blocker(a=1, r=0.95, g=0.95, b=0.95, fadetime=0.8, block=true)]
+[delay(time=0.5)]
+[CameraShake(duration=0.1,xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=true)]
+[Decision(options="好痛……我就知道你沒這麼老實。;果然你在我身上還留了“保險”……", values="1;2")]
+[Predicate(references="1;2")]
+[name="W"]還輪不到你誇我。本來想等和老女人會合時給她點驚喜，現在全浪費了。
+[name="飛空艇的“幽靈”"]注意。
+[name="W"]再多賞你們些好東西！
+[name="W"]邊邊角角全給你們照亮了，你們會不會死得快點——
+[Dialog]
+[PlaySound(key="$d_avg_explosion", volume=1)]
+[CameraShake(duration=2.5, xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=0.95, g=0.95, b=0.95, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.05, block=true)]
+[Blocker(a=1, r=0.95, g=0.95, b=0.95, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=1, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[charslot(slot="l",name="avg_npc_1307_1#1$1",duration=0.7)]
+[charslot(slot="r",name="avg_npc_1307_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="m")]
+[name="W"]嘁，不行嗎？那只好用老方法，都再砍一次了。
+[charslot(slot="m",name="npc_10002",focus="m")]
+[PlaySound(key="$Mon3tr_n")]
+[name="Mon3tr"]（興奮地附和）
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="m")]
+[name="W"]你只要顧好那個人的小命就好。
+[charslot(slot="m",name="npc_10002",focus="m")]
+[PlaySound(key="$p_skill_Mon3trburst", volume=0.4)]
+[name="Mon3tr"]（不滿地低吼）
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="m")]
+[name="W"]……
+[Dialog]
+[charslot]
+幽靈從走廊盡頭的黑暗中源源不斷地湧出來，彷彿永遠也殺不完。
+一批接一批，無懼死亡。
+就像當年一樣——
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_corridor_2",screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.7, fadetime=0)]
+[delay(time=1)]
+[PlaySound(key="$e_skill_skulsrsword", volume=0.2)]
+[PlaySound(key="$d_avg_metallicclick", volume=0.4,delay=0.3)]
+[delay(time=1)]
+[PlaySound(key="$swordtsing3", volume=1)]
+[PlaySound(key="$swordtsing5", volume=1,delay=0.2)]
+[CameraShake(duration=0.7,xstrength=35,ystrength=35, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1343_1#7$1",focus="m")]
+[name="W"]到底是誰在幫你們？
+[charslot(slot="m",name="avg_npc_1307_1#1$1",focus="m")]
+[name="沉默的刺客"]……
+[charslot(slot = "m", name = "avg_npc_1343_1#7$1",focus="m")]
+[name="W"]……
+[Dialog]
+[charslot(slot="m",name="avg_npc_1307_1#1$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_daggerslow", volume=1)]
+[delay(time=2)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[delay(time=1)]
+她沒有得到任何回應。
+這條好像沒有盡頭的走廊明明躺滿了兇手的屍體，但她為何還是拼湊不出關於這場背叛的完整真相？
+但她確定，真相就藏在這裡。
+藏在巴別塔，藏在PRTS系統記錄的每項不起眼的任務裡。
+甚至就藏在……這條走廊的盡頭。
+[name="？？？"]就在這裡……
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1343_1#4$1",duration=0.3)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1343_1#4$1",focus="m")]
+[name="W"]——？
+[charslot(slot = "m", name = "avg_npc_1343_1#4$1",focus="n")]
+[name="？？？"]就在這裡……在這些屍體的下面。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1343_1#4$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[charslot(duration=0.5)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1308_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1308_1#1$1",focus="m")]
+[name="巴別塔成員"]你是回來增援的嗎……去救殿下……
+[charslot(slot = "m", name = "avg_npc_1343_1#7$1",focus="m")]
+[name="W"]……
+[name="W"]你為什麼在這……
+[charslot(slot = "m", name = "avg_npc_1308_1#1$1",focus="m")]
+[name="巴別塔成員"]我想保護殿下，但不知道被誰打暈了。
+[name="巴別塔成員"]我們是不是救下殿下了？
+[charslot(slot = "m", name = "avg_npc_1343_1#7$1",focus="m")]
+[name="W"]你看到那些刺客了？
+[charslot(slot = "m", name = "avg_npc_1308_1#1$1",focus="m")]
+[name="巴別塔成員"]本艦的防禦系統突然失效，接著很多人突然湧了進來……
+[name="巴別塔成員"]我們都想保護殿下，和我一起的兄弟們——
+[charslot(slot = "m", name = "avg_npc_1343_1#7$1",focus="m")]
+[name="W"]這些是你的兄弟？他們死了。
+[name="W"]但你活下來了。
+[charslot(slot = "m", name = "avg_npc_1308_1#1$1",focus="m")]
+[name="巴別塔成員"]……
+[charslot(slot = "m", name = "avg_npc_1343_1#7$1",focus="m")]
+[name="W"]殿下死了。
+[charslot(slot = "m", name = "avg_npc_1308_1#1$1",focus="m")]
+[name="巴別塔成員"]……
+[charslot(slot = "m", name = "avg_npc_1343_1#1$1",focus="m")]
+[name="W"]呵，保護殿下。
+[name="W"]拿著這顆手榴彈，繼續保護殿下吧。
+[Dialog]
+[charslot]
+她忍住了衝動……如果自己當時留在這裡有多好。
+如果她留下來了……結果會不一樣嗎？
+她跨過屍體，沿著走廊繼續走下去。
+然而，背後那聲爆炸的轟鳴卻遲遲沒有響起。
+[charslot(slot = "m", name = "avg_npc_1343_1#7$1",focus="m")]
+[name="W"]廢物。懦夫。
+[Dialog]
+[charslot]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+當她渾身是血地走到議長室門口時，刺客的屍體堆滿了入口，她不想再往前走了。
+沒有殺掉叛徒，她怎麼有資格悼念殿下？
+主導這一切的人是誰，她心中早以推算出自己的答案。
+是那個人帶著所有的刺客，站到這裡，將死亡引向殿下。
+殺掉所有參與這場惡行的人後，她將去向那個人討一個答案。
+那會是她最後一個目標……
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playsound(key="$char_Mon3tr",volume=0.5)]
+[delay(time=1)]
+[Decision(options="W，該走了！;門開了，現在進艙室！", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="37_g9_airshipdockcorridor",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_1035_wisdel_1#5$1",focus="m")]
+[delay(time=1)]
+[PlayMusic(intro="$warchaos_intro", key="$warchaos_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1035_wisdel_1#5$1",focus="m")]
+[name="W"]……你——
+[Dialog]
+[charslot]
+她看著你。
+你站在走廊盡頭的黑暗裡。
+Mon3tr龐大的身軀擋住了所有撲向你的幽靈。
+[Dialog]
+[Decision(options="我把他們全都引出來了！;Mon3tr撐不太久了！", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="npc_10002",focus="m")]
+[PlaySound(key="$p_skill_Mon3trburst", volume=0.4)]
+[name="Mon3tr"]（高昂的咆哮）
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="m")]
+[name="W"]……
+[charslot(slot="m",name="avg_1035_wisdel_1#1$1",focus="m")]
+[name="W"]小怪物，給我忍住！
+[Dialog]
+[charslot]
+她朝著黑色幽靈聚集的地方丟出數顆炸彈。
+[Dialog]
+[PlaySound(key="$d_gen_explo_n",volume=0.7)]
+[PlaySound(key="$d_sp_ballista", volume=1,delay=0.2)]
+[PlaySound(key="$e_skill_explodebris",volume=0.7,delay=0.4)]
+[CameraShake(duration=1,xstrength=50,ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0, block=true)]
+[Blocker(a=1, r=0.95, g=0.95, b=0.95, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.05, block=true)]
+[Blocker(a=1, r=0.95, g=0.95, b=0.95, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.05, block=true)]
+[Blocker(a=1, r=0.95, g=0.95, b=0.95, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0.95, g=0.95, b=0.95, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="npc_10002",focus="m")]
+[playsound(key="$char_Mon3tr",volume=0.5)]
+[name="Mon3tr"]（憤怒的嘶吼）
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="m")]
+[name="W"]嘖。
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=1)]
+[delay(time=2)]
+W毫不猶豫地一頭衝進了爆炸的氣浪之中。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+她穿過敵人和Mon3tr，穿越了火光，空氣的爆鳴聲不斷在耳邊炸開。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="50_g10_airshipwitchcraftcore",screenadapt="coverall", block=true)]
+[focusout(duration=1, type="bg", from=0, to=1, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+W來到了門的另一邊。
+她回頭望去——
+仍然站在走廊上的那個人，正將手按在艙門控制器上，背後似乎有無數的幽靈試圖湧出。
+在她的記憶裡，這個場面從未存在過。
+但對於那場她猜測過無數次的刺殺，有一個可能的畫面在她的腦海中永遠揮之不去——
+那位“惡靈”是否也曾如此站在殿下的面前？
+那位“惡靈”的身後是否也曾湧出無數奪走殿下生命的罪人？
+那位“惡靈”是否就是最後打開議長室那扇門的人？
+[Dialog]
+[charslot(slot="m",name="avg_1035_wisdel_1#15$1",focus="m")]
+[name="W"]……
+[Dialog]
+[charslot]
+[Decision(options="Mon3tr，撤回來！我要關門了！", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="npc_10002",focus="m")]
+[PlaySound(key="$p_skill_Mon3trburst", volume=0.4)]
+[name="Mon3tr"]（興奮的嘶吼）
+[Dialog]
+[charslot]
+[Decision(options="W，補一枚炸彈拖延！", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1035_wisdel_1#15$1",focus="m")]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1035_wisdel_1#5$1",focus="m")]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="m")]
+[name="W"]……
+[Dialog]
+[charslot]
+她沒有反駁，下意識地扔出了隨身的爆炸物。
+[Dialog]
+[PlaySound(key="$d_avg_explosion",volume=0.7)]
+[PlaySound(key="$d_avg_metaldoorclose", volume=1,delay=0.2)]
+[CameraShake(duration=-1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=false, block=false)]
+[delay(time=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[StopSound(channel="a", fadetime=1.5)]
+[stopmusic(fadetime=1.5)]
+[CameraShake(duration=0.1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot]
+[Background(image="50_g10_airshipwitchcraftcore",screenadapt="coverall", block=true)]
+[focusout(duration=0.5, type="bg", from=0, to=1, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="npc_10002",focus="m")]
+[PlaySound(key="$Mon3tr_n")]
+[name="Mon3tr"]（興奮地舉起你）
+[Dialog]
+[charslot]
+[Decision(options="痛痛痛！;我的背才剛受傷！", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1035_wisdel_1#15$1",focus="m")]
+[name="W"]……
+[Dialog]
+[charslot]
+她看著你，彷彿正試圖從你身上找到過去熟悉之人的影子。
+[Dialog]
+[Decision(options="……為什麼用……這種眼神看著我？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1035_wisdel_1#5$1",focus="m")]
+[name="W"]……
+[charslot(slot="m",name="avg_1035_wisdel_1#14$1",focus="m")]
+[name="W"]這樣就能確保他們沒辦法進來？這麼簡單……就是你天才的計劃？
+[Dialog]
+[charslot(slot="m",name="avg_1035_wisdel_1#14$1",focus="n")]
+[Decision(options="簡單……嗎？;簡單的辦法也總是很有效啊。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1035_wisdel_1#5$1",focus="m")]
+[name="W"]等等，那是……結晶化？
+[Dialog]
+[charslot(slot="m",name="avg_1035_wisdel_1#5$1",focus="n")]
+[Decision(options="看來你發現了。;我剛進入這裡時就發現了飛空艇正在結晶化。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1035_wisdel_1#5$1",focus="m")]
+[name="W"]所以，剛才就是那扇門徹底結晶化前，我們最後的機會了……
+[name="W"]你一開始就做好了獨自堵門的準備？
+[Dialog]
+[charslot(slot="m",name="avg_1035_wisdel_1#5$1",focus="n")]
+[Decision(options="不是還有Mon3tr和你嗎？;我相信你和Mon3tr。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1035_wisdel_1#12$1",focus="m")]
+[name="W"]……
+[charslot(slot="m",name="avg_1035_wisdel_1#1$1",focus="m")]
+[name="W"]相信……我？呵。
+[name="W"]在那件事弄清楚之前，我——
+[Dialog]
+[charslot]
+[Decision(options="看，這裡……應該就是我們要找的地方了。;我的計算結果果然沒錯。", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[PlayMusic(key="$m_bat_act37d0d0_01_loop", volume=0.6)]
+[PlaySound(key="$d_avg_energywell", volume=0, loop=true, channel="ghost")]
+[SoundVolume(volume=1, channel="ghost",fadetime=1.5)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[delay(time=2)]
+艙室深處，引擎在咆哮。
+靈魂在燃燒，焚盡後噴發而出的，是痛苦和憤怒。
+飛空艇的核心展露在你們的面前。
+[Dialog]
+[Decision(options="飛空艇的引擎……是靠燃燒死魂靈？！", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1035_wisdel_1#6$1",focus="m")]
+[name="W"]（殿下……不在這。）
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="m")]
+[name="W"]管它是什麼，反正炸掉總能癱瘓這艘破船吧。
+[name="W"]趕快把這邊的事結束，我還有更重要的事要做。
+[name="W"]你要跟我去見殿下。
+[Dialog]
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="n")]
+[Decision(options="……;……好，我答應你。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1035_wisdel_1#1$1",focus="m")]
+[name="W"]喂，老東西，我知道你在。
+[name="W"]我親自把給你準備的特製禮品放在你床下面了。
+[charslot(slot="m",name="avg_1035_wisdel_1#13$1",focus="m")]
+[name="W"]準備收禮！
+[Dialog]
+[charslot]
+[PlaySound(key="$p_skill_explocar", volume=0.5)]
+[CameraShake(duration=1.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=1, block=true)]
+[StopSound(channel="ghost", fadetime=1.5)]
+[delay(time=1.5)]
+[Decision(options="不對勁……;炸彈沒有起作用？", values="1;2")]
+[Predicate(references="1;2")]
+[musicvolume(volume=0, fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Subtitle(text="你們竟敢來此！", x=300, y=370, alignment="center", size=26, delay=0.04, width=700)]
+[Subtitle(text="異族人！", x=300, y=370, alignment="center", size=26, delay=0.04, width=700)]
+[Subtitle(text="還有你！薩卡茲！", x=300, y=370, alignment="center", size=26, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+燃燒的核心於瞬間停滯，四散的火焰陡然開始倒灌回核心之中。
+點燃生命的火光逐漸微弱下去。
+噪音皆消失，只剩下足以聽到心臟跳動的寧靜。
+[Dialog]
+[PlaySound(key="$d_avg_erthshkng",loop=true,channel="sk",volume=1)]
+[PlaySound(key="$d_avg_underwateramb", channel="bw", loop=true,volume=0.4)]
+[SoundVolume(volume=0.5, fadetime=1.5,channel="bw")]
+[CameraShake(duration=-1,xstrength=20,ystrength=20, vibrato=30, randomness=90, fadeout=false, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+偌大的艙室被黑暗緩緩地籠罩。
+陰影自核心處流淌而下，匯聚成河流，而後愈來愈急……
+直至足以吞噬整個艙室的黑色浪潮撲向了你們。
+[charslot(slot="m",name="avg_1035_wisdel_1#9$1",focus="m")]
+[name="W"]——！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[stopSound(channel="bw", fadetime=1.5)]
+[charslot]
+[Background(image="37_g9_airshipdockcorridor",screenadapt="coverall", block=true)]
+[CameraShake(duration=3.5,xstrength=20,ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_npc_394_1#13$1")]
+[delay(time=1)]
+[stopSound(channel="sk", fadetime=2.5)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0.3, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_394_1#13$1",focus="m")]
+[name="阿米婭"]——！
+[name="阿米婭"]如此強烈的痛苦和憤怒……
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1340_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1340_1#1$1",focus="m")]
+[name="船艙中的影子"]異族的魔王，我不會再為你多費口舌！
+[name="船艙中的影子"]因為特蕾西婭，我已經容忍你們一次又一次冒犯了。
+[name="船艙中的影子"]你們可知，你們試圖阻止的到底是什麼？
+[name="船艙中的影子"]薩卡茲需要的不只是這場戰爭！
+[name="船艙中的影子"]你們想掐滅的，是足以扭轉我們命運的火焰！
+[name="船艙中的影子"]你們無法得逞——
+[Dialog]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+淹沒阿米婭的黑色潮水正在退去，陰影中拉扯她的力量也在逐漸減弱。
+[Dialog]
+[charslot(slot="m",name="avg_npc_394_1#13$1",focus="m")]
+[name="阿米婭"]他在收縮自己的力量？
+[Dialog]
+[charslot(slot="m",name="avg_npc_1340_1#1$1",focus="m")]
+[delay(time=0.2)]
+[Effect(name="$e_amiya_atk_01", layer = 1)]
+[PlaySound(key="$p_skill_chimera", volume=1)]
+[PlaySound(key="$d_avg_shdwblwvr", volume=0.7,delay=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.4, block=true)]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_394_1#15$1",focus="m")]
+[name="阿米婭"]所有的陰影……都消散了？
+[name="阿米婭"]看來其他人先找到了死魂靈盤踞的地方。
+[charslot(slot="m",name="avg_npc_394_1#18$1",focus="m")]
+[name="阿米婭"]博士還好嗎？不知道凱爾希醫生和W小姐現在在哪……
+[name="阿米婭"]我能感受到憤怒情緒最激烈的地點，那裡應該就是我們要找的地方。
+[name="阿米婭"]博士，凱爾希醫生，撐住啊……
+[charslot(slot="m",name="avg_npc_394_1#7$1",focus="m")]
+[name="阿米婭"]我會去找你們的！
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=0.7)]
+[delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="37_g9_airshipdockcorridor",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_394_1#13$1",duration=0.3)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_394_1#13$1",focus="m")]
+[multiline(name="阿米婭")]這些爆炸的痕跡……
+[charslot(slot="m",name="avg_npc_394_1#7$1",focus="m")]
+[multiline(name="阿米婭")]W小姐一定來過這裡！
+[charslot(slot="m",name="avg_npc_394_1#13$1",focus="m")]
+[name="阿米婭"]這是……Mon3tr的爪痕？！難道博士和W小姐在一起——
+[Dialog]
+[PlaySound(key="$e_skill_skulsrsword", volume=1)]
+[PlaySound(key="$d_avg_runstop", volume=1,delay=0.2)]
+[charslot(duration=0.3)]
+[CameraShake(duration=0.5, xstrength=30,ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_394_1#13$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_394_1#13$1",focus="m")]
+[name="阿米婭"]——！
+[Dialog]
+[charslot]
+自走廊盡頭的陰影中，走出了阿米婭從未想過會在此遇到的人。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[musicvolume(volume=0.3, fadetime=1.5)]
+[charslot]
+[Image(image="49_i01",screenadapt="coverall",block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.7, fadetime=0)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=1)]
+阿米婭一直未曾忘記多年前的那場噩夢。
+她記得特蕾西婭，記得那柄插入自己胸膛的黑色長劍……
+記得那些穿著黑色長袍的兇手。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[image]
+[charslot]
+[Background(image="37_g9_airshipdockcorridor",screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[charslot(slot="m",name="avg_npc_394_1#13$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[musicvolume(volume=0.6, fadetime=1)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_394_1#13$1",focus="m")]
+[name="阿米婭"]不可能……
+[name="阿米婭"]你們……應該都死了。
+[name="阿米婭"]阿斯卡綸小姐明明確認過……
+[charslot(slot="m",name="avg_npc_1307_1#1$1",focus="m")]
+[name="飛空艇的“幽靈”"]……“魔王”。
+[name="飛空艇的“幽靈”"]你晚了一步，她知道你會來此。
+[charslot(slot="m",name="avg_npc_394_1#15$1",focus="m")]
+[name="阿米婭"]特蕾西婭小姐……
+[charslot(slot="m",name="avg_npc_1307_1#1$1",focus="m")]
+[name="飛空艇的“幽靈”"]阿米婭，你所尋找的人，他們必死無疑。
+[charslot(slot="m",name="avg_npc_394_1#13$1",focus="m")]
+[name="阿米婭"]——？！
+[charslot(slot="m",name="avg_npc_394_1#4$1",focus="m")]
+[name="阿米婭"]讓開。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_soldiersrun", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1307_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_1307_1#1$1",duration=1)]
+[delay(time=1.5)]
+[PlaySound(key="$p_skill_spiritexplo", volume=1)]
+[CameraShake(duration=2, xstrength=10, ystrength=8, vibrato=20, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.8, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=0.4, block=true)]
+[Blocker(a=0.8, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=0.5, block=true)]
+[delay(time=1)]
+[charslot]
+[charslot(slot="m",name="avg_npc_394_1#12$1",focus="m")]
+[name="阿米婭"]你們……
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1307_1#1$1",focus="all")]
+[charslot(slot="r",name="avg_npc_1307_1#1$1",focus="all")]
+[name="飛空艇的“幽靈”"]省下你讀取情緒的功夫吧。
+[name="飛空艇的“幽靈”"]止步於此……
+[name="飛空艇的“幽靈”"]或是跨過我們的屍體。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_394_1#7$1",focus="m")]
+[name="阿米婭"]我看到了你們腦海中破碎的畫面——
+[name="阿米婭"]怎麼會……
+[charslot(slot="m",name="avg_npc_394_1#20$1",focus="m")]
+[name="阿米婭"]你們來自巴別塔？！
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]
