@@ -1,0 +1,63 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 联机教学关1a
+[Battle.Pause]
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_amiya")]下面，來熟悉下防守的操作吧！
+[Tutorial(focusX=-600, focusY=30, focusWidth=300, focusHeight=500, anchor="Center",\
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+藍色目標點是我們的球門，我們需要協力防守球門，防止失球。
+[Battle.Pause(pause=false)]
+[Delay(time=2.2)]
+[Battle.Pause(pause=true)]
+[Tutorial(focusX=-70, focusY=50, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+這隻可愛的小鼷獸是敵方的<@tu.kw>擊球手</>，它會試圖追上足球，並向我方射門！
+[Battle.Pause(pause=false)]
+[Delay(time=3.1)]
+[Battle.Pause(pause=true)]
+[Tutorial(focusX=-480, focusY=40, focusWidth=200, focusHeight=200, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+這時就需要部署幹員防守球門。這些帶有特殊標記的地塊是<@tu.kw>守門位</>，部署在上面的幹員會承擔起<@tu.kw>守門員</>的職責。
+[Battle.Pause(pause=false)]
+[Delay(time=1)]
+[Battle.Pause(pause=true)]
+[PopupDialog(dialogHead="$avatar_amiya")]守門員可以接住飛來的足球。
+[Tutorial(focusX=600, focusY=-250, focusWidth=250, focusHeight=250, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+被守門員接住的足球會<@tu.kw>進入待部署區</>。
+[CooperateBattle.LockCamera(enable=false)]
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=112, validHeight=116)]
+[Battle.LockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Tutorial(waitForSignal="put_down", dialogHead="$avatar_stward", animStyle="Drag", \
+          startX=-50, startY=60, startAnchor="BottomRight", endAnchor="Center", endX=0, endY=100)] \
+在5秒內將待部署區的足球<@tu.kw>部署</>在我方半場的任意位置，就可以在此<@tu.kw>重新開球</>。
+[Battle.UnlockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Delay(time=3.7)]
+[Battle.Pause(pause=true)]
+[PopupDialog(dialogHead="$avatar_amiya")]現在，輪到我們反攻了！陣地足球項目有一個突出的特點——不僅可以踢球，還可以<@tu.kw>攻擊敵方球員</>。
+[Battle.Pause(pause=false)]
+[Delay(time=3.7)]
+[Battle.Pause(pause=true)]
+[Tutorial(focusX=-110, focusY=-60,  focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+敵方球員<@tu.kw>生命值歸零</>時會暫時停止行動，我們可以趁機發動進攻！
+[Battle.Pause(pause=false)]
+[Delay(time=7.5)]
+[Battle.Pause(pause=true)]
+[Tutorial(focusX=450, focusY=220, focusWidth=200, focusHeight=200, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+這些置於球門前的場地設施是<@tu.kw>陣地屏障</>，它會阻礙我們進球。
+[Battle.Pause(pause=false)]
+[Delay(time=3.5)]
+[Battle.Pause(pause=true)]
+[Tutorial(focusX=430, focusY=170, focusWidth=200, focusHeight=200, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+不過，幹員的攻擊和足球的撞擊都可以<@tu.kw>破壞陣地屏障</>，使敵方的球門暴露出來。
