@@ -1,0 +1,490 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="27_g18_lighthouse_square",screenadapt="coverall")]
+[playsound(key="$d_avg_sea", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=3)]
+[Delay(time=3)]
+[Subtitle(text="一個獵人他走上海岸♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="他的家鄉在後，他的路在身前♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="父母與兒女都與他失散♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="他的戀人已經葬身大海♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Delay(time=1)]
+[Subtitle(text="一個獵人他走上海岸♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="他的家鄉在後，徒余哀嘆♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="他的路沒有盡頭♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="他的路濃霧瀰漫♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=3, block=true)]
+[Subtitle(text="一個獵人他回到海岸♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="他的旅程結束，他的家鄉近在眼前♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="舊日的濤聲呢喃♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="可他為什麼卻步♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="又為什麼不安♪", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_walk_n", volume=0.6)]
+[Delay(time=3)]
+[playMusic(intro="$tech_intro",key="$tech_loop", volume=0.6)]
+[Decision(options="好久不見，斯卡蒂。;你好啊，斯卡蒂。", values="1;2")]
+[Predicate(references="1;2")]
+[Delay(time=1)]
+[charslot(slot="m",name="char_263_skadi#3",duration=1.5)]
+[delay(time=2)]
+[name="斯卡蒂"]好久不見，博士。
+[name="斯卡蒂"]按照約定，來接你的應該是那個臉皮很厚話又多的黎博利，但你好像並不驚訝。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="你和極境都是羅德島的幹員。;畢竟這裡更靠近你的故鄉。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="斯卡蒂"]嗯，也是。
+[name="斯卡蒂"]你比凱爾希估計的晚到了快一個小時。
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="斯卡蒂"]看來就算有聖徒開具的公函，審判庭該有的審查程序還是一樣沒落。
+[name="斯卡蒂"]才不到三個月，除了能派上用場的工人外，這裡的居民全都遷去了內陸城鎮，取而代之的是幾個大陣的懲戒軍。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="他們在緊鑼密鼓地籌備著什麼。;他們看起來非常緊張。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#9")]
+[name="斯卡蒂"]自從一週前，伊比利亞收到了來自阿戈爾的聯絡，這座被遺忘的小鎮就不再安靜了。
+[name="斯卡蒂"]遍地的海洋殘渣刺激著這些年輕戰士的神經，阿戈爾的聲音只會加重他們的焦慮。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="阿戈爾的行動確實值得關注甚至戒備。;遠海中的國家突然發聲，沒人能充耳不聞。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="斯卡蒂"]沿著雕塑左邊的這條街道過去，走得快一點，十分鐘就能看到大海。
+[name="斯卡蒂"]我們待會直接前往伊比利亞之眼。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[PlaySound(key="$d_avg_sea", volume=0.7, loop=true, channel="sea")]
+[delay(time=2.5)]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="斯卡蒂"]喂，博士，你聽見海浪了嗎？
+[charslot(slot = "m", focus = "n")]
+斯卡蒂微微側過了頭，迎向海風吹來的方向，她的長髮在風中舞動，與眼中的陰翳同色。
+[charslot(slot="m",name="char_263_skadi#4")]
+[name="斯卡蒂"]浪的層次變得很複雜，我還聽見了——星空流動的聲音，永不停歇的自然的歌，還有，不被理解的語言……
+[StopSound(channel="sea", fadetime=3)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2.5, block=true)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[Sticker(id="st1", text="Ishar-mla。", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.1)]
+[Sticker(id="st1", text="我在。", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.1)]
+[Sticker(id="st1", text="我們遭受的苦永在。", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.1)]
+[Sticker(id="st1", text="我們渴望的生永在。", x=320,y=340, alignment="center", size=22, delay=0.001, width=700,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="char_263_skadi#7")]
+[name="斯卡蒂"]……
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[playMusic(intro="$tech_intro",key="$tech_loop", volume=0.6)]
+[Decision(options="斯卡蒂，你還好嗎？;和家鄉恢復聯繫，反而讓你心神不寧？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="斯卡蒂"]近鄉情怯吧……算了，這種感受很難總結。
+[name="斯卡蒂"]也可能只是沒睡好覺，上次回了一趟海裡，好像鯊魚把她的夢都轉移給我了一樣。
+[name="斯卡蒂"]說起來，凱爾希醫生為什麼這麼著急地叫你過來？
+[name="斯卡蒂"]我不記得你接觸過海洋，博士。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="不一定，但我記不清了。;但似乎，並不陌生。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_263_skadi#3")]
+[name="斯卡蒂"]這個回答很模糊。
+[name="斯卡蒂"]好吧，我忘了你的情況。這個回答其實很正常。
+[charslot(slot="m",name="char_263_skadi#5")]
+[name="斯卡蒂"]算了，凱爾希醫生把你叫過來，總有她的原因。
+[name="斯卡蒂"]走吧，天快要黑下來了。
+[Dialog]
+[charslot(duration=1)]
+[playsound(key="$d_gen_walk_n")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="27_g24_cloudy_sea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_jump_water", volume=1)]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",posfrom = "0,-100", posto = "0,0",duration = 1)]
+[delay(time=0.5)]
+[Effect(name="$e_shuihua",layer = 1,y=-350)]
+[CameraShake(duration=0.5, xstrength=5, ystrength=10, vibrato=15, randomness=70, fadeout=true, block=false)]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",posfrom = "0,-100", posto = "0,0",duration = 1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="l")]
+[name="歌蕾蒂婭"]先別靠過來，等我把水甩乾。
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="r")]
+[name="幽靈鯊"]啊，醫生。很少有人能鎖定深海獵人的行蹤。劍魚提前告訴你我們要從這裡上岸嗎？
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="凱爾希"]極境在這一片海域布置了訊息採集裝置，目前已經完成校準，與伊比利亞之眼的中控系統直接連通。
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="r")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="r")]
+[name="幽靈鯊"]這麼短的時間，架設一套針對水下環境的定位系統，那個黎博利還蠻有辦法的。
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="歌蕾蒂婭"]我應該理解為，羅德島與審判庭加深了合作？
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="凱爾希"]一週前，水下的那座城市藉由特殊頻段告知伊比利亞，阿戈爾將開闢一條連通阿戈爾本境與陸地的“航道”。
+[name="凱爾希"]然而面對這項龐大的計劃，除了大燈塔的定位系統，伊比利亞幾乎沒有其他獲取情報的途徑。
+[name="凱爾希"]顯然，作為總戰爭設計師的您，對此也毫不知情。
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="l")]
+[name="歌蕾蒂婭"]鯊魚，告訴凱爾希我們的發現。
+[charslot(slot = "right", name = "avg_1023_ghost2_1#13$1",focus="r")]
+[name="幽靈鯊"]這是我和隊長第三次潛回斯圖提斐拉沉沒的地方，距離上一次，僅僅相隔了十天。
+[name="幽靈鯊"]第一次的時候，還能看見爆炸後殘存的船體插在海床上，藉著從海面透下的微光，艙體內部的金色像是暈開的顏料。
+[charslot(slot = "right", name = "avg_1023_ghost2_1#10$1",focus="r")]
+[name="幽靈鯊"]而這一次，巨大的金屬船體結構已經完全消失，取而代之的是一片生機盎然的珊瑚叢。
+[name="幽靈鯊"]……我習慣了做夢，但依然覺得不真實。
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="歌蕾蒂婭"]那塊悼亡文明與歷史的碑，只樹立了極短的時間。
+[name="歌蕾蒂婭"]“愚人號”已經徹底變成了海洋的一部分。
+[name="歌蕾蒂婭"]準確說，化作了海嗣巢穴的一部分。
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#14$1")]
+[name="凱爾希"]海嗣同化環境的速度加快了。
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#10$1",focus="l")]
+[name="歌蕾蒂婭"]快了很多。
+[name="歌蕾蒂婭"]但還有更值得關注的事情。我們的確發現了戰爭的痕跡，而且就發生在不久前。
+[name="歌蕾蒂婭"]完全淨空，連海雪也不見一絲的海域；扭曲破碎，明顯被微型奇點撕扯過的海床……
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="凱爾希"]能做到這些的，恐怕只有阿戈爾正規軍團的艦隊。
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#10$1",focus="l")]
+[name="歌蕾蒂婭"]作為一個常在陸地上行走的人，凱爾希，你對阿戈爾的關注與了解超乎尋常。
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="凱爾希"]雖然遠隔無垠的海水，但阿戈爾依然屬於泰拉。
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="r")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#12$1",focus="r")]
+[name="幽靈鯊"]我和歌蕾蒂婭已經決定，前往那座城市。
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="凱爾希"]這無疑是一個冒險的決定。
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="r")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="r")]
+[name="幽靈鯊"]是有一點冒險啦。
+[charslot(slot = "left", name = "avg_474_gladiia_1#1",focus="l")]
+[name="歌蕾蒂婭"]相當冒險。
+[name="歌蕾蒂婭"]所以，深海獵人已經觀察了很久。
+[name="歌蕾蒂婭"]在那次行動之前，我作為深海獵人總戰爭設計師參加了科學院與技術院的軍事會議。
+[name="歌蕾蒂婭"]在兩院當時制定的戰爭預案裡，並不存在一座靠近陸地的軍事要塞，也不存在涉及“航道”的計劃。
+[charslot(slot = "left", name = "avg_474_gladiia_1#5",focus="l")]
+[name="歌蕾蒂婭"]毫無疑問，阿戈爾經歷了重大變故。
+[name="歌蕾蒂婭"]斬殺伊莎瑪拉之後，我們和本境的聯繫徹底斷絕。根據已知的情報很難拼湊出真相。
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="凱爾希"]這並不能構成你們重返阿戈爾的充足理由。最先勸阻你們的人甚至並不是我，而是你們舊日的同僚。
+[charslot]
+[charslot(slot = "left", name = "avg_474_gladiia_1#5",focus="l")]
+[charslot(slot = "right", name = "avg_1023_ghost2_1#1$1",focus="l")]
+[name="歌蕾蒂婭"]你是說……烏爾比安？
+[name="歌蕾蒂婭"]烏爾比安也一定明白，陸地上不會有答案。我們必須回到海洋之中。
+[name="歌蕾蒂婭"]如果刻意與阿戈爾保持距離是他的策略，那我們就更有必要以正式的姿態回歸阿戈爾。
+[charslot(slot = "right", name = "avg_1023_ghost2_1#3$1",focus="r")]
+[name="幽靈鯊"]……自我從睡夢中清醒以來，海浪時刻在訴說著，迷途的人該回家。
+[charslot(slot = "right", name = "avg_1023_ghost2_1#13$1",focus="r")]
+[name="幽靈鯊"]深海獵人，必須返回故鄉。
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="凱爾希"]我能理解。
+[name="凱爾希"]歌蕾蒂婭，我會與你們同行。
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="歌蕾蒂婭"]對你而言，這的確是個不可多得的機會。
+[charslot]
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="凱爾希"]我此行並不僅僅代表我自己，甚至不僅僅代表羅德島。
+[charslot(slot="m",name="avg_474_gladiia_1#1")]
+[name="歌蕾蒂婭"]伊比利亞？他們往你已經不堪重負的肩膀上多加了一副擔子？
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="凱爾希"]這同樣是我自己的選擇。
+[name="凱爾希"]羅德島與伊比利亞審判庭的合作剛剛起步，正如我們之間的合作也依然只是開始。
+[charslot(slot="m",name="avg_474_gladiia_1#1",focus="n")]
+凱爾希凝視著歌蕾蒂婭，海風沒有吹皺對方那張毫無表情的臉。
+短暫的沉默後，歌蕾蒂婭點了點頭。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[PlaySound(key="$d_avg_sea", volume=0.6, loop=true, channel="sea")]
+[Background(image="27_g19_lighthouse_front",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_4009_irene_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒卡門"]艾麗妮，距離我們收到阿戈爾的聯絡已經有幾天了？
+[charslot(slot = "right", name = "avg_4009_irene_1#7$1",focus="r")]
+[name="艾麗妮"]八天了，聖徒閣下。
+[name="艾麗妮"]這八天裡，除了必要的布置、會議和休息時間，您一直站在這裡觀察著海洋。
+[name="艾麗妮"]阿戈爾一方並未給出明確的接洽時間，我理解您擔心錯過他們的動向，但……
+[charslot(slot = "left", name = "avg_npc_447_1#7$1",focus="l")]
+[name="聖徒卡門"]艾麗妮，看看眼前的海。
+[charslot]
+難以辨明顏色的深沉海洋湧動著。或許是海面太過遼闊，天空便顯得低沉。
+海水撞擊礁石，激起幾公尺高的浪濤，在這狹小的天地間激盪出轟然聲響。
+[StopSound(channel="sea", fadetime=3)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[charslot(slot = "right", name = "avg_4009_irene_1#7$1",focus="l")]
+[name="聖徒卡門"]對伊比利亞來說，沒有翻湧著恐魚血肉的海洋，哪怕再喧囂，也是仁慈的。
+[name="聖徒卡門"]我的一位故友，曾是港都最富才情的詩人。
+[charslot(slot = "left", name = "avg_npc_447_1#2$1",focus="l")]
+[name="聖徒卡門"]宏偉的港都沉入靜謐之後，他掙扎著一路向北逃亡，踏著遍地餓殍來到了內陸深處，那座日後將會成為首都的小城。
+[charslot(slot = "left", name = "avg_npc_447_1#5$1",focus="l")]
+[name="聖徒卡門"]我看到他在破落的城門前跪下，不住地哀哭。那座城市就從哭聲中得到了新的名字，佩爾多尼朵拉，“寬恕已去”。
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒卡門"]不過，當時的人們需要的不是哀悼，而是撫慰。許多人更習慣將那個名字簡稱為佩爾多尼——“寬恕”。
+[name="聖徒卡門"]如今，黃金時代的遺產，最後的伊比利亞之眼重新亮起，艾麗妮，這意味著什麼？
+[charslot(slot = "right", name = "avg_4009_irene_1#7$1",focus="r")]
+[name="艾麗妮"]希望和決心。
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒卡門"]“希望和決心”，當然。
+[charslot(slot = "left", name = "avg_npc_447_1#8$1",focus="l")]
+[name="聖徒卡門"]年輕人，你回答我時的眼神要比達里奧年輕時更加堅毅，這很好。
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒卡門"]但這種鼓舞人心的發言往往並不是最準確的答案。
+[name="聖徒卡門"]半個世紀後，我們一再後撤的防線終於重新向前推進至此。很快，這裡將會成為審判庭新的中樞。
+[name="聖徒卡門"]可與此同時，我們也將一切袒露在了海洋——海嗣，還有阿戈爾——面前。
+[name="聖徒卡門"]伊比利亞已捉襟見肘。這個國家無法再掩藏它長久以來的疲弱和困病，這是不爭的事實。
+[charslot(slot = "left", name = "avg_npc_447_1#6$1",focus="l")]
+[name="聖徒卡門"]而另一個事實是，我們已不可能再次退卻。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot="m",name="avg_npc_1380_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="喬迪"]老師——哎呀，艾麗妮閣下，好久不見。
+[charslot(slot="m",name="avg_4009_irene_1#1$1")]
+[name="艾麗妮"]好久不見。
+[name="艾麗妮"]這套衣服還滿適合你的。
+[charslot(slot="m",name="avg_npc_1380_1#11$1")]
+[multiline(name="喬迪")]謝、謝謝。
+[charslot(slot="m",name="avg_npc_1380_1#2$1")]
+[multiline(name="喬迪")]啊對了，緊急情況——燈塔剛剛偵測到了一批來歷不明的訊號。
+[name="喬迪"]訊號來源似乎不是海底，而是天空。
+[charslot(slot="m",name="avg_4009_irene_1#7$1")]
+[name="艾麗妮"]喬迪，我想它已經肉眼可見了……
+[charslot(duration=1)]
+卡門和艾麗妮緊緊盯著遠處的天空。年輕的書記順著兩人的視線看過去。
+他愣在原地。
+[Stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[image(image="51_i01_1",screenadapt="coverall",xScale=1.1,yScale=1.1,y=30)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1,yTo=0,duration=20, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$faceoff_loop", volume=0.6)]
+[Delay(time=1)]
+[playsound(key="$d_avg_bionicuavs", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=2)]
+他們看見了飛翔的鱗群。
+[name="喬迪"]那是？
+[name="聖徒卡門"]仿生無人機。早年島民帶上岸的器物裡，曾有過類似的造物。
+[StopSound(channel="bgs", fadetime=2)]
+無人機矩陣眨眼間便已越過海面，與高聳的大燈塔遙相對應。其中一隻脫離編隊，緩緩懸停在三人的面前。
+機翼如鰭翕動，光的微粒在虛空中舞蹈，親切而富有磁性的女聲旋即響起。
+[PlaySound(key="$d_avg_bionicuavs_tech")]
+[Dialog]
+[image(image="51_i01_2",screenadapt="coverall",fadetime=2)]
+[Delay(time=3)]
+[name="？？？"]（伊比利亞語）伊比利亞的諸位，請不必緊張。
+[name="？？？"]這是來自阿戈爾的致意。
+[name="？？？"]我是本國社會行政監察所的技術執政官之一，克萊門莎。
+卡門端舉提燈，平靜地直視著身前的無人機。
+兩種截然不同的光亮，彷彿兩個截然不同的文明的對話——或者對峙。
+[name="聖徒卡門"]伊比利亞審判庭，聖徒卡門·伊·伊比利亞。
+[name="聖徒卡門"]我想，這應當是我們兩國之間的首次正式交流。
+[name="克萊門莎"]是這樣沒錯。
+[name="聖徒卡門"]您的伊比利亞語很標準。
+[name="克萊門莎"]離開本境前，我為自己錄入過伊比利亞的語言模組。如果我的表達有不得當的地方，還請您理解。
+[name="克萊門莎"]此外，也請原諒我暫時只能以這種形式與您溝通，伊比利亞……閣下。
+[name="聖徒卡門"]我們對這種形式的交流沒有異議，但我對它發生得如此之遲感到遺憾，執政官閣下。
+[name="聖徒卡門"]被你們稱為“航道”的計劃據稱已經進行到後半，而近在咫尺的伊比利亞仍對種種細節一無所知。
+[name="克萊門莎"]所以我們將迎接伊比利亞的使節前往我們的城市，阿戈爾尊重伊比利亞在被海嗣危機波及時所做出的努力。
+[name="聖徒卡門"]“波及”——伊比利亞所面對的，只是危機的餘波？
+[name="克萊門莎"]是的。
+[name="克萊門莎"]不必糾結外交辭令，閣下。
+[name="克萊門莎"]我們都認同語言的力量。而您的姓名，卡門·伊·伊比利亞，本身便已是一種象徵，勇氣與魄力的象徵。
+[name="克萊門莎"]所以阿戈爾才會來此。我們希望達成與伊比利亞、與陸上諸國的合作，開闢一條直抵陸地的航道。
+[name="克萊門莎"]我們將淨空從阿戈爾本境到陸地之間的大片海域，以便阿戈爾的主力抵達海岸。
+[name="聖徒卡門"]……我想我不必提醒您，將大量軍隊派遣至其他國家的邊境，這種行為在陸上意味著什麼。
+[name="克萊門莎"]意味著為了對抗即將到來的巨大威脅，我們將竭盡所能。
+[name="克萊門莎"]如有必要，我願意前往陸地與您會晤，向您詳細解釋一切。但來到深海，會方便諸位更好地理解我們當下的處境。
+[name="克萊門莎"]第八與第十軍團的艦隊正在有序清剿沿途海嗣。他們隨後將迎接諸位前往我們的城市，彌利亞留姆。
+[name="克萊門莎"]無人機編隊將持續向諸位同步戰鬥進展與環境變化，直到諸位安全抵達。
+[name="克萊門莎"]海洋或許正在醞釀一場前所未有的災難。
+[name="克萊門莎"]而審判官閣下，我憂心大地即使再浩瀚，也不過是另一座孤島。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[delay(time=1)]
+[Background(image="27_g19_lighthouse_front",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+無人機矩陣收斂了輝光，這場突如其來的通訊已經結束。
+海風依舊在吹，老人緩緩放下了手中的提燈。
+[Dialog]
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4009_irene_1#7$1",duration=0.5)]
+[delay(time=1)]
+[name="艾麗妮"]“直抵陸地的航道”——她的表達很得體，但……
+[charslot(slot="m",name="avg_npc_447_1#1$1")]
+[name="聖徒卡門"]阿戈爾無疑是傲慢的。
+[name="聖徒卡門"]一個手持利器的傲慢大人，不屑於對赤手空拳的孩子耍弄心機與手腕。
+[name="聖徒卡門"]艾麗妮，將剛剛的通訊內容同步給我們的合作夥伴。
+[name="聖徒卡門"]凱爾希已經同意作為伊比利亞的使節出訪阿戈爾，一直對航道計劃心存疑慮的深海獵人此時應該也已經做出了決定。
+[charslot(slot="m",name="avg_4009_irene_1#7$1")]
+[name="艾麗妮"]是！
+[name="艾麗妮"]我也會盡快與格蘭法洛的其他審判官將事務交接清楚。
+[Dialog]
+[playsound(key="$rungeneral")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1380_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "right", name = "avg_npc_1380_1#1$1",focus="r")]
+[name="喬迪"]老師，剛才與阿戈爾通訊的全部內容，我都做了紀錄，請您過目。
+[charslot(slot = "right", name = "avg_npc_1380_1#8$1",focus="r")]
+[name="喬迪"]您、您是否批准我前往……
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒卡門"]書記，一週前你就已經提交了申請。
+[charslot(slot = "right", name = "avg_npc_1380_1#8$1",focus="r")]
+[name="喬迪"]是的，既然現在阿戈爾的艦隊馬上就要來了，我想，是不是……
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒卡門"]如果已經做了決定，猶豫反而會讓你的表態沒有說服力。
+[charslot(slot = "right", name = "avg_npc_1380_1#10$1",focus="r")]
+[name="喬迪"]我很小的時候，蒂亞戈叔叔就總是憂心忡忡的。他跟我說：“喬迪，你應該離開格蘭法洛，離開伊比利亞。”
+[charslot(slot = "right", name = "avg_npc_1380_1#3$1",focus="r")]
+[name="喬迪"]但他沒辦法告訴我，我該去哪裡。
+[charslot(slot = "right", name = "avg_npc_1380_1#1$1",focus="r")]
+[name="喬迪"]阿戈爾，那是我的家鄉，我的家鄉在大海裡，而大海無法靠近。我從沒聽過阿戈爾的聲音，也從沒看過阿戈爾的模樣。
+[charslot(slot = "right", name = "avg_npc_1380_1#6$1",focus="r")]
+[name="喬迪"]但現在，它很近。
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒卡門"]審判庭同意你的申請，喬迪·方塔納羅薩。你將作為伊比利亞的使節，與艾麗妮和凱爾希一同前往阿戈爾的城市。
+[charslot(slot = "right", name = "avg_npc_1380_1#8$1",focus="r")]
+[name="喬迪"]謝謝您。
+[charslot(slot = "left", name = "avg_npc_447_1#1$1",focus="l")]
+[name="聖徒卡門"]不。這並不是一次獎勵，你在審判庭的工作做得算不上好。
+[name="聖徒卡門"]選擇艾麗妮，是因為她已經做好了準備，甚至為此拋棄了自己堅持許久的信念。
+[name="聖徒卡門"]而選擇你，恰恰是因為你仍然困惑和悵然，軟弱終究會腐蝕你。
+[name="聖徒卡門"]加入審判庭是一次考驗，回到自己的家鄉，同樣也是一次考驗。
+[charslot(slot = "right", name = "avg_npc_1380_1#6$1",focus="r")]
+[name="喬迪"]我、我明白的，老師。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=2)]
+[Background(image="51_g12_seabed",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_463_1#1$1",duration=1.5)]
+[delay(time=2)]
+[playsound(key="$d_avg_horse")]
+[name="羅辛南特"]（興奮的嘶鳴）
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="烏爾比安"]——
+[charslot(slot="m",name="avg_4145_Ulpia_1#3$1")]
+[name="烏爾比安"]這裡已經是海溝的最深處。
+[name="烏爾比安"]它們掏空了海溝兩側的峭壁，向內築巢。所以我們繞了好幾圈，都沒有發現這裡。
+[charslot(slot="m",name="avg_npc_463_1#1$1")]
+[playsound(key="$d_avg_horse")]
+[name="羅辛南特"]（警惕的嘶鳴）
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="烏爾比安"]嗯。我也聞到了。
+[name="烏爾比安"]這種氣味……海嗣在摧毀了原有的海洋生態之後，又建立了一套完全只為它們自己服務的生態系統。
+[name="烏爾比安"]如此完善的海嗣生態系統，原本只存在於海洋的深處。
+[name="烏爾比安"]回去吧，羅辛南特。接下來我一個人進去。
+[charslot(slot="m",name="avg_npc_463_1#1$1")]
+[name="羅辛南特"]（不悅地晃動脖頸）
+[charslot(slot="m",name="avg_4145_Ulpia_1#1$1")]
+[name="烏爾比安"]整塊大陸架都在變化，我需要知道，究竟是誰在使海浪鼓噪。
+[name="烏爾比安"]告訴騎士，別停止狩獵。
+[name="烏爾比安"]我們只是暫時分別。
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1.5)]
+[playsound(key="$d_avg_swimdeepsea")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image(image="51_i03",screenadapt="coverall",xScale=1.1,yScale=1.1,x=-20)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1,xTo=0,duration=45, block=false)]
+[playsound(key="$d_avg_underwateramb", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=20, block=false)]
+[Delay(time=3)]
+[playMusic(intro="$chenandwei_intro",key="$chenandwei_loop", volume=0.6)]
+烏爾比安游進了巢穴。
+他沒有選擇潛行，因為發光的植物海嗣點亮了巢穴的每一個角落，他無處可藏。
+在盤旋而上的厚實葉片之間，造型奇特的微小生物在酣眠或游弋。
+海床原本的岩石已不可見。溟痕緩緩搖動著細小的觸肢，捕捉著有機物的碎屑，它們織成層層疊疊的菌毯，淹沒了烏爾比安游動的聲響。
+他清晰地感受到自己身體的變化。意識在舒展，軀殼在放鬆，體內的每一個細胞都在試圖回應著什麼。
+他分明是闖入這裡的異類，但整個巢穴都在向自己盛開。
+[name="海嗣"]Ul……Ul-pian……咕……Ul-pianus，同胞。
+烏爾比安幾乎能看穿海嗣接近透明的軀體，他在等待對方吐出捕食或者被他捕食之類的蠢話，但是並沒有。
+海嗣，在思考他的思考。
+[name="海嗣"]終於。你走過長路。
+[name="海嗣"]這裡。營養足夠。褪去累贅的血肉。
+[name="海嗣"]回歸。滋長。遷徙。
+[name="烏爾比安"]哼。
+[name="海嗣"]我為你而生，Ul-pianus，只為你而生。
+[name="海嗣"]我解開你。疑惑。我引導你。回歸族群懷抱。
+[name="烏爾比安"]你們因何遷徙？你們要去向何方？
+[name="海嗣"]Ul-pianus，你仍動搖。
+[name="海嗣"]同胞，你需要知曉大群。你想要知曉大群。
+[name="海嗣"]生代即將甦醒。生代需要回歸。新的循環。建構海洋。離開海洋。
+[name="烏爾比安"]生代甦醒？離開海洋？
+[name="海嗣"]大群。看見。新的長路。我們盡快——
+[name="烏爾比安"]……那麼，那座城市在進行的事情，與你們有什麼關聯？
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

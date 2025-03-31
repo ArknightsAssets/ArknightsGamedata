@@ -3,15 +3,10 @@ local list =
 {
   
   "HotFixes/TestStubHotfixer",
-  "HotFixes/BattleControllerHotfixer",
-  "HotFixes/BattlePhaseHotfixer",
-  "HotFixes/EnemyHotfixer",
-  "HotFixes/Act2VMultiBattleFinishNormalViewHotfixer",
-  "HotFixes/CooperateGameModeHotfixer",
-  "HotFixes/CooperateHintPanelHotfixer",
-  "HotFixes/AuraAbilityHotfixer",
-  "HotFixes/HandbookInfoAvgHotfixer",
-  "HotFixes/EntityHotfixer"
+  "HotFixes/RemovableSharedRandomTileGlobalBuffHotfixer",
+  "HotFixes/NameCardEditHotfixer",
+  "HotFixes/CameraControllerHotfixer",
+  "HotFixes/SandboxBattleDataControllerHotfixer"
 };
 
 return list;

@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true)] 爬塔教学关卡01_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_jesica")] 我無法擊破敵人的裝甲！請求火力支援！
 [PopupDialog(dialogHead="$avatar_doberm")] 潔西卡，幹得不錯。經歷了這麼多次模擬作戰，還是有所成長的。
@@ -19,7 +20,6 @@
 [PopupDialog(dialogHead="$avatar_doberm")] 沒錯，記得抓緊時間好好調整狀態。預備區人手不足時，休整區待命的幹員需要全部補充進來。
 [PopupDialog(dialogHead="$avatar_jesica")] 明白了！
 [PopupDialog(dialogHead="$avatar_doberm")] 另外，PRTS為大家配備了一種全新的“<@tu.kw>戰術裝備</>”。它可以使接力的幹員繼承被接力者的部分能力，從而獲得<@tu.kw>增強</>。
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [Battle.LockFunction(mask="CHARACTER_MENU")]
 [InputBlocker(blockInput=false)]
 [Tutorial(waitForSignal="put_down", dialogHead="$avatar_doberm", animStyle="Drag", \
@@ -29,7 +29,6 @@
           startX=-70, startY=-50, endX=250, endY=-50)] \
 就是這樣，<@tu.kw>選擇方向</>。
 [InputBlocker(blockInput=true)]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
 [Battle.UnlockFunction(mask="CHARACTER_MENU")]
 [Battle.Pause(pause=false)]
 [Delay(time=6)]
@@ -40,7 +39,6 @@
           protectTime=0.5, dialogHead="$avatar_doberm")] \
 是的，你身上的戰術裝備已經啟動了，仔細看圍繞在你身邊的<@tu.kw>深色裝備</>。
 [PopupDialog(dialogHead="$avatar_milu")] 原來如此。
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [Battle.LockFunction(mask="CHARACTER_MENU")]
 [InputBlocker(blockInput=false)]
 [Battle.UnlockFunction(mask="CHARACTER_MENU")]
@@ -49,7 +47,7 @@
           protectTime=0.5, dialogHead="$avatar_doberm")] \
 另外，博士，請你聚焦守林人。
 [InputBlocker(blockInput=true)]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.LockFunction(mask="CHARACTER_MENU")]
 [Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, \
           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", \

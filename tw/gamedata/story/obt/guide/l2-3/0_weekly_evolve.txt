@@ -5,5 +5,12 @@
 [Tutorial(target="btn_battle",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 從此進入<@tu.kw>終端</>
 [GotoPage(dest="stage", waitForSignal="stage_routed")]
 [Tutorial(target="weekly_layout", waitForSignal="stage_weekly_zonetype_selected",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 點擊進入晉升材料獲取作戰行動。
-[PopupDialog(dialogHead="$avatar_amiya")] 晉升材料關卡和資源型作戰關卡一樣，開放時間會根據日期的不同有所限制。如果遇到當天沒有開放的作戰行動，博士需要改日再來。
-[PopupDialog(dialogHead="$avatar_sys")] 各個職業所需要的晉升材料也不相同，請安排材料的獲取順序，晉升幹員，讓他們早日成為你更強大的助力。
+[PopupDialog(dialogHead="$avatar_amiya")] 固若金湯、摧枯拉朽、勢不可擋、身先士卒中的關卡會定期開放。在熟悉羅德島期間，這些關卡將為您全部開放。
+[PopupDialog(dialogHead="$avatar_sys")] 各個職業所需要的晉升晶片材料也不相同，請規劃好材料的取得順序。晉升幹員，讓他們早日成為您更強大的助力。
+[GotoPage(dest="HOME", waitForSignal="home_routed")]
+[PopupDialog(dialogHead="$avatar_amiya")] 接下來，我會帶領博士了解應該如何晉升幹員。
+[Tutorial(target="btn_character_repo",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 這裡是幹員管理介面，在這裡可以管理和訓練您的幹員。
+[GotoPage(dest="char_repo", waitForSignal="character_repo_routed")]
+[PopupDialog(dialogHead="$avatar_amiya")] 選擇您想晉升的幹員。
+[Tutorial(target="pool_btn_char_repo_first_item", waitForSignal="character_info_resumed",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 點選查看該幹員的詳細資訊。
+[Tutorial(target="btn_evolve",           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5,           dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 幹員達到一定等級後，可以進行菁英化晉升。獲得晉升材料後，可以點選此按鈕進行菁英化。一些幹員在晉升後，會獲得新的天賦和技能。

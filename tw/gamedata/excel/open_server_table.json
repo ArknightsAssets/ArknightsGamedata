@@ -2,11 +2,21 @@
     "schedule": [
         {
             "id": "openseverTaskGroup1",
+            "versionId": "OpenServer",
             "startTs": 1533844800,
-            "endTs": 1850068799,
+            "endTs": 1743400799,
             "totalCheckinDescption": "累計登入簽到以獲得獎勵。不需要連續登入也可以讓您獲得全部獎勵物資。",
             "chainLoginDescription": " 連續簽到7天即可獲得5星幹員【崖心】。\n中斷簽到將會重新計算天數，獎勵無法重複領取。",
             "charImg": "openseverTaskGroup1"
+        },
+        {
+            "id": "openseverTaskGroup2",
+            "versionId": "OpenServerV2",
+            "startTs": 1743400800,
+            "endTs": 1881604799,
+            "totalCheckinDescption": "累計登入簽到以獲得獎勵。不需要連續登入也可以讓您獲得全部獎勵物資。",
+            "chainLoginDescription": " 連續簽到7天即可獲得【資深幹員調用憑證-新人】。\n中斷簽到將會重新計算天數，獎勵無法重複領取。 ",
+            "charImg": "openseverTaskGroup2"
         }
     ],
     "dataMap": {
@@ -311,12 +321,344 @@
                     },
                     "colorId": 2
                 }
+            ],
+            "totalCheckinCharData": {},
+            "chainLoginCharData": {}
+        },
+        "openseverTaskGroup2": {
+            "openServerMissionGroup": {
+                "id": "openseverTaskGroup2",
+                "type": "OPENSERVER",
+                "missionIds": [
+                    "openserver_1_1",
+                    "openserver_2_1",
+                    "openserver_3_1",
+                    "openserver_4_1"
+                ],
+                "startTs": -1,
+                "endTs": -1
+            },
+            "openServerMissionData": [
+                {
+                    "id": "openserver_1_1",
+                    "sortId": 0,
+                    "description": "通關主線0-1",
+                    "type": "OPENSERVER",
+                    "itemBgType": "COMMON",
+                    "template": "CompleteMainStage",
+                    "templateType": "1",
+                    "param": [
+                        "1",
+                        "main_00-01"
+                    ],
+                    "missionGroup": "openseverTaskGroup2",
+                    "periodicalPoint": 0,
+                    "rewards": [
+                        {
+                            "type": "DIAMOND_SHD",
+                            "id": "4003",
+                            "count": 600
+                        }
+                    ],
+                    "haveSubMissionToUnlock": false
+                },
+                {
+                    "id": "openserver_2_1",
+                    "sortId": 0,
+                    "description": "玩家等級達到8級",
+                    "type": "OPENSERVER",
+                    "itemBgType": "COMMON",
+                    "template": "UpgradePlayer",
+                    "templateType": "0",
+                    "param": [
+                        "0",
+                        "8"
+                    ],
+                    "missionGroup": "openseverTaskGroup2",
+                    "periodicalPoint": 0,
+                    "rewards": [
+                        {
+                            "type": "DIAMOND_SHD",
+                            "id": "4003",
+                            "count": 600
+                        }
+                    ],
+                    "haveSubMissionToUnlock": false
+                },
+                {
+                    "id": "openserver_3_1",
+                    "sortId": 0,
+                    "description": "通關主線1-12",
+                    "type": "OPENSERVER",
+                    "itemBgType": "COMMON",
+                    "template": "CompleteMainStage",
+                    "templateType": "1",
+                    "param": [
+                        "1",
+                        "main_01-12"
+                    ],
+                    "missionGroup": "openseverTaskGroup2",
+                    "periodicalPoint": 0,
+                    "rewards": [
+                        {
+                            "type": "DIAMOND_SHD",
+                            "id": "4003",
+                            "count": 600
+                        }
+                    ],
+                    "haveSubMissionToUnlock": false
+                },
+                {
+                    "id": "openserver_4_1",
+                    "sortId": 0,
+                    "description": "擁有Lv.2的控制中樞",
+                    "type": "OPENSERVER",
+                    "itemBgType": "COMMON",
+                    "template": "HasRoom",
+                    "templateType": "0",
+                    "param": [
+                        "0",
+                        "1",
+                        "2",
+                        "CONTROL"
+                    ],
+                    "missionGroup": "openseverTaskGroup2",
+                    "periodicalPoint": 0,
+                    "rewards": [
+                        {
+                            "type": "DIAMOND_SHD",
+                            "id": "4003",
+                            "count": 600
+                        }
+                    ],
+                    "haveSubMissionToUnlock": false
+                }
+            ],
+            "checkInData": [
+                {
+                    "order": 1,
+                    "item": {
+                        "itemId": "4001",
+                        "itemType": "GOLD",
+                        "count": 20000
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 2,
+                    "item": {
+                        "itemId": "2003",
+                        "itemType": "CARD_EXP",
+                        "count": 20
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 3,
+                    "item": {
+                        "itemId": "3301",
+                        "itemType": "MATERIAL",
+                        "count": 30
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 4,
+                    "item": {
+                        "itemId": "7001",
+                        "itemType": "TKT_RECRUIT",
+                        "count": 5
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 5,
+                    "item": {
+                        "itemId": "voucher_recruitR6_pick5301",
+                        "itemType": "VOUCHER_PICK",
+                        "count": 1,
+                        "name": "調用憑證"
+                    },
+                    "colorId": 2
+                },
+                {
+                    "order": 6,
+                    "item": {
+                        "itemId": "4001",
+                        "itemType": "GOLD",
+                        "count": 30000
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 7,
+                    "item": {
+                        "itemId": "2004",
+                        "itemType": "CARD_EXP",
+                        "count": 15
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 8,
+                    "item": {
+                        "itemId": "3302",
+                        "itemType": "MATERIAL",
+                        "count": 20
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 9,
+                    "item": {
+                        "itemId": "4001",
+                        "itemType": "GOLD",
+                        "count": 40000
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 10,
+                    "item": {
+                        "itemId": "advanced_material_issue_voucher",
+                        "itemType": "MATERIAL_ISSUE_VOUCHER",
+                        "count": 4,
+                        "name": "材料提貨券"
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 11,
+                    "item": {
+                        "itemId": "3303",
+                        "itemType": "MATERIAL",
+                        "count": 8
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 12,
+                    "item": {
+                        "itemId": "advanced_material_issue_voucher",
+                        "itemType": "MATERIAL_ISSUE_VOUCHER",
+                        "count": 4,
+                        "name": "材料提貨券"
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 13,
+                    "item": {
+                        "itemId": "2004",
+                        "itemType": "CARD_EXP",
+                        "count": 20
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 14,
+                    "item": {
+                        "itemId": "voucher_levelmax_5",
+                        "itemType": "VOUCHER_LEVELMAX_5",
+                        "count": 1,
+                        "name": "特訓裝置"
+                    },
+                    "colorId": 2
+                }
+            ],
+            "chainLoginData": [
+                {
+                    "order": 1,
+                    "item": {
+                        "itemId": "voucher_elite_II_5",
+                        "itemType": "VOUCHER_ELITE_II_5",
+                        "count": 1,
+                        "name": "特訓邀請函"
+                    },
+                    "colorId": 2
+                },
+                {
+                    "order": 2,
+                    "item": {
+                        "itemId": "4002",
+                        "itemType": "DIAMOND",
+                        "count": 5
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 3,
+                    "item": {
+                        "itemId": "classic_gacha_10",
+                        "itemType": "CLASSIC_TKT_GACHA_10",
+                        "count": 1,
+                        "name": "十連中堅尋訪"
+                    },
+                    "colorId": 2
+                },
+                {
+                    "order": 4,
+                    "item": {
+                        "itemId": "7003",
+                        "itemType": "TKT_GACHA",
+                        "count": 2
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 5,
+                    "item": {
+                        "itemId": "7003",
+                        "itemType": "TKT_GACHA",
+                        "count": 2
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 6,
+                    "item": {
+                        "itemId": "7003",
+                        "itemType": "TKT_GACHA",
+                        "count": 2
+                    },
+                    "colorId": 1
+                },
+                {
+                    "order": 7,
+                    "item": {
+                        "itemId": "voucher_item_4pick1_5301",
+                        "itemType": "VOUCHER_PICK",
+                        "count": 1,
+                        "name": "調用憑證"
+                    },
+                    "colorId": 2
+                }
+            ],
+            "totalCheckinCharData": [
+                "char_202_demkni",
+                "char_293_thorns",
+                "char_103_angel",
+                "char_172_svrash",
+                "char_017_huang",
+                "char_264_f12yin"
+            ],
+            "chainLoginCharData": [
+                "char_173_slchan",
+                "char_128_plosis",
+                "char_140_whitew",
+                "char_143_ghost"
             ]
         }
     },
     "constant": {
         "firstDiamondShardMailCount": 3800,
-        "initApMailEndTs": 1595966399
+        "initApMailEndTs": 1595966399,
+        "resFullOpenUnlockStageId": "main_00-10",
+        "resFullOpenDuration": 14,
+        "resFullOpenTitle": "資源關卡限時全開",
+        "resFullOpenDesc": "-通關0-10解鎖物資籌備關卡\n-通關1-10解鎖晶片搜尋關卡\n-在有其他的“資源收集”關卡全天開放活動的日期中，專屬開放活動會暫停計數",
+        "resFullOpenGuideGroupThreshold": "guide_g_8",
+        "resFullOpenStartTime": 1743400800
     },
     "playerReturn": {
         "constData": {
@@ -1999,7 +2341,7 @@
             {
                 "groupId": "return_login_g_1",
                 "startTime": 1719432000,
-                "endTime": 1916078399,
+                "endTime": 1743364799,
                 "rewardList": [
                     {
                         "sortId": 1,
@@ -2100,6 +2442,125 @@
                     {
                         "sortId": 7,
                         "isImportant": true,
+                        "rewardList": [
+                            {
+                                "id": "7003",
+                                "count": 1,
+                                "type": "TKT_GACHA"
+                            },
+                            {
+                                "id": "ap_supply_lt_120",
+                                "count": 1,
+                                "type": "AP_SUPPLY"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "groupId": "return_login_g_2",
+                "startTime": 1743364800,
+                "endTime": 1916078399,
+                "rewardList": [
+                    {
+                        "sortId": 1,
+                        "isImportant": false,
+                        "rewardList": [
+                            {
+                                "id": "ap_supply_lt_120",
+                                "count": 1,
+                                "type": "AP_SUPPLY"
+                            },
+                            {
+                                "id": "32001",
+                                "count": 1,
+                                "type": "MATERIAL"
+                            }
+                        ]
+                    },
+                    {
+                        "sortId": 2,
+                        "isImportant": false,
+                        "rewardList": [
+                            {
+                                "id": "classic_gacha",
+                                "count": 1,
+                                "type": "CLASSIC_TKT_GACHA"
+                            },
+                            {
+                                "id": "4001",
+                                "count": 30000,
+                                "type": "GOLD"
+                            }
+                        ]
+                    },
+                    {
+                        "sortId": 3,
+                        "isImportant": false,
+                        "rewardList": [
+                            {
+                                "id": "7003",
+                                "count": 1,
+                                "type": "TKT_GACHA"
+                            },
+                            {
+                                "id": "2003",
+                                "count": 20,
+                                "type": "CARD_EXP"
+                            }
+                        ]
+                    },
+                    {
+                        "sortId": 4,
+                        "isImportant": false,
+                        "rewardList": [
+                            {
+                                "id": "classic_gacha",
+                                "count": 1,
+                                "type": "CLASSIC_TKT_GACHA"
+                            },
+                            {
+                                "id": "4001",
+                                "count": 30000,
+                                "type": "GOLD"
+                            }
+                        ]
+                    },
+                    {
+                        "sortId": 5,
+                        "isImportant": false,
+                        "rewardList": [
+                            {
+                                "id": "7003",
+                                "count": 1,
+                                "type": "TKT_GACHA"
+                            },
+                            {
+                                "id": "ap_supply_lt_120",
+                                "count": 1,
+                                "type": "AP_SUPPLY"
+                            }
+                        ]
+                    },
+                    {
+                        "sortId": 6,
+                        "isImportant": false,
+                        "rewardList": [
+                            {
+                                "id": "classic_gacha",
+                                "count": 1,
+                                "type": "CLASSIC_TKT_GACHA"
+                            },
+                            {
+                                "id": "3303",
+                                "count": 10,
+                                "type": "MATERIAL"
+                            }
+                        ]
+                    },
+                    {
+                        "sortId": 7,
+                        "isImportant": false,
                         "rewardList": [
                             {
                                 "id": "7003",
@@ -2260,7 +2721,7 @@
                 "desc": "EP12，驚霆無聲現已開放\n可隨時在作戰終端中查看",
                 "diffMissionCount": 0,
                 "startTime": 1719473400,
-                "endTime": 1916078399,
+                "endTime": 1725521399,
                 "imageId": "page_episode_main_12",
                 "iconId": "page_episode_main_12_icon",
                 "missionList": [
@@ -3608,7 +4069,7 @@
                 "desc": "公開招募新增幹員：瑕光、奥斯塔、泡泡",
                 "diffMissionCount": 0,
                 "startTime": 1741248000,
-                "endTime": 1916078399,
+                "endTime": 1745438399,
                 "imageId": "page_050_normalgacha",
                 "iconId": "page_050_normalgacha_icon",
                 "missionList": [
@@ -3711,6 +4172,134 @@
                         "missionId": "back_perm_88",
                         "groupId": "return_g_18",
                         "sortId": 88,
+                        "jumpType": "RECRUIT_BUILD",
+                        "desc": "累計完成25次公開招募",
+                        "rewardList": [
+                            {
+                                "id": "return_credit_token2",
+                                "count": 3,
+                                "type": "RETURN_CREDIT"
+                            },
+                            {
+                                "id": "31063",
+                                "count": 2,
+                                "type": "MATERIAL"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "groupId": "return_g_20",
+                "sortId": 8,
+                "tabTitle": "公開招募",
+                "title": "公開招募更新",
+                "desc": "公開招募新增幹員：泥岩、絮雨、傑克",
+                "diffMissionCount": 0,
+                "startTime": 1745481600,
+                "endTime": 1916078399,
+                "imageId": "page_053_normalgacha",
+                "iconId": "page_053_normalgacha_icon",
+                "missionList": [
+                    {
+                        "missionId": "back_perm_91",
+                        "groupId": "return_g_20",
+                        "sortId": 91,
+                        "jumpType": "RECRUIT_BUILD",
+                        "desc": "累計完成1次公開招募",
+                        "rewardList": [
+                            {
+                                "id": "return_credit_token2",
+                                "count": 1,
+                                "type": "RETURN_CREDIT"
+                            },
+                            {
+                                "id": "4001",
+                                "count": 5000,
+                                "type": "GOLD"
+                            }
+                        ]
+                    },
+                    {
+                        "missionId": "back_perm_92",
+                        "groupId": "return_g_20",
+                        "sortId": 92,
+                        "jumpType": "RECRUIT_BUILD",
+                        "desc": "累計完成5次公開招募",
+                        "rewardList": [
+                            {
+                                "id": "return_credit_token2",
+                                "count": 1,
+                                "type": "RETURN_CREDIT"
+                            },
+                            {
+                                "id": "2004",
+                                "count": 5,
+                                "type": "CARD_EXP"
+                            }
+                        ]
+                    },
+                    {
+                        "missionId": "back_perm_93",
+                        "groupId": "return_g_20",
+                        "sortId": 93,
+                        "jumpType": "RECRUIT_BUILD",
+                        "desc": "累計完成10次公開招募",
+                        "rewardList": [
+                            {
+                                "id": "return_credit_token2",
+                                "count": 1,
+                                "type": "RETURN_CREDIT"
+                            },
+                            {
+                                "id": "30033",
+                                "count": 2,
+                                "type": "MATERIAL"
+                            }
+                        ]
+                    },
+                    {
+                        "missionId": "back_perm_94",
+                        "groupId": "return_g_20",
+                        "sortId": 94,
+                        "jumpType": "RECRUIT_BUILD",
+                        "desc": "累計完成15次公開招募",
+                        "rewardList": [
+                            {
+                                "id": "return_credit_token2",
+                                "count": 2,
+                                "type": "RETURN_CREDIT"
+                            },
+                            {
+                                "id": "31033",
+                                "count": 2,
+                                "type": "MATERIAL"
+                            }
+                        ]
+                    },
+                    {
+                        "missionId": "back_perm_95",
+                        "groupId": "return_g_20",
+                        "sortId": 95,
+                        "jumpType": "RECRUIT_BUILD",
+                        "desc": "累計完成20次公開招募",
+                        "rewardList": [
+                            {
+                                "id": "return_credit_token2",
+                                "count": 2,
+                                "type": "RETURN_CREDIT"
+                            },
+                            {
+                                "id": "30023",
+                                "count": 2,
+                                "type": "MATERIAL"
+                            }
+                        ]
+                    },
+                    {
+                        "missionId": "back_perm_96",
+                        "groupId": "return_g_20",
+                        "sortId": 96,
                         "jumpType": "RECRUIT_BUILD",
                         "desc": "累計完成25次公開招募",
                         "rewardList": [
@@ -3978,7 +4567,7 @@
                 "desc": "為博士定制的任務清單，讓博士更好地適應羅德島的各項功能",
                 "diffMissionCount": 3,
                 "startTime": 1719473400,
-                "endTime": 1916078399,
+                "endTime": 1734501599,
                 "imageId": "page_040_diffmission",
                 "iconId": "page_040_diffmission_icon",
                 "missionList": [

@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true)] 训练关卡2b
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [Battle.UnlockFunction(mask="CHARACTER_INFO")]
 [Battle.UnlockFunction(mask="CHARACTER_MENU")]
@@ -31,7 +32,6 @@
           protectTime=0.5, dialogHead="$avatar_doberm")] \
 點擊將視角調回戰場。
 [InputBlocker(blockInput=true)]
-[Battle.LockFunction(mask="SYSTEM_MENU")]
 [InputBlocker(blockInput=false)]
 [Tutorial(waitForSignal="put_down", dialogHead="$avatar_doberm", animStyle="Drag", \
           startX=-60, startY=60, startAnchor="BottomRight", endX=185, endY=-97)] \
@@ -40,4 +40,4 @@
           startX=262, startY=-74, endX=237, endY=115)] \
 向上拖動讓他的朝向設置為上。決定好方向以後幹員才會真正被部署至戰場。
 [InputBlocker(blockInput=true)]
-[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]

@@ -1,0 +1,22 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)] 异常状态与抗性e
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[PopupDialog(dialogHead="$avatar_texas")] 這個敵人攻擊力很強，我撐不了太久。
+[PopupDialog(dialogHead="$avatar_texas")] 我的技能只能短暫中斷敵人的行動，可是接下來……
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Battle.EnsureMinSp(charId="char_338_iris", sp=100)]
+[InputBlocker(blockInput=true, tileX=6, tileY=4, validWidth=85, validHeight=85)]
+[Tutorial(tileX=6, tileY=4, focusWidth=85, focusHeight=85, waitForSignal="char_info", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_iris", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 真是野蠻的傢伙，我來讓他安靜一下子。
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=283, focusY=-140, focusWidth=382, focusHeight=90, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", anchor="Left", \
+          protectTime=0.5, dialogHead="$avatar_sys")] 幹員愛麗絲可以讓敵人陷入<@tu.kw>沉睡</>，沉睡的敵人將無法攻擊和移動，同時一般情況下也不會被幹員攻擊。
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_iris")] 進入夢鄉吧！
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_iris")] 趁他睡著，大家休整一下吧。
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]

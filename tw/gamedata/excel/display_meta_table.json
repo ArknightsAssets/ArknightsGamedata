@@ -575,7 +575,7 @@
             {
                 "avatarId": "avatar_activity_CR",
                 "avatarType": "ACTIVITY",
-                "avatarIdSort": 42,
+                "avatarIdSort": 43,
                 "avatarIdDesc": "參與圍攻行動簽到活動獲得\n“一覽無餘”",
                 "avatarItemName": "“一覽無餘”",
                 "avatarItemDesc": "觀察即是力量。",
@@ -585,7 +585,7 @@
             {
                 "avatarId": "avatar_activity_SN",
                 "avatarType": "ACTIVITY",
-                "avatarIdSort": 43,
+                "avatarIdSort": 44,
                 "avatarIdDesc": "【愚人號】記錄修復\n“愚人號”",
                 "avatarItemName": "“愚人號”",
                 "avatarItemDesc": "海岸的燈塔重新亮起，見證往日的黃金沉入水中。",
@@ -595,12 +595,22 @@
             {
                 "avatarId": "avatar_activity_EP14",
                 "avatarType": "ACTIVITY",
-                "avatarIdSort": 44,
+                "avatarIdSort": 45,
                 "avatarIdDesc": "主題曲《慈悲燈塔》\n“隱秘的生命線”",
                 "avatarItemName": "“隱秘的生命線”",
                 "avatarItemDesc": "奔走於荒野之上，傳遞生命與希望的種子。",
                 "avatarItemUsage": "用來彰顯個性的圖案，能夠將之設置為頭像。",
                 "obtainApproach": "在“隱秘戰線”中獲得"
+            },
+            {
+                "avatarId": "avatar_activity_LE",
+                "avatarType": "ACTIVITY",
+                "avatarIdSort": 46,
+                "avatarIdDesc": "【塵影餘音】記錄修復\n“塵影餘音”",
+                "avatarItemName": "“塵影餘音”",
+                "avatarItemDesc": "夕陽刺眼，可無人願在命運面前低頭。",
+                "avatarItemUsage": "用來彰顯個性的圖案，能夠將之設置為頭像。",
+                "obtainApproach": "記錄修復獲得"
             },
             {
                 "avatarId": "avatar_def_01",
@@ -829,7 +839,8 @@
                     "avatar_activity_XB1_1",
                     "avatar_activity_CR",
                     "avatar_activity_SN",
-                    "avatar_activity_EP14"
+                    "avatar_activity_EP14",
+                    "avatar_activity_LE"
                 ]
             },
             "DEFAULT": {
@@ -1202,6 +1213,10 @@
             "module_avatar": {
                 "id": "module_avatar",
                 "type": "AVATAR"
+            },
+            "module_avatar_simple": {
+                "id": "module_avatar_simple",
+                "type": "AVATAR_SIMPLE"
             }
         },
         "removableModuleData": {
@@ -1240,6 +1255,10 @@
                 "name": "預設時裝",
                 "type": "MAINLINE",
                 "sortId": 1,
+                "isSpTheme": false,
+                "defaultShowDetail": true,
+                "themeName": "",
+                "themeEnName": "",
                 "skinStartTime": 1734501600,
                 "skinDesc": "前後皆是漫漫長路，你將在何處找到自己的使命？",
                 "usageDesc": "在不變動功能的情況下，對PRTS進行了重新設計。",
@@ -1250,7 +1269,8 @@
                     "module_background",
                     "module_illust",
                     "module_collect",
-                    "module_avatar"
+                    "module_avatar",
+                    "module_avatar_simple"
                 ],
                 "rarity": 4,
                 "isTimeLimit": false,
@@ -1261,6 +1281,10 @@
                 "name": "決意",
                 "type": "MAINLINE",
                 "sortId": 2,
+                "isSpTheme": false,
+                "defaultShowDetail": true,
+                "themeName": "",
+                "themeEnName": "",
                 "skinStartTime": 1734501600,
                 "skinDesc": "過去的秘密依然包裹在迷霧之中，但你已下定決心。",
                 "usageDesc": "在不變動功能的情況下，對PRTS進行了重新設計。",
@@ -1273,7 +1297,8 @@
                     "module_background",
                     "module_illust",
                     "module_collect",
-                    "module_avatar"
+                    "module_avatar",
+                    "module_avatar_simple"
                 ],
                 "rarity": 4,
                 "isTimeLimit": false,
@@ -1284,19 +1309,24 @@
                 "name": "健將",
                 "type": "ACTIVITY",
                 "sortId": 3,
+                "isSpTheme": false,
+                "defaultShowDetail": true,
+                "themeName": "",
+                "themeEnName": "",
                 "skinStartTime": 1741852800,
                 "skinDesc": "與同伴一同馳騁賽場時，你久負重擔的身軀難得輕盈。",
                 "usageDesc": "在不變動功能的情況下，對PRTS進行了重新設計。",
-                "skinApproach": "聯機活動獎勵",
+                "skinApproach": "羅德島促融共競中獲得",
                 "unlockConditionCnt": 1,
                 "unlockDescList": [
-                    "在運動會里程碑中達到25級"
+                    "在賽事熱度中獲得"
                 ],
                 "fixedModuleList": [
                     "module_background",
                     "module_illust",
                     "module_collect",
-                    "module_avatar"
+                    "module_avatar",
+                    "module_avatar_simple"
                 ],
                 "rarity": 4,
                 "isTimeLimit": true,
@@ -1307,6 +1337,34 @@
                         "availEndTime": 1743278399
                     }
                 ]
+            },
+            "nc_sandbox_1": {
+                "id": "nc_sandbox_1",
+                "name": "險途",
+                "type": "ACTIVITY",
+                "sortId": 4,
+                "isSpTheme": false,
+                "defaultShowDetail": true,
+                "themeName": "",
+                "themeEnName": "",
+                "skinStartTime": 1743451200,
+                "skinDesc": "當細沙第一次揚起的時候，你就知道這趟旅程不會簡單。",
+                "usageDesc": "在不變動功能的情況下，對PRTS進行了重新設計。",
+                "skinApproach": "生息演算：沙洲遺聞活動獎勵",
+                "unlockConditionCnt": 1,
+                "unlockDescList": [
+                    "在繁榮饋贈中購買"
+                ],
+                "fixedModuleList": [
+                    "module_background",
+                    "module_illust",
+                    "module_collect",
+                    "module_avatar",
+                    "module_avatar_simple"
+                ],
+                "rarity": 4,
+                "isTimeLimit": false,
+                "timeLimitInfoList": []
             }
         },
         "consts": {

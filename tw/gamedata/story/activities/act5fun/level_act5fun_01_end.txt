@@ -1,0 +1,50 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="29_g6_mainstreet",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$farce_intro",key="$farce_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+八天後
+哥倫比亞
+[Dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_208",duration=1.5)]
+[delay(time=2)]
+[name="坎諾特"]不愧是你，博士。普通人上完初級課程至少要八個月。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="你讓我交的源石錠，是這八天的飯錢？;要不是你拐彎抹角，就這點內容我八分鐘就學會了。;教完了沒有，什麼時候能讓我大賺一筆？", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="坎諾特"]我知道你很急切地想要贏得財富，我的朋友。
+[name="坎諾特"]既然如此，讓我們盡快開始實踐吧。
+[name="坎諾特"]這裡是青草城對戰中心。
+[name="坎諾特"]無數支隊伍會聚於此，為了爭奪聯盟大賽冠軍的頭銜而殊死拼殺。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="搞了半天就這？;這不就是卡西米爾騎士錦標賽嗎？;你是不是拿我當傻子騙，還我源石錠！", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="坎諾特"]這裡的比賽沒有那麼多條條框框，我的朋友。
+[name="坎諾特"]不需要贊助，沒有參賽資格限制，只要符合比賽制定的規則，你就算是拉上街坊鄰居，都能上台競技。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="我可以帶我的幹員過來。;原來我們要下場比賽嗎？;指揮作戰，這我熟啊。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="坎諾特"]不不不，我的朋友，我們不做那吃力不討好的事。
+[name="坎諾特"]比起親自下場比賽，投資隊伍才是至臻之選。
+[name="坎諾特"]每一場勝利，都能為我們帶來豐厚的報酬。
+[name="坎諾特"]冠軍總是會換人的，可只要眼光獨到，我們就能做永遠的勝利者。
+[name="坎諾特"]隨之而來的，便是數之不盡的財富。
+[name="坎諾特"]這就是商業，這就是投資！
+[name="坎諾特"]準備好迎接你的時代了嗎？
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[charslot]
+[Image]

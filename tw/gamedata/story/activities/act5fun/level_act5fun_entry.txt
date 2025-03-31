@@ -1,0 +1,123 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_black",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+不是盟友也不是敵人，有些人喜歡站在中間。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2,block=true)]
+[charslot]
+[Background(image="bg_wild_m",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(intro="$farce_intro",key="$farce_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_208",duration=1.5)]
+[delay(time=2)]
+[name="坎諾特"]我們又見面了，我的朋友，這次想買點什麼？
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="我想要一張古堡建築設計圖和一套演員戲服。;有沒有驅海嗣劑？噴一下海嗣就會逃走的那種。;要是有可以重複使用、隨意塗改的電子密文板就好了。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="坎諾特"]你想要的，我這裡都有。
+[name="坎諾特"]但是價格嘛……
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="我把前瞻性投資系統裡的存款全拿出來了！", values="1")]
+[Predicate(references="1")]
+[Decision(options="999源石錠！", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="坎諾特"]哦，你是怎麼……？
+[Dialog]
+[name="坎諾特"]好吧。
+[name="坎諾特"]但很可惜，就差一點點……
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement",channel="2")]
+[charslot(slot="m",posfrom="0,0",posto="10,0",duration=1,isblock=true)]
+[charslot(slot="m",posfrom="10,0",posto="0,0",duration=1,isblock=true)]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+坎諾特擦掉了標誌上的灰塵，這次你看清楚了——
+這些東西每個都標價1000源石錠。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="（試圖向坎諾特“借用”物品）", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="坎諾特"]哦，今天你可沒這個機會。
+[name="坎諾特"]看看周圍的環境吧，我的朋友。
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+你環視周圍，只見到了一片普通的景色，然而直覺告訴你，這地方，有點不太對勁……
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="沒有可部署地塊嗎？！;我的部署費用呢？！", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="坎諾特"]真抱歉，今天的貨物太貴重了，我不得不多做準備，朋友。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="我可以出去打一把作戰再回來嗎？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="坎諾特"]不行。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="坎諾特"]不要灰心，不要生氣，朋友，我很清楚你的感受。
+[name="坎諾特"]在你的旅程中，有多少次，你因為缺了那一兩個源石錠最終悔恨離開。
+[name="坎諾特"]又有多少次，因為手頭拮据，你迫不及待地來我這裡“免費購物”。
+[name="坎諾特"]我都理解，所以我從不憎恨你。相反，我對你那敏銳善變的頭腦很有好感。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="你到底想說什麼？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="坎諾特"]我是個商人，只要文明裡存在的，我就販賣。
+[name="坎諾特"]其中自然也包括了增加財富的方式。
+[name="坎諾特"]現在，請容許我隆重地向你介紹由本人親自授課的——
+[name="坎諾特"]“好得不能再好了！泰拉投資大師課”！
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="你在胡言亂語什麼。;你是不是瘋了？;（兩眼放光）", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="坎諾特"]不用10000，不用5000，只需999源石錠，一對一指導，手把手教學，從入門到精通，讓你——
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="買下商業聯合會？;把羅德島升級成移動城市？;打造黃金艦隊出海遠航？", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="坎諾特"]——每選必贏，每投必中，快速實現財富自由，富甲一方！
+[name="坎諾特"]怎麼樣，有沒有興趣？
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="投什麼……？;做選擇很難嗎？;到底能賺多少啊？", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="坎諾特"]你要是有興趣，可以先來試聽一堂課。你大可以放心，我的朋友，這個不收取額外費用。
+[name="坎諾特"]但是，你可能得結束這趟旅程，和我一起離開了。
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_208")]
+[name="坎諾特"]怎麼樣，是抓住這千載難逢的致富機會……
+[name="坎諾特"]還是繼續往前走，最後把辛苦存下的源石錠丟在盡頭，兩手空空回到起點？
+[Dialog]
+[charslot(slot="m",name="avg_npc_208",focus="none")]
+[Decision(options="讓我再想想。;我決定了！;……", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=1, block=true)]
+[stopmusic(fadetime=1)]
+[charslot]
+[Image]

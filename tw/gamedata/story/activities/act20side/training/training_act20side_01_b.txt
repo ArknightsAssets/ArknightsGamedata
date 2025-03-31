@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true, is_skippable=true)] 活动20side教学关1_b
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_stward")] 好像也有辦法改變自走車的行駛方向，讓自走車避開障礙。讓我翻翻隨車附贈的使用說明......
 [PopupDialog(dialogHead="$avatar_ardign")] 史都華德，這個很簡單的！只要自走車<@tu.kw>經過我方單位</>，就會<@tu.kw>沿著其部署方向行駛</>啦！
@@ -11,6 +12,7 @@
           startX=315, startY=-70, endX=40, endY=-90)] \
 記得讓我<@tu.kw>向左部署</>哦！
 [InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause(pause=false)]
 [Delay(time=1)]
 [Battle.Pause(pause=true)]

@@ -1,4 +1,5 @@
 [HEADER(is_tutorial=true, is_skippable=true)] 活动20side教学关1_c
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
 [Battle.Pause]
 [PopupDialog(dialogHead="$avatar_ardign")] 哇，又出現了好多源石蟲！史都華德，等它們到我面前，你就用自走車對付它們，剩下的我來擋住！
 [PopupDialog(dialogHead="$avatar_stward")] 等等，卡緹，我們還有更好的辦法，可以用<@tu.kw>自走車單行道</>改變自走車的行駛方向，延長它的行駛路線。
@@ -11,6 +12,7 @@
           startX=-215, startY=-110, endX=-193, endY=90)] \
 然後將其<@tu.kw>向上部署</>就好。
 [InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
 [PopupDialog(dialogHead="$avatar_stward")] 這樣一來，<@tu.kw>自走車</>經過這裡時，就會改變原有方向，向上行駛了！
 [PopupDialog(dialogHead="$avatar_stward")] 需要注意的是，每個自走車單行道或者我方單位只能使一輛自走車轉向<@tu.kw>一次</>。
 [Tutorial(focusX=205, focusY=165, focusWidth=150, focusHeight=150, \

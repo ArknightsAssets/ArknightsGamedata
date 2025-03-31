@@ -1,0 +1,21 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)] 异常状态与抗性g
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[Battle.EnsureMinSp(charId="char_338_iris", sp=100)]
+[PopupDialog(dialogHead="$avatar_iris")] 我的技能好像不管用了。
+[PopupDialog(dialogHead="$avatar_sys")] 這個敵人<@tu.kw>免疫</>睡眠，部分敵人會有<@tu.kw>異常狀態抗性</>，相對應的異常狀態將會失效。
+[Battle.EnsureMinSp(charId="char_341_sntlla", sp=100)]
+[InputBlocker(blockInput=true, tileX=7, tileY=4, validWidth=85, validHeight=85)]
+[Tutorial(tileX=7, tileY=4, focusWidth=85, focusHeight=85, waitForSignal="char_info", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_sntlla", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 或許<@tu.kw>寒冷</>會有效果。
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=283, focusY=-145, focusWidth=382, focusHeight=100, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", anchor="Left", \
+          protectTime=0.5, dialogHead="$avatar_sys")] 幹員寒檀的技能能夠造成寒冷，陷入寒冷狀態的敵人將會減速。寒冷效果疊加時，將會轉化為<@tu.kw>凍結</>，敵人將無法攻擊也無法移動。
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_sntlla", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]
+[InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
