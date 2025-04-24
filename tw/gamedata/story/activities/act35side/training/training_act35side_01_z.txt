@@ -1,0 +1,34 @@
+[HEADER(is_tutorial=true, is_skippable=true, is_autoable=false)] 活动35side教学关_01_z
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[InputBlocker(blockInput=true, black=0.2)]
+[Tutorial(tileX=5.5, tileY=3.3, focusWidth=400, focusHeight=300, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5, dialogHead="$avatar_popka")] \
+哎呀，這次結晶離我們<@tu.kw>太遠了</>，怎麼辦！
+[Tutorial(tileX=6, tileY=2, focusWidth=100, focusHeight=100, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5, dialogHead="$avatar_popka")] \
+那裡還有<@tu.kw>缺口</>，我們好像不能透過<@tu.kw>擴散淨化</>的方法<@tu.kw>一口氣全部消除</>。
+[Tutorial(tileX=7, tileY=2.8, focusWidth=120, focusHeight=260, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5, dialogHead="$avatar_popka")] \
+我們好像還需要更多的人手在<@tu.kw>更遠的地方</>淨化結晶！
+[Battle.Pause(pause=false)]
+[Delay(time=1)]
+[Battle.Pause(pause=true)]
+[Tutorial(cardIndex=0, rightStart=true, focusWidth=110, focusHeight=110, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", anchor="BottomRight", \
+          protectTime=0.5, dialogHead="$avatar_doberm", dialogX="$f_lower_dialog_pos_x",  \
+          dialogY="$f_lower_dialog_pos_y")] \
+別擔心，我們有<@tu.kw>純淨結晶</>。
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[Tutorial(waitForSignal="put_down", dialogHead="$avatar_doberm", animStyle="Drag", \
+      startCardIndex=0, startRightStart=true, endTileX=3, endTileY=2, dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+我們把純淨結晶<@tu.kw>放在這裡</>。
+[InputBlocker(blockInput=true, black=0.2)]
+[Tutorial(protectTime=0.5, dialogHead="$avatar_doberm", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+它就像一座“<@tu.kw>橋樑</>”，連通我們需要淨化的結晶，讓淨化效果可以擴散得更遠，這種純淨結晶也<@tu.kw>不會增強敵人</>的作戰能力。
+[Tutorial(protectTime=0.5, dialogHead="$avatar_popka")] \
+我已經完全掌握應對這種結晶的方法了。
+[Tutorial(protectTime=0.5, dialogHead="$avatar_doberm", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+行動仍在繼續，睜大眼睛，堅守陣線！
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
