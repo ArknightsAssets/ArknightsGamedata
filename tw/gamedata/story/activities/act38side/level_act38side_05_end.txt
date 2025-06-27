@@ -1,0 +1,509 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="56_g9_truckcamp",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[name="？？？"]索默爾，這是怎麼回事？
+[name="索默爾"]我也不知道！我正在開車呢，引擎出現了故障，結果發現這個人就躺在路邊。嚇我一跳，我還以為是我撞到了人。
+[name="索默爾"]這孩子一個人暈倒在荒野上，嘴裡還一直喃喃著要找一個穿紅色連帽衫的傢伙。
+[name="索默爾"]我想總不能把她丟在那裡，就先帶她回來了……
+[name="？？？"]找我？但我完全不認識她啊。
+[name="索默爾"]她看起來就是個孤零零的倒楣蛋，或許能把她留在營地？我們最近忙成這樣，補充一個人手也行啊。
+[name="？？？"]索默爾，你明知道互助會的每一個成員都是要經過嚴格審查的。
+[name="？？？"]像她這樣的感染……來歷不明的人，萬一和家族有什麼關係怎麼辦？
+[name="索默爾"]唉……
+[name="？？？"]醫生說她情況還算穩定，等她醒來後，就讓她離開吧。
+[name="索默爾"]好、好吧。
+[name="索默爾"]這個倒楣蛋，怎麼還緊緊握著刀不放，多危險啊。先幫她——
+[dialog]
+[bgeffect(name="$eb_dim_openeye",layer=1)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=false)]
+[Delay(time=3)]
+[PlaySound(key="$d_avg_slap",volume=0.5)]
+[CameraShake(duration=0.2, xstrength=20, ystrength=20, vibrato=15, randomness=90, fadeout=true, block=false)]
+[name="柳德米拉"]別碰我！
+[dialog]
+[charslot(slot="m",name="avg_npc_1542_1#1$1",duration=1)]
+[Delay(time=2)]
+[bgeffect]
+[name="穿紅色連帽衫的人"]……
+[name="穿紅色連帽衫的人"]你醒了。
+[charslot(slot="m",name="char_1502_crowns")]
+[name="柳德米拉"]你——！
+[charslot(slot = "m", focus = "n")]
+柳德米拉看著眼前的人，很用力地揉了揉眼睛。
+[charslot(slot="m",name="char_1502_crowns")]
+[name="柳德米拉"]對不起……這是哪裡？
+[charslot(slot="m",name="avg_npc_1542_1#1$1")]
+[name="穿紅色連帽衫的人"]這裡是新沃爾西尼，卡車互助會。
+[charslot(slot="m",name="char_1502_crowns")]
+[name="柳德米拉"]是你們救了我……謝謝。
+[charslot(slot="m",name="avg_npc_1542_1#1$1")]
+[name="穿紅色連帽衫的人"]沒什麼，我們的成員不會對一個暈倒在荒野上的人見死不救。但之後的事，我們沒有辦法幫你太多。
+[name="穿紅色連帽衫的人"]我們最多招待你一頓飯，之後就離開吧。索默爾，你來負責這件事。
+[dialog]
+[PlaySound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="char_1502_crowns")]
+[name="柳德米拉"]謝謝你們的幫助……我這就走。
+[charslot(slot = "m",name = "avg_npc_1547_1#1$1")]
+[name="索默爾"]別急，年輕人。
+[name="索默爾"]保險起見，我還是想問問你……你不是家族的人，對吧？
+[charslot(slot="m",name="char_1502_crowns")]
+[name="柳德米拉"]……我已經很多年沒有聽說過這個詞了。
+[charslot(slot = "m",name = "avg_npc_1547_1#2$1")]
+[name="索默爾"]我也覺得，你看起來也不像和那幫人有什麼往來。
+[name="索默爾"]別在意，伊雷妮只是很擔心家族的人會滲入互助會，她要操心的事很多，並不是對你有什麼敵意。
+[name="索默爾"]你來到營地後的醫藥費，其實全都是她自掏腰包的。
+[charslot(slot="m",name="char_1502_crowns")]
+[name="柳德米拉"]謝謝……我明白，我不會給你們添麻煩的。
+[name="柳德米拉"]我只是需要花時間想想……接下來該做什麼。
+[charslot(slot = "m",name = "avg_npc_1547_1#2$1")]
+[name="索默爾"]你會開車嗎？
+[charslot(slot="m",name="char_1502_crowns")]
+[name="柳德米拉"]……
+[name="柳德米拉"]在烏薩斯開過卡車，算嗎？
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[focusout(duration=0, type="bg", from=0, to=1, block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_rhodesbedroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(key="$wasteland_loop", volume=0.4)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Sticker(id="st1", text="紅。", x=320,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+很輕的呢喃，和聲音同時出現的，是同樣溫柔的撫摸。
+像是飄落在草地上的樹葉，在荒野的背坡處感受到的風，沒有危險。
+她曾經在這樣的呢喃和撫摸中睡去，長大。
+在羅德島，沒有人敢對她這樣，沒有人會對她這樣，哪怕是凱爾希。
+[charslot(slot = "m",name = "char_144_red_7#7")]
+[name="紅"]……是外婆？！
+[dialog]
+[charslot]
+[focusout(duration=1, type="char", from=0, to=0.5)]
+[charslot(slot = "m", name = "avg_npc_1549_1#1$1", duration=1)]
+[Delay(time=2)]
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="紅"]外婆，你已經完全看不清東西了嗎？
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[name="外婆"]外婆說過的，外婆的雙目被狼吞吃了，這副眼鏡只是擺設。
+[name="外婆"]只有剜出狼的雙目，將它們重新放回外婆的眼眶，外婆才能看清紅的模樣。
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="紅"]外婆也沒辦法抱抱紅？
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[name="外婆"]外婆的雙手被狼吞下肚，你要斬斷狼的四肢，把雙手還給外婆。
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="紅"]外婆也沒辦法再教我唱歌？
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[name="外婆"]外婆也想繼續教紅唱歌。但狼總在嚎叫，外婆不敢讓他們發現。
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="紅"]外婆，你為什麼這麼久才來找紅？
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[name="外婆"]狼太多了，紅，他們潛伏在路的兩側。你要割開狼的皮肉，用它們為外婆做一件衣衫。
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="紅"]嗚……
+[name="紅"]外婆真的會消失嗎？
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[name="外婆"]乖孩子，這就要看你能不能幫到外婆了。
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="紅"]紅、紅在龍門找到了狼，假的。但她身上有真狼的氣味。
+[name="紅"]在那以後，紅還沒有新的發現……
+[name="紅"]唔，外婆，是紅沒有繼續找。
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[name="外婆"]外婆不會怪紅。紅是最乖最好的孩子。
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="紅"]紅不是。紅在第一次獵狼的時候就暈倒了，紅當時太弱小，凱爾希在草叢裡救了紅。
+[charslot(slot = "m",name = "char_144_red_7#1")]
+[name="紅"]紅暫時跟在她身邊，她告訴紅很多紅不知道的事情。
+[charslot(slot = "m",name = "char_144_red_7#3")]
+[name="紅"]什麼是“保護”，什麼是“行兇”？什麼是“痛苦”，什麼是“開心”？什麼是紅能夠分辨的，什麼是紅能夠做到的？
+[name="紅"]問題很多，也很難。紅搞不懂。
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[name="外婆"]“痛苦”？“開心”？
+[name="外婆"]是外婆沒有照顧好紅，反而需要紅來救助……
+[name="外婆"]孩子，如果你不開心，就繼續留在羅德島。
+[name="外婆"]外婆的時間本來也已經不多了。就這樣忘記外婆，忘記自己是個獵狼人……
+[focusout(duration=0, type="char", from=0, to=0)]
+[charslot(slot = "m",name = "char_144_red_7#4")]
+[name="紅"]……
+[dialog]
+[focusout(duration=0, type="char", from=0.5, to=0.5)]
+[charslot(slot = "m",name = "avg_npc_1549_1#1$1")]
+[Delay(time=0.5)]
+[charslot(duration=1)]
+[Delay(time=2)]
+[focusout(duration=0, type="char", from=1, to=0, block=true)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+紅睜開了眼睛。
+門和窗都還緊緊地關著，明明連一絲風都沒有透進來。
+這是她今晚第三次被同樣的夢驚醒。
+[dialog]
+[charslot(slot = "m",name = "char_144_red_7#1",duration=0.5)]
+[Delay(time=1)]
+[name="紅"]外婆需要紅……
+[charslot(slot = "m",name = "char_144_red_7#2")]
+[name="紅"]（用力搖搖耳朵）
+[charslot(slot = "m",name = "char_144_red_7#1")]
+[name="紅"]紅答應凱爾希，離開羅德島，要跟她說。
+[name="紅"]凱爾希不在，凱爾希去了特什麼蒙，很遠的城市。
+[charslot(slot = "m",name = "char_144_red_7#5")]
+[name="紅"]紅應該等——紅不能等，外婆不能等。
+[charslot]
+[Dialog]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=2, amount=0, block=false)]
+[MusicVolume(volume=0.6, fadetime=2)]
+[Background(image="56_g1_newvolsiniistreet_d",screenadapt="coverall",fadetime=2)]
+[Delay(time=3)]
+[charslot(slot = "m",name = "char_144_red_7#2")]
+[name="紅"]（警惕地嗅嗅）
+[charslot(slot = "m",name = "char_144_red_7#1")]
+[name="紅"]紅聞到了狼的味道。
+[name="紅"]剩下的真狼已經不多，剩下的真狼就在這裡。
+[name="紅"]對那些狼來說，傷害外婆只是“遊戲”。
+[name="紅"]那對紅來說，遊戲的規則便是殺死他們。
+[name="紅"]……外婆還在等紅。
+[dialog]
+[stopmusic(fadetime=3)]
+[charslot(duration=1)]
+[delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="56_g1_newvolsiniistreet_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$act21side_intro",key="$act21side_loop", volume=0.6)]
+[delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>1100年11月5日    3:17 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_1557_1#1$1",posfrom = "-150,0", posto = "0,0",duration = 0.7)]
+[delay(time=1)]
+[name="狂歡節路人A"]“為了非凡的夜晚，我要磨快利爪！”
+[Dialog]
+[charslot(slot = "r", name = "avg_npc_1556_1#1$1",posfrom = "150,0", posto = "0,0",duration = 0.7)]
+[delay(time=1)]
+[charslot(slot = "r", focus="r")]
+[name="狂歡節路人B"]“為了迅捷的狩獵，我要亮出尖牙！”
+[Dialog]
+[charslot(slot = "l", action="jump",posto = "-150,0",power=-30,times=1,duration = 0.7)]
+[delay(time=1)]
+[charslot(slot = "l", focus="l")]
+[name="狂歡節路人A"]“為了自由的狂歡，我要拚命廝殺！”
+[Dialog]
+[charslot(slot = "r", action="jump",posto = "150,0",power=-30,times=1,duration = 0.7)]
+[delay(time=1)]
+[charslot(slot = "r", focus="r")]
+[name="狂歡節路人B"]“廝殺直至最後一個，遊戲盡頭才能到達！”
+[Dialog]
+[charslot(slot = "l", focus="l")]
+[name="狂歡節路人A"]“究竟我們為何如此？”
+[Dialog]
+[charslot(slot = "l",action="zoom", poszoom = "0.5,0.5", scale=1.05,duration = 0.5)]
+[charslot(slot = "r",action="zoom", poszoom = "0.5,0.5", scale=1.05,duration = 0.5)]
+[charslot(slot = "l", action="jump",posto = "160,-30",power=-30,times=1,duration = 0.5)]
+[charslot(slot = "r", action="jump",posto = "-160,-30",power=-30,times=1,duration = 0.5)]
+[delay(time=0.5)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="狂歡節路人A＆B"]“因為我們是狼！”
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "r",posfrom = "-10,-30", posto = "-200,-30",duration = 1.5,afrom=1,ato=0)]
+[charslot(slot = "l",posfrom = "10,-30", posto = "-200,-30",duration = 1.5,afrom=1,ato=0)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot = "left", name = "char_105_emper",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]戲很普通，但在街頭演出的形式值得鼓勵！你看看這探照燈，看看這裝飾，聽聽這音樂……
+[dialog]
+[charslot(slot = "right", name = "avg_4014_lunacu_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "right", name = "avg_4014_lunacu_1#1$1",focus="r")]
+[name="子月"]是大帝？你怎麼在這裡？
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]你不也回來了嗎，小狼崽？
+[name="大帝"]這種熱鬧的派對，和我這樣的天才藝術家剛好相配！我當然要出現在這裡！
+[name="大帝"]看看，年輕人的派對比你們像樣多了，阿涅塞。
+[charslot(slot = "right", name = "avg_4014_lunacu_1#1$1",focus="r")]
+[name="子月"]……你是來參加派對的，還是來找阿涅塞的？
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]孩子，你的阿涅塞教了你這麼多，就是沒介紹過派對正是見老朋友的好地方嗎？
+[dialog]
+[charslot(slot = "l", action="jump",posto = "-100,0",power=-30,times=1,duration = 0.4,isblock=true)]
+[charslot(slot = "l", action="jump",posto = "100,0",power=-30,times=1,duration = 0.4)]
+[delay(time=0.41)]
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]這就是大帝♪眼睛超靈敏♪朋友走遍地♪……一個不注意就要把你擊斃♪這歌詞怎麼樣？
+[charslot(slot = "right", name = "avg_4014_lunacu_1#6$1",focus="r")]
+[name="子月"]這只是你隨口唱出來的吧……
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]即興，即興不就是這樣嗎！阿涅塞，你是不是沒教過你的小朋友什麼叫流行音樂啊！
+[charslot(slot = "right", name = "avg_4014_lunacu_1#8$1",focus="r")]
+[name="子月"]不准你這樣說她！阿涅塞很好，她教我的歌比你唱的好聽！
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]是嗎？她還教了你什麼？
+[charslot(slot = "right", name = "avg_4014_lunacu_1#9$1",focus="r")]
+[name="子月"]阿涅塞教我的可多了！她教我生火，教我找過夜的地方，教我怎麼拿弓怎麼用刀子，教我怎麼狩獵怎麼放乾獵物的血！
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]怎麼總是這種打打殺殺的……
+[charslot(slot = "right", name = "avg_4014_lunacu_1#10$1",focus="r")]
+[name="子月"]……她還教我風的方向、花的味道，教我怎麼和牙獸說話。
+[name="子月"]她還教我怎麼和人類對話，教我怎麼在人類之間活下去。
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]看得出來，你口齒還滿清晰，不像那個紅色的傢伙，每說半句話就能把人急死。
+[charslot(slot = "right", name = "avg_4014_lunacu_1#10$1",focus="r")]
+[name="子月"]阿涅塞還教我人類的狂歡節有多好玩，教我怎麼在城市裡也能過得開心自在，像在荒野裡一樣……
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]……你還真是學到了不少東西。運氣真好，其他的獠牙可學不到這些。
+[charslot(slot = "right", name = "avg_4014_lunacu_1#9$1",focus="r")]
+[name="子月"]其他的獠牙……
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]我之前還遇見過其他的狼和他們的獠牙，開口第一個字就讓人抓狂。
+[name="大帝"]唉，說實話，阿涅塞，要不是真有重要的事情，我是絕對不想再和你們這些什麼“狼之主”打交道了。
+[name="大帝"]雖然狼群野蠻又頑固，但這一次同族的會面，你們不能缺席。
+[charslot(slot = "right", name = "avg_4014_lunacu_1#9$1",focus="r")]
+[name="子月"]阿涅塞的同族……
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]“我的意願不足以扭轉整個狼群的目光……”阿涅塞，你什麼意思？說好的“掙脫道路”，說好的“新的生活”呢？
+[name="大帝"]“遊戲是狼群的決議，遊戲不結束，狼群的意志就不會投向別處，這是我們的天性……”怎麼又扯到你們那無聊的遊戲了！
+[name="大帝"]“扭轉天性是漫長的過程……”，真是有夠麻煩的！真不想跟你們打交道，一說到正經事就開始扯什麼天性。
+[charslot(slot = "right", name = "avg_4014_lunacu_1#8$1",focus="r")]
+[name="子月"]阿涅塞說過，“這場遊戲，必須有個贏家。”
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]真是蠢狼，我白誇你一通了！
+[dialog]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]算了……你教了這孩子這麼多廝殺之外的本領，難道還希望她和其他獠牙一樣廝殺到死？當初讓我送她去羅德島，也不是為了今天吧？
+[charslot(slot = "right", name = "avg_4014_lunacu_1#1$1",focus="r")]
+[name="子月"]……
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]你要是擔心她的安危，還是趕快把她送回羅德島去吧。真是的，怎麼就非要到處亂跑呢！
+[charslot(slot = "right", name = "avg_4014_lunacu_1#6$1",focus="r")]
+[name="子月"]羅德島……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[PlaySound(key="$d_avg_wolflordthreat", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "l", action="jump",posto = "0,0",power=30,times=1,duration = 0.3)]
+[charslot(slot = "left", name = "char_105_emper",focus="l")]
+[name="大帝"]——哇！這些牙獸什麼時候出現的，露出大牙想要嚇唬誰啊！
+[charslot(slot = "right", name = "avg_4014_lunacu_1#8$1",focus="r")]
+[name="子月"]……牠們很害怕，牠們嗅到了獠牙的氣息。
+[name="子月"]我也嗅到了。
+[name="子月"]狼已經來了。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="56_g9_truckcamp",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$path_intro",key="$path_loop", volume=0.6)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>1100年11月5日    4:05 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_avg_bottlecollide", volume=1)]
+[charslot(slot = "left", name = "avg_npc_1550_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1561_1#1$1",duration = 1)]
+[delay(time=1.2)]
+[charslot(slot = "l",focus="l", name = "avg_npc_1550_1#1$1")]
+[name="卡車司機A"]哇，你拿冰過的加鹽汽水冰我的臉幹嘛，嚇我一跳！
+[charslot(slot = "r",focus="r", name = "avg_npc_1561_1#1$1")]
+[name="卡車司機B"]你聽柳德米拉講故事聽得太入迷了。
+[name="卡車司機B"]後來呢？
+[name="卡車司機B"]這個塔露拉，後來弒君者殺掉她了嗎？
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_1502_crosly_1#3$1",duration=1.5)]
+[delay(time=2)]
+[name="柳德米拉"]……
+[name="柳德米拉"]沒有。弒君者沒有殺她。
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1550_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1561_1#1$1",focus="r")]
+[name="卡車司機B"]真可惜，明明一直跟在塔露拉身邊，卻始終沒有察覺所謂的領袖其實是一條滿嘴謊話的惡龍……本來那麼多人都可以得救的。
+[name="卡車司機B"]話說，那個弒君者既沒殺塔露拉，也沒殺烏薩斯皇帝，為什麼為自己取名叫“弒君者”？
+[charslot]
+[charslot(slot="m",name="avg_1502_crosly_1#2$1")]
+[name="柳德米拉"]……
+[dialog]
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1550_1#1$1",focus="l")]
+[charslot(slot = "right", name = "avg_npc_1561_1#1$1",focus="l")]
+[name="卡車司機A"]說得輕巧，那是皇帝和惡龍啊，你殺過人嗎羅米？
+[name="卡車司機A"]不對，你不會真的殺過人吧？在為波吉亞家族工作的時候，你不會……
+[charslot(slot = "r",focus="r", name = "avg_npc_1561_1#1$1")]
+[name="卡車司機B"]我可沒做過這種事。
+[name="卡車司機B"]我一個司機，也就幫那些人開開夜車。殺人越貨這種事，是不會輕易交給我這樣的人去做的。
+[charslot(slot = "l",focus="l", name = "avg_npc_1550_1#1$1")]
+[name="卡車司機A"]真的假的，你車開得這麼爛，能幫大人物們開夜車？
+[name="卡車司機A"]開夜車……不會是什麼我不知道的家族黑話吧？
+[charslot(slot = "r",focus="r", name = "avg_npc_1561_1#3$1")]
+[name="卡車司機B"]當然只是字面意思而已！你這傢伙，口氣怎麼和警察一模一樣！再說，那都是過去的事了。
+[charslot(slot = "l",focus="l", name = "avg_npc_1550_1#1$1")]
+[name="卡車司機A"]不過說實在的，羅米，你最近吃的罰單是有點多了。
+[charslot(slot = "r",focus="r", name = "avg_npc_1561_1#1$1")]
+[name="卡車司機B"]狂歡節嘛，人多車多，大街小巷都不太好走，你又不是不知道。
+[name="卡車司機B"]我又沒在滿是廢墟的移動城市裡一邊開車一邊躲天災過！
+[charslot(slot = "l",focus="l", name = "avg_npc_1550_1#1$1")]
+[name="卡車司機A"]你還沉浸在柳德米拉的故事裡？
+[name="卡車司機A"]話說，柳德米拉，這些故事真的只是你在烏薩斯的時候聽來的嗎？你講起來細節那麼清楚，好像親身經歷過一樣……
+[charslot]
+[charslot(slot="m",name="avg_1502_crosly_1#6$1")]
+[name="柳德米拉"]……
+[charslot]
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_1547_1#2$1",duration=1)]
+[delay(time=1.5)]
+[name="索默爾"]你們啊，喝人家的汽水，聽人家的故事，還纏著人家問東問西，有沒有禮貌啊？
+[charslot(slot="m",name="avg_npc_1550_1#1$1")]
+[name="卡車司機A"]啊，抱歉抱歉。不好意思啊，柳德米拉。
+[charslot(slot="m",name="avg_1502_crosly_1#1$1")]
+[name="柳德米拉"]沒關係。
+[charslot(slot="m",name="avg_npc_1547_1#1$1")]
+[name="索默爾"]柳德米拉，也沒必要每週都由你請客吧？
+[name="索默爾"]你來營地多久了，三個月，四個月？
+[charslot(slot="m",name="avg_1502_crosly_1#1$1")]
+[name="柳德米拉"]記不清楚了，反正滿久的。
+[charslot(slot="m",name="avg_npc_1547_1#1$1")]
+[name="索默爾"]互助會發給你的薪水，你又全還給我們這些人了。為什麼不聽我的，省下來將來做點小生意呢？
+[charslot(slot="m",name="avg_1502_crosly_1#9$1")]
+[name="柳德米拉"]你們都拖家帶口的，我自己一個人，沒有什麼需要用錢的地方。再說，像我這樣的倒楣蛋，錢說不定存著存著就長翅膀飛走了。
+[charslot(slot="m",name="avg_npc_1547_1#7$1")]
+[name="索默爾"]話不是這麼說……
+[charslot(slot="m",name="avg_1502_crosly_1#9$1")]
+[name="柳德米拉"]哎呀，只是兩箱鹽味汽水而已。
+[name="柳德米拉"]大週末的，本來應該請大家喝點啤酒的。
+[name="柳德米拉"]不過你們今天晚上不是還要跟著去法院廣場拍電影嘛，要忙的事多著呢，只能換成口感差不多的汽水。
+[name="柳德米拉"]沒喝過癮的話就多喝幾瓶。
+[charslot(slot="m",name="avg_npc_1550_1#1$1")]
+[name="卡車司機A"]那我多來兩瓶——！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Image(image="56_i07", xScale=1.2, yScale=1.2,screenadapt="coverall")]
+[ImageTween( xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=45, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_bottlecollide", volume=1)]
+[name="索默爾"]給你，你自己買的自己不喝嗎？
+[name="卡車司機A"]啊，柳德米拉還沒有……
+[name="卡車司機B"]你看看你，都拿了多少瓶了！
+[name="卡車司機A"]嘿嘿，不好意思！
+[name="柳德米拉"]……我就算了吧。
+[name="索默爾"]柳德米拉，大家都知道的。
+[dialog]
+[delay(time=1.5)]
+[name="索默爾"]倒也不是說完全不在意。說實話，我摘下你的面罩時……真的嚇了一跳。
+[name="索默爾"]不過你是感染者，你只會比我們更在意會不會影響到別人。
+[name="柳德米拉"]……
+[name="索默爾"]你也別怪羅米他們幾個老是纏著你問東問西的，他們沒惡意，只是想多瞭解你一點。
+[name="索默爾"]別把我們當外人，柳德米拉。
+[name="柳德米拉"]……
+夕陽染紅了營地的草坪，以及司機們的臉。索默爾靠在後車廂，向她伸出手，其他的司機也都看著她，臉上帶著毫無戒備的微笑。
+可能是鹽味汽水也醉人吧，眉頭深鎖的瑞柏巴這樣想。
+短暫的沉默後，她摘下面罩，接過了那瓶鹽味汽水。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[image]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1550_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="卡車司機A"]好了，時間也差不多了，收拾一下，開車去法院廣場吧。
+[name="卡車司機A"]伊雷妮千叮嚀萬囑咐，片場的時間安排比我們出車排班更嚴格，千萬不能遲到，給市政廳添麻煩。
+[charslot(slot="m",name="avg_npc_1547_1#1$1")]
+[name="索默爾"]伊雷妮人呢？
+[charslot(slot="m",name="avg_npc_1550_1#1$1")]
+[name="卡車司機A"]說是去找拉維妮婭法官談新司機資格審查的事情。
+[charslot(slot="m",name="avg_npc_1547_1#1$1")]
+[name="索默爾"]喔……
+[charslot(slot="m",name="avg_npc_1561_1#1$1")]
+[name="卡車司機B"]對了索默爾，你真的不跟我們一起嗎？
+[name="卡車司機B"]就是開著卡車配合他們弄點大場面就好，很簡單的，而且市政廳給的報酬可比我們開一整天車更高。
+[charslot(slot="m",name="avg_npc_1547_1#4$1")]
+[name="索默爾"]我、我最近出車太多了，難得空下來，就在營地補覺了。
+[charslot(slot="m",name="avg_1502_crosly_1#3$1")]
+[name="柳德米拉"]……
+[charslot(slot="m",name="avg_npc_1561_1#1$1")]
+[name="卡車司機B"]柳德米拉，那你呢？
+[charslot(slot="m",name="avg_1502_crosly_1#1$1")]
+[name="柳德米拉"]我還有點事，也不去了。
+[charslot(slot="m",name="avg_npc_1550_1#1$1")]
+[name="卡車司機A"]好吧。那我們走了。
+[stopmusic(fadetime=2)]
+[Dialog]
+[PlaySound(key="$d_avg_drivestop")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1547_1#1$1")]
+[name="索默爾"]呼，總算……
+[dialog]
+[charslot(duration=1)]
+[playsound(key="$sportscarstart")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+一隊隊的卡車已經從營地開走，夜色慢慢降下來了，四下無人，索默爾找到了自己的車。
+他發動了車子，但還沒來得及關緊車門，一個身影就已經坐在了副駕駛座上，甚至連安全帶都已經繫好。
+[dialog]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1547_1#8$1",focus="l")]
+[name="索默爾"]柳、柳德米拉——
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="柳德米拉"]你不是要睡覺嗎？
+[charslot(slot="l",name="avg_npc_1547_1#7$1",focus="l")]
+[name="索默爾"]我……
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="柳德米拉"]開夜車，副駕駛座上怎麼能沒人呢？
+[charslot(slot="l",name="avg_npc_1547_1#4$1",focus="l")]
+[name="索默爾"]柳德米拉，我其實……
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="柳德米拉"]不是你說的嗎——別把我當外人，索默爾。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[curtain]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

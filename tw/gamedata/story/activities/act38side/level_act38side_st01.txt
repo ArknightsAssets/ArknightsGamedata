@@ -1,0 +1,876 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[charslot]
+[PlayMusic(intro="$plot_intro", key="$plot_loop", volume=0.6)]
+[Background(image="56_g6_courtsquare_n",screenadapt="coverall",xScale=1.2, yScale=1.2, y=-150)]
+[backgroundTween(xFrom = 100, xTo = -100, duration=15, block=false)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-100", block = false)]<p=2>1100年11月5日    8:10 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[Background(image="56_g6_courtsquare_n", screenadapt="coverall", xScale=1.1, yScale=1.1, y=-150, fadetime=2)]
+[focusout(type="bg", id="56_g6_courtsquare_n", from=0, to=0.6, duration=2, block=false)]
+[charslot(slot="l", name="avg_npc_1557_1#1$1", posfrom="0,-100", posto="0,-100", duration=1.5)]
+[charslot(slot="r", name="avg_npc_1556_1#1$1", posfrom="0,-100", posto="0,-100", duration=1.5)]
+[delay(time=3)]
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="狂熱的家族成員"]人都到齊了嗎？
+[charslot(slot="l", name="avg_npc_1557_1#1$1", focus="l")]
+[name="興奮的家族成員"]您可以回頭看看，整條街都是我們的人……蔚為壯觀的狼群。
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="狂熱的家族成員"]很好，不應該有人錯過這場狂歡節。
+[name="狂熱的家族成員"]武器呢？
+[charslot(slot="l", name="avg_npc_1557_1#1$1", focus="l")]
+[name="興奮的家族成員"]家主下了命令，最隱秘的武器倉庫將在今夜向所有成員開放，銃械、炸藥、法杖、源石弩箭……任意取用。
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="狂熱的家族成員"]好！但別忘了最最重要的事情——戴好你們的面具，別讓它掉下來。
+[name="狂熱的家族成員"]只要面具還在臉上，便沒有人會在意你是誰，又來自哪個家族。無論你犯下怎樣的罪惡，都不會被追究。
+[name="狂熱的家族成員"]狂歡節——真是敘拉古從古至今最偉大的節日！
+[name="狂熱的家族成員"]去剪除仇敵，去掃清障礙！那些和我們作對的家族，今夜都將從敘拉古的舞台上退場！
+[charslot(slot="l", name="avg_npc_1557_1#1$1", focus="l")]
+[name="興奮的家族成員"]市政廳的職員呢？那些老是叫囂著理想的可憐蟲經常礙我們的事，比其他家族的人更討厭。
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="狂熱的家族成員"]呵，我們身後就是法院……將這幫人關在這棟他們引以為傲的白色建築裡吧，如果還不聽話，就賞他們一發弩箭。
+[charslot(slot="l", name="avg_npc_1557_1#1$1", focus="l")]
+[name="興奮的家族成員"]哈哈，我喜歡這個安排！
+[charslot(slot="r", name="avg_npc_1556_1#1$1", focus="r")]
+[name="狂熱的家族成員"]聞到風中的味道了嗎……隱隱約約的，那是即將爆發的血腥味……
+[name="狂熱的家族成員"]今夜，沒有灰廳、沒有法律、沒有任何規則和秩序，就從這座新城市開始，敘拉古將重新洗牌——
+[dialog]
+[PlaySound(key="$d_avg_policesiren", volume=1, loop=true, channel="p")]
+[delay(time=2)]
+[PlaySound(key="$d_avg_spotlightc", volume=1)]
+[stopmusic(fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=0.6, channel="sn",fadetime=2)]
+[delay(time=1)]
+[charslot]
+[charslot(slot="m", name= "avg_npc_1551_1#1$1", bstart=0.2,bend=0.7)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="？？？"]各位，大話就說到這裡吧。
+[dialog]
+[StopSound(channel="p", fadetime=0.5)]
+[PlaySound(key="$d_avg_spotlight", volume=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=false)]
+[charslot(slot="m", name= "avg_npc_1551_1#1$1", posfrom="0,-50", posto="0,-50", duration=0)]
+[Delay(time=1)]
+[name="？？？"]我、我是——那個……新沃爾西尼警察局見習警察！諾埃米！
+[name="諾埃米"]看看周圍……你們已經無路可逃了！
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot="m", name="avg_npc_1556_1#1$1", posfrom="0,-100", posto="0,-100", duration=0)]
+[Delay(time=0.5)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=20, randomness=70, fadeout=true, block=false)]
+[charslot(slot="r", name= "avg_npc_1553_1#1$1", posfrom="200,-100", posto="30,-100", duration=0.5)]
+[charslot(slot="l", name= "avg_npc_1553_1#1$1", posfrom="-200,-100", posto="-30,-100", duration=0.5)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot="m", name= "avg_npc_1551_1#1$1", posfrom="0,-50", posto="0,-50", duration=0)]
+[name="諾埃米"]依據《新都市管理法案》，哪怕你們來自灰廳十二家族，進入新沃爾西尼之前都必須接受背景審查與人員登記。
+[name="諾埃米"]你們曾經的暴力行為已被記錄，你們將犯的暴力行為必被追究，而私藏並濫用武器更是重罪！
+[name="諾埃米"]你們以為自己身處何處？這裡，咳咳……
+[name="諾埃米"]新沃爾西尼沒有家族！
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_clapboard", volume=1)]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=20, randomness=70, fadeout=true, block=false)]
+[name="畫外音"]Cut！
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Background(image="56_g6_courtsquare_n", screenadapt="coverall",fadetime=2)]
+[focusout(type="bg", id="56_g6_courtsquare_n", from=0.6, to=0, duration=2, block=false)]
+[curtain(direction = 0,fillfrom = 0.2,fillto = 0, fadetime=2)]
+[curtain(direction = 4,fillfrom = 0.2,fillto = 0, fadetime=2)]
+[Delay(time=3)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m", name= "avg_npc_1553_1#1$1", duration=1)]
+[Delay(time=2)]
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="諾埃米"]導演，這些台詞我明明已經背得很熟了，為什麼……
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="導演"]諾埃米，幾天後就是狂歡節巡遊了，我們得快點把這部影片拍完。
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="諾埃米"]真是太抱歉了，我沒有想到實習的第一項任務，竟然是——呃，拍電影。
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="導演"]諾埃米，你緊張是因為攝影機，還是因為眼前的陣仗像是真的？
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="諾埃米"]……
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="導演"]如果是前者——你看看這些大老粗，我嚴重懷疑他們會在說台詞的時候嘴裡突然蹦出一些披薩店的名字。
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="諾埃米"]進警察學校之前，我一直待在爸爸的披薩店……
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="導演"]總之，你形象不錯，記憶力好，沒有比你更適合的人選了。
+[name="導演"]如果是後者——你可是敘拉古第一所警察學校的畢業生，哪怕以後真要像這樣面對家族，你也不能退縮，這是你的工作。
+[charslot(slot="m", name= "avg_npc_1551_1#1$1")]
+[name="諾埃米"]嗚，可、可能都有吧……
+[name="諾埃米"]我答應了爸爸，要完成實習順利入職，無論是什麼任務，我都會做好的！
+[name="諾埃米"]請讓我再試試！
+[charslot(slot="m", name= "avg_npc_1553_1#1$1")]
+[name="導演"]好，辛苦威尼斯的各位，我們再來一次。
+[charslot]
+[name="家族演員們"]唉——
+[dialog]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2, fadetime=4)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2, fadetime=4)]
+[Background(image="56_g6_courtsquare_n", screenadapt="coverall", xScale=1.1, yScale=1.1, y=-150, fadetime=4)]
+[focusout(type="bg", id="56_g6_courtsquare_n", from=0, to=0.6, duration=4, block=false)]
+[Delay(time=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="r", name="avg_npc_1556_1#1$1", posfrom="0,-100", posto="0,-100", duration=1.5)]
+[Delay(time=0.5)]
+[charslot(slot="l", name="avg_npc_1557_1#1$1",  posfrom="0,-100", posto="0,-100", duration=1.5)]
+[Delay(time=2)]
+[name="導演"]3、2、1，Action！
+[dialog]
+[PlaySound(key="$d_avg_clapboard", volume=1)]
+[musicvolume(volume=0.2, fadetime=2)]
+[curtain(direction = 0,fillfrom = 0.2,fillto = 0.5, fadetime=0.3)]
+[curtain(direction = 4,fillfrom = 0.2,fillto = 0.5, fadetime=0.3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[charslot]
+[focusout(type="bg", id="56_g6_courtsquare_n", from=0.6, to=0, duration=0.1, block=false)]
+[curtain]
+[Background(image="56_g6_courtsquare_n",screenadapt="coverall")]
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1")]
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1")]
+[Delay(time=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="萊昂圖索"]……
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="拉維妮婭"]……
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="萊昂圖索"]你覺得，怎麼樣……？
+[charslot(slot= "r", name= "avg_4065_judge_1#2$1", focus="r")]
+[name="拉維妮婭"]你希望我給出什麼樣的評價？
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="萊昂圖索"]或許那幾個黑幫演員應該表現得更兇神惡煞一點？這樣才能體現新沃爾西尼這一年取得的成果來之不易……
+[name="萊昂圖索"]或者……你不喜歡讓威尼斯載具公司提供幫助？但至少在新沃爾西尼，他們的人還沒有挑戰過《新都市管理法案》。
+[name="萊昂圖索"]他們也只是發動了一些“員工”來當我們的臨演，甚至沒有要求在宣傳片裡置入廣告……
+[charslot(slot= "r", name= "avg_4065_judge_1#2$1", focus="r")]
+[name="拉維妮婭"]……
+[charslot(slot= "l", name= "avg_npc_1541_1#4$1", focus="l")]
+[name="萊昂圖索"]拉維妮婭，你知道的，我並不願意做這種事。
+[charslot(slot= "r", name= "avg_4065_judge_1#7$1", focus="r")]
+[name="拉維妮婭"]我看你倒是很樂意出這個風頭。
+[charslot(slot= "l", focus="n")]
+[name="導演"]市長先生！請您準備一下，我們馬上就要拍攝您的演講了！
+[charslot(slot= "l", name= "avg_npc_1541_1#3$1", focus="l")]
+[name="萊昂圖索"]好的！我馬上就好——
+[charslot(slot= "r", name= "avg_4065_judge_1#7$1", focus="r")]
+[name="拉維妮婭"]……
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="萊昂圖索"]我這就和他們強調，我現在還只是代理市長……
+[charslot(slot= "r", name= "avg_4065_judge_1#7$1", focus="r")]
+[name="拉維妮婭"]但不需要多久了，不是嗎？
+[name="拉維妮婭"]舉辦如此盛大的慶典，宣布正式就任市長，還要拍攝宣傳片，讓你的臉出現在城市每個角落，好讓所有人都記得你……
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="萊昂圖索"]……拉維妮婭，我們聊過的。
+[name="萊昂圖索"]我們已經在這座新城市做了很多事，建立起新的市政廳，推行《新都市管理法案》，利用種種政策將家族秩序排除在外……
+[name="萊昂圖索"]但我們從未正面回應過所有人的質疑——西西里夫人，還有其他覬覦新城市的家族。
+[charslot(slot= "l", name= "avg_npc_1541_1#8$1", focus="l")]
+[name="萊昂圖索"]還有比現在更適合的時機嗎？
+[name="萊昂圖索"]在新沃爾西尼建城一周年之際，我們邀請所有的市民，甚至其他國家的朋友齊聚新沃爾西尼。
+[name="萊昂圖索"]“狂歡節”——我們再次使用這個已被廢棄六七十年之久的詞語，並賦予它新的含義，恰恰說明……
+[name="萊昂圖索"]這個國家願意且能夠改變一切束縛它的舊事物，就從這座城市開始！
+[charslot(slot= "r", name= "avg_4065_judge_1#15$1", focus="r")]
+[name="拉維妮婭"]可是讓自己變成眾矢之的，對你說的這些有什麼好處嗎？
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="萊昂圖索"]我們需要一面旗幟……
+[charslot(slot= "r", name= "avg_4065_judge_1#7$1", focus="r")]
+[name="拉維妮婭"]敘拉古的家族，同樣在等待一個可以攻擊、傷害的對象。
+[name="拉維妮婭"]你明明知道，那些家族一時的蟄伏不代表他們放棄了掌控這座城市，他們始終在盯著你。
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="萊昂圖索"]……我不會畏懼他們。
+[name="萊昂圖索"]我不會讓他們得手的，再一次……
+[charslot(slot= "r", name= "avg_4065_judge_1#6$1", focus="r")]
+[name="拉維妮婭"]萊昂……我理解你的感受，但我們需要的不是這樣魯莽的宣戰。
+[name="拉維妮婭"]你應該保護好自己。我真的不希望看到你也……
+[charslot(slot= "l", focus="n")]
+[name="導演"]市長先生！您準備好了嗎？
+[charslot(slot= "l", name= "avg_npc_1541_1#3$1", focus="l")]
+[name="萊昂圖索"]好、好了！我這就來！
+[charslot(slot= "r", name= "avg_4065_judge_1#2$1", focus="r")]
+[name="拉維妮婭"]……
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="拉維妮婭"]拍攝完之後，那些卡車記得立刻還給工會。狂歡節在即，還有很多籌備事宜需要用到它們。
+[charslot(slot= "l", name= "avg_npc_1541_1#8$1", focus="l")]
+[name="萊昂圖索"]我知道，借來半天已經是工會的極限了。你放心，都已經安排好了。
+[dialog]
+[charslot(slot= "r", name= "avg_4065_judge_1#8$1", focus="r")]
+[delay(time=1)]
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="拉維妮婭"]我先走了，法院還有些事情要忙。
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="萊昂圖索"]遇到什麼麻煩了嗎？
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="拉維妮婭"]不算什麼大事，有幾家公司在註冊資料上動了手腳。
+[name="拉維妮婭"]說真的，那些人對法律漏洞的敏感程度，不輸給我大學裡的任何一個同學。
+[charslot(slot= "l", name= "avg_npc_1541_1#1$1", focus="l")]
+[name="萊昂圖索"]那今天的晚餐——
+[charslot(slot= "r", name= "avg_4065_judge_1#1$1", focus="r")]
+[name="拉維妮婭"]冰箱裡還有麵條，你自己吃吧。
+[charslot(slot= "l", name= "avg_npc_1541_1#2$1", focus="l")]
+[name="萊昂圖索"]不……我是說……
+[name="萊昂圖索"]我今晚答應了德米特里的飯局邀約……拉維妮婭，我不可能一直躲著他。
+[charslot(slot= "r", name= "avg_4065_judge_1#6$1", focus="r")]
+[name="拉維妮婭"]……
+[name="拉維妮婭"]……萊昂，保護好自己。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r", afrom=1, ato=0, duration=1.5)]
+[delay(time=2)]
+[charslot(slot= "l", focus="n")]
+[name="導演"]市長先生，請注意看攝影機的提示燈。您準備好的話，我們就可以開始了。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1)]
+[charslot(slot= "l", posfrom="0,0", posto="200,0", duration=1)]
+[delay(time=1)]
+[charslot(slot= "l", name= "avg_npc_1541_1#8$1", focus="l")]
+[name="萊昂圖索"]好的。
+[dialog]
+[charslot(slot = "l", afrom=1, ato=0, duration=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_mictest", volume=1)]
+[delay(time=1)]
+[name="萊昂圖索"]市民朋友們，晚上好。
+[name="萊昂圖索"]我很榮幸，能以一名新沃爾西尼市民的身分，站在這裡和大家對話。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="我想要帶給你們的，是一封邀請函——", x=250,y=300, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\n歡迎進入敘拉古新的時代。", block = true)]
+[Sticker(id="st1", duration=1, block = false)]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g4_newvolsiniialley_n",screenadapt="coverall")]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot= "l", name= "avg_4155_talr_1#7$1", posfrom="-200,0", posto="0,0", duration=0.8)]
+[Delay(time=1)]
+[charslot(slot= "l", name= "avg_4155_talr_1#7$1", focus="l")]
+[name="裁縫店學徒"]來……給你！
+[name="裁縫店學徒"]這是我跑了五個街區排隊才買到的薩拉米肉腸，還有我爺爺藏得最深的葡萄酒……他身體不好，也不能喝酒了。
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="家族成員"]不錯，小裁縫，很上道。
+[name="家族成員"]呼，搬來新沃爾西尼後，晚上也只剩下這點消遣了，要是放過去，在這樣一個晚上……嘖嘖。
+[dialog]
+[PlaySound(key="$d_avg_whistle", volume=1)]
+[Delay(time=1.5)]
+[name="家族成員"]（輕佻的口哨聲）
+[dialog]
+[charslot(slot= "l", name= "avg_4155_talr_1#7$1", focus="l")]
+[PlaySound(key="$d_avg_whistleunfamiliar", volume=1)]
+[Delay(time=1.5)]
+[name="裁縫店學徒"]（生疏的口哨聲）
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="家族成員"]嘿，盧奇諾，別這樣——蠢死了！
+[name="家族成員"]上次你故意在我們面前說那些你在電影裡學來的“黑話”時，我就警告過你——
+[name="家族成員"]不是模仿一個家族成員的一舉一動就可以成為家族的一員。再說……總之，看清現實，好好當你的裁縫吧。
+[charslot(slot= "l", name= "avg_4155_talr_1#6$1", focus="l")]
+[name="盧奇諾"]……喔。
+[charslot(slot= "l", name= "avg_4155_talr_1#1$1", focus="l")]
+[name="盧奇諾"]好了，酒和香腸都給你們了，我該回去了。
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="家族成員"]嗯？你今天怎麼像變了個人一樣，不纏著我們打聽家族的傳奇故事了？
+[charslot(slot= "l", name= "avg_4155_talr_1#6$1", focus="l")]
+[name="盧奇諾"]……我爺爺已經發現我在和你們往來了，他不准——
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="家族成員"]哈哈哈哈，看你那個膽子，還想當大人物呢！
+[charslot(slot= "l", focus="n")]
+[name="？？？"]盧奇諾，怎麼還不進來？
+[name="？？？"]警察等一下就要巡邏過來了，狂歡節快到了，他們在加強治安，你不要在外面隨便亂晃。
+[charslot(slot= "l", name= "avg_4155_talr_1#7$1", focus="l")]
+[name="盧奇諾"]……爺爺在叫我了。
+[charslot(slot= "r", name= "avg_npc_1554_1#1$1", focus="r")]
+[name="家族成員"]老傢伙——
+[name="家族成員"]放在以前，誰對我們不是又敬又怕，現在連翁貝托這樣的老裁縫都敢挑戰我們。
+[name="家族成員"]雖然說到一個地方，就得守一個地方的規矩，但新沃爾西尼的規矩，卻是拋棄以前的規矩。
+[name="家族成員"]不說我們這樣的小家族，連薩盧佐那種在灰廳裡有座席的大家族，來到這裡都得夾著尾巴做人……世道真是變了啊。
+[charslot(slot= "l", name= "avg_4155_talr_1#3$1", focus="l")]
+[name="盧奇諾"]“薩盧佐”……
+[charslot(slot= "l", name= "avg_4155_talr_1#1$1", focus="l")]
+[name="盧奇諾"]我先進去了。
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "l", afrom=1, ato=0, duration=1)]
+[delay(time=1)]
+[musicvolume(volume=0.2, fadetime=2)]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_doorbell", volume=1)]
+[Background(image="56_g7_tailorshop",screenadapt="coverall")]
+[Delay(time=1)]
+[charslot(slot= "m", name= "avg_4155_talr_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="盧奇諾"]爺、爺爺。
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot= "m", name= "avg_npc_1543_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="翁貝托"]……這套套裝已經包裝好了，收貨地址你應該記得，去送貨吧。
+[charslot(slot= "m", name= "avg_4155_talr_1#10$1")]
+[name="盧奇諾"]好。
+[charslot(slot= "m", name= "avg_npc_1543_1#1$1")]
+[name="翁貝托"]客人試過衣服後，如果沒有別的意見，你就趕快回來。
+[charslot(slot= "m", name= "avg_npc_1543_1#3$1")]
+[multiline(name="翁貝托")]盧奇諾，我知道這次的主顧很特別，也知道你這孩子一直想結交所謂“真正重要的客人”，
+[charslot(slot= "m", name= "avg_npc_1543_1#2$1")]
+[charslot(slot = "m", action="shake", afrom=1 , ato=1, power=3, times=30, duration=0.3)]
+[multiline(name="翁貝托",end=true)]咳咳——
+[dialog]
+[PlaySound(key="$d_avg_walkfast", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1)]
+[charslot(slot= "l", name= "avg_4155_talr_1#6$1", posfrom="-200,0", posto="-50,0", duration=0.5, isblock=true)]
+[charslot(slot= "l", name= "avg_4155_talr_1#6$1", focus="l")]
+[name="盧奇諾"]道理您說過很多次了，爺爺。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1)]
+[charslot(slot= "l", posfrom="-50,0", posto="150,0", duration=1.5)]
+[PlaySound(key="$d_avg_chairrub", volume=1)]
+[charslot(slot= "m", posfrom="0,0", posto="200,-10", afrom=1, ato=0, duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot= "l", name= "avg_4155_talr_1#10$1")]
+[name="盧奇諾"]送衣服的時候，我順便去一趟藥店幫您拿藥然後就回來，您就好好休息吧。
+[dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="改變正在我們身邊發生。", x=250,y=270, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\n它緩慢，但有力，我們都能看到。", block = true)]
+[Sticker(id="st1", multi = true, text="\n\n我們正在拿回本就該屬於我們的一切，我們的生活、我們的勇氣。", block = true)]
+[Sticker(id="st1", duration=1, block = false)]
+[delay(time=1)]
+[Sticker(id="st2", multi = true, text="歷史的慣性很沉重，過往的泥沼有時的確會牽絆住我們的腳步。", x=250,y=270, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st2", multi = true, text="\n\n但我們會繼續向前走，我們永遠不會停下。", block = true)]
+[Sticker(id="st2", multi = true, text="\n\n我們依然擁有力量。", block = true)]
+[Sticker(id="st2", duration=1, block = false)]
+[delay(time=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g14_governmentoffice_n",screenadapt="coverall")]
+[PlayMusic(key="$formal_loop", volume=0.6)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>1100年11月5日    9:37 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(slot= "m", name= "avg_npc_1542_1#8$1", posfrom="-50,0", posto="0,0", duration=0.3)]
+[delay(time=1)]
+[name="著急的卡車司機"]喂！明明是我先到的，為什麼要插隊？
+[charslot(slot= "m", name= "avg_npc_1554_1#1$1")]
+[name="家族公司成員"]請問，你代表哪一家公司？
+[charslot(slot= "m", name= "avg_npc_1542_1#8$1")]
+[name="著急的卡車司機"]不……我是卡車工會的工人，我這裡有很重要的文件需要拉維妮婭法官在今天之內處理，我已經和她約好了！
+[charslot(slot= "m", name= "avg_npc_1554_1#1$1")]
+[name="家族公司成員"]有多重要？是能為新沃爾西尼帶來上億投資的生意？
+[charslot(slot= "m", name= "avg_npc_1542_1#2$1")]
+[name="著急的卡車司機"]不是……
+[charslot(slot= "m", name= "avg_npc_1554_1#1$1")]
+[name="家族公司成員"]相信我，那就算不上什麼急事。
+[name="家族公司成員"]稍等一下吧，裡面正在談重要的生意，牽扯到的是你根本不認識的數字。
+[name="家族公司成員"]老老實實在這裡等著，就是你能為這座城市做的最大貢獻。
+[charslot(slot= "m", name= "avg_npc_1542_1#8$1")]
+[name="著急的卡車司機"]……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="56_g14_governmentoffice_n", screenadapt="coverall")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[charslot(slot = "l", name = "avg_4065_judge_1#1$1", focus="n")]
+[name="家族公司法務"]拉維妮婭法官，我有必要提醒您，“公平”是法律的真諦，不該有人被特殊對待。
+[name="家族公司法務"]您如此針對薩盧佐名下的企業，很難不讓人懷疑這是出於您對我們的一己偏見。
+[charslot(slot = "l", name = "avg_4065_judge_1#7$1", focus="l")]
+[name="拉維妮婭"]你是說……一己偏見？
+[name="拉維妮婭"]法務先生，現在已經晚上九點多了，我不覺得“一己偏見”足以支撐你我在這裡加班。
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[name="家族公司法務"]……
+[charslot(slot = "l", name = "avg_4065_judge_1#7$1", focus="l")]
+[name="拉維妮婭"]薩盧佐酒業上次提交的新酒莊資料裡，公司有“保全人員一百三十人”。
+[name="拉維妮婭"]這一版則變成了“物流人員三十人”、“釀酒師五十人”、“應用技術人員五十人”。
+[charslot(slot = "l", name = "avg_4065_judge_1#15$1", focus="l")]
+[name="拉維妮婭"]先生，我不要求你尊重我，但你至少應該尊重《新都市管理法案》，還有人們的常識。
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[name="家族公司法務"]……您到底要怎麼樣才願意放過我們。
+[charslot(slot = "l", name = "avg_4065_judge_1#7$1", focus="l")]
+[name="拉維妮婭"]很簡單，新沃爾西尼歡迎任何想要守本分做生意的公司，但不會放過任何一個不守本分的家族。
+[name="拉維妮婭"]我不在乎薩盧佐能將他的葡萄酒賣到萊塔尼亞、哥倫比亞，哪怕是烏薩斯……
+[name="拉維妮婭"]但只要沒有通過資格審查，就不會有任何一瓶貼著薩盧佐新酒莊酒標的酒擺在新沃爾西尼的貨架上。
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[name="家族公司法務"]真有你的，拉維妮婭法官。在敘拉古的歷史上，恐怕還沒有一個政府或法院的人敢這樣對我們講話。
+[charslot(slot = "l", name = "avg_4065_judge_1#1$1", focus="l")]
+[name="拉維妮婭"]這裡是新沃爾西尼，這裡的法律不講任何情面。
+[name="拉維妮婭"]所以最好趕快適應一下，不然接下來的日子對你們來說，恐怕只會更加難熬。
+[charslot(slot = "l", name = "avg_4065_judge_1#2$1", focus="l")]
+[name="拉維妮婭"]今天我已經在薩盧佐的葡萄酒上浪費很多時間了，先生。請立刻離開我的辦公室，然後請那位被你們擋在門口的女士進來。
+[charslot(slot = "l", name = "avg_4065_judge_1#7$1", focus="l")]
+[name="拉維妮婭"]我聽到你們剛才對她的無禮發言了，她應該得到一個道歉。
+[charslot(slot = "r", name = "avg_npc_1555_1#1$1", focus="r")]
+[name="家族公司法務"]……哼。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r", afrom=1, ato=0, duration=1, isblock=true)]
+[delay(time=1.5)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1)]
+[charslot(slot = "r", name = "avg_npc_1542_1#1$1", posfrom="200,0", posto="0,0", duration=0.8)]
+[Delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1542_1#7$1", focus="r")]
+[name="著急的卡車司機"]拉維妮婭法官，晚上好！抱歉佔用您的休息時間，請一定要看看這個！
+[name="著急的卡車司機"]這是這段時間卡車互助會每一天的出車記錄，裡面記了每一次出車的司機、裝載的貨物、行駛路線還有時間。
+[name="著急的卡車司機"]因為數量真的很多，所以直到今天我才整理好……請您核對一下！
+[charslot(slot = "l", name = "avg_4065_judge_1#5$1", focus="l")]
+[name="拉維妮婭"]辛苦了，這是一份很詳細的記錄。可是……為什麼需要我看？
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="著急的卡車司機"]您不是說過，狂歡節前後的物流運輸非常重要，也要警惕有人趁這個時間走私貨物……
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="拉維妮婭"]我是這樣講過，雖然只是提醒……何況，這份記錄，伊雷妮，你作為卡車工會的主席，完全可以自己判斷啊。
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="伊雷妮"]欸……原來您認出我了。
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="拉維妮婭"]我們也沒有那麼不熟吧……新沃爾西尼最勤勞的司機，也是新沃爾西尼貨運工人和卡車司機聯合互助會最可靠的領袖。
+[charslot(slot = "r", name = "avg_npc_1542_1#1$1", focus="r")]
+[name="伊雷妮"]我們還是習慣叫它“卡車互助會”……
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="拉維妮婭"]沒有你們，沒有這些工人和司機，就沒有現在的新沃爾西尼。不要低估自己的力量，你應該為自己感到驕傲。
+[charslot(slot = "r", name = "avg_npc_1542_1#10$1", focus="r")]
+[name="伊雷妮"]謝……謝謝您。
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="拉維妮婭"]嗯，這份報告我收下了，我相信你的判斷，也感謝你的用心……還有什麼事嗎？
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="伊雷妮"]拉維妮婭法官，上週我們提交了一批新的卡車司機名單，他們的審查還沒有通過。
+[name="伊雷妮"]我想向您擔保一個人……
+[dialog]
+[playsound(key="$d_avg_paper1",volume=1)]
+[delay(time=0.5)]
+[playsound(key="$d_avg_paper2",volume=1)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4065_judge_1#8$1", focus="l")]
+[name="拉維妮婭"]伊雷妮，你應該清楚，為什麼我們如此在意每一位卡車司機的背景審查……
+[charslot(slot = "r", name = "avg_npc_1542_1#8$1", focus="r")]
+[name="伊雷妮"]當然！我知道……物流業對新沃爾西尼至關重要，許多家族都在盯著它，我們不能給那些人可乘之機！
+[charslot(slot = "l", name = "avg_4065_judge_1#8$1", focus="l")]
+[name="拉維妮婭"]一位從烏薩斯來的瑞柏巴，人際關係簡單到近乎空白，過往經歷模糊不清……單看這份資料，我恐怕很難輕易讓她通過審查。
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="伊雷妮"]我、我可以擔保，她和家族沒有任何關聯，而且，她的開車技術真的很好！
+[name="伊雷妮"]她資料上這些經歷，也只是因為她比較倒楣……她現在，非常需要一份工作！
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="伊雷妮"]拉維妮婭法官，我在想，新沃爾西尼的法律保護我們不受家族的傷害，那當我們的市民需要幫助的時候，是不是也可以……
+[charslot(slot = "l", name = "avg_4065_judge_1#5$1", focus="l")]
+[name="拉維妮婭"]……
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="伊雷妮"]啊，您別誤會！我沒有想向您施加壓力的意思。您該怎麼處理就怎麼處理——
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="拉維妮婭"]你太緊張了，伊雷妮。
+[name="拉維妮婭"]你在有意和我保持距離，我看得出來。
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="伊雷妮"]我……
+[name="伊雷妮"]拉維妮婭法官，我其實很喜歡您和萊昂圖索先生……真的！
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="拉維妮婭"]哈哈，謝謝。
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="伊雷妮"]嗯嗯，索默爾也一樣。
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="拉維妮婭"]索默爾？是那個和你一起來到新沃爾西尼的司機，手裡總拿著個打火機的那個……
+[charslot(slot = "r", name = "avg_npc_1542_1#1$1", focus="r")]
+[name="伊雷妮"]這您也記得！他是我最好的朋友。
+[name="伊雷妮"]一年前，我們剛來到這裡，那時市政廳組建卡車工會的公告貼出去半個月了，一直沒有人敢冒著被家族報復的風險去報名。
+[name="伊雷妮"]我和索默爾也只是讀了幾遍，轉身要走，您和萊昂圖索先生攔住了我們。
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="拉維妮婭"]因為你在公告前站的時間比所有人都長，伊雷妮。
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="伊雷妮"]……我們是在西西里城待不下去了才跑來這裡的。
+[charslot(slot = "r", name = "avg_npc_1542_1#3$1", focus="r")]
+[name="伊雷妮"]你們跟我說的那些話我都還記得……我、我不想說肉麻的話，但確實沒有你們，就沒有我現在的生活。
+[charslot(slot = "l", name = "avg_4065_judge_1#5$1", focus="l")]
+[name="拉維妮婭"]……
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="伊雷妮"]我知道您不想讓那些家族——哦不，應該說那些企業插手新沃爾西尼的物流生意，我也知道他們從沒放棄過打這方面的主意。
+[name="伊雷妮"]但現在的結果是，卡車互助會成了唯一被允許存在的運輸組織，而且規模越來越大……
+[charslot(slot = "r", name = "avg_npc_1542_1#3$1", focus="r")]
+[multiline(name="伊雷妮")]拉維妮婭法官，我們的司機來到新沃爾西尼之前，或多或少都經歷過……
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[multiline(name="伊雷妮",end=true)]總之，大家都只是為了重新找一條活路。
+[charslot(slot = "l", name = "avg_4065_judge_1#1$1", focus="l")]
+[name="拉維妮婭"]所以你們並不想和市政廳還有法院看起來太過親近。
+[charslot(slot = "r", name = "avg_npc_1542_1#2$1", focus="r")]
+[name="伊雷妮"]……是。
+[charslot(slot = "l", name = "avg_4065_judge_1#8$1", focus="l")]
+[name="拉維妮婭"]我知道，很多事情本來也沒辦法一蹴而就。
+[charslot(slot = "r", name = "avg_npc_1542_1#8$1", focus="r")]
+[name="伊雷妮"]但是請您放心，家族的人絕對不會進入卡車互助會——這是我答應過的事情，我一定會做到。
+[name="伊雷妮"]還有就是，之前萊昂圖索先生競選市長的時候，我這一票是投給他的！他這一年來作為代理市長的成績本來也有目共睹！
+[dialog]
+[musicvolume(volume=0.2, fadetime=2)]
+[PlaySound(key="$d_avg_hungry", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="伊雷妮"]啊……
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="拉維妮婭"]還沒有吃晚餐？
+[charslot(slot = "r", name = "avg_npc_1542_1#1$1", focus="r")]
+[name="伊雷妮"]沒事的！我還不餓……
+[dialog]
+[charslot(slot = "l", posfrom="0,0", posto="50,0", duration=0.6, isblock=true)]
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="拉維妮婭"]不介意的話，我這裡還有一些披薩，雖然有點冷掉了。
+[dialog]
+[charslot(slot = "r", posfrom="0,0", posto="50,0", duration=0.6, isblock=true)]
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[name="伊雷妮"]不不不！這怎麼可以呢……
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="拉維妮婭"]幫幫我吧，我一個人怎麼吃得完。餓著肚子也沒辦法聊工作的。
+[name="拉維妮婭"]何況浪費最正宗美味的披薩，對每個敘拉古人來說都是無法容忍的重罪，對吧？
+[charslot(slot = "r", name = "avg_npc_1542_1#10$1", focus="r")]
+[name="伊雷妮"]那……謝謝您。我就不客氣了。
+[dialog]
+[charslot(slot = "r", posfrom="50,0", posto="0,0", duration=0.6, isblock=true)]
+[PlaySound(key="$d_avg_humaneat", volume=1)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4065_judge_1#1$1", focus="l")]
+[name="拉維妮婭"]伊雷妮，可以再和我講講卡車工會的現狀嗎？
+[charslot(slot = "r", name = "avg_npc_1542_1#10$1", focus="r")]
+[name="伊雷妮"]唔……嗯……好的！
+[name="伊雷妮"]最近一個月以來，卡車互助會平均每天的醬汁，比前幾個月多出了五倍……
+[charslot(slot = "r", name = "avg_npc_1542_1#5$1", focus="r")]
+[multiline(name="伊雷妮")]不是……我是說出車人次……
+[charslot(slot = "r", name = "avg_npc_1542_1#10$1", focus="r")]
+[multiline(name="伊雷妮",end=true)]還有，這個披薩的醬汁真的很好吃。
+[charslot(slot = "l", name = "avg_4065_judge_1#9$1", focus="l")]
+[name="拉維妮婭"]……
+[name="拉維妮婭"]別著急，還是讓我們先吃完這頓晚餐吧。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Background]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="我很喜歡我的一位朋友曾經說過的一句話——", x=250,y=270, alignment="center", duration=1, size=24, delay=0.04, width=800)]
+[Sticker(id="st1", multi = true, text="\n\n“我們的力量就是我們創造的生活本身。”", block = true)]
+[Sticker(id="st1", multi = true, text="\n\n我們的力量，足以捍衛我們所創造的一切。", block = true)]
+[Sticker(id="st1", duration=1, block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[charslot]
+[Background(image="56_g4_newvolsiniialley_n",screenadapt="coverall")]
+[Delay(time=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>1100年11月5日    10:52 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_542_1#1$1", focus="n")]
+[charslot(slot = "l", name = "avg_npc_541_1#2$1", focus="l")]
+[name="卡彭"]你已經往肚子裡塞了三杯果汁、五塊披薩了……有那麼餓嗎？
+[charslot(slot = "r", name = "avg_npc_542_1#6$1", focus="r")]
+[name="甘比諾"]閉上你的嘴，喝完這杯濃縮。
+[dialog]
+[PlaySound(key="$d_avg_drinkswllw", volume=1)]
+[charslot(slot = "l", name = "avg_npc_541_1#1$1", focus="l")]
+[delay(time=1)]
+[name="卡彭"]嘔……太酸了。
+[name="卡彭"]要是我喝了拉肚子，耽誤了任務，你把頭借給我嗎？
+[charslot(slot = "r", name = "avg_npc_542_1#1$1", focus="r")]
+[name="甘比諾"]忍忍吧，我隨便買的。
+[name="甘比諾"]這是條輔路，本來也沒什麼人。再說，只是運送一批“輪胎”，能出什麼事？
+[charslot(slot = "r", name = "avg_npc_542_1#7$1", focus="r")]
+[name="甘比諾"]說是在路上接應，其實就是個閒差，本來也沒什麼功勞好撈，那麼用心做什麼？
+[charslot(slot = "l", name = "avg_npc_541_1#2$1", focus="l")]
+[name="卡彭"]這兩個月我已經聽夠你的抱怨了，甘比諾。
+[name="卡彭"]你還沒有摸清楚新老闆的性格嗎？太急切地在他面前表現自己，只會適得其反。
+[charslot(slot = "l", name = "avg_npc_541_1#1$1", focus="l")]
+[name="卡彭"]我們才剛加入沒多久，需要等待機會。
+[charslot(slot = "r", name = "avg_npc_542_1#8$1", focus="r")]
+[name="甘比諾"]你還真是一個懂老闆的好員工啊，卡彭。
+[name="甘比諾"]我還以為你在說起這些事情時，多少會有些恥辱感，“西西里人”在如今的敘拉古已經寸步難行。
+[charslot(slot = "l", name = "avg_npc_541_1#1$1", focus="l")]
+[name="卡彭"]哦不，我早就不是“西西里人”了。那是你的恥辱，又不是我的。
+[name="卡彭"]我只想早點拿到正式落戶新沃爾西尼的資格。這半年我花了多少功夫，交了多少認證金，才剛好存夠一半的市民積分——
+[charslot(slot = "r", name = "avg_npc_542_1#2$1", focus="r")]
+[name="甘比諾"]剛好一半？你怎麼比我多五十分？你偷偷去做社區服務了？
+[charslot(slot = "l", name = "avg_npc_541_1#2$1", focus="l")]
+[name="卡彭"]閉嘴吧。我們已經沒有再來一次的機會了，甘比諾。
+[charslot(slot = "r", name = "avg_npc_542_1#1$1", focus="r")]
+[name="甘比諾"]……
+[charslot(slot = "l", name = "avg_npc_541_1#7$1", focus="l")]
+[multiline(name="卡彭")]盯緊前面這條街吧，車應該馬上就要來了——
+[multiline(name="卡彭")]還有披薩嗎？給我一塊。
+[dialog]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_541_1#6$1", focus="l")]
+[name="卡彭"]媽的，涼的你都吃得下去……
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall")]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.11, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.11, fadetime=0.1)]
+[PlaySound(key="$d_avg_driveincar", volume=0, loop=true, channel="car")]
+[PlaySound(key="$d_avg_noisycitytraffic", volume=0, loop=true, channel="n")]
+[Delay(time=1)]
+[CameraShake(duration=-1, xstrength=0.4, ystrength=0.4, vibrato=10, randomness=10, fadeout=false, block=false)]
+[SoundVolume(volume=1, channel="car",fadetime=2)]
+[SoundVolume(volume=0.6, channel="n",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-180", block = false)]<p=2>1100年11月5日    11:05 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[SoundVolume(volume=0.4, channel="car",fadetime=1)]
+[StopSound(channel="n", fadetime=2)]
+[charslot(slot = "m", name = "avg_npc_1541_1#4$1", duration=0.5, isblock=true)]
+[name="萊昂圖索"]唉……還是沒趕上。
+[dialog]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+[name="電話裡的聲音"]你遲到了，萊昂。
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1541_1#1$1")]
+[name="萊昂圖索"]抱歉，今天實在有點忙不過來。
+[charslot(slot = "m", focus = "n")]
+[name="電話裡的聲音"]還在忙你的就職演說？
+[charslot(slot = "m", name = "avg_npc_1541_1#1$1")]
+[name="萊昂圖索"]那只是一小部分……畢竟現在是要為整座城市辦一個慶生派對，我們之前都只有在家裡辦派對的經驗，對吧？
+[charslot(slot = "m", focus = "n")]
+[name="電話裡的聲音"]沒想到你還會記得……那時候的事。
+[charslot(slot = "m", name = "avg_npc_1541_1#8$1")]
+[name="萊昂圖索"]怎麼會不記得？你是期望我忘記你用薑汁汽水代替家宴上的黑啤酒，然後用差價去買車的故事嗎？
+[charslot(slot = "m", focus = "n")]
+[name="電話裡的聲音"]哈哈——是有這麼回事。
+[charslot(slot = "m", name = "avg_npc_1541_1#2$1")]
+[name="萊昂圖索"]德米特……你聽起來怎麼有些……心不在焉？
+[charslot(slot = "m", focus = "n")]
+[name="電話裡的聲音"]沒什麼，可能是太久沒見面了吧。
+[name="電話裡的聲音"]路上小心，萊昂。
+[charslot(slot = "m", name = "avg_npc_1541_1#8$1")]
+[name="萊昂圖索"]哈哈，如果不是在新沃爾西尼，這句話聽起來會更像威脅。
+[charslot(slot = "m", focus = "n")]
+[name="電話裡的聲音"]別開玩笑了。快點過來吧，我在靠窗的位置等你。
+[dialog]
+[charslot(duration=1)]
+[charslot(slot = "m", focus = "n")]
+[PlaySound(key="$transmission", volume=1)]
+[delay(time=1.5)]
+萊昂圖索掛斷了通訊。
+他已經有一年的時間沒見過電話那頭的人，他清楚對方的意圖，也清楚自己會用怎樣的話術回絕他。
+這注定不會是一場愉快的重逢，萊昂圖索想到這裡，搖了搖頭。
+[stopmusic(fadetime=2)]
+就在這時，一束光射在了他的臉上。
+[dialog]
+[PlaySound(key="$d_avg_carhorn", volume=1)]
+[StopSound(channel="car", fadetime=2)]
+[PlaySound(key="$d_avg_noisycitytraffic", volume=0, loop=true, channel="n")]
+[SoundVolume(volume=0.4, channel="n",fadetime=2)]
+[curtain(direction = 0, fillfrom = 0.11,fillto = 0.11, a=0, fadetime=2)]
+[curtain(direction = 4,fillfrom = 0.11,fillto = 0.11, a=0, fadetime=2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=2, block=true)]
+[CameraShake(duration=0, xstrength=0.4, ystrength=0.4, vibrato=10, randomness=10, fadeout=false, block=false)]
+[background]
+[curtain]
+[charslot]
+[Image(image="56_i28", screenadapt="coverall")]
+[delay(time=0.1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[name="萊昂圖索"]這光——對面怎麼開車的……
+[name="萊昂圖索"]等等，那輛車——
+[name="萊昂圖索"]糟糕，我的方向盤怎麼——
+[dialog]
+[StopSound(channel="n", fadetime=1)]
+[PlaySound(key="$drift", volume=1)]
+[delay(time=0.6)]
+[PlaySound(key="$d_avg_carcrash_wreck", volume=1)]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[ImageTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.3, yScaleTo=1.3, duration=0.5, block=false)]
+[delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[delay(time=3)]
+[Image(image="56_i29", screenadapt="coverall")]
+[ImageTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.1, yScaleTo=1.1, duration=20, block=false)]
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="c")]
+[SoundVolume(volume=1, channel="c",fadetime=2)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[name="？？？"]現場還很危險，請不要靠近！
+[name="？？？"]讓開讓開，不要擋著路，為傷者留出空間！
+[name="？？？"]先生！先生？您能聽到我的聲音嗎？
+[name="？？？"]保持清醒！救護車馬上就到了！
+[dialog]
+[SoundVolume(volume=0.2, channel="c",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[PlaySound(key="$d_avg_tinnitus", volume=1)]
+[delay(time=1.5)]
+[PlaySound(key="$d_gen_heartbeat", volume=0, loop=true, channel="heart")]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0, loop=true, channel="cr")]
+[SoundVolume(volume=1, channel="heart",fadetime=2)]
+[SoundVolume(volume=0.2, channel="cr",fadetime=2)]
+[Background(image="38_g21_skystarry_L1",screenadapt="coverall", xScale=1.2, yScale=1.2)]
+[backgroundTween(xFrom=0, yFrom=100, xTo=-40, yTo=-100, duration=6)]
+[focusout(type="bg", id="38_g21_skystarry_L1", from=0, to=1, duration=0.1, block=false)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[Background(image="56_g2_newvolsiniistreet_n", screenadapt="coverall", xScale=1.4, yScale=1.4)]
+[backgroundTween(xFrom=50, xTo=-50, yFrom=0, yTo=-90, duration=8, block=false)]
+[focusout(type="bg", id="56_g2_newvolsiniistreet_n", from=0, to=1, duration=0.1, block=false)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[focusout(type="bg", id="56_g2_newvolsiniistreet_n", from=1, to=0.6, duration=2, block=false)]
+[Blocker(a=0.4, r=0.92, g=0.4, b=0.3, fadetime=3, block=true)]
+[name="萊昂圖索"]……
+[name="萊昂圖索"]這是……在哪裡……
+[name="？？？"]先生！不要亂動！您流了好多血——
+[name="萊昂圖索"]那是……誰？
+[dialog]
+[StopSound(channel="c", fadetime=2)]
+[StopSound(channel="cr", fadetime=2)]
+[StopSound(channel="heart", fadetime=1)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[BackgroundTween(yTo=150, duration=0.3, block=false)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[delay(time=0.5)]
+萊昂圖索失去意識前的最後一刻，看見了一抹模糊的黃色——
+那是一輛計程車。
+[dialog]
+[background]
+[delay(time=2)]
+[PlaySound(key="$d_avg_ambulancewhistle", volume=0, loop=true, channel="am")]
+[SoundVolume(volume=1, channel="am",fadetime=2)]
+[focusout(type="bg", id="56_g2_newvolsiniistreet_n", from=1, to=0, duration=0, block=false)]
+[Image(image="56_i01", screenadapt="coverall", xScale=1.4, yScale=1.4, x=-120, fadetime=0)]
+[ImageTween(yFrom=-150, yTo=100, duration=8, block=false)]
+[delay(time=2)]
+[StopSound(channel="am", fadetime=6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=3)]
+一場名為“狂歡”的節日，讓無數人從敘拉古和敘拉古之外的各處湧入新沃爾西尼。
+[dialog]
+[PlaySound(key="$d_avg_drivestop", volume=1)]
+[Delay(time=1.5)]
+[cgitem(image="cgitem_56_i01_1", style="cg", sfrom=2, sto=2, sduration=0, afrom = 0, ato = 1, aduration = 0.1, pfrom = "300,10", pto = "-100,10", pduration = 0.3, layer = 1)]
+[Delay(time=0.2)]
+[cgitem(image="cgitem_56_i01_2", style="cg", sfrom=2, sto=2, sduration=0, afrom = 0, ato = 1, aduration = 0.1, pfrom = "0,10", pto = "-900,10", pduration = 0.8, layer = 2)]
+[hidecgitem(image="cgitem_56_i01_1", fadetime=0.1)]
+[Delay(time=0.4)]
+絡繹不絕的計程車載著遊客在城市裡穿梭，這一輛看起來並無不同。
+[dialog]
+[Image(image="56_i01", screenadapt="coverall", xScale=1.1, yScale=1.1, fadetime=2)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=8, block=false)]
+[Delay(time=2)]
+[PlayMusic(intro="$act21side_intro", key="$act21side_loop", volume=0.6)]
+[PlaySound(key="$d_avg_phantommagic", volume=1)]
+[cgitem(image="cgitem_56_i01_3", style="cg", sfrom=1.1, sto=1, sduration=8, afrom = 0, ato = 1, aduration = 2, pfrom = "5,0", pto = "5,0", pduration = 0, layer = 3)]
+——除了它披戴著巨大的、迷離的陰影。
+那不是高樓的暗面，也並非霓虹在作祟，那是——狼的身影。
+[dialog]
+[PlaySound(key="$d_avg_darkmagic", volume=1)]
+[hidecgitem(image="cgitem_56_i01_3", fadetime=3)]
+[Delay(time=3)]
+計程車載著來自荒野的狼，像是幽靈般在城市裡穿梭。
+[dialog]
+[PlaySound(key="$drift", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$d_avg_carspeedup", volume=1)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[PlaySound(key="$d_avg_driveincar", volume=0, loop=true, channel="car")]
+[image]
+[charslot]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[SoundVolume(volume=0.5, channel="car",fadetime=2)]
+[Image(image="56_i02", screenadapt="coverall", xScale=1.2, yScale=1.2, fadetime=0)]
+[ImageTween(xFrom=100, xTo=0, yFrom=-80, yTo=0, xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, duration=30, block=false)]
+[name="扎羅"]開慢一點，拉普蘭德。
+[dialog]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="拉普蘭德"]怎麼，不死不滅的狼之主還會擔心被我從車裡面甩出去？
+[name="扎羅"]照這個開法，這輛破車很快就會散架。
+[name="拉普蘭德"]放心，我們在荒野上撿到它的時候，它幾近報廢都還能修好。要相信它，它很頑強。
+[name="拉普蘭德"]還是說你不相信我的開車技術？我從來不拿自己的性命開玩笑……除非有那個必要。
+[name="扎羅"]我是說，你也不想現在就被人發現，被警察抓起來丟進監獄，或者被家族的人分屍吧？
+[name="拉普蘭德"]我們越來越心有靈犀了，扎羅。
+[name="拉普蘭德"]我們還得參加狂歡節呢。
+[name="扎羅"]看看街邊那些彩燈和氣球，我還以為你會狠狠嘲笑所謂的“狂歡”有多麼名不副實。
+[name="拉普蘭德"]怎麼會呢，哈哈。
+[name="拉普蘭德"]早在幾百年前，敘拉古還只是萊塔尼亞的一塊蠻荒之地時，狂歡節便已經存在。
+[name="拉普蘭德"]敘拉古的魯珀們發現自己哪怕擁有了城市，擁有了名為“家族”的秩序，卻依然躁動和不安。
+[name="拉普蘭德"]所以，在一年中的那麼幾天，家族成員們會在城市裡橫行，集中解決各自的糾紛，尋仇報怨、爭搶地盤，或者只是單純地宣洩暴力。
+[name="拉普蘭德"]他們盡情殺戮——他們戴上了面具，所有的行為就可以不被追究。
+[name="拉普蘭德"]西西里夫人上台後的第一件事情，便是廢除狂歡節。但是現在，新沃爾西尼說服西西里夫人復活了它。
+[name="拉普蘭德"]他們期待一個不再野蠻而殘忍的傳統節日，能賦予一座空白的城市找到意義，賦予追求新生活的人們找到認同感。
+[name="拉普蘭德"]這何嘗不是一種大膽的“狂歡”，多麼偉大的創想！
+[name="扎羅"]你在唱詩嗎？拉普蘭德，你的表演慾很重。
+[name="拉普蘭德"]你懂什麼，我只是感到興奮！
+[name="拉普蘭德"]我向你保證，這個煥然一新的節日，會讓所有人——所有狼都永生難忘。
+[name="扎羅"]但願你記得我們的約定。這一輪的遊戲即將結束，不要讓我失望，拉普蘭德。
+[name="扎羅"]我說過，我們的鬥爭會持續千年萬年。
+[dialog]
+[Image(image="56_i02", screenadapt="coverall", fadetime=0.5)]
+[curtain(direction = 3,fillfrom = 0.01,fillto = 0.45, fadetime=0.5)]
+[curtain(direction = 7,fillfrom = 0.01,fillto = 0.45, fadetime=0.5)]
+[delay(time=1)]
+[name="拉普蘭德"]坐穩了——
+[dialog]
+[PlaySound(key="$d_avg_carspeedup", volume=1)]
+[delay(time=1.5)]
+[StopSound(channel="sn", fadetime=1)]
+[StopSound(channel="car", fadetime=1)]
+[ImageTween(xFrom=0, xTo=-350, duration=0.3, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.3, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]
