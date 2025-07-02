@@ -934,6 +934,7 @@
     "mainlineNormalDesc": "常規的遊玩體驗環境\n三星首通獎勵含有至純源石",
     "rejectSpCharMission": 1693123200,
     "addedRewardDisplayZone": "main_9",
+    "oneDiamondAp": 135,
     "richTextStyles": {
         "mission.levelname": "<color=#FFDE00>{0}</color>",
         "mission.number": "<color=#FFDE00>{0}</color>",
@@ -1019,6 +1020,11 @@
         "act.missiontips": "<color=#d9bd6a>{0}</color>",
         "lv.hdbg": "<color=#7ba61f>{0}</color>",
         "tu.ht": "<color=#ff8d00>{0}</color>",
+        "acdm.award": "<color=#04d3a3>{0}</color>",
+        "acdm.milestone": "<color=#2da186>{0}</color>",
+        "acdm.hudtip": "<color=#04d3a3>{0}</color>",
+        "acdm.buff": "<color=#2da186>{0}</color>",
+        "acdm.tracker": "<color=#2da186>{0}</color>",
         "lv.act20side": "<color=#F7BC44>{0}</color>",
         "lv.act20sre": "<color=#F7BC44>{0}</color>",
         "lv.mhitem": "<color=#A57F5B>{0}</color>",
@@ -1041,10 +1047,17 @@
         "ba.grt": "<color=#FFAB27>{0}</color>",
         "ba.exl": "<color=#14F0AF>{0}</color>",
         "ba.hrd": "<color=#DA2536>{0}</color>",
+        "firework.npc": "<color=#810d17>{0}</color>",
         "act.spreward": "<color=#FF5001>{0}</color>",
         "act.timelimit": "<color=#ffe300>{0}</color>",
         "vc.text": "<color=#898989>{0}</color>",
-        "vc.endtime": "<color=#ff0327>{0}</color>"
+        "vc.endtime": "<color=#ff0327>{0}</color>",
+        "firework.animal": "<color=#0098dc>{0}</color>",
+        "firework.animaldesc_1": "<color=#f05b6d>{0}</color>",
+        "firework.animaldesc_2": "<color=#b7d888>{0}</color>",
+        "firework.animaldesc_3": "<color=#ffc25e>{0}</color>",
+        "firework.animaldesc_4": "<color=#70c0db>{0}</color>",
+        "firework.animaldesc_all": "<color=#ffecb1>{0}</color>"
     },
     "charAssistRefreshTime": [
         {
@@ -1065,7 +1078,7 @@
     "commonPotentialLvlUpCount": 4,
     "weeklyOverrideDesc": "",
     "voucherDiv": 5,
-    "recruitPoolVersion": 18,
+    "recruitPoolVersion": 19,
     "v006RecruitTimeStep1Refresh": 1577172600,
     "v006RecruitTimeStep2Check": 1577154600,
     "v006RecruitTimeStep2Flush": 1577649600,
@@ -1142,7 +1155,7 @@
     "isRoguelikeAvgAchieveFuncEnabled": true,
     "isClassicPotentialItemFuncEnabled": true,
     "isClassicGachaPoolFuncEnabled": true,
-    "isSpecialGachaPoolFuncEnabled": false,
+    "isSpecialGachaPoolFuncEnabled": true,
     "isVoucherClassicItemDistinguishable": true,
     "voucherSkinRedeem": 1,
     "voucherSkinDesc": "【時裝自選憑證】僅可以兌換當期時裝商店中售賣的時裝，且<color=#ffa633>不可兌換</color>含有動態形象的時裝。若已購買了時裝商店中所有的服裝或時裝商店中無時裝售賣時，則【時裝自選憑證】<color=#ffa633>無法使用</color>。\n\n此外，若今後有其他<color=#ffa633>不可使用</color>【時裝自選憑證】兌換的時裝出現時，屆時會告知博士，敬請注意。",
@@ -1368,6 +1381,11 @@
             "termName": "萊歐斯小隊",
             "description": "包括瑪露希爾、先西、萊歐斯、奇爾查克"
         },
+        "ba.liftoff": {
+            "termId": "ba.liftoff",
+            "termName": "起飛",
+            "description": "不阻擋地面敵人且不會被地面敵人攻擊，可以阻擋飛行敵人"
+        },
         "cc.bd_A_1": {
             "termId": "cc.bd_A_1",
             "termName": "念力",
@@ -1573,6 +1591,11 @@
             "termName": "黑鋼國際",
             "description": "包含以下幹員\n雷蛇、芙蘭卡、潔西卡、香草、杏仁"
         },
+        "cc.g.siracusa": {
+            "termId": "cc.g.siracusa",
+            "termName": "敘拉古",
+            "description": "包含以下幹員\n安潔莉娜、拉普蘭德、普羅旺斯、紅雲、布洛卡、巫戀、鈴蘭、賈維、奧斯塔、斥罪、子月、伺夜、阿羅瑪、忍冬、裁度、荒蕪拉普蘭德"
+        },
         "cc.c.abyssal2_1": {
             "termId": "cc.c.abyssal2_1",
             "termName": "特殊加成",
@@ -1710,9 +1733,11 @@
         }
     },
     "storyReviewUnlockItemLackTip": "事相碎片數量不足，請前往採購憑證區或活動期間商店獲取",
-    "dataVersion": "42.2.0",
-    "resPrefVersion": "54d0d0",
+    "dataVersion": "43.1.0",
+    "resPrefVersion": "56d0d0",
     "announceWebBusType": "ak_announcement",
+    "videoPlayerWebBusType": "ak_video_player",
+    "gachaLogBusType": "ak_gacha_log",
     "defaultMinContinuousBattleTimes": 1,
     "defaultMaxContinuousBattleTimes": 6,
     "continuousActionOpen": true,
@@ -1783,7 +1808,9 @@
         "primcaster": "MAGICAL",
         "loopshooter": "PHYSICAL",
         "hammer": "PHYSICAL",
-        "alchemist": "PHYSICAL"
+        "alchemist": "PHYSICAL",
+        "primprotector": "PHYSICAL",
+        "skywalker": "PHYSICAL"
     },
     "classicProtectChar": [
         "char_252_bibeak",
