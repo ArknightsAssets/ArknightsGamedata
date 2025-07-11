@@ -1,0 +1,46 @@
+[header(actId="sandbox_1", npcId="")] 
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]看來你對陌域很感興趣，那裡有無窮的資源，但也潛藏著危險。
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]前幾天我們去了其中的一個陌域，遭遇了一些從來沒有人記錄過的野生生物，當地人將這些生物統一稱呼為“異獸”。好消息是我們最終躲過了它們的攻擊，還得到了不錯的收穫。
+[additem(itemId="sandbox_1_food_52", itemCount="1")]
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]這是“永鮮食品”中的一種，如果我們吃了這種食品，它所帶來的增益效果會永久存在。
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]根據我們探索得來的經驗，異獸陌域中的異獸會產出這樣的食品，如果定期去狩獵，應該就不用擔心食品加成效果過期啦。
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]另外，我們的工程部同事研發了一種全新的狩獵工具——追獵發射台！
+[additem(itemId="sandbox_1_tactical_43", itemCount="3")]
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]此前我們使用捕獵籠，只能抓捕小型動物。現在我們有了追獵發射台，可以狩獵體型更大的野生生物了。
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]不過這種狩獵工具是用縛網發射台改造而來的，使用方法與捕獵籠完全不一樣。
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]我們撤離異獸陌域的時候也部署了一些追獵發射台，如果你發現了它們，也可以繼續使用——至於怎麼使用，我留了一份小小的指南……
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]哦對了，除此之外還有一些小事。
+[additem(itemId="sandbox_1_tactical_35", itemCount="5")]
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]羅德島本艦送來了一些制式道具。
+[additem(itemId="sandbox_1_tactical_36", itemCount="5")]
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]這一種被動生效的制式道具，它不需要主動部署，在行動前將其裝備到支援道具欄就可以發揮作用。
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]升級駐紮地後，我們可以在駐紮地中完成這類道具的製作。
+[additem(itemId="sandbox_1_stamina", itemCount="8")]
+[name="森蚺", avatarId="char_416_zumama", isAvatarRight="FALSE"]好了，大概就是這樣。準備好了就去狩聞匣那裡追蹤異獸吧！
+[decision(option1="現在籌備陌域探訪", value1="1.1", option2="現在籌備陌域探訪", value2="1.2", option3="現在籌備陌域探訪", value3="1.3", option4="今天先不籌備探訪", value4="1.4")]
+[predicate(references="1.1", visibleCondition="c0&&!c1")]
+<color=#d8d769>成功接受委託。</color>
+[orderrift(riftId="hunt_dungeon_1")]
+[withdraw(id="trap_492_xbamai", withoutAnim="FALSE")]
+[save]
+[end]
+[predicate(references="1.2", visibleCondition="c4&&c5")]
+<color=#d8d769>成功替換委託。</color>
+[orderrift(riftId="hunt_dungeon_1")]
+[withdraw(id="trap_492_xbamai", withoutAnim="FALSE")]
+[save]
+[end]
+[predicate(references="1.3", visibleCondition="!c6")]
+<color=#d8d769>暫時無法繼續接受委託，請過段時日再來。</color>
+[withdraw(id="trap_492_xbamai", withoutAnim="FALSE")]
+[save]
+[end]
+[predicate(references="1.4")]
+[withdraw(id="trap_492_xbamai", withoutAnim="FALSE")]
+[save]
+[end]
+[condition(references="c0", key="checkcanorderrandomrift", riftId="hunt_dungeon_1")]
+[condition(references="c1", key="checkriftordered")]
+[condition(references="c4", key="checkcanorderrandomrift", riftId="hunt_dungeon_1")]
+[condition(references="c5", key="checkriftordered")]
+[condition(references="c6", key="checkcanorderrandomrift", riftId="hunt_dungeon_1")]

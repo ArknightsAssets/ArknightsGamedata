@@ -1,0 +1,21 @@
+[header(actId="sandbox_1", npcId="")] 
+這是一份來源不可靠的異獸訊息，你們願意根據這份情報尋找異獸嗎？
+[decision(option1="接受異獸訊息", value1="1.1", option2="替換異獸訊息", value2="1.2", option3="接受異獸訊息", value3="1.3", option4="離開", value4="1.4")]
+[predicate(references="1.1", visibleCondition="c0&&!c1")]
+<color=#d8d769>成功接受委託。</color>
+[orderrift(riftId="hunt_dungeon_1")]
+[end]
+[predicate(references="1.2", visibleCondition="c4&&c5")]
+<color=#d8d769>成功替換委託。</color>
+[orderrift(riftId="hunt_dungeon_1")]
+[end]
+[predicate(references="1.3", visibleCondition="!c6")]
+<color=#d8d769>暫時無法繼續接受，請過段時日再來。</color>
+[end]
+[predicate(references="1.4")]
+[end]
+[condition(references="c0", key="checkcanorderrandomrift", riftId="hunt_dungeon_1")]
+[condition(references="c1", key="checkriftordered")]
+[condition(references="c4", key="checkcanorderrandomrift", riftId="hunt_dungeon_1")]
+[condition(references="c5", key="checkriftordered")]
+[condition(references="c6", key="checkcanorderrandomrift", riftId="hunt_dungeon_1")]
