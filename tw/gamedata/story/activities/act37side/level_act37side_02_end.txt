@@ -1,0 +1,604 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="55_g6_dusklentiavenue",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[playMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_329_1#1$1",duration=0.7)]
+[charslot(slot="r",name="avg_npc_240",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="r",name="avg_npc_240",focus="r")]
+[name="緊張的孩子"]就、就這樣直接過去嗎？
+[charslot(slot="l",name="avg_npc_329_1#1$1",focus="l")]
+[name="不懷好意的市民"]對，直接過去問他價格就行了。
+[charslot(slot="r",name="avg_npc_240",focus="r")]
+[name="緊張的孩子"]好、好的。
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2)]
+[charslot(slot = "r", posfrom="0,0", posto="100,0", afrom=1, ato=0, duration=1)]
+[delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)] 
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+孩子怯生生地走到小販的移動攤位前，低著頭打量著擺在桌上的商品。
+[Dialog]
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="和藹的商人"]買煙火嗎？
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="緊張的孩子"]嗯、嗯……
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="和藹的商人"]是慶生還是要送人呢？試試這款吧，很多人都會選這個來慶祝哦！
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="緊張的孩子"]可、可是……它上面好多灰塵——
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[name="和藹的商人"]哦，這幾天剛從倉庫搬出來，有點灰塵很正常。這樣吧，孩子，特別給你買一送一——
+[Dialog]
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="n")]
+[playsound(key="$d_avg_fireleadwire", volume=0.7)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_416_1#1$1",focus="m")]
+[multiline(name="和藹的商人")]嗯？什麼味道——？
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[multiline(name="和藹的商人")]我的貨！你點燃了我的貨！
+[charslot(slot="m",name="avg_npc_329_1#1$1",focus="m")]
+[name="不懷好意的市民"]哈哈！
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="緊張的孩子"]……
+[Dialog]
+[charslot]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="不懷好意的市民"]還愣著幹嘛？快跑啊！
+[Dialog]
+[charslot]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[playsound(key="$d_avg_firerockfall", volume=0.7)]
+[PlaySound(key="$firestorm", volume=0.9,delay=0.2)]
+[CameraShake(duration=1.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0.6, r=0.92, g=0.3, b=0.3, fadetime=0.05, block=true)]
+[Blocker(a=0.2, r=0.92, g=0.3, b=0.3, fadetime=0.3, block=false)]
+[PlaySound(key="$d_avg_churchfire", loop=true, channel="bse",volume=0)]
+[SoundVolume(volume=0.6, fadetime=3,channel="bse")]
+[delay(time=2)]
+商人拼命試圖撲滅攤位上的火焰，但火勢卻越燒越旺，吞噬了他的身影。
+煙火炸裂的聲音，引來了越來越多的目光。
+而“惡作劇”的人已經拉著茫然的孩子逃得無影無蹤。
+“我們不是只是開個玩笑嗎？為、為什麼……”
+“敢娶魔族佬當老婆的傢伙就該有這種下場？活該！”
+[Dialog]
+[charslot(slot = "m", name = "avg_222_bpipe_1#1", bstart=0.5, bend=0.9, duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_222_bpipe_1#1", bstart=0.5, bend=0.9,focus="m")]
+[name="？？？"]火勢越來越大了，趕快疏散人群！我去救人！
+[charslot(slot = "m", name = "avg_npc_248", focus="m")]
+[name="城防軍巡邏隊"]遵命，隊長！
+[Dialog]
+[charslot(slot = "m", name = "avg_222_bpipe_1#1", bstart=0.5, bend=0.9,focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=1)]
+[delay(time=2)]
+[Dialog]
+[PlaySound(key="$gunlance",channel="bipe1",volume=1)]
+[PlaySound(key="$d_avg_spear",channel="bipe2",volume=1,delay=0.3)]
+[CameraShake(duration=1.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+破城矛連發，火焰被撕裂，爆裂聲與煙火聲交錯響起。
+瓦伊凡單手握著長矛，另一隻手抓著商人衝出火場。她把商人安置到安全地帶後，自己隨意地坐在一旁，伸手抹了抹被燻黑的臉。
+[Dialog]
+[stopmusic(fadetime=2)]
+[SoundVolume(volume=0.2, fadetime=3,channel="bse")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g6_dusklentiavenue",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_222_bpipe_1#5", duration=0.5)]
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot = "l", name = "avg_222_bpipe_1#5",focus="l")]
+[name="風笛"]呃，抱歉啊，好像連你的攤位也一起燒沒了……
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", focus="r")]
+[name="和藹的商人"]沒事、沒事，不算什麼大事。
+[charslot(slot = "l", name = "avg_222_bpipe_1#4",focus="l")]
+[name="風笛"]這……還不算大事？
+[Dialog]
+[charslot]
+她指了指還在熊熊燃燒的攤位，還有那些四處亂竄的煙火。
+圍觀的群眾越來越多，甚至還有喝醉的酒鬼拉著旁人跳起了舞。
+有人大罵酒鬼，也有人起哄，混亂的叫喊聲、煙火聲、音樂聲混雜在一起——
+自從薩卡茲接管這座城市以來，這條街道已經很久沒有這麼熱鬧過了。
+商人冷靜下來後，忽然笑了起來。
+[charslot(slot = "l", name = "avg_222_bpipe_1#4",focus="l")]
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", focus="l")]
+[name="風笛"]……？
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", focus="r")]
+[name="和藹的商人"]好久沒見到大家這麼開心了，真懷念啊……
+[charslot(slot = "l", name = "avg_222_bpipe_1#5",focus="l")]
+[name="風笛"]……可是被燒掉的是你的攤子耶？
+[charslot(slot = "r", name = "avg_npc_416_1#1$1", focus="r")]
+[name="和藹的商人"]我今天開心，就當放煙火給大家慶祝吧！
+[name="和藹的商人"]長官，悄悄告訴你，我老婆今晚終於能離開這座城了。
+[charslot(slot = "l", name = "avg_222_bpipe_1#7",focus="l")]
+[name="風笛"]……？
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_248", focus="m")]
+[name="城防軍巡邏隊"]隊長，沒有人受傷，要去把那個鬧事的傢伙抓回來嗎？
+[charslot(slot = "m", name = "avg_npc_416_1#1$1", focus="m")]
+[name="和藹的商人"]……反正也沒人受傷——
+[charslot(slot = "m", name = "avg_222_bpipe_1#7",focus="m")]
+[name="風笛"]他犯法了，我們就得處理。這是我們的職責。
+[charslot(slot = "m", name = "avg_npc_416_1#1$1", focus="m")]
+[name="和藹的商人"]不管怎樣，還是謝謝你。對了，你會跳舞或演奏嗎？
+[charslot(slot = "m", name = "avg_222_bpipe_1#4",focus="m")]
+[name="風笛"]啊？
+[charslot(slot = "m", name = "avg_npc_416_1#1$1", focus="m")]
+[name="和藹的商人"]你看，都鬧成這樣了，總不能讓我的煙火就這麼浪費了吧。
+[name="和藹的商人"]對啊！說不定這場動靜夠大，我老婆能聽見呢，就當是我給她的送別禮了。
+[charslot(slot = "m", name = "avg_222_bpipe_1#8",focus="m")]
+[name="風笛"]被派來負責管理城內治安比打仗還麻煩，甚至比回家種田還要棘手。
+[name="風笛"]不過反正大家都開心，那就這樣吧。
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+確認現場已經沒有危險後，她索性直接躺在街道邊的貨物上，伸了個懶腰，任由陽光灑在臉上。
+[name="風笛"]嗯……果然跟草堆沒辦法比，怎麼躺都不舒服。
+[name="風笛"]陳陳，你現在到哪裡了呢……？
+[Dialog]
+[StopSound(channel="bse", fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="55_g6_dusklentiavenue",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_240")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="緊張的孩子"]為、為什麼要燒了他的攤子？！不是說好只是拿點東西嗎？！
+[charslot(slot="m",name="avg_npc_329_1#1$1",focus="m")]
+[name="不懷好意的市民"]看他不爽囉。明明娶了個魔族佬老婆，還一副理所當然的樣子。
+[multiline(name="不懷好意的市民")]說不定他老婆早就被人打死了——
+[musicvolume(volume=0.3, fadetime=1)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=0.6)]
+[multiline(name="不懷好意的市民")]啊！
+[name="不懷好意的市民"]你*維多利亞粗口*誰啊！
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="緊張的孩子"]——！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1342_1#6$1",duration=1)]
+[delay(time=1.5)]
+[musicvolume(volume=0.6, fadetime=1)]
+[charslot(slot="m",name="avg_npc_1342_1#6$1",focus="m")]
+[name="“銑痕”"]還不快跑？
+[charslot(slot="m",name="avg_npc_240",focus="m")]
+[name="緊張的孩子"]哦、哦！
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_329_1#1$1",focus="m")]
+[name="不懷好意的市民"]……你，你想幹嘛？
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="“銑痕”"]賣我客戶一份人情，說不定以後還能繼續做生意呢。
+[Dialog]
+[charslot(slot="m",name="avg_npc_329_1#1$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_punch02", volume=0.7)]
+[PlaySound(key="$bodyfalldown1", volume=1,delay=0.3)]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.2)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="27_g7_subway",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="“銑痕”"]送這批貨出城的事準備得怎麼樣了？
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="疲憊的傭兵"]外面都打點好了，該清點的人數也對過了，沒問題。不過最近我們收到消息，議會一直在……找你。
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="“銑痕”"]他們拿我沒辦法。還是跟之前一樣，別節外生枝。
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="疲憊的傭兵"]呃……這次有點小狀況。
+[name="疲憊的傭兵"]這批貨裡的小孩，我們搞不定她。
+[charslot(slot="m",name="avg_npc_1457_1#1$1",focus="m")]
+[name="不服氣的孩子"]我只是想在離開前見爸爸一面，為什麼不行？！
+[name="不服氣的孩子"]這位叔叔說外面在放煙火，那是我爸爸的煙火！
+[charslot(slot="m",name="avg_npc_1342_1#7$1",focus="m")]
+[name="“銑痕”"]……
+[charslot(slot="m",name="avg_npc_934_1#1$1",focus="m")]
+[name="緊張的女性"]別亂說話。
+[charslot(slot="m",name="avg_npc_1457_1#1$1",focus="m")]
+[name="不服氣的孩子"]媽媽，你不是也不想走——
+[Dialog]
+[charslot(slot = "m", action="shake",random=true, power=5, times=60,duration=0.5)]
+[delay(time=1)]
+[charslot]
+薩卡茲緊緊摀住孩子的嘴，把她護在懷裡，神色緊張地看著眼前沉默的人。
+[charslot(slot="m",name="avg_npc_934_1#1$1",focus="m")]
+[name="緊張的女性"]抱歉，她只是還不習慣，她爸爸從來沒離開過她的身邊，哪怕是在戰爭時。
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="“銑痕”"]你丈夫跟我們的交易只有送你們出城，其他的，我不管。
+[charslot(slot="m",name="avg_npc_1342_1#2$1",focus="m")]
+[name="“銑痕”"]你要留下，那是你們自己的事，我不在乎。
+[charslot(slot="m",name="avg_npc_934_1#1$1",focus="m")]
+[name="緊張的女性"]……
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長的女性"]女士，她們只是沒經歷過這些事，一時慌了神。
+[name="年長的女性"]我們誰都沒經歷過……放心，我會照顧這個孩子，保證不會給你們添麻煩。
+[charslot(slot="m",name="avg_npc_1457_1#1$1",focus="m")]
+[name="不服氣的孩子"]可是我們要去哪？爸爸呢？他怎麼辦？
+[charslot(slot="m",name="avg_npc_934_1#1$1",focus="m")]
+[name="緊張的女性"]他處理完家裡的事，就會來找我們的。
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長的女性"]唉……自從卡茲戴爾那些人進城後，我就知道這一天早晚會來。
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="“銑痕”"]你不喜歡軍委會？特雷西斯不是你們口中的英雄嗎？
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長的女性"]我從睜眼那天起就待在倫蒂尼姆了，我不認識什麼特雷西斯。我是倫蒂尼姆人，和你一樣。
+[name="年長的女性"]不過聽你的口音，你過去的身分應該也不簡單吧？大概你也是被卡茲戴爾那群人害得這麼慘的吧？
+[charslot(slot="m",name="avg_npc_1342_1#7$1",focus="m")]
+[multiline(name="“銑痕”")]……我——
+[charslot(slot="m",name="avg_npc_1342_1#2$1",focus="m")]
+[multiline(name="“銑痕”")]呵。
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長的女性"]女士，你是個好人。畢竟這種時候沒多少人願意跟我們打交道。
+[name="年長的女性"]要不是你，說不定那個所謂的新議會早就……不過想想也正常，無論發生什麼，那些老爺們從來不會變。
+[name="年長的女性"]我這輩子看得夠多了。
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="“銑痕”"]這個新議會不一樣——
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長的女性"]或許吧……但對我們這些人來說，沒什麼不同。
+[Dialog]
+[charslot]
+年邁的薩卡茲輕輕安撫著悲傷的孩子，只能輕聲嘆息。
+[charslot(slot="l",name="avg_npc_1457_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_1455_1#1$1",focus="r")]
+[name="年長的女性"]別怕，孩子。你的爸爸是個真誠的人，比我這輩子認識的任何人都要真誠。他一定會找到你的。
+[charslot(slot="l",name="avg_npc_1457_1#1$1",focus="l")]
+[name="不服氣的孩子"]嗯……可是出城之後你要去哪裡？
+[charslot(slot="r",name="avg_npc_1455_1#1$1",focus="r")]
+[name="年長的女性"]我要去找兩位老朋友。他們的雙胞胎孩子現在在一家製藥公司工作，撤軍時，他們被那對姐妹接走了。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1342_1#7$1",focus="m")]
+[name="“銑痕”"]……
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長的女性"]嗯？女士，你認識她們？
+[charslot(slot="m",name="avg_npc_1342_1#1$1",focus="m")]
+[name="“銑痕”"]不。時間差不多了，你們該準備出發了。
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長的女性"]等等，女士，能告訴我你的名字嗎？
+[charslot(slot="m",name="avg_npc_1342_1#10$1",focus="m")]
+[name="“銑痕”"]我們不會再有其他交集。
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長的女性"]只是老人的心願。我希望能向你表達感謝，替我自己，還有很多害怕你的人——
+[name="年長的女性"]女士，這份感激不該留給一個隨時可能被拋棄的代號。
+[charslot(slot="m",name="avg_npc_1342_1#5$1",focus="m")]
+[name="“銑痕”"]……
+[name="“銑痕”"]……阿勒黛。
+[Dialog]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="aw")]
+[stopsound(fadetime=3, channel="aw")]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1455_1#1$1",focus="m")]
+[name="年長的女性"]阿勒黛，真是個好聽的名字。謝謝你。
+[Dialog]
+[charslot(duration=0.5)]
+[delay(time=0.7)]
+[focusout(duration=2.5, type="bg", from=0, to=1, block=true)]
+“阿勒黛”，一個本該隨諸王沉眠的名字。
+在那模糊時間刻度的黑暗中，她渴望死在歷史的廢墟裡，渴望被所有她辜負的人徹底遺忘。可她也害怕，害怕死去，害怕被遺忘。
+當蒸汽騎士離開後，骯髒的泥水從他的盔甲縫隙滑落滴進她的掌心時，她睜開了眼，看到了一束光。
+光的盡頭，是活著，也是又一次屈服。
+她遲疑了，也許三天，也許只是三分鐘……但最終她還是做出了與過去相同的選擇。
+[Dialog]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=0.8, block=true)]
+[Image(image="32_i13", screenadapt="coverall",fadetime=2,block=true)]
+[delay(time=2)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Subtitle(text="“終有一天，你會和維娜再次相逢。”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+她在心中反覆默念，然後無聲地爬進了光裡。
+[Dialog]
+[stopmusic(fadetime=1)]
+[focusout(duration=0.1, type="bg", from=1, to=0, block=false)]
+[charslot]
+[image]
+[Background(image="32_g3_school_indoor",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, amount=0, block=true)]
+[Delay(time=2.5)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>臨時物資籌備辦公室</><p=2>1098年12月12日 5:32 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="埃利西奧"]梅傑女士的預約作廢需要重新排隊？
+[charslot(slot="m",name="avg_487_bobb_1#3$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="埃利西奧"]現在最該優先處理的難道不是那些等不到藥物補給的感染者嗎？
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="平靜的文官"]抱歉，我們的預約系統正在維護。梅傑女士去世後，相關的檔案都需要重新整理和歸檔。
+[name="平靜的文官"]而且最近多數同事都在忙著籌備梅傑女士的葬禮。
+[charslot(slot="m",name="avg_487_bobb_1#2$1",focus="m")]
+[name="埃利西奧"]……好，那最快要多久？
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="平靜的文官"]七個工作天內會修好系統，到時我們會第一時間通知您。
+[charslot(slot="m",name="avg_487_bobb_1#6$1",focus="m")]
+[name="埃利西奧"]——！
+[charslot(slot="m",name="avg_487_bobb_1#3$1",focus="m")]
+[name="埃利西奧"]你去過生物感染綜合處理中心嗎？每天都有感染症狀急速惡化的市民被送進去。
+[name="埃利西奧"]在那場戰爭之前，倫蒂尼姆的普通人根本不懂怎麼應對礦石病急性發作。他們才是最需要幫助，但卻最難得到幫助的人。
+[charslot(slot="m",name="avg_487_bobb_1#6$1",focus="m")]
+[name="埃利西奧"]他們等不起這七天……更不用說外面到處都是藥效低劣的黑市藥……
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="平靜的文官"]您的意見我會記錄下來並儘快同步給生物感染綜合處理中心的同事。請問您還有其他疑問嗎？
+[charslot(slot="m",name="avg_487_bobb_1#6$1",focus="m")]
+[name="埃利西奧"]……
+[name="埃利西奧"]告訴我議長閣下的辦公室在哪裡？
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="平靜的文官"]您想拜訪議長閣下？我可以幫您安排預約——
+[charslot(slot="m",name="avg_npc_1519_1#1$1",focus="m")]
+[name="黛安"]不用問他了，我知道議長閣下現在在哪裡。
+[name="黛安"]埃利西奧先生，跟我來吧。
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="平靜的文官"]抱歉為您帶來不便，如果還需要其他幫助，請隨時聯絡我們。對了先生，謝謝您的咖啡。
+[charslot(slot="m",name="avg_npc_1259_1#1$1",focus="m")]
+[name="平靜的文官"]這是很珍貴的禮物。
+[charslot(slot="m",name="avg_487_bobb_1#7$1",focus="m")]
+[name="埃利西奧"]……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="32_g3_school_indoor",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_1519_1#8$1")]
+[charslot(slot="r",name="avg_487_bobb_1#6$1")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="r",name="avg_487_bobb_1#6$1",focus="r")]
+[name="埃利西奧"]黛安小姐，難道你不覺得這件事很荒謬嗎？這不該是他們的態度！我來倫蒂尼姆是為了——
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="黛安"]為了拯救我們？
+[charslot(slot="r",name="avg_487_bobb_1#7$1",focus="r")]
+[name="埃利西奧"]……不，這不是我想說的。
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="黛安"]但你心裡就是這麼想的，不是嗎？
+[charslot(slot="r",name="avg_487_bobb_1#5$1",focus="r")]
+[name="埃利西奧"]我、我並沒有要冒犯你的意思，我也很感激你願意把自己的房子租給我應急。只是在幫助感染者這件事上，我看到的，只有混亂。
+[name="埃利西奧"]我知道建立制度和流程需要時間，我也理解這點。但也請你明白，在哥倫比亞時，對此發起倡議就是我的職責之一。
+[name="埃利西奧"]我只是希望有更加規範和高效的流程為絕大部分感染者提供幫助。而在這方面……我們的確已經走在了前面。
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="黛安"]埃利西奧先生，我從來沒去過哥倫比亞。我不知道在你的家鄉，像我們這樣的人會得到怎樣的待遇。
+[name="黛安"]但如果有機會，我很樂意去看看。
+[name="黛安"]至於剛才那位可憐的文官……他沒有做錯任何事。事實上，他在處理這類事務時已經比任何一位前任都要負責多了。
+[name="黛安"]倫蒂尼姆的確還有很多問題，但她正在變好。比戰爭之前的任何時刻都要好。
+[charslot(slot="r",name="avg_487_bobb_1#11$1",focus="r")]
+[name="埃利西奧"]……黛安小姐，你對這個新議會這麼有信心嗎？
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="黛安"]不，但我相信那位議長閣下。走吧，我帶你去找她。
+[charslot(slot="r",name="avg_487_bobb_1#11$1",focus="r")]
+[name="埃利西奧"]可是你怎麼知道議長閣下在哪？
+[charslot(slot="l",name="avg_npc_1519_1#8$1",focus="l")]
+[name="黛安"]哈哈，看來你們哥倫比亞人不習慣收聽廣播啊。
+[charslot(slot="r",name="avg_487_bobb_1#7$1",focus="r")]
+[multiline(name="埃利西奧")]呃……其實我們更習慣看……
+[charslot(slot="r",name="avg_487_bobb_1#11$1",focus="r")]
+[multiline(name="埃利西奧")]算了，你說議長閣下在哪？
+[charslot(slot="l",name="avg_npc_1519_1#1$1",focus="l")]
+[name="黛安"]梅傑女士的悼念儀式現場。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="32_g2_dukegarden",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_1519_1#1$1")]
+[charslot(slot="r",name="avg_487_bobb_1#11$1")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside",loop=true, channel="tk", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="r",name="avg_487_bobb_1#11$1",focus="r")]
+[name="埃利西奧"]就是這裡？我們該怎麼進去？這裡人太多了，怎麼才能確保見到議長閣下？
+[charslot(slot="l",name="avg_npc_1519_1#1$1",focus="l")]
+[name="黛安"]跟我來，我知道有一條小路可以直接通到裡面。
+[Dialog]
+[stopsound(channel="tk", fadetime=1)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[PlaySound(key="$leaveshake", volume=0.8)]
+[Delay(time=1)]
+埃利西奧透過窗戶，第一次遠遠見到了那個聲名遠播的“維娜·維多利亞”。
+他出發前做了大量的調查。他聽說過維多利亞這位年輕的議長在那場戰爭中締造的近乎傳說的事蹟。
+他曾以為這位議長閣下會是一個與眾不同的人。
+可當他真正看見那個身穿華貴服飾、在台上演講的阿斯蘭時，他卻感到失望。
+維娜·維多利亞並沒有他預期中那樣光彩照人。
+[name="？？？"]兩位是不是走錯路了？
+[name="？？？"]如果是來參加弔唁儀式，正門在那邊。
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="埃利西奧"]——！
+[Dialog]
+[charslot]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="戴菲恩"]埃利西奧先生，需要我拉您一把嗎？
+[charslot(slot="m",name="avg_487_bobb_1#1$1",focus="m")]
+[name="埃利西奧"]謝、謝謝您，女士。
+[charslot(slot="m",name="avg_npc_1519_1#9$1",focus="m")]
+[name="黛安"]……
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="埃利西奧"]——欸，你……為什麼——
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="戴菲恩"]埃利西奧先生，在您抵達倫蒂尼姆之前，赤心醫療和您的所有資料都已經被我放在了議長辦公室的桌上。
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="埃利西奧"]所以你們知道我來這裡的目的？
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="戴菲恩"]知道。
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[name="埃利西奧"]議長閣下也知道我這幾天為了這件事四處奔走？
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="戴菲恩"]知道。
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="戴菲恩"]抱歉，但這件事沒那麼簡單。
+[charslot(slot="m",name="avg_487_bobb_1#5$1",focus="m")]
+[name="埃利西奧"]我以為……這位議長閣下會和我過去見過的那些貴族不一樣。
+[charslot(slot="m",name="avg_npc_1519_1#1$1",focus="m")]
+[name="黛安"]埃利西奧先生！
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="戴菲恩"]無妨。只是埃利西奧先生誤會了一些事情——這裡不是哥倫比亞。用你們的眼光來評判我們本身就是一種傲慢。
+[name="戴菲恩"]有時候我們不得不遵循某些規則，再去試著改變它們。
+[charslot(slot="m",name="avg_npc_1519_1#2$1",focus="m")]
+[name="黛安"]……連她也做不到嗎？
+[Dialog]
+[charslot]
+禮堂內，維娜神情悲傷，輕聲說著什麼，但他們聽不清楚。
+戴菲恩看到了黛安的目光，卻下意識地避開了這道視線。
+[charslot(slot="m",name="avg_npc_1519_1#2$1",focus="m")]
+[name="黛安"]……
+[charslot(slot="m",name="avg_487_bobb_1#5$1",focus="m")]
+[name="埃利西奧"]所以梅傑女士也是你們口中“規則”的犧牲品？
+[charslot(slot="m",name="avg_4110_delphn_1#2$1",focus="m")]
+[name="戴菲恩"]……不，她只是一位值得尊敬的人，是你口中的“那些貴族”。
+[charslot(slot="m",name="avg_4110_delphn_1#8$1",focus="m")]
+[name="戴菲恩"]她本可以留在諾曼底領遠離這些危險，卻選擇來到最混亂的倫蒂尼姆，只為拯救這裡的市民。
+[name="戴菲恩"]即便在急性感染發作後她依舊沒有停下工作，只為了能儘快救下更多的人。就和您一樣，埃利西奧先生。
+[name="戴菲恩"]我們與她的分歧僅僅在於她過於激進，太過偏執，這種執念……最終傷害了她自己。
+[name="戴菲恩"]她的離世沒有隱情，也沒有陰謀，更不是您所說的“犧牲品”。
+[charslot(slot="m",name="avg_487_bobb_1#5$1",focus="m")]
+[name="埃利西奧"]抱歉，我……並不知情。
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[name="埃利西奧"]但我更不明白的是——為什麼你們拒絕和赤心醫療合作？我們只是想解決你們的麻煩。
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="戴菲恩"]埃利西奧先生，您知道赤心醫療的背後同時有哥倫比亞國防部與梅蘭德基金會嗎？
+[charslot(slot="m",name="avg_487_bobb_1#9$1",focus="m")]
+[name="埃利西奧"]當然，軍方和基金會本來就是我們的大股東。
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="戴菲恩"]……您是一位盡責的好人。既然您這麼堅持履行自己的職責，那麼歡迎隨時來找我。
+[charslot(slot="m",name="avg_487_bobb_1#11$1",focus="m")]
+[name="埃利西奧"]呃……你是？
+[charslot(slot="m",name="avg_4110_delphn_1#9$1",focus="m")]
+[name="戴菲恩"]可以叫我戴菲恩，戴菲恩·溫德米爾。看來貴公司的市場調查還不夠全面呢。
+[charslot(slot="m",name="avg_487_bobb_1#4$1",focus="m")]
+[name="埃利西奧"]——！
+[charslot(slot="m",name="avg_487_bobb_1#1$1",focus="m")]
+[name="埃利西奧"]戴菲恩閣下，我不想放棄。我相信我們能幫上忙，解決倫蒂尼姆的現況。
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="戴菲恩"]我無法替議會或者維娜閣下對您做出任何承諾。但請相信，我們比任何人都更迫切想治癒這座城市的傷痕。
+[name="戴菲恩"]不過現在，如果您願意，可以先和我一起進去為梅傑女士……
+[name="戴菲恩"]也為那些在這場動亂中離去的所有人送行。
+[Dialog]
+[charslot]
+[Delay(time=0.5)]
+[PlaySound(key="$bigbell",volume=1)]
+[Delay(time=1)]
+悼念的鐘聲響起。羽獸低低掠過地面，天空壓抑沉悶，似乎要下雨了。
+但沒有人會在意這種小事。他們都靜靜低下頭……
+沒有淚水。戰爭早已擠乾這座城市的最後一滴眼淚。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="27_g7_subway",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_396_1#9$1")]
+[charslot(slot="r",name="avg_155_tiger_1#6$1")]
+[Delay(time=1)]
+[playMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="r",name="avg_155_tiger_1#6$1",focus="r")]
+[name="因陀羅"]達格達，別拖拖拉拉的了。所有線索都指向“銑痕”就在這裡，你還在查什麼？
+[charslot(slot="l",name="avg_npc_396_1#9$1",focus="l")]
+[name="達格達"]你不覺得這一切太過順利了嗎？
+[name="達格達"]而且議會一直收到消息說這裡有不明身分的薩卡茲活動。小心點不是壞事。
+[charslot(slot="r",name="avg_155_tiger_1#10$1",focus="r")]
+[name="因陀羅"]嘖，要是真出了意外，不是正好能讓我活動筋骨嘛。
+[name="因陀羅"]不然你覺得為什麼我堅決不肯陪摩根去處理那些無聊的文書工作？
+[charslot(slot="r",name="avg_155_tiger_1#1$1",focus="r")]
+[name="因陀羅"]嘿，倒是你夠義氣的，我還以為你一回來就會待在塔樓裡不肯出來了呢！
+[charslot(slot="l",name="avg_npc_396_1#1$1",focus="l")]
+[name="達格達"]……漢娜，照理說你應該先回本艦好好待著，醫療部的同事已經提醒過好幾次你的情況了——
+[Dialog]
+[charslot(slot="l",name="avg_npc_396_1#1$1",focus="n")]
+[PlaySound(key="$bigbell",volume=0.6)]
+[Delay(time=1)]
+話音未落，一道鐘聲迴盪在城市上空。剎那間，世界仿佛都安靜了下來。
+[charslot(slot="r",name="avg_155_tiger_1#2$1",focus="r")]
+[name="因陀羅"]……
+[charslot(slot="l",name="avg_npc_396_1#2$1",focus="l")]
+[name="達格達"]……哀悼儀式開始了。
+[charslot(slot="r",name="avg_155_tiger_1#2$1",focus="r")]
+[name="因陀羅"]……
+[Dialog]
+[charslot(slot="r",name="avg_155_tiger_1#3$1",focus="r")]
+[Delay(time=1)]
+[charslot(slot="r",name="avg_155_tiger_1#1$1",focus="r")]
+[name="因陀羅"]呼——現在可不是感傷的時候，達格達，走吧。我可不想哭得亂七八糟的時候還被人從後面踹一腳。
+[charslot(slot="l",name="avg_npc_396_1#2$1",focus="l")]
+[name="達格達"]漢娜，有時我真拿你沒辦法。
+[charslot(slot="l",name="avg_npc_396_1#10$1",focus="l")]
+[name="達格達"]如果我們等一下正面碰上阿勒黛……該怎麼辦？
+[charslot(slot="r",name="avg_155_tiger_1#1$1",focus="r")]
+[name="因陀羅"]嘖，先揍一頓再說。其他的事就讓維娜去煩惱吧。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_bellfall", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_396_1#7$1",focus="m")]
+[name="達格達"]有人！
+[Dialog]
+[charslot]
+[name="？？？"]她想見的人不是你們。所以很抱歉——恐怕你們要錯過她了。
+[charslot(slot="m",name="avg_155_tiger_1#7$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="因陀羅"]誰？！
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_higheldshosfts",volume=0.7)]
+[charslot(slot="m",name="avg_npc_1521_1#9$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1521_1#9$1",focus="m")]
+[name="？？？"]“玫瑰河畔的航船”。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

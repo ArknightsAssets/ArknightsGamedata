@@ -1,0 +1,695 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="55_g3_westlobbythroneroom",screenadapt="coverall", block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[backgroundTween(xFrom=100, yFrom=0, xTo=-100, yTo=0, xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1.3, yScaleTo=1.3, duration=35, block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.15,grad = true,fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.15,grad = true,fadetime=0.1)]
+[Delay(time=1)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", multi = true, text="願廣闊的大地庇佑吾王♪", x=300,y=200, alignment="center", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n庇佑他的子民與他的福祉♪",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n賜予我們無盡的恩典♪",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n讓我們歡樂地歌唱♪",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n維多利亞，我的故鄉！♪",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[dialog]
+[curtain(fadetime=1)]
+[delay(time=2)]
+[Background(image="55_g3_westlobbythroneroom",screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>聖王會西部大堂王座廳</><p=2>1098年10月8日 9:45 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[Decision(options="你踏進王座廳後就一直哼著這首歌。;你喜歡這首歌？", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="m")]
+[name="維娜"]談不上喜歡，只是印象很深刻而已。
+[name="維娜"]小時候我常常睡不著，養父母總會坐在床邊輕輕哼這首歌給我聽。
+[name="維娜"]那時我還以為這只是一首普通的搖籃曲，直到他們離世很久後，我才真正意識到對他們來說……“我是誰”。
+[name="維娜"]那天我才發現這首歌對我來說其實很陌生。但沒辦法，旋律早就刻進腦海裡，大概這輩子都忘不掉了。
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="n")]
+[Decision(options="你還記得他嗎？那位……",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#7$2",focus="m")]
+[name="維娜"]那位國王？我跟他並不熟。至於那位與我血脈相連的“家人”……
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="m")]
+[name="維娜"]博士，我沒必要騙你，我也曾努力想拼湊記憶中那位早已破碎的父親形象。
+[name="維娜"]但當我再度親眼見到他時，我卻什麼都感受不到。
+[name="維娜"]他是國王，我是混街頭的。除了都姓“維多利亞”，我們已經沒什麼關係了。
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="維娜"]比起這些，我現在還有更重要的事情要思考。
+[name="維娜"]博士，你剛才也聽到那些公爵的話了，我的家鄉……倫蒂尼姆隨時都可能被他們拋棄。
+[name="維娜"]當初凱爾希醫生把你從切爾諾伯格救回來，並找我一起制定回維多利亞的計劃時，我從來沒想過會變成這樣。
+[name="維娜"]但我已經無法再置身事外了。
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="n")]
+[Decision(options="“責任”這個東西，真的很奇妙。;對羅德島的大家，我也做不到輕易放手。;我們都一樣。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Decision(options="那些公爵就是看準了你放不下那些需要你的人。",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="m")]
+[name="維娜"]我不也是看準了那些公爵想要維持自己勢力的心思嗎？
+[name="維娜"]只要“維多利亞”這個名號對他們還有用，我就能為這座城市爭取一點時間。
+[name="維娜"]說到底，這只是一場雙方都心知肚明的交易，大家都知道最後會怎樣收場。
+[name="維娜"]真正能讓我撐下去的，是那些一直在我身邊支持我的人。
+[charslot(slot="m",name="avg_1019_siege2_1#9$2",focus="m")]
+[name="維娜"]我們回來了，戰爭也結束了，現在該輪到我去聽聽大家的聲音了。
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#9$2",focus="n")]
+[Decision(options="維娜……",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="m")]
+[name="維娜"]博士，怎麼了？
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#8$2",focus="n")]
+[Decision(options="未來你做的某些決定，羅德島未必會認同。;而羅德島在未來作出的某些決定，你可能也不會認同。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="維娜"]……我知道。
+[name="維娜"]就像你們堅持幫維什戴爾護送剩餘的薩卡茲撤離，我們之中也有很多人無法接受。
+[charslot(slot="m",name="avg_1019_siege2_1#5$2",focus="m")]
+[name="維娜"]但我很清楚，這場仗不能再打下去了。我們已經失去了太多人……夠了。
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="維娜"]更何況，薩卡茲的警告，我們不是都收到了嗎？
+[name="維娜"]那些公爵的艦隊之所以願意在他們撤軍時按兵不動，不就是因為那封加急情報——
+[name="維娜"]幾乎在同一時間，大部分核心圈國家的首都上空都短暫聚集了駭人的天災雲。
+[charslot(slot="m",name="avg_1019_siege2_1#2$2",focus="m")]
+[name="維娜"]呵，這算是明擺著的威脅嗎？光明正大地走回卡茲戴爾……
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="維娜"]博士，你跟凱爾希醫生應該都很清楚，那群人拿著那塊源石還能做到什麼。
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="n")]
+[Decision(options="如果不是走投無路，他們不會輕易動用那種技術。",values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1019_siege2_1#1$2",focus="m")]
+[name="維娜"]只是為了自保？或許現在的他們確實是這麼想的。
+[name="維娜"]但擁有遠超過自身所能掌控的力量，誰也無法保証最後會發生什麼。
+[name="維娜"]我見過太多新興幫派靠著那些貴族的資源迅速崛起，但最終卻從內部徹底崩潰。
+[dialog]
+[charslot]
+[Decision(options="所以阿米婭才會一起回到卡茲戴爾。;阿米婭會確保那塊源石始終在我們的監視範圍內。", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[musicvolume(volume=0, fadetime=1)]
+[delay(time=1)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="但即便如此，你們也無法左右薩卡茲的命運。這一戰之後，無論哪方都已經留下難以癒合的傷痕。", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="就像那位年輕的薩卡茲攝政王所願，薩卡茲終於又一次被具體的仇恨凝聚起來，而現在，他們也擁有了屬於自己的源石……", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st3", text="但仇恨，終究只有一個終點。等到了那時，你又會站在哪裡？", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st3", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_deeplion", volume=1, channel="slide", loop=false)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1", duration=2)]
+[delay(time=2.5)]
+[soundvolume(channel="slide",volume=0,fadetime=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+王座之後，金色的獅子緩步走出，伏身在昏暗的王座旁。
+高文，他彷彿本就應該存在於此，與周遭永恆不變的浮雕一樣，在眨眼間就見證了帝國興衰的漫長時光。
+此刻，他黑色的眼眸中倒映出了你的身影。
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#4$2",focus="m")]
+[name="維娜"]……老師？！
+[dialog]
+[charslot]
+[Decision(options="……;……這是你第一次出現在我面前。", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="不必驚訝。我不是怪物，也不是幻象。", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="我會在這個時刻現身，只是因為必要。", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st3", text="維娜選擇了一條過去從未考慮過的道路，這條路危機重重，她必須成長，而你可以繼續引導她。", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st3", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="n")]
+[Decision(options="羅德島本就會協助她處理倫蒂尼姆的局勢。",values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="m")]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="我並不在意這些。維多利亞自有它的興衰更迭，我不打算干涉。", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=740)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="但你們引導她踏上了迎向這片大地宿命的道路，而這條路……希望渺茫。", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st3", text="我本該履行與故人的約定，陪伴她直到生命終點。但如今，我已無法保證自己是否能做到——", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st3", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="n")]
+[Decision(options="……我們會盡可能避免牽連更多的人。",values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#1$1",focus="m")]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="我瞭解維娜。那天到來時，她一定會站在羅德島這邊。而你們也需要更多的力量。但當那天來臨時，你又會站在哪裡？", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="不必回答，她會替我看到。", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st3", text="你不是她的封臣、不是她的導師，也沒有與她為敵的理由。", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st3", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st4", text="但你應該意識到了你與她的關係是獨一無二的。", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st4", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st5", text="或許我們可以繼續等待，等待新的開始，但維娜……等不了。", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st5", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#10$2",focus="m")]
+[name="維娜"]……
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#5$1",focus="m")]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="……維娜，我已經教會你如何生存，但我無法指導你如何成為他人的希望——", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="但你眼前的這個人可以。", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#5$1",focus="n")]
+[Decision(options="我知道自己該做什麼了。",values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_656_1#5$1",focus="m")]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="那就指引她吧，維娜所信任的人。你是她的火種，也是她的發條。", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st1", duration=1,block = false)]
+[delay(time=1)]
+[Sticker(id="st2", text="維娜，當你猶豫時，試著聽聽此人的意見。", x=300, y=370, alignment="center", size=24, delay=0, duration=1, width=700)]
+[Sticker(id="st2", duration=1,block = false)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g8_siegeoffice",fadetime=0,screenadapt="coverall")]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[delay(time=1)]
+[playMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>議長辦公室</><p=2>1098年12月10日 7:32 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",duration=0.7)]
+[charslot(slot="r",name="avg_4110_delphn_1#11$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_4110_delphn_1#11$1",focus="r")]
+[name="戴菲恩"]欸，維娜，這個機器是什麼？
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="維娜"]洛洛東弄西弄搞出的工程樣機，說可以幫工人解乏，非要我幫她試試。但是睏了不就該直接打瞌睡嗎？
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="戴菲恩"]所以這東西有用嗎？
+[dialog]
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[delay(time=0.5)]
+維娜打了個哈欠，揉揉眼睛後繼續看手上的文件。
+[dialog]
+[playsound(key="$d_avg_paper1",volume=1)]
+[charslot(slot="l",name="avg_1019_siege2_1#5$1",focus="l")]
+[name="維娜"]沒用。
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="維娜"]不過回完這四十多封清剿叛國者“銑痕”的百人請願書後，想睏也難了。
+[name="維娜"]外面那些因為這件事起衝突的市民安頓好了嗎？
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="戴菲恩"]處理好了。號角緊急從營地拉了一批還在實習的城防軍過來。
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="維娜"]……沒鬧出什麼事，太好了。
+[charslot(slot="r",name="avg_4110_delphn_1#1$1",focus="r")]
+[name="戴菲恩"]兩邊示威的人裡都有那些士兵的家人或戰友，勸說效果比預期好很多。但說實話，我真搞不懂為什麼還有人替“銑痕”說話。
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="維娜"]不怪他們，畢竟議會確實食言在先。藥物供應出問題是事實，而她的那些藥確實讓一部分人有了活下去的希望。
+[charslot(slot="r",name="avg_4110_delphn_1#1$1",focus="r")]
+[name="戴菲恩"]但說到底，那些也不過是安慰劑。
+[name="戴菲恩"]維娜，一開始我還以為你調城防軍來是打算……
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="維娜"]暴力驅散他們？用暴力對付自己的同胞是最懦弱也最沒效率的做法——
+[dialog]
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[delay(time=1)]
+[charslot(slot="l",name="avg_1019_siege2_1#10$1",focus="l")]
+[name="維娜"]怎麼了？為什麼這樣看我？
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="戴菲恩"]就是覺得，之前擔心的事情似乎有點多餘了。
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="維娜"]別鬧了，我要把這角色演好還差得遠呢。不過還好有很多值得信任的人在幫我。
+[charslot(slot="l",name="avg_1019_siege2_1#7$1",focus="l")]
+[name="維娜"]老師、博士、還有你……很多很多人。
+[dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=1)]
+她伸了個懶腰，卸下了洛洛準備的樣機，長長地鬆了一口氣。
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="維娜"]要不是你的探子跟羅德島同事共享情報，我現在大概還在白忙呢。
+[charslot(slot="r",name="avg_4110_delphn_1#11$1",focus="r")]
+[name="戴菲恩"]不過“銑痕”那邊……
+[charslot(slot="l",name="avg_1019_siege2_1#2$1",focus="l")]
+[name="維娜"]販賣來歷不明的危險藥物、放高利貸、用死亡威脅市民……還跟薩卡茲勾結……
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="維娜"]所有的證據都在我抽屜裡，確認無誤。不能因為有些人從她那裡撈到好處就放任她胡作非為。
+[charslot(slot="r",name="avg_4110_delphn_1#5$1",focus="r")]
+[name="戴菲恩"]維娜，阿勒黛她……
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="維娜"]戴菲恩，這已經不是她個人的問題了。
+[name="維娜"]經歷了那場災難，大家都不想這來之不易的安穩被任何人破壞。
+[name="維娜"]……議會承諾了人民安全，而我知道該怎麼做。
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="戴菲恩"]對了，我們一位老朋友手上有她的線索，你可能會感興趣。
+[dialog]
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="all")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="w1")]
+[PlaySound(key="$d_avg_openftstpwalk", volume=1, loop=true, channel="w2")]
+[stopsound(fadetime=2, channel="w1")]
+[stopsound(fadetime=2, channel="w2")]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[name="戴菲恩"]還有，我認真考慮了博士給我的建議。
+[name="戴菲恩"]等最近處理完這些麻煩事，我會回溫德米爾領一趟，拿回一些本就屬於我的東西。
+[name="維娜"]大概要花多久？
+[name="戴菲恩"]不確定。但博士說得沒錯，如果我想真正幫上你，就必須拿回媽媽留下的東西……雖然她剛去世時，我曾極力抗拒這件事。
+[name="維娜"]謝謝你。
+[name="戴菲恩"]這也是為了我自己。維多利亞、溫德米爾領、麗茵卡登……我必須親自去看看媽媽曾珍視的東西……
+[name="戴菲恩"]只有這樣，我才能更靠近她一點。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_indoor_u",fadetime=0,screenadapt="coverall")]
+[delay(time=1)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_229_1#2",duration=0.7)]
+[charslot(slot="r",name="avg_npc_423_1#1$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="受傷的典範軍士兵"]長官……請允許我現在還是叫您長官！我、我沒想到您會來看我！
+[name="受傷的典範軍士兵"]是我提出的申請通過了嗎？！
+[charslot(slot="l",name="avg_npc_229_1#2",focus="l")]
+[name="號角"]沃克，我聽說彼特他們把你從示威現場勸回來的事，我想——
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="沃克"]……所以你不是為了這件事來找我。長官，其實我每天都有在聽廣播。
+[name="沃克"]我知道你負責重組的城防軍終於參加了城防炮的交接儀式，也知道城外的附屬訓練地塊剛剛竣工。
+[name="沃克"]我還特地出城去看了一眼，那裡的訓練設施非常齊全，我都能想像自己在那裡訓練的樣子……
+[charslot(slot="l",name="avg_npc_229_1#5",focus="l")]
+[name="號角"]抱歉，沃克，我無法批准你加入城防軍的申請。
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="沃克"]……
+[name="沃克"]好吧。如果是因為我還不符合城防軍的標準，那我會繼續——
+[charslot(slot="l",name="avg_npc_229_1#5",focus="l")]
+[name="號角"]你很清楚自己的身體狀況，繼續服役和訓練只會讓你的傷勢更嚴重。
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="沃克"]可是我的病情已經控制住了！我有在吃藥，身上那些石頭已經不痛很久了！我已經開始復健——
+[charslot(slot="l",name="avg_npc_229_1#5",focus="l")]
+[name="號角"]“銑痕”的藥，對吧？我們分析過成分，那只是……
+[charslot(slot="r",name="avg_npc_423_1#1$1",focus="r")]
+[name="沃克"]有點止痛作用的安慰劑，我知道。
+[name="沃克"]但我們現在就是需要它，不是嗎？長官，議會配發的藥根本不夠。
+[name="沃克"]至少那些藥能稍微減輕我的痛楚，讓我還能舉起弩，還能繼續訓練。長官，只要給我機會，我一定能通過城防軍的考核。
+[name="沃克"]“活得再*維多利亞粗口*艱難，只要能活著回家，就一定能找到希望。”這是我們在切特雷鎮防守時你們告訴我的。
+[Dialog]
+[charslot]
+[musicvolume(volume=0.3, fadetime=1)]
+[delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>“典範軍”</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>“我們創造奇蹟。”</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>可是當奇蹟落幕之後呢？典範軍又該何去何從？</i>",block = true)]
+[Sticker(id="st1")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>號角曾說，上一支典範軍的奇蹟留在了高盧，成為軍校教科書上的篇章。那我們呢？在真正回到倫蒂尼姆之前，沒有人思考過這個問題。</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>當全城廣播宣布維多利亞人重新掌控了自己的城市時，我隊伍裡年紀最小的那個孩子問我：</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>“接下來，我們要去哪裡？”</i>",block = true)]
+[Sticker(id="st1")]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>我興奮地說，回家！我要回“揍歪下巴”拳館，和漢娜、維娜、達格達一起。你也可以回家啊！</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>可那個孩子卻告訴我……</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>“我沒有家了，我只有你們。”</i>",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=0.5)]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_405_1#12$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_405_1#12$1",focus="m")]
+[name="摩根"]維娜他們到了，我們該下樓了。
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="沃克"]維娜……議長閣下？她是專程來找我的？因為示威的事？
+[name="沃克"]所以長官，你來找我只是為了……盯著我？
+[charslot(slot="m",name="avg_npc_405_1#12$1",focus="m")]
+[name="摩根"]她知道維娜要來，所以主動過來幫你。我們都是。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g6_dusklentiavenue", screenadapt="coverall", x=120,y=-150,xScale=1.5, yScale=1.5,block=true)]
+[delay(time=1)]
+[PlayMusic(key="$wasteland_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+倫蒂尼姆的夕陽沒有溫度。
+曾經僥倖活下來的人已經記不清過去是否也是這樣；而新生的人則早已習慣，以為本就如此。
+碎片大廈，這座曾為這座古老移動城市帶來榮耀的建築，如今鮮有人願意踏入它的陰影之中。
+沒有人會忘記那一天，在那片赤紅色的天空之下，真正的恐懼從碎片大廈的塔尖降臨。
+[Dialog]
+[Background(image="55_g6_dusklentiavenue", screenadapt="coverall",fadetime=2,block=true)]
+[delay(time=1)]
+而此刻，兩道人影並肩穿越了稀疏的人群，她們的影子被夕陽拉得很長很長。
+周圍忙碌的人們微微頷首向她們致意，然後又低頭繼續手上的工作。他們輕聲哼唱著——
+讓我們歡樂地歌唱♪
+維多利亞，我的故鄉！♪
+[Dialog]
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="l")]
+[name="維娜"]看來碎片大廈的改造速度比我們預期的還快一些。
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="戴菲恩"]羅德島幫了不少忙。不只是藥物供應和感染者的收治，城市重建也多虧了工程部的同事們出手支援。
+[charslot(slot="r",name="avg_4110_delphn_1#1$1",focus="r")]
+[name="戴菲恩"]當初那場異變留給大家的心理陰影太深了，所以改造碎片大廈的提案很快就通過了。
+[name="戴菲恩"]剛好也趁機把城內異常增生的源石晶簇清理掉。
+[name="戴菲恩"]不過自救軍負責修繕的團隊說，想要完全恢復恐怕還要花點時間，畢竟連我們的能源動力層都受到了波及。
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="維娜"]那有確定碎片大廈核心技術回收工作的人選了嗎？
+[charslot(slot="r",name="avg_4110_delphn_1#1$1",focus="r")]
+[name="戴菲恩"]初步名單已經列好了，但其中一些技術人員和學者的背景調查還在進行……這些人背後都有那些人的影子。
+[charslot(slot="l",name="avg_1019_siege2_1#1$1",focus="l")]
+[name="維娜"]我知道是誰，那幾位大公爵都已經聯絡過我了。如果名單沒什麼太大問題，就睜一隻眼閉一隻眼吧。
+[charslot(slot="l",name="avg_1019_siege2_1#8$1",focus="l")]
+[name="維娜"]……說真的，我倒是希望他們真能從那堆破銅爛鐵裡找到點有價值的東西，這對維多利亞來說會是件好事。
+[charslot(slot="r",name="avg_4110_delphn_1#9$1",focus="r")]
+[name="戴菲恩"]哼，要是他們真的為此爭起來，對我們來說又何嘗不是好事呢？
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(slot="m",name="avg_npc_229_1#6",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_229_1#6",focus="m")]
+[name="號角"]維娜、戴菲恩。
+[charslot(slot="m",name="avg_4110_delphn_1#11$1",focus="m")]
+[name="戴菲恩"]號角小姐？我還以為你還在……
+[charslot(slot="m",name="avg_npc_229_1#6",focus="m")]
+[name="號角"]我剛好過來看看以前的老夥伴。
+[name="號角"]不用管我，我正準備回去驗收風笛帶的那批實習城防軍的訓練成果呢。
+[Dialog]
+[charslot]
+號角伸了個懶腰，但看起來完全沒有要離開的意思。維娜嘆了口氣。
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(slot="m",name="avg_npc_405_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_405_1#1$1",focus="m")]
+[name="摩根"]維娜！維娜！你絕對猜不到我跟沃克聊了什麼——從切特雷鎮一起過來的戴維斯夫婦，他們的孩子出生了——
+[charslot(slot="m",name="avg_1019_siege2_1#5$1",focus="m")]
+[name="維娜"]……摩根，我知道你們為什麼在這裡。
+[name="維娜"]沃克和示威的事，議會那邊會討論出結果。我……不該插手這件事。
+[name="維娜"]我今天只是想聊聊“銑痕”的下落。
+[charslot(slot="m",name="avg_npc_405_1#6$1",focus="m")]
+[name="摩根"]……
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="沃克"]謝謝你們，但真的不需要讓議長閣下為難。
+[name="沃克"]我相信議會，我認識裡面不少人，他們都是好人。
+[charslot(slot="m",name="avg_4110_delphn_1#1$1",focus="m")]
+[name="戴菲恩"]議會沒有你想的那麼單純，有人想讓事態繼續擴大。
+[name="戴菲恩"]但越快解決“銑痕”的事，對你們才越有利。
+[charslot(slot="m",name="avg_npc_423_1#1$1",focus="m")]
+[name="沃克"]……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Image(image="55_i17_2", screenadapt="coverall",block=true)]
+[delay(time=1)]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>那位曾與我們並肩作戰、衝鋒陷陣的士兵，如今站在夕陽下接受著我們的“審問”。</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>我們心裡都清楚，維娜能影響議會……只要她願意。</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>也是從那天起，我忽然意識到維娜……早已不再只屬於格拉斯哥幫。</i>",block = true)]
+[Sticker(id="st1")]
+[playsound(key="$d_avg_paper1",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[playsound(key="$d_avg_sketchdraw",volume=1)]
+[Image(image="55_i05_2", screenadapt="coverall",fadetime=3,block=true)]
+[Delay(time=2)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>我的維娜，或許在那個午後已經與我們道別了。</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>就在那時，全城的工廠同時啟動，轟鳴聲震耳欲聾，升騰的蒸汽直衝天幕。</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>我看著她的金色長髮在氣浪中飛舞，短暫掩蓋住她眼裡一閃而逝的情緒。她笑著回頭和我們說——</i>",block = true)]
+[Sticker(id="st1")]
+[stopmusic(fadetime=1)]
+[Sticker(id="st2", text="“我們到家了。”", x=300, y=270, alignment="left", size=24, delay=0, duration=1, width=700,block = true)]
+[Delay(time=1)]
+[Sticker(id="st2", duration=1,block = false)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_penrustle", volume=1)]
+[Sticker(id="st1", multi = true, text="<i>我們到家了，可事情並未按照我們預想的方向發展。</i>", x=300,y=270,  alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>我害怕回歸意味著告別——</i>",block = true)]
+[Sticker(id="st1", multi = true, text="\n<i>我害怕……我們會失去維娜。</i>",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[PlayMusic(key="$m_avg_epic_loop", volume=0.6)]
+[Image(image="55_i05_1", screenadapt="coverall",fadetime=3,block=true)]
+[PlaySound(key="$d_avg_armycrowd", volume=0.6)]
+[PlaySound(key="$d_avg_audience_chaos", volume=0.5)]
+[Delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="“工廠在歡迎我們？”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“城、城裡真的還有很多人活著！”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“你們為什麼還要攔著我們？”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“抱歉……這是公爵的命令。在他們做出決定之前，典範軍不得擅自行動。”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“為什麼你的弩要對著我？！”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“我們剛剛不是還在並肩作戰嗎？”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“……我們該怎麼辦？城裡的人好像……在示威？”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>倫蒂尼姆</><p=2>1098年9月28日 5:27 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_avg_steamburst", volume=0.4)]
+[PlaySound(key="$d_avg_steamburst", volume=0.6,channel="machine1",delay=1)]
+[PlaySound(key="$d_avg_steamburst", volume=0.6,channel="machine2",delay=2)]
+[PlaySound(key="$d_avg_steamburst", volume=0.8,channel="machine3",delay=2.5)]
+[PlaySound(key="$d_avg_steamburst", volume=1,channel="machine4",delay=3)]
+[PlaySound(key="$d_avg_airshiptakeoff", volume=0, loop=true, channel="machine")]
+[SoundVolume(volume=0.6, channel="machine",fadetime=4)]
+[PlaySound(key="$factory_low_drone", volume=0.4, loop=true, channel="f")]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[delay(time=2)]
+城市，正在發怒。
+[name="摩根"]維娜，那些擋住我們的聯軍隊伍在……撤退？
+[name="因陀羅"]怎麼回事？！那些工廠突然全部啟動？情報不是說城內因為薩卡茲而暫時戒嚴了嗎？！
+[name="達格達"]……我記得這些工廠。城裡這些位置，我死都不會忘記。
+[name="達格達"]那邊，約克街的“米爾斯工業”！那邊，斯科特街的“科波拉食品廠”！還有那邊——
+[name="達格達"]“康思萊德”、“漢金”、“南華克貨運”……
+[name="達格達"]（哽咽）維娜，我、我以為這些地方都……
+[dialog]
+寂靜的、廢棄的、被薩卡茲徵用的，還有那些戰戰兢兢運轉的工廠。
+如今，全城的工廠幾乎在同一時間全力運轉起來。那些剛剛從城外戰場撤回的薩卡茲根本無暇顧及。
+噴湧而出的蒸汽是鋼鐵機械的鼻息，工廠在怒吼。
+[name="摩根"]這是……怎麼回事？
+[name="維娜"]他們在幫我們。倫蒂尼姆，在幫我們。
+[name="聯軍士兵"]別浪費時間了，繼續前進吧。典範軍的各位，這一切該畫上句點了。
+[name="聯軍士兵"]聯軍第六縱隊第十步兵團中尉黛安·韋伯命令小隊全體放下武器，護送典範軍繼續推進！
+[name="維娜"]你要違抗公爵們的命令？
+[name="黛安"]我是一名士兵，但更是出生在這裡的倫蒂尼姆人……這裡也是我的家。
+[name="黛安"]不多說了，走吧。推進之王，撐住，我們還得繼續並肩作戰。
+[name="黛安"]為了奪回屬於我們的一切！
+第一支公爵聯軍部隊放下了手中的弩，隨後越來越多的隊伍讓開了一條路。
+[name="維娜"]……典範軍，繼續前進！！
+[dialog]
+[PlaySound(key="$d_avg_armywalking", volume=0.8)]
+[delay(time=2)]
+[name="維娜"]我們到家了。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[image]
+[Background(image="32_g4_ordnancefactory", screenadapt="coverall",block=true)]
+[charslot(slot="m",name="avg_4162_cathy_1#3$1",focus="m")]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_4162_cathy_1#3$1",focus="m")]
+[name="凱瑟琳"]通知他們，全功率運轉工廠，至少再擋住那些薩卡茲一下……就一下！
+[name="凱瑟琳"]那些公爵想讓所有人相信城內活著的維多利亞人早已所剩無幾，他們想合理化自己的“圍而不攻”，那我們就得自己發出聲音。
+[name="凱瑟琳"]我們要讓城牆外的那些人看見——我們還沒有放棄！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_864_1#9$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_864_1#9$1",focus="m")]
+[name="珀茜瓦爾"]凱瑟琳女士，配合得不錯。試著相信我們的人，他們可都是高手。
+[name="珀茜瓦爾"]九他們也在重啟其他工廠了，很快，整座城市都會沸騰起來。
+[charslot(slot="m",name="avg_4162_cathy_1#4$1",focus="m")]
+[name="凱瑟琳"]……費斯特，你們也回來了嗎？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_cherunder_2", screenadapt="coverall",block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[charslot(slot="m",name="avg_npc_400_1#12$1",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_400_1#12$1",focus="m")]
+[name="海蒂"]工廠啟動了嗎？
+[charslot(slot="m",name="avg_npc_012",focus="m")]
+[name="近衛幹員"]是的！按照博士的部署，其他幾座工廠也恢復運作了！
+[name="近衛幹員"]不過除了市民，還有其他人在幫我們……他們自稱是——
+[name="近衛幹員"]整合運動……
+[Dialog]
+[dialog]
+[StopSound(channel="machine", fadetime=2)]
+[StopSound(channel="f", fadetime=2)]
+[StopSound(channel="e", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="50_g13_warshipcommandroom", screenadapt="coverall",block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[charslot(slot="l",name="avg_npc_1068_1#1$1")]
+[charslot(slot="r",name="avg_npc_726_1#1$1")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_1068_1#1$1",focus="l")]
+[name="高多汀公爵"]……這座城市展現出如此旺盛的生命力，真是許多年未見的光景。
+[name="高多汀公爵"]剛剛收到消息，不少聯軍隊伍主動為典範軍讓出了一條路。
+[name="高多汀公爵"]這可不是我們下達的命令。這次試探的結果，閣下還滿意嗎？
+[charslot(slot="r",name="avg_npc_726_1#1$1",focus="r")]
+[name="開斯特公爵"]嗯……看來我們還是低估了所謂“奇蹟”的影響力。
+[name="開斯特公爵"]既然如此，那就提前開始準備吧。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="21_G7_decisivebattlealley_d", screenadapt="coverall",block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0.5, fadetime=0)]
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="神秘的僱傭兵"]老大，看來我們不用再幫他們製造混亂了。
+[name="神秘的僱傭兵"]那些人主動放典範軍過去了。
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1342_1#1$1", bstart=0.2,bend=0.7,duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1342_1#1$1",bstart=0.2,bend=0.7,focus="m")]
+[name="？？？"]撤掉周圍的埋伏，回去支援我們剛拿下的那幾間工廠。
+[name="？？？"]順便通知那幾位負責人，在我說“結束”之前，他們的爐子不准停。
+[charslot(slot="m",name="avg_npc_399_1#1$1",focus="m")]
+[name="神秘的僱傭兵"]是。
+[Dialog]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=0.7)]
+[Delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1342_1#1$1",bstart=0.2,bend=0.7,focus="m")]
+[name="？？？"]……
+[name="？？？"]歡迎回家，維娜。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="55_g8_siegeoffice", screenadapt="coverall",block=true)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[delay(time=1)]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>議長辦公室</><p=2>1098年12月10日 9:28 P.M.</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1019_siege2_1#1$1",focus="m")]
+[name="維娜"]是的，這裡是議長辦公室。
+[name="維娜"]放心，沃克沒事。議會不至於因為這件事為難他，但還是請提醒他最近多注意安全。
+[name="維娜"]誰知道那些盯著我們的人會不會對他動手。
+[name="維娜"]還有……你們那邊進度如何？
+[dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1019_siege2_1#8$1",focus="m")]
+[name="維娜"]……好。
+[dialog]
+[charslot(slot="m",name="avg_1019_siege2_1#8$1",focus="n")]
+[playsound(key="$transmission", volume=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_1019_siege2_1#9$1",focus="m")]
+[name="維娜"]我們終於快找到你了……
+[charslot(slot="m",name="avg_1019_siege2_1#8$1",focus="m")]
+[name="維娜"]阿勒黛。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]
