@@ -1,0 +1,13 @@
+[HEADER(is_skippable=false, is_tutorial=true)] act1vautochess进入回合
+[Battle.LockAutoChessHud]
+[InputBlocker(blockInput=true)]
+[Battle.AutoChessOnlyAllow(reqConditionKey="buy_char",bindKey="buy_char", hint="請先完成教學")]
+[Delay(time=1)]
+[Tutorial(focusX=-375, focusY=20, focusWidth=400, focusHeight=480,           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 在衛戍協議中，補給駁船會持續為前線運送物資，我們需要<@tu.kw>花費資金</>來採購這些補給。
+[Tutorial(tileX=-0.5, tileY=7, focusWidth=158, focusHeight=74,           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 左上角可以查看目前持有的資金數量。每回合開始時，將<@tu.kw>獲得一定數量的資金</>，可於駁船上購買補給。
+[InputBlocker(blockInput=true, battleTarget="tile_first_shop_char_chess", validWidth=70, validHeight=70)]
+[Tutorial(battleTarget="tile_first_shop_char_chess", focusWidth=85, focusHeight=90,           waitForSignal="act1vautochess_shop_item_selected",           animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 幹員將以模擬數據的形式加入作戰。請嘗試<@tu.kw>購買</>一名幹員。
+[InputBlocker(blockInput=true)]
+[Delay(time=0.2)]
+[Tutorial(target="panel_act1vautochess_battle_hud_chess_coin", focusWidth=320, focusHeight=60,           animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 一般情況下，招募幹員需要花費<@tu.kw>3資金</>，請點選幹員查看其資料。
+[Tutorial(target="btn_act1vautochess_shop_char_menu_buy",           waitForSignal="act1vautochess_battle_item_bought",           animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black",           protectTime=0.5, dialogHead="$avatar_amiya")] 點選購買將其加入手牌區。

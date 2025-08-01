@@ -1,0 +1,9 @@
+[HEADER(is_skippable=false, is_tutorial=true)] act1vautochess穿装备
+[Battle.LockAutoChessHud]
+[InputBlocker(blockInput=true)]
+[Battle.AutoChessOnlyAllow(reqConditionKey="wear_equip_not_replace",bindKey="wear_equip_not_replace", hint="請先完成教學")]
+[Delay(time=0.2)]
+[Battle.SwitchToDefaultUIState]
+[Delay(time=0.2)]
+[InputBlocker(blockInput=false)]
+[Tutorial(waitForSignal="act1vautochess_battle_field_equip_wear_putdown", dialogHead="$avatar_amiya", animStyle="Drag",           startBattleTarget="tile_first_hand_equip_chess", endBattleTarget="tile_battle_char_chess")] 將裝備拖動到幹員身上即可生效，每名幹員最多可擁有<@tu.kw>兩件</>裝備。一旦選擇後，該裝備會<@tu.kw>鎖定</>在幹員身上，暫時無法取下。
