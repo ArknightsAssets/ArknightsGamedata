@@ -57897,7 +57897,7 @@
                             "candidates": [
                                 {
                                     "displayRangeId": false,
-                                    "upgradeDescription": "对每个敌人首次进行攻击时攻击力提升至115%，并使目标浮空2.5秒",
+                                    "upgradeDescription": "对每个敌人首次进行攻击时攻击力提升至115%，并使目标<$ba.levitate>浮空</>2.5秒",
                                     "talentIndex": 0,
                                     "unlockCondition": {
                                         "phase": "PHASE_2",
@@ -57914,7 +57914,7 @@
                                 },
                                 {
                                     "displayRangeId": false,
-                                    "upgradeDescription": "对每个敌人首次进行攻击时攻击力提升至120%<@ba.talpu>（+5%）</>，并使目标浮空2.5秒",
+                                    "upgradeDescription": "对每个敌人首次进行攻击时攻击力提升至120%<@ba.talpu>（+5%）</>，并使目标<$ba.levitate>浮空</>2.5秒",
                                     "talentIndex": 0,
                                     "unlockCondition": {
                                         "phase": "PHASE_2",
@@ -57973,7 +57973,7 @@
                             "candidates": [
                                 {
                                     "displayRangeId": false,
-                                    "upgradeDescription": "对每个敌人首次进行攻击时攻击力提升至120%，并使目标浮空2.5秒",
+                                    "upgradeDescription": "对每个敌人首次进行攻击时攻击力提升至120%，并使目标<$ba.levitate>浮空</>2.5秒",
                                     "talentIndex": 0,
                                     "unlockCondition": {
                                         "phase": "PHASE_2",
@@ -57990,7 +57990,7 @@
                                 },
                                 {
                                     "displayRangeId": false,
-                                    "upgradeDescription": "对每个敌人首次进行攻击时攻击力提升至125%<@ba.talpu>（+5%）</>，并使目标浮空2.5秒",
+                                    "upgradeDescription": "对每个敌人首次进行攻击时攻击力提升至125%<@ba.talpu>（+5%）</>，并使目标<$ba.levitate>浮空</>2.5秒",
                                     "talentIndex": 0,
                                     "unlockCondition": {
                                         "phase": "PHASE_2",
@@ -84935,6 +84935,2337 @@
                     "max_hp": 360.0,
                     "atk": 42.0,
                     "def": 36.0
+                },
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_002_haruka": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "target": "TRAIT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "attack@max_target": 2.0,
+                                        "attack@max_target_heal": 2.0,
+                                        "heal_scale": 0.75
+                                    },
+                                    "overrideDescripton": "攻击对<@ba.kw>2</>个目标造成法术伤害，技能开启后改为治疗<@ba.kw>2</>个友方单位（治疗量相当于75%攻击力）",
+                                    "prefabKey": "-1"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 130.0,
+                    "atk": 30.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "target": "TRAIT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "attack@max_target": 2.0,
+                                        "attack@max_target_heal": 2.0,
+                                        "heal_scale": 0.75
+                                    },
+                                    "overrideDescripton": "攻击对<@ba.kw>2</>个目标造成法术伤害，技能开启后改为治疗<@ba.kw>2</>个友方单位（治疗量相当于75%攻击力）",
+                                    "prefabKey": "-1"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "浮泡破碎时，为所在的单位治疗相当于遥攻击力25%的生命值，并有10%的概率回复1点技力",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "扶摇花火",
+                                    "blackboard": {
+                                        "heal_scale": 0.25,
+                                        "prob": 0.1,
+                                        "sp": 1.0
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "浮泡破碎时，为所在的单位治疗相当于遥攻击力28%<@ba.talpu>（+3%）</>的生命值，并有10%的概率回复1点技力",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "2",
+                                    "name": "扶摇花火",
+                                    "blackboard": {
+                                        "heal_scale": 0.28,
+                                        "prob": 0.1,
+                                        "sp": 1.0
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 175.0,
+                    "atk": 40.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "target": "TRAIT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "attack@max_target": 2.0,
+                                        "attack@max_target_heal": 2.0,
+                                        "heal_scale": 0.75
+                                    },
+                                    "overrideDescripton": "攻击对<@ba.kw>2</>个目标造成法术伤害，技能开启后改为治疗<@ba.kw>2</>个友方单位（治疗量相当于75%攻击力）",
+                                    "prefabKey": "-1"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "浮泡破碎时，为所在的单位治疗相当于遥攻击力25%的生命值，并有20%的概率回复1点技力",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "扶摇花火",
+                                    "blackboard": {
+                                        "heal_scale": 0.25,
+                                        "prob": 0.2,
+                                        "sp": 1.0
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "浮泡破碎时，为所在的单位治疗相当于遥攻击力28%<@ba.talpu>（+3%）</>的生命值，并有20%的概率回复1点技力",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "2",
+                                    "name": "扶摇花火",
+                                    "blackboard": {
+                                        "heal_scale": 0.28,
+                                        "prob": 0.2,
+                                        "sp": 1.0
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 210.0,
+                    "atk": 52.0
+                },
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_002_kichi": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "target": "TRAIT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "atk_scale": 1.6
+                                    },
+                                    "overrideDescripton": "攻击范围内的<@ba.kw>所有敌人</>，对自己前方一横排的敌人攻击力提升至<@ba.kw>160%</>",
+                                    "prefabKey": "-1",
+                                    "rangeId": "1-3"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 110.0,
+                    "atk": 37.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "target": "TRAIT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "atk_scale": 1.6
+                                    },
+                                    "overrideDescripton": "攻击范围内的<@ba.kw>所有敌人</>，对自己前方一横排的敌人攻击力提升至<@ba.kw>160%</>",
+                                    "prefabKey": "-1",
+                                    "rangeId": "1-3"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "上场后每击倒过一种敌人，自身造成的伤害+8%，最多叠加3次",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": "好运连击！",
+                                    "blackboard": {
+                                        "damage_scale": 0.08,
+                                        "max_stack_cnt": 3.0
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "上场后每击倒过一种敌人，自身造成的伤害+9%<@ba.talpu>（+1%）</>，最多叠加3次",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "1",
+                                    "name": "好运连击！",
+                                    "blackboard": {
+                                        "damage_scale": 0.09,
+                                        "max_stack_cnt": 3.0
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 160.0,
+                    "atk": 42.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "target": "TRAIT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "atk_scale": 1.6
+                                    },
+                                    "overrideDescripton": "攻击范围内的<@ba.kw>所有敌人</>，对自己前方一横排的敌人攻击力提升至<@ba.kw>160%</>",
+                                    "prefabKey": "-1",
+                                    "rangeId": "1-3"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "上场后每击倒过一种敌人，自身造成的伤害+8%，最多叠加4次",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": "好运连击！",
+                                    "blackboard": {
+                                        "damage_scale": 0.08,
+                                        "max_stack_cnt": 4.0
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "上场后每击倒过一种敌人，自身造成的伤害+9%<@ba.talpu>（+1%）</>，最多叠加4次",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "1",
+                                    "name": "好运连击！",
+                                    "blackboard": {
+                                        "damage_scale": 0.09,
+                                        "max_stack_cnt": 4.0
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 190.0,
+                    "atk": 52.0
+                },
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_004_swire2": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "在<@ba.kw>集成战略</>中，部署和在场消耗的部署费用-30%，自身每消耗1点费用会令正在再部署中剩余时间最短的干员再部署时间-2秒",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {}
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "swire2_equip_3_1_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "respawn_time_ratio": 2.0,
+                                        "interval": 3.0,
+                                        "cost": -3.0,
+                                        "cost_scale": 0.7
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "swire2_equip_3_1_p4",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -2,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "14_root",
+                                    "blackboard": {
+                                        "cost_scale": 0.7
+                                    },
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 160.0,
+                    "atk": 45.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "在<@ba.kw>集成战略</>中，部署和在场消耗的部署费用-30%，自身每消耗1点费用会令正在再部署中剩余时间最短的干员再部署时间-2秒",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {}
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "swire2_equip_3_2_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "respawn_time_ratio": 2.0,
+                                        "interval": 3.0,
+                                        "cost": -3.0,
+                                        "cost_scale": 0.7
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "swire2_equip_3_2_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "11",
+                                    "blackboard": {
+                                        "sp": 5.0,
+                                        "sp_add": 1.0,
+                                        "atk_per_coin": 2.0
+                                    },
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "开启技能时获得1枚金币（可用于技能消耗），技能期间每次特性消耗费用时获得1枚金币，并提升自身4%的攻击力（最多叠加8次），在<@ba.kw>集成战略</>中金币上限+5，特性消耗费用时额外获得1枚金币并叠加2次攻击力",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": "大买家",
+                                    "blackboard": {
+                                        "sp": 1.0,
+                                        "trait_sp": 1.0,
+                                        "atk": 0.04,
+                                        "max_stack_cnt": 8.0
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "开启技能时获得1枚金币（可用于技能消耗），技能期间每次特性消耗费用时获得1枚金币，并提升自身4%的攻击力（最多叠加9<@ba.talpu>（+1）</>次），在<@ba.kw>集成战略</>中金币上限+5，特性消耗费用时额外获得1枚金币并叠加2次攻击力",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "1",
+                                    "name": "大买家",
+                                    "blackboard": {
+                                        "sp": 1.0,
+                                        "trait_sp": 1.0,
+                                        "atk": 0.04,
+                                        "max_stack_cnt": 9.0
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    },
+                    {
+                        "resKey": "swire2_equip_3_2_p4",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -2,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "14_root",
+                                    "blackboard": {
+                                        "cost_scale": 0.7
+                                    },
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 260.0,
+                    "atk": 65.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "在<@ba.kw>集成战略</>中，部署和在场消耗的部署费用-30%，自身每消耗1点费用会令正在再部署中剩余时间最短的干员再部署时间-2秒",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {}
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "swire2_equip_3_3_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "respawn_time_ratio": 2.0,
+                                        "interval": 3.0,
+                                        "cost": -3.0,
+                                        "cost_scale": 0.7
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "swire2_equip_3_3_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "11",
+                                    "blackboard": {
+                                        "sp": 5.0,
+                                        "sp_add": 1.0,
+                                        "atk_per_coin": 3.0
+                                    },
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    },
+                    {
+                        "resKey": "swire2_equip_3_3_p3",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "12_root",
+                                    "blackboard": {
+                                        "max": 60.0
+                                    },
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "开启技能时获得1枚金币（可用于技能消耗），技能期间每次特性消耗费用时获得1枚金币，并提升自身4%的攻击力（最多叠加8次），在<@ba.kw>集成战略</>中金币上限+5，每有1源石锭攻击力叠加上限+1次（最多60次），特性消耗费用时额外获得1枚金币并叠加3次攻击力",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": "大买家",
+                                    "blackboard": {
+                                        "sp": 1.0,
+                                        "trait_sp": 1.0,
+                                        "atk": 0.04,
+                                        "max_stack_cnt": 8.0
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "开启技能时获得1枚金币（可用于技能消耗），技能期间每次特性消耗费用时获得1枚金币，并提升自身4%的攻击力（最多叠加9<@ba.talpu>（+1）</>次），在<@ba.kw>集成战略</>中金币上限+5，每有1源石锭攻击力叠加上限+1次（最多60次），特性消耗费用时额外获得1枚金币并叠加3次攻击力",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "1",
+                                    "name": "大买家",
+                                    "blackboard": {
+                                        "sp": 1.0,
+                                        "trait_sp": 1.0,
+                                        "atk": 0.04,
+                                        "max_stack_cnt": 9.0
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    },
+                    {
+                        "resKey": "swire2_equip_3_3_p4",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -2,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "14_root",
+                                    "blackboard": {
+                                        "cost_scale": 0.7
+                                    },
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 320.0,
+                    "atk": 80.0
+                },
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_002_blaze2": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "resKey": "blaze2_equip_1_1_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "attributeBlackboard": {
+                    "atk": 52.0,
+                    "def": 10.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "resKey": "blaze2_equip_1_2_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "全场有敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时，立即对其造成相当于攻击力390%的元素伤害并回复12%最大生命，且在10秒内攻击力+5%",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": "熔点引爆",
+                                    "blackboard": {
+                                        "ep_damage_scale": 3.9,
+                                        "hp_ratio": 0.12
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "全场有敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时，立即对其造成相当于攻击力420%<@ba.talpu>（+30%）</>的元素伤害并回复15%<@ba.talpu>（+3%）</>最大生命，且在10秒内攻击力+5%",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "1",
+                                    "name": "熔点引爆",
+                                    "blackboard": {
+                                        "ep_damage_scale": 4.2,
+                                        "hp_ratio": 0.15
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    },
+                    {
+                        "resKey": "blaze2_equip_1_2_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10",
+                                    "blackboard": {
+                                        "duration": 10.0,
+                                        "atk": 0.05
+                                    },
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "atk": 66.0,
+                    "def": 20.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "resKey": "blaze2_equip_1_3_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "全场有敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时，立即对其造成相当于攻击力420%的元素伤害并回复15%最大生命，且在10秒内攻击力+10%",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": "熔点引爆",
+                                    "blackboard": {
+                                        "ep_damage_scale": 4.2,
+                                        "hp_ratio": 0.15
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "全场有敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时，立即对其造成相当于攻击力450%<@ba.talpu>（+30%）</>的元素伤害并回复18%<@ba.talpu>（+3%）</>最大生命，且在10秒内攻击力+10%",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "1",
+                                    "name": "熔点引爆",
+                                    "blackboard": {
+                                        "ep_damage_scale": 4.5,
+                                        "hp_ratio": 0.18
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    },
+                    {
+                        "resKey": "blaze2_equip_1_3_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10",
+                                    "blackboard": {
+                                        "duration": 10.0,
+                                        "atk": 0.1
+                                    },
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "atk": 82.0,
+                    "def": 25.0
+                },
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_002_nymph": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "resKey": "nymph_equip_1_1_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 100.0,
+                    "atk": 50.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "resKey": "nymph_equip_1_2_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "nymph_equip_1_2_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "全场有敌人<$ba.dt.apoptosis2>凋亡损伤</>爆发时，攻击力+2%，最多可叠加10层，叠至10层后，攻击速度+7",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "窥心钥",
+                                    "blackboard": {
+                                        "atk": 0.02,
+                                        "max_stack_cnt": 10.0,
+                                        "attack_speed": 7.0,
+                                        "stack_cnt_check": 10.0
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "全场有敌人<$ba.dt.apoptosis2>凋亡损伤</>爆发时，攻击力+2%，最多可叠加12<@ba.talpu>（+2）</>层，叠至10层后，攻击速度+7",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "2",
+                                    "name": "窥心钥",
+                                    "blackboard": {
+                                        "atk": 0.02,
+                                        "max_stack_cnt": 12.0,
+                                        "attack_speed": 7.0,
+                                        "stack_cnt_check": 10.0
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 125.0,
+                    "atk": 65.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "resKey": "nymph_equip_1_3_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "nymph_equip_1_3_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "全场有敌人<$ba.dt.apoptosis2>凋亡损伤</>爆发时，攻击力+3%，最多可叠加10层，叠至10层后，攻击速度+12",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "窥心钥",
+                                    "blackboard": {
+                                        "atk": 0.03,
+                                        "max_stack_cnt": 10.0,
+                                        "attack_speed": 12.0,
+                                        "stack_cnt_check": 10.0
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "全场有敌人<$ba.dt.apoptosis2>凋亡损伤</>爆发时，攻击力+3%，最多可叠加12<@ba.talpu>（+2）</>层，叠至10层后，攻击速度+12",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "2",
+                                    "name": "窥心钥",
+                                    "blackboard": {
+                                        "atk": 0.03,
+                                        "max_stack_cnt": 12.0,
+                                        "attack_speed": 12.0,
+                                        "stack_cnt_check": 10.0
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 150.0,
+                    "atk": 80.0
+                },
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_002_christ": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "resKey": "christ_equip_1_1_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 60.0,
+                    "atk": 35.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "resKey": "christ_equip_1_2_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻击处于麻痹状态的目标时，攻击力提升至110%，攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力130%的元素伤害",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": "诱人美馔",
+                                    "blackboard": {
+                                        "atk_scale": 1.3
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻击处于麻痹状态的目标时，攻击力提升至110%，攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力140%<@ba.talpu>（+10%）</>的元素伤害",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "1",
+                                    "name": "诱人美馔",
+                                    "blackboard": {
+                                        "atk_scale": 1.4
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    },
+                    {
+                        "resKey": "christ_equip_1_2_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10",
+                                    "blackboard": {
+                                        "atk_scale": 1.1
+                                    },
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 70.0,
+                    "atk": 50.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "resKey": "christ_equip_1_3_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻击处于麻痹状态的目标时，攻击力提升至120%，攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力140%的元素伤害",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": "诱人美馔",
+                                    "blackboard": {
+                                        "atk_scale": 1.4
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻击处于麻痹状态的目标时，攻击力提升至120%，攻击范围内的敌人触发<$ba.palsy>麻痹</>时立即受到相当于攻击力150%<@ba.talpu>（+10%）</>的元素伤害",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "1",
+                                    "name": "诱人美馔",
+                                    "blackboard": {
+                                        "atk_scale": 1.5
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    },
+                    {
+                        "resKey": "christ_equip_1_3_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10",
+                                    "blackboard": {
+                                        "atk_scale": 1.2
+                                    },
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 80.0,
+                    "atk": 65.0
+                },
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_002_kaitou": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "resKey": "kaitou_equip_1_1_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 60.0,
+                    "atk": 35.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "resKey": "kaitou_equip_1_2_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻击范围内存在处于<$ba.dt.apoptosis2>凋亡损伤</>爆发期间的敌方单位时，攻击力+21%",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": "预先告知",
+                                    "blackboard": {
+                                        "atk": 0.21
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻击范围内存在处于<$ba.dt.apoptosis2>凋亡损伤</>爆发期间的敌方单位时，攻击力+24%<@ba.talpu>（+3%）</>",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "1",
+                                    "name": "预先告知",
+                                    "blackboard": {
+                                        "atk": 0.24
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 70.0,
+                    "atk": 50.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "resKey": "kaitou_equip_1_3_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻击范围内存在处于<$ba.dt.apoptosis2>凋亡损伤</>爆发期间的敌方单位时，攻击力+23%",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": "预先告知",
+                                    "blackboard": {
+                                        "atk": 0.23
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻击范围内存在处于<$ba.dt.apoptosis2>凋亡损伤</>爆发期间的敌方单位时，攻击力+26%<@ba.talpu>（+3%）</>",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "1",
+                                    "name": "预先告知",
+                                    "blackboard": {
+                                        "atk": 0.26
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 80.0,
+                    "atk": 65.0
+                },
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_002_warmy": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "resKey": "warmy_equip_1_1_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 60.0,
+                    "atk": 35.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "resKey": "warmy_equip_1_2_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻击范围内的敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时立即受到相当于攻击力330%的元素伤害",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": "难免会溢锅",
+                                    "blackboard": {
+                                        "ep_damage_scale": 3.3
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻击范围内的敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时立即受到相当于攻击力350%<@ba.talpu>（+20%）</>的元素伤害",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "1",
+                                    "name": "难免会溢锅",
+                                    "blackboard": {
+                                        "ep_damage_scale": 3.5
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 70.0,
+                    "atk": 50.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "resKey": "warmy_equip_1_3_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "对处于元素爆发期间的敌人造成的伤害提升至110%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "damage_scale": 1.1
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻击范围内的敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时立即受到相当于攻击力350%的元素伤害",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": "难免会溢锅",
+                                    "blackboard": {
+                                        "ep_damage_scale": 3.5
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻击范围内的敌人<$ba.dt.burning2>灼燃损伤</>爆发开始时立即受到相当于攻击力370%<@ba.talpu>（+20%）</>的元素伤害",
+                                    "talentIndex": 0,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "1",
+                                    "name": "难免会溢锅",
+                                    "blackboard": {
+                                        "ep_damage_scale": 3.7
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 80.0,
+                    "atk": 65.0
+                },
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_003_chen2": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "部署费用<@ba.kw>减少</>",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {}
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "attributeBlackboard": {
+                    "cost": -8.0,
+                    "max_hp": 135.0,
+                    "atk": 55.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "部署费用<@ba.kw>减少</>",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {}
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "chen2_equip_2_2_p1",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻击力+10%，攻击速度+8，当场地中存在水地形时改为攻击力+15%，攻击速度+12",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "假日余韵",
+                                    "blackboard": {
+                                        "chen2_t_2[common].attack_speed": 8.0,
+                                        "chen2_t_2[common].atk": 0.1,
+                                        "chen2_t_2[map].attack_speed": 12.0,
+                                        "chen2_t_2[map].atk": 0.15
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "cost": -8.0,
+                    "max_hp": 165.0,
+                    "atk": 80.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "部署费用<@ba.kw>减少</>",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {}
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "chen2_equip_2_3_p1",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻击力+15%，攻击速度+12，当场地中存在水地形时改为攻击力+28%，攻击速度+20，技能开启时，场地视为水地形",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "假日余韵",
+                                    "blackboard": {
+                                        "chen2_t_2[common].attack_speed": 12.0,
+                                        "chen2_t_2[common].atk": 0.15,
+                                        "chen2_t_2[map].attack_speed": 20.0,
+                                        "chen2_t_2[map].atk": 0.28
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "cost": -8.0,
+                    "max_hp": 180.0,
+                    "atk": 100.0
+                },
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_003_pepe": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "在<@ba.kw>生息演算</>中，若携带资源，则再部署时间大幅度减少",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {}
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "pepe_equip_2_1_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": "sandbox",
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "attack@ability_range_radius": 1.0,
+                                        "attack@atk_scale_2": 0.5,
+                                        "respawn_time": -0.9
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 250.0,
+                    "atk": 50.0,
+                    "def": 80.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "在<@ba.kw>生息演算</>中，若携带资源，则再部署时间大幅度减少",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {}
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "pepe_equip_2_2_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": "sandbox",
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "attack@ability_range_radius": 1.0,
+                                        "attack@atk_scale_2": 0.5,
+                                        "respawn_time": -0.9
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "validInGameTag": "sandbox",
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "在场时，所有【近卫】干员的攻击力+16%，在<@ba.kw>生息演算</>中，部署时获得宝箱处的视野，每次攻击对所有近卫干员所在位置产生相当于攻击力50%的余震",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "弥漫莲香",
+                                    "blackboard": {
+                                        "atk": 0.16
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "在场时，所有【近卫】干员的攻击力+20%<@ba.talpu>（+4%）</>，在<@ba.kw>生息演算</>中，部署时获得宝箱处的视野，每次攻击对所有近卫干员所在位置产生相当于攻击力50%的余震",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 2,
+                                    "prefabKey": "2",
+                                    "name": "弥漫莲香",
+                                    "blackboard": {
+                                        "atk": 0.2
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    },
+                    {
+                        "resKey": "pepe_equip_2_2_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "sandbox",
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10",
+                                    "blackboard": {
+                                        "damage_scale": 0.5,
+                                        "range_radius": 1.5
+                                    },
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "在场时，所有【近卫】干员的攻击力+16%，在<@ba.kw>生息演算</>中，部署时获得宝箱处的视野，每次攻击对所有近卫干员所在位置产生相当于攻击力50%的余震",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "#",
+                                    "name": "弥漫莲香",
+                                    "blackboard": {},
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "在场时，所有【近卫】干员的攻击力+20%<@ba.talpu>（+4%）</>，在<@ba.kw>生息演算</>中，部署时获得宝箱处的视野，每次攻击对所有近卫干员所在位置产生相当于攻击力50%的余震",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 2,
+                                    "prefabKey": "#",
+                                    "name": "弥漫莲香",
+                                    "blackboard": {},
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 312.0,
+                    "atk": 67.0,
+                    "def": 115.0
+                },
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "在<@ba.kw>生息演算</>中，若携带资源，则再部署时间大幅度减少",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {}
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "pepe_equip_2_3_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": "sandbox",
+                        "addOrOverrideTalentDataBundle": {},
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {
+                                        "attack@ability_range_radius": 1.0,
+                                        "attack@atk_scale_2": 0.5,
+                                        "respawn_time": -0.9
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "validInGameTag": "sandbox",
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "在场时，所有【近卫】干员的攻击力+16%，在<@ba.kw>生息演算</>中，部署时获得宝箱处的视野，每次攻击对所有近卫干员所在位置产生相当于攻击力50%的余震，主目标为资源时，对所有相连的资源也产生一次相当于攻击力50%的余震（最多触发10次）",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "弥漫莲香",
+                                    "blackboard": {
+                                        "atk": 0.16
+                                    },
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "在场时，所有【近卫】干员的攻击力+20%<@ba.talpu>（+4%）</>，在<@ba.kw>生息演算</>中，部署时获得宝箱处的视野，每次攻击对所有近卫干员所在位置产生相当于攻击力50%的余震，主目标为资源时，对所有相连的资源也产生一次相当于攻击力50%的余震（最多触发10次）",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 2,
+                                    "prefabKey": "2",
+                                    "name": "弥漫莲香",
+                                    "blackboard": {
+                                        "atk": 0.2
+                                    },
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    },
+                    {
+                        "resKey": "pepe_equip_2_3_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "sandbox",
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10",
+                                    "blackboard": {
+                                        "damage_scale": 0.5,
+                                        "range_radius": 1.5,
+                                        "max_target": 10.0,
+                                        "interval": 0.2
+                                    },
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    },
+                    {
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "在场时，所有【近卫】干员的攻击力+16%，在<@ba.kw>生息演算</>中，部署时获得宝箱处的视野，每次攻击对所有近卫干员所在位置产生相当于攻击力50%的余震，主目标为资源时，对所有相连的资源也产生一次相当于攻击力50%的余震（最多触发10次）",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "#",
+                                    "name": "弥漫莲香",
+                                    "blackboard": {},
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "在场时，所有【近卫】干员的攻击力+20%<@ba.talpu>（+4%）</>，在<@ba.kw>生息演算</>中，部署时获得宝箱处的视野，每次攻击对所有近卫干员所在位置产生相当于攻击力50%的余震，主目标为资源时，对所有相连的资源也产生一次相当于攻击力50%的余震（最多触发10次）",
+                                    "talentIndex": 1,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 2,
+                                    "prefabKey": "#",
+                                    "name": "弥漫莲香",
+                                    "blackboard": {},
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {}
+                    }
+                ],
+                "attributeBlackboard": {
+                    "max_hp": 350.0,
+                    "atk": 85.0,
+                    "def": 135.0
                 },
                 "tokenAttributeBlackboard": {}
             }
