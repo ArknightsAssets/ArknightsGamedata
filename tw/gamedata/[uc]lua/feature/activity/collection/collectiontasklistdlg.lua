@@ -51,6 +51,7 @@ function CollectionTaskListDlg:OnInit()
   };
 
   self.m_adapter = self:CreateCustomComponent(UIVirtualViewAdapter, self, self._recycleGroup, viewDefineTable,self._RefreshListItem)
+  CS.Torappu.Lua.LuaUIUtil.BindBackPressToButton(self._closeBtn);
 end
 
 function CollectionTaskListDlg:OnClose()
@@ -67,6 +68,15 @@ function CollectionTaskListDlg:Refresh(activityId, close)
 
   self.m_actCfg = CollectionActModel.me:GetActCfg(activityId);
 
+  local suc, itemsInCfg = CS.Torappu.ActivityDB.data.activity.defaultCollectionData:TryGetValue(activityId);
+  if not suc then
+    return;
+  end
+  self.m_constDailyTaskItemOpenDayTs = 0;
+  if itemsInCfg.consts ~= nil then
+    self.m_constDailyTaskItemOpenDayTs = itemsInCfg.consts.dailyTaskStartTime;
+  end
+
   
   local missionGrp = CollectionActModel.me:GetMissionGroup(activityId);
   if missionGrp == nil then
@@ -74,7 +84,7 @@ function CollectionTaskListDlg:Refresh(activityId, close)
   end
 
   
-  local csMissionList = CS.Torappu.Lua.Util.GetActMissionListByActId(activityId);
+  local csMissionList = CS.Torappu.Lua.Util.GenerateActMissionListByActId(activityId);
   if csMissionList == nil then
     return;
   end
@@ -152,7 +162,7 @@ function CollectionTaskListDlg:_RefreshListItem(viewType, widget, model)
   elseif viewType == CollectionTaskItemType.DAILTY_ITEM then
     
     local dailyItem = widget;
-    dailyItem:Refresh(self.m_activityId, self.m_actCfg);
+    dailyItem:Refresh(self.m_activityId, self.m_actCfg, self.m_constDailyTaskItemOpenDayTs);
     return;
   elseif viewType == CollectionTaskItemType.TIMED_TITLE then
     local endTime = CS.Torappu.DateTimeUtil.TimeStampToDateTime(CollectionActModel.me:FindBasicInfo(self.m_activityId).endTime);
