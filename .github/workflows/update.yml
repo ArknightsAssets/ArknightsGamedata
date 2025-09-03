@@ -35,6 +35,8 @@ jobs:
             echo $version > fbs_version.txt
       - name: Format files
         run: find **/gamedata/excel/*.json -exec python -m json.tool {} {} --no-ensure-ascii \;
+      - name: Format enemy database
+        run: find **/gamedata/levels/enemydata/enemy_database.json -exec python -m json.tool {} {} --no-ensure-ascii \;
       - name: Check changed directories
         run: git add . && echo "CHANGED_SERVERS=$(git status --porcelain | grep -o -E 'en/|jp/|kr/|cn/|tw/' | sed 's/\/$//' | sort -u | tr '\n' ',' | sed 's/,$//')" >> $GITHUB_ENV
 
