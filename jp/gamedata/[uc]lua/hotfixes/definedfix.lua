@@ -6,7 +6,8 @@ local list =
   "HotFixes/BattleControllerHotfixer",
   "HotFixes/StageZoneSelectStateHotfixer",
   "HotFixes/UICommentedTextHotfixer",
-  "HotFixes/EnemyDuelBattleFinishRankItemViewHotfixer"
+  "HotFixes/EnemyDuelBattleFinishRankItemViewHotfixer",
+  "HotFixes/MedalGroupItemViewHotfixer"
 };
 
 return list;
