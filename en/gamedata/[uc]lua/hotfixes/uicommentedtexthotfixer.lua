@@ -45,7 +45,8 @@ end
 
 local function _FixRuntimeAtlasManagerOnInit(self)
   self:OnInit()
-  if _CheckIfSimulator() then
+  local platform = CS.Torappu.Network.NetworkUtil.GetPlatformKey():GetHashCode()
+  if platform == 1 then
     self._enableRuntimeAtlas = false
   end
 end
