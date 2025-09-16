@@ -1,0 +1,578 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Delay(time=1)]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_dishes")]
+[Delay(time=1)]
+[MusicVolume(volume=0.3, fadetime=3)]
+[StopSound(channel="bgs", fadetime=2)]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0.6)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=1)]
+[Delay(time=2)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=2, block=true)]
+[Subtitle(text="老闆，結帳。", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[name="廚房傳來的聲音"]忙著呢！
+[name="廚房傳來的聲音"]真是的，不就是一碗素麵，算我請你的！
+[dialog]
+[Subtitle(text="那不行……", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[PlaySound(key="$d_avg_coin")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_chairrub")]
+[Subtitle(text="錢放在桌子上了，走了。", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[name="廚房傳來的聲音"]慢走，再來啊！
+[dialog]
+[Delay(time=1)]
+[Subtitle(text="這麼大一個年輕小夥子，午飯就吃這麼一點，像什麼話？", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="五色令人目盲，五味令人口爽，口腹之欲不可放縱。", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="先生不也只吃這一碗素麵？", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="哼，我這是第五碗。", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="我和你可不一樣，我就是喜歡這種口味清爽的。我吃飯從來不讓人放調味料，什麼鹽醋辣椒、蔥蒜香料，通通不放。", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="吃東西就要吃食材原本的味道，食材要是有半點不新鮮，也騙不過我的舌頭。", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="看這官服，先生是大理寺的少卿？那先生的舌頭也是天下第一等的判官了。", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="哈哈哈，你倒是會說話。", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="下回要是碰上什麼冤枉事，來大理寺找我。我叫虞澄。", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="……不必勞煩大人，在下區區一介禮部奉禮郎，不會有什麼冤枉事。", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle(text="沒有事，請你吃麵也成。小夥子，你叫什麼？", x=600, y=500, alignment="left", size=24, delay=0.04, width=600)]
+[Subtitle(text="……在下顧筌。", x=100, y=300, alignment="left", size=24, delay=0.04, width=700)]
+[Subtitle]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[Delay(time=1)]
+[playMusic(intro="$path_intro",key="$path_loop", volume=0.6)]
+[playsound(key="$dooropenquite")]
+[charslot(slot="r",name="avg_npc_1639_1#1$1",duration=0.5,posfrom = "50,0", posto = "50,0")]
+[delay(time=1)]
+[name="飯館的熟客"]老姜，點菜！
+[dialog]
+[SoundVolume(volume=0.2, channel="bgs",fadetime=2)]
+[PlaySound(key="$d_avg_walkfast", volume=1)]
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",posfrom = "-200,0", posto = "0,0",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="老姜"]來啦來啦！老劉，今天想吃什麼？
+[charslot(slot = "r",focus="r")]
+[name="飯館的熟客"]老規矩，今天有什麼新鮮菜色啊？
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="老姜"]現在正是吃柿子的季節，今天還有新到的板栗，那叫一個生吃爽脆，熟食綿密香甜……那就幫您上一道桂香柿子餅、一道板栗燉腩肉？
+[charslot(slot = "r",focus="r")]
+[name="飯館的熟客"]講究。行，就聽你安排。
+[name="飯館的熟客"]說起來，之前幫你們店裡修的這個招牌……
+[charslot(slot = "left", name = "avg_npc_1621_1#5$1",focus="l")]
+[name="老姜"]放心，我們大廚說過的，這頓不記您的帳。
+[name="老姜"]這些年店裡的木匠活都多虧了您照應，請您吃幾頓飯，不算什麼。
+[charslot(slot = "r",focus="r")]
+[name="飯館的熟客"]哈哈哈……厚道！
+[name="飯館的熟客"]別說，他這手藝，的確可以稱得上天下第一了。出了這個門，別的館子都吃不到這一口。
+[name="飯館的熟客"]之前送他那個木牌小掛飾，我可是真心的，他還害羞不肯收。
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="老姜"]哎喲喲……可真是折煞人了。
+[name="老姜"]我們就是一尋常小飯館，多虧各位關照才能開下去，就別提什麼“天下第一”了。
+[charslot(slot = "r",focus="r")]
+[name="飯館的熟客"]對了，你們小大廚人呢？今天沒見他坐在外面陪客人聊天啊。
+[charslot(slot = "left", name = "avg_npc_1621_1#8$1",focus="l")]
+[name="老姜"]別提了，今天一早就在那裡鬧彆扭呢。
+[name="老姜"]這陣子不是有一個蠻出名的美食評論家，要藉最近百珍宴的風頭，訪遍全城不為人知的小店，還要在報刊上逐一評論打分嗎？
+[charslot(slot = "r",focus="r")]
+[name="飯館的熟客"]我知道我知道，聽說她發表文章，把百灶數得上號的飯館酒樓全都評了一遍，還寫了本書，號稱要收集百灶古往今來所有優秀菜譜。
+[name="飯館的熟客"]好像叫什麼“行箸散人”？
+[name="飯館的熟客"]這位志氣真是不小，百灶有多少家酒樓，這些酒樓又做了多少年的菜。寫書的這位肚子裡不僅要有墨水，還要裝得下不少美食啊。
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="老姜"]可不是嗎……但聽說她在寫的那本《百灶食珍錄》，那四大名樓的主廚看了都讚不絕口。她寫的評論，那些名廚也沒有不心服口服的。
+[name="老姜"]小道消息說，那位高人今天就要逛到我們這一片了。
+[charslot(slot = "r",focus="r")]
+[name="飯館的熟客"]這又何必鬧彆扭呢？就他的手藝，再厲害的評論家還能挑出一個不是？
+[charslot(slot = "left", name = "avg_npc_1621_1#1$1",focus="l")]
+[name="老姜"]他那脾氣您又不是不知道，不管好評差評，就是聽不得別人對他的菜說三道四。
+[charslot(slot = "left", name = "avg_npc_1621_1#3$1",focus="l")]
+[name="老姜"]（小聲）說著不願意和別人在廚藝上爭個誰先誰後，還不是怕有人的手藝比他的更受歡迎——
+[dialog]
+[PlaySound(key="$d_avg_steelbasin", volume=0.5)]
+[Delay(time=0.5)]
+[charslot(slot = "l", action="jump",posto = "0,0",power=15,times=1,duration = 0.3)]
+[charslot(slot = "left", name = "avg_npc_1621_1#9$1",focus="all")]
+[Delay(time=0.8)]
+[charslot(slot = "left", name = "avg_npc_1621_1#8$1",focus="l")]
+[name="老姜"]……不說了不說了！
+[charslot(slot = "r",focus="r")]
+[name="飯館的熟客"]哈哈，我倒是怕這家小飯館變得廣為人知，我們這些老熟客就都排不上隊囉。
+[charslot(slot = "left", name = "avg_npc_1621_1#4$1",focus="l")]
+[name="老姜"]借您吉言吧——哎呀，又來客人了。
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[PlaySound(key="$d_gen_walk_n", volume=0.6,delay=0.5)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",duration = 1)]
+[delay(time=0.5)]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",duration = 1)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="飯館的熟客"]喲，二位也是這個點才來吃飯啊。
+[name="飯館的熟客"]這小飯館開在大理寺對門，倒是變成你們大理寺的餐廳了。
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲憊的大理寺官員"]要不是為了這一口，我早就辭職回老家種地了！
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="嚴肅的大理寺官員"]別亂說，我輩職責在身，辭職哪是那麼隨便的事？
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="飯館的熟客"]這是怎麼了，一個個的都板著張臉？
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲憊的大理寺官員"]還不是為了百珍宴，每年這個時候，大理寺上下都忙得要死。這一個月我就沒睡過一個好覺，這樣下去誰受得了？
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="嚴肅的大理寺官員"]小心一點總沒錯的……現在多少大人都齊聚百灶，出了一星半點的閃失，誰擔待得起？
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲憊的大理寺官員"]唉，就算再怎麼小心，越是這種要緊時候，麻煩事就越多。
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="飯館的熟客"]欸欸，上了飯桌不許說工作，要說也只許說能下飯的。
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲憊的大理寺官員"]呿，搞得好像誰樂意說一樣。
+[name="疲憊的大理寺官員"]但是話說回來……聽說了嗎，鼎豐樓的案子？
+[stopmusic(fadetime=2)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="嚴肅的大理寺官員"]什麼案子？有事說事，幹嘛搞得神神秘秘的。
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲憊的大理寺官員"]不是我故弄玄虛，是這事，它真的邪門啊。
+[StopSound(channel="bgs", fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=0.7)]
+[Background(image="58_g10_restaurantkitchen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_makesoup", loop=true, channel="a",volume=0)]
+[SoundVolume( channel="a",fadetime=2)]
+[playsound(key="$d_avg_cutfast", channel="c",delay=2,volume=0.5)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[delay(time=1)]
+[playsound(key="$d_avg_cooksizzle_loop", loop=true, channel="b",volume=0)]
+[SoundVolume(volume=0.6, channel="b",fadetime=2)]
+[name="疲憊的大理寺官員"]上個月十五號那天，鼎豐樓正是忙得透不過氣的時候。那一百多號灶台，從早到晚連軸轉。
+[StopSound(channel="a", fadetime=2)]
+[StopSound(channel="b", fadetime=2)]
+[playsound(key="$d_avg_firemagic")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=20, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.2, r=0.3, g=0, b=0, fadetime=1, block=false)]
+[name="疲憊的大理寺官員"]結果到晚上的時候，有一個灶台突然起了大火，而且怎麼都撲不滅！四五個廚師都受了傷呢！
+[name="嚴肅的大理寺官員"]是源石能源管道出了故障？這算什麼新奇事？
+[name="疲憊的大理寺官員"]可是鑑定科的調查員去現場調查過，他們也分不清那能源管道到底有沒有被人動過手腳……
+[name="疲憊的大理寺官員"]進得了廚房的有幾百號人，誰知道是不是有人做了什麼……
+[name="疲憊的大理寺官員"]要知道，那鼎豐樓可是百灶第一名樓，百珍宴的承辦方。
+[name="疲憊的大理寺官員"]而且這事怪就怪在，事發偏偏在月中十五號的晚上，那起火的又偏偏是第一百號灶台，而且有人說，分明從那火中看到了一個人影……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$path_intro",key="$path_loop", volume=0.6)]
+[delay(time=0.1)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="嚴肅的大理寺官員"]打住打住，說案子就說案子，不要講這些無中生有的東西。
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲憊的大理寺官員"]騙你幹嘛！現場好多人都看到了！
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="飯館的熟客"]哦，你們大理寺的工作很刺激嘛，聽你們說起查案子簡直像是在聽說書似的。
+[charslot]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="l")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="嚴肅的大理寺官員"]哪有的事，我們又不是茶館裡的說書人。但凡一個案子拖了幾週沒有進展，每天晚上睡覺都會做惡夢。
+[name="嚴肅的大理寺官員"]唉……不過說起來，其實我這也聽說了一件奇怪的案子。
+[name="嚴肅的大理寺官員"]沒有什麼怪力亂神，就是離奇又離譜。
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="飯館的熟客"]還有更精彩的故事？快說來聽聽。
+[charslot]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="l")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="嚴肅的大理寺官員"]這種事……實在不好隨意開口的。
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲憊的大理寺官員"]哪有話說一半的，你要急死人啊！
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[stopmusic(fadetime=2)]
+[StopSound(channel="bgs", fadetime=2)]
+[name="嚴肅的大理寺官員"]事關重大，這案件發生的地方，實在不一般——
+[name="嚴肅的大理寺官員"]前任禮部尚書，寧大人的府上……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_indoor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[delay(time=1)]
+[name="嚴肅的大理寺官員"]這是我師父前陣子在跟的一件案子，我也只是聽了個大概，具體的情況他對我都是三緘其口。
+[name="嚴肅的大理寺官員"]寧大人已經退休數年，最近準備離京還鄉，搬回江南故居了。可就在幾天前，寧府遭了一個奇怪的賊人……
+[name="嚴肅的大理寺官員"]府上沒丟東西，也沒人受傷。但是一間客房裡掛著的一幅仙翁圖，被人用融化的蜜糖，在畫上那仙翁嘴巴上塗了一道。
+[name="嚴肅的大理寺官員"]按理說，那寧府也算戒備森嚴，但那賊人就彷彿對寧府的布置瞭如指掌……
+[name="嚴肅的大理寺官員"]而且，那賊人不知該說是武藝高強，還是經驗豐富，現場什麼痕跡都找不到，我師父他們現在正為這案子忙得焦頭爛額呢。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1")]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.1)]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲憊的大理寺官員"]蜜糖封口？那不是送灶神的傳說嗎？讓灶神多言好事，少說壞事……這賊人不圖錢財，偏偏來這一齣，難道別有深意？
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="嚴肅的大理寺官員"]能有什麼深意？寧尚書為官清白，他在禮部幾十年的功績，朝堂上下也是有口皆碑，誰會和他過不去？
+[name="嚴肅的大理寺官員"]不管怎麼說，那寧尚書是朝廷重臣，他府上遭人擅闖已是足夠嚴重的事了，更何況是在最近這個節骨眼上……
+[name="嚴肅的大理寺官員"]唉，怕什麼來什麼……
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="飯館的熟客"]對了對了！我想起來了！
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲憊的大理寺官員"]嚇我一跳，你又想起什麼了？
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="飯館的熟客"]聽你們說得熱鬧，我突然想起來，前幾天就在這飯館裡，我也撞見了一件怪事。
+[name="飯館的熟客"]就在三天前，我在這裡吃飯的時候，店裡來了一位怪人。
+[name="飯館的熟客"]看起來一把年紀，身上還穿著囚服，像是剛從大理寺放出來的。
+[name="飯館的熟客"]大搖大擺地在店裡坐下，什麼菜都不點，就要了二十碗白飯。好傢伙，一口氣吃了個乾乾淨淨……
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[dialog]
+[charslot(slot="m",name="avg_npc_1621_1#9$1",duration=0.5)]
+[delay(time=1)]
+[name="老姜"]客人……您就吃這個？
+[name="老姜"]只吃米飯也噎得慌，要不幫您上兩道小菜，再來碗湯？就算送您的，不收錢。
+[charslot]
+[name="古怪的食客"]用不著。
+[name="古怪的食客"]這大荒城的稻米，清清白白，本來就是世上絕味，還要什麼下飯菜。
+[name="古怪的食客"]我吃得舒心，不差你們的錢，夥計，結帳！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.1)]
+[name="飯館的熟客"]那怪人吃完飯，抱著二十個空碗，從這飯館走了出去，一直走到對面大理寺門口。他把那疊碗往大理寺的門口一摔，大聲喊——
+[dialog]
+[delay(time=0.5)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="飯館的熟客"]“卷牘庫的火就是我放的——”
+[name="飯館的熟客"]唉呀，看我這記性，這大理寺的事，你們肯定知道得比我清楚——那人到底是誰？這事後來怎麼樣了？
+[charslot]
+[stopmusic(fadetime=2)]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲憊的大理寺官員"]……
+[name="疲憊的大理寺官員"]就算只是在飯桌上閒聊，這事似乎也不能說啊……
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="嚴肅的大理寺官員"]快別說了，鄰桌還有外人呢！
+[charslot]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="飯館的熟客"]沒關係，我剛聽她講維多利亞語來著，應該是外國遊客，聽不懂啦。
+[dialog]
+[charslot]
+[playMusic(key="$comedy_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1",duration=1.5)]
+[delay(time=2)]
+[name="維多利亞遊客？"]（純正的炎國話）老闆，點餐！
+[charslot]
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="r")]
+[charslot(slot = "right", name = "avg_npc_1630_1#1$1",focus="r")]
+[name="疲憊的大理寺官員"]……
+[charslot(slot = "left", name = "avg_npc_1632_1#1$1",focus="l")]
+[name="嚴肅的大理寺官員"]……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g13_yuskitchen",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1621_1#2$1",duration=0.5)]
+[delay(time=1)]
+[name="老姜"]“紅玉腐乳”、“麻辣豆腐”、“殼黃軟玉”、“文思秋菊”、“雕欄玉砌”……
+[name="老姜"]那客人點的……就是這些。
+[charslot(slot = "m", focus = "n")]
+[name="不悅的聲音"]……
+[name="不悅的聲音"]來踢館的？
+[charslot(slot="m",name="avg_npc_1621_1#3$1")]
+[name="老姜"]呃……那客人看起來很有禮貌，順著菜單就點了這幾道菜，也不像是同行來找碴……
+[charslot(slot="m",name="avg_npc_1621_1#9$1")]
+[name="老姜"]你說會不會……她就是那位寫《百灶食珍錄》的美食評論家？
+[charslot(slot = "m", focus = "n")]
+[name="不悅的聲音"]哪門子美食家評論別人的手藝就點五六盤豆腐？！
+[charslot(slot="m",name="avg_npc_1621_1#10$1")]
+[name="老姜"]大廚……冷靜，冷靜。
+[name="老姜"]我們店裡的情況你又不是不知道，能不能靠口碑吸引一批遊客就看這次了……
+[name="老姜"]您辛苦受累……這幾道菜千萬千萬不能馬虎了……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_chairrub")]
+[playsound(key="$d_avg_plateplace",delay=1,channel="1")]
+遠道而來的維多利亞人拿來一張椅子和兩壺酒，在兩位大理寺官員桌邊坐下。
+[playsound(key="$pourwater",channel="2")]
+她很自然地為每人倒上一杯，濃郁香甜的氣息瞬間溢滿了桌面。
+[dialog]
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1",duration=0.5)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="維多利亞遊客？"]別客氣別客氣，這酒就得大家一起喝才有趣。
+[name="維多利亞遊客？"]欸欸，後來呢？那個摔碗砸門的人，後來怎麼樣了？
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="嚴肅的大理寺官員"]這位姑娘，你剛剛聽到的都只是飯桌上的閒談妄言……
+[name="嚴肅的大理寺官員"]懇請姑娘萬萬不要到處宣揚……
+[charslot(slot="m",name="avg_1040_blaze2_1#11$1")]
+[name="維多利亞遊客？"]欸？這種情況一般不都會有“請聽下回分解”之類的嗎？
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="嚴肅的大理寺官員"]我們是大理寺的官員，並非茶館說書先生……
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="維多利亞遊客？"]真巧，我有一個朋友，也是大理寺的。
+[name="維多利亞遊客？"]我還以為大理寺的人，個個都是板著張臉一絲不苟、什麼話都不好好說的樣子呢。
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="嚴肅的大理寺官員"]咳咳……
+[name="嚴肅的大理寺官員"]這位維多利亞來的朋友……是一個人來炎國旅遊？
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="煌"]別這麼客氣，我有炎國名字，叫煌。
+[charslot(slot="m",name="avg_1040_blaze2_1#4$1")]
+[name="煌"]旅遊嘛……哈哈，也算是吧。
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="飯館的熟客"]炎國話說得這麼流利的維多利亞人倒是少見，姑娘在炎國生活過？
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="煌"]哈哈，那倒是沒有，不過我也不完全算維多利亞人啦。我爸就是炎——
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[MusicVolume(volume=0.4, fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_corridor_4",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot(slot = "left", name = "char_017_homura_3#4",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_039_1",duration = 1)]
+[delay(time=1.5)]
+[charslot(slot = "left", name = "char_017_homura_3#4",focus="l")]
+[name="煌"]約法三章？
+[charslot(slot = "right",focus="r")]
+[name="驚蟄"]你要是做不到，我便無論如何也不能帶你回百灶了。
+[charslot(slot = "left", name = "char_017_homura_3#4",focus="l")]
+[name="煌"]好好好，有話快說。
+[charslot(slot = "right",focus="r")]
+[name="驚蟄"]第一，小心陌生人，不要擅自進行不必要的行動。
+[charslot(slot = "left", name = "char_017_homura_3#10",focus="l")]
+[name="煌"]你當我是三歲小孩啊？知道了，還有呢？
+[charslot(slot = "right",focus="r")]
+[name="驚蟄"]第二，絕對不要暴露自己是感染者……
+[charslot(slot = "left", name = "char_017_homura_3#5",focus="l")]
+[name="煌"]……這個也不用你廢話，我知道該怎麼做。
+[charslot(slot = "right",focus="r")]
+[name="驚蟄"]第三……
+[name="驚蟄"]絕對，絕對不要對外人說起與你父親相關的事。
+[charslot(slot = "left", name = "char_017_homura_3#4",focus="l")]
+[name="煌"]……好。
+[charslot(slot = "right",focus="r")]
+[name="驚蟄"]煌，在這一系列案子裡，你是關鍵的證人，也是至關重要的線索。
+[name="驚蟄"]我需要你配合，也會確保你的安全。
+[Dialog]
+[MusicVolume(volume=0.6, fadetime=3)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[playsound(key="$d_avg_livelyrestaurant", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.3, channel="bgs",fadetime=2)]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="飯館的熟客"]你爸？
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="煌"]沒什麼沒什麼，我這趟就是來找親戚，順便旅遊，哈哈。
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="飯館的熟客"]不過姑娘你趕上了個好時候。臨近百珍宴，現在正是百灶的各個飯館爭相鬥技的時候，趕在這個時候來旅遊，那是真的有口福囉。
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="煌"]真的嗎？那有沒有什麼推薦的百灶特色菜，或者什麼推薦的飯館？
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="飯館的熟客"]這你就有所不知了吧，百灶沒什麼特色菜，但“吃”本身就是百灶的特色。
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="煌"]哦，怪不得城市名字裡面就有一個“灶”字。
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="飯館的熟客"]哈哈，民以食為天。百灶之所以叫百灶，是當初那一位真龍為百灶定名時，取了“照拂天下煙火”的意思。
+[name="飯館的熟客"]後來又有人提出，“食不厭精，膾不厭細”。飲食不僅是滿足口腹之欲，也是養身修心之道。
+[name="飯館的熟客"]每個時令有每個時令的菜，每個地區有每個地區的菜，吃到嘴裡的是天地精華，做飯也講求天人感應——這裡面學問可深著呢。
+[charslot(slot="m",name="avg_npc_1630_1#1$1")]
+[name="疲憊的大理寺官員"]你就別騙人家外國遊客了，吃飯吃飯。
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_walkfast")]
+[charslot(slot="m",name="avg_npc_1621_1#4$1",duration=1)]
+[delay(time=1.5)]
+[name="老姜"]菜來囉——
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect(name="$eb_foodaroma_01",layer=1)]
+[curtain(direction = 2,fillfrom = 1,fillto = 0.05, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 1,fillto = 0.45, fadetime=0.1)]
+[Image(image="58_i04_3",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="飯館的熟客"]這位客人……是對豆腐情有獨鍾？
+[name="煌"]欸？這些菜名字都不一樣，竟然全都是豆腐嗎？
+[name="煌"]我也不知道……炎國的豆腐有這麼多種做法啊……
+[dialog]
+[curtain(direction = 2,fillfrom = 0.05,fillto = 0, fadetime=2)]
+[curtain(direction = 6,fillfrom = 0.45,fillto = 0, fadetime=2)]
+[delay(time=2)]
+[Image(image="58_i04_1",screenadapt="coverall",fadetime=1)]
+[delay(time=1)]
+[name="煌"]沒事沒事，大家分一分，一起吃才熱鬧嘛——這個應該不違背“炎國餐桌禮儀”吧？
+[name="飯館的熟客"]哈哈……倒也無妨。那我們也不客氣了。
+[dialog]
+[PlaySound(key="$d_avg_dishes")]
+[delay(time=1.5)]
+[name="煌"]奇怪，這道甜點也是我點的嗎？
+[dialog]
+[curtain(direction = 2,fillfrom = 0,fillto = 0.35, fadetime=1)]
+[curtain(direction = 6,fillfrom = 0,fillto = 0.15, fadetime=1)]
+[delay(time=1.5)]
+[name="文雅的女子"]……
+[dialog]
+[Image(image="58_i04_2",screenadapt="coverall",fadetime=0.8)]
+[delay(time=1.2)]
+[name="文雅的女子"]嗯……？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[bgeffect]
+[curtain]
+[delay(time=1)]
+[Background(image="58_g13_yuskitchen",screenadapt="coverall")]
+[charslot(slot="m",name="avg_npc_1621_1#1$1",focus="n")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="不悅的聲音"]菜上了嗎？那人什麼反應？
+[charslot(slot="m",name="avg_npc_1621_1#3$1")]
+[name="老姜"]呃……那點菜的客人沒怎麼吃，都分給鄰座的客人了。
+[dialog]
+[charslot(slot="m",focus="n")]
+[playsound(key="$d_avg_broadsword_polish", loop=true, channel="c")]
+[delay(time=1)]
+[StopSound(channel="c", fadetime=2)]
+[name="不悅的聲音"]呿……
+[charslot(slot="m",name="avg_npc_1621_1#8$1")]
+[name="老姜"]冷靜……冷靜……說不定這飯館的用餐氛圍，也是考察的一部分……
+[name="老姜"]您先別急，我們靜觀其變……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[Background(image="58_g1_yusrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="煌"]說了半天，你們說的這個百珍宴，到底是什麼東西？
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="嚴肅的大理寺官員"]姑娘雖然說得一口流利的炎國話，但是對炎國的許多傳統還是不甚瞭解啊。
+[name="嚴肅的大理寺官員"]這百珍宴，就是每年中秋，炎國的真龍宴請百官，共議國事的日子。
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="煌"]奇怪，朝廷開會，為什麼名字取得像是美食節一樣？
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="嚴肅的大理寺官員"]這百珍宴的由來，也算是一樁美談了。
+[name="嚴肅的大理寺官員"]在很多年以前，當時的真龍舉辦壽宴，百官獻禮。獻上的禮物有來自炎國各地各式各樣的奇珍異寶，不一而足。
+[name="嚴肅的大理寺官員"]但是其中有一位年輕的戶部侍郎，為真龍獻上了一道菜，名叫“珍珠翡翠白玉湯”。
+[name="嚴肅的大理寺官員"]真龍揭開蓋子一看，發現碗中不過是清水泡著幾片爛菜葉、幾粒糙米。
+[name="嚴肅的大理寺官員"]真龍大怒，問戶部侍郎這是何意。那人答道，姜齊水患，顆粒難收，碗裡就是當地災民吃的食物。
+[charslot(slot="m",name="avg_1040_blaze2_1#5$1")]
+[name="煌"]敢於仗義執言，這才是官員應該做的嘛。
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="煌"]不過敢在真龍過生日的時候用這種方式跟真龍講話，這個人膽子也真是大啊。
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="嚴肅的大理寺官員"]沒錯，不過真龍沒有懲罰這位官員，反而大力表彰了他，責令文武百官效仿他敢於進諫的態度。
+[name="嚴肅的大理寺官員"]真龍勒令削減了朝廷各項用度，著力賑濟救災，而後興修河堤，姜齊的水患因此得以解決。
+[charslot(slot="m",name="avg_npc_1630_1#1$1")]
+[name="疲憊的大理寺官員"]是啊，結果剛到第二年，就有知府有樣學樣，向真龍獻了道“福祿羹”，食材那叫一個奢華，就為向真龍稟報，自己治下城市鱗業豐收。
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="嚴肅的大理寺官員"]……咳。
+[name="嚴肅的大理寺官員"]總之，借宴席議國事從此變成了一項傳統，就叫“百珍宴”，定在每年中秋節舉辦。
+[name="嚴肅的大理寺官員"]屆時全城百姓共襄盛舉，百珍宴上流傳出來的菜單也會被各大酒樓爭相模仿，也算是與民同樂了。
+[charslot(slot="m",name="avg_1040_blaze2_1#4$1")]
+[name="煌"]哦……炎國人對吃的還真是講究啊。
+[charslot(slot="m",name="avg_1040_blaze2_1#1$1")]
+[name="煌"]這家小飯館也是，看起來平平無奇，做的每道菜都這麼好吃！豆腐都能做出這麼多花樣，真了不起。
+[charslot(slot="m",name="avg_1040_blaze2_1#2$1")]
+[name="煌"]不過這一道糕點……和我以前吃過的不一樣，味道也不如我吃過的好吃，感覺應該是不太正宗吧。
+[dialog]
+[stopmusic(fadetime=1)]
+[StopSound(channel="bgs", fadetime=2)]
+[charslot(slot="m",name="avg_npc_1639_1#1$1")]
+[name="飯館的熟客"]……
+[charslot(slot="m",name="avg_npc_1632_1#1$1")]
+[name="嚴肅的大理寺官員"]……
+[charslot(slot="m",name="avg_npc_1630_1#1$1")]
+[name="疲憊的大理寺官員"]……
+[charslot(slot="m",name="avg_1040_blaze2_1#2$1")]
+[name="煌"]嗯？怎麼都不說話了？
+[dialog]
+[charslot]
+[CameraShake(duration=2, xstrength=15, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[playsound(key="$rungeneral", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_2026_yu_1#16$1",duration=0.8)]
+[delay(time=1)]
+[StopSound(channel="bgs", fadetime=0.5)]
+[name="暴躁的少年"]就是你？
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_2026_yu_1#15$1")]
+[name="暴躁的少年"]就是你說我做的菜味道不對？
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]
