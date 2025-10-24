@@ -1,0 +1,26 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 要塞教学c1
+[Battle.lockFunction(mask="PAUSE_BUTTON_INTERACT")]
+[Battle.Pause]
+[CooperateBattle.CameraFocusTo(offsetX=16, offsetY=5, scale=1.2, time=1.5)]
+[Delay(time=1)]
+[Tutorial(focusX=160, focusY=185, focusWidth=210, focusHeight=210, anchor="Center", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_stward", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+除普通的建築工之外，每個波次開始時可能會出現被困在瓦礫堆中等待解救的<@tu.kw>高級設施建築工</>
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=4)]
+[Battle.Pause]
+[Tutorial(dialogHead="$avatar_stward")]擊倒周圍負責看守的敵人，可以解救被困的高級建築工。
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=2)]
+[Battle.Pause]
+[CooperateBattle.CameraFocusTo(offsetX=2.5, offsetY=5.5, scale=0.8, time=0.5)]
+[Delay(time=1)]
+[CooperateBattle.LockCamera(enable=false)]
+[Tutorial(dialogHead="$avatar_stward")]部署高級建築工繼續建設<@tu.kw>I級</>設施，可以使其<@tu.kw>升級</>提供更強的效果。
+[Tutorial(dialogHead="$avatar_stward")]比如<@tu.kw>便攜健身架</>升至III級後，可以提升雙方幹員的攻擊力和技力回復速度。
+[CooperateBattle.CameraFocusTo(offsetX=6, offsetY=4, scale=1, time=1)]
+[Delay(time=1)]
+[Tutorial(dialogHead="$avatar_stward")]讓我們迎接敵人的最後一波進攻吧！
+[CooperateBattle.LockCamera(enable=true)]
+[Battle.unlockFunction(mask="PAUSE_BUTTON_INTERACT")]
