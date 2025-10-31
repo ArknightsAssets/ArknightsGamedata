@@ -1,0 +1,335 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Image(image="avg_ac8mi_Pre",screenadapt="coverall", fadetime=0)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[Delay(time=2)]
+這幅畫面明明就在你們的眼前，但卻又無論如何也無法接近。
+[name="阿米婭"]博士，和那個人交談的人……是你？
+[dialog]
+[Decision(options="……;無法確定。", values="1;2")]
+[Predicate(references="1;2")]
+[name="普瑞賽斯"]（未知語言）我並不認為僅靠我自己就能創造出一門足以闡述終極答案的語言。
+[name="普瑞賽斯"]（未知語言）至少，同胞們共享的各領域最頂尖研究成果已經為我搭建了繼續深入的平台。
+[name="預言家"]（未知語言）哪怕最後還是一無所獲？
+[name="普瑞賽斯"]（未知語言）嗯，反正又不是第一次了。
+[name="普瑞賽斯"]（未知語言）在安靜等待黑暗吞噬我們的這段日子裡，我們似乎也沒有更好的辦法了不是嗎？
+[name="普瑞賽斯"]（未知語言）況且，我確定你不會拒絕我，{@nickname}。
+[name="預言家"]……
+[name="預言家"]（未知語言）你準備從什麼地方開始研究？
+普瑞賽斯沒有回答，只是看著天邊隱隱的朝霞。而她身旁的那個人也並未打擾她。
+兩人只是那樣站在甲板上。
+你看著她的背影，下意識地告訴自己：“她又在思考了”——
+[dialog]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+為什麼你會突然這樣想？
+[name="阿米婭"]博士，你怎麼了？
+[dialog]
+[Decision(options="沒什麼，只是走神。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[Decision(options="我想這裡沒有更重要的線索了。", values="1")]
+[Predicate(references="1")]
+[name="阿米婭"]凱爾希醫生在意的資訊並不在這裡？
+[dialog]
+[Decision(options="這應當是源石誕生之前的歷史碎片。", values="1")]
+[Predicate(references="1")]
+[name="阿米婭"]……？！
+[dialog]
+[Decision(options="是結合我在內化宇宙中的經歷作出的推測。", values="1")]
+[Predicate(references="1")]
+[name="阿米婭"]你的意思是，我們現在所捕獲到的這個畫面資訊是因為博士你……
+[dialog]
+[Decision(options="恐怕不只這個。", values="1")]
+[Predicate(references="1")]
+[name="阿米婭"]——那艘飄浮在空中的巨大艦船和碎裂的壯觀球體難道也……
+[dialog]
+[Decision(options="我並不清楚自己和這些資訊的關聯是什麼。", values="1")]
+[Predicate(references="1")]
+[name="阿米婭"]我們總會弄清楚的，博士。
+[name="阿米婭"]但既然你已經確認這裡不是我們的重點，那就繼續前進吧。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[Image(image="60_i04",screenadapt="coverall")]
+[ImageTween( xScaleFrom=1, yScaleFrom=1, xScaleTo=1.2, yScaleTo=1.2,duration=100)]
+[CameraShake(duration=-1, xstrength=3, ystrength=2, vibrato=20, randomness=60, fadeout=true, block=false)]
+[playMusic(intro="$shatterpoint_02_intro",key="$shatterpoint_02_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="阿米婭"]奇點近在眼前，但構建的通路也瀕臨極限。
+[name="阿米婭"]這裡的資訊密度實在太高，繼續前進的感覺就好像是溺在一條很深的河流裡。
+[name="阿米婭"]……我們要如何從這些混亂資訊中分辨出我們所需要的？
+[dialog]
+[Decision(options="交給我吧。", values="1")]
+[Predicate(references="1")]
+你們的思維正無限逼近奇點，近乎實體的巨量資訊擠壓著你們……
+儘管你似乎能夠完全適應這種壓力，但你也察覺到阿米婭正在苦苦支撐。
+留給你們的時間並不多。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraShake(duration=0, xstrength=3, ystrength=2, vibrato=20, randomness=60, fadeout=true, block=false)]
+[Image(image="60_i05",screenadapt="coverall")]
+[bgeffect(name="$eb_confusion_centra",layer=1)]
+[bgeffect(name="$eb_confusion_loop",layer=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+你抽取了內化宇宙中那位“普瑞賽斯”所說的每一個關鍵字，並快速將凱爾希留下的每一條線索聯繫起來。
+快速地演算出一個新的結果，輸入新的條件……以此循環，繼續前進，直到分離出唯一需要的資訊。
+你的思維就像陷入了無邊無際的積木海洋中，而你要做的事情自始至終都並不複雜。
+找到那個顏色不同的異類，上面工整地鐫刻著凱爾希為你留下的話語——
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="“我從未忘記。”", x=320,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[dialog]
+[Decision(options="阿米婭，我想我們成功了。", values="1")]
+[Predicate(references="1")]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot]
+[image]
+[bgeffect]
+[Background(image="60_g1_rhodescorridor_bc",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2",duration=1)]
+[Delay(time=2)]
+[name="阿米婭"]……這裡是，什麼地方？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="羅德島。;過去的羅德島。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2")]
+[name="阿米婭"]——？！
+[charslot(slot="m",name="avg_1037_amiya3_1#10$2")]
+[name="阿米婭"]但這和我們的羅德島——
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="天差地別。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#7$2")]
+[name="阿米婭"]凱爾希醫生提起過，本艦最初是從雷姆必拓挖掘出來並加以修繕才投入了使用。
+[name="阿米婭"]那……羅德島到底經歷了什麼？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="我也毫無頭緒。", values="1")]
+[Predicate(references="1")]
+[charslot]
+[name="？？？"]（未知語言）你今天的精神看起來很不錯，看來我們的努力很成功。
+[dialog]
+[charslot(slot="m",name="avg_npc_1360_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="預言家"]（未知語言）是獨自待在實驗室會害怕嗎？
+[charslot(slot = "m", focus = "n")]
+[name="原始構造體"]（驕傲的嗡鳴）
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="預言家"]（未知語言）剛好，我正在推演這個用於減少元資料在特殊媒介中損耗的模型，可以試著幫我運算嗎？
+[charslot(slot = "m", focus = "n")]
+[name="原始構造體"]（焦躁地抖動）
+[dialog]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="預言家"]（未知語言）足夠了，我已強制終止你的程式。
+[name="預言家"]（未知語言）不要在任何時候傷害自己的核心元件，哪怕命令來自我或是她。
+[name="預言家"]（未知語言）保護你自己，AMa-10，生存才是生命誕生時便擁有的本能。
+[charslot(slot = "m", focus = "n")]
+[name="原始構造體"]（不甘的嗡鳴）
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="預言家"]（未知語言）哈哈，至少情感模組的自我迭代速度很快。
+[charslot(slot="m",name="avg_1037_amiya3_1#7$2")]
+[name="阿米婭"]博士，你能理解這種語言嗎？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="不能。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="不必關注那個人和旁邊的奇怪造物。;關鍵在其他地方。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$2")]
+[name="阿米婭"]的確，凱爾希醫生既然相信我們能夠找到關鍵，語言的阻礙應該已經在她的預計之中。
+[name="阿米婭"]博士，注意看那個人旁邊的玻璃，上面寫滿了很多文字。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="公式？", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="預言家"]（未知語言）只可惜研發源石的進展並不順利。
+[name="預言家"]（未知語言）我們正觸及從未探知過的領域，其他人很難跟上我們。
+[name="預言家"]（未知語言）雖然我與她的辯論越來越頻繁，但實驗的進展卻越來越慢。
+[charslot(slot = "m", focus = "n")]
+[name="原始構造體"]（積極地安慰）
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="預言家"]（未知語言）不必擔心我們，如果眼前這個模型的運作效率能夠滿足預期，源石研發的進度或許會迎來一次跨越。
+[name="預言家"]（未知語言）對了，陸傳來了訊息，深藍之樹也難得有了突破。很快她又可以來看我們了。
+[charslot(slot = "m", focus = "n")]
+[name="原始構造體"]（由衷地喜悅）
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="預言家"]（未知語言）看來你很喜歡她。
+[dialog]
+[charslot]
+[Decision(options="阿米婭，我們需要記住那些公式！", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="阿米婭"]正在嘗試——
+[stopmusic(fadetime=1)]
+[dialog]
+[charslot]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=0.4, block=true)]
+[bgeffect]
+[curtain(direction = 2,fillfrom = 0,fillto = 0.15, fadetime=2)]
+[curtain(direction = 6,fillfrom = 0,fillto = 0.15, fadetime=2)]
+[CameraShake(duration=2, xstrength=15, ystrength=15, vibrato=50, randomness=90, fadeout=true, block=true)]
+[CameraShake(duration=-1, xstrength=2, ystrength=1, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playMusic(intro="$snowmonster_intro",key="$snowmonster_loop", volume=0.6)]
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="發生了什麼？;通路的穩定正在被衝擊？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2")]
+[name="阿米婭"]特蕾西婭小姐警告我，是“文明的存續”的核心邏輯在試圖排除漏洞！
+[name="阿米婭"]因為我們正在轉錄超過界限的資訊。
+[name="阿米婭"]博士，我還無法理解那些公式所用文字的含義——
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="不要試圖理解！;只需要記憶！;我也在盡可能背下來！", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=0, amount=0.8)]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[curtain(direction = 2,fillfrom = 0.15,fillto = 0.25, fadetime=2)]
+[curtain(direction = 6,fillfrom = 0.15,fillto = 0.25, fadetime=2)]
+[CameraShake(duration=2, xstrength=15, ystrength=15, vibrato=50, randomness=90, fadeout=true, block=true)]
+[CameraShake(duration=-1, xstrength=2, ystrength=1, vibrato=30, randomness=90, fadeout=true, block=false)]
+邊界的資訊開始了新一輪的重組，漏洞正在被修復，而你們所能看到的畫面也在加速淡去。
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="預言家"]（未知語言）AMa-10，我有一種預感，這個我和她共同創造的模型一定能成功。
+[name="預言家"]（未知語言）我很期待那門語言真正被創造出來的那天——
+[charslot(slot = "m", focus = "n")]
+[name="原始構造體"]（善意地提醒）
+[charslot(slot="m",name="avg_npc_1360_1#1$1")]
+[name="預言家"]（未知語言）DWDB-221E的同步還未結束？咳，我當然知道，我也沒有失態不是嗎？
+[charslot(slot="m",afrom=1,ato=0.5,duration=1)]
+說話之人正在淡去。
+[charslot(slot="m",name="avg_npc_1360_1#1$1",afrom=0.5,ato=0.5)]
+[name="預言家"]（輕聲的未知語言）無論你來自寰宇中哪一片區域，若是我的文明已然安眠，就請替我去看看我們留下的信標。
+[name="預言家"]（輕聲的未知語言）或許那會是我們的祝福……還有最後饋贈的希望。
+[charslot(slot = "m", focus = "n")]
+你似乎感覺到，那個人……正看著你？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……？！", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", focus = "n")]
+[name="原始構造體"]（焦急的低鳴）
+[charslot(slot="m",name="avg_npc_1360_1#1$1",afrom=0.5,ato=0.5)]
+[name="預言家"]（未知語言）……我們會看到的，AMa-10，我相信。
+[dialog]
+[charslot]
+[curtain(direction = 2,fillfrom = 0.25,fillto = 0.35, fadetime=2)]
+[curtain(direction = 6,fillfrom = 0.25,fillto = 0.35, fadetime=2)]
+[CameraShake(duration=2, xstrength=15, ystrength=15, vibrato=50, randomness=90, fadeout=true, block=true)]
+[CameraShake(duration=-1, xstrength=2, ystrength=1, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="阿米婭"]公式的畫面也開始消退了！
+[dialog]
+[Decision(options="撤退，趁通路還未崩潰。", values="1")]
+[Predicate(references="1")]
+[charslot]
+[name="阿米婭"]但我還沒有——
+[dialog]
+[Decision(options="還有我呢！;我們可以一起還原出來。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot]
+[Dialog]
+[curtain(direction = 2,fillfrom = 0.35,fillto = 1, fadetime=1)]
+[curtain(direction = 6,fillfrom = 0.35,fillto = 1, fadetime=1)]
+[stopmusic(fadetime=2)]
+[CameraShake(duration=3, xstrength=15, ystrength=15, vibrato=50, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[curtain]
+[Delay(time=0.5)]
+[bgeffect]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="bg_white",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+隨即你的思維受到了巨大的衝擊，你感受到了墜落感。
+你最後的意識停留在你支撐著阿米婭盡可能遠離了奇點，以及那個你熟悉的身影——
+[Dialog]
+[charslot(slot="m",name="avg_4134_cetsyr_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="魔王"]感謝你幫著阿米婭走到了這裡，接下來……
+[name="魔王"]離開。
+[charslot]
+你與阿米婭共享的思維連接在這一刻斷裂，你的思維已經疲憊到不足以再記住後面發生的任何事情。
+你們離開了“文明的存續”。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Background(image="60_g1_rhodescorridor_bc",screenadapt="coverall")]
+奇點所噴發出的資訊並未停止，其中最微不足道的一個畫面自被記錄以來便再未被存取過——
+寂靜的深空中，一束光照亮一片星域的同時帶來了黑暗，也帶來了毋庸置疑的絕望。
+當數千萬光年外的探測儀接收到那片星域遙遠過去的影像時，畫面中被恆星照亮的星球已滿是墳場與廢墟。
+祂已降臨。
+[dialog]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1725_1#1$1")]
+[name="屈光者"]♫~♫~
+[name="屈光者"]是幽靈讓你用這樣的言辭來為她辯護嗎？
+[charslot(slot="m",name="avg_npc_1719_1#1$1")]
+[name="希爾達"]不，屈光者，幽靈離開時並未要求我這樣做。
+[charslot(slot="m",name="avg_npc_1725_1#1$1")]
+[name="屈光者"]那就警惕她，不要被她所迷惑。
+[name="屈光者"]……因為她的魅力而放鬆警惕可能會為你帶來危險，那是他們族群為捕食而發展出的天性。
+[name="屈光者"]至於你想要找的人，這艘船的主人普瑞賽斯……
+[name="屈光者"]由於一項正在進行的關鍵研究，她的意識恐怕正穿梭於這片星域的不同研究場所。
+[name="屈光者"]若非她自願，你很難佔據她的時間。
+[charslot(slot="m",name="avg_npc_1719_1#1$1")]
+[name="希爾達"]……
+[charslot(slot="m",name="avg_npc_1725_1#1$1")]
+[name="屈光者"]希爾達，你如此迫切地想要找到她，只是為了感謝那位救了你的人嗎？
+[charslot(slot="m",name="avg_npc_1719_1#1$1")]
+[name="希爾達"]現在並不完全是這樣了。
+[name="希爾達"]我理解了我正身處一個名為“宇宙”的奇妙地方，我理解了這裡並非死亡之後才會來到的地方……
+[name="希爾達"]我甚至有一個大膽的猜測，我的家鄉泰拉，或許也存在於宇宙之中。
+[name="希爾達"]但更多的知識只會帶來更多的疑惑，我想要請教她——
+[charslot(slot="m",name="avg_npc_1719_1#10$1")]
+[name="希爾達"]為何我並未死去？
+[name="希爾達"]泰拉，我的家鄉，它又在何方？
+[charslot]
+卡特斯透過舷窗失落地眺望遠方深空中的群星。
+或許依舊牽掛著她的主教和修士仍在只屬於她的大地上為她禱告，但她已無法回應。
+她蜷縮在走廊的牆邊，任憑恆星的光芒快速掃過她的臉龐。
+[charslot(slot="m",name="avg_npc_1719_1#10$1")]
+[name="希爾達"]原來逝去的時間，也能肉眼可見。
+[charslot(duration=1)]
+在這艘艦船上她偶遇過許多人，不論是沉浸在實驗室中受人尊敬的帽兜天才，還是從毀滅中倖存卻依舊遊歷宇宙的探險家……
+他們的樂觀和善意都讓希爾達放下了最初的恐懼，但她同樣清楚，自己永遠也無法真正融入這艘神奇的艦船。
+“我想念泰拉了。”
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

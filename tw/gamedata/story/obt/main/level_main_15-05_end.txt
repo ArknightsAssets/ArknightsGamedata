@@ -1,0 +1,257 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_ceo",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[Delay(time=2)]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",duration=1)]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="阿米婭"]博士，Mantra女士她們也已經回到了本艦。
+[charslot(slot="r",name="avg_1037_amiya3_1#6$2",focus="r")]
+[name="阿米婭"]你的猜測沒錯，的確有人在針對我們的任務。
+[name="阿米婭"]……這個儀器……就來自阿戈爾？
+[charslot]
+[charslot(slot="m",name="avg_npc_1401_1#1$1",focus="n")]
+[name="損壞的“小幫手”"]……
+[charslot]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="阿米婭"]凱爾希醫生，我們能從它剩下的零件裡調查出什麼嗎？
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]不能。阿戈爾的技術院在這個精妙的儀器上傾注了大量的心血，高傲如他們絕不會容許小幫手有被其他研究者破解的可能。
+[name="凱爾希"]但小幫手的出現本身就足以說明很多問題了。
+[name="凱爾希"]博士，記得海陸聯合防線嗎？
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="當然。;你與阿戈爾執政官接觸就是為了促成合作。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]伊比利亞和雷姆必拓的官方都回應了我們的號召。但問題在於一旦合作達成，後續的事態發展極有可能超出我們的預期。
+[name="凱爾希"]近期以來，阿戈爾的艦隊不僅在伊比利亞修建了港口，也在雷姆必拓以南方向的海岸線修建了登陸港口。
+[name="凱爾希"]來自深海的阿戈爾人並沒有急於登上陸地，而是以技術扶持的名義在短時間內展開了包括水文測繪在內的一系列動作。
+[name="凱爾希"]而且他們藉助僱傭和官方合作迅速成立了“陸巡隊”，依靠身分更為中立的代理人來更方便地展開與陸地的合作。
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="你的意思是，襲擊者是“陸巡隊”。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]僅僅是推論和猜測。但依據目前的線索來看，唯有“陸巡隊”符合這麼多條件。
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="阿米婭"]凱爾希醫生，我清楚部分執政官並非完全認可克萊門莎的理念，但這能說明不同地區同時發生的意外都是阿戈爾所為嗎？
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]不，我更傾向於有人利用了阿戈爾內部的矛盾。
+[name="凱爾希"]靠近伊比利亞邊境的“陸巡隊”、雷姆必拓交接的開採艦、卡茲戴爾邊境的傭兵……
+[name="凱爾希"]對方的行動布置涉及範圍之廣，對羅德島機密任務瞭解之深，都足以說明始作俑者絕非阿戈爾。
+[charslot(slot="r",name="avg_1037_amiya3_1#6$2",focus="r")]
+[name="阿米婭"]……但羅德島內部不可能有人叛變。
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="我也並不相信。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]博士，除我們之外，你認為羅德島上還有其他人能做到這一點嗎？
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="……;沒有人。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]是啊，沒有人。
+[dialog]
+[charslot(slot="r",name="avg_1037_amiya3_1#3$2")]
+[charslot(slot="l",name="avg_003_kalts_1#14$1")]
+[Delay(time=1.5)]
+[charslot(slot="r",name="avg_1037_amiya3_1#6$2",focus="r")]
+[name="阿米婭"]凱爾希醫生，如今羅德島面對的威脅極其不可預測。
+[name="阿米婭"]華法琳醫生也多次警告我們，她照顧的那幾位特殊病人的病情演變正在失控。
+[name="阿米婭"]無論是出於救下我們的病人的目的，還是應對潛在的危機，我們都需要更激進的應對手段。
+[name="阿米婭"]我查閱過特蕾西婭小姐留在黑王冠的資料，她也曾透過“文明的存續”取得了巨大的突破。
+[name="阿米婭"]我可以進入“文明的存續”尋找潛在助力，就像特蕾西婭小姐當年一樣。
+[charslot(slot="l",name="avg_003_kalts_1#14$1",focus="l")]
+[name="凱爾希"]這其中的風險我們必須慎重評估，阿米婭。
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="阿米婭，你是否有把握？;凱爾希，目前還有其他更有效的手段嗎？", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="r",name="avg_1037_amiya3_1#8$2",focus="r")]
+[name="阿米婭"]博士，我沒辦法給你肯定的答覆。
+[name="阿米婭"]但我不會放棄嘗試的可能，我所能爭取來的任何一絲優勢都有可能協助羅德島走得更遠。
+[name="阿米婭"]我想要試試。
+[Predicate(references="2")]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]……在局勢尚未明朗的現在，我也無法提出更加行之有效的手段。
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]但貿然深入“文明的存續”，結果並不一定完全如我們所願，博士。
+[Predicate(references="1;2")]
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="我可以陪著阿米婭一同進入。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="r",name="avg_1037_amiya3_1#5$2",focus="r")]
+[name="阿米婭"]——？！
+[charslot(slot="l",name="avg_003_kalts_1#5$1",focus="l")]
+[name="凱爾希"]博士，我無法同意你如此冒險的舉動。
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="“文明的存續”能否連接我的思維？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="r",name="avg_1037_amiya3_1#6$2",focus="r")]
+[name="阿米婭"]……博士，這太危險了，沒人做過這種事！我同意凱爾希醫生的意見，你不應冒險。
+[charslot(slot="m",focus="n")]
+凱爾希想起了那位摯友曾經的經歷，那是她並不願意去回想的經歷。
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]“文明的存續”可以做到。
+[charslot(slot="l",name="avg_003_kalts_1#2$1",focus="l")]
+[name="凱爾希"]她做到過。
+[charslot(slot="r",name="avg_1037_amiya3_1#5$2",focus="r")]
+[name="阿米婭"]……？！
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="……;特蕾西婭。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="l",name="avg_003_kalts_1#5$1",focus="l")]
+[name="凱爾希"]博士，你的思維極其複雜。這其中的風險不僅來自於你自身，阿米婭同樣可能面對完全未知的衝擊。
+[name="凱爾希"]我不會贊同這個荒唐的決定。
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="阿米婭"]凱爾希醫生……
+[charslot(slot="l",name="avg_003_kalts_1#5$1",focus="l")]
+[name="凱爾希"]阿米婭，這是我的意見。我無法干涉你和博士對於這件事的最終判斷，但我希望你們理解我的態度。
+[dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="l",name="avg_003_kalts_1#5$1",afrom=1,ato=0,duration=1)]
+[Delay(time=2)]
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="阿米婭，我可以完全向你敞開我的思維。;不必強求直接成功，我們可以多嘗試幾次。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="阿米婭"]但凱爾希醫生……
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="結束之後，我們一起去找她道歉。;她反對的並非這個計劃本身。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="r",name="avg_1037_amiya3_1#1$2",focus="r")]
+[name="阿米婭"]博士，我聽你的。
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="我將何時中止的判斷完全交給你了。", values="1")]
+[Predicate(references="1")]
+[dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="等我安排完防衛任務就開始吧。", values="1")]
+[Predicate(references="1")]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_rhodescom",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$storyendjp_intro",key="$storyendjp_loop", volume=0.6)]
+[Delay(time=1)]
+[charslot(slot="r",name="npc_10002",duration=1)]
+[charslot(slot="l",name="avg_003_kalts_1#1$1",duration=1)]
+[delay(time=1.5)]
+[playsound(key="$Mon3tr_n")]
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"]（低沉的吼叫）
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]你在擔心我？我並沒有生氣。
+[name="凱爾希"]只是我們終究還是來到了新的轉折點。而上一次，巴別塔走向了我最不願看到的結局。
+[name="凱爾希"]事實證明，我無法確保每件事都運行在其理想的軌跡上，Mon3tr。
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"]（抬起爪子）
+[name="Mon3tr"]（溫柔地蹭蹭）
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]我們自身的局限已經開始影響我們在更重要之事上的用處。
+[name="凱爾希"]縱然我們能夠見證星河蠻荒的演變，但在面臨真正的危機時，我們與這片大地上的其他生靈也並無區別。
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"]（不滿的低鳴）
+[charslot(slot="l",name="avg_003_kalts_1#11$1",focus="l")]
+[name="凱爾希"]謝謝你的安慰，我能感知到你的心意。
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"]（焦躁的低吼）
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]是的，想必阿米婭和博士已經開始準備深入“文明的存續”。
+[name="凱爾希"]我不會強制干涉阿米婭的決定，她已經足夠成熟到作出最正確的判斷。
+[name="凱爾希"]博士……博士也已經大不一樣。
+[name="凱爾希"]也許是我的內心依舊保留了一絲僥倖。也許，這一次的結局真的會不一樣。
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"]（低落地俯身）
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]……的確，理智仍在不斷警告我。
+[name="凱爾希"]藉助“文明的存續”再次觸碰博士的思維絕非穩妥的決定，但阿米婭是對的，留給我們選擇的餘地並不多。
+[playsound(key="$Mon3tr_n")]
+[charslot(slot="r",name="npc_10002",focus="r")]
+[name="Mon3tr"]（激昂的嘶吼）
+[charslot(slot="l",name="avg_003_kalts_1#1$1",focus="l")]
+[name="凱爾希"]我會保護博士和阿米婭，Mon3tr。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[charslot]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.17, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.17, fadetime=0.1)]
+[Image(image="60_i03", xScale=1.5, yScale=1.5,screenadapt="coverall",y=150)]
+[ImageTween(duration=20, block=false,yTo=80)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[playMusic(intro="$act18d0d0_intro",key="$act18d0d0_loop", volume=0.6)]
+[Delay(time=3)]
+Mon3tr能感知到凱爾希此時哪怕最細微的情緒。
+自凱爾希再度甦醒以來，Mon3tr便從未離開過她的身邊。
+Mon3tr是她的同行者，是她親自引導的共生體……更是她自己。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[curtain]
+[Delay(time=0.2)]
+[Image(image="60_i03", xScale=1, yScale=1,screenadapt="coverall")]
+[dialog]
+[bgeffect(name="$eb_steam_kal",layer=1)]
+[playsound(key="$d_avg_kwriterecord_loop", loop=true, channel="c",volume=0)]
+[SoundVolume(volume=0.7, channel="c",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="Mon3tr"]（親近的低吟）
+[name="凱爾希"]你錯了。我並不感到絕望，Mon3tr。
+[name="凱爾希"]我為先民推翻神民的統治而欣喜，也為路加薩爾古斯為新生文明定下時間的起點而振奮。
+[name="凱爾希"]我也曾因傲慢而犯下錯誤，也因相遇知己而重拾信心。
+[name="凱爾希"]或許你我的基礎構造對這片大地而言終屬異類，但這並不意味著我們終將踽踽獨行。
+[name="凱爾希"]我找到了自己的歸屬，在羅德島，在這片大地。
+[name="凱爾希"]我實現了那個人的期許，Mon3tr，我學會了愛，我找到了自己。
+[name="Mon3tr"]（困惑地挪動）
+[name="Mon3tr"]（尾巴纏上凱爾希）
+[name="凱爾希"]我需要保護阿米婭和博士。
+[name="凱爾希"]保護真正的變數……那是連我都無法完全看清的未來。
+[name="凱爾希"]我也曾與“文明的存續”有過溝通，但終究無法突破自我的限制。
+[name="凱爾希"]但阿米婭可以，我和特蕾西婭都很清楚。
+[name="凱爾希"]我確信她可以從那些龐雜的資訊中找到關鍵點，有特蕾西婭的祝福……她可以做到。
+[name="凱爾希"]畢竟，她可是阿米婭。我親眼看著成長起來的領袖。
+[name="凱爾希"]沿著我過去的足跡，她或許能找到那個人留下的隻言片語。
+[name="凱爾希"]在源石尚未成形的過去，在那個天才們爭相與整個時代雄辯的年代，那些以歌頌並拯救生命為起點的奇思妙想從未消失……
+[name="凱爾希"]希望從未斷絕，Mon3tr，泰拉依舊有機會延續那渺茫的可能性——
+[playsound(key="$Mon3tr_n")]
+[name="Mon3tr"]（激動的吼叫）
+[name="凱爾希"]我？不，Mon3tr，我更擅長記憶，記憶那些我親眼見證過，但又被時間消磨的歷史。
+[name="凱爾希"]我並不特殊。
+凱爾希平靜地將重要資訊不斷刻錄進Mon3tr的脊髓之中。
+[name="凱爾希"]如果我最不願見到的情況真的發生，如果我最不願見到的那個人重新站在我們面前——
+[name="凱爾希"]保護博士，保護阿米婭。
+[name="凱爾希"]我只會將這條指令刻印進你的基本行為策略之中。
+[name="Mon3tr"]（興奮的嘶吼）
+[name="凱爾希"]來吧，Mon3tr，眼下我們的工作還有很多。
+[name="凱爾希"]若威脅真正降臨，我得確保羅德島成為泰拉對抗危機的最前哨。
+[name="凱爾希"]……我會是你們最後的保險。
+[Dialog]
+[Delay(time=1)]
+[StopSound(channel="c", fadetime=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

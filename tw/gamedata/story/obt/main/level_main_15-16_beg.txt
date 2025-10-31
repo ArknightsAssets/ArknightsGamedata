@@ -1,0 +1,498 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=1, channel="d",fadetime=2)]
+[Background(image="60_g13_rhodesdeck_origin",screenadapt="coverall")]
+[PlayMusic(key="$m_bat_act37d0d0_01_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+你尚且來不及思考剛剛發生的變故，凱爾希已經從你的視野中完全消失……
+甲板上只留下那件外套。
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$Mon3tr_n")]
+[name="Mon3tr"]（痛苦的嘶鳴）
+緊隨凱爾希的消失，Mon3tr龐大的身軀也開始收縮，變成了一枚黑色的晶體狀的“繭”。
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1718_1#2$1", duration=1.5, isblock=true)]
+[name="普瑞賽斯"]AMa-10也曾是我得意的創造。
+[name="普瑞賽斯"]這並非我期待的結果。
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="她有自己的名字。;她的名字是“凱爾希”。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1718_1#3$1")]
+[name="普瑞賽斯"]它已經有了自己的代號，我並不認同再次命名的意義。
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+普瑞賽斯走向留在甲板上的繭狀物體。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[name="阿米婭"]——博士，退後！我必須保護Mon3tr！
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_spelldfns_1", volume=1)]
+[Blocker(a=0, r=255,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.4, r=255,g=0, b=0, fadetime=0.03, block=true)]
+[PlaySound(key="$d_avg_spellattack_2", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2,block=false)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_spiritwhoosh")]
+[PlaySound(key="$p_aoe_nmag_h")]
+[delay(time=0.3)]
+[PlaySound(key="$p_imp_amiyamag_h", volume=0.9)]
+[PlaySound(key="$d_gen_thunders_amb", volume=0.5)]
+[PlaySound(key="$b_char_defboost", volume=0.5, Delay=0.4)]
+[PlaySound(key="$d_gen_thunders_amb", volume=0.2, Delay=0.7)]
+[PlaySound(key="$flashback", volume=0.2, Delay=0.7)]
+[PlaySound(key="$d_avg_attack_heavy", volume=0.9)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=12, vibrato=30, randomness=90, block=false)]
+[Blocker(a=0.3, r=1, g=0.4, b=0.4, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0.3, r=1, g=0.4, b=0.4, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0.1, r=1, g=0.4, b=0.1, afrom=1, rfrom=1, gfrom=0.4, bfrom=0.4, fadetime=0.2, block=true)]
+[Blocker(a=0.1, r=0, g=0, b=0, afrom=0.8, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=true)]
+[Blocker(a=0.1, r=0, g=0, b=0, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.3, block=true)]
+[Blocker(a=0.1, fadetime=2, block=true)]
+絲線從阿米婭的法杖上散開，試圖阻攔普瑞賽斯前進的腳步……
+但地面上的源石總是能從刁鑽的角度生長出來，內化阿米婭的所有法術。
+你能看出來阿米婭很吃力。
+眼前這個幾乎無法抗衡的普瑞賽斯，還有凱爾希唯一留存下來的東西——
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1718_1#1$1")]
+[name="普瑞賽斯"]你想要救牠？
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1718_1#8$1")]
+[name="普瑞賽斯"]我也想修好牠，和你一樣。
+[name="普瑞賽斯"]AMa-10不僅承載了我們共同的期待，牠還保存了一段對我而言極為關鍵的記錄。
+[charslot]
+你依舊沒有從剛剛的衝擊中緩過來。
+面對眼前的威脅，你甚至沒有悲傷的餘力。
+普瑞賽斯，她還會有怎樣的行動？你又該如何保護阿米婭……
+而普瑞賽斯顯然注意到了你的心思——
+[charslot(slot = "m", name = "avg_npc_1718_1#6$1")]
+[name="普瑞賽斯"]Dr.{@nickname}，你……為什麼在害怕我？
+[charslot]
+她與你越來越接近。
+[dialog]
+[Decision(options="（……想出辦法。）;（快想出辦法！）", values="1;2")]
+[Predicate(references="1;2")]
+你和阿米婭被腳下蔓延的源石完全限制，無法動彈。
+你第一次如此近距離地見到了她。
+[dialog]
+[stopmusic(fadetime=0.5)]
+[StopSound(channel="d", fadetime=0.5)]
+[musicvolume(volume=0.2, fadetime=2)]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="bg_graduate",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[Decision(options="你究竟要做什麼？！", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="凱爾希"]……保護你。
+[name="凱爾希"]就像我承諾過的那樣。
+[name="凱爾希"]我承諾過，我會保護阿米婭，也會保護你。
+[name="凱爾希"]我會保護你至你生命的最後一刻，博士。這是我的職責。
+[name="凱爾希"]但我不會停止恨你。我無力教育和指責迷迭香，因為我也害怕自己會忍不住報復你。
+[dialog]
+[charslot]
+[Decision(options="……你……", values="1")]
+[Predicate(references="1")]
+類似的場景、類似的話語，不同的情感與不同的時代在你記憶的空洞裡架起了橋梁。
+[charslot(slot = "m", name = "avg_003_kalts_1#1$1")]
+[name="凱爾希"]……
+[charslot(slot = "m", name = "avg_003_kalts_1#6$1")]
+[name="凱爾希"]你……想起了什麼？
+[dialog]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background]
+[charslot]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Image(image="avg_8_9", screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+“普瑞賽斯”。
+[dialog]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+不，這一次你先想起了她，想起了凱爾希。
+[dialog]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Background]
+[charslot]
+[Image(image="avg_ac8mi_melancholic_kalts", screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+那位你信任的醫生似乎還在這裡。
+你想起了當你的思維在“文明的存續”中搜尋凱爾希為你們留下的線索……
+想起了當所有的關鍵被串聯起來之後，凱爾希為你留下的那句話——
+“我從未忘記。”
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[Background(image="60_g1_rhodescorridor_bc",screenadapt="coverall",xScale=1.2, yScale=1.2, y=-50)]
+[backgroundTween(xFrom = 100, xTo = -100, duration=20, block=false)]
+[focusout(type="bg", id="60_g1_rhodescorridor_bc", from=0, to=1, duration=0.1, block=false)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=0.3, channel="d",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[name="預言家"]（輕聲的未知語言）無論你來自寰宇中哪一片區域，若是我的文明已然安眠，就請替我去看看我們留下的信標。
+[name="預言家"]（輕聲的未知語言）或許那會是我們的祝福……還有最後饋贈的希望。
+如今你很確定，那個人的確跨越了時光的隔閡看著你。
+[dialog]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[focusout(type="bg", id="60_g13_rhodesdeck_origin", from=1, to=0, duration=0, block=false)]
+[Background(image="60_g13_rhodesdeck_origin",screenadapt="coverall")]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=1, channel="d",fadetime=0.5)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[Decision(options="（那些公式……）;（那份饋贈……）", values="1;2")]
+[Predicate(references="1;2")]
+[StopSound(channel="d", fadetime=1)]
+[PlayMusic(key="$m_bat_theresa_loop", volume=0.6)]
+[Decision(options="阿米婭，公式！", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$3")]
+[name="阿米婭"]公式——？！
+[name="阿米婭"]凱爾希醫生提到過，它能用於減少元資料在特殊媒介傳輸時的損耗……
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="逆轉它。", values="1")]
+[Predicate(references="1")]
+[Decision(options="阻礙資訊在源石中的傳遞！", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[name="阿米婭"]我該怎麼做？
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="連接我的思維！", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#3$3")]
+[PlaySound(key="$d_avg_magic_1", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.2, r=1, g=1, b=1, fadetime=1, block=true)]
+[charslot(duration=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+沒有時間猶豫，阿米婭已經做出了行動。
+你再一次與阿米婭共享了你的思維，你所研究的一切都重新在你的腦海中浮現。
+憑藉著直覺和已有的研究成果，你開始嘗試拆解那些公式，轉譯，然後逆轉……
+哪怕你清楚，那並不能達到完全的效果。但此時，你只能祈禱這樣會有用——
+為了凱爾希。
+[dialog]
+[Decision(options="記住我腦海中的東西，阿米婭！", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="阿米婭"]收到了，博士！
+[name="阿米婭"]只要按照Logos教我的那樣，將它們編織進我的法術之中——
+[name="阿米婭"]然後——
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$3")]
+[name="阿米婭"]停下來！
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_icecrystlncrse", volume=1)]
+[PlaySound(key="$p_skill_chimera", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.4, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_phntsmbrek", volume=1)]
+[PlaySound(key="$d_avg_phntsmglsbrek", volume=1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[charslot]
+[background]
+[Image(image="60_i13_1", screenadapt="coverall", xScale=1.1, yScale=1.1, fadetime=0)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[PlaySound(key="$d_avg_rockfall", volume=0.6)]
+[delay(time=0.2)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=3, block=true)]
+阿米婭的法術餘波震開了試圖封鎖你們的源石。
+[name="普瑞賽斯"]這是……？
+試圖重新限制住你們的源石幾乎無法繼續向你們逼近，無數的稜面中倒映出了阿米婭的身影。
+[dialog]
+[Decision(options="奏效了？！", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_avg_scrystalroad", volume=1, loop=true, channel="sc")]
+[delay(time=1.5)]
+[StopSound(channel="sc", fadetime=6)]
+[name="阿米婭"]……我在儘量撐住——
+[name="阿米婭"]但源石擠壓過來的速度正在變快……
+[name="阿米婭"]我需要，更努力一點！我可以做到！
+你看到了阿米婭堅定的眼神，但你心中仍然有深深的憂慮。
+[name="普瑞賽斯"]你並不明白自己在玩弄什麼樣的力量。
+[dialog]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[name="阿米婭"]我的法術目前好像不光能擋住它們，也感知到了她的狀態……
+[name="阿米婭"]她沒有我想像中那樣不可戰勝——
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image]
+[PlaySound(key="$d_gen_surfacefrozen", volume=0, loop=true, channel="sur")]
+[SoundVolume(volume=0.6, channel="sur",fadetime=2)]
+[Image(image="60_i13_1", screenadapt="coverall", xScale=1.6, yScale=1.6, y=-200)]
+[ImageTween(xFrom=-300, xTo=-380, duration=8, block=false)]
+[Delay(time=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_stonegrowing", volume=1)]
+[Image(image="60_i13_2", screenadapt="coverall", xScale=1.6, yScale=1.6, y=-200, fadetime=2)]
+[ImageTween(xFrom=-320, xTo=-380, duration=6, block=false)]
+[delay(time=1)]
+[name="普瑞賽斯"]我的確過早地醒來了，源石同化這顆星球的速度並未達到我的預期。
+[name="普瑞賽斯"]加之那兩個泰拉人的莽撞行為，我沒辦法如預期那樣運用源石……
+[name="普瑞賽斯"]但這不代表你們如此草率地使用我們研發的技術就能改變既定的事實。
+[dialog]
+[Decision(options="阿米婭！", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_avg_spellattack_1", volume=1)]
+[PlaySound(key="$d_avg_crystalmagic_intro", volume=1)]
+[Image(image="60_i13_2", screenadapt="coverall", xScale=1.6, yScale=1.6, x=-380, y=-200, fadetime=0.5)]
+[ImageTween(xFrom=-380, xTo=100, duration=0.5, block=false)]
+[delay(time=0.5)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$d_avg_crystalmagic_loop", volume=1, loop=true, channel="a")]
+[SoundVolume(volume=1, channel="sur",fadetime=2)]
+[Image(image="60_i13_2", screenadapt="coverall")]
+[ImageTween(xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, duration=30, block=false)]
+[cgitem(image="cgitem_60_i13_2", style="cg", sfrom=1.2, sto=1, sduration=30, layer = 1)]
+[cgitem(image="cgitem_60_i13_1", style="cg", sfrom=1, sto=1.5, sduration=30, layer = 2)]
+[CameraShake(duration=1.5, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_phntsmbrek", volume=1, channel="1")]
+[PlaySound(key="$d_avg_phntsmglsbrek", volume=1, channel="2")]
+[PlaySound(key="$d_avg_land_impact", volume=1, channel="3")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+粉紅色的絲線從阿米婭法杖中迸發而出，在被源石封閉的空間中飛舞。
+但你能清楚地意識到，阿米婭正承受著巨大的壓力。
+普瑞賽斯的身形也徹底被源石所遮擋……
+每一塊源石的碎片中、每一個源石的稜面上，你們都能清晰地看到普瑞賽斯的眼睛。
+就像是……
+[dialog]
+[Decision(options="她……無處不在。", values="1")]
+[Predicate(references="1")]
+[name="阿米婭"]博士，特蕾西婭小姐正指引我怎樣用更高的效率來施展這個全新的法術！
+[name="阿米婭"]我確信我已經暫時削弱了普瑞賽斯對源石的掌控，應該能夠繼續拖住她一段時間——
+[dialog]
+就在阿米婭的法術全力爆發的同時，你的腦海中響起了一個令你振奮的聲音。
+[SoundVolume(volume=0.2, channel="a",fadetime=2)]
+[SoundVolume(volume=0.2, channel="sur",fadetime=2)]
+[name="Mantra"]博士、阿米婭，我們已進入Abyss，剛剛一瞬間源石對我們的干擾減弱了。
+[name="阿米婭"]……是剛才……
+[name="Mantra"]Raidian迅速重建了我們之間的聯繫，但情況棘手，我只能勉強用源石技藝來幫助Raidian完成溝通。
+[name="Mantra"]另外，她沒有搜尋到凱爾希醫生的生物訊號。
+[name="Mantra"]你們在哪裡？情況如何？
+[dialog]
+[Decision(options="我們在羅德島的甲板上！", values="1")]
+[Predicate(references="1")]
+[Decision(options="我們遭遇了普瑞賽斯！", values="1")]
+[Predicate(references="1")]
+[Decision(options="聯絡華法琳。", values="1")]
+[Predicate(references="1")]
+[Decision(options="把握時間，立刻撤出所有在艦人員。", values="1")]
+[Predicate(references="1")]
+[StopSound(channel="sur", fadetime=2)]
+[StopSound(channel="a", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[hidecgitem(image="cgitem_60_i13_2")]
+[hidecgitem(image="cgitem_60_i13_1")]
+[charslot]
+[Background(image="bg_infirmary",screenadapt="coverall")]
+[Delay(time=0.1)]
+[charslot(slot = "m", name = "avg_171_bldsk_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="華法琳"]都聽到博士說的了。
+[name="華法琳"]不用害怕，Lancet-2會協助監測你們的數據。
+[charslot(slot = "m", name = "char_285_medic2_1")]
+[name="Lancet-2"]OK！我不會讓你失望，華法琳醫生！
+[charslot(slot = "m", name = "avg_171_bldsk_1#5$1")]
+[name="華法琳"]記住，撤出之後，按照凱爾希原本的規劃在外圍建立新隔離帶，防止任何鬼東西向外溢出！
+[charslot(slot = "m", name = "char_285_medic2_1")]
+[name="Lancet-2"]華法琳醫生不和我們一起撤離嗎？
+[charslot(slot = "m", name = "avg_171_bldsk_1#1$1")]
+[name="華法琳"]我的病人還在這裡，我會親自帶他們撤離。
+[name="華法琳"]不用擔心我。
+[charslot(slot = "m", name = "avg_171_bldsk_1#10$1")]
+[name="華法琳"]（凱爾希，為什麼沒有聽到你的消息……）
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="bg_rhodesengineeringroom",screenadapt="coverall")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Decision(options="——滋——準備放棄本艦。", values="1")]
+[Predicate(references="1")]
+[Decision(options="備份所有的資料——滋——", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1723_1#6$1")]
+[name="可露希爾"]已經在做了，只需要最後一點時間！
+[name="可露希爾"]還有一件更重要的事情，關閉PRTS後必須下載它的核心資料——
+[name="可露希爾"]凱爾希已經提前在其中布置了後門。
+[name="可露希爾"]那會是我們徹底斷絕本艦威脅的關鍵。
+[charslot(slot = "m", focus="n")]
+[name="Mantra"]Mechanist已經收到。
+[name="Mantra"]我們正在Abyss中行動。
+[charslot(slot = "m", name = "avg_npc_1723_1#6$1")]
+[name="可露希爾"]拜託你們了！
+[charslot(slot = "m", name = "avg_npc_1723_1#11$1")]
+[name="可露希爾"]博士，凱爾希受傷了嗎？
+[name="可露希爾"]怎麼沒有聽到她的動靜？
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="……;她在全力幫助大家拖延時間。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="我和阿米婭也會撐到最後一刻。", values="1")]
+[Predicate(references="1")]
+[Decision(options="羅德島……", values="1")]
+[Predicate(references="1")]
+[Decision(options="拜託你們了。", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$transmission", volume=1)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[Background(image="60_g15_rhodesabyss_off",screenadapt="coverall")]
+[PlaySound(key="$d_avg_energywell", volume=0, loop=true, channel="en")]
+[SoundVolume(volume=0.8, channel="en",fadetime=2)]
+[Delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[PlaySound(key="$d_avg_footsteps_flock", volume=1, loop=true, channel="f")]
+[StopSound(channel="f", fadetime=4)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Abyss內</><p=2>同一時間</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1")]
+[name="Raidian"]已經恢復了和博士的聯繫。
+[name="Raidian"]我們按照原定計劃繼續行動。
+[charslot(slot = "m", name = "avg_391_rosmon_1#1$2")]
+[name="迷迭香"]沒有感知到更多的敵人。
+[charslot(slot = "m", name = "avg_npc_1730_1#2$1")]
+[name="Raidian"]我也沒有捕捉到PRTS核心產生任何新的數據傳輸。
+[charslot(slot = "m", name = "avg_4133_logos_1#7$1")]
+[name="Logos"]太安靜了。
+[charslot(slot = "m", name = "avg_4132_ascln_1#1$1")]
+[name="阿斯卡綸"]Raidian，麻煩分享核心的位置。
+[dialog]
+[charslot]
+[PlaySound(key="$transmission", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1")]
+[name="Raidian"]已同步。
+[charslot(slot = "m", name = "avg_4132_ascln_1#1$1")]
+[name="阿斯卡綸"]繼續向核心方位推進，嘗試解除核心的運作。
+[charslot(slot = "m", name = "avg_017_huang_1#11$2")]
+[name="煌"]我走前面！PRTS一定會安排新一波次的敵人攔截我們。
+[charslot(slot = "m", name = "avg_npc_521_1#1$1")]
+[name="Mechanist"]解析核心的工作交給我。
+[charslot(slot = "m", name = "avg_4133_logos_1#3$1")]
+[name="Logos"]“極光”。
+[name="Logos"]微光指引前路——
+[dialog]
+[PlaySound(key="$d_avg_magic_2", volume=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[background]
+[charslot]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[name="Logos"]——？
+[name="Mechanist"]怎麼了，Logos？
+[name="Logos"]那並非我的光……
+[dialog]
+[playMusic(intro="$lab_intro",key="$lab_loop", volume=0.6)]
+[cgitem(image="cgitem_60_i16", style="cg",sfrom = 1, sto = 1.5, sduration = 0.01, pfrom = "0,0",pto = "-55,-300", pduration = 0.01, rfrom=-11, rto=-11, rduration=0.1, afrom = 0, ato = 1, aduration = 0.5, layer = 1)]
+[Delay(time=2)]
+黑暗中，高懸的菱形光環微微晃動著。
+如同一顆冰冷的眼睛，俯瞰著在場的所有人。
+[name="阿斯卡綸"]戒備……
+[name="煌"]……是凱爾希醫生提到的“普瑞賽斯”嗎？
+[name="Raidian"]恐怕不是。
+[name="Raidian"]我偵測到突然出現了大量雜亂但熟悉的訊號。
+[name="Raidian"]那些訊號來自羅德島本身。
+[dialog]
+[StopSound(channel="en", fadetime=4)]
+[cgitem(image="cgitem_60_i16", style="cg",sfrom = 1.5, sto = 1.2, sduration = 4, pfrom = "-55,-300",pto = "-70,-45", pduration = 4, rfrom=-11, rto=0, rduration=4, layer = 1)]
+[Delay(time=3)]
+[PlaySound(key="$d_avg_systemstart_weird", volume=1)]
+[Delay(time=1)]
+[cgitem(image="cgitem_60_i16", style="cg",sfrom = 1.2, sto = 1, sduration = 22, pfrom = "-70,-45",pto = "-55,0", pduration = 22, layer = 1)]
+[Image(image="60_i16", screenadapt="coverall", xScale=1.2, yScale=1.2, y=-50, fadetime=0.5)]
+[ImageTween(xScaleFrom=1.2, yScaleFrom=1.2, xScaleTo=1, yScaleTo=1, yFrom=-50, yTo=0, duration=20, block=false)]
+[Delay(time=1)]
+[name="Misery"]這是……什麼東西？
+龐大的機械構造物在無盡的白噪音中緩緩浮現在了所有人的面前——
+構成其主體的部件，在場之人都很熟悉。
+可露希爾曾許多次向大家展示這些她對羅德島不同模組改造時所用的部件，甚至一些特殊部件就出自精英幹員之手。
+[name="Touch"]PRTS重組了羅德島的設備作為武器。
+[name="Touch"]但……這些部件是從哪冒出來的？Abyss裡明明沒有……
+[name="阿斯卡綸"]源石。
+源石的晶簇不規則地遍布在這尊造型獨特的機械上。
+它們不再僅僅吞噬，而是開始了創造。
+[name="Misery"]等等，源石能做到再現羅德島的東西？
+Logos想起了內化宇宙中那座高塔，也想起了殿下。
+[name="Logos"]沒這麼簡單。
+[name="Logos"]PRTS並沒有解碼源石數據的能力，其中必然有他人介入。
+[name="阿斯卡綸"]普瑞賽斯。
+[name="Raidian"]它的數據正透過我無法理解的方式和PRTS的核心相連，這個東西和之前那些源石結晶體不一樣！
+[name="煌"]無論如何，看起來怎麼都得打一架了。
+[name="Stormeye"]的確沒有其他辦法了。
+[name="Stormeye"]各位？
+[dialog]
+[PlaySound(key="$d_avg_attack_ready", volume=1)]
+[Delay(time=1.5)]
+[name="迷迭香"]可以動手。
+此時，菱形的眼睛光芒更甚。
+由PRTS控制形成的擬態機械開始蓄積能量……
+[dialog]
+[PlaySound(key="$d_avg_energygather", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Sticker(id="st1", multi = true, text="目標，不限。戰鬥風格已破解。", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n調用能源，無限制。",block = true)]
+[Sticker(id="st1", multi = true, text="\n\nPRTS最終清除協議已載入——",block = true)]
+[Sticker(id="st1", duration=0.5, block = false)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]
