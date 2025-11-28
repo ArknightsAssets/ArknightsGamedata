@@ -1,0 +1,1163 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="26_g9_laterano_street",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_bicyclegallop", volume=1, loop=true, channel="a")]
+[StopSound(channel="a", fadetime=2.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",posfrom="70,0",posto="0,0",duration=1)]
+[charslot(slot="r",name="avg_4188_confes_1#2$1",posfrom="100,0",posto="0,0",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="l")]
+[name="Mon3tr"]博士，這邊。
+[name="Mon3tr"]往裡面移一下，讓這輛甜點車在前面。
+[Dialog]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[Dialog]
+[PlaySound(key="$d_avg_transpthrn", volume=1)]
+[charslot(slot="m",name="avg_npc_1794_1#1$1",duration=1)]
+[delay(time=2)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_crowdrun", volume=0.8)]
+[charslot(slot="l",name="avg_npc_1788_1#1$1",posfrom="170,0",posto="0,0",duration=0.8)]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",posfrom="170,0",posto="0,0",duration=0.8)]
+[delay(time=1.2)]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[PlaySound(key="$d_gen_soldiersrun", volume=0.6)]
+[charslot(slot="l",name="avg_npc_371_1#1$1",posfrom="80,0",posto="0,0",duration=0.7)]
+[charslot(slot="r",name="avg_npc_371_1#1$1",posfrom="80,0",posto="0,0",duration=0.7)]
+[delay(time=1.2)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",posfrom="50,0",posto="-70,0",afrom=0,ato=1,duration=1)]
+[charslot(slot="r",name="avg_4188_confes_1#2$1",posfrom="50,0",posto="100,0",afrom=0,ato=1,duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="l",name="avg_4179_monstr_1#3$1",focus="l")]
+[name="Mon3tr"]總算能夠喘口氣了。
+[Dialog]
+[charslot]
+[Decision(options="辛苦了。;這輛甜點車是誰的？", values="1;2")]
+[Predicate(references="1;2")]
+[PlayMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1793_1#3$1",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[name="缺牙的小女孩"]姐姐，你也是慕名來參加儀式的吧！
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[name="缺牙的小女孩"]要、要吃吃看我的冰淇淋嗎？
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="n")]
+不容Mon3tr拒絕，小女孩已經開心地將手中的冰淇淋甜筒塞到了她手中。
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[name="缺牙的小女孩"]是在、在拉特蘭其他地方絕對吃不到的新口味哦——
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_4188_confes_1#2$1",focus="l")]
+[name="Mon3tr"]（我可以控制住她，不會驚動其他人。）
+[charslot(slot="l",name="avg_4179_monstr_1#6$1",focus="n")]
+Mon3tr一邊警惕地向你提議，一邊無意識地嚐了一口冰淇淋。
+[charslot(slot="l",name="avg_4179_monstr_1#8$1",focus="l")]
+[name="Mon3tr"]好吃欸……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="m")]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1793_1#3$1",focus="m")]
+[delay(time=1)]
+[Dialog]
+[charslot]
+[Decision(options="咳咳，孩子，能告訴我你叫什麼名字嗎？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_npc_1793_1#3$1",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_transpthrn", volume=1)]
+[charslot(slot="r",name="avg_npc_1794_1#1$1",posfrom="-100,0",posto="0,0",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_1793_1#10$1",focus="l")]
+[name="缺牙的小女孩"]它已經代替我回答了，告解師。
+[charslot(slot="l",name="avg_npc_1793_1#11$1",focus="l")]
+[name="伊蒂達"]滴答滴答滴答，我叫伊蒂達。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1",focus="m")]
+[name="Mon3tr"]你用甜點車的音效為自己取名？
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="m")]
+[name="伊蒂達"]什麼嘛，當然是我根據自己的名字訂製了它的出餐音效啊！
+[Dialog]
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="n")]
+[Decision(options="伊蒂達，你認識剛剛過去的戍衛隊嗎——;伊蒂達，你不害怕這個姐姐嗎——", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1793_1#5$1",focus="m")]
+[name="伊蒂達"]哇，我從來沒聽過告解車有這樣的聲線呢！
+[charslot(slot="m",name="avg_4179_monstr_1#11$1",focus="m")]
+[name="Mon3tr"]最新款。
+[Dialog]
+[charslot(slot="m",name="avg_4179_monstr_1#11$1",focus="n")]
+[Decision(options="（嘆氣）;她好像完全沒有在意。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#12$1",focus="m")]
+[name="Mon3tr"]伊蒂達，你剛剛在幫忙掩護我們嗎？
+[charslot(slot="m",name="avg_npc_1793_1#10$1",focus="m")]
+[name="伊蒂達"]嗯……因為整個拉特蘭都需要做出改變！
+[name="伊蒂達"]你們也是這樣想的，對吧？！
+[charslot(slot="m",name="avg_4179_monstr_1#1$1",focus="m")]
+[name="Mon3tr"]……
+[Dialog]
+[charslot]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1793_1#7$1",focus="m")]
+[name="伊蒂達"]難、難道是我自作多情嗎？姐姐，你是第一個稱讚我做的無糖氣泡水口味冰淇淋好吃的人！
+[charslot(slot="m",name="avg_4179_monstr_1#5$1",focus="m")]
+[name="Mon3tr"]（……難怪那麼解渴。）
+[charslot(slot="m",name="avg_npc_1793_1#7$1",focus="m")]
+[name="伊蒂達"]爸爸媽媽說得對，這是一條很難走的路……可是，我終於取得了一點成績！
+[charslot(slot="m",name="avg_4179_monstr_1#5$1",focus="m")]
+[name="Mon3tr"]什麼……意思？
+[charslot(slot="m",name="avg_npc_1793_1#6$1",focus="m")]
+[name="伊蒂達"]“甜食連接了每一個拉特蘭人”——可是攝取過量糖分的話，不只是長蛀牙那麼簡單，我們頭頂上的光環也會被慢慢蛀掉的！
+[name="伊蒂達"]爸爸是牙醫，每次他說起這番話，大家都以為他是為了幫診所招攬生意。
+[charslot(slot="m",name="avg_npc_1793_1#9$1",focus="m")]
+[multiline(name="伊蒂達")]但這段時間，我頭頂的光環，唔，就像我剛掉的蛀牙一樣，讓我感到不舒服……
+[charslot(slot="m",name="avg_npc_1793_1#12$1",focus="m")]
+[multiline(name="伊蒂達")]我相信，這是主給我的啟示！
+[charslot(slot="m",name="avg_npc_1793_1#11$1",focus="m")]
+[name="伊蒂達"]所以我要身體力行，一點點改善拉特蘭人的飲食習慣。重建彼此之間的連繫，從推廣無糖冰淇淋開始！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_4188_confes_1#2$1",focus="m")]
+[playsound(key="$d_avg_robotwalk", volume=1)]
+[delay(time=1.5)]
+[charslot]
+[Decision(options="很偉大的事業，伊蒂達。;客人，您願意支持這位公民的理想嗎？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#3$1",focus="m")]
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_4179_monstr_1#10$1",focus="m")]
+[name="Mon3tr"]可以讓我們和你多走一段路嗎？我想多聽你講一下……光環與蛀牙之間的關係。
+[charslot(slot="m",name="avg_npc_1793_1#1$1",focus="m")]
+[name="伊蒂達"]好、好啊！
+[stopmusic(fadetime=1.5)]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1",focus="m")]
+[name="Mon3tr"]（和這個孩子一起，應該能暫時避開追我們的人。博士，必須加快腳步和能天使取得聯絡。）
+[Dialog]
+[charslot]
+[Decision(options="正在嘗試。", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "能天使", switch = true, style = 1,offset = "-450,125", channel = 3)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="能天使"]你好啊老闆！
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[name="能天使"]現在能遠端通訊了，看來你受到的那個什麼訊息管控終於鬆動了！
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="並不完全是好事，能天使。", values="1")]
+[Predicate(references="1")]
+[Decision(options="這代表“夢境”世界裡的一切在加速崩毀。;這代表現實世界裡的災異在急劇惡化。", values="1;2")]
+[Predicate(references="1")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#1$1", duration = 0)]
+[name="能天使"]嘖，我想也是。
+[name="能天使"]這群人幾乎把所有的非薩科塔都聚集到了育嬰聖堂，他們要舉辦一場更大的降生儀式。
+[name="能天使"]先是一隻木攀獸長出光環，現在又要在所有人的腦袋上裝光環……
+[name="能天使"]雖然不知道他們要怎麼做到，但這變化也太快太匪夷所思了。
+[name="能天使"]老闆，按照你的說法，這個所謂的夢裡面無論發生了什麼，最終都會變成現實？
+[Predicate(references="2")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#1$1", duration = 0)]
+[name="能天使"]嘖，我想也是。
+[name="能天使"]老闆，按照你的說法，這棟又高又醜的建築真的豎立在拉特蘭的大街上，長光環的怪物在到處追著人跑？
+[name="能天使"]聽起來，現實發生的事情比夢裡面還可怕……
+[Predicate(references="1;2")]
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="如你所說，如我所見，能天使。", values="1")]
+[Predicate(references="1")]
+[Decision(options="但已經陸續有人甦醒。;現實的變數，正催使“夢境”跳過必要的步驟。", values="1;2")]
+[Predicate(references="1;2")]
+[interlude(channel = 3, switch = true)]
+[name="能天使"]……
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="能天使"]哎呀呀，太複雜了，老闆，你就告訴我，最壞的結果會變成什麼樣子？
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="拉特蘭或許將不復存在。", values="1")]
+[Predicate(references="1")]
+[Predicate(references="1")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#6$1", duration = 0)]
+[name="能天使"]呼——真是一個大事件！
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="能天使"]反正不管怎麼樣，我還能做的，就是找到那個最壞的傢伙，讓所有人都能夠擺脫這個虛假的“拉特蘭”，對吧？
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="保障你清醒地自由行動已經是我們的極限了。;我和Mon3tr受到的限制還未解除。;我和Mon3tr還在找別的線索。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[interlude(channel = 3, switch = true)]
+[name="能天使"]知道了！拉特蘭的麻煩，就讓我這個拉特蘭人去搞定吧！
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#5$1", duration = 0)]
+[name="能天使"]啊……我得小聲一點了。等一下降生儀式就開始了，陣仗很大，我好不容易找到機會溜進來的，嘿嘿。
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="我和Mon3tr會繼續在街上搞出一些動靜。;我和Mon3tr會繼續為你吸引注意力。", values="1;2")]
+[Predicate(references="1;2")]
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="能天使"]對了，我們兩個是怎麼認識的？
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#2$1", duration = 0)]
+[name="能天使"]空的發布會？德克薩斯的生日聚會？企鵝物流撞破了血錘幫的勾當，被追著誤打誤撞闖進龍門辦事處的那一次？
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#9$1", duration = 0)]
+[name="能天使"]哦，是那次，我打算去偷那幾匹一身傷病的老賽馱，剛好碰到你來幫牠們贖身？
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="反正是在龍門認識的。;好像都不是。", values="1;2")]
+[Predicate(references="1;2")]
+[interlude(channel = 3, switch = true)]
+[name="能天使"]不管怎麼說都有……五年了對吧？
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,0", pto="-460,0", name = "avg_1041_angel2_1#3$1", duration = 0)]
+[name="能天使"]就讓我們再漂亮地合作一次吧，老闆。
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[Decision(options="一言為定，能天使。;注意安全，能天使。", values="1;2")]
+[Predicate(references="1;2")]
+[playsound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true, tsto="0,1", tsduration=0.5)]
+[delay(time=1.5)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g1_nurserytemplesquare", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_avg_dreamrite_intro", key="$m_avg_dreamrite_loop", volume=0.6)]
+[playsound(key="$d_avg_comfortbell", volume=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_soldiersstep",channel="step2",loop=false, volume=0.7)]
+[stopsound(channel="step2",fadetime=4)]
+[PlaySound(key="$d_avg_armour", volume=1)]
+[charslot(slot="l",name="avg_npc_358_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_358_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[charslot(duration=0.3)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_358_1#1$1",duration=0.7)]
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="銃騎"]帕特里奇昂閣下，都已經就位了。
+[name="銃騎"]接下來，我們會配合聖堂巡邏守衛清空周圍的街道，控制各個路口，確保不會有任何計劃外的人員流動。
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="帕特里奇昂"]辛苦了。
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="銃騎"]全體銃騎齊聚一堂，彈藥配給和開火限制全部開放……自銃騎設立以來，是不是從來沒有過這麼大的陣仗？
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="帕特里奇昂"]這場降生儀式，對拉特蘭意義重大啊。
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="帕特里奇昂"]薩米冰蓋上的黑雪、萊塔尼亞上空的罅隙，甚至衝擊海岸的狂潮，都在呼應著我們啟示之中的那場真正的災異。
+[name="帕特里奇昂"]那麼它會是一場怎樣恐怖的災難？
+[name="帕特里奇昂"]真到了那時，兩百多位銃騎全部投入戰場……也不過是往大海裡投了幾塊石頭。
+[name="帕特里奇昂"]恐怕屹立千年的聖城，也將在那時褪去顏色。
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="銃騎"]……
+[name="銃騎"]戍衛隊和公證所仍在追捕蕾繆樂和她的同夥。
+[name="銃騎"]另外，您可能需要知道……負責為莫斯提馬和菲亞梅塔引路的保育員剛剛受到了襲擊。
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="帕特里奇昂"]——！
+[charslot(slot="l",name="avg_npc_358_1#1$1",focus="l")]
+[name="銃騎"]您要親自去看看嗎？
+[charslot(slot="r",name="avg_4194_rmixer_1#1$1",focus="r")]
+[name="帕特里奇昂"]……
+[name="帕特里奇昂"]……不。
+[name="帕特里奇昂"]我的崗位……在這裡。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_1788_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="保育員"]時間到了。
+[name="保育員"]各位黎博利同胞，請大家移步啟聖大廳。
+[charslot(slot="m",name="avg_npc_370_1#1$1",focus="m")]
+[name="緊張的修女"]……
+[charslot(slot="m",name="avg_npc_1784_1#3$1",focus="m")]
+[name="席德佳"]……
+[charslot(slot="m",name="avg_npc_1781_1#3$1",focus="m")]
+[name="潘格尼尼"]……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="61_g3_nurserytemplecorridor", screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_1788_1#1$1",posfrom="-100,0",posto="-100,0")]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0")]
+[charslot(slot="m",name="avg_npc_1787_1#1$1")]
+[delay(time=1)]
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1787_1#1$1",focus="m")]
+[name="保育員"]時間到了。
+[name="保育員"]請走這邊。在其他種族生長出光環後，牧首將為各位墮天使修補破損的光環與光翼，幫助大家重建與同胞的共感。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="61_g2_baptismlobby", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0.4, loop=true, channel="a")]
+[SoundVolume(volume=0.4, channel="a",fadetime=2)]
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[StopSound(channel="a", fadetime=2)]
+[PlaySound(key="$d_avg_walk_stage", volume=1, loop=true, channel="c")]
+[StopSound(channel="c", fadetime=2)]
+[charslot(slot="m",name="avg_npc_1785_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育員"]牧首，已經開始了。
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="牧首"]辛苦你們了。自這座聖堂建成起，各位幾乎就沒有休息過。
+[name="牧首"]上一次降生儀式之後意外頻發，我們不得不將原定的計劃提前。這座聖堂所承載的使命，必須儘快被完成。
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育員"]牧首，我們同行至今，早就有此覺悟。
+[name="保育員"]對了，今天這場儀式，明明是為了幫其他所有非薩科塔賜予光環，為什麼卻要沿用“降生”之名？
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="牧首"]還有比這更準確的表達嗎？
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育員"]……
+[Dialog]
+[charslot]
+保育員們正在引領著不同種族的人走進啟聖大廳，朝著正中央的位置匯聚，浩浩蕩蕩的隊伍彷彿群獸遷徙，卻沒什麼人說話……
+唯有無數安撫鈴有節奏地搖晃著。
+牧首似乎有所感應，她抬頭迎向眾人的方向。
+[playsound(key="$d_avg_comfortbell", volume=1)]
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[name="牧首"]自此後，受聖城庇護的每一人都將共享命運，融合成本應成為的整體，這何嘗不是拉特蘭的“新生”呢——
+[Dialog]
+[musicvolume(volume=0,fadetime=1)]
+[Delay(time=1.5)]
+[Dialog]
+[PlaySound(key="$glass", volume=0.6)]
+[PlaySound(key="$d_avg_asniperrifle", volume=0.5,delay=0.6)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[bgeffect(name="$eb_sunshine_upperedge",layer=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0.7, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育員"]————！
+[Dialog]
+[charslot]
+[musicvolume(volume=0.6,fadetime=1.5)]
+[delay(time=1)]
+玻璃碎裂的銳響劃開了安撫鈴令人安心的合奏。
+那是一顆狙擊銃的子彈，它不知從何處來，射向牧首失明的眼睛——
+刺眼的陽光灑了進來。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1777_1#1$1",focus="m")]
+[delay(time=0.5)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[bgeffect]
+[charslot]
+[Background(image="26_g12_laterano_office", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[delay(time=1)]
+[musicvolume(volume=0.2,fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="蕾繆安"]門口那對奇怪的夫婦……
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="公證所員工"]他們好像在用輪盤決定晚餐吃什麼，很有趣，對吧？
+[Dialog]
+[charslot]
+[name="蕾繆安"]嗯嗯。他們就是……
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="公證所員工"]希望能收養你的人。
+[Dialog]
+[charslot]
+[name="蕾繆安"]請問，為什麼他們不自己進來跟我說呢……
+[name="蕾繆安"]啊，我知道了。他們不希望給我太多壓力。
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="公證所員工"]你為什麼會這麼覺得？
+[Dialog]
+[charslot]
+[name="蕾繆安"]因為他們一邊轉銃一邊偷看我們這裡啊。
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="公證所員工"]哈哈哈，真是瞞不過你這個小傢伙啊——是我跟他們提前打過招呼了。
+[name="公證所員工"]你父母在那場商隊遇襲的事件中……這大半年，公證所也幫你接洽了一些家庭，但一直沒有結果。
+[name="公證所員工"]小蕾繆安，你是我見過最堅強的孩子，但未來還那麼長，你總不能真的這麼小就一個人生活吧……
+[Dialog]
+[charslot]
+[name="蕾繆安"]姐姐，我都知道的。
+[name="蕾繆安"]我並不是討厭什麼……只是、只是接受了別人的好，我也要做得很好才行，這是一件很重要很重要的事情！
+[charslot(slot="m",name="avg_npc_368_1#1$1",focus="m")]
+[name="公證所員工"]總之，他們託我轉達，他們確實很喜歡你。
+[Dialog]
+[charslot]
+[name="蕾繆安"]我也覺得他們很……可以再給我一週，不，三天時間嗎？我會好好做決定的。
+[name="蕾繆安"]做了決定，就再也不變了！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g12_firearmsworkshop", screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1781_1#2$1",focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1781_1#2$1",focus="m")]
+[name="潘格尼尼"]……感覺對了是吧，就這把？
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="蕾繆安"]嗯。
+[charslot(slot="m",name="avg_npc_1798_1#1$1",focus="m")]
+[multiline(name="蕾繆樂")]啊~狙擊銃啊，要是我，我一定不會選這把……
+[charslot(slot="m",name="avg_npc_1798_1#2$1",focus="m")]
+[multiline(name="蕾繆樂")]不對，等過幾年輪到我的時候，我要挑很多很多把！
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="蕾繆安"]哈哈，好。
+[charslot(slot="m",name="avg_npc_1781_1#2$1",focus="m")]
+[name="潘格尼尼"]怎麼說呢，這傢伙做出來已經好幾年了，但一直沒被人挑走，你要考慮清楚啊。
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="蕾繆安"]唔，它確實很安靜。
+[charslot(slot="m",name="avg_npc_1781_1#1$1",focus="m")]
+[name="潘格尼尼"]不不，我的意思是，這種銃和其他的銃武都不一樣。說實話，它沒那麼適合你們這些天性活潑的薩科塔。
+[name="潘格尼尼"]真到了戰場，它沒有多少開火的機會，每一顆子彈都很珍貴。
+[name="潘格尼尼"]無論你想要用它來守護什麼，或者摧毀什麼，你都要看得更多，想得更多，也要承擔更多的風險和代價……
+[name="潘格尼尼"]因為無論是扣動扳機還是鬆開手指，那一刻你都不再有任何猶豫的資格。
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="蕾繆安"]……
+[Dialog]
+[charslot]
+今天是蕾繆安的生日。在這天挑選守護銃，讓這個對薩科塔來說本來就異常重要的時刻又多了些意義。
+製銃師說得很認真，站在身後的爸爸媽媽，還有陪自己來的朋友都沒有說話，連一向靜不下來的蕾繆樂也乖乖閉上了嘴巴。
+但蕾繆安知道他們都在看著自己。
+[charslot(slot="m",name="avg_npc_1797_1#1$1",focus="m")]
+[name="蕾繆安"]潘大師，就它了。辛苦您帶我去挑其他的配件吧。
+[charslot(slot="m",name="avg_npc_1798_1#2$1",focus="m")]
+[name="蕾繆樂"]好欸！
+[name="蕾繆樂"]潘大師，其實您根本不用擔心這把銃沒多少開火的機會。這麼大的銃托也可以用來打人，我老姐的力氣超大的！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_cave_5", screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1800_1#8$3")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="m")]
+[name="安多恩"]——！
+[name="安多恩"]最漆黑的污穢也能被屬靈的潔白洗去，最猙獰的怪物也能滿心虔誠地跋涉出泥淖……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_frdrgnld", volume=1)]
+[Delay(time=1)]
+[name="蕾繆安"]——呼——
+[name="蕾繆安"]放下那個東西，隊長。我已經瞄準你了。
+[name="蕾繆安"]你的狀態很不穩定，我能感受到……冷靜下來。那個東西牽動了你的情緒，喚起了你對拉特蘭的失望。
+[name="蕾繆安"]我知道你臨行前已經提交了辭呈……但哪怕你真的決心以後要重回荒野，你現在也還是我們的同伴。
+[name="蕾繆安"]想想我們出發前一起吃的炸起司條，好嗎？想想菲亞梅塔送你的羽獸帽子，毛茸茸的……
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="m")]
+[name="安多恩"]對拉特蘭的失望……不，不……恰恰相反！祂讓我看到拉特蘭能救所有人。
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="n")]
+[name="蕾繆安"]我們誰都無法斷定你看到的究竟是現實、是真理還是幻象與謊言……莫斯提馬很快就會趕過來，她有辦法回收那個東西。
+[name="蕾繆安"]之後我們可以慢慢研究它的秘密，好嗎？
+[charslot(slot="m",name="avg_npc_1800_1#8$3",focus="m")]
+[name="安多恩"]沒有之後了，那個景象在消退！我必須抓住它……蕾繆安，你知道它不是幻象，更不是什麼謊言！
+[charslot(slot="m",name="avg_npc_1800_1#9$3",focus="m")]
+[PlaySound(key="$d_avg_originiumcast", volume=1)]
+[name="安多恩"]你看見了地宮裡那些被靜滯在時間之外的人，那些不會死去也沒在活著的人。
+[name="安多恩"]你也聽到了那個癲瘋的薩卡茲都跟他自己的影子說了什麼——“未來沒有秘密可言。”
+[name="安多恩"]那你應該能理解，我們找到的是時間本身的鑰匙，我看到的是啟示，是連最猙獰的怪物都得救的……未來。
+[charslot(slot="m",name="avg_npc_1800_1#9$3",focus="n")]
+[name="蕾繆安"]你的源石技藝在溢出，安多恩，那個傢伙在侵蝕你——
+[charslot(slot="m",name="avg_npc_1800_1#5$3",focus="m")]
+[name="安多恩"]如果那樣的未來存在，我必須要看到通向它的道路。
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="安多恩"]我不會放手，我需要知曉更多！
+[Dialog]
+[charslot]
+安多恩緊握那個造型奇特的法杖，光芒凝聚成實質的能量，襲捲整個洞窟。
+自己有很多個機會可以扣動扳機，蕾繆安心想。
+但在鋪天蓋地的情緒亂流中，蕾繆安終於觸摸到了對方的那一絲清明。
+自他們相識，自他們相知，他們相互理解，交託生死，他們的共感遠比其他人更強烈。
+蕾繆安在最後一刻，確認了自己的戰友沒有被不可知的混沌裹挾。
+她鬆開了扣著扳機的手指。
+[Dialog]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_keeprunning",volume=1,channel="step",loop=true)]
+[stopsound(channel="step",fadetime=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="莫斯提馬"]該死，蕾繆安，小心！
+[Dialog]
+[PlaySound(key="$d_avg_gunshot", volume=0.9)]
+[PlayMusic(key="$m_act42side_bat2_loop", volume=0.6)]
+[CameraShake(duration=0.7, xstrength=20,ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Image(image="61_i14", screenadapt="coverall",fadetime=0, xScale=1.7, yScale=1.7, x=-420)]
+[ImageTween(image="61_i14", fadetime=0.5, xScaleFrom=1.7, yScaleFrom=1.7, xScaleTo=1.7, yScaleTo=1.7, xTo=420,duration=30)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1.5, block=true)]
+[delay(time=4)]
+[PlaySound(key="$d_avg_cartridgepopup", volume=1)]
+[name="蕾繆安"]呼——！
+[name="蕾繆安"]育嬰聖堂牧首歧法——已命中。
+[Dialog]
+[delay(time=1)]
+頂樓的風肆意吹過狙擊手的臉頰，她沒有眨眼，她的手很穩。
+她聽，她看，她想，她判斷。
+她沒有多少開火的機會，每一顆子彈都很珍貴。
+無論是扣動扳機還是鬆開手指，那一刻她都不再有猶豫的資格。
+在那之前，她和她的銃都沉默不語——
+[Dialog]
+[Image(image="61_i14", screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+“噤聲的蕾繆安”。
+蕾繆安再次確認了一眼狙擊鏡裡的內容，那是她扣動扳機的證據。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image]
+[delay(time=0.5)]
+[charslot]
+[Image(image="61_i06", screenadapt="coverall",block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[delay(time=0.5)]
+[musicvolume(volume=0.3,fadetime=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="牧首"]相比外面的遼闊土地，拉特蘭隨處可見的那種聖像往往才是難以理解的，樞機。
+[name="牧首"]樂園形塑了我們別樣到有些失真的虔誠。
+[name="牧首"]跋涉在天災與苦難中的生靈，為生存祈願……這才是信仰最初的形貌。
+[Dialog]
+[delay(time=1)]
+不，拉特蘭從未有過規整無趣的雕像。
+信仰由生活所形塑，持銃的聖徒矗立在街道上，並不代表對災禍與苦難的藐視，我們只是選擇了以不同的姿態去面對它們。
+透過狙擊鏡，在距離足夠遠的位置，蕾繆安終於能看清楚，聖堂裡所有俯首合十的聖像，都只是在向那位虔誠的牧首禱告。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[image]
+[delay(time=0.5)]
+[charslot]
+[Image(image="61_i14", screenadapt="coverall",block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[musicvolume(volume=0.6,fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="蕾繆安"]歧法……如果是那樣可怕的怪物，這顆子彈或許很難對她造成什麼傷害。
+[name="蕾繆安"]但起碼，能讓聖堂裡的人們注意到她的異常，也能為你創造一些機會……小樂。
+[name="蕾繆安"]剩下的，就交給你了！
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[charslot]
+[Background(image="26_g10_laterano_roof", screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_crowdrun",volume=0.4)]
+[PlaySound(key="$pistol", volume=0.3,delay=0.5)]
+[PlaySound(key="$d_avg_gunsingle", volume=0.4,delay=0.8)]
+[PlaySound(key="$d_avg_revolver",volume=0.4,delay=1)]
+[delay(time=2.5)]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="m")]
+[name="蕾繆安"]……
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="n")]
+[playsound(key="$transmission", volume=1)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="m")]
+[name="蕾繆安"]阿摩斯先生？
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="n")]
+[name="阿摩斯"]……蕾繆安小姐，這個位置已經暴露了。
+[charslot(slot = "m", name = "avg_npc_1811_1#5$1",focus="m")]
+[name="蕾繆安"]我馬上支援你。
+[charslot(slot = "m", name = "avg_npc_1811_1#5$1",focus="n")]
+[name="阿摩斯"]不、不用。
+[name="阿摩斯"]聖堂巡邏守衛已經過來了，還、還有銃騎……很多人！
+[name="阿摩斯"]我會守住這個街口，趁他們還沒有徹底圍住您所在的那棟樓，快點撤退吧……
+[charslot(slot = "m", name = "avg_npc_1811_1#11$1",focus="m")]
+[name="蕾繆安"]那你呢？
+[charslot(slot = "m", name = "avg_npc_1811_1#11$1",focus="n")]
+[name="阿摩斯"]來不及了。
+[Dialog]
+[PlaySound(key="$d_avg_gunsingle", volume=0.4)]
+[PlaySound(key="$d_avg_gunsingle", volume=0.5,delay=0.2,channel="z")]
+[name="阿摩斯"]他們直接對我開火了，看來我們的推斷沒錯，這哪裡像是一個專門生小孩的地方……
+[name="阿摩斯"]對了，目標解決了嗎？
+[charslot(slot = "m", name = "avg_npc_1811_1#1$1",focus="m")]
+[name="蕾繆安"]嗯，一擊命中。
+[charslot(slot = "m", name = "avg_npc_1811_1#1$1",focus="n")]
+[name="阿摩斯"]那就好那就好，哈哈。這樣我起碼救了一些人，阻止了一些事，不至於那麼庸碌無為。
+[name="阿摩斯"]那麼，再見。去做您該做的事情，蕾繆安小姐。
+[stopmusic(fadetime=1.5)]
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_recorderglitch",volume=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1811_1#8$1",focus="m")]
+[name="蕾繆安"]……
+[Dialog]
+[charslot]
+[name="阿摩斯"]其實我想問您一個問題……只不過您聽不到了，我才敢開口就是了。
+通訊應該是出了故障，沒有完全切斷，那個男人就這麼在另外一端不停地碎碎念。
+蕾繆安猶豫了一下，選擇了沉默。
+[playMusic(intro="$dignified_intro", key="$dignified_loop", volume=0.6)]
+[name="阿摩斯"]我是不是真的是個很沒用的傢伙？
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#11$1",focus="m")]
+[name="蕾繆安"]……
+[Dialog]
+[charslot]
+[name="阿摩斯"]其實我以前也沒有這種想法。雖然自己費了好大的功夫，才勉強擠進了七廳，當上一個小調查員，而且一做就是十幾年沒變……
+[name="阿摩斯"]但拉特蘭人好像從來不會在這方面懷疑自己。我們好像天生就有一百種方式讓自己快樂，讓自己感到充實。
+[name="阿摩斯"]我認識一位做棒棒糖紙棍的匠人，他總是用好幾種紙帶，纏出彩虹色的紙棍……他賺不到什麼錢，只是知道孩子們會喜歡這些。
+[name="阿摩斯"]但當我知道奧羅拉被驅逐出拉特蘭，而自己什麼都做不了的時候，我沒能找到任何一種方式，再讓自己感受到哪怕一秒的充實。
+[name="阿摩斯"]“阿摩斯，你真沒用啊。”——這種該死的情緒就一下子把我包裹住了……就像人生第一次吃到味道糟糕的甜點，再也忘不掉，哈哈。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#4$1",focus="m")]
+[name="蕾繆安"]……
+[Dialog]
+[charslot]
+[PlaySound(key="$pistol", volume=0.3)]
+[PlaySound(key="$d_avg_revolver",volume=0.4,delay=0.3)]
+[PlaySound(key="$d_avg_gunsingle", volume=0.5,delay=0.4)]
+[name="阿摩斯"]我只是想著，或許再過幾年，也能憑資歷混上萬國信使，去一趟玻利瓦爾……
+[name="阿摩斯"]我沒資格代表拉特蘭去拯救她，甚至我自己也無法原諒她的所作所為。我只是想見她一面，為當年吵的架道個歉什麼的……
+[name="阿摩斯"]那麼長的時間，好不容易等到了機會，結果……結果竟然只是一場夢……
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#4$1",focus="m")]
+[name="蕾繆安"]……
+[Dialog]
+[charslot]
+[name="阿摩斯"]是夢也好。
+[name="阿摩斯"]是夢的話，就不用有什麼顧忌了，說不定中彈受傷回到現實其實也無事發生呢！
+[name="阿摩斯"]我年輕的時候，還曾拿了七廳新員工入職射擊比賽的第五名啊！
+[name="阿摩斯"]奧羅拉，我們也是在那天那個靶場相遇的吧……
+[name="阿摩斯"]真遺憾啊，沒能成為彼此的救贖。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_pistolshoot", volume=0.3)]
+[PlaySound(key="$d_avg_pistolshoot", volume=0.5,delay=0.3,channel="z")]
+[PlaySound(key="$d_avg_gunsingle", volume=0.4,delay=0.5)]
+[Delay(time=2)]
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1811_1#6$1",focus="m")]
+[playsound(key="$d_gen_transmissionget", volume=0.4)]
+[Delay(time=1)]
+[name="蕾繆安"]阿摩斯先生，起碼，你是個很好的調查員。
+[charslot(slot = "m", name = "avg_npc_1811_1#6$1",focus="n")]
+[name="阿摩斯"]蕾繆安小姐，原來你還在……
+[Dialog]
+[PlaySound(key="$d_avg_gunshot", volume=0.4)]
+[PlaySound(key="$bodyfalldown2", volume=1,delay=1)]
+[Delay(time=2)]
+[playsound(key="$transmission", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1811_1#6$1",focus="m")]
+[name="蕾繆安"]……
+[charslot(slot = "m", name = "avg_npc_1811_1#2$1",focus="m")]
+[name="蕾繆安"]夢該醒了。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g3_nurserytemplecorridor", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$monastery_sad_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_marblefootsteps_loop", volume=0.8, loop=true, channel="walk")]
+[stopsound(channel="walk", fadetime=2)]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="安多恩"]……
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="保育員"]安多恩前輩，葬禮結束了嗎？
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="安多恩"]嗯。
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="保育員"]啟聖大廳的方向在這邊……您好像走反方向了。
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="安多恩"]是嗎？
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="保育員"]降生儀式已經開始了，牧首還在等著您過去幫忙，這個時候，您打算去哪裡？
+[name="保育員"]您的情緒……相當不穩定。
+[charslot(slot="m",name="avg_npc_1800_1#12$1",focus="m")]
+[name="安多恩"]不，我感到前所未有的明晰，我也沒有走錯方向。
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="保育員"]——
+[Dialog]
+[charslot]
+[delay(time=0.2)]
+[PlaySound(key="$d_gen_soldiersrun", volume=0.7)]
+[charslot(slot="l",name="avg_npc_1789_1#1$1",posfrom="-100,0",posto="-100,0",duration=1)]
+[charslot(slot="r",name="avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0",duration=1)]
+[charslot(slot = "m", name = "avg_npc_1788_1#1$1",duration=1)]
+[delay(time=2.5)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[name="保育員"]安多恩前輩，請您跟我去見牧首。
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_1789_1#1$1",posfrom="-100,0",posto="-100,0",focus="all")]
+[charslot(slot = "r", name = "avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0",focus="all")]
+[charslot(slot = "m", name = "avg_npc_1788_1#1$1",focus="all")]
+[playsound(key="$d_avg_gunequip",volume=0.9)]
+[PlaySound(key="$d_avg_gunload", volume=1,delay=0.1)]
+[delay(time=2)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="安多恩"]……
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_1789_1#1$1",posfrom="-100,0",posto="-100,0",focus="all")]
+[charslot(slot = "r", name = "avg_npc_1789_1#1$1",posfrom="100,0",posto="100,0",focus="all")]
+[charslot(slot = "m", name = "avg_npc_1788_1#1$1",focus="all")]
+[delay(time=0.2)]
+[PlaySound(key="$fightgeneral", volume=1)]
+[PlaySound(key="$d_avg_punch", volume=0.6,delay=0.6)]
+[PlaySound(key="$d_avg_punch02",volume=0.6,delay=1)] 
+[PlaySound(key="$bodyfalldown1", volume=1,delay=2)]
+[CameraShake(duration=2, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[charslot(slot="l", afrom=1,ato=0,duration=0.7)]
+[charslot(slot="r", afrom=1,ato=0,duration=0.7)]
+[charslot(slot="m", afrom=1,ato=0,duration=0.7)]
+[delay(time=2)]
+[charslot]
+[Dialog]
+[charslot(slot="m",name="avg_npc_1786_1#1$1",focus="m")]
+[delay(time=0.2)]
+[playsound(key="$d_avg_punchsp1",volume=1)]
+[CameraShake(duration=1, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.5)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(duration=0.7)]
+[delay(time=1.5)]
+[Dialog]
+[charslot(slot = "l", name = "avg_213_mostma_1#10$1",duration=1)]
+[charslot(slot = "r", name = "avg_300_phenxi_1#9$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "l", name = "avg_213_mostma_1#10$1",focus="l")]
+[name="莫斯提馬"]看來我們來得很及時。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="安多恩"]莫斯提馬、菲亞梅塔，你們……
+[charslot(slot = "m", name = "avg_300_phenxi_1#10$1",focus="m")]
+[name="菲亞梅塔"]我應該和其他黎博利一樣，現在正嚴厲抗議，卻被聖堂巡邏守衛按回隊伍中？
+[charslot(slot = "m", name = "avg_300_phenxi_1#9$1",focus="m")]
+[name="菲亞梅塔"]或者滿心期待地猜，等一下長出的光環是正方形的還是圓形的？
+[charslot(slot = "m", name = "avg_213_mostma_1#7$1",focus="m")]
+[name="莫斯提馬"]話說回來，我還是很好奇他們要怎麼幫墮天使修補光環……
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="菲亞梅塔"]莫斯提馬！
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[name="莫斯提馬"]言歸正傳，安多恩，你欠我們一個解釋。
+[charslot(slot = "m", name = "avg_213_mostma_1#9$1",focus="m")]
+[name="莫斯提馬"]把所有非薩科塔集中起來，硬是對他們的身體進行改造……我以為這種事情只會發生在哥倫比亞那些瘋子雲集的科技公司裡。
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="菲亞梅塔"]這就是你所謂的，“關於未來，關於拉特蘭的可能性”？
+[name="菲亞梅塔"]這就是你的牧首許諾給你的東西？
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="安多恩"]……
+[charslot(slot="m",name="avg_npc_1800_1#6$1",focus="m")]
+[name="安多恩"]我走錯了路，我不否認。
+[name="安多恩"]拉特蘭為我們所有人編織了美夢，而我陷得太深，清醒得太遲。
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="菲亞梅塔"]安多恩，都到了這個時候，你還在說什麼鬼話啊？
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_comfortbell",volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1800_1#6$1",focus="m")]
+[name="安多恩"]其他巡邏守衛很快就會趕過來。
+[charslot(slot = "m", name = "avg_300_phenxi_1#6$1",focus="m")]
+[name="菲亞梅塔"]該死。莫斯提馬，你說我們用這個傢伙當人質，是不是也能接近那個牧首？
+[charslot(slot = "m", name = "avg_213_mostma_1#7$1",focus="m")]
+[name="莫斯提馬"]或許？那個人還蠻信任安多恩的。不然完全交給小樂，我有點不放心。
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="安多恩"]……
+[name="安多恩"]我感受到了……越來越充盈的情緒，這代表著，這座聖堂內能夠共感的人正在增加……
+[charslot(slot="m",name="avg_npc_1800_1#6$1",focus="m")]
+[name="安多恩"]降生儀式已經開始了，哪怕你們這時候控制住了牧首，也於事無補。
+[name="安多恩"]兩位，我們都應該去做還能做到的事情。
+[name="安多恩"]這場本不該存在的儀式，我會想辦法。
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="安多恩"]但那可能會招致巨大的混亂……或許你們那時候還來得及疏散那些同胞。
+[charslot(slot = "m", name = "avg_300_phenxi_1#3$1",focus="m")]
+[name="菲亞梅塔"]……
+[charslot(slot = "m", name = "avg_213_mostma_1#11$1",focus="m")]
+[name="莫斯提馬"]……
+[name="莫斯提馬"]你想做什麼？
+[charslot(slot = "m", name = "avg_300_phenxi_1#7$1",focus="m")]
+[name="菲亞梅塔"]安多恩，你憑什麼以為我們會相信你？一個曾經傷害戰友、滿嘴胡扯的瘋子，會救所有人？
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="安多恩"]你們不需要相信我。
+[charslot(slot="m",name="avg_npc_1800_1#1$1",focus="m")]
+[name="安多恩"]憐憫不足以拯救世人，我沒那個能力。
+[name="安多恩"]一個被執念推進歧途的人，能做的，只是救他自己。
+[Dialog]
+[charslot(duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot = "m", name = "avg_213_mostma_1#11$1",focus="m")]
+[name="莫斯提馬"]安多恩，等等。拿著這個。
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="安多恩"]……炸彈？
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[name="莫斯提馬"]小樂留給我們的，用來吸引衛兵的注意。
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[multiline(name="莫斯提馬")]但如果你真的如你自己所說，要去阻止這場本不該存在的儀式……
+[charslot(slot = "m", name = "avg_213_mostma_1#7$1",focus="m")]
+[multiline(name="莫斯提馬")]那你比我們更需要它。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1800_1#1$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_marblefootsteps_loop", volume=0.8, loop=true, channel="walk")]
+[stopsound(channel="walk", fadetime=4)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+安多恩越過兩人，徑直走向育嬰聖堂的深處。
+他走得並不算快，但菲亞梅塔終究沒有攔下他。
+[charslot(slot = "m", name = "avg_213_mostma_1#1$1",focus="m")]
+[name="莫斯提馬"]你竟然肯就這麼放他走？
+[charslot(slot = "m", name = "avg_300_phenxi_1#8$1",focus="m")]
+[name="菲亞梅塔"]每次他不講這裡那裡的故事，只說這麼三兩句的時候，都還蠻可靠的。
+[charslot(slot = "m", name = "avg_213_mostma_1#10$1",focus="m")]
+[name="莫斯提馬"]確實如此。
+[charslot(slot = "m", name = "avg_300_phenxi_1#6$1",focus="m")]
+[name="菲亞梅塔"]眼下的事情太離奇了，我們一時之間也沒有別的辦法。
+[Dialog]
+[PlaySound(key="$d_gen_soldiersrun",volume=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_213_mostma_1#8$1",focus="m")]
+[name="莫斯提馬"]有人過來了，數量還不少……應該是去追安多恩的。
+[charslot(slot = "m", name = "avg_300_phenxi_1#6$1",focus="m")]
+[name="菲亞梅塔"]幫他擋下吧……等這件事結束了，再去找他算帳。
+[Dialog]
+[playsound(key="$d_avg_gunequip",volume=0.9)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+聖堂的第一間育嬰室。
+曾經，他滿懷希望，在這裡日復一日地照料一位不幸的母親。
+而今，牠留下的孩子正攀在安撫鈴上舒展自己剛剛梳洗過的羽翼，晶瑩的水珠挽著燈光旋轉，如夢似幻。
+木攀獸並不介意牠的養育者上一次的失態。牠歡快地鳴叫著，一如往常，邀請安多恩與牠玩耍。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="牧首"]微不足道的小事，驚天動地的壯舉，不過一線之隔，一念之差。你苦尋多年才跋涉至此，不應該為了這種無謂的區別而止步。
+[name="牧首"]接下來，除了照顧好這對母子，我需要你打起精神，去做更多的事情。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+一位微不足道的保育員，一座遮天蔽日的聖堂。
+前者可以咬著牙狠下心，拒絕一隻小獸玩耍的邀請，但這樣小小的反叛，不會將後者撼動分毫。
+[charslot(slot="m",name="avg_npc_1800_1#13$1",focus="m")]
+[name="安多恩"]我應該做更多……我必須做更多！
+[name="安多恩"]但我該怎麼撼動這座聖堂？我該怎麼消除已經發生的奇蹟？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="牧首"]育嬰聖堂……這座高聳入雲的巨型結構，並非於一日之內落成。它的開端也只是這樣一間平平無奇的育嬰室。
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="安多恩"]我們的育嬰室……
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="牧首"]你我最初可曾手握宏偉聖堂的藍圖？不，我們只是想要一個安全而舒適的房間，用來安置那位母親……
+[name="牧首"]但它依然一發不可收拾地演化成了現在的樣子。
+[name="牧首"]那麼，一個所有人都得救的未來，當然可以起始於你我的信仰。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="61_g4_nurseryindoor", screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="安多恩"]這就是育嬰聖堂的第一間育嬰室，這就是這座巨型結構最初的開端。
+[name="安多恩"]這就是你我寄放信仰的地方。
+[charslot(slot="m",name="avg_npc_1800_1#15$1",focus="m")]
+[name="安多恩"]那麼，歧法，我會撕碎我的信仰。
+[Dialog]
+[charslot]
+安多恩端詳著莫斯提馬留給他的那枚炸彈。各形各色的日用品被以意想不到的方式拼接在一起，上面還點綴著張揚的塗鴉。
+他回想不起做出這枚炸彈的女孩的樣貌，他們或許見過幾次，又或許從不曾謀面。他只記得蕾繆安無數次不厭其煩地講起她的事蹟。
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="安多恩"]……尋路的苦旅，從來都不只是我自己在承擔嗎？
+[Dialog]
+[charslot]
+他毫不猶豫地接上了引線。
+[charslot(slot="m",name="avg_npc_1790_1#1$1",focus="m")]
+[playsound(key="$d_avg_birdlingchirp_1",volume=1)]
+[name="木攀獸"]（歡快地嚶鳴）
+[charslot(slot="m",name="avg_npc_1800_1#7$1",focus="m")]
+[name="安多恩"]孩子，你已然不再悲傷，不再痛苦。但這裡即將被炸毀，你也沒有察覺到危險嗎？
+[name="安多恩"]……還是說，你對此也並不在意？
+[name="安多恩"]拉特蘭，甚至不再需要你我感到恐懼？
+[charslot(slot="m",name="avg_npc_1790_1#1$1",focus="m")]
+[playsound(key="$d_avg_birdlingchirp_2",volume=1)]
+[name="木攀獸"]（疑惑地嚶鳴）
+[Dialog]
+[charslot]
+木攀獸飛落地面，疑惑地蹭著安多恩的褲腿。
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_npc_1800_1#10$1",focus="m")]
+[name="安多恩"]倘若不會對生命中所發生的一切感到緬懷、恐懼與痛苦，我們談何對它心存敬畏？
+[charslot(slot="m",name="avg_npc_1800_1#2$1",focus="m")]
+[name="安多恩"]孩子，我本應這麼問你。
+[charslot(slot="m",name="avg_npc_1800_1#3$1",focus="m")]
+[name="安多恩"]但本就是我將你帶來這裡。甚至可以說，你是為了回應我的願景而誕生。
+[charslot(slot="m",name="avg_npc_1800_1#1$1",focus="m")]
+[name="安多恩"]……這是你我共同的苦修與功課。
+[Dialog]
+[PlaySound(key="$d_avg_clothtrailground", volume=1)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+安多恩彎下腰，將木攀獸抱在了懷中。
+[Dialog]
+[PlaySound(key="$d_avg_asniperrifle", volume=0.4)]
+[Delay(time=1)]
+[name="安多恩"]這個銃聲——
+[name="安多恩"]蕾繆安，真高興這次能聽見你的銃聲。
+[Dialog]
+[Delay(time=1)]
+[PlaySound(key="$e_skill_explodebris",volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[CameraShake(duration=4, xstrength=30,ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Image(image="61_i13",screenadapt="coverall",fadetime=0,block=true)]
+[PlaySound(key="$firestorm", volume=1)] 
+[PlaySound(key="$d_avg_churchfire", volume=0, loop=true, channel="b")]
+[SoundVolume(volume=0.4, channel="b",fadetime=3)]
+[PlayMusic(intro="$m_bat_martyr_intro", key="$m_bat_martyr_loop", volume=0.6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=3, block=true)]
+[Delay(time=2)]
+火花在育嬰室內肆意綻放，巨大的安撫鈴搖晃著墜落，迸濺出更大的聲響，爆炸正在吞沒房間內那些曼妙的光影。
+[Dialog]
+[name="安多恩"]這究竟是夢境，還是你我的執念？
+[name="安多恩"]曾經，你的身後跟隨著一群兄弟姐妹，他們被厭棄、被損毀、被侮辱、被褻瀆……他們稱你為先導，他們與你同行長路。
+[name="安多恩"]而在你自認終於平等無私的拉特蘭裡，你遺忘了他們。那麼……
+[name="安多恩"]你渴望族群被怎樣形塑？
+[name="安多恩"]你渴望聖城被怎樣重建？
+[name="安多恩"]安多恩，你所行的，究竟是怎樣的道途？它又通向怎樣的答案？
+[name="安多恩"]……
+[name="安多恩"]倘若這是夢境，那就醒來。倘若這是執念，那就破除。
+[name="安多恩"]而後，我們再談救贖。
+[Dialog]
+[PlaySound(key="$d_avg_explosion", volume=0.9)]
+[playsound(key="$d_avg_explosion_stone", volume=0.8,delay=0.8)]
+[PlaySound(key="$d_avg_statuecollapse",volume=0.6,delay=0.4)]
+[CameraShake(duration=4, xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=0.8, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=2, block=true)]
+[Delay(time=1)]
+[image]
+火光吞沒了整間育嬰室，木攀獸奮力振翅，眼中沒有恐懼，彷彿只為起舞。
+但安多恩仍下意識地摀住了牠的眼睛。
+[Dialog]
+[stopmusic(fadetime=3)]
+[StopSound(channel="b", fadetime=2)]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_churchbell", volume=1)]
+[Delay(time=2)]
+最後的時刻，安多恩聽見了一聲鐘聲，清晰可聞。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="61_g2_baptismlobby", screenadapt="coverall", y=40,xScale=1.3, yScale=1.3,block=true)]
+[delay(time=2)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_asniperrifle", volume=0.4)]
+[PlaySound(key="$d_avg_explosion", volume=0.4,delay=0.2)]
+[PlaySound(key="$d_avg_churchbell", volume=0.6,delay=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="牧首"]——！
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育員"]牧首，您還好嗎？
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="牧首"]嗯……
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育員"]儀式被中斷了，整座育嬰聖堂都在震顫，剛剛那場爆炸……
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_crwddiscuss_outside", loop=true, channel="bgs",volume=0.4)]
+[stopsound(channel="bgs",fadetime=6)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="牧首"]同胞們正在撤離嗎？
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育員"]是、是……有個穿著戍衛隊制服的黎博利，還有個墮天使在引導他們。
+[name="保育員"]只有半數非薩科塔成功產生了光環，我立刻動員巡邏守衛將大家追回——
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_explosion", volume=0.4)]
+[PlaySound(key="$d_avg_churchbell", volume=0.6,delay=0.2)]
+[playsound(key="$d_avg_statueshake", volume=0.6,delay=0.7)]
+[CameraShake(duration=1.5, xstrength=25,ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+爆炸聲像是破裂的竹節，從育嬰聖堂的深處傳來，不知何處傳來的鐘聲蓋住了安撫鈴的聲響，育嬰聖堂內亂作一團，無數人向外湧出。
+這座高聳入雲的建築在搖晃，爆炸的氣浪終於襲捲至啟聖大廳……
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="牧首"]讓同胞們離開吧。
+[name="牧首"]強迫他們留下，只會留下不可逆的損傷。
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育員"]牧首，聖堂正在崩解……
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="牧首"]不。正在崩解的不只這座聖堂，還有我們藉它求索的答案本身。
+[name="牧首"]去召集其他保育員，大家也快點離開吧。
+[charslot(slot="m",name="avg_npc_1785_1#1$1",focus="m")]
+[name="保育員"]我會安排巡邏守衛護送您離開。
+[charslot(slot = "m", name = "avg_npc_1777_1#1$1",focus="m")]
+[name="牧首"]……
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[charslot(duration=1)]
+[delay(time=2)]
+牧首走下了啟聖台。
+[Dialog]
+[PlaySound(key="$d_avg_strongwind", volume=0.7)]
+[delay(time=1)]
+風聲。無數混亂的聲響中，她清晰地聽到了一道風聲，來自頭頂，那裡本應只有禱告的聖像和潔淨的彩窗。
+[name="？？？"]嘿嘿，這裡，在這裡！
+[name="？？？"]你還走不了哦！
+[Dialog]
+[backgroundTween(yFrom=40, yTo=-80, xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1.3, yScaleTo=1.3, duration=3)]
+[delay(time=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+[charslot]
+[Image(image="61_i15", screenadapt="coverall",fadetime=0)]
+[delay(time=1)]
+[PlayMusic(intro="$m_bat_act26side_intro", key="$m_bat_act26side_loop", volume=0.6)]
+[PlaySound(key="$d_avg_cnstrctnck", volume=0.7)]
+[PlaySound(key="$d_avg_pdreambroken_gradual", volume=0.6,delay=0.4)]
+[CameraShake(duration=2, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+牧首抬頭，她看不見接近自己的人是誰，但對方的聲音太過於有感染力，她情不自禁地伸出了手。
+[name="能天使"]我在彩窗上趴了整整兩個小時，你再不從這個啟聖台上走下來，我的手臂都快斷了！
+能天使緊緊地扣住了牧首，天旋地轉，兩人同時跌倒在地。
+但她們身下並非堅實的地面，而是某種詭異的柔軟，像是濃霧，又像是水面。
+能天使感受到一股巨大的力將自己往外推，那絕不只是爆炸的氣浪，可是這個看起來柔柔弱弱的女性真的有這麼大的力氣嗎？
+能天使奮力睜開眼睛，不知何時，自己扣緊的那節手臂已經變成了粗糙的動物肢體，而牧首溫柔的臉，像是隱沒在了水面的另一端……
+她們正隔著虛假與真實對望，而啟示石塔的鐘聲在自己這一側響起，清晰可聞。
+[name="能天使"]……
+[name="能天使"]雖然早就猜到你這個傢伙不是什麼好東西，但沒想到我的想像力還是不夠啊，《洪爐示歲》也沒有這麼拍吧！
+[name="能天使"]不過這樣我就不擔心把你的手臂拉斷了！
+[name="能天使"]好不容易、好不容易我的朋友們才創造了這樣的機會……
+[Dialog]
+[PlaySound(key="$d_avg_pdreambroken_gradual", volume=1)]
+[CameraShake(duration=2, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.5)]
+[name="能天使"]出來吧！你憑什麼躲在夢裡？憑什麼躲在……我們的拉特蘭！
+[Dialog]
+[PlaySound(key="$d_avg_pdreambroken", volume=1)]
+[Delay(time=0.3)]
+[CameraShake(duration=2.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=1.5, block=true)]
+[Dialog]
+[image]
+[Background(image="bg_black",screenadapt="coverall")]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image]

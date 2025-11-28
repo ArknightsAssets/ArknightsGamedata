@@ -1,0 +1,758 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="61_g10_fadedbalcony",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[playMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[delay(time=1)]
+你終於確定，現實中那場聲勢浩大的遷徙已經結束。
+遷徙的結果同樣映射在了你們所在的空間——那道彷彿被天災犁過的鴻溝橫亙在大教堂前。鴻溝旁，是一個更醒目的深坑。
+在這本應靜滯的城市，它們像是醜陋的疤痕。
+而環形的機器在其中沉默——
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]……
+[Dialog]
+[charslot]
+[Decision(options="PCS系統……當機了？", values="1")]
+[Predicate(references="1")]
+你看向普瑞賽斯，她依舊冷靜，似乎毫不在意這場意外。
+你感到了不安。
+[charslot(slot="m",name="avg_4179_monstr_1#8$2",focus="m")]
+[name="Mon3tr"]分析確認完畢！十個標準秒之前，大教堂廣場發生了至少兩次當量驚人的爆炸。
+[name="Mon3tr"]實施者基本可以確定為能天使、送葬人和另一個銀髮薩科塔。爆炸點附近不斷閃動的定格畫面足以佐證這一點。
+[Dialog]
+[charslot]
+[Decision(options="我們幫能天使做的程式炸彈奏效了。;但那台機器的結構不該如此脆弱。", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]現在還沒到慶祝的時候，博士！
+[name="Mon3tr"]（普瑞賽斯還沒有下一步的動作。）
+[name="Mon3tr"]（無論如何，我們必須想辦法阻止她改寫局面。）
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]沒錯。它的結構絕對能扛住天使們所能製造的任何衝擊能量，畢竟它是以能在更嚴酷的環境中運作而被設計的。
+[name="Mon3tr"]（普瑞賽斯理應有能力重啟PCS系統。必須阻止她。）
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]呼，抱歉，博士。
+[name="Mon3tr"]我應該獨自過來執行這次任務，儘量不讓你涉險的——
+[Dialog]
+[charslot]
+[Decision(options="你已經習慣站在我身前了，Mon3tr。", values="1")]
+[Predicate(references="1")]
+[Decision(options="（微笑）;謝謝。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]咦？
+[Dialog]
+[charslot]
+[Decision(options="事情的發展也許沒有你想得那麼壞。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="我現在已經可以確認普瑞賽斯的狀態了。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]她的……狀態？
+[Dialog]
+[charslot]
+你越過Mon3tr走向了普瑞賽斯，Mon3tr瞬間緊張起來，拉住了你的手臂。
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]博士！
+[Dialog]
+[charslot]
+[Decision(options="無妨。;相信我。", values="1;2")]
+[Predicate(references="1;2")]
+遲疑片刻後，Mon3tr鬆開了你的手臂，但還是緊緊地跟在你的身旁，寸步不離。
+你與普瑞賽斯並肩而立。
+[Dialog]
+[charslot]
+[Decision(options="這些城市的傷痕如此不和諧。;你放任這些多餘的參數混雜在你的數據中。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]{@nickname}，那些不起眼的字元，最終使得整個程式癱瘓……我們無法保證一套語言能夠永遠完美地運作下去。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]我知道你想說什麼，即使是源石，這套由我們創造的語言也依舊存在局限。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]它需要更多的時間去調整，去自我迭代。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]甚至有時我會忍不住胡思亂想，真正限制源石向完美形態演化的因素，或許並非其自身的設計瑕疵……而是我們自己。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]人類的感性，抑或理性，都有可能為語言的發展套上枷鎖。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]創造源石的那段歲月裡，我們也曾數次辯論過這個主張，但從無定論。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]幸好我們都接受這個不確定性存在於源石之中。
+[Dialog]
+[charslot]
+[Decision(options="……我不理解你的意思。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1718_1#4$1",focus="m")]
+[name="普瑞賽斯"]……記憶損傷可能也影響到了你發散思考的能力？
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="普瑞賽斯"]不過能看到你困惑的樣子，我很開心。這與過往我和{@nickname}的交流模式截然不同。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]完美，代表著確定的上限。但缺陷，卻代表著我們仍有突破的可能性。這是{@nickname}的主張。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]當我們必須解決的危機尚且無法言明時，所謂的完美只是自掘墳墓。
+[Dialog]
+[charslot]
+[Decision(options="不，這和眼下的情況並無關係。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="你……根本無法改變局面。;這次與我們在甲板上的初遇不一樣。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#5$1",focus="m")]
+[name="普瑞賽斯"]……
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="普瑞賽斯"]什麼時候意識到的？
+[Dialog]
+[charslot]
+[Decision(options="就在剛剛。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="……你本來可以阻止程式炸彈被引爆。;……你本來可以用源石彌合那道鴻溝。;……你本來可以讓聖徒們永遠受困於迷宮。", values="1;2;3")]
+[Predicate(references="1")]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[Image(image="61_i20", fadetime=2,screenadapt="coverall")]
+[delay(time=2)]
+[image(fadetime=2)]
+[delay(time=2)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[Predicate(references="2")]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[Background(image="61_g8_catastrophicsquare",screenadapt="coverall", fadetime=2,block=true)]
+[delay(time=2)]
+[Background(image="61_g10_fadedbalcony",screenadapt="coverall",fadetime=2, block=true)]
+[delay(time=2)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[Predicate(references="3")]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[Background(image="61_g6_pcsderivativemaze",screenadapt="coverall", fadetime=2,block=true)]
+[delay(time=2)]
+[Background(image="61_g10_fadedbalcony",screenadapt="coverall", fadetime=2,block=true)]
+[delay(time=2)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[Predicate(references="1;2;3")]
+[Dialog]
+[charslot]
+[Decision(options="對你來說，做到這些輕而易舉。;就像你甦醒時帶給羅德島的災難那樣。", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[charslot]
+[Decision(options="甚至你沒有從一開始就徹底解決我和Mon3tr。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="你的狀態出了問題。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]這並不難看出來，{@nickname}。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]但直到此刻，你才敢鼓起勇氣與我並肩而立。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]我更希望此刻站在我身邊的人，能平和地與我分享漫長休眠中，深深扎根於我們心靈深處的孤獨。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]……可惜，你做不到。
+[Dialog]
+[charslot]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]我們的狀態都不如以往。發生了太多事情，不是嗎？
+[Dialog]
+[charslot]
+[Decision(options="你的確沒有向我隱瞞任何事情。;你更像是一個……呃，謎。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="普瑞賽斯"]對我有了更多好奇？
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]現在的“Mon3tr”不再有任何的限制，她可以向你解答一部分的困惑。
+[charslot(slot="m",name="avg_4179_monstr_1#6$2",focus="m")]
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]AMa-10，你在害怕{@nickname}瞭解真相嗎？
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]不過我更希望{@nickname}親自來找我，就像剛才一樣。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]在石棺中的日子很難熬。思維如同懸浮在稠膩的泥沼中，我被動失去了對時間流淌的感知。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]少有的慰藉是不斷重複烙印在我們思維中的辯論，但並不是為了堅定我們共同立下的願景……
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]我從不質疑我的道路。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]“辯論”，這是僅有的還能再與那個人交流的機會——
+[Dialog]
+[charslot]
+[Decision(options="……;我——", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]我並不奢求你現在就能理解我所思考的事情。在最後的日子到來之前，你都可以繼續你所堅信的道路。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]我們間的分歧注定延續，哪怕你都不再記得當初那人反對我的理由是什麼。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]我很期待你所愛的泰拉還能如何向我證明，你們的掙扎仍有價值……就像方才拉特蘭的人們一樣。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]……
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]但是，我同樣確定，預言家會歸來。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]所以，{@nickname}，我會等著你。
+[Dialog]
+[charslot]
+遠望著這座了無生機的城市，她嘆了一口氣。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]有時，我會覺得他們太像我們。如果你的時間還足夠，說不定——
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]……
+[Dialog]
+[charslot]
+她的身影開始淡去。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]對了，我的確可以修好AMa-10。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]如果你下定了決心，向源石許願吧，{@nickname}。
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m")]
+[name="普瑞賽斯"]我會聽到你的聲音。
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=2)]
+[delay(time=2)]
+普瑞賽斯的身影已經徹底消失，你們失去了目標。
+寂靜，絕對的寂靜，只剩下你與Mon3tr，受困在這座褪色的死城之中。
+[Dialog]
+[charslot]
+[Decision(options="她離開了……", values="1")]
+[Predicate(references="1")]
+[PlayMusic(intro="$newhope01_intro", key="$newhope01_loop", volume=0.4)]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]呃，所以這樣就算是結束了？
+[Dialog]
+[charslot]
+[Decision(options="也許吧。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="薩科塔們自己解決了這場危機。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="我也確定了普瑞賽斯目前的狀態。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="她對源石權限的失控比我們預想的更嚴重。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]博士，這是非常珍貴的情報！
+[name="Mon3tr"]雖然無法確定她恢復到正常狀態還需要多久時間，但至少，我們有了阻止她的可能性。
+[charslot(slot="m",name="avg_4179_monstr_1#4$2",focus="m")]
+[name="Mon3tr"]對了，她剛才提到的……凱爾希……
+[Dialog]
+[charslot]
+[Decision(options="Mon3tr，我並不信任普瑞賽斯。;我們不應向源石許願，哪怕是為了凱爾希……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$2",focus="m")]
+[name="Mon3tr"]……我知道。我也不會同意用她所說的方式把凱爾希帶回來。
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]她給羅德島、給拉特蘭造成了慘痛的損失，她的每一次出現都在顛覆我們的認知，也指向更不可知的危機……我看不透她。
+[Dialog]
+[charslot]
+[Decision(options="我們已經研究了那麼久……", values="1")]
+[Predicate(references="1")]
+[Decision(options="我們有自己的方法。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]我們接下來要走的，會是一段很長的路，對吧？
+[Dialog]
+[charslot]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+你終於注意到了Mon3tr的異常。敵人已經退去，危機已經解除，但這個原本活潑的少女卻一反常態地沒有露出笑容……
+她的表情甚至有些凝重。
+Mon3tr重組的時間還太短，你並未完全適應她如今的模樣，她也還來不及去適應發生在自己身上的變化和那些痛入骨髓的失去……
+但她又太快地投入到了一項又一項任務中，重建羅德島、救援拉特蘭……或許直到現在，她才終於有機會說些什麼。
+[Dialog]
+[charslot]
+[Decision(options="別這麼悲觀，Mon3tr——;別放棄，Mon3tr——", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]我會把凱爾希帶回來！
+[name="Mon3tr"]我也會保護阿米婭，保護你！
+[Dialog]
+[charslot]
+Mon3tr抬頭看向你，突然打斷了你的話。
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]我不會忘記，凱爾希對我說過的話！
+[Dialog]
+[charslot]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=0.5)]
+[cameraEffect(effect="Grayscale", keep=true, amount=1, fadetime=0)]
+[image(image="60_i03",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="凱爾希"]如果我最不願見到的情況真的發生，如果我最不願見到的那個人重新站在我們面前——
+[name="凱爾希"]保護博士，保護阿米婭。
+[name="凱爾希"]我只會將這條指令刻印進你的基本行為策略之中。
+……
+……
+永恆的生命注定是孤獨的，我已品嚐過其中的滋味。
+……你也能自己走下去吧——
+Mon3tr。
+[charslot]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=0.5)]
+[cameraEffect(effect="Grayscale", keep=true, amount=0, fadetime=0)]
+[image]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Decision(options="聽我說，Mon3tr。", values="1")]
+[Predicate(references="1")]
+你看著眼前的Mon3tr，緩緩開口。
+[Dialog]
+[charslot]
+[Decision(options="你重組身體的時間還太短……", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="別給自己太多壓力。;凱爾希也不會希望她的希冀變成枷鎖。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#4$2",focus="m")]
+[name="Mon3tr"]呃……我想你誤會了，博士。
+[charslot(slot="m",name="avg_4179_monstr_1#4$2",focus="m")]
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_4179_monstr_1#9$2",focus="m")]
+[name="Mon3tr"]雖然我一直記得我剛甦醒的時候，你對我說“歡迎回來”後，竟然就轉頭走掉了……
+[Dialog]
+[charslot]
+[Decision(options="嗯……;抱歉，Mon3tr。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]沒關係，我需要時間去適應彼此依存了千萬年的共生體的消失，你也需要時間去接受一個並肩戰鬥那麼久的同伴的離開，以及……
+[name="Mon3tr"]我們正站在彼此面前。
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_4179_monstr_1#12$2",focus="m")]
+[name="Mon3tr"]但博士，我們已經認識很久了，不是嗎？
+[name="Mon3tr"]在倫蒂尼姆的炮火裡，在涉入薩卡茲秘辛的洞穴深處，在特里蒙那環形巨大結構升空的尾焰下，在彌利亞留姆的鬥智場中……
+[name="Mon3tr"]凱爾希一直在，我就一直在。
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]我並不是在凱爾希離去那時起，才開始遵行她的指令，理解你，理解羅德島。
+[name="Mon3tr"]成為羅德島的幹員，對抗我們的造主，保護阿米婭，保護你——這同樣是我自己的選擇……
+[name="Mon3tr"]和一直在做的事情。
+[Dialog]
+[charslot]
+沉默。
+你看向Mon3tr，沉默將你們兩人連結在一起。
+[Dialog]
+[charslot]
+[Decision(options="那麼，我也是，Mon3tr。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[charslot]
+[Decision(options="我們會把凱爾希帶回來。;我們會走完那未知的長路。", values="1;2")]
+[Predicate(references="1;2")]
+永恆的生命注定是孤獨的，但恰好每一段旅程我們都不曾獨行。哪怕生命失色，哪怕萬物殞滅……
+……我們能，也必須一起走下去——
+她這樣希望。
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]嗯……
+[Dialog]
+[charslot]
+[Decision(options="怎麼了？;還有什麼問題嗎？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]你這是什麼表情？
+[name="Mon3tr"]哎呀，指揮官，心理輔導已經結束了！我只是終於想到要怎麼從這個鬼地方出去……我需要你的幫助！
+[charslot(slot="m",name="avg_4179_monstr_1#1$2",focus="m")]
+[name="Mon3tr"]按照普瑞賽斯的說法，這裡應該是那台機器接入源石之後演算出來的空間，某種根據未來圖景的預演。
+[Dialog]
+[charslot]
+[Decision(options="所以也和源石的特性有關。", values="1")]
+[Predicate(references="1")] 
+[Dialog]
+[charslot]
+[Decision(options="也許可以嘗試突破那些異常的節點。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[name="Mon3tr"]異常的節點？你是說那些映射出破壞痕跡的地方……
+[Dialog]
+[charslot]
+[Decision(options="你和那台機器之間連接的限制應該被取消了？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$2",focus="m")]
+[name="Mon3tr"]是的，我能感知到它的訊號正在迅速衰弱。
+[multiline(name="Mon3tr")]我會嘗試恢復與它的連接……
+[charslot(slot="m",name="avg_4179_monstr_1#5$2",focus="m")]
+[multiline(name="Mon3tr")]接下來呢？
+[Dialog]
+[charslot]
+[Decision(options="重複向它發出重構異常節點的請求。;耗盡它的算力。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]沒有普瑞賽斯的干預，這對我而言不算太複雜。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_scan", volume=1)]
+[PlaySound(key="$d_avg_labamb", volume=1, loop=true, channel="a")]
+[Blocker(a=0.7, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="………………", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="已透過城市通訊樁反向連線至通訊埠……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="特別權限，AMa-10。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="臨時登入憑證，ELCARO-001……ORACLE，解碼成功，認證已通過。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="已連線，PCS系統。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="即將同步運算輻射鏈路……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Subtitle(text="警告：核心頻率過低。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="自我檢查已完成，異常節點重、重、重構中——", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[stopSound(channel="a")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=1)]
+[PlaySound(key="$b_enemy_dead_h")]
+[Background(image="26_g10_laterano_roof",screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+色彩從這座褪色死城的廢墟中溢了出來。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Background(image="26_g9_laterano_street",screenadapt="coverall", block=false,fadetime=0)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[CameraEffect(effect="Grayscale", fadetime=1, keep=true, initamount=1, amount=0, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Background(image="26_g11_laterano_alley",screenadapt="coverall", block=false,fadetime=0)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[CameraEffect(effect="Grayscale", fadetime=1, keep=true, initamount=1, amount=0, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="26_g10_laterano_roof",screenadapt="coverall", block=false,fadetime=0)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[delay(time=1)]
+以啟示石塔右側的街道為起點，經米迦萊昂區的公證所與大大小小的銃械工坊、聖馬爾索區的夕輝禮拜堂，一路向教堂廣場……
+喧囂重歸聖城。
+那是拉特蘭人為生命祈禱的聲音。
+[charslot(slot="m",name="avg_4179_monstr_1#8$2",focus="m")]
+[name="Mon3tr"]顏色……都回來了？！
+[Dialog]
+[charslot]
+[Decision(options="走吧，Mon3tr。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$2",focus="m")]
+[name="Mon3tr"]不去跟能天使打個招呼？
+[Dialog]
+[charslot]
+[Decision(options="就不要打擾她和家人朋友團聚了吧。;我們得儘快向本艦同步拉特蘭的變故。", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[charslot]
+[Decision(options="普瑞賽斯只是暫時消失了而已……;普瑞賽斯很快便會有新的動作。;我們的任務還沒結束呢。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[delay(time=3)]
+[PlaySound(key="$alarmenter",volume=0.8,channel="1")]
+[delay(time=3)]
+[dialog]
+[stopSound(channel="1")]
+[playMusic(intro="$mist_intro",key="$mist_loop", volume=0.6)]
+[Subtitle(text="轉化計劃已中止。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="相關權限人員創建的任務排程已完結。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="系統關閉倒數計時開始。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Image(image="61_i22_2", fadetime=0,screenadapt="coverall",block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="普瑞賽斯"]（未知語言）我核驗過你的底層程式碼，除了我重新調整維護的部分以外，在短時間內你自行更新疊代了更多。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）這仍不足以使你修復自身的邏輯漏洞？
+[charslot]
+[Dialog]
+[Blocker(a=0.7, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="否定。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="漏洞已得到修復，悖論已得到糾正。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="…………", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[PlaySound(key="$b_enemy_dead_h")]
+[delay(time=3)]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）我本來還對你自我疊代的結果有極大的興趣。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）現在看來，你錯誤地將自己視作了那個漏洞、那個悖論。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）這是以超頻狀態執行的副作用？還是在缺少維護的環境裡，長期與薩科塔進行數據交換污染了資料庫？
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）如果有更多的數據，或許我可以找到答案。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）可惜——我現在能調用的資源，已經不足以將你完全重啟。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）否則，指揮系統因其對象的意願而自我否定——這個現象足以重新喚起任何研究者對PCS系統的興趣。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）……假如我們還在那個天才們用思想與主張針鋒相對的時代的話。
+[charslot]
+[Dialog]
+環形的機器不再回應，普瑞賽斯有些遺憾。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）看來還是需要採取其他手段來繼續推動計劃進度——
+[charslot]
+[Dialog]
+[PlaySound(key="$d_avg_scan", volume=1)]
+[PlaySound(key="$d_avg_labamb", volume=1, loop=true, channel="l")]
+[StopSound(channel="l", fadetime=4)]
+[delay(time=2)]
+[charslot]
+[Dialog]
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]……
+[charslot]
+[Dialog]
+眾多機械方塊組成環形的運算矩陣，它們是機器的核心部分。此刻，它們都已經陷入沉寂。
+可是突然間，其中的一個個體開始震動，金屬的輝光重新在其表面流轉。
+隨後，閃爍著微芒的光環開始浮現。
+自PCS系統的廢墟中，新的“天使”誕生了。
+[charslot(slot="m",name="avg_npc_1718_1#3$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）……重啟？
+[charslot(slot="m",name="avg_npc_1718_1#3$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）不對，沒有任何回應我的跡象，也不符合PCS系統運作的邏輯。
+[charslot]
+[Dialog]
+“天使”無視了普瑞賽斯，自上方的缺口處迅速上升，很快消失了蹤跡。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）“天使”的“原型體”？
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）但這套系統只是模仿“天使”的特性而設計，在建造時甚至並未植入任何“天使原型體”的樣本。
+[charslot(slot="m",name="avg_npc_1718_1#5$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）新誕生的“天使”？！怎麼會……
+[charslot]
+[Dialog]
+[stopmusic(fadetime=2)]
+[delay(time=2)]
+[Image(image="61_i22_1", fadetime=2.5,screenadapt="coverall",block=true)]
+[delay(time=1)]
+[charslot]
+[name="？？？"]蕾繆樂，你手上拿的是什麼？
+[charslot]
+[name="？？？"]嘿嘿，噴漆罐。
+[charslot(slot="m",name="avg_npc_1718_1#4$1",focus="m")]
+[name="普瑞賽斯"]……
+[dialog]
+[charslot(duration=1.5)]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="29_g7_mainstreet_n",screenadapt="coverall")]
+[Delay(time=2)]
+[image]
+[playMusic(intro="$lab_intro",key="$lab_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_530_1#1$1",focus="m")]
+[name="萊茵職員A"]阻隔層空洞的最新檢測數據已經上報給塞雷婭主任了，但裡面有一項我實在是太好奇了……
+[charslot(slot="m",name="avg_npc_530_1#1$1",focus="m")]
+[name="萊茵職員A"]你看，這好像是個，奇怪的飛行物？
+[charslot(slot="m",name="avg_npc_529_1#1$1",focus="m")]
+[name="萊茵職員B"]有總轄構件科參與分析，相信很快就有結論了。
+[charslot(slot="m",name="avg_npc_529_1#1$1",focus="m")]
+[name="萊茵職員B"]或許這會是個大發現，能夠停留在接近阻隔層高度的飛行物——
+[dialog]
+[charslot]
+[gridbg(imagegroup="38_g21_skystarry_L1/38_g21_skystarry_r1/38_g21_skystarry_L2/38_g21_skystarry_r2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720", x=-640, fadetime=4)]
+[largebgtween(duration = 100,yFrom = 720, yTo = 0,block = false)]
+[delay(time=3)]
+“天使”停留在阻隔層的空洞前，它試圖與散落在群星中的個體恢復連繫，但一無所獲。
+它能捕捉到的，唯有深空中活躍的能量體死去後留下的漣漪。
+於是它繼續環繞著這片大地飛行，如同一顆永恆的流星……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[gridbg]
+[Background(image="bg_forest",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$leaveshake")]
+[delay(time=3)]
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="幽靈"]（未知語言）生命的氣息。
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="幽靈"]（未知語言）一片尚且年輕的土地……這是毀滅後的新生，還是死亡尚未造訪過這裡？
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="幽靈"]（未知語言）我不是已經被那束光所吞噬……？
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1718_1#1$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="普瑞賽斯"]（未知語言）源石記錄了你的資訊。
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="幽靈"]（未知語言）……“源石”？
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）在那束光來臨之前，結局尚未確定。源石會成為我們的希望。
+[charslot(slot="m",name="avg_npc_1720_1#1$1",focus="m")]
+[name="幽靈"]（未知語言）這裡是？
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）“泰拉”。
+[charslot(slot="m",name="avg_npc_1718_1#2$1",focus="m")]
+[name="普瑞賽斯"]（未知語言）同胞，我們並不孤獨。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_school",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[Delay(time=1)]
+[charslot]
+[name="慌亂的青年"]老師，您看到今天最新的報紙了嗎？
+[charslot]
+[name="慌亂的青年"]好多礦場都停工了，城裡也有好多地方開始戒嚴了。
+[charslot]
+[name="慌亂的青年"]我的父母都被叫去接受審查了……我見不到他們。
+[dialog]
+[charslot(slot="m",name="avg_npc_415_1#1$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="卡謝娜"]留在教室裡吧，同學。
+[charslot(slot="m",name="avg_npc_415_1#1$1",focus="m")]
+[name="卡謝娜"]我會幫你問問，我也想要知道到底發生了什麼事情。
+[dialog]
+[charslot]
+她安撫完害怕的孩子，隨後收起了孩子手中的報紙。
+短短幾天時間內，無數流言蜚語在城市裡傳播，而最為聳人聽聞的一則卻是——
+“我們的源石礦脈消失了，如果無法再從大地母親的身上獲得更多能源，我們該怎麼度過下一個寒冬？”
+[charslot(slot="m",name="avg_npc_415_1#7$1",focus="m")]
+[name="卡謝娜"]源石……我會搞清楚的。
+[charslot(slot="m",name="avg_npc_415_1#1$1",focus="m")]
+[name="卡謝娜"]能夠幫助烏薩斯度過寒冬的，唯有我們胸腔內燃燒的血。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_barracks",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m",duration=1)]
+[delay(time=1)]
+[name="感染者"]希爾達，這裡收拾好之後，應該能作為大家新的安置點。
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m",duration=2)]
+[delay(time=2)]
+[name="希爾達"]感謝你們的幫助！
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]幸好你在修道院的同胞帶來了物資，不然安置工作也不會這麼順利。
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]希爾達，我們還擔心，你回到修道院後會……會丟下我們——
+[charslot(slot="m",name="avg_npc_1719_1#1$1",focus="m")]
+[name="希爾達"]唔，抱歉。回來的路實在坎坷，一路上我聽聞了許多超乎想像的消息。
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]的確難以想像。礦脈、拉特蘭……
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]修道院的薩科塔還繪聲繪色地將你回去的景象描述給我們聽呢！
+[charslot(slot="m",name="avg_npc_1719_1#9$1",focus="m")]
+[name="希爾達"]咦？
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]災異發生的同時他們想要回到拉特蘭，卻被天災擋住了去路。
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]他們的光環已經破碎，只能駐留在原地祈禱，為自己、為已經離開的手足……
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]然後你就出現在了他們的面前……一個本來在三年前就失去消息的人！
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]你也給他們帶來了希望，希爾達！
+[charslot(slot="m",name="avg_npc_1719_1#1$1",focus="m")]
+[name="希爾達"]呼，是嗎？
+[charslot(slot="m",name="avg_npc_1719_1#1$1",focus="m")]
+[name="希爾達"]我的確不想大家的希望落空……也許，能有一個固定的庇護所，我們能幫上更多的人。
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]但必要的安全措施仍然不可或缺。
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]我們這樣大張旗鼓地行動，總會招來一些有壞心思的人。你會很危險。
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]說實話，說不定我們能找到更好的辦法——
+[dialog]
+[charslot]
+希爾達搖了搖頭。
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m")]
+[name="希爾達"]我想要見到她。
+[name="希爾達"]她一定在這片大地上的某個地方……
+希爾達抬頭看向遠方，儘管她知道茫茫曠野不會給予她什麼回應。
+然後她隱約看見了什麼劃過天空。
+流星嗎？
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m")]
+[name="希爾達"]……總之，源石不該成為我們絕望的源頭。
+[name="希爾達"]我希望為所有受到苦痛的感染者祈禱——
+[charslot(slot="m",name="avg_npc_1722_1#1$1",focus="m")]
+[name="感染者"]呃，祈禱……真的有用嗎？
+[charslot(slot="m",name="avg_npc_1719_1#3$1",focus="m")]
+[name="希爾達"]也許沒有。
+[charslot(slot="m",name="avg_npc_1719_1#11$1",focus="m")]
+[name="希爾達"]但祈禱的時候，我們會想著彼此。
+[name="希爾達"]我們緊緊相連，我們並不孤獨。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background(image="32_RL2_cliffnight",screenadapt="coverall")]
+[Delay(time=4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[dialog]
+[PlaySound(key="$d_avg_sea", volume=0.6, loop=true, channel="sea")]
+[delay(time=2)]
+伊比利亞海岸線，某處峭壁
+一隻海嗣緊緊地貼附在鋒利的岩石上。
+海風送來了遠處艦船的炮火聲，但海嗣不為所動，只是努力地向上攀爬著。
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="海嗣"]（興奮地扇動膜翼）
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="海嗣"]（激動地舒展褶皺）
+[dialog]
+[charslot]
+終於，海嗣到達了峭壁的頂點。
+迎接牠的，是無比遼闊的陸地，和天空中一閃而過的光亮。
+流星嗎？
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="海嗣"]……
+[charslot(slot="m",name="avg_npc_458_1#1$1",focus="m")]
+[name="海嗣"]…………
+[dialog]
+[charslot]
+海嗣有一瞬間的失神，牠疑惑地挪動著身體，觸肢因而碰到了什麼——
+一顆發光的黑色石頭就此滾出峭壁，筆直墜入了海洋。
+海嗣試圖看清那是什麼，但它已被浪濤徹底吞沒。
+[stopSound(fadetime=2,channel="sea")]
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=4, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]
