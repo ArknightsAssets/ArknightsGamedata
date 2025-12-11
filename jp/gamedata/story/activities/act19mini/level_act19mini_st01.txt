@@ -1,0 +1,814 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="25_g04_yaninn",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$darkalley_intro",key="$darkalley_loop", volume=0.6)]
+[playsound(key="$d_avg_lightrain_loop",loop=true,channel="1",volume=0.5)]
+[Delay(time=2)]
+ここは小さな茶館だ。元々あまり高さのない建物を仕切り、二階建てにしている。
+室内の調度は簡素なもので、広間には六人掛けの木製の卓と椅子がちょうど十組だけ整然と並べられている。卓上の水跡は可能な限り拭き取られており、主人の真面目さが窺い知れた。
+茶館の給仕は瓢杓で何度も床に水を撒いては、モップを丁寧に動かして青石のタイルの一つ一つを綺麗に磨いている。
+客はしばらく訪れていないようだ。一体どのような者が、これほどのもてなしを受けるに値するというのか。
+ほどなくして、その答えがやってきた。
+[Dialog]
+[playsound(key="$dooropenquite",channel="2")]
+[stopsound(channel="1",fadetime=2)]
+[charslot(slot="l",name="avg_npc_007",duration=2)]
+[charslot(slot="r",name="avg_npc_008",duration=2)]
+[Delay(time=3.5)]
+[charslot]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",name="avg_npc_303_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="茶館の給仕"]一、二……いらっしゃいませ、お二方。お茶をお持ちいたしましょうか？
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="凶悪な男"]今はいい。まずは答えてくれ――この町の名は、邙山町（ぼうざんちょう）で合ってるな？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館の給仕"]はい、こちらは邙山町です。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="凶悪な男"]あんたはこの茶館の番頭か、それとも給仕か？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館の給仕"]給仕です。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="凶悪な男"]番頭はいないのか？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館の給仕"]今は留守にしてますね。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="凶悪な男"]訊けばなんでも答えてくれるなんて、いやに素直だな。
+[name="凶悪な男"]ならもう一つ訊く。今日この茶館に、見慣れないよそ者の客が来なかったか？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館の給仕"]いらっしゃいましたよ。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="凶悪な男"]いつのことだ？　どんな姿だった？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館の給仕"]ちょうどついさっきですねぇ。二人連れで、盗賊のような風体をされています。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="r")]
+[charslot(slot="r",name="avg_npc_008",focus="r")]
+[name="粗野な男"]*炎国スラング*、てめえそれはどういう意味だ。俺たちをバカにしてやがるのか！
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[delay(time=0.3)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=1)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[Dialog]
+[delay(time=0.5)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[delay(time=0.5)]
+声を荒げた男に思い切り頬を張られた給仕が、派手な勢いで床に倒れ込む。
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="0,-40",posto="0,0",duration=2)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="none")]
+しかし給仕は感情を見せることなく、落ち着いた様子でゆっくりと立ち上がると、何事もなかったかのように再び二人の前に立った。
+[Dialog]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館の給仕"]お客様方も変わった方々ですね。お茶やお酒を飲む気もないようですし、私にはもてなしようがありませんよ。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="凶悪な男"]おい二の字、あまりよその奉公人を困らせるな。
+[name="凶悪な男"]厨房へ行って他に誰かいないか確かめてこい。それと裏手にある扉は全部きっちり閉めておけよ。
+[Dialog]
+[charslot(slot="r",name="avg_npc_008",focus="r")]
+[delay(time=1.5)]
+[charslot(slot="r",posfrom="0,0",posto="50,0",duration=2,focus="r")]
+[charslot(slot="r",afrom=1,ato=0,duration=1,focus="r")]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[name="凶悪な男"]給仕のあんちゃんよ、まあそう慌てなさんな。茶ならもらうから。
+[name="凶悪な男"]だが俺たちは客を待っててな。飲むのはそいつが来てからだ。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$dooropenquite")]
+[charslot(slot="m",name="avg_npc_1871_1#12$1",duration=2)]
+[Delay(time=2.5)]
+ほどなくして、男の言った通り、また一人の客がやってきた。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="利発そうな少女"]あら……？
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_exsheath")]
+[Delay(time=2.5)]
+少女が茶館の中に足を踏み入れるや否や、辺りを見回す暇もなく、クロスボウの矢と刀がそれぞれ背中と首に押し当てられた。
+[charslot(slot="m",name="avg_npc_1871_1#6$1",focus="m")]
+[name="利発そうな少女"]あは……
+[name="利発そうな少女"]奇遇ね、陸（ルゥ）家の兄弟じゃない。こんなところで会うとは思わなかった。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_007",duration=2)]
+[Delay(time=2.5)]
+[name="陸兄弟の長男"]思いついてたら、ここには来なかっただろうよ。
+[name="陸兄弟の長男"]だが会ったからには、逃がさねぇぞ。
+[name="陸兄弟の長男"]給仕のあんちゃん。悪いが店の戸を閉めて、閉店の札をかけてきてくれ。
+[name="陸兄弟の長男"]それから、俺たちに茶を頼む。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館の給仕"]お茶が入りましたよ。ではお客様方、どうぞごゆっくり。
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="利発そうな少女"]中原の武芸者の間で名を轟かせる「風雲三刀」にお茶をごちそうになるなんて、私もずいぶん偉くなったものね。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]残念ながら、一人減って今は二刀だけになっちまったがな。
+[name="陸兄弟の長男"]何日か前、嬢ちゃんは例の秘伝書を盗んだ罪を俺たち三兄弟になすりつけてくれたよな。そのせいで俺たちは三大門派と玉門守備軍、合わせて百人以上から追われるハメになったんだ。
+[name="陸兄弟の長男"]俺ら二人はなんとか命を拾ったが、一番下の弟は百灶（バイザオ）の外で死んだ。
+[name="陸兄弟の長男"]だから……嬢ちゃんにはどうしても一杯おごってやらなきゃならないってわけだ。
+[charslot(slot="m",name="avg_npc_1871_1#6$1",focus="m")]
+[name="利発そうな少女"]あはは……生き延びたのは喜ばしいことよ。生憎ここにはお茶しかないから、お酒に代えてこのお茶をお二人の生存を祝して飲み干しましょう。その後でさっぱりとお別れするというのはどうかしら？
+[Dialog]
+[charslot(slot="m",name="avg_npc_008",focus="m")]
+[playsound(key="$d_avg_smashtable")]
+[CameraShake(duration=2, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=2.5)]
+[name="陸兄弟の次男"]てめえよくも――！
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]お前とごちゃごちゃ話をする気はない――秘伝書はまだ持っているな？
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="利発そうな少女"]なるほど。取引の情報を嗅ぎつけて、ここで待ち伏せしていたということね？
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]その通りだ。
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="利発そうな少女"]なら、ここに来るはずだった蒲（プー）さんはどこに？　まさか、もう始末しちゃった？
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]お前に答える必要はない。
+[charslot(slot="m",name="avg_npc_1871_1#10$1",focus="m")]
+[name="利発そうな少女"]はぁ……あなたたち、ブツを手に入れない限り意地でも動かなそうね。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]嬢ちゃんにはもう痛い目に遭わされてるからな。今日秘伝書が手に入らなければ、俺たちは無駄に濡れ衣を着せられたバカで終わる。それじゃ死んだ弟も浮かばれねえ。
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="利発そうな少女"]それなら聞きたいのだけど、あなたたちはこの秘伝書の出処を知っているの？
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]当然だ。
+[name="陸兄弟の長男"]およそ人の身に収まらぬ武功の達人である玉門のかの宗師が、江湖を引退する前に、生涯をかけて修めたすべての武術を一冊の書にまとめたものだと聞く。
+[name="陸兄弟の長男"]秘伝書が民間に流れたのは少し前だそうだが、実物を拝んだことがある者は片手の指が余るくらいだ。
+[name="陸兄弟の長男"]俺たち兄弟が方々を尋ねて回ったところ、一番確かな筋からの情報で、お前のとこに書があると聞いたんだ。
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="利発そうな少女"]秘伝書を求めているということは、やはり無双の武術を修めて、天下一を目指しているのよね？
+[name="利発そうな少女"]だけど武功を極めたところで何になるのかしら？　武芸者の界隈で偉そうに威張り散らすの？　それとも死んだ兄弟のために復讐してみる？
+[name="利発そうな少女"]ああそうだ、そもそもどちらかが天下一になる前には、兄弟同士で殺し合う必要があるわね。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]ごちゃごちゃうるせぇな。もう我慢ならねぇ――さっさとブツを出せ。
+[Dialog]
+[charslot]
+男はそう言いながら、手中の刀を見せつけた。
+少女は男たちの様子を確認して仕方なさそうに首を振り、ため息をつく。そしておもむろに身に着けていた袋から小包を取り出した。大きさや輪郭からは、一冊の本が入っているように見える。
+[charslot(slot="m",name="avg_npc_1871_1#3$1",focus="m")]
+[name="利発そうな少女"]はぁ～、まあいいわ。元々私には無用の本だったし、どのみち売るつもりだったから、誰に売り渡したところで大差ないし。
+[charslot(slot="m",name="avg_npc_1871_1#6$1",focus="m")]
+[name="利発そうな少女"]それで、お二方はこの秘伝書にいくら出してくれるのかしら？　ちなみに、待ち合わせしてる取引相手はそれはそれは良い値をつけてくれけど。
+[Dialog]
+[charslot]
+少女は言いながら、手で「七」の数字を示した。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]安心しろ、もっと高く買ってやる。
+[name="陸兄弟の長男"]お前の命と引き換えだ。
+[charslot(slot="m",name="avg_npc_1871_1#10$1",focus="m")]
+[name="利発そうな少女"]はぁ……風雲二刀閣下、そのやり方は筋が通っていないわよ。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]俺からすれば、かなり誠意のある価格だがな。
+[name="陸兄弟の長男"]俺たちの得た情報に間違いがないなら、宗師は玉門を守ってる偉い将軍に秘伝書を託したはずだ。
+[name="陸兄弟の長男"]嬢ちゃんがどうやってそいつを手に入れたかは知らんが、まともな手段じゃないことだけは確かだろう。
+[name="陸兄弟の長男"]俺たちは悪党だが、お前は盗人だ。お互い道は違うが、どちらも正義を語れるような道じゃない。もちろん筋だのなんだのもな。
+[charslot(slot="m",name="avg_npc_1871_1#12$1",focus="m")]
+[name="利発そうな少女"]ほんと、つまんない人たち……いいわ、今回は私の完敗ってことにしといてあげる。ブツは渡したことだし、もう行っていいかしら？
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]……ダメだ。
+[name="陸兄弟の長男"]俺は教養がないが、「璧を懐いて罪あり」の理屈くらいは分かってる。もしお前がこのことを江湖中に言いふらしたら、俺たちは秘伝書の武術を身につけるまで生きちゃいられないだろう。
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="利発そうな少女"]あなたたちがちゃんと鍛錬をして、もうちょっとだけ賢ければ……そんなこともないんじゃない？
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]その減らず口は来世で使え。
+[name="陸兄弟の長男"]次があるなら覚えておくんだな。下手に火遊びをすれば、身を滅ぼすってことを。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.5, r=0,g=0.1, b=0, fadetime=0.05, block=true)]
+[CameraShake(duration=2, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_metalcollar")]
+[CameraShake(duration=2, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]なっ……
+[Dialog]
+[charslot]
+男は信じられないといった顔で、地面に落ちた刀を見やった。
+江湖で何年も揉まれ生きてきた彼は、力強く刀を握っているのが常だった。
+だが今はそれを取り落としたのだ。
+[charslot(slot="m",name="avg_npc_008",focus="m")]
+[name="陸兄弟の次男"]ハァ……ハァ……兄……貴……ダメだ……この茶……毒が……
+[name="陸兄弟の次男"]一体……誰が……！
+[Dialog]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="0,-40",duration=2)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1871_1#8$1",focus="m")]
+[delay(time=1.5)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="0,-40",duration=2)]
+[delay(time=2.5)]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_303_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="茶館の給仕"]俺ですよ。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_string_force")]
+[Delay(time=4.5)]
+茶館の給仕は無言のまませっせと動き、どこからか麻縄を取り出すと、あっという間に毒で動けなくなった三人をちまきのように縛り上げて壁際にきちんと並べていった。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]あんたを単なる給仕だと見誤ったのは、俺の目が節穴だった。
+[name="陸兄弟の長男"]毒の扱いを見るに、さぞ江湖でも名のある手練れだろ。名を教えてくれ。死ぬ前に知っておきたい。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館の給仕"]見誤ってはいないですよ。俺は本当にただの茶館の給仕で、江湖を渡る侠客様じゃないですから。友人からは、「胡君（フー・ジュン）」、と呼ばれてます。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]ならあんたはプー先生とも知り合いなんだな？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]友人です。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]ふっ……
+[name="陸兄弟の長男"]もう一つ聞かせてくれ。なぜただの給仕が秘伝書を求める？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]この町から出るためですよ。
+[name="フー・ジュン"]この町には五百二十戸の家があり、ぐるりと一周すれば、二千九百歩かかります。
+[name="フー・ジュン"]何年もの間、この二つの数字はわずかたりとも変わらなかった。俺はもうこの町にはいたくないんです。
+[name="フー・ジュン"]ここから出るには、何か変化が必要で、その変化を起こすために秘伝書を手に入れなければならないんですよ。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]言ってることがよくわからないんだが……
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]それで結構ですよ。そもそも世の中は全て理解できるようにはできてないんですから。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸兄弟の長男"]うむ、違いない。
+[name="陸兄弟の長男"]負けだ！　今日ここであんたにやられるなら、それも運命と認めよう。殺すなら、せめて一思いにやってくれ。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]あなたたちが、ここで終わるのは単なる事実です。認めようが認めまいがどうでもいい。
+[Dialog]
+[charslot]
+[name="ひ弱な少年"]望みの物を手に入れたというのに、どうしてこのうえ命まで取ろうとするのですか？
+[Dialog]
+[charslot(slot="m",name="avg_4196_reckpr_1#8$1",duration=2)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]誰だ？　いつからそこに？
+[charslot(slot="m",name="avg_4196_reckpr_1#9$1",focus="m")]
+[name="ユン・チンピン"]雲青萍（ユン・チンピン）と申します。通りすがりの旅人です。
+[name="ユン・チンピン"]昼頃からここに座っていたのですが、あなたは秘伝書に夢中になるあまり、私が目に入っていなかったのでしょう。
+[Dialog]
+[charslot]
+フーは隅の席から立ち上がる少年を見て、とっさに手元の鋭い短刀を握りしめたが、少し考えた後、再び手を緩めた。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]いや、得たいが知れなくても恐れる必要はない。ここの水には全て毒を入れてあります。あなたも中っているはずだ。
+[charslot(slot="m",name="avg_4196_reckpr_1#8$1",focus="m")]
+[name="ユン・チンピン"]私を恐れる必要など、もともとありません。私は筆を持つのが精一杯の非力な書生ですから、どうあっても貴殿と力で張り合えはしませんよ。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]けど、あなたはこいつらを救おうとしているんでしょ？
+[charslot(slot="m",name="avg_4196_reckpr_1#8$1",focus="m")]
+[name="ユン・チンピン"]はい。どうか無用な殺生を控えて、この方たちに情けをかけていただければと思います。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]碌でもない連中ですよ。
+[name="フー・ジュン"]この男が秘伝書を手に入れていたら、ここにいる者を口封じるために殺していたでしょう――先ほど本人が言っていたことです。
+[charslot(slot="m",name="avg_4196_reckpr_1#8$1",focus="m")]
+[name="ユン・チンピン"]彼らは多くの悪事を働いてきたでしょうけど、あなたは善良な方であるはずです。ならば、わざわざ悪人のために身を落とすことはありません。
+[name="ユン・チンピン"]官府へ引き渡せば、フーさんが手を汚すまでもなくお上の裁きが下るでしょう。秘伝書の件ですが、私は決して口外しないことを誓います。
+[charslot(slot="m",name="avg_4196_reckpr_1#9$1",focus="m")]
+[name="ユン・チンピン"]いかがでしょうか？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]あなたの話し方は友人にそっくりだ。そいつは良い人だったから、あなたもきっとそうなんでしょう。
+[name="フー・ジュン"]……だけど今はまだ信用できません。
+[name="フー・ジュン"]命をとるつもりはありませんが、拘束はさせてください。こちらへきて。
+[charslot(slot="m",name="avg_4196_reckpr_1#2$1",focus="m")]
+[name="ユン・チンピン"]はぁ……
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_string_force")]
+[Delay(time=4.5)]
+[stopmusic(fadetime=2.5)]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_4196_reckpr_1#1$1",focus="m")]
+[name="ユン・チンピン"]貴殿は面倒事を避けようとしているのでしょうが、面倒事とは自らやってくるものですよ。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]いいから早くこちらにきてください。でなければ四人とも、生かしては返しません。
+[charslot(slot="m",name="avg_4196_reckpr_1#1$1",focus="m")]
+[name="ユン・チンピン"]（宥めるように軽く頷く）
+[Dialog]
+[charslot]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[playsound(key="$dooropenquite")]
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="リン・チンイェン"]失礼。まだやっていますか？
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_paper2")]
+[Delay(time=2)]
+[Sticker(id="st1", multi = true, text="拝啓", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nチンイェン姉さんへ", x=380,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n姉さんが前職を辞されたことは耳にしております。詳しい事情は存じませんが、姉さんの勇気ある行動には非常に感服しております。母が姉さんを手本とするようにと常日頃から私に言い聞かせているのも、こうした由によるものでしょう。",block = true)]
+[Sticker(id="st1", multi = true, text="前置きはさておき、このたび筆を執ったのは、姉さんにとあるお願いがあってのことです。",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n私にはユン・チンピンという旧友がおります。今回、私と共に百灶にやってきました。この数日中に司歳台へ任務報告に赴く予定だったのですが、三日前に姿を消してしまったのです。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="彼は慎重な質ですので、一言も断りなく去ることは考えられず、何かあったのかもしれないと案じております。", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n私が掴んだ手がかりによれば、彼は最後に北側から百灶を出て、邙山方面へ向かったようで、姉さんが天師府へ戻られる方向と一致しているはずです。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="本来であれば、私自ら探しに向かうのが筋ですが、このところ司歳台での責務が山積しており、さらに父の兵営でまたもや異変が起きたとのことで、身動きができない状態です。", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nそこで、大変心苦しいのですが、友人の捜索にご協力いただけないでしょうか。写真は添付してあります。行方が分かりましたら可能な限り早く知らせをいただけると幸甚です。お手数をおかけいたしますが、何卒よろしくお願い申し上げます。",block = true)]
+[Sticker(id="st1", multi = true, text="ご健康をお祈り申し上げます。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="\n\n良き休暇をお過ごしください。", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n敬具　ズオ・ラウ",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n追伸：次の家族が集まる宴席には是非ともお越しください。両親も姉さんの辞職の件について関心を寄せております。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="63_mini01_market",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+半日前
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",duration=2)]
+[Delay(time=2.5)]
+[name="リン・チンイェン"]ラウのやつも私に指図をするようになったか……
+[name="リン・チンイェン"]……何が勇気ある行動だ……
+[charslot(slot="m",name="avg_1043_leizi2_1#12$1",focus="m")]
+[name="リン・チンイェン"]年長者に対して無礼な……
+[Dialog]
+[charslot]
+気がつけば、麟青硯（リン・チンイェン）は見知らぬ町に足を踏み入れていた。
+古めかしく素朴な小さな町で、背の低い建物が立ち並んでいる。道行く者はほとんど見かけられず、静かでのどかな風景が広がっていた。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]邙山の麓に、こんな町があったとは。
+[charslot(slot="m",name="avg_1043_leizi2_1#10$1",focus="m")]
+[name="リン・チンイェン"]妙ですね、町に入った途端に通信が途絶えました。天師府の近くに基地局すら設置されていない町があるなんて……
+[Dialog]
+[charslot]
+[name="？？？"]お嬢さんや、お嬢さん――
+[Dialog]
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]おや？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1638_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="笑顔の通行人"]お嬢さん――見かけん顔だね。よそから来たのかい？　いやはや、珍しいこともあるものじゃ。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]はい……この町は外からの訪問者が少ないのですか？
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑顔の通行人"]以前は滅多におらんかったが、近頃はずいぶん増えたな。
+[charslot(slot="m",name="avg_1043_leizi2_1#10$1",focus="m")]
+[name="リン・チンイェン"]確かにそうでしょうね。町の入り口は目立ちませんし、ここは地図にも載っていませんから……
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]道を尋ねたいのですが、ここから天師府へはどう行けばいいでしょう？
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑顔の通行人"]天師府、ふむ――とんと聞いたことがないな。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]では、町を出る道はどちらでしょうか？　いつの間にか町に入っていたので、どのような道を辿ったかすら定かではないのです。
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑顔の通行人"]町を出る道、ふむ――わしもここを出たことがないから、分からないな。
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="リン・チンイェン"]分からない？
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑顔の通行人"]焦らず、焦らず――烤餅（カオピン）でも食べて、ゆっくり歩きなさい。何事も火加減が肝要、焦りは禁物じゃ。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]あなたはこの町の方ですよね？　ここに住んでどのくらいになるのですか？
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑顔の通行人"]わしは、わしは――そうじゃ。初めて燃え盛った炎がわしの腹を焼いた時から、ずっとここに住んでおる。
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="リン・チンイェン"]炎が腹を……？
+[charslot(slot="m",name="avg_1043_leizi2_1#3$1",focus="m")]
+[name="リン・チンイェン"]ごほん……ありがとうございました。私はもう少し道を探してみます。
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑顔の通行人"]お嬢さん――焼きたての烤餅をお一ついかがかね。
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="リン・チンイェン"]いえ、お腹は空いていませんので……焼きたてというのは、今懐から出したそれのことですか？
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑顔の通行人"]火加減がちょうど良い具合になれば、自ずと辿り着く。
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="リン・チンイェン"]……熱い！　こんなに熱い物を直接胸元に――？
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑顔の通行人"]焦ってはならないよ。お嬢さんの火加減も、自分でもう少し探してみるといい。
+[Dialog]
+[charslot(duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#15$1",focus="m")]
+[name="リン・チンイェン"]待ってください！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[multiline(name="？？？")]八千九百九十一、八千九百九十二、八千……
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1,g=1, b=1, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=0.3)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[multiline(name="？？？")]あっ。
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="リン・チンイェン"]あぶない！　大丈夫ですか？
+[Dialog]
+[charslot]
+俯いて歩いていた少女がリン・チンイェンにぶつかり、そのまま地面に倒れ込んだ。少女が懐に抱えていた物が辺りにばらばらと落ちる。
+リン・チンイェンは慌てて彼女の様子を確認した。再び顔を上げて辺りを見渡すと、烤餅をくれた老人はすでに姿を消していた。
+[Dialog]
+[name="？？？"]傘、私の傘が……傘は手放しちゃいけないって、先生に言われたのに……
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]これですか。それから封筒も、袖から落ちましたよ。
+[Dialog]
+[charslot]
+少女は必死な様子で傘を受け取ると、それを開きながら、片手だけでなんとか封筒を袖の中に戻した。
+リン・チンイェンはちらりと晴れ渡る空を見た。
+[charslot(slot="m",name="avg_1043_leizi2_1#11$1",focus="m")]
+[name="リン・チンイェン"]お嬢さん、まずは立ち上がりましょう。手を貸してください。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement",channel="g")]
+[charslot(slot="m",name="avg_npc_304_1#1$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="0,-50",posto="0,0",duration=2)]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="リン・チンイェン"]（この子、とても軽い……）
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]さっきいくつまで数えてたかしら？
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="リン・チンイェン"]聞こえた限りでは、八千九百九十三だと思います。
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]八千九百九十四、八千九百九十五……
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]お嬢さん、大丈夫ですか？　家までお送りいたしましょうか？
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]家？　ダメよ、彼と豆腐屋で会う約束しているから――
+[name="傘を差した少女"]あっ……しまった。これは命に関わる秘密だって彼が言っていたのに。死んでも言っちゃいけないって！
+[name="傘を差した少女"]私が豆腐屋で彼と会うという秘密、聞こえてしまった？
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]……私事でしょうから、聞かなかったことにしても構いません。
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]よかった、殺されたくないもの――私、どこまで数えてたかしら？
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="リン・チンイェン"]……八千九百九十六だったかと。何を数えているのですか？
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]彼に会いに行く時間。彼が言ってたのよ、九千まで数えたら――ああ、また言っちゃった。殺されちゃうわ！
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="リン・チンイェン"]私の勘違いでなければ炎国語で「死んでも何かをしてはいけない」というのは、単なる誇張表現のはずですが……
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="リン・チンイェン"]それともまさか、あなたは命の危険を感じているとか――
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]八千九百九十七、八千九百九十八……
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="リン・チンイェン"]ええと……
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]八千九百九十九、九千！　待ち合わせの時間になったわ。会いに行かなきゃ――
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]この町の人は、少し様子が変ですね……
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="リン・チンイェン"]……これは？　この手紙は……先ほどの彼女の封筒から落ちたものだったはず。
+[name="リン・チンイェン"]「機密情報、他者への譲渡禁止」？
+[charslot(slot="m",name="avg_1043_leizi2_1#15$1",focus="m")]
+[name="リン・チンイェン"]待ってください、お嬢さん！
+[Dialog]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="200,0",duration=2)]
+[delay(time=2.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="63_mini01_market",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_304_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="傘を差した少女"]フー・ジュン――会いに来たわ！
+[Dialog]
+[charslot]
+[name="？？？"]シッ、静かに。こっちだ。
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]フー・ジュン。どうして九千まで数えさせたのよ、唇が腫れてしまいそうよ。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]こうしないとお前は時間を数えられないだろ。他に手がなかったんだ。
+[name="フー・ジュン"]来る時、誰かに見られたか？
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]けっこうな人に見られたけど、あなたに会いに来たってことは誰にも知られてないわ！
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]ブツは手に入れたか？
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]先生の机の引き出しの二段目で間違いなかったわ。「機密情報、他者への譲渡禁止」って書いてあったもの。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]余計な説明はいい、その手紙を渡してくれ。
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]え、ええ……
+[name="傘を差した少女"]あれ、手紙が……手紙がないわ、きっと途中で落としたのよ！
+[name="傘を差した少女"]でも大丈夫よ、中身は読んだから。「未の三つ時、老舗の茶館にて取引」とあったわ。
+[Dialog]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[Delay(time=1)]
+[name="フー・ジュン"]中身を盗み見た上に、手紙まで失くしたのか。
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]フー・ジュン、どうしたの、しかめっ面して。なんだか怖いわ、そんな顔しちゃ嫌よ。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]ちゃんと読んだんだろうな？　手紙には、未の三つ時と書かれていたんだな？
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]ええ！　時間は分からないけど、私の記憶力はすごくいいのよ。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]……
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]フー・ジュン、どうしてまた黙っちゃうの？　また九千まで数えたら相手してくれる？　いいわ、一、二、三、四、五……
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]やめろ、もういい。
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]フー・ジュン――その様子、私とても嫌だわ。あなたの顔、ほんとに怖いもの。
+[Dialog]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1874_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[name="フー・ジュン"]舒（シュー）、俺はお前を信じていた。もしすべてがうまくいったら、お前を連れて一緒にここを出るつもりだったんだ。
+[name="フー・ジュン"]だがお前にはまだ準備ができていない。秘密を守る術が身についてないんだ。だから俺は――
+[name="フー・ジュン"]……何をしている？
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]フー・ジュン、目が濡れているわ。辛い思いをしているのね、そうでしょう？
+[name="傘を差した少女"]先生が前に言っていたわ。濡れた時に拭くのは良くないって。だけど、ふーふーするのはいいって。あなたの目、少しは乾いたかしら？
+[charslot(slot="m",name="avg_npc_1874_1#1$1",focus="m")]
+[name="フー・ジュン"]……
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="傘を差した少女"]ああ、そんなに手を強く握られたら、手がくしゃくしゃになっちゃう。
+[charslot(slot="m",name="avg_npc_1874_1#1$1",focus="m")]
+[name="フー・ジュン"]さようなら、シュー。
+[Dialog]
+[stopmusic(fadetime=2)]
+[playsound(key="$d_avg_cnstrctnck")]
+[delay(time=3.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1,g=1, b=1, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_tear")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="63_mini01_market",screenadapt="coverall")]
+[Delay(time=2)]
+[playsound(key="$d_avg_lightrain_loop",loop=true,channel="1",volume=0.2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",duration=2)]
+[delay(time=3.5)]
+[name="リン・チンイェン"]確かにこちらへ向かって行ったはずなのに、どうして姿が見えないのでしょう？
+[name="リン・チンイェン"]豆腐屋で約束があると言っていたから、きっとこの辺りに――あ。
+[Dialog]
+[charslot]
+路地の向こうに、先ほどの少女が差していた傘がリン・チンイェンの目に入った。
+少女が落とした手紙を返すべく、彼女は足を速める。しかし傘に近付いて気付いた――
+傘はぽつんと地面に落ちており、少女の姿はどこにもないことに。
+[Dialog]
+[stopsound(channel="1",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background(image="25_g04_yaninn",screenadapt="coverall")]
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[Delay(time=2)]
+[playMusic(intro="$darkalley_intro",key="$darkalley_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=3, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]いらっしゃいませ、中へどうぞ。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]扉には閉店の札がかかっていたようですが？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]お客様がいらっしゃるなら、店を閉めるわけにはいきません。
+[name="フー・ジュン"]まずはお茶をお出ししましょうか？
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]お願いします。
+[Dialog]
+[charslot]
+[playsound(key="$pourwater")]
+[delay(time=3.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#10$1",focus="m")]
+[name="リン・チンイェン"]……
+[Dialog]
+[charslot]
+卓上の緑茶からは清かな香りが立ち上っていたが、リン・チンイェンは伸ばした手を途中で止めた。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]あなたはこの茶館の給仕ですね？　いくつか伺ってもいいでしょうか？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]ご遠慮なくどうぞ、知っていることは何でもお答えします。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]この茶館はこの町で最も賑わう場所だとお見受けいたしますが、なぜこうも早い時間に閉店の札がかかっていたのでしょうか？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]閉店の時間は状況によって決めます。訪れる方がいつも茶を飲むことを目的としてるわけでもありませんから。
+[charslot(slot="m",name="avg_1043_leizi2_1#15$1",focus="m")]
+[name="リン・チンイェン"]ここに来る客は、必ずしもお茶を飲みに来るわけではないということですか。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]雨を避けるために一休みしたいという方もいらっしゃいます。もちろん、そういう際に店に入っていただいても構いはしません。
+[name="フー・ジュン"]茶を飲もうと飲むまいと構いませんが、茶も飲まずに騒ぎを起こしに来たとあれば、それはいけません。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="リン・チンイェン"]ごもっともですね……好奇心から尋ねますが、今日この茶館の営業中に、そうした騒ぎを起こしに来た客はいらっしゃいましたか？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]……
+[name="フー・ジュン"]今日来たお客さんは、どなたもお茶を飲まれました。
+[charslot(slot="m",name="avg_1043_leizi2_1#3$1",focus="m")]
+[name="リン・チンイェン"]では最後にもう一つ……
+[name="リン・チンイェン"]実は先ほどから気になっていたのですが、あなたの服の胸元には、付いたばかりのような絵の具が見えますね。
+[charslot(slot="m",name="avg_1043_leizi2_1#9$1",focus="m")]
+[name="リン・チンイェン"]あなたは茶館の給仕で、画坊（がぼう）の者ではありません。一体どこで絵の具を付けたのですか？
+[name="リン・チンイェン"]私は偶然にも、その色の絵の具を、今日とある傘の上に描かれた画で見かけたばかりです。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]……
+[charslot(slot="m",name="avg_1043_leizi2_1#9$1",focus="m")]
+[name="リン・チンイェン"]ずいぶん焦っているご様子ですね。なぜですか？
+[name="リン・チンイェン"]この時間……未の三つ時の取引であれば、とうに済んでいるはずですよね？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="フー・ジュン"]……！
+[Dialog]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="200,0",duration=2)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_smashtable")]
+[delay(time=2.2)]
+[charslot]
+フーはとっさの判断で、すぐさま目の前の机をひっくり返した。机はリン・チンイェンの視線を遮り、彼が二階へ逃げるための機会を作る目隠しとしては十二分に機能した。
+[charslot(slot="m",name="avg_1043_leizi2_1#4$1",focus="m")]
+[name="リン・チンイェン"]止まりなさい――！
+[charslot(slot="m",name="avg_1043_leizi2_1#4$1",focus="none")]
+[name="かすかな呼び声"]た……助けて……
+[charslot(slot="m",name="avg_1043_leizi2_1#9$1",focus="m")]
+[name="リン・チンイェン"]――！
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="35_g13_yanlivingroom",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",name="avg_npc_1874_1#1$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="200,0",posto="-100,0",duration=2)]
+[Delay(time=2.5)]
+[charslot(slot="m",posfrom="-100,0",posto="0,0",duration=2)]
+[Delay(time=3.5)]
+[name="フー・ジュン"]お前か。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1866_1#1$2",duration=2)]
+[Delay(time=2.5)]
+[name="冷酷な剣客"]秘伝書はお前の手にあるな……やはりあの者は謀っていたか……
+[name="冷酷な剣客"]それを渡せ。
+[charslot(slot="m",name="avg_npc_1874_1#1$1",focus="m")]
+[name="フー・ジュン"]……
+[charslot(slot="m",name="avg_npc_1866_1#1$2",focus="m")]
+[name="冷酷な剣客"]お前の手には余るものだ。
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_swordexsheath")]
+[Delay(time=1.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Background(image="25_g04_yaninn",screenadapt="coverall")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4196_reckpr_1#10$1",focus="l")]
+[charslot(slot="r",name="avg_1043_leizi2_1#1$1",focus="l")]
+[name="ユン・チンピン"]感謝します、リン少卿……まさかこのような場所でお会いするとは思っていませんでした。
+[charslot(slot="r",name="avg_1043_leizi2_1#1$1",focus="r")]
+[name="リン・チンイェン"]なぜ私のことを――いえ、あなたは……ユン・チンピンさん？
+[charslot(slot="l",name="avg_4196_reckpr_1#8$1",focus="l")]
+[name="ユン・チンピン"]ズオさんからお話はかねがね伺っております――
+[charslot(slot="r",name="avg_1043_leizi2_1#1$1",focus="r")]
+[name="リン・チンイェン"]ズオ・ラウから、あなたは失踪したと聞いていますが？
+[charslot(slot="l",name="avg_4196_reckpr_1#4$1",focus="l")]
+[name="ユン・チンピン"]失踪？　ズオさんは私が残した手紙を読んでいないのですか？　なんということでしょう……私の配慮不足でした……
+[charslot(slot="r",name="avg_1043_leizi2_1#15$1",focus="r")]
+[name="リン・チンイェン"]ひとまずそれについては後にしましょう。ここで一体何があったのですか？
+[charslot(slot="l",name="avg_4196_reckpr_1#5$1",focus="l")]
+[name="ユン・チンピン"]そちらにいるお三方は、ある宝物を巡って争いになったようです。それから――
+[charslot(slot="r",name="avg_1043_leizi2_1#14$1",focus="r")]
+[name="リン・チンイェン"]お三方？
+[charslot(slot="r",name="avg_1043_leizi2_1#14$1",focus="none")]
+リン・チンイェンが傍らに視線をやると、そこにはしっかりと手足を縛られた二人の盗賊が転がっているだけで、他には千切れた麻縄だけが残されていた。
+[charslot(slot="l",name="avg_4196_reckpr_1#4$1",focus="l")]
+[name="ユン・チンピン"]おかしいですね……
+[Dialog]
+[charslot(slot="r",name="avg_1043_leizi2_1#14$1",focus="none")]
+[playsound(key="$d_avg_glass_break")]
+[Delay(time=2)]
+[charslot(slot="r",name="avg_1043_leizi2_1#9$1",focus="r")]
+[name="リン・チンイェン"]しまった！
+[Dialog]
+[playsound(key="$rungeneral")]
+[charslot(slot="r",afrom=1,ato=0,duration=1)]
+[charslot(slot="r",posfrom="0,0",posto="200,0",duration=2)]
+[Delay(time=2)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Background(image="63_mini01_market",screenadapt="coverall")]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,channel="1",volume=0.2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",name="avg_1043_leizi2_1#9$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="-100,0",posto="0,0",duration=2)]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[Delay(time=3.5)]
+[charslot(duration=2)]
+[Delay(time=2.5)]
+リン・チンイェンが慌てて茶館の外の通りに駆け出すと、すでに多くの住民が騒ぎを聞きつけて集まってきていた。
+彼女の耳に衝突音が届き、窓越しに男が二階から茶館の前の通りに転がり落ちるところも目撃した。
+そのため、茶館の外で負傷者か、あるいは死体を目にすることになると思っていた。だがそこにあったのは……
+割れた茶壺（チャフー）の破片だけだった。
+[Dialog]
+[stopsound(channel="1",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[image]
+[charslot]
