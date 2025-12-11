@@ -417,7 +417,7 @@
 [SKIN_TMPL_ENSURE](Applicable to {0} {1}  Class Conversion status.)
 [SKIN_TMPL_NO_MATCH]Unable to use on this Class Conversion.
 [BUY_SUCCESS]Purchased
-[CASH_PRICE_CURRENCY]$
+[SHOP_GP_TICKET_JUDGE_DIALOG_TIP_FORMAT]Spend 1 {0} to exchange?
 [SHOP_GP_CHECK_IN_PROGRESS_FORMAT]Total login days {0}/{1}
 [SHOP_GP_CHECK_IN_DETAIL_REWARD_TITLE_FORMAT]Obtained after <color=#0098dc>logging in for {0} days</color>
 [SHOP_BUY_FAIL]Insufficient {0}. Unable to buy.
@@ -430,6 +430,7 @@
 [SHOP_NO_MONTHLY_SUB]Not Active
 [SHOP_SKIN_CHAR_NAME]{0}'s Exclusive Outfit
 [CASH_SHOP_PLUS_DIAMOND]Contains {0} <color=white>x{1}</color>
+[CASH_PRICE_CURRENCY]$
 [SHOP_CONST_COUNT]x{0}
 [SHOP_REMAIN_COUNT]{0} remaining
 [SHOP_REMAIN_UNLIMIT]∞ remaining
@@ -491,6 +492,7 @@
 [ITEM_VOUCHER_CURRENT_COUNT](Currently held: <color=#FFFFFF>{0}</color>)
 [ITEM_VOUCHER_PICK_TITLE]Choose an Operator:
 [ITEM_VOUCHER_EVOLVE_TITLE]Please select one of the {0}★ Operators listed below to Promote to Elite 2 Lv. 1
+[ITEM_VOUCHER_EVOLVE_6_TITLE]Please select one of the {0}★ Operators listed below to Promote to Elite 2 Lv. 1 (Excluding the Special Operator)
 [ALERT_AP_BUY_SUCCESS]Sanity restored
 [DESC_HOME_ALL_STAGE_COMPELTE]All Stages Cleared
 [DESC_CUR_CHAPTER_COMPLETE]Episode complete
@@ -519,6 +521,7 @@
 [DIALOG_JUDGE_TWOSTAR_AUTO_BATTLE]Auto Deploy has made a mistake. Retreating from the operation <color=#FF6101>refunds {0} {1}</color> while proceeding with the settlement <color=#FF6101>grants reduced rewards</color>\nSettle with 2 stars?
 [DIALOG_JUDGE_TWOSTAR_AUTO_BATTLE_COMBO_CARD]Auto Deploy error.\nAbandon operation: <color=#FF6101>Operation will fail and sanity will be refunded.</color>\nContinue to results: <color=#FF6101>Results will be calculated as 2-stars, and you will receive a partial sanity refund.</color>\nContinue to results?
 [DIALOG_COMBO_CARD_AUTO_BATTLE_TOP]<color=#FFFFFFFF>Auto Deploy {0} times</color> <color=#898989FF>in progress</color>
+[WITHDRAW_RESPAWN_BUFF]Warriors ought to welcome death.
 [DIALOG_AUTO_BATTLE_GIVE_UP]Abandon operation?
 [DIALOG_AUTO_BATTLE_GIVE_UP_COMBO_CARD]Abandon operation?
 [ADD_FRIEND_STRING]Add {0}#{1} as your friend?
@@ -643,8 +646,8 @@
 [BUILDING_CHAR_MP_FULL]Energetic
 [BUILDING_CHAR_MP_HALF]Focused
 [BUILDING_CHAR_MP_EMPTY]Fatigued
-[BUILDING_FORMULA_UNLOCK_ROOM_AND_STAGE]Clear {1} with {0}-star rating, and unlock and upgrade Lv. {4} {3} during {2}.
-[BUILDING_FORMULA_UNLOCK_ROOM]Unlock and upgrade Lv. {2} {1} during {0}
+[BUILDING_FORMULA_UNLOCK_ROOM_AND_STAGE]Clear {1} with {0}-star rating, and unlock and upgrade Lv. {4} {3} x{2}
+[BUILDING_FORMULA_UNLOCK_ROOM]Unlock and upgrade Lv. {2} {1} x{0}
 [BUILDING_FORMULA_UNLOCK_STAGE]Clear {1} with {0} stars to unlock.
 [BUILDING_WORKSHOP_UPGRADING]Complete construction of the Workshop first
 [ERROR_BUILDING_WORKSHOP_FORMULA_COST_NOT_ENOUGH]Insufficient materials. Unable to process.
@@ -1049,8 +1052,9 @@
 [SHOP_VOUCHER_EVOLVE_TITLE]You can promote a hired 5★ Operator to Elite 2 Lv. 1.
 [SHOP_VOUCHER_LEVEL_MAX_4_TITLE]You can level an Elite 2 4★ Operator to max.
 [SHOP_VOUCHER_LEVEL_MAX_5_TITLE]You can level an Elite 2 5★ Operator to max.
-[SHOP_VOUCHER_LEVEL_MAX_6_TITLE]You can level an Elite 2 6★ Operator to max.
+[SHOP_VOUCHER_LEVEL_MAX_6_TITLE]You can level an Elite 2 6★ Operator to max (Excluding the Special Operator)
 [VOUCHER_SKILL_SPECIALLEVELMAX_TITLE]You can select a {0}★ Operator that meets the requirements and level a skill to Specialization Level 3
+[VOUCHER_SKILL_SPECIALLEVELMAX_6_TITLE]You can select a {0}★ Operator that meets the requirements and level a skill to Specialization Level 3 (Excluding the Special Operator)
 [VOUCHER_EVOLVE_EMPTY_TEXT]No Operator can be upgraded with this item
 [VOUCHER_SKILL_EMPTY_TEXT]No Operator can take the Specialization training with this item
 [CRISIS_CONTRACT_NO_SEASON_NAME]Contingency Contract
@@ -1149,6 +1153,12 @@
 [ROGUELIKE_TOPIC_DIFFICULTY_NEED_TOAST]Please select exploration difficulty
 [ROGUELIKE_OTHER_MODE]There is an ongoing exploration, unable to switch modes
 [ROGUELIKE_HAVE_ACTIVE_TOPIC]<{0}> In Progress
+[ROGUELIKE_TOPIC_ENDING_SP_OPERATOR_INFO_EVOLVE_UNLOCK]Complete Elite Promotion Mission(s) to increase Special Operator Lv. cap
+[ROGUELIKE_TOPIC_ENDING_SP_OPERATOR_INFO_EVOLVE_ACTIVE]Elite Promotion Available
+[ROGUELIKE_TOPIC_ENDING_SP_OPERATOR_INFO_SKILL_ACTIVE]Skill <color=#00b0ff>{0}</color> Unlockable
+[ROGUELIKE_TOPIC_ENDING_SP_OPERATOR_INFO_TALENT_ACTIVE]Talent <color=#00b0ff>{0}</color> Unlockable
+[ROGUELIKE_TOPIC_ENDING_SP_OPERATOR_INFO_MASTER_ACTIVE]Proficiency <color=#00b0ff>{0}</color> Unlockable
+[ROGUELIKE_TOPIC_ENDING_SP_OPERATOR_INFO_UNIEQUIP_ACTIVE]Module <color=#00b0ff>{0}</color> Unlockable
 [ROGUELIKE_INIT_GAIN]Initial Collectible
 [ROGUELIKE_INIT_RELIC_BORN]Select Squad
 [ROGUELIKE_INIT_REWARD]Select Support
@@ -1165,11 +1175,27 @@
 [ROGUELIKE_SHOP_WITHDRAWL_TIPS]The system balance consumed for withdrawing reserves will be doubled.
 [ROGUELIKE_SHOP_REFRESH_SUCCESS_TOAST]Shop Refreshed
 [ROGUELIKE_SHOP_RECYCLE_COUNT_FORMAT]To be sold: {0}
+[ROGUELIKE_SHOP_CONFIRM_BUY_VALID]Confirm Purchase
+[ROGUELIKE_SHOP_CONFIRM_BUY_INVALID_FORMAT]Insufficient {0}
+[ROGUELIKE_SHOP_CONFIRM_BUY_INVALID_FORMAT_GOLD]Insufficient {0}
+[ROGUELIKE_SHOP_CONFIRM_RECYCLE_VALID]Confirm
+[ROGUELIKE_SHOP_CONFIRM_RECYCLE_INVALID]Limit reached
+[ROGUELIKE_SHOP_REFRESH_TIP_WITHOUT_COST]Refresh shop items?\nThis will refresh <color=#01856e>all item slots</color>
+[ROGUELIKE_SHOP_REFRESH_TIP_WITH_COST_FREE_FORMAT]Refresh shop items? This refresh will not cost any {0}
+[ROGUELIKE_SHOP_REFRESH_TIP_WITH_COST_FORMAT]Spend {0} {1}(s) to refresh shop items?
+[ROGUELIKE_SHOP_REFRESH_REMAIN_COUNT_FORMAT]Shop items can be refreshed <color=#1eb090>{0}</color> more time(s)
 [ROGUELIKE_HARD_MODE_UNLOCK_HINT]You can now play <{0}>
+[ROGUELIKE_COMMON_COST_COUNT_FORMAT]- {0}
 [ROGUELIKE_RELIC_SELECT]Select a collectible
 [ROGUELIKE_RT_SELECT]Select a recruitment voucher
 [ROGUELIKE_UPGRADABLE_CHARACTER]You have {0} upgradable Operators.
 [ROGUELIKE_RECRUIT_SIMILAR_CHARACTER]There are already {0} similar Operators on the squad.
+[ROGUELIKE_STASHED_RECRUIT_TICKET_USE_DEFAULT_EMPTY_TIPS]No available Recruitment Vouchers
+[ROGUELIKE_STASHED_RECRUIT_TICKET_USE_DEFAULT_USE_LIMIT_FORMAT]Remaining Time(s): {0}
+[ROGUELIKE_STASHED_RECRUIT_TICKET_USE_DEFAULT_CONFIRM_TOAST]Select Recruitment Voucher
+[ROGUELIKE_STASHED_RECRUIT_TICKET_SIMILAR_CHARACTER]{0} Operator(s) of the same type
+[ROGUELIKE_STASHED_RECRUIT_TICKET_COST_ADD]+ {0}
+[ROGUELIKE_CHOICE_STASHED_RECRUIT_HINT_TIP]You have {0} Recruitment Voucher(s)
 [ROGUELIKE_EFFECTIVE_CHARACTER]You have {0} applicable Operator(s)
 [ROGUELIKE_REPLACE_TRAP_TIP]The current tactical prop will be replaced
 [ROGUELIKE_NOT_ENOUGH_ITEM]Insufficient {0}.
@@ -1184,6 +1210,7 @@
 [ROGUELIKE_RECRUIT]Recruit
 [ROGUELIKE_GET]Obtain
 [ROGUELIKE_EXCHANGE]Exchange
+[ROGUELIKE_SWAP]Exchange
 [ROGUELIKE_TAKE]Take it
 [ROGUELIKE_CHOOSE]Select
 [ROGUELIKE_DISABLE_SKILL_EVOLVE]Unlocked after increasing the elite level
@@ -1197,7 +1224,7 @@
 [ROGUELIKE_GIVE_UP_BATTLE]<color=#FF6101>Giving up will immediately end the current exploration</color>\nGive up this battle?
 [ROGUELIKE_GIVE_UP_BATTLE_CHALLENGE]Abandoning this battle will not end the investigation, and will instead <color=#FF6101>calculate Current Investigation Experience, reduce Max Life Points</color>, and continue onto the next step\nGive up this battle?
 [ROGUELIKE_ACTIVE_TOOL_DESC]{0} ({1})
-[ROGUELIKE_UNLOCK_ROAD]Spend 1 {0} to open a passage?
+[ROGUELIKE_UNLOCK_ROAD]Spend {0} {1}(s) to travel vertically?
 [ROGUELIKE_AVAIL_ITEM_COUNT]({0} remaining)
 [ROGUELIKE_REWARD_TREASURE_DICE_NO_ENOUGH_TIPS]Insufficient roll attempts
 [ROGUELIKE_REWARD_TREASURE_KEY_NO_ENOUGH_TIPS]Insufficient keys
@@ -1206,14 +1233,18 @@
 [ROGUELIKE_BATTLE_PASS_EXPAND_CAPTION]Rewards added after {0} next month
 [ROGUELIKE_BATTLE_PASS_NEXT_EXPAND_HINT]Distance {0}
 [ROGUELIKE_WITHDRAWL_ENTRY_MAX_TIPS]Balance Withdrawal limit reached
-[ROGUE_4_ROLL_NODE_SUCC_TOAST]Node Refreshed
-[ROGUE_4_ROLL_NODE_NO_COUNT_TOAST]Used up refreshes for this node
-[ROGUE_4_ROLL_NODE_NO_ITEM_TOAST]Insufficient {0}
+[ROGUELIKE_SACRIFICE_REQUIRE_SELECT_TIPS]Select a collectible
+[ROGUELIKE_SACRIFICE_USAGE_WITH_COST_TIPS_FORMAT]{0}\n<color=#C30A0A8A>Exchange will cost {1} {2}</color>
+[ROGUELIKE_EXPEDITION_REQUIRE_SELECT_TIPS]Select an Operator
+[ROGUELIKE_EXPEDITION_COST_TIPS_FORMAT]Dispatch will cost {0} {1}
 [ROGUELIKE_COMMON_I18N_COMMA_SPLIT],
 [ROGUELIKE_SEED_INPUT_PLACE_HOLDER]Enter or paste a seed
+[ROGUELIKE_STASH_TICKET_FORMAT]Conserved {0}/{1}
+[ROGUELIKE_STASH_TICKET_FULL]Conserve limit reached
 [RL02_MUTATION_DESC]Affected Operators:
 [RL02_MUTATION_DESC_SEPARATOR],
 [RL02_SACRIFICE_DEFAULT_NAME]Choose a collectible from the right to exchange
+[RL02_SACRIFICE_DEFAULT_USAGE]The void of helplessness will be filled by the joy and satisfaction of gain.
 [RL02_SACRIFICE_EMPTY_TIP]No collectibles selected. Are you sure you want to leave?\nYou will return to the previous scene.
 [RL02_MENU_TASK_NORMAL_DESC]Regional Contracts
 [RL02_MENU_TASK_COMPLETED_DESC]Contract complete
@@ -1228,11 +1259,13 @@
 [RL_EXPEDITION_RETURN_ITEM_SPLIT],
 [RL_EXPEDITION_CHOICE_TIP]You have {0} Operator(s) available to transport supplies.
 [RL_SACRIFICE_CHOICE_TIP]You have {0} collectible(s) available for trade.
+[RL_HP_CHOICE_TIP]Current Life Points: {0}
 [RL_KEY_ITEM_NOT_ENOUGH]Insufficient {0}
 [ROGUELIKE_BUFF_TOAST_NAME_SEPARATOR],
 [RL02_SHOP_REFRESH_TIP]Spend 1 die roll to refresh items?\n Randomly refreshes <color=#d13132>2</color> shop slots. If roll is <color=#d13132>5 or higher</color>, refresh all slots instead. If roll is <color=#d13132>7 or higher</color>, randomly refresh slots with higher-value collectibles.
 [RL02_SHOP_DICE_COUNT_LACK_TOAST]Insufficient roll attempts
 [RL_SHOP_REFRESH_COUNT_LACK_TOAST]Used up refreshes for this shop
+[RL_SHOP_REFRESH_COST_LACK_TOAST]Insufficient {0}, unable to refresh
 [RL03_SHOP_REFRESH_TIP]Refresh shop items? \n This will refresh <color=#01856e>all item slots</color>, every shop can only be refreshed <color=#01856e>once</color>
 [ROGUELIKE_TOPIC_PINNED_TOAST]Subscribed to Integrated Strategies [{0}].
 [ROGUELIKE_TOPIC_UNPINNED_TOAST]Unsubscribed from Integrated Strategies [{0}].
@@ -1257,8 +1290,8 @@
 [RL03_TOTEM_CONFIRM_NEED_NODE]Please select node(s)
 [RL03_DIFF_RULE_ACTIVE_GRADE]Takes effect when exploring on difficulty <{0}·{1}> and above
 [RL03_COST_TEXT]Raising the equipment's power to explore a new path will decrease the device's Anti-Interference Index. Are you sure you want to continue?
-[ROGUE_4_DUEL_START_BATTLE_NOT_FULL]You can still select more Operator(s). Are you sure you want to continue?
-[ROGUE_4_DUEL_GIVE_UP_BATTLE_CONTINUE]Abort current battle?\n<color=#FF6101>Doing so will not end your exploration</color>
+[ROGUE_4_DUEL_START_BATTLE_NOT_FULL]You can still select more Operator(s). Are you sure you want to proceed?
+[ROGUE_4_DUEL_GIVE_UP_BATTLE_CONTINUE]Abort current battle? \n<color=#FF6101>Doing so will not end your exploration</color>
 [ROGUE_4_FRAGMENT_DROP_TOAST]<color=#0098dc>[{0}]</color> Discarded
 [ROGUE_4_FRAGMENT_USE_INSPIRATION_TOAST]Inspirer <color=#0098dc>[{0}]</color> Used
 [ROGUE_4_FRAGMENT_INSPIRATION_COVER_TOAST]This will override the current active Inspirer. Are you sure you want to continue?
@@ -1310,6 +1343,9 @@
 [ROGUE_4_ARCHIVE_DISASTER_LOCKED_EFFECT]Have yet to venture into this epoch period
 [ROGUE_4_FRAGMENT_WEIGHT_DIALOG_HEAVY_DEBUFF_FORMAT]Mind is <color=#fcb01d>Fractured</color>, {0}\nAre you sure you wish to enter node?
 [ROGUE_4_DISASTER_TOAST_NAME]{0}·{1}
+[ROGUE_4_ROLL_NODE_NO_COUNT_TOAST]Used up refreshes for this node
+[ROGUE_4_ROLL_NODE_SUCC_TOAST]Node Refreshed
+[ROGUE_4_ROLL_NODE_NO_ITEM_TOAST]Insufficient {0}
 [ROGUELIKE_CHALLENGE_BOOK_LOCKED_ENTRY_HINT]Complete Investigations to unlock
 [ROGUELIKE_CHALLENGE_BOOK_LOCKED_ITEM_HINT]Continue Investigations to unlock
 [RL03_CHALLENGE_MODE_DETAIL_TARGET_PREFIX_FORMAT]Investigate <{0}>, and complete the following in a single run:
@@ -1341,9 +1377,6 @@
 [SP_CHAR_MISSION_COMMON_DESC]Alternate Operator Task
 [SP_CHAR_MISSION_LOCKED_DESC]Have {0} to unlock Alternate Operator Task
 [SP_CHAR_MISSION_COND_EVOLVE_PHASE]Reach Elite {0} Level {1}.
-[OBB_WARNING_CONTENT]Please restart your device to resolve the issue.\nIf the issue persists, please download the game again,\nor contact us through Customer Support.
-[OBB_WARNING_CONFIRM]Understood
-[OBB_WARNING_TITLE]Resource Loading Failure
 [MULTI_FIND_ROOM_ID_ERROR]Project Number format error. Please check the input information
 [MULTI_FIND_ROOM_NONE]Unable to find the Test Project. Please check the input information
 [MULTI_READY]Ready
@@ -1414,11 +1447,7 @@
 [MULTI_NO_FRIEND_ROOM_FOUND]No Test Projects available
 [MULTI_CREATE_TOO_MANY_PEOPLE]Unable to apply for Test Project due to too many participants. Please try again later
 [MULTI_CANNOT_KICK_IN_BATTLE_PLAYER]The current battle has not ended yet, unable to remove the Team
-[MULTI_CLICK_TOO_FAST]Too many actions entered. Please try again later
-[TEXT_TITLE_STARTMISSION]Pinboard Missions
-[TEXT_TITLE_DAILYMISSION]Daily Missions
-[TEXT_TITLE_WEEKLYMISSION]Weekly Missions
-[TEXT_TITLE_MAINMISSION]Campaign Missions
+[MULTI_CLICK_TOO_FAST]Too many actions entered. Please try again later.
 [ACT1LOCK_STAGE_TYPE_NORMAL]Training Base
 [ACT1LOCK_STAGE_TYPE_INTERLOCK]Post
 [ACT1LOCK_STAGE_TYPE_FINAL]Final Proving Ground
@@ -1434,6 +1463,10 @@
 [ACT1LOCK_SQUAD_ASSIST_ALREADY_EXIST]Unable to add to the squad as the same character is already present
 [ACT1LOCK_FINAL_STAGE_UNLOCKED]{0} appeared
 [ACT1LOCK_INTERLOCK_STAGE_UNLOCKED]{0} unlocked
+[TEXT_TITLE_STARTMISSION]Pinboard
+[TEXT_TITLE_DAILYMISSION]Daily
+[TEXT_TITLE_WEEKLYMISSION]Weekly
+[TEXT_TITLE_MAINMISSION]Campaign
 [GUIDE_MISSION_CHAR_REWARD_HINT]Complete {0} to obtain
 [GUIDE_MISSION_ITEM_COUNT_STR]<size=30> x </size>{0}
 [GUIDE_MISSION_UNLOCK_TITLE_STR]{0} Unlock Conditions
@@ -1563,7 +1596,6 @@
 [ROGUE_ARCHIVE_TOTEM_UNATTAINED_DESC_AFFIX]Source and Layout Foldartals have decorative Flairs that bring forth additional effects when declaring Foldartals. \n Obtainable from exploring on difficulties <Braving Nature 3> and higher
 [ACTLOGIN_END_TIME_TITLE]Event Ends at:
 [DIALOG_JUDGE_NO_MORE_CHECK]Do not show again
-[ERROR_GUEST_FUNC_DISABLE]This function is now unusable, please refer to the official news for more details
 [TOAST_COMMON_SET_SUC]Set
 [TOAST_VOICE_LANG_SET_CHAR_LANG_SUC]Saved
 [TOAST_VOICE_LANG_NO_RES]Go to <color=#00B0FF>Settings-Game-Additional Resources</color> and download <color=#00B0FF>Voice Resources</color>
@@ -2435,6 +2467,7 @@
 [ENEMY_DUEL_MILESTONE_PROGRESS_FORMAT]/ {0}
 [ENEMY_DUEL_MILESTONE_ITEM_LOCK_TEXT]Next phase's rewards unlock after {0}
 [ENEMY_DUEL_ROOM_END_DIALOG_TEXT]Connection failed. Match ended
+[ENEMY_DUEL_MILESTONE_ITEM_NAME_FORMAT]Reach Lv. {0}
 [CARVING_MAIN_CHALLENGE_INFO_TITLE]Hit Target Score for {0} rounds!
 [CARVING_MAIN_SHOP_TITLE]Round {0}
 [CARVING_MAIN_CHALLENGE_INFO_ROUND_ITEM_TITLE]Round {0} Materials
@@ -2475,6 +2508,17 @@
 [GUN_TASK_ARCHIVE_LOCK_TOAST]Continue Investigations to unlock
 [GUN_TASK_REWARD_DETAIL_SUBTITLE]Rewards must be collected daily and will not stack if uncollected
 [GUN_TASK_DETAIL_TITLE_FORMAT]{0}'s Order
+[SPECIAL_OPERATOR_EVOLVE_PHASE_COND_FORMAT]Promote to Elite {0}
+[SPECIAL_OPERATOR_EVOLVE_LEVEL_COND_FORMAT]Lv. cap increased to {0}
+[SPECIAL_OPERATOR_EVOLVE_TIP_PRE_LEVEL_COND_FORMAT]Increase level to Lv. {0}
+[SPECIAL_OPERATOR_EVOLVE_CURSOR_PANEL_EXP_FORMAT]<color=#ffd800>{0}</color>/{1}
+[SPECIAL_OPERATOR_EVOLVE_CURSOR_PANEL_LEVEL_MAX_FORMAT]/{0}
+[SPECIAL_OPERATOR_EVOLVE_DETAIL_TASK_FORMAT]{0} ({1}/{2})
+[SPECIAL_OPERATOR_EVOLVE_DETAIL_EVOLVE_TITLE_FORMAT]Elite {0}
+[SPECIAL_OPERATOR_EVOLVE_DETAIL_EVOLVE_PRE_BTN]Promote to Elite {0}
+[SPECIAL_OPERATOR_TO_TARGET]Play {0} {1}\n to raise this Operator
+[SPECIAL_OPERATOR_TO_TARGET_ROGUE]Integrated Strategies
+[SPECIAL_OPERATOR_TO_FORMAT]Proceed to {0}
 [ACT1ARCADE_SCORE_FORMAT]{0:D7}
 [ACT1ARCADE_SCORE_INFO_FORMAT]{0}-
 [ACT1ARCADE_REWARD_FORMAT]+{0}

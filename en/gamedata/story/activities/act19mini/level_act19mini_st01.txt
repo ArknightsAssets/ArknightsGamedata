@@ -1,0 +1,814 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="25_g04_yaninn",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$darkalley_intro",key="$darkalley_loop", volume=0.6)]
+[playsound(key="$d_avg_lightrain_loop",loop=true,channel="1",volume=0.5)]
+[Delay(time=2)]
+Our tale begins in a modest teahouse, its building hardly tall enough for the two floors it's split into.
+The interior is simply furnished, the space neither cramped nor bare. Ten wooden tables, meticulously laid out, seat six each. The tea stains have been scrubbed as much as they'll permit. It all speaks to a diligent owner.
+The teahouse's server casts ladles of water across the floor, as he mops each and every tile to a mirror sheen.
+It seems a while since this teahouse last welcomed a guest. One wonders what sort of customer could warrant such a conscientious welcome.
+And with perfect timing, they come in.
+[Dialog]
+[playsound(key="$dooropenquite",channel="2")]
+[stopsound(channel="1",fadetime=2)]
+[charslot(slot="l",name="avg_npc_007",duration=2)]
+[charslot(slot="r",name="avg_npc_008",duration=2)]
+[Delay(time=3.5)]
+[charslot]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",name="avg_npc_303_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="Teahouse Server"]One, two... A party of two? Welcome, this way. Would you like a pot of tea to start?
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="Menacing Man"]We're fine. First things first—is this Mangshan Town?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Teahouse Server"]It is Mangshan Town.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="Menacing Man"]Are you the shopkeep of this place, or the server?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Teahouse Server"]I am the server.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="Menacing Man"]Keep not in?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Teahouse Server"]The keep is not in.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="Menacing Man"]It's like I'm hearing myself echo. At least you give answers.
+[name="Menacing Man"]One more question then—did a stranger from outside come by today?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Teahouse Server"]They did.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="Menacing Man"]When? What did they look like?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Teahouse Server"]Right now. Two people, both bandit-like.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="r")]
+[charslot(slot="r",name="avg_npc_008",focus="r")]
+[name="Boorish Man"]<i>Wang ba dan,</i> don't you screw around with us!
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[delay(time=0.3)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=1)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[Dialog]
+[delay(time=0.5)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[delay(time=0.5)]
+The boor of a man's temper flares, and he throws a hefty palm across the server's face that sends him crashing to the floor.
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="0,-40",posto="0,0",duration=2)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="none")]
+But the server does not anger in kind. He calmly picks himself up, and stands up again, like none of that just happened.
+[Dialog]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Teahouse Server"]What strange guests you are. No tea, no wine? It's beyond me to serve you, then.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="Menacing Man"]Kid, be nice. He just works here.
+[name="Menacing Man"]Check the kitchen in the back. And close every door shut while you're in there.
+[Dialog]
+[charslot(slot="r",name="avg_npc_008",focus="r")]
+[delay(time=1.5)]
+[charslot(slot="r",posfrom="0,0",posto="50,0",duration=2,focus="r")]
+[charslot(slot="r",afrom=1,ato=0,duration=1,focus="r")]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[name="Menacing Man"]Take it easy. Of course we want tea.
+[name="Menacing Man"]But we're waiting for someone first. We need to have our tea with her.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$dooropenquite")]
+[charslot(slot="m",name="avg_npc_1871_1#12$1",duration=2)]
+[Delay(time=2.5)]
+And in short order, the proclaimed plus-one arrives.
+[Dialog]
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="Clever Girl"]Oh...?
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_exsheath")]
+[Delay(time=2.5)]
+Scarcely has the girl stepped inside to look around when the tip of a crossbow bolt nestles against her back, and the point of a machete to her throat.
+[charslot(slot="m",name="avg_npc_1871_1#6$1",focus="m")]
+[name="Clever Girl"]Haha...
+[name="Clever Girl"]Look at that, it's the Lu brothers. Who knew I'd bump into you here?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_007",duration=2)]
+[Delay(time=2.5)]
+[name="Lu the Older"]I think you wouldn't have come if you did know.
+[name="Lu the Older"]Still, good to see you. Now stick around.
+[name="Lu the Older"]Server boy. Shut the door, if you don't mind. And hang up the closed sign.
+[name="Lu the Older"]Then, we'll take a pot of tea.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Teahouse Server"]Here's your tea. Take your time.
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="Clever Girl"]The 'Three Blades of Wind and Cloud' treating me to tea? All the heartlands know you. I feel like a VIP now.
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]Shame it's just the two of us now.
+[name="Lu the Older"]A few days ago, you framed our trio with that secret tome. That sicced three whole gangs <i>and</i> the Yumen garrison on our asses. A hundred men, maybe more, all hunting us down.
+[name="Lu the Older"]I made it, he made it. Our youngest brother died outside Baizao.
+[name="Lu the Older"]So... what could we do but invite you for a cup of tea?
+[charslot(slot="m",name="avg_npc_1871_1#6$1",focus="m")]
+[name="Clever Girl"]Haha... Absolutely, we should say cheers to you jianghu heroes for making it. Here, may I toast you two with my tea, in place of wine? And then, after meeting on such good terms, we can part on them too?
+[Dialog]
+[charslot(slot="m",name="avg_npc_008",focus="m")]
+[playsound(key="$d_avg_smashtable")]
+[CameraShake(duration=2, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=2.5)]
+[name="Lu the Middle"]You need to shut the—!
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]Let's cut the chit-chat—do you still have the secret tome?
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="Clever Girl"]So you caught wind of the deal? Is that why you were waiting for me here?
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]That's right.
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="Clever Girl"]And what happened to my guy, Mr. Pu? Don't tell me you killed him?
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]Guess.
+[charslot(slot="m",name="avg_npc_1871_1#10$1",focus="m")]
+[name="Clever Girl"]*sigh*... And there's nothing I can say to convince you that you don't want this tome?
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]You already screwed us over once. If we don't get this tome today, then the wrong you stuck on us, and the death of our third brother, will both go unanswered.
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="Clever Girl"]Alright, now I'm curious. Do you fine heroes really know how this tome here came to be?
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]Of course.
+[name="Lu the Older"]Rumor has it the Grandmaster of Yumen, who perfected the martial arts, wrote all his learnings in a tome before wading out of the jianghu.
+[name="Lu the Older"]And not long ago, that tome finally fell into the commoners' hands, though almost no one can actually say they've seen it.
+[name="Lu the Older"]We brothers did some asking around too. All signs pointed to you having the tome.
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="Clever Girl"]So presumably, you two want the tome so you can master the ultimate kung fu? Claim First Under Heaven?
+[name="Clever Girl"]What I'm asking is, what will this do for you in the long run? Will you rule the jianghu with an iron fist? Will this avenge your dead brother?
+[name="Clever Girl"]Or are you going to duel to the death once you realize there can only be one First Under Heaven?
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]You're pushing your luck—bring it out.
+[Dialog]
+[charslot]
+He says, making a subtle show of his machete again.
+To which the girl can only shake her head and sigh. She pulls out a small parcel from her travel bag. Its rectangular dimensions are those of a book, no doubt.
+[charslot(slot="m",name="avg_npc_1871_1#3$1",focus="m")]
+[name="Clever Girl"]Fine, fine. It's not like I needed the tome anyway, I was just gonna sell it to—well, anyone.
+[charslot(slot="m",name="avg_npc_1871_1#6$1",focus="m")]
+[name="Clever Girl"]So, fine gentlemen, what's your bid? Because as a note, the last buyer I had lined up set the bar high.
+[Dialog]
+[charslot]
+She says, gesturing a '7' in the air.
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]I have a better offer.
+[name="Lu the Older"]Your life.
+[charslot(slot="m",name="avg_npc_1871_1#10$1",focus="m")]
+[name="Clever Girl"]*sigh*... Sir, there's no reasoning with you, if you do business like this.
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]As I see it, it's already a very fair offer.
+[name="Lu the Older"]If my info's right, the Grandmaster's tome was meant for the general leading the Yumen guards.
+[name="Lu the Older"]I don't know how you got your hands on it, but it can't have been legal.
+[name="Lu the Older"]We're bandits, fine lady, and you're a crook. We do us and you do you. Justice and injustice are both above our paygrade.
+[charslot(slot="m",name="avg_npc_1871_1#12$1",focus="m")]
+[name="Clever Girl"]Whoof, you're no fun... Alright, alright, I really screwed the hound on this one this time. You've got the stuff, can I go now?
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]Not yet.
+[name="Lu the Older"]I may not be a delicate man, but I know a trouble magnet when I see it. If I let you blab about this to the entire jianghu, I fear we won't live to train as the tome instructs.
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="Clever Girl"]Well, if you can cram it a little, and get a little smarter too... Who knows?
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]Save some jibber-jabber for your next life.
+[name="Lu the Older"]And if there is a next life, remember this: Play stupid games, win stupid prizes.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.5, r=0,g=0.1, b=0, fadetime=0.05, block=true)]
+[CameraShake(duration=2, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_metalcollar")]
+[CameraShake(duration=2, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]What the...?
+[Dialog]
+[charslot]
+The man can hardly process the sight of his machete dropping to the ground.
+His unwavering grip has never betrayed him throughout his grueling years in the jianghu.
+Yet now he can't even hold his own blade.
+[charslot(slot="m",name="avg_npc_008",focus="m")]
+[name="Lu the Middle"]*pant*... *pant*... Sh... shit... Bro... I think...
+[name="Lu the Middle"]Someone... here... poisoned us...!
+[Dialog]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="0,-40",duration=2)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1871_1#8$1",focus="m")]
+[delay(time=1.5)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="0,-40",duration=2)]
+[delay(time=2.5)]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_303_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="Teahouse Server"]I poisoned you.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_string_force")]
+[Delay(time=4.5)]
+Producing a hemp rope from out of nowhere, the server silently busies himself. In a flash, the three incapacitated guests are bound up like zongzi on the plate, and deposited neatly in the corner.
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]Figures I'd mistake you for just a teahouse server, sir. My eyes must be going bad.
+[name="Lu the Older"]Poisoning us so finely, you must be a jianghu old-timer too? Tell us your name. If we're dying, at least we should go out knowing.
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Teahouse Server"]You weren't mistaken, I'm just a teahouse server, no jianghu old-timer. My friends call me 'Hu Jun'.
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]I imagine you know Mr. Pu too, then?
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]He's one of those very friends.
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]Heh...
+[name="Lu the Older"]One more thing, if you don't mind. This tome... why do you want it?
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]To leave this town.
+[name="Hu Jun"]It holds five hundred and twenty families, and going around visiting each one takes two thousand and nine hundred steps.
+[name="Hu Jun"]For years upon years, neither number has changed at all. I want to get away from here.
+[name="Hu Jun"]But if I want to leave, there needs to be some change. And if I want some change, I need this secret tome.
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]I don't understand what you're getting at, sir...
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]No matter. It's not as if all the realm was made for human minds to comprehend.
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="Lu the Older"]Yeah, fair.
+[name="Lu the Older"]We've fallen to you, I admit it! Kill us or whatever, just do what you like.
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]Whether or not you admit you've fallen to me doesn't change anything.
+[Dialog]
+[charslot]
+[name="Bookish Teen"]Sir, you've gotten what you came for. Why bother taking anyone's life?
+[Dialog]
+[charslot(slot="m",name="avg_4196_reckpr_1#8$1",duration=2)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]Who the hell are you? When did you seat yourself?
+[charslot(slot="m",name="avg_4196_reckpr_1#9$1",focus="m")]
+[name="Yun Qingping"]If you'd have my name, it's Yun Qingping. I was just passing through on my travels.
+[name="Yun Qingping"]I've been sitting here since noon, actually. You were just so fixated on the secret tome, I naturally didn't enter your sight.
+[Dialog]
+[charslot]
+Catching sight of the elusive boy, Hu Jun grips his dagger tight, but following a moment of thought, he lets go again.
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]I have no reason to fear you. I 'treated' all the water in this teahouse. You should be poisoned too.
+[charslot(slot="m",name="avg_4196_reckpr_1#8$1",focus="m")]
+[name="Yun Qingping"]You wouldn't need to fear me anyway, sir. I'm just a scholar who couldn't even truss a featherfowl. There's nothing I could do to you in a fight.
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]But you insist on saving these people?
+[charslot(slot="m",name="avg_4196_reckpr_1#8$1",focus="m")]
+[name="Yun Qingping"]Yes. I ask for you to look down on them with kindness, and not to kill again.
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]These people are not good people.
+[name="Hu Jun"]If he'd gotten the tome just now, he would've silenced everyone else all the same—he even said so himself, just now.
+[charslot(slot="m",name="avg_4196_reckpr_1#8$1",focus="m")]
+[name="Yun Qingping"]They may be utter scoundrels, but surely your heart is still a good one, sir. So why sully your own innocence for them?
+[name="Yun Qingping"]Just hand them to the authorities, and justice will take care of them as a matter of course. As for the secret tome, I'll swear to keep my mouth shut.
+[charslot(slot="m",name="avg_4196_reckpr_1#9$1",focus="m")]
+[name="Yun Qingping"]How about it, sir?
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]The way you talk reminds me of my friend. He's a good person. You must be too.
+[name="Hu Jun"]But for now, I cannot trust you.
+[name="Hu Jun"]I won't kill you, but I will ask you to step forth, so I can tie you up.
+[charslot(slot="m",name="avg_4196_reckpr_1#2$1",focus="m")]
+[name="Yun Qingping"]*sigh*...
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_string_force")]
+[Delay(time=4.5)]
+[stopmusic(fadetime=2.5)]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_4196_reckpr_1#1$1",focus="m")]
+[name="Yun Qingping"]You didn't want trouble, and yet trouble's come knocking.
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]No noise. Or else all four of you are dead.
+[charslot(slot="m",name="avg_4196_reckpr_1#1$1",focus="m")]
+[name="Yun Qingping"](Cooperative nod)
+[Dialog]
+[charslot]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[playsound(key="$dooropenquite")]
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="Lin Qingyan"]Excuse me, is this teahouse closed for the day?
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_paper2")]
+[Delay(time=2)]
+[Sticker(id="st1", multi = true, text="Dear Auntie Qingyan,", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nI hope this letter finds you well.", x=380,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nI heard about your resignation. I don't know of the specifics, but I admire you deeply for your courageous act. No wonder Mother always exhorts me to follow your example.",block = true)]
+[Sticker(id="st1", multi = true, text="\n\nTo make a long story short, I have something urgent I want to entrust to you in this letter.",block = true)]
+[Sticker(id="st1", multi = true, text="\n\nAn old friend of mine, called Yun Qingping, came with me to Baizao. We've been due to return and report back to the Sui Regulator. But three days ago, he went missing.",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="My friend is a very careful person. Going AWOL like this is unusual to say the least. I fear for the worst.", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nBased on the clues I've found, he was last headed out of the city via the north edge, in the direction of Mt. Mang, same as your return trip to the Tianshi Bureau.",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="I was going to search for him myself, but the Sui Regulator has been inundated lately, not to mention whispers of another incident in Father's army. I'm all but stuck here.", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nYou're the only one who can help me find my friend's whereabouts now, Auntie. I've enclosed a photo of him with this letter. If you find him, I beg you contact me ASAP.",block = true)]
+[Sticker(id="st1", multi = true, text="\n\nYours in due deference, Zuo Le",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="Blessings:", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\nMay your health be sound, and your vacation merry.",block = true)]
+[Sticker(id="st1", multi = true, text="\n\nP.S. Please show up at our next reunion dinner, Auntie. I'm sure Father and Mother are eager for the story surrounding your resignation.",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="63_mini01_market",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+That morning...
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",duration=2)]
+[Delay(time=2.5)]
+[name="Lin Qingyan"]The nerve of this boy. Now he's sending me on missions...
+[name="Lin Qingyan"]...'Courageous act', what nonsense...
+[charslot(slot="m",name="avg_1043_leizi2_1#12$1",focus="m")]
+[name="Lin Qingyan"]No respect for elders...
+[Dialog]
+[charslot]
+Before she knows it, Lin Qingyan has set foot into this strange town.
+It's a rustic one, low buildings littered about. Few wander the streets. The scene here is a still and peaceful one.
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]Did Mt. Mang always have a town like this at its foot?
+[charslot(slot="m",name="avg_1043_leizi2_1#10$1",focus="m")]
+[name="Lin Qingyan"]This is odd. I lost signal as soon as I entered. I didn't think the Tianshi Bureau had missed any nearby towns with its signal towers...
+[Dialog]
+[charslot]
+[name="???"]Young lady, young lady—
+[Dialog]
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]Hm?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1638_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="Grinning Passerby"]Young lady—I've never seen you before. Are you from outside? How rare, how very rare.
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]Correct... Are outside visitors infrequent here?
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="Grinning Passerby"]They used to be. Lately there's been more.
+[charslot(slot="m",name="avg_1043_leizi2_1#10$1",focus="m")]
+[name="Lin Qingyan"]I'm not surprised. The entrance to this town is very remote, and not marked on any maps to boot...
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]Sorry, do you happen to know the way to the nearest Tianshi Bureau?
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="Grinning Passerby"]Tianshi Bureau, Tianshi Bureau—can't say I've heard, can't say I've heard.
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]Can you point me to the road out of town, then? I didn't take full note when entering, and I lost the way I came by the time I thought to look back.
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="Grinning Passerby"]Out of town, out of town—I don't know, I've never been out.
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="Lin Qingyan"]You don't know?
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="Grinning Passerby"]Slow down, slow down—have a pancake, take your time, look around. Everything is done when it's done. No rushing it.
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]I'm assuming you live here? How long have you lived here for?
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="Grinning Passerby"]Me, me—yes I do. I've been here ever since a pastry lit the first fire in my belly.
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="Lin Qingyan"]Lit a fire? In your belly...?
+[charslot(slot="m",name="avg_1043_leizi2_1#3$1",focus="m")]
+[name="Lin Qingyan"]*ahem*... Thank you, I'll keep looking.
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="Grinning Passerby"]Young lady, young lady—pancakes, fresh from the oven. Have one.
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="Lin Qingyan"]No thanks, I'm not hungry... Did you just dig that out from your pocket? That pancake is oven-fresh?
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="Grinning Passerby"]It's done now, well-done now.
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="Lin Qingyan"]Ouch! This is scalding! You were holding this to your chest—?
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="Grinning Passerby"]No rushing it, no rushing it. Go back to looking, young lady, until you're heated through just right.
+[Dialog]
+[charslot(duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#15$1",focus="m")]
+[name="Lin Qingyan"]Excuse me, wait!
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[multiline(name="???")]Eight thousand nine hundred and ninety-one. Eight thousand nine hundred and ninety-two. Eight-thousand...
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1,g=1, b=1, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=0.3)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[multiline(name="???")] Ah.
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="Lin Qingyan"]Careful! Are you hurt?
+[Dialog]
+[charslot]
+Gaze fixed on the ground, a young woman walks headfirst into Lin Qingyan and promptly tumbles straight to the ground, where something falls out of her clothes.
+Lin Qingyan immediately checks her over, then turns to look back, only to find the old man with the pancakes is nowhere to be seen.
+[Dialog]
+[name="???"]Umbrella, my umbrella... Mister told me not to let go of my umbrella...
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]Here. And this letter. It fell out of your sleeve.
+[Dialog]
+[charslot]
+The girl hurriedly takes her umbrella, then with difficulty stuffs the letter back in her sleeve. 
+Lin Qingyan looks to the clear blue sky.
+[charslot(slot="m",name="avg_1043_leizi2_1#11$1",focus="m")]
+[name="Lin Qingyan"]Try and stand up, young miss. Let me help you.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement",channel="g")]
+[charslot(slot="m",name="avg_npc_304_1#1$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="0,-50",posto="0,0",duration=2)]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="Lin Qingyan"](This girl's so light...)
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]How far did I count just now?
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="Lin Qingyan"]Er, eight thousand nine hundred and ninety-three?
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]Eight thousand nine hundred and ninety-four. Eight thousand nine hundred and ninety-five...
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]Young miss, are you alright? Do you need me to take you home?
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]Home? I can't go home, I promised to meet him at the tofu stall—
+[name="Umbrella Girl"]Ah... oh no, he told me it was a secret, to protect it with my life, not to tell anyone even if they beat me to death!
+[name="Umbrella Girl"]Did you hear that? Did you hear about my secret meeting with him at the tofu stall?
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]That's your personal business. Let's say I didn't hear.
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]Thank goodness, I'd rather not get beaten to death—where did I count up to?
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="Lin Qingyan"]Eight thousand nine hundred and ninety six? What are you counting?
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]He told me to count to nine thousand when I go to meet him, and once I do—oh no, I said it again! I'm going to get beaten to death!
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="Lin Qingyan"]If I'm not missing something, I think 'beat you to death' is just a brand of Yanese hyperbole...
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="Lin Qingyan"]Unless you're telling me, Miss, you believe your life is in danger—
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]Eight thousand nine hundred and ninety-seven, eight thousand nine hundred and ninety eight...
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="Lin Qingyan"]Er...
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]Eight thousand nine hundred and ninety-nine, nine thousand! It's time! I'm off to see him—
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]There's... something strikingly odd about the people in this town...
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="Lin Qingyan"]...What's this? Is this... It's the letter that fell out of her sleeve.
+[name="Lin Qingyan"]'CLASSIFIED SCOOP, NOT FOR PRYING EYES'?
+[charslot(slot="m",name="avg_1043_leizi2_1#15$1",focus="m")]
+[name="Lin Qingyan"]Wait, Miss!
+[Dialog]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="200,0",duration=2)]
+[delay(time=2.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="63_mini01_market",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_304_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="Umbrella Girl"]Hu Jun, Hu Jun—I'm here to see you!
+[Dialog]
+[charslot]
+[name="???"]Shh, quiet. This way.
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]Hu Jun... Why did I have to count to nine thousand before seeing you? My lips are chapped from counting out loud now.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]I had no other choice. That's the only way you know to keep track of time.
+[name="Hu Jun"]Did anyone see you come here?
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]A bunch of people, but none of them know I was coming to see you!
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]You get the stuff?
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]Yep, in Mister's cabinet, second drawer. It said 'CLASSIFIED SCOOP, NOT FOR PRYING EYES' on it.
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]Perfect. Give it to me.
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]A-Alright...
+[name="Umbrella Girl"]Oh no, I can't... I can't find the letter! I must have lost it on the way!
+[name="Umbrella Girl"]But that's alright, I read what was inside. It said 'Three quarters past the Hour of Wei, deal at the old teahouse'.
+[Dialog]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[Delay(time=1)]
+[name="Hu Jun"]You sneaked a look at the contents, and you lost the letter itself.
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]What's wrong, Hu Jun? You're crinkling your forehead up so hard. It makes you look terrifying. I don't like it.
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]You're sure that's what it said? The time? Three quarters past the Hour of Wei?
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]Yeah! I can't actually tell the time, but my memory's really good.
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]......
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]Hu Jun, what's wrong? Say something. Do I have to count to nine thousand again before you stop ignoring me? Okay, one, two, three, four, five...
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]No, stop that.
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]Hu Jun, Hu Jun—I really don't like you being this way. Your face looks so scary.
+[Dialog]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1874_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[name="Hu Jun"]Xiaoshu, I trust you dearly. If everything goes smoothly, I <i>was</i> planning to get out of here with you. We could leave together.
+[name="Hu Jun"]But you're not ready yet. You haven't learned to keep secrets. That's why I can't—
+[name="Hu Jun"]What are you doing?
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]You can't hide it from me. Your eyes are wet, Hu Jun. You're hurting a lot, aren't you?
+[name="Umbrella Girl"]Mister says, when things get wet, I shouldn't jump straight to wiping them, but I can help by blowing on them. Are your eyes a little drier now?
+[charslot(slot="m",name="avg_npc_1874_1#1$1",focus="m")]
+[name="Hu Jun"]......
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="Umbrella Girl"]Ah, you held my hand too tight just now! Now there's wrinkles in it.
+[charslot(slot="m",name="avg_npc_1874_1#1$1",focus="m")]
+[name="Hu Jun"]Goodbye, Xiaoshu.
+[Dialog]
+[stopmusic(fadetime=2)]
+[playsound(key="$d_avg_cnstrctnck")]
+[delay(time=3.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1,g=1, b=1, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_tear")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="63_mini01_market",screenadapt="coverall")]
+[Delay(time=2)]
+[playsound(key="$d_avg_lightrain_loop",loop=true,channel="1",volume=0.2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",duration=2)]
+[delay(time=3.5)]
+[name="Lin Qingyan"]This is the direction she went, I know it. How did she lose me so fast? 
+[name="Lin Qingyan"]She said she was meeting up at the tofu stall. That should be right—ah, there.
+[Dialog]
+[charslot]
+Far across the alley, Lin Qingyan spots the umbrella the girl was sporting.
+She hurries over, intending to return the lost letter, but as she draws near it becomes obvious—
+The umbrella lies forlorn on the ground, the girl unaccounted for.
+[Dialog]
+[stopsound(channel="1",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background(image="25_g04_yaninn",screenadapt="coverall")]
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[Delay(time=2)]
+[playMusic(intro="$darkalley_intro",key="$darkalley_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=3, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]Welcome, this way. Sit wherever you like.
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]I ask because I saw the sign hung up outside. Are you closed or not?
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]If a guest comes for tea, then we can hardly keep closed.
+[name="Hu Jun"]Would you like a pot of tea to start?
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]Duoxie.
+[Dialog]
+[charslot]
+[playsound(key="$pourwater")]
+[delay(time=3.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#10$1",focus="m")]
+[name="Lin Qingyan"]......
+[Dialog]
+[charslot]
+The scent of the green tea is positively pungent. Lin Qingyan reaches a hand, but stops.
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]You're the server of this teahouse? Do you have time for a few questions?
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]Please, ask away. I'll do all I can to answer.
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]I see this teahouse is situated in the most bustling part of town. Why close for the evening in the middle of the afternoon?
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]We play it by ear, you see. Sometimes, nobody wants a drink of tea.
+[charslot(slot="m",name="avg_1043_leizi2_1#15$1",focus="m")]
+[name="Lin Qingyan"]But what if a customer was coming here for something other than tea?
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]Sometimes, our guests need a shelter from the rain and a spell to rest. They're welcome inside to sit for a while, yes.
+[name="Hu Jun"]Drink tea, or don't. But if you don't take tea and you don't plan on leaving quietly, then the problems begin.
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="Lin Qingyan"]That's fair enough... You make me wonder. Did you get any troublesome customers like that today, before closing up shop?
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]......
+[name="Hu Jun"]My guests today all drank tea.
+[charslot(slot="m",name="avg_1043_leizi2_1#3$1",focus="m")]
+[name="Lin Qingyan"]Last question...
+[name="Lin Qingyan"]It just caught my eye, honestly, but there's what looks like a spot of paint stuck to your lapel.
+[charslot(slot="m",name="avg_1043_leizi2_1#9$1",focus="m")]
+[name="Lin Qingyan"]You're a teahouse waiter, not a studio painter. Where would you get paint like that on your clothes from?
+[name="Lin Qingyan"]And one more thing. I happened to see this color of paint today, on an umbrella.
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]......
+[charslot(slot="m",name="avg_1043_leizi2_1#9$1",focus="m")]
+[name="Lin Qingyan"]You look awfully anxious. What's the matter?
+[name="Lin Qingyan"]I mean, look at the time... Didn't you close it ages ago? Your deal, I mean, three quarters past the Hour of Wei? 
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="Hu Jun"]...!
+[Dialog]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="200,0",duration=2)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_smashtable")]
+[delay(time=2.2)]
+[charslot]
+Brain working in overtime, Hu Jun promptly flips the table up, cutting off Lin Qingyan's line of sight to him. It's just long enough for him to scramble like mad to the upper floor.
+[charslot(slot="m",name="avg_1043_leizi2_1#4$1",focus="m")]
+[name="Lin Qingyan"]Halt—!
+[charslot(slot="m",name="avg_1043_leizi2_1#4$1",focus="none")]
+[name="Feeble Call"]H... help...
+[charslot(slot="m",name="avg_1043_leizi2_1#9$1",focus="m")]
+[name="Lin Qingyan"]—!
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="35_g13_yanlivingroom",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",name="avg_npc_1874_1#1$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="200,0",posto="-100,0",duration=2)]
+[Delay(time=2.5)]
+[charslot(slot="m",posfrom="-100,0",posto="0,0",duration=2)]
+[Delay(time=3.5)]
+[name="Hu Jun"]You.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1866_1#1$2",duration=2)]
+[Delay(time=2.5)]
+[name="Heartless Swordswoman"]You have the secret tome... So he tricked me...
+[name="Heartless Swordswoman"]Give it to me.
+[charslot(slot="m",name="avg_npc_1874_1#1$1",focus="m")]
+[name="Hu Jun"]......
+[charslot(slot="m",name="avg_npc_1866_1#1$2",focus="m")]
+[name="Heartless Swordswoman"]You asked for it, then.
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_swordexsheath")]
+[Delay(time=1.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Background(image="25_g04_yaninn",screenadapt="coverall")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4196_reckpr_1#10$1",focus="l")]
+[charslot(slot="r",name="avg_1043_leizi2_1#1$1",focus="l")]
+[name="Yun Qingping"]Thank you, Deputy Minister Lin... I never imagined I'd run into you here.
+[charslot(slot="r",name="avg_1043_leizi2_1#1$1",focus="r")]
+[name="Lin Qingyan"]How do you know me—wait, hold on, you're... Yun Qingping?
+[charslot(slot="l",name="avg_4196_reckpr_1#8$1",focus="l")]
+[name="Yun Qingping"]I've heard much about you from Zuo. It's an honor to finally meet—
+[charslot(slot="r",name="avg_1043_leizi2_1#1$1",focus="r")]
+[name="Lin Qingyan"]But according to Zuo Le, you're missing?
+[charslot(slot="l",name="avg_4196_reckpr_1#4$1",focus="l")]
+[name="Yun Qingping"]Missing? Did Zuo not see the letter I left him? I really feel like I should've foreseen that...
+[charslot(slot="r",name="avg_1043_leizi2_1#15$1",focus="r")]
+[name="Lin Qingyan"]Set that aside for now. What's going on here?
+[charslot(slot="l",name="avg_4196_reckpr_1#5$1",focus="l")]
+[name="Yun Qingping"]The three beside me got into a fight, I think, over some kind of treasure, and then—
+[charslot(slot="r",name="avg_1043_leizi2_1#14$1",focus="r")]
+[name="Lin Qingyan"]Three? What do you mean three?
+[charslot(slot="r",name="avg_1043_leizi2_1#14$1",focus="none")]
+Lin Qingyan glances over again. There's two bandits bound up like fowl, but all that lies next to them is a pile of severed hemp rope.
+[charslot(slot="l",name="avg_4196_reckpr_1#4$1",focus="l")]
+[name="Yun Qingping"]Well, that's strange...
+[Dialog]
+[charslot(slot="r",name="avg_1043_leizi2_1#14$1",focus="none")]
+[playsound(key="$d_avg_glass_break")]
+[Delay(time=2)]
+[charslot(slot="r",name="avg_1043_leizi2_1#9$1",focus="r")]
+[name="Lin Qingyan"]Curses—!
+[Dialog]
+[playsound(key="$rungeneral")]
+[charslot(slot="r",afrom=1,ato=0,duration=1)]
+[charslot(slot="r",posfrom="0,0",posto="200,0",duration=2)]
+[Delay(time=2)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Background(image="63_mini01_market",screenadapt="coverall")]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,channel="1",volume=0.2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",name="avg_1043_leizi2_1#9$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="-100,0",posto="0,0",duration=2)]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[Delay(time=3.5)]
+[charslot(duration=2)]
+[Delay(time=2.5)]
+Lin Qingyan hurries out into the street, where a good few townsfolk are milling around to see what the commotion is.
+She hears the single sharp strike. She sees someone crash through the upper floor window and fall to the road hard, right in front of the teahouse's entranceway.
+She fully expects to see someone injured. Possibly even a corpse. But all that greets her eyes...
+Is a pile of shattered teapot shards.
+[Dialog]
+[stopsound(channel="1",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[image]
+[charslot]
