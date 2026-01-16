@@ -1,0 +1,557 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="bg_desert_3",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_wind", volume=1, loop=true, channel="a")]
+[Delay(time=2)]
+天候は安定していて、見晴らしも良好。風力も程よい強さ。
+短距離飛行テストは全て完了……次は、一回目の正式な飛行実験に移る。予定の飛行距離は十キロメートル。
+……
+[Dialog]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[gridbg(imagegroup="53_g16_sunnyday_L1/53_g16_sunnyday_R1/53_g16_sunnyday_L2/53_g16_sunnyday_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-900,fadetime=2)]
+[largebgtween(duration = 30,yFrom = 300, yTo = 250,block = false)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+予想よりも順調に進んでる！　あと残り二キロメートル、着陸地点の状況を確認しないと。
+追い風か、スピードが少し速いね。緩められればいいけど――
+風が強くなるのが速い？　それにすごく強い上昇気流――
+[Dialog]
+[PlaySound(key="$blizzard", volume=1, loop=true, channel="a")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[gridbg(imagegroup="47_g14_skyovercast_L1/47_g14_skyovercast_R1/47_g14_skyovercast_L2/47_g14_skyovercast_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-900,fadetime=2)]
+[largebgtween(duration = 30,xfrom=-900,xto=-800,yFrom = 300, yTo = 250,block = false)]
+[CameraShake(duration=-1, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=false, block=false)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+雲の層が育つのが速すぎるよ！？　いや、あれはただの積乱雲じゃない――
+すぐに避けなきゃ！！
+だめ、旋回も下降も、気流が――
+[Dialog]
+[CameraShake(duration=3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[gridbg]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_heartratemonitor", volume=0.1, loop=true, channel="b")]
+[stopsound(channel="a",fadetime=15)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[Subtitle(text="……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Soundvolume(volume=0.5,channel="b",fadetime=2)]
+[Subtitle(text="呼吸……鼻の奥が……冷たい……何の音……消したい……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「……ちゃん……」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="誰……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「……ちゃん……ディア……」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="眠い……まだ寝ていたい……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="「…………クラウディア……」", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="ママ……あたし、もう少し……寝るね……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[stopsound(channel="a",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_vipward",screenadapt="coverall")]
+[Delay(time=2)]
+[Soundvolume(volume=1,channel="b",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]今日で四日目よ、クラウドちゃん。気分はどう？
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="none")]
+[name="クラウディア"]足はまだ張ってる……それより、あたしママに聞きたいことがあるの。
+[name="クラウディア"]ママたち、あたしに何か隠してることない？　骨折以外に……何か別の問題があったりとか？
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]......
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="none")]
+[name="クラウディア"]あの日、あたしが遭遇した突発的な強い対流……それにあの雲の状態……規模はそこまで大きくなかったけど、あれは……天災雲だったよね？
+[name="クラウディア"]……教えて、ママ。
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]……分かったわ。クラウディア、あなたは鉱石病に感染したの。
+[name="母親"]……
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="none")]
+[name="クラウディア"]……
+[name="クラウディア"]どのくらいひどい？　あたし、あと……どのくらい生きられるの？
+[Dialog]
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[Delay(time=2)]
+[stopsound(channel="b",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="29_g3_cottage",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[name="母親"]クラウドちゃん、工房にいるんでしょう？　入ってもいいかしら？
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="クラウディア"]何か用？　ママ。
+[name="クラウディア"]邪魔されたくないんだけど……
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="クラウディア"]あたしもうあんまり時間がないんだよ……やることがたくさんあって……やっと足が治ったのに……
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="none")]
+[name="母親"]クラウディア……もちろんあなたには部屋に鍵をかける権利があるのは分かるけどね。でも昨日、ちゃんと話そうって約束したでしょう。
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="m")]
+[name="クラウディア"]今じゃなきゃだめ？　ママと話したくないわけじゃない。ただ……忙しい。また今度でいい？
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="none")]
+[name="母親"]昨日、約束してくれたわよね。先週なんて二回も約束してくれた。
+[name="母親"]あなたがドアを開けてもいいと思える日まで、私は待ってもいいのだけど……でも、今日はパパが帰ってくるの。長くはいられないし、すぐにまた発たなきゃいけないのは知ってるでしょう。
+[name="母親"]今日会い損ねたら、次に顔を会わせるのは、また数ヶ月後になるかもしれないのよ。
+[name="母親"]ママと一緒に今日の夕飯の準備をしましょう？　私が料理下手なのは分かってるでしょう……
+[name="母親"]家に帰ってきてから、まだ一度も一緒にご飯を食べていないわ。
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="クラウディア"]……
+[Dialog]
+[charslot]
+[playsound(key="$dooropenquite")]
+[charslot(slot="m",name="avg_npc_524_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="母親"]あら……燃料タンクのサイズを調整しているの？　いい感じじゃない。
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="クラウディア"]……ううん、これじゃ全然だめ……
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="m")]
+[name="クラウディア"]ママ……
+[name="クラウディア"]あたし……疲れちゃった。
+[Dialog]
+[charslot]
+クラウディアが木箱に腰掛けると、母が彼女の傍らに歩み寄った。クラウディアは手に握った工具を置くことなく、ただそっと母のお腹に額を預けた。
+見慣れたセーターに慣れ親しんだ感触。鼻をくすぐるのはいつもの洗剤の匂いだ。しかし、クラウディアはすべてが変わってしまったように感じた……
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="m")]
+[name="クラウディア"]分かってるよ……あたしが工房に閉じこもってるから、ママたちに心配かけてるって……
+[name="クラウディア"]でもこうしないと、あたし、どうしても落ち着かなくて。
+[name="クラウディア"]……こうしていても、完全に落ち着くわけじゃないんだけど。
+[Dialog]
+[charslot]
+母は何も言わず、そっとクラウディアのニット帽に手を置いた。その手が少しクラウディアの耳をかすめ、温かい感触を残す。
+[Dialog]
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",duration=1.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[name="クラウディア"]怖いよ、ママ……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]大丈夫よ。今回のことがあなたにどれほどのショックを与えたのかママたちは理解しているから……あなたが別の道を選んでも、飛ぶことへの恐怖を乗り越えることを選んでも……
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="クラウディア"]ううん、ママ、違うんだ。飛ぶのが怖いんじゃない……
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[name="クラウディア"]あたしは……死ぬのが怖い。
+[name="クラウディア"]あたしがずっとやりたかったこと、知ってるでしょ……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]……羽獣の渡りを最初から最後まで飛びながら見届けることよね？
+[charslot(slot="l",name="avg_4165_ctrail_1#2$2",focus="l")]
+[name="クラウディア"]そう。クルビアからレム・ビリトンまで行って、そしてレム・ビリトンからまたクルビアに戻るの……
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="クラウディア"]今のところ、羽獣の渡りの完全な地図を正確に描き上げた人なんてまだいないんだけどね。
+[name="クラウディア"]あたしはずっと、人生をこのことだけに捧げれば、いつかはやり遂げられるかもしれないって思ってたのに……
+[name="クラウディア"]あたしの人生は……どうしていきなり、こんなに短くなってしまったんだろう？
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]……
+[name="母親"]……あなたの感染はそれほど重症じゃないと、お医者様は言っていたわ……それに……鉱石病は……あと数年もすれば、もしかしたら……
+[Dialog]
+[charslot]
+クラウディアは母の言葉の不自然な間を聞き逃さなかった。娘を慰めようとしていても、科学者である母には、妄想に近い言葉を口にすることができないのだと、彼女は分かっていた。
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="l")]
+[name="クラウディア"]……ママ、あたしは時間が欲しいだけだよ。ほんのちょっと……十分な時間が。
+[name="クラウディア"]それなのにどうして、そんなわずかな時間さえ……あたしは持てないの？
+[charslot(slot="l",name="avg_4165_ctrail_1#8$2",focus="l")]
+[name="クラウディア"]……
+[name="クラウディア"]やっぱり飛行装置の調整を続ける。燃料タンクでも、機体のフレームでも、エンジンでも、噴射口でもいい。どれにしてもきっと何かの役には立つはず……
+[name="クラウディア"]だめだ、燃料タンクはこれじゃやっぱりだめ。取り外してもう一回作り直さないと……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]……今夜はもう休みましょ、ね？　私は料理が苦手だし、パパに缶詰を食べさせるわけにもいかないでしょう？
+[Dialog]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="none")]
+[playsound(key="$d_gen_transmissionget")]
+[Delay(time=1.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]パパからだわ、時間的にもそろそろ……ん？
+[name="母親"]……クラウドちゃん、パパがね、もうすぐ孵りそうな羽獣の卵を拾ったんですって。でも、母親のほうは酷い怪我で、助からなかったそうよ。
+[name="母親"]たぶん……パパはその卵を持って帰ってくると思うわ。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="33_g8_srcroom",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="l")]
+[name="クラウディア"]これで……たぶん大丈夫かな？
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]うん、この電球を熱源にして、それから敷くものを……うーん、もう一枚重ねましょうか。クラウドちゃん、私のマフラーがどこにあるか知らない……？
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="クラウディア"]タオルでもいいと思う。持ってくるね。
+[Dialog]
+[charslot(slot="l",afrom=1,ato=0,duration=1)]
+[charslot(slot="l",posfrom="0,0", posto="-100,0",duration=1.5)]
+[delay(time=2.5)]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",afrom=0,ato=1,duration=1)]
+[charslot(slot="l",posfrom="-100,0", posto="0,0",duration=1.5)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="クラウディア"]よし……敷けた。
+[name="クラウディア"]間に合うといいんだけど……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]大丈夫じゃないかしら？　だってパパ、ずっとお腹で温めていたんだし。
+[name="母親"]ただ……私は締め切りが近いの。この様子だと、今日明日にも殻を破って出てきそうだし、クラウドちゃんがお世話してくれない？
+[charslot(slot="l",name="avg_4165_ctrail_1#5$2",focus="l")]
+[name="クラウディア"]え？　う、うん、いいよ。ママが忙しいなら……
+[Dialog]
+[charslot]
+クラウディアは簡易孵卵器の縁でうつ伏せになった。熱い電球の光が白い卵の殻を暖かく照らし、反射した光が目を刺して眩しい。だが彼女は瞬きもせずじっと見つめていた。
+気のせいかもしれないが、微かな摩擦音が聞こえた気がした。小さなくちばしが動き、殻の内側を擦ったような音が……
+[Dialog]
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="l")]
+[name="クラウディア"]……あなたたちは、本当に生き延びることができるのかな……
+[Dialog]
+[charslot]
+クラウディアは小声でつぶやく。
+母にこの言葉が聞こえていないことを、彼女は願った。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="31_g3_mini12_farmland",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",duration=2)]
+[Delay(time=3.5)]
+[name="クラウディア"]ほら、お出かけの時間だよ。陽の光に浴びないとだめなの。分かった？
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="none")]
+[name="羽獣たち"]（騒がしいさえずり）
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="クラウディア"]そうしないと骨や羽根が丈夫にならなくて、危ないんだから！
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="none")]
+[name="羽獣たち"]（騒がしいさえずり）
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]はいはい。さあ、あたしについてきて……
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=2)]
+[Delay(time=2.5)]
+クラウディアは田畑を早足で歩き、数歩進むごとに振り返った。小さな羽獣たちが翼をばたつかせながら彼女の後を追い、自然と一列に並んだ。
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]そうそう、その調子。
+[name="クラウディア"]今くらいの太陽がちょうどいい。日差しが強すぎてもだめ、みんなが脱水症状になっちゃうから……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="none")]
+[name="羽獣たち"]（好奇心に満ちたさえずり）
+[charslot(slot="m",name="avg_4165_ctrail_1#5$2",focus="m")]
+[name="クラウディア"]こら！　そっちに行っちゃだめ、何日か前にあそこで野良の雲獣を見たんだから！
+[name="クラウディア"]ほらほら、こっちにおいで――
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0", posto="-100,0",duration=1.5)]
+[delay(time=2.5)]
+[charslot]
+[playsound(key="$bodyfalldown1")]
+[CameraShake(duration=1, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1)]
+[name="母親"]あら――
+[charslot(slot="m",name="avg_4165_ctrail_1#5$2",focus="m")]
+[name="クラウディア"]ママ！
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[charslot(slot="m",name="avg_npc_524_1#1$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="0,-50", posto="0,0",duration=1.5)]
+[delay(time=2.5)]
+[name="母親"]大丈夫よ。
+[name="母親"]これは、刷り込みね……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="クラウディア"]うん、この子たち、あたしのことを母親だと思ってるみたい。
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]前にもこんなことなかったかしら？
+[name="母親"]あなたがまだ小さくて……あなた自身が雛みたいだったのに、どこに行っても小さな羽獣が二羽が後ろについてきてた。
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="クラウディア"]うん、八歳の時だよね。パパとママと一緒にレム・ビリトンに行って……
+[name="クラウディア"]あの時はあたしが羽獣の卵を拾ったんだ。羽獣みたいに卵を抱いて孵そうとしたら、ママが孵卵器の作り方を教えてくれた……
+[charslot(slot="m",name="avg_4165_ctrail_1#2$2",focus="m")]
+[name="クラウディア"]あたしたちのテントに裂け目ができて、パパが直す時に手伝ったのも覚えてる……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="クラウディア"]あたしがテントの中で裂け目部分の布を持ってたら、その隙に二羽があたしの腕を伝って、裂け目から外に飛び出しちゃった……
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]それであなたがテントの中で叫ぶものだから、パパがすごくびっくりしちゃってたわね。ふふっ。
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="クラウディア"]外で何かあったらどうしようって、心配だったんだよ……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]結局、あたしがテントから出たら、二羽ともばたばたしながらあたしの方に走って来たんだよね。
+[name="クラウディア"]ふふ……今の状況と似てるね。
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]……ええ。
+[name="母親"]クラウドちゃん……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="クラウディア"]どうしたの、ママ？
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]なんでもないの。私も一緒に、あの子たちと日光浴するわ。
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]あっ、もしかして論文書き終わった？　それならお祝いしなきゃ、夕飯のおかずを一品増やそうか？
+[Dialog]
+[charslot]
+[name="羽獣たち"]（嬉しそうなさえずり）
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]うっ、まだ終わってないわ……もう！　催促は編集さんで間に合ってるんだから、クラウドちゃんは進捗を訊いてこないで。あなたたちも訊いちゃだめ！
+[name="母親"]ちょっと息抜きに散歩するくらい、いいじゃない……？
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="クラウディア"]ぷっ……分かったよ、ママ。
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=2)]
+[Delay(time=2.5)]
+夕日がだんだんと茜色に染まる中、母娘二人は羽獣のさえずりに包まれながら歩いていた。
+母は娘の手を引いていた。彼女がクラウディアに聞きたいことはいくつもあったが、同時に聞くのが少し怖かった。
+彼女が一時的に忘れているだけなのではないか、自分が思い出させてしまうのではないかと、心配だったのだ。
+ある種の疑問は、一度湧いたら二度と消えることはない。彼女にはそれが分かっていた。
+できることなら、娘には人生のそうした一面に向き合わずにいてほしいと願っていた……ましてや、こんな形で向き合うことなど。
+クラウディアはふと、母と繋ぐ手を変え、体の向きも変えた。後ろ向きに歩けば、小さな羽獣たちの歩みの一歩一歩をずっと見ていられる。
+[Dialog]
+[charslot(slot="l",name="avg_4165_ctrail_1#9$2",duration=1.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]クラウディア。
+[charslot(slot="l",name="avg_4165_ctrail_1#5$2",focus="l")]
+[name="クラウディア"]なに？
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]この羽獣の生態は知ってるの？
+[charslot(slot="l",name="avg_4165_ctrail_1#9$2",focus="l")]
+[name="クラウディア"]うん、だいたいは。この数日で細かいところも調べたし。
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]殻を破ってから二、三週間で飛ぶ能力と生理的な衝動が芽生える。遅くとも四週目には……
+[charslot(slot="l",name="avg_4165_ctrail_1#9$2",focus="l")]
+[name="クラウディア"]うん。それは知ってるよ。
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]あなたは……いいえ、なんでもないわ。
+[name="母親"]この子たちの世話なら、うちでちゃんとしてあげられる。どんな形であれ、この子たちは一生を幸せに過ごせるわ。
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="クラウディア"]ママは、この子たちは飛ばなくてもいいって言いたいの？
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]……
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[name="クラウディア"]だったら、どうしてあたしにこの子たちの生態を話したの……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]……クラウディア、私、最近やっと分かったの……
+[name="母親"]いいえ、とっくに分かっていたつもりだったけど、最近になって、ようやく身をもって知ったの。同じものでも、人によってどれだけ違う意味を持つか……
+[name="母親"]自分がこんなにも……臆病になるなんて思わなかった。
+[name="母親"]こんなにも……一つの言葉を怖いと思うなんて想像もつかなかったわ。今まで人に悪い影響を与えることはない言葉だと思っていたのにね。
+[name="母親"]「元気を出して」と言ったら、重荷になってしまわないかしら？
+[name="母親"]……
+[name="母親"]時々思うの。私は何か理性的じゃない感情に支配されてるんじゃないかって。ホルモンや神経の働き、極限状態でのストレス反応、特定の条件で誘発される行動パターンなんじゃないかって……
+[name="母親"]でも、どんな理屈を並べたって――
+[name="母親"]あなたにはこれ以上、ほんの少しでも苦しんでほしくないって思うことだけはやめられないの。
+[name="母親"]情けないママよね。傷ついているのは、あなたのほうなのに。
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="クラウディア"]……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]ごめんなさい、クラウディア。私を慰めないで。それじゃあ、あべこべだもの。
+[name="母親"]もう少し歩きましょう。こんなふうに散歩するの、久しぶりだわ。
+[Dialog]
+[charslot]
+クラウディアはただ黙って、母の手を握りしめた。
+やがて訪れるそれは、苦痛なのだろうか……？　だが、彼女が続けて考える前に――
+二羽の小さな羽獣が彼女の足元に近づき、そのうちの一羽がもう一羽を押した。押されたほうは驚いて、クラウディアの足元に潜り込もうとする。彼女は慌てて足を上げ、片足で数歩跳んだ。
+踏まれそうになった羽獣は数回翼をばたつかせた。もしかしたら、足を上げたクラウディアの真似をしていたのかもしれない。
+クラウディアは一瞬、その子が飛ぶのではないかと思った――
+だがそうはならなかった。その羽獣は翼を数回ばたつかせた後、やはり前と同じようにぴょんぴょんと跳ねて、クラウディアの足首にすり寄ろうとした。
+[name="羽獣"]（甘えるようなさえずり）
+[Dialog]
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="クラウディア"]……
+[Dialog]
+[charslot]
+クラウディアは母の手を離し、屈んでその子を抱き上げた。
+突然視界の高さが変わったせいか、羽獣は少し身をすくめる。クラウディアは手の中で温かい羽毛の塊が震えるのを感じた。
+だがやがて、その子は頭を出し、左を見て、右を見て、それから……
+空を見ているのだろうか、とクラウディアは思った。
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="クラウディア"]ママ。
+[Dialog]
+[charslot]
+彼女は手の中の羽獣を見つめたまま言った。
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="クラウディア"]あたしは苦しむかもしれない……だって……色々なことが起こるって決まってるし。
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]でもあたしは、飛ぶことを怖いとは思わない。
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="クラウディア"]何が起きても、あたしは飛ぶことを怖がったりしないよ。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="29_g3_cottage",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)] 
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_avg_fixcarjingle")]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_4165_ctrail_1#11$2",focus="m")]
+[name="クラウディア"]ハンマーどこ……もう、なんでこんなにガチガチに溶接しちゃったんだろ……
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_524_1#1$1",duration=2)]
+[Delay(time=3.5)]
+[name="母親"]……
+[charslot(slot="m",name="avg_4165_ctrail_1#5$2",focus="m")]
+[name="クラウディア"]鑿（のみ）もない……って、あれ。ママ？
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]ドア、閉めてなかったから……つい……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="クラウディア"]ううん……大丈夫。すぐ終わるはずだから。うるさい？
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]そんなことないわ……でも、ここに来るのは久しぶりじゃない？
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]この間は忙しかったからね……あの子たち、みんなあたしにべったりでしょ。あたしがずっと工房にいたら、日に当たる時間が足りなくなっちゃう。
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]じゃあ、今日は……？
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]準備をしようと思って。
+[name="クラウディア"]ママも前に言ってたよね。この数日、一羽ずつ確認してみたんだけど、風切羽はもうほとんど生えそろってる。日数を考えると、今からでもちょっと遅いくらいなんだ。
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="クラウディア"]うーん、木に登って一羽ずつ下に放り投げるっていうのも……ありかもしれないけど……いや、だめだよね、危なすぎる！
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]とにかく……あたしには、自分の飛行装置が必要なの。
+[name="クラウディア"]前はめちゃくちゃに改造しちゃった……役に立つ改造なんてほんとはほとんどなくて、叩き壊すか元に戻すかしないといけないんだけどね。
+[name="クラウディア"]今のあたしに必要なのは、テスト済みで、安定して離陸できる飛行装置。
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="クラウディア"]それだけ。
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]……そう。何か手伝えることはある？
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]もしハンマーがどこにあるのか知ってたら……
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]ふふ、知ってるわよ。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_wilderness_m",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+天気は良好。朝霧がまだ少し残っているが、太陽が昇っていけば、すぐに消えていくだろう。
+そよ風が吹いている。クラウディアが草を一掴み手に取って落とすと、草は南東に向かって落ちていった。
+羽獣たちはさえずりながら彼女の後をついてくる。今日の「母親」は、いつもと少し様子が違うように見えた……
+だが羽獣たちはいつもどおり、一歩も離れず、寄り添いながら彼女の後をついてきた。
+そしてクラウディアは立ち止まり、羽獣たちの方を向いた。彼女は母に遠くで待っているように言ったが、始める前に何か言っておきたいことがあるような気がした。
+当然、羽獣たちには分からないだろうが……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]ねえ、聞いて……
+[name="クラウディア"]今日は、飛ぶ練習をするの。
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="クラウディア"]本当は、あたしがいなくたって、あなたたちはきっと他の羽獣の真似をしたり、生まれ持った衝動に身を任せて翼を広げたりするのかもしれないって、思ったりもする。
+[name="クラウディア"]あなたたちを導く大人の羽獣がいなくても、いつか……飛べるようになるものだから。
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]飛べるようになって、ちょっとしたら、渡りも覚えなくちゃいけない。あなたたちの群れが渡りの途中で立ち寄ると分かっている場所まで、あたしが連れて行ってあげる。
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="クラウディア"]群れを見つけた時に、あなたたちがもう自由に飛べるようになってるのが一番いいよね。そうすれば、群れについていけるから……
+[charslot(slot="m",name="avg_4165_ctrail_1#2$2",focus="m")]
+[name="クラウディア"]本当は、一緒に渡りをやり遂げたかった。三年間の道のりがかかる完全な渡りを。ずっと……ずっと、それがあたしの一番やりたいことだった。
+[name="クラウディア"]でも今のあたしにはできない……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="クラウディア"]……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]こんな話はやめよう。今日はあなたたちも、あたしも、ただ……飛べさえすればいいの。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_wind", volume=0, loop=true, channel="a")]
+クラウディアは、日光の当たる位置がゆっくりと高くなり、空気と自分の皮膚の表面温度が少しずつ上がっていくのを感じた。
+夜明けの風が脇の下を通り抜ける。彼女は助走を始めた。まるで、空気の上に乗るかのように。
+彼女は飛行装置を起動した。
+大地が下へ、後ろへと、ゆっくりと緩やかに遠ざかっていく。
+背後から聞こえる羽ばたきは、想像していたよりもずっと大きい。さえずりは鳴き声へと変わり、自分を押し上げる気流の中で震えている。そのすべてが、彼女の耳に届いていた。
+[Dialog]
+[Soundvolume(volume=0.6,channel="a",fadetime=2)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[gridbg(imagegroup="53_g16_sunnyday_L1/53_g16_sunnyday_R1/53_g16_sunnyday_L2/53_g16_sunnyday_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-900,fadetime=2)]
+[largebgtween(duration = 30,yFrom = 300, yTo = 250,block = false)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+そして高度はさらに上昇していく。
+噴射角度を調整し、左へ、右へ。クラウディアは自分が流れるような曲線を描いていると分かっていた。
+その背後を飛ぶ羽獣たちはその曲線を、点線を描くようについていく。
+地上のものが小さく見えてくるにつれ、多くのことが遠ざかっていく。
+彼女はただ風を楽しんでいた。初めて空に身を投じた時のように。
+雲の影を通り抜ける時、あの幽霊のような問いが、影のように身をかがめてきた。
+「それでも、そうだとしても、あなたはあとどれくらい、こうして飛んでいられる……？」
+「あなたは、終点に辿り着けるのか？」
+でも、おかしい。
+空気と羽獣の鳴き声に包まれていると、これまで自分を押しつぶしていたはずの問いが、なんだか、軽くなったような気がした……
+心臓の鼓動ひとつで、震い落とせるくらいに。
+[name="クラウディア"]何考えてるんだろう……
+[name="クラウディア"]今までだって、絶対にやり遂げられると分かってたわけじゃない……
+[name="クラウディア"]ずっとこうだったじゃない……ずっと、こうだったんだ。
+[name="クラウディア"]あたしはただ……飛びたいだけ。
+[name="クラウディア"]たとえレム・ビリトンに届かなくても、ラテラーノを越えられればいい。ヴィクトリアに着ければいい……
+[name="クラウディア"]たとえシエスタに行けなくても、イェラグに着ければいい。クルビアを出られればいい……
+[name="クラウディア"]地図だって、少しずつ描き足していくものじゃない。
+鳴き声が再び風音を切り裂いた。
+クラウディアは、それを賛同の合図だと思うことにした。
+[Dialog]
+[stopsound(channel="a",fadetime=2)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[gridbg]
+[Background(image="31_g3_mini12_farmland",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]ママ、話したいことがあるの。
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]なにかしら、クラウドちゃん？
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]ロドス・アイランドって知ってる？
+[name="クラウディア"]最近調べてみたんだけど、そこに、治療プログラムがあって……あたし、それに申請してみようかなって。
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]クラウドちゃん……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="クラウディア"]関連ニュースも調べてみたんだけど……ロドス・アイランドの本艦は国を跨いで航行するみたい。もしかしたらその機会を利用して、大地の色々な場所で羽獣の渡りの状況を調査できるかもしれない。
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="クラウディア"]どうかな、ママ？
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]……いいじゃないの。でも、その治療プログラムの面会条項、見せてちょうだいね。私もたまに便乗させてもらってもいい？
+[Dialog]
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4165_ctrail_1#3$2",focus="m")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0", posto="50,0",duration=1.5)]
+[delay(time=2.5)]
+クラウディアは母を抱きしめた。
+見慣れたセーター、慣れ親しんだ感触、鼻をくすぐるいつもの洗剤の匂い。
+そう、ほんの少しだけ、変わってしまったことがある。
+でも、変わらないものだってあるんだと、クラウディアは思った。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[image]
+[charslot]

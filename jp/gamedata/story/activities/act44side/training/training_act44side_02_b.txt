@@ -1,0 +1,13 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.SwitchToDefaultUIState]
+[Delay(time=0.2)]
+[Battle.Pause]
+[Battle.EnsureMinSp(charId="trap_252_pckstp", sp=30)]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Tutorial(tileX=3, tileY=4, focusWidth=120, focusHeight=120, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", \
+          protectTime=0.5, dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] こいつは充電が完了するまでの間、「ある種の天命」を弾くたびに自分もダメージを受けるんだ。昔は皆、それを「迸る天命」と呼んでいた。
+[popupdialog(dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black="0.5", protectTime=0.5)] 「モヤモヤナクナール」の周りに「天命襲来」があるのを見かけたら、すぐに起動してくれ。充電が完了してしまえば、「ある種の天命」ではダメージを与えられなくなるからな。
+[popupdialog(dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black="0.5", protectTime=0.5)] 先ほども言った通り、こいつのパンチは強烈でな。目を覚まされる前に、なるべく痛めつけておきたいところだ。正面は私が引き受けるから、こいつの相手は任せたぞ。
+[InputBlocker(blockInput=true)]
+[Battle.UnLockFunction(mask="SYSTEM_MENU_INTERACT")]

@@ -1,0 +1,557 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="bg_desert_3",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_wind", volume=1, loop=true, channel="a")]
+[Delay(time=2)]
+날씨는 좋다. 가시거리도 매우 좋고, 바람도 적당하다.
+단거리 비행 테스트는 전부 완료했다…… 이제, 드디어 첫 번째 정식 비행 실험이다. 예정 비행 거리는 10킬로미터.
+……
+[Dialog]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[gridbg(imagegroup="53_g16_sunnyday_L1/53_g16_sunnyday_R1/53_g16_sunnyday_L2/53_g16_sunnyday_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-900,fadetime=2)]
+[largebgtween(duration = 30,yFrom = 300, yTo = 250,block = false)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+예상보다 더 순조롭다! 이제 마지막 2킬로미터, 착륙 지점의 상태를 잘 확인해야 한다.
+순풍, 속도가 조금 빠르다. 늦추는 게 좋겠……
+바람이 빠르게 강해지고 있다? 매우 강한 상승기류……
+[Dialog]
+[PlaySound(key="$blizzard", volume=1, loop=true, channel="a")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[gridbg(imagegroup="47_g14_skyovercast_L1/47_g14_skyovercast_R1/47_g14_skyovercast_L2/47_g14_skyovercast_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-900,fadetime=2)]
+[largebgtween(duration = 30,xfrom=-900,xto=-800,yFrom = 300, yTo = 250,block = false)]
+[CameraShake(duration=-1, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=false, block=false)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+구름이 너무 빨리 모이고 있어?! 아니, 저건 일반적인 적란운이 아니다……
+지금 바로 피해야 해!!
+안 돼, 방향 전환과 하강 모두, 기류가……
+[Dialog]
+[CameraShake(duration=3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[gridbg]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_heartratemonitor", volume=0.1, loop=true, channel="b")]
+[stopsound(channel="a",fadetime=15)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[Subtitle(text="……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Soundvolume(volume=0.5,channel="b",fadetime=2)]
+[Subtitle(text="호흡이…… 콧속이…… 차가워…… 무슨 소리지…… 꺼야 하는……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“……클……”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="누구……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“……클…… 디아……”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="너무 졸려…… 더 자고 싶은데……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“…………클라우디아……”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="엄마…… 나 조금만 더…… 잘래……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[stopsound(channel="a",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_vipward",screenadapt="coverall")]
+[Delay(time=2)]
+[Soundvolume(volume=1,channel="b",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]오늘로 벌써 나흘째네, 클로디, 좀 어때?
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="none")]
+[name="클라우디아"]다리가 아직 많이 부어있어…… 그런데 엄마, 나 물어보고 싶은 게 있어.
+[name="클라우디아"]혹시…… 나한테 뭔가 숨기는 거 없어? 골절 말고, 나…… 다른 문제는 없는 거야?
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]……
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="none")]
+[name="클라우디아"]그날, 내가 맞닥뜨렸던 갑작스러운 강한 대류…… 그리고 그 구름의 상태를 생각하면…… 규모는 큰 편이 아니지만, 그건…… 재앙 구름이었지?
+[name="클라우디아"]……엄마, 말해줘.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]……그래. 클라우디아, 넌 광석병에 감염됐단다.
+[name="엄마"]……
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="none")]
+[name="클라우디아"]……
+[name="클라우디아"]얼마나…… 심각한 거야? 나…… 얼마나 더 살 수 있어?
+[Dialog]
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[Delay(time=2)]
+[stopsound(channel="b",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="29_g3_cottage",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[name="엄마"]클로디, 지금 작업실에 있니? 엄마 들어가도 될까?
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="클라우디아"]무슨 일이야, 엄마?
+[name="클라우디아"]방해받고 싶지 않은데……
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="클라우디아"]나에겐 시간이 많지 않잖아…… 해야 할 일이 많은데…… 이제서야 겨우 다리는 낫긴 했지만……
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="none")]
+[name="엄마"]클라우디아…… 엄마도 당연히 네가 방문을 잠글 순 있다고 생각해. 하지만 어제 분명 우리 잘 이야기해 보기로 약속했잖니.
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="m")]
+[name="클라우디아"]……꼭 지금이어야 해? 엄마랑 얘기하기 싫은 건 아니야, 그냥…… 지금은 너무 바빠서 그래. 다른 날에는 안 될까?
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="none")]
+[name="엄마"]어제 약속했잖니. 지난주엔 두 번이나 약속했었고.
+[name="엄마"]엄마는 네가 스스로 문을 여는 그날까지 기다릴 수 있어…… 하지만, 오늘 아빠가 돌아오셔. 알다시피 아빠는 오래 머물지 못하고 곧바로 다시 떠나야 하잖니.
+[name="엄마"]오늘 안 된다면, 다음에 아빠를 볼 수 있는 건 또 몇 달 뒤일 수도 있어.
+[name="엄마"]우리 오늘 같이 저녁 준비하자…… 응? 엄마가 부엌에 있는 도구들을 잘 못 다루는 거 알잖아……
+[name="엄마"]집에 돌아온 뒤로, 아직 같이 밥 한 끼도 못 먹었는걸.
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="클라우디아"]……
+[Dialog]
+[charslot]
+[playsound(key="$dooropenquite")]
+[charslot(slot="m",name="avg_npc_524_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="엄마"]음…… 연료탱크의 크기를 조정하고 있었구나? 좋아 보이네.
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="클라우디아"]……아니, 전혀 아니야……
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="m")]
+[name="클라우디아"]엄마……
+[name="클라우디아"]나…… 너무 힘들어.
+[Dialog]
+[charslot]
+클라우디아는 나무 상자에 앉았고, 엄마는 그녀 곁으로 다가갔다. 클라우디아는 손에 들고 있던 도구를 놓지 않은 채, 이마를 엄마의 배에 기대었다.
+익숙한 스웨터, 익숙한 촉감, 익숙한 세제 냄새. 그런데 왜, 모든 게 변한 것 같은 기분일까……
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="m")]
+[name="클라우디아"]알아…… 내가 작업실에 틀어박혀서, 분명 많이 걱정했겠지……
+[name="클라우디아"]하지만 이렇게라도 하지 않으면, 도저히 평정심을 유지할 수가 없어.
+[name="클라우디아"]……사실 이렇게 해도, 평정심을 유지할 수 없는 건 마찬가지지만.
+[Dialog]
+[charslot]
+엄마는 아무 말도 하지 않고, 그저 클라우디아의 털모자 위로 손을 살며시 얹었다. 엄마의 손끝이 클라우디아의 귀에 닿자 따뜻함이 느껴졌다.
+[Dialog]
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",duration=1.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[name="클라우디아"]엄마, 나 너무 무서워……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="엄마"]괜찮아, 클로디, 이 일이 네게 얼마나 큰 충격이었는지 알고 있단다…… 네가 다른 분야에 도전하든, 아니면 비행에 대한 두려움을 극복하기 위해 다시 시도하든……
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="클라우디아"]아니야, 엄마. 나는 비행이 무서운 게 아니야……
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[name="클라우디아"]나는…… 죽는 게 무서워.
+[name="클라우디아"]내가 늘 해보고 싶었던 그 일, 엄마도 알잖아……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="엄마"]……파울비스트와의 완전한 동반 이주 비행 말하는 거지?
+[charslot(slot="l",name="avg_4165_ctrail_1#2$2",focus="l")]
+[name="클라우디아"]응. 컬럼비아에서부터 림 빌리턴까지 갔다가, 다시 컬럼비아로 돌아오는 그 여정……
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="클라우디아"]비록 지금은 그 누구도 이 대지에 완전하고 정밀한 파울비스트 이주 지도를 한 장도 그려내지 못했지만.
+[name="클라우디아"]내가 평생 이 한 가지에만 매달려 노력한다면, 결국엔 해낼 수 있을 거라 믿었었는데……
+[name="클라우디아"]어쩌다 내 인생이…… 갑자기 이렇게나 짧아지게 된 걸까?
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="엄마"]……
+[name="엄마"]……의사가 말하길, 네가 심각하게 감염된 건 아니라고 했어…… 광석병도…… 광석병도…… 어쩌면 몇 년 뒤면……
+[Dialog]
+[charslot]
+클라우디아는 엄마의 부자연스러운 머뭇거림을 놓치지 않았다. 아무리 위로하기 위해서라지만, 과학자인 엄마로선 거의 망상에 가까운 그런 말을 입 밖으로 내기 어렵다는 것을 그녀는 이해하고 있었다.
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="l")]
+[name="클라우디아"]……엄마, 난 그저 시간이 필요할 뿐이야. 약간의…… 충분한 시간 말이야.
+[name="클라우디아"]그런데 왜 그 시간조차도…… 난 가질 수 없는 걸까?
+[charslot(slot="l",name="avg_4165_ctrail_1#8$2",focus="l")]
+[name="클라우디아"]……
+[name="클라우디아"]난 그냥 비행체나 계속 손 보고 있을게. 연료탱크든, 프레임 틀이든, 엔진이든, 배기구든, 언젠가 쓸모가 있겠지…… 언젠가는……
+[name="클라우디아"]아니야, 연료탱크를 이렇게 하는 건 잘못됐어. 다 뜯어내고 처음부터 다시 만들어야……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="엄마"]……오늘 밤에는 우선 쉬자, 괜찮지? 엄만 진짜 요리 못하는데, 아빠가 돌아와서 통조림이나 먹게 하면 안 되잖아?
+[Dialog]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="none")]
+[playsound(key="$d_gen_transmissionget")]
+[Delay(time=1.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="엄마"]아빠한테서 연락이 왔네, 시간이 거의 다 된 것 같아…… 응?
+[name="엄마"]……클로디, 아빠가 곧 부화할 파울비스트 알을 주웠대. 하지만 어미 파울비스트는 이미 크게 다쳐서 미처 구하지 못했다고 해.
+[name="엄마"]아마도…… 아빠가 그 알들을 가져올 거 같다고 생각하는데.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="33_g8_srcroom",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="l")]
+[name="클라우디아"]이렇게 하면…… 괜찮을 것 같은데?
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="엄마"]응, 이 전구들을 열원으로 쓰고, 그 위에 덮을 걸…… 음, 한 겹 더 둬야겠다. 내 목도리 어딨더라, 클로디, 너 혹시 기억나니……
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="클라우디아"]수건이어도 괜찮을 것 같아. 두 장 가져올게.
+[Dialog]
+[charslot(slot="l",afrom=1,ato=0,duration=1)]
+[charslot(slot="l",posfrom="0,0", posto="-100,0",duration=1.5)]
+[delay(time=2.5)]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",afrom=0,ato=1,duration=1)]
+[charslot(slot="l",posfrom="-100,0", posto="0,0",duration=1.5)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="클라우디아"]음…… 다 깔았다.
+[name="클라우디아"]아직 늦지나 않았는지 모르겠네……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="엄마"]괜찮을 거 같은데? 어찌 됐든 아빠가 계속 품에 안고 따뜻하게 해서 데려왔잖니.
+[name="엄마"]그런데…… 지금 엄마 원고 마감일이 다가왔거든. 이 알들 상태 보니까, 하루이틀이면 부화할 것 같아. 클로디, 네가 좀 돌봐줄 수 있겠니?
+[charslot(slot="l",name="avg_4165_ctrail_1#5$2",focus="l")]
+[name="클라우디아"]에? 알, 알겠어. 엄마가 바쁘다면……
+[Dialog]
+[charslot]
+클라우디아는 간이 부화 상자의 가장자리에 엎드렸다. 뜨거운 전구 빛이 흰 알의 껍데기에 비쳐 눈이 부셨지만, 그녀는 잠시도 눈을 떼지 않은 채 지켜보았다.
+착각일지도 모르지만, 클라우디아는 마치 조그만 부리가 안쪽 껍질에 닿는 것 같은…… 가벼운 마찰음을 들은 듯했다.
+[Dialog]
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="l")]
+[name="클라우디아"]……너희들 정말로 살아날 수 있을까……
+[Dialog]
+[charslot]
+클라우디아는 아주 작게 속삭였다.
+엄마에겐 이 말이 들리지 않았기를 바랐다.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="31_g3_mini12_farmland",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",duration=2)]
+[Delay(time=3.5)]
+[name="클라우디아"]얘들아, 이제 나가야 해. 너희는 햇볕을 좀 쬐어야 하니까, 알겠지?
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="none")]
+[name="파울비스트들"](시끄러운 짹짹 소리)
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="클라우디아"]안 그러면 뼈랑 깃털이 튼튼해지지 않아서 위험하단 말이야!
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="none")]
+[name="파울비스트들"](시끄러운 짹짹 소리)
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]좋아, 좋아, 이제 나를 잘 따라와……
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=2)]
+[Delay(time=2.5)]
+클라우디아는 들판을 빠르게 걸으면서도, 몇 걸음마다 뒤를 돌아보았다. 작은 파울비스트들이 날개를 퍼덕이며 그녀를 따라갔고, 자연스럽게 일렬로 늘어섰다.
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]그래, 맞아, 그렇게.
+[name="클라우디아"]지금 햇빛이 딱 좋아. 햇빛이 너무 강하면 너희들이 탈수 상태가 될 수도 있으니까……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="none")]
+[name="파울비스트들"](호기심 가득한 짹짹 소리)
+[charslot(slot="m",name="avg_4165_ctrail_1#5$2",focus="m")]
+[name="클라우디아"]얘! 거기론 가면 안돼. 며칠 전에 거기서 떠돌이 클라우드비스트를 봤단 말이야!
+[name="클라우디아"]여기 여기 여기, 이리와 이리와 이리와……
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0", posto="-100,0",duration=1.5)]
+[delay(time=2.5)]
+[charslot]
+[playsound(key="$bodyfalldown1")]
+[CameraShake(duration=1, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1)]
+[name="엄마"]오……
+[charslot(slot="m",name="avg_4165_ctrail_1#5$2",focus="m")]
+[name="클라우디아"]엄마!
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[charslot(slot="m",name="avg_npc_524_1#1$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="0,-50", posto="0,0",duration=1.5)]
+[delay(time=2.5)]
+[name="엄마"]괜찮단다.
+[name="엄마"]이건, 각인이네……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="클라우디아"]응, 얘들이 날 자기 엄마라고 생각하나 봐.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]엄마 기억에…… 예전에도 이런 일이 있었던 것 같은데?
+[name="엄마"]네가 아주 어렸을 때…… 너도 갓 태어난 파울비스트 같았는데, 그런 네 엉덩이 뒤로 작은 파울비스트 두 마리가 따라다녔지.
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="클라우디아"]응, 여덟 살 때, 엄마랑 아빠가 날 데리고 림 빌리턴에 갔었던 그때야……
+[name="클라우디아"]그때 파울비스트 알을 주운 게 나였잖아. 난 원래 파울비스트처럼 알을 품는 걸 배우고 싶었는데, 엄마가 나한테 부화 상자 만드는 법을 알려줬었지……
+[charslot(slot="m",name="avg_4165_ctrail_1#2$2",focus="m")]
+[name="클라우디아"]우리 텐트에 구멍이 나서, 아빠가 텐트를 수선할 때 나한테 도와달라고도 했었고……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="클라우디아"]텐트 안에서 내가 그 구멍을 잡고 있으니까, 그 작은 파울비스트 두 마리가 내가 못 움직이는 틈을 타서 잽싸게 내 팔을 타고 뛰어오르더니 구멍으로 나가버렸었어……
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]그러고는 네가 텐트 안에서 비명을 질러서 아빠가 놀랐었지, 후후.
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="클라우디아"]난 애들이 밖에 나가서 혹시 사고라도 날 까봐 무서웠단 말이야……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]뭐, 결국에는 내가 텐트에서 뛰어나오자마자, 애들이 푸드덕거리면서 나한테 달려왔었지만.
+[name="클라우디아"]후후…… 지금이랑 좀 비슷하네.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]……그러게.
+[name="엄마"]클로디……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="클라우디아"]왜 그래, 엄마?
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]아니야, 엄마도 너랑 같이 쟤들 데리고 햇볕이나 좀 쬐어야겠다.
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]아! 혹시 원고 다 쓴 거야? 그럼 축하해야겠네, 저녁에 요리를 더해줄까?
+[Dialog]
+[charslot]
+[name="파울비스트들"](신난 짹짹 소리)
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]음, 아직…… 자자! 재촉은 편집자가 하는 걸로 충분하니까, 클로디, 이제 그만 물어봐. 그리고 너희도, 물어보기 금지!
+[name="엄마"]엄마는 그냥 산책 좀 하러 나오면 안 되니……
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="클라우디아"]풉…… 알겠어, 엄마.
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=2)]
+[Delay(time=2.5)]
+석양은 점점 주황빛이 되어가고, 그녀들은 파울비스트의 지저귐을 들으며 걸었다.
+여자는 딸의 손을 잡고는 몇 가지 질문을 던지고 싶었지만, 선뜻 그러지 못했다.
+지금이나마 클라우디아가 잠시 잊고 있는 것을, 혹시라도 자신 때문에 다시 생각하게 되면 어쩌나 하는 걱정 때문에.
+마음속에 있는 의문들이 한번 싹트기 시작하면, 떨쳐낼 수 없음을 그녀는 잘 알고 있었다.
+만약 가능하다면, 그녀는 딸이 인생에서 그것을 영영 마주하지 않길 바랄 것이다…… 특히나 이런 방식으로는 더더욱.
+클라우디아는 갑자기 다른 손으로 엄마 손을 잡고는 뒤로 걸었다. 그렇게 뒤로 걸으니 파울비스트들의 모든 걸음걸이를 매 순간 지켜볼 수 있었다.
+[Dialog]
+[charslot(slot="l",name="avg_4165_ctrail_1#9$2",duration=1.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="엄마"]클라우디아.
+[charslot(slot="l",name="avg_4165_ctrail_1#5$2",focus="l")]
+[name="클라우디아"]왜?
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="엄마"]이 파울비스트들의 생애 주기에 대해 알고 있니?
+[charslot(slot="l",name="avg_4165_ctrail_1#9$2",focus="l")]
+[name="클라우디아"]응, 대충은 알아. 며칠 전엔 세부 내용도 또 찾아봤어.
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="엄마"]파울비스트는 알을 깨고 난 후 약 2~3주 차엔 비행 능력과 본능을 갖게 돼…… 그리고 늦어도 4주 차에는……
+[charslot(slot="l",name="avg_4165_ctrail_1#9$2",focus="l")]
+[name="클라우디아"]응. 알고 있어, 엄마.
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="엄마"]그땐 너…… 아니, 아무것도 아니야.
+[name="엄마"]우리 가족은 이 파울비스트들을 잘 돌볼 수 있을 거란다. 그 어떤 일이 있더라도, 이 애들은 이번 생을 잘 보낼 수 있을 거야.
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="클라우디아"]엄마, 엄마는 얘들이 굳이 날지 않아도 괜찮다고 말하고 싶은 거야?
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="엄마"]……
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[name="클라우디아"]그러면 엄마는 나한테 왜 또 그런 얘기를 꺼낸 거야……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="엄마"]……클라우디아, 엄마가 최근에서야 깨달은 게 있는데……
+[name="엄마"]아니, 진작에 알았었다고 생각했는데, 요즘 들어서야 제대로 실감하게 된 거야. 똑같은 일이라도 사람에 따라 얼마나 다르게 느껴질 수 있는지를 말이야……
+[name="엄마"]엄마도 엄마가 이렇게까지…… 조심스러워질 줄은 몰랐거든.
+[name="엄마"]이렇게까지 무서운 줄도 몰랐어…… 말 한마디조차 무서워지더라, 여태껏 문제가 없다고 생각했던 고작 말 한마디가 말이야.
+[name="엄마"]'기운 내'라는…… 말이 네게 또 부담이 되진 않을까?
+[name="엄마"]……
+[name="엄마"]엄마는 가끔 비이성적인 감정에 지배당하는 것처럼 느껴. 호르몬이나 신경 작용, 극단적인 상황에서의 스트레스 반응, 특정 조건에서 나오는 행동 패턴……
+[name="엄마"]하지만 뭘 어떻게 설명한들……
+[name="엄마"]단 하나, 엄만 네가 다시 조금이라도 고통받는 모습은 상상조차 할 수가 없더라.
+[name="엄마"]엄마 참 한심하지. 분명 상처받은 건 너인데 말이야.
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="클라우디아"]……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="엄마"]미안해. 미안해, 클라우디아. 엄마를 위로하지 마. 네가 엄마를 위로해서는 안 되는 건데 참.
+[name="엄마"]우리 다시 좀 걷자. 이렇게 산책하는 것도 정말 오랜만이잖아.
+[Dialog]
+[charslot]
+클라우디아는 아무 말 없이 엄마의 손을 잡았다.
+그건 고통일까……? 하지만 그녀가 더 생각할 겨를도 없이……
+파울비스트 두 마리가 그녀에게 가까이 다가왔다. 한 마리가 다른 한 마리를 세게 밀쳤고, 밀린 한 마리는 놀라 클라우디아 발밑으로 들어가 밟힐 뻔했다. 클라우디아는 급히 한 발을 들어 올리며 한 쪽 다리로 몇 걸음 뛰었다.
+밟힐 뻔한 작은 파울비스트는 날개를 몇 번 날개를 퍼덕였다. 혹시 발을 든 클라우디아를 따라 하는 것일까?
+순간, 클라우디아는 그 파울비스트가 날아오르는 줄 알았다……
+하지만 그렇지 않았다. 파울비스트는 몇 번 날개를 퍼덕이더니, 여전히 전처럼 파드닥거리며 클라우디아의 발목에 닿으려 했다.
+[name="파울비스트"](의존하는 짹짹 소리)
+[Dialog]
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="클라우디아"]……
+[Dialog]
+[charslot]
+클라우디아는 엄마 손을 놓고, 허리를 굽혀 파울비스트를 두 손으로 안아 올렸다.
+시야가 갑자기 높아져서 그런지, 새끼 파울비스트는 조금 움츠러들었다. 클라우디아는 손에 닿는 따뜻한 깃털들이 떨리는 걸 느꼈다.
+하지만 이내 파울비스트는 머리를 내밀더니, 왼쪽을 보고, 오른쪽을 보고, 그리고……
+하늘을 보고 있는 걸까? 클라우디아는 생각했다.
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="클라우디아"]엄마.
+[Dialog]
+[charslot]
+그녀는 여전히 손안의 파울비스트를 바라보고 있었다.
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="클라우디아"]난 아마 고통스러울지도 몰라…… 분명…… 별의별 일이 다 생길 테니까.
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]하지만 그래도 나는 비행이 두렵지 않아.
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="클라우디아"]무슨 일이 있더라도, 난 비행을 두려워하지 않을 거야.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="29_g3_cottage",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)] 
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_avg_fixcarjingle")]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_4165_ctrail_1#11$2",focus="m")]
+[name="클라우디아"]망치가 어딨지…… 아, 난 왜 이렇게 빡빡하게 용접했을까……
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_524_1#1$1",duration=2)]
+[Delay(time=3.5)]
+[name="엄마"]……
+[charslot(slot="m",name="avg_4165_ctrail_1#5$2",focus="m")]
+[name="클라우디아"]아니면 끌로…… 어, 엄마?
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]문을 안 닫았더라고…… 그래서……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="클라우디아"]응…… 괜찮아, 곧 끝낼 수 있을 거 같아. 혹시 시끄러웠어?
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]물론 아니지…… 그런데, 한동안 여기 안 오던 것 같던데?
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]얼마 전엔 좀 바빴잖아…… 얘들이 계속 나만 따라다니는데, 내가 작업실에만 있으면 걔들이 햇볕을 충분히 못 쬐니까.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]그럼 오늘은……?
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]준비를 좀 하려고.
+[name="클라우디아"]엄마도 지난번에 말했잖아. 요 며칠 동안 하나하나 다시 검사해 봤는데, 파울비스트 애들 깃털이 거의 다 자랐더라고. 시간을 계산해 보니 좀 늦은 감도 있긴 해.
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="클라우디아"]음, 나무에 올라가서 한 마리씩 던지는 것도…… 될지 모르겠는데…… 아니, 안 될 것 같아, 너무 위험해!
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]어쨌든…… 난 내 비행체가 필요해.
+[name="클라우디아"]전에 비행체를 엄청나게 개조했었는데…… 사실 쓸만한 건 딱히 없기도 해서, 다시 때려 부수거나 원래대로 돌려놓아야 할 것 같아.
+[name="클라우디아"]어쨌든 지금 내게 필요한 건 테스트를 마친, 안정적으로 이륙할 수 있는 비행체니까.
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="클라우디아"]그것뿐이야.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]……응. 엄마가 도와줄까?
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]내 망치 어딨는지 엄마가 혹시 알면……
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]으흠, 엄마가 알고 있지.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_wilderness_m",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+날씨는 좋았다. 아직 아침 안개가 조금 남아 있지만, 곧 점점 밝아오는 햇빛 속에 마저 사라질 것이다.
+산들바람이 불어왔다. 클라우디아가 풀잎을 한 줌 움켜쥐었다가 놓자, 풀잎이 떨어졌다. 바람은 동남쪽으로 불고 있었다.
+파울비스트들이 지저귀며 그녀의 뒤를 따라왔다. 녀석들의 '엄마'는 왠지 오늘 조금 달라 보였지만……
+파울비스트들이 평소처럼 그녀 뒤를 바짝 따라붙어서 밀치락달치락하며 따라가는 데 그리 영향을 주진 않았다.
+돌연 그녀가 멈춰 섰고, 녀석들을 향해 몸을 돌렸다. 클라우디아는 엄마더러 먼 곳에 있으라 했지만, 시작하기 전에 뭔가를 말하고 싶었다.
+당연히 파울비스트들은 알아듣지 못하겠지만……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]얘들아, 내 말 좀 들어봐……
+[name="클라우디아"]오늘 우린 비행을 배울 거야.
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="클라우디아"]사실 내가 없어도, 난 너희가 다른 파울비스트들을 따라 하거나 본능적으로 날개를 펼칠 거라고 생각해.
+[name="클라우디아"]어른 파울비스트들이 너희를 이끌어 주지 않아도, 결국엔…… 날 수 있게 되겠지.
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]그리고 너희가 날 수 있게 되면, 머지않아 이주하는 법도 배워야 해. 나는 너희를 너희 종족의 이주 경로에 있는, 익히 알려진 경유 지점으로 데려갈 거야.
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="클라우디아"]물론 이상적인 상황은, 이주하는 파울비스트 떼를 찾았을 때 이미 너희가 자유롭게 날 수 있어서, 무리를 따라갈 수 있게 되는 거야……
+[charslot(slot="m",name="avg_4165_ctrail_1#2$2",focus="m")]
+[name="클라우디아"]사실 나는 너희와 함께 이주를 마치고 싶어. 3년에 걸친 파울비스트 떼의 완전한 이주를 말이야. 줄곧…… 그건 줄곧 내 가장 큰 소망이었거든.
+[name="클라우디아"]하지만 지금의 난 그럴 수 없어……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="클라우디아"]……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]후, 이런 건 그만 얘기하자. 오늘 너희는, 우리는…… 그냥 날아오르기만 하면 돼.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_wind", volume=0, loop=true, channel="a")]
+햇빛이 비치는 각도가 서서히 높아지며, 클라우디아는 공기와 더불어 그녀의 체온도 함께 천천히 오르는 걸 느꼈다.
+이른 아침의 바람이 옆구리를 스치고, 그녀는 마치 공기 위로 날아오르려는 듯 도움닫기를 시작했다.
+그녀는 비행체를 작동시켰다.
+대지는 아래로, 뒤로, 천천히 그리고 안정적으로 멀어져갔다.
+그녀 뒤에서의 날갯짓 소리는 생각보다 더 크게 들려왔고, 지저귀던 소리는 울음소리로 변해 그녀를 떠받치는 기류 속에서 진동했다. 클라우디아는 이 모든 것을 들을 수 있었다.
+[Dialog]
+[Soundvolume(volume=0.6,channel="a",fadetime=2)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[gridbg(imagegroup="53_g16_sunnyday_L1/53_g16_sunnyday_R1/53_g16_sunnyday_L2/53_g16_sunnyday_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-900,fadetime=2)]
+[largebgtween(duration = 30,yFrom = 300, yTo = 250,block = false)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+점점 더 높이, 점점 더 높이.
+분사 각도를 조정하며 왼쪽으로, 오른쪽으로 기울였고, 그녀는 자신이 부드러운 곡선을 그리고 있음을 알게 되었다.
+뒤에서 날고 있는 파울비스트들은 점선 모양으로 궤적을 수놓았다.
+점점 작아지는 대지 위의 모든 것들과 함께, 많은 일들이 멀어져갔다.
+그녀는 단지 바람을 즐길 뿐이었다, 처음 하늘에 뛰어들었을 때처럼.
+구름의 그림자를 통과했을 때, 그 유령 같던 질문 또한 그림자처럼 몸을 숙이며 다가왔다.
+“이렇게라도, 그저 이렇게라도, 네가 날 수 있는 시간이 얼마나 남았을까……?”
+“과연 네가 끝까지 갈 수 있을까?”
+하지만 너무 이상했다.
+공기와 파울비스트의 울음소리에 둘러싸이자, 이전에 그녀를 숨 막히게 했던 질문이 가볍게 느껴졌다……
+오직 심장이 뛰는 소리 하나로 떨쳐낼 수 있었다.
+[name="클라우디아"]내가 지금 무슨 생각을 하는 거야……
+[name="클라우디아"]예전에도, 스스로 반드시 해낼 수 있다고 확신했던 건 아니었잖아……
+[name="클라우디아"]분명히 늘 그래왔잖아…… 그래, 늘 그래왔었어.
+[name="클라우디아"]난 그냥…… 날고 싶었을 뿐이야.
+[name="클라우디아"]림 빌리턴까지 못 가더라도, 라테라노를 지나갈 수 있다면 괜찮아, 빅토리아에 도착할 수 있다면 그걸로도 괜찮아……
+[name="클라우디아"]시에스타까지 못 가더라도, 쉐라그에 갈 수 있다면 괜찮아, 컬럼비아까지 날 수 있다면 그걸로도 괜찮아……
+[name="클라우디아"]지도는 하나씩 그려나가는 거니까.
+또 한 번의 울음소리가 바람 소리를 가로질렀다.
+클라우디아는 그것을 동의의 신호로 받아들였다.
+[Dialog]
+[stopsound(channel="a",fadetime=2)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[gridbg]
+[Background(image="31_g3_mini12_farmland",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]엄마, 할 말이 있어.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]무슨 일이니, 우리 아가?
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]엄마, 로도스 아일랜드라고 알아?
+[name="클라우디아"]최근에 좀 조사해 봤는데, 거기에 광석병 치료 프로그램이 있대…… 아마 나도 신청할 수 있을 것 같아.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]클로디……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="클라우디아"]관련 뉴스도 찾아봤거든…… 로도스 아일랜드 본함이 국경을 넘는 항해를 한다는데, 어쩌면 치료하는 김에 내가 그 기회를 빌려서 대지의 여러 지역에 있는 파울비스트 이주 상황을 조사할 수도 있을 것 같더라고.
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="클라우디아"]엄마는 어떻게 생각해?
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="엄마"]……좋아. 다만 그 치료 프로그램 방문 규정을 좀 봐야겠다. 가끔은 엄마가 얻어 타러 가도 괜찮지?
+[Dialog]
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4165_ctrail_1#3$2",focus="m")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0", posto="50,0",duration=1.5)]
+[delay(time=2.5)]
+클라우디아는 엄마를 안았다.
+익숙한 스웨터, 익숙한 촉감, 익숙한 세제 냄새.
+그래, 어떤 부분은 조금 달라지긴 했지만.
+그럼에도 변하지 않는 것이 있다고, 클라우디아는 생각했다.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[image]
+[charslot]

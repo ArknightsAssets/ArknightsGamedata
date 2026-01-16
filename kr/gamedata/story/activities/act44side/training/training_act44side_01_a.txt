@@ -1,0 +1,18 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.SwitchToDefaultUIState]
+[Delay(time=0.5)]
+[Battle.Pause]
+[Battle.EnsureMinSp(charId="trap_252_pckstp", sp=30)]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true, tileX=1, tileY=7, validWidth=85, validHeight=85)]
+[Tutorial(tileX=1, tileY=7, focusWidth=85, focusHeight=85, waitForSignal="char_info", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 내 고향에선 사람들이 이 발사기를 '운명의 강림'이라고 불러. 이름에서 알 수 있듯이, 이걸 사용하면 언젠가는 운명을 바꿀 수 있다는 얘기지.
+[InputBlocker(blockInput=true)]
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_hsguma")] 박사, 한번 해볼래? 사용하면 '어떤 운명'을 발사하거든.
+[InputBlocker(blockInput=true)]
+[Battle.lockFunction(mask="CHARACTER_MENU")]

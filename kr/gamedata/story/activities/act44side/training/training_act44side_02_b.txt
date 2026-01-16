@@ -1,0 +1,13 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.SwitchToDefaultUIState]
+[Delay(time=0.2)]
+[Battle.Pause]
+[Battle.EnsureMinSp(charId="trap_252_pckstp", sp=30)]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Tutorial(tileX=3, tileY=4, focusWidth=120, focusHeight=120, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", \
+          protectTime=0.5, dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 이 녀석은 충전을 마치기 전까진 계속 '어떤 운명'을 튕겨내는데, 튕겨낼 때 자신도 상처를 입어. 예전에 사람들은 이걸 '운명의 분출'이라고 불렀어.
+[popupdialog(dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black="0.5", protectTime=0.5)] 박사, 스트레스 해소 기기 주변에 '운명의 강림'이 있으면 최대한 켜둬. 저 녀석이 충전을 마치면, '어떤 운명'으로 상처를 입힐 수 없게 되거든.
+[popupdialog(dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black="0.5", protectTime=0.5)] 그러니까, 저 녀석이 깨어나기 전에 아주 부숴버려야 해. 정면은 내가 맡을 테니까, 박사는 저 녀석을 맡아.
+[InputBlocker(blockInput=true)]
+[Battle.UnLockFunction(mask="SYSTEM_MENU_INTERACT")]
