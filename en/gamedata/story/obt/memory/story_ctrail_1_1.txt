@@ -1,0 +1,557 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="bg_desert_3",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_wind", volume=1, loop=true, channel="a")]
+[Delay(time=2)]
+Weather's fine, good visibility, moderate wind speed.
+All short-range test flights complete... Now on to the real deal, aiming for ten kilometers.
+......
+[Dialog]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[gridbg(imagegroup="53_g16_sunnyday_L1/53_g16_sunnyday_R1/53_g16_sunnyday_L2/53_g16_sunnyday_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-900,fadetime=2)]
+[largebgtween(duration = 30,yFrom = 300, yTo = 250,block = false)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+It's going smoother than expected! Just two klicks left, gotta confirm landing site conditions.
+Got a tailwind, gaining speed, better drop—
+The wind's picking up! Strong updraft—
+[Dialog]
+[PlaySound(key="$blizzard", volume=1, loop=true, channel="a")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[gridbg(imagegroup="47_g14_skyovercast_L1/47_g14_skyovercast_R1/47_g14_skyovercast_L2/47_g14_skyovercast_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-900,fadetime=2)]
+[largebgtween(duration = 30,xfrom=-900,xto=-800,yFrom = 300, yTo = 250,block = false)]
+[CameraShake(duration=-1, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=false, block=false)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+Those clouds are coming together quick! No, that's no normal cumulonimbus—
+Need to go around!
+No, can't evade or drop, the airflow—
+[Dialog]
+[CameraShake(duration=3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[gridbg]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_heartratemonitor", volume=0.1, loop=true, channel="b")]
+[stopsound(channel="a",fadetime=15)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[Subtitle(text="......", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Soundvolume(volume=0.5,channel="b",fadetime=2)]
+[Subtitle(text="Sniff... My nose... so cold... What's that sound...? Need to turn it off...", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'...cloud...'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Who...?", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'...little cloud... dia...'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="So tired... Still wanna sleep...", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="'...Claudia...'", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="Mom... Let me... sleep a little longer...", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="......", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[stopsound(channel="a",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_vipward",screenadapt="coverall")]
+[Delay(time=2)]
+[Soundvolume(volume=1,channel="b",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]It's day four, little cloud. How're you feeling?
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="none")]
+[name="Claudia"]My leg's still swollen... But never mind that, Mom, there's something I want to ask you.
+[name="Claudia"]Are you and Dad... hiding something? Is there... anything wrong with me? Aside from the broken bones.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]......
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="none")]
+[name="Claudia"]That day, when I hit that strong convection current... and that cloud... It wasn't a big one, but... it was a Catastrophe cloud, wasn't it?
+[name="Claudia"]Tell me, Mom.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]Alright... Claudia, you've got Oripathy.
+[name="Mother"]......
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="none")]
+[name="Claudia"]......
+[name="Claudia"]How... How bad is it? How long do I have?
+[Dialog]
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[Delay(time=2)]
+[stopsound(channel="b",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="29_g3_cottage",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[name="Mother"]Are you in the workshop, little cloud? Can I come in?
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="Claudia"]What is it, Mom?
+[name="Claudia"]I want to be alone.
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="Claudia"]I don't have much time left, and I've still got lot of work to do... now that my leg's finally getting better...
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="none")]
+[name="Mother"]Claudia... I understand, and you have every right to keep the room locked. But you did promise me yesterday that we would have a proper talk.
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="m")]
+[name="Claudia"]I... Does it have to be right now? I'm not breaking my promise, Mom, but... I'm really busy. Can we do it some other day?
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="none")]
+[name="Mother"]You promised me yesterday. You even promised me twice last week.
+[name="Mother"]I'm happy to wait until the day you're ready to open this door, but... your dad's coming home today. You know he can't stay long.
+[name="Mother"]If we can't talk about it today, you'll have to wait another few months before you get to see him again.
+[name="Mother"]How about we make dinner together today, little cloud? You know I'm not too good in the kitchen...
+[name="Mother"]We haven't eaten together since you got home, you know.
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="Claudia"]......
+[Dialog]
+[charslot]
+[playsound(key="$dooropenquite")]
+[charslot(slot="m",name="avg_npc_524_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="Mother"]Hmm... Are you adjusting the fuel tank dimensions? Looks good to me.
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="Claudia"]No, it's not good at all...
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="m")]
+[name="Claudia"]Mom...
+[name="Claudia"]I'm... really tired.
+[Dialog]
+[charslot]
+Claudia sits on top of a wooden box, not letting go of the tools in her hand. As her mother walks to her side, she leans her head against her mother's belly.
+The same wool sweater, the same softness, the same detergent smell. But why does it feel like everything's changed?
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="m")]
+[name="Claudia"]I know I've worried you and Dad, locking myself in the workshop.
+[name="Claudia"]But if I didn't, I... I'd feel so unsettled.
+[name="Claudia"]...Actually, even when I did, I still couldn't get a moment of peace.
+[Dialog]
+[charslot]
+Her mother says nothing, lightly placing her hand atop Claudia's beanie, her palm rubbing against Claudia's ear. It feels warm.
+[Dialog]
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",duration=1.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[name="Claudia"]I'm scared, Mom...
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="Mother"]It's fine, little cloud. We know this has all been a big shock to you. Whether you want to try something else, or keep trying to get over your fear of flying—
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="Claudia"]No, Mom. It's not flying I'm scared of.
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[name="Claudia"]I'm scared... I'm scared of dying.
+[name="Claudia"]You know my dream...
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="Mother"]Flying alongside a fowlbeast migration, all the way?
+[charslot(slot="l",name="avg_4165_ctrail_1#2$2",focus="l")]
+[name="Claudia"]Yeah. From Columbia to Rim Billiton, and back again...
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="Claudia"]Although nobody on Terra has been able to map their complete route.
+[name="Claudia"]I always thought that, if I spent my whole life on this one single thing, then I might finally be the one to do it...
+[name="Claudia"]But my life... Why does it have to be so short?
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="Mother"]......
+[name="Mother"]The doctor says your infection isn't serious... Maybe... Maybe in the next few years, they'll find a cure for...
+[Dialog]
+[charslot]
+The unnatural pauses in her mother's words are not lost on her. She knows her mother's trying to console her, but her background in science prevents her from making such delusional statements.
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="l")]
+[name="Claudia"]I just want time, Mom. A little more time... Enough time.
+[name="Claudia"]But why can't I have this... this one little thing?
+[charslot(slot="l",name="avg_4165_ctrail_1#8$2",focus="l")]
+[name="Claudia"]......
+[name="Claudia"]I'll keep working on the flyer. The fuel tank, the frame, the engine, the nozzles... at least <i>something</i> will see use eventually...
+[name="Claudia"]No, the fuel tank still isn't right, I need to dismantle and rebuild it again...
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="Mother"]Why don't we take tonight off, Claudia? I'm not joking about my cooking, and we can't exactly feed your dad out of a can when he gets back, can we?
+[Dialog]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="none")]
+[playsound(key="$d_gen_transmissionget")]
+[Delay(time=1.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="Mother"]Oh, a message from him. It should be about time... Hmm?
+[name="Mother"]...Claudia, your dad says he found a nest of fowlbeast eggs just about to hatch, but their mother's terribly injured and won't make it.
+[name="Mother"]I think... he's going to bring them home.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="33_g8_srcroom",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="l")]
+[name="Claudia"]That should do it... What do you think?
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="Mother"]Hmm, light bulbs for heat, okay. As for the padding... let's add another layer. Where did I put that scarf... Do you have any idea, little cloud...?
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="Claudia"]I think towels should be okay too, I'll go grab a couple.
+[Dialog]
+[charslot(slot="l",afrom=1,ato=0,duration=1)]
+[charslot(slot="l",posfrom="0,0", posto="-100,0",duration=1.5)]
+[delay(time=2.5)]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",afrom=0,ato=1,duration=1)]
+[charslot(slot="l",posfrom="-100,0", posto="0,0",duration=1.5)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="Claudia"]There, all done.
+[name="Claudia"]Hopefully it's not too late...
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="Mother"]It should be fine. Your dad kept them against his belly the whole way back.
+[name="Mother"]But... the deadline for my paper's coming up. The eggs should hatch in a day or two. Can you look after them?
+[charslot(slot="l",name="avg_4165_ctrail_1#5$2",focus="l")]
+[name="Claudia"]Eh? S-Sure, since you're busy...
+[Dialog]
+[charslot]
+Claudia leans over the makeshift incubator. The light bulbs shine warmly on the white shells. The reflected light is a little harsh on her eyes, but they remain fixed on the eggs.
+It might just be her imagination, but she can almost hear a faint rubbing, as if some tiny beak is rubbing against the inside of a shell...
+[Dialog]
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="l")]
+[name="Claudia"]Can you really make it?
+[Dialog]
+[charslot]
+She speaks quietly, barely over a whisper.
+She hopes her mother didn't hear.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="31_g3_mini12_farmland",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",duration=2)]
+[Delay(time=3.5)]
+[name="Claudia"]Hey, let's get you outside. You guys need sunlight, you know?
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="none")]
+[name="Fowlbeasts"](Clamorous cheeps)
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="Claudia"]If you don't, your bones and feathers won't harden, and that'll be really bad!
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="none")]
+[name="Fowlbeasts"](Raucous chirping)
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]Alright, alright, come along...
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=2)]
+[Delay(time=2.5)]
+Claudia steps out into the field, turning her head back every few steps. With flapping wings, the little fowlbeasts follow her, automatically arranging themselves into a line.
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]Good, good, just like that.
+[name="Claudia"]The sun's just right. Can't have too much direct sunlight, you'll get dehydrated.
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="none")]
+[name="Fowlbeasts"](Curious chirps)
+[charslot(slot="m",name="avg_4165_ctrail_1#5$2",focus="m")]
+[name="Claudia"]Hey! Keep away from there! I saw a feral cloudbeast a couple days ago!
+[name="Claudia"]This way, c'mon c'mon—
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0", posto="-100,0",duration=1.5)]
+[delay(time=2.5)]
+[charslot]
+[playsound(key="$bodyfalldown1")]
+[CameraShake(duration=1, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1)]
+[name="Mother"]Oh—
+[charslot(slot="m",name="avg_4165_ctrail_1#5$2",focus="m")]
+[name="Claudia"]Mom!
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[charslot(slot="m",name="avg_npc_524_1#1$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="0,-50", posto="0,0",duration=1.5)]
+[delay(time=2.5)]
+[name="Mother"]I'm fine.
+[name="Mother"]Imprinting, huh...?
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="Claudia"]Yeah, they treat me like their mother.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]I think... This has happened before, hasn't it?
+[name="Mother"]You were still very young, basically still a chick yourself, but you had two little fowlbeasts clinging to your tail.
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="Claudia"]Right, I was eight, during that trip to Rim Billiton with you and Dad.
+[name="Claudia"]I was the one who found the eggs that time. I wanted to learn how a mother fowlbeast would incubate them, and you taught me how to build an incubator.
+[charslot(slot="m",name="avg_4165_ctrail_1#2$2",focus="m")]
+[name="Claudia"]I still remember how our tent had a hole in it, and Dad let me help out with patching it.
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="Claudia"]I was inside the tent helping hold the hole shut when the little fowlbeasts—seeing I couldn't move—hopped onto my arm and out the hole...
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]Then you started screaming, nearly gave your dad a heart attack, haha.
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="Claudia"]I was just worried about the dangers they might run into out there...
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]The moment I ran out the tent, they fluttered right back to me.
+[name="Claudia"]Hehe... It was pretty much like right now.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]Sure enough...
+[name="Mother"]Little cloud...?
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="Claudia"]What is it, Mom?
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]Oh, nothing, let's just catch some sun with them.
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]Oh! Does this mean your paper's finished? Should I make a little extra for dinner to celebrate?
+[Dialog]
+[charslot]
+[name="Fowlbeasts"](Excited cheeps)
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]Err, not quite... Alright! It's enough with my editor breathing down my neck, don't need you joining in. And neither do you chickadees!
+[name="Mother"]Am I not allowed to just take a simple walk...?
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="Claudia"]Pfft. Alright, Mom.
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=2)]
+[Delay(time=2.5)]
+The light of the setting sun gradually takes on a vermilion hue, the two of them enveloped in the chirping of fowlbeasts.
+The woman leads her daughter along by the hand. She has some things she desperately wants to ask, but she dares not broach.
+Maybe she just forgot about it? She worries she will make her child remember.
+Some questions will never be driven out of the heart once they take root. She knows as much.
+She hopes her daughter will never have to face this aspect of life... especially not in this manner.
+Claudia suddenly swaps the hand her mother is holding. She walks backwards, all so she can keep a constant eye on the fowlbeasts' every step.
+[Dialog]
+[charslot(slot="l",name="avg_4165_ctrail_1#9$2",duration=1.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="Mother"]Claudia.
+[charslot(slot="l",name="avg_4165_ctrail_1#5$2",focus="l")]
+[name="Claudia"]Yeah, Mom?
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="Mother"]Do you know the life cycle of this fowlbeast species?
+[charslot(slot="l",name="avg_4165_ctrail_1#9$2",focus="l")]
+[name="Claudia"]Yeah, I have a rough idea, and I looked up some details the past few days.
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="Mother"]Two or three weeks after hatching, they will have both the ability to fly and the psychological urge to do so. At latest, four weeks...
+[charslot(slot="l",name="avg_4165_ctrail_1#9$2",focus="l")]
+[name="Claudia"]Yeah. I know, Mom.
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="Mother"]Are you planning to...? No, never mind. It's nothing.
+[name="Mother"]There's no reason we can't look after this little flock. No matter what happens, they can spend the rest of their lives here, happy as can be.
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="Claudia"]Mom, you're trying to say it's fine if they don't fly, right?
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="Mother"]......
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[name="Claudia"]Why did you have to say it, Mom?
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="Mother"]Claudia... there's something I've only just figured out—
+[name="Mother"]I thought I figured it out a long time ago, but it's only now that I truly grasp how a single thing can have wildly different effects on different people.
+[name="Mother"]I'm not sure why I've become so... cautious, all of a sudden.
+[name="Mother"]Why I suddenly... fear these two words, words I've never feared before.
+[name="Mother"]'Cheer up'... Will they become yet another burden on you?
+[name="Mother"]......
+[name="Mother"]Sometimes I feel like I'm under the influence of irrational emotion, whether hormones or nervous impulses, stress under extreme circumstances, behavioral patterns triggered by specific stimuli...
+[name="Mother"]But nothing can explain—
+[name="Mother"]Why I can't imagine seeing you suffer any more than you already have.
+[name="Mother"]I'm an awful mother, aren't I? You're the one who actually got hurt, but here I am, moping.
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="Claudia"]......
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="Mother"]Sorry, Claudia. Don't try to comfort me. That isn't your job.
+[name="Mother"]Let's get back to our walk. It's been a long time since I've taken a stroll.
+[Dialog]
+[charslot]
+Claudia silently holds her mother's hand.
+Will there be suffering...? But she has no time to continue this train of thought—
+Two fowlbeasts come close to her, and one barges into the other. Startled, the second fowlbeast dives under her foot, almost getting stepped on. Claudia quickly lifts her foot and hops about on one leg.
+The fowlbeast that was nearly trod upon flaps its wings a few times. Perhaps it's copying Claudia as she tries to balance on one foot?
+For a moment, she believes it will start to fly—
+But nothing happens. After a few flaps, it returns to jumping about like before, wanting to rub against her ankle.
+[name="Fowlbeast"](Reliant cheep)
+[Dialog]
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="Claudia"]......
+[Dialog]
+[charslot]
+Claudia lets go of her mother's hand, bending down to pick it up.
+Perhaps because of the sudden change in elevation, the little fowlbeast begins to cower in fear. Claudia senses the warm ball of feathers trembling in her hand.
+But eventually, it sticks its head back out, looking left, then right, then...
+Is it looking up at the sky? Claudia wonders.
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="Claudia"]Mom.
+[Dialog]
+[charslot]
+She keeps looking at the fowlbeast in her hands.
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="Claudia"]Maybe I <i>will</i> end up suffering... All sorts of things could happen, after all.
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]But I'm not afraid of flying.
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="Claudia"]No matter what happens, I will never be afraid of flying.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="29_g3_cottage",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)] 
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_avg_fixcarjingle")]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_4165_ctrail_1#11$2",focus="m")]
+[name="Claudia"]Where's the hammer...? Man, did I really have to make this weld so tight...
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_524_1#1$1",duration=2)]
+[Delay(time=3.5)]
+[name="Mother"]......
+[charslot(slot="m",name="avg_4165_ctrail_1#5$2",focus="m")]
+[name="Claudia"]Maybe a chisel... Mom?
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]You left the door open, so I just...
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="Claudia"]No, it's fine, I'm almost done anyway. Did the noise bother you?
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]Hardly. But it did feel like it had been a while since I saw you in here.
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]Well I <i>was</i> kinda busy... If I had stayed cooped up in my workshop the whole time, the fowlbeasts wouldn't have gotten enough sunlight, since they keep following me around.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]Then why today all of a sudden...?
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]Making some preparations.
+[name="Claudia"]You mentioned it yourself last time. I've been examining the fowlbeasts these past few days, and they're at the age they should be flying. A bit late, even.
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="Claudia"]I could climb a tree and give them each a little push down, but that... that'd be way too dangerous!
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]In short... I need my flyer.
+[name="Claudia"]I applied too many customizations to it. To be honest, hardly half of them were actually helpful, and I'd have to take them off again.
+[name="Claudia"]What I need now is a flyer that's passed the test flights and can run a stable take-off sequence.
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="Claudia"]That's all.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]...I see. Anything I can do to help?
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]Well, if you know where I put my hammer...
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]Of course I do, dear.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_wilderness_m",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+The weather is fine today. While there is still a touch of morning mist, it will soon be burned away by the sun's light.
+There is a breeze. Claudia plucks some grass, then lets go. The blades fall, blown towards the southeast.
+The fowlbeasts chirp as they follow her. Their 'mother' seems a bit different today...
+But it's all the same to them. They jostle about behind her in blind imitation as usual.
+She stops, and turns to face them. She asked her mother to stand at a distance, but before she sets off, she feels like she should... say something.
+The fowlbeasts won't understand her, of course, but...
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]Hey, listen up...
+[name="Claudia"]Today, we're going to learn how to fly.
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="Claudia"]Honestly, I'm thinking that even if I wasn't around, you might learn by imitating other fowlbeasts, or maybe your natural urges would have you spreading your wings.
+[name="Claudia"]Even without an adult fowlbeast to guide you, you would still... fly all the same.
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]Once you can fly, you'll need to learn how to migrate. I'll take you into the typical migration path of your species.
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="Claudia"]Ideally, you'll already know how to fly when we find your flock. That way, you can keep up with them easily...
+[charslot(slot="m",name="avg_4165_ctrail_1#2$2",focus="m")]
+[name="Claudia"]I'd really love to follow you on your migration, the full three years of it. There was a time... when it was my greatest wish.
+[name="Claudia"]But now I can't...
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="Claudia"]......
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]Never mind all that. Today, you... we just need to fly.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_wind", volume=0, loop=true, channel="a")]
+Claudia can sense the angle of the sunlight slowly rise, the temperature of the air and her body slowly rising with it.
+The morning breeze blows past her. She begins to run, as if wanting to ride the wind.
+She starts her flyer.
+The earth whirls past below her, then behind her, slowly but steadily moving away from her.
+She hears the flapping of wings behind her, louder and clearer than she imagined it would sound. Chirps turn into cries, vibrating as it passes through the air that lifts her. She can hear it all.
+[Dialog]
+[Soundvolume(volume=0.6,channel="a",fadetime=2)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[gridbg(imagegroup="53_g16_sunnyday_L1/53_g16_sunnyday_R1/53_g16_sunnyday_L2/53_g16_sunnyday_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-900,fadetime=2)]
+[largebgtween(duration = 30,yFrom = 300, yTo = 250,block = false)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+They climb, higher and higher.
+She adjusts the nozzle angles and leans left and right. She knows she has traced a smooth curve up in the sky.
+The soaring fowlbeasts behind her form a dotted line.
+All her worries fall away, left behind on the ground to gradually shrink with everything else.
+She simply enjoys the feeling of the wind, just like her very first flight.
+As she passes by the shadow of a cloud, the question haunting her shadows her mind again.
+'Despite everything, how long do you think you can keep flying like this?'
+'Can you make it to the end?'
+But it's strange.
+Up here in the sky, amidst the clouds and the cawing of fowlbeasts, these questions that nearly suffocated her earlier are now as light as air.
+As if you need only a single heartbeat to shake them away.
+[name="Claudia"]What am I even thinking...?
+[name="Claudia"]It's not like I ever believed it was a sure thing, even before the accident.
+[name="Claudia"]It's always been this way... Always has been.
+[name="Claudia"]I just want to... fly, that's all.
+[name="Claudia"]Even if I can't fly to Rim Billiton, I can fly to Laterano, or Victoria...
+[name="Claudia"]Even if I can't fly to Siesta, I can go to Kjerag, anywhere outside of Columbia really...
+[name="Claudia"]I'll chart the route, bit by bit.
+Another burst of fowlcry cuts through the air.
+Claudia decides to treat it as a cry of approval.
+[Dialog]
+[stopsound(channel="a",fadetime=2)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[gridbg]
+[Background(image="31_g3_mini12_farmland",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]Mom, I want to talk to you about something.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]What is it, dear?
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]Have you heard of a 'Rhodes Island'?
+[name="Claudia"]I've been doing some research, and they offer a treatment plan... I was thinking I could apply for it.
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]Little cloud...
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="Claudia"]I also looked into some of their supplementary info. Apparently, Rhodes Island's landship travels across the lands. I might get the chance to research the migratory patterns of fowlbeasts in different regions.
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="Claudia"]What do you think, Mom?
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="Mother"]Alright. But I need to check the visitation rules. I hope you won't mind me tagging along once or twice?
+[Dialog]
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4165_ctrail_1#3$2",focus="m")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0", posto="50,0",duration=1.5)]
+[delay(time=2.5)]
+Claudia gives her mom a hug.
+The same wool sweater, the same softness, the same detergent smell.
+True, a few things have changed a little bit.
+But some things never change, thinks Claudia.
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[image]
+[charslot]

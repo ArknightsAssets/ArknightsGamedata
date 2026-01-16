@@ -1,0 +1,13 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.SwitchToDefaultUIState]
+[Delay(time=0.2)]
+[Battle.Pause]
+[Battle.EnsureMinSp(charId="trap_252_pckstp", sp=30)]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Tutorial(tileX=3, tileY=4, focusWidth=120, focusHeight=120, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", \
+          protectTime=0.5, dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] Before this guy charges up, it takes damage whenever it bounces a 'Certain Fate' back. We always called this 'Fate Burst'.
+[popupdialog(dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black="0.5", protectTime=0.5)] Doctor, if you see a 'Fate Striker' near a Stress-Relief Helper, then try to smash it ASAP, since 'Certain Fates' won't damage the Helpers once they're fully charged.
+[popupdialog(dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black="0.5", protectTime=0.5)] They pack quite the punch, so best to hit them before they hurt you. Leave the front to me, and I'll leave the rest to you.
+[InputBlocker(blockInput=true)]
+[Battle.UnLockFunction(mask="SYSTEM_MENU_INTERACT")]
