@@ -1147,6 +1147,17 @@
                 "dynAvatarId": null
             },
             {
+                "avatarId": "avatar_activity_SL",
+                "avatarType": "ACTIVITY",
+                "avatarIdSort": 65,
+                "avatarIdDesc": "[So Long, Adele: Home Away From Home] Record Restoration\n'So Long, Adele: Home Away From Home'",
+                "avatarItemName": "'So Long, Adele: Home Away From Home'",
+                "avatarItemDesc": "Don yourself in lava and wave, then step onto the path of destiny.",
+                "avatarItemUsage": "Can be set as an icon, serving for personal branding.",
+                "obtainApproach": "Obtained from Record Restoration",
+                "dynAvatarId": null
+            },
+            {
                 "avatarId": "avatar_dyn_01",
                 "avatarType": "DYNAMIC",
                 "avatarIdSort": 1,
@@ -1490,7 +1501,8 @@
                     "avatar_activity_ED_1",
                     "avatar_activity_CW",
                     "avatar_activity_HE",
-                    "avatar_activity_TG"
+                    "avatar_activity_TG",
+                    "avatar_activity_SL"
                 ]
             },
             "DEFAULT": {
@@ -1980,6 +1992,32 @@
                 "unlockDesList": [
                     "The Arknights Official Lore Compendium"
                 ]
+            },
+            {
+                "bgId": "bg_volcano_1",
+                "bgSortId": 23,
+                "bgStartTime": 1769180400,
+                "bgName": "Springbay",
+                "bgDes": "The thick steam condenses into dewdrops on the tips of your hair. Shake your head to the beat, and give the ground below a lively burst of rain.",
+                "bgUsage": "A photo, a memory, a moment in time that encapsulates the entirety of Terra.",
+                "isMultiForm": true,
+                "changeRule": "TIME",
+                "multiFormList": [
+                    {
+                        "multiFormBgId": "bg_volcano_1",
+                        "sortId": 0,
+                        "bgMusicId": "music_bg_volcano_night"
+                    },
+                    {
+                        "multiFormBgId": "bg_volcano_1_form_2",
+                        "sortId": 1,
+                        "bgMusicId": "music_bg_volcano_day"
+                    }
+                ],
+                "obtainApproach": "Purchase Pack",
+                "unlockDesList": [
+                    "Obtained by buying Springbay Dreams Pack in the [Store]"
+                ]
             }
         ],
         "themeList": [
@@ -2196,6 +2234,58 @@
                 "isLimitObtain": true,
                 "hideWhenLimit": true,
                 "rarity": "TIER_5"
+            },
+            {
+                "id": "tm_volcano_1",
+                "type": "ACTIVITY",
+                "sortId": 10,
+                "startTime": 1769180400,
+                "tmName": "Old Dream",
+                "tmDes": "Everything floats around you... The lights also change based on your mood. Here, there is nothing to worry about.",
+                "tmUsage": "The PRTS interface has been redesigned without changing its functionality.",
+                "isMultiForm": true,
+                "changeRule": "TIME",
+                "multiFormList": [
+                    {
+                        "multiFormTmId": "tm_volcano_1",
+                        "sortId": 0
+                    },
+                    {
+                        "multiFormTmId": "tm_volcano_1_form_2",
+                        "sortId": 1
+                    }
+                ],
+                "obtainApproach": "Procurement Center Pack",
+                "unlockDesList": [
+                    "Obtained by buying Springbay Dreams Pack in the [Store]"
+                ],
+                "isLimitObtain": true,
+                "hideWhenLimit": true,
+                "rarity": "TIER_6"
+            },
+            {
+                "id": "tm_rogue_5",
+                "type": "ACTIVITY",
+                "sortId": 11,
+                "startTime": 1769943600,
+                "tmName": "Imagination",
+                "tmDes": "When there is a wisp of sunset in the heart, all heaven and earth shall burn red.",
+                "tmUsage": "The PRTS interface has been redesigned without changing its functionality.",
+                "isMultiForm": false,
+                "changeRule": "NONE",
+                "multiFormList": [
+                    {
+                        "multiFormTmId": "tm_rogue_5",
+                        "sortId": 0
+                    }
+                ],
+                "obtainApproach": "Integrated Strategies reward",
+                "unlockDesList": [
+                    "Reward from [Integrated Strategies] Sui's Garden of Grotesqueries"
+                ],
+                "isLimitObtain": false,
+                "hideWhenLimit": false,
+                "rarity": "TIER_5"
             }
         ],
         "backgroundLimitData": {
@@ -2258,6 +2348,18 @@
                         "displayAfterEndTime": false
                     }
                 ]
+            },
+            "bg_volcano_1": {
+                "bgId": "bg_volcano_1",
+                "limitInfos": [
+                    {
+                        "limitInfoId": "bg_volcano_1#1",
+                        "startTime": 1769180400,
+                        "endTime": 1770980399,
+                        "invalidObtainDesc": "Currently unobtainable",
+                        "displayAfterEndTime": false
+                    }
+                ]
             }
         },
         "themeLimitData": {
@@ -2315,6 +2417,16 @@
                         "invalidObtainDesc": "Not Available"
                     }
                 ]
+            },
+            "tm_volcano_1": {
+                "id": "tm_volcano_1",
+                "limitInfos": [
+                    {
+                        "startTime": 1769180400,
+                        "endTime": 1770980399,
+                        "invalidObtainDesc": "Not Available"
+                    }
+                ]
             }
         },
         "multiFormInfoData": [
@@ -2324,7 +2436,36 @@
                 "tmDesc": "Automatically changes its look based on the time of day"
             }
         ],
-        "timeRuleData": {},
+        "timeRuleData": {
+            "bg_volcano_1": [
+                {
+                    "id": "bg_volcano_1",
+                    "startHour": 0
+                },
+                {
+                    "id": "bg_volcano_1_form_2",
+                    "startHour": 6
+                },
+                {
+                    "id": "bg_volcano_1",
+                    "startHour": 18
+                }
+            ],
+            "tm_volcano_1": [
+                {
+                    "id": "tm_volcano_1",
+                    "startHour": 0
+                },
+                {
+                    "id": "tm_volcano_1_form_2",
+                    "startHour": 6
+                },
+                {
+                    "id": "tm_volcano_1",
+                    "startHour": 18
+                }
+            ]
+        },
         "defaultBgMusicId": "music_bg_default",
         "themeStartTime": 1713268800
     },
@@ -4027,6 +4168,24 @@
                         "id": "ap_supply_lt_120_2025_8",
                         "count": 1,
                         "type": "AP_SUPPLY"
+                    }
+                ]
+            },
+            "mail_summer_2025_1": {
+                "id": "mail_summer_2025_1",
+                "type": "NORMAL",
+                "sortId": 50,
+                "displayReceiveTs": 1768575600,
+                "year": 0,
+                "dateDelta": -1,
+                "senderId": "char_1044_hsgma2",
+                "title": "Invitation from Hoshiguma the Breacher",
+                "content": "How have you been, Doctor?\nIt's been scorching lately, and work's been slow, so everyone at L.G.D. is feeling a bit sluggish. Missy's not around, so it was up to me to figure something out, and all I could think of was giving everyone some time off. Luckily, it worked like a charm—everyone came back from their break with renewed energy.\nI'll be heading to Higashi myself soon. If I find any good liquor when I get back, I wonder if you'd be free to meet up for a few drinks?",
+                "rewardList": [
+                    {
+                        "id": "itempack_gold_2",
+                        "count": 1,
+                        "type": "ITEM_PACK"
                     }
                 ]
             }
