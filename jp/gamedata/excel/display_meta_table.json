@@ -1147,6 +1147,17 @@
                 "dynAvatarId": null
             },
             {
+                "avatarId": "avatar_activity_SL",
+                "avatarType": "ACTIVITY",
+                "avatarIdSort": 65,
+                "avatarIdDesc": "【火山と雲と夢色の旅路】記録復元\n「火山と雲と夢色の旅路」",
+                "avatarItemName": "「火山と雲と夢色の旅路」",
+                "avatarItemDesc": "溶岩と波を越え、運命の旅に出よう。",
+                "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
+                "obtainApproach": "記録復元",
+                "dynAvatarId": null
+            },
+            {
                 "avatarId": "avatar_dyn_01",
                 "avatarType": "DYNAMIC",
                 "avatarIdSort": 1,
@@ -1490,7 +1501,8 @@
                     "avatar_activity_ED_1",
                     "avatar_activity_CW",
                     "avatar_activity_HE",
-                    "avatar_activity_TG"
+                    "avatar_activity_TG",
+                    "avatar_activity_SL"
                 ]
             },
             "DEFAULT": {
@@ -1980,6 +1992,32 @@
                 "unlockDesList": [
                     "アークナイツ公式世界観設定資料集"
                 ]
+            },
+            {
+                "bgId": "bg_volcano_1",
+                "bgSortId": 23,
+                "bgStartTime": 1769151600,
+                "bgName": "入り江",
+                "bgDes": "漂う水蒸気が髪先に小さな雫を残していく。音楽のリズムに合わせて頭を振れば、爽快な雨が自分だけに降り注ぐ。",
+                "bgUsage": "一枚の写真、ひと時の思い出、テラの大地でのある瞬間が凝縮されている。",
+                "isMultiForm": true,
+                "changeRule": "TIME",
+                "multiFormList": [
+                    {
+                        "multiFormBgId": "bg_volcano_1",
+                        "sortId": 0,
+                        "bgMusicId": "music_bg_volcano_night"
+                    },
+                    {
+                        "multiFormBgId": "bg_volcano_1_form_2",
+                        "sortId": 1,
+                        "bgMusicId": "music_bg_volcano_day"
+                    }
+                ],
+                "obtainApproach": "パック購入",
+                "unlockDesList": [
+                    "[購買部]で夢色の入り江パックを購入して獲得"
+                ]
             }
         ],
         "themeList": [
@@ -2196,6 +2234,58 @@
                 "isLimitObtain": true,
                 "hideWhenLimit": true,
                 "rarity": "TIER_5"
+            },
+            {
+                "id": "tm_volcano_1",
+                "type": "ACTIVITY",
+                "sortId": 10,
+                "startTime": 1769151600,
+                "tmName": "夢路",
+                "tmDes": "周りのものすべてが宙に浮かび……照明も感情に合わせて変化する。ここには、悩みなど存在しない。",
+                "tmUsage": "機能を一切変更することなく、PRTS画面のデザインを一新しました。",
+                "isMultiForm": true,
+                "changeRule": "TIME",
+                "multiFormList": [
+                    {
+                        "multiFormTmId": "tm_volcano_1",
+                        "sortId": 0
+                    },
+                    {
+                        "multiFormTmId": "tm_volcano_1_form_2",
+                        "sortId": 1
+                    }
+                ],
+                "obtainApproach": "購買部パック",
+                "unlockDesList": [
+                    "[購買部]で夢色の入り江パックを購入して獲得"
+                ],
+                "isLimitObtain": true,
+                "hideWhenLimit": true,
+                "rarity": "TIER_6"
+            },
+            {
+                "id": "tm_rogue_5",
+                "type": "ACTIVITY",
+                "sortId": 11,
+                "startTime": 1769886000,
+                "tmName": "空想",
+                "tmDes": "心中に一点の煙霞在り、天地を染むれば俱に是れ紅なり。",
+                "tmUsage": "機能を一切変更することなく、PRTS画面のデザインを一新しました。",
+                "isMultiForm": false,
+                "changeRule": "NONE",
+                "multiFormList": [
+                    {
+                        "multiFormTmId": "tm_rogue_5",
+                        "sortId": 0
+                    }
+                ],
+                "obtainApproach": "統合戦略報酬",
+                "unlockDesList": [
+                    "[統合戦略]歳の界園志異報酬"
+                ],
+                "isLimitObtain": false,
+                "hideWhenLimit": false,
+                "rarity": "TIER_5"
             }
         ],
         "backgroundLimitData": {
@@ -2258,6 +2348,18 @@
                         "displayAfterEndTime": false
                     }
                 ]
+            },
+            "bg_volcano_1": {
+                "bgId": "bg_volcano_1",
+                "limitInfos": [
+                    {
+                        "limitInfoId": "bg_volcano_1#1",
+                        "startTime": 1769151600,
+                        "endTime": 1770922799,
+                        "invalidObtainDesc": "現在入手できません",
+                        "displayAfterEndTime": false
+                    }
+                ]
             }
         },
         "themeLimitData": {
@@ -2315,6 +2417,16 @@
                         "invalidObtainDesc": "現在入手できません"
                     }
                 ]
+            },
+            "tm_volcano_1": {
+                "id": "tm_volcano_1",
+                "limitInfos": [
+                    {
+                        "startTime": 1769151600,
+                        "endTime": 1770922799,
+                        "invalidObtainDesc": "現在入手できません"
+                    }
+                ]
             }
         },
         "multiFormInfoData": [
@@ -2324,7 +2436,36 @@
                 "tmDesc": "時間によって自動で交替されます"
             }
         ],
-        "timeRuleData": {},
+        "timeRuleData": {
+            "bg_volcano_1": [
+                {
+                    "id": "bg_volcano_1",
+                    "startHour": 0
+                },
+                {
+                    "id": "bg_volcano_1_form_2",
+                    "startHour": 6
+                },
+                {
+                    "id": "bg_volcano_1",
+                    "startHour": 18
+                }
+            ],
+            "tm_volcano_1": [
+                {
+                    "id": "tm_volcano_1",
+                    "startHour": 0
+                },
+                {
+                    "id": "tm_volcano_1_form_2",
+                    "startHour": 6
+                },
+                {
+                    "id": "tm_volcano_1",
+                    "startHour": 18
+                }
+            ]
+        },
         "defaultBgMusicId": "music_bg_default",
         "themeStartTime": 1713232800
     },
@@ -4117,6 +4258,24 @@
                         "id": "ap_supply_lt_120_2025_8",
                         "count": 1,
                         "type": "AP_SUPPLY"
+                    }
+                ]
+            },
+            "mail_summer_2025_1": {
+                "id": "mail_summer_2025_1",
+                "type": "NORMAL",
+                "sortId": 55,
+                "displayReceiveTs": 1768546800,
+                "year": 0,
+                "dateDelta": -1,
+                "senderId": "char_1044_hsgma2",
+                "title": "斬業ホシグマからの招待",
+                "content": "ドクター、元気にやっているか？\n最近は仕事も少なく、近衛局は少したるんでいるくらいだ。あいにくお嬢様が不在にしているものだから、私がどうにかするしかないが、私が思いつくのは皆に休暇をやることくらいで――とはいえ幸い効果は上々で、休暇から戻った局員たちは、前よりかなりやる気が戻った様子でいる。\n私も近々極東に一度戻ろうと思う。そこでいい酒が手に入ったら、帰ってきた後に一杯やらないか？",
+                "rewardList": [
+                    {
+                        "id": "itempack_gold_2",
+                        "count": 1,
+                        "type": "ITEM_PACK"
                     }
                 ]
             }

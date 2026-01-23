@@ -1147,6 +1147,17 @@
                 "dynAvatarId": null
             },
             {
+                "avatarId": "avatar_activity_SL",
+                "avatarType": "ACTIVITY",
+                "avatarIdSort": 65,
+                "avatarIdDesc": "[화산의 꿈 여행] 기록 복원\n'화산의 꿈 여행'",
+                "avatarItemName": "'화산의 꿈 여행'",
+                "avatarItemDesc": "용암과 파도를 헤치고, 운명의 여행을 떠난다.",
+                "avatarItemUsage": "개성을 과시하는 이미지. 프로필로 설정할 수 있습니다.",
+                "obtainApproach": "기록 복원 획득",
+                "dynAvatarId": null
+            },
+            {
                 "avatarId": "avatar_dyn_01",
                 "avatarType": "DYNAMIC",
                 "avatarIdSort": 1,
@@ -1490,7 +1501,8 @@
                     "avatar_activity_ED_1",
                     "avatar_activity_CW",
                     "avatar_activity_HE",
-                    "avatar_activity_TG"
+                    "avatar_activity_TG",
+                    "avatar_activity_SL"
                 ]
             },
             "DEFAULT": {
@@ -1980,6 +1992,32 @@
                 "unlockDesList": [
                     "명일방주 공식 세계관 설정집"
                 ]
+            },
+            {
+                "bgId": "bg_volcano_1",
+                "bgSortId": 23,
+                "bgStartTime": 1769151600,
+                "bgName": "스프링베이",
+                "bgDes": "자욱한 수증기, 머리카락 끝에 맺히는 물방울. 음악의 리듬에 맞춰 머리를 흔들며 스스로에게 즐거운 비를 뿌려줍니다.",
+                "bgUsage": "한 장의 사진, 한 편의 추억. 테라의 어느 순간이 담겨 있습니다.",
+                "isMultiForm": true,
+                "changeRule": "TIME",
+                "multiFormList": [
+                    {
+                        "multiFormBgId": "bg_volcano_1",
+                        "sortId": 0,
+                        "bgMusicId": "music_bg_volcano_night"
+                    },
+                    {
+                        "multiFormBgId": "bg_volcano_1_form_2",
+                        "sortId": 1,
+                        "bgMusicId": "music_bg_volcano_day"
+                    }
+                ],
+                "obtainApproach": "패키지 구매",
+                "unlockDesList": [
+                    "[구매센터]에서 스프링베이 드림 팩 구매 시 획득"
+                ]
             }
         ],
         "themeList": [
@@ -2196,6 +2234,58 @@
                 "isLimitObtain": true,
                 "hideWhenLimit": true,
                 "rarity": "TIER_5"
+            },
+            {
+                "id": "tm_volcano_1",
+                "type": "ACTIVITY",
+                "sortId": 10,
+                "startTime": 1769151600,
+                "tmName": "꿈나라",
+                "tmDes": "주변의 모든 것이 떠오르기 시작하고…… 조명도 기분에 따라 바뀝니다. 이곳에선 아무것도 걱정할 필요 없습니다.",
+                "tmUsage": "기능을 보류한 상태에서 PRTS 인터페이스만 리뉴얼되었습니다.",
+                "isMultiForm": true,
+                "changeRule": "TIME",
+                "multiFormList": [
+                    {
+                        "multiFormTmId": "tm_volcano_1",
+                        "sortId": 0
+                    },
+                    {
+                        "multiFormTmId": "tm_volcano_1_form_2",
+                        "sortId": 1
+                    }
+                ],
+                "obtainApproach": "구매센터 패키지",
+                "unlockDesList": [
+                    "[구매센터]에서 스프링베이 드림 팩 구매 시 획득"
+                ],
+                "isLimitObtain": true,
+                "hideWhenLimit": true,
+                "rarity": "TIER_6"
+            },
+            {
+                "id": "tm_rogue_5",
+                "type": "ACTIVITY",
+                "sortId": 11,
+                "startTime": 1769886000,
+                "tmName": "억측",
+                "tmDes": "마음속 한 점의 노을이 하늘과 땅을 온통 붉게 물들입니다.",
+                "tmUsage": "기능을 보류한 상태에서 PRTS 인터페이스만 리뉴얼되었습니다.",
+                "isMultiForm": false,
+                "changeRule": "NONE",
+                "multiFormList": [
+                    {
+                        "multiFormTmId": "tm_rogue_5",
+                        "sortId": 0
+                    }
+                ],
+                "obtainApproach": "통합 전략 보상",
+                "unlockDesList": [
+                    "[통합 전략] 쉐이의 기이한 계원 보상"
+                ],
+                "isLimitObtain": false,
+                "hideWhenLimit": false,
+                "rarity": "TIER_5"
             }
         ],
         "backgroundLimitData": {
@@ -2258,6 +2348,18 @@
                         "displayAfterEndTime": false
                     }
                 ]
+            },
+            "bg_volcano_1": {
+                "bgId": "bg_volcano_1",
+                "limitInfos": [
+                    {
+                        "limitInfoId": "bg_volcano_1#1",
+                        "startTime": 1769151600,
+                        "endTime": 1770922799,
+                        "invalidObtainDesc": "획득처 미개방",
+                        "displayAfterEndTime": false
+                    }
+                ]
             }
         },
         "themeLimitData": {
@@ -2315,6 +2417,16 @@
                         "invalidObtainDesc": "획득처 미개방"
                     }
                 ]
+            },
+            "tm_volcano_1": {
+                "id": "tm_volcano_1",
+                "limitInfos": [
+                    {
+                        "startTime": 1769151600,
+                        "endTime": 1770922799,
+                        "invalidObtainDesc": "획득처 미개방"
+                    }
+                ]
             }
         },
         "multiFormInfoData": [
@@ -2324,7 +2436,36 @@
                 "tmDesc": "시간에 따라 형태 자동 변경"
             }
         ],
-        "timeRuleData": {},
+        "timeRuleData": {
+            "bg_volcano_1": [
+                {
+                    "id": "bg_volcano_1",
+                    "startHour": 0
+                },
+                {
+                    "id": "bg_volcano_1_form_2",
+                    "startHour": 6
+                },
+                {
+                    "id": "bg_volcano_1",
+                    "startHour": 18
+                }
+            ],
+            "tm_volcano_1": [
+                {
+                    "id": "tm_volcano_1",
+                    "startHour": 0
+                },
+                {
+                    "id": "tm_volcano_1_form_2",
+                    "startHour": 6
+                },
+                {
+                    "id": "tm_volcano_1",
+                    "startHour": 18
+                }
+            ]
+        },
         "defaultBgMusicId": "music_bg_default",
         "themeStartTime": 1713232800
     },
@@ -4117,6 +4258,24 @@
                         "id": "ap_supply_lt_120_2025_8",
                         "count": 1,
                         "type": "AP_SUPPLY"
+                    }
+                ]
+            },
+            "mail_summer_2025_1": {
+                "id": "mail_summer_2025_1",
+                "type": "NORMAL",
+                "sortId": 55,
+                "displayReceiveTs": 1768546800,
+                "year": 0,
+                "dateDelta": -1,
+                "senderId": "char_1044_hsgma2",
+                "title": "호시구마 더 브리처의 초대",
+                "content": "박사, 안녕!\n최근 날씨가 무덥고 일도 많지 않아서인지 근위국 사람들이 좀처럼 기운을 내지 못하더라고. 마침 아가씨도 자리를 비운 터라 내가 직접 방법을 고민해야 했는데, 결국 떠오른 건 모두에게 휴가를 주는 거였어. 다행히 효과가 좋았는지, 휴가를 다녀온 뒤 사람들이 의욕이 넘치더라.\n나도 조만간 극동에 다녀올 예정이야. 좋은 술을 구하게 된다면, 돌아온 후에 시간을 내서 나랑 한잔하는 게 어때?",
+                "rewardList": [
+                    {
+                        "id": "itempack_gold_2",
+                        "count": 1,
+                        "type": "ITEM_PACK"
                     }
                 ]
             }
