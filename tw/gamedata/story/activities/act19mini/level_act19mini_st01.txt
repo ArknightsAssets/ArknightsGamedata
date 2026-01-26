@@ -1,0 +1,814 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="25_g04_yaninn",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$darkalley_intro",key="$darkalley_loop", volume=0.6)]
+[playsound(key="$d_avg_lightrain_loop",loop=true,channel="1",volume=0.5)]
+[Delay(time=2)]
+這是家不大的茶館，原本就不算高的房屋被分出二層的格局。
+屋裡陳設簡潔，大堂中不多不少，十套供六人落座的木桌椅被擺放得整整齊齊，桌上的茶漬都被盡可能地抹去，足以證明這裡的主人有多勤勉。
+茶館的跑堂把一瓢又一瓢的水灑在地上，用拖布將屋裡的每一塊青石板擦得透亮。
+茶館看似許久沒有迎來客人，也不知是什麼樣的客人值得這樣的禮遇。
+緊接著，客人就從門外來了。
+[Dialog]
+[playsound(key="$dooropenquite",channel="2")]
+[stopsound(channel="1",fadetime=2)]
+[charslot(slot="l",name="avg_npc_007",duration=2)]
+[charslot(slot="r",name="avg_npc_008",duration=2)]
+[Delay(time=3.5)]
+[charslot]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",name="avg_npc_303_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="茶館跑堂"]一、二……兩位客官裡面請，請問要先上一壺茶嗎？
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="兇悍的男人"]不急，我先問你——這座小鎮是不是叫邙山鎮？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館跑堂"]這座小鎮是叫邙山鎮。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="兇悍的男人"]你是這家茶館的掌櫃，還是跑堂？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館跑堂"]我是跑堂。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="兇悍的男人"]掌櫃不在？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館跑堂"]掌櫃不在。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="兇悍的男人"]還真的是問什麼答什麼，蠻老實的嘛。
+[name="兇悍的男人"]那我再問你，今日你們這家茶館裡，有沒有來過面生的外地客人？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館跑堂"]來過。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="兇悍的男人"]何時來的？是什麼模樣的人？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館跑堂"]此時來的，兩個人，都是劫匪模樣。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="r")]
+[charslot(slot="r",name="avg_npc_008",focus="r")]
+[name="粗魯的男人"]*炎國粗口*，我看你是存心消遣我們！
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovementsp", volume=1)]
+[delay(time=0.3)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=1)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[Dialog]
+[delay(time=0.5)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[delay(time=0.5)]
+粗魯的男人惱怒不已，狠狠一巴掌落在跑堂的臉上，將他打得摔倒在地。
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="0,-40",posto="0,0",duration=2)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="none")]
+然而那名跑堂卻不怒不惱，緩緩從地上爬起，又站在二人面前，全當無事發生一樣。
+[Dialog]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館跑堂"]兩位客人真奇怪，不喝茶也不喝酒，我可不會招待了。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[charslot(slot="r",name="avg_npc_008",focus="l")]
+[name="兇悍的男人"]老二，別難為人家小兄弟。
+[name="兇悍的男人"]去廚房看看還有沒有別的人，順便把後面所有門都關好。
+[Dialog]
+[charslot(slot="r",name="avg_npc_008",focus="r")]
+[delay(time=1.5)]
+[charslot(slot="r",posfrom="0,0",posto="50,0",duration=2,focus="r")]
+[charslot(slot="r",afrom=1,ato=0,duration=1,focus="r")]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_npc_007",focus="l")]
+[name="兇悍的男人"]別急，茶當然是要喝的。
+[name="兇悍的男人"]只是要在這裡等一位客人，等她一起喝才行。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$dooropenquite")]
+[charslot(slot="m",name="avg_npc_1871_1#12$1",duration=2)]
+[Delay(time=2.5)]
+不一會功夫，門外果然又來了一位客人。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="伶俐的少女"]哦……？
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_exsheath")]
+[Delay(time=2.5)]
+少女剛踏進屋子，還沒等她環顧四周，弩箭和刀就分別抵在了她的後背和脖子上。
+[charslot(slot="m",name="avg_npc_1871_1#6$1",focus="m")]
+[name="伶俐的少女"]哈哈……
+[name="伶俐的少女"]巧了，這不是陸家兄弟嗎，真沒想到在這裡還能遇到你們。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_007",duration=2)]
+[Delay(time=2.5)]
+[name="陸大"]要是你想得到，應該就不會來了。
+[name="陸大"]不過既然遇到了，就別走了。
+[name="陸大"]跑堂的小兄弟。麻煩去將門關上，再掛上打烊的牌子。
+[name="陸大"]然後，再給我們上一壺茶。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館跑堂"]茶上來了，幾位慢用。
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="伶俐的少女"]中原武林大名鼎鼎的“風雲三刀”請我喝茶，我的面子還真不小。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]很可惜，現在只剩兩個人了。
+[name="陸大"]幾天前，姑娘用那本秘笈栽贓我們兄弟三人。害我們被三大幫派外加玉門守軍，總共上百號人追殺。
+[name="陸大"]我們兩人活著逃了，三弟卻死在了百灶城外。
+[name="陸大"]所以……我們兩人怎麼樣都該請姑娘喝一杯。
+[charslot(slot="m",name="avg_npc_1871_1#6$1",focus="m")]
+[name="伶俐的少女"]哈哈……兩位大俠還活著，確實是件值得慶賀的事。那不如我以茶代酒，敬二位一杯，然後我們就好聚好散怎麼樣？
+[Dialog]
+[charslot(slot="m",name="avg_npc_008",focus="m")]
+[playsound(key="$d_avg_smashtable")]
+[CameraShake(duration=2, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=2.5)]
+[name="陸二"]你還敢說——！
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]我不想說廢話——那本秘笈還在你的身上？
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="伶俐的少女"]看來，你們是已經截獲了交易的消息，才趕來在這家茶館等我的？
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]沒錯。
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="伶俐的少女"]那本來要出現在這裡的蒲先生呢？該不會被你們殺了？
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]不必問。
+[charslot(slot="m",name="avg_npc_1871_1#10$1",focus="m")]
+[name="伶俐的少女"]唉……看來無論如何，你們都是鐵了心要拿到這本秘笈了？
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]已經被姑娘栽贓過一次，今日要是拿不到那本秘笈，我們被白白冤枉一次，三弟的死也沒有交代了。
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="伶俐的少女"]那我反而想問問，兩位大俠真的清楚我手裡這本秘笈是什麼來路？
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]當然。
+[name="陸大"]傳聞中玉門那位武功已經出神入化的宗師，退隱江湖前將畢生武學都寫在一本書裡。
+[name="陸大"]也就是在不久前，這本書才流入了民間，但見過其真容的人寥寥無幾。
+[name="陸大"]我們兄弟也是多方打聽，最可靠的消息是，那本書就在你這裡。
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="伶俐的少女"]那兩位想要這本秘笈，自然也是想要練成絕世武功，去爭天下第一的囉？
+[name="伶俐的少女"]可是就算武功大成又能怎麼樣？是能在武林裡作威作福，還是能為你們死去的兄弟復仇？
+[name="伶俐的少女"]還是說，在成為天下第一之前，你們兄弟兩人就要先爭個你死我活？
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]我的耐心不多——交出東西。
+[Dialog]
+[charslot]
+男人說著，又把玩了一下手中的刀。
+少女見狀，看似無奈地搖頭嘆氣，從隨身的行囊中拿出一個小包裹，方正的輪廓正是一本書的模樣。
+[charslot(slot="m",name="avg_npc_1871_1#3$1",focus="m")]
+[name="伶俐的少女"]罷了罷了，這本書對我來說本來就沒用，反正都是要賣掉的，賣給誰都差不多。
+[charslot(slot="m",name="avg_npc_1871_1#6$1",focus="m")]
+[name="伶俐的少女"]那麼兩位出什麼價呢？姑且一提，這本書的上一位買家，出價不低哦。
+[Dialog]
+[charslot]
+少女說著，用手比劃了一個“七”。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]我有一個更好的價格。
+[name="陸大"]你的命。
+[charslot(slot="m",name="avg_npc_1871_1#10$1",focus="m")]
+[name="伶俐的少女"]唉……閣下這樣做生意不是很講理呢。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]在我看來，這已經是相當公道的價格。
+[name="陸大"]我聽到的消息沒錯的話，那位宗師應該是把這本秘笈留給了玉門的守城大將。
+[name="陸大"]我不知道姑娘是怎麼拿到手的，但應該也不可能是什麼正當手段。
+[name="陸大"]我們是匪，閣下是賊。我們各行各的道，談不上多公正，也談不上不公正。
+[charslot(slot="m",name="avg_npc_1871_1#12$1",focus="m")]
+[name="伶俐的少女"]你這個人真是無趣……好吧好吧，就當作我這次徹底輸了一次吧。東西已經在你手裡了，現在我可以走了嗎？
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]……還是不行。
+[name="陸大"]我是個粗人，但“懷璧其罪”的道理還是懂的，要是讓你把消息傳到江湖上，恐怕我們活不到練成秘笈中武功的時候。
+[charslot(slot="m",name="avg_npc_1871_1#1$1",focus="m")]
+[name="伶俐的少女"]要是你們勤快點，再聰明點……說不定呢？
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]你剩下的廢話，可以留到下輩子再講。
+[name="陸大"]要是還有下輩子，記得一個道理——不要玩火自焚。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.5, r=0,g=0.1, b=0, fadetime=0.05, block=true)]
+[CameraShake(duration=2, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_metalcollar")]
+[CameraShake(duration=2, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]怎麼……
+[Dialog]
+[charslot]
+男人難以置信地看著掉落在地上的刀。
+他在江湖上摸爬滾打多年，向來把手中的刀握得很穩。
+但他現在卻拿不動這把刀。
+[charslot(slot="m",name="avg_npc_008",focus="m")]
+[name="陸二"]呼……呼……大……哥……不好……這茶裡……有……
+[name="陸二"]誰……下的……藥……！
+[Dialog]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="0,-40",duration=2)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1871_1#8$1",focus="m")]
+[delay(time=1.5)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="0,-40",duration=2)]
+[delay(time=2.5)]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_303_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="茶館跑堂"]是我下的藥。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_string_force")]
+[Delay(time=4.5)]
+茶館跑堂沉默地忙碌著，他不知從哪裡找來一捆麻繩，不一會功夫便將三個中了毒、手腳無力的人捆得如同粽子般，整整齊齊擺放在牆角。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]將閣下錯認作茶館跑堂，的確是我眼瞎了。
+[name="陸大"]閣下下毒的手段如此高明，也是個老江湖吧？還請留下姓名，讓我們死也死個明白。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="茶館跑堂"]你沒有看錯，我就是一個茶館跑堂，不是老江湖。認識我的朋友，叫我“胡君”。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]那閣下應該也認識蒲先生吧？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]他就是我的朋友。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]呵……
+[name="陸大"]能不能再容我多問一句，閣下要這本書，又是為何？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]離開這座小鎮。
+[name="胡君"]這座小鎮，總共是五百二十戶人家，繞著走上一圈，共兩千九百步。
+[name="胡君"]許多年過去了，兩個數字一點也沒變，我不願再留在這裡。
+[name="胡君"]想要離開，就必須有些變化。想要變化，就必須拿到這本秘笈。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]我聽不懂閣下在打什麼機鋒……
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]聽不明白也無妨，這世上的事，本來就不是樁樁件件都能讓人明白。
+[charslot(slot="m",name="avg_npc_007",focus="m")]
+[name="陸大"]好，說的不錯。
+[name="陸大"]今天栽在你手裡，我認了！要殺要剮，來個痛快就行。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]你們今天是栽在了我手裡，認不認都是無所謂的。
+[Dialog]
+[charslot]
+[name="文弱的少年"]先生既然已經得到了自己想要的東西，又何苦再害人性命呢？
+[Dialog]
+[charslot(slot="m",name="avg_4196_reckpr_1#8$1",duration=2)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]你是什麼人？什麼時候坐在這裡的？
+[charslot(slot="m",name="avg_4196_reckpr_1#9$1",focus="m")]
+[name="雲青萍"]在下名叫雲青萍，只是旅遊路過此處。
+[name="雲青萍"]其實在下從中午就坐在這裡，只是閣下眼中都是那本秘笈，自然就看不到我了。
+[Dialog]
+[charslot]
+胡君見到角落裡站起的那人，立刻握緊了手中的尖刀，思索片刻後，又放鬆下來。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]我沒必要怕你，茶館裡的水都被我下了藥，你應該也中毒了。
+[charslot(slot="m",name="avg_4196_reckpr_1#8$1",focus="m")]
+[name="雲青萍"]可是閣下本來也沒有必要怕我啊，在下只是一個手無縛羽之力的書生，無論如何都沒有辦法與閣下動手的。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]但你卻想要救這幾個人？
+[charslot(slot="m",name="avg_4196_reckpr_1#8$1",focus="m")]
+[name="雲青萍"]是。我想要勸閣下高抬貴手，不要再造殺業了。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]這幾個人，不是好人。
+[name="胡君"]如果剛才是他拿到了秘笈，他同樣會殺了旁人滅口——他剛剛親口這麼說的。
+[charslot(slot="m",name="avg_4196_reckpr_1#8$1",focus="m")]
+[name="雲青萍"]或許這幾位的確是作惡多端，但閣下應該還是個秉性善良的人吧。那又何苦為他們賠了自己的清白呢？
+[name="雲青萍"]只要閣下將這幾人交給官府，自然會有人處罰他們的罪行，至於那本秘笈的事，在下也保證會守口如瓶的。
+[charslot(slot="m",name="avg_4196_reckpr_1#9$1",focus="m")]
+[name="雲青萍"]閣下覺得如何？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]你說話和我的朋友很像，他是個好人，你應該也是。
+[name="胡君"]……但我暫時無法相信你。
+[name="胡君"]我不會殺你，取而代之的是，現在請你自己走過來，綁上這根繩子。
+[charslot(slot="m",name="avg_4196_reckpr_1#2$1",focus="m")]
+[name="雲青萍"]唉……
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_string_force")]
+[Delay(time=4.5)]
+[stopmusic(fadetime=2.5)]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_4196_reckpr_1#1$1",focus="m")]
+[name="雲青萍"]閣下想要避免麻煩，麻煩卻還是找上了門。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]不要吵鬧，不然你們四個人，一個都活不了。
+[charslot(slot="m",name="avg_4196_reckpr_1#1$1",focus="m")]
+[name="雲青萍"]（配合地點頭）
+[Dialog]
+[charslot]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[playsound(key="$dooropenquite")]
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="麟青硯"]請問，這家茶館打烊了嗎？
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$d_avg_paper2")]
+[Delay(time=2)]
+[Sticker(id="st1", multi = true, text="青硯小姨：", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n展信佳。", x=380,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n我已聽說小姨此前辭職之事，我雖不瞭解其中細節，但這般勇氣之舉，我深感佩服。不怪母親常提起讓我以小姨為榜樣。",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n閒言少敘，此次致函，是有要事相託。",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n我有一名故友，名為雲青萍，此番與我一同來到百灶。這幾日本該去往司歲台述職。然而三日前，他卻失蹤了。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="我的這位朋友向來持重，這次不告而別十分不尋常，恐有意外。", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n從我找到的線索來看，他最後的動向應該是從北面出城，往邙山的方向去了，應該與小姨回天師府的方向相同。",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="我本想自己去尋找，但司歲台近日責任繁重，外加聽聞父親軍營中又有變故，實在難以脫身。", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n所以只能拜託小姨協助尋找我這位朋友的下落。我已在信中附上這位朋友的照片，如若小姨找到他的下落，還請儘快聯絡我。",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n晚輩左樂拜上",block = true)]
+[Sticker(id="st1")]
+[Sticker(id="st1", multi = true, text="祝", x=180,y=170, alignment="left", size=24, delay=0.04, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n身體健康，休假愉快。",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n另，下回家宴，請小姨一定賞光，父親和母親一定很想聽聽小姨辭職的事。",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="63_mini01_market",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+半日前
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",duration=2)]
+[Delay(time=2.5)]
+[name="麟青硯"]這個小子，倒是學會指派任務給我了……
+[name="麟青硯"]……什麼叫勇氣之舉……
+[charslot(slot="m",name="avg_1043_leizi2_1#12$1",focus="m")]
+[name="麟青硯"]沒大沒小……
+[Dialog]
+[charslot]
+不知不覺間，麟青硯已經走入了這座陌生的小鎮。
+這是一座古樸的小鎮，低矮的房屋錯落有致，路上少有行人，盡是一片靜謐祥和的景象。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]邙山腳下，原來有這樣的一座小鎮嗎？
+[charslot(slot="m",name="avg_1043_leizi2_1#10$1",focus="m")]
+[name="麟青硯"]有點奇怪，進了小鎮就開始沒有訊號了，天師府附近竟然還有連訊號基站都沒有安裝的小鎮……
+[Dialog]
+[charslot]
+[name="？？？"]姑娘，姑娘——
+[Dialog]
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]嗯？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1638_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="笑盈盈的路人"]姑娘，姑娘——沒見過你，從鎮外來的嗎？稀罕，真稀罕。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]是啊……這座小鎮很少有外人來嗎？
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑盈盈的路人"]以前很少，最近倒很多。
+[charslot(slot="m",name="avg_1043_leizi2_1#10$1",focus="m")]
+[name="麟青硯"]想來也是，這個小鎮的入口很隱蔽，在地圖上也沒有標記……
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]麻煩請問一下，你是否知道去天師府的路怎麼走？
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑盈盈的路人"]天師府，天師府——沒聽過，沒聽過。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]那請問，出鎮的路是哪一條？進來的時候沒特別注意，現在回頭連原路都找不到了。
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑盈盈的路人"]出鎮，出鎮——我也沒出過，不知道。
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="麟青硯"]不知道？
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑盈盈的路人"]別急，別急——吃個烤餅，慢慢逛。凡事講火候，急不得。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]你是住在這座小鎮的人？你在這裡住了多久？
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑盈盈的路人"]我，我——是的。從第一把火燒熱了我的肚子開始，就一直在這裡的。
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="麟青硯"]火燒肚子……？
+[charslot(slot="m",name="avg_1043_leizi2_1#3$1",focus="m")]
+[name="麟青硯"]咳……謝了，我再找看看。
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑盈盈的路人"]姑娘，姑娘——剛出爐的烤餅，來一個。
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="麟青硯"]不用，我不餓……剛出爐的烤餅，指的是從懷裡拿出來嗎？
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑盈盈的路人"]火候到了，便是到了。
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="麟青硯"]……好燙！把這麼燙的東西直接藏在胸口——？
+[charslot(slot="m",name="avg_npc_1638_1#1$1",focus="m")]
+[name="笑盈盈的路人"]急不得，急不得。姑娘的火候，自己再找找吧。
+[Dialog]
+[charslot(duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#15$1",focus="m")]
+[name="麟青硯"]請等一下！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[multiline(name="？？？")]八千九百九十一，八千九百九十二，八千……
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1,g=1, b=1, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$fightgeneral", volume=0.3)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[multiline(name="？？？")]啊。
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="麟青硯"]小心！你沒事吧？
+[Dialog]
+[charslot]
+一位埋頭走路的少女一頭撞上了路過的麟青硯，就這麽一屁股摔倒在地，懷裡的東西掉了滿地。
+麟青硯連忙去看她的情況，再抬頭去找時，那位送她餅的老翁已不見蹤影。
+[Dialog]
+[name="？？？"]傘，我的傘……先生說，傘不可離手……
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]給你。還有一個信封，從你袖子裡掉出來的。
+[Dialog]
+[charslot]
+少女慌忙接過傘撐起來，並單手艱難地把信封塞回袖子裡。
+麟青硯抬頭看了一眼晴朗的天空。
+[charslot(slot="m",name="avg_1043_leizi2_1#11$1",focus="m")]
+[name="麟青硯"]姑娘，先站起來吧，我來扶你。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement",channel="g")]
+[charslot(slot="m",name="avg_npc_304_1#1$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="0,-50",posto="0,0",duration=2)]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="麟青硯"]（這姑娘的身體，好輕……）
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]我剛剛數到幾了？
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="麟青硯"]呃，八千九百九十三？
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]八千九百九十四，八千九百九十五……
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]姑娘，你還好嗎？要我送你回家嗎？
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]回去？我不能回去，我和他約好了在豆腐鋪見——
+[name="打傘的少女"]啊……糟糕，他說這是秘密，性命攸關，打死也不能說出來的！
+[name="打傘的少女"]你聽到了嗎？聽到我要去豆腐鋪和他見面的秘密？
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]……這是你的私事，我可以當作沒聽見。
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]太好了，我才不想被打死——我又數到幾了？
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="麟青硯"]……八千九百九十六？你在數什麼？
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]去和他見面的時間，他說數到九千的時候——啊，我又說出來了，我要被打死了！
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="麟青硯"]我沒理解錯的話，炎國話的“打死也不能”一般只是誇張的說法……
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="麟青硯"]難道說，姑娘你感覺到性命受到威脅——
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]八千九百九十七，八千九百九十八……
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[name="麟青硯"]呃……
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]八千九百九十九，九千！時間到了，我去見面啦——
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]這座小鎮裡的人，他們的行為看起來有點奇怪……
+[charslot(slot="m",name="avg_1043_leizi2_1#7$1",focus="m")]
+[name="麟青硯"]……這是？這封信……是剛才從她信封裡掉出來的。
+[name="麟青硯"]“機密要聞，勿轉他人手”？
+[charslot(slot="m",name="avg_1043_leizi2_1#15$1",focus="m")]
+[name="麟青硯"]等等，姑娘！
+[Dialog]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="200,0",duration=2)]
+[delay(time=2.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="63_mini01_market",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_304_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="打傘的少女"]胡君，胡君——我來和你見面啦！
+[Dialog]
+[charslot]
+[name="？？？"]噓，小點聲。來這裡。
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]胡君。你為什麼讓我數到九千才來找你，數得我嘴皮都快破了。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_303_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]你就只會用這種辦法算時間，我也沒有別的辦法。
+[name="胡君"]你來的時候有人看見你嗎？
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]看到的人不少，但他們都不知道我是來見你的！
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]東西弄到了嗎？
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]先生的抽屜，第二格，沒錯。上面寫著，“機密要聞，勿轉他人手”。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]不用多說，把信給我吧。
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]好，好的……
+[name="打傘的少女"]不對，我的信……信不見了，應該是來的路上弄丟了！
+[name="打傘的少女"]但是沒關係，我看過信裡的內容，裡面寫了“未時三刻，老茶館交易”。
+[Dialog]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[Delay(time=1)]
+[name="胡君"]你偷看了信裡的內容，還弄丟了信。
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]胡君，你怎麼了？眉頭都皺在一起了，看起來好兇，我不喜歡。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]你看清楚了？信上的時間，寫的是未時三刻？
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]對啊！雖然我不會看時間，但我的記性很好的。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]……
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]胡君，你怎麼又不說話了？還要我再數到九千你才肯理我嗎？好吧，一，二，三，四，五……
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]不，不用。
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]胡君，胡君——你這樣子，我真的很不喜歡。你的臉色，好可怕哦。
+[Dialog]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1874_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[name="胡君"]小舒，我很信任你。如果事情順利結束，我本來打算帶你一起離開，我們可以一起離開。
+[name="胡君"]但你還沒有做好準備，你還沒有學會保密。所以我不能——
+[name="胡君"]……你在幹什麼？
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]我看到，胡君你的眼睛濕了。你很難過，對嗎？
+[name="打傘的少女"]先生說，東西濕掉的時候，我不能幫忙擦，但是可以幫忙吹吹。你的眼睛，乾一點了嗎？
+[charslot(slot="m",name="avg_npc_1874_1#1$1",focus="m")]
+[name="胡君"]……
+[charslot(slot="m",name="avg_npc_304_1#1$1",focus="m")]
+[name="打傘的少女"]啊，你把我的手抓得太緊了，手被你捏皺啦。
+[charslot(slot="m",name="avg_npc_1874_1#1$1",focus="m")]
+[name="胡君"]再見，小舒。
+[Dialog]
+[stopmusic(fadetime=2)]
+[playsound(key="$d_avg_cnstrctnck")]
+[delay(time=3.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1,g=1, b=1, fadetime=0.03, block=true)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_tear")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="63_mini01_market",screenadapt="coverall")]
+[Delay(time=2)]
+[playsound(key="$d_avg_lightrain_loop",loop=true,channel="1",volume=0.2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",duration=2)]
+[delay(time=3.5)]
+[name="麟青硯"]確實是朝這個方向走的，怎麼這麼快就不見了？
+[name="麟青硯"]她說和人約在了豆腐鋪，應該是在——啊，看到了。
+[Dialog]
+[charslot]
+隔著一條小巷，麟青硯遠遠望見了方才遇到的少女打著的傘。
+麟青硯快步上前，想要歸還少女遺失的信件，直到她靠近時才看清楚——
+傘孤零零地掉在地上，少女卻不知所蹤。
+[Dialog]
+[stopsound(channel="1",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background(image="25_g04_yaninn",screenadapt="coverall")]
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[Delay(time=2)]
+[playMusic(intro="$darkalley_intro",key="$darkalley_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=3, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]客官裡面請，隨便坐。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]我剛才在門外看到，這裡已經掛上了打烊的牌子？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]有客人喝茶，就不能算打烊。
+[name="胡君"]先幫客官您上一壺茶嗎？
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]謝謝。
+[Dialog]
+[charslot]
+[playsound(key="$pourwater")]
+[delay(time=3.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#10$1",focus="m")]
+[name="麟青硯"]……
+[Dialog]
+[charslot]
+桌上的綠茶香氣撲鼻，麟青硯伸出的手卻又停下來了。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]你就是這座茶館的夥計？是否方便向你打聽幾件事？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]客人儘管問，我知無不答就是了。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]我見這家茶館開在這座小鎮最繁華的地方，怎麼早早就掛上了打烊的牌子？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]要視情況而定，也不是每時每刻都有人想要喝茶。
+[charslot(slot="m",name="avg_1043_leizi2_1#15$1",focus="m")]
+[name="麟青硯"]來這裡的客人，也不一定要喝茶？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]有時有客人需要避雨歇腳，也是可以進來坐一會的。
+[name="胡君"]喝不喝茶都無妨，但不喝茶還要找事的話，那就萬萬不可。
+[charslot(slot="m",name="avg_1043_leizi2_1#1$1",focus="m")]
+[name="麟青硯"]說的也是……那我倒是有些好奇，今天這家茶館營業的時候，你有沒有見到過這樣找麻煩的客人？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]……
+[name="胡君"]今天來的客人，都是喝了茶的。
+[charslot(slot="m",name="avg_1043_leizi2_1#3$1",focus="m")]
+[name="麟青硯"]最後一個問題……
+[name="麟青硯"]其實我從剛才就注意到，你衣服前襟上，好像有一點剛沾上去的顏料。
+[charslot(slot="m",name="avg_1043_leizi2_1#9$1",focus="m")]
+[name="麟青硯"]你是茶館的夥計，又不是畫坊的先生，你又能去哪裡沾染到這種顏料呢？
+[name="麟青硯"]而這個顏色的顏料，我今天恰好在一把傘上見過。
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]……
+[charslot(slot="m",name="avg_1043_leizi2_1#9$1",focus="m")]
+[name="麟青硯"]你看起來好像很著急的樣子。為什麼？
+[name="麟青硯"]這個時間……未時三刻的交易，此時應該早已談完了吧？
+[charslot(slot="m",name="avg_npc_303_1#1$1",focus="m")]
+[name="胡君"]……！
+[Dialog]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="200,0",duration=2)]
+[CameraShake(duration=0.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_smashtable")]
+[delay(time=2.2)]
+[charslot]
+胡君當機立斷，立刻掀翻了面前的桌子。桌子擋住了麟青硯的視線，這足以讓他有機會拼命逃向二樓。
+[charslot(slot="m",name="avg_1043_leizi2_1#4$1",focus="m")]
+[name="麟青硯"]站住——！
+[charslot(slot="m",name="avg_1043_leizi2_1#4$1",focus="none")]
+[name="微弱的呼喊聲"]救……救命……
+[charslot(slot="m",name="avg_1043_leizi2_1#9$1",focus="m")]
+[name="麟青硯"]——！
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="35_g13_yanlivingroom",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",name="avg_npc_1874_1#1$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="200,0",posto="-100,0",duration=2)]
+[Delay(time=2.5)]
+[charslot(slot="m",posfrom="-100,0",posto="0,0",duration=2)]
+[Delay(time=3.5)]
+[name="胡君"]是你。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1866_1#1$2",duration=2)]
+[Delay(time=2.5)]
+[name="冷酷的劍客"]秘笈在你手裡……那個人果然騙了我……
+[name="冷酷的劍客"]交出來。
+[charslot(slot="m",name="avg_npc_1874_1#1$1",focus="m")]
+[name="胡君"]……
+[charslot(slot="m",name="avg_npc_1866_1#1$2",focus="m")]
+[name="冷酷的劍客"]那也由不得你了。
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_swordexsheath")]
+[Delay(time=1.5)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Background(image="25_g04_yaninn",screenadapt="coverall")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4196_reckpr_1#10$1",focus="l")]
+[charslot(slot="r",name="avg_1043_leizi2_1#1$1",focus="l")]
+[name="雲青萍"]多謝麟少卿……沒想到會在這裡遇到您。
+[charslot(slot="r",name="avg_1043_leizi2_1#1$1",focus="r")]
+[name="麟青硯"]你怎麼會認識我——等等，你是……雲青萍？
+[charslot(slot="l",name="avg_4196_reckpr_1#8$1",focus="l")]
+[name="雲青萍"]經常聽左兄說起您，久仰大名——
+[charslot(slot="r",name="avg_1043_leizi2_1#1$1",focus="r")]
+[name="麟青硯"]左樂說你失蹤了？
+[charslot(slot="l",name="avg_4196_reckpr_1#4$1",focus="l")]
+[name="雲青萍"]失蹤？左兄難道沒有看到我留下的信？看來真是我考慮不周了……
+[charslot(slot="r",name="avg_1043_leizi2_1#15$1",focus="r")]
+[name="麟青硯"]先別說那麼多了，這裡到底是怎麼回事？
+[charslot(slot="l",name="avg_4196_reckpr_1#5$1",focus="l")]
+[name="雲青萍"]旁邊這三位，應該是為爭搶一個寶物起了些爭端，然後——
+[charslot(slot="r",name="avg_1043_leizi2_1#14$1",focus="r")]
+[name="麟青硯"]三位？哪來的三位？
+[charslot(slot="r",name="avg_1043_leizi2_1#14$1",focus="none")]
+麟青硯向旁邊看去，那裡除了兩個被五花大綁的劫匪，就只剩一地斷裂的麻繩。
+[charslot(slot="l",name="avg_4196_reckpr_1#4$1",focus="l")]
+[name="雲青萍"]這還真是奇怪……
+[Dialog]
+[charslot(slot="r",name="avg_1043_leizi2_1#14$1",focus="none")]
+[playsound(key="$d_avg_glass_break")]
+[Delay(time=2)]
+[charslot(slot="r",name="avg_1043_leizi2_1#9$1",focus="r")]
+[name="麟青硯"]該死——！
+[Dialog]
+[playsound(key="$rungeneral")]
+[charslot(slot="r",afrom=1,ato=0,duration=1)]
+[charslot(slot="r",posfrom="0,0",posto="200,0",duration=2)]
+[Delay(time=2)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Delay(time=2)]
+[Background(image="63_mini01_market",screenadapt="coverall")]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,channel="1",volume=0.2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$rungeneral")]
+[charslot(slot="m",name="avg_1043_leizi2_1#9$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="-100,0",posto="0,0",duration=2)]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_1043_leizi2_1#14$1",focus="m")]
+[Delay(time=3.5)]
+[charslot(duration=2)]
+[Delay(time=2.5)]
+麟青硯匆匆趕到了茶館外的街上，已經有不少鎮民圍觀這裡的動靜。
+她聽到了那一聲撞擊聲，透過窗戶，她也看到了那個人從二樓摔落，掉落在茶館門前的大街上。
+她本以為會看到一個受傷的人，甚至是一具屍體。然而她在這裡看到的……
+只有一堆茶壺的碎片。
+[Dialog]
+[stopsound(channel="1",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[image]
+[charslot]
