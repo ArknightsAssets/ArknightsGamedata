@@ -362,9 +362,9 @@
 [DIALOG_RECRUIT_CONFIRM_FAST_BUILD]Recruitment can be completely immediately for <color=#F9C464FF>{0}</color> LMD.\nExpedite the recruitment?
 [BTN_RECRUIT_CONFIRM_FAST_BUILD]Yes
 [BTN_RECRUIT_CANCEL_FAST_BUILD]No
-[DIALOG_RECRUIT_CONFIRM_STOP_BUILD]You will forfeit all resources spent on this recruitment if you stop it now.\nStop it anyway?
-[BTN_RECRUIT_CONTINUE_BUILD]Continue Recruitment
-[BTN_RECRUIT_STOP_BUILD]Stop Recruitment
+[DIALOG_RECRUIT_CONFIRM_STOP_BUILD]Stopping recruitment now will discard used resources and current tags will be refreshed. Are you sure you wish to continue?
+[BTN_RECRUIT_CONTINUE_BUILD]Cancel
+[BTN_RECRUIT_STOP_BUILD]Confirm
 [ALERT_RECRUIT_STOP_BUILD_SUCCEED]Recruitment stopped.
 [ALERT_RECRUIT_BUILD_RESOURCE_NOT_ENOUGH]Insufficient {0}
 [ALERT_RECRUIT_BUILD_ALREADY_FINISH_FAST_BUILD]How lucky!\nThe recruitment ended in advance and the necessary resources have not been consumed.
@@ -372,6 +372,7 @@
 [ERROR_RECRUIT_TARGET_CHAR_UNKNOWN]Some error occurred when we recruited this Operator.\nThe Operator has been added (Error code: {0})
 [DESC_RECRUIT_CACHA_COST]{0}/per recruitment
 [TOAST_RECRUIT_REFRESH_TAG_SUC]Successfully refreshed tags
+[TOAST_RECRUIT_ONLY_ACT_TAG]Event Recruitment tags refreshed
 [GACHA_ITEM_GET_NEW]First-time Hire
 [GACHA_ITEM_GET_OLD]Duplicate
 [GACHA_ITEM_GET_LMTGS_COIN]Obtain
@@ -398,8 +399,8 @@
 [BUILD_SLOT_UNLOCK_SUCC]Slot unlocked
 [RECRUIT_REFRESH_CONFIRM]Spend 1 refresh attempt?
 [RECRUIT_TIME_OUT]The event has expired. Please go to the homepage to update data.
-[RECRUIT_SPECLIAL_TAG_CONFIRM]There is a rare tag that has not been chosen, continue with recruitment?
-[RECRUIT_SPECLIAL_TAG_TIME_CONFIRM]There is a rare tag selected, continue with recruitment with the current settings?
+[RECRUIT_SPECLIAL_TAG_CONFIRM]An extremely rare tag is present but unselected, proceed with recruitment?
+[RECRUIT_SPECLIAL_TAG_TIME_CONFIRM]A recruitment timer set below 9 hours will not guarantee recruitment for your chosen tags. Are you sure you want to continue?
 [RECRUIT_SPECLIAL_TAG_REFRESH_CONFIRM]There is a rare tag present, proceed with refresh?
 [RECRUIT_RATE_UP_6_CAPTION][{0} <color=#ffd800>6★</color> rate increase!]
 [RECRUIT_NOT_OPEN]This event has not yet opened.
@@ -862,6 +863,8 @@
 [TEXT_BUY_SKIN_WITH_VOUCHER]Are you sure you'd like to use {0}?
 [TEXT_VOUCHER_GET_SKIN_NAME]Redeem the following outfit: {0}
 [HOME_THEME_LIMIT_DEFAULT_DESC]Cannot be unlocked yet
+[HOME_THEME_CHANGE_SUCC_DESC_PREVIEW_ONLY]UI Theme set
+[HOME_BACKGROUND_CHANGE_SUCC_DESC_PREVIEW_ONLY]Themed Background set
 [BUILDING_MESSAGE_LEAVE_TIME_SPAN_DAY_FORMAT]{0}D {1:D2}:{2:D2}:{3:D2}
 [BUILDING_MESSAGE_LEAVE_TIME_SPAN_HOUR_FORMAT]{0:D2}:{1:D2}:{2:D2}
 [BUILDING_MESSAGE_LEAVE_TIME_LAST_WEEK_FORMAT]{0}—{1}
@@ -1360,12 +1363,12 @@
 [ROGUE_5_GIVE_UP_SWAP_COPPER_TIPS]Abandon exchange?
 [ROGUE_5_REDRAW_COPPER_FREE_TIPS]Toss Tongbao again? This re-toss will not cost Coupons
 [ROGUE_5_REDRAW_COPPER_COST_TIPS]Spend {0} Coupon(s) to toss Tongbao again?
-[ROGUE_5_REDRAW_COPPER_ADD_COST_TIPS]*First re-toss on every floor is free
+[ROGUE_5_REDRAW_COPPER_ADD_COST_TIPS]*Entering a new floor will reset the cost of re-tossing coins
 [ROGUE_5_COPPER_PACKAGE_DETAIL_REDRAW_CNT]Remaining Time(s): {0}
 [ROGUE_5_SKY_NODE_UNLOCK]New node(s) unlocked
 [ROGUE_5_ROLL_NODE_SUCC_TOAST]Node Refreshed
 [ROGUE_5_ROLL_NODE_ROLL_CONFIRM_DIALOG_DESC]Use {0} to refresh node?
-[ROGUE_5_ROLL_NODE_ROLL_CONFIRM_DIALOG_LEFT_COUNT]Remaining Time(s): {0}
+[ROGUE_5_ROLL_NODE_ROLL_CONFIRM_DIALOG_LEFT_COUNT]{0} <color=#FF7903>({1} times left)</color>
 [ROGUE_5_NODE_UNLOCK_COPPER_FREE_MOVE_TIPS]Open a vertical path? This attempt is free
 [ROGUE_5_NODE_UNLOCK_COPPER_LEFT_TIPS]<color=#1eb090>{0}</color> free attempt(s) left
 [ROGUE_5_SKY_NODE_LOCKED]Prerequisite node not yet completed
@@ -1572,6 +1575,7 @@
 [UNIEQUIP_LEVELUP_TALENT]Talent [{0}]
 [UNIEQUIP_LEVELUP_NEW_TALENT]New Talent [{0}]
 [TOAST_UNIEQUIP_MISSION_STAGE_LOCKED]<color=#22BBFF>{0}</color> locked
+[TOAST_UNIEQUIP_MISSION_STAGE_LOCKED_IN_RETRO]{0}<color=#22BBFF>{1}</color> locked
 [TOAST_UNIEQUIP_LEVELUP_SUC]Module upgraded
 [ACT12SIDE_REPO_NOT_OWN]<color=#636363>Unlock more information after obtaining Stickers</color>
 [ACT12SIDE_STAGE_LOCKED]Stage Locked
@@ -2460,7 +2464,9 @@
 [ACTMULTIV3_ROOM_KICK_TIMEOUT]Room timed out and closed
 [ACTMULTIV3_ROOM_SQUAD_BACK_TIP]Cancel ready status to go back
 [ACTMULTIV3_MILESTONE_UNLOCK]Next phase's rewards unlock after {0}
-[ACTMULTIV3_BATTLE_TASK_TOWER_INFO]Capture Gramophones
+[ACTMULTIV3_BATTLE_TASK_TOWER_INFO]Occupy {0}
+[ATTMULTIV3_BATTLE_TASK_TOWER_A]Gramophone
+[ATTMULTIV3_BATTLE_TASK_TOWER_B]Gelato Stop
 [ACTMULTIV3_BATTLE_TASK_KILL_INFO]Defeat enemies
 [ACTMULTIV3_BATTLE_TASK_SURVIVE_INFO]Survive for as long as possible
 [ACTMULTIV3_BATTLE_TASK_BOSS_INFO]Reduce leader enemy HP by as much as possible
@@ -2638,8 +2644,14 @@
 [LONG_TERM_CHECK_IN_DAY_PROGRESS_FORMAT]Cumulative Sign-In: {0} days
 [LONG_TERM_CHECK_IN_COMPLETE_PROGRESS_FORMAT]<color=#009DE5>{0}</color>/{1}
 [LONG_TERM_CHECK_IN_UNCOMPLETE_PROGRESS_FORMAT]<color=#C64A43>{0}</color>/{1}
+[COMMON_INVITE_DIALOG_INVITE_SEND]Invite sent
+[COMMON_INVITE_DIALOG_AFTER_INVITE_SEND]Temporarily unable to resend invite
 [APRIL_FOOL_FUN_6_STAGE_HAS_NO_PASS_TIME_FORMAT]--:--
 [APRIL_FOOL_FUN_6_BATTLE_FINISH_ARCHIEVEMENT_TOTAL_FORMAT]/ {0}
 [APRIL_FOOL_FUN_6_ZONE_MAP_ARCHIEVEMENT_TOTAL_FORMAT]/ {0}
 [APRIL_FOOL_FUN_6_ZONE_MAP_PREVIEW_CHAR_ITEM_CLICK_TOAST]We're short-handed, Doctor
 [APRIL_FOOL_FUN_6_STAGE_LOCKED]Did not reach Blue Objective Point on previous stage
+[ACT45SIDE_MAIL_FROM]<color=#CCCCCC>From</color> {0}
+[ACT45SIDE_CHAR_UNLOCK]{0} has appeared
+[ACT45SIDE_CHAR_NAME], {0}
+[COMMON_ASSIST_COUNT_DOWN_FORMAT]{0:D2}:{1:D2}:{2:D2}
