@@ -1,0 +1,372 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="65_g10_dreamcastlestage",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[playMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Subtitle(text="<i>涙のように大雨が降り注ぐ。私は、果てしない海の一滴の水に過ぎない。</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>ひとり歩む夜、もう迷いはしない。</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>我、恐れることを恐れるなかれ。</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_cellroomC", screenadapt="coverall", block=true)]
+[Delay(time=0.5)]
+[PlayMusic(key="$wasteland_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_gen_dooropen", volume=0.4)]
+[Delay(time=1)]
+[name="看守"]囚人番号48038、出てきなさい。
+[name="興奮する犯人"]看守さん、どうしました？
+[name="看守"]私物の確認だ、忘れ物はないか？
+[name="興奮する犯人"]ありません、全部揃ってます！
+[name="看守"]廊下をまっすぐ進んで、一番奥の窓口でサインしろ。そうすればお前はもう自由の身だ。
+[name="興奮する犯人"]は……はい！　ありがとうございます！
+[Dialog]
+[PlaySound(key="$d_avg_openftstprun", volume=1, loop=true, channel="a")]
+[PlaySound(key="$d_gen_walk_n", volume=1,delay=1.5)]
+[StopSound(channel="a", fadetime=4)]
+[Delay(time=2.5)]
+足早に小走りする音が廊下に響き渡る。
+続いて重々しいブーツの足音が、廊下の奥へと少しずつ近付いていく。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_134",duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_134",focus="m")]
+[name="看守"]海鈴。
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_4186_tmoris_1#1$3",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4186_tmoris_1#1$3",focus="m")]
+[name="八幡海鈴"]はい。
+[charslot(slot = "m", name = "avg_npc_134",focus="m")]
+[name="看守"]行け。今年中はもう顔を見せるなよ。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_dooropen", volume=0.8)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4186_tmoris_1#1$3",focus="m")]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=4)]
+[charslot(duration=1)]
+[Delay(time=2)]
+海鈴は慣れた手つきで楽器ケースを持つと、ゆっくりと監獄を後にした。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="33_g6_newtown_street", screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_rainlight_loop", volume=0, loop=true, channel="c")]
+[SoundVolume(volume=1, channel="c",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+シラクーザは以前と変わらず、降りしきる小雨で彼女を出迎えた。
+[Dialog]
+[stopsound(channel="c", fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="33_g10_smallrestaurant", screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crowdrun",volume=0.8)] 
+[charslot(slot="l",name="avg_npc_698_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_699_1#1$1",duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_npc_698_1#1$1",focus="l")]
+[name="用心棒のリーダー"]この通りと、それから前後の通り、すべての店に見張りをつけろ。絶対にあの女を逃がすな！
+[charslot(slot="r",name="avg_npc_699_1#1$1",focus="r")]
+[name="慎重な用心棒"]はっ！
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_699_1#1$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_699_1#1$1",focus="m")]
+[name="慌てる用心棒"]兄貴、北通りから報告が入りました。奴がこっちに向かっているそうです！
+[charslot]
+[charslot(slot="r",name="avg_npc_698_1#1$1",focus="r")]
+[charslot(slot="l",name="avg_npc_699_1#1$1",focus="r")]
+[charslot(slot="l",name="avg_npc_699_1#1$1",focus="r")]
+[name="用心棒のリーダー"]しっかり見張っておけ、逃がすんじゃねぇぞ！
+[charslot(slot="l",name="avg_npc_699_1#1$1",focus="l")]
+[name="慌てる用心棒"]に……逃げる気はないようです。
+[charslot(slot="r",name="avg_npc_698_1#1$1",focus="r")]
+[name="用心棒のリーダー"]……全員ここに集めろ！
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="33_g2_srcalley", screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_rainlight_loop", volume=0, loop=true, channel="d")]
+[SoundVolume(volume=1, channel="d",fadetime=2)]
+[playMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+狭い路地で、凶悪な顔つきの用心棒たちが、楽器ケースを提げていた少女を取り囲んでいた。
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[name="用心棒のリーダー"]また会ったな……海鈴。
+[name="用心棒のリーダー"]ハッ、どうにも不思議だったぜ。お前みたいな腕利きを、どうしてどのファミリーも抱え込まないのか……
+[name="用心棒のリーダー"]うちのファミリーが被害に遭ってから、あちこち聞いて回ってようやく知ったのさ。お前が悪名高い「裏切者」だってことをな。
+[name="用心棒のリーダー"]お前はこれまで十数回も名前を変えては、各ファミリーを渡り歩いて依頼を受けていたんだ。
+[charslot(slot="m",name="avg_4186_tmoris_1#9$3",focus="m")]
+[name="八幡海鈴"]他のファミリーの仕事を受けるなと？　契約書にはそう書かれていなかったはずですが
+[name="八幡海鈴"]私はただ報酬を受け取り、相応の仕事を果たすだけ――最初からそう言っていたはずです。
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[CameraShake(duration=0.3, xstrength=12, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="用心棒のリーダー"]だから俺たちの機密情報を敵にチクったってのか！？
+[charslot(slot="m",name="avg_4186_tmoris_1#12$3",focus="m")]
+[name="八幡海鈴"]……話が見えませんね。
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[name="用心棒のリーダー"]*クルビアスラング*、とぼけるんじゃねぇ！　お前が来てから、俺たちの仲間が次々罠にはめられてるんだ！
+[name="用心棒のリーダー"]俺もボスも、あの時はお前を信じて、ファミリーに引き入れてやったんだぞ！
+[charslot(slot="m",name="avg_4186_tmoris_1#7$3",focus="m")]
+[name="八幡海鈴"]フランシスさん、あなたたちを怒らせるようなことをした覚えはありませんが。
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[name="フランシス"]ふん、裏切った相手が多すぎて、いちいち思い出せねぇってか！？
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="フランシス"]ボスも、仲間たちも皆死んだ。何百人もいたファミリーが、残ったのは十数人だけだ！
+[charslot(slot="m",name="avg_4186_tmoris_1#7$3",focus="m")]
+[name="八幡海鈴"]……どういうことですか。
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[name="フランシス"]俺たちはクルビアからやっとの思いでこのクソッタレな場所に流れ着いたんだ。それが全部、お前一人の手で壊滅さ！
+[charslot(slot="m",name="avg_4186_tmoris_1#7$3",focus="m")]
+[name="八幡海鈴"]いえ、私は……
+[charslot(slot="m",name="avg_npc_699_1#1$1",focus="m")]
+[name="怒る用心棒"]無駄話はその辺にしておけ。こっちにはこれだけ人数がいるんだ。今日こそ痛い目を見てもらうぞ！
+[charslot(slot="m",name="avg_4186_tmoris_1#12$3",focus="m")]
+[name="八幡海鈴"]あなたたちと揉める気はないのですが……
+[Dialog]
+[charslot]
+海鈴は穏便に済ませるべく穏やかな口調で話していたが、相手は一歩も引く素振りを見せず迫ってくる。
+それを見て、海鈴は仕方なく提げていた楽器ケースを下ろした。
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[name="フランシス"]お前ら……俺に続け！
+[Dialog]
+[PlaySound(key="$d_avg_swordexsheath", volume=1)]
+[PlaySound(key="$d_avg_attack_ready",volume=0.6,delay=0.7)]
+[Delay(time=1.5)]
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Image(image="cg_rainsplash",screenadapt="coverall",fadetime=0,block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_shallowswalk", volume=1, loop=true, channel="s")]
+[StopSound(channel="s", fadetime=2.5)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="親切なおばあさん"]お嬢ちゃん、これ以上先には行かない方がいいよ。
+[name="親切なおばあさん"]さっき向こうでトラブルがあってね。一人で行くのは危険だから、別の道を通りな。
+[name="帽子を被った少女"]……ご忠告ありがとうございます。
+少女は通行人の忠告を無視して、そのまま突き進んでいった。
+[Dialog]
+[PlaySound(key="$d_avg_shallowswalk",volume=1)]
+[Delay(time=1.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[charslot]
+[Background(image="33_g2_srcalley", screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+ぽつぽつと降る雨が、シラクーザを洗い流していく。
+まるで舗装されたばかりの道のように、路地はさっぱりと掃除されていた。
+シラクーザの清掃員はいつも通り手際がいい。
+湿った空気の中に、血の匂いは少しも感じられなかった。
+[Dialog]
+[charslot(slot="m",name="avg_4182_oblvns_1#2$3",duration=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4182_oblvns_1#2$3",focus="m")]
+[name="豊川祥子"]……
+[name="豊川祥子"]どなたか、八幡海鈴という方をご存知の方は……
+[charslot(slot="m",name="avg_4182_oblvns_1#2$3",focus="n")]
+[name="？？？"]あんた……海鈴を探してるのか？
+[Dialog]
+[charslot(slot="m",name="avg_4182_oblvns_1#2$3",focus="m")]
+[Delay(time=1)]
+[Dialog]
+[charslot]
+[Delay(time=0.2)]
+[charslot(slot="m",name="avg_npc_698_1#1$1",duration=1)]
+[Delay(time=2)]
+[Dialog]
+[StopSound(channel="d", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="33_g11_mansionhall", screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+娯楽施設内のビリヤードルーム。ここを住処にしている者がいるなど、誰ひとり考えもしないだろう。
+何枚かの段ボールを並べたベッドが敷かれ、最低限の生活用品はすべてファストフード店の袋に詰め込まれていた。
+[Dialog]
+[PlaySound(key="$d_avg_openenvelope_slow",volume=1)]
+[Delay(time=3)]
+[PlaySound(key="$d_avg_coin")]
+[PlaySound(key="$d_avg_coin", loop=false, channel="coin2",delay=0.6)]
+ビリヤード台の上には大量の封筒が置かれている。その中身はどれも海鈴への報酬だった。
+海鈴がそれらの封筒を次々と開き、中の金貨をテーブルの上に一枚一枚置いていくと、「ファミリー」「秩序」と刻まれた金貨が塔のように積み上がった。
+その金貨は無防備なまま置かれていた。たとえある日その全てがなくなったとしても、彼女は気にも留めないだろう。
+[Dialog]
+[PlaySound(key="$d_avg_papertear", volume=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_4186_tmoris_1#7$3",focus="m")]
+[name="八幡海鈴"]……ん？
+[Dialog]
+[charslot]
+海鈴はもう一度封筒の中を覗いたが――何も入っていない。
+封筒を裏返すと、そこにはファミリーの紋章と、差出人の住所が押印されていた。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="33_g7_reception", screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_699_1#1$1",focus="m")]
+[name="厳つい用心棒"]ドン、奴が来ました。
+[Dialog]
+[charslot]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="nw")]
+[stopsound(fadetime=2, channel="nw")]
+[charslot(slot="m",name="avg_4186_tmoris_1#1$3",duration=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4186_tmoris_1#1$3",focus="n")]
+[name="年老いた声"]監獄の連中に余計なことをされていないか？
+[charslot(slot="m",name="avg_4186_tmoris_1#11$3",focus="m")]
+[name="八幡海鈴"]わざわざ揉め事は起こさないでしょう。どれも見知った顔ぶれでしたし、彼らも私のバックに誰がついているかは知っていますので。
+[charslot(slot="m",name="avg_4186_tmoris_1#12$3",focus="m")]
+[name="八幡海鈴"]私を呼びつけたのは、そんな些細なことを訊くためではありませんよね。
+[charslot(slot="m",name="avg_4186_tmoris_1#12$3",focus="n")]
+[name="年老いた声"]ははっ、ただビジネスパートナーの身を案じただけだ。
+[charslot(slot="m",name="avg_4186_tmoris_1#12$3",focus="m")]
+[name="八幡海鈴"]ドン、いつから私たちはパートナーの間柄になったんですか？
+[name="八幡海鈴"]以前契約を交わした時は、ファミリーの名義で私に依頼することすら消極的だったと記憶していますが。
+[charslot(slot="m",name="avg_4186_tmoris_1#12$3",focus="n")]
+[name="年老いた声"]より「パートナー」と呼ぶに相応しい関係になるためには、これからは腹を割って話さねばならん――
+[name="年老いた声"]海鈴、私はお前と長期的な取引がしたいと考えている。
+[charslot(slot="m",name="avg_4186_tmoris_1#7$3",focus="m")]
+[name="八幡海鈴"]わざわざ直接会って話さなければならないほどの取引ですか？
+[charslot(slot="m",name="avg_4186_tmoris_1#7$3",focus="n")]
+[name="年老いた声"]お前を――うちのファミリーに迎え入れたい。
+[charslot(slot="m",name="avg_4186_tmoris_1#6$3",focus="m")]
+[name="八幡海鈴"]……
+[name="八幡海鈴"]ふむ、話を聞かせてもらいましょう。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="33_g11_mansionhall", screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_open_door",volume=0.6)]
+[delay(time=2.5)]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(slot="m",name="avg_4182_oblvns_1#12$2",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4182_oblvns_1#12$2",focus="m")]
+[name="豊川祥子"]誰もいませんわね。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_698_1#1$1",duration=0.5)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4182_oblvns_1#12$2",focus="m")]
+[name="豊川祥子"]そんなに彼女が怖いのなら、どうしてついて来ましたの？
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[name="フランシス"]マフィアじゃないあんたには分からないだろうな。俺は……仲間の敵を討たなきゃならねぇんだ！
+[charslot(slot="m",name="avg_4182_oblvns_1#9$2",focus="m")]
+[name="豊川祥子"]そこまでの恨みを持つなんて……あなたたちと彼女との間に一体何があったか、お聞きしてもよいかしら？
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[name="フランシス"]あんたもこういう「裏切り」を経験したら、俺たちの気持ちも理解できるだろうよ……
+[name="フランシス"]うちのファミリーのメンバーは、ほとんどがクルビアの開拓地から逃れてきた一般人だ。人脈も資源も乏しいせいで、地元のマフィアにはいつもバカにされてきた。
+[name="フランシス"]そんな状況が何年も続いていたが、ある日俺たちのボスは、大金を積んである用心棒を雇ったんだ。
+[charslot(slot="m",name="avg_4182_oblvns_1#9$2",focus="m")]
+[name="豊川祥子"]それが彼女でしたのね。
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[name="フランシス"]ああ。奴を雇ってから、俺たちはかなり長い間平穏な日々を過ごせた。
+[name="フランシス"]あの頃は本当に良かった。突然アジトを襲われることもなけりゃ、誰かが嫌がらせに来る心配もなかった……
+[name="フランシス"]だが、ボスが海鈴をファミリーに迎え入れようとしたら、奴はそれを拒み、次の日には跡形もなく消えちまったんだ。
+[name="フランシス"]それを俺たちが不審に思っていた時、敵対組織の奴らを誰かが招き入れて、アジトを襲撃させやがったのさ。それでボスも仲間も皆死んじまった……
+[name="フランシス"]思い出したくもねえ……本当に悲惨だったぜ。
+[charslot(slot="m",name="avg_4182_oblvns_1#9$2",focus="m")]
+[name="豊川祥子"]彼女があなたたちを売ったとおっしゃいますの？
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[name="フランシス"]あいつ以外に誰がいる！？　偶然にしては出来過ぎだ！
+[charslot(slot="m",name="avg_4182_oblvns_1#10$2",focus="m")]
+[name="豊川祥子"]……彼女が裏切るなんて、わたくしは信じられませんわ。
+[name="豊川祥子"]わたくしの知るあの方は、あなたのおっしゃるように、優れた能力を持つ、頼もしい方でした。
+[name="豊川祥子"]いつどこに所属していても、自分の役割を全うする方ですのよ。そんな八幡さんが裏切るなど……
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[name="フランシス"]だが、これが事実だ。
+[charslot(slot="m",name="avg_4182_oblvns_1#12$2",focus="m")]
+[name="豊川祥子"]襲撃してきた人たちの中に、彼女の姿は？
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[name="フランシス"]……いいや。
+[charslot(slot="m",name="avg_4182_oblvns_1#12$2",focus="m")]
+[name="豊川祥子"]では襲撃者の顔は覚えてます？
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[name="フランシス"]ああ、一生忘れねぇよ。
+[Dialog]
+[charslot]
+祥子は深く息を吸うと、ポケットの護身用武器に手を伸ばした。
+[charslot(slot="m",name="avg_4182_oblvns_1#9$2",focus="m")]
+[name="豊川祥子"]もし……八幡さんとあなたたちの関係が、故意に引き裂かれたものだとしたら？
+[name="豊川祥子"]もし……八幡さんが、何者かにずっと監視されていたとしたら？
+[charslot(slot="m",name="avg_npc_698_1#1$1",focus="m")]
+[name="フランシス"]……どういう意味だ？
+[Dialog]
+[charslot]
+[stopmusic(fadetime=2)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_opencabinet", volume=0.8)]
+[PlaySound(key="$d_avg_open_drawer", volume=1,delay=0.3)]
+[PlaySound(key="$d_avg_opencabinet", volume=1, loop=false, channel="k",delay=0.5)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+フランシスが反応する間もなく、唐突に周囲のクローゼットや大型キャビネットがすべて開かれた。
+その中には屈強な体格の用心棒が立っており、手に持った武器を一斉に部屋の中央の二人に向けて構える。
+[Dialog]
+[charslot(slot="l",name="avg_npc_699_1#1$1",duration=1)]
+[charslot(slot="r",name="avg_npc_699_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[playsound(key="$d_avg_gunequip",volume=0.7)]
+[PlaySound(key="$d_avg_gunload", volume=0.9,delay=0.2)]
+[PlaySound(key="$shotgunreload", volume=1,delay=0.4)]
+[playsound(key="$d_avg_gunequip",channel="1",volume=0.3)]
+[Delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_699_1#1$1",focus="all")]
+[name="謎の用心棒"]動くな。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image]

@@ -1,0 +1,682 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Background(image="bg_black",screenadapt="showall")]
+[Delay(time=1)]
+[playMusic(key="$comedy_loop", volume=0.6)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0, loop=true, channel="c")]
+[SoundVolume(volume=0.5, channel="c",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[Subtitle(text="ニンフ、玄関前に置いといた異鉄の袋を見なかったか？", x=250, y=150, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="ニンフちゃん！　俺、また手押し車を失くしちまったんだ！　探すの手伝ってくれねえか？", x=50, y=400, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="ニンフ、その……仕事を紹介してもらえない？　今度は絶対バックレたりしないから！", x=550, y=500, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="ニンフ――", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]	
+[delay(time=1)]
+[name="ニンフ"]慌てないで、一人ずつ順番に対応するから！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="52_mini01_katzdalesquare_d",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_4146_nymph_1#11$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4146_nymph_1#11$1",focus="m")]
+[name="ニンフ"]異鉄の袋は左側の「落とし物ボックス」に入ってるよ。手押し車は屋根の上――に置くしかないでしょ？　お部屋の中はみんなのものでいっぱいなんだもん！
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]お礼はいいから、退いてあげて。後ろが詰まってるから！
+[name="ニンフ"]えーと、さっき仕事を紹介してほしいって言ってたのは――
+[charslot(slot = "m", name = "avg_npc_1456_1#1$1",focus="m")]
+[name="やせ細ったサルカズ"]ぼ、僕だよ！
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[multiline(name="ニンフ")]「レンガ」くん？
+[charslot(slot = "m", name = "avg_4146_nymph_1#12$1",focus="m")]
+[multiline(name="ニンフ")]　でも、君ったら、前に紹介してあげた炉の見張り番も、色んな人に頼んでようやく見つけた仕事だったのに、二日目にはフレームを外して密輸商人に売っちゃうし……
+[charslot(slot = "m", name = "avg_npc_1456_1#1$1",focus="m")]
+[name="「レンガ」"]確かに、仕事を一つ二つ、ダメにしちゃったのは認めるけどさ。
+[charslot(slot = "m", name = "avg_4146_nymph_1#12$1",focus="m")]
+[name="ニンフ"]「一つ二つ」？
+[charslot(slot = "m", name = "avg_npc_1456_1#1$1",focus="m")]
+[name="「レンガ」"]でも、今回は真面目に働くって約束するから！
+[charslot(slot = "m", name = "avg_4146_nymph_1#15$1",focus="m")]
+[name="ニンフ"]悪いけど、ダメ。
+[charslot(slot = "m", name = "avg_npc_1456_1#1$1",focus="m")]
+[name="「レンガ」"]頼むよ、ニンフ！　君以外助けてくれる人なんていないんだ！
+[charslot(slot = "m", name = "avg_npc_932_1#1$1",focus="m")]
+[name="苛立つサルカズ"]出やがったなレンガ、このクソガキが。通り中の窓割っといてよくここに顔を出せたもんだ。こっちはきちんと順番待ってんだぞ、ニンフちゃんの時間を無駄にすんな！
+[charslot(slot = "m", name = "avg_npc_1456_1#1$1",focus="m")]
+[name="「レンガ」"]誰がクソガキだって！？
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(duration=0.3)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_punchsp5")]
+[PlaySound(key="$d_avg_punch02",delay=0.3)]
+[PlaySound(key="$fightgeneral", volume=0.6,delay=0.7)]
+[CameraShake(duration=1.5, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=2.5)]
+[charslot(slot="l",name="avg_npc_932_1#1$1",duration=0.5)]
+[charslot(slot="r",name="avg_npc_1456_1#1$1",duration=0.5)]
+[delay(time=0.8)]
+[charslot(slot="m",name="avg_4146_nymph_1#11$1",afrom=0,ato=0, action="zoom",poszoom="0.5,0.5",scale=0.8,duration=0,isblock=true,focus="left,right")]
+[charslot(slot="m",afrom=0,ato=1,duration=2,isblock=true)]
+[charslot(slot="m",afrom=1,ato=1,action="zoom",poszoom="0.5,0.5",scale=0.9,duration=0.2)]
+[charslot(slot="m", posfrom = "0,0", posto = "50,0",afrom=1,ato=1,duration=0.2,isblock=true)]
+[PlaySound(key="$d_avg_clothmovementsp",volume=0.7)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="r",posfrom="0,0",posto="100,0",duration=0.7,isblock=true)]
+[charslot(slot="m", posfrom = "50,0", posto = "-50,0",afrom=1,ato=1,duration=0.2,isblock=true)]
+[PlaySound(key="$d_avg_clothmovementsp",volume=0.7)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="l",posfrom="0,0",posto="-100,0",duration=0.7,isblock=true)]
+[charslot(slot="m", posfrom = "-50,0", posto = "0,0",afrom=1,ato=1,duration=0.2,focus="m")]
+[charslot(slot="m",afrom=1,ato=1,action="zoom",poszoom="0.5,0.5",scale=1,duration=0.2)]
+[delay(time=0.6)]
+[charslot(slot = "m", name = "avg_4146_nymph_1#11$1",focus="m")]
+[name="ニンフ"]二人とも、ケンカはやめて！
+[charslot(slot = "m", name = "avg_4146_nymph_1#12$1",focus="m")]
+[name="ニンフ"]もうお昼の時間だから、一旦解散しよう！　午後になったらまた来てよ。あたしもちょっと休まないと……
+[Dialog]
+[stopsound(channel="c", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="52_mini01_katzdalesquare_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+騒がしくしていた群衆が散っていき、ニンフの家の前にはようやく静けさが戻ってきた。彼女は疲れた顔を両手で揉むと、小さなため息をつく。
+[Dialog]
+[PlaySound(key="$d_avg_hungry",volume=1)]
+[Delay(time=1.5)]
+そして、ほったらかしにされてすっかり固くなったパンを取り出した。しかし、思いっきりパンをかじろうと口を開けた瞬間、目の前にまた人影が現れた。
+[charslot(slot = "m", name = "avg_4146_nymph_1#4$1",focus="m")]
+[multiline(name="ニンフ")]ごめんね、用事があるなら午後にまた――
+[charslot(slot = "m", name = "avg_4146_nymph_1#7$1",focus="m")]
+[multiline(name="ニンフ")]あれ、ペールさん？　なんでここにいるの？
+[Dialog]
+[charslot]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4147_mitm_1#1$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_4147_mitm_1#1$1",focus="m")]
+[name="ミトム"]ニンフ、昼飯そんだけで足りんのか？
+[name="ミトム"]そら――
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_throwstone", volume=0.8)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[Delay(time=1)]
+ミトムが投げて寄越してきたのは、ロドスのロゴがついたシチューの缶詰だった。受け取ったニンフはしかし、疑わしげに缶詰の消費期限を確認している。
+[charslot(slot = "m", name = "avg_4147_mitm_1#1$1",focus="m")]
+[name="ミトム"]今度は本当に消費期限切れてないって！
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_970_1#1$1",duration=0.7)]
+[charslot(slot = "m", name = "avg_npc_972_1#1$1",duration=0.7)]
+[charslot(slot = "r", name = "avg_npc_973_1#1$1",duration=0.7)]
+[Delay(time=1)]
+そこへ、ミトムの背後から何人ものオペレーターが姿を現し、久しぶりに会うニンフへ親し気に挨拶をした。
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[name="ニンフ"]みんな……どうして戻ってきてくれたの？
+[charslot(slot = "m", name = "avg_npc_973_1#1$1",focus="m")]
+[name="支援オペレーター"]えっ、ニンフちゃんは、事前に通達を受けてないの？　ドクターとケルシー先生の指示で、ロドスにいた大部分の人は、オペレーターも患者さんも各地の事務所に移ることになったんだ。
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[name="ニンフ"]お姉ちゃんからは……えっと、人事部からは何も聞いてないよ。もしかしたら機密情報なのかな。みんな、いつの間にカズデルに帰ってきてたの？
+[charslot(slot = "m", name = "avg_npc_973_1#1$1",focus="m")]
+[name="支援オペレーター"]ついさっき着いたばっかりだよ。でも、途中で新しい患者さんを受け入れたりもしてたから、予定の人数をかなり上回っちゃってね。
+[name="支援オペレーター"]予定外に増えた患者さんをどこに落ち着かせたらいいのか悩んでたら、「ニンフなら何とかしてくれるはずだ」ってミトムが言うからここに来てみたの。
+[charslot(slot = "m", name = "avg_4146_nymph_1#1$1",focus="m")]
+[name="ニンフ"]なるほどね。街の外にいた感染者はほとんどが街中に引っ越してきたから、もうあんまり部屋は余ってないけど、探せばまだ何部屋かは見つかると思うよ。
+[charslot(slot = "m", name = "avg_4147_mitm_1#1$1",focus="m")]
+[name="ミトム"]な？　だから何とかしてくれるって言ったろ？
+[charslot(slot = "m", name = "avg_4146_nymph_1#1$1",focus="m")]
+[name="ニンフ"]ロドスのオペレーター同士、協力するのは当たり前だもん。
+[charslot(slot = "m", name = "avg_4146_nymph_1#14$1",focus="m")]
+[name="ニンフ"]だけど、今日の午後すぐには動けないかも。感染者のみんなの頼みごとを聞かないといけないから。明日は……うーん、明日も無理かなあ。毎日たくさん人が来ててさ……
+[charslot(slot = "m", name = "avg_4147_mitm_1#8$1",focus="m")]
+[name="ミトム"]おいおい、カズデルで一番心優しいジャールさんよ。ちょっと会わないうちに、頭の回転が鈍くなっちまったのか？
+[name="ミトム"]ロドスのオペレーター同士、協力するのは当たり前ってんなら、俺らが何もせずぼんやり見てるわけねえだろ？
+[charslot(slot = "m", name = "avg_npc_973_1#1$1",focus="m")]
+[name="支援オペレーター"]そうだよ。感染者への援助はロドスの役割でもあるしね。
+[Dialog]
+[charslot]
+それを聞くと、ニンフは目を輝かせた。
+[charslot(slot = "m", name = "avg_4146_nymph_1#3$1",focus="m")]
+[name="ニンフ"]じゃあ……まずはみんなの住む場所を手配してくるね！　またあとで、事務所で会お！
+[Dialog]
+[PlaySound(key="$d_avg_papertear", volume=1)]
+[playsound(key="$d_avg_sketchdraw",volume=0.8,delay=1)]
+[delay(time=2.5)]
+ニンフはメモ用紙を一枚破り取ると、ミトムのポケットからペンを引っ張り出し、走り書きをしてそれをドアに貼り付けた。
+[charslot(slot = "m", name = "avg_4147_mitm_1#10$1",focus="m")]
+[name="ミトム"]「援助をお求めの方は、左折した先のロドス事務所までお越しください！　ニンフより」……こんなバカ丁寧な言い回しで、あいつらに理解できんのか？
+[charslot(slot = "m", name = "avg_4146_nymph_1#1$1",focus="m")]
+[name="ニンフ"]ちゃんと下に地図も描いといたから大丈夫だよ。ただ、人数が多すぎてロドスのみんなが対応に困っちゃわないかは心配だけどね。
+[charslot(slot = "m", name = "avg_npc_973_1#1$1",focus="m")]
+[name="支援オペレーター"]心配いらないって。助けが必要な人がいるなら、迷わず事務所に来てもらってよ。こっちはこんなに人手があるし、困ることなんてないから。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="49_g13_smallroom",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0, loop=true, channel="c1")]
+[SoundVolume(volume=0.5, channel="c1",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]	
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Subtitle(text="なあ、ロドスの姉ちゃん。俺が軒先に干しといた獣肉、見なかったか？", x=50, y=400, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="実は、傷口からまた血が出てきちまってよ。軽くぶつけただけなんだが……", x=550, y=500, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="カズデルで仕事を見つけたいんだけど、働き手を探してるとこはあるかな？", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]	
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]	
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_973_1#1$1",focus="m")]
+[name="支援オペレーター"]少々お待ちください――
+[name="支援オペレーター"]ニンフちゃん、ごめん、私が間違ってたよ。ちょっと手伝ってくれる？
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]こっちこそごめんね、もっと早く言えば良かったよ……ロドスがカズデルを離れたあと、急に人がたくさん増えちゃったんだよね。
+[name="ニンフ"]やっぱり、みんなには一旦帰ってもらおうか？
+[charslot(slot = "m", name = "avg_npc_973_1#1$1",focus="m")]
+[name="支援オペレーター"]違うの、そういう意味じゃなくて！　私は、うちのオペレーターと一緒にカズデルの感染者の悩みを解決してくれそうな、頼りになる人員を探してきてほしいって言いたかったんだ。
+[name="支援オペレーター"]臨時契約にするとして、給与水準と食費の手当てはロドスの規定通りでいこうか……ニンフちゃんなら、パパッと人手を見つけてこられるよね？
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]人手が欲しいの？　お願いしたら手伝ってくれそうな知り合いなら何人か心当たりあるけど……
+[charslot(slot = "m", name = "avg_npc_973_1#1$1",focus="m")]
+[name="支援オペレーター"]ううん、タダで手伝ってもらうのは悪いし、やるからにはきちんと手順を踏んで、雇用契約をして働いてもらいたいの。
+[name="支援オペレーター"]履歴書を書いてもらって、身辺調査をして、面接もして……って感じで。ほら、ニンフちゃんっていつも人事部に入り浸ってるし、そういうの得意じゃない？
+[charslot(slot = "m", name = "avg_4146_nymph_1#14$1",focus="m")]
+[name="ニンフ"]（お姉ちゃんからは、履歴書の審査方法なんて教わってないけど……）
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]わかった、なんとかやってみるね。
+[Dialog]
+[stopsound(channel="c1", fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="52_mini01_katzdalesquare_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_putonwoodenfloor_xshield")]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4146_nymph_1#1$1",duration=0.7)]
+[charslot(slot = "r", name = "avg_4147_mitm_1#6$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_4147_mitm_1#6$1",focus="r")]
+[name="ミトム"]重すぎだろっ！！
+[charslot(slot = "l", name = "avg_4146_nymph_1#13$1",focus="l")]
+[name="ニンフ"]ありがとう、ペールさん。これで履歴書の箱は本当に最後だから！
+[charslot(slot = "r", name = "avg_4147_mitm_1#6$1",focus="r")]
+[name="ミトム"]ったく、あいつらめ、読み書き教室に参加しろっつったって死んでも来ねえくせに。ニンフがちょっと声張っただけで、全員慌てて履歴書書き始めやがって。
+[charslot(slot = "l", name = "avg_4146_nymph_1#15$1",focus="l")]
+[multiline(name="ニンフ")]ロドスの待遇がよっぽど魅力的なんだろうね。どれどれ……
+[charslot(slot = "l", name = "avg_4146_nymph_1#7$1",focus="l")]
+[multiline(name="ニンフ")]って、なんで同じことが書かれた履歴書ばっかりなの！？
+[charslot(slot = "r", name = "avg_4147_mitm_1#10$1",focus="r")]
+[name="ミトム"]ありゃ、まさか一つの履歴書を手本にして、そっくりそのまま「描き」写しちまったのか？
+[name="ミトム"]つっても、自分の名前のつづりくらいは教えといたし、さすがに……あー、名前も手本のまんま写しちまったのか。
+[charslot(slot = "l", name = "avg_4146_nymph_1#17$1",focus="l")]
+[name="ニンフ"]内容が同じものは取り除いて、残った履歴書は――四枚だけ？　ごめんね、ペールさん。最初からちゃんと確認してたら、重たい箱を何個も運んでもらわずに済んだのに。
+[charslot(slot = "r", name = "avg_4147_mitm_1#1$1",focus="r")]
+[name="ミトム"]別に大したことじゃねえって。それよか、紙がこんなに無駄になっちまったことのほうが心が痛むくらいだよ。そうだ、ヘドリーさんとこに持って行って読み書き教室の教材に使ってもらおうぜ！
+[charslot(slot = "l", name = "avg_4146_nymph_1#17$1",focus="l")]
+[name="ニンフ"]教材？
+[charslot(slot = "r", name = "avg_4147_mitm_1#1$1",focus="r")]
+[name="ミトム"]履歴書ってのは、色んなことが書いてあるもんだろ。たとえば、これとかは――
+[multiline(name="ミトム")]名前は、「レンガ」か。へえ、なかなか綺麗に書けてるな。経歴は……レンガ、レンガ……？
+[charslot(slot = "r", name = "avg_4147_mitm_1#10$1",focus="r")]
+[multiline(name="ミトム")]って、この紙「レンガ」しか書かれてねえぞ！　こいつ、自分の名前しか書けねえのか？
+[charslot(slot = "l", name = "avg_4146_nymph_1#17$1",focus="l")]
+[name="ニンフ"]「レンガ」くんも履歴書を出してたの？　んー……確かに本人の字だ。でも、あの子の経歴だと、どのみちロドスの採用基準は満たせないかも。
+[name="ニンフ"]ああもう、どうしよう……履歴書は全然選考の役に立ちそうにないし、かといってこの人数を相手に面接なんて、私だけじゃ捌き切れないし……
+[charslot(slot = "r", name = "avg_4147_mitm_1#1$1",focus="r")]
+[name="ミトム"]なあ、今思いついたんだが、仕事を探してる連中に、これを機に読み書き教室に行くように言って騙……こほん、説得するってのはどうだ？
+[name="ミトム"]まずはきちんとした履歴書を提出した奴とだけ面接して、条件に合う人材がいたら採用する。これを、「第一期募集」ってことにするんだ。
+[name="ミトム"]そんで、ほかの連中も「字を書けたほうが仕事も見つかりやすい」と気付き始めた辺りで「第二期募集」を始めるのさ。そうすりゃ、今度は絶対真面目に履歴書を書くはずだぜ。
+[charslot(slot = "l", name = "avg_4146_nymph_1#9$1",focus="l")]
+[name="ニンフ"]その方法、良さそうだね！　ちょっと時間はかかりそうだけど……
+[charslot(slot = "r", name = "avg_4147_mitm_1#8$1",focus="r")]
+[name="ミトム"]これで、ヘドリー先生の読み書き教室も、生徒が来ないって悩まずに済むしな！　ははっ！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+その……ニンフ、へドリーさんとこに持ってった履歴書なんだが、ちょっと問題になりそうな経歴のがあったらしくてよ……
+問題って？
+とにかく、バベルの事務所に行ってみてくれ。会わせたい人をそこまで送っていくって、ヘドリーさんが言ってたからさ。
+ど、どういうこと？
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="49_g6_babeloffice",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4146_nymph_1#14$1",focus="m")]
+[name="ニンフ"]バベルの事務所も、つい最近改装したばっかりなんだね。
+[charslot(slot = "m", name = "avg_4146_nymph_1#15$1",focus="m")]
+[name="ニンフ"]でも、人がほとんど見当たらないや。
+[Dialog]
+[charslot]
+[delay(time=0.2)]
+[charslot(slot = "m", name = "avg_npc_423_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_423_1#1$1",focus="m")]
+[name="負傷したフェリーン"]君がニンフさんかな？　待たせてすまない。
+[charslot(slot = "m", name = "avg_4146_nymph_1#7$1",focus="m")]
+[name="ニンフ"]初めまして！　えっと、その格好は……
+[charslot(slot = "m", name = "avg_npc_423_1#1$1",focus="m")]
+[name="負傷したフェリーン"]私が持っている正装といったら、この軍服しかなくてね。ご覧の通り、私はヴィクトリアの元士官なんだ。
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[name="ニンフ"]そうだったんだ。履歴書を読んだ限りじゃ、軍人さんっぽくなかったけど……この面接をセッティングしてくれたのは、ヘドリーさんなんだよね？
+[charslot(slot = "m", name = "avg_npc_423_1#1$1",focus="m")]
+[name="負傷したフェリーン"]ああ。ヘドリーさんとは、ヴィクトリアから無事に撤退してきたあとに知り合ってね。彼は本当に面白い人だよ。
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[name="ニンフ"]えっ、「撤退してきた」ってどういう意味？
+[charslot(slot = "m", name = "avg_npc_423_1#1$1",focus="m")]
+[name="負傷したフェリーン"]おや、何か変なことを言ったかな？　……そうか、ニンフさんは私のことを、ヘドリーさんの捕虜だとでも思ってたのか、ははっ。
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[name="ニンフ"]ご、ごめんなさい。
+[charslot(slot = "m", name = "avg_npc_423_1#1$1",focus="m")]
+[name="負傷したフェリーン"]いいのさ。私は、ロンディニウムのサルカズを逃がすのに手を貸したせいか、軍内での地位を失ってしまってね。恐らく、私の行動を目障りに感じた誰かがいたんだろうな。
+[name="負傷したフェリーン"]それで、アーミヤさんやサルカズたちと一緒に、あの国を出ることにしたんだ。
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[name="ニンフ"]あの、こんなこと聞くのは失礼かもしれないけど、ヴィクトリアにはご家族がいたんじゃ……
+[charslot(slot = "m", name = "avg_npc_423_1#1$1",focus="m")]
+[name="負傷したフェリーン"]今はもう、全員亡くしてしまったんだ。
+[charslot(slot = "m", name = "avg_4146_nymph_1#10$1",focus="m")]
+[name="ニンフ"]それは……
+[charslot(slot = "m", name = "avg_npc_423_1#1$1",focus="m")]
+[name="負傷したフェリーン"]鉱石病にかかったり、戦いに巻き込まれたりしてね。
+[charslot(slot = "m", name = "avg_4146_nymph_1#10$1",focus="m")]
+[name="ニンフ"]無遠慮に聞いちゃってごめんなさい！
+[charslot(slot = "m", name = "avg_npc_423_1#1$1",focus="m")]
+[name="負傷したフェリーン"]気にしないでくれ。それじゃ、本題に戻ろうか。私を採用したとして、ニンフさんはどんな仕事を任せてくれるのかな？
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]あなたは履歴書に、複数の国の言葉に精通してるって書いてたよね……今、カズデルには色んな国から来た感染者の人たちがいて、助けを必要としてるの。
+[name="ニンフ"]だけど、現状ロドスの事務所にいるオペレーターのほとんどはサルカズなんだ。ほかの国の言葉も、基本の日常会話くらいならできるけど、みんなのニーズを全部理解できるってほどじゃなくて。
+[name="ニンフ"]……それに、病状について説明してもらっても、その細かい違いがどんなものなのか、ニュアンスを汲み取るのが難しいんだ。
+[charslot(slot = "m", name = "avg_npc_423_1#1$1",focus="m")]
+[name="負傷したフェリーン"]なるほど。ちょっとしたニュアンスの違いが、生死を分けることもあるだろうね。
+[name="負傷したフェリーン"]もちろん、言語方面のサポートは喜んでしよう。だが、治療に関する判断は、知識がないから私のほうではできないし、ロドスの医師に任せることになるだろう。
+[charslot(slot = "m", name = "avg_4146_nymph_1#1$1",focus="m")]
+[name="ニンフ"]それで大丈夫だよ！　手伝ってくれるだけで十分だから！
+[charslot(slot = "m", name = "avg_npc_423_1#1$1",focus="m")]
+[name="負傷したフェリーン"]それともう一つ……こんなことを頼むのもなんだが、しばらくは読み書き教室に顔を出せないだろうから、休むという旨をヘドリーさんに伝えてもらえないだろうか？
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[name="ニンフ"]えっ？　……あなたも字を習ってるの……？
+[charslot(slot = "m", name = "avg_npc_423_1#1$1",focus="m")]
+[name="負傷したフェリーン"]……私は代理の講師をしているんだ。
+[charslot(slot = "m", name = "avg_4146_nymph_1#1$1",focus="m")]
+[name="ニンフ"]……そ、そうだよね、ごめんなさい！　え、えっと、それじゃあ採用ってことで決まりだね。時間は……よかった、次の面接にも間に合いそう。履歴書を全部持ってきといて正解だったね！
+[charslot(slot = "m", name = "avg_npc_423_1#1$1",focus="m")]
+[name="負傷したフェリーン"]よかったら、その履歴書を見せてもらってもいいかな？　もしかすると知り合いかもしれないと思ってね。
+[Dialog]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[Delay(time=1)]
+[name="負傷したフェリーン"]……なぜ彼が履歴書を？　この人は戦場で名の知れた人で、私も耳にしたことがあるよ。ただ、悪名で知られた人だから、くれぐれも気を付けてほしいな。
+[charslot(slot = "m", name = "avg_4146_nymph_1#2$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="ニンフ"]そうなの！？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[musicvolume(volume=0, fadetime=2)]
+[charslot]
+[Background(image="49_g1_kazdelroom",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4146_nymph_1#10$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4146_nymph_1#10$1",focus="m")]
+[name="ニンフ"]こ、こんにちは……あなたが「チェーン」さんで合ってる？
+[Dialog]
+[charslot]
+[name="悪名高い傭兵"]何か用か？
+[charslot(slot = "m", name = "avg_4146_nymph_1#10$1",focus="m")]
+[name="ニンフ"]あたし、ロドスの事務所の採用担当者なの。履歴書を送ってもらったから、面接に来たんだ。
+[Dialog]
+[charslot]
+[name="悪名高い傭兵"]「履歴書」か。ほかの連中に教えてもらったアレだな。確かにそいつは出した覚えがあるが、「面接」ってのは何だ？
+[charslot(slot = "m", name = "avg_4146_nymph_1#10$1",focus="m")]
+[name="ニンフ"]んっと……ちょっとした調査って感じかな。これから、いくつか質問するから、正直に……じゃなくてその、できるだけ正直に答えてもらえたら大丈夫だよ。
+[Dialog]
+[charslot]
+[name="悪名高い傭兵"]必要なことは全部履歴書ってのに書いたはずだろ？　どうしてまた同じことを聞かれなきゃなんねえんだ？
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[name="ニンフ"]えっと、チェーンさんの履歴書に書かれてた……戦績は、確かにすごかったけど、あたしはそれより、一行だけ書かれてた「仮設住宅の建設経験」のほうが気になったの。
+[Dialog]
+[charslot]
+[name="悪名高い傭兵"]ほう？
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=0.7)]
+[charslot(slot = "m", name = "avg_npc_054",duration=0.7)]
+[delay(time=1.5)]
+傭兵は刀を手に取り、立ち上がった。すると、彼の巨大な影がニンフの姿を覆わんばかりに差す。
+[charslot(slot = "m", name = "avg_4146_nymph_1#10$1",focus="m")]
+[name="ニンフ"]あの、その、話したくないことだったら、あ、あたしはこれで……
+[musicvolume(volume=0.6, fadetime=1.5)]
+[charslot(slot = "m", name = "avg_npc_054",focus="m")]
+[name="悪名高い傭兵"]お前も、建物建てんのに興味があんのか！？
+[Dialog]
+[charslot(slot = "m", name = "avg_4146_nymph_1#7$1",focus="m")]
+[delay(time=1)]
+その言葉に、ニンフは呆気にとられた。その傭兵の物言いが……まるでオモチャを見せびらかしてくる子供のような、はしゃいだものだったからだ。
+[charslot(slot = "m", name = "avg_npc_054",focus="m")]
+[name="悪名高い傭兵"]で、何棟建てたいんだ？　使っていい面積は？　材料は……どうでもいいか、どうせ一番簡単に手に入るわけだしな！
+[name="悪名高い傭兵"]ほら、はやく教えてくれよ！
+[charslot(slot = "m", name = "avg_4146_nymph_1#10$1",focus="m")]
+[name="ニンフ"]う――うん！　新しく「病棟」を建てて患者さんたちが落ち着けるようにしたいんだ。そのために、建築経験がある監督を探してて。
+[charslot(slot = "m", name = "avg_npc_054",focus="m")]
+[name="悪名高い傭兵"]監督？　俺は他人にあれこれ命令すんのは好きじゃねえんだがな。
+[name="悪名高い傭兵"]けどまあ、怪我人の世話をするためってんならいいか。うちの兄弟分たちにも手伝わせるさ。どういう建物にするかはお前らの言う通りにしよう。代わりに、具体的なやり方は俺に任せてくれ。
+[charslot(slot = "m", name = "avg_4146_nymph_1#1$1",focus="m")]
+[name="ニンフ"]すごく有難い話だけど……今のところ、建設隊を丸ごとひとつ雇う予定はないんだ。
+[charslot(slot = "m", name = "avg_npc_054",focus="m")]
+[name="悪名高い傭兵"]そりゃどういう意味だ？　俺たちが報酬目当てに仕事を受けようとしてるとでも思ってんのか？　俺も兄弟たちも、給料なんかいらねえよ。
+[name="悪名高い傭兵"]俺はなぁ、戦場で怪我人を見捨てていく奴が一番嫌いなんだ！
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]でも、ここは戦場じゃないし……戦争は終わったんだよ。病室を必要としてるのは、怪我人じゃなくて、外から来た「患者」さんたちなの。
+[charslot(slot = "m", name = "avg_npc_054",focus="m")]
+[name="悪名高い傭兵"]「戦争は終わった」か……それは、そうだな。
+[Dialog]
+[PlaySound(key="$d_avg_clothtrailground", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+傭兵は落胆したように座り込んだ。
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[name="ニンフ"]「チェーン」さん、大丈夫？
+[Dialog]
+[charslot]
+[name="悪名高い傭兵"]……その患者ってのは、どこから来たんだ？
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[name="ニンフ"]色んな場所からだよ。みんな、追い出されてここへきたんだ。
+[Dialog]
+[charslot]
+[name="悪名高い傭兵"]……
+[name="悪名高い傭兵"]そいつらは、カズデルに来て、サルカズが建てた部屋に住むのに抵抗とかねえのか？
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[name="ニンフ"]あの人たちからすれば、病室は命を救ってくれる場所だし、それを建ててくれた人は命の恩人だからね。
+[Dialog]
+[charslot]
+[name="悪名高い傭兵"]よし。だったらこの仕事、引き受けた。
+[charslot(slot = "m", name = "avg_4146_nymph_1#7$1",focus="m")]
+[name="ニンフ"]えっ？　じゃあ、これで……面接はおしまい、かな？
+[Dialog]
+[charslot]
+[name="悪名高い傭兵"]俺が知るかよ。面接とかいうのをやるとか言いだしたのは、お前だろ？
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_wild_a",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4146_nymph_1#14$1",focus="m")]
+[name="ニンフ"]最後の履歴書に書かれてた住所は、この辺だよね。治療の心得がある……農夫って書かれてるけど。
+[name="ニンフ"]でも、どうして街の外に住んでるんだろ？　街中のほうが病人は多いと思うけど。
+[Dialog]
+[charslot(duration=0.5)]
+[delay(time=0.7)]
+ニンフは少し離れたところにある小屋を見やった。そこには、丈夫そうな体格だとは言い難いクランタの女性がひとり、ハシゴに登って屋根の修理をしていた。
+そしてそのハシゴを、数名の子供が緊張した面持ちで支えている。どの子の身体にも、真っ白な包帯が巻かれているのが見えた。
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]こんにちは。
+[Dialog]
+[charslot]
+クランタの女性はニンフを見ると、子供たちに小屋の中へ戻るよう告げて、ハシゴから降りてくる。
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]グレーテルさんだよね。あたしは……
+[charslot(slot = "m", name = "avg_npc_003",focus="m")]
+[name="「グレーテル」"]こんにちは、ニンフ。
+[name="「グレーテル」"]履歴書を見て、ここへ来たのよね？
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[name="ニンフ"]えっと、うん。あなたの履歴書には、治療の心得があるって書いてあったから、うちの事務所の力になってもらえないかと思って……
+[charslot(slot = "m", name = "avg_npc_003",focus="m")]
+[name="「グレーテル」"]ごめんなさい、本当は治療なんてできないの。
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[name="ニンフ"]でも……
+[charslot(slot = "m", name = "avg_npc_003",focus="m")]
+[name="「グレーテル」"]この前、街から字の書けないサルカズが来てね。小麦の種を渡すから、代わりに履歴書を書いてほしいって言ってきたのよ。私はそれを引き受けただけ。
+[name="「グレーテル」"]そのサルカズが、私の書いた履歴書を誰かに売り払うようなこともあったかもしれないけど、だとしたら私にはもう無関係でしょ。
+[name="「グレーテル」"]私には治療の心得はないし、そもそも、「グレーテル」なんて名前じゃないわ。無駄足を踏ませてしまってごめんなさいね。
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+ニンフにはまだ言いたいことがあった。小屋の裏からは薬草を煎じている匂いが確かに漂ってきており、子供たちが包帯を巻いていたのも見たのだから……
+だが、クランタの女性はこちらに背を向けて、歩き出してしまっていた。
+[charslot(slot = "m", name = "avg_4146_nymph_1#10$1",focus="m")]
+[name="ニンフ"]前に会ったことあるよね？
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[delay(time=1)]
+「グレーテル」は一瞬足を止めると、小さく肩をすくめた。
+[name="「グレーテル」"]いつのことかしら？　今までに、数えきれないくらいたくさんの人に会ってきたから。
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]あたしがすっごく小さい頃のことだよ。転んで腕を怪我した時に、あなたが手当てしてくれた気がして……違う？
+[Dialog]
+[charslot]
+ニンフは、小屋の扉を開けてこちらの様子を伺っている子供のほうを指さした。その子の足首には真っ白な包帯が巻かれ、それは綺麗な蝶結びで留められていた。
+ニンフは、そのしなやかで美しい蝶結びを今も覚えていた。それは眺めていると、泣くことすら忘れてしまいそうなほど美しかったのだ。
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]あなたはバベルのお医者さんだったよね？
+[Dialog]
+[charslot]
+[name="「グレーテル」"]「だった」……ええ、昔はね。
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]あなたは私が怪我した時も助けてくれたし、今も子供たちを助けてくれてるんでしょう。
+[Dialog]
+[charslot]
+[name="「グレーテル」"]それがどうかしたの？
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]カズデルの街には、治療を必要としている子供がたくさんいるの……サルカズの子供以外にも、たくさん。
+[Dialog]
+[charslot]
+クランタの女性は振り返ると、顔を流れる汗をぬぐった。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_003",duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_003",focus="m")]
+[name="「グレーテル」"]私は別に、サルカズの子供たちに対して思うところがあるわけじゃないの。
+[name="「グレーテル」"]単に、もうあの街に足を踏み入れたくないだけなのよ。
+[name="「グレーテル」"]過去はもう過ぎ去ったものでしかない。人それぞれ、選んだ道があるものでしょう。あなたは、小さい頃からそれを理解していたと思うけど。
+[charslot(slot = "m", name = "avg_4146_nymph_1#10$1",focus="m")]
+[name="ニンフ"]わかった……ありがとうね。
+[charslot(slot = "m", name = "avg_4146_nymph_1#10$1",focus="n")]
+その時、クランタの女性は小屋に向かって何度か大声を出した。どうやら、聞き分けの悪い子供たちを叱っているらしい。
+[charslot(slot = "m", name = "avg_4146_nymph_1#10$1",focus="m")]
+[name="ニンフ"]……でも、だったらどうして、今もカズデルの外に住んでるの？　それに、履歴書に本当の住所を書いたのはなんで？
+[charslot(slot = "m", name = "avg_npc_003",focus="m")]
+[name="「グレーテル」"]そんなことをする必要はないだろう、って？　あなたたちに見つけてほしくてそうしたはずだって言いたいの？
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_003",focus="m")]
+[delay(time=1)]
+その女性は、怪我から回復しつつある子供たちを見やり微笑んだ。その笑みは、心の底からのものに見えた。
+[charslot(slot = "m", name = "avg_npc_003",focus="m")]
+[name="「グレーテル」"]小麦の種と引き換えに履歴書を書いたんだから、届け先くらいは教えておかないといけないでしょう？
+[charslot(slot = "m", name = "avg_4146_nymph_1#10$1",focus="m")]
+[name="ニンフ"]それもそっか……
+[charslot(slot = "m", name = "avg_npc_003",focus="m")]
+[name="「グレーテル」"]ロドスがしていることと、私がしていることは同じだけど、私にはそれを「仕事」にする気はないの。
+[name="「グレーテル」"]さようなら、ニンフ。
+[Dialog]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step1",loop=false)]
+[stopsound(channel="step1",fadetime=2.5)]
+[charslot(duration=0.7)]
+[delay(time=2)]
+[name="？？？"]ニンフ――ニンフったら！
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1456_1#1$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot = "m", name = "avg_npc_1456_1#1$1",focus="m")]
+[name="「レンガ」"]やっと見つけた！　見てよ、僕、履歴書を書き直したんだ！
+[charslot(slot = "m", name = "avg_4146_nymph_1#1$1",focus="m")]
+[name="ニンフ"]慌てなくていいから、とりあえず座って……その袋には、何が入ってるの？
+[charslot(slot = "m", name = "avg_npc_1456_1#1$1",focus="m")]
+[name="「レンガ」"]小麦の種だよ。約束したから……
+[charslot(slot = "m", name = "avg_4146_nymph_1#11$1",focus="m")]
+[name="ニンフ"]あなただったの？　嘘の履歴書を出しちゃダメでしょ！
+[charslot(slot = "m", name = "avg_npc_1456_1#1$1",focus="m")]
+[name="「レンガ」"]ご、誤解だよ！
+[name="「レンガ」"]僕は自分の名前しか書けないから、お医者さんに何を書きたいか話して、代理で書いてもらったんだ。でも、その履歴書は途中でほかの奴に盗られちゃってさ！
+[name="「レンガ」"]仕方ないから、別の紙に自分の名前をいっぱい書いておいたんだ。そうしたら、ニンフが気付いて助けてくれないかなと思って。
+[name="「レンガ」"]だけど、よく考えてみたら、それも違うかもって気がしてきてさ。自分を知ってほしいなら、そんなふうに受け身でいないで、ちゃんと自分で書いた言葉で伝えなくちゃダメだって気付いたんだ。
+[name="「レンガ」"]だから、さっき顧問の旦那のところに行って、一文字ずつ書き方だけ教えてもらいながら、もう一回履歴書を書いてきたんだよ。それで、すぐに見せたくて君を探してたんだ。
+[Dialog]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]ちょっと見せて……「グレーテル」？　あなたの本当の名前って、グレーテルなの？
+[charslot(slot = "m", name = "avg_npc_1456_1#1$1",focus="m")]
+[name="グレーテル"]うん、あのお医者さんが付けてくれたんだ。
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]だったら、どうしてわざわざ住所を書いてもらったの？　どこに住んでるか知らなかったってこと？
+[charslot(slot = "m", name = "avg_npc_1456_1#1$1",focus="m")]
+[name="グレーテル"]だって……これ以外に「住所」なんて持ってないから。
+[name="グレーテル"]お医者さんが、ここの住所を書いていいよって言ってくれたんだ。また僕が問題を起こすことがあったら、庇ってくれるって……今まで色々手伝ってくれたことへのご褒美だって。
+[charslot(slot = "m", name = "avg_4146_nymph_1#17$1",focus="m")]
+[name="ニンフ"]手伝った、って……じゃあ、履歴書に書いてあった治療関係の経験は、全部本当の経歴だったの？
+[charslot(slot = "m", name = "avg_npc_1456_1#1$1",focus="m")]
+[name="グレーテル"]うん……今までたくさん迷惑をかけちゃったのはわかってるよ。だから、その埋め合わせがしたくてさ。役に立ちそうな知識をたくさん勉強してきたんだ……ほんとだよ！
+[name="グレーテル"]僕もみんなの力になりたいんだ。ニンフがみんなを助けてるみたいに、僕の手でみんなの暮らしを少しでも楽にしてあげたいって思ってる！
+[name="グレーテル"]お給料がなくたっていいからさ……！
+[charslot(slot = "m", name = "avg_4146_nymph_1#14$1",focus="m")]
+[name="ニンフ"]これだけじゃ……ダメかな。
+[charslot(slot = "m", name = "avg_npc_1456_1#1$1",focus="m")]
+[name="グレーテル"]え、な、なんで？
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]あっ、そうじゃなくてね。あとでもう一回時間と場所を決めて、正式な面接をしないといけないなと思っただけ。
+[charslot(slot = "m", name = "avg_4146_nymph_1#1$1",focus="m")]
+[name="ニンフ"]改めてよろしくね、グレーテル！
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="49_g13_smallroom",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_4146_nymph_1#16$1",focus="m")]
+[delay(time=1)]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4146_nymph_1#16$1",focus="m")]
+[name="ニンフ"]ふぅ、首が痛くなっちゃった……でも、これでようやく第二期と第三期の雇用契約書が処理できたね。
+[charslot(slot = "m", name = "avg_4146_nymph_1#1$1",focus="m")]
+[name="ニンフ"]お姉ちゃんは、何が面白くてこんな書類ばっかり相手にしてるのかな？　あたしには全然向いてないや。
+[name="ニンフ"]さてと、書類も片付けたことだし、お散歩でもしようかな。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="49_g2_kazdelstreet_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0.5, loop=true, channel="b")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[stopsound(channel="b", fadetime=2)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_4146_nymph_1#7$1",focus="m")]
+[name="ニンフ"]何日かこもってただけなのに、また街に人が増えてるような気がするんだけど……
+[charslot(slot = "m", name = "avg_npc_932_1#1$1",focus="m")]
+[name="サルカズの住民"]だ、誰か来てくれ！　向こうの足場が崩れて、人が下敷きになっちまったんだ！
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]今すぐ行――
+[charslot(slot = "m", name = "avg_npc_934_1#1$1",focus="m")]
+[name="ロドスの雇われ労働者"]今行くわ！　他のみんなは、ロドスの事務所から救急キットを持ってきて！
+[charslot(slot = "m", name = "avg_npc_932_1#1$1",focus="m")]
+[name="サルカズの住民"]わかった！　事務所から医者が来るまで、少し時間がかかるだろうし、まずは俺たちで崩れた足場をどけていこう！
+[charslot(slot = "m", name = "avg_4146_nymph_1#15$1",focus="m")]
+[name="ニンフ"]あたしも手伝――
+[charslot(slot = "m", name = "avg_npc_932_1#1$1",focus="m")]
+[name="サルカズの住民"]おお、ニンフちゃん！　心配するな、こっちは俺らで手が足りてるからさ！
+[charslot(slot = "m", name = "avg_4146_nymph_1#13$1",focus="m")]
+[name="ニンフ"]あっ、うん……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="52_mini01_katzdalesquare_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4146_nymph_1#13$1",duration=0.7)]
+[charslot(slot = "r", name = "avg_npc_1455_1#1$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1455_1#1$1",focus="r")]
+[name="慌てる老人"]おや、ニンフちゃん！　何日か見かけないと思ってたけど、やっと戻ってきたんだね。
+[charslot(slot = "l", name = "avg_4146_nymph_1#13$1",focus="l")]
+[name="ニンフ"]おばあちゃん、こんにちは。何か困りごとでもあったの？
+[charslot(slot = "r", name = "avg_npc_1455_1#1$1",focus="r")]
+[name="慌てる老人"]ああ、そうなんだよ！　何年も飼ってた羽獣が、一昨日急にいなくなっちゃってね……
+[charslot(slot = "l", name = "avg_4146_nymph_1#7$1",focus="l")]
+[name="ニンフ"]大変！　探しに行こっか！
+[charslot(slot = "r", name = "avg_npc_1455_1#1$1",focus="r")]
+[name="慌てる老人"]いやいや、大丈夫さ。実は昨日、ほかの人が見つけて連れ帰ってくれたんだよ。ただ、大冒険から戻ってきたばかりだから、ちょっと太ってないか気になって、わかる人に診てもらおうと思ってね。
+[charslot(slot = "l", name = "avg_4146_nymph_1#17$1",focus="l")]
+[name="ニンフ"]……羽獣を見つけてくれたのって、もしかしてロドスに雇われた労働者さん？
+[charslot(slot = "r", name = "avg_npc_1455_1#1$1",focus="r")]
+[name="慌てる老人"]いいや、特に関係ない普通の人だったと思うよ。最近、この通りに引っ越してきたんだってさ。
+[charslot(slot = "l", name = "avg_4146_nymph_1#1$1",focus="l")]
+[name="ニンフ"]そっか……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+ニンフはしばらく、ぶらぶらと街を歩き回ってみた。すると、その途中で助けを必要とする多くの人に出会い、そしてそれを上回る数の、誰かを助けようとする人々に出会った。
+今や、他人に手を差し伸べようとしているのはニンフとロドスだけではなかったのだ。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="52_mini01_katzdalesquare_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+やがて、ニンフは自宅の前に辿り着いた。表札にはニンフのマークが描かれている。その表札は、助けが必要な人が一目でここがニンフの家だとわかるよう、何年も前に取り付けたものだった。
+表札の下には「援助をお求めの方は、左折した先のロドス事務所までお越しください！　ニンフより」と書かれているが、それはつい最近彼女が書き加えたものだった。
+[charslot(slot = "m", name = "avg_4146_nymph_1#3$1",focus="m")]
+[name="ニンフ"]ふんふふーん♪
+[Dialog]
+[charslot]
+ニンフは楽しげに鼻歌を歌いながら、その文字を拭い去り――
+続けて、表札も外した。
+[charslot(slot = "m", name = "avg_4146_nymph_1#1$1",focus="m")]
+[name="ニンフ"]まさか、みんなが「ニンフ」を必要としなくなる日が来るのが、こんなに嬉しいことだったなんてね。
+[name="ニンフ"]もしかしたら、あたしも外勤任務の申請を出して、カズデル以外の場所も見て回ったほうがいいのかな……
+[Dialog]
+[charslot]
+ニンフは街を行き交う人々に目を向けた。するとそこには、自分と似たような顔つきをした人がたくさんいるように思え、その中にグレーテルという名のサルカズの姿もあったような気がした。
+彼女はその全員に向けて挨拶してから、心の中でそっと、「ありがとう」とつぶやいた。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]
