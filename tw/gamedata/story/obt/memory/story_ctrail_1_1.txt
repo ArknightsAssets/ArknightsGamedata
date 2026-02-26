@@ -1,0 +1,557 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="bg_desert_3",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_wind", volume=1, loop=true, channel="a")]
+[Delay(time=2)]
+天氣很好，能見度相當不錯，風力適中。
+短距離飛行測試已經全部完成……接下來，就是第一次正式飛行實驗，預定飛行距離十公里。
+……
+[Dialog]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[gridbg(imagegroup="53_g16_sunnyday_L1/53_g16_sunnyday_R1/53_g16_sunnyday_L2/53_g16_sunnyday_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-900,fadetime=2)]
+[largebgtween(duration = 30,yFrom = 300, yTo = 250,block = false)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+比預想的還要順利！只剩下最後兩公里了，要確認好降落地點的狀態。
+順風，速度稍微有點快，最好降下——
+風力增強得好快？好強的上升氣流——
+[Dialog]
+[PlaySound(key="$blizzard", volume=1, loop=true, channel="a")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[gridbg(imagegroup="47_g14_skyovercast_L1/47_g14_skyovercast_R1/47_g14_skyovercast_L2/47_g14_skyovercast_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-900,fadetime=2)]
+[largebgtween(duration = 30,xfrom=-900,xto=-800,yFrom = 300, yTo = 250,block = false)]
+[CameraShake(duration=-1, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=false, block=false)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+雲層堆積得太快了？！不對，那不是普通的積雨雲——
+得馬上避開！！
+不、轉向和下降都、氣流——
+[Dialog]
+[CameraShake(duration=3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[gridbg]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_heartratemonitor", volume=0.1, loop=true, channel="b")]
+[stopsound(channel="a",fadetime=15)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[Subtitle(text="……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Soundvolume(volume=0.5,channel="b",fadetime=2)]
+[Subtitle(text="呼吸……鼻子裡面……好冷……什麼聲音……好想關掉……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“……雲……”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="誰……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“……小雲……迪婭……”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="好睏……還想睡……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="“…………克勞迪婭……”", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="媽媽……我再……睡一下……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="……", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[stopsound(channel="a",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_vipward",screenadapt="coverall")]
+[Delay(time=2)]
+[Soundvolume(volume=1,channel="b",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]今天是第四天了，小雲，感覺怎麼樣？
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="none")]
+[name="克勞迪婭"]腿還是很腫……不過，媽媽，我有事想問你。
+[name="克勞迪婭"]你們……是不是有事瞞著我？除了骨折，我……沒有其他問題嗎？
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]……
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="none")]
+[name="克勞迪婭"]那天，我撞上的突發強對流……還有那個雲團的狀態……雖然規模不算大，但那是……天災雲吧？
+[name="克勞迪婭"]……媽媽，跟我說吧。
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]……好。克勞迪婭，你確實感染了礦石病。
+[name="母親"]……
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="none")]
+[name="克勞迪婭"]……
+[name="克勞迪婭"]有……多嚴重？我還能……活多久？
+[Dialog]
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[Delay(time=2)]
+[stopsound(channel="b",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="29_g3_cottage",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$doorknockquite")]
+[Delay(time=2.5)]
+[name="母親"]小雲，你在工作室裡吧？我可以進來嗎？
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="克勞迪婭"]媽媽，有什麼事嗎？
+[name="克勞迪婭"]我不想被打擾……
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="克勞迪婭"]我已經沒有那麼多時間了……我有很多工作要做……我的腿好不容易好了……
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="none")]
+[name="母親"]克勞迪婭……我知道，你當然有鎖上房門的權利。但昨天你答應過我，我們會好好談一談。
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="m")]
+[name="克勞迪婭"]我……一定要現在嗎？我不是不想跟你說話，媽媽，我只是……很忙。改天可以嗎？
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="none")]
+[name="母親"]昨天，你答應了我；上週，你答應了我兩次。
+[name="母親"]我願意等到你覺得可以打開門的那一天……不過，今天你爸爸會回來，你知道他沒辦法待太久，很快又得出發。
+[name="母親"]如果今天不行，下次你再有機會見到他，可能又是幾個月之後了。
+[name="母親"]我們一起準備一下今天的晚餐……好嗎？你知道我對廚房的事總是笨手笨腳的……
+[name="母親"]回家之後，我們還沒有一起吃過飯呢。
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="克勞迪婭"]……
+[Dialog]
+[charslot]
+[playsound(key="$dooropenquite")]
+[charslot(slot="m",name="avg_npc_524_1#1$1",duration=2)]
+[Delay(time=2.5)]
+[name="母親"]嗯……你在調整燃料箱的尺寸？看起來不錯。
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="克勞迪婭"]……不，完全不行……
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="m")]
+[name="克勞迪婭"]媽媽……
+[name="克勞迪婭"]我……好累。
+[Dialog]
+[charslot]
+克勞迪婭坐在一個木箱上，母親走到了她的身邊，克勞迪婭沒有放下手上的工具，只是把額頭抵在了媽媽的肚子上。
+熟悉的毛衣，熟悉的觸感，熟悉的洗衣精味道。但為什麼，一切都像是變了……
+[charslot(slot="m",name="avg_4165_ctrail_1#6$2",focus="m")]
+[name="克勞迪婭"]我知道……我把自己關在工作室裡，你們一定很擔心……
+[name="克勞迪婭"]但如果不這麼做，我就，我就完全沒辦法平靜下來。
+[name="克勞迪婭"]……即使這樣做了，我也沒辦法平靜。
+[Dialog]
+[charslot]
+母親沒有說話，只是輕輕地把手放在了克勞迪婭的毛線帽上，手掌的邊緣擦過了克勞迪婭的耳朵，是溫熱的。
+[Dialog]
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",duration=1.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[name="克勞迪婭"]我好害怕，媽媽……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]沒關係的，小雲，我們知道這件事對你的打擊很大……無論你是想嘗試別的道路，還是想再試試，努力克服對飛行的恐懼……
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="克勞迪婭"]不，媽媽。我不是害怕飛行……
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[name="克勞迪婭"]我是怕……我是怕死。
+[name="克勞迪婭"]你知道我一直想做的那件事……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]……一次完整的羽獸遷徙伴飛？
+[charslot(slot="l",name="avg_4165_ctrail_1#2$2",focus="l")]
+[name="克勞迪婭"]嗯。從哥倫比亞到雷姆必拓，再從雷姆必拓回到哥倫比亞……
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="克勞迪婭"]雖然現在，整片大地連一張足夠完整精確的羽獸遷徙地圖都還沒有人畫出來過。
+[name="克勞迪婭"]我一直以為，如果一生只為這一件事努力，也許最後我會有機會做到……
+[name="克勞迪婭"]可是我的一生……為什麼會突然變得這麼短呢？
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]……
+[name="母親"]……醫生說，你的感染並不算嚴重……礦石病……礦石病……說不定再過幾年，礦石病就能……
+[Dialog]
+[charslot]
+克勞迪婭沒有忽略母親不自然的停頓。她知道，即使是想要安慰她，身為科學研究人員的母親也無法說出那近乎妄想的陳述。
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="l")]
+[name="克勞迪婭"]……媽媽，我只是想要時間，稍微……足夠的時間。
+[name="克勞迪婭"]但為什麼連僅有的這點時間……我也不能擁有？
+[charslot(slot="l",name="avg_4165_ctrail_1#8$2",focus="l")]
+[name="克勞迪婭"]……
+[name="克勞迪婭"]我還是繼續調整飛行器吧。燃料箱也好，結構架也好，引擎也好，噴嘴也好，總歸會有點用……總歸……
+[name="克勞迪婭"]不對，燃料箱這樣弄還是不對，我要拆下來再重做一遍……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]……今天先休息一晚好不好？我真的很不會煮飯，我們總不能讓爸爸回來吃罐頭吧？
+[Dialog]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="none")]
+[playsound(key="$d_gen_transmissionget")]
+[Delay(time=1.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]是他的訊息，算一下時間也差不多了……嗯？
+[name="母親"]……小雲，你爸爸說，他撿到了一窩快孵化的羽獸蛋，但是母羽受的傷很嚴重，沒能活下來。
+[name="母親"]我猜……他會把牠們帶回來。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="33_g8_srcroom",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="l")]
+[name="克勞迪婭"]這樣……應該差不多？
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]嗯，用這些燈泡作為熱源，然後是軟墊……嗯，再加一層吧。我那條圍巾放在哪裡了，小雲你記得嗎……
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="克勞迪婭"]我覺得用毛巾也可以，我拿兩條毛巾過來。
+[Dialog]
+[charslot(slot="l",afrom=1,ato=0,duration=1)]
+[charslot(slot="l",posfrom="0,0", posto="-100,0",duration=1.5)]
+[delay(time=2.5)]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",afrom=0,ato=1,duration=1)]
+[charslot(slot="l",posfrom="-100,0", posto="0,0",duration=1.5)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="克勞迪婭"]嗯……鋪好了。
+[name="克勞迪婭"]不知道還來不來得及……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]應該還可以吧？畢竟你爸爸一路都把牠們貼在肚皮上保暖。
+[name="母親"]不過……我的截稿日快到了。看這些蛋的情況，可能這一兩天就會破殼了，小雲，可以請你照顧牠們嗎？
+[charslot(slot="l",name="avg_4165_ctrail_1#5$2",focus="l")]
+[name="克勞迪婭"]咦？可、可以啊，既然媽媽要忙的話……
+[Dialog]
+[charslot]
+克勞迪婭趴在簡易孵化箱的邊緣。熱燈泡的光暖烘烘地照在白色的蛋殼上，反光亮得有點刺眼，但她目不轉睛地盯著。
+也許是錯覺，她好像聽到了輕微的摩擦聲，像是某一張小小的喙抬了起來，摩擦到了內殼……
+[Dialog]
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="l")]
+[name="克勞迪婭"]……你們真的能活下來嗎……
+[Dialog]
+[charslot]
+她說得很小聲。
+她希望媽媽沒有聽見這句話。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="31_g3_mini12_farmland",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",duration=2)]
+[Delay(time=3.5)]
+[name="克勞迪婭"]嘿，該出門了，你們需要曬太陽，知道了嗎？
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="none")]
+[name="羽獸們"]（嘈雜的啁啾）
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="克勞迪婭"]不然你們的骨頭跟羽毛就不能變硬變堅固，那樣很危險的！
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="none")]
+[name="羽獸們"]（吵鬧的啁啾）
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]好吧，好吧，現在跟著我……
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=2)]
+[Delay(time=2.5)]
+克勞迪婭在田野裡快步走著，每走幾步就要回頭看一眼。小羽獸們拍動著翅膀跟著她，自然而然地排成了一隊。
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]沒錯，沒錯，就像這樣。
+[name="克勞迪婭"]現在的太陽剛剛好，如果陽光太強了也不行，你們會脫水的……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="none")]
+[name="羽獸們"]（好奇的啁啾）
+[charslot(slot="m",name="avg_4165_ctrail_1#5$2",focus="m")]
+[name="克勞迪婭"]喂！不要去那邊，我前幾天在那裡看到了流浪雲獸！
+[name="克勞迪婭"]這裡這裡這裡，過來過來過來——
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0", posto="-100,0",duration=1.5)]
+[delay(time=2.5)]
+[charslot]
+[playsound(key="$bodyfalldown1")]
+[CameraShake(duration=1, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1)]
+[name="母親"]噢——
+[charslot(slot="m",name="avg_4165_ctrail_1#5$2",focus="m")]
+[name="克勞迪婭"]媽媽！
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[charslot(slot="m",name="avg_npc_524_1#1$1",afrom=0,ato=1,duration=1)]
+[charslot(slot="m",posfrom="0,-50", posto="0,0",duration=1.5)]
+[delay(time=2.5)]
+[name="母親"]我沒事。
+[name="母親"]銘印效應……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="克勞迪婭"]嗯，牠們把我當成牠們的媽媽了。
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]我記得……以前是不是也發生過？
+[name="母親"]那時候你還很小……自己就像一隻雛羽，但屁股後面還跟著兩隻小羽獸。
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="克勞迪婭"]嗯，八歲的時候，你和爸爸帶我去雷姆必拓的那一次……
+[name="克勞迪婭"]那次撿到羽獸蛋的是我。我本來想學著像羽獸那樣孵蛋，是媽媽你教我做了孵化箱……
+[charslot(slot="m",name="avg_4165_ctrail_1#2$2",focus="m")]
+[name="克勞迪婭"]我還記得我們的帳篷裂開了一條縫，爸爸補帳篷的時候讓我幫忙……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="克勞迪婭"]我在帳篷裡面拉住裂開的地方，那兩隻小羽獸趁我動不了，順著我的手臂跳上來，從裂縫鑽出去了……
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]然後你就在帳篷裡尖叫，把爸爸嚇壞了，哈哈。
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="克勞迪婭"]我怕牠們跑到外面會出事嘛……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]結果我一跑出帳篷，牠們就拍著翅膀往我這裡衝過來了。
+[name="克勞迪婭"]呵呵……就跟現在差不多呢。
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]……嗯。
+[name="母親"]小雲……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="克勞迪婭"]媽媽，怎麼了？
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]沒什麼，我跟你一起陪牠們曬曬太陽吧。
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]啊！是不是你的文章寫完了？那要慶祝一下，晚餐多做幾道菜嗎？
+[Dialog]
+[charslot]
+[name="羽獸們"]（興奮的啁啾）
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]呃，還沒……好了！有編輯催我就夠了，小雲你就別問了。還有你們，你們也不准問！
+[name="母親"]我就不能出來散個步嘛……
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="克勞迪婭"]噗……好哦，媽媽。
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(duration=2)]
+[Delay(time=2.5)]
+夕陽的光線漸漸橙紅，她們走在羽獸的啁啾之中。
+女人牽著女兒的手，她很想問克勞迪婭一些問題，但又有點不敢問。
+她擔心她只是一時之間忘了，她擔心自己會讓這個孩子又想起來。
+有些疑問一旦在心中滋生，就再也揮之不去，她明白這一點。
+如果可以，她會希望她的女兒永遠不需要面對人生的這一面……尤其不必以這樣的方式。
+克勞迪婭突然換了一隻手牽住母親，她反過來走，這樣就可以時時刻刻盯著小羽獸們的每一步。
+[Dialog]
+[charslot(slot="l",name="avg_4165_ctrail_1#9$2",duration=1.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]克勞迪婭。
+[charslot(slot="l",name="avg_4165_ctrail_1#5$2",focus="l")]
+[name="克勞迪婭"]媽媽？
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]你瞭解這種羽獸的生活史嗎？
+[charslot(slot="l",name="avg_4165_ctrail_1#9$2",focus="l")]
+[name="克勞迪婭"]嗯，大概知道，前幾天我又查了一些詳細資料。
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]破殼之後大約兩到三週，牠們就有了飛行的能力和生理衝動；最晚到第四週……
+[charslot(slot="l",name="avg_4165_ctrail_1#9$2",focus="l")]
+[name="克勞迪婭"]嗯。我知道，媽媽。
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]你打算……不，沒事，沒什麼。
+[name="母親"]我們家照顧這窩羽獸肯定沒問題。無論怎麼樣，牠們都可以好好過完這一生。
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="克勞迪婭"]媽媽，你是想說，牠們不用飛起來也可以嗎？
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]……
+[charslot(slot="l",name="avg_4165_ctrail_1#6$2",focus="l")]
+[name="克勞迪婭"]那你又為什麼要向我提起這件事呢……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]……克勞迪婭，我最近才明白……
+[name="母親"]不，我以為我早就明白，但最近我才真正體會到，同一種東西對不同的人來說，可能會有多麼不一樣……
+[name="母親"]我都不知道我竟然會這麼……小心翼翼。
+[name="母親"]我竟然會這麼害怕……害怕一句話，一種我從來都覺得無害的話。
+[name="母親"]“振作起來”……那會成為又一個負擔嗎？
+[name="母親"]……
+[name="母親"]我有時覺得我是被一些不理智的情感支配了，是激素或者神經作用，是極端情形下的本能抗拒反應，是觸發了特定條件下的行為模式……
+[name="母親"]但無論怎麼解釋——
+[name="母親"]我唯獨做不到，想像你再受一點點痛苦。
+[name="母親"]媽媽很沒用吧？明明受到傷害的人是你。
+[charslot(slot="l",name="avg_4165_ctrail_1#1$2",focus="l")]
+[name="克勞迪婭"]……
+[charslot(slot="r",name="avg_npc_524_1#1$1",focus="r")]
+[name="母親"]對不起，克勞迪婭，請你不要安慰我。不應該是你安慰我。
+[name="母親"]我們再走一下吧，我很久沒有這樣散步了。
+[Dialog]
+[charslot]
+克勞迪婭只是默默牽住了母親的手。
+那會是痛苦嗎……？但她也來不及繼續想下去——
+兩隻小羽獸靠到她的身邊，一隻用力擠向另一隻，被擠的那一隻嚇得差點鑽到克勞迪婭的腳下，克勞迪婭連忙抬起腳，單腿跳了幾步。
+差點被踩到的小羽獸拍動了幾下翅膀，也許牠是在模仿抬起腳的克勞迪婭？
+有一個瞬間，克勞迪婭以為牠要飛起來了——
+但並沒有，拍動了幾下翅膀後，牠還是像之前那樣跳著，想要去觸碰克勞迪婭的腳踝。
+[name="羽獸"]（依賴的啁啾）
+[Dialog]
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="克勞迪婭"]……
+[Dialog]
+[charslot]
+克勞迪婭鬆開母親的手，彎腰把牠捧了起來。
+也許是因為視野高度突然改變，雛羽有些瑟縮，克勞迪婭感覺到手裡熱熱的一團羽毛在發抖。
+但牠終究還是探出了頭，向左瞧瞧，向右瞧瞧，然後……
+牠是在看天空嗎？克勞迪婭想。
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="克勞迪婭"]媽媽。
+[Dialog]
+[charslot]
+她仍然看著手中的羽獸。
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="克勞迪婭"]也許我會痛苦吧……畢竟……各式各樣的事都會發生。
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]但我並不害怕飛行。
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="克勞迪婭"]不論發生什麼，我是不會害怕飛行的。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="29_g3_cottage",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)] 
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[playsound(key="$d_avg_fixcarjingle")]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_4165_ctrail_1#11$2",focus="m")]
+[name="克勞迪婭"]鎚子呢……啊，我幹嘛焊得那麼緊……
+[Dialog]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_npc_524_1#1$1",duration=2)]
+[Delay(time=3.5)]
+[name="母親"]……
+[charslot(slot="m",name="avg_4165_ctrail_1#5$2",focus="m")]
+[name="克勞迪婭"]或者鑿子……咦？媽媽？
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]你沒有關門……所以我就……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="克勞迪婭"]嗯……沒事，應該很快就能搞定了。吵到你了嗎？
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]當然不會……不過，你好像有一陣子沒來這裡了？
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]之前都在忙嘛……畢竟牠們都跟著我，要是我一直待在工作室，牠們曬太陽的時間就不夠了。
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]那今天……？
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]做點準備。
+[name="克勞迪婭"]媽媽上次也提到了吧？我這幾天把每隻都檢查了一遍，飛羽都已經長得差不多了。算一下時間，已經有點晚了。
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="克勞迪婭"]呃，雖然爬到樹上把牠們一隻一隻往下丟……說不定也可以……不行，我覺得不行，太危險了！
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]總而言之……我需要我的飛行器。
+[name="克勞迪婭"]之前把飛行器都改得亂七八糟了……其實有用的改裝沒多少，還得敲掉或者改回原樣。
+[name="克勞迪婭"]我現在需要的，是一台經過測試的、能夠穩定起飛的飛行器。
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="克勞迪婭"]這樣就好。
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]……嗯。我能幫上忙嗎？
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]如果你知道我把鎚子放在哪裡了的話……
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]嗯哼，我確實知道。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_wilderness_m",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+天氣很好。雖然還有一點晨霧殘留，但很快就會在逐漸明亮的陽光中散去。
+有微風。克勞迪婭抓起一把草葉，鬆手；草葉落下，風向東南。
+羽獸們嘰嘰喳喳地跟在她身後。牠們的“媽媽”今天看起來有點不一樣……
+但這並不妨礙牠們與往常一樣，亦步亦趨、擠來擠去地跟在她身後。
+然後她停了下來，面朝著牠們。克勞迪婭讓媽媽留在了遠處，但在開始之前，她覺得自己想要……說點什麼。
+羽獸們當然聽不懂，但……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]嘿，聽我說……
+[name="克勞迪婭"]我們今天要，學習飛行。
+[charslot(slot="m",name="avg_4165_ctrail_1#8$2",focus="m")]
+[name="克勞迪婭"]其實我也在想，就算沒有我，也許你們也會模仿別的羽獸，或者憑自己天生的衝動展開雙翼。
+[name="克勞迪婭"]就算沒有成年羽獸帶領你們，你們最後……還是會飛起來的。
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]等你們能夠飛起來，不久之後，你們還要學會遷徙。我會帶你們到已知的、你們族群遷徙路線上的途經點。
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="克勞迪婭"]理想的狀況當然是，當找到屬於你們的羽獸群時，你們已經能夠自如地飛行了，這樣你們就能跟上牠們……
+[charslot(slot="m",name="avg_4165_ctrail_1#2$2",focus="m")]
+[name="克勞迪婭"]其實我很想陪著你們完成遷徙。一次完整的、歷時三年的遷徙。一直以來……一直以來，這都是我最大的願望。
+[name="克勞迪婭"]但我現在做不到……
+[charslot(slot="m",name="avg_4165_ctrail_1#1$2",focus="m")]
+[name="克勞迪婭"]……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]不說這些了。今天你們，我們只需要……飛起來。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_wind", volume=0, loop=true, channel="a")]
+克勞迪婭能感覺到陽光照射的角度在慢慢升高，空氣和她身體表面的溫度也一同緩緩上升。
+清晨的風穿過腋下，她開始助跑，像是要乘到空氣之上。
+她啟動了飛行器。
+大地向下、向後，緩慢而平穩地離去。
+她聽到身後撲翼的聲音，比她想像中的還要響亮，啁啾聲變成了鳴叫，在抬升著她的氣流中振動，她能聽到這一切。
+[Dialog]
+[Soundvolume(volume=0.6,channel="a",fadetime=2)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[gridbg(imagegroup="53_g16_sunnyday_L1/53_g16_sunnyday_R1/53_g16_sunnyday_L2/53_g16_sunnyday_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-900,fadetime=2)]
+[largebgtween(duration = 30,yFrom = 300, yTo = 250,block = false)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+越來越高，越來越高。
+調整噴射的角度，左傾，右傾，她知道自己畫出了流暢的曲線。
+身後飛翔的羽獸把軌跡綴成了一條點狀線。
+很多事情都遠去了，和大地上逐漸變小的事物一起。
+她只是享受著風，就和第一次投入天空一樣。
+穿過雲的影子時，那個幽靈般的問題也像影子一樣俯身而來。
+“儘管如此，儘管如此，你還能像這樣飛多久……？”
+“你能抵達終點嗎？”
+可是太奇怪了。
+在空氣和羽獸啼鳴的圍擁中，這些之前壓得她喘不過氣的問題好像，變輕了……
+只要一聲心跳就可以震落。
+[name="克勞迪婭"]我在想什麼呢……
+[name="克勞迪婭"]就算是之前，難道我就知道一定能完成嗎……
+[name="克勞迪婭"]明明一直都是這樣的……一直都是這樣的啊。
+[name="克勞迪婭"]我只是想要……飛起來而已。
+[name="克勞迪婭"]就算飛不到雷姆必拓，能越過拉特蘭也可以，能抵達維多利亞也可以……
+[name="克勞迪婭"]就算飛不到汐斯塔，能飛到謝拉格也可以，能飛出哥倫比亞也可以……
+[name="克勞迪婭"]路線圖也是一段一段畫出來的。
+又是一聲啼鳴破開風聲。
+克勞迪婭決定把那當作贊同。
+[Dialog]
+[stopsound(channel="a",fadetime=2)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[gridbg]
+[Background(image="31_g3_mini12_farmland",screenadapt="coverall")]
+[Delay(time=2)]
+[playMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]媽媽，我有事想跟你說。
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]親愛的，什麼事？
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]你知道羅德島嗎？
+[name="克勞迪婭"]我最近查了一下，他們有一種治療計劃……我覺得，也許我可以申請。
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]小雲……
+[charslot(slot="m",name="avg_4165_ctrail_1#9$2",focus="m")]
+[name="克勞迪婭"]我還查了一下相關新聞……看起來，羅德島本艦會進行跨國航行，說不定我能藉這個機會，調查大地上不同區域的羽獸遷徙情況。
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[name="克勞迪婭"]媽媽，你覺得呢？
+[charslot(slot="m",name="avg_npc_524_1#1$1",focus="m")]
+[name="母親"]……好啊。不過，要讓我看看這個治療計劃的探訪條款，你不介意我偶爾去住幾天吧？
+[Dialog]
+[charslot(slot="m",name="avg_4165_ctrail_1#10$2",focus="m")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4165_ctrail_1#3$2",focus="m")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0", posto="50,0",duration=1.5)]
+[delay(time=2.5)]
+克勞迪婭抱住了母親。
+熟悉的毛衣，熟悉的觸感，熟悉的洗衣精味道。
+是啊，有些事情發生了一點點變化。
+但有些事情是不會變的，克勞迪婭想。
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[image]
+[charslot]

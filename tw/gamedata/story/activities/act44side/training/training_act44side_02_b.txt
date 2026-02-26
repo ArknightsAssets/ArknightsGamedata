@@ -1,0 +1,13 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.SwitchToDefaultUIState]
+[Delay(time=0.2)]
+[Battle.Pause]
+[Battle.EnsureMinSp(charId="trap_252_pckstp", sp=30)]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Tutorial(tileX=3, tileY=4, focusWidth=120, focusHeight=120, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", \
+          protectTime=0.5, dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 這傢伙在充能完成之前，每次把“某種天命”彈開，自己也會受創。以前大家都說這種情況叫“天命迸發”。
+[popupdialog(dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black="0.5", protectTime=0.5)] 博士，要是看到壓力舒緩幫手周圍有“天命來襲”，就儘快打開，等到充能結束，“某種天命”就傷不了它了。
+[popupdialog(dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black="0.5", protectTime=0.5)] 這傢伙揍人真的很痛，最好還是趁它還沒醒，先把它打到半殘。正面交給我，博士就負責打爆它吧。
+[InputBlocker(blockInput=true)]
+[Battle.UnLockFunction(mask="SYSTEM_MENU_INTERACT")]

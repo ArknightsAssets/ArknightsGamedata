@@ -1,0 +1,23 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.SwitchToDefaultUIState]
+[Delay(time=0.5)]
+[Battle.Pause]
+[Battle.EnsureMinSp(charId="trap_252_pckstp", sp=30)]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Tutorial(tileX=3, tileY=4, focusWidth=85, focusHeight=85, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", \
+          protectTime=0.5, dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 真懷念啊，這是壓力舒緩幫手。以前總有人愛看“某種天命”撞它然後被大力彈開的樣子。
+[popupdialog(dialogHead="$avatar_hsguma", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black="0.5", protectTime=0.5)] 後來大家就很少用它了，因為它總是趁人不注意自己充能，充滿了就開始揍人。我被揍過，還蠻痛的。
+[Delay(time=0.3)]
+[Battle.EnsureMinSp(charId="trap_252_pckstp", sp=30)]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true, tileX=2, tileY=1, validWidth=85, validHeight=85)]
+[Tutorial(tileX=2, tileY=1, focusWidth=85, focusHeight=85, waitForSignal="char_info", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_hsguma")] 嗯？這裡也有“天命來襲”啊，那事情就簡單了。
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_hsguma")] 就這台吧，博士，請按開關。
+[InputBlocker(blockInput=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
