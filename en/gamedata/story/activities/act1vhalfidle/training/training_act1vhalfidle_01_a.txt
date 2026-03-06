@@ -1,0 +1,122 @@
+[HEADER(is_tutorial=true, is_skippable=true)] 次生预案教学关1_a
+[InputBlocker(blockInput=true)]
+[Delay(time=1.5)]
+[Battle.Pause]
+[InputBlocker(blockInput=true, black=0.4)]
+[PopupDialog(dialogHead="$avatar_closure")]Amiya? Can you hear me? The signal's established. Say hi to everyone, Doctor.
+[PopupDialog(dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]Doctor, Closure! The scouts' all here waiting for your orders.
+[PopupDialog(dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]Only... we're running a bit short on logistical supplies at the moment, so we plan to gather some local resources for construction work.
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true, black=0)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, cardIndex=1, rightStart=true, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="put_down", charId="char_002_amiya",posX=1,posY=3, \
+          dialogHead="$avatar_closure", animStyle="Drag", \
+          startCardIndex=1, startRightStart=true, endTileX=1, endTileY=3)] \
+Doctor, deploy Amiya and try to defeat that Originium Slug.
+[Delay(time=0.5)]
+[InputBlocker(blockInput=true, tileX=2,tileY=3, validWidth=160, validHeight=160)]
+[Tutorial(waitForSignal="select_direction", dialogHead="$avatar_amiya", animStyle="Drag", \
+          startTileX=2, startTileY=3, endTileX=3, endTileY=3, dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true)]
+[Battle.Delay(time=6)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, black=0)]
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]Target down! I think I gained some <@tu.kw>Combat EXP</>, and raised my <@tu.kw>training level</>.
+[Tutorial(dialogHead="$avatar_closure")]We can also begin <@tu.kw>terraforming the environment</> now.
+[Tutorial(focusWidth=100, focusHeight=100, \
+          dialogHead="$avatar_closure", animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          cardIndex=0, rightStart=true)] \
+          Doctor, I think you must have noticed that <@tu.kw>Production Module</>?
+[InputBlocker(blockInput=true, cardIndex=0, rightStart=true, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="char_info",focusWidth=100, focusHeight=100, \
+          dialogHead="$avatar_closure", animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          cardIndex=0, rightStart=true)] \
+          That's right, I've turned our complicated production system into something nice and simple to grasp.
+[InputBlocker(blockInput=false)]
+[Battle.LockFunction(mask="SYSTEM_MENU")]
+[Tutorial(waitForSignal="put_down",charId="trap_1500_lhgras", posX=4, posY=3, focusWidth=100, focusHeight=100, \
+          dialogHead="$avatar_closure", animStyle="Click", focusStyle="HighlightCircle", \
+          tileX=4, tileY=3, black=0)] \
+          Try to deploy that <@tu.kw>Bush</>. You can <@tu.kw>tap</> or drag it over.
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true)]
+[Battle.Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, black=0)]
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]Orders received... terraforming complete.
+[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Tutorial(focusX=40, focusY=130, focusWidth=100, focusHeight=100, anchor="Left", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          Look at that! The <@tu.kw>Bush</> will now give us some <@tu.kw>Training Handbooks</>.
+[Tutorial(focusX=130,focusY=20, focusWidth=200, focusHeight=200, anchor="Left", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          We can defeat different enemies to obtain different resources.
+[Tutorial(dialogHead="$avatar_closure", protectTime=0.5)]Similarly, if you make good use of these <@tu.kw>Production Devices</> I've prepared, you can also produce a large amount of resources.
+[InputBlocker(blockInput=true, black=0)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=6)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]Careful, more enemies have appeared! Though I don't see any Objective Point in the area.
+[Tutorial(dialogHead="$avatar_closure", black=0, protectTime=0.5)]That's because we <@tu.kw>don't have to protect any Objective Points</> in Frontier Outpost battles.
+[Tutorial(dialogHead="$avatar_closure", black=0, protectTime=0.5)]Enemies will advance following a set route on the map.
+[Tutorial(focusX=-100,focusY=0, focusWidth=120, focusHeight=120, anchor="Top", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", protectTime=0.5)]\
+          If the map has <@tu.kw>too many enemies</>, it'll affect our production, and <@tu.kw>they'll start eating away at our Life Points.</>
+[Tutorial(focusX=-100,focusY=0, focusWidth=120, focusHeight=120, anchor="Top", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", protectTime=0.5)]\
+          In other words, we need to clear them out in time.
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Tutorial(waitForSignal="act1vhalfidle_battle_gain_equip")]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=-35,focusY=110,  focusWidth=90, focusHeight=90, anchor="Right",  \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          Huh, what's this? Seems like some sort of <@tu.kw>buff</> slot.
+[Tutorial(target="pool_act1vhalfidle_equip_thumbnail_btn", \
+          waitForSignal="act1vhalfidle_battle_open_equip_panel", \
+          animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          On your command interface, you can see these <@tu.kw>'Armory Plug-ins'</>. They will bring you temporary buffs.
+[Delay(time=0.3)]
+[Tutorial(target="pool_act1vhalfidle_equip_in_bag_btn", \
+          animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          Try tapping on this <@tu.kw>Armory Plug-in</> to use it.
+[Tutorial(focusX=-120,focusY=0,  focusWidth=300, focusHeight=300, anchor="Right", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          You can use <@tu.kw>three</> different <@tu.kw>Armory Plug-ins</> at the same time to support your Operators in battle.
+[Delay(time=0.3)]
+[Tutorial(target="pool_act1vhalfidle_equip_thumbnail_btn", \
+          animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          Tap on your command interface to close the Armory Plug-in panel.
+[Tutorial(dialogHead="$avatar_closure",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]<@tu.kw>Armory Plug-ins</> and <@tu.kw>Production Modules</> are essential to our rebuilding efforts, and I believe you will make the most out of them.
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=6)]
+[InputBlocker(blockInput=true, black=0)]
+[Battle.Pause(pause=true)]
+[Tutorial(tileX=6,tileY=2,  focusWidth=140, focusHeight=140, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          I think I spy a special Originium Slug up ahead?
+[Tutorial(dialogHead="$avatar_closure",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]That's the <@tu.kw>Leader enemy</> of this area! Every stage has a Leader enemy, and they will affect the stage's completion rate.
+[Tutorial(focusX=0,focusY=-100,  focusWidth=150, focusHeight=150, anchor="Top", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]The barrens are an arduous place, and we have a <@tu.kw>limited amount of time to act</> on every map.
+[Tutorial(dialogHead="$avatar_closure",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=1)]Every time <@tu.kw>a Production Module is deployed</>, the Leader enemy will be alerted and <@tu.kw>show up earlier</>.
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]Doctor, let's defeat it and establish our very first Frontier Outpost!
