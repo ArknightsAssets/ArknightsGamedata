@@ -1,0 +1,122 @@
+[HEADER(is_tutorial=true, is_skippable=true)] 次生预案教学关1_a
+[InputBlocker(blockInput=true)]
+[Delay(time=1.5)]
+[Battle.Pause]
+[InputBlocker(blockInput=true, black=0.4)]
+[PopupDialog(dialogHead="$avatar_closure")]もしもし、アーミヤちゃん、聞こえる？通信が整ったよ。ドクター、みんなに挨拶してあげて。
+[PopupDialog(dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]ドクター、クロージャさん！先遣隊は全員揃っています。ドクター、ご指示を。
+[PopupDialog(dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]ただ……今は支援物資が逼迫していますから、資材を現地調達して建設を行うしかありません。
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true, black=0)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, cardIndex=1, rightStart=true, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="put_down", charId="char_002_amiya",posX=1,posY=3, \
+          dialogHead="$avatar_closure", animStyle="Drag", \
+          startCardIndex=1, startRightStart=true, endTileX=1, endTileY=3)] \
+了解。ドクター、すぐにアーミヤちゃんを配置して。まずはあのオリジムシを倒してみよう。
+[Delay(time=0.5)]
+[InputBlocker(blockInput=true, tileX=2,tileY=3, validWidth=160, validHeight=160)]
+[Tutorial(waitForSignal="select_direction", dialogHead="$avatar_amiya", animStyle="Drag", \
+          startTileX=2, startTileY=3, endTileX=3, endTileY=3, dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true)]
+[Battle.Delay(time=6)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, black=0)]
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]目標を撃破しました！<@tu.kw>経験値</>を積んだおかげで、私の<@tu.kw>訓練レベル</>も上がったみたいです。
+[Tutorial(dialogHead="$avatar_closure")]それだけじゃないよ。これで<@tu.kw>地形の改造や設備の設置</>ができるようになったんだ。
+[Tutorial(focusWidth=100, focusHeight=100, \
+          dialogHead="$avatar_closure", animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          cardIndex=0, rightStart=true)] \
+          さっき<@tu.kw>生産モジュール</>がドロップしたでしょ？
+[InputBlocker(blockInput=true, cardIndex=0, rightStart=true, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="char_info",focusWidth=100, focusHeight=100, \
+          dialogHead="$avatar_closure", animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          cardIndex=0, rightStart=true)] \
+          見ての通り、複雑な生産システムはどれもわかりやすい形式に変えといたんだ。
+[InputBlocker(blockInput=false)]
+[Battle.LockFunction(mask="SYSTEM_MENU")]
+[Tutorial(waitForSignal="put_down",charId="trap_1500_lhgras", posX=4, posY=3, focusWidth=100, focusHeight=100, \
+          dialogHead="$avatar_closure", animStyle="Click", focusStyle="HighlightCircle", \
+          tileX=4, tileY=3, black=0)] \
+          じゃ、その<@tu.kw>草むら</>を配置してみて。選択後に配置先を<@tu.kw>タップ</>するか、ドラッグ操作でも配置できるよ。
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true)]
+[Battle.Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, black=0)]
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]指示を確認……地形の改造が完了しました。
+[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Tutorial(focusX=40, focusY=130, focusWidth=100, focusHeight=100, anchor="Left", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          見て、<@tu.kw>草むらを配置</>したら、<@tu.kw>訓練マニュアル</>がいくつか獲得できたでしょ。
+[Tutorial(focusX=130,focusY=20, focusWidth=200, focusHeight=200, anchor="Left", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          倒した敵によって色んな資源をもらえるからね。
+[Tutorial(dialogHead="$avatar_closure", protectTime=0.5)]<@tu.kw>生産モジュール</>を上手に使って、どんどん環境を作り替えて、もっとたくさん資源を獲得しちゃおう。
+[InputBlocker(blockInput=true, black=0)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=6)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]気をつけてください、さらに多くの敵が現れました！ですが、こちらの防衛ラインがまだ確認できていません。
+[Tutorial(dialogHead="$avatar_closure", black=0, protectTime=0.5)]あ、それはね、前哨基地での作戦は<@tu.kw>防衛ラインを守る必要がない</>んだよ。
+[Tutorial(dialogHead="$avatar_closure", black=0, protectTime=0.5)]敵は決まったルートに沿ってフィールド内を動き回るだけだからね。
+[Tutorial(focusX=-100,focusY=0, focusWidth=120, focusHeight=120, anchor="Top", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", protectTime=0.5)]\
+          ただし、<@tu.kw>フィールド上にいる敵が多すぎる</>と、生産と建設に影響が出て、<@tu.kw>耐久値も徐々に減っていっちゃう</>んだ。
+[Tutorial(focusX=-100,focusY=0, focusWidth=120, focusHeight=120, anchor="Top", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", protectTime=0.5)]\
+          つまり、敵を速やかに排除して、数を減らしていかないといけないということですね。
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Tutorial(waitForSignal="act1vhalfidle_battle_gain_equip")]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=-35,focusY=110,  focusWidth=90, focusHeight=90, anchor="Right",  \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          あれ？これは何でしょう……なにか<@tu.kw>有益な効果</>を与えてくれるもののようですが。
+[Tutorial(target="pool_act1vhalfidle_equip_thumbnail_btn", \
+          waitForSignal="act1vhalfidle_battle_open_equip_panel", \
+          animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          ドクターの指揮画面では、ああいう一時的に有益な効果をもたらしてくれるものを<@tu.kw>「戦術プラグイン」</>って名付けてあるよ。
+[Delay(time=0.3)]
+[Tutorial(target="pool_act1vhalfidle_equip_in_bag_btn", \
+          animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          タップして、今手に入った<@tu.kw>戦術プラグイン</>をセットしてみよう。
+[Tutorial(focusX=-120,focusY=0,  focusWidth=300, focusHeight=300, anchor="Right", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          最大<@tu.kw>3タイプ</>の<@tu.kw>戦術プラグイン</>を同時にセットして、戦闘中のオペレーターを強化できるからね。
+[Delay(time=0.3)]
+[Tutorial(target="pool_act1vhalfidle_equip_thumbnail_btn", \
+          animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          指揮画面をもう一回タップしたら、戦術プラグイン画面を閉じられるよ。
+[Tutorial(dialogHead="$avatar_closure",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]<@tu.kw>戦術プラグイン</>と<@tu.kw>生産モジュール</>はすごく役に立つものなんだ。ドクターならうまく活用できるって信じてるよ！
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=6)]
+[InputBlocker(blockInput=true, black=0)]
+[Battle.Pause(pause=true)]
+[Tutorial(tileX=6,tileY=2,  focusWidth=140, focusHeight=140, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          あちらにいるオリジムシ、なんだか変わった感じがしませんか？
+[Tutorial(dialogHead="$avatar_closure",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]そいつはこのエリアの<@tu.kw>ボス</>だよ！ボスは各ステージにいて、ステージ攻略のクリア状況に影響する重要なターゲットなんだ。
+[Tutorial(focusX=0,focusY=-100,  focusWidth=150, focusHeight=150, anchor="Top", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]荒野の環境はすごく険しいから、各ステージの<@tu.kw>作戦時間は限られてる</>けど……
+[Tutorial(dialogHead="$avatar_closure",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=1)]<@tu.kw>生産モジュールを配置</>して環境に手を加えるたびに、ボスが警戒して<@tu.kw>早く現れるようになる</>んだ。
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]ドクター、あの敵を倒して、最初の前哨基地を完成させましょう！

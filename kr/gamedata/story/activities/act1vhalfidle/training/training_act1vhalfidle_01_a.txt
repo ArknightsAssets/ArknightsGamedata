@@ -1,0 +1,122 @@
+[HEADER(is_tutorial=true, is_skippable=true)] 次生预案教学关1_a
+[InputBlocker(blockInput=true)]
+[Delay(time=1.5)]
+[Battle.Pause]
+[InputBlocker(blockInput=true, black=0.4)]
+[PopupDialog(dialogHead="$avatar_closure")]여보세요, 아미야, 들려? 통신이 연결됐어. 박사도 사람들한테 인사 좀 해봐.
+[PopupDialog(dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]박사님, 클로저 씨! 선발대는 이미 도착해서 박사님의 지휘를 기다리고 있어요.
+[PopupDialog(dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]다만…… 저희의 물자가 부족해서, 건설 재료는 현지에서 조달할 수밖에 없어요.
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true, black=0)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, cardIndex=1, rightStart=true, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="put_down", charId="char_002_amiya",posX=1,posY=3, \
+          dialogHead="$avatar_closure", animStyle="Drag", \
+          startCardIndex=1, startRightStart=true, endTileX=1, endTileY=3)] \
+박사, 어서 아미야를 배치해서, 저 원석충부터 제거해 봐.
+[Delay(time=0.5)]
+[InputBlocker(blockInput=true, tileX=2,tileY=3, validWidth=160, validHeight=160)]
+[Tutorial(waitForSignal="select_direction", dialogHead="$avatar_amiya", animStyle="Drag", \
+          startTileX=2, startTileY=3, endTileX=3, endTileY=3, dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true)]
+[Battle.Delay(time=6)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, black=0)]
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]목표를 격파했어요! 왠지, <@tu.kw>작전 경험치</>가 쌓이고, <@tu.kw>훈련 레벨</>도 오른 것 같아요.
+[Tutorial(dialogHead="$avatar_closure")]그뿐만이 아니야. 이제는 <@tu.kw>환경 개조</>도 할 수 있게 됐어.
+[Tutorial(focusWidth=100, focusHeight=100, \
+          dialogHead="$avatar_closure", animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          cardIndex=0, rightStart=true)] \
+          박사, 방금 봤던 <@tu.kw>생산 모듈</>이 기억나?
+[InputBlocker(blockInput=true, cardIndex=0, rightStart=true, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="char_info",focusWidth=100, focusHeight=100, \
+          dialogHead="$avatar_closure", animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          cardIndex=0, rightStart=true)] \
+          맞아, 내가 복잡한 생산 시스템을 비교적 간단하고 알기 쉬운 형태로 바꿨어.
+[InputBlocker(blockInput=false)]
+[Battle.LockFunction(mask="SYSTEM_MENU")]
+[Tutorial(waitForSignal="put_down",charId="trap_1500_lhgras", posX=4, posY=3, focusWidth=100, focusHeight=100, \
+          dialogHead="$avatar_closure", animStyle="Click", focusStyle="HighlightCircle", \
+          tileX=4, tileY=3, black=0)] \
+          이제 저기 <@tu.kw>수풀</>에 배치해 봐. 직접 <@tu.kw>탭</> 하거나, 드래그해도 돼.
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true)]
+[Battle.Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, black=0)]
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]명령 접수…… 지형 개조 완료.
+[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Tutorial(focusX=40, focusY=130, focusWidth=100, focusHeight=100, anchor="Left", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          봐, <@tu.kw>수풀을 배치</>하면 우리는 <@tu.kw>훈련 수첩</>을 얻을 수 있어.
+[Tutorial(focusX=130,focusY=20, focusWidth=200, focusHeight=200, anchor="Left", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          각기 다른 적을 쓰러뜨리면, 다른 자원을 획득하게 돼.
+[Tutorial(dialogHead="$avatar_closure", protectTime=0.5)]<@tu.kw>생산 장치</>를 잘 활용하여 환경을 개조하면, 우리는 더 많은 자원을 획득할 수 있지.
+[InputBlocker(blockInput=true, black=0)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=6)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]조심하세요, 더 많은 적이 나타났어요! 그런데 아직 우리의 방어 포인트가 관측되지 않네요.
+[Tutorial(dialogHead="$avatar_closure", black=0, protectTime=0.5)]왜냐하면, 우리는 전초기지에서 전투하기에, <@tu.kw>방어 포인트</>를 지킬 필요가 없기 때문이야.
+[Tutorial(dialogHead="$avatar_closure", black=0, protectTime=0.5)]적들은 고정된 경로를 따라 전장에서 이동해.
+[Tutorial(focusX=-100,focusY=0, focusWidth=120, focusHeight=120, anchor="Top", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", protectTime=0.5)]\
+          만약, 전장에 <@tu.kw>너무 많은 적이 존재</>한다면, 우리의 생산과 건설에 지장이 생기고, <@tu.kw>목표 HP도 계속 감소</>할 거야.
+[Tutorial(focusX=-100,focusY=0, focusWidth=120, focusHeight=120, anchor="Top", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", protectTime=0.5)]\
+          다시 말해, 저희가 최대한 많은 적을 쓰러뜨려 적의 수량을 줄여야 한다는 거네요.
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Tutorial(waitForSignal="act1vhalfidle_battle_gain_equip")]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=-35,focusY=110,  focusWidth=90, focusHeight=90, anchor="Right",  \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          음? 그런데 이건 뭐죠? 뭔가 <@tu.kw>버프</>를 제공하는 물건 같은데요.
+[Tutorial(target="pool_act1vhalfidle_equip_thumbnail_btn", \
+          waitForSignal="act1vhalfidle_battle_open_equip_panel", \
+          animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          박사의 지휘 화면에서, 이런 일시적인 버프를 제공하는 물건을 나는 <@tu.kw>'전술 플러그인'</>이라고 부르고 있어.
+[Delay(time=0.3)]
+[Tutorial(target="pool_act1vhalfidle_equip_in_bag_btn", \
+          animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          탭 해서 이 <@tu.kw>전술 플러그인</>을 장착해 봐.
+[Tutorial(focusX=-120,focusY=0,  focusWidth=300, focusHeight=300, anchor="Right", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          각기 다른 종류의 <@tu.kw>전술 플러그인</>을 최대 <@tu.kw>3개</> 장착할 수 있는데, 전투 중인 오퍼레이터들에게 버프를 제공할 거야.
+[Delay(time=0.3)]
+[Tutorial(target="pool_act1vhalfidle_equip_thumbnail_btn", \
+          animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          지휘 화면을 탭 하면, 전술 플러그인 패널을 닫을 수 있어.
+[Tutorial(dialogHead="$avatar_closure",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]<@tu.kw>전술 플러그인</>과 <@tu.kw>생산 모듈</>은 아주 중요한 지원이야. 박사라면 분명 잘 활용할 수 있을 거라고 믿어.
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=6)]
+[InputBlocker(blockInput=true, black=0)]
+[Battle.Pause(pause=true)]
+[Tutorial(tileX=6,tileY=2,  focusWidth=140, focusHeight=140, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          저 원석충, 뭔가 좀 특별한데요?
+[Tutorial(dialogHead="$avatar_closure",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]저 녀석이 바로 이 구역의 <@tu.kw>리더</>야! 스테이지마다 리더 적이 나타나는데, 이 중요한 목표는 스테이지 진행도에 영향을 줘.
+[Tutorial(focusX=0,focusY=-100,  focusWidth=150, focusHeight=150, anchor="Top", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]황무지의 작전 환경은 아주 열악하여, 스테이지마다 <@tu.kw>작전 시간 제한</>이 있어.
+[Tutorial(dialogHead="$avatar_closure",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=1)]<@tu.kw>생산 모듈을 배치</>해 환경을 개조할 때마다, 그 구역의 리더 적이 놀라서 <@tu.kw>예정보다 일찍 등장</>하게 돼.
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]박사님, 저 녀석을 쓰러뜨리고 우리의 첫 번째 전초기지를 세워보시죠!
