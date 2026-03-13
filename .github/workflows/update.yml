@@ -25,7 +25,7 @@ jobs:
         run: python -m pip install arkprts[all]
       - name: install flatbuffers
         run: |
-          wget -O flatc https://raw.githubusercontent.com/MooncellWiki/torappu/refs/heads/main/bin/flatc
+          wget -O flatc https://raw.githubusercontent.com/MooncellWiki/torappu/37e645f4528248b639b63c35dbb63ee7ae64a315/bin/flatc
           chmod +x flatc && sudo mv flatc /usr/bin/flatc
       - name: Update files
         run: python -m arkprts.assets . --server all --log-level DEBUG --force
