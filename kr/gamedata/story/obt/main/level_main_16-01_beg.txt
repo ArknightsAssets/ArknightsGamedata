@@ -1,0 +1,592 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Decision(options="연구소에 안전하게 도착하는 길을 찾아야 해.;엘리시움?", values="1;2")]
+[Predicate(references="1;2")]
+[avgdisplay(id="1", name="act3mainss_01", style="animekv", slot="bgover", x=-200, y=80, scalex=1.2, scaley=1.2, entryfrom=0, entryto=0.2, duration=5, block=false)]
+[avgdisplay(id="1", name="act3mainss_01", style="animekv", slot="bgover", xto=0, yto=0, scalexto=0.9, scaleyto=0.9, duration=30)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>우르수스 크라이니 세베르 중앙 광산지구</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[name="엘리시움"]가져온 장비들이 먹통이 됐나 보네. 오염 구역의 상세 범위를 감지할 수 없어.
+[name="엘리시움"]여기는 광산의 숙소 구역 같은데, 위험이 있다면 여기 남아있는 사람들이겠지. 데몬의 오염이 있는 곳이니까……
+[name="만트라"]……
+[name="엘리시움"]팀장 말로는 이 광산 근처에 인간의 정신 활동 흔적은 없대. 동물의 흔적도 없고.
+[name="엘리시움"]오염 범위가 전방 연구소 입구까지는 확장되지 않았고, 대부분 남쪽으로 뻗어나갔어.
+[name="엘리시움"]북쪽으로 돌아가도 되지만, 그렇게 하면 예정보다 3시간이 더 걸려. 그래도 뭐, 별문제는 없을 거야.
+[name="만트라"](고개를 끄덕인다)
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[avgdisplay(id="1")]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Background(image="66_g3_miningarea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_4179_monstr_1#10$1", duration=1, isblock=true)]
+[name="Mon3tr"]우와!!
+[name="Mon3tr"]감탄하지 않을 수가 없네. 아주 완벽한 호흡이야!
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1")]
+[name="아미야"]엘리시움 씨와 만트라 씨는 오랜 파트너 사이니까요.
+[charslot(slot = "m", name = "char_401_elysm_na_1#2")]
+[name="엘리시움"]하하하…… 적어도 팀장과의 협력만큼은 로도스 아일랜드에서 내가 최고 경력자라고 할 수 있지.
+[name="엘리시움"]아무래도 팀장은 '말하는' 부담이 크니까, 긴급 상황이 아니면 내가 대신 말을 전달할게.
+[charslot(slot = "m", name = "char_401_elysm_na_1#5")]
+[multiline(name="엘리시움")]어때, 박사? 지금 출발하면 아마 해 지기 전에는…… 
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[multiline(name="엘리시움",end=true)]아니지, 이 계절의 우르수스 크라이니 세베르에 해가 진다는 표현이 맞는가……
+[dialog]
+[charslot]
+[Decision(options="지금 바로 출발하자.;경로 변경 내용은 우리의 그 친구에게도 공유해.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "r", name = "avg_1037_amiya3_1#1$1")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_armyboots_walk", volume=1, loop=true, channel="ar")]
+[StopSound(channel="ar", fadetime=1.5)]
+[charslot(slot = "l", name = "avg_npc_1966_1#4$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[charslot(slot = "r", name = "avg_1037_amiya3_1#1$1", focus="r")]
+[name="아미야"]알로이즈 씨, 엄청 뒤처졌어요.
+[charslot(slot = "l", name = "avg_npc_1966_1#3$1", focus="l")]
+[name="알로이즈"]미안, 광산 설비를 조사하느라. 우리가 동행하는 이유와는 무관해.
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="알로이즈"]그런데 무슨 일이야? 왜 이렇게 오래 머물러 있었어?
+[name="알로이즈"]지도상으로는 연구소에 꽤 근접했는데. 설마 뭐라도 발견……
+[name="알로이즈"]……했나?
+[dialog]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1966_1#4$1", focus="l")]
+[name="알로이즈"]이건…… '국가'의 흔적이네.
+[name="알로이즈"]……근위병이 여기에 왔었군.
+[charslot(slot = "r", name = "avg_1037_amiya3_1#6$1", focus="r")]
+[name="아미야"]별로 놀라지 않으시네요?
+[charslot(slot = "l", name = "avg_npc_1966_1#12$1", focus="l")]
+[name="알로이즈"]내가 일부러 숨겼다고 비난하지 말았으면 좋겠어, 아미야. 그런 말을 들으면 상처 받을 거야.
+[charslot(slot = "r", name = "avg_1037_amiya3_1#6$1", focus="r")]
+[name="아미야"]적어도 저희가 협력하는 동안만큼은 필요한 정보를 공유해 주셨으면 해요.
+[name="아미야"]근위병의 행적에 관해 알고 계신 게 있나요?
+[charslot(slot = "l", name = "avg_npc_1966_1#3$1", focus="l")]
+[name="알로이즈"]우선, 폐하를 제외한 그 누구도 근위병의 행방을 알 순 없어. 나 같은 말단 중사는 더더욱 그렇고.
+[name="알로이즈"]하지만 솔직히, 크라이니 세베르에서 가장 명망이 높은 여대공이 계엄을 명분으로 광산을 폐쇄했을 때, 근위병이 이곳에 나타난 건 별로 놀랄 만한 일은 아니었어……
+[charslot(slot = "r", name = "avg_1037_amiya3_1#1$1", focus="r")]
+[name="아미야"]근위병이 이미 여기서 조사를 진행하고 있다면, 당신이 하는 일은 뭔가요?
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="알로이즈"]예리한데, 아미야.
+[name="알로이즈"]크라이니 세베르 중앙 광산지구의 감염자 변이 소식이 꽤 큰 파장을 일으켰어. 많은 사람들이 그 일에 관심을 보였고.
+[name="알로이즈"]물론, 우르수스 사람들에게 호기심을 가질 권리는 있지만, 모두가 같은 정보를 손에 넣을 권리가 있는 건 아니야.
+[charslot(slot = "l", name = "avg_npc_1966_1#12$1", focus="l")]
+[name="알로이즈"]이해해 줘. 내 신분상 무례한 언행을 할 수는 없거든…… 이러한 설명이 너희에게 혼란을 주지 않았으면 좋겠네, 아미야.
+[charslot(slot = "r", name = "avg_1037_amiya3_1#7$1", focus="r")]
+[name="아미야"]아니요…… 당신의 입장은 이해할 수 있어요.
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="알로이즈"]나는 지금까지 뭔가를 숨긴 적이 없어. 나 같은 군위군에게 있어 이것도 쟁취할 가치가 있는 경력이야.
+[charslot(slot = "l", name = "avg_npc_1966_1#2$1", focus="l")]
+[name="알로이즈"]다만, 나는 이번 임무가 꽤 편할 줄 알았는데……
+[name="알로이즈"]뭐, 그런 기대는 이미 깨진 것 같지만. 아무튼, 근위병이 개입했다는 건 그리 좋은 징조가 아니야.
+[charslot(slot = "r", name = "avg_1037_amiya3_1#8$1", focus="r")]
+[name="아미야"]그래도 저희와 계속 동행하실 건가요?
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="알로이즈"]당연하지, 이유야 어쨌든 내가 선택한 거잖아. 중도에 포기하면 면목이 없겠지.
+[name="알로이즈"]출발하기 전에, 우리 서로에 대한 신뢰를 회복할 수 있을까?
+[charslot(slot = "r", name = "avg_1037_amiya3_1#8$1", focus="r")]
+[name="아미야"]우리의 협력은 계속될 거예요.
+[name="아미야"]저희가 처음 만났을 때처럼……
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[gridbg(imagegroup="38_g21_skystarry_L1/38_g21_skystarry_R1/38_g21_skystarry_L2/38_g21_skystarry_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720", x=-105, fadetime=1)]
+[largebgtween(duration = 40,yFrom = 720, yTo = 360,block = false)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crowdrun", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>우르수스 크라이니 세베르, 브레스크</><p=2>3일 전</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[Decision(options="엘리시움! 방향을 알려줘!", values="1")]
+[Predicate(references="1")]
+[playsound(key="$transmission", volume=1)]
+[Delay(time=1)]
+[name="엘리시움"]빌어먹을…… 통신에 지연이 있어. 우리의 암호 채널이 방해받고 있는 것 같아!
+[name="엘리시움"]그건 그렇고…… 서쪽에 10명 규모의 호위병 소대가 있어. 다음 길목에서 우회전!
+[name="Mon3tr"]그게 무슨 소리야! 오른쪽이 서쪽인데!
+[name="엘리시움"]내가 우회전이라 했나? 이런……
+[name="엘리시움"]아무튼, 시청이 보이지? 시청 반대 방향으로 가!
+[name="아미야"]봤어요. 하지만 저 앞의 교차로는 섹터의 연결 구역인데……
+[name="엘리시움"]뭐?!
+[name="엘리시움"]젠장, 지도에 표시가 전혀 안 되어 있어!
+[name="엘리시움"]하지만 지금은 주변에 온통 호위병이라, 그쪽이 유일한 돌파구야!
+[name="Mon3tr"]알겠어.
+[name="Mon3tr"]아미야, 따라올 수 있겠어?
+[name="아미야"]그럼요!
+[name="Mon3tr"]박사, 꽉 잡아!
+[dialog]
+[Decision(options="노력해 볼게……", values="1")]
+[Predicate(references="1")]
+[name="Mon3tr"]그걸로는 부족할 수 있어. 괜찮아, 내가 꽉 잡고 있을게!
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[SoundVolume(volume=0.2, channel="sn", fadetime=0.5)]
+[largebgtween(duration = 1, yTo = 900, block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="66_g1_bleskstreet",screenadapt="coverall", xScale=1.2, yScale=1.2)]
+[Delay(time=1)]
+[largebg]
+[backgroundTween(yFrom = -80, yTo = 60, duration=0.5, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=false)]
+[PlaySound(key="$d_avg_Qinggong", volume=1)]
+[Delay(time=0.5)]
+[backgroundTween(yFrom = 60, yTo = 0, duration=1.5, block=false)]
+[Delay(time=2)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot = "m", name = "avg_4179_monstr_1#3$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="Mon3tr"]후……
+[charslot(slot = "m", name = "avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]박사, 별일 없지?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="괜찮아.;이젠 익숙해졌어.;다음에는 내가 직접 뛰어내려 볼까.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "avg_4179_monstr_1#12$1")]
+[name="Mon3tr"]하하, 그래도 멀쩡해 보이네! 안심이야!
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]엘리시움 씨, 예정된 위치에 도착했어요.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="아미야"]엘리시움 씨?
+[StopSound(channel="sn", fadetime=2)]
+[PlayMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[charslot(slot = "m", focus="n")]
+[name="치직거리는 잡음"]…… 멈추…… 치지직…… 마…… 치지직……
+[name="치직거리는 잡음"]……치지직…… 소대……
+[dialog]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#3$1")]
+[name="아미야"]통신이 끊겼네요.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]단말기상으로 엘리시움 씨는 계속 이동 중이에요. 하지만 연락할 방법이 없네요.
+[name="아미야"]브레스크 시내에 들어온 후부터 단거리 통신이 계속 불안정했던 것 같아요.
+[name="아미야"]이게 우르수스 크라이니 세베르의 극단적인 날씨 때문인 건지, 아니면 누군가의 방해 작전 때문인 건지 모르겠어요.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="그것보다 더 신경 쓰이는 건……;브레스크가 이렇게 많은 사람을 동원해 '도시 간 무역상'을 쫓는 이유는 뭘까?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1")]
+[name="아미야"]그것도 확실히 이상하네요……
+[name="아미야"]클로저 씨가 위조해 준 신분증에 문제가 있었던 적은 지금까지 없었는데 말이죠.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="그들이 경계하는 사람은 우리가 아니었을 수도 있어.;다른 이유 때문에 우리를 노리는 걸 수도 있어.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="그나저나……", values="1")]
+[Predicate(references="1")]
+[Decision(options="브레스크는 원래 평온한 도시잖아.;이런 규모의 방위 세력이 상주한다는 것 자체가 의심스러워.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]저희가 사전에 얻은 정보와 전혀 일치하지 않아요…… 이대로는 광산에 들어갈 수 없을 거예요.
+[name="아미야"]박사님, 일단 만트라 씨 소대와 합류한 다음 상의……
+[dialog]
+[charslot]
+[PlaySound(key="$transmission", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760",tsfrom="0,1", tsto ="1,1",tsduration = 0.5, switch = true, style = 0,offset = "0,0", channel = 3)]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "0,0", pto="0,0", name = "char_401_elysm_na_1#7", duration = 0)]
+[delay(time=0.5)]
+[name="엘리시움"]박사! 드디어 연결됐다!
+[name="엘리시움"]멈추지 마! 또 호위병이 그쪽으로 가고 있어!
+[dialog]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, clear = true, tsto="0,1", tsduration=0.5)]
+[delay(time=1)]
+[Decision(options="아무래도, 알 것 같아……", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", posfrom="80,0", posto="80,0", duration=1)]
+[charslot(slot = "l", name = "avg_npc_1973_1#1$1", posfrom="-80,0", posto="-80,0", duration=1)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1", duration=1.5, isblock=true)]
+[delay(time=2)]
+[charslot]
+[charslot(slot = "m", name = "avg_4179_monstr_1#6$1")]
+[name="Mon3tr"]이렇게 빨리 왔다고?
+[name="Mon3tr"]아미야, 너도 내 뒤에 서!
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="아미야"]아니요, 저희는 공격하면 안 돼요!
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="크라이니 세베르 호위병"]이 몰염치한 침입자들, 전부 꼼짝 마!
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="다들 일단 진정해.;우리가 무슨 금지령을 어겼길래 이렇게까지 난리야?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="크라이니 세베르 호위병"]너희는 무허가로 공업단지에 침입한 것도 모자라, 사유 공장에까지 침입하려고 했다. 이건 브레스크 입성 조례와 우르수스 도시 치안관리 규정 위반이다.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]저기 선생님, 입성 조례에는 외부인이 공업단지에 들어갈 수 없다는 규정이 없는데요……
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="크라이니 세베르 호위병"]오늘 발표된 새 조례다. 너희들이 브레스크에 발을 들인 그 시점부터 시행됐다.
+[name="크라이니 세베르 호위병"]우리는 적법한 절차에 따라 너희를 구금한다. 나머지는 보안관이 구체적인 상황에 따라 송환할지 유배할지 판단할 것이다.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]만약 저희가 실수로 브레스크의 새 규정을 위반한 거라면, 정말 죄송합니다.
+[name="아미야"]저희는 그저 도시 간 무역상을 찾고 있을 뿐이에요. 이건 도시에 들어올 때 제출한 일정표에 이미 명시되어 있습니다.
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="크라이니 세베르 호위병"]그런 건 보안관한테나 얘기해라.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="우리에게 악의는 없어.;양쪽 모두에게 시간을 아끼는 방법이 있을지도 몰라.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="나는 '크라이니 세베르의 진주'인 브레스크가 우리를 환대할 거라 믿어.;나는 그 여대공이 소문처럼 자비로울 거라 믿어.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="크라이니 세베르 호위병"]그딴 수작은 집어치워. 나와는 상관없어, 나는 내 일만 할 뿐이다.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#10$1")]
+[name="아미야"]저기 선생님……
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="크라이니 세베르 호위병"]따라와.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]아뇨, 저희에겐 정말 시간이 없어요.
+[name="아미야"]미안해요.
+[charslot]
+당신은 아미야가 몸을 살짝 돌려 티 나지 않게 당신 앞을 막아서는 걸 보았다. Mon3tr는 주변을 둘러보며 탈출 경로를 찾고 있었다.
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="크라이니 세베르 호위병"]……분수를 모르는군.
+[name="크라이니 세베르 호위병"]잡아.
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1973_1#1$1", posfrom="-300,0", posto="0,0", duration=0.5)]
+[delay(time=0.2)]
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", posfrom="300,0", posto="0,0", duration=0.5)]
+[delay(time=1.5)]
+[charslot]
+[PlaySound(key="$char_Mon3tr")]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_4179_monstr_1#13$3")]
+[name="Mon3tr"](크르르르르르)
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", focus="r")]
+[charslot(slot = "l", name = "avg_npc_1972_1#1$1", focus="n")]
+[name="주저하는 호위병"]으…… 으윽!
+[charslot(slot = "l", name = "avg_npc_1972_1#1$1", focus="l")]
+[name="크라이니 세베르 호위병"]뭘 꾸물거려, 얼른 잡아!
+[name="크라이니 세베르 호위병"]저 필라인 계집이 너희를 잡아먹기라도 한대?
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", focus="r")]
+[name="주저하는 호위병"]대…… 대장님, 그게 아니라, 뒤에요.
+[name="주저하는 호위병"]저…… 저건…… 설마……
+[charslot(slot = "l", name = "avg_npc_1972_1#1$1", focus="l")]
+[name="크라이니 세베르 호위병"]더듬지 말고 똑바로 말해!
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", focus="r")]
+[name="주저하는 호위병"]……근위군입니다!
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "l", name = "avg_npc_1972_1#1$1", focus="l")]
+[name="크라이니 세베르 호위병"]바보 같은 소리! 디에티 그라이퍼부르크에서 잘 먹고 잘사는 근위군 양반이 브레스크에는 뭐 하러 와?
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", focus="r")]
+[name="주저하는 호위병"]하지만…… 저 제복은……
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_highheelfts", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="근위군?"]저기 미안한데, 저 여자의 말이 맞아.
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="크라이니 세베르 호위병"]당신은……
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="근위군?"]알로이즈 고르치코바, 근위군 선봉대대 중사. 디에티 그라이퍼부르크에서 왔어.
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="크라이니 세베르 호위병"]다, 당신…… 뭘 하려는 겁니까?
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]아주 작은 부탁이 하나 있는데, 이 불쌍한 손님들을 그냥 보내주면 안 될까?
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="크라이니 세베르 호위병"]……당신도 이놈들과 한패입니까?
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="알로이즈"]안타깝게도, 이들은 내 친구가 맞아. 내가 누구인지 알았으니, 이젠 내 체면을 세워줘야겠지?
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="크라이니 세베르 호위병"]여긴 디에티 그라이퍼부르크도 아닌데, 제가 왜 그쪽 체면을 세워줍니까?
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]내가 보안관을 만났고, 모든 절차를 다 끝냈으니까?
+[charslot]
+우르수스 젊은이가 손에 든 종이를 흔들었다. 극야의 어둠 아래, 그 종이에 무엇이 적혀 있는지 아무도 알아볼 수 없었다.
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="크라이니 세베르 호위병"]당신……
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]내가 너였다면, 자신의 장래를 걸고 고집부리진 않을 거야.
+[name="알로이즈"]길을 헤매는 관광객은 얼마든지 있지만, 근위군에게 은혜를 베풀 기회는 별로 없지…… 그러고 보니, 너 이름이 뭐야? 군번이 뭔지 알려줄래?
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="크라이니 세베르 호위병"]……알겠습니다, 고르치코바 중사님. 오늘 일어난 모든 일은 전부 보안관에게 사실대로 전달하겠습니다. 가셔도 좋습니다.
+[name="크라이니 세베르 호위병"]당신의 특권이 황제 폐하처럼 영구불멸하길 빌겠습니다.
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="알로이즈"]그 축복 고마워.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]하지만 폐하처럼 불멸의 영광을 누릴 수 있는 사람은 없어. 우리 모두 때가 되면 막을 내리고 무대에서 내려오겠지.
+[name="알로이즈"]이 손님들은 내가 데려갈게.
+[dialog]
+[PlaySound(key="$d_avg_highheelfts", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=0.6, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]알로이즈 고르치코바 씨, 도와주신 건 감사하지만…… 당신은 도대체……
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="알로이즈"]쉿, 아직 멀리 가지 않았어.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]그리고, 귀여운 카우투스 아가씨, 나를 그냥 알로이즈라고 불러도 돼.
+[name="알로이즈"]알로이즈 고르치코바는 너무 거리감이 느껴지고, '근위군', '그 녀석'은 표현이 너무 거칠어. 지금의 우리 사이라면 그냥 이름만 부르는 게 제일 좋아.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="고마워, 알로이즈.;호위병을 상대하는 게 상당히 능숙하던데.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="알로이즈"]호위병들은 너희들이 일반 상인인 줄 알고 돈을 뜯어내려 했을걸. 마치 이곳으로 관광 오는 특이한 취향의 컬럼비아인들처럼.
+[name="알로이즈"]하지만 너희들은 아니야. 그렇지?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="단도직입적으로 물을게.;왜 우릴 도운 거지?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]그래, 난 이런 솔직한 게 좋아. 너희들의 질문에 답해줄 수 있지만, 여기서는 아니야.
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="알로이즈"]너희들의 동료가 다 모이면 방해받지 않는 곳으로 자리를 옮겨서 계속 이야기 나누지.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="우리는 시간이 그리 많지 않아.", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]걱정하지 마. 너희들의 목적을 생각하면 결코 시간 낭비는 아닐 테니까.
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_cavewaterdrop", volume=0, loop=true, channel="ca")]
+[SoundVolume(volume=1, channel="ca",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[PlaySound(key="$d_avg_highheelfts", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="알로이즈"]여기면 되겠네.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]……여기는?
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="알로이즈"]버려진 아파트야. 내가 아는 한, 호위병들은 사람이 거의 살지 않는 구시가지는 신경 쓰지 않아.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]방치된 도시 섹터, 사치스럽게 들릴지도 모르겠지만 이게 바로 실태야. 《디에티 그라이퍼부르크 타임스》가 아무리 덮으려고 애써도, 최근 몇 년 동안 크라이니 세베르의 도시 인구가 계속 감소해 온 건 부정할 수 없는 사실이니까.
+[name="알로이즈"]시간이 더 지나 여기가 무인 지역이 되면, 이 건물이 있는 섹터도 황야에 버려지겠지. 이미 버려진 다른 섹터들처럼.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]알로이즈 씨, 저희는 당신이 찾아온 목적을 알고 싶어요.
+[charslot(slot = "m", name = "avg_4179_monstr_1#6$3")]
+[name="Mon3tr"](경계하듯 주시한다)
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="알로이즈"]음…… 다들 조금만 더 긴장을 풀어줄 수는 없을까?
+[name="알로이즈"]쪽수는 그쪽이 더 많다고, 내가 너희에게 위협이 될 리가 없잖아?
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="알로이즈"]그리고 문밖에 숨어 있는 피디아 씨, 동료들에게 내가 거짓말하지 않았다는 걸 알려주면 안 돼?
+[charslot(slot = "m", focus="n")]
+[name="엘리시움"]팀장이 여긴 안전하대. 다른 사람은 없다네.
+[dialog]
+[Decision(options="여기를 고른 걸 보니, 너도 사람들의 눈을 피해야 하는 사정이 있는 듯하군.;나는 '근위군'이 저녁 식사쯤은 대접할 줄 알았는데.", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]여기는 내 친구가 살던 집이야. 크라이니 세베르에서 우르수스 민족의 서사시를 완성하고 싶어 했는데, 이곳의 혹독한 추위에 꺾여버렸지…… 지금은 디에티 그라이퍼부르크에서 잘 살고 있어.
+[name="알로이즈"]그래도 그녀 덕분에 우리는 바깥의 눈보라와 사람들의 눈을 피할 수 있게 됐잖아.
+[name="알로이즈"]나도 그렇지만, 너희도 귀찮은 일을 피하고 싶은 건 마찬가지 아닌가?
+[dialog]
+[Predicate(references="2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="알로이즈"]그리고 여기 후드를 쓴 손님, 너는 매우 유머러스하네. 유머를 아는 사람들은 대개 똑똑하던데.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]중요한 이야기가 끝난 후에도 너희에게 흥이 아직 남아 있다면, 내가 저녁 식사를 대접하지.
+[dialog]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]아무튼, 내 소개는 아까 했어. 자, 이제 여러분의 이름을 들려줄 수 있을까?
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]저희는 빅토리아에서 왔어요……
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]그리고, 공업단지에서 만나기로 한 도시 간 무역상이 '올가'라는 가명의 미망인이라고 말할 거지?
+[name="알로이즈"]아주 그럴싸한 변명이야. 웬만한 도시 입성 관리부를 속이기에 충분하지.
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="알로이즈"]하지만 이동도시에서 군용 암호화 통신을 사용하는 '카라반'은 아무래도 보기 드물어.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]우리의 통신을 방해한 게 당신이었나요?
+[charslot(slot = "m", name = "avg_npc_1966_1#13$1")]
+[name="알로이즈"]아니, 아니야…… 그건 너무 난폭한 방식이라고.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]아마도 오로라의 영향일 수도 있고, 최근 강화된 방어 설비의 영향일 수도 있어…… 어쨌든 너희들이 지지리도 운이 없는 건 확실해. 하필 브레스크의 이 특수한 시기에 찾아왔으니.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]……
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]나는 이미 솔직하게 얘기했어. 만약 너희들이 계속 숨길 생각이라면, 앞으로의 소통은 그리 원활할 수 없을 것 같네.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="우리는 한 제약 회사에서 왔어.;로도스 아일랜드라고 하지.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]거봐, 솔직하게 털어놓는 게 그리 어려운 일은 아니잖아?
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="알로이즈"]로도스 아일랜드라…… 내가 각지의 감염자와 관련된 소문에서 몇 번 들어본 적 있어.
+[name="알로이즈"]그 소문이 확실하다면, 너희들은 가히 전설이라고 할 수 있지.
+[name="알로이즈"]소문의 사실 여부는 차치하고, 내가 최근에 이 이름을 본 건 너희들이 발표한 감염자 변이 연구 논문이었어.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="너는 이 분야랑 거리가 먼 것 같은데.;네가 광석병 학술 연구에 관심이 있을 줄이야.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1")]
+[name="알로이즈"]부끄러운 얘기지만, 디에티 그라이퍼부르크의 신귀족이라고 다 무식한 건 아니야.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]정책이 어떠하든, 어느 나라에서나 감염자는 결코 무시할 수 있는 문제는 아니지…… 조금이라도 상식이 있는 사람이라면 너희들이 얼마나 중요한 학술적 성과를 이뤘는지 알 수 있을 거야.
+[name="알로이즈"]내가 유일하게 관심이 있는 건, 이렇게 혁신적인 발견을 했음에도 불구하고 로도스 아일랜드는 그에 걸맞은 상업적인 움직임이 없다는 점이야. 음, 지나치게 겸손하달까?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="그게 네가 우리를 찾아온 이유야?;그걸로 네가 우리의 행적을 어떻게 파악했는지는 설명되지 않는데.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]아, 그건 어려운 게 아니야. 지금 같은 시기에 크라이니 세베르 중앙 광산지구에 들어가려는 사람이라면 모두 같은 이유가 있을 테니.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]당신도 크라이니 세베르 중앙 광산지구에 들어가겠다는 말씀인가요?
+[charslot(slot = "m", name = "avg_npc_1966_1#11$1")]
+[name="알로이즈"]왜? 너희는 아니야?
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1")]
+[name="아미야"]저희는…… 들어가야 해요.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]그럼 됐네.
+[name="알로이즈"]너희는 광산에 들어가는 길을 모르고, 나는 마침 광석병 전문 지식이 있는 사람이 필요해. 즉, 우리는 서로에게 꼭 필요한 관계라는 거지.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="그래서, 우리와 함께 광산에 들어가고 싶다고?", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="알로이즈"]맞아.
+[name="알로이즈"]어쨌든 디에티 그라이퍼부르크에서 온 사람이 크라이니 세베르의 일에 개입한다는 건 여기 관리자들이 달가워하지 않을 테니까.
+[name="알로이즈"]이제 카라반이라는 신분은 너희에게도 나에게도 도움이 되지 않아. 그렇다면 중간 단계는 과감히 생략하고, 여기서 손을 잡는 것도 하나의 해결책이 아닐까 싶어.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]그런데 당신은 광산에 들어가서 뭘 하실 생각이죠? 우리에게 원하는 건 뭔가요?
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="알로이즈"]음…… 내가 충분히 설명하지 않았던가?
+[name="알로이즈"]나는 로도스 아일랜드가 나와 함께 광산에 들어가 감염자 사태의 조사에 협력해줬으면 해.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]감염자 사태요? 구체적으로 뭘 말씀하시는지……
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="알로이즈"]어마나…… 천진난만한 카우투스 아가씨, 난 인내심이 많은 사람이지만, 그래도 한계라는 게 있어…… 이제 와서 시치미를 뗄 필요는 없잖아.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]아니요, 저는 진지하게 묻는 거예요.
+[name="아미야"]저희의 유동 의료팀이 크라이니 세베르 중앙 광산지구에서 연락이 끊겼어요. 저희는 그들을 찾아야 해요.
+[name="아미야"]저희는 당신이 말한 '감염자 사태'라는 게 정확히 무엇인지 모르는 상황입니다. 더 명확하게 말씀해 주시길 바랍니다.
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[multiline(name="알로이즈")]광산에 들어가려는 이유가 겨우…… 
+[charslot(slot = "m", name = "avg_npc_1966_1#11$1")]
+[multiline(name="알로이즈",end=true)]잠깐, 그래서 정말 모른다는 거야?
+[name="알로이즈"]설마? 최근 몇 년간 너희가 우르수스 각지에 세운 의료 거점 수량이 급증한 걸로 알고 있는데……
+[charslot]
+젊은이의 얼굴에 떠오른 단순한 의혹은 의심으로 대체되었고, 이내 깨달음으로 바뀌었다.
+그녀는 곧바로 자신의 가설에 존재하는 오류를 깨달았다.
+[charslot(slot = "m", name = "avg_npc_1966_1#11$1")]
+[name="알로이즈"]……아냐, 잠깐. 너희 방금 '유동 의료팀'이라고 했지?
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="알로이즈"]상설 사무소가 없다면, 인맥이나 정보 교류도 없다는 거겠지. 로도스 아일랜드에 무슨 문제가 생겼는지 모르겠지만, 아무래도 너희들의 정보력은 상당히 제한된 것 같네.
+[name="알로이즈"]이곳이 우르수스이기 때문에 너희는 큰 힘을 발휘하지 못하고, 아무것도 모르기 때문에 여기저기에서 막히는 거군…… 맞아?
+[name="알로이즈"]……
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1")]
+[name="알로이즈"]빌어먹을, 내가 너무 성급했어.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="우리는 우르수스의 감염자 사태가 뭔지 정말 몰라.;그게 브레스크의 비정상적인 현 상태와 관련이 있어?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="알로이즈"]……됐어. 그냥 못 들은 걸로 해. 아까 도와준 건 그냥 선물인 셈 치고. 감사는 필요 없어.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]잠깐만요!
+[name="아미야"]당신이 저희를 찾아왔다는 건 적어도 이 일에서만큼은 저희와 협력할 여지가 있다는 거잖아요.
+[name="아미야"]적어도 광산에서 무슨 일이 있었는지 알려 줄 수 없나요……?
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="알로이즈"]제기랄…… 하아! 내가 좀 더 신중하게 선택했어야 했는데.
+[name="알로이즈"]나는 너희들이 그 소문을 듣고 목숨 걸고 광산에 들어가려는 줄 알았어. 알다시피 그런 현장 정보는 암시장에서 비싸게 거래되니까.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]저희는 그런 조직이 아니에요…… 하지만 그게 지금 중요한 문제는 아니죠.
+[name="아미야"]감염자와 관련된 일이라면 결국 저희와 연관된 일이에요. 이것도 당신이 결국 저희에게 접근한 이유 중 하나 아닌가요?
+[name="아미야"]부탁해요, 알려주세요.
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1")]
+[name="알로이즈"]……아 모르겠다! 여기까지 온 이상 누군가는 뭐라도 해야지. 단순 감염자만을 위해서라도.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]감염자도 우르수스인이니까요.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="알로이즈"]맞아, 카우투스 아가씨. 감염자도 우르수스인이야. 하물며 황제 폐하께서 “생존이 아니라 삶을 위해서”라며 직접 약속한 광부들은 더 말할 것도 없지.
+[name="알로이즈"]그 광부들이야말로 우르수스라는 이 전쟁 기계를 계속해서 움직이게 하는 기반이야, 근데 부패한 구귀족들과 그들의 영향 아래 썩어버린 사람들은 아직도 그걸 모르고 있어.
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="알로이즈"]하지만 그들도 알아야 해. 우르수스는 변화가 필요해.
+[name="알로이즈"]……
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1")]
+[name="알로이즈"]이런, 내가 지금 무슨 말을 하고 있나…… 다행히 독설가 동료들이 여기 없었기 망정이지, 아니었으면 웃음거리가 됐을 거야.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]그런 일로 창피해할 필요는 없어요.
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="알로이즈"]내뱉은 말은 엎질러진 물과 같아. 이런 날씨에는 곧장 얼어버려.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]그래서, 그 감염자 사태라는 게 도대체 뭐죠? 감염자 광부와 관련이 있는 것처럼 들리는데요?
+[charslot(slot = "m", name = "avg_npc_1966_1#6$1")]
+[name="알로이즈"]잘 들어. 만약에 이 일을 발설한다면……
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]약속하죠. 당신이 무엇을 말하든 저희는 절대 발설하지 않아요.
+[name="아미야"]우르수스를 적으로 돌려봤자 도움될 게 없다는 건 저희도 잘 알고 있으니까요.
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="알로이즈"]생각 좀 정리할게. 어디서부터 얘기해야 하지……
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="알로이즈"]너희도 알다시피, 브레스크는 크라이니 세베르 중앙 광산지구과 인접해 있는 곳이자, 우르수스 북부에서 가장 큰 이동도시야.
+[name="알로이즈"]따라서 브레스크는 크라이니 세베르 각지에 분포한 총 3만 제곱 킬로미터의 광산지구와 약 20만 명의 감염자 관리 업무를 담당하고 있어.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]……
+[dialog]
+[charslot]
+[charslot(slot = "m", focus="n")]
+[Decision(options="이곳의 기본 상황은 잘 알고 있어.;관리 체계에 무슨 문제라도 생긴 거야?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="알로이즈"]그렇게 쳐다보지 마…… 미안, 이런 말투가 너희의 반감을 산다는 건 나도 알아.
+[name="알로이즈"]하지만 지금의 황제 폐하께서는 감염자 광부를 값싼 노동력으로 이용하는 걸 원치 않으셔. 오히려 브레스크를 배려하는 정책을 상당히 많이 내리셨지.
+[name="알로이즈"]지난 몇 년간, 브레스크는 비교적 평온한 상태를 유지하고 있었어. 석 달 전까지만 해도……
+[name="알로이즈"]맞아, 이건 너희 회사의 전문 분야와 그 논문에 관련된 거야.
+[charslot(slot = "m", name = "avg_npc_1966_1#5$1")]
+[name="알로이즈"]3달 전, 크라이니 세베르 중앙 광산지구에서 '변이 감염자'가 대량으로 발생했어. 그들의 증상이 논문에 기술된 내용과 매우 흡사했고.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="아미야"](3달 전? 그렇다면……)
+[dialog]
+[charslot]
+[Decision(options="그 말은……;그게 브레스크에 계엄령이 내려진 이유인가?", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="중앙 광산지구에 '변이' 감염자가 얼마나 발생했는데?", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#5$1")]
+[name="알로이즈"]그게 바로 문제야……
+[name="알로이즈"]지금 중앙 광산지구에 남은 '정상적인' 감염자가 얼마나 되는지 아무도 몰라.
+[dialog]
+[StopSound(channel="ca", fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

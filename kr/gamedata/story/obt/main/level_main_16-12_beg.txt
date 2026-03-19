@@ -1,0 +1,610 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="66_g3_miningarea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="크세니야"]이 앞이 '오카'가 처음 발견된 갱도예요.
+[name="크세니야"]원래라면, 그 후에 철저하게 통제됐을 텐데…… 지금 보니 완전히 버려진 것 같아요.
+[name="크세니야"]그래도 다행인 건, 갱도 안의 활성 오리지늄 분진 농도가 작업 중단 이후 급격히 낮아졌다는 점입니다. 비활성화된 오리지늄 결정을 직접 만지지만 않으면 큰 감염 위험은 없을 거예요.
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]박사, 다른 생체 신호는 감지되지 않았어…… 싸우지 않고 안으로 들어갈 수 있을 것 같아.
+[charslot]
+[dialog]
+[Decision(options="우린 아직 이곳 상황을 잘 몰라.;감시팀과 호위병이 언제든지 다시 돌아올 수 있어.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="서둘러야 해.;빠르게 다녀오자.", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[delay(time=1)]
+[name="Mon3tr"]크세니야, 이쪽이 확실해?
+[name="Mon3tr"]아무것도 안 보이는데.
+[name="크세니야"]죄송해요. 저도 이곳에 온 건 한 번이 전부라……
+[name="크세니야"]우선 비상 에너지 스위치를 찾아볼게요.
+[Dialog]
+[delay(time=1.5)]
+[name="크세니야"]아, 여기 있네요.
+[Dialog]
+[delay(time=1)]
+[PlaySound(key="$d_avg_spotlightc")]
+[Background(image="66_g5_deepmine",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4208_wintim_1#9$1",duration=0.5)]
+[delay(time=1)]
+[name="크세니야"]후우, 됐어요. 이제부터는 광차의 운행 반대 방향으로 계속 가면 돼요.
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]반대 방향으로? 난 더 깊숙이 내려가는 줄 알았는데.
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="크세니야"]앞쪽은 갱도가 아닌 다른 곳과 연결돼 있습니다. 정확히 뭘 하는 곳인지는 모르겠지만, 사람이 다니는 데는 아니고 화물만 오가더라고요.
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]광차는? 아직 쓸만해?
+[dialog]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[PlaySound(key="$d_avg_goldbarhit")]
+[delay(time=1.5)]
+[name="크세니야"]광차 자체는 멀쩡한데, 너무 오래 방치돼서 비상 에너지로는 조명밖에 못 켤 것 같아요. 그냥 안 쓰는 게 낫겠어요.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="동의해.;걸어가면 돼.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot]
+[charslot(slot="m",name="avg_4179_monstr_1#4$1")]
+[name="Mon3tr"]음……
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]너희 둘, 광차에 타.
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="크세니야"]네?
+[dialog]
+[charslot]
+[Decision(options="광차에는 안전벨트도 없잖아!;걸어서도 갈 수 있다고!", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]얼른 타, 박사. 시간을 아껴야지.
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="크세니야"]작동이 안 될 텐데……
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]걱정하지 마. 내가 해결할게.
+[name="Mon3tr"]박사, 내가 태워줄까?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……내가 알아서 할게!", values="1")]
+[Predicate(references="1")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.15, fadetime=0.01)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.15, fadetime=0.01)]
+[delay(time=0.25)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Mon3tr"]준비됐어?
+[name="크세니야"]그런데 Mon3tr, 도대체 어떻게 하려고……
+[dialog]
+[CameraShake(duration=0.5, xstrength=10, ystrength=5, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_tramcarwheel_loop", loop=true, channel="kc")]
+[delay(time=0.5)]
+[StopSound(channel="kc", fadetime=0.5)]
+[name="크세니야"]……어?!
+[dialog]
+[charslot]
+[Decision(options="이대로는 무조건 튕겨 나가.;광차가 산산조각 날 거야.", values="1;2")]
+[Predicate(references="1;2")]
+[name="Mon3tr"]그럴 일 없으니 꽉 잡아.
+[name="Mon3tr"]출발한다!
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=100, block=false)]
+[CameraShake(duration=-1, xstrength=1, ystrength=1, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_tramcarwheel_loop", loop=true, channel="kc")]
+[delay(time=1.5)]
+[name="크세니야"]다행히 갱도가 아직 멀쩡하네요. 무너지지 않은 것 같습니다.
+[name="크세니야"]다만…… 내려오기 전에 불이라도 좀 쬐고 올 걸 그랬어요. 갱도 아래는 외부보다 습기가 훨씬 높아요. 거의 이베리아 해안이랑 우르수스 내륙만큼 차이가 나요.
+[name="크세니야"]물론 갱도 안팎의 온도차도 크고…… 두 분은 괜찮아요?
+[name="Mon3tr"]난 당연히 괜찮지. 박사는?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="뭔가…… 머릿속이 계속 흔들리는 거 같아.;Mon3tr, 너 아주 신났지!", values="1;2")]
+[Predicate(references="1;2")]
+[name="Mon3tr"]속도는 조절하고 있는데?
+[name="크세니야"]Mon3tr는 훌륭한 운전자, 수레꾼이라고 할 수 있겠네요.
+[name="Mon3tr"]훗, 아무래도 내 문제는 아닌 것 같네.
+[dialog]
+[charslot]
+[Decision(options="크세니야, 궁금한 게 있어.;광산에서 처음으로 '오카'를 발견했을 때가 언제야?", values="1;2")]
+[Predicate(references="1;2")]
+[name="크세니야"]정확히는 모르겠지만, 첫 '오카' 샘플이 연구소에 도착한 게 겨우 1달 전이었어요.
+[name="크세니야"]오리지늄 광산에서…… 듣도 보도 못한 새로운 물질이 나타났다는 걸 처음 알게 된 순간이었죠.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="이상하네……", values="1")]
+[Predicate(references="1")]
+[Decision(options="광산에 나타난 물질을……;연구소는 어떻게 '인체 실험'이랑 연결시켰지?", values="1;2")]
+[Predicate(references="1;2")]
+[name="크세니야"]그 '오카'가 발견된 갱도에서 감염자들에게 특이한 변이 증상이 나타났기 때문입니다.
+[name="크세니야"]감염자의 감염 정도가 믿기 어려울 만큼 높았는데도, 생명 징후는 오히려 정상이었어요. 심지어 '건강'할 정도로요……
+[name="Mon3tr"]뭔가 익숙한 증상인데.
+[name="크세니야"]설마 다른 곳에서도 그런 감염자를 본 적이 있나요? 그 감염자들도 '오카'에 노출됐나요?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="다른 가능성이 있을지도 몰라.;아직 확실하진 않아……", values="1;2")]
+[Predicate(references="1;2")]
+[name="크세니야"]아무튼…… 우르수스 당국은 그 '기적'을 복제하고 싶어 했어요.
+[name="크세니야"]제 생각엔, 정부가 원했던 건 질병이나 통증을 두려워하지 않고, 반항하지 않는 노동력, 또는…… 특별한 군대를 바랐던 거일 수도 있습니다.
+[dialog]
+[charslot]
+[Decision(options="우르수스 정부의 그런 반응, 전혀 놀랍지 않아……;그들은 아직 그 위험성을 깨닫지 못했어.", values="1;2")]
+[Predicate(references="1;2")]
+[name="Mon3tr"]박사, 크세니야, 거의 다 온 것 같아.
+[CameraShake(duration=1, xstrength=1, ystrength=1, vibrato=10, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="kc", fadetime=1)]
+[name="Mon3tr"]광차의 선로는 여기가 끝이야. 이제부터는 걸어가야 해.
+[dialog]
+세 사람은 어둠을 더듬으며 앞으로 걸어갔다.
+[dialog]
+[stopmusic(fadetime=2)]
+[playsound(key="$d_avg_rainlight_loop", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=2)]
+빛보다 먼저 감지된 건 소리였다. 물소리, 무거운 물소리가 들려왔다.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[curtain]
+[SoundVolume(volume=1, fadetime=3,channel="bgs")]
+[Background(image="66_g6_magnetofluidwaterfall",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+세 사람은 고개를 들고 천천히 눈을 떴다.
+그들은 동굴 안의 빛이 밖에서 들어온 것이 아니라는 것을 깨달았다. 그 빛은 눈앞의 바닥에 고인 액체와 시선 끝에서 쏟아지는…… 폭포에서 뿜어져 나온 것이었다.
+흑요석 같은 광택을 띤 액체는 아래로 떨어지면서 높은 곳의 틈새를 뚫고 들어온 빛을 반사해, 동굴의 험준한 내부를 비 온 뒤의 아침처럼 환하게 비추었다.
+[playMusic(intro="$tech_intro",key="$tech_loop", volume=0.6)]
+[dialog]
+[charslot]
+[Decision(options="……역류하는 강.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="크세니야"]눈치챘어요?
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="크세니야"]맞아요, 역류하는 강과 비슷한 거예요. '오카'가 넘쳐흘러야 할 부분이 경사면을 따라 밖으로 흘러가지 못하고, 다시 거슬러 올라오다가 이렇게 '고여'버린 거예요.
+[name="크세니야"]하지만, 사실 외부에서 작용하는 힘이 전혀 없는데도 흐름이 어느 정도 지속되고 있어요. 그래서 강의 이름을 따서 '오카'라는 이름을 붙인 걸 거예요.
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]여기는 온통 이런 액체투성이네.
+[name="Mon3tr"]이건 갱도라기보다는, 그냥 자연적으로 생긴 동굴 같아.
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="크세니야"]더 신기한 건, '오카' 자체가 물 같다는 거예요.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="그게 무슨 뜻이야?;그게 가능해?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="크세니야"]아니요…… 그냥 비유입니다.
+[name="크세니야"]일정 시간 침전되면 '오카'는 매우 안정적인 상태가 돼요. 범용 용제로 쓸 수 있을 만큼.
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="크세니야"]잠깐만요! 그래도 직접 손으로 만지는 건……
+[charslot(slot="m",name="avg_4208_wintim_1#7$1")]
+[name="크세니야"]아……
+[charslot]
+[dialog]
+[playsound(key="$d_avg_walk_water", loop=true, channel="w")]
+[delay(time=0.5)]
+[StopSound(channel="w", fadetime=0)]
+Mon3tr가 허리를 굽혀 시험관에 액체를 담았다. 장갑을 끼지도, 아무런 방호 조치도 하지 않은 채.
+그러나 젖은 두 손으로 시험관 속 액체를 흔드는 Mon3tr의 표정이 굳어졌다.
+[dialog]
+[charslot]
+[Decision(options="Mon3tr?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="크세니야"]그렇게 직접 접촉하면 안 돼요! 제가 방호장비를 챙겨 왔으니까 샘플이 필요하면 말해주세요. 제가 채취할게요.
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"](작은 목소리로) ……박사, 나 이게 뭔지 알겠어.
+[charslot(slot="m",name="avg_4208_wintim_1#8$1")]
+[name="크세니야"]네?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[Decision(options="크세니야, 샘플 채취는……;폭포 쪽에 있는 걸로 부탁해도 될까?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="크세니야"]네, 알겠습니다.
+[name="크세니야"]그럼 두 분은 여기서 기다리세요. 금방 다녀올게요.
+[charslot(slot="m",name="avg_4208_wintim_1#4$1")]
+[name="크세니야"]……조심하시고.
+[dialog]
+[playsound(key="$d_avg_shallowswalk", loop=true, channel="w1")]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[StopSound(channel="w1", fadetime=0.5)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1",duration=1)]
+[delay(time=2)]
+[name="Mon3tr"]이 '오카'라고 불리는 유체…… 사실은 '오리지늄'이야.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="오리지늄……;그런데 왜 이런 모양이지?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]설명하자면 조금 복잡해.
+[name="Mon3tr"]박사, 라인 랩의 '전달물질'이나 이베리아 연금술에서 자주 언급되는 '코라소닉스' 기억나?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="기억나.;그것들 사이에 무슨 관련이?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]이게 아마도 그것들의 원형이거나, 원재료일 거야.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="그리고, '전달물질'과 '코라소닉스'의 공통점이라면……;전부 '매개체'라는 점인데.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]맞아, 인체와 직접 반응하거나, 정보를 담을 수 있는 '매개체'지.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="그래서 둘 다 유체 형태였나?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]그런 것 같아……
+[name="Mon3tr"]박사, 너도 알겠지만 오리지늄은 '정보'의 매개체이자 '에너지'의 매개체이기도 해.
+[charslot(slot="m",name="avg_4179_monstr_1#4$1")]
+[name="Mon3tr"]게다가, '전달물질'과 '코라소닉스' 모두 특정 수단으로 오리지늄 에너지를 다시 각인하고, 다양한 정보를 저장하기 위한 산물이지.
+[name="Mon3tr"]그런데 여기서 나타난 이 '오카'라는 물질은, 더 효율적인 방법으로 오리지늄 속 에너지를 추출하고 난 뒤 남은 공백의 물질이야……
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]그러니까, 정말로 '범용 용제'가 된 셈이야. 어쩌면 이게 '오카'에 노출된 감염자들이 '변이'를 일으킨 이유에 대한 설명이 될지도 몰라.
+[name="Mon3tr"]쉽게 말해, '오카'는 에너지가 빠져나간 오리지늄이고, 감염자 체내의 활성 오리지늄을 중화시키는 동시에, 오리지늄이 지속적으로 자라날 수 있게 하는, 전례 없는 우수한 환경을 만들어 준다는 거야.
+[name="Mon3tr"]물론, 감염자의 생명 징후를 일시적으로 유지해 줄 수 있을지는 몰라도, 그들의 죽을 운명을 바꾸지는 못해.
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]그리고 '오카'를 주입한 일반인들의 경우, 체내에 활성 오리지늄이 거의 없기 때문에 강한 거부 반응이 나타난 거야, 그래서 1명도 살아남지 못한 거지……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="그게 여기 대량으로 나타났어……;그렇다는 건……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]우리가 가장 걱정해야 할 일이지……
+[name="Mon3tr"]박사, 콜로살 거대 광맥이 고갈되고 있어.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……;……;……", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]우리가 들은 소문 있잖아, 우르수스가 오리지늄 채굴에 박차를 가하고 있다는 소문…… 실은 광맥이 고갈되고 있다는 사실을 숨기기 위해서야.
+[name="Mon3tr"]여기서부터, 이 우르수스 최북단의 광산에서부터 고갈은 더 빠른 속도로 진행될 거야.
+[name="Mon3tr"]대충 계산해 봤는데, 4개월 안에 우르수스 국경 내 오리지늄 매장량이 기존의 30%까지 떨어질 수 있어……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="여대공이 광산을 봉쇄한 진짜 이유가 바로 이거였네.;이건 감춘다고 감출 수 있는 게 아니야.", values="1;2")]
+[Predicate(references="1;2")]
+굳이 말로 꺼낼 필요 없이, 당신과 Mon3tr는 서로 눈을 마주치며 약속이라도 한 듯 같은 이름을 떠올렸다.
+이런 일을 벌일 수 있는 유일한 존재는 바로……
+[dialog]
+[Decision(options="프리스티스.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]프리스티스 말고는 없어.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="왜 이런 짓을 한 거지?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]광맥의 고갈은 간섭할 수도, 되돌릴 수도 없는 일이야.
+[name="Mon3tr"]우르수스가 붕괴의 길로 향하고 있어.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="우르수스뿐만이 아니겠지.", values="1")]
+[Predicate(references="1")]
+[Decision(options="이 정도 자원 고갈이라면 테라 전체에도 영향을 미쳐.", values="1")]
+[Predicate(references="1")]
+[Decision(options="설마 이게 프리스티스가 바라는 건가?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]박사, 박사! 나 생각났어.
+[name="Mon3tr"]'오카'도 전 문명의 유산이야…… 너희가 한 과거 실험의 부산물.
+[charslot(slot="m",name="avg_4179_monstr_1#4$1")]
+[name="Mon3tr"]만약, 프리스티스 때문에 광맥이 고갈된 거라면, 그 안에 뭔가 유용한 정보가 있을지도 몰라.
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]박사, 정보를 한 번 읽어 볼래?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="어떻게……?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]지금은 상황이 여의치 않으니, 그냥 손을 집어넣어. 방금 내가 샘플을 채취했을 때처럼.
+[name="Mon3tr"]걱정하지 마. 너한테 해가 되진 않을 거야.
+[charslot]
+[dialog]
+[delay(time=0.5)]
+[playsound(key="$d_avg_walk_water", loop=true, channel="w")]
+[delay(time=0.5)]
+[StopSound(channel="w", fadetime=0)]
+당신은 Mon3tr의 지시대로 몸을 굽히고 두 손을 '오카'라는 액체 속에 담갔다.
+그리고 잠시 기다렸다.
+[dialog]
+[Decision(options="아무런 느낌도 없는데.", values="1")]
+[Predicate(references="1")]
+당신은 변화 혹은 반응을 계속 기다렸다. 전에 여러 번 일어났던 '기적'처럼.
+그러나 결국 아무 일도 일어나지 않았다.
+전 문명의 산물은 마치 당신들과의 연결을 거절하고 부정하는 것 같았다.
+[dialog]
+[Decision(options="우리 발밑의 이 액체가 이미 정보 저장 기능을 상실한 거 아닐까?;아니면, 애초에 아무런 정보도 남기지 않았거나.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]……음, 그럴 가능성도 없진 않아.
+[dialog]
+[charslot]
+[playsound(key="$d_avg_walk_water", loop=true, channel="ww")]
+[PlaySound(key="$d_avg_walkfast")]
+[charslot(slot="m",name="avg_4208_wintim_1#6$1",duration=0.5)]
+[delay(time=1)]
+[StopSound(channel="ww", fadetime=0)]
+[name="크세니야"]Mon3tr! 박사님!
+[name="크세니야"]이쪽으로 와보세요. 제가 새로운 걸 발견했어요!
+[name="크세니야"]폭포 뒤에 동굴이 있는데, 그쪽으로 올라와 보세요……
+[charslot(slot="m",name="avg_4208_wintim_1#4$1")]
+[name="크세니야"]제가 갱도 안에서 특이한 주파수의 소리를 발견했어요. 너무 부자연스러운…… 아니, 이건 명백히 부자연스러운 거예요!
+[name="크세니야"]뭐랄까…… 마치 음파로 어떤 정보를 전달하려는 것 같아요!
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]뭐……?
+[dialog]
+[charslot]
+[Decision(options="가서 확인해 보자.", values="1")]
+[Predicate(references="1")]
+[stopmusic(fadetime=2)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[playsound(key="$d_avg_magneticwaterfall_loop", loop=true, channel="bgs")]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=2)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_doorknob",volume=1)]
+[bgeffect(name="$eb_glow_42i11_01",layer=1,x=-600,y=-400)]
+[Image(image="66_i06",fadetime=3, xScale=1.3, yScale=1.3,screenadapt="coverall")]
+[ImageTween( xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1, yScaleTo=1, duration=60)]
+[delay(time=2)]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0.6)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_airbuzz_1")]
+[name="Mon3tr"]이건……
+[name="Mon3tr"]폭포 가운데 이런 곳이 있었네?
+[dialog]
+[Decision(options="정말…… 장관이야.", values="1")]
+[Predicate(references="1")]
+[name="크세니야"]잘 들어봐요! 액체가 바위에 부딪히는 소리 중에, 유독 주파수가 특별한 소리가 있어요. 마치 사람들의 주의를 끄는 것처럼. 아주 특이해서 분명 들을 수 있을 겁니다!
+[name="크세니야"]방금 제가 들은 걸 해석하느라 시간이 꽤 걸렸어요. 높아졌다 낮아졌다 하는 소리를 전부 기록해야 했거든요……
+[dialog]
+[PlaySound(key="$d_avg_airbuzz_2")]
+[delay(time=2)]
+[name="크세니야"]이거예요! 들려요?
+[name="Mon3tr"]물소리밖에 안 들리는데! 네가 하는 말도 잘 안 들려……
+[name="Mon3tr"]박사?
+당신은 두 눈을 감고 모든 소리에 몸을 맡겼다.
+이윽고 당신은 끊임없이 변하는 주파수의 소리를 듣게 되었다.
+[dialog]
+[PlaySound(key="$d_avg_airbuzz_3")]
+[delay(time=2)]
+[Decision(options="나……", values="1")]
+[Predicate(references="1")]
+[Decision(options="들었어.", values="1")]
+[Predicate(references="1")]
+[name="Mon3tr"]……들었다고?
+[dialog]
+[PlaySound(key="$d_avg_airbuzz_4")]
+[delay(time=1)]
+의식 속에 갑자기 파고든 그 소리는, 고주파수로 구성된 것 같기도 했고, 짧고 날카로운 파동 같기도 했다. 마치 특이한 리듬의 악보 같았다.
+하지만 당신은 곧 확신했다. 이것은 분명 어떤 암호, 또는 언어다.
+[PlaySound(key="$d_avg_airbuzz_5")]
+당신은 기억 속에 떠오르는 모든 언어를 최대한 포착했고, 분류해서 하나씩 대조했다. 그 결과 그것은 같은 단어가 다른 언어에서 변형된 것이라는 사실을 깨달았다.
+[name="크세니야"]자, 제가 다 기록했어요……
+[name="크세니야"]그냥 직감이긴 하지만, 만약 서로 다른 이동도시 간에 사용되는 공통 인코딩 규칙을 적용해 이 소리를 식별한다면……
+[name="크세니야"]이건 하나의 단어, 여러 언어로 쓰인 같은 단어일 거예요. 저는 우르수스어와 가울어를 알아볼 수 있어요! 이 두 단어의 의미는……
+[dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[bgeffect]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1.5)]
+[Sticker(id="st1", text="“미지의 언어”", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+……
+[dialog]
+[Sticker(id="st1", text="“спорить”", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+[Sticker(id="st1", text="“dibattito”", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+……
+[dialog]
+[Sticker(id="st1", text="“débat”", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+[Sticker(id="st1", text="“debate”", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+……
+그랬다. 갱도 속 유체는 바위에 부딪히는 방식으로 당신에게 한 단어를 전하고 있었다……
+[dialog]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_white",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Sticker(id="st1", text="<color=#000000>'변론'.</color>", x=320,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1.5)]
+[Sticker(id="st2", text="<color=#000000>'변론'.</color>", x=320,y=340, alignment="center", size=30, delay=0.001, width=700,block = false,duration=3)]
+[Dialog]
+[playsound(key="$d_avg_jumpscare",volume=0.6)]
+[bgeffect(name="$eb_blackmask",layer=1)]
+[delay(time=0.5)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Sticker(id="st1")]
+[Sticker(id="st2")]
+[bgeffect]
+[Background(image="bg_0_rhodes3",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+그래, {@nickname}.
+당신이 아직도 자신의 선택이 옳다고 생각한다면.
+당신이 아직도 자신이 그린 미래를 굳게 믿는다면.
+현실을 통해 나에게 반박해. 나에게 증명해 봐……
+당신이 굳게 믿고 있는……
+[dialog]
+[Sticker(id="st1", text="그 '희망'을.", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1.5)]
+[Sticker(id="st1",duration=1,block = false)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Image(image="66_i06")]
+[playMusic(intro="$newhope02_intro",key="$newhope02_loop", volume=0.6)]
+[playsound(key="$d_avg_magneticwaterfall_loop", loop=true, channel="bgs")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Decision(options="……이건 초대야.", values="1")]
+[Predicate(references="1")]
+[name="Mon3tr"]뭐라고?
+[dialog]
+[Decision(options="이건, 초대라고.", values="1")]
+[Predicate(references="1")]
+[Decision(options="내가 반드시 응해야 할 초대.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[image]
+[playsound(key="$d_avg_rainlight_loop", loop=true, channel="bgs")]
+[Background(image="66_g6_magnetofluidwaterfall",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"](작은 목소리로) 프리스티스가 네게 남긴 정보라고 생각하는 거야?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="맞아.;그녀가 뭘 말하고 싶은지 알겠어……", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="얼른 여길 떠나자.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]크세니야가 샘플 채취를 끝내면 연구소로 돌아가자.
+[name="Mon3tr"]어떻게든 아미야랑 연락할 방법을 찾아야 하는데……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="아미야 쪽은 어떻게 됐는지 모르겠네.;아미야가 라이디언이랑 연락이 닿았으면 좋겠는데.", values="1;2")]
+[Predicate(references="1;2")]
+[stopmusic(fadetime=2)]
+[playsound(key="$d_avg_giantmonster_treadwater", loop=true, channel="gf")]
+[delay(time=1.5)]
+[StopSound(channel="gf", fadetime=0.3)]
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……무슨 소리 안 들려?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]무슨 소리?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="묵직한 뭔가가 물을 밟고 이동하는 소리.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]아까부터 폭포 소리가 너무 시끄러웠어.
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]박사, 진짜 이명 증상이 있는 거 아냐? 방금 박사의 뇌가 너무 많은 정보를 처리해서, 감각이 지체된 걸 수도 있어……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$d_avg_giantmonster_treadwater", loop=true, channel="gf")]
+[delay(time=2)]
+[StopSound(channel="gf", fadetime=0.3)]
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]……잠깐.
+[name="Mon3tr"]크세니야? 너야?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="이건 크세니야의 발걸음이 아니야. 무게도, 리듬도 다 달라.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]저건…… 뭐지……
+[Background(image="66_g6_magnetofluidwaterfall",screenadapt="coverall")]
+[Dialog]
+[charslot]
+[effect(name="$e_sandfall_01",layer=1,y=350)]
+[delay(time=1)]
+[playsound(key="$d_avg_giantmonster_treadwater")]
+[playMusic(intro="$shatterpoint_01_intro",key="$shatterpoint_01_loop", volume=0.6)]
+[PlaySound(key="$d_avg_stonegrowing",volume=1)]
+[CameraShake(duration=1, xstrength=5, ystrength=5, vibrato=50, randomness=90, fadeout=true, block=false)]
+[cgitem(image="cgitem_66_i11_1", style="cg",pfrom = "-400,0",pto = "-400,0",pduration = 2, afrom = 0, ato = 1, aduration = 0.5,layer = 3)]
+[delay(time=2)]
+[backgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.1, yScaleTo=1.1, duration=0.3,block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.07, fadetime=0.3)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.07, fadetime=0.3)]
+[CameraShake(duration=1, xstrength=5, ystrength=5, vibrato=50, randomness=90, fadeout=true, block=false)]
+[cgitem(image="cgitem_66_i11_2", style="cg",pfrom = "400,0",pto = "400,0",pduration = 2, afrom = 0, ato = 1, aduration = 0.5,layer = 2)]
+[delay(time=2)]
+[CameraShake(duration=1, xstrength=5, ystrength=5, vibrato=50, randomness=90, fadeout=true, block=false)]
+[backgroundTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1.2, yScaleTo=1.2, duration=0.3,block=false)]
+[curtain(direction = 0,fillfrom = 0.07,fillto = 0.14, fadetime=0.3)]
+[curtain(direction = 4,fillfrom = 0.07,fillto = 0.14, fadetime=0.3)]
+[delay(time=2)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=50, randomness=50, fadeout=true, block=false)]
+[Image(image="66_i11",fadetime=1,screenadapt="coverall", xScale=1.15, yScale=1.15)]
+[delay(time=3)]
+[Background]
+[ImageTween(xScaleTo=1.7, yScaleTo=1.7, duration=0.6)]
+[PlaySound(key="$d_avg_giantmonster_growl",volume=1)]
+[curtain(direction = 0,fillfrom = 0.14,fillto = 0, fadetime=1)]
+[curtain(direction = 4,fillfrom = 0.14,fillto = 0, fadetime=1)]
+[CameraShake(duration=3, xstrength=20, ystrength=20, vibrato=50, randomness=50, fadeout=true, block=false)]
+[Image(image="66_i11",fadetime=1,screenadapt="coverall", xScale=1, yScale=1)]
+[ImageTween(xScaleTo=1.3, yScaleTo=1.3, duration=60)]
+[delay(time=5)]
+광기에 찬 울부짖음, 거친 숨소리, 송곳니 사이로 끊임없이 떨어지는 점액.
+검붉은 오리지늄이 녀석의 온몸을 관통하고 있었다. 녀석은 마치 그 단단한 구속 때문에 반드시 사람처럼 서 있어야만 하는 듯했다.
+그리고, 당신은 녀석이 거대한 앞발을 드는 모습을 보았다……
+아니, 앞발이라 할 수도 없다. 왜냐하면, 그건 아무리 봐도 말라붙은, 인간의 두 손이었다.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……오리지늄에 감염된 맹글러비스트.", values="1")]
+[Predicate(references="1")]
+[delay(time=1)]
+[name="크세니야"]샘플 채취 완료!
+[name="크세니야"]두 분, 거기 서서…… 뭐 해요?
+상식과는 전혀 일치하지 않는 기괴한 맹글러비스트가 그녀의 등 뒤에 서 있었다.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="크세니야, 빨리 와!", values="1")]
+[Predicate(references="1")]
+[name="Mon3tr"]뛰어, 크세니야! 앞으로 달려, 뒤돌아보지 말고!
+[name="Mon3tr"]내가 데리고 올게. 박사, 넌 광차 쪽으로 가. 거기서 만나자!
+[name="Mon3tr"]박사, 얼른 가!
+[name="크세니야"]이게 무슨……
+[PlaySound(key="$d_avg_shallowsrun",volume=1)]
+[CameraShake(duration=-1, xstrength=5, ystrength=5, vibrato=5, randomness=50, fadeout=true, block=false)]
+연구원은 달리는 와중에 도저히 못 참고 뒤를 돌아보았다.
+그녀는 간신히 비명을 삼켰다.
+[name="크세니야"]……황제 폐하시여……
+[name="크세니야"]저게 대체 뭡니까?!
+[Dialog]
+[Delay(time=2)]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[CameraShake(duration=0, xstrength=10, ystrength=10, vibrato=20, randomness=50, fadeout=true, block=false)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot]  

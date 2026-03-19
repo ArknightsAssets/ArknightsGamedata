@@ -1,0 +1,404 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[name="侍従"]お客様方、大変お待たせいたしました。どうぞこちらへ。
+[Dialog]
+[delay(time=1)]
+衛兵の要求に従い、アロイジウスと噂の女大公の会話に結論が出るまで、あなたはホール内で辛抱強く待ち続けていた。
+重苦しい空気が漂う室内には、時間を確認できる物が何もない。まるで訪問客に時間を把握する権利を意図的に与えていないかのようだった。
+ひどく退屈な時間が過ぎていく中、あなたは先ほどの会話を思い出す――
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="66_g1_bleskstreet",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$loading_intro",key="$loading_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_4179_monstr_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#5$1",focus="l")]
+[name="アーミヤ"]ドクター一人にしか面会の許可はできないと？
+[charslot(slot = "r", name = "avg_4179_monstr_1#5$1",focus="r")]
+[name="Mon3tr"]理不尽な要求だ。私とアーミヤがその場にいなかったら、もし何かあった時に君を守ってやれない。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="どうあれ、ここは相手の地盤だから。;向こうは我々に交渉の余地を与えるつもりはない。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#7$1",focus="l")]
+[name="アーミヤ"]アロイジウスさんは女大公に会わせてくれると言ってましたけど、彼女の目的はまだはっきりしていませんし……
+[charslot(slot = "r", name = "avg_4179_monstr_1#4$1",focus="r")]
+[name="Mon3tr"]私の記憶にも、ウルサスにアロイジウスという貴族がいる情報はない。
+[charslot(slot = "r", name = "avg_4179_monstr_1#2$1",focus="r")]
+[name="Mon3tr"]だが特使を務め、あの女大公と直接知り合いであるのが並みの者であるはずがない。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="彼女は明らかにまだ多くのことを隠している。;中央からの特使と地方貴族の関係は確かに微妙だ。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="だが我々と共に鉱区へ入る必要があるとも言っていた。", values="1")]
+[Predicate(references="1")]
+[Decision(options="いずれにせよ、彼女との協力は必要だ。;今のところ、鉱区へ入るチャンスはそれしかない。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#1$1",focus="l")]
+[name="アーミヤ"]ですが、ロドスがかつてウルサス政府に目をつけられていたことは確かです。ここの管理者が我々をどう見ているかはまだわかりません。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="過去の経験から少しは学んできた。;こういう状況は初めてというわけではない……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#6$1",focus="l")]
+[name="アーミヤ"]ドクターの決定は支持します。ですが、くれぐれも気をつけてくださいね。
+[charslot(slot = "r", name = "avg_4179_monstr_1#6$1",focus="r")]
+[name="Mon3tr"]通信端末を忘れるな！　何かあったらすぐに知らせるんだ。たとえこの建物を壊してでも、私たちがいち早く君を助けに駆け付けてやる！
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="臨機応変に対応するつもりだ。;なるべくそうならないよう気をつける……", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="しかし……", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+鉱区を封鎖するとは、一体何を隠そうとしている……？
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_openftstpwalk")] 
+[delay(time=1.5)]
+建物内の廊下は、この都市の街道と同じく異様に広く閑散としていた。
+侍従はここまであなたを案内した後、終始言葉を発さないまま軽く会釈してすぐに立ち去った。
+まるであなたが直感だけで正しい部屋を見極められると確信しているかのようだった。あるいは、ただ単に客人を試すのが習慣なのかもしれない。
+幸いにも、あなたは侍従が纏っていたリンゴの木が燃えた後の暖かな香りを感じ取り、それを頼りにここで同じ香りを放つ唯一の扉を開いた。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i05", fadetime=0, xScale=1, yScale=1,screenadapt="coverall")]
+[Background(image="bg_black",screenadapt="coverall")]
+[PlaySound(key="$d_avg_gateopen")]
+[playsound(key="$d_avg_woodcracle", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[playMusic(key="$m_avg_ursusdaily_loop", volume=0.6)]
+そこは静かで物寂しい部屋だった。
+[ImageTween( xScaleFrom=1, yScaleFrom=1, xScaleTo=1.3, yScaleTo=1.3, duration=60)]
+黙した巨大な石壁がこの冷たい都市を区切り、侵すことのできない空間を作り出しているかのようだった。
+あなたの視界には、広々とした部屋の奥に佇む華やかな青みがかった灰色の後ろ姿が一つ映るばかりだ。
+[Dialog]
+[Decision(options="初めまして。", values="1")]
+[Predicate(references="1")]
+[Decision(options="エリザヴェータ・コンスタンチノヴナ・ラホフスカヤ女大公閣下。;……", values="1;2")]
+[Predicate(references="1")]
+[name="エリザベト女大公"]あなたの敬意は伝わりました。かしこまらずに、私のことは友人のように、エリザベト女大公と呼んでください。
+[name="エリザベト女大公"]あなたはきっと聡明な方なのでしょう。知性を感じます。
+[Predicate(references="2")]
+[name="アロイジウス"]閣下をお呼びする時はエリザベト女大公とお呼びください。
+[name="アロイジウス"]……申し訳ありません、閣下。私が礼節に気を配るよう言い含めておくべきでした。
+[name="エリザベト女大公"]いいえ、どちらでも良いの。
+[name="エリザベト女大公"]誠実な善意は形式的な礼儀に頼らずとも存在するものです。客人には少し肩の力を抜いていただきましょう。
+[Predicate(references="1;2")]
+それは予想とは裏腹に、柔らかく無邪気な声だった。
+この地の主がゆっくりと振り返った。
+[Dialog]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[image]
+[Background(image="66_g2_farnorthgovernment",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1962_1#3$1",duration=1.5)]
+[delay(time=2.5)]
+[name="エリザベト女大公"]ブレスクを訪れた客人は、どのような方であっても歓迎いたします……
+[name="エリザベト女大公"]アローダ、あなたの友人を紹介してくれますか？
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]ええ、もちろんです……こちらが先ほど申し上げた、ロドス・アイランド製薬会社のドクター――
+[Dialog]
+[charslot]
+[Decision(options="{@nickname}と申します。;Dr.{@nickname}と呼んでください。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="お目にかかれて光栄です。;失礼な訪問でないといいのですが。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#3$1")]
+[name="エリザベト女大公"]かしこまらずとも結構です。どうぞこちらへ、暖炉のそばに腰かけてください。侍従がすぐに熱いお茶を持ってきますから。
+[name="エリザベト女大公"]この季節のブレスクは、遠方からいらした客人には馴染みにくいでしょう。このように辺ぴな場所にある街ですが、実は暖かくて心地よい時期もあるのですよ。
+[name="エリザベト女大公"]それで、ここまでの道中は順調でしたか？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="順調とはとても……;ブレスクは治安のいい都市です。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="エリザベト女大公"]どうか信じてください。あなたがここで見たすべては、この都市がようやく手にした安寧を守るためのものなのです。
+[name="エリザベト女大公"]アローダから話は聞きました。彼女の新しい友人であるあなたは、とても優秀な鉱石病の専門家で、まさに今この都市が必要としている人材だそうですね。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="鉱石病の専門家を必要としているのですか？;ウルサスが……鉱石病の専門家を求めていると？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="エリザベト女大公"]我らの若き皇帝陛下は、ご自身の恩寵を帝国のあらゆる民に等しく与えたいと望んでおられます。感染の有無で民を区別することさえ陛下は望んでおられません。
+[name="エリザベト女大公"]そのために陛下は並々ならぬ努力をなされました。それを見た臣下は例外なく心を痛めるほどです。
+[name="エリザベト女大公"]しかし、陛下の純真な御心がいかに貴重な代物であるかを、真に理解できる人は滅多におりません。我々は陛下の追従者として、その意志を体現するよう努めねばならないのです。
+[name="エリザベト女大公"]ブレスクはクライニ・セーヴェルでも最大の鉱区と隣接しておりますが、鉱石病の治療体制はいまだ陛下の理想には及びません。ですから、我々には有能な医師が必要なのです。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]そういうことでしたら、Dr.{@nickname}は閣下がここで見つけることのできる最も優秀な協力者でしょう。
+[name="アロイジウス"]ロドスが発表した学術論文は拝見しましたが――誰かの成果の二番煎じをするしか能がない帝国大学の害虫のような学者とは違って、ロドスは鉱石病研究において先進的な知識を有しています。
+[charslot(slot="m",name="avg_npc_1962_1#3$1")]
+[name="エリザベト女大公"]ほぉ……この自尊心の高い若き軍人が誰かを褒めるところなど初めて見ました。
+[name="エリザベト女大公"]サンクト・グリファーブルクでの任務があなたを変えたのでしょうか？　お父上が、公爵との宴会で何度も顔を潰されたと文句を言っておられたこと、いまだに覚えておりますよ。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]お恥ずかしい限りです、女大公閣下。
+[name="アロイジウス"]ですが少し傲慢な言い訳をさせていただくと――私はこれまでも、真に学識ある方に対しては敬意を払ってきたのです。たとえばあなたや、私の隣にいるロドスのDr.{@nickname}はそこに含まれましょう。
+[name="アロイジウス"]父を覚えていてくださり光栄です。本人の代わりにご挨拶を申し上げるのを忘れるところでした。
+[charslot(slot="m",name="avg_npc_1962_1#3$1")]
+[name="エリザベト女大公"]少なくともお父上の工場は未だにクライニ・セーヴェルの戦士のため、最高の軍服を作っておられます。辺境で開かれる宴会では、決まって彼の名が話題に上りますよ。
+[name="エリザベト女大公"]……こちらのご友人に話を戻しましょうか。
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="エリザベト女大公"]率直にお話しましょう――ロドスは、ブレスクに何を望んでいらっしゃるのですか？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="鉱区への立ち入り許可をいただきたいのです。;我々の移動医療隊との連絡がそこで途絶えています。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#2$1")]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+あなたの言葉を聞いて、女大公は余裕のある態度を崩さない程度の驚きの表情を見せた。
+彼女がアロイジウスに目を向ける。若き軍人の目によぎった決まりの悪さを、あなたは見逃さなかった。
+女大公は長いため息をついた。どうやら真剣に悩んでいるようだ。
+[charslot(slot="m",name="avg_npc_1962_1#4$1")]
+[name="エリザベト女大公"]はぁ……Dr.{@nickname}――でしたね？
+[name="エリザベト女大公"]もしこちらの若者があなたに不適切な誤解を抱かせたのでしたら、とても残念に思います。
+[name="エリザベト女大公"]ロドスがブレスクに事務所を構えるのは歓迎いたしますし、その際には、私のできる限りの助力は惜しみません……
+[name="エリザベト女大公"]しかし、今の鉱区は、とても客人が見物できるような状況ではないのです。
+[name="エリザベト女大公"]あなたのお仲間が鉱区で行方不明になったのでしたら、最後にいた場所や外見の特徴をお教えください。十分な人手を派遣して探しに行かせましょう。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="失礼ながら、決定を下す前に今少しお話しが必要かと。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#4$1")]
+[name="エリザベト女大公"]そのお話しの結末は恐らく……
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]女大公閣下。
+[name="アロイジウス"]私から彼らに同行をお願いするとしたらいかがでしょう？
+[charslot(slot="m",name="avg_npc_1962_1#4$1")]
+[name="エリザベト女大公"]あら、アローダ……あなたはいつもそうやってやんちゃな小細工を仕掛けるのだから。
+[name="エリザベト女大公"]ブレスクに鉱石病を専門とする医師が必要であることは、あなたも重々承知しているでしょう。
+[name="エリザベト女大公"]あなたの推薦であれば、ご友人がここで事務所を構え、活動することを認めるのもやぶさかではありません。それをあなたへの貸しにする気もないのですよ。
+[name="エリザベト女大公"]ですが、あなたが今何をしようとしているかをご覧なさい。我々の貴重な客人を雪泥のような厄介事に巻き込むつもりですか？
+[name="エリザベト女大公"]アローダ……あなたは話を複雑にしています。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]これは複雑な話ではありません――どうかお許しください、女大公閣下。
+[name="アロイジウス"]私は今回この地を訪れた目的を隠すつもりは毛頭ございません。
+[name="アロイジウス"]皇帝陛下の名の下に、サンクト・グリファーブルクでは、あなたが治めるブレスクの安寧を疑う者は誰一人おりません。
+[name="アロイジウス"]そうは言うものの、現在封鎖中の鉱区と感染者の異変に対して好奇心を抱く者は少なくないのです。
+[name="アロイジウス"]ここを訪れるのは暇な若い新貴族か、あるいは鉱石病研究の専門家かもしれません。もちろん帝国軍のいずれかの大尉であったり、議会の大物であるかもしれません。
+[charslot(slot = "m", focus = "n")]
+若き軍人の口調は相も変わらず軽薄で、言葉の鋭さが無作法ゆえの失言なのか、それとも何か別の意図を含んだ詮索なのかは判別がつかなかった。
+エリザベト女大公は目を細める。
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="エリザベト女大公"]もしも彼らに疑念があるなら、その疑念を携えて来てもらえばよいでしょう。
+[name="エリザベト女大公"]軍から見れば新貴族に媚びる日和見主義者、議会から見れば辺境の女大公。私は皆がブレスクに抱く疑念と好奇心にはもう慣れております。
+[name="エリザベト女大公"]それで、親愛なるアローダ。あなたは誰を代表して、私に責任を果たせと求めているのですか？
+[charslot(slot="m",name="avg_npc_1966_1#11$1")]
+[name="アロイジウス"]とんでもありません！　決してそのような意図はありません。閣下はきっと私の意図を誤解なさっておいでです！
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]ご存知の通り、閣下の領地を訪れるのは私にとってこの上なく好ましい仕事なのです。
+[name="アロイジウス"]私が参上したのは、ただ閣下に願い事を申し上げるためです。どうか感染者異変の調査のために、鉱石病専門家の方々と私が鉱区へ立ち入るのを許してくださいませんか？
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="エリザベト女大公"]……
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="お二方、一言口を挟んでもよろしいでしょうか？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="エリザベト女大公"]恥ずかしいところを見せてしまいましたね。どうぞ、お話しになって。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="ロドスの立場を明確にしておきたいのです。", values="1")]
+[Predicate(references="1")]
+[Decision(options="我々は感染者問題の解決を試みる一企業です。;連絡の途絶えた仲間を一刻も早く見つけたいだけです。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="その他には介入しませんし、する術もありません。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="エリザベト女大公"]先ほどは触れませんでしたが、好奇心からお尋ねしてもいいかしら――
+[name="エリザベト女大公"]あなたのお仲間は、一体どうして中心鉱区へ向かったのでしょう？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="鉱石病の症例を収集するためです。;彼らはウルサス人です。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="エリザベト女大公"]なるほど……
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="ロドスの目的は純粋です。", values="1")]
+[Predicate(references="1")]
+[Decision(options="ロドスの背後に、他の勢力は存在しませんので。;ロドスはこの地について何も知りませんので。", values="1;2")]
+[Predicate(references="1")]
+言い終えた途端、あまりに率直な言葉はかえって信憑性を削ぐとあなたは気づいた。しかし軽率な発言は、裏に陰謀があると思われにくいという効果を上げていた。
+女大公は、僅かに面白がるような表情を見せた。
+[Predicate(references="2")]
+これまであなたの発言を真剣に聞いていた女大公は、ここでようやく幾ばくかの気の緩みを見せた。
+彼女は表情の変化を強く抑えていたが、多少その視線が和らいだことが感じ取れた。
+[Predicate(references="1;2")]
+[Dialog]
+[Decision(options="とにかく、すべては仲間を探すためです。;我々の望みはそれだけです。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="エリザベト女大公"]一方は私が気にかける若者、一方は仲間を取り戻したいと願う鉱石病の専門家……
+[name="エリザベト女大公"]もしここで私が断れば、あまりに冷淡な人間に映るでしょうか？
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]閣下はただ遠方から来た友人が、危険に巻き込まれないかを案じているだけだということは重々に承知しております。
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="エリザベト女大公"]もちろんです。私はこの土地で誰かが不幸な目に遭ってほしくはありません。時間さえ許せば、この凍土に暮らすすべての者に暖炉を送りたいと思っています。
+[name="エリザベト女大公"]アローダ、ご友人の安全を全力で保障すると誓えますか？
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]……どうか私を信じていただければと。
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="エリザベト女大公"]わかりました。ではDr.{@nickname}、鉱区へおいでなさい。お仲間を見つけ、連れ戻すといいでしょう。
+[name="エリザベト女大公"]ロドスがクライニ・セーヴェル鉱区へ入るのを許可します。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="閣下の慈悲深きお心に感謝いたします。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="エリザベト女大公"]私も自分が慈悲深い人間でありたいと願っています。ですが、他人の心配りに感謝する人は実際には滅多にいません。
+[name="エリザベト女大公"]人は自分から権利を取り上げる者を畏れ、そこから一部の権利を返してくれる者には感謝の念を抱きます。ですが私は、それを慈悲と呼んでいいとはどうしても思えません。
+[name="エリザベト女大公"]クライニ・セーヴェルの風はとても冷たいですよ。どうぞ防寒の備えを怠らぬように、Dr.{@nickname}。
+[stopmusic(fadetime=2)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g1_bleskstreet",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",duration=0.5)]
+[delay(time=1)]
+[name="アーミヤ"]ドクター、おかえりなさい！　ご無事でよかったです。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]えっと……そんなに喜ぶことはないでしょう、アーミヤさん。
+[name="アロイジウス"]ここはブレスクの行政の中枢で、どこぞの魔窟というわけじゃないんだから――話は割とスムーズに進んだわよね？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Dialog]
+[Decision(options="とてもスムーズだった。;少しばかり予想外のこともあった。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="君はまだ何か隠しているな。;我々に対しても、あの女大公に対しても。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#2$1")]
+[name="アロイジウス"]そうね、それは認めるわ。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]だけど、事実として、これが私の用意できる最も理想的な対話の場だったのよ。結果的には、悪くなかったでしょ？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="あの女大公は……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]どうしたの？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="思っていたのと少し違った。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]あら？　どんな人を想像してたの？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="もっと冷酷な人だと思っていた。;もっと説得が通じない人かと思っていた。", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]閣下の異常事態への対応の仕方だけについて言えば、あなたの予測もあながち間違ってないわ。
+[charslot(slot="m",name="avg_npc_1966_1#3$1")]
+[name="アロイジウス"]異変が起きてから、関係のある感染者はただちに鉱区研究所へ送られて管理下に置かれたわ。研究員たちには一週間以内に原因を突き止められなければ、流刑か追放に処すとまで言い渡してね。
+[name="アロイジウス"]さらにクライニ・セーヴェル地区には戒厳令を敷き、坑夫たちを全員鉱区内に封じ込めて、情報が一切外部に漏れないよう、あらゆる通信手段を遮断した。
+[name="アロイジウス"]とても効率的、ただし冷酷なやり方とも言えるわ。
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]彼女が回避したいことや隠蔽したい内容を的確に突くことさえできれば、説得はそう難しくないの。
+[charslot(slot="m",name="avg_npc_1966_1#3$1")]
+[name="アロイジウス"]問題は、大抵の場合、煙に巻かれてその切り口を見つけ出せないことよ。
+[name="アロイジウス"]たとえば感染者の件とかね。現時点では、彼らの身に起きたのは病理的な異変なのか、新たな鉱石病の症状なのか、それとも別の何かなのかわからないわ。
+[name="アロイジウス"]詳しい情報がないことが、問題なのよ。サンクト・グリファーブルクに伝わった知らせは、異変が起こった感染者は直ちに鉱区研究所へ移送されて、管理下に置かれているということだけ。
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="アロイジウス"]源石の変化と鉱石病の新たな症状に関しては、あなたたちも論文を発表していたわよね。私も読ませてもらったし、ウルサス各地の研究所もすでにあの論文を参考に研究を始めてるわ。
+[name="アロイジウス"]だけど、鉱区で起きた感染者の異変は新たな脅威である可能性が極めて高いわね。
+[name="アロイジウス"]論文にあった変異状況程度であれば、ここまでの反応は起きないもの。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]新たな脅威ですか……
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="アロイジウス"]今この瞬間も、研究所は原因の究明を進め、鉱区全体に戒厳令が敷かれ、坑夫たちは完全に隔離されてるわ。
+[name="アロイジウス"]これで事態は解決したと誰もが思い込んでるけど、実際はどうかしら？
+[name="アロイジウス"]事態が発生してから、鉱区の操業は停止し、通信は遮断され、サンクト・グリファーブルクからの追及にも長らく返答がない。誰も中に踏み込もうとしないし、踏み込むこともできないわ。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="だがもし女大公が意図的に隠しているのなら……;我々は初めからブレスクに入れなかったはずだ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="アロイジウス"]あなたは女大公と実際に会って、彼女のことを「慈悲深い」統治者と言えると思ってるかもしれないけど……
+[name="アロイジウス"]彼女が通行を許可するのは当然よ。何と言っても、ここは「ウルサス国境内で感染者に対して最も友好的な土地」、「クライニ・セーヴェルの宝石」、「ウルサス北方の天国」――
+[name="アロイジウス"]ブレジェノイの中心都市、ブレスクなんだから。
+[name="アロイジウス"]あなたたちがこの都市を訪れてから今まで、人通りが少なすぎることを除けば、何の異常も見つからなかったでしょう。これがエリザベト女大公のクライニ・セーヴェル統治のやり方よ。
+[charslot(slot="m",name="avg_npc_1966_1#5$1")]
+[name="アロイジウス"]彼女が総督に就任して以来、管轄区内で死刑判決は一件も出ていない。だけど、それによってここで無残に死ぬ人が減ったかしら？　そんなことはまったくないわ。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="君は彼女に強い不満を抱いているようだ。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]あら、そう思われるのは心外だわ。今言ったことに私情は少しも混じってないわよ。ただありのままに答えたまでだもの。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]だって、私たちはこれから良き協力相手になるのでしょう？
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]わかりました、アロイジウスさん。では異変の起きた感染者たちはまだ鉱区研究所の管理下にあるんですね？
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]その通りよ。正確に言えば、彼らはクライニ・セーヴェル中心鉱区研究所にいるわ。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="そこは確か……？;……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="アーミヤ"]私たちがこれから真っ先に向かわなければならない場所でもあります。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]そうだったの？　目的地が同じなら話は早いわ。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]他に何か聞きたいことは？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="君はとても誠実だ。;君は非常に焦っている。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]その通り。だから最初から回りくどいことをするつもりはなかったわ。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]アロイジウスさん、もう一つ聞きたいことがあります。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]どうぞ。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]先ほどご友人の家では、会話が慌ただしく終わってしまいました。これは本来なら最初に聞くべきことでしたが、今になってしまいました。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]アロイジウスさんは、今回の調査の結果に何を求めているのでしょう？
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]……本気の答えを聞きたいの？
+[Dialog]
+[charslot(slot="m",name="avg_npc_1966_1#3$1")]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1966_1#10$1")]
+[name="アロイジウス"]私が求めているのは真相よ。中心鉱区で発生した感染者の異変の真相を知りたいわ。
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="アロイジウス"]感染者の坑夫たちが理不尽に苦しむことも、ウルサスの民が起こり得る災厄について何も知らされずにいることも望まないわ。
+[Dialog]
+[Delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot] 

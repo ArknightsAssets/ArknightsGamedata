@@ -1,0 +1,805 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_airridsrn", volume=1, loop=true, channel="ai")]
+[Delay(time=1.5)]
+[SoundVolume(volume=0.2, channel="ai",fadetime=4)]
+[PlaySound(key="$d_avg_telegraph_loop", volume=1, loop=true, channel="e")]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[Delay(time=1)]
+「こちら司令部。」
+「ターゲット捕捉。現在ネヴァ湖に向けて移動中。」
+「各部隊は砲撃を一時停止し、計画通り指定座標を包囲せよ。」
+「座標は端末に送信した。」
+……
+[dialog]
+[StopSound(channel="e", fadetime=3)]
+[StopSound(channel="ai", fadetime=3)]
+[PlayMusic(key="$darkness_03_loop", volume=0.6)]
+[Background(image="bg_newiceforest_2",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1", duration=1, isblock=true)]
+[name="アーミヤ"]Raidianさん、森は抜けられましたか？
+[dialog]
+[charslot(slot = "m", focus="n")]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "Raidian", switch = true, style = 1,offset = "-450,125", channel = 3)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#5$1", duration = 0)]
+[Delay(time=0.5)]
+[name="Raidian"]先行部隊は合流地点に到着したよ。
+[dialog]
+[interlude(channel = 3, switch = false)]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "アロイジウス", switch = true, style = 1,offset = "450,125", channel = 4)]
+[interlude(channel = 4, type = 3, slot = "m", switch = true, pfrom = "480,-80", pto="480,-80", name = "avg_npc_1966_1#4$1", duration = 0)]
+[Delay(time=0.5)]
+[name="アロイジウス"]第一陣の輸送車両は到着済みよ。後続の車両が着くまでには、もう少し時間がかかりそうね。
+[dialog]
+[name="アロイジウス"]ごめんなさい。まさかここまで差し迫った状況になるとは予想していなかったわ。
+[interlude(channel = 4, switch = false)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]Raidianさん、その後の軍の動向は掴めましたか？
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#3$1", duration = 0)]
+[name="Raidian"]ううん、まだ……私たちが全域放送を流してから、軍用帯域は沈黙したままなの。すでに警戒されてるだろうし、今はこれ以上の動向は掴めそうにないよ。
+[name="Raidian"]ここは静かすぎて、かえって不安になるね……
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#2$1", duration = 0)]
+[name="Raidian"]アーミヤ、追っ手に気づかれないように気をつけてね。
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]わかりました、気をつけます。
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#4$1", duration = 0)]
+[name="Raidian"]うん、また連絡する。Mantraの方はどう？
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]Mantraさんはまだ脱力した状態で意識も回復していません。ヴェトチキさんたちが、簡易的な担架を作ってくれて――
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, switch = false)]
+[name="Mantra"]アーミヤ。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="アーミヤ"]Mantraさん！　まだ「喋っちゃ」いけません……
+[charslot(slot = "m", focus="n")]
+[name="Mantra"]意識は回復した。自力での行動も可能になったと、エリジウムに伝えてくれ。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="アーミヤ"]いえ、いけません。
+[charslot(slot = "m", focus="n")]
+[name="エリジウム"]隊長！　まだ安静にしてないとダメだって！
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#6$1", duration = 0)]
+[name="Raidian"]Mantra、前回の任務で負傷したブレイズが半月も寝たきりになったのを覚えてる？　あの時の私たちはね、彼女がつま先を一秒以上地面に着けることだって許さなかったんだ。
+[name="Raidian"]Mantraも同じだよ。覚悟しといてね。
+[interlude(channel = 3, switch = false)]
+[name="Mantra"]……今は状況が異なる。
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#5$1", duration = 0)]
+[name="Raidian"]うーん。じゃあ、お互いに一歩譲り合おうか。あなたたちが無事に森を抜けられたら、私とエリジウムのどっちかを杖代わりに選んでよ。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[interlude(channel = 3, clear = true)]
+[interlude(channel = 4, clear = true)]
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1969_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", name = "avg_4207_branch_1#1$1", posfrom="-200,0", posto="0,0", duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_4207_branch_1#10$1", focus="l")]
+[name="ヴェトチキ"]凍った、湖を、越えたら、その先が……サンクト・グリファーブルクなんですか？
+[name="ヴェトチキ"]感染者はみんな……移動都市に、入れないと、聞いたんです。
+[charslot(slot = "r", name = "avg_npc_1969_1#1$1", focus="r")]
+[name="坑夫"]まだ感染してなかった頃でも移動都市に入ったことなんてねぇよ。俺は、鉱区に来る前はずっと、生まれた村から出たことがなかったんだ。天災が来て村のほとんどが感染者になっちまうまではな。
+[name="坑夫"]でもよ、あの人たちは自分で歩かなくてもいいって言ってたろ？　車両が迎えに来るんだろ。前に俺たちが見つけたやつみたいにさ。
+[name="坑夫"]そういや、ニクトの奴はサンクト・グリファーブルクから来たって言ってたな。残念ながら、今はここにいねえけどよ。
+[name="坑夫"]「小枝ちゃん」よ、ニクトとランキンたちは、今ごろどうしてると思う？　俺たちより早く出発したからもう農場とやらに着いてるかな。
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_4207_branch_1#2$1", focus="l")]
+[name="ヴェトチキ"]そ、そうかも……しれません。
+[name="ヴェトチキ"]そうだと、いいですね。
+[dialog]
+[charslot]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_drone", volume=0.5)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.3)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.5)]
+[Delay(time=1.5)]
+[name="Mantra"]……全員、近くの遮蔽物に隠れて伏せろ！
+[dialog]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion_stone", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_wilderness_n",screenadapt="coverall")]
+[PlayMusic(intro="$shatterpoint_01_intro", key="$shatterpoint_01_loop", volume=0.6)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="n")]
+[name="Raidian"]――！
+[charslot(slot = "l", name = "avg_npc_1966_1#11$1", focus="l")]
+[name="アロイジウス"]爆撃――森の方よ！　軍がもう追いついてきたの！？
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]探知したよ……たった今、もう一つの部隊が東側から攻撃を仕掛けてきてる。
+[name="Raidian"]私たちの位置は把握してるみたい……ネヴァ湖の方へ追い込むつもりだよ。
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "l", name = "avg_npc_1966_1#6$1", focus="l")]
+[name="アロイジウス"]なんてこと！　ここはもう中央区の管轄なのよ。軍がその意味を知らないはずがないのに！
+[dialog]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[Delay(time=1)]
+[SoundVolume(volume=0.2, channel="sn",fadetime=2)]
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]「サンクト・グリファーブルクの安全が脅かされている……軍は……直ちに敵を殲滅する。」
+[name="Raidian"]公開放送だよ。奴らはサンクト・グリファーブルクに向けて信号を送り続けてる。これは反乱分子の鎮圧作戦だって！
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="アロイジウス"]いえ……そんな……ふっ……そう、そういうことだったのね……
+[charslot(slot = "l", name = "avg_npc_1966_1#5$1", focus="l")]
+[name="アロイジウス"]虐殺、追撃……軍は反乱分子の鎮圧を口実にサンクト・グリファーブルク城下に兵を集結させた。砲口を城門に突きつけた上で、議会と交渉するつもりなのよ！
+[name="アロイジウス"]それが目的だったんだわ……クライニ・セーヴェルの何十万人もの命を犠牲にしてまでほしかったのはこれだったのね。
+[dialog]
+[charslot(slot = "l", focus="n")]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]アーミヤ、聞こえた？
+[name="Raidian"]あなたたちの東側に軍の部隊がいる。避けて――
+[dialog]
+[charslot(slot = "l", focus="n")]
+[PlaySound(key="$d_avg_telegraph_loop", volume=1, loop=true, channel="e")]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[StopSound(channel="e", fadetime=4)]
+[Delay(time=2)]
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]……磁気嵐の影響が強すぎて、この距離じゃ通信が安定しない。
+[name="Raidian"]アロイジウス、大部隊が間もなくここに到着する。みんながきちんと車両に乗り込んで避難できるように、あなたにはここに残って指揮を執ってほしい。
+[charslot(slot = "l", name = "avg_npc_1966_1#11$1", focus="l")]
+[name="アロイジウス"]あなたはどうするの？
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]私は戻って、避難ルートを教えてあげないといけない。
+[charslot(slot = "l", name = "avg_npc_1966_1#11$1", focus="l")]
+[name="アロイジウス"]私を撤退用の車両と一緒にここへ残すつもり？　あなたたちを見捨ててサンクト・グリファーブルクへ逃げ帰るとは思わないの？
+[charslot(slot = "r", name = "avg_npc_1730_1#5$1", focus="r")]
+[name="Raidian"]あなたがそうすると決めたのなら、その時は事前に知らせてほしいかな。
+[name="Raidian"]ロドスは別の手段を考えるから。
+[charslot(slot = "l", name = "avg_npc_1966_1#11$1", focus="l")]
+[name="アロイジウス"]あなた……
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="アロイジウス"]ふっ……ロドスという場所は、皆あなたみたいな人ばかりなの？
+[charslot(slot = "r", name = "avg_npc_1730_1#1$1", focus="r")]
+[name="Raidian"]……私よりもずっと勇敢な人ばっかりだよ。
+[name="Raidian"]ここの指揮はあなたに任せたから、「軍曹」。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_newiceforest_2",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[CameraShake(duration=1, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n", volume=0.6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[CameraShake(duration=3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion_stone", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=0.5)]
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1", posfrom="-200,0", posto="0,0", duration=0.5, isblock=true)]
+[name="坑夫"]俺たちは一体何に追われてるんだ？　まるで何もないところから現れたみたいに――
+[charslot]
+[name="Mantra"]（よろめく）
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "char_401_elysm_na_1#6")]
+[name="エリジウム"]隊長、気を付けて！
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="エリジウム"]軍が無差別爆撃をしてる。道を変えたほうがいいんじゃない？
+[charslot]
+[charslot(slot = "l", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]エリジウムさん、Raidianさんと連絡は取れますか？　先行部隊のほうが私たちより危険な状況かもしれません！
+[dialog]
+[charslot(slot = "l", focus="n")]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "260,0", pto="260,0", name = "avg_npc_1730_1#6$1", duration = 1)]
+[Delay(time=0.5)]
+[name="Raidian"]アーミヤ！　今どこにいるの？
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "l", name = "avg_1037_amiya3_1#4$1", focus="l")]
+[name="アーミヤ"]ネヴァ湖東岸の森の中です！　まだ軍の無差別砲撃を受けています――
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "260,0", pto="260,0", name = "avg_npc_1730_1#6$1", duration = 0)]
+[name="Raidian"]相手は、東側から増援を派遣してきているよ。今はとにかく急いでネヴァ湖を抜けるしかない！　……ネヴァ湖を抜ければ……サンクト・グリファーブルクはすぐそこだから。
+[name="Raidian"]軍は許可なしにネヴァ湖西岸の土地へは踏み込めない。そこが奴らの追ってこれる限界で私たちが生きるための唯一の活路でもある。
+[name="Raidian"]アーミヤ、とにかくどんなことがあっても、軍に完全に包囲される前にネヴァ湖を渡り切らないと――
+[dialog]
+[PlaySound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true, tsto="0,1", tsduration=0.5)]
+[Delay(time=1)]
+[charslot(slot = "l", name = "avg_1037_amiya3_1#4$1", focus="l")]
+[name="アーミヤ"]Raidianさん？　Raidianさん！？
+[dialog]
+[charslot(slot = "l", focus="n")]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[Delay(time=1)]
+[name="Raidian"]磁気嵐――通信――
+[name="Raidian"]――南西に――氷上――
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="66_g8_farnorthtundra_aurora",screenadapt="coverall")]
+[bgeffect(name="$eb_blizzard",layer=1)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]皆さん、照明器具は一切使用しないでください。暗闇の中を進み、可能な限り早く氷上を抜けなければなりません。
+[name="アーミヤ"]南西へ一直線に向かいます……私が皆さんを誘導します。
+[charslot(slot = "m", name = "avg_4207_branch_1#4$1")]
+[name="ヴェトチキ"]場所はわかります。星を見れば、方角がわかる――
+[dialog]
+[charslot]
+[CameraShake(duration=1, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n", volume=0.6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[CameraShake(duration=3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion_stone", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[Delay(time=1)]
+雷鳴のごとく散発的に降り注ぐ砲弾が、群衆の真ん中で炸裂した。破片が飛び散り、巨大な衝撃が集結していた部隊をあっさりと真っ二つに引き裂いた。
+[charslot(slot = "m", name = "avg_4207_branch_1#6$1")]
+[name="ヴェトチキ"]ヴォーリャおじさん――！
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_surfacefrozen", volume=1)]
+[delay(time=1)]
+その間に横たわるのは、断ち割れた氷面と、砲弾に反応しきれず湖に沈んだ仲間の体だった。
+[dialog]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=1, loop=true, channel="cr")]
+[StopSound(channel="cr", fadetime=6)]
+[name="慌てふためく坑夫"]ああ！！
+[name="慌てふためく坑夫"]氷がどんどん割れていってる――これじゃそっちに行けない！
+[charslot(slot = "m", name = "avg_1037_amiya3_1#4$1")]
+[name="アーミヤ"]こっちへ来てはいけません！　ひとまず別の方向に向かって走ってください！
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="エリジウム"]アーミヤ、連中が近づいてきてるよ！
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]エリジウムさん、Raidianさんと連絡は取れますか！？
+[name="アーミヤ"]部隊が散り散りになってしまいました。一部の坑夫たちとはぐれてしまったので、迎えに行かなくてはいけません。彼らは先ほど砲弾が着弾した位置の北西に――
+[dialog]
+[charslot]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = true, offset = "0,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "10,0", pto="10,0", name = "avg_npc_1730_1#6$1", duration = 1)]
+[Delay(time=0.5)]
+[name="Raidian"]了解。
+[name="Raidian"]今向かってるところだよ。
+[interlude(channel = 3, clear = true)]
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="放心した坑夫"]クッ――うっ……
+[charslot(slot = "m", name = "avg_4207_branch_1#7$1")]
+[name="ヴェトチキ"]ダーリャ、足に、血が……今、止血する！
+[dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "m", name = "avg_npc_501_1#1$1", posfrom="-200,0", posto="0,0", duration=1)]
+[Delay(time=1.5)]
+[name="医療オペレーター"]手伝います――
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="放心した坑夫"]はぁ……いいの。ヴェトチキ、私はここに置いていって。
+[name="放心した坑夫"]火打石を持ってるから、薪を一本置いて、ここを離れなさい。私が奴らを引き付けて、できるだけ時間を稼いであげる。
+[charslot(slot = "m", name = "avg_4207_branch_1#5$1")]
+[name="ヴェトチキ"]ダーリャ、わたしが支えるから一緒に行こう。支え、られるから！
+[name="ヴェトチキ"]諦めちゃ……諦めちゃやだ。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]そうです。諦めないでください！　すぐに止血できますし、車両に乗った後なら、もっときちんとした手当ても――
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="放心した坑夫"]だけど源石爆弾を撃ち続けてる連中は待ってくれないわ！　あいつらは私たちを野生の裂獣みたいに、爆弾で追い立ててるのよ。気づいてないの？
+[name="放心した坑夫"]ただ殺すつもりなら、私たちが通る場所を全部燃やして、廃墟に変えてしまえば済む話でしょ。
+[name="放心した坑夫"]あいつらにそうするだけの力がないとは思えないわ。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]……ですが、だからと言って諦める理由には……
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="放心した坑夫"]あなたには分からないわ。坑道に放り込まれる前、私は猟師をやってたから、都市の一部の連中が好んでやる狩りがどんなものかはよく知ってるのよ。
+[name="放心した坑夫"]奴らは獲物を群れごと追い詰めた後に、まずその中から一頭か二頭を殺して、それから囲まれた残りの獲物が必死に抵抗する様を眺めることを最も好むのよ。
+[name="放心した坑夫"]正直言って、薪に火を点けたところで、連中の気を惹けるかもわからないけど、やってみるしかないわ。
+[name="放心した坑夫"]私は爆撃で足に穴が空いただけだから、大したことないわ。東に向かって這ってでも、数十メートルくらいは進める。
+[name="放心した坑夫"]だからこれ以上時間を無駄にしないで。あなたたちは薪を置いて……さっさと行きなさい。
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="放心した坑夫"]行って！
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[bgeffect]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[verticalbg(imagegroup="66_i15_4/66_i15_3/66_i15_2/66_i15_1", solidwidth=1280, solidheight="720/720/720/625", y=540)]
+[largebgtween(duration = 30, yFrom = 1800, yTo = 800, block = false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[name="不安げなオペレーター"]皆さん、どうか順番に車両にお乗りください！　ここで十五分間停車しますので、焦る必要はありません。危険ですから、くれぐれも――
+[name="不安げなオペレーター"]――押さないように……
+オペレーターの声のトーンが落ちた。隊列は押し合うこともなければ、順番を取り合うこともない。
+人々はただ黙ったまま、前へと進み続けていた。
+[dialog]
+[PlaySound(key="$d_avg_footsteps_flock", volume=1)]
+[SoundVolume(volume=0.2, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[verticalbg]
+[Background(image="bg_wilderness_n",screenadapt="coverall")]
+[Delay(time=1)]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="アロイジウス"]……こんなに静かで、秩序立った避難行動は見たことがないわ。
+[name="アロイジウス"]厳格さで知られるウルサスの第一軍でさえ、こんな真似は不可能でしょうね。
+[charslot(slot = "m", name = "avg_npc_1560_1#1$1")]
+[name="不安げなオペレーター"]これって、良いことですよね？
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="アロイジウス"]少し異常よ。あなたもそう思っているのでしょう？　この人たち、まるで生存本能がまったく働いていないみたい。
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="アロイジウス"]まあいいわ、私の考えすぎかもしれないから。
+[name="アロイジウス"]あなたの隊長はまだ最後尾にいるけど、心配じゃないの？
+[charslot(slot = "m", name = "avg_npc_1560_1#1$1")]
+[name="不安げなオペレーター"]隊長は私たちの中でも救助経験が一番豊富なベテランですから。
+[charslot]
+オペレーターはつま先立ちをすると、真っ暗な氷上と一体となった群衆に視線を走らせ、隊長の姿を探そうとした。
+しかし彼女の目に映ったのは、遥か彼方に見える目を刺すような赤色だけだった。
+[charslot(slot = "m", name = "avg_npc_1560_1#1$1")]
+[name="不安げなオペレーター"]まさかまだあそこに留まっているんでしょうか……
+[dialog]
+[charslot]
+[PlaySound(key="$d_sp_ballista",volume=0.3)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_explosion_stone",volume=0.3)]
+[delay(time=1)]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=1)]
+[name="Raidian"]敵が氷上を爆撃し始めた！
+[name="Raidian"]私は運転手と連絡が取れてない。近くの人は、すぐに撤退できるよう、車両をいつでも動かせる状態に保っておくよう運転手に伝えておいて。
+[name="Raidian"]聞こえていたら応答を！
+[charslot(slot = "m", name = "avg_npc_1560_1#1$1")]
+[name="不安げなオペレーター"]り、了解！
+[name="不安げなオペレーター"]アロイジウスさん、先に車両へ乗ってください。ここは私が――
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]いえ、あなたが先に乗って。隊長の言葉に従って、運転手に伝えに行きなさい。
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="アロイジウス"]私は――
+[name="アロイジウス"]ここに残るわ。
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[curtain(direction = 2,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[verticalbg(imagegroup="66_i16_4/66_i16_3/66_i16_2/66_i16_1", solidwidth=1280, solidheight="720/720/720/625", xScale=0.9, yScale=0.9)]
+[largebgtween(duration = 20, yFrom = 600, yTo = 750, block = false)]
+[Delay(time=1)]
+[PlayMusic(key="$m_avg_ursusspecial_loop", volume=0.6)]
+[PlaySound(key="$d_avg_cndlbrn", volume=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+近衛軍の注意を引き付けたのは一つの火だった。
+初めは、隊列の最後尾にいる誰かが掲げた火に過ぎなかった。
+誰もその人物が何を言ったか、なぜそんなことをしたかはわからなかった。彼はただ足を止めると、火を掲げ、それから踵を返して歩き始めた。
+[name="坑夫"]火を点けたのは誰だ？　照明は使うなと言われただろ――
+[name="坑夫"]キーアンだ。
+[name="坑夫"]キーアン？　昔、火打石を作ってたあいつか？　さっきダーリャに乾いてる薪を渡してたよな。
+[name="坑夫"]ああ。反対側に戻っていったけど、東側は軍隊だらけだ！　まさかあいつも死ぬ気か？
+[name="坑夫"]ダーリャと同じことをするつもりなんだ。
+[name="坑夫"]でも、もうすぐ助かるのに――
+[name="坑夫"]俺も火打石と、薪を持ってる。
+[name="坑夫"]何をする気だ？
+[name="坑夫"]氷上は爆撃されたし、奴らは俺たちを見逃しやしない。何もしなければ、このままじゃ……
+[name="坑夫"]誰も生き残れない。
+[name="坑夫"]だけど俺は生き延びたい。サンクト・グリファーブルクへ行きたいんだ！
+[name="坑夫"]だが俺たちは元々鉱区で死ぬはずだったんだ。ウルサスの感染者たち全員と同じようにな。忘れたのか？
+[name="坑夫"]だけど、もし今俺たちが薪に火を点けることで、最前線にいる仲間を、俺たちを助けに来てくれた若者たちを生かせるなら……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[curtain(direction = 2,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[verticalbg(imagegroup="66_i17_4/66_i17_3/66_i17_2/66_i17_1", solidwidth=1280, solidheight="720/720/720/625", xScale=0.9, yScale=0.9)]
+[largebgtween(duration = 20, yFrom = 1100, yTo = 1300, block = false)]
+[PlaySound(key="$d_avg_cndlbrn", volume=0.2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_cndlbrn", volume=0.5)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_cndlbrn", volume=1)]
+[name="坑夫"]俺たちみたいな老いぼれより、ずっと長く、はっきりと、ここで起きたことを覚えててくれるやつが残るんだ。
+火は一本の薪から、もう一本の薪の先端へと移っていく。
+一人が、自分の代わりに誰かを生かす道を選んだ。二人、三人、四人と、それに続く者が火を受け取る……
+まだ車両に乗っていなかった坑夫たちが次々と火を掲げ、元来た道を戻り始めていく。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[curtain]
+[verticalbg(imagegroup="66_i18_4/66_i18_3/66_i18_2/66_i18_1", solidwidth=1280, solidheight="720/720/720/720",y=2160)]
+[largebgtween(duration = 50, yFrom = 2160, yTo = 0, block = false)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_bionicuavs", volume=0, loop=true, channel="bi")]
+[SoundVolume(volume=0.2, channel="bi",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_footsteps_flock", volume=1)]
+キーアンの元へ、ダーリャの元へ、背後に残された足跡の元へ、迫りくる脅威の元へと。
+[name="ヴェトチキ"]あいつらに……これ以上、わたしたちを……なかったことにさせない。
+[name="ヴェトチキ"]そんなことはさせない。
+[name="坑夫"]そうだ、もう二度と俺たちのことをなかったことにさせるもんか。雪の中だろうと、坑道だろうと、湖の中だろうと、俺たちは黙ったまま葬られはしない！
+[name="坑夫"]仲間たちから受け取った火を掲げ、その光で道を照らそう……
+[name="坑夫"]俺たちはここにいた。それをウルサス中に見せてやるんだ――
+[name="坑夫"]俺たちが生きていたことを。
+[dialog]
+しんがりに残ることを選んだ坑夫たちは、凍える夜の只中で次々と火を掲げた。
+彼らは自分たちがいる場所を晒し、夜闇にはっきりと浮かび、燃え続ける火の帯を氷上に作り出すことを選んだのだ。
+「ウルサスは、この夜を今までのようになかったことにできはしない。」彼らはそう固く信じた。
+[dialog]
+[SoundVolume(volume=0.5, channel="bi",fadetime=2)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_shipwhistle", volume=1)]
+[delay(time=2)]
+だが掲げられた火の向こう側では、赤い瞳がなおもこちらを見つめていた。
+[dialog]
+[PlaySound(key="$d_avg_mechwarrior", volume=1)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.5)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.8)]
+[stopmusic(fadetime=2)]
+[StopSound(channel="bi", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[verticalbg]
+[curtain]
+[PlaySound(key="$d_avg_snowstormflp", volume=1, loop=true, channel="sn")]
+[Background(image="66_g8_farnorthtundra_aurora",screenadapt="coverall")]
+[bgeffect(name="$eb_blizzard",layer=1)]
+[Delay(time=1)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion_stone")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[StopSound(channel="sn", fadetime=2)]
+[PlayMusic(intro="$m_avg_prts_intro", key="$m_avg_prts_loop", volume=0.6)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_gen_surfacefrozen", volume=1)]
+[delay(time=2)]
+爆撃は続き、氷の表面は割れ続け、開いた大口の中に絶えず誰かが落ち続けていく。
+そうして呑み込まれる最後の瞬間まで、彼らは手にした火を高々と掲げ続けた。声の中にかすかに混じる震えだけが、彼らの恐怖を示していた。
+恐ろしくないはずがない。足がすくまないはずがない。
+それでも逃げ出すことなく、火を掲げた。己の死と引き換えに、背後にいる仲間たちを生かすために。
+ロドスの皆が制止しても、それに耳を貸す者はいなかった。
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="エリジウム"]アーミヤ、爆撃はまだ続いてる！　アロイジウスの車両はもう満員だよ。次の車両が到着するまでには、まだ時間が――
+[charslot(slot = "m", name = "char_401_elysm_na_1#7")]
+[name="エリジウム"]アーミヤ！
+[charslot(slot = "m", name = "avg_1037_amiya3_1#10$1")]
+[name="アーミヤ"]どうして……どうしてこんなことを……
+[name="アーミヤ"]彼らを止めないといけません。こんなことをさせては――
+[charslot(slot = "m", name = "avg_4204_mantra_1#3$1")]
+[name="Mantra"]今の私の力では、これだけの大人数は止められない。
+[name="Mantra"]だがアーミヤ、我々にできることは必ずあるはずだ。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#2$1")]
+[name="アーミヤ"]Mantraさん……！
+[name="アーミヤ"]感じます。感じるんです……
+[name="アーミヤ"]彼らの……怒りを。
+[name="アーミヤ"]あまりに強すぎて、自分まで燃え尽くしてしまいそうなほどの怒りです。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]……いけません……
+[name="アーミヤ"]このまま続けさせてはいけません。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#4$1")]
+[name="アーミヤ"]必ず――
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="アーミヤ"]この虐殺を止めます！
+[charslot]
+怒り、同質の怒り。
+それはアーミヤが常に押し殺してきたものであり、決して暴走させることのない感情だ。
+怒りは瞳の中の火花のようにアーミヤの心臓に火を点け、指先に流れ込んだ。
+[dialog]
+[musicvolume(volume=0.2, fadetime=0.5)]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="「たとえ私が報復せず、恨みを抱かずとも、永遠にこの身に怒りを宿し続ける権利がある！」", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+青と黒の長剣、怒りの炎で鍛えられた長剣が、再び彼女の手の中に現れる。
+[dialog]
+[image]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[Background(image="66_g8_farnorthtundra_aurora", screenadapt="coverall", xScale=1.4, yScale=1.4, y=-200, fadetime=0)]
+[focusout(type="bg", id="66_g8_farnorthtundra_aurora", from=0, to=1, duration=0.1, block=false)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#4$1", posfrom="60,-30", posto="60,-30", duration=0)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.6, duration = 0)]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[musicvolume(volume=0.6, fadetime=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="アーミヤ"]影霄（えいしょう）――
+[dialog]
+[PlaySound(key="$firestorm", volume=1)]
+[PlaySound(key="$d_sp_chixiaobadao", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[bgeffect(name="$eb_hoshiguma_boost_down",layer=2)]
+[backgroundTween(yFrom=0, yTo=150, duration=10)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#4$4", duration=0)]
+[charslot(slot = "m", posfrom="0,350", posto="0,420", duration=10)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.6, duration = 0)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=2, block=true)]
+[Delay(time=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[charslot]
+[curtain]
+[Background]
+[focusout(type="bg", id="66_g8_farnorthtundra_aurora", from=1, to=0, duration=0.1, block=false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$d_avg_tswordlight", volume=1)]
+[PlaySound(key="$d_avg_swrdgnlght", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Image(image="66_i24", screenadapt="coverall")]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[PlaySound(key="$d_avg_firerockfall", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_mgctrntsrkshld", volume=1)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="dr")]
+[SoundVolume(volume=1, channel="dr",fadetime=2)]
+[playsound(key="$d_avg_churchfire", loop=true, channel="f", volume=0)]
+[SoundVolume(volume=0.4, fadetime=2,channel="f")]
+[delay(time=2)]
+剣を振るう動きにしたがって、蒼い炎が刃から噴き出した。瞬間、高度に圧縮されたエネルギーが蒼炎の壁を描き出し、明確に氷上のあちらとこちらを隔てる境界線を生んだ。
+一方には、割れ続ける氷の表面と炎の壁に防がれる砲弾。
+もう一方には、小さなコータスと火を掲げる感染者。
+[name="アーミヤ"]さあ……
+それから、アーミヤは剣の切っ先を対岸へ向けた。人間を家畜のように追い立てて殺戮する元凶――ウルサス軍へと。
+[dialog]
+[SoundVolume(volume=0.2, channel="f",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Sticker(id="st1", multi = true, text="「止まりなさい。」", x=300, y=350, alignment="center", duration=1, size=28, delay=0.04, width=700)]
+[Sticker(id="st1", duration=1, block = false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[SoundVolume(volume=0.4, channel="f",fadetime=2)]
+[PlaySound(key="$d_gen_thunders_amb", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.03, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+刃が煌めき、蒼い炎が立ち昇る。それによって彼女は虐殺者を戒めた。砲火であれ、兵士であれ、軍艦そのものであれ、怒りの炎が静まり、背信に裁きが下るまでは……
+この境界線を越えることは決して叶わないと。
+[dialog]
+[StopSound(channel="f", fadetime=2)]
+[PlaySound(key="$d_avg_firerockfall", volume=1)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[SoundVolume(volume=0.4, channel="dr",fadetime=2)]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[charslot]
+[verticalbg(imagegroup="66_i18_4/66_i18_3/66_i18_2/66_i18_1", solidwidth=1280, solidheight="720/720/720/625")]
+[largebgtween(duration = 0, yFrom = 1240, yTo = 0, block = false)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_bionicuavs", volume=0, loop=true, channel="bi")]
+[SoundVolume(volume=1, channel="bi",fadetime=2)]
+[PlaySound(key="$d_avg_warning_scifi", volume=1)]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+「報告します。前方に正体不明の高エネルギー源石反応を検出。」
+「……慎重に観察し、一時前進を遅らせよ。」
+「了解。」
+[dialog]
+[StopSound(channel="dr", fadetime=2)]
+[StopSound(channel="bi", fadetime=2)]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=4, block=true)]
+[verticalbg]
+[bgeffect(name="$eb_blizzard",layer=1)]
+[Background(image="66_g8_farnorthtundra_aurora",screenadapt="coverall")]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.5)]
+[musicvolume(volume=0.4, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.2)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "char_401_elysm_na_1#6")]
+[name="エリジウム"]……砲火が止んだ？
+[dialog]
+[PlaySound(key="$transmission", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "Raidian", switch = true, style = 1,offset = "-450,125", channel = 3)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#3$1", duration = 0)]
+[Delay(time=0.5)]
+[charslot(slot = "m", focus="n")]
+[name="Raidian"]ううん、爆撃はまだ続いてるよ。ただ頻度が落ちてきただけ。
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#6$1", duration = 0)]
+[name="Raidian"]アーミヤ、その壁で攻撃を一部防ぐことに成功したよ。早く部隊に戻ってきて。
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="エリジウム"]応援の車両はもうすぐ到着するはずだから、撤退の準備をしよう！
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$4")]
+[name="アーミヤ"]……いいえ。
+[name="アーミヤ"]私は最後まで残ります。皆さんが撤退するまで。
+[charslot(slot = "m", name = "char_401_elysm_na_1#6")]
+[name="エリジウム"]待って……新しい動きがあった！
+[name="エリジウム"]西側にこちらへ高速で接近中の車両がある。けど僕たちの車両じゃない――トラックみたいだ！
+[name="エリジウム"]しかも直接氷上に突っ込んできてるよ！
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#6$1", duration = 0)]
+[name="Raidian"]全員、警戒して――
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[interlude(channel = 3, switch = false)]
+[PlaySound(key="$transmission", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "Mon3tr", switch = true, style = 1,offset = "450,125", channel = 4)]
+[interlude(channel = 4, type = 3, slot = "m", switch = true, pfrom = "455,-20", pto="455,-20", name = "avg_4179_monstr_1#10$1", duration = 0)]
+[Delay(time=0.5)]
+[name="Mon3tr"]Raidian！　ようやくこいつが役に立ったよ。私たちだ！　私とドクターに、クセニアと――
+[dialog]
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, switch = false)]
+[interlude(channel = 4, switch = false)]
+[Decision(options="リュドミラもいる。;オペレーター・クラウンスレイヤーもいる。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="ロドス……;総員、合流の準備を。", values="1;2")]
+[Predicate(references="1;2")]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[interlude(channel = 4, clear = true)]
+[interlude(channel = 3, clear = true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1)]
+[charslot(slot = "m", name = "avg_4179_monstr_1#12$1", posfrom="-200,0", posto="0,0", duration=0.5, isblock=true)]
+[Delay(time=0.5)]
+[name="Mon3tr"]アーミヤ！
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$4")]
+[name="アーミヤ"]ドクター！　Mon3trさん！　どうして――
+[name="アーミヤ"]それに、オペレーター・クラウンスレイヤーさんまで……？
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_1502_crosly_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="クラウンスレイヤー"]駆けつけている途中に雑談する時間はなかったし、私にも聞きたいことが山ほどある。
+[name="クラウンスレイヤー"]だがまずは、車に乗れ。
+[dialog]
+[charslot]
+[Decision(options="ドライバー互助会のおかげだ。;経緯は後で話す。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="皆、無事か？", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_4204_mantra_1#8$1")]
+[name="Mantra"]失望はしないだろう。
+[dialog]
+[charslot]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=1.5)]
+[name="Raidian"]無事だよ。昔話は後にして、今は撤退を急ごう。
+[dialog]
+[Decision(options="ああ。ただ今、Mon3tr、クラウンスレイヤー……;そして{@nickname}、本隊へ合流完了した。", values="1;2")]
+[Predicate(references="1;2")]
+ネヴァ湖南西岸の哨戒所から放たれるすべてのサーチライトは、氷上の生存者たちを素早く照らした後、対岸の軍へと向けられた。
+散乱する白い光が、赤い光と静かに対峙する。その後、爆撃の頻度は再び弱まった。
+[dialog]
+[PlaySound(key="$d_avg_telegraph_loop", volume=1, loop=true, channel="e")]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=1.5)]
+「各部隊に告ぐ、こちら司令部。」
+「サンクト・グリファーブルクより緊急要請あり。我が方はこれに応じる。各部隊は砲撃を停止せよ。」
+「繰り返す。ただちに砲撃を停止せよ。」
+「応答を求む。」
+「……」
+「……」
+「……」
+「了解。」
+[StopSound(channel="e", fadetime=3)]
+[charslot(slot = "m", name = "char_401_elysm_na_1#9")]
+[name="エリジウム"]今回は……本当に止んだみたいだね。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$4")]
+[name="アーミヤ"]それに、全員合流できました。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#9$4")]
+[name="アーミヤ"]本当によかったです……
+[dialog]
+[charslot]
+[Decision(options="ああ……", values="1")]
+[Predicate(references="1")]
+[Decision(options="どうやら、全員間に合ったようだ。", values="1")]
+[Predicate(references="1")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

@@ -1,0 +1,592 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Decision(options="研究所へ安全に到達できるルートを見つけなくては。;エリジウム？", values="1;2")]
+[Predicate(references="1;2")]
+[avgdisplay(id="1", name="act3mainss_01", style="animekv", slot="bgover", x=-200, y=80, scalex=1.2, scaley=1.2, entryfrom=0, entryto=0.2, duration=5, block=false)]
+[avgdisplay(id="1", name="act3mainss_01", style="animekv", slot="bgover", xto=0, yto=0, scalexto=0.9, scaleyto=0.9, duration=30)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>ウルサス クライニ・セーヴェル中心鉱区</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[name="エリジウム"]持ってきた機器がほとんど使えなくなってるみたいだ。汚染エリアの具体的な範囲が検出できない。
+[name="エリジウム"]ここは採掘場の宿舎エリアみたいだね。危険があるとすれば、まだこの中に人が残ってるかもしれないことくらいかな。ここには悪魔の穢れがあるからね……
+[name="Mantra"]……
+[name="エリジウム"]隊長が言うには、この採掘場内に人間の精神活動の痕跡は見当たらないそうだよ。動物の痕跡もね。
+[name="エリジウム"]汚染範囲については、前方の研究所入口までは広がってなくて、大体は南の方に伸びてるらしい。
+[name="エリジウム"]北から回り込むルートを取れば、当初の予定より三時間くらい余分にかかっちゃうけど、まだ問題のない範囲だと思うってさ。
+[name="Mantra"]（うなずく）
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[avgdisplay(id="1")]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Background(image="66_g3_miningarea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_4179_monstr_1#10$1", duration=1, isblock=true)]
+[name="Mon3tr"]わぁ……
+[name="Mon3tr"]前から感心していたんだが、君たちは息がぴったりすぎるよ！
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1")]
+[name="アーミヤ"]お二人とも付き合いが長いですから。
+[charslot(slot = "m", name = "char_401_elysm_na_1#2")]
+[name="エリジウム"]あはは……少なくとも隊長との連携に関しては、ロドスのオペレーターで一番経験豊富って言えるかな。
+[name="エリジウム"]隊長にとって「話す」負担はかなりのものだからさ。緊急時じゃなければ、僕が代わりに伝えるよ。
+[charslot(slot = "m", name = "char_401_elysm_na_1#5")]
+[multiline(name="エリジウム")]それで、どうする、ドクター？　今すぐ出発すれば、日没前には多分――
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[multiline(name="エリジウム",end=true)]いや待て、この季節のクライニ・セーヴェルに、日没なんて本当にあるのかな……
+[dialog]
+[charslot]
+[Decision(options="今すぐ出発しよう。;ルートの変更は、例の友人にも共有しておくべきだ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "r", name = "avg_1037_amiya3_1#1$1")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_armyboots_walk", volume=1, loop=true, channel="ar")]
+[StopSound(channel="ar", fadetime=1.5)]
+[charslot(slot = "l", name = "avg_npc_1966_1#4$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[charslot(slot = "r", name = "avg_1037_amiya3_1#1$1", focus="r")]
+[name="アーミヤ"]アロイジウスさん、遅れてますよ。
+[charslot(slot = "l", name = "avg_npc_1966_1#3$1", focus="l")]
+[name="アロイジウス"]ごめんなさい。我々が同行する理由とは無関係なのだけど、採掘場の設備を調べていたの。
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="アロイジウス"]どうしたの？　どうしてずっと留まっているの？
+[name="アロイジウス"]地図で見ると、研究所はもうすぐ近くよ。もしかして、何か見つけた――
+[name="アロイジウス"]……の？
+[dialog]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1966_1#4$1", focus="l")]
+[name="アロイジウス"]これは……「国土」の残留物。
+[name="アロイジウス"]……近衛兵が来たのね。
+[charslot(slot = "r", name = "avg_1037_amiya3_1#6$1", focus="r")]
+[name="アーミヤ"]あまり驚いていないようですね？
+[charslot(slot = "l", name = "avg_npc_1966_1#12$1", focus="l")]
+[name="アロイジウス"]私が意図的に隠していたなんて責めないでちょうだいね、アーミヤさん。そんなことを言われたら傷つくわ。
+[charslot(slot = "r", name = "avg_1037_amiya3_1#6$1", focus="r")]
+[name="アーミヤ"]せめて私たちが協力関係にある間は、必要な情報を共有していただけませんか。
+[name="アーミヤ"]ここを訪れた近衛兵の行き先について、何かご存知ですか？
+[charslot(slot = "l", name = "avg_npc_1966_1#3$1", focus="l")]
+[name="アロイジウス"]とりあえず明確にしておきたいのだけど、陛下以外に近衛兵の行方を知る権限を持つ者は誰もいないわ。私のような発言力の弱い軍曹ごときは言うに及ばずよ。
+[name="アロイジウス"]だけど正直に言えば、かの有名なクライニ・セーヴェルの女大公が戒厳令の名目で採掘場を閉鎖した時点で、近衛兵がここに現れるのは十分予想できてしまうわね……
+[charslot(slot = "r", name = "avg_1037_amiya3_1#1$1", focus="r")]
+[name="アーミヤ"]ですが、もし近衛兵がここで調査を行っているのであれば、アロイジウスさんはどのような任務を与えられているのですか？
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="アロイジウス"]鋭いのね、アーミヤさん。
+[name="アロイジウス"]クライニ・セーヴェル中心鉱区で起きた感染者異変の情報は大きな波乱を起こして、多くの人がそれに興味を示しているわ。
+[name="アロイジウス"]もちろん、彼らにそう思う権利はあるけど、同じ情報を得る権利があるわけではないの。
+[charslot(slot = "l", name = "avg_npc_1966_1#12$1", focus="l")]
+[name="アロイジウス"]許してちょうだい。私は自分の身分をわきまえて、あまり失礼な言動をするわけにはいかないの――こうした説明で、困惑させてしまわなければいいのだけど。
+[charslot(slot = "r", name = "avg_1037_amiya3_1#7$1", focus="r")]
+[name="アーミヤ"]いえ……あなたの立場は理解できます。
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="アロイジウス"]私はこれまで何かを誤魔化したり、隠し立てをしたことはないわ。私のような近衛軍の者にとっても、これは勝ち取る価値のある経歴よ。
+[charslot(slot = "l", name = "avg_npc_1966_1#2$1", focus="l")]
+[name="アロイジウス"]ただ、今回の任務はもう少し楽なものだと思っていたけど……
+[name="アロイジウス"]そんな期待はとっくに消え失せて跡形もないわね。近衛兵が介入したとなれば、いずれにせよ良い兆候ではないわ。
+[charslot(slot = "r", name = "avg_1037_amiya3_1#8$1", focus="r")]
+[name="アーミヤ"]それでも私たちに同行するつもりですか？
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="アロイジウス"]もちろんよ。どうあれ自分が選んだ仕事だもの。途中で投げ出したら具合が悪いでしょう。
+[name="アロイジウス"]では、引き続き目的地に向かうのに先立って、信頼関係の再構築をしていただくことはできるかしら？
+[charslot(slot = "r", name = "avg_1037_amiya3_1#8$1", focus="r")]
+[name="アーミヤ"]はい。協力を続けましょう。
+[name="アーミヤ"]私たちが出会った時と同じように……
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[gridbg(imagegroup="38_g21_skystarry_L1/38_g21_skystarry_R1/38_g21_skystarry_L2/38_g21_skystarry_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720", x=-105, fadetime=1)]
+[largebgtween(duration = 40,yFrom = 720, yTo = 360,block = false)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crowdrun", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>ウルサス　クライニ・セーヴェル地区、ブレスク</><p=2>三日前</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[Decision(options="エリジウム！　方向を教えてくれ！", values="1")]
+[Predicate(references="1")]
+[playsound(key="$transmission", volume=1)]
+[Delay(time=1)]
+[name="エリジウム"]ああもう……通信に遅延が起きてる。暗号化通信が妨害されてるみたいだ！
+[name="エリジウム"]それはともかく……君たちの西側に十人規模の衛兵小隊がいる。次の交差点を右に曲がって！
+[name="Mon3tr"]何言ってるんだ！　右に曲がったら敵がいる西側だぞ！
+[name="エリジウム"]あれ、今「右」って言っちゃった？　あちゃ――
+[name="エリジウム"]とにかく、シティホールが見えるよね？　それとは反対方向に進んで！
+[name="アーミヤ"]見えました。けど次の交差点が区画の途切れる場所なんです。辿り着けません――
+[name="エリジウム"]なんだって！？
+[name="エリジウム"]地図にはそんなの何も書いてない！
+[name="エリジウム"]だけど周りは衛兵だらけで、あそこが唯一の突破口なんだよ！
+[name="Mon3tr"]了解した。
+[name="Mon3tr"]アーミヤ、ついてこれるか？
+[name="アーミヤ"]大丈夫です！
+[name="Mon3tr"]ドクター、しっかり掴まって！
+[dialog]
+[Decision(options="努力している――", values="1")]
+[Predicate(references="1")]
+[name="Mon3tr"]今のだとちょっと足りないかも。大丈夫だ、私ががっちり掴まえとくから！
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[SoundVolume(volume=0.2, channel="sn", fadetime=0.5)]
+[largebgtween(duration = 1, yTo = 900, block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="66_g1_bleskstreet",screenadapt="coverall", xScale=1.2, yScale=1.2)]
+[Delay(time=1)]
+[largebg]
+[backgroundTween(yFrom = -80, yTo = 60, duration=0.5, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=false)]
+[PlaySound(key="$d_avg_Qinggong", volume=1)]
+[Delay(time=0.5)]
+[backgroundTween(yFrom = 60, yTo = 0, duration=1.5, block=false)]
+[Delay(time=2)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot = "m", name = "avg_4179_monstr_1#3$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="Mon3tr"]ふぅ……
+[charslot(slot = "m", name = "avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]ドクター、無事か？
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="なんとか。;そろそろ慣れてきた。;次は一人でジャンプしてみるつもりだ。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "avg_4179_monstr_1#12$1")]
+[name="Mon3tr"]ははっ、まだまだ元気そうだな！　安心した！
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]エリジウムさん、予定の位置に到着しました。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="アーミヤ"]エリジウムさん？
+[StopSound(channel="sn", fadetime=2)]
+[PlayMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[charslot(slot = "m", focus="n")]
+[name="途切れ途切れのノイズ"]……やめて……ジッ……移……中止……ジッ――
+[name="途切れ途切れのノイズ"]……の……ジジッ……隊……
+[dialog]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#3$1")]
+[name="アーミヤ"]通信が途絶えました。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]端末にはエリジウムさんの位置がまだ移動中と表示されてますが、連絡が取れません。
+[name="アーミヤ"]どうやらブレスク市街区に入ってから、都市内の短距離通信がずっと不安定みたいです。
+[name="アーミヤ"]これがクライニ・セーヴェルの極端な天気のせいなのか、それとも人為的な妨害かは分かりません。
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="それよりも気になるのは……;ブレスクがなぜ大規模に「都市間商人」を追うかだ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1")]
+[name="アーミヤ"]確かにそれも変ですね……
+[name="アーミヤ"]クロージャさんに偽造してもらった身分証明書に問題があったことは今までありませんでしたから、それが原因だとも思えません。
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="警戒していた相手は我々ではないのかもしれない。;彼らは別の理由で我々に目を付けたのかもしれない。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="だが考えてみれば……", values="1")]
+[Predicate(references="1")]
+[Decision(options="ブレスクは本来治安の良い都市だったはずだ。;都市内にこの規模の防衛戦力が常駐してるのが妙だ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]確かに事前に得た情報と合いませんね……このままでは、鉱区に入る手立てがありません。
+[name="アーミヤ"]ドクター、まずはMantra小隊と合流してから、どうすべきか話し合いませんか――
+[dialog]
+[charslot]
+[PlaySound(key="$transmission", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760",tsfrom="0,1", tsto ="1,1",tsduration = 0.5, switch = true, style = 0,offset = "0,0", channel = 3)]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "0,0", pto="0,0", name = "char_401_elysm_na_1#7", duration = 0)]
+[delay(time=0.5)]
+[name="エリジウム"]ドクター！　やっと連絡がついた！
+[name="エリジウム"]立ち止まらないで！　また衛兵がそっちに向かってるよ！
+[dialog]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, clear = true, tsto="0,1", tsduration=0.5)]
+[delay(time=1)]
+[Decision(options="なるほど、分かった気がする……", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", posfrom="80,0", posto="80,0", duration=1)]
+[charslot(slot = "l", name = "avg_npc_1973_1#1$1", posfrom="-80,0", posto="-80,0", duration=1)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1", duration=1.5, isblock=true)]
+[delay(time=2)]
+[charslot]
+[charslot(slot = "m", name = "avg_4179_monstr_1#6$1")]
+[name="Mon3tr"]こんなに早く来るとは――
+[name="Mon3tr"]アーミヤ、君も私の後に隠れて！
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="アーミヤ"]いいえ、直接手を出してはいけません！
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="衛兵"]恥知らずの侵入者め、手を上げろ！
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="落ち着いてほしい。;自分たちは何の罪を問われているんだ？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="衛兵"]お前たちは無許可で工業区に侵入し、私有工場への立ち入りを企てた。これはブレスク都市入域条例及びウルサス都市治安管理法に違反している。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]あの、ご確認をお願いします。条例には工業区への外部の人間の立ち入りを禁ずると書いていませんが――
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="衛兵"]今日公布された新条例だ。お前たちがブレスクに足を踏み入れた時点から施行されている。
+[name="衛兵"]これより、我々は法に則ってお前たちを拘束する。その後に保安官が具体的状況に基づいて送還か流刑かを判断するだろう。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]もし私たちが誤ってブレスクの新規定に違反していたのであれば、お詫びいたします。
+[name="アーミヤ"]私たちはとある都市間商人を探しているだけです。その旨は、都市に入る時に提出したスケジュール表にすべて明記してあります。
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="衛兵"]釈明は保安官に対してすることだな。
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="我々に悪意はない。;お互いに時間を節約できる方法があるかもしれない。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="ここは「クライニ・セーヴェルの宝石」ブレスクだ。;かの女大公が噂通り慈悲深いことを信じている。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="衛兵"]言いくるめようとしても無駄だ。俺は自分の仕事をするだけだから関係ない。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#10$1")]
+[name="アーミヤ"]衛兵さん……
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="衛兵"]ついてこい。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]いえ、衛兵さん。私たちはこれ以上時間を無駄にするわけにはいかないんです。
+[name="アーミヤ"]ごめんなさい。
+[charslot]
+アーミヤはさりげなくあなたを背後に庇うように体の向きを変えて衛兵と向きあった。Mon3trは周囲を観察し、脱出ルートを探している。
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="衛兵"]……身の程知らずめ。
+[name="衛兵"]かかれ。
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1973_1#1$1", posfrom="-300,0", posto="0,0", duration=0.5)]
+[delay(time=0.2)]
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", posfrom="300,0", posto="0,0", duration=0.5)]
+[delay(time=1.5)]
+[charslot]
+[PlaySound(key="$char_Mon3tr")]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_4179_monstr_1#13$3")]
+[name="Mon3tr"]（雄たけびを上げて警告する）
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", focus="r")]
+[charslot(slot = "l", name = "avg_npc_1972_1#1$1", focus="n")]
+[name="ためらう衛兵"]うっ……うっ！
+[charslot(slot = "l", name = "avg_npc_1972_1#1$1", focus="l")]
+[name="衛兵"]何をぼうっと突っ立ってる、かかれ！
+[name="衛兵"]たかがフェリーンの小娘を相手に何をひるんでいる？
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", focus="r")]
+[name="ためらう衛兵"]た……隊長、違います、後ろを見てください。
+[name="ためらう衛兵"]あれは多分――もしかして――
+[charslot(slot = "l", name = "avg_npc_1972_1#1$1", focus="l")]
+[name="衛兵"]はっきり言え！
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", focus="r")]
+[name="ためらう衛兵"]――近衛軍です！
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "l", name = "avg_npc_1972_1#1$1", focus="l")]
+[name="衛兵"]バカを言うな！　サンクト・グリファーブルクでぬくぬくと過ごしているはずの近衛軍のお偉方が、ブレスクなぞに足を運ぶわけがないだろ？
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", focus="r")]
+[name="ためらう衛兵"]しかし――しかしあの格好は――
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_highheelfts", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="近衛軍？"]申し訳ないですが、今回ばかりは彼女の言う通りですね。
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="衛兵"]あんたは……
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="近衛軍？"]アロイジウス・ゴルシコワ、近衛軍先鋒大隊所属の軍曹です。サンクト・グリファーブルクから参りました。
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="衛兵"]あんたは……何が目的だ。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]あなた方に一つお願いがあります。どうか少しばかり目を瞑って、この哀れな客人たちを見逃してあげていただけませんか。
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="衛兵"]……こいつらとグルなのか？
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="アロイジウス"]ええ。残念ですが、私の友人であると言わねばならないでしょう。私の身分はお伝えしましたから、顔を潰すような真似は控えていただけますよね？
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="衛兵"]ここはサンクト・グリファーブルクじゃない。なぜ俺があんたの顔を立てなきゃならないんだ？
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]そうですね。私がすでに保安官と面会し、欠けていた彼らの入域の手続きを済ませているからでは？
+[charslot]
+彼女は手にした紙を軽く振っているが、極夜の薄闇の下では、そこに何が書かれているか誰にも読めなかった。
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="衛兵"]あんた――
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]もしも私があなたなら、自分の将来を賭けてまで意地を張ったりはしませんね。
+[name="アロイジウス"]道に迷う観光客ならいくらでも会えるでしょうけど、近衛軍に恩を売る機会はそれほど多くありませんよ――ところで、あなたのお名前か、軍籍番号を教えていただいても構いませんか？
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="衛兵"]……分かった、ゴルシコワ軍曹。今日のことは保安官にありのまま報告させてもらう。もう行っていい。
+[name="衛兵"]あんたの特権が皇帝陛下の如く永久不滅であることを願おう。
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="アロイジウス"]その祝福はありがたくちょうだいしておきます。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]が、陛下と同じ不朽の栄光を享受できる者などいません。我々は誰しも時が来れば幕を引き、舞台を降りるのですから。
+[name="アロイジウス"]では、こちらの客人たちは連れて行きますね。
+[dialog]
+[PlaySound(key="$d_avg_highheelfts", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=0.6, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]軍人さん、助けていただきありがとうございます……あの、なんてお呼びすれば――
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="アロイジウス"]シッ、衛兵たちがまだ近くにいるわ。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]可愛らしいコータスのお嬢さん。私のことはアロイジウスと呼んでちょうだい。
+[name="アロイジウス"]「軍人さん」とか「軍曹」はよそよそし過ぎるもの。今の関係ならお互いに名前で呼ぶのが一番だと思うわ。
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="助けてくれて感謝する。;衛兵の扱いが随分と手慣れていたようだ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="アロイジウス"]衛兵は、あなたたちをただの商隊だと思っていたから、捕まえればたっぷりと搾り取れると踏んでいたのよ。ここへ観光に来たクルビア人を相手にしている時と同じようにね。
+[name="アロイジウス"]だけど実際には違うものね？
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="率直に話そう。;なぜ我々を助けた？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]いいわね、率直なのは好きよ。疑問にはすべて答えてあげるつもりだけど、ここでは話せないわ。
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="アロイジウス"]お仲間が揃い次第、邪魔の入りにくい場所で続きを話しましょう。
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="我々にはあまり時間がない。", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]安心してちょうだい。あなたたちの目的を考えれば、決して時間の無駄にはならないわ。
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_cavewaterdrop", volume=0, loop=true, channel="ca")]
+[SoundVolume(volume=1, channel="ca",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[PlaySound(key="$d_avg_highheelfts", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="アロイジウス"]この辺りにしましょうか。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]……ここは？
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="アロイジウス"]打ち捨てられたアパートよ。私の知る限り、衛兵はこういうほぼ無人の旧街区までは手を伸ばさないわ。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]都市区画が空いてるなんて贅沢に聞こえるけど、これが実態なの。『サンクト・グリファーブルクタイムズ』がどう隠そうと、この都市の人口が近年減少し続けてることは紛れもない事実なの。
+[name="アロイジウス"]もう少しすれば、この辺りも完全な無人地帯になって、建物は区画ごと取り壊され、荒野の上で朽ち果てるわ。他の廃棄区画と同じようにね。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]アロイジウスさん、あなたが私たちに接触した目的を早く理解したいのですが。
+[charslot(slot = "m", name = "avg_4179_monstr_1#6$3")]
+[name="Mon3tr"]（警戒するように見つめる）
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="アロイジウス"]ええと……皆さん、もう少し落ち着いていただいてもいいかしら？
+[name="アロイジウス"]そちらの方が人数的に有利なのに、私があなたたちに危害を加えられるはずがないでしょ？
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="アロイジウス"]それと、扉の外に潜んでるフィディアの方。お仲間に、私が嘘をついてないと教えてあげてくださる？
+[charslot(slot = "m", focus="n")]
+[name="エリジウム"]隊長は、近くに他の人はいない、このエリアは安全だって言ってるよ。
+[dialog]
+[Decision(options="ここを選ぶとは、どうやら君も人目を避けたいようだ。;「近衛軍」なら少なくとも晩餐会だと思っていたが。", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]ここは友人の家だったの。彼女はクライニ・セーヴェルでウルサスの民族叙事詩を完成させるという理想を抱いていたけど、寒さに挫けて――今はサンクト・グリファーブルクで元気にやっているわ。
+[name="アロイジウス"]おかげで私たちは、少なくとも外の風雪や人目を避けることが出来るというわけね。
+[name="アロイジウス"]私のことはさておいても、皆さんだって余計な面倒事は避けたいでしょう。
+[dialog]
+[Predicate(references="2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="アロイジウス"]こちらのフードの方はとてもユーモラスね。ユーモアの分かる人は総じて賢いものだわ。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]重要な話が済んだ後も、まだ興が尽きないようなら、ディナーにご招待するのもやぶさかではないわ。
+[dialog]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]とにかく、私の自己紹介は済んだのだけど、皆さんはお名前を聞かせてくれないのかしら？
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]私たちはヴィクトリアから来た……
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]商隊で、工業区にいる都市間商人のオリガという偽名の未亡人を探していると言いたいのかしら？　まだその言い訳を使うつもり？
+[name="アロイジウス"]無難な口実だもの。大半の都市の入域管理部門はすっかり騙されるでしょうね。
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="アロイジウス"]だけど、移動都市内で軍用レベルの暗号化通信を使う「商隊」は、どう足掻いてもそう多くないわ。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]あなたが私たちの通信を妨害したのですか？
+[charslot(slot = "m", name = "avg_npc_1966_1#13$1")]
+[name="アロイジウス"]いえ、違うわ……そんなやり方は無礼すぎるもの。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]通信が繋がらないのは恐らくこの辺りの磁場か、最近強化された防御設備の影響でしょうね――あなたたちは運が悪かったのよ。ちょうどブレスクの状況が極めて特殊な時期に来てしまったの。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]……
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]私は誠意をもって身分を開示したわ。もし皆さんがこれ以上隠し立てを続けるおつもりなら、この先の話しは少し難しくなるでしょうね。
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="我々はとある製薬会社から来た。;我々はロドスだ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]ほら、正直になるのってそんなに難しくないでしょう？
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="アロイジウス"]ロドス……これまで聞いた各地の感染者に関する噂に何度も登場したわね。
+[name="アロイジウス"]そういう話の寄せ集めでできたイメージだけを見れば、あなたたちはおとぎ話の存在と言ってもいいわよ。
+[name="アロイジウス"]真偽はさておき、最後にその名を見かけたのは、あなたたちが発表した感染者の異変に関する論文の中だったわ。
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="君とは縁遠い分野に思える。;鉱石病の学術研究に関心があるとは思わなかった。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1")]
+[name="アロイジウス"]そういった印象を与えていることを恥ずかしく思うわ。だけど、サンクト・グリファーブルクの新貴族が全員無学ではないのよ。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]具体的にどういった政策をとっているにせよ、どの国にとっても感染者は無視できない問題だから――少しでも現実を知っている者なら、あなたたちが成し遂げた学術的成果の重要性はわかるはずよ。
+[name="アロイジウス"]ひとつだけ不思議なのは、これほど革新的な発見をしたにもかかわらず、それに見合うビジネスの動きが見られない点ね。ロドスは控えめすぎるように見えるわ。
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="それが我々に接触した理由か？;君が我々の行動を把握していた説明にはならない。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]ああ、それは難しい話じゃないわ。この時期にクライニ・セーヴェル中心鉱区に入りたがるような人は、皆が同じような理由を抱えてるでしょうからね。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]つまり、あなたも鉱区に入ろうとしていると？
+[charslot(slot = "m", name = "avg_npc_1966_1#11$1")]
+[name="アロイジウス"]あら、あなたたちは違うの？
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1")]
+[name="アーミヤ"]私たちは……そのつもりです。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]そうこなくちゃ。
+[name="アロイジウス"]あなたたちには鉱区へ入る手段がなくて、私はちょうど鉱石病の専門知識を持つ専門家を必要としてる――協力関係を結ぶにはぴったりじゃない。
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="つまり、我々と共に鉱区へ入りたいと？", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="アロイジウス"]それ以外ないでしょう。
+[name="アロイジウス"]サンクト・グリファーブルクから来た人間が、クライニ・セーヴェルの事務に介入するのは、ここの管理者も快く思わないでしょうから。
+[name="アロイジウス"]今は商隊という身分はあなたたちにとっても、私にとっても役には立たないわ。それなら余計な手間を省いて、直接手を取り合って協力するのも、一つの解決策じゃないかしら。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]ですが、アロイジウスさんが鉱区へ入る目的はなんですか？　私たちに何をしてほしいのでしょう？
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="アロイジウス"]ええと……説明が不十分だったかしら？
+[name="アロイジウス"]ロドスには私と鉱区に入って、感染者の件の調査に協力してほしいのよ。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]感染者の件？　それは、具体的にどういったことを指しているのでしょうか。
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="アロイジウス"]あら……無邪気なコータスのお嬢さん、私は我慢強い方だけれど、それでも限界はあるの――こんな時にとぼける必要はないわ。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]いえ、真面目に伺っています。
+[name="アーミヤ"]ロドスの移動医療隊のうち一組との連絡がクライニ・セーヴェル中心鉱区で途絶えています。私たちは彼らを見つけなければなりません。
+[name="アーミヤ"]あなたの言う「感染者の件」が一体何のことなのか、本当にわからないんです。もう少し詳しく説明していただけないでしょうか？
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[multiline(name="アロイジウス")]仲間を探すためって、あなたたち、鉱区に入る目的はそれだけなの――
+[charslot(slot = "m", name = "avg_npc_1966_1#11$1")]
+[multiline(name="アロイジウス",end=true)]待って、つまり本当に何も知らないってこと？
+[name="アロイジウス"]そんなはずはないわ。私の知る限り、ここ数年でロドスがウルサスに建てた医療拠点は激増してるのよ――
+[charslot]
+元々若者の顔に浮かんでいた懐疑の表情は単純な疑念へと変わり、それから不意に、納得がいったように変化した。
+彼女はすぐに自分の先入観に潜む誤りを悟ったのだ。
+[charslot(slot = "m", name = "avg_npc_1966_1#11$1")]
+[name="アロイジウス"]――違うわ。さっき「移動医療隊」と言ったわね……
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="アロイジウス"]常設の事務所もなければ、安定した人脈や情報のパイプもないようだし、ロドスに何があったかは知らないけれど、今のあなたたちの情報収集能力はかなり制限されているようだわ。
+[name="アロイジウス"]ウルサスでのあなたたちは大した力を発揮できない。そして、この地をよく知らないからこそ、何もわからぬまま行き詰まっている……そうなのね？
+[name="アロイジウス"]……
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1")]
+[name="アロイジウス"]なんてことかしら。この私としたことが、早とちりをするなんて。
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="君の言う感染者の件とやらがよくわからない。;それとブレスクの今の異常事態が関係あるのか？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="アロイジウス"]……もういいわ、この話はなかったことにしてちょうだい。さっきの貸しは私の親切心だと思って。礼はいらないわ。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]待ってください！
+[name="アーミヤ"]あなたがわざわざ私たちに接触してきたということは、少なくともこの件について協力し合える可能性があるということですよね。
+[name="アーミヤ"]それならば、せめて鉱区で一体何が起きたのかを説明してはいただけないでしょうか……
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="アロイジウス"]私ったら、まったく……はぁ！　もう少し考えてから、行動に移すべきだったわ。
+[name="アロイジウス"]てっきりあなたたちが噂を聞きつけて、命懸けで鉱区に押し入ろうとしてるものと思っていたのよ。わかるでしょ、こういう新鮮な情報は、闇市じゃ高く売れるから。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]私たちはそういう類の組織ではありません……ですが、今の本題はそれではありません。
+[name="アーミヤ"]ロドスの性質上、感染者に関する事柄は自然と我々にも関わってきます。あなたが最終的に私たちに接触すると決めた理由はそこにあるのではないですか？
+[name="アーミヤ"]ぜひ教えてください。
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1")]
+[name="アロイジウス"]……仕方ないわね！　せっかく来たことだし、結局誰かが手を打たなきゃいけないもの。たとえ感染者のためだとしてもね。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]感染者も、ウルサス人です。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="アロイジウス"]その通りね、コータスさん。感染者もウルサス人よ。ましてや陛下が自ら「生きるのではなく生活を営みなさい」と告げた坑夫たちがどこの人間で、誰に彼らを守る義務があるのかは言うまでもない。
+[name="アロイジウス"]彼ら坑夫こそがウルサスという戦争兵器を動かし続けるための土台なのに、腐敗した旧貴族やその影響を受けて腐り切った人々は、いまだにそのことに気づいてない。
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="アロイジウス"]だけど、ウルサスは変わらねばならないのよ。連中は、それを理解しないといけないわ。
+[name="アロイジウス"]……
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1")]
+[name="アロイジウス"]ああもう、私は何を言ってるのかしら……口達者で毒舌の同僚たちがここにいたら、大笑いされるでしょうね。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]今の言葉を恥じる必要なんてありません。
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="アロイジウス"]口から出てしまったなら、覆水盆に返らずよ。水をひっくり返したら、こんな天気じゃすぐに凍り付いてしまうわ。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]それで、感染者の件とは一体なんでしょう？　感染者の坑夫と関係しているということですか？
+[charslot(slot = "m", name = "avg_npc_1966_1#6$1")]
+[name="アロイジウス"]いいかしら、もしもこれから話すことを口外したら……
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]約束します。あなたから聞いたことは、決して外部には漏らしません。
+[name="アーミヤ"]ウルサスを敵に回しても我々に何の利益もないのは、よく理解しています。
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="アロイジウス"]少し考えさせてちょうだい。どこから話したらいいかしら……
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="アロイジウス"]ご存知の通り、ブレスクはクライニ・セーヴェル中心鉱区と隣接していて、ウルサスの北方で最大の移動都市でもあるわ。
+[name="アロイジウス"]だからブレスクは、クライニ・セーヴェル各地に分布する合計三万平方キロメートルの鉱区と二十万人の感染者の管理業務を担っている。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]……
+[dialog]
+[charslot]
+[charslot(slot = "m", focus="n")]
+[Decision(options="ここの基本的な状況なら十分に把握している。;その管理体系に何か問題が？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="アロイジウス"]そんな目で見ないでちょうだい……ごめんなさい、こういう言い方があなたたちの反感を買うことは知ってるわ。
+[name="アロイジウス"]だけど現皇帝陛下は感染者坑夫を安価な労働力として利用することを望んでいないの。むしろ、彼の政策はブレスクにかなり手厚いものよ。
+[name="アロイジウス"]ここ数年、ブレスクは比較的平穏な状態を保っていたわ。三ヶ月前まではね……
+[name="アロイジウス"]そう、これはあなたたちの専門分野と、例の論文に関わることよ。
+[charslot(slot = "m", name = "avg_npc_1966_1#5$1")]
+[name="アロイジウス"]三ヶ月前、クライニ・セーヴェル中心鉱区で大勢の「変異感染者」が見つかったの。彼らの症状は論文に記されたものと酷似していたわ。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="アーミヤ"]（小声）三ヶ月前？　それって……
+[dialog]
+[charslot]
+[Decision(options="まさか……;それがブレスクが戒厳令を敷いた原因か？", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="中心鉱区にどれだけの「変異した」感染者が現れた？", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#5$1")]
+[name="アロイジウス"]問題はそこなのよ……
+[name="アロイジウス"]今の中心鉱区に、一体どれだけの「正常な」感染者が残っているかを誰も知らないの。
+[dialog]
+[StopSound(channel="ca", fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

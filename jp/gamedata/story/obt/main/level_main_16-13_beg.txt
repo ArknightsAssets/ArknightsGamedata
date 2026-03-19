@@ -1,0 +1,454 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_rockfall",volume=1)]
+[playsound(key="$d_avg_rainlight_loop", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=40, randomness=90, fadeout=true, block=false)]
+[Background(image="66_g6_magnetofluidwaterfall",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[Decision(options="……;……", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="あれは……;動かなくなったか？", values="1;2")]
+[Predicate(references="1;2")]
+[Delay(time=0.5)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4208_wintim_1#8$1",duration=1)]
+[Delay(time=2)]
+[name="クセニア"]そう……みたいです。
+[name="クセニア"]咆哮も、荒い呼吸音も消えました。私たちの攻撃が効いたんでしょうか？
+[name="クセニア"]ですがまだ立っています、倒れてません――
+[charslot(slot="m",name="avg_4179_monstr_1#6$1")]
+[name="Mon3tr"]二人とも動くな！　私が見てくる。
+[dialog]
+[playsound(key="$d_avg_shallowswalk", loop=true, channel="w1")]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[StopSound(channel="w1", fadetime=0.5)]
+Mon3trは二人のいる位置が安全であることを確認すると、単独で前へと進む。
+数秒前まで狂乱状態だった裂獣は、今や体表の源石を一部削ぎ落とされていた。不気味なほど静かに立ち尽くしており、奇怪な前足も垂れ下がり、体の前で硬直している。
+Mon3trは慎重に近づいていく。
+彼女は裂獣をじっと観察する。元々危険な野獣である裂獣に起きた変異は、獣の見た目をひどく突飛なものに変えていた。
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]源石の影響で、肉体が急速に「人間」へと近付きつつあるんだ……
+[name="Mon3tr"]きっと辛かったろう……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$smallearthquake", loop=true, channel="a")]
+[CameraShake(duration=1.5, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.6)]
+[StopSound(channel="a", fadetime=0.5)]
+[Delay(time=0.5)]
+[Decision(options="Mon3tr、危ない！;また動き出した！", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]わっ――
+[charslot]
+しかし、予想していた攻撃はやってこなかった。裂獣は動くことなく、重々しく、何の前触れもなく前のめりに倒れていき――
+[dialog]
+[PlaySound(key="$d_avg_giantmonster_fall")]
+[delay(time=1)]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+その四肢が再び大地に触れた。
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……Mon3tr、今のうちにこの場から離れよう。;研究所へ戻ろう。今すぐに。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]いや。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Mon3tr？", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_avg_giantmonster_breathe")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]背中がまだ上下している。まだ息があるんだ！
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]それに……とても苦しそうに聞こえる？　よくわからない。
+[name="Mon3tr"]私にアーミヤのような共感能力はないし、ましてやただの変異した動物だからな。だけど……
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]何もせずにこのまま放っておいても、いずれ死ぬということは分かる。
+[name="Mon3tr"]源石が喉を貫いている。身体中が痛くて、変異した器官を引き剥がしたくてもその力がないんだ。
+[name="Mon3tr"]だからさっき私たちを襲ってきた。多分自分を制御できないんだろう。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="なら、苦しみを終わらせてあげよう。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]そうだな。
+[charslot(slot="m",name="avg_4179_monstr_1#3$1")]
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]そうだ。私ならできる。私なら……
+[name="Mon3tr"]苦しみを終わらせてあげられる。
+[dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1)]
+[playsound(key="$d_avg_shallowswalk", loop=true, channel="w1")]
+[delay(time=1.5)]
+[StopSound(channel="w1", fadetime=0.5)]
+彼女は倒れた野獣へ歩み寄ると、傍に立ち、結晶があまり生えていない毛皮の部分に爪を強く押し当てた。
+裂獣の体をじっと見つめるMon3trの瞳には、異様な静けさだけが宿っていた。
+それから、低侵襲手術を行うかのように素早く正確な動きで、裂獣の途切れ途切れであった呼吸を完全に止めた。
+[Dialog]
+[PlaySound(key="$knifegore")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=2)]
+[name="Mon3tr"]……行こう、ドクター。
+[name="Mon3tr"]研究所へ戻ろう。
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[charslot]
+[delay(time=3)]
+[imgeffect(name="$ib_screendistortion", image="66_i09")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[playMusic(intro="$suspenseful_intro",key="$suspenseful_loop", volume=0.6)]
+Mantraは耳を傾け続けていた。
+彼女は自分の視界に映る光景がもはや信じられないことをよく知っていた。それが意図的に歪められたものであれ、意図せず真実を映し出したものであれ。
+だから彼女は聞き続けていた。群衆の最後の祈りの言葉が、最初の雪のように舞い落ちるその時まで。
+[name="Mantra"]佯狂者……
+[name="Mantra"]「ガブリエルス」。
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="聞いている。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="Mantra"]ならば止めろ。
+[name="Mantra"]止めるんだ――
+[name="Mantra"]このすべてを！
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="私に止める権利はない。なぜなら始まってすらいないのだから。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="そなたが見ているものは、そなたが思うものに過ぎぬ。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+Mantraは語りかけることを止めた。彼女は一歩前へと進み、揺らめく赤、白、黒の線を安定させようと試みる。
+しかし手を伸ばした瞬間――
+[dialog]
+[Dialog]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$d_avg_tinnitus")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1.5, block=true)]
+[imgeffect]
+[name="Mantra"]……！
+[name="近づいては遠ざかる声"]――Mantra――
+[dialog]
+[image]
+[charslot]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Raidian"]Mantra！
+[charslot(slot="m",name="avg_4204_mantra_1#6$1")]
+[name="Mantra"]……なんだ？
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="Raidian"]微動だにしてなかったよ。
+[name="Raidian"]そんなところ初めて見たよ……どうしたの？
+[charslot(slot="m",name="avg_4204_mantra_1#3$1")]
+[name="Mantra"]あなたたちには聞こえなかったのか？
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]聞こえたって、何が？
+[charslot]
+年長の女性はすぐには答えなかった。
+辺りを見回した彼女は、残った坑夫たちの姿がさっきまでのように画一的でないことに気がついた。それゆえに眉をひそめ、自分の傍らに目を向ける。
+[charslot(slot="m",name="avg_4204_mantra_1#10$1")]
+[name="Mantra"]アロイジウスはどこだ？
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="Raidian"]私の言う通りに逃げていったよ。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]つまり、少なくとも先ほど我々に退避を呼びかけたのは真実だったのか。
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="Raidian"]うん。でもなぜ逃げるように叫んだか全然覚えてないんだ……おかしいよね。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]精神系のアーツだ。
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]確かなの？　私たちは専門的な訓練を受けてるんだよ。その手の攻撃を受けて、何も気づかないなんてありえない。
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="Mantra"]Raidian、自分の短期記憶が干渉を受けていないか確認を。
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="Raidian"]干渉って、どんな？
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="Mantra"]私が起こすことのできるような干渉だ。
+[name="Mantra"]Mechanistがあなたに「デンディ」と「アクシー」を借りに行く用事を、私が忘れさせたことがあっただろう。あれは本質的には記憶を消したのではなく、その形成を阻害したのだ。
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]覚えてるよ……あんな風にアーツを使ったのはあれが初めてだったよね？　大脳の情報が保存されなければ、記憶の欠落、つまり忘却が起こる。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]そう、あれはあなたの提案だった。人体の電気信号への理解も、応用も、あなたのほうが遥かに経験豊富だったからな。
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="Raidian"]ここにはあなたと同じアーツを使える人がいるってこと？
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]それは定かではない。私があなたたちより多くを見て、聞いているだけかもしれない。
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="Raidian"]どういうこと？
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="Mantra"]Raidian、ウルサスの佯狂者がここにいる可能性がある。
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]佯狂者？　どうして突然そんな――
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="Raidian"]佯狂者がここにいる？　でもウルサス最後の佯狂者は、二年前にサンクト・グリファーブルクで焼け死んだはずでしょ。こんな短期間に、もう一人の佯狂者が生まれるなんてあり得るの？
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]わからない。それをこれから確かめる。
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="Raidian"]もし本当に佯狂者がいて、しかも部隊の中に紛れていて、私がこれまで気づかなかったなら……それは極めて危険だよ。
+[name="Raidian"]他のみんなにも警戒を促しておく。あなたも気をつけて。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]この危険は物理的なものじゃない。少なくとも今はまだ。
+[name="Mantra"]必要になったら、すぐに助けを求める。
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="Raidian"]うん。忘れないでね。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")] 
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+Mantraは振り返ると、数秒前まで赤い色があった場所へと歩み出した。
+そこへ向かう間、身を寄せ合っていた坑夫たちが彼女のために道を作ったり、あるいは手を伸ばしたりした。
+[dialog]
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="ヴェトチキ"]あの、誰を……探してるんですか？
+[name="ヴェトチキ"]わたしたち、サンクト・グリファーブルクへ、行けるんですよね？
+[name="ヴェトチキ"]わたしたちは、い、生き延びられるんですよね……
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]（うなずく）
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="ヴェトチキ"]でもみんな、ここを出たくない、みたいなんです。ヴォーリャおじさんにも、聞きました。行きたくないって。
+[charslot(slot="m",name="avg_4207_branch_1#10$1")]
+[name="ヴェトチキ"]たとえ傷口が、腐っても、嫌だって……もう、逃げたくないって。
+[name="ヴェトチキ"]でも生きるって……他の何より、大事なことじゃ、ないんですか？
+[charslot(slot="m",name="avg_4204_mantra_1#2$1")]
+[name="Mantra"]……
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="ヴェトチキ"]喋ら、ないんですね……
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="くたびれた坑夫"]よそ者。
+[name="くたびれた坑夫"]あんた、ナディアに会いに行くんだろ？　それなら膝をついて這って行って、彼女を仰ぎ見るんだ。
+[name="くたびれた坑夫"]彼女を見つめて懺悔し、それから赦しを得るんだ。そうすればすぐに気づくさ。今までもがき続け、平穏を得られずにいた自分が、どれだけ愚かだったかをな。
+[charslot]
+Mantraは肯定も否定もせず、アーツを使って語りかけることもしなかった。ただうなずくと、部屋の奥をじっと見つめ、彼らの間を通り抜ける。
+[name="くたびれた坑夫"]今にわかるさ……彼女の前に立てば、すぐにわかる。
+部屋の最奥には、他の者たちにとっては、背を丸めた小さな灰色の影にしか見えない人物が、彫像のように静かに座していた。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g15_ursusvillage_ruins",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1966_1#11$1",duration=0.5)]
+[delay(time=1)]
+[name="アロイジウス"]――佯狂者！？
+[charslot(slot="m",name="avg_npc_1966_1#5$1")]
+[name="アロイジウス"]あり得ない、あり得ないわ！　佯狂者は死んだはずよ！
+[name="アロイジウス"]あの時、陛下は慈悲をもって、裁きを下す前にあの狂人に自らの罪を弁解する猶予を与えられたわ。
+[name="アロイジウス"]その結果、丸々七日間も！　佯狂者は七日間水の一滴も飲まずに、延々と詭弁を並べ立て、時間を稼ぎ続けたのよ。
+[name="アロイジウス"]あの時、奴はあろうことか帝国議会の中央に立ち、傍聴に来た一人一人に向けてこう言ったの――
+[charslot(slot="m",name="avg_npc_1966_1#8$1")]
+[name="アロイジウス"]「そなたを赦す」と！
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="アロイジウス"]最後は陛下ご自身が耐えられず、自ら死刑を宣告したわ。だけどそれでも奴に惑わされた信者たちが刑場を襲撃して、サンクト・グリファーブルク市街区内で十数年来最大の暴動を引き起こしたの。
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="Raidian"]その話は私たちも知ってる。
+[charslot(slot="m",name="avg_npc_1966_1#10$1")]
+[name="アロイジウス"]……
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="Raidian"]問題は、Mantraが佯狂者だと言った以上、相手がそう思わせるような痕跡を見せたってことだよ。
+[name="Raidian"]私たちにできることは自分の身を守りながら、彼女の知らせを待つことだけ。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]……
+[charslot(slot = "m", focus = "n")]
+Mantraは坑夫たちが言っていたように、這ってナディアの元へ行きはしなかった。
+彼女は逆光の影の中に足を踏み入れ、正面を見据える。まるで、そこに彼女を見つめ返す瞳があるかのようだった。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]やはり、「聞こえている」か。
+[dialog]
+[charslot]
+[delay(time=1)]
+[playMusic(intro="$kjerag_n_intro",key="$kjerag_n_loop", volume=0.6)]
+[focusout(duration=1.5, type="bg", from=0, to=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="聞こえるとも。そなたの中に満ちる疑問が。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]あなたが私のアーツと会話方式を真似ているだけではないことを願う、佯狂者。
+[charslot]
+[dialog]
+[Blocker(a=0.2, r=0, g=0, b=0, fadetime=1.5)]
+[delay(time=2)]
+[name="ナディア"]「佯狂者」……そう呼びたいのなら構わない。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]その発言の意味を説明してほしい。
+[charslot]
+[name="ナディア"]ガブリエルス、ソロミダ、ベスメルト、アウローラ、ナディア……あるいは、「佯狂者」。
+[name="ナディア"]そのいずれも、私だ。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]……答えろ。なぜ苦しむ人々の中に紛れていた？
+[charslot]
+[name="ナディア"]なぜなら、これは布教だからだ。
+[name="ナディア"]私はこの広大な土地を、人々の受けた苦しみを贖うために巡り続けている。
+[name="ナディア"]それは、彼女を目の当たりにし、耳にしたからでもある。
+[name="ナディア"]私は彼女の苦痛のために留まり、足を止めた。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]「彼女」とは誰だ？
+[charslot]
+[name="ナディア"]ある、苦しみを受けた魂だ。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]その彼女を欺き、「ナディア」と呼ばせたのか？
+[charslot]
+[name="ナディア"]私は欺いてなどいない。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]妄言だ。
+[charslot]
+[name="ナディア"]彼女はそなたのように問いかけ、私は私のように答えた。
+[name="ナディア"]それだけだ。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]無意味な答えだ。あなたは一体何者だ？
+[charslot]
+[name="ナディア"]そなたも私を見た。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]私が見ているのは無秩序な幻影だ。
+[charslot]
+[name="ナディア"]そう、それが私だ。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]だが他の者たちにとっては、そうは見えていない。
+[name="Mantra"]説明を。
+[charslot]
+[name="ナディア"]人々が目にする私の姿は、私に対して抱く認知と期待を映し出しているだけだ。
+[name="ナディア"]あらゆる魂の中で、私の存在する形を理解できるのは、そなただけだと考えていたが。
+[name="ナディア"]なぜなら……
+[name="ナディア"]そなたは未完成の彫像であるから。かつて――
+[name="ナディア"]「私」になるはずであったのだから。
+Mantraは目の前の異様な幻影を睨みつけた。だがそこから己の判断に役立つ情報を得られるかどうかは、確信が持てなかった。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]……
+[charslot]
+[name="ナディア"]遥か昔、そなたは黒い腐肉を削ぎ取った。
+[name="ナディア"]私もだ。奴は私を追い、私は奴を追い払った。まるで呼吸の合間に身体から一塊の腐肉を削ぎ落とすように。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]くだらない喩えだ。
+[charslot]
+[name="ナディア"]いいや。単純な理屈だ。
+[name="ナディア"]もしも、それがすでに腐敗していて、そなたの身体の他の部分と繋がっていないのなら……
+[name="ナディア"]なぜまだそれを留め続ける？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Image(image="avg_8_29",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Mantra"]……これは……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i01",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Mantra"]あなたの記憶か？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i02",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i03",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Blocker(a=0.2, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Mantra"]だが、私のものでもある――
+[charslot(slot="m",name="avg_4204_mantra_1#10$1")]
+[name="Mantra"]違う。皇帝近衛兵……近衛兵に影響を及ぼせるなら、坑夫たちにもそれができるはずだ。
+[charslot]
+[name="ナディア"]そなたは奴を殺した。そなたは私となった。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]それが我々の間の唯一の共通点であるなら……
+[charslot(slot="m",name="avg_4204_mantra_1#6$1")]
+[name="Mantra"]「身体」、そして「腐肉」。あなたと近衛兵の関係――佯狂者は近衛兵実験の起源か。
+[charslot]
+震える幻影の中から、それ以上声は聞こえなかった。否定も、肯定も。
+Mantraは後ずさり、影の縁から離れた。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]……Raidian、支援が必要だ。
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]ここにいるよ。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]先ほどの推測に誤りがないのを確認した。
+[name="Mantra"]それと、補足情報だ……
+[name="Mantra"]佯狂者は坑夫の中に紛れ、彼らの近衛兵殺害を幇助した。
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]……了解。
+[name="Raidian"]私たちはどうすればいい？
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]引き続きウルサスの他の地域にいるロドスの支援部隊との連絡手段を模索してほしい。それと、アーミヤにアロイジウスを引き付けておくよう頼んでくれ。
+[name="Mantra"]我々は今すぐにここを離れるわけにはいかない。少なくとも、坑夫たちを目覚めさせる方法を見つけるまでは。
+[name="Mantra"]エリジウムに私のアーツの範囲内に留まるよう伝えてくれ。彼の助力が必要になるかもしれない。
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]何をするつもり？
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]佯狂者が坑夫たちに与えている影響を取り除く。
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]佯狂者が坑夫たちを支配して、ここを離れさせないようにしていると？
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]そうだ。
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="Mantra"]我々が佯狂者を直接殺すことはできないが、相手はその気になればここにいる全員をいつでも殺せる。
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]……アーミヤなら何かできるかも。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]そうかもしれないが、アーミヤは佯狂者を理解していない。何も知らない彼女を巻き込みたくはない。
+[name="Mantra"]佯狂者と私の能力はよく似ている。だからこそ、この判断ができるのは私だけだ。
+[name="Mantra"]奴は他者の認知に依り己を構成している。「ナディア」という存在を作り出した要因を突き止めなければ、佯狂者が施した影響を取り除くことはできない。
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]心当たりがあるんだね。
+[charslot(slot="m",name="avg_4204_mantra_1#2$1")]
+[name="Mantra"]……ああ。
+[charslot]
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4207_branch_1#9$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot = "m", focus = "n")]
+Mantraは周囲の坑夫に視線を向けた後、最後に自分の傍を通りすぎ、佯狂者の元へ向かう少女に目を向けた。
+少女は戸惑いと悲しみを抱えながらつぶやいている。
+[charslot(slot="m",name="avg_4204_mantra_1#3$1")]
+[name="Mantra"]ただ、確かめる時間が欲しい。
+[Dialog]
+[Delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot]  

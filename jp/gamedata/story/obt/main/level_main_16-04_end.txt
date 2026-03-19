@@ -1,0 +1,830 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="66_g3_miningarea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>ウルサス クライニ・セーヴェル中心鉱区</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playMusic(intro="$mist_intro",key="$mist_loop", volume=0.6)]
+[playsound(key="$d_avg_snowcrwdmarch", loop=true, channel="f")]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1",duration = 1)]
+[StopSound(channel="f", fadetime=2)]
+[delay(time=2)]
+[name="アーミヤ"]研究所に近づいてきました。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1")]
+[name="アーミヤ"]道中は静かでしたね……本当にこの近くに人は住んでるのでしょうか？
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]三日前に女大公が突然命令を下したのよ。中心鉱区から三十キロ以内の住民は、二十四時間以内に退去するようにとね。
+[name="アロイジウス"]クライニ・セーヴェルは元々人が少ないけど、短期間にこれだけ広範囲の住民を退去させるのは、決して簡単なことじゃないわ。
+[name="アロイジウス"]しかも退去させると同時に、全員に口をつぐませるなんて……
+[charslot(slot="m",name="avg_npc_1966_1#3$1")]
+[name="アロイジウス"]けど噂では、女大公はクライニ・セーヴェルにおいて絶対的な支配力を持つと言われているわ。この地での彼女の威光は、陛下をも……
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]いけない、失言だったわね。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="彼女が最終的に我々の通行を許可したのは……;そもそも我々の調査を問題視していないということだ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]そうとは言い切れないわ。
+[name="アロイジウス"]サンクト・グリファーブルクからこうして近衛軍の者が来ている以上、女大公と言えど公然と拒絶するわけにはいかないもの。
+[name="アロイジウス"]客観的に言えば、この数年間女大公は常に北方の軍と議会の間の潤滑油の役割を果たしてきたわ。双方のわだかまりが対立にまで発展しないようにね。
+[name="アロイジウス"]彼女が並ならぬ手腕であることは認めざるを得ないわ。
+[name="アロイジウス"]彼女は双方の信頼を得たけれど、だからこそどちらかに偏っていると見られるわけにはいかないの。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="君は、こうした話を率直にするのだな。;ウルサスでは気軽に口にできない話題だと思っていた。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#13$1")]
+[name="アロイジウス"]ふふっ……驚いた？　Dr.{@nickname}、多分あなたはウルサスを少し誤解しているのよ。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]今の話は、サンクト・グリファーブルクで適当な貴族の宴席に参加すればどこでも聞ける世間話に過ぎないわ。
+[name="アロイジウス"]だけど、ちょっとした世間話に出てくる事柄に詳しくないと、その人たちが食事の席で交わす討論にも加われないでしょう？
+[name="アロイジウス"]もちろん、世間話は所詮世間話よ。もしそれだけで成り上がれると本気で思い込んで、実際に行動に移す人がいたら、話は別だけれどね。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="面白い観点だ。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]話を戻すわ。女大公が本当に何も隠していないのか、それともすべての痕跡を隠し切ったつもりでいるのかはともかくとして……
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="アロイジウス"]彼女の命を受けて変異感染者を調査する研究所には、必ず何かが残されているはずよ。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[playsound(key="$d_avg_riot", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.1, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",duration=1)]
+[delay(time=2)]
+[name="アーミヤ"]皆さん……戦闘の音が聞こえます。
+[charslot(slot="m",name="avg_1037_amiya3_1#10$1")]
+[name="アーミヤ"]前方のあれは……坑夫と監視隊でしょうか？
+[charslot]
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="このまま見ているわけにはいかない。;全員、救援の準備を。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="char_401_elysm_na_1#8",duration=0.5)]
+[delay(time=1)]
+[name="エリジウム"]ちょ、ちょっと待って！
+[name="エリジウム"]僕は目がいいから、はっきり見えるよ！
+[charslot(slot="m",name="char_401_elysm_na_1#6")]
+[name="エリジウム"]殴られてるのは……監視隊の方みたいだけど？
+[charslot(slot="m",name="avg_npc_1966_1#11$1")]
+[name="アロイジウス"]……何ですって？
+[charslot(duration=0.5)]
+エリジウムの指差す先に目をやると、遠くの方で二組の集団が乱戦になっていた。あなたたちが目にしたのは不思議な光景だった――
+監視隊が、数倍もの人数の感染者坑夫たちに殴られながら追い立てられているのだ。
+監視隊の粗末な装備はまったく役に立たず、坑夫たちが手にするこん棒やツルハシでぼこぼこにされている。
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]えーと……
+[name="Mon3tr"]ドクター、この状況は……助けに行くべきなのか？
+[charslot]
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="まずは事態が深刻化するのを止めよう。;その後に状況を確認するのがいい。", values="1;2")]
+[Predicate(references="1;2")]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[SoundVolume(volume=0.3, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[playMusic(intro="$tense_intro",key="$tense_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_082",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot ="m", action="shake", power=10, times=50, duration=0.5)]
+[delay(time=1)]
+[name="取り乱す監視隊隊員"]もういいだろ！　やめろ、やめてくれ！
+[name="取り乱す監視隊隊員"]何を考えてる？　本気で俺たちを殺す気か？　*ウルサススラング*ウルサスは決してお前らを許さんぞ！
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1969_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="激怒する坑夫"]ハァ……ハァ……
+[name="激怒する坑夫"]許さねぇならなんだ……なんだってんだ？　俺たちが人間扱いされたことがあるってのか？　俺たちは人じゃねぇのかよ……
+[multiline(name="激怒する坑夫")]なにしてもどうせ生き延びられやしねぇんだ……お前らも死ね……
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[multiline(name="激怒する坑夫")]死ね！
+[dialog]
+[charslot(slot = "m",action="zoom", poszoom = "0.5,0.5", scale=1.1,duration = 0.2)]
+[Blocker(a=0, r=0, g=0, b=0, afrom=0.8, rfrom=1, gfrom=1, bfrom=1, fadetime=0.3, block=false)]
+[CameraShake(duration=0.2, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$swordtsing4")]
+[delay(time=0.2)]
+[charslot(slot = "m",action="zoom", poszoom = "0.5,0.5", scale=1,duration = 0.2)]
+[delay(time=0.5)]
+[name="激怒する坑夫"]腕が――
+[name="激怒する坑夫"]ど、どこから来やがった？　この化け物め！
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_4179_monstr_1#11$2",duration=1)]
+[delay(time=1.5)]
+[name="Mon3tr"]化け物？　ははっ、呼びたいならそう呼んでもいいよ。
+[charslot(slot="m",name="avg_4179_monstr_1#2$2")]
+[name="Mon3tr"]君たち、一度手を止めてくれないか？　少し聞きたいことがあるんだ……
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="激怒する坑夫"]なぜだ？　この監視隊の畜生どもをかばう気か？　お前も俺たちを捕まえに来たのか？
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="激怒する坑夫"]*ウルサススラング*、そうはさせるか！　お前たちに従っておとなしく戻ったりしねぇ！
+[charslot(slot = "m", focus = "n")]
+激怒した坑夫はさらに感情を昂らせて、持っていたツルハシを高々と構えた。
+[dialog]
+[playsound(key="$d_avg_OriginiumArts_heart_1")]
+[stopmusic(fadetime=2)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Subtitle(text="「止まってください。」", x=300, y=370, alignment="center", size=26, delay=0.04, width=700, block=false)]
+[Subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[StopSound(channel="bgs", fadetime=2)]
+出処不明の声が脳内に響き、激怒する坑夫は手にした武器が突如重くなるのを感じた。両足はまるでその場に縫い付けられたように、どんなに力を入れても動かない。
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="激怒する坑夫"]これは何だ――クソッ！　何のアーツだ？
+[dialog]
+[charslot]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[playsound(key="$d_avg_snowbootwalk")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",duration=1)]
+[delay(time=2)]
+[name="アーミヤ"]あの……少しだけお話させていただけませんか？
+[charslot(slot = "m", focus = "n")]
+アーミヤが前に出て、坑夫に向かって右手を伸ばしてみせると、衣服に覆われていた腕の源石結晶がさらけ出された。
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]見ての通り、私は感染者です。後ろにいる仲間たちもほとんどが感染者です。
+[name="アーミヤ"]信じてください、私たちに悪意はありません。
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="落ち着いた坑夫"]感染者……あんたらも感染者か。
+[name="落ち着いた坑夫"]それにこの見事なアーツ……
+[name="落ち着いた坑夫"]あんたらが……あんたらが「レユニオン」だな！
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]……え？
+[charslot(slot="m",name="avg_1037_amiya3_1#5$1")]
+[name="アーミヤ"]いえ……私たちはレユニオンではありません。
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]私たちはロドス・アイランドという製薬会社から来ました……
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="落ち着いた坑夫"]チッ……ロドス？　俺ぁてっきり噂のレユニオンの人たちに会えたと思ったのに。
+[name="落ち着いた坑夫"]やっぱりな……感染者が団結した組織なんて、どう考えても作り話だ。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="すまないが……", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Decision(options="「レユニオン」の話はどこで聞いたんだ？;「レユニオン」についてどんな話を聞いたんだ？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="落ち着いた坑夫"]ランキンさ。ランキンが教えてくれたんだ。
+[name="落ち着いた坑夫"]南の方、カジミエーシュの手前あたりに、感染者の団体がいるらしいんだ。自分たちの縄張りを持っていて、助けを求めてきた感染者を受け入れ、感染者を虐げる者を全員追い払うって話だ。
+[name="落ち着いた坑夫"]ランキンが嘘をついたことはないから、俺だって話が本当だと信じたいさ！　だが――カジミエーシュなんて、どれだけ遠いとこだと思う？　一体どうやって行けばいい？
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]その「ランキン」という方は、レユニオンの人ですか？
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="落ち着いた坑夫"]そうなのか？　俺もよくわからん。
+[name="落ち着いた坑夫"]だが、俺たちの英雄だってのは確かさ。ランキンがいた頃は、監視隊がちょっかいをかけてくることはなかったんだ。研究所に連れていかれた奴らも彼が救い出したって話だ――
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1970_1#1$1",duration=0.5)]
+[delay(time=0.8)]
+[name="心配する坑夫"]ちょっと！　なに余計なこと喋ってるの！　この人たちが何しに来たのかもまだ知らないのよ！
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="落ち着いた坑夫"]ああ……それもそうか。
+[name="落ち着いた坑夫"]なあ、あんたらは一体ここへ何をしに来たんだ？
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]私たちの仲間が、この付近で消息を絶ちました。
+[name="アーミヤ"]あの、移動医療隊を見かけませんでしたか？　メンバーは全部で九人、私たちと同じようなマーク付きの服を身に着けていて、ここで薬を配っていたはずです……
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="落ち着いた坑夫"]俺たちに薬を配るって……噂に聞くサンタクロースみたいにか？
+[charslot(slot = "m", focus = "n")]
+坑夫たちはまるでとんでもない冗談を耳にしたかのように、互いに顔を見合わせた。だがその冗談は少しも笑えなかった。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="この鉱区で一体何が起きている？;（傍で震える隊員を指差す）", values="1;2")]
+[Predicate(references="1;2")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="激怒する坑夫"]*激しいウルサススラング*！　こいつらは全員人殺しだ、俺たちを殺そうとしたんだ！　閉じ込めて、食糧も与えず、生きながら飢え死にさせようとした！
+[name="激怒する坑夫"]源石を掘れなくなったら罰を与えようってのか？　ちくしょう！　あの鉱脈に何が起きたかなんて、俺たちが知るかよ。急に源石が出なくなったんだ！
+[name="激怒する坑夫"]もう耐えられねえ、俺たちは絶対に逃げ出してやる。じゃなきゃ全員死んじまう！
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]……今のお話は本当ですか？
+[charslot(slot="m",name="avg_npc_082")]
+[name="取り乱す監視隊隊員"]な、なに見てんだ？　何をするつもりだ？
+[name="取り乱す監視隊隊員"]鉱区の物資不足は昨日今日の話じゃない！　そもそも、この一ヶ月で俺たちに配られたパンもたった数切れだぞ？　何が起きたかなんて俺が知りたいくらいだ！
+[name="取り乱す監視隊隊員"]信じてくれないのか？　ああ皇帝陛下よ、ご覧じろ。俺たちが好き好んでこんな奴らと揉め事を起こすわけないだろ？　こいつらを追い詰めて殺したら、俺たちが自分で働くってのか？
+[dialog]
+[charslot(slot="m",name="avg_4179_monstr_1#7$2")]
+[delay(time=0.5)]
+[playsound(key="$Mon3tr_n")]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_082")]
+[charslot(slot = "m", action="shake", power=10, times=30,random=30, duration=0.3)]
+[delay(time=0.5)]
+[name="取り乱す監視隊隊員"]ひっ――！　おい、なんだお前！？　わかった！　もう喋らない、喋らないから！
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="激怒する坑夫"]これは一つや二つの採掘場の話じゃない……クライニ・セーヴェルが、鉱区が、俺たち全員が見捨てられたんだ。
+[name="激怒する坑夫"]ランキンが最初に立ちあがってここの守備兵をやっつけて、数百人以上を連れて逃げ出したそうだ。
+[name="激怒する坑夫"]それから俺たちも逃げ出した。元々はランキンの部隊に合流して、一緒に逃げ出すつもりだったんだが、彼らはもう遠くに逃げていたからな。
+[name="激怒する坑夫"]さあ、もう十分話しただろ。あんたらも感染者なら、道を空けてくれ。こいつらを殺らせてくれ！
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1966_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="アロイジウス"]悪いけど……率直に言わせてもらうわ。
+[name="アロイジウス"]あなたたちが、持ち場である採掘場を離れた理由が何だろうといいわ。ひとまずは避難のためだったと仮定しましょう。
+[name="アロイジウス"]だけど、もしここで本当にこのツイてない監視隊の者たちを殺したら、収拾が付かなくなるわよ。
+[charslot(slot="m",name="avg_1037_amiya3_1#10$1")]
+[name="アーミヤ"]（小声）アロイジウスさん！　そんな言い方をしてはダメですよ！
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="激怒する坑夫"]なんだ、綺麗なおべべを着た軍人様までおでましか？　クソが、最初からお前らの戯言なんざ信じなきゃよかったんだ！
+[charslot]
+[dialog]
+[charslot(slot = "right", name = "avg_npc_1969_1#1$1",posfrom = "200,0", posto = "0,0",duration = 0.5)]
+[charslot(slot = "l", name = "avg_npc_1970_1#1$1",posfrom = "-200,0", posto = "0,0",duration = 0.5)]
+[playsound(key="$d_avg_attack_ready", loop=true, channel="a",volume=0)]
+[delay(time=0.5)]
+[SoundVolume(volume=1, channel="a",fadetime=0.1)]
+[delay(time=0.5)]
+[StopSound(channel="a", fadetime=0.2)]
+[delay(time=0.5)]
+[charslot(slot = "m", focus = "n")]
+軍人が現れたことで瞬く間に坑夫たちの怒りに火がついた。彼らは武器を掲げて取り囲もうとしてきたが、目の前の者たちのアーツを恐れて、安易には動けなかった。
+[charslot]
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[delay(time=0.5)]
+[charslot(slot = "r", name = "avg_npc_082",posfrom = "0,0", posto = "-100,0",duration = 0.5,focus="m")]
+[charslot(slot = "l", name = "avg_npc_082",posfrom = "0,0", posto = "100,0",duration = 0.5,focus="m")]
+[delay(time=1)]
+[charslot(slot = "m", focus = "n")]
+一方、逃げ惑っていた監視隊はアロイジウスを見るやいなや、まるで救世主を目にしたかのように、こぞって彼女の後ろに隠れた。
+[charslot]
+その場に気まずい空気が広がった。だがどちらも退くことはできない。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]どうやら、この件を片づけないことには先へ進めないみたいね？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="現状を見ると、我々の望み通りにはいかなそうだが。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]そう……
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$d_avg_penrustle")]
+近衛軍の若者は懐から紙を取り出し、素早く筆を走らせると、上品な封筒に入れて、リーダーの坑夫に差し出した。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]双方にとっていい解決策があるわ。
+[name="アロイジウス"]これを受け取りなさい。この封筒の印章があれば、もう監視隊に理不尽な仕打ちを受けることはないわ――あなたたちが挑発しなければね。
+[name="アロイジウス"]北へ向かって、ブレスクの哨戒所にいる衛兵にこの手紙を渡しなさい。そうすれば臨時収容所へ案内されるわ……その先のことは、様子を見つつ判断するしかないわね。
+[name="アロイジウス"]私を信じなさい。この手紙を受け取るのが、事態を平和的に解決できる唯一の方法よ。それと引き換えに、このツイてない連中を見逃してあげてくれないかしら？
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="躊躇う坑夫"]……
+[charslot(slot="m",name="avg_npc_082")]
+[name="取り乱す監視隊隊員"]ダ、ダメだ！
+[name="取り乱す監視隊隊員"]こいつらを連れ戻さなければ、我々は罰せられる！
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]欲張らないことね……罰せられるまでもなく死ぬわよ。
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="躊躇う坑夫"]……あんたを信じられると思うか？
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]他に信用できる人がいるの？
+[charslot(slot="m",name="avg_1037_amiya3_1#5$1")]
+[name="アーミヤ"]アロイジウスさん……！
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="躊躇う坑夫"]俺たちが……
+[name="躊躇う坑夫"]その収容所に行けば、十分なパンがもらえるのか？
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]安心しなさい。パンだけでいいなら、全員のお腹がはち切れるまで詰め込んであげる。
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="躊躇う坑夫"]……
+[playsound(key="$d_avg_paper1")]
+[charslot(slot = "m", focus = "n")]
+坑夫のまとめ役と思しき者は手紙を受け取ると、振り返って仲間と相談し始めた。
+[charslot(duration=1)]
+[playsound(key="$d_avg_snowcrwdmarch")]
+そして、すぐに合意に至ったらしく、彼らは躊躇いや逡巡を見せることなく、整然と列を成して北方に向かっていった。かつて何度も坑道へ入っていった時と同じように。
+坑夫の列は、小屋と小屋の間の隙間にゆっくりと消えていく。アーミヤは彼らが去っていく方向をずっと眺めていた。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="これがいま得られる最善の結果だ。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]わかってます、ドクター。
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1")]
+[name="アーミヤ"]私たちは、出会ったすべての人を救え……助けられるわけではありません。
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]だけどロドスは決して諦めません……全力を尽くし続けます。
+[charslot]
+あなたは振り返り、軽薄に見えつつも常に鋭く介入してくる近衛軍の若者を見た。
+[Dialog]
+[Decision(options="鉱区の物資不足など初耳だ。;これは正常な労働者に対する管理ではない。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]ええ……何が言いたいかは分かるわ――だけど信じてちょうだい。私もあなたと同じく多くは知らないし、同じように疑問を持っているの。
+[name="アロイジウス"]研究所はすぐそこよ。そこで答えを探すとしましょう。
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]ドクター、行きましょう。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g9_institutecorridor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>ウルサス クライニ・セーヴェル中心鉱区研究所</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playsound(key="$d_avg_openftstpwalk")]
+廊下では音が壁に吸収され、足音の反響すら聞こえない。
+石壁は斜めに傾き、冷ややかな威圧感が地面にあるものを押さえつけている。そこに身を置く人々は思わず声を低く、低く抑えてしまう。
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1")]
+[name="アーミヤ"]（小声）静かなところですね……
+[charslot(slot="m",name="avg_npc_1966_1#10$1")]
+[name="アロイジウス"]というよりも、誰一人いないようだわ。感染者も、それ以外もね。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="それってつまり？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="アロイジウス"]軍が管轄する研究所へ行ったことがあるけど、人の出入りが激しくて、雑然としていたわ。設置しきれないベッドが廊下に雑然と置かれていて、まるで野戦病院みたいだった。
+[name="アロイジウス"]そこだと感染者は叫び、喚き、苦痛に呻いていたけれど、少なくともまだ生きていて、生気はあったわ。だけどここは……
+[name="アロイジウス"]ふん、全然別物よ。
+[Dialog]
+[charslot]
+[Decision(options="廊下に戦いが起きた痕跡がある。;研究所は略奪に遭ったのか？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]鉱区に入ってから把握した状況を考えると、鉱区全体がすでに深刻な混乱状態に陥っているようです。
+[name="アーミヤ"]もしも研究所内の変異感染者が全員逃げ出したとすれば……
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="アロイジウス"]鉱区の兵士は職務怠慢で処分されるでしょう。トップも責任を免れないわ。
+[name="アロイジウス"]ひょっとすると、ブレジェノイ全体が変わろうとしているのかもしれない……
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="坑夫たちが訪れたなら、手がかりが残っている。;何とかして研究所の構造を把握しよう。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]正確な平面図はないけど、この手の建物はある程度のパターンがあるものよ。
+[name="アロイジウス"]大抵はどこも回の字形の廊下で、四方が同じ作りの部屋と繋がっているわ。各階には閉ざされた展望台が設けられていて、鉱区の状況を観察しやすいようになってるはず。
+[name="アロイジウス"]あなたたち、前に言ってた「生命信号」の具体的な位置を把握している？
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]（黙り込む）
+[charslot(slot="m",name="char_401_elysm_na_1#1")]
+[name="エリジウム"]お姉さん悪いけど、もし信号の発生源を建物内の特定の部屋まで絞る必要があるなら、それは不可能だよ。
+[name="エリジウム"]僕たちにできるのは、ある一定の範囲内に信号の揺らぎがあるかどうか確かめることだけ。原因は実際に着いてから確かめるしかないんだ。ちょうど今みたいにね。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]まあいいわ、聞いてみただけよ。
+[name="アロイジウス"]研究所は広いわよ。私は下の階から見てくるわ――効率を上げるためにも、手分けして探さない？
+[Dialog]
+[charslot]
+[Decision(options="ここで単独行動を取るのは危険だ。;（アーミヤに視線をやる）", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#5$1")]
+[name="アーミヤ"]――！
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1")]
+[name="アーミヤ"]アロイジウスさん、私も一緒に行きます。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]あら、そう。助っ人が一人増えるのに文句はないわ。
+[Dialog]
+[charslot]
+[Decision(options="では、Mon3trと自分は上階の捜索だ。;Mantra、君の小隊と共に入口の階を探してくれ。", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[charslot]
+[Decision(options="何かあれば連絡を。;全員、自分の身の安全を優先して動くこと。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]（うなずく）
+[charslot(slot="m",name="char_401_elysm_na_1#1")]
+[name="エリジウム"]どうも陰気に感じるよね。ウルサスの研究所なわけだし、ひょっとしたら変なものが隠されててもおかしくないかも。人と駄獣をくっつける人体実験とか……
+[name="エリジウム"]Mon3tr、何かあったらドクターを連れて逃げてね。無理しないように！
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]……わかっている！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$transmission")]
+[delay(time=1)]
+[Decision(options="Mantra。;状況報告を頼む。", values="1;2")]
+[Predicate(references="1;2")]
+[playsound(key="$d_gen_transmissionget")]
+[delay(time=0.5)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 , offset = "0,0" ,channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", pfrom = "30,0", pto="30,0", name = "avg_4204_mantra_1#1$1",duration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[Delay(time=1)]
+[name="Mantra"]聞いている。
+[name="Mantra"]現在調査している地点で特別な発見はない。
+[name="Mantra"]アーミヤの位置は追跡できている。彼女は安全だ。
+[Dialog]
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="例の「生命信号」についてだが。;実はもっと具体的な位置を把握しているんだろう？", values="1;2")]
+[Predicate(references="1;2")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[name="Mantra"]四階、坑道に近い側だ。ターゲットは移動していない。
+[dialog]
+[interlude(channel = 3, clear = true,tsto="0,1",tsduration=0.3)]
+[delay(time=0.5)]
+[playsound(key="$d_gen_transmissionget")]
+[delay(time=0.5)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 , offset = "0,0" ,channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", pfrom = "0,0", pto="0,0", name = "char_401_elysm_na_1#10",duration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[delay(time=0.5)]
+[name="エリジウム"]え？
+[name="エリジウム"]隊長、僕にまで隠してたなんて！
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[Dialog]
+[charslot]
+[Decision(options="我々が警戒すべき相手がいた。;演技は君の得意分野じゃない。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="Mon3trの言っていたクセニアであるといいが。", values="1")]
+[Predicate(references="1")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 , offset = "0,0" ,channel = 3,tsfrom = "0,1", tsto="1,1")]
+[interlude(channel = 3, type = 3, slot = "m", pfrom = "30,0", pto="30,0", name = "avg_4204_mantra_1#1$1")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[name="Mantra"]ドクター、急ごう。ターゲットの生命状態は不安定だ。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[interlude(channel = 3, clear = true)]
+[playsound(key="$d_avg_openftstpwalk")]
+[playsound(key="$d_avg_churchfootstep",delay=0.3,volume=0.5,channel="2")]
+[playMusic(intro="$chenandwei_intro",key="$chenandwei_loop", volume=0.6)]
+[name="アーミヤ"]アロイジウスさん、あなたはこの下で何かが見つかると確信しているみたいですが――
+[name="アロイジウス"]手間を省くために、ウルサスの政府機関の建築はどれも同じ様式で建てられているの。
+[name="アロイジウス"]この研究所の内部の配置が機能面を重視して行われていて、私の今まで見てきた建物と似ているとしたら、地下室には多少なりとも何かが残っているはずよ。
+[name="アロイジウス"]すでに死んだ者が、立ち上がって逃げることはできないものね。
+[name="アーミヤ"]――つまり、地下室に死体安置所があるってことですか？
+[name="アロイジウス"]臨時の死体安置所よ。それと重症感染者の遺体を処理する焼却炉もね。
+[dialog]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_Morgue",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1966_1#1$1",duration=1)]
+[delay(time=2)]
+[name="アロイジウス"]ハッ。
+[name="アロイジウス"]やっぱりね。
+[charslot(slot = "m", focus = "n")]
+遺体を冷凍するためのエネルギー供給はすでに停止していたが、地下室の温度は薄く雪が積もる室外よりもさらに低かった。
+近衛軍の若者が棺を手で払うと、指の腹に霜が付いた。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]棺はどれも使われているわね。きっと退去の直前に動力が切られたんだわ。アーミヤさん、右側から始めてくれるかしら。順に開けて調べていくわよ――
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]アロイジウスさん！
+[charslot(slot="m",name="avg_npc_1966_1#11$1")]
+[name="アロイジウス"]どうしたの？
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="アロイジウス"]ああ、私としたことが配慮に欠けていたわね。あなたは遺体を見たことがないかもしれないのよね……なら上に行って他の人たちの助けを呼んできて。無理しなくてもいいわよ。
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]違います、そういうことじゃありません！
+[name="アーミヤ"]感染者のご遺体はとても危険なんです。崩壊が起きていれば、遮断機能のある棺の蓋を開けた瞬間に、周囲に源石粉塵が飛散する恐れが――
+[dialog]
+[charslot]
+[CameraShake(duration=1, xstrength=5, ystrength=5, vibrato=40, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_pushcoffinlid")]
+[delay(time=2)]
+アーミヤが言い終わる前に、近衛軍の若者はすでに棺の蓋を開けていた。
+粉塵が舞い上がることはなかったものの、アロイジウスは表情を曇らせた。
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]どういうこと……
+[charslot(slot="m",name="avg_npc_1966_1#10$1")]
+[name="アロイジウス"]……
+[playsound(key="$d_avg_pushcoffinlid")]
+[charslot(slot = "m", focus = "n")]
+アロイジウスは何も言わないまま、次々に棺の蓋を開けていく。
+[charslot(slot="m",name="avg_npc_1966_1#10$1")]
+[name="アロイジウス"]ここに安置されている遺体に……
+[name="アロイジウス"]感染者は一人もいないわ。
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]……
+[charslot(slot="m",name="avg_npc_1966_1#5$1")]
+[name="アロイジウス"]待って、こちらに来ないで、アーミヤさん。
+[name="アロイジウス"]この研究所は間違いなく非感染者に対して何らかの人体実験を行っていた――私にわかるのはそれだけ。あなたもそれだけ知っていれば十分よ。
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="アロイジウス"]直接見る必要はないわ。
+[charslot(slot="m",name="avg_1037_amiya3_1#2$1")]
+[name="アーミヤ"]お気遣いありがとうございます。ですが私は……自分の目で確認しなければいけないんです。
+[charslot(duration=1)]
+これはアーミヤにとっては、ある程度予想していた事実だった。研究所に足を踏み入れた時から、この建物に残る悲しみが彼女の心を覆っていたのだ。
+冷たく粘ついた苦痛が壁の隅々にまとわりついている。人の脆弱な指では石材や鋼鉄に爪痕も、血の跡すらも刻むことはできず、残るのはただ憎しみだけだった。
+憎しみだけだったのだ。
+アーミヤは、自分に向けて伸びてくる実体のない体を努めて無視した。静寂の中、自分の心臓の鼓動が胸の中に鳴り響く。
+[dialog]
+[playsound(key="$d_avg_openftstpwalk")]
+[BackgroundTween(duration=3,xScaleFrom=1, yScaleFrom=1, xScaleTo=1.1, yScaleTo=1.1,block=false, yTo=50)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2, fadetime=3)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2, fadetime=3)]
+[Delay(time=4)]
+[focusout(duration=0.5, type="bg", from=0, to=0.5)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=10, randomness=90, fadeout=true, block=false)]
+[Background(image="bg_Morgue",screenadapt="coverall",xScale=1.15, yScale=1.15,fadetime=1, y=50)]
+[PlaySound(key="$d_gen_heartbeat",channel="h",loop=true, volume=0.5)]
+[Blocker(a=0.1, r=0.7, g=0, b=0, fadetime=1)]
+[Delay(time=1.7)]
+[Background(image="bg_Morgue",screenadapt="coverall",xScale=1.1, yScale=1.1,fadetime=1, y=50)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=10, vibrato=10, randomness=90, fadeout=true, block=false)]
+[Delay(time=2)]
+[name="アーミヤ"]……
+[charslot(slot = "m", focus = "n")]
+十数体の遺体のどれもが、似たような惨状だった。
+ありえないほどにねじ曲がり、皮膚は裂け、内臓や骨が露出し、およそ人の形を留めていない。
+理解不能な何らかのエネルギーを注入され、それが内から外に向けて人体を捻じ曲げ、破壊し尽くしているかのように見えた。
+そうした過程がどれほど続いたのかは誰にもわからない。彼らが生前どんな苦しみを味わったのかも……
+[name="アーミヤ"]……
+[stopsound(channel="h",fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain]
+[Background(image="bg_Morgue",screenadapt="coverall")]
+[focusout(duration=0, type="bg", from=1, to=0)]
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="アロイジウス"]だ、大丈夫？
+[dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1")]
+[Delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+アーミヤに恐怖はなかった。
+怒り。
+彼女が感じたのは、怒りだけだった。
+[dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1")]
+[playsound(key="$transmission")]
+[Delay(time=1.5)]
+[name="アーミヤ"]……Mantraさん。
+[charslot(slot = "m", focus = "n")]
+ほとんど間を置かず、聞き慣れた声がすぐに彼女に応えた。
+[playsound(key="$d_gen_transmissionget")]
+[name="Mantra"]聞いている。
+[name="Mantra"]アーミヤ、何か見つけたか？
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]現在アロイジウスさんと研究所の地下にある死体安置所を調査中です。この研究所では、かつて大規模な人体実験が行われていたということが確認できました。実験の詳細は不明ですが……
+[name="アーミヤ"]発見した被害者は全員非感染者でした。今のところ感染者の異変に関する手がかりは掴めていません……
+[charslot(slot = "m", focus = "n")]
+[name="Mantra"]……
+[name="Mantra"]了解した。ドクターに知らせておく。
+[name="Mantra"]安全に気をつけてくれ。何かあれば連絡を。
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1")]
+[name="アーミヤ"]私たちが抱いていた懸念について、現在ほぼ明確になったと言えます。
+[name="アーミヤ"]ここは、いえ、クライニ・セーヴェル全体の状況は事前に得た情報よりもひどいものです。
+[name="アーミヤ"]研究所内で私に襲いかかってきた強烈な感情、道中で見聞きしたこと――監視隊をリンチしていた感染者たちと、近衛兵がもたらした汚染……
+[name="アーミヤ"]それらすべてが、ここで起きた事故が感染者の異変だけに留まらないことを示しています。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g9_institutecorridor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$transmission")]
+[delay(time=1.5)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[Decision(options="アーミヤの方でいくつか発見があった。", values="1")]
+[Predicate(references="1")]
+[Decision(options="ここで非合法の人体実験が行われていたと確認できた。;だが、まだ感染者が変異した原因は判明していない。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="ターゲットが何者であれ、何かを知っているはずだ。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]うん……でもその人は、一体どこにいるんだ？
+[name="Mon3tr"]坑道側に近い部屋は一通り開けたが、誰もいなかった。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="鍵がかかった部屋は？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]同じだ。どれも旧式の鍵ばかりだったから簡単にこじ開けられた。
+[name="Mon3tr"]大体の部屋は空のベッドを除けば棚や計算用紙の類の物が置かれているだけで、他には何もなかった。鍵がかかっているかで変化はなかったな。
+[charslot(slot="m",name="avg_4179_monstr_1#4$1")]
+[name="Mon3tr"]例の者はもうここを離れたんじゃないか？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="我々が探し方を間違えていたのかもしれない。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]どういう意味だ？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="どの階にも閉ざされた展望台があると言っていた。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]そんなものはなかったけど――
+[charslot(slot="m",name="avg_4179_monstr_1#4$1")]
+[name="Mon3tr"]いや、おかしい。回廊の四方は部屋だし、どの部屋も開けてみた。この奇妙な建物にはそもそも展望台を作るスペースなんかない！
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="だとすると、坑道に面した部屋の中に……;我々が見落としていた隠し扉があるのかもしれない。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="部屋の中に、隠されたスペースが。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_blurryvoice_loop", loop=true, channel="hv",volume=0)]
+[SoundVolume(volume=0.4, channel="hv",fadetime=2)]
+[name="不明瞭な声"]……？　……
+それは唐突に現れた。途切れ途切れのかすれた音が、聞く者の足首から首筋へ這い上っていき、後頭部の辺りで冷ややかに留まった。
+人の声に似てはいるが、はっきりとは判別できない。
+[name="不明瞭な声"]……
+[dialog]
+[Decision(options="Mon3tr、聞こえたか？;音がする。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]（小声）私も聞こえた。前方だ、あの部屋は覚えている。
+[name="Mon3tr"]灯りが壊れてた部屋だ。ドクター、私の後ろからついてきて。
+[stopmusic(fadetime=2)]
+[Dialog]
+[playsound(key="$dooropenquite")]
+[StopSound(channel="hv", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+その扉の奥に隠されたもう一つの扉は施錠されていなかった。かつて人の手が残した温もりも、ノブも冷え切っている。
+Mon3trはその小ぶりな扉を開いた。暗闇の中、かすかな蝋燭の灯りが不意に来訪者の目に飛び込んでくる。
+[dialog]
+[Image(image="66_i04", xScale=1.2, yScale=1.2,screenadapt="coverall")]
+[ImageTween(xFrom=120, xTo=50, duration=60, block=false,yFrom=-20, yTo=-20)]
+[cgitem(image="cgitem_66_i04", style="cg",layer = 1,afrom = 0, ato = 1, aduration = 0, pfrom = "0,-100",pto = "50,-100", pduration = 60,sfrom = 1.01, sto = 1.07, sduration = 0.1)]
+[playsound(key="$d_avg_waxoildrop", loop=true, channel="bgs")]
+[delay(time=0.3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+部屋の中は蝋燭の灯りで照らされている、真っ先に聞こえたのは人の声ではなく、粘ついた液体の音だった。
+燃えて流体となった脂が滴り落ち、滴り落ちて、地面に不規則に広がる赤黒い跡に溶け込み、散らばった紙片を汚していく。
+紙には……いくつかの手形。それと、横に数式が殴り書きされている。まるで震える手で書かれた恐怖と怒りの叫びのようだった。
+[playMusic(key="$monastery_sad_loop", volume=0.6)]
+[name="呆然自失した声"]無意味だ。何もかも……無意味。
+[name="呆然自失した声"]偉大なるウルサスはあらゆる物を所有すると言うのに、その広大な土地には何もない……
+[name="呆然自失した声"]あるのはこのどうしようもない災厄だけ。
+[name="呆然自失した声"]ハッ……イリヤ先生……
+[name="呆然自失した声"]あなたが正しかったことがようやくわかりました！
+[name="呆然自失した声"]あなたは正しかった。まったくその通りでした！　でも今、あなたはどこに？　一体どこにいるんですか？
+[name="呆然自失した声"]私は努力しました――がんばったんです！　だけど結局何もできなかった！
+[name="呆然自失した声"]本当は、先生たちのところに行くつもりでした。だけど、すべてを持ってから去らねばいけません。すべてを……持っていくんです。
+[name="呆然自失した声"]それから……
+[name="呆然自失した声"]またあなたたちに会いに行きます。
+[name="Mon3tr"]……
+[StopSound(channel="bgs", fadetime=2.5)]
+[Dialog]
+[StopSound(channel="hv", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[hidecgitem]
+[image]
+[delay(time=1)]
+[Background(image="66_g10_instituteinterior",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_burnpaper")]
+女性は手を伸ばし、一枚の紙を拾って蝋燭で火をつけた。
+炎はたちまち紙の半分を呑み込む。ほとんど狂気を浮かべて火を眺めていた彼女は、傍らに「付き添い」が現れたことに気づいていなかった。
+[dialog]
+[PlaySound(key="$d_avg_walkfast")]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1",duration=0.5)]
+[delay(time=1)]
+[name="Mon3tr"]クセニア！
+[name="Mon3tr"]クセニアだよな？
+[charslot(slot = "m", focus = "n")]
+[PlaySound(key="$d_avg_rollpaper")]
+Mon3trは駆け寄ると、燃え盛る紙を素手で握り締め、火が延焼するのを防いだ。
+へたりこんでいる女性に近づいてやっと、Mon3trはケーブルがびっしりと女性の周囲を埋め尽くしていることに気づいた。
+このケーブルはどこに繋がっている？　自分たちが駆けつけなかったら、炎によってどのような結果が訪れたのだろうか？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="彼女は「イリヤ」と言ったか？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]私もそう聞こえた！
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]クセニア、君なのか？　大きくなったな。顔つきが変わった……
+[name="Mon3tr"]なぜ他の人たちと一緒に逃げなかった？
+[dialog]
+[charslot]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4208_wintim_1#1$2",duration=1.5)]
+[delay(time=2.5)]
+[name="クセニア？"]……
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]外部の音に反応していないようだ。解離症に陥っているのかもしれない。
+[dialog]
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="脇に運んで、呼びかけ続けてみよう。", values="1")]
+[Predicate(references="1")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement")]
+[charslot(slot = "left", name = "avg_4208_wintim_1#1$2")]
+[charslot(slot = "right", name = "avg_4179_monstr_1#5$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "right", name = "avg_4179_monstr_1#5$1",focus="r")]
+[name="Mon3tr"]クセニア！　私たちは――
+[charslot(slot = "right", name = "avg_4179_monstr_1#9$1",focus="r")]
+[name="Mon3tr"]――私は……
+[charslot(slot = "left", name = "avg_4208_wintim_1#1$2",focus="l")]
+[name="クセニア？"]私は……
+[name="クセニア？"]会いに行きます……
+[dialog]
+[charslot]
+[delay(time=0.5)]
+[Decision(options="床の上のこの紙は……？", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_avg_paper1")]
+[PlaySound(key="$d_avg_paper2",channel="2",delay=1)]
+あなたは女性の足元に落ちていた紙をすべて拾い集めると、蝋燭の灯りを頼りに一枚一枚読み進めた。
+それらは想像していたような、失敗に終わった数式でも、ただの白紙でもなかった。そこには理路整然とした文章が、正確な文法のウルサス語で書かれている。
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Sticker(id="st1", text="私がこれを書き残すのは、この世の誰かにそれを伝えるためではない。", multi = true, x=200,y=220, alignment="left", size=24, delay=0.04, width=900,block = true)]
+[Sticker(id="st1", text="\n私や、私の愛するすべてにとって、言葉を残すことに意義は存在しない。したがって、これを綴るのは、ただ記憶と懺悔を墓まで持っていくためである。", x=300,y=300, alignment="left", multi = true, size=24, delay=0.04, width=900,block = true)]
+[Sticker(id="st1", text="\n私はこれまで石棺の研究が偉大なプロジェクトだと、何十万もの人々にクリーンエネルギーをもたらす可能性が目の前に迫っているのだと思っていた。だが、希望の火種は最終的に、人類自身の分裂によってかき消された。", x=300,y=340, alignment="left", multi = true, size=24, delay=0.04, width=900,block = true)]
+[Sticker(id="st1", text="\n私は無知ゆえにあの不公平な虐殺から幸運にも逃げ延びることができた。だが私の幸運もまた不公平であり、その代償に残りの人生を恐怖と凡庸さの中で過ごすことを余儀なくされた。", x=300,y=380, alignment="left", size=24, multi = true, delay=0.04, width=900,block = true)]
+[Sticker(id="st1", text="\n行く場所も、帰る家もなく、誇りにしていた才能も何の役にも立たず、私は人生で何一つ成し遂げられはしなかった。", x=300,y=380, alignment="left", size=24, multi = true, delay=0.04, width=900,block = true)]
+[Sticker(id="st1", duration=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[name="Mon3tr"]……クセニア。
+[name="Mon3tr"]私はMon3trだ。君は――君は、ケルシーを覚えているか？　私は……
+[name="Mon3tr"]クセニア！
+[dialog]
+[PlaySound(key="$d_avg_paper2",channel="2")]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Sticker(id="st1", text="革新的なことを実現する機会を前にすると、人は常に様々な要因から躊躇する傾向にある。", multi = true, x=200,y=220, alignment="left", size=24, delay=0.04, width=900,block = true)]
+[Sticker(id="st1", text="\n長く無為に生き永らえてきた日々の中で、私はかつて書物の中で目にし、嘲笑していた言葉の意味がようやくはっきりと理解できた。", x=300,y=300, alignment="left", multi = true, size=24, delay=0.04, width=900,block = true)]
+[Sticker(id="st1", text="\n「ウルサスのあらゆるものに、これほど長く悲哀と不公平がつきまとっていたのは、我々が多くの面で他国に大きく遅れを取っていたからに過ぎない。」", x=300,y=340, alignment="left", multi = true, size=24, delay=0.04, width=900,block = true)]
+[Sticker(id="st1", text="\n「如何なる真理を見出し、如何なる成果を得たとしても、この遅れが着想の炎を容赦なくかき消すのだ。」", x=300,y=380, alignment="left", size=24, multi = true, delay=0.04, width=900,block = true)]
+[Sticker(id="st1", duration=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Decision(options="どうやらこれは遺書のようだ。", values="1")]
+[Predicate(references="1")]
+[name="Mon3tr"]名前を呼び続けているが、やはり反応がない。そこに石棺がチェルノボーグからどこへ運ばれたかは書いてあるか？
+[dialog]
+[Decision(options="いや。だが何らかの物質の研究について記されている。;ウルサスの感染者の異変について描写しているようだ。", values="1;2")]
+[Predicate(references="1;2")]
+[PlaySound(key="$d_avg_paper2",channel="2")]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Sticker(id="st1", text="「オカ」は一つの転機となるはずだった。しかしそれは結局私の人生の中で流れ去っていった他の機会と同じく、すぐに消えた……", multi = true, x=200,y=220, alignment="left", size=24, delay=0.04, width=900,block = true)]
+[Sticker(id="st1", text="\n私はまた研究方針を間違えたのだろうか？　それとも、この坑道に理由もなく現れた奇跡のような物質は、本当に何の変哲もない物なのだろうか？", x=300,y=300, alignment="left", multi = true, size=24, delay=0.04, width=900,block = true)]
+[Sticker(id="st1", text="\nこの物質が何のエネルギーも秘めていないのは明らかだ。そうであるのに、病に苛まれる患者の苦しみを重くし、彼らを狂わせて普段とは異なる行動を取らせ、不可能を成し遂げさせる。", x=300,y=300, alignment="left", multi = true, size=24, delay=0.04, width=900,block = true)]
+[Sticker(id="st1")]
+[delay(time=0.5)]
+[Sticker(id="st2", text="私はまだこの物質について知れてはいない。だが彼らを苦しめる元凶にもなりたくない！　幸い続ける必要はなくなった……ここで終わりだ。私にできるのは詩人のような抽象的な推測だけである。", x=200,y=220, alignment="left", multi = true, size=24, delay=0.04, width=900,block = true)]
+[Sticker(id="st2", text="\n「オカ」はウルサスの本質の奥深くに埋もれた一部に過ぎないのかもしれない。それは自らが軽蔑する者の苦痛を喜びとしながら、堂々とした、無害そうな姿を装うのだ。", x=300,y=340, alignment="left", multi = true, size=24, delay=0.04, width=900,block = true)]
+[Sticker(id="st2", text="\nいや、人の作り出した災厄に、自分の作り出した偽りの認識を被せるのはもうやめよう、クセニア。", x=300,y=380, alignment="left", size=24, multi = true, delay=0.04, width=900,block = true)]
+[Sticker(id="st2")]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_paper1",channel="1")]
+[Sticker(id="st3", text="あなたはまた卑劣にも生き延びただけだ。本来なら二十年前のあの時の軍隊か、怒りに燃える感染者に殺されていたはずなのに。", multi = true, x=200,y=220, alignment="left", size=24, delay=0.04, width=900,block = true)]
+[Sticker(id="st3", text="\nこれで終わりにしよう。", x=300,y=300, alignment="left", multi = true, size=24, delay=0.04, width=900,block = true)]
+[Sticker(id="st3", duration=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "left", name = "avg_4208_wintim_1#1$2",focus="r")]
+[charslot(slot = "right", name = "avg_4179_monstr_1#9$1",focus="r")]
+[name="Mon3tr"]……クセニア……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="間違いない、彼女がクセニアだ。", values="1")]
+[Predicate(references="1")]
+[Decision(options="「オカ」とは何だ？", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "left", name = "avg_4208_wintim_1#1$2",focus="l")]
+[name="クセニア"]「オカ」は……
+[charslot(slot = "right", name = "avg_4179_monstr_1#8$1",focus="r")]
+[name="Mon3tr"]クセニア？
+[charslot(slot = "left", name = "avg_4208_wintim_1#1$2",focus="l")]
+[name="クセニア"]……近衛兵を……殺せます……
+[name="クセニア"]危険です。
+[Dialog]
+[Delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot] 

@@ -1,0 +1,454 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_rockfall",volume=1)]
+[playsound(key="$d_avg_rainlight_loop", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=40, randomness=90, fadeout=true, block=false)]
+[Background(image="66_g6_magnetofluidwaterfall",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[Decision(options="……;……", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="움직임을……;멈췄지?", values="1;2")]
+[Predicate(references="1;2")]
+[Delay(time=0.5)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4208_wintim_1#8$1",duration=1)]
+[Delay(time=2)]
+[name="크세니야"]그런 것…… 같아요.
+[name="크세니야"]포효, 그리고 그 거친 숨소리도 사라졌어요. 공격이 통한 걸까요?
+[name="크세니야"]하지만 아직도 서 있어요. 안 쓰러졌어요……
+[charslot(slot="m",name="avg_4179_monstr_1#6$1")]
+[name="Mon3tr"]둘은 가만히 있어! 내가 가서 확인해 볼게.
+[dialog]
+[playsound(key="$d_avg_shallowswalk", loop=true, channel="w1")]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[StopSound(channel="w1", fadetime=0.5)]
+Mon3tr는 두 사람의 안전을 확인한 뒤, 혼자 앞으로 걸어갔다.
+몇 초 전까지만 해도 광기에 사로잡혀 있던 맹글러비스트의 몸에 있던 오리지늄 일부가 떨어져 나가 있었고, 이상할 정도로 조용히 서 있었다. 기이한 앞다리는 힘없이 축 늘어져 있었다.
+Mon3tr가 조심스럽게 다가갔다.
+Mon3tr는 맹글러비스트를 주의 깊게 살폈다. 원래도 위험한 짐승이긴 하지만, 몸에 생긴 기형적인 변이 때문에 더욱 기괴해 보였다.
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]오리지늄 때문에 몸이 급격하게 '인간'으로 변해 가고 있어……
+[name="Mon3tr"]엄청 고통스러울 텐데……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$smallearthquake", loop=true, channel="a")]
+[CameraShake(duration=1.5, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.6)]
+[StopSound(channel="a", fadetime=0.5)]
+[Delay(time=0.5)]
+[Decision(options="Mon3tr, 조심해!;다시 움직인다!", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]윽……
+[charslot]
+그러나 예상했던 공격은 일어나지 않았다. 맹글러비스트는 움직이기는커녕 돌연 앞으로……
+[dialog]
+[PlaySound(key="$d_avg_giantmonster_fall")]
+[delay(time=1)]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+푹 꼬꾸라져 앞다리가 다시 바닥에 닿았다.
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……Mon3tr, 이 틈에 빨리 나가자.;연구소로 돌아가자. 지금 바로.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]아니야, 박사.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Mon3tr?", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_avg_giantmonster_breathe")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]녀석의 등이 들썩거려. 아직 숨을 쉬고 있어!
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]그런데 뭔가…… 되게 고통스러워 보이는데? 잘 모르겠어.
+[name="Mon3tr"]내겐 아미야처럼 감정을 느낄 수 있는 능력은 없어, 게다가 이 녀석은 그냥 변이된 동물이야. 하지만……
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]이대로 내버려둔다면, 죽게 된다는 것 정도는 알 수 있어.
+[name="Mon3tr"]오리지늄이 녀석의 목을 꿰뚫었어. 아마 안 아픈 곳이 없겠지. 변이된 장기를 도려내고 싶어도 그럴 능력이 없을 테고.
+[name="Mon3tr"]그래서 아까 우릴 공격했을 거야. 아마 자신을 통제할 수 없는 것 같아.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="그럼, 우리가 그 고통을 끝내주자.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]좋아.
+[charslot(slot="m",name="avg_4179_monstr_1#3$1")]
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]할 수 있어. 나는 할 수 있어……
+[name="Mon3tr"]고통을 끝내줄 수 있어.
+[dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1)]
+[playsound(key="$d_avg_shallowswalk", loop=true, channel="w1")]
+[delay(time=1.5)]
+[StopSound(channel="w1", fadetime=0.5)]
+그녀는 쓰러진 짐승을 향해 다가가 곁에 멈춰 섰다. 그리고 결정이 거의 드러나지 않은 부분을 찾아 발톱으로 꾹 눌렀다.
+맹글러비스트를 바라보는 Mon3tr의 눈동자는 이상하리만큼 고요했다.
+그리고 마치 최소침습수술을 하듯, 정밀하고 빠르게 이 변이된 짐승의 마지막 숨통을 끊었다.
+[Dialog]
+[PlaySound(key="$knifegore")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=2)]
+[name="Mon3tr"]……가자, 박사.
+[name="Mon3tr"]연구소로 돌아가자.
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[charslot]
+[delay(time=3)]
+[imgeffect(name="$ib_screendistortion", image="66_i09")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[playMusic(intro="$suspenseful_intro",key="$suspenseful_loop", volume=0.6)]
+만트라는 계속 귀를 기울였다.
+그녀는 자신의 시야에 비친 광경을 더 이상 믿을 수 없다는 걸 잘 알고 있었다. 그게 의도적인 왜곡이든, 의도치 않게 비친 진실이든.
+그래서 계속 듣고 있었다. 군중 속 마지막 기도문이 첫눈처럼 내려앉을 때까지.
+[name="만트라"]유로지비……
+[name="만트라"]'가브리일'.
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="듣고 있다.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="만트라"]그럼 멈춰라.
+[name="만트라"]멈춰……
+[name="만트라"]이 모든 걸!
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="멈출 수 없다. 애초에 시작도 안 했으니.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="그대가 본 건, 그저 그대의 생각일 뿐.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+만트라는 더 이상 소통을 시도하지 않았다. 그녀는 한 걸음 앞으로 다가가, 그 흔들리고 있는 붉은색, 하얀색, 검은색 선들을 안정시키려고 했다.
+그러나 그녀가 손을 뻗은 순간……
+[dialog]
+[Dialog]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$d_avg_tinnitus")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1.5, block=true)]
+[imgeffect]
+[name="만트라"]……!
+[name="가까워졌다 멀어졌다 하는 목소리"]……만트라……
+[dialog]
+[image]
+[charslot]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="라이디언"]만트라!
+[charslot(slot="m",name="avg_4204_mantra_1#6$1")]
+[name="만트라"]……어?
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="라이디언"]아까부터 미동도 없었어.
+[name="라이디언"]당신이 이러는 건 처음 봐…… 무슨 일이야?
+[charslot(slot="m",name="avg_4204_mantra_1#3$1")]
+[name="만트라"]너희들은 아무것도 못 들었어?
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="라이디언"]뭐가 들려?
+[charslot]
+만트라는 곧바로 대답하진 않았다.
+주위를 둘러본 그녀는 광부들의 자세가 조금 전과 다르다는 걸 발견했다. 그녀는 눈살을 찌푸리며 옆으로 돌아보았다.
+[charslot(slot="m",name="avg_4204_mantra_1#10$1")]
+[name="만트라"]알로이즈는 어디 있지?
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="라이디언"]내 말을 듣고 뛰쳐나갔어.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]그러니까, 너는 조금 전에 확실히 우리에게 떠나라고 했네.
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="라이디언"]맞아. 하지만 왜 떠나라고 소리쳤는지 전혀 기억나질 않아…… 너무 이상해.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]정신계 오리지늄 아츠 때문이야.
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="라이디언"]확실해? 우린 전문 훈련을 받았잖아. 그런 공격에 전혀 무방비 상태였을 리 없어.
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="만트라"]라이디언, 단기 기억에 간섭이 있었는지 확인해 봐.
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="라이디언"]어떤 간섭?
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="만트라"]내가 할 수 있는 간섭.
+[name="만트라"]한 번은 내가 메커니스트에게 너를 찾아 '덴디'와 '액시'를 빌리는 걸 잊게 한 적이 있어. 그건 본질적으로 기억을 지운 게 아니라, 기억의 형성을 차단한 거야.
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="라이디언"]기억나…… 당신이 그때 처음 오리지늄 아츠를 쓴 거였지? 대뇌에 정보가 저장되지 않으면 기억의 누락, 즉 망각이 일어나지.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]맞아, 그건 네 제안이었어. 인체의 전기신호에 대한 이해와 응용은 네가 나보다 훨씬 경험이 더 많았으니까.
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="라이디언"]그럼, 여기 당신과 같은 오리지늄 아츠를 쓰는 자가 있다는 거야?
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]확실치 않아. 내가 너희들보다 더 많이 보고 들어서 그럴 수도 있어.
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="라이디언"]그게 무슨 뜻이야?
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="만트라"]라이디언, 우르수스의 유로지비가 여기 있을지도 몰라.
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="라이디언"]유로지비? 갑자기 그 얘기는 왜……
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="라이디언"]뭐? 유로지비가 여기 있다고? 우르수스의 마지막 유로지비는 2년 전 디에티 그라이퍼부르크에서 불에 타 죽었잖아. 이렇게 빨리 또 다른 유로지비가 나올 수 있어?
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]모르겠어. 이제 확인해 봐야지.
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="라이디언"]만약 정말로 유로지비가 존재하고, 이 무리에 숨어 있었는데 내가 여태까지 눈치채지 못했다면…… 이건 정말 위험한 상황이야.
+[name="라이디언"]다른 사람들한테 경계하라고 전할게, 당신도 조심해.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]이 위험은 물리적인 게 아니야. 적어도 아직까지는.
+[name="만트라"]필요하면 즉시 도움을 요청할게.
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="라이디언"]잊지 마.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")] 
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+만트라는 돌아서서 몇 초 전 붉은빛이 있었던 그 위치로 향했다.
+가는 동안, 서로 부대끼던 광부들이 그녀에게 길을 비켜 주거나, 그녀를 향해 손을 뻗었다.
+[dialog]
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="베토치키"]저기, 누구…… 찾으세요?
+[name="베토치키"]우린, 디에티, 그라이퍼부르크로, 떠날 수, 있는 거죠?
+[name="베토치키"]우린, 사, 살아남을 수, 있겠죠……?
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"](고개를 끄덕인다)
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="베토치키"]그런데, 다, 다른, 사람들, 안 떠나고, 싶나 봐요? 비얀 아저씨, 물어봤는데, 안 간대요.
+[charslot(slot="m",name="avg_4207_branch_1#10$1")]
+[name="베토치키"]아저씨, 상처가, 썩고, 있는데도…… 더는, 도망치기, 싫대요.
+[name="베토치키"]그래도, 사는 게…… 그 어떤, 것보다, 중요한 거, 아닌가요?
+[charslot(slot="m",name="avg_4204_mantra_1#2$1")]
+[name="만트라"]……
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="베토치키"]대답이, 없으시네요……
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="지친 광부"]외지인.
+[name="지친 광부"]나댜를 만나러 가려는 거지? 그럼 무릎을 꿇고 올려다봐야 해.
+[name="지친 광부"]나댜를 바라보며, 참회하고 용서를 받아. 그러면 지금까지 몸부림치면서 한 번도 평온을 얻지 못한 자신이 얼마나 어리석었는지 깨닫게 될 거다.
+[charslot]
+만트라는 긍정도 부정도 하지 않았다. 그녀는 오리지늄 아츠로 그들과 대화하지 않았고, 그저 고개를 끄덕이며 방 안 깊숙한 곳으로 시선을 고정한 채 그들을 스쳐 지나갔다.
+[name="지친 광부"]알게 될 거야…… 나댜에게 가면 알게 될 거야.
+방 안 가장 깊숙한 곳에, 구부정하고 왜소해 보이는 회백색 형체가 마치 조각상처럼 고요히 앉아 있었다.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g15_ursusvillage_ruins",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1966_1#11$1",duration=0.5)]
+[delay(time=1)]
+[name="알로이즈"]……유로지비?
+[charslot(slot="m",name="avg_npc_1966_1#5$1")]
+[name="알로이즈"]말도 안 돼, 절대 그럴 리 없어! 그놈은 이미 죽었어!
+[name="알로이즈"]당시 폐하께서 자비를 베풀어 죄를 선고하기 전에, 그놈에게 자기 죄를 변호하도록 허락하셨어.
+[name="알로이즈"]그 결과, 꼬박 7일! 그놈은 꼬박 7일 동안 물 한 모금조차 마시지 않은 채, 단 한순간도 쉬지 않고 궤변만 늘어놓으면서 시간을 끌었어.
+[name="알로이즈"]심지어 그놈은 제국 의회의 중앙에 서서, 방청하러 온 모든 사람들에게 이렇게 말했어……
+[charslot(slot="m",name="avg_npc_1966_1#8$1")]
+[name="알로이즈"]“그대들을 용서한다”고!
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="알로이즈"]결국 폐하께서 참다못해 직접 사형을 선고했지. 하지만 그놈에게 현혹된 신자들이 형장을 덮치는 바람에, 디에티 그라이퍼부르크에는 지난 10년 이래 가장 큰 폭동이 일어났어.
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="라이디언"]그건 우리도 알아.
+[charslot(slot="m",name="avg_npc_1966_1#10$1")]
+[name="알로이즈"]……
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="라이디언"]문제는, 만트라가 유로지비라고 말한 이상, 상대가 그럴만한 흔적을 보였다는 거야.
+[name="라이디언"]우리가 할 수 있는 건 자신을 지키면서, 만트라의 소식을 기다리는 것뿐이야.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]……
+[charslot(slot = "m", focus = "n")]
+만트라는 광부가 말했던 것처럼 무릎을 꿇지는 않았다.
+만트라는 역광이 드리운 그림자 속으로 걸어 들어가, 정면을 똑바로 응시했다. 마치 눈앞에 자신을 되돌아보는 한 쌍의 눈동자가 있는 것처럼.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]네가 '들린'다는 거, 다 알아.
+[dialog]
+[charslot]
+[delay(time=1)]
+[playMusic(intro="$kjerag_n_intro",key="$kjerag_n_loop", volume=0.6)]
+[focusout(duration=1.5, type="bg", from=0, to=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="들리고 말고, 그대의 의문이 들린다.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]네가 내 오리지늄 아츠와 화법을 흉내 낸 것만은 아니길 바랄게, 유로지비.
+[charslot]
+[dialog]
+[Blocker(a=0.2, r=0, g=0, b=0, fadetime=1.5)]
+[delay(time=2)]
+[name="나댜"]'유로지비'…… 그렇게 불러도 상관없어.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]무슨 의미야?
+[charslot]
+[name="나댜"]가브리일, 솔로미다, 베스메르트, 아브로라, 나댜…… 그리고 '유로지비'.
+[name="나댜"]모두, 나야.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]……대답해, 왜 이 고통받는 사람들 속에 섞여 있었지?
+[charslot]
+[name="나댜"]포교 때문에.
+[name="나댜"]나는 이 드넓은 땅을 거닐며, 사람들을 고통에서 구원할 것이다.
+[name="나댜"]그 또한, 내가 그녀를 보았고, 그녀를 들었기 때문이지.
+[name="나댜"]그녀의 고통이 나를 머물게 했고, 나도 그 때문에 멈춰 섰다.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]누구지? 그 '그녀'라는 사람은?
+[charslot]
+[name="나댜"]고통받은 한 영혼.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]그녀를 속여서 너를 '나댜'라고 부르게 한 건가?
+[charslot]
+[name="나댜"]속인 적은 없다.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]헛소리.
+[charslot]
+[name="나댜"]그녀는 그대처럼 물었고, 나는 나처럼 대답했다.
+[name="나댜"]그뿐이다.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]의미 없는 대답이야. 말해, 네 정체는 뭐지?
+[charslot]
+[name="나댜"]그대도 나를 봤을 것이다.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]내가 본 건 무질서한 환영이야.
+[charslot]
+[name="나댜"]맞아, 그게 나다.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]하지만 다른 사람들 눈에는, 그렇지 않아.
+[name="만트라"]설명해.
+[charslot]
+[name="나댜"]세상 사람들이 본 내 모습은, 나에 대한 그들의 인식과 기대의 투영일 뿐이다.
+[name="나댜"]모든 영혼 속에서, 오직 그대만이 내 존재의 이유를 이해할 거라 생각했는데.
+[name="나댜"]왜냐하면……
+[name="나댜"]그대는 미완의 조각상이니까. 그대는 과거에……
+[name="나댜"]'내'가 될 터였던 존재였으니까.
+만트라는 눈앞의 기괴한 환영을 노려봤지만, 그 환영에서 자신의 판단에 도움이 될 만한 정보를 얻을 수 있을지는 판단이 서지 않았다.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]……
+[charslot]
+[name="나댜"]아주 오래전, 그대는 까맣게 썩은 살점을 도려낸 적이 있었지.
+[name="나댜"]나도 마찬가지다. 놈은 나를 쫓았고, 나는 놈을 쫓았다. 마치 호흡 중간중간에 몸에서 썩은 살점을 도려내듯이.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]황당한 비유로군.
+[charslot]
+[name="나댜"]아니, 간단한 이치다.
+[name="나댜"]만약 이미 썩어버려, 더 이상 신체의 다른 부분과 숨결을 나누지 않는다면……
+[name="나댜"]그걸 붙잡고 있을 이유가 있을까?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Image(image="avg_8_29",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="만트라"]……그게……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i01",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="만트라"]네 기억이야?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i02",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i03",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Blocker(a=0.2, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="만트라"]하지만, 내 기억이기도……
+[charslot(slot="m",name="avg_4204_mantra_1#10$1")]
+[name="만트라"]아니, 근위병…… 너는 근위병에게도 영향을 줄 수 있으니, 광부들에게도 당연히 영향을 줄 수 있겠지.
+[charslot]
+[name="나댜"]그대는 놈을 죽였고, 그대는 내가 되었다.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]만약, 이게 우리 사이의 유일한 공통점이라면……
+[charslot(slot="m",name="avg_4204_mantra_1#6$1")]
+[name="만트라"]'신체', '썩은 살점'. 너와 근위병의 관계…… 유로지비는 근위병 실험의 근원인가.
+[charslot]
+떨리는 환영 속에서, 더 이상 아무 소리도 들려오지 않았다. 반박도, 긍정도 없었다.
+만트라는 뒤로 물러나 그림자의 경계를 벗어났다.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]……라이디언, 지원이 필요해.
+[charslot(slot = "m", focus = "n")]
+[name="라이디언"]난 여기 있어.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]내 추측을 확인했어.
+[name="만트라"]그리고, 추가 정보도……
+[name="만트라"]유로지비가 광부들 사이에 숨어 있었고, 광부들을 도와 근위병을 죽였어.
+[charslot(slot = "m", focus = "n")]
+[name="라이디언"]……알았어.
+[name="라이디언"]우리가 뭘 하면 될까?
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]계속해서 우르수스 다른 지역에 있는 로도스 아일랜드 지원팀에 연락할 방법을 찾아. 그리고 아미야에게는 알로이즈를 잡아 두라 전하고.
+[name="만트라"]지금 당장 이곳을 떠날 순 없어. 적어도 광부들을 깨울 방법을 찾기 전까지는.
+[name="만트라"]엘리시움에게는 내 오리지늄 아츠 범위에 있으라고 전해. 도움이 필요할지도 모르니.
+[charslot(slot = "m", focus = "n")]
+[name="라이디언"]뭘 하려고?
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]유로지비가 광부들에게 가한 영향을 제거할 거야.
+[charslot(slot = "m", focus = "n")]
+[name="라이디언"]유로지비가 광부들을 조종해서 못 떠나게 한다는 거야?
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]맞아.
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="만트라"]우리는 유로지비를 직접 죽일 수 없지만, 놈은 언제든지 여기에 있는 사람들을 죽일 수 있어.
+[charslot(slot = "m", focus = "n")]
+[name="라이디언"]……그럼, 아미야가 도움이 될 수도 있겠네.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="만트라"]그럴지도. 하지만 아미야는 유로지비를 몰라. 아무것도 모르는 아미야를 이 일에 휘말리게 하고 싶지 않아.
+[name="만트라"]유로지비와 나의 능력은 비슷한 부분이 많아. 그렇기에 이 판단을 내릴 수 있는 건 오직 나뿐이야.
+[name="만트라"]놈은 타인의 인지에 의해 자신을 형성하고 있어. 놈이 '나댜'라는 정체성을 형성한 핵심을 찾아야만, 유로지비가 가한 영향을 제거할 수 있어.
+[charslot(slot = "m", focus = "n")]
+[name="라이디언"]짐작 가는 대상이 있구나.
+[charslot(slot="m",name="avg_4204_mantra_1#2$1")]
+[name="만트라"]……그래.
+[charslot]
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4207_branch_1#9$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot = "m", focus = "n")]
+만트라는 주위의 광부들을 둘러본 뒤, 자기 곁을 지나 유로지비에게로 향하는 어린 소녀에게 눈길을 돌렸다.
+그녀는 망연히 중얼거리며, 당황하고 슬퍼하고 있었다.
+[charslot(slot="m",name="avg_4204_mantra_1#3$1")]
+[name="만트라"]하지만, 확인할 시간이 필요해.
+[Dialog]
+[Delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot]  

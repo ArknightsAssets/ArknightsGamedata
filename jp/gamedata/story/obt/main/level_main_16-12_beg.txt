@@ -1,0 +1,610 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="66_g3_miningarea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="クセニア"]この先が「オカ」が初めて発見された坑道です。
+[name="クセニア"]本来なら、あの件があった後厳重に管理されてしかるべきですが……この様子を見るに、完全に放棄されたみたいですね。
+[name="クセニア"]ですが朗報もあります。坑道内の活性源石粉塵量は操業停止後に急速に減少しているので、不活性化した源石結晶に直接触れさえしなければ、感染リスクは低いはずです。
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]ドクター、私たち以外の生命反応は検知されなかった――入るためにドンパチする必要はなさそうだ。
+[charslot]
+[dialog]
+[Decision(options="状況はまだ不透明だ。;監視隊と衛兵がいつ戻ってくるか分からない。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="急ごう。;できるだけ早く中に入り、すぐに戻ってくるんだ。", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[delay(time=1)]
+[name="Mon3tr"]クセニア、本当にこっちで合っているのか？
+[name="Mon3tr"]何も見えないぞ。
+[name="クセニア"]ごめんなさい、私も一度しか降りたことがないので……
+[name="クセニア"]まずは非常用電源のスイッチを探しましょう。
+[Dialog]
+[delay(time=1.5)]
+[name="クセニア"]あっ、ここです。
+[Dialog]
+[delay(time=1)]
+[PlaySound(key="$d_avg_spotlightc")]
+[Background(image="66_g5_deepmine",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4208_wintim_1#9$1",duration=0.5)]
+[delay(time=1)]
+[name="クセニア"]ふぅ、間違いなさそうですね。次はトロッコの進行方向と逆方向に進めばいいはずです。
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]逆方向？　もっと下へ降りるんじゃないのか。
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="クセニア"]前方は坑道ではなく、別の場所に繋がっています。具体的に何をする場所かは知りませんけど、人ではなく物資を運ぶ通路だったはずです。
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]トロッコは？　まだ動かせるのか？
+[dialog]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[PlaySound(key="$d_avg_goldbarhit")]
+[delay(time=1.5)]
+[name="クセニア"]トロッコ自体に問題がなかったとしても、放置されている期間が長いですから、非常用電源だけでは照明を保つので精一杯でしょう。動かすのはやめておきましょう。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="その通りだ。;歩いて降りるとしよう。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot]
+[charslot(slot="m",name="avg_4179_monstr_1#4$1")]
+[name="Mon3tr"]うーん。
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]二人とも、トロッコに乗ってくれ。
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="クセニア"]え？
+[dialog]
+[charslot]
+[Decision(options="トロッコにシートベルトはないぞ！;自分たちで歩いていける！", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]いいから乗って、ドクター。こちらのほうが時間の節約になる。
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="クセニア"]でもトロッコは動かないんじゃ――
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]心配するな、私がなんとかする。
+[name="Mon3tr"]ドクター、ちゃんと乗れるか？　手を貸そうか？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……問題ない！", values="1")]
+[Predicate(references="1")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.15, fadetime=0.01)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.15, fadetime=0.01)]
+[delay(time=0.25)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Mon3tr"]二人とも、準備はいいな？
+[name="クセニア"]ですが、Mon3trさん、一体何を――
+[dialog]
+[CameraShake(duration=0.5, xstrength=10, ystrength=5, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_tramcarwheel_loop", loop=true, channel="kc")]
+[delay(time=0.5)]
+[StopSound(channel="kc", fadetime=0.5)]
+[name="クセニア"]――きゃあ！？
+[dialog]
+[charslot]
+[Decision(options="絶対放り出される。;トロッコは間違いなくバラバラになるだろう。", values="1;2")]
+[Predicate(references="1;2")]
+[name="Mon3tr"]絶対大丈夫だから。しっかり座っていて。
+[name="Mon3tr"]出発するよ！
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=100, block=false)]
+[CameraShake(duration=-1, xstrength=1, ystrength=1, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_tramcarwheel_loop", loop=true, channel="kc")]
+[delay(time=1.5)]
+[name="クセニア"]よかった、見た限り坑道は無事みたいです。崩落している箇所もありません。
+[name="クセニア"]ですが……降りる前に火に当たっておくべきでしたね。坑道の奥は外よりも湿度がずっと高くて、イベリア沿海とウルサス内陸くらいの違いがあるんです。
+[name="クセニア"]当然、気温差がかなりあります……お二人とも大丈夫ですか？
+[name="Mon3tr"]私はもちろん大丈夫だ。ドクターは？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="頭が……シェイクされ内容物が均一になったみたいだ。;Mon3tr、ずいぶん楽しそうだな！", values="1;2")]
+[Predicate(references="1;2")]
+[name="Mon3tr"]スピードは抑えたぞ？
+[name="クセニア"]Mon3trさんは優秀な運転手、というか、押し手ですね。
+[name="Mon3tr"]ふん、どうやら私の問題じゃないみたいだな。
+[dialog]
+[charslot]
+[Decision(options="クセニア、一つ聞きたい。;鉱区で初めて「オカ」が発見されたのはいつのことだ？", values="1;2")]
+[Predicate(references="1;2")]
+[name="クセニア"]具体的な時間は不明ですが、つい一ヶ月前に、「オカ」の最初のサンプルが研究所に届きました。
+[name="クセニア"]源石坑道内にあのような……前代未聞の新物質が現れたと知ったのは、その時が初めてです。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="だが妙だな……", values="1")]
+[Predicate(references="1")]
+[Decision(options="坑道内に現れた物質を……;研究所はなぜ「人体実験」と結び付けた？", values="1;2")]
+[Predicate(references="1;2")]
+[name="クセニア"]「オカ」が見つかったこの坑道内で、感染者に信じられないような異変が起きたからです。
+[name="クセニア"]感染の進行状況が非常に高いにも関わらず、正常なバイタルサインを保っていたんです。「健康」とすら呼べるほどに……
+[name="Mon3tr"]どうも聞き覚えがある症状だな。
+[name="クセニア"]他の場所でも似たような患者がいるということですか？　その人たちも「オカ」に接触したんですか？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="他の可能性もあるかもしれない。;まだ定かではないが……", values="1;2")]
+[Predicate(references="1;2")]
+[name="クセニア"]とにかく……ウルサスの上の方々はその「奇跡」を再現しようとしています。
+[name="クセニア"]思うに、彼らが求めているのは病や痛みを恐れず、反抗することのない労働力、もっと言えば……特殊な軍隊なのかもしれません。
+[dialog]
+[charslot]
+[Decision(options="ウルサスがそう考えるのは不思議じゃない……;彼らはまだその行為が孕む危険性に気づいていない。", values="1;2")]
+[Predicate(references="1;2")]
+[name="Mon3tr"]ドクター、クセニア、もうすぐ着くみたいだ。
+[CameraShake(duration=1, xstrength=1, ystrength=1, vibrato=10, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="kc", fadetime=1)]
+[name="Mon3tr"]トロッコのレールはここまでだな。あとは歩いて行くしかない。
+[dialog]
+三人は暗闇の中を手探りで進んでいく。
+[dialog]
+[stopmusic(fadetime=2)]
+[playsound(key="$d_avg_rainlight_loop", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=2)]
+光よりも早く五感に届いたのはまたも音だった。それは水の音――重い水の音だ。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[curtain]
+[SoundVolume(volume=1, fadetime=3,channel="bgs")]
+[Background(image="66_g6_magnetofluidwaterfall",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+三人は顔を上げ、ゆっくりと目を開く。
+それからすぐに、坑道内の光が外からのものではないと気づいた。それは目の前の静止した液体と、視界の先で流れ落ちる――滝から発せられていたのだ。
+液体は黒曜石のような光沢を帯びており、落下する過程で高所の隙間から差し込む光を屈折させ、峻険とした洞窟内部を雨上がりの朝のように明るく照らしている。
+[playMusic(intro="$tech_intro",key="$tech_loop", volume=0.6)]
+[dialog]
+[charslot]
+[Decision(options="……逆川だ。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="クセニア"]おわかりになりますか？
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="クセニア"]そうです。逆川のように、「オカ」は本来溢れるはずの部分が傾斜面に沿って外へ流れ出すことがないので、逆流するしかなく、やがてはこうして「静止」してしまうんです。
+[name="クセニア"]ですが外的な力の影響がなくとも、実際のところある程度の流動性を保っています。彼らが「オカ」と名付けたのはそのためかもしれません。まるで川のようですから。
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]そこら中、この液体まみれだ。
+[name="Mon3tr"]これでは坑道というより、まるで天然の鍾乳洞だな。
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="クセニア"]はい。それに「オカ」自体が水そっくりなのも不思議です。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="どういうことだ？;まさか？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="クセニア"]いえ……ただの喩えです。
+[name="クセニア"]一定時間放置して沈殿させると、「オカ」は非常に安定した状態を示します。汎用溶剤として使用できるほどに。
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="クセニア"]待ってください！　だからと言って素手で触れては……
+[charslot(slot="m",name="avg_4208_wintim_1#7$1")]
+[name="クセニア"]あっ……
+[charslot]
+[dialog]
+[playsound(key="$d_avg_walk_water", loop=true, channel="w")]
+[delay(time=0.5)]
+[StopSound(channel="w", fadetime=0)]
+Mon3trは腰をかがめると、地面から試験管で液体をすくい上げた。手袋もつけず、何の防護措置も施さないまま。
+オカで濡れた手で試験管の液体を揺らしながら、彼女は険しい表情を浮かべている。
+[dialog]
+[charslot]
+[Decision(options="Mon3tr？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="クセニア"]Mon3trさん、直接触れてはいけません――防護装備を持ってきていますから、サンプルが欲しければ私に言ってください。私が採取しますから！
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]（小声）……ドクター、これが何なのか分かった。
+[charslot(slot="m",name="avg_4208_wintim_1#8$1")]
+[name="クセニア"]え？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……", values="1")]
+[Predicate(references="1")]
+[Decision(options="クセニア、サンプルの採取についてだが……;あそこの滝辺りのサンプルを採ってきてくれないか？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="クセニア"]あっ、はい。わかりました。
+[name="クセニア"]ここで待っていてください。すぐに戻ってきます。
+[charslot(slot="m",name="avg_4208_wintim_1#4$1")]
+[name="クセニア"]……オカは危険です。気をつけてくださいね。
+[dialog]
+[playsound(key="$d_avg_shallowswalk", loop=true, channel="w1")]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[StopSound(channel="w1", fadetime=0.5)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1",duration=1)]
+[delay(time=2)]
+[name="Mon3tr"]この「オカ」と名付けられた液体は……実のところ「源石」だ。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="源石……;なぜこのような形に？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]説明しようと思うと少しややこしくなる。
+[name="Mon3tr"]ドクター、ライン生命で研究していた「伝達物質」や、イベリア錬金術の中で言及されていた「心相原質」を覚えているか？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="ああ。;それらと何か関係があるのか？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]恐らく「オカ」はそれらの原型か、元となった素材だ。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="「伝達物質」と「心相原質」の共通点……;どちらもある種の「媒体」だ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]その通り。人体と直接反応する性質と、情報を保存できる性質を備えた「媒体」だ。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="だからどちらも液体の形をしている？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]そうだと思う……
+[name="Mon3tr"]ドクターも知ってる通り、源石は「情報」の器であり同時に「エネルギー」の器だ。
+[charslot(slot="m",name="avg_4179_monstr_1#4$1")]
+[name="Mon3tr"]「伝達物質」と「心相原質」は、どちらも特定の手段で源石エネルギーを再度書き込んで記録し、様々な情報を保存するために作られた物だ。
+[name="Mon3tr"]一方で、ここに現れた「オカ」は、より効率的な手段で源石内のエネルギーを抽出した後に残された空白の物質……
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]つまり、ある意味正真正銘の「汎用溶剤」と言ってもいい存在だ。これは「オカ」と接触した感染者が「変異」を起こした理由の説明にもなるかもしれない。
+[name="Mon3tr"]「オカ」は簡単に言うと、エネルギーを失った源石だ。それが感染者の体内の源石活性を中和すると同時に、源石がさらなる成長を続けるためにかつてないほど優れた条件を作り出したんだ。
+[name="Mon3tr"]それは感染者のバイタルサインを一時的に維持できるかもしれないが、彼らが間もなく死ぬという結果を覆す力はない。
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]そして「オカ」を注入された非感染者は、体内に活性源石がほとんど存在しないため、強烈な拒絶反応を引き起こし、誰一人生き残れなかった……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="それがここに大量に現れたということは……;つまり……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]それこそ私たちが最も懸念すべきことだ……
+[name="Mon3tr"]ドクター、コロッサル主鉱脈は枯渇し始めている。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……;……;……", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]私たちが耳にした、ウルサスが源石採掘のペースを速めているという噂は……実際には鉱脈が枯渇した事実を隠すための偽装なのだろう。
+[name="Mon3tr"]この場所、ウルサス最北端の鉱区を起点に、枯渇はさらに加速していく。
+[name="Mon3tr"]ざっと計算してみたところ、これから四ヶ月以内に、ウルサス国内の源石埋蔵量は元の三割まで落ち込むと思われる……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="それが女大公が鉱区を封鎖した真の原因か。;こんなことを隠し通せるわけがない。", values="1;2")]
+[Predicate(references="1;2")]
+問いかけるまでもなく、視線を交わし合うあなたとMon3trの脳内には、同時に一つの名前が浮かんでいた。
+このようなことを成し遂げる力を持つのは、ただ一人の人物。すなわち――
+[dialog]
+[Decision(options="プリースティス。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]彼女以外には、考えられない。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="彼女はなぜこんなことを？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]我々は鉱脈の枯渇に干渉することはできないし、覆すことも不可能だ。
+[name="Mon3tr"]ウルサスは必ず崩壊する。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="ウルサスだけではないかもしれない。", values="1")]
+[Predicate(references="1")]
+[Decision(options="この規模の資源枯渇は必ずやテラ全体に影響を及ぼす。", values="1")]
+[Predicate(references="1")]
+[Decision(options="まさかそれが彼女の狙いか？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]ドクター、ドクター！　思い出したぞ。
+[name="Mon3tr"]「オカ」もまた旧文明の遺物……しかも君たちのかつての実験の副産物だ。
+[charslot(slot="m",name="avg_4179_monstr_1#4$1")]
+[name="Mon3tr"]鉱脈の枯渇が彼女の仕業なら、この中に有用な情報があるかもしれない。
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]ドクター、読み取れるかどうか試してみてくれ。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="どうすればいい……？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]今とれる方法は少ないから、直接手を入れてくれ。さっき私がサンプルを採取した時みたいに。
+[name="Mon3tr"]心配するな、「オカ」が君に危害を及ぼすことはない。
+[charslot]
+[dialog]
+[delay(time=0.5)]
+[playsound(key="$d_avg_walk_water", loop=true, channel="w")]
+[delay(time=0.5)]
+[StopSound(channel="w", fadetime=0)]
+Mon3trの指示に従い、あなたは身をかがめると、両手を「オカ」と呼ばれる液体の中に沈めた。
+あなたはしばらく待ち続けた。
+[dialog]
+[Decision(options="特に何も感じない。", values="1")]
+[Predicate(references="1")]
+あなたはそのまま、何かしらの変化か、あるいは反応が生じるのを待った。以前に何度も起きた「奇跡」と同じように。
+しかし結局何も起こらなかった。
+先史文明の産物は、あなたたちの間に何らかの繋がりがあることを拒絶し、否定しているようだ。
+[dialog]
+[Decision(options="もしかして情報を保存する機能を失っているのでは？;あるいは、最初から何の情報も残す気がなかったのか。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]……うむ、あり得なくはないな。
+[dialog]
+[charslot]
+[playsound(key="$d_avg_walk_water", loop=true, channel="ww")]
+[PlaySound(key="$d_avg_walkfast")]
+[charslot(slot="m",name="avg_4208_wintim_1#6$1",duration=0.5)]
+[delay(time=1)]
+[StopSound(channel="ww", fadetime=0)]
+[name="クセニア"]Mon3trさん、ドクター！
+[name="クセニア"]来てください。新しい発見があったんです！
+[name="クセニア"]滝の奥に空洞があったので、上ってみて、そこに立ったら――
+[charslot(slot="m",name="avg_4208_wintim_1#4$1")]
+[name="クセニア"]坑道内に特殊な周波数の音が発生していることに気づいたんです。これは少し不自然――いや、すごく不自然です！
+[name="クセニア"]まるで……音波を通して何かの情報を伝えようとしているように！
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]え……？
+[dialog]
+[charslot]
+[Decision(options="行ってみよう。", values="1")]
+[Predicate(references="1")]
+[stopmusic(fadetime=2)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[playsound(key="$d_avg_magneticwaterfall_loop", loop=true, channel="bgs")]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=2)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_doorknob",volume=1)]
+[bgeffect(name="$eb_glow_42i11_01",layer=1,x=-600,y=-400)]
+[Image(image="66_i06",fadetime=3, xScale=1.3, yScale=1.3,screenadapt="coverall")]
+[ImageTween( xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1, yScaleTo=1, duration=60)]
+[delay(time=2)]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0.6)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_airbuzz_1")]
+[name="Mon3tr"]これは――
+[name="Mon3tr"]滝の中に、こんな場所が？
+[dialog]
+[Decision(options="確かに……壮観だ。", values="1")]
+[Predicate(references="1")]
+[name="クセニア"]こちらです。よく聞いてください！　液体が岩を打つ音の中に、特別な周波数の音があるんです。まるで誰かに気づかせようとしてるみたいに。明らかに違う音ですから、聞き取れるはずです！
+[name="クセニア"]さっき聞こえた音を解読してみたんですけど、かなり時間がかかりました。高くなったり低くなったりする音をすべて記録しなければなりませんから――
+[dialog]
+[PlaySound(key="$d_avg_airbuzz_2")]
+[delay(time=2)]
+[name="クセニア"]これです！　聞こえましたか？
+[name="Mon3tr"]水音しか聞こえないぞ！　君の言葉すらはっきり聞こえない――
+[name="Mon3tr"]ドクター？
+あなたはただ目を閉じ、響く音に身を任せた。
+やがて、絶えず周波数を変化させ続ける音が、はっきりと耳に届いた。
+[dialog]
+[PlaySound(key="$d_avg_airbuzz_3")]
+[delay(time=2)]
+[Decision(options="これは……", values="1")]
+[Predicate(references="1")]
+[Decision(options="聞こえた。", values="1")]
+[Predicate(references="1")]
+[name="Mon3tr"]――聞こえたって言った？
+[dialog]
+[PlaySound(key="$d_avg_airbuzz_4")]
+[delay(time=1)]
+唐突に知覚に侵入してきたそれらの音は、高周波数の音波で構成されたものもあれば、短く鋭いものもあり、まるで独特な旋律の楽譜のようだった。
+しかしあなたは、それが何らかの暗号か言語であることをすぐに確信した。
+[PlaySound(key="$d_avg_airbuzz_5")]
+思い出せる限りの言語を必死に探り、分類し、一つ一つ対応させていく内に、あなたはそれが同じ言葉を異なる言語で言い換えているだけであることに気がついた。
+[name="クセニア"]よし、書き写しました……
+[name="クセニア"]ただの直感なのですが、もし異なる移動都市間で使われる共通のエンコーディング規則に基づいてこれらの音を識別するとしたら……
+[name="クセニア"]恐らく、どれも同じ一つの単語を多言語で発したものだと思うんです。ウルサス語とガリア語なら分かります！　この二つの意味はどちらも――
+[dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[bgeffect]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1.5)]
+[Sticker(id="st1", text="「未知の言語」", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+……
+[dialog]
+[Sticker(id="st1", text="「спорить」", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+[Sticker(id="st1", text="「dibattito」", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+……
+[dialog]
+[Sticker(id="st1", text="「débat」", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+[Sticker(id="st1", text="「debate」", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+……
+そう。坑道に残された液体が、岩を打つ音を通してあなたに同じ言葉を伝えてきた――
+[dialog]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_white",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Sticker(id="st1", text="<color=#000000>「弁論」。</color>", x=320,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1.5)]
+[Sticker(id="st2", text="<color=#000000>「弁論」。</color>", x=320,y=340, alignment="center", size=30, delay=0.001, width=700,block = false,duration=3)]
+[Dialog]
+[playsound(key="$d_avg_jumpscare",volume=0.6)]
+[bgeffect(name="$eb_blackmask",layer=1)]
+[delay(time=0.5)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Sticker(id="st1")]
+[Sticker(id="st2")]
+[bgeffect]
+[Background(image="bg_0_rhodes3",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+そうよ、Dr.{@nickname}。
+あなたが今も自分の選択が正しいと思っているなら。
+まだ自分が語る未来を固く信じているなら。
+現実で反駁し私を覆して、証明してちょうだい……
+あなたが抱き続けてきた……
+[dialog]
+[Sticker(id="st1", text="「希望」を。", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1.5)]
+[Sticker(id="st1",duration=1,block = false)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Image(image="66_i06")]
+[playMusic(intro="$newhope02_intro",key="$newhope02_loop", volume=0.6)]
+[playsound(key="$d_avg_magneticwaterfall_loop", loop=true, channel="bgs")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Decision(options="……これは招待だ。", values="1")]
+[Predicate(references="1")]
+[name="Mon3tr"]何だって？
+[dialog]
+[Decision(options="これは招待だと言った。", values="1")]
+[Predicate(references="1")]
+[Decision(options="自分が受けねばならない招待だ。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[image]
+[playsound(key="$d_avg_rainlight_loop", loop=true, channel="bgs")]
+[Background(image="66_g6_magnetofluidwaterfall",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]（小声）これはプリースティスが君に残した情報だと？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="そうだ。;彼女が言いたいことはわかる……", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="すぐにここから撤収しよう。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]クセニアがサンプルを集め終えたら、研究所へ戻ろう。
+[name="Mon3tr"]何とかしてアーミヤたちと連絡を取らなくては……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="アーミヤたちはどうしているだろう。;Raidianたちと連絡がとれただろうか。", values="1;2")]
+[Predicate(references="1;2")]
+[stopmusic(fadetime=2)]
+[playsound(key="$d_avg_giantmonster_treadwater", loop=true, channel="gf")]
+[delay(time=1.5)]
+[StopSound(channel="gf", fadetime=0.3)]
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……何か聞こえなかったか？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]聞こえたって、どんな？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="重い物が濡れた地面を歩く音だ。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]さっきから滝の音がうるさいんだよ。
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]ドクター、本当に耳鳴りじゃないのか？　さっき君の脳が並行処理した情報が多すぎて、感覚が残っているだけじゃ……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$d_avg_giantmonster_treadwater", loop=true, channel="gf")]
+[delay(time=2)]
+[StopSound(channel="gf", fadetime=0.3)]
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]……待て。
+[name="Mon3tr"]クセニア？　君か？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="クセニアの足音じゃない。体重とリズムが違う。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]じゃあ……一体何の――
+[Background(image="66_g6_magnetofluidwaterfall",screenadapt="coverall")]
+[Dialog]
+[charslot]
+[effect(name="$e_sandfall_01",layer=1,y=350)]
+[delay(time=1)]
+[playsound(key="$d_avg_giantmonster_treadwater")]
+[playMusic(intro="$shatterpoint_01_intro",key="$shatterpoint_01_loop", volume=0.6)]
+[PlaySound(key="$d_avg_stonegrowing",volume=1)]
+[CameraShake(duration=1, xstrength=5, ystrength=5, vibrato=50, randomness=90, fadeout=true, block=false)]
+[cgitem(image="cgitem_66_i11_1", style="cg",pfrom = "-400,0",pto = "-400,0",pduration = 2, afrom = 0, ato = 1, aduration = 0.5,layer = 3)]
+[delay(time=2)]
+[backgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.1, yScaleTo=1.1, duration=0.3,block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.07, fadetime=0.3)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.07, fadetime=0.3)]
+[CameraShake(duration=1, xstrength=5, ystrength=5, vibrato=50, randomness=90, fadeout=true, block=false)]
+[cgitem(image="cgitem_66_i11_2", style="cg",pfrom = "400,0",pto = "400,0",pduration = 2, afrom = 0, ato = 1, aduration = 0.5,layer = 2)]
+[delay(time=2)]
+[CameraShake(duration=1, xstrength=5, ystrength=5, vibrato=50, randomness=90, fadeout=true, block=false)]
+[backgroundTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1.2, yScaleTo=1.2, duration=0.3,block=false)]
+[curtain(direction = 0,fillfrom = 0.07,fillto = 0.14, fadetime=0.3)]
+[curtain(direction = 4,fillfrom = 0.07,fillto = 0.14, fadetime=0.3)]
+[delay(time=2)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=50, randomness=50, fadeout=true, block=false)]
+[Image(image="66_i11",fadetime=1,screenadapt="coverall", xScale=1.15, yScale=1.15)]
+[delay(time=3)]
+[Background]
+[ImageTween(xScaleTo=1.7, yScaleTo=1.7, duration=0.6)]
+[PlaySound(key="$d_avg_giantmonster_growl",volume=1)]
+[curtain(direction = 0,fillfrom = 0.14,fillto = 0, fadetime=1)]
+[curtain(direction = 4,fillfrom = 0.14,fillto = 0, fadetime=1)]
+[CameraShake(duration=3, xstrength=20, ystrength=20, vibrato=50, randomness=50, fadeout=true, block=false)]
+[Image(image="66_i11",fadetime=1,screenadapt="coverall", xScale=1, yScale=1)]
+[ImageTween(xScaleTo=1.3, yScaleTo=1.3, duration=60)]
+[delay(time=5)]
+狂った叫び声、荒い呼吸、鋭い牙の間から水面に滴り落ちる粘液。
+それの体は、赤黒い源石に貫かれていた。源石が堅固な拘束となって、人のように直立せざるを得ないように見えた。
+そして、それは巨大な前足を持ち上げ――
+いや、前足とは言えない。なぜならそれはどう見ても干からびた、人間の両腕だったからだ。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……源石に感染した裂獣か。", values="1")]
+[Predicate(references="1")]
+[delay(time=1)]
+[name="クセニア"]サンプルは採取し終わりました！
+[name="クセニア"]お二人とも……どうしたんですか？
+これまでの認識とは一致しない奇妙な裂獣が彼女の背後に立っていた。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="クセニア、早くこちらへ！", values="1")]
+[Predicate(references="1")]
+[name="Mon3tr"]走れ、クセニア！　前に向かって走るんだ、振り返るな！
+[name="Mon3tr"]彼女を連れ戻さなきゃ。ドクターはトロッコへ向かって。そこで合流しよう！
+[name="Mon3tr"]ドクター、早く！
+[name="クセニア"]なっ――
+[PlaySound(key="$d_avg_shallowsrun",volume=1)]
+[CameraShake(duration=-1, xstrength=5, ystrength=5, vibrato=5, randomness=50, fadeout=true, block=false)]
+研究員は走り出すと同時に、我慢できずに背後を顧みた。
+彼女はただ悲鳴を呑み込むことしかできなかった。
+[name="クセニア"]――ああ、陛下――
+[name="クセニア"]あれは一体何なんですか！？
+[Dialog]
+[Delay(time=2)]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[CameraShake(duration=0, xstrength=10, ystrength=10, vibrato=20, randomness=50, fadeout=true, block=false)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot]  

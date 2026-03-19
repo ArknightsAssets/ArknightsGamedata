@@ -1,0 +1,404 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[name="하인"]손님, 오래 기다리셨습니다. 이쪽으로 오시죠.
+[Dialog]
+[delay(time=1)]
+호위병의 요구대로 당신은 로비에서 기다리며, 알로이즈와 그 소문난 여대공의 대화가 끝나기를 기다리고 있었다.
+답답한 실내에는 시간을 확인할 수 있는 물건이 아무것도 없었다. 마치 방문객에게 일부러 시간을 알 권리를 주지 않는 것처럼.
+무료하게 기다리던 와중, 당신은 조금 전에 나눴던 대화를 떠올렸다……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="66_g1_bleskstreet",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$loading_intro",key="$loading_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_4179_monstr_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#5$1",focus="l")]
+[name="아미야"]박사님 혼자만요?
+[charslot(slot = "r", name = "avg_4179_monstr_1#5$1",focus="r")]
+[name="Mon3tr"]이건 불합리한 요구야. 만약 무슨 일이 생긴다면 나도, 아미야도 너를 지켜줄 수 없어.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="어쨌든 여기는 그들의 지역이니까.;우리에게 협상의 여지를 줄 생각이 없네.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#7$1",focus="l")]
+[name="아미야"]알로이즈 씨가 저희에게 여대공을 만나게 해준다고는 했지만, 대체 왜 우리를 도우려는 건지 아직도 모르겠어요……
+[charslot(slot = "r", name = "avg_4179_monstr_1#4$1",focus="r")]
+[name="Mon3tr"]내 메모리에도 우르수스에 그런 젊은 귀족이 있다는 정보는 없어.
+[charslot(slot = "r", name = "avg_4179_monstr_1#2$1",focus="r")]
+[name="Mon3tr"]하지만 특사라는 신분에, 그 여대공과도 직접 알고 지내는 인물이라면, 아무래도 평범한 사람은 아니겠지.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="비밀이 많은 여자인 게 분명해.;디에티 그라이퍼부르크에서 온 특사와 지방 귀족의 관계가 확실히 미묘하긴 해.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="하지만 우리와 함께 광산에 들어간다고 분명하게 말했어.", values="1")]
+[Predicate(references="1")]
+[Decision(options="어쨌든, 우린 알로이즈와 손잡아야만 해.;현재로선 이게 광산에 들어갈 수 있는 유일한 기회야.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#1$1",focus="l")]
+[name="아미야"]하지만, 예전에 로도스 아일랜드가 우르수스에게 찍힌 것도 사실이잖아요. 여기 관리자가 저희를 어떻게 대할지 모르겠네요.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="지금까지의 경험에서 내가 배운 게 좀 있어.;이런 상황이 완전히 낯선 건 아니야……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#6$1",focus="l")]
+[name="아미야"]박사님의 결정은 지지하지만, 조심하세요.
+[charslot(slot = "r", name = "avg_4179_monstr_1#6$1",focus="r")]
+[name="Mon3tr"]통신 단말기를 가져가! 무슨 일이 생기면 바로 연락하고. 건물을 부수는 한이 있더라도 바로 구하러 갈 테니까!
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="내가 임기응변할게.;최대한 그런 상황이 생기지 않게 해야지……", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="그나저나……", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+도대체 뭘 감추려고 광산을 봉쇄한 걸까……?
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_openftstpwalk")] 
+[delay(time=1.5)]
+이 도시의 거리처럼, 이 건물 안의 복도 역시 비정상적으로 텅 비어있었다.
+안내하는 내내 한마디 말도 없던 하인은 당신을 이곳까지 데려오더니, 가볍게 고개를 끄덕이고는 곧장 떠났다.
+그는 당신이 직감으로 올바른 방을 찾아낼 것이라고 확신하는 것 같았다. 그게 아니라면 방문객을 시험하는 것이 습관이었을지도 모른다.
+다행히도, 당신은 그 하인의 몸에서 나는 사과나무를 태운 뒤 퍼지는 따스한 향기를 분간해냈고, 그 향기와 유일하게 같은 냄새가 나는 문을 열도록 이끌었다.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i05", fadetime=0, xScale=1, yScale=1,screenadapt="coverall")]
+[Background(image="bg_black",screenadapt="coverall")]
+[PlaySound(key="$d_avg_gateopen")]
+[playsound(key="$d_avg_woodcracle", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[playMusic(key="$m_avg_ursusdaily_loop", volume=0.6)]
+그곳은 고요하고 적막한 방이었다.
+[ImageTween( xScaleFrom=1, yScaleFrom=1, xScaleTo=1.3, yScaleTo=1.3, duration=60)]
+마치 거대하고 침묵하는 돌벽이 이 음울한 도시를 갈라 방해받지 않는 공간을 만들어 놓은 듯했다.
+눈에 들어온 것은 오직 이 넓은 공간의 끝에 서 있는, 위엄 있는 회청색의 실루엣뿐이었다.
+[Dialog]
+[Decision(options="만나서 반가워.", values="1")]
+[Predicate(references="1")]
+[Decision(options="존경하는 옐리자베타 콘스탄티노브나 라지사라 여대공 전하.;……", values="1;2")]
+[Predicate(references="1")]
+[name="옐리자 여대공"]당신의 경의가 확실히 느껴지는군요. 그렇게까지 예의 차릴 필요는 없어요. 그냥 친구 대하듯이 옐리자 여대공이라고 불러주세요.
+[name="옐리자 여대공"]당신이 아주 영리한 사람이라는 게 느껴지네요.
+[Predicate(references="2")]
+[name="알로이즈"]그냥 옐리자 여대공이라고 불러도 돼.
+[name="알로이즈"]……송구합니다, 여대공 전하. 제가 미리 예법을 일러둬야 했는데.
+[name="옐리자 여대공"]아뇨, 괜찮습니다.
+[name="옐리자 여대공"]진정한 호의는 예절에 의존하지 않는 법이죠. 우리의 손님이 더 편히 있게 해드리죠.
+[Predicate(references="1;2")]
+그것은 당신의 예상을 뒤엎는 부드럽고도 순수한 목소리였다.
+이곳의 주인이 천천히 몸을 돌렸다.
+[Dialog]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[image]
+[Background(image="66_g2_farnorthgovernment",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1962_1#3$1",duration=1.5)]
+[delay(time=2.5)]
+[name="옐리자 여대공"]저는 브레스크를 방문하는 모든 손님을 환영합니다……
+[name="옐리자 여대공"]알로다, 제게 당신의 친구분을 소개해 줘야 하지 않을까요?
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]아, 죄송합니다…… 이 사람이 바로 제가 아까 말씀드린 로도스 아일랜드 제약회사의 박사……
+[Dialog]
+[charslot]
+[Decision(options="이름은 {@nickname}.;{@nickname} 박사라고 부르면 돼.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="만나서 영광이야.;실례되는 방문이 아니었으면 좋겠네.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#3$1")]
+[name="옐리자 여대공"]그렇게 예의 차리지 말고, 이리 와서 난로 가까이에 앉으세요. 하인이 곧 따뜻한 차를 내올 거예요.
+[name="옐리자 여대공"]멀리서 온 손님들은 이 계절의 브레스크에 적응하기 어려울 거예요. 브레스크는 외진 곳에 있긴 하지만, 사실 따뜻하고 쾌적한 시기도 있답니다.
+[name="옐리자 여대공"]여기까지 오는 길은 순조로웠나요?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="순조로운 정도는 아니고……;브레스크는 치안이 좋은 도시였어.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="옐리자 여대공"]여기서 본 모든 게, 이 도시가 어렵게 얻어낸 평화를 지키기 위함이란 걸 믿어줬으면 좋겠군요.
+[name="옐리자 여대공"]알로다에게 들었어요. 새로 사귄 친구가 매우 훌륭한 광석병 전문가라고. 마침 우리 도시에 꼭 필요한 인재들이죠.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="이곳에 광석병 전문가가 필요한가?;우르수스에…… 광석병 전문가가 필요한가?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="옐리자 여대공"]우리의 젊은 황제 폐하께서는 자신의 은총을 제국의 모든 백성에게 평등하게 내리고 싶어 하십니다. 심지어 감염 여부로 백성들을 차별하는 것조차 원하지 않으십니다.
+[name="옐리자 여대공"]그 때문에 폐하께서는 남다른 노력을 하셨죠. 신하들이 보기에 가슴이 아플 정도로.
+[name="옐리자 여대공"]하지만 폐하의 그런 순수한 마음이 얼마나 소중한 보물인지 진정으로 이해하는 사람은 많지 않습니다. 폐하의 추종자로서, 우리는 최선을 다해 폐하의 의지를 실천해 드려야 하죠.
+[name="옐리자 여대공"]브레스크는 크라이니 세베르 최대 규모의 광산과 인접해 있지만, 광석병 치료 수준은 폐하께서 원하시는 정도에 미치지 못합니다. 그래서 유능한 의사들이 필요한 것이죠.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]그렇다면 이 {@nickname} 박사가 여대공님께서 찾을 수 있는 가장 훌륭한 파트너가 될 것입니다.
+[name="알로이즈"]전 로도스 아일랜드가 발표한 학술 논문을 읽은 적이 있습니다. 누군가의 공적을 훔치는 것밖에 못 하는 제국 대학의 해충과도 같은 학자와는 달리, 이들은 광석병 연구에 대한 선진적인 지식을 갖고 있습니다.
+[charslot(slot="m",name="avg_npc_1962_1#3$1")]
+[name="옐리자 여대공"]호오…… 이 자존감 높은 젊은 장교가 누군가를 칭찬하는 모습은 처음 보는데요.
+[name="옐리자 여대공"]디에티 그라이퍼부르크에서의 업무가 당신의 성격을 바꾼 걸까요? 당신의 부친께서, 당신이 공작 연회에서 본인을 연신 난처하게 만든 일로 불평하시던 모습이 아직도 기억나는데요.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]부끄럽습니다, 여대공 전하.
+[name="알로이즈"]건방진 변명을 덧붙이자면…… 저는 언제나 진정한 재능과 학식을 갖춘 사람들, 그러니까 각하와 이 {@nickname} 박사 같은 분들을 존경해 왔습니다.
+[name="알로이즈"]제 아버님을 기억해 주셔서 감사합니다. 하마터면 아버님 대신 안부 인사를 전해 드리는 걸 잊을 뻔했네요.
+[charslot(slot="m",name="avg_npc_1962_1#3$1")]
+[name="옐리자 여대공"]적어도 부친의 공장은 아직도 크라이니 세베르의 전사들을 위해 최고의 군복을 만들고 계십니다. 접경지에서 열리는 모든 연회에서도 여전히 그의 이름을 들을 수 있죠.
+[name="옐리자 여대공"]……이제 이 친구분의 얘기로 돌아갈까요.
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="옐리자 여대공"]우리 허심탄회하게 얘기해 보죠…… 로도스 아일랜드는 무슨 목적으로 브레스크에 온 거죠?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="크라이니 세베르 광산의 출입 허가를 받고 싶어.;우리의 유동 의료팀이 중앙 광산지구에서 연락이 끊겼어.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#2$1")]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+당신의 말에 여대공은 순간 절제된 놀라움을 드러냈다.
+그녀는 알로이즈를 바라보았고, 당신은 그 젊은 근위군의 흔들리는 눈빛을 정확하게 포착했다.
+여대공은 긴 한숨을 내쉬었다. 뭔가를 진지하게 고민하는 듯했다.
+[charslot(slot="m",name="avg_npc_1962_1#4$1")]
+[name="옐리자 여대공"]하아…… {@nickname} 박사님…… 이렇게 부르면 되겠죠?
+[name="옐리자 여대공"]이 젊은 친구가 당신에게 불필요한 오해를 불러일으켰다면, 매우 유감스럽게 생각합니다.
+[name="옐리자 여대공"]로도스 아일랜드가 브레스크에 사무소를 차리는 건 얼마든지 환영이고, 저도 아낌없이 지원하고 싶습니다……
+[name="옐리자 여대공"]다만, 크라이니 세베르 광산은 지금 손님들이 구경할 수 있는 상황이 아니에요.
+[name="옐리자 여대공"]만약 당신의 동료가 광산에서 실종된 거라면, 그들의 마지막 행적과 인상착의를 알려주세요. 제가 충분한 인력을 파견해서 찾아 드리죠.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="미안하지만, 이건 더 자세한 대화가 필요해……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#4$1")]
+[name="옐리자 여대공"]그렇다면 아마도……
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]여대공 전하.
+[name="알로이즈"]만약 제가 저의 이름으로 동행을 제안한다면요?
+[charslot(slot="m",name="avg_npc_1962_1#4$1")]
+[name="옐리자 여대공"]음, 알로다…… 또 이런 잔꾀를 부리는군요.
+[name="옐리자 여대공"]브레스크에 광석병 전문 의사가 필요하다는 건 당신도 잘 알고 있을 겁니다.
+[name="옐리자 여대공"]당신의 추천이라면, 저는 당신의 친구가 이곳에서 활동하는 걸 얼마든지 허락해줄 수 있어요. 그걸로 제가 인정을 베풀었다고 생각하지도 않고요.
+[name="옐리자 여대공"]그런데 지금 당신은 뭘 하려는 거죠? 귀한 손님을 모셔놓고, 그런 성가신 일에 끌어들일 생각입니까?
+[name="옐리자 여대공"]알로다…… 당신은 일을 복잡하게 만들고 있어요.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]이건 복잡한 일이 아닙니다…… 부디 용서해 주십시오, 여대공 전하.
+[name="알로이즈"]저는 이번의 방문 목적을 각하께 숨긴 적이 없습니다.
+[name="알로이즈"]황제 폐하의 이름으로 맹세코, 디에티 그라이퍼부르크의 그 누구도 각하 치하의 브레스크의 안녕에 대해 의심을 품을 사람은 없을 것입니다.
+[name="알로이즈"]하지만 지금, 봉쇄된 광산과 감염자 변이에 대해 궁금해하는 사람은 적지 않습니다.
+[name="알로이즈"]이곳에 올 사람은 어쩌면 한가한 젊은 신귀족이거나, 광석병을 연구하는 전문가일지도 모릅니다. 물론 어느 군단의 대위 또는 의회의 거물일 수도 있겠죠.
+[charslot(slot = "m", focus = "n")]
+젊은 근위군의 말투는 여전히 경솔했다. 그 말속의 날카로움은 무례함인지, 여대공을 떠보려는 시도인지 구별할 수 없었다.
+옐리자 여대공은 미간을 찌푸렸다.
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="옐리자 여대공"]궁금한 게 있다면 얼마든지 와서 물어보라고 하세요.
+[name="옐리자 여대공"]군단이 보기엔 신귀족에게 아첨하는 기회주의자, 의회가 보기엔 외딴곳에 있는 여대공, 저는 사람들이 브레스크에 품는 의심과 호기심에 이미 익숙해진 상태입니다.
+[name="옐리자 여대공"]그렇다면 친애하는 알로다, 당신은 또 누구를 대표해서 제게 책임을 물으러 온 건가요?
+[charslot(slot="m",name="avg_npc_1966_1#11$1")]
+[name="알로이즈"]아니, 아닙니다! 오해십니다!
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]아시다시피 당신의 영지를 방문하는 건 저에게 더할 나위 없이 편한 일입니다.
+[name="알로이즈"]제가 이곳에 온 것은 단지 청할 것이 있기 때문입니다. 이 광석병 전문가들이 저와 함께 광산지구로 가서, 감염자들의 이상을 확인할 수 있도록 허락해주시면 안 되겠습니까?
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="옐리자 여대공"]……
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="저기, 내가 한마디 해도 될까?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="옐리자 여대공"]미안하군요, 손님. 말씀하세요.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="나는 로도스 아일랜드의 입장을 설명하고 싶어.", values="1")]
+[Predicate(references="1")]
+[Decision(options="로도스 아일랜드는 감염자 문제 해결에 힘쓰는 제약 회사야.;우리는 단지 연락이 끊긴 동료들을 빨리 찾고 싶을 뿐이야.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="그 외의 다른 일에는 일절 개입하지 않을 거고, 그럴 수도 없어.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="옐리자 여대공"]아까 묻지는 않았지만, 한 가지 궁금한 게 있는데요……
+[name="옐리자 여대공"]당신의 동료는 왜 중앙 광산지구에 간 거죠?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="광석병 사례를 수집하러 갔어.;그들은 우르수스인이야.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="옐리자 여대공"]그렇군요……
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="로도스 아일랜드의 목적은 매우 순수해.", values="1")]
+[Predicate(references="1")]
+[Decision(options="어쨌든, 우리의 배후에는 그 어떤 세력도 없으니까.;어쨌든, 우린 이곳에 대해 아는 게 전혀 없으니까.", values="1;2")]
+[Predicate(references="1")]
+말을 마친 당신은 불현듯 지나치게 솔직한 말이 오히려 신빙성을 떨어뜨린다는 것을 깨달았다. 그러나 이런 경솔한 발언은 도리어 그 뒤에 숨은 속셈이 있을 거라 의심하기 어렵게 만드는 것 또한 사실이다.
+여대공은 약간 재미있다는 표정을 지었다.
+[Predicate(references="2")]
+당신의 말을 진지하게 듣고 있던 여대공은 그제야 약간 긴장을 풀었다.
+여대공은 표정의 변화를 억제하고 있었지만, 당신은 그녀의 눈빛이 다소 누그러졌다는 것을 느낄 수 있었다.
+[Predicate(references="1;2")]
+[Dialog]
+[Decision(options="아무튼, 우리의 목표는 동료를 찾는 거야.;우리가 원하는 건 그뿐이야.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="옐리자 여대공"]한쪽은 내가 아끼는 후배고, 다른 한쪽은 동료를 찾을 생각뿐인 광석병 전문가라……
+[name="옐리자 여대공"]만약 여기서 제가 거절한다면, 너무 인정머리 없는 사람으로 보일까요?
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]저는 잘 알고 있습니다. 전하께서는 단지 멀리서 온 손님들이 위험에 빠질까 봐 걱정하고 계신 겁니다.
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="옐리자 여대공"]저는 단지 어느 누구도 이곳에서 불행한 일을 당하지 않길 바랄 뿐이에요. 만약 제게 충분한 시간이 있다면, 저는 이 툰드라 지역에 살고 있는 모두에게 벽난로를 보내주고 싶어요.
+[name="옐리자 여대공"]알로다, 친구의 안전을 보장한다고 맹세할 수 있겠어요?
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]……제발 저를 믿어주셨으면 합니다.
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="옐리자 여대공"]그래요, 알겠습니다. {@nickname} 박사님, 가세요. 가서 동료를 찾으세요.
+[name="옐리자 여대공"]로도스 아일랜드의 크라이니 세베르 광산 출입을 허락합니다.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="각하의 자비로움에 감사를.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="옐리자 여대공"]저도 제가 자비로운 사람이길 바랍니다만, 타인의 자비로움에 감사함을 느끼는 사람은 아주 드물죠.
+[name="옐리자 여대공"]사람들은 자신에게서 권리를 빼앗은 자를 경외하지만, 일부 권리를 되돌려준 자에게는 감사해 하죠. 하지만 저는 그런 게 자비라고 생각하지는 않아요.
+[name="옐리자 여대공"]크라이니 세베르의 바람은 매우 찹니다. 부디 방한 대비를 철저하게 해주시길, {@nickname} 박사님.
+[stopmusic(fadetime=2)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g1_bleskstreet",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",duration=0.5)]
+[delay(time=1)]
+[name="아미야"]박사님, 나오셨군요!
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]저기…… 그렇게까지 감격할 건 없잖아, 아미야.
+[name="알로이즈"]여기는 악마의 소굴이 아니라, 브레스크의 행정 중심지야. 대화도 나름 순조로운 편이었고, 안 그래?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Dialog]
+[Decision(options="아주 순조로웠지.;예상 밖의 일도 있었지.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="너, 아직도 숨기는 게 있구나.;우리에게도, 저 여대공에게도.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#2$1")]
+[name="알로이즈"]좋아, 인정할게.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]하지만 이건 내가 만들 수 있는 가장 이상적인 대화의 기회였어. 결과만 놓고 보면 괜찮지 않아?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="저 여대공은……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]왜?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="내 예상과는 조금 달랐어.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]음? 예상이 어땠길래?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="더 냉혹한 사람일 줄 알았어.;더 설득하기 어려울 줄 알았어.", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]그 변이 사건에 대한 처리 방식을 놓고 보면, 틀린 말은 아니야.
+[charslot(slot="m",name="avg_npc_1966_1#3$1")]
+[name="알로이즈"]변이가 일어나자마자, 관련 감염자를 즉시 광산 연구소로 보내 관리했어. 게다가 연구원들에게 일주일 내에 원인을 규명하지 못하면 유배 또는 추방될 거라고 했고.
+[name="알로이즈"]그리고는 즉시 크라이니 세베르 지역에 계엄령을 선포해 광부들을 죄다 광산에 가두고, 소식이 새나가지 않도록 모든 통신 수단을 차단했어.
+[name="알로이즈"]효율적이지만, 냉혹하다고 할 수는 있지.
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]하지만 본인이 회피하거나 숨기고 싶은 내용을 정확하게 짚어낸다면, 설득하는 건 그리 어렵지 않아.
+[charslot(slot="m",name="avg_npc_1966_1#3$1")]
+[name="알로이즈"]문제는 대부분의 경우, 여대공의 화술에 질질 끌려다니다가 기회를 잡지 못한다는 거야.
+[name="알로이즈"]이번 변이 사건을 예로 들면, 감염자들에게 일어난 게 병리적인 변이인지, 광석병의 새로운 증상인지, 아니면 다른 무엇인지 아무도 몰라.
+[name="알로이즈"]즉, 자세한 내용이 없다는 게 문제야. 디에티 그라이퍼부르크에 전해진 소식도…… 감염자, 변이 발생, 광산 연구소로 보내져 통제, 이게 전부야.
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="알로이즈"]너희 로도스 아일랜드가 발표한 오리지늄 변화와 신규 광석병 증상에 관한 논문은 나도 읽어봤어. 우르수스 각지 연구소들도 그 논문을 참고해 연구에 착수했지.
+[name="알로이즈"]만약 논문에 나와 있는 변이 정도라면, 이렇게까지 반응하지 않았을 거야.
+[name="알로이즈"]광산에서 발생한 감염자 변이는 새로운 위협을 의미할 가능성이 매우 높아.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]새로운 위협……
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="알로이즈"]연구소는 원인 규명에 착수했고, 광산 전체에 계엄령이 내려져 모든 광부가 격리됐어.
+[name="알로이즈"]사람들은 이걸로 모든 게 해결되었다고 생각하겠지만, 실제로는 어떨까?
+[name="알로이즈"]사건 발생 후, 채굴 작업이 중단되고 통신도 끊겼어. 디에티 그라이퍼부르크의 추궁에도 여전히 아무런 응답이 없는 상황이지. 애초에 그 광산에 들어갈 능력과 용기가 있는 사람이 없다는 거야.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="하지만 그 여대공이 일부러 숨긴 거라면……;우리가 애초에 브레스크에 들어오지도 못했겠지.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="알로이즈"]너도 만나봤잖아. 어쩌면 넌 여대공을 '자비로운' 관리자라고 생각할지도 모르겠지만……
+[name="알로이즈"]우리를 들여보내는 건 당연한 거야. 왜냐하면, 여기는 '우르수스 경내에서 감염자에게 가장 우호적인 곳', '크라이니 세베르의 진주', '우르수스 북부의 천국'……
+[name="알로이즈"]브레제노이 주도, 브레스크니까.
+[name="알로이즈"]너희가 이 도시에 들어온 이후, 길거리에 인적이 드문 것 말고는 아무런 이상도 발견하지 못했지? 이게 바로 옐리자 여대공이 크라이니 세베르를 다스리는 방식이야.
+[charslot(slot="m",name="avg_npc_1966_1#5$1")]
+[name="알로이즈"]저 여대공이 총독으로 취임한 이후, 관할 구역에서 사형 판결은 단 한 건도 나오지 않았어. 억울하게 죽은 사람이 줄어든 걸까? 그렇지 않아.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="여대공에 대해 불만이 많은 모양이네.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]아, 그건 오해야. 방금 한 평가에는 개인적인 감정이 전혀 없어. 그냥 질문에 대답한 게 다인걸.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]어쨌든 우리가 손을 잡아야 하잖아?
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]알겠어요, 알로이즈 씨. 그럼 변이 감염자들은 아직도 광산 연구소에서 관리하고 있겠네요?
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]맞아. 정확히는 크라이니 세베르 중앙 광산지구 연구소에 있지.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="그렇다면……?;……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="아미야"]그곳은 우리의 목적지 중에서 첫 번째로 가려고 했던 곳이에요
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]그래? 목적지가 같으면 일이 더 편해지겠네.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]또 다른 질문은?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="넌 정말 성실하네.;엄청 초조해 보이네.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]맞아. 그래서 처음부터 돌려 말할 생각은 없었어.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]알로이즈 씨, 궁금한 게 하나 있어요.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]좋아, 물어봐.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]아까 당신의 친구 집에서 나눴던 대화가 너무 급하게 끝나버렸어요. 본래라면 처음에 물어봐야 했던 건데 물어볼 기회를 못 잡고 있었네요.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]이번 조사에서 당신이 개인적으로 기대하는 결과는 뭐죠?
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="알로이즈"]……내 진심을 듣고 싶은 거야?
+[Dialog]
+[charslot(slot="m",name="avg_npc_1966_1#3$1")]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1966_1#10$1")]
+[name="알로이즈"]나는 진실을 알고 싶어. 중앙 광산지구의 감염자 변이에 관한 진실을.
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="알로이즈"]나는 감염자 광부들이 이유 없이 고통받는 것도, 우르수스 사람들이 곧 다가올 재난에 대해 무지한 것도 바라지 않아.
+[Dialog]
+[Delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot] 

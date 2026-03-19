@@ -1,0 +1,800 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[Background(image="bg_rhodescom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>로도스 아일랜드 새로운 기지, 회의실</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1", duration=1, isblock=true)]
+[name="아미야"]석관에 관한 단서요?
+[charslot(slot = "m", name = "avg_4179_monstr_1#4$1")]
+[name="Mon3tr"]지금까지 우리가 파악한 석관의 가장 최근 동향은 체르노보그-용문 사건 이후, 우르수스 당국이 석관 시스템을 통째로 회수했다는 거야.
+[name="Mon3tr"]이후에 석관을 어떻게 사용했는지는 더 엄격한 비밀에 부쳐진 걸로 보여. 켈시의 정보에도 전혀 기록되어 있지 않아.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="우르수스 당국에 석관을 빌릴 수도 없고……;석관의 위치를 파악할 만한 방법이 없을까?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]당시 체르노보그 연구소가 파괴된 후 발표된 공식 명단으로 봤을 때, 연구소 전체 인원 중, 세르게이라는 사람 말고는 다른 생존자가 없었어.
+[name="Mon3tr"]하지만 이후 세르게이의 경력을 통해 몇 가지 단서를 찾을 수 있었지.
+[name="Mon3tr"]그 사건 후, 세르게이는 석관을 연구하는 새로운 연구소를 차렸는데, 그 연구소가 운영된 짧은 기간에 특별한 사람 한 명이 있었어. 이름은……
+[charslot(slot = "m", name = "avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]아르툠 차다예프.
+[name="Mon3tr"]세르게이의 연구소에서 부소장으로 있었던 사람인데, 과거 이력이 비어 있어. 신뢰할 만한 학술적, 정치적 배경도 아무것도 없어.
+[name="Mon3tr"]합리적으로 추측해 보면……
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="세르게이와 특별한 관계가 있는 사람?;연구소와 특별한 관계가 있는 사람?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]어느 쪽이든 그 사람이 돌파구인 건 확실해.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1")]
+[name="아미야"]우리가 찾아야 하는 게 이 아르툠이란 사람인가요?
+[charslot(slot = "m", name = "avg_4179_monstr_1#3$1")]
+[name="Mon3tr"]아니, 상황이 조금 더 복잡해……
+[charslot(slot = "m", name = "avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]세르게이의 연구소가 문을 닫고 나서 그 사람의 행방도 묘연해졌어.
+[name="Mon3tr"]켈시가 개인적으로 기록해 둔 정보에 따르면, 아르툠은 작년 겨울 디에티 그라이퍼부르크의 황실 요양원에서 심부전으로 사망했어.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="끝까지 우르수스와 좋은 관계를 유지한 모양이네.;그 사람과 관계가 있는 사람을 조사해 봐도 되겠어.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]현명한 판단이야! 나도 그렇게 생각해.
+[name="Mon3tr"]그래서 우리가 찾아야 할 건 이 아르툠과 관계가 있는 또 다른 연구원이야……
+[name="Mon3tr"]크세니야 마르코브나 넬류도바.
+[charslot(slot = "m", name = "avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]아르툠에 비해 이 연구원의 이력은 훨씬 상세해. 석관 사건이 발생하기 전, 크세니야는 체르노보그 연구소에서 잠시 일리아의 조수로 일하면서 켈시와 교류한 적이 있어.
+[name="Mon3tr"]최근에 입수한 정보에 의하면 지금 크세니야는 우르수스 크라이니 세베르 지역에 있어. 브레스크 관할 크라이니 세베르 중앙 광산지구 연구소에서 근무하는 중이야.
+[name="Mon3tr"]그리고 그곳이 바로 아르툠이 임종 전에 보낸 마지막 편지 몇 통의 수취 주소였고.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="그렇게 믿을 만한 단서는 아닌 것 같은데……;하지만 유일한 단서이기도 하지.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="그 연구소로 찾아가 봐야겠어.", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_171_bldsk_1#10$1")]
+[name="와파린"]박사, 미리 말해두는데……
+[name="와파린"]우리가 켈시를 다시 데려오기로 결정한 건 맞지만, 임무의 위험도 고려해야 한다.
+[name="와파린"]로도스 아일랜드는 더 이상의 손실을 감당할 수 없어……
+[dialog]
+[charslot]
+[Decision(options="하지만……", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="라이디언"]내가 갈게.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="아미야"]라이디언 씨?
+[charslot(slot = "m", name = "avg_npc_1730_1#2$1")]
+[name="라이디언"]우르수스는 지금도 위험한 곳이야. 이번 임무에서 우리가 가진 정보도 상당히 제한적이고.
+[name="라이디언"]게다가 로도스 아일랜드 재건 작업도 이제 막 시작됐잖아. 박사와 아미야가 결정해야 할 일들이 많을 거야.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="아미야"]라이디언 씨, 제가……
+[charslot(slot = "m", name = "avg_npc_1730_1#1$1")]
+[name="라이디언"]알아, 아미야는 이제 훌륭한 어른이 되었어. 하지만, 그렇기 때문에 아미야는 남아서 로도스 아일랜드를 지키는 가장 중요한 임무를 맡아야 해.
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1")]
+[name="라이디언"]라테라노에서 온 소식도 불안하니, 박사가 가서 처리해야 해. 로도스 아일랜드를 새 터전에 정착시키는 게 지금 우리에게 가장 중요한 임무야.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]맞는 말씀이에요……
+[charslot(slot = "m", name = "avg_npc_1730_1#1$1")]
+[name="라이디언"]잠입 임무라면 미저리 소대가 더 낫겠지만, 정보 수집이라면 우리 소대가 더 전문이야.
+[name="라이디언"]게다가 우르수스의 작전에 나보다 더 적합한 사람은 없잖아?
+[charslot(slot = "m", name = "avg_npc_1723_1#3$1")]
+[name="클로저"]듣고 보니 라이디언의 말도 꽤 일리가 있네……
+[charslot(slot = "m", name = "avg_npc_1723_1#1$1")]
+[name="클로저"]박사가 결정해.
+[dialog]
+[charslot]
+[Decision(options="이번 임무는 매우 위험해.;조심해야 해, 라이디언.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="로도스 아일랜드는 더 이상 그 누구도 잃을 수 없어.", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1730_1#1$1")]
+[name="라이디언"]물론이지. 유동 의료팀 형태로 신중하게 움직일게.
+[name="라이디언"]내가 없을 때 다들 몸조심하고.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#9$1")]
+[name="아미야"]네……
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1")]
+[name="아미야"]모두 무사히 돌아와야 해요……
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="쉬어버린 목소리"]“……나는 묵상하며, 그대의 고통을 함께 짊어지리라.”
+[name="쉬어버린 목소리"]“한 사람의 고통은 우리 모두의 고통이고, 한 사람의 죄는 우리 모두의 죄이니……”
+[name="쉬어버린 목소리"]“죄지은 모두가 진심으로 회개하여 그 죄를 용서받고, 영혼도 구원받을 수 있게 해주소서……”
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[charslot]
+[Background(image="66_g4_miningarea_polluted",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(key="$wasteland_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>우르수스 크라이니 세베르 중앙 광산지구</><p=2>5일 전</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="고통스러운 비명"]으악……!
+[name="고통스러운 비명"]아아……!
+[dialog]
+[charslot(slot = "r", name = "avg_4207_branch_1#1$1", focus="r")]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1)]
+[charslot(slot = "l", name = "avg_npc_1964_1#1$1", posfrom="-100,0", posto="0,0", duration=1, isblock=true)]
+[charslot(slot = "l", name = "avg_npc_1964_1#1$1", focus="l")]
+[name="노부인"]아……
+[charslot(slot = "r", name = "avg_4207_branch_1#2$1", focus="r")]
+[name="어린 광부"]괜찮아요…… 하, 할머니, 무서워하지, 마세요.
+[name="어린 광부"]렌킨, 선생님, 이에요…… 감시팀을, 전부 모, 몰아, 냈어요.
+[name="어린 광부"]당분간은, 안전해요.
+[charslot(slot = "l", name = "avg_npc_1964_1#1$1", focus="l")]
+[name="노부인"]그래…… 당분간은.
+[name="노부인"]우리는 이제 어디로 가야 하나? 어디로 가야 평안을 구할 수 있을까……?
+[charslot(slot = "r", name = "avg_4207_branch_1#10$1", focus="r")]
+[name="어린 광부"]할머니…… 배, 배고프시죠……? 호리 아저씨한테 가서, 빵을 더 구해 올게요.
+[charslot(slot = "l", name = "avg_npc_1964_1#1$1", focus="l")]
+[name="노부인"]괜찮다…… 아가, 난 괜찮단다.
+[name="노부인"]렌킨에게 가보렴……
+[name="노부인"]렌킨이 일을 제일 많이 했으니, 아마 마음도 만신창이가 됐을 게다……
+[name="노부인"]가보렴. 렌킨이 더 많은 부담을 지지 않게 해주렴……
+[charslot(slot = "r", name = "avg_4207_branch_1#10$1", focus="r")]
+[name="어린 광부"]선생님은……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot = "m", name = "avg_npc_1963_1#3$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="청년 광부"]……후우……
+[charslot]
+어두컴컴한 하늘 아래, 청년의 살기 어린 얼굴이 점점 평온을 되찾았다.
+곡괭이에 서린 뜨거운 피의 온기가 혹한에 금방 식어버렸고, 겁에 질린 적들은 완전히 무너지고 말았다.
+[name="겁에 질린 감시팀원"]사…… 살려줘! 제발, 나 이미 항복했잖아!
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="청년 광부"]하지만 난 아직 네 사과를 받지 않았어.
+[name="청년 광부"]대답해, 아직 얼마나 많은 추격병이 남아있지?
+[charslot(slot = "m", focus="n")]
+[name="겁에 질린 감시팀원"]빌어먹을, 몰라…… 나도 몰라!
+[name="겁에 질린 감시팀원"]감시팀은 전부 독자적으로 움직이는 데다, 서로 연락하지도 않아!
+[charslot(slot = "m", name = "avg_npc_1963_1#10$1")]
+[name="청년 광부"]그럼 내가 모르는 정보를 더 내놔. 안 그러면 널 살려둘 이유가 없어.
+[charslot(slot = "m", focus="n")]
+[name="겁에 질린 감시팀원"]자, 잠깐! 내 말 좀 들어봐!
+[name="겁에 질린 감시팀원"]네 몸에 있는 칩! 그 측정용 칩 말이야!
+[charslot(slot = "m", name = "avg_npc_1963_1#6$1")]
+[name="청년 광부"]칩? 오염도를 측정하는 칩?
+[charslot(slot = "m", focus="n")]
+[name="겁에 질린 감시팀원"]하…… 하하하……
+[name="겁에 질린 감시팀원"]'고상한 렌킨', '영웅 렌킨', 설마 이렇게 순진하다고?
+[name="겁에 질린 감시팀원"]너희 몸에 있는 칩은 광산 연구소와 가장 가까이에 있는 호위병 초소로 좌표를 보내. 너희가 무단으로 광산을 이탈하거나, 칩이 몸에서 떨어지는 순간……
+[name="겁에 질린 감시팀원"]“펑”!
+[name="겁에 질린 감시팀원"]다리 하나 날아가는 건 싸게 먹히는 거야. 두 다리 모두 날아갈 수도 있다고. 그렇게 되면 어디 가지도 못하겠지, 하하하!
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="렌킨"]……
+[charslot(slot = "m", focus="n")]
+[name="겁에 질린 감시팀원"]렌킨, 포기해…… 감시팀 하나 죽인다고 이 광산에서 탈출할 수 있을 것 같아?
+[name="겁에 질린 감시팀원"]너희는 아무 데도 못 가…… 우르수스가 영원히 너희를 쫓을 거야.
+[name="겁에 질린 감시팀원"]투항해, 이게 그나마 덜 비참하게 죽는 유일한 방법이야.
+[PlaySound(key="$d_avg_axeimp", volume=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="흥분한 광부"]렌킨, 저놈이 지껄이는 거 듣지 마! 칩이 정말로 폭발한다면, 버든비스트가 진작에 다리를 잃었겠지!
+[name="흥분한 광부"]감시팀 놈들은 죄다 짐승만도 못한 것들이야. 저놈들 입에서 나오는 진실은 한겨울의 진딧물보다도 적어! 내가 감염자가 되기 전부터 많이 봤어!
+[dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.1, duration = 1)]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[charslot]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$d_avg_punch")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$d_avg_punch02")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[name="겁에 질린 감시팀원"]윽……!
+[name="흥분한 광부"]렌킨, 넌 오늘 무리했으니, 내가 죽일게!
+[charslot(slot = "m", name = "avg_npc_1963_1#3$1")]
+[name="렌킨"]……
+[dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1)]
+[charslot(slot = "m", name = "avg_4207_branch_1#6$1", posfrom="-200,0", posto="0,0", duration=0.5, isblock=true)]
+[Delay(time=0.5)]
+[name="어린 광부"]아, 안 돼요!
+[name="어린 광부"]그만 주, 죽이세요!
+[charslot(slot = "m", name = "avg_4207_branch_1#5$1")]
+[name="어린 광부"]우리는…… 괜찮아요! 크게 다친, 사람도 없어요……
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_4207_branch_1#6$1")]
+[name="어린 광부"]선생님!
+[charslot(slot = "m", name = "avg_npc_1963_1#3$1")]
+[name="렌킨"]……
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="렌킨"]일단 풀어줘.
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="흥분한 광부"]'잔가지', 비켜! 왜 이런 놈들의 목숨을 구걸해?
+[name="흥분한 광부"]폴리나가 이 짐승만도 못한 놈들 때문에 죽었어. 단지 등록되지 않은 아이를 지키려고 했던 건데…… 게다가 사형을 집행당했을 때는 임신했던 상태였다고!
+[name="흥분한 광부"]저놈들이 잔인무도한 짓을 얼마나 많이 했는지 다 잊었어?
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1")]
+[name="'잔가지'"]저…… 저는……
+[charslot(slot = "m", focus="n")]
+[name="겁에 질린 감시팀원"]크억, 케, 켁!
+[name="겁에 질린 감시팀원"]하하, 고맙다, '잔가지'.
+[name="겁에 질린 감시팀원"]나는 너를 알고 있어…… 엄청 온순한 아이지. 네겐 좋은 미래가 찾아올 거야. 설령 다른 놈들이……
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_bldwhoosh", volume=1)]
+[Blocker(a=0.5, r=0.92, g=0.4, b=0.3, fadetime=0.1, block=true)]
+[PlaySound(key="$d_avg_broadswordblood", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_4207_branch_1#6$1")]
+[name="'잔가지'"]선생님!
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="렌킨"]……적어도 눈밭에서 피를 흘리며 죽게 하지는 않았어.
+[name="렌킨"]똑바로 서, 베토치키. 돌아가서 그 의사 선생을 모시고 와.
+[name="렌킨"]그리고 파벨, 너는 닉토한테 가서 광산을 떠나고 싶은 사람들을 전부 남쪽 숙소 구역으로 집합시키라고 전해.
+[charslot(slot = "m", name = "avg_npc_1963_1#5$1")]
+[name="렌킨"]모두에게 준비시켜. 우리 몸에 있는 칩은 반드시 제거해야 해.
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="흥분한 광부"]정말 그 녀석 말을 믿어?
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="렌킨"]어찌 됐든 칩은 제거해야만 해. 폭발은 가짜여도 위치 추적은 진짜야.
+[name="렌킨"]이미 감시팀이 찾아왔잖아. 다음 녀석들이 언제 올지 알 수 없어. 이대로라면 놈들에게 끌려다닐 게 뻔해.
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="흥분한 광부"]알았어…… 네 말대로 할게.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1")]
+[name="베토치키"]선생님, 야, 약속…… 약속했잖아요……
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="렌킨"]너, 아직도 여기 있었어?
+[name="렌킨"]난 너에게 약속 같은 거 한 적이 없어, 베토치키.
+[name="렌킨"]게다가 다른 감시팀 놈들은 다 죽었는데, 왜 이놈만 예외로 살아남아야 하지? 이놈의 오만함 때문에? 아니면 비아냥 때문에?
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1")]
+[name="베토치키"]그게 아니라……
+[charslot(slot = "m", name = "avg_npc_1963_1#3$1")]
+[name="렌킨"]……됐어, 넌 몰라. 방금 내가 한 말은 잊어버려.
+[dialog]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="렌킨"]그리고, 이걸 가져가.
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1")]
+[name="베토치키"]이게…… 뭐예요?
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1")]
+[name="렌킨"]스톱워치야. 연구소에서 찾았는데, 아직 쓸만할 거다. 나중에 시간 나면 가르쳐줄게.
+[name="렌킨"]이제는 더 이상 무의미한 숫자를 세면서 살지 않아도 돼. 숫자 하나 빼먹었다고 누군가가 갱도에서 죽을까 봐 걱정할 필요도 없어.
+[name="렌킨"]지금은…… 그냥 가, 베토치키. 가서 사람들 불러와.
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1")]
+[name="베토치키"]선생님, 선생님 손이…… 떨고 있어요……
+[charslot(slot = "m", name = "avg_npc_1963_1#3$1")]
+[name="렌킨"]됐으니까, 가서 네 할 일이나 해.
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1")]
+[name="베토치키"]……그럼, 적어도, 제가……
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1")]
+[name="베토치키"]부디…… 영혼이…… 구원받을 수…… 있기를.
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1")]
+[name="렌킨"]놈들이 우리한테 무슨 짓을 했는지, 내가 어떻게 놈들의 목숨을 앗아갔는지 봤는데도?
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1")]
+[name="베토치키"]네…… 네.
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="렌킨"]멋대로 축복하지 마. 쉽게 용서해서는 더욱 안 되고. 설령 그 상대가 나일지라도, 베토치키.
+[name="렌킨"]어서 가, 시간이 없어.
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1")]
+[delay(time=1)]
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1963_1#3$1")]
+[name="렌킨"]……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="34_g10_tent_inside",screenadapt="coverall")]
+[charslot(slot = "l", name = "avg_npc_1730_1#3$1")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="라이디언"]……렌킨 씨.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1, loop=true, channel="w")]
+[StopSound(channel="w", fadetime=1)]
+[charslot(slot = "r", name = "avg_npc_1963_1#1$1", posfrom="200,0", posto="0,0", duration=1, isblock=true)]
+[charslot(slot = "r", name = "avg_npc_1963_1#1$1", focus="r")]
+[name="렌킨"]안녕, 세라피나 씨.
+[name="렌킨"]우리가 안 지는 얼마 안 됐지만, 감염자 치료를 위해 의료팀을 이끌고 이런 변방에까지 온 당신을 나는 충분히 믿을만하다고 생각해.
+[name="렌킨"]그래서 말인데, 미안하지만 한 가지 부탁이 있어.
+[charslot(slot = "l", name = "avg_npc_1730_1#4$1", focus="l")]
+[name="라이디언"]뭐든지 말해, 내가 도울 수 있다면……
+[charslot(slot = "r", name = "avg_npc_1963_1#1$1", focus="r")]
+[name="렌킨"]조금 전에 알게 됐는데, 이곳에 있는 광부들 몸에 언제든지 폭발할 수 있는 위치 추적 칩이 있어. 감시팀의 추적을 피하려면 반드시 그 칩을 제거해야 해.
+[name="렌킨"]그래서 나부터 시작하려고.
+[name="렌킨"]성공하면 다른 사람들의 수술도 도와줬으면 좋겠어. 불행하게도 칩이 폭발하면 응급처치를 부탁해.
+[charslot(slot = "r", name = "avg_npc_1963_1#3$1", focus="r")]
+[name="렌킨"]만약에, 그 때문에 내가 죽게 된다면…… 나를 기다리고 있는 다른 사람들에게 이 사실을 전해줘.
+[name="렌킨"]지금은, 여기를 떠나서……
+[charslot(slot = "l", name = "avg_npc_1730_1#3$1", focus="l")]
+[name="라이디언"]아니, 우선 내가 검사를 해봐도 될까?
+[charslot(slot = "r", name = "avg_npc_1963_1#1$1", focus="r")]
+[name="렌킨"]그래.
+[dialog]
+[charslot(slot = "r", focus="n")]
+[PlaySound(key="$d_avg_clothtrailground", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "l", name = "avg_npc_1730_1#2$1", focus="l")]
+[name="라이디언"]……안타깝지만, 칩이 폭발할 수 있다는 말은 사실이야.
+[name="라이디언"]네 몸 안에 있는 칩에는 강력한 소형 오리지늄 폭탄이 장착돼 있어. 칩이 광산이나 인체 내부의 전기신호를 수신하지 못하면 폭발을 일으킬 거야……
+[name="라이디언"]이 광산을 떠날 생각이라면 다들 반드시 칩을 제거해야 해.
+[charslot(slot = "r", name = "avg_npc_1963_1#6$1", focus="r")]
+[name="렌킨"]대단한데, 그게 당신의 오리지늄 아츠인가?
+[charslot(slot = "l", name = "avg_npc_1730_1#3$1", focus="l")]
+[name="라이디언"]응……
+[name="라이디언"]내가 똑같은 전기신호를 조작해서 수신기를 속일 수도 있겠지만, 그것도 큰 위험이 수반된다는 사실을 명심해야 해.
+[charslot(slot = "r", name = "avg_npc_1963_1#2$1", focus="r")]
+[name="렌킨"]준비가 다 될 때까지 마냥 기다릴 수는 없잖아…… 그 방법만으로도 충분해.
+[charslot(slot = "l", name = "avg_npc_1730_1#4$1", focus="l")]
+[name="라이디언"]잠시만.
+[dialog]
+[charslot(slot = "l", posfrom="0,0", posto="150,0", duration=1)]
+[delay(time=1.5)]
+[playsound(key="$d_avg_clothmovement",volume=1)]
+[charslot(slot = "r", posfrom="0,0", posto="0,-50", afrom=1, ato=0, duration=1, isblock=true)]
+[delay(time=0.5)]
+[charslot]
+라이디언은 오리지늄 아츠를 발동해 에너지를 수신기와 같은 주파수로 맞춰 공명하게 했다.
+렌킨은 고개를 끄덕이고는 자리에 앉아 칼자루를 움켜쥐었다. 차갑고, 매끄럽고, 단단한 감촉이 손바닥의 굳은살에 맞닿았다.
+[charslot(slot = "m", focus="n")]
+[name="렌킨"]의사 선생, 좀 더 떨어져 있는 게 좋지 않을까?
+[charslot(slot = "m", name = "avg_npc_1730_1#2$1")]
+[name="라이디언"]아니, 첫 시도인 만큼 실시간으로 상황을 지켜봐야 해.
+[name="라이디언"]내가 신경의 전기신호를 통해 팔의 움직임을 유도할 테니, 조심하고 있어. 칩이 깨지지 않도록.
+[charslot(slot = "m", focus="n")]
+[name="렌킨"]대단하군…… 당신을 더 빨리 만나지 못한 게 아쉬워.
+[name="렌킨"]……또 같이 대화할 기회가 있었으면 좋겠네.
+[dialog]
+[charslot]
+렌킨은 칼에 술을 조금 부은 뒤, 칼끝을 다리의 흉터에 맞대어 그대로 살 속으로 꽂아 넣었다.
+[dialog]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0.5, r=0.92, g=0.4, b=0.3, fadetime=0.1, block=true)]
+[PlaySound(key="$d_avg_attack_heavy", volume=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[PlaySound(key="$d_gen_heartbeat", volume=1, loop=true, channel="d")]
+[Delay(time=1)]
+[StopSound(channel="d", fadetime=4)]
+[delay(time=1)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="렌킨"]……후우……
+[name="렌킨"]……성공인가?
+청년 광부는 피범벅이 된 상처도 잊은 채 거의 뛰어오를 뻔했다.
+[charslot(slot = "m", name = "avg_npc_1730_1#4$1")]
+[name="라이디언"]진정해, 일단 상처부터 처치해야지.
+[dialog]
+[charslot]
+[playsound(key="$d_avg_clothmovement",volume=0.5)]
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1", posfrom="0,-50", posto="0,0", afrom=0, ato=1, duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1")]
+[name="렌킨"]아, 물론. 고마워, 의사 선생. 당신에게 목숨을 빚졌군.
+[name="렌킨"]정말 대단해. 당신 같은 대단한 의사는 처음 보는데? 우르수스의 군인을 방불케 할 정도야.
+[charslot(slot = "m", name = "avg_npc_1730_1#4$1")]
+[name="라이디언"]......무슨 의미인지 모르겠는데.
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1")]
+[name="렌킨"]아, 미안. 오해하지 마. 이게 내가 생각해 낼 수 있는 가장 큰 찬사니까.
+[name="렌킨"]내 말은, 진정한 우르수스 군인은…… 그 짐승보다 못한 감시팀과는 달리, 나이츠모라를 물리치고 히포그리프의 폭정을 무너뜨린 진정한 영웅이라고.
+[charslot(slot = "m", name = "avg_npc_1963_1#8$1")]
+[name="렌킨"]맞다, 이고리 대제의 전기를 읽어본 적이 있어?
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1")]
+[name="라이디언"]이제 다른 사람들의 수술을 준비해야 해…… 총 몇 명이지?
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="렌킨"]……아마도 당신의 의료팀이 꽤 고생해야 할 거야.
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1")]
+[name="라이디언"]내가 전기신호를 조작해 이 일대를 완전히 커버할 수 있으니까, 내 동료들이 수술하면 돼. 아무래도 당분간 여기 머물러야겠네.
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="렌킨"]우리에겐 시간이 많지 않아.
+[name="렌킨"]의료팀은 노인과 아이들부터 도와주고, 다른 사람들에게는 방법만 가르치면 돼. 그리고 메스를 나눠줘. 내 동료들은 연약하지 않아.
+[charslot(slot = "m", name = "avg_npc_1730_1#4$1")]
+[name="라이디언"]렌킨, 결정은 의사가 내리는 거야.
+[charslot(slot = "m", name = "avg_npc_1963_1#6$1")]
+[name="렌킨"]아, 당연하지, 의사 선생. 내가 당신을 지휘하려는 건 아니야.
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="렌킨"]모두를 이 광산에서 탈출시키는 책임을 진 이상, 나는 그에 걸맞은 결정을 내려야 해.
+[name="렌킨"]언제 쫓아올지 모르는 감시팀, 열악한 날씨, 부족한 물자…… 어느 하나 치명적이지 않은 게 없어.
+[name="렌킨"]우리 서로 합의를 볼 수 있었으면 좋겠군.
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1")]
+[name="라이디언"]……어쨌든, 감염은 반드시 조심해야 해. 내 의료팀이 모두가 철저하게 소독하도록 감독할 테니까.
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1")]
+[name="렌킨"]그럼 시작하지.
+[name="렌킨"]“일단 움직여라, 미래는 그 다음이다.”
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="66_g3_miningarea",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(key="$darkness_03_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1967_1#6$1")]
+[name="닉토"]우웩……!
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1967_1#3$1")]
+[name="닉토"]……우욱…… 쿨럭…… 우웩……!
+[charslot(slot = "m", name = "avg_npc_1963_1#9$1")]
+[name="렌킨"]이것도 못 견뎌?
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1")]
+[name="렌킨"]너는 디에티 그라이퍼부르크에서 훈제 소시지를 먹을 때, 그 소시지들이 어떻게 만들어진 건지 생각해 본 적이 없지? 위성도시에 있는 도축장에 가 본 적도 없고?
+[charslot(slot = "m", name = "avg_npc_1967_1#5$1")]
+[name="닉토"]그만해! *우르수스 욕설*, 렌킨 이 빌어먹을 자식!
+[name="닉토"]눈을 잔뜩 삼켰는데도 콧속에서 피비린내가 진동해…… 언젠가 꼭 네 수프에 신선한 버든비스트 피를 섞어줄 거다!
+[charslot(slot = "m", name = "avg_npc_1971_1#1$1")]
+[name="호리"]신선한 버든비스트 피는 엄청 비싸. 한 통에 100체르벤이 넘어간다고. 지금 우리 형편으로는 살 수 없어……
+[charslot(slot = "m", name = "avg_npc_1967_1#5$1")]
+[name="닉토"]젠장, 방금 건 그냥 비유였다고…… 호리, 설마 네가 고급 레스토랑의 셰프였다니.
+[charslot(slot = "m", name = "avg_npc_1971_1#3$1")]
+[name="호리"]아들이 트럭 기사였을 때 버든비스트 피를 운송한 적이 있는데, 디에티 그라이퍼부르크의 귀족들은 새끼 버든비스트가 미용에 좋다고 믿고 있더군.
+[name="호리"]편지에 디에티 그라이퍼부르크의 일을 많이 써줬는데, 마지막으로 편지를 받은 게 벌써 7년 전이야. 잘 지내고 있으면 좋겠는데……
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1")]
+[name="렌킨"]그럼 조심해줘, 닉토가 내 저녁밥에 허튼짓 못 하게.
+[charslot(slot = "m", name = "avg_npc_1971_1#1$1")]
+[name="호리"]당연하지. 아무도 우리의 저녁밥에 허튼짓을 할 수는 없어.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_npc_1967_1#5$1", focus="l")]
+[charslot(slot = "r", name = "avg_npc_1963_1#2$1", focus="n")]
+[name="닉토"]이게 최후의 만찬이 아니었으면 좋겠네. 그렇지 않으면 너를 저주하겠어, 렌킨.
+[charslot(slot = "r", name = "avg_npc_1963_1#2$1", focus="r")]
+[name="렌킨"]마음대로 해. 난 오늘 기분이 아주 좋거든.
+[charslot(slot = "r", name = "avg_npc_1963_1#8$1", focus="r")]
+[name="렌킨"]……이렇게 자유로운 기분이 얼마 만인지.
+[name="렌킨"]우리는 마침내 족쇄를 풀고 자유로워졌어. 하고 싶은 일, 가고 싶은 곳, 우리의 삶, 이 모든 걸 이제 우리 스스로 결정할 수 있게 됐다고.
+[charslot(slot = "l", name = "avg_npc_1967_1#5$1", focus="l")]
+[name="닉토"]시 낭송은 상황이 좀 더 나아졌을 때나 해……
+[dialog]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1967_1#1$1", focus="l")]
+[name="닉토"]그나저나 렌킨, 이제 어떻게 할 거야?
+[charslot(slot = "r", name = "avg_npc_1963_1#1$1", focus="r")]
+[name="렌킨"]계획에 변경은 없어.
+[name="렌킨"]남쪽으로, 우-카 접경지로 가서 감염자가 설립한 감염자 농장을 찾는다. 거기에 우리 모두의 안식처가 있을 거야.
+[charslot(slot = "l", name = "avg_npc_1967_1#1$1", focus="l")]
+[name="닉토"]진위도 알 수 없는 그 '리유니온' 녀석을 무작정 믿을 생각이야?
+[charslot(slot = "r", name = "avg_npc_1963_1#2$1", focus="r")]
+[name="렌킨"]아니, 당연히 믿을 만한 이유가 있지.
+[name="렌킨"]몇 년 전, 내가 우-카 접경지에서 군 복무할 때 리유니온과 관련된 믿을 만한 소식을 많이 들었어.
+[name="렌킨"]그들은 감염자를 받아들여 줬고, 약을 무상으로 나눠줬고, 감염자를 괴롭히는 감시팀 놈들도 몇 번이나 물리쳤어…… 분명 우리와 같은 이상을 품은 사람들이 있을 거야.
+[charslot(slot = "l", name = "avg_npc_1967_1#1$1", focus="l")]
+[name="닉토"]나는 그냥 감염자가 자기 기만을 위해 만든 환상이거나, 군이 세금을 쥐어짜기 위한 꾸며낸 이야기로밖에 안 들리는데.
+[charslot(slot = "r", name = "avg_npc_1963_1#1$1", focus="r")]
+[name="렌킨"]나는 그냥 이러한 깃발을 왜 지금까지 들지 않았는지가 궁금해.
+[name="렌킨"]만약에…… 만약에 말이야, 만약 그게 존재하지 않는 조직이라면, 그 깃발은 우리가 들면 돼.
+[charslot(slot = "l", name = "avg_npc_1967_1#2$1", focus="l")]
+[name="닉토"]훗…… 접경지 군 생활이 네게 다른 교훈을 줬을 거라고 생각했는데.
+[name="닉토"]생각해 봐. 그때 네가 구한 게 감염자가 아니라 백작이었다면, 지금쯤 중위, 심지어 대위가 됐을지도 몰라.
+[name="닉토"]오늘 그 감시팀 놈들도, 손가락 하나 까딱이면 바로 벌벌 기어 와서 네 부츠를 핥았을걸.
+[charslot(slot = "r", name = "avg_npc_1963_1#2$1", focus="r")]
+[name="렌킨"]그렇다면 난 정말 선택을 잘한 것 같아. 안 그랬다면 이 나라의 진짜 모습을 보지 못했을 거고, 내 인생에서 가장 중요한 사명을 깨닫지도 못했을 테니까.
+[charslot(slot = "r", name = "avg_npc_1963_1#10$1", focus="r")]
+[name="렌킨"]우리 국민들은 너무 오랫동안 우롱과 기만 속에서 살아왔어. 사람들은 눈앞의 삶을 너무나도 당연하게 받아들였고, 본래 얻어야 할 게 무엇인지 완전히 잊어버렸어!
+[name="렌킨"]이건 감염자와 일반인 사이의 갈등이 아니야. 만약 언젠가 우르수스의 감염자가 모두 사망한다면, 그놈들은 또 다른 기준을 세워 일부 사람들을 광산으로 보낼 게 뻔해.
+[charslot(slot = "r", name = "avg_npc_1963_1#10$1", focus="r")]
+[name="렌킨"]왜 누구는 태어나서부터 모든 걸 누리는데, 누구는 평생 구차하게 살아가야 하지? 그들이 힘겹게 얻은 성과는 도대체 누구를 위한 거지?
+[charslot(slot = "l", name = "avg_npc_1967_1#1$1", focus="l")]
+[name="닉토"]근데, '본래 얻어야 할 것'이 무엇인지는 누가 결정한다는 걸까?
+[name="닉토"]지금 이 대지의 상황이야말로 진리일지도 몰라. 만약 또 다른 테라가 존재하더라도, 설령 문명이 만 번 다시 시작된다고 해도, 지금의 이 구조는 절대 벗어날 수 없을 거야.
+[charslot(slot = "r", name = "avg_npc_1963_1#3$1", focus="r")]
+[name="렌킨"]아니…… 나는 믿지 않아.
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "r", name = "avg_npc_1963_1#5$1", focus="r")]
+[name="렌킨"]우리 주변에서 일어나는 일을 보고 있으면 분노가 느껴지지 않아? 우리가 본능적으로 분노한다는 건 이 모든 게 틀렸다는 뜻이야!
+[name="렌킨"]닉토, 너의 경험이라면 당연히 알 수 있을 거야.
+[charslot(slot = "l", name = "avg_npc_1967_1#5$1", focus="l")]
+[name="닉토"]옛날일은 꺼내지 마……
+[charslot(slot = "l", name = "avg_npc_1967_1#1$1", focus="l")]
+[name="닉토"]됐어…… 네 말이 맞다고 하자고, 그 접경지까지는 얼마나 남았어? 앞으로 또 얼마나 많은 일이 기다리고 있을까?
+[charslot(slot = "r", name = "avg_npc_1963_1#1$1", focus="r")]
+[name="렌킨"]나한테 계획이 있어…… 내가 왜 이 칩들을 모았다고 생각해?
+[name="렌킨"]이 칩은 다른 칩처럼 제거하자마자 폭발하지는 않았지만, 위치 추적 기능은 아직도 남아 있어.
+[charslot(slot = "l", name = "avg_npc_1967_1#4$1", focus="l")]
+[name="닉토"]너……
+[charslot(slot = "r", name = "avg_npc_1963_1#2$1", focus="r")]
+[name="렌킨"]어쨌든, 그동안 우리가 이것 때문에 얼마나 고생했는데, 이걸 역이용해서 감시팀 놈들에게 반격하지 말라는 법은 없잖아?
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "l", name = "avg_npc_1967_1#5$1", focus="l")]
+[name="닉토"]이건 탈출하기로 결정했을 때 했던 얘기랑 다르잖아!
+[name="닉토"]렌킨, 너도 사람들의 상태를 잘 알고 있잖아. 지금 움직일 수 있는 사람이 얼마나 된다고 생각해? 절반은 될까?
+[name="닉토"]감시팀을 한두 번 물리칠 수는 있겠지만, 우르수스 전체를 상대로 싸울 수는 없어! 유혈 사태를 더 일으켜봤자 우리만 불리해져!
+[charslot(slot = "r", name = "avg_npc_1963_1#1$1", focus="r")]
+[name="렌킨"]우리가 살아남으려면 이렇게 되는 건 결국 시간문제야.
+[name="렌킨"]감시팀 놈을 1명 죽이면 적어도 여분의 호흡기를 하나 얻을 수 있어.
+[name="렌킨"]빼앗은 물자는 우리가 빙원을 벗어나는 데 도움이 되고, 베토치키 같은 아이들이 하루라도 더 살 수 있는데 도움이 된다고.
+[charslot(slot = "r", name = "avg_npc_1963_1#10$1", focus="r")]
+[name="렌킨"]그리고 우리가 왜 떠나야만 했는지 잊어버렸어?
+[name="렌킨"]그놈이 인간이라고 할 수는 없지만, 어쨌든 우린 함께 놈을 죽였잖아.
+[charslot(slot = "l", name = "avg_npc_1967_1#5$1", focus="l")]
+[name="닉토"]……무슨 말을 하는지 모르겠어.
+[name="닉토"]아직 광산을 벗어나지도 못했는데, 벌써부터 너랑은 말이 통하지 않게 됐다고!
+[charslot(slot = "r", name = "avg_npc_1963_1#3$1", focus="r")]
+[name="렌킨"]닉토, 나는 너랑 싸우고 싶지 않……
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1", posfrom="-200,0", posto="0,0", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="베토치키"]서, 선생님……?
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1")]
+[name="베토치키"]아, 닉토 아저씨도, 계셨네요……
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="렌킨"]무슨 일이야?
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1")]
+[name="베토치키"]아, 아니에요. 그냥 식사하셨는지, 보러 왔어요……
+[charslot(slot = "m", name = "avg_npc_1967_1#1$1")]
+[name="닉토"]아, 그건 걱정할 필요 없어. 렌킨의 배는 이미 원대한 이상으로 가득 차 있으니까.
+[charslot(slot = "m", name = "avg_npc_1963_1#8$1")]
+[name="렌킨"]하하하…… 그 말도 틀리진 않지.
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1")]
+[name="렌킨"]그 의사 선생들이나 더 신경 써줘. 오늘 가장 많이 고생했으니까.
+[charslot(slot = "m", name = "avg_4207_branch_1#1$1")]
+[name="베토치키"]방금, 보고 왔어요. 잘 준비를, 하더라고요.
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1")]
+[name="렌킨"]그래, 너도 수고했어.
+[name="렌킨"]상처는? 아직도 아파?
+[charslot(slot = "m", name = "avg_4207_branch_1#1$1")]
+[name="베토치키"]저는…… 괜찮아요. 다른 사람들도.
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1")]
+[name="렌킨"]그래, 우리 모두 용감한 사람들이니까……
+[name="렌킨"]얼른 쉬어. 가서 배불리 먹고, 잠도 푹 자고.
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1")]
+[name="베토치키"]어…… 우리 식량도, 얼마 없고, 저도 많이, 먹지는 못해요……
+[name="베토치키"]선생님도, 몸조심하세요……
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1967_1#1$1")]
+[name="닉토"]렌킨, '잔가지'는 너를 아주 많이 신뢰하고 있어. 계속 선생님처럼 너를 따르고 있어.
+[name="닉토"]……모두가 너를 믿고 있어. 다들 네가 여기서 데리고 나가주기를 기다리고 있다고.
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="렌킨"]나도 알아. 그래서 걔한테 한 말은 모두 내 마음 깊숙한 곳에서 우러나온 진심이야.
+[name="렌킨"]나도 모두를 내가 옳다고 생각하는 길로 이끌고 있으니까.
+[charslot(slot = "m", name = "avg_npc_1967_1#3$1")]
+[name="닉토"]부디 그랬으면 좋겠군……
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1")]
+[name="렌킨"]어깨에 힘 좀 빼, 닉토. 오늘은 우리가 첫 승리를 거둔 날이야, 좋은 징조라고. 그렇게 우거지상을 하고 있을 필요는 없잖아?
+[name="렌킨"]한 사람이 각성하고 길을 떠나겠다고 마음먹었을 때야말로 위대한 출발의 시작이야.
+[charslot(slot = "m", name = "avg_npc_1967_1#1$1")]
+[name="닉토"]또 《이고리 전기》에 나온 말이야?
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1")]
+[name="렌킨"]아니, 내가 한 말.
+[name="렌킨"]날 믿어, 닉토. 우리는 위대한 일을 하고 있어.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="34_g10_tent_inside",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_501_1#1$1", focus="l")]
+[charslot(slot = "r", name = "avg_npc_1730_1#3$1", focus="n")]
+[name="로도스 아일랜드 메딕 오퍼레이터"]팀장님, 전원 수술이 끝났습니다.
+[name="로도스 아일랜드 메딕 오퍼레이터"]그런데 조건이 너무 제한적이라, 열이 나는 사람들이 있습니다. 이건 도저히 어찌할 수가……
+[charslot(slot = "r", name = "avg_npc_1730_1#7$1", focus="r")]
+[name="라이디언"]알았어. 저쪽 리더와 상의해서 부상자들에게 식량과 물을 최대한 공급하라고 할게.
+[name="라이디언"]오늘 고생 많았어. 얼른 쉬어, 너희도 몸 좀 챙기고.
+[charslot(slot = "l", name = "avg_npc_501_1#1$1", focus="l")]
+[name="로도스 아일랜드 메딕 오퍼레이터"]팀장님, 그럼 앞으로는……
+[charslot(slot = "r", name = "avg_npc_1730_1#3$1", focus="r")]
+[name="라이디언"]크라이니 세베르에 계엄령이 선포된 데다, 날씨의 영향까지 겹쳐서 외부에 연락하기가 쉽지 않아.
+[name="라이디언"]여기서 일어난 일은 반드시 우르수스의 시선을 끌게 될 거야. 최대한 빨리 여기를 떠야 해.
+[charslot(slot = "l", name = "avg_npc_501_1#1$1", focus="l")]
+[name="로도스 아일랜드 메딕 오퍼레이터"]그런데 저 사람들이랑 동행해야 하나요?
+[name="로도스 아일랜드 메딕 오퍼레이터"]팀장님, 이러다가 우르수스와 대립하게 되기라도 하면……
+[charslot(slot = "r", name = "avg_npc_1730_1#2$1", focus="r")]
+[name="라이디언"]물론, 로도스 아일랜드는 우르수스와 대립할 생각이 없어. 하지만 지금 여기 있는 사람들은 오직 살고 싶은 사람들일 뿐이야.
+[name="라이디언"]감염자의 처지를 바꾸는 게 또 우리 로도스 아일랜드의 뜻이고.
+[name="라이디언"]게다가 우리도 저 사람들의 도움을 받았잖아.
+[charslot(slot = "r", name = "avg_npc_1730_1#3$1", focus="r")]
+[name="라이디언"]걱정은 그만하고, 만일의 사태에 최대한 대비하자. 나는 도시 내 거점에 계속 연락해 볼게.
+[name="라이디언"]우리가 보낸 메시지를 받고…… 지원하러 왔을 때, 우리가 남긴 단서도 찾아낼 수 있었으면 좋겠어.
+[dialog]
+[stopmusic(fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background(image="66_g1_bleskstreet",screenadapt="coverall")]
+[PlaySound(key="$d_avg_snowstormflp", volume=1, loop=true, channel="sn")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>우르수스 크라이니 세베르, 브레스크</><p=2>3일 전</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[name="신문팔이 소년"]신문 사세요…… 《브레스크 타임스》입니다……
+[dialog]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot = "l", name = "avg_1037_amiya3_1#1$1", posfrom="-200,0", posto="0,0", duration=1.5)]
+[delay(time=1)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1)]
+[charslot(slot = "r", name = "avg_npc_240", posfrom="200,0", posto="50,0", duration=0.5)]
+[delay(time=0.5)]
+[charslot(slot = "r", focus="r")]
+[name="신문팔이 소년"]누나…… 신문 하나 사실래요?
+[charslot(slot = "l", name = "avg_1037_amiya3_1#8$1", focus="l")]
+[name="아미야"]어, 조, 좋아요…… 얼마죠?
+[charslot(slot = "r", focus="r")]
+[name="신문팔이 소년"]20파라예요……
+[charslot(slot = "l", name = "avg_1037_amiya3_1#8$1", focus="l")]
+[name="아미야"]네……
+[name="아미야"]그런데 제가 잔돈이 없어서요…… 이거를 드리죠.
+[charslot(slot = "r", focus="r")]
+[name="신문팔이 소년"]고마워요, 누나! 정말 좋은 분이세요!
+[dialog]
+[charslot(slot = "l", posfrom="0,0", posto="200,0", afrom=1, ato=1, duration=1.5)]
+[delay(time=2)]
+[charslot(slot = "r", focus="n")]
+아미야는 아이의 손바닥에 1체르벤짜리 동전을 조심스럽게 올려놓았다. 돈을 받은 아이는 상대가 마음을 바꿀까 두려웠는지, 재빨리 길모퉁이로 사라졌다.
+[dialog]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1)]
+[charslot(slot = "r", name = "avg_npc_240", posfrom="50,0", posto="-500,0", afrom=1, ato=0, duration=0.5)]
+[delay(time=1.5)]
+[charslot(slot = "r", afrom=1, ato=0, duration=0)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1")]
+[name="아미야"]……
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="아미야?;뭘 보고 있어?", values="1;2")]
+[Predicate(references="1;2")]
+[StopSound(channel="sn", fadetime=2)]
+[PlayMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]저 꼬마의 옷이…… 너무 얇아서요.
+[name="아미야"]브레스크는 제 기억 속의 우르수스보다 더 춥네요.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="지난번에 우르수스에 왔을 때는 겨울이었지.;브레스크가 체르노보그보다 더 북쪽이잖아.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]기억나요……
+[name="아미야"]그렇게 치열한 전쟁터는 처음이었죠, 두려움조차 잊어버릴 정도로 긴장했어요……
+[name="아미야"]그때는 그보다 더 위험한 순간이 없을 줄 알았어요.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="하지만 그 후로 우리는 더 많은 걸 겪었지.", values="1")]
+[Predicate(references="1")]
+[Decision(options="적어도 지금은 재앙이나 추격병이 없잖아.;적어도 지금은 내가 누군지 잘 알고 있잖아.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1")]
+[name="아미야"]맞아요……
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1")]
+[name="아미야"]박사님, 그러고 보니 이렇게 조용히 도시를 관찰할 기회는 거의 없었던 것 같네요.
+[name="아미야"]체르노보그도, 용문도, 런디니움도, 우리의 기억 속에는 온통 소동과 전쟁의 불길이니까요……
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="이게 이 대지의 원래 모습이지.;이 도시의 지금 모습을 기억해야 해.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="오늘 신문이나 보자.;광산 봉쇄 원인이 보도됐어?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#3$1")]
+[name="아미야"](고개를 젓는다)
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]아무래도 알로이즈 씨가 그 여대공과 교섭이 끝나야만 더 많은 걸 알 수 있을 것 같아요.
+[name="아미야"]광산 진입 허가를 신청해 주겠다고는 했지만, 도대체 어떻게 할 생각인지……
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="일부러 우리의 정보가 한정적이라는 걸 깨닫게 하려는 거야.;우리를 수세에 몰아넣으려 하고 있어.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]저게 바로 여대공의 사무실이 있는 곳이에요.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1")]
+[name="아미야"]저희가 수집한 정보에 따르면, 이 여대공의 이름은 옐리자베타 콘스탄티노브나 라지사라예요.
+[name="아미야"]흔히들 알고 있는 우르수스 귀족과는 달리, 이 여대공은 '자비로움'으로 유명해요. 일반인에게도, 감염자에게도요.
+[name="아미야"]다양한 경로를 통해 알아봤는데, 평판이 엄청 좋은 사람이에요.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="그런 좋은 평판을 얻으려면 '자비로움'만으로는 부족해.;그 여대공은 분명 똑똑한 사람일 거야.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="사무실은 그리 거창해 보이진 않네.;그냥 민가처럼 보이는데.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="아미야"]브레스크의 건축물은 대체로 낮고 반듯해요. 아마 우르수스 크라이니 세베르 지역 특유의 건축 양식 같아요.
+[name="아미야"]하지만 지도에서 보면, 주변 건물들이 죄다 이 건물을 둘러싸고 있어요. 적어도 도시 계획 관점에서 볼 때, 이곳은 비교적 특별한 지리적 위치에 있어요.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="그래서, 우리가 여기에 와있지.;들어와서 기다리라고 하지도 않네.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="과감한 집행력의 젊은 여성.;명망이 높은 지역 지도자.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="아미야"]박사님, 걱정되나요?
+[name="아미야"]솔직히 저도 그래요. 알로이즈 씨가 본인의 입장을 밝히긴 했지만, 진짜 목적은 아직 알 수 없어서……
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="(고개를 젓는다);지금 상황이 어딘가 익숙하지 않아?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1")]
+[name="아미야"]……아, 용문 때를 말씀하시는 건가요?
+[name="아미야"]첸 씨는 확실히 집행력이 과감한 편이죠.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="'상대하기 까다로운' 게 아니고?", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#11$1")]
+[name="아미야"]'엄격함'의 또 다른 표현이라 해두죠.
+[name="아미야"]그 점에서, 첸 씨는 자신에게도 타인에게도 마찬가지예요. 그때나 지금이나.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1")]
+[name="아미야"]맞다! 출발하기 전에 첸 씨에게서 소식이 왔었어요. 자신의 동향에 대해 자세히 밝히지는 않았지만, 적어도 잘 지내는 것 같았어요.
+[name="아미야"]그간 있었던 일을 듣더니, 로도스 아일랜드가 필요하다면 언제든지 돌아오겠다고 약속했어요.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="우리는 많은 친구를 사귀었어.;또 많은 이들이 우리를 떠났지.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1")]
+[name="아미야"]아직도 기억나요. 첸 씨와 함께 행동할 때, 로도스 아일랜드를 대표해 웨이 장관과 교섭한 게 사실은 켈시 선생님이었죠.
+[name="아미야"]……
+[charslot(slot = "m", name = "avg_1037_amiya3_1#2$1")]
+[name="아미야"]박사님, 전 역시 불안해요. 제가 켈시 선생님처럼 문제를 해결하고, 다른 사람과 협력을 이뤄낼 수 있을까요?
+[name="아미야"]게다가 저희는 우르수스의 현 상황과 이 여대공에 대해 거의 아는 게 없어요.
+[name="아미야"]박사님, 저는……
+[dialog]
+[charslot]
+[Decision(options="켈시만이 할 수 있는 일을 할 필요는 없어.", values="1")]
+[Predicate(references="1")]
+[Decision(options="네 방식대로 해, 아미야.;우리도 방법을 찾을 수 있을 거야.", values="1;2")]
+[Predicate(references="1;2")]
+[PlaySound(key="$d_avg_snowbootwalk", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1", duration=1.5)]
+[delay(time=2)]
+[name="크라이니 세베르 호위병"]실례합니다. 어느 분이 로도스 아일랜드의 {@nickname} 박사시죠?
+[name="크라이니 세베르 호위병"]여대공 전하께서 부르십니다.
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

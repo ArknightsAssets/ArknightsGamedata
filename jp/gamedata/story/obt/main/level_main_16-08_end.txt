@@ -1,0 +1,690 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="66_g3_miningarea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>ウルサス クライニ・セーヴェル中心鉱区</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[PlaySound(key="$d_avg_walkfast")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$1",duration=0.8,posfrom = "-200,0", posto = "0,0")]
+[delay(time=1.2)]
+[name="Mon3tr"]……
+[dialog]
+[PlaySound(key="$d_avg_walkfast")]
+[charslot(slot="m",duration=1,posfrom = "0,0", posto = "200,0")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_4208_wintim_1#8$1",duration=1)]
+[delay(time=2)]
+[name="クセニア"]……
+[charslot(slot="m",name="avg_4208_wintim_1#2$1")]
+[name="クセニア"]……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="休憩が必要か？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="クセニア"]え？　い……いいえ。
+[charslot(slot="m",name="avg_4208_wintim_1#7$1")]
+[name="クセニア"]私はただ……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="まだ躊躇っているなら……;自分たちだけで行っても構わない。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="クセニア"]（首を横に振る）
+[name="クセニア"]案内を申し出たのは私ですから。それに、私も「オカ」に関する真相を知りたいというのは確かです。躊躇いなんてありません。
+[name="クセニア"]案内したことについて追及されたとしても、せいぜい流刑になる程度でしょうし……
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_walkfast")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1",duration=0.8,posfrom = "200,0", posto = "0,0")]
+[delay(time=1.2)]
+[name="Mon3tr"]ドクター、前方の道は安全だと思う。他の人間の反応は検出されなか――
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]ん？
+[charslot(slot = "m", focus = "n")]
+クセニアはMon3trを見やった後、すぐにぎこちなく視線を逸らした。
+ここまでの道中、やつれた研究員がMon3trの後ろを黙って歩きながら、時おり彼女のことを見つめているのにあなたは気づいていた。そして今、Mon3trもそれを察したのだ。
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]クセニア、君はずっと私のことを盗み見ていたな……どこか変か？
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="クセニア"]え？　い、いえ！
+[charslot(slot="m",name="avg_4208_wintim_1#3$1")]
+[name="クセニア"]……ただ、あなたを見ていると、昔のことを思い出すんです。
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]どんなこと？
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="クセニア"]そう……問題はそこなんです。実は私もはっきりとは思い出せないんですよ。
+[charslot(slot="m",name="avg_4208_wintim_1#2$1")]
+[name="クセニア"]昔のことすぎて、すっかり記憶がぼやけちゃってるんです。水と油に浸かって、文字が滲んでぐちゃぐちゃになった紙みたいに……
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="クセニア"]ですがもしかすると……あの、一つ伺ってもいいですか？
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]もちろん、どうぞ！　答えられるかは分からないけど。
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="クセニア"]あなたは、Mon3trと言うんですよね？
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]ああ、それが私の名だ。
+[charslot(slot="m",name="avg_4208_wintim_1#3$1")]
+[name="クセニア"]Mon3tr……Mon3tr。
+[charslot(slot = "m", focus = "n")]
+彼女はその聞き慣れない名前をそっと噛みしめた。
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="クセニア"]Mon3trさん、あなたは――
+[name="クセニア"]寒くありませんか……
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]え？
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="クセニア"]その……つまり、とても薄着をされてますから。
+[charslot(slot="m",name="avg_4208_wintim_1#9$1")]
+[name="クセニア"]必要なら、私の外套を貸しましょうか。坑道に入るまでの風よけくらいにはなるはずです。
+[name="クセニア"]……少し古いものですけど――
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]あ、ああ！　そういうことか。それなら大丈夫！
+[charslot(slot="m",name="avg_4179_monstr_1#11$1")]
+[name="Mon3tr"]誰かにそんなことを訊かれたのは初めてだったから、少し反応が遅れたけど、私は寒くないよ！
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="（Mon3trに対して首を横に振る）;（クセニアに対してうなずく）", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]うん、私は寒くはない。だが気にかけてくれてありがとう！
+[name="Mon3tr"]ドクター、今何を言おうとしてたんだ？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="何でもない。話を続けてくれ。", values="1")]
+[Predicate(references="1")]
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_4208_wintim_1#9$1")]
+[name="クセニア"]ああ、そうですか……それならよかった。
+[name="クセニア"]あなたはきっと寒さが苦じゃない、身体が丈夫な子なんですね。
+[charslot(slot="m",name="avg_4179_monstr_1#11$1")]
+[name="Mon3tr"]ああ！　私はとっても丈夫だ！
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]心配するな、クセニア。私たちを信じてくれ。
+[name="Mon3tr"]まだしばらくは一緒に行動することだし、聞きたいことがあったら何でも聞くといい。
+[charslot(slot="m",name="avg_4208_wintim_1#9$1")]
+[name="クセニア"]はい……
+[name="クセニア"]先ほど、ケルシー所長の仲間だと言っていましたよね……
+[name="クセニア"]ケルシー所長は……元気にしておられますか？
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]あ……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……;……", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="ケルシーとは親しかったのか？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4208_wintim_1#3$1")]
+[name="クセニア"]多分……親しかったとは言えないと思います。
+[name="クセニア"]当時の私はイリヤ先生の助手として研究に参加していただけで、ケルシー所長と直接接する機会はあまり多くありませんでしたから。
+[name="クセニア"]ですから、私が覚えているのは……
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_graduate",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="イリヤ"]クセニア！　クセニア！
+[dialog]
+[PlaySound(key="$d_avg_walkfast",volume=1)]
+[delay(time=1)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[name="クセニア"]はい、先生……ここです！
+[name="イリヤ"]午前の実験データがなぜまだ私の机に上がってないんだ？
+[name="クセニア"]すみません先生。すぐに取ってきます！
+[name="イリヤ"]何度も言っただろう。プロジェクトに関わりたければ全体の歩調についていくことだと。計器の数字を書き写すだけの助手を求めているわけではない。私の三歳の娘にも務まるからな。
+[name="イリヤ"]それに、この紙に書いてあるのは何だ？　エネルギー変換式か？
+[name="イリヤ"]クセニア、新しい試みに手を出すのは、まず自分の本分をしっかりとこなしてからだと思うがな。
+[dialog]
+[PlaySound(key="$d_avg_paperball_roll",volume=1)]
+[CameraShake(duration=0.2, xstrength=5, ystrength=5, vibrato=10, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+[PlaySound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",duration=1)]
+[delay(time=2)]
+[name="ケルシー"]これは何だ？
+[charslot(slot = "m", focus = "n")]
+[name="イリヤ"]あっ、貴重なお時間をいただく価値のある物ではありません、ケルシー所長。
+[name="イリヤ"]なにせクセニアは学生で、まだ若いので、実験プロジェクトに慣れるにはいま少し時間が必要なのです。もし何か問題があっても、責任は私に……
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]これは君が導き出した公式か？
+[charslot(slot = "m", focus = "n")]
+[name="クセニア"]……
+[name="クセニア"]はい……
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]非常に独創的な理論モデルだ。推論の整合性にも問題は認められない。仮にこの公式が成り立つのであれば、我々は変換率の極めて高いエネルギー供給装置を手に入れることになる。
+[name="ケルシー"]だがこのデータは運動エネルギーの損失について考慮されていないようだ。有効性についてはまだ検証が必要だな。
+[charslot(slot = "m", focus = "n")]
+[name="イリヤ"]まったく……
+[name="クセニア"]す……すみません、ケルシー所長。
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]謝罪する必要はない。君は積極的に関わろうとしているだけだ。違うか？
+[name="ケルシー"]次の報告会の際には、君も見学に来るといい。
+[charslot(slot = "m", focus = "n")]
+[name="クセニア"]ほ、本当ですか……？
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="ケルシー"]ああ。それと、あまり厳しく当たりすぎるな、イリヤ。若者の探求心は何より得難いものだ。適宜励ましてやらねばいけない。
+[charslot(slot="m",name="avg_003_kalts_1#11$1")]
+[name="ケルシー"]君は彼女ほどの年頃の時に、これとは比べ物にならないほどとんでもない間違いを犯していただろう。
+[charslot(slot = "m", focus = "n")]
+[name="イリヤ"]はい、おっしゃる通りです。
+[dialog]
+[charslot(slot="m",name="avg_003_kalts_1#11$1")]
+[PlaySound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(slot = "m", posfrom = "0,0", posto = "-150,0",duration = 1)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[name="クセニア"]あ……ありがとうございます……
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[charslot(slot="m",name="avg_4208_wintim_1#3$1")]
+[Background(image="66_g3_miningarea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="クセニア"]ケルシー所長は……あの方は、私の理想に火をともしてくれたことがあります。
+[name="クセニア"]私もかつては、そこにいた多くの人と同じように、切実に願っていました。この石棺の研究が、やがてはまったく新たな、大衆が恩恵を受けるクリーンエネルギーに繋がることを。
+[name="クセニア"]そうなれば、坑夫たちは危険な鉱区での作業から解放されます。感染者もウルサスという歪な巨体を動かすときに自分の命を燃料せず済むようになる。
+[charslot(slot="m",name="avg_4208_wintim_1#7$1")]
+[name="クセニア"]あの時の私はなんと甘かったのでしょうか。考えもしなかったんです……国家の性格の形成にも人と同じく理由があり、そう簡単に揺らいだり、変えられるものではないことに思い至らなかった。
+[charslot(slot="m",name="avg_4208_wintim_1#10$1")]
+[name="クセニア"]それでも、あの事故の後に再びケルシー所長の名を耳にできて、とても嬉しいです。
+[charslot(slot="m",name="avg_4208_wintim_1#3$1")]
+[name="クセニア"]思うんです。せめて、もう一度――もう一度……
+[charslot(slot="m",name="avg_4208_wintim_1#9$1")]
+[name="クセニア"]あの方に会えないかと。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="クセニア、そのことだが……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4208_wintim_1#8$1")]
+[name="クセニア"]すみません！　もしこの願いがあなたたちを困らせることになるなら、聞かなかったことにしてください。
+[name="クセニア"]あなたたちの話しぶりや様子からして、所長と関係がありそうでしたので、もしかして彼女の動向や、元気にしてるかどうかをご存じなのではと思っただけです。
+[name="クセニア"]でも、そんなことを知る資格なんて私にはありませんよね……
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]クセニア。
+[charslot(slot="m",name="avg_4208_wintim_1#7$1")]
+[name="クセニア"]はい。
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]君はまたケルシーに会える。絶対に。
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="クセニア"]ああ、それでは彼女はまだ……
+[charslot(slot="m",name="avg_4208_wintim_1#9$1")]
+[name="クセニア"]よかった。
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]何があっても、私たちはまたケルシーに会える。そうだよね、ドクター？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……その通りだ。", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_4208_wintim_1#9$1")]
+[name="クセニア"]楽しみにしています……
+[name="クセニア"]もしよければ、セラフィナさんが言っていた、ケルシー所長が設立した「ロドス」という場所も見に行きたいです……
+[dialog]
+[stopmusic(fadetime=2)]
+[playsound(key="$d_gen_walk_n", loop=true, channel="bgs")]
+[delay(time=1)]
+[StopSound(channel="bgs", fadetime=0.5)]
+[delay(time=0.5)]
+[playMusic(intro="$suspenseful_intro",key="$suspenseful_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4208_wintim_1#4$1")]
+[name="クセニア"]待ってください……何か妙ですね……
+[name="クセニア"]ここへ来るまで、誰も見かけませんでしたよね？
+[name="クセニア"]坑夫だけじゃありません。ここは坑道にかなり近いはずなのに、監視隊どころか、衛兵すら一人もいませんでした。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="女大公は鉱区全体を封鎖した。;ここの人間は全員他所に移されたのでは？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4208_wintim_1#4$1")]
+[name="クセニア"]鉱区封鎖の件は知ってますけど、人員の移動なんて――
+[name="クセニア"]これは……私が知っていた話と違います。
+[name="クセニア"]鉱区で発生した問題は「オカ」の実験が失敗したことだけだと思っていました。鉱区全体を空にするなんて聞いてません。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="確かに妙だ。", values="1")]
+[Predicate(references="1")]
+[Decision(options="鉱区に入ってから遭遇した防衛戦力は非常に少ない。;ブレスク市街地のほうがまだ警備が厳重なほどだ。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="姿を消した坑夫たちは……;一体どこへ行った？", values="1;2")]
+[Predicate(references="1;2")]
+[StopSound(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g7_farnorthtundra",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>ウルサス　クライニ・セーヴェル地区、ツンドラ</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1",duration=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_stnecrve")]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+ランキンは車両の扉に最後の一筆を刻みつけると、手に持っていた石を投げ捨てた。
+[charslot]
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]その記号なら私も書けるようになったわ。次は手伝ってあげる。
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]わかった、次はやってくれ。
+[name="ランキン"]こっちは片付いた。他の車両の物資も運び出せたか？
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]パーヴェルたちが運び終えてるわ。残った二両にはそもそも使える物資がなかったけど、機械のパーツを取り外して持っていく？
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]確かお前は、前に都市の機械工場で働いてたと言ってたな。
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]そうよ。
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]ならいくらかは取り外して持って行こう。他の機械にも使えるくらい互換性のあるパーツならば、売り払って金に換えられるかもしれん。
+[name="ランキン"]引き取り手がいれば……の話だがな。
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_snowbootwalk")]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1",duration=1)]
+[delay(time=1.5)]
+[name="Raidian"]それに、負傷者のことも考えないと。
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]セラフィナさん。
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1")]
+[name="Raidian"]部隊内に行動不能な負傷者が多すぎるから、今すぐ車両から離れて進むのは現実的に考えて無理がある。
+[name="Raidian"]休憩が必要だよ。
+[dialog]
+[charslot]
+[playsound(key="$d_avg_snowrun", loop=true, channel="bgs")]
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1",duration=1)]
+[delay(time=1.5)]
+[StopSound(channel="bgs", fadetime=0.3)]
+[name="興奮した坑夫"]ランキン！　物資の確認が終わった。節約しながら食えば二、三日はなんとかなるはずだ。次の村までは辿り着けると思う。
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]もう少し量があると思ったが……まあいい、食糧があるだけでもマシだ。
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="興奮した坑夫"]あと、ヴェトチキたちが鼷獣の貯蔵してるナッツを見つけたんだ。腹の足しになるし、長持ちするぜ。
+[name="興奮した坑夫"]今足りないのは食糧よりも、医療物資の方だ――
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]そんなのどこに行ったら見つかるの？
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]移動都市か、移動医療拠点くらいだろうな。移動医療拠点との連絡がつけば……
+[charslot(slot = "m", focus = "n")]
+ランキンは無意識にRaidianに視線を向けた。
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1730_1#5$1")]
+[name="Raidian"]近くの移動医療拠点と連絡を取ってみるよ。
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1")]
+[name="ランキン"]ありがとう、セラフィナさん。
+[charslot(slot = "m", name = "avg_npc_1730_1#5$1")]
+[name="Raidian"]お礼はいらないけど、一つ条件がある。
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="興奮した坑夫"]先生、あんたたちが助けてくれたことには感謝するが、今の俺たちの状況は――
+[charslot(slot = "m", name = "avg_npc_1730_1#5$1")]
+[name="Raidian"]条件は、私が移動医療拠点との連絡を試みている間は、負傷者を連れて先を急がないこと。
+[name="Raidian"]医療に携わる者として、負傷者には休息が必要だと考えている。
+[name="Raidian"]彼らを振り回すような休息の仕方じゃないやつね。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "left", name = "avg_npc_1967_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_npc_1967_1#1$1",focus="l")]
+[name="ニクト"]誰を連れていくつもり？
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",focus="r")]
+[name="ランキン"]リディヤ、パーヴェル、それと現場監督から小銭を騙し取れるようなずる賢い連中を何人かだ。
+[charslot(slot = "left", name = "avg_npc_1967_1#1$1",focus="l")]
+[name="ニクト"]あんた、昔は選鉱場出身の悪知恵の働く奴らを嫌ってただろ。
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",focus="r")]
+[name="ランキン"]俺の好き嫌いなど関係ない。
+[charslot(slot = "left", name = "avg_npc_1967_1#1$1",focus="l")]
+[name="ニクト"]なんで僕を連れていかないの？　反論しそうだから？
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",focus="r")]
+[name="ランキン"]俺たちはこれから近くの村まで援助を願いに行くとこでサンクト・グリファーブルクの舞踏会で寄付を募るわけじゃないんだ。「旦那様」。お前のやり方は、学のない農民には通用しない。
+[charslot(slot = "left", name = "avg_npc_1967_1#5$1",focus="l")]
+[name="ニクト"]それ以上その呼び方を続けたら、鼻の形がわからなくなるまで殴るよ。
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",focus="r")]
+[name="ランキン"]そうする前にお前の指のほうが折れてるだろうよ。
+[charslot(slot = "left", name = "avg_npc_1967_1#1$1",focus="l")]
+[name="ニクト"]あんたは、できれば村に援助を求めに行きたくないようにみえるけど。
+[charslot(slot = "right", name = "avg_npc_1963_1#3$1",focus="r")]
+[name="ランキン"]……ああ。
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",focus="r")]
+[name="ランキン"]だがセラフィナさんが移動医療拠点と連絡を取れるまで、ここで何もせず座して待ってるわけにはいかない。
+[name="ランキン"]俺たちは負傷者じゃないからな。
+[charslot(slot = "left", name = "avg_npc_1967_1#4$1",focus="l")]
+[name="ニクト"]別に何もしないで待ってるだけじゃないだろ。前だって、皆で歌ったり、踊ったり――あんたもアコーディオンを弾いていたじゃないか！
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",focus="r")]
+[name="ランキン"]お前も言った通り、それは前の話だ。今ある物資はじきに尽きる。その前に、できる限りのことをやらなきゃいけない。
+[name="ランキン"]俺たちが留守の間……お前はここに残って、皆の面倒を見てくれ。
+[charslot(slot = "left", name = "avg_npc_1967_1#3$1",focus="l")]
+[name="ニクト"]今回は村の連中が助けてくれるとは思えないけどね。
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",focus="r")]
+[name="ランキン"]もちろん。感染者は一般人がドアを開けた時に快く出迎えてくれるような相手じゃない。そのことはこれまでの経験からよくわかってる。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g14_ursusvillage",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="興奮した坑夫"]ランキンが中に入ってからもうどれくらいだ？　様子を見に行ったほうがいいんじゃないか？
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]少し落ち着きなさいよ。ランキンからは知らせを待てと言われてるでしょ。
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="興奮した坑夫"]でも前は――
+[dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot = "l",posfrom = "-200,0", posto = "-100,0",duration = 1.2,name="avg_4207_branch_1#1$1")]
+[delay(time=2)]
+[charslot(slot = "l",posfrom = "-100,0", posto = "-200,0",duration = 0.5,afrom=1,ato=0)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]……
+[name="冷静な坑夫"]出てきなさい、「小枝ちゃん」。ずっとついてきてるのはわかってるのよ。ランキンもきっと知ってたけど、言わなかっただけなんだから。
+[name="冷静な坑夫"]どうしてニクトたちと一緒に後方に残らなかったの？　おばあさんだってあなたのお世話が必要なのに。
+[dialog]
+[charslot]
+[charslot(slot = "m",posfrom = "-100,0", posto = "0,0",duration = 1,name="avg_4207_branch_1#1$1")]
+[delay(time=2)]
+[name="ヴェトチキ"]おばあちゃんは、大丈夫って言ってました……
+[charslot(slot="m",name="avg_4207_branch_1#5$1")]
+[name="ヴェトチキ"]わたし、手伝いたくて。だから、来たんです。力になれます！
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]私たちについてきたこと、ニクトには知らせてあるの？　部隊からはぐれたと思われるわよ。
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="ヴェトチキ"]手紙を……置いてきました。
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]ならいいわ。正直私もあなたがいてくれたら助かると思っていたけど、ランキンがどうしても連れていきたがらなかったの。
+[charslot(slot="m",name="avg_4207_branch_1#4$1")]
+[name="ヴェトチキ"]先生は……何を、してるんですか？
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]交渉よ。村人たちから物々交換で食糧を分けてもらえないかって。
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="ヴェトチキ"]わたしたちは、何を……渡すんですか？
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]車両から持ってきた部品よ。
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="興奮した坑夫"]だけどランキンは何も持って行かなかったぞ！
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]……多分、先に友好的な態度を示すためでしょ。武器や鉄製の部品を持っていったりしたら、威嚇してると思われる可能性もないわけじゃないもの。
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="興奮した坑夫"]ダメだ。前も何も持たずに行った時、奴らは表向き交渉しながら、裏口から人をやって、監視隊を呼びに行ったじゃないか――
+[name="興奮した坑夫"]助けに行かなきゃ！
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]パーヴェル！
+[name="冷静な坑夫"]はぁ……私たちも行きましょう！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g14_ursusvillage",screenadapt="coverall",xScale=1.2, yScale=1.2,x=-130, y=-70)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1969_1#1$1",duration=0.5)]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1970_1#1$1",duration=0.5)]
+[delay(time=0.8)]
+[charslot(slot = "r", focus="r")]
+[name="冷静な坑夫"]（小声）止まりなさい！
+[charslot(slot = "l", focus="l")]
+[name="興奮した坑夫"]ランキンが中にいるんだ――
+[dialog]
+[charslot(slot = "r",posfrom = "0,0", posto = "-100,0",duration =0.5)]
+[delay(time=0.8)]
+[playsound(key="$d_avg_clothmovement")]
+[charslot(slot = "l",posfrom = "0,0", posto = "-150,0",duration =0.5)]
+[charslot(slot = "r",posfrom = "-100,0", posto = "-300,0",duration =0.5)]
+[charslot(duration=0.5)]
+[delay(time=1)]
+坑夫は仲間の口をふさぎ、脇に身を寄せた。
+扉の中から、微かな交渉の声が聞こえてくる。
+[dialog]
+[backgroundTween(duration=1.5, yTo=-100,block=false)]
+[focusout(duration=1.5, type="bg", from=0, to=0.5)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2, fadetime=1.5)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2, fadetime=1.5)]
+[delay(time=2.5)]
+[name="扉の中から聞こえる声"]……わかった……
+[name="扉の中から聞こえる声"]（金属が擦れる音）
+[name="扉の中から聞こえる声"]……すでに……知らせに……
+[PlaySound(key="$fightgeneral",volume=0.3)]
+[CameraShake(duration=0.3, xstrength=10, ystrength=0, vibrato=20, randomness=90, fadeout=true, block=false)]
+[name="扉の中から聞こえる声"]（衝撃音）
+[name="冷静な坑夫"]（小声）何か妙な物音が聞こえるわ。
+[CameraShake(duration=0.5, xstrength=5, ystrength=5, vibrato=15, randomness=90, fadeout=true, block=false)]
+[name="興奮した坑夫"]むぐぐぐぐ――
+[name="冷静な坑夫"]（小声）いきなり飛び込んだりしないって約束したら、手を放してあげる。
+[name="興奮した坑夫"]（うなずく）
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[curtain]
+[focusout(duration=0, type="bg", from=0, to=0, block=true)]
+[delay(time=0.25)]
+[Background(image="66_g14_ursusvillage",screenadapt="coverall",xScale=1.2, yScale=1.2,x=-130, y=-70)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+息を整え終えた瞬間、興奮した坑夫は民家の裏手を指し示した。
+雪の上に、遠くへと伸びるはっきりとした足跡がいくつかついているのを全員が目にした。
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1",duration=0.5)]
+[delay(time=0.8)]
+[name="冷静な坑夫"]（小声）……クソッ。
+[name="冷静な坑夫"]（小声）あなたたち、誰かドアを叩いてきて。できるだけ激しく。中の人に聞かれたら、適当に取り繕いなさい。
+[charslot]
+[name="ずる賢い坑夫"]（小声）なんでお前が行かないんだ？　もしランキンが捕まってたら、次に捕まるのはドアを叩いた奴だろ？
+[dialog]
+[charslot(slot = "m", name = "avg_4207_branch_1#5$1",duration=0.5)]
+[delay(time=1)]
+[name="ヴェトチキ"]（小声）わ、わたしが行きます。
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]（小声）ダメよ、ヴェトチキ――
+[charslot]
+[PlaySound(key="$doorknockquite")] 
+ヴェトチキは指を曲げて、木の扉を軽く叩いた。
+中からこぼれてきていた音が瞬時に消えた。
+[name="扉の中から聞こえる声"]誰だ？
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]（小声）……叩き続けて。
+[charslot(slot = "m", name = "avg_4207_branch_1#1$1")]
+[PlaySound(key="$doorknockquite")] 
+[name="ヴェトチキ"]（ノックをする）
+[charslot]
+[name="扉の中から聞こえる声"]ずいぶん早く戻ってきたな……
+[dialog]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$dooropenquite")] 
+[charslot(slot = "m", name = "avg_npc_092",duration=0.7,posfrom = "100,0", posto = "0,0")]
+[delay(time=1.2)]
+[charslot(slot = "l", name = "avg_npc_1969_1#1$1",duration=0.3)]
+[charslot(slot = "l",duration=0.4,posfrom = "-200,0", posto = "0,0")]
+[delay(time=0.3)]
+[charslot(slot = "m", name = "avg_npc_092#5")]
+[charslot(slot = "m",duration=0.5,posfrom = "0,0", posto = "30,-50",afrom=1,ato=0)]
+[PlaySound(key="$bodyfalldown2")] 
+[CameraShake(duration=0.3, xstrength=20, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.7)]
+[charslot(slot = "m", focus = "n")]
+[name="村人"]うっ！
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1963_1#6$1",duration=0.8,posfrom = "100,0", posto = "0,0")]
+[delay(time=1)]
+[name="ランキン"]何事だ――
+[charslot(slot = "m", name = "avg_npc_1963_1#7$1")]
+[name="ランキン"]じいさん！
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]ランキン、大丈夫？
+[charslot(slot = "m", name = "avg_npc_1963_1#6$1")]
+[name="ランキン"]リディヤ？　外で待ってろと言っただろ――
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]……ヴェトチキ？
+[name="ランキン"]なぜここにいる？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_snowconutryinside",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_092",duration=1)]
+[delay(time=2)]
+[name="友好的な村人"]……つまり、あんたらは命令を受けて、鉱区から補給を探しに来た坑夫なんだな。
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]ええ、その通りなんです！　この無鉄砲な奴に代わって謝るわ。坑道から出たことがほとんどないせいで、善人と悪人の区別もつかなくて。
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="興奮した坑夫"]すみません、すみません。前に別の村に助けを求めた時、不愉快な目に遭ってしまって。てっきり今回も同じかと――
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]パーヴェル。
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="友好的な村人"]おやまあ、正直な子だね。他の村の者が感染者にどう対応するかは私も知っているよ……むしろ、ウルサスのほとんどの人間がそうするだろう。
+[name="友好的な村人"]しかし、君らは管理に従わずに、ただ混乱を起こそうとするだけの感染者とは違うだろう？　坑夫なんだから。
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]もちろんです！　ご存知の通り、上からの許可がなければ、我々は鉱区から一歩も外に出られません。
+[name="冷静な坑夫"]こちらがうちの現場監督です。補給を見つけられなければ私たちを連れて報告に戻ることは許さないと、彼は上から言われているんです。
+[charslot(slot = "m", name = "avg_npc_092#3")]
+[name="友好的な村人"]もし見つからなければ、上のお偉いさんは飯をくれないということかね？
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]ええ、そうです。我々大人はまだ耐えられますが、この小枝ちゃんを見てください。名前の通り、細っこい木の枝のような子供じゃ飢えには耐えられません。本当にどうすればいいか。
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="友好的な村人"]小枝ちゃんとは、この子のことか？　この子も坑夫なのか？
+[name="友好的な村人"]……いくつだい？
+[charslot(slot = "m", name = "avg_4207_branch_1#1$1")]
+[name="ヴェトチキ"]じゅ、十――
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="友好的な村人"]十歳？
+[charslot(slot = "m", name = "avg_4207_branch_1#1$1")]
+[name="ヴェトチキ"]十五歳です。
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="友好的な村人"]ははっ、照れ屋さんだね。うちの娘みたいだ……もしあの子がまだ生きていたなら、孫はきっと君くらいの大きさだったろうな。
+[name="友好的な村人"]あの子は石塊病にかかった後、自分で鉱区へ行ったんだ。この辺のじゃなく、東部の、北原採掘場だったかな？　とにかくうんと遠いところさ……
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1")]
+[name="ヴェトチキ"]こ、鉱区は、いいところです。だ、だから、し……心配しないで、おじいちゃん。
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="友好的な村人"]おじいちゃん……ははっ、おじいちゃんか……
+[charslot(slot = "m", name = "avg_npc_092#3")]
+[name="友好的な村人"]私はあの子がいつ、どうやって病気になったのかも知らなくてね。聞いても答えてはくれなかった。もう長いこと音沙汰もない。
+[name="友好的な村人"]はぁ、こんな話はやめよう！　君たちの鉱区の管理者はまだまともそうだ。人の生死などお構いなしに、食糧も、他の生き方も与えないような連中とは違ってな。
+[name="友好的な村人"]聞いた話だと、生き延びるために監視隊に捕まることを承知で逃げ出そうとする坑夫もいるそうじゃないか。
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]助けてくださるんですか？
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="友好的な村人"]君たちが来る前に、うちの女房が他の者と相談しに行ったよ。
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]あの足跡はそういうことだったのね……
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]リディヤ、パーツは？
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]ここよ。ほら。
+[charslot]
+[playsound(key="$d_avg_clothmovement")]
+ランキンはそれを受け取ると、衣服で包んだ品を目の前の老人にそのまま手渡した。
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]これを差し上げます。収穫機に取り付ければ、老朽化したパーツの代わりになるはずです。
+[name="ランキン"]タダで備蓄を恵んでくれってわけじゃありません。
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="友好的な村人"]いいとも、いいとも……正直言って、私もこういうのはよくわからんが、確かに収穫機は長いこと故障してたからね。もしよければ、君たちが直接取り換えてくれると助かるよ。
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="冷静な坑夫"]私が見てみます。前は機械工場で働いてたんです。
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="友好的な村人"]そうか、それは何よりだ。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g14_ursusvillage",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1967_1#4$1",duration=1)]
+[delay(time=2)]
+[name="ニクト"]……本当に食糧を分けてもらえたのか。しかもこんなにたくさん。
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]ゲンナジーさんが言うには、今年は豊作だったにもかかわらず、収穫機が壊れてしまっていたそうだ。ようやく手作業で苔麦を刈り終えたがキャラバンが来なくて、余った穀物も売れなかったらしい。
+[name="ランキン"]現金がないから、皆が苦しい生活をしてる。それでも春まで取っておくのではなく、俺たちにくれたんだ。
+[charslot(slot = "m", name = "avg_npc_1967_1#1$1")]
+[name="ニクト"]リディヤはあのパーツのほうが苔麦より価値があるって言ってたけど。
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]今の俺たちにとっては、食糧のほうが遥かに貴重だ。
+[dialog]
+[charslot]
+[playsound(key="$d_avg_snowbootwalk")]
+[charslot(slot = "m", name = "avg_npc_092",duration=1)]
+[delay(time=2)]
+[name="友好的な村人"]若いの……君たちはすぐに戻るつもりなのかね？
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]はい。任務は果たしたので、そろそろ戻らないといけません。
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="友好的な村人"]君たちには、腹を満たしてから帰ってもらおうと思っていたんだがね。
+[name="友好的な村人"]西側に空き家があるんだ。昔、何人か引っ越した後に残った家だ。わしらと食卓を囲む気がなかったとしても、皆をそこへ連れて行き自分たちで火を起こして、何か食べて身体を温めるといい。
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]……ありがとう……ございます。
+[name="ランキン"]本当に、どう感謝していいものやら。
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="友好的な村人"]構わんよ。あの物知りなお嬢ちゃんが収穫機を直してくれたおかげで、来年には使えるようになったからな。むしろ、感謝すべきはこちらの方だ。
+[name="友好的な村人"]それに我々も、実のところ大した助けにはなれん。
+[charslot(slot = "m", name = "avg_npc_092#2")]
+[name="友好的な村人"]村では、皆の冬越し用の備蓄はほとんどが手を付けられない状態でな。今でこそ監視隊が来る頻度は減ったが、時おり税吏がやってくるだけでもそれなりに骨が折れるんだ。
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="友好的な村人"]今回は我々年寄り連中が、皆の家から備蓄を少しずつかき集めただけなんだ。君たちがちゃんと報告に戻れるようにな。
+[name="友好的な村人"]これ以上は何の力にもなれんよ――
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]もしよければ、娘さんの名前を教えてもらえませんか。俺たちが――その――鉱区へ戻ったら、見つからないか聞いてみます。
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="友好的な村人"]いや、あの子はクライニ・セーヴェルにはいないんだ！　東の方の北原、とても遠いところに……
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="ランキン"]どうか教えてもらえませんか。
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="友好的な村人"]わかった。言ったところで何かあるわけでもないしな。
+[name="友好的な村人"]あの子の名はミラーナだ……
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g14_ursusvillage",screenadapt="coverall",xScale=1.2, yScale=1.2,x=130, y=-70)]
+[playsound(key="$d_avg_woodcracle", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[Blocker(a=0.3, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+暗闇で、一対の虚ろな目が皆を見つめていた。
+篝火がパチパチと爆ぜる音が、彼の曖昧なつぶやき声を容易にかき消していく。
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1971_1#1$1",duration=1)]
+[delay(time=2)]
+[name="ホーリー"]……
+[name="ホーリー"]救いが……
+[name="ホーリー"]得られますように。
+[Dialog]
+[Delay(time=2)]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot]  
