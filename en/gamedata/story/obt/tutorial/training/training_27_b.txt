@@ -1,0 +1,21 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[InputBlocker(blockInput=true)]
+[Delay(time=0.5)]
+[Battle.SwitchToDefaultUIState]
+[Battle.Pause]
+[popupdialog(dialogHead="$avatar_mcreep_a",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black="$f_tut_black", protectTime=0.5)] Are you our rescue? The strange pollution is still spreading. We know the area, and can help you deal with it.
+[popupdialog(dialogHead="$avatar_mcreep_a",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black="$f_tut_black", protectTime=0.5)] The problem is those <@tu.kw>Heavily Polluted Facilities</>. Destroy them to clear the pollution.
+[Battle.EnsureMinSp(charId="trap_270_spawnp", sp=15)]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true, tileX=1, tileY=6, validWidth=85, validHeight=85)]
+[Tutorial(tileX=1, tileY=6, focusWidth=85, focusHeight=85, waitForSignal="char_info", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_mcreep_a", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] We typically operate out of <@tu.kw>Hidden Tunnel</>.
+[InputBlocker(blockInput=true)]
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_mcreep_a")] Come to us if you need help.
+[InputBlocker(blockInput=true)]
+[Battle.UnLockFunction(mask="SYSTEM_MENU_INTERACT")]

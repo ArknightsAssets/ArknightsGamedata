@@ -1,0 +1,690 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="66_g3_miningarea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>Central Far North Mining District, Ursus</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[PlaySound(key="$d_avg_walkfast")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$1",duration=0.8,posfrom = "-200,0", posto = "0,0")]
+[delay(time=1.2)]
+[name="Mon3tr"]......
+[dialog]
+[PlaySound(key="$d_avg_walkfast")]
+[charslot(slot="m",duration=1,posfrom = "0,0", posto = "200,0")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot="m",name="avg_4208_wintim_1#8$1",duration=1)]
+[delay(time=2)]
+[name="Ksenia"]......
+[charslot(slot="m",name="avg_4208_wintim_1#2$1")]
+[name="Ksenia"]......
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Do you need a break?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="Ksenia"]Huh? Oh... uh, no.
+[charslot(slot="m",name="avg_4208_wintim_1#7$1")]
+[name="Ksenia"]I just...
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="If you have reservations...;We can look for it ourselves.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="Ksenia"](Shakes head)
+[name="Ksenia"]I chose to be your guide. Besides, I want to know the truth about Oka too.
+[name="Ksenia"]Worst case scenario, I guess they exile me...
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_walkfast")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1",duration=0.8,posfrom = "200,0", posto = "0,0")]
+[delay(time=1.2)]
+[name="Mon3tr"]The path ahead seems to be safe, Doctor. I do not detect any lifeforms—
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]Huh?
+[charslot(slot = "m", focus = "n")]
+Ksenia glances at Mon3tr, then quickly and awkwardly looks away.
+You notice the researcher has been following Mon3tr quietly, looking to her from time to time. Even Mon3tr has noticed it now.
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]You keep glancing at me, Ksenia... do I look weird?
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="Ksenia"]What? No, no!
+[charslot(slot="m",name="avg_4208_wintim_1#3$1")]
+[name="Ksenia"]It's just, seeing you brings back memories.
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]What memories?
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="Ksenia"]You see... the problem is that I don't remember them clearly.
+[charslot(slot="m",name="avg_4208_wintim_1#2$1")]
+[name="Ksenia"]It's so distant that it's become faded and indistinct, like ink on a piece of paper that's been submerged in water...
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="Ksenia"]But... may I ask you a couple of questions?
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]Of course! I only hope I can answer them.
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="Ksenia"]You said your name is Mon3tr?
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]Yes, that's what they call me.
+[charslot(slot="m",name="avg_4208_wintim_1#3$1")]
+[name="Ksenia"]Mon3tr... Mon3tr.
+[charslot(slot = "m", focus = "n")]
+She chews on the unfamiliar name.
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="Ksenia"]Mon3tr, do you—
+[name="Ksenia"]Do you feel cold...?
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]Huh?
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="Ksenia"]Wh-What I mean is, you're quite lightly dressed.
+[charslot(slot="m",name="avg_4208_wintim_1#9$1")]
+[name="Ksenia"]I can give you my jacket, if you need it. It'll at least keep the wind off you before we enter the mines.
+[name="Ksenia"]I guess it might be a little too old—
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]I-I get it! There's no need!
+[charslot(slot="m",name="avg_4179_monstr_1#11$1")]
+[name="Mon3tr"]It took me a little while to process it because you're the first one to ask me this question. But no, I'm really not cold!
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="(Shake head at Mon3tr);(Nod to Ksenia)", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]No, I'm not cold. But thank you for the offer!
+[name="Mon3tr"]Were you about to say something, Doctor?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="No, you two can continue.", values="1")]
+[Predicate(references="1")]
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_4208_wintim_1#9$1")]
+[name="Ksenia"]Ah... alright.
+[name="Ksenia"]Perhaps your constitution is strong, and the cold doesn't bother you.
+[charslot(slot="m",name="avg_4179_monstr_1#11$1")]
+[name="Mon3tr"]Yes! I'm strong!
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]It's alright, Ksenia. You can trust us.
+[name="Mon3tr"]We'll be walking together for a while. Feel free to ask any questions.
+[charslot(slot="m",name="avg_4208_wintim_1#9$1")]
+[name="Ksenia"]Right...
+[name="Ksenia"]You said you were colleagues of Director Kal'tsit...
+[name="Ksenia"]Is... is Director Kal'tsit well?
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]Um...
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="......;......", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Were you close with her?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4208_wintim_1#3$1")]
+[name="Ksenia"]I... I wouldn't say that.
+[name="Ksenia"]I was Professor Ilia's assistant. I didn't have much interaction with Director Kal'tsit personally.
+[name="Ksenia"]All I remember is a few...
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="bg_graduate",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Ilia"]Ksenia! Ksenia!
+[dialog]
+[PlaySound(key="$d_avg_walkfast",volume=1)]
+[delay(time=1)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[name="Ksenia"]Y-Yes, Professor!
+[name="Ilia"]Why isn't the experiment data from this morning on my desk?
+[name="Ksenia"]I'm sorry! I'll go get it right now!
+[name="Ilia"]How many times do I have to tell you? You need to be able to keep up with the pacing, if you want to be part of the project. If all I wanted was someone to copy instrument readings onto paper, my three-year-old daughter could do it.
+[name="Ilia"]And what are these scribbles? Energy conversion equations?
+[name="Ilia"]Do your job first, Ksenia, before you try anything new.
+[dialog]
+[PlaySound(key="$d_avg_paperball_roll",volume=1)]
+[CameraShake(duration=0.2, xstrength=5, ystrength=5, vibrato=10, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+[PlaySound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(slot="m",name="avg_003_kalts_1#1$1",duration=1)]
+[delay(time=2)]
+[name="Kal'tsit"]What is this?
+[charslot(slot = "m", focus = "n")]
+[name="Ilia"]D-Director Kal'tsit. It's nothing, nothing to waste your time on.
+[name="Ilia"]Ksenia is still young. It'll take time for her to get used to working on an active project. I'll take responsibility for any mistakes...
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]Did you come up with this equation yourself?
+[charslot(slot = "m", focus = "n")]
+[name="Ksenia"]......
+[name="Ksenia"]Yes...
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]The theoretical model is quite creative, and the simulation model is sound. The equation would form the basis of highly efficient power supplies, if it can be successfully established.
+[name="Kal'tsit"]Kinetic energy loss has not been taken into account, however, and more validation of the data is necessary.
+[charslot(slot = "m", focus = "n")]
+[name="Ilia"]Good grief...
+[name="Ksenia"]I... I'm sorry, Director Kal'tsit.
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]There's no need to apologize. You took initiative, you wanted to be a part of what's going on.
+[name="Kal'tsit"]You can listen in on the next report session, if you want.
+[charslot(slot = "m", focus = "n")]
+[name="Ksenia"]R-Really?
+[charslot(slot="m",name="avg_003_kalts_1#1$1")]
+[name="Kal'tsit"]And don't be so hard on her, Ilia. One should encourage the enthusiasm of youth appropriately.
+[charslot(slot="m",name="avg_003_kalts_1#11$1")]
+[name="Kal'tsit"]You made worse mistakes when you were her age.
+[charslot(slot = "m", focus = "n")]
+[name="Ilia"]You're right. I understand.
+[dialog]
+[charslot(slot="m",name="avg_003_kalts_1#11$1")]
+[PlaySound(key="$d_gen_walk_n",volume=0.7)]
+[charslot(slot = "m", posfrom = "0,0", posto = "-150,0",duration = 1)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[name="Ksenia"]Th-Thank you...
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[charslot(slot="m",name="avg_4208_wintim_1#3$1")]
+[Background(image="66_g3_miningarea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="Ksenia"]It's true that Director Kal'tsit inspired me at one point.
+[name="Ksenia"]Like many who were there, I had hoped that research into the Sarcophagus would yield a new form of clean energy that could benefit everyone.
+[name="Ksenia"]That way, miners would be liberated from the dangers of the mines, and the lives of the Infected would no longer be needed to fuel this monstrosity by the name of Ursus.
+[charslot(slot="m",name="avg_4208_wintim_1#7$1")]
+[name="Ksenia"]I was young, naive... it never occurred to me that a country's character, like the character of a person, is not so easily shaken or changed.
+[charslot(slot="m",name="avg_4208_wintim_1#10$1")]
+[name="Ksenia"]Regardless, I was very happy I got to hear Director Kal'tsit's name after the accident.
+[charslot(slot="m",name="avg_4208_wintim_1#3$1")]
+[name="Ksenia"]I thought, maybe I would have a chance to...
+[charslot(slot="m",name="avg_4208_wintim_1#9$1")]
+[name="Ksenia"]See her again?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="About that, Ksenia...", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4208_wintim_1#8$1")]
+[name="Ksenia"]Sorry! Forget I ever said anything. I assume it's something you may not answer.
+[name="Ksenia"]I just thought... you look like you might know the Director. Perhaps you knew her, knew where she went, and if she's doing well.
+[name="Ksenia"]But I suppose it was never my place to know...
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]Ksenia.
+[charslot(slot="m",name="avg_4208_wintim_1#7$1")]
+[name="Ksenia"]Yes?
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]You'll see Kal'tsit again. I promise.
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="Ksenia"]Oh, so you mean she is still...
+[charslot(slot="m",name="avg_4208_wintim_1#9$1")]
+[name="Ksenia"]I am delighted to hear that.
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]We'll see Kal'tsit again, won't we, Doctor?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="...Yes.", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot="m",name="avg_4208_wintim_1#9$1")]
+[name="Ksenia"]I look forward to it...
+[name="Ksenia"]Should I get the chance, I would like to go to this 'Rhodes Island' that Director Kal'tsit founded, and which Serafina has mentioned...
+[dialog]
+[stopmusic(fadetime=2)]
+[playsound(key="$d_gen_walk_n", loop=true, channel="bgs")]
+[delay(time=1)]
+[StopSound(channel="bgs", fadetime=0.5)]
+[delay(time=0.5)]
+[playMusic(intro="$suspenseful_intro",key="$suspenseful_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4208_wintim_1#4$1")]
+[name="Ksenia"]One moment... something's not right...
+[name="Ksenia"]We didn't see anyone on the way, did we?
+[name="Ksenia"]No miners, and even though we're very near the mine shafts, we haven't seen a single guard, a single Patrol Unit.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="The Grand Duchess put the entire mining district on lockdown.;Was everyone transferred?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4208_wintim_1#4$1")]
+[name="Ksenia"]I know about the lockdown. But the transfer—
+[name="Ksenia"]No... What I know is completely different.
+[name="Ksenia"]I thought the only problem was the failure of the Oka experiments. I never heard anything about the mining district being cleaned up.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="It's definitely strange.", values="1")]
+[Predicate(references="1")]
+[Decision(options="We've hardly encountered any resistance since we entered the district.;The defenses are even sparser than inside Bresk.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="The missing miners...;Where did they go?", values="1;2")]
+[Predicate(references="1;2")]
+[StopSound(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g7_farnorthtundra",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>Far North Tundra, Ursus</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1",duration=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_stnecrve")]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+Rankin puts the finishing touches by carving on the door of the carriage, then throws away the rock.
+[charslot]
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="Calm Miner"]I know how to draw the symbol now. I'll help next time.
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]Sure. You can do it next time.
+[name="Rankin"]I'm done over here. Have we gotten the stuff out of the other containers?
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="Calm Miner"]Pavel's side is done. The last two containers didn't have much in the way of useful supplies. Should we remove the mechanical components and take them with us?
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]You said you used to work in the machine factories in the city?
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="Calm Miner"]Yes.
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]Take a few parts that can be used on other machines. Maybe we can sell them for money.
+[name="Rankin"]Assuming anyone would buy them...
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_snowbootwalk")]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1",duration=1)]
+[delay(time=1.5)]
+[name="Raidian"]We must also take the injured into account.
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]Gospozha Serafina.
+[charslot(slot = "m", name = "avg_npc_1730_1#3$1")]
+[name="Raidian"]We have too many injured. It's not realistic to immediately continue the journey on foot.
+[name="Raidian"]We need rest.
+[dialog]
+[charslot]
+[playsound(key="$d_avg_snowrun", loop=true, channel="bgs")]
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1",duration=1)]
+[delay(time=1.5)]
+[StopSound(channel="bgs", fadetime=0.3)]
+[name="Excited Miner"]Rankin! We took inventory and we should have enough food to last two or three days if we ration it. It should last us until the next village.
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]I thought there would be more... but I suppose we should be glad to have what we have.
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="Excited Miner"]Vetochki found some nuts stockpiled by musbeasts. It'll sate the hunger for a while, and it doesn't spoil easily.
+[name="Excited Miner"]Right now, we need medical supplies more than we need food—
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="Calm Miner"]Where do we find it?
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]Only way is the nomadic cities, or a mobile medical post. If we can contact one...
+[charslot(slot = "m", focus = "n")]
+Rankin looks towards Raidian.
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1730_1#5$1")]
+[name="Raidian"]I can attempt to contact a nearby mobile medical post.
+[charslot(slot = "m", name = "avg_npc_1963_1#2$1")]
+[name="Rankin"]Thank you, Gospozha Serafina.
+[charslot(slot = "m", name = "avg_npc_1730_1#5$1")]
+[name="Raidian"]Don't thank me so soon. I have a condition.
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="Excited Miner"]We appreciate what you and your team have done for us, but in our current circumstances—
+[charslot(slot = "m", name = "avg_npc_1730_1#5$1")]
+[name="Raidian"]The injured must stay put while I attempt to contact the mobile medical posts.
+[name="Raidian"]It's my judgment as a medical professional that they need rest.
+[name="Raidian"]The kind of rest that isn't bumpy.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "left", name = "avg_npc_1967_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_npc_1967_1#1$1",focus="l")]
+[name="Nikto"]Who are you taking?
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",focus="r")]
+[name="Rankin"]Lidiya, Pavel, and a few sweet talkers who could coax coins out of their supervisors.
+[charslot(slot = "left", name = "avg_npc_1967_1#1$1",focus="l")]
+[name="Nikto"]You didn't like those slick talkers from the ore-washing plant.
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",focus="r")]
+[name="Rankin"]It has nothing to do with my preferences.
+[charslot(slot = "left", name = "avg_npc_1967_1#1$1",focus="l")]
+[name="Nikto"]Why not me? Because I might argue with you?
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",focus="r")]
+[name="Rankin"]We're seeking help from a nearby village, not soliciting donations from a noble banquet in Grypherburg, <i>barin</i>. Your way won't work with farmers who can't even write their own name.
+[charslot(slot = "left", name = "avg_npc_1967_1#5$1",focus="l")]
+[name="Nikto"]Call me that again, and I'll break your nose.
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",focus="r")]
+[name="Rankin"]You'll break your knuckles on it.
+[charslot(slot = "left", name = "avg_npc_1967_1#1$1",focus="l")]
+[name="Nikto"]You don't think seeking help from the village is a good idea.
+[charslot(slot = "right", name = "avg_npc_1963_1#3$1",focus="r")]
+[name="Rankin"]...Right.
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",focus="r")]
+[name="Rankin"]Until Gospozha Serafina makes contact with a mobile medical post, however, we can't sit around doing nothing.
+[name="Rankin"]We're not injured.
+[charslot(slot = "left", name = "avg_npc_1967_1#4$1",focus="l")]
+[name="Nikto"]We've sat around doing nothing. We sang and danced—you played the accordion!
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",focus="r")]
+[name="Rankin"]All past tense. Our supplies will run out soon. I must do what I can before that happens.
+[name="Rankin"]While we're gone... I need you to stay here and take care of those staying behind.
+[charslot(slot = "left", name = "avg_npc_1967_1#3$1",focus="l")]
+[name="Nikto"]I doubt the villagers would be charitable this time.
+[charslot(slot = "right", name = "avg_npc_1963_1#1$1",focus="r")]
+[name="Rankin"]Of course. Few people are glad to open their door and see an Infected standing in it. We've already learned that.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g14_ursusvillage",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="Excited Miner"]How long has Rankin been in there? Should we check it out?
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="Calm Miner"]Calm down. Rankin told us to wait.
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="Excited Miner"]But last time—
+[dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot = "l",posfrom = "-200,0", posto = "-100,0",duration = 1.2,name="avg_4207_branch_1#1$1")]
+[delay(time=2)]
+[charslot(slot = "l",posfrom = "-100,0", posto = "-200,0",duration = 0.5,afrom=1,ato=0)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="Calm Miner"]......
+[name="Calm Miner"]Come out, Vetochki. I know you were following us. Rankin must have known, too. He just chose not to say anything.
+[name="Calm Miner"]Why didn't you stay behind with Nikto and the others? You need to take care of your <i>babushka</i>, don't you?
+[dialog]
+[charslot]
+[charslot(slot = "m",posfrom = "-100,0", posto = "0,0",duration = 1,name="avg_4207_branch_1#1$1")]
+[delay(time=2)]
+[name="Vetochki"]Babushka said, it's alright...
+[charslot(slot="m",name="avg_4207_branch_1#5$1")]
+[name="Vetochki"]I wanted to, help. So I, came. I can, h-help!
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="Calm Miner"]Did Nikto know that you came with us? He might have thought that you went missing.
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="Vetochki"]I left, a... note.
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="Calm Miner"]That works. You know, I thought you could be useful with us, but Rankin wouldn't have it.
+[charslot(slot="m",name="avg_4207_branch_1#4$1")]
+[name="Vetochki"]Wh-Where has, <i>uchitel</i>, gone?
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="Calm Miner"]He's going to negotiate with them, see if we can get some food.
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="Vetochki"]Wh-What do we, have to t-trade?
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="Calm Miner"]Parts from the vehicles.
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="Excited Miner"]But he went over empty-handed!
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="Calm Miner"]Maybe he wanted to show that he means no harm. People might get the wrong idea if he was holding a weapon or a chunk of metal.
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="Excited Miner"]But he didn't take anything the last time either, and those people stalled for time while they sneaked someone out to call for the Patrol Units—
+[name="Excited Miner"]I have to help him!
+[charslot(slot="m",name="avg_npc_1970_1#1$1")]
+[name="Calm Miner"]Pavel!
+[name="Calm Miner"]<i>Chyort</i>... wait up!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g14_ursusvillage",screenadapt="coverall",xScale=1.2, yScale=1.2,x=-130, y=-70)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1969_1#1$1",duration=0.5)]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1970_1#1$1",duration=0.5)]
+[delay(time=0.8)]
+[charslot(slot = "r", focus="r")]
+[name="Calm Miner"](Hushed) Stop it!
+[charslot(slot = "l", focus="l")]
+[name="Excited Miner"]Rankin is inside—
+[dialog]
+[charslot(slot = "r",posfrom = "0,0", posto = "-100,0",duration =0.5)]
+[delay(time=0.8)]
+[playsound(key="$d_avg_clothmovement")]
+[charslot(slot = "l",posfrom = "0,0", posto = "-150,0",duration =0.5)]
+[charslot(slot = "r",posfrom = "-100,0", posto = "-300,0",duration =0.5)]
+[charslot(duration=0.5)]
+[delay(time=1)]
+The miner covers his colleague's mouth with his hand and pulls him to one side.
+They can hear the indistinct sound of talking coming from inside the house.
+[dialog]
+[backgroundTween(duration=1.5, yTo=-100,block=false)]
+[focusout(duration=1.5, type="bg", from=0, to=0.5)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2, fadetime=1.5)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2, fadetime=1.5)]
+[delay(time=2.5)]
+[name="Voice from Inside"]...Understood...
+[name="Voice from Inside"](Sound of metal grinding)
+[name="Voice from Inside"]...We've... informed...
+[PlaySound(key="$fightgeneral",volume=0.3)]
+[CameraShake(duration=0.3, xstrength=10, ystrength=0, vibrato=20, randomness=90, fadeout=true, block=false)]
+[name="Voice from Inside"](Sound of impact)
+[name="Calm Miner"](Whisper) Something doesn't sound right.
+[CameraShake(duration=0.5, xstrength=5, ystrength=5, vibrato=15, randomness=90, fadeout=true, block=false)]
+[name="Excited Miner"]Mmmpppphhh—
+[name="Calm Miner"](Whisper) Promise you won't just kick down the door, and I'll let go.
+[name="Excited Miner"](Nods)
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[curtain]
+[focusout(duration=0, type="bg", from=0, to=0, block=true)]
+[delay(time=0.25)]
+[Background(image="66_g14_ursusvillage",screenadapt="coverall",xScale=1.2, yScale=1.2,x=-130, y=-70)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+As soon as he can breathe again, the miner points towards the back door of the house.
+There, clear as day on the snow, is a row of footprints leading away from the house.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1",duration=0.5)]
+[delay(time=0.8)]
+[name="Calm Miner"](Whisper) ...<i>Govno.</i>
+[name="Calm Miner"](Whisper) One of you, go knock on the door. Act anxious and spin a story when they answer the door.
+[charslot]
+[name="Slick Miner"](Whisper) Why don't YOU go? If they've got Rankin, whoever knocks on the door is next, isn't it?
+[dialog]
+[charslot(slot = "m", name = "avg_4207_branch_1#5$1",duration=0.5)]
+[delay(time=1)]
+[name="Vetochki"](Whisper) I-I'll go.
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="Calm Miner"](Whisper) No, Vetochki—
+[charslot]
+[PlaySound(key="$doorknockquite")] 
+Vetochki taps lightly on the door with her knuckles.
+The sound from inside ceases.
+[name="Voice from Inside"]Who's there?
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="Calm Miner"](Whisper) ...Keep knocking.
+[charslot(slot = "m", name = "avg_4207_branch_1#1$1")]
+[PlaySound(key="$doorknockquite")] 
+[name="Vetochki"](Knocks)
+[charslot]
+[name="Voice from Inside"]Back so soon...
+[dialog]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$dooropenquite")] 
+[charslot(slot = "m", name = "avg_npc_092",duration=0.7,posfrom = "100,0", posto = "0,0")]
+[delay(time=1.2)]
+[charslot(slot = "l", name = "avg_npc_1969_1#1$1",duration=0.3)]
+[charslot(slot = "l",duration=0.4,posfrom = "-200,0", posto = "0,0")]
+[delay(time=0.3)]
+[charslot(slot = "m", name = "avg_npc_092#5")]
+[charslot(slot = "m",duration=0.5,posfrom = "0,0", posto = "30,-50",afrom=1,ato=0)]
+[PlaySound(key="$bodyfalldown2")] 
+[CameraShake(duration=0.3, xstrength=20, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.7)]
+[charslot(slot = "m", focus = "n")]
+[name="Villager"]Argh!
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1963_1#6$1",duration=0.8,posfrom = "100,0", posto = "0,0")]
+[delay(time=1)]
+[name="Rankin"]What's going on—
+[charslot(slot = "m", name = "avg_npc_1963_1#7$1")]
+[name="Rankin"]Sir!
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="Calm Miner"]Are you alright, Rankin?
+[charslot(slot = "m", name = "avg_npc_1963_1#6$1")]
+[name="Rankin"]Lidiya? I thought I told you to wait outside—
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]...Vetochki?
+[name="Rankin"]What are you doing here?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_snowconutryinside",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$warm_intro",key="$warm_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_092",duration=1)]
+[delay(time=2)]
+[name="Friendly Villager"]So you're all miners who came out under orders to find supplies.
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="Calm Miner"]Yes, sir! I must apologize for what that fool did. He spends so much time underground that he's forgotten how to tell a good person from a bad one.
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1")]
+[name="Excited Miner"]I'm sorry, I'm so sorry. We had a bad experience when we tried to seek help from another village, and I thought this would be the same—
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]Pavel.
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="Friendly Villager"]You're honest about things. I have a fair idea how people from other villages treat the Infected... most of Ursus is like that.
+[name="Friendly Villager"]But you're not those Infected that don't care about authority and just want to cause trouble. You're miners, right?
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="Calm Miner"]Yes! You know, of course, that we can't leave the mining district without permission from up high.
+[name="Calm Miner"]This is our foreman right here. They told him not to go back until he's found supplies.
+[charslot(slot = "m", name = "avg_npc_092#3")]
+[name="Friendly Villager"]Would the bosses leave you to starve if you don't find it?
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="Calm Miner"]Yes. It's not so bad for adults like us, but kids like Vetochki over here, how are they supposed to grow without eating?
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="Friendly Villager"]Vetochki? This girl? She's a miner too?
+[name="Friendly Villager"]How old are you...?
+[charslot(slot = "m", name = "avg_4207_branch_1#1$1")]
+[name="Vetochki"]I-I'm—
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="Friendly Villager"]Let me guess. Ten?
+[charslot(slot = "m", name = "avg_4207_branch_1#1$1")]
+[name="Vetochki"]Fifteen.
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="Friendly Villager"]Haha. You're shy, like my daughter... she might have a child your age now, if she's still alive.
+[name="Friendly Villager"]She went to the mines after she got the Stone Disease. Not around these parts, to the east, the Northern Tundra? It's further away, anyhow.
+[charslot(slot = "m", name = "avg_4207_branch_1#10$1")]
+[name="Vetochki"]Th-The mines, are good. D-Don't worry... <i>dedushka</i>.
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="Friendly Villager"]<i>Dedushka</i>... grandpa, huh...?
+[charslot(slot = "m", name = "avg_npc_092#3")]
+[name="Friendly Villager"]I don't even know how and when she got sick. She wouldn't say. I haven't heard from her for a long time.
+[name="Friendly Villager"]Let's not talk about that! Sounds like you have people running your mining district. Some places don't care about their miners at all, giving them nothing to eat, and they don't give them any other way out either.
+[name="Friendly Villager"]I heard some miners got so desperate they ran away. They'd rather risk the Patrol Units.
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="Calm Miner"]Can you help us?
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="Friendly Villager"]My wife went out to discuss things with the others before you came in.
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="Calm Miner"]So those footprints were...
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]You have the parts, Lidiya?
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="Calm Miner"]Right here.
+[charslot]
+[playsound(key="$d_avg_clothmovement")]
+Rankin takes the cloth package and gives it to the old man.
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]Here, you should be able to replace the aging parts on your harvester with it.
+[name="Rankin"]In exchange for the food you shared with us.
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="Friendly Villager"]Sure, sure... honestly, I don't know anything about harvesters other than that it's been broken for a while. Do you mind helping me fit the part on if you want to help?
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="Calm Miner"]I'll take a look. I used to work in a machine factory.
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="Friendly Villager"]That's great.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g14_ursusvillage",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1967_1#4$1",duration=1)]
+[delay(time=2)]
+[name="Nikto"]You really managed to get food. A fair bit of it, too.
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]Gennady says it was a good year for crops, but his harvester was broken. They managed to harvest the mossoat by hand, only to have surplus grain sitting around in granaries because the caravans didn't come this year.
+[name="Rankin"]Life is hard for everyone without cash. Still, they were willing to barter with us, rather than waiting until spring to sell.
+[charslot(slot = "m", name = "avg_npc_1967_1#1$1")]
+[name="Nikto"]Lidiya said those parts are worth more than mossoat.
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]As far as we're concerned, food is priceless.
+[dialog]
+[charslot]
+[playsound(key="$d_avg_snowbootwalk")]
+[charslot(slot = "m", name = "avg_npc_092",duration=1)]
+[delay(time=2)]
+[name="Friendly Villager"]Must you go so soon?
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]Yes. We've accomplished our mission. It's time to go back.
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="Friendly Villager"]I had hoped that you would fill your bellies before you go.
+[name="Friendly Villager"]If you want, there are a few houses on the west end of the village that have been empty since the previous inhabitants left. Your group can take shelter there, make a fire, get warm and make some food.
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]Spasibo...
+[name="Rankin"]I can't tell you how grateful I am.
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="Friendly Villager"]There's no need. The girl helped us repair the harvester for next year. We're the ones who should thank you.
+[name="Friendly Villager"]Besides, it's not like we did much.
+[charslot(slot = "m", name = "avg_npc_092#2")]
+[name="Friendly Villager"]Normally, we don't touch the collective food stores for winter. Patrol Units are less frequent these days, but it's a chore when the tax collectors come around.
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="Friendly Villager"]All we old folks did was to take a little grain out of our own reserves, so that you can go back and say you've done your job.
+[name="Friendly Villager"]Not like there's anything else we can help with—
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]Maybe you can tell us your daughter's name. We can try to ask when we—uh, return to the mining district.
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="Friendly Villager"]Oh, she's not here in the Far North! She's in the Northern Tundra, far to the east...
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]Just tell me.
+[charslot(slot = "m", name = "avg_npc_092")]
+[name="Friendly Villager"]Well, I suppose it can do no harm.
+[name="Friendly Villager"]Her name is Milana...
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g14_ursusvillage",screenadapt="coverall",xScale=1.2, yScale=1.2,x=130, y=-70)]
+[playsound(key="$d_avg_woodcracle", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[Blocker(a=0.3, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+A pair of blank, soulless eyes gaze out from the darkness.
+The cracking of the bonfire hides his indistinct mutter.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1971_1#1$1",duration=1)]
+[delay(time=2)]
+[name="Hawley"]......
+[name="Hawley"]Achieve...
+[name="Hawley"]Salvation.
+[Dialog]
+[Delay(time=2)]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot]  

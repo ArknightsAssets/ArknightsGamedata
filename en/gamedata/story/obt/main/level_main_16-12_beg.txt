@@ -1,0 +1,610 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="66_g3_miningarea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="Ksenia"]Ahead is the tunnel where we first found Oka.
+[name="Ksenia"]It should have been placed under lockdown soon after... but now, it looks completely abandoned.
+[name="Ksenia"]The good news is that Originium particle activity has also dropped after work stopped. Infection risk should be minimal as long as you do not touch the deactivated Originium crystals.
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]I'm not detecting any other lifeforms. We should be able to get in without a fight.
+[charslot]
+[dialog]
+[Decision(options="We still don't know what happened here.;The Patrol Units and guards could return any time.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="Time is of the essence.;Let's do this quickly.", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[playsound(key="$d_gen_walk_n")]
+[delay(time=1)]
+[name="Mon3tr"]Are you sure this is the right way, Ksenia?
+[name="Mon3tr"]I don't see anything.
+[name="Ksenia"]Sorry. I've only been down here once before...
+[name="Ksenia"]Let me find the emergency power switch.
+[Dialog]
+[delay(time=1.5)]
+[name="Ksenia"]Here it is.
+[Dialog]
+[delay(time=1)]
+[PlaySound(key="$d_avg_spotlightc")]
+[Background(image="66_g5_deepmine",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4208_wintim_1#9$1",duration=0.5)]
+[delay(time=1)]
+[name="Ksenia"]Ok, looks like this is the right way. All we need to do is to go in the opposite direction from the mine carts.
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]Opposite direction? I thought we're going deeper.
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="Ksenia"]It leads to somewhere other than the mine tunnels. I don't know what it's actually for, but the carts only carry goods, not people.
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]What about the cart? Can we use it?
+[dialog]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[PlaySound(key="$d_avg_goldbarhit")]
+[delay(time=1.5)]
+[name="Ksenia"]There are no structural issues, but it's been abandoned for so long that there's only enough emergency power for the lights. I don't think it's a good idea.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="I agree.;We can walk.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot]
+[charslot(slot="m",name="avg_4179_monstr_1#4$1")]
+[name="Mon3tr"]Mm.
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]You two, get on the cart.
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="Ksenia"]What?
+[dialog]
+[charslot]
+[Decision(options="There's no safety belt!;We can walk!", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]Get on, Doctor. We can save time that way.
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="Ksenia"]But it won't start—
+[charslot(slot="m",name="avg_4179_monstr_1#10$1")]
+[name="Mon3tr"]I'll take care of it.
+[name="Mon3tr"]Do you need me to lift you up, Doctor?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="...I can do it myself!", values="1")]
+[Predicate(references="1")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.15, fadetime=0.01)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.15, fadetime=0.01)]
+[delay(time=0.25)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Mon3tr"]Are you ready?
+[name="Ksenia"]What are you planning—
+[dialog]
+[CameraShake(duration=0.5, xstrength=10, ystrength=5, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_tramcarwheel_loop", loop=true, channel="kc")]
+[delay(time=0.5)]
+[StopSound(channel="kc", fadetime=0.5)]
+[name="Ksenia"]—Whoa?!
+[dialog]
+[charslot]
+[Decision(options="We'll be thrown off the cart.;The cart's going to fall apart.", values="1;2")]
+[Predicate(references="1;2")]
+[name="Mon3tr"]It'll be fine. Just sit tight.
+[name="Mon3tr"]Here we go!
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=100, block=false)]
+[CameraShake(duration=-1, xstrength=1, ystrength=1, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_tramcarwheel_loop", loop=true, channel="kc")]
+[delay(time=1.5)]
+[name="Ksenia"]Thank goodness the tunnels look intact.
+[name="Ksenia"]But we should have started a fire before coming down... it's a lot wetter than the outside. The difference is almost as great as the Iberian coast compared to inland Ursus.
+[name="Ksenia"]Of course, there is a dramatic difference in temperature as well... are you alright?
+[name="Mon3tr"]I'm fine. What about you, Doctor?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Every part of my brain feels equally shaken.;You looked like you enjoyed it, Mon3tr.", values="1;2")]
+[Predicate(references="1;2")]
+[name="Mon3tr"]I kept the speed steady.
+[name="Ksenia"]Mon3tr is a very good cart driver. Or cart pusher.
+[name="Mon3tr"]Sounds like the problem's not on my end.
+[dialog]
+[charslot]
+[Decision(options="I have a question, Ksenia.;When was Oka first discovered in the mines?", values="1;2")]
+[Predicate(references="1;2")]
+[name="Ksenia"]I'm not sure exactly when. The first sample arrived at the lab a month ago.
+[name="Ksenia"]That was when I learned of the appearance of this heretofore unheard-of substance in the Originium mines.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="But it's strange...", values="1")]
+[Predicate(references="1")]
+[Decision(options="This substance that appeared in the mines...;What made the lab decide to perform human experiments?", values="1;2")]
+[Predicate(references="1;2")]
+[name="Ksenia"]Infected exposed to Oka in this tunnel were subject to unusual mutations.
+[name="Ksenia"]Their infection readings soared, but their vital signs remained stable, 'healthy' even...
+[name="Mon3tr"]That sounds familiar.
+[name="Ksenia"]Have you encountered other patients like this? Have they come into contact with Oka?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="There may be another possibility.;We're not sure yet...", values="1;2")]
+[Predicate(references="1;2")]
+[name="Ksenia"]In any case... the Ursine government wanted to replicate the 'miracle'.
+[name="Ksenia"]I suppose they wanted a docile labor force that did not fear illness or pain... perhaps even employ them in combat.
+[dialog]
+[charslot]
+[Decision(options="I'm not surprised the government would react that way...;They haven't realized the potential danger.", values="1;2")]
+[Predicate(references="1;2")]
+[name="Mon3tr"]I think we're getting close.
+[CameraShake(duration=1, xstrength=1, ystrength=1, vibrato=10, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="kc", fadetime=1)]
+[name="Mon3tr"]This is as far as the rail goes. We'll have to proceed on foot.
+[dialog]
+The three of you move forward in the darkness.
+[dialog]
+[stopmusic(fadetime=2)]
+[playsound(key="$d_avg_rainlight_loop", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.5, channel="bgs",fadetime=2)]
+You hear before you see. It is the heavy sound of water.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[curtain]
+[SoundVolume(volume=1, fadetime=3,channel="bgs")]
+[Background(image="66_g6_magnetofluidwaterfall",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+The three of you look up and slowly open your eyes.
+You soon realize that the light in the tunnel is not coming from outside. It is coming from the stationary liquid in front of you on the ground—and the 'waterfall' at the very end.
+It glitters like obsidian, refracting light from a crack high above as it falls, making the cave bright as early morning after a shower.
+[playMusic(intro="$tech_intro",key="$tech_loop", volume=0.6)]
+[dialog]
+[charslot]
+[Decision(options="...An obsequent river.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="Ksenia"]You can tell?
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="Ksenia"]Yes. Like an obsequent river, the Oka cannot flow outwards along the dip, so it can only flow backwards, until it lies 'still' like this.
+[name="Ksenia"]But it continues to flow in a way, even without external forces acting on it. That's why they named it 'Oka'—river.
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]The liquid is everywhere.
+[name="Mon3tr"]It's like a natural karst cave. You can't even tell that it used to be a mine.
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="Ksenia"]Even stranger, Oka itself is almost like water.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="What do you mean?;How could it be?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="Ksenia"]Well... in a manner of speaking.
+[name="Ksenia"]Oka becomes highly stable after it is allowed to stand still for a while. It can even be used as a universal solvent.
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Ksenia"]Wait! We still shouldn't touch it with bare hands—
+[charslot(slot="m",name="avg_4208_wintim_1#7$1")]
+[name="Ksenia"]Oh...
+[charslot]
+[dialog]
+[playsound(key="$d_avg_walk_water", loop=true, channel="w")]
+[delay(time=0.5)]
+[StopSound(channel="w", fadetime=0)]
+Mon3tr bends over and collects some liquid with a test tube. She is not wearing gloves, or any other form of protection.
+Her expression grows solemn as she shakes the liquid in the test tube with wet hands.
+[dialog]
+[charslot]
+[Decision(options="Mon3tr?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4208_wintim_1#6$1")]
+[name="Ksenia"]You should not touch it directly—I have protective equipment. You can tell me if you want a sample, and I'll collect it!
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"](Whisper) Doctor... I know what this is.
+[charslot(slot="m",name="avg_4208_wintim_1#8$1")]
+[name="Ksenia"]What?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="......", values="1")]
+[Predicate(references="1")]
+[Decision(options="Ksenia, the samples...;Can you get some samples from around the waterfall?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4208_wintim_1#1$1")]
+[name="Ksenia"]Oh, okay.
+[name="Ksenia"]Wait here. I'll be back soon.
+[charslot(slot="m",name="avg_4208_wintim_1#4$1")]
+[name="Ksenia"]...Be careful.
+[dialog]
+[playsound(key="$d_avg_shallowswalk", loop=true, channel="w1")]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[StopSound(channel="w1", fadetime=0.5)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1",duration=1)]
+[delay(time=2)]
+[name="Mon3tr"]This liquid that they call Oka... it's Originium.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Originium...;Why does it look that way?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]It's complicated.
+[name="Mon3tr"]Do you remember the 'Transmitter' that Rhine Lab was studying, or the 'Corazonix' that is often mentioned in Iberian alchemy?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="I do.;Are they related?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]This is their prototype... or perhaps I should say, the original form.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="What the Transmitter and Corazonix have in common...;They both serve as a kind of medium.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]Yes. A medium that reacts directly with the human body, or to store information.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="So that's why they are both liquid?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]I think so...
+[name="Mon3tr"]You understand, Doctor, that Originium is both a vehicle for information, and a vehicle for energy.
+[charslot(slot="m",name="avg_4179_monstr_1#4$1")]
+[name="Mon3tr"]Both the Transmitter and Corazonix re-record Originium energy through specific means, in order to record different types of information.
+[name="Mon3tr"]The Oka here is the remnant of Originium, after its energy was extracted in an even more effective manner.
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]So it's really a form of 'universal solvent', and this explains why the Infected who came into contact with Oka became 'mutated'.
+[name="Mon3tr"]Because of its nature as drained Originium, Oka neutralize the Originium activity inside the Infected, while creating perfect conditions for the continued growth of Originium.
+[name="Mon3tr"]It allowed the Infected to retain their vital functions temporarily, but does not change the fact that death would inevitably follow soon.
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]Meanwhile, all the uninfected individuals injected with Oka died of severe rejection, due to the lack of active Originium in their bodies...
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Its presence here in such quantities...;It means...", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]This is what we feared the most...
+[name="Mon3tr"]The Kolossal Prime Vein is drying up.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="......;......;......", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]The rumors we heard, that Ursus is accelerating the extraction of Originium... it's all to hide the exhaustion of the ore vein.
+[name="Mon3tr"]It began here in the northmost parts of Ursus, and it will only accelerate.
+[name="Mon3tr"]Within four months, the Originium deposits in Ursus will drop to thirty percent of previous levels.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="This is the real reason why the Grand Duchess put the mining district on lockdown.;They can't hide it forever.", values="1;2")]
+[Predicate(references="1;2")]
+You did not need to ask the question. One gaze exchanged with Mon3tr, and both of you have the same name in mind.
+The only one who could have done this—
+[dialog]
+[Decision(options="Priestess.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]There's no one else.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Why would she do this?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]The exhaustion of the ore vein cannot be stopped or reversed.
+[name="Mon3tr"]Ursus will collapse.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Not just Ursus.", values="1")]
+[Predicate(references="1")]
+[Decision(options="Exhaustion on such a scale will have ramifications across Terra.", values="1")]
+[Predicate(references="1")]
+[Decision(options="Is this what she's after?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]I have an idea!
+[name="Mon3tr"]Oka is also a relic of the old civilization... a by-product of your experiments.
+[charslot(slot="m",name="avg_4179_monstr_1#4$1")]
+[name="Mon3tr"]If she caused the exhaustion of the ore vein, then there might be some useful information left within.
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]See if you can read it.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="How would I...?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]Our means are limited. You'll have to insert your hand, like I did when I collected the sample.
+[name="Mon3tr"]Don't worry, it won't harm you.
+[charslot]
+[dialog]
+[delay(time=0.5)]
+[playsound(key="$d_avg_walk_water", loop=true, channel="w")]
+[delay(time=0.5)]
+[StopSound(channel="w", fadetime=0)]
+Following Mon3tr's instructions, you crouch down and immerse your hands into the liquid Oka.
+You wait.
+[dialog]
+[Decision(options="You do not feel any different.", values="1")]
+[Predicate(references="1")]
+You await some kind of change, or response, like the 'miracles' that happened so many times before.
+Nothing happened.
+The product of a previous civilization seems to reject you, denying your connection to it.
+[dialog]
+[Decision(options="Could it be that it has already lost its ability to hold information?;Or perhaps, she had no intention of leaving any information to us.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]It's possible.
+[dialog]
+[charslot]
+[playsound(key="$d_avg_walk_water", loop=true, channel="ww")]
+[PlaySound(key="$d_avg_walkfast")]
+[charslot(slot="m",name="avg_4208_wintim_1#6$1",duration=0.5)]
+[delay(time=1)]
+[StopSound(channel="ww", fadetime=0)]
+[name="Ksenia"]Mon3tr! Doctor!
+[name="Ksenia"]Come! I found something!
+[name="Ksenia"]There's a hole behind the waterfall. When I climbed up and stood there—
+[charslot(slot="m",name="avg_4208_wintim_1#4$1")]
+[name="Ksenia"]I heard a sound of an unusual frequency from the cave. It didn't seem natural—no, it definitely isn't natural!
+[name="Ksenia"]It's like... it's trying to communicate some sort of information through audio waves!
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]Huh?
+[dialog]
+[charslot]
+[Decision(options="Let's check it out.", values="1")]
+[Predicate(references="1")]
+[stopmusic(fadetime=2)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[playsound(key="$d_avg_magneticwaterfall_loop", loop=true, channel="bgs")]
+[SoundVolume(volume=0.6, channel="bgs",fadetime=2)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_doorknob",volume=1)]
+[bgeffect(name="$eb_glow_42i11_01",layer=1,x=-600,y=-400)]
+[Image(image="66_i06",fadetime=3, xScale=1.3, yScale=1.3,screenadapt="coverall")]
+[ImageTween( xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1, yScaleTo=1, duration=60)]
+[delay(time=2)]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0.6)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_airbuzz_1")]
+[name="Mon3tr"]This is—
+[name="Mon3tr"]This space was hidden behind the waterfall?
+[dialog]
+[Decision(options="It's... impressive.", values="1")]
+[Predicate(references="1")]
+[name="Ksenia"]Listen carefully to the sound of the liquid impacting the rocks! Some of the sounds are of a particular frequency, like it's trying to draw attention to itself. It's very different, and you can definitely tell.
+[name="Ksenia"]I tried to decipher the ones I heard. It took a while to record the various pitches—
+[dialog]
+[PlaySound(key="$d_avg_airbuzz_2")]
+[delay(time=2)]
+[name="Ksenia"]There! Did you hear that?
+[name="Mon3tr"]All I hear is the rain! I can't even hear you speak—
+[name="Mon3tr"]Doctor?
+You close your eyes and allow yourself to be immersed in sound.
+Until you identify the sound that is constantly changing in frequency.
+[dialog]
+[PlaySound(key="$d_avg_airbuzz_3")]
+[delay(time=2)]
+[Decision(options="I...", values="1")]
+[Predicate(references="1")]
+[Decision(options="I hear it.", values="1")]
+[Predicate(references="1")]
+[name="Mon3tr"]—Did you say you hear it—
+[dialog]
+[PlaySound(key="$d_avg_airbuzz_4")]
+[delay(time=1)]
+The sound rushes into your consciousness. Sometimes it is formed from several high frequencies, sometimes it is short and sharp, like a meticulous music score.
+You soon realize that it represents some sort of code, or perhaps language.
+[PlaySound(key="$d_avg_airbuzz_5")]
+You try to recall all the languages that you know, categorizing them in your mind, and you soon realize that you are hearing the same word, just in different languages.
+[name="Ksenia"]I've copied it down...
+[name="Ksenia"]It's just a hunch, but if we decipher it using the standard encoding for communication between nomadic cities...
+[name="Ksenia"]I think it's referring to the same word, in many different languages. I could identify Ursine and Gaulish from it! I think they both mean—
+[dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[bgeffect]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1.5)]
+[Sticker(id="st1", text="'Unknown language'", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+......
+[dialog]
+[Sticker(id="st1", text="'спорить'", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+[Sticker(id="st1", text="'dibattito'", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+......
+[dialog]
+[Sticker(id="st1", text="'débat'", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+[Sticker(id="st1", text="'biànlùn'", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+......
+Upon the rocks, the liquid in the mine is communicating the same word at you—
+[dialog]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_white",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Sticker(id="st1", text="<color=#000000>'Debate.'</color>", x=320,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1.5)]
+[Sticker(id="st2", text="<color=#000000>'Debate.'</color>", x=320,y=340, alignment="center", size=30, delay=0.001, width=700,block = false,duration=3)]
+[Dialog]
+[playsound(key="$d_avg_jumpscare",volume=0.6)]
+[bgeffect(name="$eb_blackmask",layer=1)]
+[delay(time=0.5)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Sticker(id="st1")]
+[Sticker(id="st2")]
+[bgeffect]
+[Background(image="bg_0_rhodes3",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+Yes, Dr. {@nickname}.
+If you still believe you made the right choice.
+If you still believe in the future you described.
+Then refute me with reality, and prove to me...
+That thing which you hold so firm...
+[dialog]
+[Sticker(id="st1", text="'Hope.'", x=300,y=340, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1.5)]
+[Sticker(id="st1",duration=1,block = false)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Image(image="66_i06")]
+[playMusic(intro="$newhope02_intro",key="$newhope02_loop", volume=0.6)]
+[playsound(key="$d_avg_magneticwaterfall_loop", loop=true, channel="bgs")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Decision(options="...It's an invitation.", values="1")]
+[Predicate(references="1")]
+[name="Mon3tr"]What?
+[dialog]
+[Decision(options="I said, it's an invitation.", values="1")]
+[Predicate(references="1")]
+[Decision(options="One that I must accept.", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[image]
+[playsound(key="$d_avg_rainlight_loop", loop=true, channel="bgs")]
+[Background(image="66_g6_magnetofluidwaterfall",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"](Whisper) You think it's a message from Priestess?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Yes.;I know what she means...", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="We should leave, quickly.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]We'll go back to the lab once Ksenia has gathered her samples.
+[name="Mon3tr"]We must try to contact Amiya...
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="I wonder how Amiya's team is doing.;I hope Amiya has made contact with Raidian.", values="1;2")]
+[Predicate(references="1;2")]
+[stopmusic(fadetime=2)]
+[playsound(key="$d_avg_giantmonster_treadwater", loop=true, channel="gf")]
+[delay(time=1.5)]
+[StopSound(channel="gf", fadetime=0.3)]
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Did you hear a sound?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]What sound?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Something heavy stepping in water.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1")]
+[name="Mon3tr"]The waterfall is pretty loud.
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]Are you sure it's not just your ears ringing? Perhaps lingering effects from having to process too much information just now...
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$d_avg_giantmonster_treadwater", loop=true, channel="gf")]
+[delay(time=2)]
+[StopSound(channel="gf", fadetime=0.3)]
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]Wait.
+[name="Mon3tr"]Ksenia? Is that you?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="It's not Ksenia's footsteps. Not the right weight or rhythm.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]What's... that—
+[Background(image="66_g6_magnetofluidwaterfall",screenadapt="coverall")]
+[Dialog]
+[charslot]
+[effect(name="$e_sandfall_01",layer=1,y=350)]
+[delay(time=1)]
+[playsound(key="$d_avg_giantmonster_treadwater")]
+[playMusic(intro="$shatterpoint_01_intro",key="$shatterpoint_01_loop", volume=0.6)]
+[PlaySound(key="$d_avg_stonegrowing",volume=1)]
+[CameraShake(duration=1, xstrength=5, ystrength=5, vibrato=50, randomness=90, fadeout=true, block=false)]
+[cgitem(image="cgitem_66_i11_1", style="cg",pfrom = "-400,0",pto = "-400,0",pduration = 2, afrom = 0, ato = 1, aduration = 0.5,layer = 3)]
+[delay(time=2)]
+[backgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.1, yScaleTo=1.1, duration=0.3,block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.07, fadetime=0.3)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.07, fadetime=0.3)]
+[CameraShake(duration=1, xstrength=5, ystrength=5, vibrato=50, randomness=90, fadeout=true, block=false)]
+[cgitem(image="cgitem_66_i11_2", style="cg",pfrom = "400,0",pto = "400,0",pduration = 2, afrom = 0, ato = 1, aduration = 0.5,layer = 2)]
+[delay(time=2)]
+[CameraShake(duration=1, xstrength=5, ystrength=5, vibrato=50, randomness=90, fadeout=true, block=false)]
+[backgroundTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1.2, yScaleTo=1.2, duration=0.3,block=false)]
+[curtain(direction = 0,fillfrom = 0.07,fillto = 0.14, fadetime=0.3)]
+[curtain(direction = 4,fillfrom = 0.07,fillto = 0.14, fadetime=0.3)]
+[delay(time=2)]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=50, randomness=50, fadeout=true, block=false)]
+[Image(image="66_i11",fadetime=1,screenadapt="coverall", xScale=1.15, yScale=1.15)]
+[delay(time=3)]
+[Background]
+[ImageTween(xScaleTo=1.7, yScaleTo=1.7, duration=0.6)]
+[PlaySound(key="$d_avg_giantmonster_growl",volume=1)]
+[curtain(direction = 0,fillfrom = 0.14,fillto = 0, fadetime=1)]
+[curtain(direction = 4,fillfrom = 0.14,fillto = 0, fadetime=1)]
+[CameraShake(duration=3, xstrength=20, ystrength=20, vibrato=50, randomness=50, fadeout=true, block=false)]
+[Image(image="66_i11",fadetime=1,screenadapt="coverall", xScale=1, yScale=1)]
+[ImageTween(xScaleTo=1.3, yScaleTo=1.3, duration=60)]
+[delay(time=5)]
+Frenzied crying, frenetic breathing, thick mucous liquid dripping from the fangs.
+Its entire body is covered in a hard layer of dark-red Originium, forcing it to stand on its two hind legs.
+You see it raise its front paws—
+Not paws. A pair of withered hands, indistinguishable from that of a human.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="An Originium-infected manglerbeast.", values="1")]
+[Predicate(references="1")]
+[delay(time=1)]
+[name="Ksenia"]I have the samples!
+[name="Ksenia"]Why are you just standing there?
+The strange manglerbeast, which seems so removed from reality, is right behind her.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Run, Ksenia!", values="1")]
+[Predicate(references="1")]
+[name="Mon3tr"]Run, Ksenia! Don't look back!
+[name="Mon3tr"]I'll get her. Go to the mine cart, Doctor, and we'll meet you there!
+[name="Mon3tr"]Go!
+[name="Ksenia"]What—
+[PlaySound(key="$d_avg_shallowsrun",volume=1)]
+[CameraShake(duration=-1, xstrength=5, ystrength=5, vibrato=5, randomness=50, fadeout=true, block=false)]
+The researcher cannot help but look back as she starts running.
+She hardly has the time to swallow her scream.
+[name="Ksenia"]<i>Gosudar-batyushka</i>—
+[name="Ksenia"]What is that thing?!
+[Dialog]
+[Delay(time=2)]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[CameraShake(duration=0, xstrength=10, ystrength=10, vibrato=20, randomness=50, fadeout=true, block=false)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot]  

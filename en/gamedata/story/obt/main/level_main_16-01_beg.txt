@@ -1,0 +1,592 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Decision(options="We need to find a safe route to the research institute.;Elysium?", values="1;2")]
+[Predicate(references="1;2")]
+[avgdisplay(id="1", name="act3mainss_01", style="animekv", slot="bgover", x=-200, y=80, scalex=1.2, scaley=1.2, entryfrom=0, entryto=0.2, duration=5, block=false)]
+[avgdisplay(id="1", name="act3mainss_01", style="animekv", slot="bgover", xto=0, yto=0, scalexto=0.9, scaleyto=0.9, duration=30)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>Central Far North Mining District, Ursus</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[name="Elysium"]Looks like my equipment's not working right, it can't detect the precise range of the contamination.
+[name="Elysium"]I think this is the miners' accommodation. The real danger here might be whoever's still around, really. This <i>is</i> demonic contamination we're talking about.
+[name="Mantra"]......
+[name="Elysium"]Captain says there's no trace of any mental activity in the entire mine, human or animal.
+[name="Elysium"]At the very least, the contamination hasn't blocked the way to the institute. It's mostly headed south, actually.
+[name="Elysium"]We can swing a detour around the north. It'll take us roughly three hours longer than the original plan, but the time loss will be manageable.
+[name="Mantra"](Nods)
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[avgdisplay(id="1")]
+[PlayMusic(key="$saferoom_loop", volume=0.6)]
+[Background(image="66_g3_miningarea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_4179_monstr_1#10$1", duration=1, isblock=true)]
+[name="Mon3tr"]Wow...
+[name="Mon3tr"]I've been thinking this for a while now, but you two work really well together!
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1")]
+[name="Amiya"]Elysium and Mantra have been working together for many years now.
+[charslot(slot = "m", name = "char_401_elysm_na_1#2")]
+[name="Elysium"]Hahaha... You could say I'm Rhodes Island's most experienced operator when it comes to working with the captain.
+[name="Elysium"]It takes a lot out of her to 'speak', so if it's not an emergency, I get to be the one passing on the message.
+[charslot(slot = "m", name = "char_401_elysm_na_1#5")]
+[multiline(name="Elysium")]So, what do you think, Doctor? If we set off now, we should make it before sunset— 
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[multiline(name="Elysium",end=true)]Not that the sun sets in the Ursine Far North this time of year...
+[dialog]
+[charslot]
+[Decision(options="We set off right now.;Get our friend up to speed on our detour.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "r", name = "avg_1037_amiya3_1#1$1")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_armyboots_walk", volume=1, loop=true, channel="ar")]
+[StopSound(channel="ar", fadetime=1.5)]
+[charslot(slot = "l", name = "avg_npc_1966_1#4$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[charslot(slot = "r", name = "avg_1037_amiya3_1#1$1", focus="r")]
+[name="Amiya"]Don't fall behind now, Eloysius.
+[charslot(slot = "l", name = "avg_npc_1966_1#3$1", focus="l")]
+[name="Eloysius"]Sorry, was just inspecting the mine equipment, nothing to do with our travels together.
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="Eloysius"]What's going on? Why did you stop for so long?
+[name="Eloysius"]According to the map, we're very close to the institute. Don't tell me you've found some—
+[name="Eloysius"]...thing?
+[dialog]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1966_1#4$1", focus="l")]
+[name="Eloysius"]It's... traces of Dominion.
+[name="Eloysius"]The Royal Guard was here.
+[charslot(slot = "r", name = "avg_1037_amiya3_1#6$1", focus="r")]
+[name="Amiya"]You don't seem shocked?
+[charslot(slot = "l", name = "avg_npc_1966_1#12$1", focus="l")]
+[name="Eloysius"]I hope you're not insinuating I'm hiding something, Gospozha Amiya, or I'd be very hurt.
+[charslot(slot = "r", name = "avg_1037_amiya3_1#6$1", focus="r")]
+[name="Amiya"]I hope you share any pertinent information with us, at least while we are collaborating.
+[name="Amiya"]What do you know about the whereabouts of the Royal Guard?
+[charslot(slot = "l", name = "avg_npc_1966_1#3$1", focus="l")]
+[name="Eloysius"]First of all, only the Tsar himself has the authority to know the comings and goings of the Royal Guard, let alone a lowly sergeant such as myself.
+[name="Eloysius"]But honestly speaking, after the illustrious Grand Duchess of the Far North declared martial law and shut down the mines, the Royal Guard showing up would not be much of a shock.
+[charslot(slot = "r", name = "avg_1037_amiya3_1#1$1", focus="r")]
+[name="Amiya"]Then, if they're already conducting an investigation of their own here, where does that leave you?
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="Eloysius"]You're a clever one, aren't you?
+[name="Eloysius"]The news of abnormal Infected miners in Central Far North has made waves, and many are curious.
+[name="Eloysius"]Naturally, while most Ursine have a right to curiosity, they do not have the same right to information.
+[charslot(slot = "l", name = "avg_npc_1966_1#12$1", focus="l")]
+[name="Eloysius"]Please understand that, as a sergeant, I am limited in what I am allowed to say. I hope my explanation will not cause too much confusion, Gospozha Amiya.
+[charslot(slot = "r", name = "avg_1037_amiya3_1#7$1", focus="r")]
+[name="Amiya"]No, it's fine. I understand the position you are in.
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="Eloysius"]I've never minced words about how this job could improve the résumé of an Imperial Guardswoman like me.
+[charslot(slot = "l", name = "avg_npc_1966_1#2$1", focus="l")]
+[name="Eloysius"]Though I did imagine it being much easier...
+[name="Eloysius"]Anyhow, that dream is dead. The Royal Guard being involved is a bad omen, no matter how you look at it.
+[charslot(slot = "r", name = "avg_1037_amiya3_1#8$1", focus="r")]
+[name="Amiya"]If that's the case, are you still set on traveling with us?
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="Eloysius"]Of course. I chose to take on this task, and quitting halfway would hardly be the decent thing to do.
+[name="Eloysius"]Before we continue onwards, shall we reaffirm our trust in one another?
+[charslot(slot = "r", name = "avg_1037_amiya3_1#8$1", focus="r")]
+[name="Amiya"]I look forward to our continued cooperation.
+[name="Amiya"]Just like the time we met...
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[gridbg(imagegroup="38_g21_skystarry_L1/38_g21_skystarry_R1/38_g21_skystarry_L2/38_g21_skystarry_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720", x=-105, fadetime=1)]
+[largebgtween(duration = 40,yFrom = 720, yTo = 360,block = false)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crowdrun", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Bresk, Far North, Ursus</><p=2>Three days ago</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[Decision(options="Elysium! Give us some direction!", values="1")]
+[Predicate(references="1")]
+[playsound(key="$transmission", volume=1)]
+[Delay(time=1)]
+[name="Elysium"]<i>Mierda</i>... The signal's all laggy, it's like there's something interfering with our encrypted frequency!
+[name="Elysium"]Whatever, not important... Ten guardsmen to your west, turn right at the next crossing!
+[name="Mon3tr"]What are you talking about?! The west <i>is</i> on our right!
+[name="Elysium"]Did I say right? Gah—
+[name="Elysium"]Do you see the city hall? Go in the opposite direction!
+[name="Amiya"]I see it, but the crossing ahead is where the plates are disconnected—
+[name="Elysium"]What?!
+[name="Elysium"]There's nothing like that on this stupid map!
+[name="Elysium"]Well, you're practically surrounded by guards, so that's your only way out!
+[name="Mon3tr"]Got it.
+[name="Mon3tr"]Can you keep up, Amiya?
+[name="Amiya"]I can!
+[name="Mon3tr"]Hold on tight, Doctor!
+[dialog]
+[Decision(options="Doing my best here—", values="1")]
+[Predicate(references="1")]
+[name="Mon3tr"]Your best isn't good enough. Fine, I'll hold onto you instead!
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[SoundVolume(volume=0.2, channel="sn", fadetime=0.5)]
+[largebgtween(duration = 1, yTo = 900, block = false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="66_g1_bleskstreet",screenadapt="coverall", xScale=1.2, yScale=1.2)]
+[Delay(time=1)]
+[largebg]
+[backgroundTween(yFrom = -80, yTo = 60, duration=0.5, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=false)]
+[PlaySound(key="$d_avg_Qinggong", volume=1)]
+[Delay(time=0.5)]
+[backgroundTween(yFrom = 60, yTo = 0, duration=1.5, block=false)]
+[Delay(time=2)]
+[PlaySound(key="$d_gen_walk_n")]
+[charslot(slot = "m", name = "avg_4179_monstr_1#3$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="Mon3tr"]Phew...
+[charslot(slot = "m", name = "avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]You alright, Doctor?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="I'm good.;I've gotten pretty used to it by now.;Next time, I can try running by myself.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "avg_4179_monstr_1#12$1")]
+[name="Mon3tr"]Haha, glad you're doing well! Guess I can relax, then!
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="Amiya"]We've arrived at the designated location, Elysium.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="Amiya"]Elysium?
+[StopSound(channel="sn", fadetime=2)]
+[PlayMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[charslot(slot = "m", focus="n")]
+[name="Intermittent Noise"]...Don't...*bzzt*...stop...oving...*bzzt*—
+[name="Intermittent Noise"]...There's...*bzzt* *bzzt*...uards...
+[dialog]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#3$1")]
+[name="Amiya"]The line cut out.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]The terminal says Elysium's still moving, but we don't have any way to reestablish communication.
+[name="Amiya"]It's like short-range comms have been unstable ever since we entered Bresk.
+[name="Amiya"]There's also no way of telling if it's because of the Far North's extreme weather, or human interference.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="I am curious, though...;Why would Bresk send so many guards to detain 'inter-city merchants'?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1")]
+[name="Amiya"]It <i>is</i> rather strange...
+[name="Amiya"]There haven't been any issues with the ID cards Closure forged for us.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="Maybe we're not the ones they're watching out for.;Maybe they're watching us for different reasons.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="But putting that aside...", values="1")]
+[Predicate(references="1")]
+[Decision(options="Bresk is supposed to be a quiet city.;It's strange that it's so fortified.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="Amiya"]This isn't anything like the intelligence we had... If this goes on, we won't make it into the mining district.
+[name="Amiya"]Doctor, shouldn't we rendezvous with Mantra's team and discuss—
+[dialog]
+[charslot]
+[PlaySound(key="$transmission", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760",tsfrom="0,1", tsto ="1,1",tsduration = 0.5, switch = true, style = 0,offset = "0,0", channel = 3)]
+[interlude(channel = 3, switch = true, type = 3, slot = "m", pfrom = "0,0", pto="0,0", name = "char_401_elysm_na_1#7", duration = 0)]
+[delay(time=0.5)]
+[name="Elysium"]Doctor! Finally got you!
+[name="Elysium"]Keep moving! There are guards heading your way!
+[dialog]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[interlude(channel = 3, clear = true, tsto="0,1", tsduration=0.5)]
+[delay(time=1)]
+[Decision(options="I think I figured that out, thanks...", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", posfrom="80,0", posto="80,0", duration=1)]
+[charslot(slot = "l", name = "avg_npc_1973_1#1$1", posfrom="-80,0", posto="-80,0", duration=1)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1", duration=1.5, isblock=true)]
+[delay(time=2)]
+[charslot]
+[charslot(slot = "m", name = "avg_4179_monstr_1#6$1")]
+[name="Mon3tr"]They're fast—
+[name="Mon3tr"]Get behind me, Amiya!
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="Amiya"]No, don't engage!
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="Far North Soldier"]Alright, interloping scum, hands up!
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="Let's take a deep breath here.;What laws have we violated to cause such a fuss?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="Far North Soldier"]You trespassed in the industrial zone, and attempted to infiltrate a private factory, violating Bresk's migration regulations and Ursine urban public security measures.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]Could I ask you to reconfirm, sir? When we entered the city, I'd never heard anything about a prohibition on foreigners entering the industrial zone—
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="Far North Soldier"]It's a new regulation, went into effect just after you reached Bresk.
+[name="Far North Soldier"]You will be detained under the law, and then Public Security will decide if you are to be deported or exiled, considering your circumstances.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]If we inadvertently violated Bresk's new regulation, then I deeply apologize.
+[name="Amiya"]We're just here to look for an inter-city merchant. It was stated clearly in the itinerary declaration we submitted upon entry to the city.
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="Far North Soldier"]Save it for Public Security.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="We didn't mean to offend.;There may be a way for both of us to save time here.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="I believe Bresk, <i>Pearl of the Far North,</i> treats its guests well.;I'm sure the Grand Duchess is as kind as the rumors say.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="Far North Soldier"]Enough of that, I don't give a damn. I'm just doing my job.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#10$1")]
+[name="Amiya"]Sir...
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="Far North Soldier"]This way.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]No, sir. We can't delay any longer.
+[name="Amiya"]I'm sorry.
+[charslot]
+You see Amiya shift her body, surreptitiously protecting you. Mon3tr observes your surroundings, looking for a way out.
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="Far North Soldier"]You don't know how things work around here.
+[name="Far North Soldier"]Get them.
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[charslot(slot = "l", name = "avg_npc_1973_1#1$1", posfrom="-300,0", posto="0,0", duration=0.5)]
+[delay(time=0.2)]
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", posfrom="300,0", posto="0,0", duration=0.5)]
+[delay(time=1.5)]
+[charslot]
+[PlaySound(key="$char_Mon3tr")]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_4179_monstr_1#13$3")]
+[name="Mon3tr"](Warning roar)
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", focus="r")]
+[charslot(slot = "l", name = "avg_npc_1972_1#1$1", focus="n")]
+[name="Hesitant Soldier"]Err... Ah!
+[charslot(slot = "l", name = "avg_npc_1972_1#1$1", focus="l")]
+[name="Far North Soldier"]What are you standing around for?! Get in there already!
+[name="Far North Soldier"]What, can't even handle a little Feline girl?
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", focus="r")]
+[name="Hesitant Soldier"]S...Sir, look behind them.
+[name="Hesitant Soldier"]That looks like th-th-the—
+[charslot(slot = "l", name = "avg_npc_1972_1#1$1", focus="l")]
+[name="Far North Soldier"]Spit it out already!
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", focus="r")]
+[name="Hesitant Soldier"]—The Imperial Guard!
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "l", name = "avg_npc_1972_1#1$1", focus="l")]
+[name="Far North Soldier"]<i>Yerunda!</i> Those pretentious bastards should be in Grypherburg, what would they be doing in Bresk?
+[charslot(slot = "r", name = "avg_npc_1973_1#1$1", focus="r")]
+[name="Hesitant Soldier"]B-But those clothes—
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_highheelfts", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="Imperial Guard?"]I am terribly sorry, sir, but I'm afraid she is right this time.
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="Far North Soldier"]You...
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Imperial Guard?"]Eloysius Gorchekova, Sergeant of the Imperial Guard, Vanguard Battalion, here from Deity Grypherburg.
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="Far North Soldier"]What are you playing at?
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]I have a simple request for you. Overlook this little breach of protocol and release our pitiful guests.
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="Far North Soldier"]You're with them?
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="Eloysius"]Unfortunately, they are indeed my friends. Since you are now aware of my history with them, surely you'll do me this favor, yes?
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="Far North Soldier"]We're a long way from Grypherburg, why should I care about that?
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]Because I stopped by Public Security and filled out all the paperwork?
+[charslot]
+The young Ursus waves some papers in her hand. In the dusky gloom of polar night, none can clearly see what is written on them.
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="Far North Soldier"]But—
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]If I were you, sir, I wouldn't play around with my future like that.
+[name="Eloysius"]There are many lost travelers, but rarely a chance to curry favor with the Imperial Guard—Ah, yes, may I ask you your name, or your service number?
+[charslot(slot = "m", name = "avg_npc_1972_1#1$1")]
+[name="Far North Soldier"]Alright, Sergeant Gorchekova. I'll report all this to Public Security. You may go.
+[name="Far North Soldier"]May your authority be as eternally glorious as the Tsar himself.
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="Eloysius"]Thank you for the kind words, sir.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]But none has as eternal a glory as His Imperial Majesty. The rest of us will have to leave the stage when the time comes.
+[name="Eloysius"]Well, I'll be off with our guests for now.
+[dialog]
+[PlaySound(key="$d_avg_highheelfts", volume=1)]
+[charslot(duration=1.5, isblock=true)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=0.6, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="Amiya"]Thank you for helping us get out of that sticky situation, ma'am... but, why exactly did you—
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="Eloysius"]Shh, they're still close by.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]Also, my cute little Cautus, you may call me Eloysius.
+[name="Eloysius"]'Ma'am' is too formal, while 'Guardswoman' or 'girl' is too crude. I believe names are what's best for our current relationship.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="Thank you for the help, Eloysius.;You really know how to handle those guards.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="Eloysius"]They most likely thought you were ordinary traders, easy to shake down for a quick <i>chervonets</i> or two, same way they treat Columbian sightseers.
+[name="Eloysius"]But you're hardly tourists or traders, now, are you?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="Let's cut to the chase.;Why are you helping us?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]Good, good, I appreciate candor. I will answer your questions, but not here.
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="Eloysius"]Once you have gathered your friends, we can go somewhere far from prying eyes and ears.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="We don't have much time.", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]Relax, I won't be wasting your time. This is all in service of your goal.
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_cavewaterdrop", volume=0, loop=true, channel="ca")]
+[SoundVolume(volume=1, channel="ca",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[PlaySound(key="$d_avg_highheelfts", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="Eloysius"]Well, here we are.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="Amiya"]Where is here?
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="Eloysius"]An abandoned apartment. As far as I know, the guards don't care for these nigh-empty old districts.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]An empty plate may sound wasteful, but it is true. No matter how the <i>Deity Grypherburg Times</i> tries to cover it up, it is a widely-known fact that the population of the Far Northern cities has been dwindling these last few years.
+[name="Eloysius"]As time goes by, this place becomes deserted, and the plate will be discarded, left to rust in the wilderness like all the other abandoned plates.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]Eloysius, we need to know exactly why you came looking for us. Now, ideally.
+[charslot(slot = "m", name = "avg_4179_monstr_1#6$3")]
+[name="Mon3tr"](Vigilant stare)
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="Eloysius"]Could I ask everyone to lighten up a little, please?
+[name="Eloysius"]There are a lot of you and only one of me. What kind of threat could I possibly pose to people of your caliber?
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="Eloysius"]Could I ask the Phidia lady standing outside the door to tell your friends that I'm not lying?
+[charslot(slot = "m", focus="n")]
+[name="Elysium"]Captain says there's nobody else here. The district is safe.
+[dialog]
+[Decision(options="Choosing this place to talk means you also need to be covert.;I had hoped the Imperial Guard would at least treat us to dinner.", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]A friend of mine used to live here. She had hoped to achieve her dream of completing a saga for the Ursine people, but was defeated by the frigid cold—She is doing very well in Grypherburg, I should add.
+[name="Eloysius"]But thanks to her, we have this place to shelter both from the cold wind, and from people snooping around.
+[name="Eloysius"]I'm sure I'm not the only one here who wants to stay out of trouble.
+[dialog]
+[Predicate(references="2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="Eloysius"]You're a funny one, my hooded friend. It takes a clever mind to grasp humor.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]Once we have discussed our important business, I would be happy to entertain you with a meal if you are all still interested.
+[dialog]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]Firstly, since I've already introduced myself, may I have the pleasure of knowing your names?
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="Amiya"]We've come from Victoria and—
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]Still insisting that you went into the industrial zone to meet with an inter-city merchant, a widow who goes by the name of Olga?
+[name="Eloysius"]A very reliable cover story, one that will fool a vast majority of the city's port officials.
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="Eloysius"]But no matter how you put it, it is rare for a commercial party in a nomadic city to be using military-grade encrypted communications.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]Was it you intercepting our communications?
+[charslot(slot = "m", name = "avg_npc_1966_1#13$1")]
+[name="Eloysius"]No, no, I would never do something so crude.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]It may have been the aurora, or the recently upgraded defense equipment. You truly are unlucky, coming to Bresk during the most interesting times it has ever seen.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]......
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]I have been honest on my part. If you still have things you wish to keep hidden, then I am afraid we have to break things off here.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="We're a pharmaceutical company.;Rhodes Island.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]See? Honesty isn't so painful, is it?
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="Eloysius"]Rhodes Island... I have heard this name mentioned many times while investigating Infected rumors from all across the land.
+[name="Eloysius"]Based on what I have pieced together from these tales, you lot are the stuff of legends.
+[name="Eloysius"]But no matter how true they are, the most recent instance I have encountered your name was in that paper you published about aberrant changes in the Infected.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="You don't strike me as a colleague in the field.;I never thought you'd be interested in Oripathy studies.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1")]
+[name="Eloysius"]Pardon me for letting you down, but not every newly minted Grypherburg noble is an uneducated lout.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]There is not a nation on this land that can overlook the Infected question, though their policies in answering it may differ. Anyone with a modicum of common sense would know just how important this scientific achievement of yours is.
+[name="Eloysius"]But there is one thing I am curious about. Despite this groundbreaking discovery, Rhodes Island has kept a low profile, instead of using it to do more business.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="Is that why you came to find us?;This doesn't explain how you knew our whereabouts.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]Oh, that can easily be explained. I think anyone who goes into the Far North's Central Mining District right now is doing it for the same reason.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="Amiya"]You mean you also want in?
+[charslot(slot = "m", name = "avg_npc_1966_1#11$1")]
+[name="Eloysius"]What, do you not?
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1")]
+[name="Amiya"]We... <i>need</i> to get in.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]Sure enough.
+[name="Eloysius"]You don't have a way into the mining district, and as it turns out, I have need of some Oripathy specialists. The perfect recipe for cooperation.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="So you want us to go into the district with you?", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#12$1")]
+[name="Eloysius"]Of course.
+[name="Eloysius"]The authorities here will not look kindly on some Grypherburger sticking her nose into Far Northern affairs, after all.
+[name="Eloysius"]As things are, your cover as merchants will do you no good, nor will it help me, so let's forget all the masks and red tape and shake hands right here. That is one solution to all our problems.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]But what is it you want to do in the district? And what do you need from us?
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="Eloysius"]Was I not clear?
+[name="Eloysius"]I'm hoping Rhodes Island will accompany me into the mining district to collaborate on an investigation into the Infected affair.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]The 'Infected affair'? What exactly are you referring to...?
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="Eloysius"]Oh, my dear, sweet, naive little Cautus, my patience has its limits, you know. There is no time to be playing dumb.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]No, that's a serious question.
+[name="Amiya"]We lost contact with one of our mobile medical teams in the Far North's Central Mining District, and we need to find them.
+[name="Amiya"]We really have no idea what this 'Infected affair' is, and I hope you will elaborate.
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[multiline(name="Eloysius")]You want into the district just for— 
+[charslot(slot = "m", name = "avg_npc_1966_1#11$1")]
+[multiline(name="Eloysius",end=true)]Wait, so you really don't know?
+[name="Eloysius"]That's impossible. To my knowledge, you've built many more medical posts all across Ursus in the past few years—
+[charslot]
+Simple doubt replaces the suspicion on the young woman's face, before finally shifting to a sudden realization.
+She understands how her assumptions have led her astray.
+[charslot(slot = "m", name = "avg_npc_1966_1#11$1")]
+[name="Eloysius"]—No. You just said 'mobile medical team'...
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="Eloysius"]No fixed offices means no steady access to a network of contacts with the latest intelligence. I don't know what issues Rhodes Island is currently facing, but it seems the information you have is limited.
+[name="Eloysius"]And because this is Ursus, you have been unable to do much. Because of your lack of information, you have been blindly running into walls this whole time... Haven't you?
+[name="Eloysius"]......
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1")]
+[name="Eloysius"]<i>Chyort poberi!</i> I was too impatient.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[Decision(options="We really don't know what this 'Infected affair' is.;Does it have to do with Bresk's current state of affairs?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="Eloysius"]Forget it. Forget I said anything. That favor before was free of charge, no need to thank me.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]Wait!
+[name="Amiya"]The very fact that you came looking for us means there is the possibility we can work together on this.
+[name="Amiya"]Could you not tell us what exactly happened in the mining district?
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="Eloysius"]I really... Gah! I really should have thought things through more before making a choice.
+[name="Eloysius"]And here I was, thinking you were wracking your brains on how to enter the district upon hearing the news. You should know that this information is worth quite a lot on the black market.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]We're not that kind of organization... but that doesn't matter right now.
+[name="Amiya"]We have a natural reason to be invested in anything to do with the Infected. That's why you came looking for us, wasn't it?
+[name="Amiya"]Please, tell us.
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1")]
+[name="Eloysius"]Fine, fine! Since I'm already here, I may as well do something, even if it is just for some Infected.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]The Infected are Ursine citizens, too.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]You are correct, precious little Cautus. The Infected are indeed Ursines, and that is before we mention those miners that the Tsar personally promised 'life, not survival'.
+[name="Eloysius"]The miners are the backbone of Ursus, keeping its war machines running. A fact that those corrupt old nobles and their puppets haven't realized yet.
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="Eloysius"]But even they must know that Ursus must change.
+[name="Eloysius"]......
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1")]
+[name="Eloysius"]My word, what am I even babbling about...? Good thing those sharp-tongued, poison-spitting colleagues of mine aren't here, or they would laugh me into my grave.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]You should not feel ashamed for this.
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="Eloysius"]Spoken words are like spilled cystymilk: they freeze solid in this weather.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="Amiya"]So what is this 'Infected affair'? It sounds like it has to do with the Infected miners?
+[charslot(slot = "m", name = "avg_npc_1966_1#6$1")]
+[name="Eloysius"]Listen, if you dare leak any of this...
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]You have my word that no matter what you have to say, we will not disclose it.
+[name="Amiya"]There is no benefit to making an enemy out of Ursus. We know that well.
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="Eloysius"]Give me a moment, I need to figure out where to start...
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="Eloysius"]You know, of course, that Bresk borders the Far North's Central Mining District, and is also the largest nomadic city in the north of Ursus.
+[name="Eloysius"]This means the city administrates a total of thirty thousand square kilometers' worth of mines scattered across the Far North, alongside two hundred thousand Infected.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]......
+[dialog]
+[charslot]
+[charslot(slot = "m", focus="n")]
+[Decision(options="We are familiar with the basic facts of this place.;What issues arise in this sort of system?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="Eloysius"]Please don't look at me like that... Sorry, I knew this sort of talk would anger you.
+[name="Eloysius"]But the Tsar does not wish for these Infected miners to be treated as cheap labor. On the contrary, his decrees have shown a lot of care for the people of Bresk.
+[name="Eloysius"]Things have been going rather smoothly in the city these past few years, until three months ago...
+[name="Eloysius"]Yes, this is where your company's area of expertise comes in, along with that paper.
+[charslot(slot = "m", name = "avg_npc_1966_1#5$1")]
+[name="Eloysius"]Three months ago, large numbers of 'abnormal Infected' were discovered in the Central Mining District. Their symptoms were very similar to the ones described in your paper.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="Amiya"](Three months ago? Wasn't that...?)
+[dialog]
+[charslot]
+[Decision(options="You mean...?;That's the reason why Bresk is under martial law?", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="How many 'abnormal' Infected are there in the district?", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#5$1")]
+[name="Eloysius"]That's the question.
+[name="Eloysius"]Right now, nobody knows just how many 'normal' Infected are left in the Central Mining District.
+[dialog]
+[StopSound(channel="ca", fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

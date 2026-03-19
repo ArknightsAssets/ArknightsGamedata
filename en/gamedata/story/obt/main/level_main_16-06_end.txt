@@ -1,0 +1,593 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="66_g10_instituteinterior",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>Central Far North Mining District Laboratory, Ursus</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playMusic(key="$wasteland_loop", volume=0.6)]
+[name="Ksenia"]Ugh...
+[dialog]
+[charslot(slot = "m", name = "avg_4179_monstr_1#8$1",duration=0.5)]
+[delay(time=0.8)]
+[name="Mon3tr"]Ksenia!
+[name="Mon3tr"]Ksenia, are you awake? How are you feeling?
+[charslot]
+[name="Ksenia"]Feeling? I don't know. Am I supposed to feel something?
+[dialog]
+[PlaySound(key="$d_avg_clothmovement",volume=0.7)]
+[charslot(slot = "m", name = "avg_4208_wintim_1#1$2",duration=1)]
+[delay(time=2)]
+[name="Ksenia"]...You...
+[charslot(slot = "m", name = "avg_4208_wintim_1#2$2")]
+[name="Ksenia"]You're not Kal'tsit.
+[charslot(slot = "m", name = "avg_4208_wintim_1#8$2")]
+[name="Ksenia"]No... you were never her, why did I even ask you that...? <i>Suka,</i> my head—what am I even saying?
+[charslot(slot = "m", name = "avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]I'm Mon3tr, an Operator of Rhodes Island... and also a companion to Kal'tsit.
+[charslot(slot = "m", name = "avg_4208_wintim_1#6$2")]
+[multiline(name="Ksenia")]Mon3tr, a familiar name, though I don't remember where I heard it... And what about you? Why are you—
+[charslot(slot = "m", name = "avg_4208_wintim_1#7$2")]
+[multiline(name="Ksenia")]*cough*, *cough* *cough*!
+[charslot(slot = "m", name = "avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]Easy now, no need to rush!
+[dialog]
+[charslot]
+[Decision(options="I am {@nickname}.", values="1")]
+[Predicate(references="1")]
+[Decision(options="We're from Rhodes Island.;We need your help.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_4208_wintim_1#1$2")]
+[name="Ksenia"]So you're indeed connected to Director Kal'tsit.
+[name="Ksenia"]Rhodes Island... Serafina talked about the place. What sort of help do you need?
+[charslot(slot = "m", name = "avg_4208_wintim_1#7$2")]
+[name="Ksenia"]What help can I even give you, as I am now?
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Take this back.", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_4208_wintim_1#2$2")]
+[name="Ksenia"]Oh, <i>bog.</i> Burn it.
+[charslot(slot = "m", name = "avg_4208_wintim_1#3$2")]
+[name="Ksenia"]I thought I'd be awake enough to destroy it myself... but it seems staying sober did not save me from this headache anyway.
+[charslot(slot = "m", name = "avg_4208_wintim_1#7$2")]
+[name="Ksenia"]This was written for the dead, and I hope it did not cause you any offense.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Sorry, but we read it.;We have questions.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="You were a Sarcophagus researcher in Chernobog.;Your writing and way of addressing Kal'tsit prove this as well.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_4208_wintim_1#3$2")]
+[name="Ksenia"]That was a long time ago...
+[name="Ksenia"]I was just an assistant then, following Professor Ilia around and running basic data analyses. I barely had any significant ties to the project...
+[charslot(slot = "m", name = "avg_4208_wintim_1#1$2")]
+[name="Ksenia"]But now I see it is the very link to my ruin. I'd rather all of that had never happened at all.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="But you still treat Kal'tsit as your director, and the research is still on your mind.", values="1")]
+[Predicate(references="1")]
+[Decision(options="Do you know where the Sarcophagus is currently located, or where it possibly could have gone?", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot = "m", name = "avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]It's complicated to explain, but we really have to find the Sarcophagus, we—
+[charslot(slot = "m", name = "avg_4208_wintim_1#8$2")]
+[name="Ksenia"]No, wait. Explain. What do you mean by 'currently located'?
+[name="Ksenia"]Is it not in Chernobog?
+[charslot(slot = "m", name = "avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]—What?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4208_wintim_1#3$2")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Ksenia"]So, not only is the Sarcophagus no longer in Chernobog, the city itself has completely changed...
+[name="Ksenia"]I don't know what happened, and I have no clue where it went either...
+[charslot(slot = "m", name = "avg_4208_wintim_1#7$2")]
+[name="Ksenia"]Sorry, I can't help you.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Then, do you know of...;Artyom Chaadayev?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_4208_wintim_1#8$2")]
+[name="Ksenia"]You... how do you know this name?
+[charslot(slot = "m", name = "avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]Let's skip that first! You know him, right? Did he ever tell you anything about the Sarcophagus—
+[charslot(slot = "m", name = "avg_4208_wintim_1#7$2")]
+[name="Ksenia"]No... I've actually never met him.
+[charslot(slot = "m", name = "avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]You what...?
+[charslot(slot = "m", name = "avg_4208_wintim_1#1$2")]
+[name="Ksenia"]After the incident in Chernobog that year, someone with that name contacted me by mail...
+[name="Ksenia"]He called himself a friend of Professor Ilia, expressed his condolences about what happened, and showed a willingness to help out a student of his old friend and recommend me to some other laboratories within the country.
+[charslot(slot = "m", name = "avg_4208_wintim_1#8$2")]
+[name="Ksenia"]I once thought it a nasty joke... until the well-funded labs mentioned in the letter actually came looking for me.
+[charslot(slot = "m", name = "avg_4208_wintim_1#7$2")]
+[name="Ksenia"]This would happen a few more times. Indeed he gave me many rare opportunities... but even now I have no idea who this man is, or why he helped me.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="He contacted you again recently.", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_4208_wintim_1#1$2")]
+[name="Ksenia"]Yes... He invited me to Deity Grypherburg, claiming there was an important project I could deploy my skills on.
+[charslot(slot = "m", name = "avg_4208_wintim_1#7$2")]
+[name="Ksenia"]But I was tired, what could I even do...? Looking back on what I did, all I could bring was more calamity.
+[name="Ksenia"]If I had to choose where to end my miserable life, let it be the frozen soil out here in the Far North.
+[charslot(slot = "m", name = "avg_4179_monstr_1#9$1")]
+[name="Mon3tr"](Doctor... what do we do now?)
+[dialog]
+[charslot]
+[Decision(options="(That project in Grypherburg sounds somewhat suspicious.);(It sounds like she doesn't know much about it either.)", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="Ksenia, how did you come to know Serafina?", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_4208_wintim_1#1$2")]
+[name="Ksenia"]The lab had to supervise the mobile medical team in the mining district, so we got acquainted rather quickly.
+[name="Ksenia"]Though we never spoke much to each other. They don't allow researchers to get too close to anyone unrelated to the project.
+[name="Ksenia"]It's a bit too late now, if you wanted to find her. She left the lab with your people.
+[charslot(slot = "m", name = "avg_4208_wintim_1#3$2")]
+[name="Ksenia"]With that group of miners...
+[name="Ksenia"]......
+[charslot(slot = "m", name = "avg_4208_wintim_1#2$2")]
+[name="Ksenia"]That's all I know.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="What is the 'Oka' mentioned in your writing?;What kind of experiments did you do on the Infected miners?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_4208_wintim_1#2$2")]
+[name="Ksenia"]......
+[charslot(slot = "m", name = "avg_4208_wintim_1#4$2")]
+[name="Ksenia"]A wretched mistake...
+[charslot(slot = "m", name = "avg_4208_wintim_1#5$2")]
+[name="Ksenia"]I didn't know... I had no idea they would use 'Oka' to do those things...
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Calm down...;There's still time to rectify mistakes.", values="1;2")]
+[Predicate(references="1;2")]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g3_miningarea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>Central Far North Mining District, Ursus</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playMusic(intro="$escape_intro",key="$escape_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="Amiya"]The Central Mining District is huge, and all eleven mines are connected by a surface transport system.
+[name="Amiya"]Stations are installed at every mine to deliver raw ore to be washed, processed, and stored in the warehouse.
+[name="Amiya"]The map seems to indicate this is the largest warehouse, and the worker dormitories are right next to it, with the south mine exit behind.
+[name="Amiya"]This layout...
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]Storing Originium in a warehouse so close to the dormitories does not mean they trust the miners, but that they absolutely do not care about the hazard posed by active Originium particles.
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"]Amiya.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="Amiya"]Yes? Did you find something?
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"]A chip.
+[name="Mantra"]I saw it from the research lab terminal. Every miner here has a positioning chip in them. This could be why the miners we met earlier were found by the Patrol Unit.
+[name="Mantra"]Before the miners we were chasing chose to leave, they must have gotten rid of these.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="Amiya"]Did they tear out the chips themselves?
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"](Shakes head)
+[charslot(slot = "m", name = "avg_npc_1560_1#1$1")]
+[name="Meticulous Operator"]You were right, Captain! In the south dorms, we found bandages, hemostats and other medical equipment, all Rhodes Island issue.
+[name="Meticulous Operator"]There's blood on the bandages and equipment. They turned the metal beds into a makeshift operating table, and might have performed surgery on it.
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="Eloysius"]I suspect quite a big fight happened here, and the injured had to patch up their wounds.
+[name="Eloysius"]So those are normal findings.
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"](Shakes head)
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="Elysium"]Captain's asking if you've seen any tracking chips that were forcibly removed.
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="Eloysius"]No sign of any such thing.
+[charslot(slot = "m", name = "avg_npc_1560_1#1$1")]
+[name="Meticulous Operator"]No, we've swept this area.
+[name="Meticulous Operator"]As Eloysius says, the man-made damage inside and outside the warehouse seems to imply a fight broke out.
+[name="Meticulous Operator"]But I think it was a minor scuffle, unless the fresh snow is covering up some of the aftermath...
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"](Nods)
+[charslot(slot = "m", name = "char_401_elysm_na_1#5")]
+[name="Elysium"]Alright, good work!
+[name="Elysium"]Captain, should we go take a look?
+[charslot]
+There is no answer, but the Phidia walks straight in the warehouse's direction.
+The soldier pauses, then follows the group's footsteps.
+[PlaySound(key="$d_avg_snowcrwdmarch", volume=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_battlefield",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"]......
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="Eloysius"]Looks like you figured it out. To be honest, I called it a big fight, because—
+[charslot(slot = "m", focus = "n")]
+The Guardswoman steps to one side and motions Elysium to help lift a waterproof sheet.
+The revealed hole is filled with uneven matter covered up with a white substance that at a glance appears to be thick and dirty snow.
+[charslot]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1")]
+[name="Amiya"]This smell... doesn't seem to be snow.
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="Eloysius"]Correct. It's limestone.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]......
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="Eloysius"]And below it are corpses.
+[name="Eloysius"]I told your Operator earlier I already investigated the area, and they took it as-is, and did not search the place any further.
+[name="Eloysius"]I wasn't going to tell you about this...
+[name="Eloysius"]They probably wanted to burn the bodies first, before realizing they couldn't get a big enough fire going and resorted to whatever was around. Quicklime to cover the stench, and the waterproof sheet to hide the hole.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]It worked, since we didn't smell the blood, yes?
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"](Shakes head)
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="Elysium"]Captain's saying the dead are Patrol Unit members.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]I can't say for sure. I'll climb down the hole and find out just who our unlucky customers are.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="Amiya"]I... I'll help.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]It's fine. Just pull me up later.
+[dialog]
+[playsound(key="$d_avg_clothmovementsp")]
+[charslot(slot = "m", action="jump",posto = "0,-300",power=50,times=1,duration = 0.5)]
+[charslot(duration=0.5)]
+Eloysius jumps right down, and stands on the edge of the hole as she wipes some limestone off.
+She grabs a sleeve, quickly drops it, and goes over to check the clothes on the next body.
+[charslot]
+[name="Eloysius"]Alright. Could you help me back up?
+[dialog]
+[charslot(slot = "l", name = "avg_4204_mantra_1#1$1")]
+[delay(time=0.5)]
+[charslot(slot = "l",posfrom = "0,0", posto = "0,-30",duration = 0.5)]
+[delay(time=0.6)]
+[playsound(key="$d_avg_clothmovement")]
+[charslot(slot = "l",posfrom = "0,-30", posto = "0,0",duration = 1)]
+[charslot(slot = "r",posfrom = "0,-200", posto = "0,0",duration = 1, name = "avg_npc_1966_1#1$1")]
+[delay(time=1.6)]
+[charslot(slot = "m", focus = "n")]
+Before anyone extends their hand, Mantra moves her thick tail down and wraps it around Eloysius to hoist her up, then releases her gently onto the ground.
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1966_1#11$1")]
+[name="Eloysius"]Ugh...
+[charslot(slot = "m", name = "char_401_elysm_na_1#6")]
+[name="Elysium"]I've never been treated like this!
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"](Shakes head)
+[charslot(slot = "m", name = "char_401_elysm_na_1#10")]
+[name="Elysium"]Alright not the best time for that so sorry Captain.
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="Eloysius"]I'll get to the point. Most of the bodies down there are indeed Patrol Unit members—the first and second layers, at least.
+[name="Eloysius"]I found this too.
+[charslot(slot = "m", focus = "n")]
+The crowd looks at the fragile crystal fragment in her hand. Most of it has been charred, but the neat circuit proves it used to be a chip.
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="Eloysius"]Quite a few on the ground down there. Fragments like this one, or even less.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]It seems like they made a difficult choice.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]You're putting it lightly.
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"](Shakes head)
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="Elysium"]Captain says, the miners probably attracted the Patrol Unit with their chips, and then offed them all in one shot.
+[name="Elysium"]After all, they only got the time to remove everyone else's chips after eliminating their pursuers.
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="Eloysius"]This sort of organization and ability... certainly not your garden variety miners.
+[name="Eloysius"]Their leader definitely has military expertise... or perhaps something else.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#10$1")]
+[name="Amiya"]Something else...?
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="Eloysius"]An Ursine folktale. 'The great Yurodstvo descends upon those in distress, and leads them out of dire straits'... just a tale born of boredom, though, so don't pay it much mind.
+[charslot(slot = "m", name = "avg_4204_mantra_1#3$1")]
+[name="Mantra"]......
+[charslot(slot = "m", name = "avg_npc_1966_1#5$1")]
+[name="Eloysius"]But we ought to find them before their actions become more radical.
+[name="Eloysius"]After all, it's just the Patrol Unit today, but tomorrow it could be the military police, and then... it might just be the Royal Guard.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]We have to find them before things get even worse.
+[dialog]
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[delay(time=1)]
+[playsound(key="$d_avg_snowbootwalk")]
+[charslot(slot = "m",posfrom = "0,0", posto = "-200,0",duration = 1)]
+[delay(time=0.5)]
+[charslot(duration=1)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g3_miningarea",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="Amiya"]Mantra... what are you looking for?
+[charslot]
+Mantra's eyes sweep through her surroundings, and after a long silence, Amiya hears her voice in her mind.
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"]That young Imperial Guardswoman reminded me of something.
+[name="Mantra"]The <i>Yurodstvo.</i>
+[charslot(slot = "m", name = "avg_1037_amiya3_1#7$1")]
+[name="Amiya"] I think... I remember seeing this word in Dr. Kal'tsit's documents. It was related to Ursine research on demons...
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"]A long, long, time ago, I too was on Ursine soil.
+[name="Mantra"]After a few mishaps, I was taken to be a Yurodstvo.
+[name="Mantra"]Only then did I learn of an unrecorded Ursus secret, so hidden that even libraries in Sargon's City of Gold did not know it.
+[name="Mantra"]The people of Ursus venerate the Yurodstvo; they believe the Yurodstvo's love transcends both the mortal realm and suffering, and this is how it has the power to lead one astray.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="Amiya"]So you think what's happening here is related to the Yurodstvo? But shouldn't the Yurodstvo be at the heart of Deity Grypherburg...?
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"]Only a hunch of mine. Everything that has happened here gives me a sense of unsettling familiarity.
+[charslot]
+Amiya follows Mantra's gaze and scans the area, but does not catch anything unusual.
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"]......
+[name="Mantra"]Perhaps I was overthinking. But I also found some unexpected delight.
+[name="Mantra"]Raidian has left a beacon nearby.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1")]
+[name="Amiya"]News from her? Wonderful!
+[name="Amiya"]So this is how you and Raidian communicate—
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"](Nods)
+[name="Mantra"]Back at Babel, Raidian was my first assistant.
+[name="Mantra"]But her talent far exceeded that role, and she led her own squad after becoming an Elite Operator.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1")]
+[name="Amiya"]I heard there used to be many on Rhodes Island who feared you before Raidian joined us...
+[charslot(slot = "m", name = "avg_4204_mantra_1#8$1")]
+[name="Mantra"]Occasionally, it proves to be true.
+[name="Mantra"]Some of our colleagues are better at speaking than thinking, and interactions can be problematic, while I am no expert at 'explanation.'
+[name="Mantra"]That is how my 'fearsome reputation' got passed around the Rhodes Island water coolers.
+[name="Mantra"]A few emergency operations where I probed into minds without prior notice, and after several rounds of exaggerated retellings, I became a witch who could stick my hand into their heads to toy with their minds.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="Amiya"]Oh! I heard this one, in a story Theresa told me... I thought it was a Sarkaz legend.
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"]Perhaps that was a true Sarkaz tale. The Speaker would have been defending me in saying that.
+[name="Mantra"]After Raidian joined Babel, she stood among those defending my reputation.
+[name="Mantra"]But today... Elysium is the flagbearer in that regard, as are you.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1")]
+[name="Amiya"]It's our responsibility!
+[charslot(slot = "m", name = "avg_4204_mantra_1#8$1")]
+[name="Mantra"](Nods)
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"]Just as I thought.
+[name="Mantra"]Found them.
+[charslot(duration=1)]
+Mantra reaches out to wipe snow off the beacon's base, and slowly the symbols on it are revealed.
+She feels the faint signals left on them, and some words gradually float into her mind.
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[Sticker(id="st1", text="'Ursus-Kazimierz Border'", x=300,y=320, alignment="center", size=24, delay=0.001,block = false, width=700,duration=1)]
+[Sticker(id="st2", text="'Reunion'",x=300,y=360, alignment="center", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=1)]
+[Sticker(id="st2",duration=1)]
+[delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_battlefield",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Central Far North Mining District, Ursus</> <p=2>Three days ago...</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playMusic(intro="$distressed_intro",key="$distressed_loop", volume=0.6)]
+[name="Injured Miner"]You know what, doctor?
+[name="Injured Miner"]We beat those Patrol Unit monsters!
+[charslot(slot = "m", name = "avg_npc_501_1#1$1")]
+[name="Rhodes Island Medic Operator"]Please, calm down and don't move! It's a deep wound!
+[charslot]
+[name="Injured Miner"]Haha! No big deal, my life would've been well-lived, even if all I managed was ending the lives of those brutes.
+[name="Injured Miner"]How can I even relax like this?
+[name="Injured Miner"]I never imagined this. Those high and mighty Patrol Unit guys couldn't either, I bet. That one day they would have to bow down to the Infected!
+[name="Injured Miner"]He even asked us to spare his life? Lucky I went straight for his head!
+[name="Injured Miner"]Rankin was right. No one can tread on us forever! We'll drag those old bastards down from their ivory towers one by one, and let them have a taste of the ground!
+[charslot(slot = "m", name = "avg_npc_501_1#1$1")]
+[name="Rhodes Island Medic Operator"]But...
+[name="Rhodes Island Medic Operator"]*sigh*...
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_1967_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="Nikto"]Rankin, we've already searched the place.
+[name="Nikto"]A total of ten Ursine medium-sized military trucks, with little fuel left. If everyone gets on, it'll only last us around two hundred kilometers.
+[name="Nikto"]Besides weapons and medicine, we found some food and water. It's not much, though it's no medicine either...
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]That's pretty good already.
+[charslot(slot = "m", name = "avg_npc_1967_1#3$1")]
+[name="Nikto"]I don't think these were worth the price we paid...
+[charslot(slot = "m", name = "avg_npc_1967_1#1$1")]
+[name="Nikto"]Right, we discovered a container door with extra encryption on it... we need an identification code.
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]Hmph... Can anyone here tell me what other secrets are lying around here?
+[name="Rankin"]Patrolling the mines at this hour, on this day? No telling me you stumbled here from boredom.
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_082",duration=0.5)]
+[delay(time=1)]
+[name="Frightened Patrol Unit"]I don't know...
+[name="Frightened Patrol Unit"]I'm just a driver! No better than a burdenbeast, I go wherever the captain tells me to!
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1963_1#10$1")]
+[PlaySound(key="$d_avg_swordexsheath")]
+[delay(time=1)]
+[name="Rankin"]The code or your life. Choose.
+[CameraShake(duration=0.3, xstrength=15, ystrength=15, vibrato=20, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_082")]
+[name="Frightened Patrol Unit"]I don't know! I really don't know!
+[name="Frightened Patrol Unit"]They've never given us the code to prevent the goods from running off! Only the recipient can open it!
+[charslot(slot = "m", name = "avg_npc_1963_1#10$1")]
+[name="Rankin"]'Running off'? What kind of 'thing' would do that?
+[charslot(slot = "m", name = "avg_npc_082")]
+[name="Frightened Patrol Unit"]——!
+[CameraShake(duration=0.3, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1963_1#5$1")]
+[name="Rankin"]Answer me! What the hell's inside those containers?
+[charslot(slot = "m", name = "avg_npc_082")]
+[name="Frightened Patrol Unit"]I...
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]......
+[name="Rankin"]Nikto, give me one of those explosives.
+[charslot(slot = "m", name = "avg_npc_1967_1#4$1")]
+[name="Nikto"]Rankin, what are you—
+[charslot(slot = "m", name = "avg_npc_1963_1#10$1")]
+[name="Rankin"]Just do as I say!
+[charslot(slot = "m", name = "avg_npc_1967_1#6$1")]
+[name="Nikto"]......
+[charslot]
+Rankin sticks a small Originium bomb on the container's lock. A simple move, but he almost drops it from how fast he's breathing.
+[dialog]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]......
+[charslot(slot = "m", name = "avg_npc_082")]
+[name="Frightened Patrol Unit"]Ah...
+[dialog]
+[PlaySound(key="$d_avg_open_glasscabinet")]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[charslot]
+The door slowly falls.
+Rankin sees no fewer than thirty to forty bodies packed in a ten-meter-squared container, all long deceased, with no exception.
+Some had struggled to the very last, their Originium crystals piercing into neighbors with messy, bloody wounds—no doubt, they were stuffed in here still alive.
+Rankin can no longer tell what stole their lives away, and he does not wish to think about it...
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=2, block=true)]
+[name="Rankin"]Did you know?
+[charslot(slot = "m", name = "avg_npc_082")]
+[name="Frightened Patrol Unit"]I, what—
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1963_1#5$1")]
+[name="Rankin"]Drop the act!!
+[name="Rankin"]Who was it... who gave you the order?!
+[charslot(slot = "m", name = "avg_npc_082")]
+[name="Frightened Patrol Unit"]The mine boss—No, the Grand Duchess! She made us do it!
+[name="Frightened Patrol Unit"]She cares about the miners here! Those in charge here get punished if the head count drops!
+[name="Frightened Patrol Unit"]They always have to patch up the gap by buying some Infected with their own funds whenever one miner escapes—sometimes they get non-Infected to solve their problem, and it costs more.
+[name="Frightened Patrol Unit"]But I have nothing to do with all that! Look, you already killed the actual bad guys!
+[name="Frightened Patrol Unit"]I'm just a driver who listens to his boss... I'm the same as you, right...?
+[name="Frightened Patrol Unit"]Infected, sir, please, let me go. I promise I'll desert the Patrol Unit, just pretend I died—
+[charslot(slot = "m", name = "avg_npc_1963_1#3$1")]
+[name="Rankin"]......
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]No, we're different, you and I.
+[charslot(slot = "m", name = "avg_npc_1963_1#10$1")]
+[name="Rankin"]None of us willingly became Infected... but you had a choice. You could have chosen not to stand on the same side as those murderers.
+[name="Rankin"]There's no reason I should forgive you.
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_snowbootwalk")]
+[charslot(slot = "m", name = "avg_npc_1971_1#1$1",duration=1)]
+[delay(time=2)]
+[name="Hawley"]Rankin, we're done organizing the food we found.
+[name="Hawley"]These Patrol Unit guys have it good. Tonight we can—
+[charslot(slot = "m", name = "avg_npc_082")]
+[name="Frightened Patrol Unit"]...Father?
+[charslot(slot = "m", name = "avg_npc_1963_1#6$1")]
+[name="Rankin"]...What?
+[charslot(slot = "m", name = "avg_npc_1971_1#8$1")]
+[name="Hawley"]...Ah...
+[charslot(slot = "m", name = "avg_npc_082")]
+[name="Frightened Patrol Unit"]Father? Is that really you?
+[name="Frightened Patrol Unit"]Wonderful! Please, explain it to him! Tell him I'm not evil—My father's an Infected, how could I hate them?
+[charslot(slot = "m", name = "avg_npc_1971_1#1$1")]
+[name="Hawley"]Ganea... didn't you... go to Grypherburg...?
+[charslot(slot = "m", name = "avg_npc_082")]
+[name="Frightened Patrol Unit"]I did! I really did, I didn't lie to you!
+[name="Frightened Patrol Unit"]But I needed money to stay alive, even in Grypherburg! They don't just hand out bread and mead—being a driver was the only option I had.
+[name="Frightened Patrol Unit"]Father, please... save me... I'll never do this again...
+[charslot(slot = "m", name = "avg_npc_1963_1#1$1")]
+[name="Rankin"]......
+[name="Rankin"]Hawley...
+[charslot(slot = "m", focus = "n")]
+He silently stares at the oblivious elderly miner, then gestures at Hawley with his head to look at the container.
+[charslot(slot = "m", name = "avg_npc_1963_1#10$1")]
+[name="Rankin"]I won't try to reform him, much less release him.
+[name="Rankin"]If he truly is your son...
+[dialog]
+[PlaySound(key="$d_avg_metalcollar")]
+[delay(time=1)]
+[PlaySound(key="$d_avg_snowbootwalk")]
+[charslot(slot = "m",posfrom = "0,0", posto = "200,0",duration = 1,afrom=1,ato=0)]
+[delay(time=2)]
+[charslot]
+Rankin throws a knife on the ground and walks away.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1971_1#1$1")]
+[name="Hawley"]...Ah...
+[charslot(slot ="m", action="shake", power=5, times=30, duration=0.3)]
+[name="Hawley"]No... wait...
+[charslot(slot ="m", action="shake", power=10, times=50, duration=0.3)]
+[name="Hawley"]This, is not my boy, is it?
+[charslot(slot = "m", name = "avg_npc_082")]
+[name="Frightened Patrol Unit"]Father...?
+[charslot]
+Even the late autumn weather fails to prevent the corpses' rotting stench from spreading out into the air.
+The old miner's gaze shifts between the mess of mangled limbs in the dark depths of the container and the tall young man before him...
+Finally, he shakes his head incessantly, as if refusing to believe the truth.
+[charslot(slot = "m", name = "avg_npc_1971_1#7$1")]
+[name="Hawley"]My son wouldn't... wouldn't say such words. He wouldn't do something this disgraceful.
+[charslot(slot = "m", name = "avg_npc_1971_1#4$1")]
+[name="Hawley"]You're just... a damned bastard...
+[charslot(slot = "m", name = "avg_npc_1971_1#5$1")]
+[name="Hawley"]Why—Why do you wear my son's skin? Why do you live inside his body?!
+[charslot]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=15, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$bodyfalldown2")]
+Originally trembling, the old miner explodes into a rage, knocking the man down to the ground.
+[dialog]
+[PlaySound(key="$d_avg_punch")]
+[CameraShake(duration=0.2, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=true)]
+[PlaySound(key="$fightgeneral",channel="2")]
+[CameraShake(duration=0.2, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true)]
+His fists rain like a storm, as if trying to drive something out of the body.
+The man has no strength to resist.
+[charslot(slot = "m", name = "avg_npc_1971_1#5$1")]
+[name="Hawley"]Who are you? Who the hell are you?!
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Hawley"]Oh, poor Ganea, his soul could have been saved! This isn't how it should have been! It was you, abomination, that left him with nowhere to go!
+[multiline(name="Hawley")]Just—
+[PlaySound(key="$fightgeneral",channel="3")]
+[Blocker(a=0.2, r=1,g=0, b=0, fadetime=0.3)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[multiline(name="Hawley")]Die!!!
+[Dialog]
+[PlaySound(key="$fightgeneral",channel="4")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot] 

@@ -1,0 +1,135 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="50_g13_warshipcommandroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[Delay(time=2)]
+[playsound(key="$d_avg_telegraph_loop", loop=true, channel="bgs")]
+[Delay(time=1)]
+'All units, this is Dispatch.'
+'All units, cease fire immediately. We have an urgent request from Deity Grypherburg.'
+'Repeat, all units, cease fire immediately.'
+'Please acknowledge.'
+[dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1977_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="Officer"](Exhales)
+[name="Officer"]Scope of the ceasefire?
+[charslot(slot = "m", focus = "n")]
+[name="Radioman"]All active units.
+[charslot(slot="m",name="avg_npc_1977_1#1$1")]
+[name="Officer"](Nods)
+[charslot(slot = "m", focus = "n")]
+'Acknowledged.'
+[charslot(slot="m",name="avg_npc_1977_1#1$1")]
+[name="Officer"]Inform Lieutenant Yelchin and ensure that all units in the 2nd Division observe the ceasefire.
+[charslot(slot = "m", focus = "n")]
+'All units remain on standby. Maintain battle stations.'
+'Until the threat is completely eliminated, we shall continue to serve our duty to protect Deity Grypherburg and the people.'
+[Dialog]
+[playsound(key="$p_imp_funnel_end_h")]
+[StopSound(channel="bgs", fadetime=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1977_1#1$1")]
+[name="Officer"]...Summon the quartermaster.
+[charslot(slot="m",name="avg_npc_1976_1#1$1")]
+[name="Soldier"]Sir, we do not have a quartermaster for this operation.
+[name="Soldier"]You expected this to be only a quick response, and that it would not take much time to eliminate the rebellious Infected.
+[charslot(slot="m",name="avg_npc_1977_1#1$1")]
+[name="Officer"]......
+[name="Officer"]Respond to Dispatch as usual.
+[name="Officer"]And what is your name, soldier?
+[charslot(slot="m",name="avg_npc_1976_1#1$1")]
+[name="Soldier"]Private Vyacheslav Kinov, sir.
+[charslot(slot="m",name="avg_npc_1977_1#1$1")]
+[name="Officer"]Very well. Inform the Lieutenant, Private Kinov. Your services are not needed here for now.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_warehouse_2",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1978_1#1$1",duration=1)]
+[Delay(time=2)]
+[name="Cold Soldier"]...You had me leave my post to come to you for this little thing?
+[name="Cold Soldier"]You're out of your mind.
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",duration=0.5)]
+[Delay(time=1)]
+[name="Angry Soldier"]Oh, look at you, Patya, all high and mighty in that Shieldguard armor...
+[name="Angry Soldier"]Does that pretty helmet of yours block your sight?
+[name="Angry Soldier"]The maggots in the rations, bolts that snap like twigs, even duds!
+[name="Angry Soldier"]Is this what they send us out to die with?!
+[charslot(slot="m",name="avg_npc_1978_1#1$1")]
+[name="Cold Soldier"]If there are maggots in your rations, you eat them with the rations. If the weapons are hard to use, use your bare hands.
+[name="Cold Soldier"]We're soldiers. We fight and win. There are only two ends: Keep fighting, or die.
+[charslot(slot="m",name="avg_npc_1976_1#1$1")]
+[name="Angry Soldier"]You're the one who's out of his mind!
+[charslot(slot="m",name="avg_npc_1978_1#1$1")]
+[name="Cold Soldier"]If you find that someone hasn't been doing his job, you report to your superior, not complain to me here.
+[name="Cold Soldier"]I'm not the quartermaster—
+[dialog]
+[charslot]
+[playsound(key="$d_avg_armyboots_walk", loop=true, channel="bgs")]
+[charslot(slot="m",name="avg_npc_1977_1#1$1",duration=1)]
+[Delay(time=1.5)]
+[StopSound(channel="bgs", fadetime=0.3)]
+[Delay(time=0.5)]
+[name="Officer"]I thought the Defender Regiments were supposed to be on the top deck.
+[charslot(slot="m",name="avg_npc_1978_1#1$1")]
+[name="Cold Soldier"]...Sorry, sir. I was away from my post.
+[name="Cold Soldier"]I will report this to the commissar myself.
+[name="Cold Soldier"](Salutes)
+[dialog]
+[playsound(key="$d_avg_armour")]
+[charslot(duration=1)]
+[Delay(time=2.5)]
+[charslot]
+[charslot(slot="m",name="avg_npc_1977_1#1$1")]
+[name="Officer"]......
+[charslot(slot="m",name="avg_npc_1976_1#1$1")]
+[name="Angry Soldier"]S-Sir!
+[charslot(slot="m",name="avg_npc_1977_1#1$1")]
+[name="Officer"]What did you find out, soldier?
+[name="Officer"]Tell me the reason for your anger.
+[charslot(slot="m",name="avg_npc_1976_1#1$1")]
+[name="Angry Soldier"]...The quality of our supplies and equipment on this operation is exceedingly poor.
+[name="Angry Soldier"]The rations are insufficient, the cans damaged and filled with maggots...
+[name="Angry Soldier"]Many of the bolts were not made of steel, but crude iron.
+[name="Angry Soldier"]And the reserve Originium bombs are so weak that they're little more than glorified duds.
+[name="Angry Soldier"]How are we supposed to proceed the operation with these?
+[charslot(slot="m",name="avg_npc_1977_1#1$1")]
+[name="Officer"]Why did you enlist, soldier?
+[charslot(slot="m",name="avg_npc_1976_1#1$1")]
+[name="Angry Soldier"]To...
+[charslot(slot="m",name="avg_npc_1977_1#1$1")]
+[name="Officer"]Speak up.
+[charslot(slot="m",name="avg_npc_1976_1#1$1")]
+[name="Angry Soldier"]To—to prove myself! I want people to know my name—
+[name="Angry Soldier"]Like they know yours!
+[charslot(slot="m",name="avg_npc_1977_1#1$1")]
+[name="Officer"]They'll know your name when the Army sends your tags back to your mother, and she etches them on a white birch tree.
+[charslot(slot="m",name="avg_npc_1976_1#1$1")]
+[name="Angry Soldier"]No, not like that...
+[charslot(slot="m",name="avg_npc_1977_1#1$1")]
+[name="Officer"]There is little room for the individual to choose, when the collective is at war.
+[name="Officer"]But...
+[name="Officer"]Keep this hope in your heart, boy, and your 'discovery' too.
+[name="Officer"]For the survival of Ursus and her people, there is only one option...
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[name="Officer"]Set this land on fire.
+[Dialog]
+[Delay(time=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot] 

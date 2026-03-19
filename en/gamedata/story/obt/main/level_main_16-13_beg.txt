@@ -1,0 +1,454 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_rockfall",volume=1)]
+[playsound(key="$d_avg_rainlight_loop", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=40, randomness=90, fadeout=true, block=false)]
+[Background(image="66_g6_magnetofluidwaterfall",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[Decision(options="......;......", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="Has it...?;Stopped moving?", values="1;2")]
+[Predicate(references="1;2")]
+[Delay(time=0.5)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4208_wintim_1#8$1",duration=1)]
+[Delay(time=2)]
+[name="Ksenia"]I think so...
+[name="Ksenia"]The roaring and the heavy breathing have ceased. Did we kill it?
+[name="Ksenia"]But it's still standing—
+[charslot(slot="m",name="avg_4179_monstr_1#6$1")]
+[name="Mon3tr"]Don't move! I'll check.
+[dialog]
+[playsound(key="$d_avg_shallowswalk", loop=true, channel="w1")]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[StopSound(channel="w1", fadetime=0.5)]
+Mon3tr ascertains that the other two are at a safe distance, and approaches it on her own.
+The manglerbeast stands quietly, no sign of the madness that had engulfed it only moments ago, its strange forelimbs hanging still in front of its body. Part of the Originium covering it has been chipped away.
+Mon3tr approaches carefully.
+She observes the manglerbeast. It was dangerous to begin with, and its mutations make it look strange, almost otherworldly.
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]The influence of Originium is turning it into a 'human' physiologically...
+[name="Mon3tr"]It must be in a great deal of pain...
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$smallearthquake", loop=true, channel="a")]
+[CameraShake(duration=1.5, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.6)]
+[StopSound(channel="a", fadetime=0.5)]
+[Delay(time=0.5)]
+[Decision(options="Mon3tr, look out!;It's moving again!", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]Oh—
+[charslot]
+But the manglerbeast does not attack or even move from its spot. It falls toward the ground—
+[dialog]
+[PlaySound(key="$d_avg_giantmonster_fall")]
+[delay(time=1)]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+Until its forelimbs touch the ground again with a thud.
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]......
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Now's our chance to leave, Mon3tr.;We should leave and go back to the lab, now.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]No, Doctor.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Mon3tr?", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_avg_giantmonster_breathe")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]It's still breathing!
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]And it sounds like it's... in pain? I think.
+[name="Mon3tr"]I can't sense another's emotions like Amiya can, and this is just a mutated animal. But...
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]I know it will die, even if we don't do anything.
+[name="Mon3tr"]The Originium has impaled its throat. Every part of its body is in pain. It would claw out its own mutated organs if it could.
+[name="Mon3tr"]Perhaps this is why it attacked us. It's not in control of itself anymore.
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Let's end its pain, then.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]Yes.
+[charslot(slot="m",name="avg_4179_monstr_1#3$1")]
+[name="Mon3tr"]......
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]I can do it. I can...
+[name="Mon3tr"]End its pain.
+[dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1)]
+[playsound(key="$d_avg_shallowswalk", loop=true, channel="w1")]
+[delay(time=1.5)]
+[StopSound(channel="w1", fadetime=0.5)]
+She walks towards the fallen beast. Standing next to it, she puts her claws against a piece of fur with fewer crystals.
+Mon3tr gazes at the manglerbeast with incredible calm in her eyes.
+Then, she surgically extinguishes the mutated manglerbeast's last, intermittent breathing.
+[Dialog]
+[PlaySound(key="$knifegore")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=2)]
+[name="Mon3tr"]Let's go, Doctor.
+[name="Mon3tr"]Back to the lab.
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[charslot]
+[delay(time=3)]
+[imgeffect(name="$ib_screendistortion", image="66_i09")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[playMusic(intro="$suspenseful_intro",key="$suspenseful_loop", volume=0.6)]
+Mantra continues to listen.
+She knows she cannot trust what she sees, whether it is twisted by intention, or reflecting reality by accident.
+And so she listens, until the first word of prayer drops in the crowd like the first snow.
+[name="Mantra"]Yurodstvo...
+[name="Mantra"]'Gabrielus.'
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="I'm listening.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="Mantra"]Then stop.
+[name="Mantra"]Stop—
+[name="Mantra"]Stop it all!
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="I cannot stop what never began.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="What you see is only in your mind.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+Mantra stops trying to communicate. She steps forward and tries to steady the trembling red, white and black threads.
+As she stretches out her hand—
+[dialog]
+[Dialog]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$d_avg_tinnitus")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1.5, block=true)]
+[imgeffect]
+[name="Mantra"]...!
+[name="Flickering Voice"]—Mantra—
+[dialog]
+[image]
+[charslot]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Raidian"]Mantra!
+[charslot(slot="m",name="avg_4204_mantra_1#6$1")]
+[name="Mantra"]What?
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="Raidian"]You were completely motionless.
+[name="Raidian"]I've never seen you like this... what happened?
+[charslot(slot="m",name="avg_4204_mantra_1#3$1")]
+[name="Mantra"]Did you hear that?
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]Hear what?
+[charslot]
+The old woman does not immediately answer.
+She looks around and realizes that the remaining miners look different from before. She frowns and glances around herself.
+[charslot(slot="m",name="avg_4204_mantra_1#10$1")]
+[name="Mantra"]Where is Eloysius?
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="Raidian"]She heard me and ran outside.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]So you did tell us to leave.
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="Raidian"]Yes, but I don't remember why... this is strange.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]Mental Arts.
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]Are you sure? I've received specific training. I would not be defenseless against such attacks.
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="Mantra"]Check for short-term memory interference, Raidian.
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="Raidian"]What sort of interference?
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="Mantra"]Interference that I can create.
+[name="Mantra"]One time, I had Mechanist forget that he wanted to ask you about borrowing Dendie and Axie. Not by wiping the memory, but by blocking its formation.
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]I remember... that was the first time you tried to use your Arts like that, I think? We forget when information in our brain is not successfully stored in the memory.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]Yes. It was your idea. You are far more experienced than I am in the understanding and utilization of human bioelectrical signals.
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="Raidian"]You think someone here uses the same sort of Arts?
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]Unsure. Perhaps I just saw and heard more than you did.
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="Raidian"]What do you mean?
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="Mantra"]The Yurodstvo of Ursus may be here, Raidian.
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]Yurodstvo? Why do you bring that up—
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="Raidian"]The Yurodstvo is here? But the last Yurodstvo was burned alive in Grypherburg two years ago. Could another be born so soon?
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]I don't know. I'm going to find out.
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="Raidian"]If it's really the Yurodstvo, and it was hidden in the group, without me detecting it... then it's extremely dangerous.
+[name="Raidian"]I'll put the others on alert. Be careful.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]The danger is not physical. Not yet, at least.
+[name="Mantra"]I'll seek help if necessary.
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="Raidian"]Don't forget it.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")] 
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+Mantra turns around and walks towards the place where the red was, a few moments ago.
+The assembled miners either give way to her, or reach out to her.
+[dialog]
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="Vetochki"]Who are you... looking for?
+[name="Vetochki"]We're still going, to Grypherburg, right?
+[name="Vetochki"]We'll l-live...
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"](Nods)
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="Vetochki"]But they look like, they don't want, to leave? I asked Dyadya Volya. He doesn't want, to leave.
+[charslot(slot="m",name="avg_4207_branch_1#10$1")]
+[name="Vetochki"]He'd rather, his wounds rot, than to run.
+[name="Vetochki"]But isn't surviving, the most important thing?
+[charslot(slot="m",name="avg_4204_mantra_1#2$1")]
+[name="Mantra"]......
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="Vetochki"]You're not, talking...
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="Tired Miner"]Stranger.
+[name="Tired Miner"]Are you going to see Nadia? Then go on your knees, and raise your eyes to her.
+[name="Tired Miner"]See her, repent, and be forgiven. Then you will realize how foolish you were, for struggling and failing to find peace.
+[charslot]
+Mantra neither assents nor dissents. She does not speak to them with Arts. She simply nods and passes them by, staring straight into the deepest reaches of the room.
+[name="Tired Miner"]You will understand... when you are in her presence.
+A hunched, tiny grey-white figure sits at the end of the room like a statue.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g15_ursusvillage_ruins",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1966_1#11$1",duration=0.5)]
+[delay(time=1)]
+[name="Eloysius"]—Yurodstvo?!
+[charslot(slot="m",name="avg_npc_1966_1#5$1")]
+[name="Eloysius"]Impossible. It's impossible! The Yurodstvo is dead!
+[name="Eloysius"]The Tsar granted the madman the mercy of defending himself before his sentence was pronounced.
+[name="Eloysius"]Seven days! He engaged in sophistry for seven days without stopping, without eating or drinking.
+[name="Eloysius"]He had the audacity to stand in the middle of the State Council, telling everyone who came to listen—
+[charslot(slot="m",name="avg_npc_1966_1#8$1")]
+[name="Eloysius"]'I forgive you.'
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="Eloysius"]His Imperial Majesty finally had enough and sentenced him to death, personally, but brainwashed believers attempted to raid the execution, resulting in the biggest riot in Grypherburg in a decade.
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="Raidian"]We know all that.
+[charslot(slot="m",name="avg_npc_1966_1#10$1")]
+[name="Eloysius"]......
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="Raidian"]If Mantra said it was the Yurodstvo, she must have had the evidence to make the deduction.
+[name="Raidian"]All we need to do is protect ourselves and wait to hear from her.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]......
+[charslot(slot = "m", focus = "n")]
+Mantra does not kneel as the miners instructed.
+She steps into the shadow, facing forward, as though there are a pair of eyes looking backwards in front of her.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]I know you can 'hear'.
+[dialog]
+[charslot]
+[delay(time=1)]
+[playMusic(intro="$kjerag_n_intro",key="$kjerag_n_loop", volume=0.6)]
+[focusout(duration=1.5, type="bg", from=0, to=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="I hear your questions.", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]I hope you're more than just a pale imitation of my Arts and my way of speaking, Yurodstvo.
+[charslot]
+[dialog]
+[Blocker(a=0.2, r=0, g=0, b=0, fadetime=1.5)]
+[delay(time=2)]
+[name="Nadia"]'Yurodstvo'... if that is the name you need me to have.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]Explain.
+[charslot]
+[name="Nadia"]Gabrielus, Solomida, Bessmert, Aurora, Nadia... or, perhaps, Yurodstvo.
+[name="Nadia"]I am all of them.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]Why did you hide amongst these suffering people?
+[charslot]
+[name="Nadia"]Because it is a journey of proselytization.
+[name="Nadia"]I shall walk this vast land and redeem the people from their sufferings.
+[name="Nadia"]And because I saw and heard her.
+[name="Nadia"]I stayed because of her pain.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]Who is she?
+[charslot]
+[name="Nadia"]A suffering soul.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]You deceived her and made her call you 'Nadia'?
+[charslot]
+[name="Nadia"]I never deceived.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]You lie.
+[charslot]
+[name="Nadia"]She asked as you did. I answered as I do.
+[name="Nadia"]That was all.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]A meaningless response. What are you?
+[charslot]
+[name="Nadia"]You saw me.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]I see shadow without order.
+[charslot]
+[name="Nadia"]Yes, I am.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]But not in the eyes of others.
+[name="Mantra"]Explain.
+[charslot]
+[name="Nadia"]People see in me the reflection of their perception and expectation.
+[name="Nadia"]I thought, of all the souls, you alone would understand why I exist so.
+[name="Nadia"]After all...
+[name="Nadia"]You are the unfinished sculpture. You were once to become—
+[name="Nadia"]'Me.'
+Mantra keeps her eyes fixed on the strange apparition in front of her, but she is unsure whether she can identify any useful information from it.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]......
+[charslot]
+[name="Nadia"]A long time ago, you cut away a black piece of rotten flesh.
+[name="Nadia"]So did I. It pursued me, and I repelled it, like cutting off a piece of rotten flesh between breaths.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]An absurd analogy.
+[charslot]
+[name="Nadia"]No, a simple principle.
+[name="Nadia"]If it is rotten and no longer connected to the rest of your body...
+[name="Nadia"]Why keep it?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Image(image="avg_8_29",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Mantra"]This is...
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i01",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Mantra"]Your memory?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i02",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i03",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Blocker(a=0.2, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Mantra"]But it is mine—
+[charslot(slot="m",name="avg_4204_mantra_1#10$1")]
+[name="Mantra"]No. The Royal Guard... if you can influence a Royal Guard, you can influence the miners.
+[charslot]
+[name="Nadia"]You killed it. You became me.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]If this is the only thing we share in common...
+[charslot(slot="m",name="avg_4204_mantra_1#6$1")]
+[name="Mantra"]The body, and rotten flesh. Your relationship to the Royal Guard—the Yurodstvo was the source of the Royal Guard experiments.
+[charslot]
+No sound comes from the trembling shadows, neither affirmation nor denial.
+Mantra begins to back off and leaves the shadow's edge.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]...I need support, Raidian.
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]I'm here.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]The conjecture is confirmed.
+[name="Mantra"]Also, additional information...
+[name="Mantra"]The Yurodstvo hid amongst the miners and helped them kill the Royal Guard.
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]...I see.
+[name="Raidian"]What do you need us to do?
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]I need you to continue to contact other Rhodes Island assets in Ursus, and ask Amiya to delay Eloysius.
+[name="Mantra"]We can't leave yet, at least not until I find a way to rouse the miners.
+[name="Mantra"]Have Elysium standby inside the range of my Arts. I may need his assistance.
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]What's your plan?
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]Remove the influence that the Yurodstvo has on the miners.
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]You think the Yurodstvo is controlling the miners and causing them to refuse to leave?
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]Yes.
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="Mantra"]We cannot kill the Yurodstvo directly, but it can kill anyone here, anytime it chooses to.
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]Maybe Amiya can help.
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]Maybe. But Amiya does not understand the Yurodstvo, and I do not want to her to become involved without any understanding.
+[name="Mantra"]The Yurodstvo's powers are similar to mine. This is why I am the only one who can make this decision.
+[name="Mantra"]It relies on the cognition of others to establish itself. I must find the key to its establishment of the 'Nadia' identity, in order to remove its influence.
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]You have someone you suspect.
+[charslot(slot="m",name="avg_4204_mantra_1#2$1")]
+[name="Mantra"]...Yes.
+[charslot]
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4207_branch_1#9$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot = "m", focus = "n")]
+Mantra casts her gaze at the surrounding miners, and eventually upon the girl who walks past her to the Yurodstvo.
+She mutters in a daze, in bewilderment and sorrow.
+[charslot(slot="m",name="avg_4204_mantra_1#3$1")]
+[name="Mantra"]I just need time to confirm.
+[Dialog]
+[Delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot]  

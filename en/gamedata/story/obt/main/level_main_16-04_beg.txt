@@ -1,0 +1,404 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[name="Guard"]We thank our honored guest for your patience. Please follow me.
+[Dialog]
+[delay(time=1)]
+You comply with the guard's request, patiently waiting again in the office lobby for Eloysius and the much-rumored Grand Duchess's discussion to come to a close.
+The subdued interior has no clock or other timekeeping instrument, as if time is not a right conferred upon its visitors.
+You while away the minutes in utter boredom, thinking back to your own discussion not long ago—
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="66_g1_bleskstreet",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$loading_intro",key="$loading_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_4179_monstr_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#5$1",focus="l")]
+[name="Amiya"]Only the Doctor is allowed to meet with her?
+[charslot(slot = "r", name = "avg_4179_monstr_1#5$1",focus="r")]
+[name="Mon3tr"]I also think that's unreasonable. If something unexpected happens, there's no way for Amiya and I to protect you.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="In the end, this is her domain.;It does not seem like she is giving us any room to bargain.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#7$1",focus="l")]
+[name="Amiya"]Eloysius said she wanted to introduce us to the Grand Duchess, but we still don't know why she really wants to help us.
+[charslot(slot = "r", name = "avg_4179_monstr_1#4$1",focus="r")]
+[name="Mon3tr"]My memory bank has no record of a young Ursine noble like her either.
+[charslot(slot = "r", name = "avg_4179_monstr_1#2$1",focus="r")]
+[name="Mon3tr"]But a woman acting as a special ambassador, who also personally knows the Grand Duchess, must be extraordinary.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="She has many secrets.;This relationship between a Grypherburger envoy and a local noble is a subtle thing.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="But she did clearly say she wanted us to go with her to the mining district.", values="1")]
+[Predicate(references="1")]
+[Decision(options="We need to cooperate with her, no matter what.;This is the only chance we have to get into the mining district.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#1$1",focus="l")]
+[name="Amiya"]But Rhodes Island has stepped into the sights of Ursus, and we have no way of knowing how the local administration views us.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="I've had my fair share of past experience.;I've been in this sort of situation before.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#6$1",focus="l")]
+[name="Amiya"]I will support your decisions, Doctor, but please be careful.
+[charslot(slot = "r", name = "avg_4179_monstr_1#6$1",focus="r")]
+[name="Mon3tr"]Take a comms terminal, at least! If anything happens, reach out immediately. We'll come get you right away, even if we have to smash the place up while we're at it!
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="I will if I have to.;I'll make sure I don't need to use it.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="But...", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+What is this mine lockdown hiding...?
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_openftstpwalk")] 
+[delay(time=1.5)]
+The corridors of the building are exceptionally empty, just like the streets of the city it stands in.
+The moment you are led inside, a slight nod is all you are left with. Not a word has passed your guide's lips the entire time.
+Perhaps he trusts your intuition will lead you to the correct room, or perhaps he is used to putting visitors to the test.
+Fortunately, you had detected the warm scent of applewood smoke wafting off that guard, which takes you to the only door emitting such a smell.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i05", fadetime=0, xScale=1, yScale=1,screenadapt="coverall")]
+[Background(image="bg_black",screenadapt="coverall")]
+[PlaySound(key="$d_avg_gateopen")]
+[playsound(key="$d_avg_woodcracle", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[playMusic(key="$m_avg_ursusdaily_loop", volume=0.6)]
+A door that leads to a room tucked away in the corner was once pushed open.
+[ImageTween( xScaleFrom=1, yScaleFrom=1, xScaleTo=1.3, yScaleTo=1.3, duration=60)]
+It is as if the looming, imposing stone walls of this chill-gloomed city have come together to hide a spot of sacrosanct tranquility.
+The first thing you see is a graceful, ash-blue figure standing at the other side of the room.
+[Dialog]
+[Decision(options="Greetings.", values="1")]
+[Predicate(references="1")]
+[Decision(options="Your Imperial Highness, the Grand Duchess Yelizaveta Constantinovna Lakhovskaya.;......", values="1;2")]
+[Predicate(references="1")]
+[name="Grand Duchess Elisabeth"]I can feel your nerves from here. You need not be wary. Please, call me Grand Duchess Elisabeth, as my friends do.
+[name="Grand Duchess Elisabeth"]I can tell that you are an individual of keen intellect.
+[Predicate(references="2")]
+[name="Eloysius"]You are to address Her Imperial Highness as Grand Duchess Elisabeth.
+[name="Eloysius"]Forgive me, Your Imperial Highness. I am obligated to maintain protocol and decorum.
+[name="Grand Duchess Elisabeth"]What does it matter?
+[name="Grand Duchess Elisabeth"]True goodwill has nothing to do with formality. Allow our guest to relax a little.
+[Predicate(references="1;2")]
+Her voice is gentle and innocent, not at all what you expected.
+The mistress of the place slowly turns around.
+[Dialog]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[image]
+[Background(image="66_g2_farnorthgovernment",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1962_1#3$1",duration=1.5)]
+[delay(time=2.5)]
+[name="Grand Duchess Elisabeth"]I welcome each and every guest to Bresk with open arms.
+[name="Grand Duchess Elisabeth"]Is this not the part where you introduce your friend, Elotta?
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]Oh, yes, of course. This is the one I was just speaking about, the Doctor of Rhodes Island Pharmaceuticals—
+[Dialog]
+[charslot]
+[Decision(options="My name is {@nickname}.;You may call me Dr. {@nickname}.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="It is an honor to be granted an audience.;I hope I am not too bold in paying you a visit.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#3$1")]
+[name="Grand Duchess Elisabeth"]As I said, there is no need for such formality. Come forward, closer to the fire. My attendant shall fetch us some tea forthwith.
+[name="Grand Duchess Elisabeth"]It may be difficult for travelers from afar to adapt to Bresk in this season. Though she may be remote, there are times when she is a warm and pleasant home.
+[name="Grand Duchess Elisabeth"]Has your journey here been a smooth one?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="I fear I can't describe it as such...;Public Security certainly cares for Bresk.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]Please believe me when I say that all you have seen here is in service to maintaining the city's hard-fought serenity.
+[name="Grand Duchess Elisabeth"]Elotta has already explained to me in great detail the excellent work her new Oripathy specialist friends have done in the field. Yours is a talent our city sorely needs at this moment.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="You require Oripathy specialists?;Ursus... requires Oripathy specialists?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]Our young Tsar wishes to bestow his favor equally upon every Ursine citizen. He even wishes for the division of infection to no longer plague his people.
+[name="Grand Duchess Elisabeth"]It is for this reason that he labors himself to exhaustion, such that even the most steely-eyed courtier is left heartbroken at the sight.
+[name="Grand Duchess Elisabeth"]But rare is the one who truly understands how precious a treasure His Imperial Majesty's innocence is. We who call ourselves his followers must do all we can to enact his will.
+[name="Grand Duchess Elisabeth"]Bresk borders the largest mining district in the Far North, but the methods we have available to treat Oripathy fall far short of His Imperial Majesty's ideals. Which means we require some able doctors.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]If that is Your Imperial Highness's goal, Dr. {@nickname} is the best partner you will find here.
+[name="Eloysius"]I have read Rhodes Island's scientific papers for myself. Unlike those dusty old scholars of the Imperial Universities who simply repeat the findings of others, Rhodes Island leads the vanguard in the field of Oripathy research.
+[charslot(slot="m",name="avg_npc_1962_1#3$1")]
+[name="Grand Duchess Elisabeth"]Oh my... I have never heard our proud young officer express such admiration for anyone before.
+[name="Grand Duchess Elisabeth"]Has working in Grypherburg changed you? I still distinctly remember your father grumbling to me about the awkward situations you would provoke at the ducal banquets.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]A rather embarrassing part of my past, Your Imperial Highness.
+[name="Eloysius"]If I may explain this admiration further, I have always respected those with true talent and ability, such as Your Imperial Highness, and Dr. {@nickname}.
+[name="Eloysius"]I am incredibly grateful for the reminder about my father. I nearly forgot to pass on his regards.
+[charslot(slot="m",name="avg_npc_1962_1#3$1")]
+[name="Grand Duchess Elisabeth"]His factories still produce uniforms of the highest quality for every soldier in the Far North. His name can still be heard at every banquet on the frontier.
+[name="Grand Duchess Elisabeth"]We had best return to the topic of our friend here.
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]Let us speak plainly. What plans does Rhodes Island have for Bresk?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="We hope you will allow us to enter the Far Northern mining district.;We lost contact with a mobile medical team in the Central Mining District.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#2$1")]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+Upon hearing your words, the Grand Duchess shows a split-second of surprise, but does not forget herself.
+She looks toward Eloysius, and you notice the precise moment the young Guardswoman's gaze turns evasive.
+The Grand Duchess lets out a long sigh, as if she were vexed by a terrible burden.
+[charslot(slot="m",name="avg_npc_1962_1#4$1")]
+[name="Grand Duchess Elisabeth"]Oh dear, oh dear... Dr. {@nickname}—that is how I should address you, yes?
+[name="Grand Duchess Elisabeth"]If this young lady has provoked a misunderstanding, then I do apologize.
+[name="Grand Duchess Elisabeth"]We welcome Rhodes Island building an office in Bresk, and I wish to offer as much aid as I can...
+[name="Grand Duchess Elisabeth"]But the Far Northern mines are not open to sightseers at the moment.
+[name="Grand Duchess Elisabeth"]If your comrades are lost, then I ask you to leave with me their descriptions and last known whereabouts. I shall deploy every last man I can spare to help you find them.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Pardon my candor, but I believe we need to discuss this further.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#4$1")]
+[name="Grand Duchess Elisabeth"]I am afraid—
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]Your Imperial Highness.
+[name="Eloysius"]What if I invite them to travel with me, under my name?
+[charslot(slot="m",name="avg_npc_1962_1#4$1")]
+[name="Grand Duchess Elisabeth"]Oh, Elotta... You always were such a naughty little rascal.
+[name="Grand Duchess Elisabeth"]You know that Bresk needs specialist Oripathy doctors.
+[name="Grand Duchess Elisabeth"]You know that with your recommendation, I would not consider this a favor to be repaid, allowing your friend to do business here.
+[name="Grand Duchess Elisabeth"]Now look here. What is it you wish to do? Drag our esteemed guest into our muddy, snow-laden troubles?
+[name="Grand Duchess Elisabeth"]Elotta... You are complicating the situation.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]This is not a complicated matter. Pray Your Imperial Highness forgive my bluntness.
+[name="Eloysius"]I have never concealed my objective here.
+[name="Eloysius"]By the Tsar, there is hardly a soul in Grypherburg concerned about the possibility of unrest in your Bresk.
+[name="Eloysius"]But there are many curious about the closure of the mining district, and the mutations among the Infected.
+[name="Eloysius"]Those coming here may be idle young nobles, or scientists researching Oripathy, but they can just as easily be an Army captain, or dignitaries from the State Council.
+[charslot(slot = "m", focus = "n")]
+The young Guardswoman's tone remains frivolous, leaving you barely able to discern if the sharpness she speaks with is one of irreverent rudeness, or if there is a prying, deeper meaning to it.
+Grand Duchess Elisabeth's eyes narrow.
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]If they have their suspicions, then let them come and speak those suspicions here.
+[name="Grand Duchess Elisabeth"]The Armies see me as a fence-sitter currying favor with the new nobles, while the State Council sees me as some provincial Grand Duchess. I am well used to everyone laying their doubts and curiosities onto Bresk.
+[name="Grand Duchess Elisabeth"]So, my dear Elotta, who sent you here to heap more blame upon me?
+[charslot(slot="m",name="avg_npc_1966_1#11$1")]
+[name="Eloysius"]No, no, no! Your Imperial Highness misunderstands!
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]You know that this is just a cushy job for me, paying a visit to your demesne.
+[name="Eloysius"]My only intention was to petition you to grant these Oripathy specialists permission to accompany me into the mining district, that we might investigate the strange happenings surrounding the Infected there.
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]......
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="May I butt in with some words of my own?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]Pray, speak, my friend.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="I would like to clarify Rhodes Island's position.", values="1")]
+[Predicate(references="1")]
+[Decision(options="We are simply a pharmaceutical company trying to address Infected issues.;We are worried for the safety of our lost friends, and must find them as soon as possible.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="As for other matters, Rhodes Island will not, and cannot, get involved.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]I did not ask this earlier, but my curiosity abounds.
+[name="Grand Duchess Elisabeth"]Your colleagues, whyever did they go to the Central Mining District?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="They went to address cases of Oripathy.;They are Ursine themselves.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]Oh...
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Rhodes Island's intentions are pure.", values="1")]
+[Predicate(references="1")]
+[Decision(options="We have no higher power pulling our strings, after all.;We know barely anything about this place, after all.", values="1;2")]
+[Predicate(references="1")]
+The moment your words leave your mouth, you suddenly realize that being overly frank could make your promises seem hollow, but this sort of overt honesty also makes it hard for others to believe you are hiding anything.
+The Grand Duchess ponders for a moment.
+[Predicate(references="2")]
+The Grand Duchess, who has been listening intently to you the entire time, finally seems to soften.
+She has full control over the expression on her face, but you sense her relax a little.
+[Predicate(references="1;2")]
+[Dialog]
+[Decision(options="In short, everything we do is in the service of searching for our friends.;This is our only request.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]A young woman I care for, and healers of Oripathy who only wish to find their comrades...
+[name="Grand Duchess Elisabeth"]If I were to refuse you, I would seem rather cruel, wouldn't I?
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]I understand your position. You were just worried for our friends from afar, worried that they would get drawn into danger.
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]Naturally, I do not wish anyone in my lands to meet with misfortune. If I ever have the time, I would like to send stoves out to every soul who lives upon the frozen earth.
+[name="Grand Duchess Elisabeth"]Elotta, can you promise me you will ensure our friends' safety, to the best of your ability?
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]Your Imperial Highness may trust in me.
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]Good, good. Go now, Dr. {@nickname}. Go find your people.
+[name="Grand Duchess Elisabeth"]I permit Rhodes Island to enter the mining district of the Far North.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Thank you for your kindness.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]I wish that I were so kind, but few are they who appreciate the kindnesses of others.
+[name="Grand Duchess Elisabeth"]People revere those who snatch their rights from their hands, and are grateful whenever a portion of those rights is returned to them. But I do not believe such acts can be considered kind.
+[name="Grand Duchess Elisabeth"]The winds of the Far North are bitter indeed. You had best pack some warm clothes, Dr. {@nickname}.
+[stopmusic(fadetime=2)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g1_bleskstreet",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",duration=0.5)]
+[delay(time=1)]
+[name="Amiya"]Doctor, Eloysius! You're back!
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]Indeed. No need to look so excited, Gospozha Amiya.
+[name="Eloysius"]This is the administrative center of Bresk, not some den of evil. Our chat went rather smoothly, <i>da?</i>
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Dialog]
+[Decision(options="As smooth as silk.;Though with some unexpected developments.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="You're still hiding things.;Both from us, and the Grand Duchess.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#2$1")]
+[name="Eloysius"]Alright, yes, I admit that.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]But it really was the only way I could create the ideal conditions for discussion. And the results speak for themselves, no?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="The Grand Duchess...", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]What of her?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="She isn't what I imagined.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]Oh? And how <i>did</i> you imagine her?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Colder.;Harder to persuade.", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]If you were to only look at how she handled these strange happenings, then you would not be wrong.
+[charslot(slot="m",name="avg_npc_1966_1#3$1")]
+[name="Eloysius"]After they occurred, the affected Infected were immediately sent to the mining district's research institute, where she tasked the researchers to find the cause within a week, upon pain of exile or deportation.
+[name="Eloysius"]Soon after that, she declared martial law in the Far North, sealing all the miners within the district and blocking all communications, leaving the outside completely blind to what was happening inside.
+[name="Eloysius"]Highly efficient, and colder than winter.
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]But so long as you can pinpoint exactly what she is trying to conceal from you, it is not difficult to persuade her.
+[charslot(slot="m",name="avg_npc_1966_1#3$1")]
+[name="Eloysius"]The problem is that most of the time, she will leave you no opportunity to find that weak point.
+[name="Eloysius"]Those Infected, for example. Are they affected by changes in pathology, some new symptoms of Oripathy, or something else?
+[name="Eloysius"]That's where the issue lies, the lack of details. That is all the information that made it to Grypherburg. The moment the Infected change, they are sent off to be supervised by the research institute.
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="Eloysius"]I have read your paper on the changes in Originium and new Oripathy symptoms, as have research institutes across Ursus, who are already launching their own projects based on that paper.
+[name="Eloysius"]If these changes were simply those mentioned within, they would not merit this sort of response.
+[name="Eloysius"]It is highly likely that the abnormalities springing up in the mining district are an entirely new threat.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]An entirely new threat...
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="Eloysius"]The institute looking into the cause, the district under lockdown, all the miners isolated from the wider country...
+[name="Eloysius"]This way, everyone will believe the matter is settled, but in truth?
+[name="Eloysius"]After the incident, all work in the district stopped, and all communications were cut off. Deity Grypherburg's inquiries have received no response. None is able, and none dares, to look too deeply into this.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="If the Grand Duchess wanted to hide things...;Then we would never have been allowed into Bresk.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="Eloysius"]You have met her, and perhaps this has you believing she truly is a 'kind' administrator.
+[name="Eloysius"]Of course she would have let you in. After all, this is 'the friendliest place to the Infected in Ursus', 'the Pearl of the Far North', 'Paradise in North Ursus'—
+[name="Eloysius"]Bresk, capital of Breskenoy.
+[name="Eloysius"]You didn't see anything unusual in the city these past two days, aside from the lack of people. That is how she runs the Far North.
+[charslot(slot="m",name="avg_npc_1966_1#5$1")]
+[name="Eloysius"]Like how, since she became governor, nobody has been sentenced to death in the governorate. Has that lessened the number of people here who have met tragic ends? No.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="You seem to have a lot of complaints about her.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]Oh, you wound me. I promise my assessment just now was not tinged by any personal feelings. I was simply answering your questions.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]We are partners now, aren't we?
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="Amiya"]I understand, Eloysius. Are these abnormal Infected still under the supervision of the research institute in the mining district?
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]Indeed. To be more precise, they are in the Central Far North Mining District Laboratory.
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Isn't that...?;......", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="Amiya"]That's the first place we need to visit.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]Is it now? Having the same destination would make things much more convenient.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]Anything else you would like to ask?
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="You're very straightforward.;You're very eager.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]Of course. I never intended to give you the run-around in the first place.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="Amiya"]I do have a question, Eloysius.
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]Ask away.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="Amiya"]Earlier, when we were at your friend's house, we had to cut our conversation short. I should have asked you this question first, but I never found the opportunity.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]What is it you hope to gain from this investigation?
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="Eloysius"]...If I may be serious for a moment?
+[Dialog]
+[charslot(slot="m",name="avg_npc_1966_1#3$1")]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1966_1#10$1")]
+[name="Eloysius"]I want the truth, the truth about the mutations in the Central Mining District's Infected.
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="Eloysius"]I do not want the Infected miners to suffer unduly, nor do I want the people of Ursus to sit ignorant of a looming disaster.
+[Dialog]
+[Delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot] 

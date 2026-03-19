@@ -1,0 +1,805 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_airridsrn", volume=1, loop=true, channel="ai")]
+[Delay(time=1.5)]
+[SoundVolume(volume=0.2, channel="ai",fadetime=4)]
+[PlaySound(key="$d_avg_telegraph_loop", volume=1, loop=true, channel="e")]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[Delay(time=1)]
+'Dispatch speaking.'
+'Target acquired. They're moving toward Lake Neva.'
+'Cease fire and surround the target coordinates.'
+'Coordinates sent to your terminals.'
+......
+[dialog]
+[StopSound(channel="e", fadetime=3)]
+[StopSound(channel="ai", fadetime=3)]
+[PlayMusic(key="$darkness_03_loop", volume=0.6)]
+[Background(image="bg_newiceforest_2",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1", duration=1, isblock=true)]
+[name="Amiya"]Are you out of the woods, Raidian?
+[dialog]
+[charslot(slot = "m", focus="n")]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "Raidian", switch = true, style = 1,offset = "-450,125", channel = 3)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#5$1", duration = 0)]
+[Delay(time=0.5)]
+[name="Raidian"]Scout team here. We're at the rendezvous point.
+[dialog]
+[interlude(channel = 3, switch = false)]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "Eloysius", switch = true, style = 1,offset = "450,125", channel = 4)]
+[interlude(channel = 4, type = 3, slot = "m", switch = true, pfrom = "480,-80", pto="480,-80", name = "avg_npc_1966_1#4$1", duration = 0)]
+[Delay(time=0.5)]
+[name="Eloysius"]The first batch of vehicles are here. We'll need to wait for the second batch to arrive.
+[dialog]
+[name="Eloysius"]Sorry, I didn't expect things to get so urgent.
+[interlude(channel = 4, switch = false)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]Have you tracked more of the Armies' movements, Raidian?
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#3$1", duration = 0)]
+[name="Raidian"]Not yet... the military channel went dark after our broadcast. They're on guard now, and we're unable to get more information.
+[name="Raidian"]It's so quiet, it's making me uneasy...
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#2$1", duration = 0)]
+[name="Raidian"]Stay hidden, Amiya.
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]We'll be careful.
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#4$1", duration = 0)]
+[name="Raidian"]Stay in touch. How's Mantra?
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]Still exhausted. Vetochki and the others have made a stretcher for her—
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, switch = false)]
+[name="Mantra"]Amiya.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="Amiya"]Mantra! You shouldn't be 'talking'!
+[charslot(slot = "m", focus="n")]
+[name="Mantra"]I'm awake. Tell Elysium that I can walk on my own.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="Amiya"]No, not yet.
+[charslot(slot = "m", focus="n")]
+[name="Elysium"]See? I told you so!
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#6$1", duration = 0)]
+[name="Raidian"]Remember how Blaze was bedridden for two weeks after getting injured on a mission? We didn't let her feet touch the ground for a single second.
+[name="Raidian"]So don't even think about it, dear Mantra.
+[interlude(channel = 3, switch = false)]
+[name="Mantra"]...The situation is different.
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#5$1", duration = 0)]
+[name="Raidian"]Okay, here's a compromise. Once you're through the woods, you can choose me or Elysium to be your crutch.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[interlude(channel = 3, clear = true)]
+[interlude(channel = 4, clear = true)]
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1969_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", name = "avg_4207_branch_1#1$1", posfrom="-200,0", posto="0,0", duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_4207_branch_1#10$1", focus="l")]
+[name="Vetochki"]Is G-Grypherburg, on the other side, of the frozen lake?
+[name="Vetochki"]I heard, the Infected, can't enter n-nomadic cities.
+[charslot(slot = "r", name = "avg_npc_1969_1#1$1", focus="r")]
+[name="Miner"]I never went to the cities before I got infected. I lived all my life in the villages, until a Catastrophe infected most of us.
+[name="Miner"]But they said we didn't need to walk, right? There'll be vehicles, like the ones we found.
+[name="Miner"]I think Nikto was from Grypherburg. Too bad he isn't here.
+[name="Miner"]Say, what do you think Nikto and Rankin are doing, Vetochki? Could they have already made it to that village they were talking about?
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_4207_branch_1#2$1", focus="l")]
+[name="Vetochki"]M-Maybe.
+[name="Vetochki"]I hope so.
+[dialog]
+[charslot]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_drone", volume=0.5)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.3)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.5)]
+[Delay(time=1.5)]
+[name="Mantra"]Everyone, take cover, now!
+[dialog]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion_stone", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_wilderness_n",screenadapt="coverall")]
+[PlayMusic(intro="$shatterpoint_01_intro", key="$shatterpoint_01_loop", volume=0.6)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="n")]
+[name="Raidian"]—!
+[charslot(slot = "l", name = "avg_npc_1966_1#11$1", focus="l")]
+[name="Eloysius"]An explosion—from the forest? Is the Army here?
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]I just sensed it... Another army's attacking from the east.
+[name="Raidian"]They know where we are. They're trying to force us in the direction of Lake Neva.
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "l", name = "avg_npc_1966_1#6$1", focus="l")]
+[name="Eloysius"]They're out of their minds! We're already in the Central Governorate. The Armies must know what that means!
+[dialog]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[Delay(time=1)]
+[SoundVolume(volume=0.2, channel="sn",fadetime=2)]
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]'Deity Grypherburg is under threat... the Army... will eliminate the enemy.'
+[name="Raidian"]It's a public broadcast. They're telling Grypherburg that they're putting down a rebellion!
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="Eloysius"]I see... this was their plan all along...
+[charslot(slot = "l", name = "avg_npc_1966_1#5$1", focus="l")]
+[name="Eloysius"]All this killing and herding... they're planning to reach the capital under the pretext of putting down a rebellion, and negotiate with the State Council by pointing their guns at the gates of Deity Grypherburg!
+[name="Eloysius"]This was what they're trying to achieve... by sacrificing hundreds of thousands in the Far North.
+[dialog]
+[charslot(slot = "l", focus="n")]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]Can you hear me, Amiya?
+[name="Raidian"]There are Army units to your east—
+[dialog]
+[charslot(slot = "l", focus="n")]
+[PlaySound(key="$d_avg_telegraph_loop", volume=1, loop=true, channel="e")]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[StopSound(channel="e", fadetime=4)]
+[Delay(time=2)]
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]...The magnetic storms are interfering with comms. I can't get a good signal at this range.
+[name="Raidian"]The rest of the group will arrive soon. Eloysius, I need you here to get them on the vehicles and evacuate in an orderly manner.
+[charslot(slot = "l", name = "avg_npc_1966_1#11$1", focus="l")]
+[name="Eloysius"]What about you?
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]I must go back and point the way for them.
+[charslot(slot = "l", name = "avg_npc_1966_1#11$1", focus="l")]
+[name="Eloysius"]You're leaving me here with these vehicles? Aren't you worried that I would abandon you and flee to Grypherburg?
+[charslot(slot = "r", name = "avg_npc_1730_1#5$1", focus="r")]
+[name="Raidian"]If that's your decision, I would appreciate a heads-up.
+[name="Raidian"]Rhodes Island will find a way.
+[charslot(slot = "l", name = "avg_npc_1966_1#11$1", focus="l")]
+[name="Eloysius"]You...
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="Eloysius"]Hah... is this 'Rhodes Island' full of people like you?
+[charslot(slot = "r", name = "avg_npc_1730_1#1$1", focus="r")]
+[name="Raidian"]No. They're much braver than I.
+[name="Raidian"]Your command, <i>Sergeant.</i>
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_newiceforest_2",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[CameraShake(duration=1, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n", volume=0.6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[CameraShake(duration=3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion_stone", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=0.5)]
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1", posfrom="-200,0", posto="0,0", duration=0.5, isblock=true)]
+[name="Miner"]What the hell is that thing behind us? It appeared out of nowhere—
+[charslot]
+[name="Mantra"](Stumbles)
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "char_401_elysm_na_1#6")]
+[name="Elysium"]Look out!
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="Elysium"]The Army is shelling indiscriminately. Should we find another path?
+[charslot]
+[charslot(slot = "l", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]Can you reach Raidian, Elysium? The scout team might be in even more danger than we are!
+[dialog]
+[charslot(slot = "l", focus="n")]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "260,0", pto="260,0", name = "avg_npc_1730_1#6$1", duration = 1)]
+[Delay(time=0.5)]
+[name="Raidian"]Amiya! Where are you?
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "l", name = "avg_1037_amiya3_1#4$1", focus="l")]
+[name="Amiya"]We're still in the forest on the eastern shores of Lake Neva! We're being fired upon by the Army—
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "260,0", pto="260,0", name = "avg_npc_1730_1#6$1", duration = 0)]
+[name="Raidian"]They have reinforcements coming from the east. We must get through the lake as quickly as possible! Grypherburg is on the other side.
+[name="Raidian"]The Armies cannot set foot on the western shore of Lake Neva without permission. That's our only chance.
+[name="Raidian"]We need to clear Lake Neva before the Armies complete their encirclement—
+[dialog]
+[PlaySound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true, tsto="0,1", tsduration=0.5)]
+[Delay(time=1)]
+[charslot(slot = "l", name = "avg_1037_amiya3_1#4$1", focus="l")]
+[name="Amiya"]Raidian? Raidian?!
+[dialog]
+[charslot(slot = "l", focus="n")]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[Delay(time=1)]
+[name="Raidian"]Magnetic storm—communications—
+[name="Raidian"]—southwest—ice—
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="66_g8_farnorthtundra_aurora",screenadapt="coverall")]
+[bgeffect(name="$eb_blizzard",layer=1)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]No lights, everyone. We'll have to cross the lake in darkness.
+[name="Amiya"]Go southwest... I'll point the way.
+[charslot(slot = "m", name = "avg_4207_branch_1#4$1")]
+[name="Vetochki"]I understand. The stars, show the way—
+[dialog]
+[charslot]
+[CameraShake(duration=1, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n", volume=0.6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[CameraShake(duration=3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion_stone", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[Delay(time=1)]
+Cannon shells fall like thunder, exploding in the middle of the crowd. The shockwave and shrapnel split the procession in two.
+[charslot(slot = "m", name = "avg_4207_branch_1#6$1")]
+[name="Vetochki"]Dyadya Volya!
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_surfacefrozen", volume=1)]
+[delay(time=1)]
+A crack appears in the ice, and some people have fallen into it.
+[dialog]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=1, loop=true, channel="cr")]
+[StopSound(channel="cr", fadetime=6)]
+[name="Panicked Miner"]Aaagh!!
+[name="Panicked Miner"]The ice is still cracking—we can't get through!
+[charslot(slot = "m", name = "avg_1037_amiya3_1#4$1")]
+[name="Amiya"]Go back! Now! Don't come this way!
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="Elysium"]They're getting closer!
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]Can you reach Raidian?!
+[name="Amiya"]We got separated. We have some straggling miners we need to pick up, to the northwest of where the shells fell—
+[dialog]
+[charslot]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = true, offset = "0,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "10,0", pto="10,0", name = "avg_npc_1730_1#6$1", duration = 1)]
+[Delay(time=0.5)]
+[name="Raidian"]Roger.
+[name="Raidian"]On my way.
+[interlude(channel = 3, clear = true)]
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="Dazed Miner"]Argh—ugh...
+[charslot(slot = "m", name = "avg_4207_branch_1#7$1")]
+[name="Vetochki"]Darya, your leg, it's bleeding... I'll wrap it up!
+[dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "m", name = "avg_npc_501_1#1$1", posfrom="-200,0", posto="0,0", duration=1)]
+[Delay(time=1.5)]
+[name="Medic Operator"]I'll help—
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="Dazed Miner"]...No, Vetochki. Leave me here.
+[name="Dazed Miner"]I have flint and kindling. Give me a torch and go. I'll buy you what time I can.
+[charslot(slot = "m", name = "avg_4207_branch_1#5$1")]
+[name="Vetochki"]I'll carry you, Darya!
+[name="Vetochki"]Don't... don't give up.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]Yes, don't give up! The bleeding will stop soon. You can get further treatment once we're on the vehicles—
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="Dazed Miner"]But those bastards won't wait! They're herding us like wild manglers. Don't you see?
+[name="Dazed Miner"]If they just wanted to kill us, they could have burned every inch that we passed through, blown every building up.
+[name="Dazed Miner"]Do you think they couldn't do it?
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]That's no reason to give up...
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="Dazed Miner"]You don't understand. I was a hunter before they threw me into the mines. I know what some of the cityfolk like to do on hunting trips.
+[name="Dazed Miner"]They corral their game in one place, kill a couple, and watch the rest struggle.
+[name="Dazed Miner"]Honestly, I don't know how much time I can buy, but I have to try.
+[name="Dazed Miner"]It's just a hole in my leg. I'll crawl if I can't walk. I can get a few dozen meters to the east.
+[name="Dazed Miner"]Stop wasting time. Leave the torch and go.
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Dazed Miner"]Go!
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[bgeffect]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[verticalbg(imagegroup="66_i15_4/66_i15_3/66_i15_2/66_i15_1", solidwidth=1280, solidheight="720/720/720/625", y=540)]
+[largebgtween(duration = 30, yFrom = 1800, yTo = 800, block = false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[name="Anxious Operator"]One by one, one by one! We'll be here for fifteen minutes, there's no need to—
+[name="Anxious Operator"]—push...
+The operator falls quiet. No one is pushing, no one is squeezing.
+They just keep walking forward silently.
+[dialog]
+[PlaySound(key="$d_avg_footsteps_flock", volume=1)]
+[SoundVolume(volume=0.2, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[verticalbg]
+[Background(image="bg_wilderness_n",screenadapt="coverall")]
+[Delay(time=1)]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="Eloysius"]...I've never seen an evacuation so orderly.
+[name="Eloysius"]Not even the famously disciplined First Army could do this.
+[charslot(slot = "m", name = "avg_npc_1560_1#1$1")]
+[name="Anxious Operator"]That's a good thing, right?
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="Eloysius"]It's not normal, is it? It's as though they don't have survival instincts.
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="Eloysius"]Alright. Maybe I'm overthinking it.
+[name="Eloysius"]And you, aren't you worried about your captain in the rear?
+[charslot(slot = "m", name = "avg_npc_1560_1#1$1")]
+[name="Anxious Operator"]Our captain is the most experienced of us by far.
+[charslot]
+The operator stands on tiptoes, trying to see past the end of the procession that is indistinguishable from the pitch-black ice, looking for her captain.
+All she sees is the bright red in the distance.
+[charslot(slot = "m", name = "avg_npc_1560_1#1$1")]
+[name="Anxious Operator"]Did they really stop there...?
+[dialog]
+[charslot]
+[PlaySound(key="$d_sp_ballista",volume=0.3)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_explosion_stone",volume=0.3)]
+[delay(time=1)]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=1)]
+[name="Raidian"]The enemy is shelling the ice!
+[name="Raidian"]I couldn't reach the driver. Someone needs to tell her to keep the vehicle running and be ready to roll at a moment's notice.
+[name="Raidian"]Do you read me?!
+[charslot(slot = "m", name = "avg_npc_1560_1#1$1")]
+[name="Anxious Operator"]R-Roger!
+[name="Anxious Operator"]You should get on, Eloysius. I'll take care of things here—
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="Eloysius"]No, you go first and talk to the driver. For your captain.
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="Eloysius"]I—
+[name="Eloysius"]I'm staying here.
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[curtain(direction = 2,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[verticalbg(imagegroup="66_i16_4/66_i16_3/66_i16_2/66_i16_1", solidwidth=1280, solidheight="720/720/720/625", xScale=0.9, yScale=0.9)]
+[largebgtween(duration = 20, yFrom = 600, yTo = 750, block = false)]
+[Delay(time=1)]
+[PlayMusic(key="$m_avg_ursusspecial_loop", volume=0.6)]
+[PlaySound(key="$d_avg_cndlbrn", volume=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+It was a torch that distracted the Army.
+It began with a single torch that someone at the end of the procession raised.
+No one heard if he said anything. No one asked why he did it. He simply stopped, lit his torch, and began to walk in the opposite direction.
+[name="Miner"]Who lit the torch? I thought they said no lights—
+[name="Miner"]It's Kian.
+[name="Miner"]Kian? The one who made flint for everyone? I saw he gave some firewood to Darya just now.
+[name="Miner"]It's him. He's walking back. But that's where all the soldiers are! Is he trying to get himself killed?
+[name="Miner"]He's doing the same thing that Darya is doing.
+[name="Miner"]But we're so close to safety—
+[name="Miner"]I have a flint too, and some firewood.
+[name="Miner"]What are you doing?
+[name="Miner"]They're shelling the ice. They won't let us go. If we don't do something...
+[name="Miner"]We all die.
+[name="Miner"]But I want to live! I want to go to Grypherburg!
+[name="Miner"]We would have died in the mines, remember? Like all other Infected in Ursus.
+[name="Miner"]But if we can help the folks on the front lines survive, and the young ones who came to our aid...
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[curtain(direction = 2,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[verticalbg(imagegroup="66_i17_4/66_i17_3/66_i17_2/66_i17_1", solidwidth=1280, solidheight="720/720/720/625", xScale=0.9, yScale=0.9)]
+[largebgtween(duration = 20, yFrom = 1100, yTo = 1300, block = false)]
+[PlaySound(key="$d_avg_cndlbrn", volume=0.2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_cndlbrn", volume=0.5)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_cndlbrn", volume=1)]
+[name="Miner"]People will remember what happened here long after we old-timers are gone.
+One torch passes its flame to another.
+One miner forsakes his life, then a second, and a third...
+One by one, the miners who have not yet boarded the vehicles raise their torches and walk in the opposite direction.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[curtain]
+[verticalbg(imagegroup="66_i18_4/66_i18_3/66_i18_2/66_i18_1", solidwidth=1280, solidheight="720/720/720/720",y=2160)]
+[largebgtween(duration = 50, yFrom = 2160, yTo = 0, block = false)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_bionicuavs", volume=0, loop=true, channel="bi")]
+[SoundVolume(volume=0.2, channel="bi",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_footsteps_flock", volume=1)]
+Towards Kian, towards Darya, towards the trail of footsteps that led here, and towards the impending threat.
+[name="Vetochki"]Th-They can't... bury us.
+[name="Vetochki"]Not anymore.
+[name="Miner"]You're right. They can't bury us quietly anymore, not in the snow, in the mines, or in the lakes!
+[name="Miner"]We'll take the torch from our brothers and sisters, and we'll light the way...
+[name="Miner"]We'll make sure that all of Ursus sees—
+[name="Miner"]And knows that we once lived.
+[dialog]
+The miners who chose to stay behind raise their torches high in the cold night.
+They form a bright belt of fire on the ice, one that the gunners cannot miss.
+'Ursus will not bury this night the way it has buried many others,' they firmly believe.
+[dialog]
+[SoundVolume(volume=0.5, channel="bi",fadetime=2)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_shipwhistle", volume=1)]
+[delay(time=2)]
+The red eyes gaze upon the firelight.
+[dialog]
+[PlaySound(key="$d_avg_mechwarrior", volume=1)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.5)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.8)]
+[stopmusic(fadetime=2)]
+[StopSound(channel="bi", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[verticalbg]
+[curtain]
+[PlaySound(key="$d_avg_snowstormflp", volume=1, loop=true, channel="sn")]
+[Background(image="66_g8_farnorthtundra_aurora",screenadapt="coverall")]
+[bgeffect(name="$eb_blizzard",layer=1)]
+[Delay(time=1)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion_stone")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[StopSound(channel="sn", fadetime=2)]
+[PlayMusic(intro="$m_avg_prts_intro", key="$m_avg_prts_loop", volume=0.6)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_gen_surfacefrozen", volume=1)]
+[delay(time=2)]
+The guns continue to fire, and the ice continues to crack, sending more miners into the gaping crevasses.
+They shout and keep their torches high to the very end, with only a slight trembling in their voices.
+Of course they are afraid. Of course they are fearful.
+But they keep their torches raised, trading their lives for the lives of those behind them.
+The Rhodes Island personnel try to stop them, but no one listens.
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="Elysium"]They're still firing, Amiya! Eloysius's vehicles are full, and the next batch hasn't arrived yet—
+[charslot(slot = "m", name = "char_401_elysm_na_1#7")]
+[name="Elysium"]Amiya!
+[charslot(slot = "m", name = "avg_1037_amiya3_1#10$1")]
+[name="Amiya"]Why... why are they doing this?
+[name="Amiya"]We have to stop them. We can't let—
+[charslot(slot = "m", name = "avg_4204_mantra_1#3$1")]
+[name="Mantra"]I can't stop this many in my current state.
+[name="Mantra"]But there must be something we can do.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#2$1")]
+[name="Amiya"]Mantra...
+[name="Amiya"]I can feel it. I can feel their...
+[name="Amiya"]Their... anger.
+[name="Amiya"]It's so powerful. It's like it's burning them to ashes.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="Amiya"]No...
+[name="Amiya"]I won't let them.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#4$1")]
+[name="Amiya"]This—
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Amiya"]This slaughter has to stop!
+[charslot]
+Anger. The same anger.
+An emotion that Amiya has always fought to suppress, one that she would never allow to run unchecked.
+Anger lights up her eyes, ignites her heart, and flows to her fingertips.
+[dialog]
+[musicvolume(volume=0.2, fadetime=0.5)]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="'Even if I don't take revenge, even if I never hold a grudge, I still have the right to rage on forever!'", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+The cerulean and black sword of wrath once again appears in her hand.
+[dialog]
+[image]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[Background(image="66_g8_farnorthtundra_aurora", screenadapt="coverall", xScale=1.4, yScale=1.4, y=-200, fadetime=0)]
+[focusout(type="bg", id="66_g8_farnorthtundra_aurora", from=0, to=1, duration=0.1, block=false)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#4$1", posfrom="60,-30", posto="60,-30", duration=0)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.6, duration = 0)]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[musicvolume(volume=0.6, fadetime=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Amiya"]Ying Xiao—
+[dialog]
+[PlaySound(key="$firestorm", volume=1)]
+[PlaySound(key="$d_sp_chixiaobadao", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[bgeffect(name="$eb_hoshiguma_boost_down",layer=2)]
+[backgroundTween(yFrom=0, yTo=150, duration=10)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#4$4", duration=0)]
+[charslot(slot = "m", posfrom="0,350", posto="0,420", duration=10)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.6, duration = 0)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=2, block=true)]
+[Delay(time=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[charslot]
+[curtain]
+[Background]
+[focusout(type="bg", id="66_g8_farnorthtundra_aurora", from=1, to=0, duration=0.1, block=false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$d_avg_tswordlight", volume=1)]
+[PlaySound(key="$d_avg_swrdgnlght", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Image(image="66_i24", screenadapt="coverall")]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[PlaySound(key="$d_avg_firerockfall", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_mgctrntsrkshld", volume=1)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="dr")]
+[SoundVolume(volume=1, channel="dr",fadetime=2)]
+[playsound(key="$d_avg_churchfire", loop=true, channel="f", volume=0)]
+[SoundVolume(volume=0.4, fadetime=2,channel="f")]
+[delay(time=2)]
+A clean swing. Blue fire bursts from the tip of the sword, the highly concentrated energy drawing a wall of fire on the ice in the blink of an eye—another long and clear boundary.
+On one side, the cracking ice and the shells repelled by the wall of fire.
+On the other, the little Cautus and the torch-bearing Infected.
+[name="Amiya"]You...
+Amiya points her sword at the shore, at the Army that has herded and slaughtered people like livestock.
+[dialog]
+[SoundVolume(volume=0.2, channel="f",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Sticker(id="st1", multi = true, text="'You go no further.'", x=300, y=350, alignment="center", duration=1, size=28, delay=0.04, width=700)]
+[Sticker(id="st1", duration=1, block = false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[SoundVolume(volume=0.4, channel="f",fadetime=2)]
+[PlaySound(key="$d_gen_thunders_amb", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.03, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+Blue fire rages at her sword-tip, a warning to the murderers, be it the guns, the soldiers, or the battleships. Until the flames cease, until the score is settled—
+None shall pass.
+[dialog]
+[StopSound(channel="f", fadetime=2)]
+[PlaySound(key="$d_avg_firerockfall", volume=1)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[SoundVolume(volume=0.4, channel="dr",fadetime=2)]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[charslot]
+[verticalbg(imagegroup="66_i18_4/66_i18_3/66_i18_2/66_i18_1", solidwidth=1280, solidheight="720/720/720/625")]
+[largebgtween(duration = 0, yFrom = 1240, yTo = 0, block = false)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_bionicuavs", volume=0, loop=true, channel="bi")]
+[SoundVolume(volume=1, channel="bi",fadetime=2)]
+[PlaySound(key="$d_avg_warning_scifi", volume=1)]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+'Sir, high-powered Originium signal, twelve o'clock, source unknown!'
+'Slow down and observe.'
+'Yes, sir.'
+[dialog]
+[StopSound(channel="dr", fadetime=2)]
+[StopSound(channel="bi", fadetime=2)]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=4, block=true)]
+[verticalbg]
+[bgeffect(name="$eb_blizzard",layer=1)]
+[Background(image="66_g8_farnorthtundra_aurora",screenadapt="coverall")]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.5)]
+[musicvolume(volume=0.4, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.2)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "char_401_elysm_na_1#6")]
+[name="Elysium"]...Did they cease fire?
+[dialog]
+[PlaySound(key="$transmission", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "Raidian", switch = true, style = 1,offset = "-450,125", channel = 3)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#3$1", duration = 0)]
+[Delay(time=0.5)]
+[charslot(slot = "m", focus="n")]
+[name="Raidian"]No, they just slowed down.
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#6$1", duration = 0)]
+[name="Raidian"]You've stopped some of their attacks, Amiya. Rendezvous ASAP.
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="Elysium"]The other vehicles will arrive soon! Let's get out of here!
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$4")]
+[name="Amiya"]...No.
+[name="Amiya"]I'm staying until everyone is out.
+[charslot(slot = "m", name = "char_401_elysm_na_1#6")]
+[name="Elysium"]Wait... something's coming!
+[name="Elysium"]A vehicle's coming toward us at high speed from the west, but it's not one of ours—I think it's a truck!
+[name="Elysium"]They drove onto the ice!
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#6$1", duration = 0)]
+[name="Raidian"]On alert—
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[interlude(channel = 3, switch = false)]
+[PlaySound(key="$transmission", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "Mon3tr", switch = true, style = 1,offset = "450,125", channel = 4)]
+[interlude(channel = 4, type = 3, slot = "m", switch = true, pfrom = "455,-20", pto="455,-20", name = "avg_4179_monstr_1#10$1", duration = 0)]
+[Delay(time=0.5)]
+[name="Mon3tr"]Raidian! Finally got this thing to work. It's us! Me, Doctor, Ksenia—
+[dialog]
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, switch = false)]
+[interlude(channel = 4, switch = false)]
+[Decision(options="And Lyudmila.;And Operator Crownslayer.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="Rhodes Island...;Assemble.", values="1;2")]
+[Predicate(references="1;2")]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[interlude(channel = 4, clear = true)]
+[interlude(channel = 3, clear = true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1)]
+[charslot(slot = "m", name = "avg_4179_monstr_1#12$1", posfrom="-200,0", posto="0,0", duration=0.5, isblock=true)]
+[Delay(time=0.5)]
+[name="Mon3tr"]Amiya!
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$4")]
+[name="Amiya"]Doctor! Mon3tr! How did you—
+[name="Amiya"]And, Operator Crownslayer...?
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_1502_crosly_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="Crownslayer"]Didn't have time to chat along the way. I have a lot of questions myself.
+[name="Crownslayer"]But get on first.
+[dialog]
+[charslot]
+[Decision(options="We owe the Truckers' Union one.;I'll tell you about it later.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="Is everyone alright?", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_4204_mantra_1#8$1")]
+[name="Mantra"]Won't disappoint you.
+[dialog]
+[charslot]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=1.5)]
+[name="Raidian"]We'll catch up later. For now, we need to get out of here.
+[dialog]
+[Decision(options="Yes. Operator Mon3tr, Operator Crownslayer...;And {@nickname}, reporting in.", values="1;2")]
+[Predicate(references="1;2")]
+After scanning the survivors on the ice, the lights of the outpost on the southwest shore of Lake Neva point to the Army on the opposite shore.
+White light faces off against red light, and the shelling grows even sparser.
+[dialog]
+[PlaySound(key="$d_avg_telegraph_loop", volume=1, loop=true, channel="e")]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=1.5)]
+'All units, this is Dispatch.'
+'All units, cease fire immediately. We have an urgent request from Deity Grypherburg.'
+'Repeat, all units, cease fire immediately.'
+'Please acknowledge.'
+'...'
+'...'
+'...'
+'Yes, sir.'
+[StopSound(channel="e", fadetime=3)]
+[charslot(slot = "m", name = "char_401_elysm_na_1#9")]
+[name="Elysium"]Looks like it's stopped... for real this time.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$4")]
+[name="Amiya"]And everyone's here.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#9$4")]
+[name="Amiya"]Thank goodness...
+[dialog]
+[charslot]
+[Decision(options="Yes...", values="1")]
+[Predicate(references="1")]
+[Decision(options="Looks like we made it.", values="1")]
+[Predicate(references="1")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]
