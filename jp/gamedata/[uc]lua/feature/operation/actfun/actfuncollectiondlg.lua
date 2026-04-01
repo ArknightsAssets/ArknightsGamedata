@@ -13,16 +13,15 @@ local luaUtils = CS.Torappu.Lua.Util;
 
 
 
-
 ActFunCollectionDlg = DlgMgr.DefineDialog("ActFunCollectionDlg", "Activity/ActFun/actfun_collection_dlg", DlgBase)
 local AprilFoolCollectionItem = require("Feature/Operation/ActFun/ActFunCollectionItem");
 
 function ActFunCollectionDlg:OnInit()
-  self:_BindAndRenderItem(self._layout1Item, self:_CheckCollection2020Completed(), ActFun1MainDlg)
   self:_BindAndRenderItem(self._layout2Item, self:_CheckCollection2021Completed(), ActFun2MainDlg)
   self:_BindAndRenderItem(self._layout3Item, self:_CheckCollection2022Completed(), ActFun3MainDlg)
   self:_BindAndRenderItem(self._layout4Item, self:_CheckCollection2023Completed(), ActFun4MainDlg)
   self:_BindAndRenderItem(self._layout5Item, self:_CheckCollection2024Completed(), ActFun5MainDlg)
+  self:_BindAndRenderItem(self._layout6Item, self:_CheckCollection2025Completed(), ActFun6MainDlg)
 end
 
 function ActFunCollectionDlg:_BindAndRenderItem(layoutItem, isActCompleted, cls)
@@ -39,11 +38,6 @@ function ActFunCollectionDlg:_BindCollectionItem(luaLayout)
     collectionItem:Bind(self)
   end
   return collectionItem
-end
-
-function ActFunCollectionDlg:_CheckCollection2020Completed()
-  local instData = CS.Torappu.PlayerData.instance:GetCharInstById(self._char2020Id)
-  return instData ~= nil
 end
 
 function ActFunCollectionDlg:_CheckCollection2021Completed()
@@ -77,6 +71,26 @@ function ActFunCollectionDlg:_CheckCollection2024Completed()
   end
   for stageId, stageState in pairs(playerData.actFun5.stageState) do
     if not (stageState > 2) then
+      return false
+    end
+  end
+  return true
+end
+
+
+function ActFunCollectionDlg:_CheckCollection2025Completed()
+  local playerData = CS.Torappu.PlayerData.instance.data.playerAprilFool;
+  if playerData == nil or playerData.actFun6 == nil or playerData.actFun6.recvList == nil then
+    return false
+  end
+  local gameData = CS.Torappu.ActivityDB.data.actFunData;
+  if gameData == nil or gameData.act6FunData == nil or gameData.act6FunData.achievementRewardList == nil then
+    return false
+  end
+  local playerRecvList = playerData.actFun6.recvList;
+  local gameRewardDict = gameData.act6FunData.achievementRewardList;
+  for rewardId, rewardData in pairs(gameRewardDict) do
+    if not playerRecvList:Contains(rewardId) then
       return false
     end
   end
