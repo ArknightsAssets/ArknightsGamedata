@@ -1,0 +1,376 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")] 
+[stopmusic]
+[Dialog]
+[Background(image="bg_black",screenadapt="coverall",fadetime=2)]
+[Delay(time=1)]
+[PlayMusic(key="$babel_loop", volume=0.8, delay=0.2)]
+[Delay(time=2)]
+[name=""]   Ah, it's you.
+[Dialog]
+[name=""]   It's been a long time since we've last seen each other.
+[name=""]   During this time... you've been teetering on the edge of a cliff.
+[Dialog]
+[Delay(time=1.3)]
+[name=""]   You may have forgotten who you are, but just remembering your name is enough.
+[Dialog]
+[name=""]   ...It's time. Don't linger here for too long.
+[name=""]   After all, you aren't my guest yet, nor should you even be here.
+[name=""]   There are many who need you.
+[Dialog]
+[Delay(time=1)]
+[name=""]   April 1.
+[name=""]   You may not remember what this date means to you.
+[name=""]   And this will thrust you into peril.
+[name=""]   ...
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Image]
+[name=""]   No.
+[name=""]   You must remember.
+[Dialog]
+[stopmusic(fadetime=2)]
+[delay(time=2)]
+[PlayMusic(intro="$ekg_loop", key="$ekg_loop", volume=0.5, delay=0)]
+[Blocker(a=1, r=255, g=255, b=255, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1)]
+[Image(image="bg_0_am", tiled=true, fadetime=0, block=false)]
+[Blocker(a=0, fadetime=0.3, block=true)]
+[CameraEffect(effect="Grayscale", fadetime=18, amount=0, block=false)]
+[Delay(time=3)]
+[name="Distant Voice"]   ...Found... huge box... can't open.
+[name="Robotic Voice"]   Please speak the passphrase.
+[name="Distant Voice"]   ...
+[name="Distant Voice"]   'For Rhodes Island'?
+[name="Robotic Voice"]   Incorrect passphrase.
+[name="Robotic Voice"]   Voice recognition failed. Unauthorized individual detected.
+[name="Robotic Voice"]   Possibility of illegal intrusion. Please speak the correct passphrase immediately, or self-defense protocols will engage to eliminate intruders.
+[CameraEffect(effect="Grayscale", fadetime=8, amount=1, block=false)]
+[name="Distant Voice"]   Right... The leader gave me something before I left... card—
+[name="Distant Voice"]   I have an authentication card!
+[name="Robotic Voice"]   Incorrect passphrase. Self-defense protocols engaged.
+[name="Distant Voice"]   Oh no... Forget it. I'll just put the card on top!
+[dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_scan", volume=1)]
+[Delay(time=1.5)]
+[Dialog]
+[CameraEffect(effect="Grayscale", fadetime=8, amount=0, block=false)]
+[Delay(time=1)]
+[name="Robotic Voice"]   Authentication successful. Welcome.
+[name="Robotic Voice"]   Device activated.
+[Dialog]
+[Delay(time=1)]
+[name="Distant Voice"]   Phew... that was close...
+[dialog]
+[playsound(key="$d_avg_labamb", loop=false, channel="aa",volume=0.8)]
+[stopSound(channel="aa", fadetime=3)]
+[Delay(time=3)]
+[name="Distant Voice"]   There really is... someone inside!
+[Dialog]
+[Delay(time=0.5)]
+[StopMusic(fadetime=1)]
+[PlaySound(key="$flashback", volume=0.3)]
+[PlaySound(key="$e_atk_arrow_h", volume=0.2, Delay=0.4)]
+[PlaySound(key="$flashback", volume=0.1, Delay=0.3)]
+[PlaySound(key="$flashback", volume=0.2, Delay=0.7)]
+[Blocker(a=1, r=255, g=255, b=255, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=1, r=159, g=254, b=255, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.1, block=true)]
+[Blocker(a=0.8, r=255, g=96, b=15, afrom=1, rfrom=14, gfrom=0, bfrom=15, fadetime=0.2, block=true)]
+[Blocker(a=0.8, r=0, g=0, b=0, afrom=0.8, rfrom=255, gfrom=96, bfrom=15, fadetime=0.3, block=true)]
+[delay=0.5]
+[Blocker(a=1, r=0, g=0, b=0, afrom=0, rfrom=0, gfrom=0, bfrom=0, fadetime=0.3, block=true)]
+[delay=1]
+[Blocker(a=1, r=225, g=225, b=225, afrom=1, rfrom=0, gfrom=0, bfrom=0, fadetime=2, block=true)]
+[Image(fadetime=0)]
+[Image(image="60_ifd01",x=150, y=250,xScale=1.4, yScale=1.4, fadetime=0)]
+[name="???"]   ...
+[Dialog]
+[Blocker(a=0, r=1, g=1, b=1,  fadetime=10, block=false)]
+[name="???"]   ...Hand!
+[name="???"]   Take my...
+[name="???"]   Take my hand!!
+[Dialog]
+[Delay(time=1)]
+[Image(image="60_ifd01",x=-100, y=-50,xScale=1, yScale=1, fadetime=2)]
+[delay(time=3)]
+[CameraShake(duration=2, xstrength=10, ystrength=12, vibrato=15, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+[stopmusic(fadetime=1)]
+[ImageTween(xFrom=-100, yFrom=-50, xTo=0, yTo=0, xScaleFrom=1, yScaleFrom=1, xScaleTo=1, yScaleTo=1, duration=35, block=false)]
+[Image(image="60_ifd02",x=-100, y=-50,xScale=1, yScale=1, fadetime=2)]
+[delay(time=2)]
+[name="???"]   ...
+[Dialog]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=3, block=true)]
+[Blocker(a=1, r=0, g=0, b=0,  fadetime=2, block=true)]
+[Image(fadetime=2)]
+[Delay(time=2)]
+[name="???"]   Hey, say something. Still alive?
+[dialog]
+[charslot]
+[Decision(options="...",values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="???"]   Seems dead.
+[charslot(slot = "m", name = "char_1002_nsabr_1")]
+[name="???"]   Didn't the leader teach us how to do CPR for emergencies?
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="???"]   Shh, I'm trying to remember how to do it.
+[name="???"]   First, lie the body flat on the ground.
+[name="???"]   Then, place both hands on the chest, and press—
+[dialog]
+[PlaySound(key="$d_avg_punch",volume=0.9)] 
+[PlaySound(key="$d_avg_bone_rub", volume=0.5)]
+[CameraShake(duration=10, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+[dialog]
+[charslot]
+[Decision(options="... (Pained breathing)",values="1")]
+[Predicate(references="1")]
+[name="???"]   Oh? Seems like it's working. Again!
+[dialog]
+[PlaySound(key="$d_avg_punch",volume=0.9)] 
+[PlaySound(key="$d_avg_bone_rub", volume=0.5)]
+[CameraShake(duration=10, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2)]
+[dialog]
+[charslot]
+[Decision(options="... (Try to grab the person's hand)",values="1")]
+[Predicate(references="1")]
+[name="???"]   Again!
+[dialog]
+[charslot]
+[Decision(options="... (Vigorous breathing)",values="1")]
+[Predicate(references="1")]
+[Background(image="bg_indoor_1",fadetime=0, block=true)]
+[delay(time=1)]
+[image]
+[PlaySound(key="$d_avg_clothmovement", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0,  fadetime=0.7, block=true)]
+[charslot(slot = "l", name = "char_1002_nsabr_1",duration=1)]
+[charslot(slot = "r", name = "char_1002_nsabr_2",duration=1)]
+[delay(time=2)]
+[PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6, crossfade=1, delay=0.5)]
+[charslot(slot = "r", name = "char_1002_nsabr_2",focus="r")]
+[name="???"]   Thank goodness! You're awake!
+[dialog]
+[charslot]
+[Decision(options="You almost killed me!;(Angrily coughing);I would have died for real if you used a bit more strength.",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="???"]   Uh, sorry. It was my first time trying that, my bad.
+[dialog]
+[charslot]
+[Decision(options="Who are you people?",values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="???"]   Us? We're the Reunion Movement. I'm a rank-and-file member, Kevin.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Our leader wants to meet you, Spirit.
+[dialog]
+[charslot]
+[Decision(options="...",values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Though you seem all tired out. I thought the evil spirit that Rhodes Island wanted to revive would be scarier than this.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   But you're even weaker than my brother.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Hey, what's the matter?
+[dialog]
+[charslot]
+[Decision(options="I... who am I?;You called me 'Spirit'? What does that mean?",values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   I dunno.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Our leader Talulah got word that in a month's time, Rhodes Island was planning to revive a super scary evil spirit here.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Rhodes Island's a tough enemy already. Any stronger and we won't be a match for them.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   So we rushed over here to try and grab you first.
+[dialog]
+[charslot]
+[Decision(options="Rhodes Island?;...?!;Rhodes Island... that name is familiar...",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Rhodes Island is the Infected's greatest enemy.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   They want to exterminate every Infected on this land, and they won't hesitate to drag every nation into ruin to get it done.
+[dialog]
+[charslot]
+[Decision(options="They're the baddies?;...;My gut tells me something's off...",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   FrostNova, she was with Rhodes Island before. She says they used to be a bigtime pharmaceutical company, operating a ship with the same name, sailing across the land saving lives.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   And then who knows how it happened, but that P-something system on the ship managed to take control of everyone, and then Rhodes Island changed.
+[dialog]
+[charslot]
+[Decision(options="I... I don't know.;...;I'm... so confused right now.",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Relax, my friend.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   I'm not gonna hurt you, so chill out. But tell me, what should I call you?
+[dialog]
+[charslot]
+[Decision(options="My name is {@nickname}.",values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   That's... kinda <i>really</i> hard to say.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   The leader says the evil spirit of Rhodes Island is some kinda book-learning egghead. We have a name for people like that around here... uh... what was it again?
+[charslot(slot = "m", name = "char_1002_nsabr_1")]
+[name="Reunion Warrior"]   College kid!
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Yeah, I'll just call you that!
+[dialog]
+[charslot]
+[Decision(options="Actually, you can call me Doctor.",values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Doctor? Sounds fine.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Okay, Doctor, if you don't know your next move, then why not come with me?
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Our two leaders, Talulah and Alina, they'll be real happy to have a big brain like you.
+[dialog]
+[charslot]
+[StopMusic(fadetime=0.8)]
+[PlaySound(key="$d_avg_warning",volume=1,channel="1")]
+[name="Robotic Voice"]   Alert.
+[name="Robotic Voice"]   PRTS accessing system.
+[name="Robotic Voice"]   Dr. {@nickname} no longer detected in device. Conclusion: Reunion has made contact with target.
+[name="Robotic Voice"]   Preparing to execute Plan B.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Wh-What's going on?!
+[charslot(slot = "m", name = "char_376_therex_1")]
+[playMusic(intro="$frontline_intro", key="$frontline_loop", volume=0.6)]
+[CameraShake(duration=0.8, xstrength=50, ystrength=50, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="THRM-EX"]  Recover the Doctor.
+[charslot(slot = "m", name = "avg_286_cast3_1$1")]
+[name="Castle-3"]Make sure Reunion stays put in Chernobog.
+[charslot(slot = "m", name = "char_285_medic2_1")]
+[name="Lancet-2"]Let Catastrophe exterminate them all.
+[charslot]
+[dialog]
+[delay(time=1)]
+[charslot(slot = "l",name = "char_1002_nsabr_2", focus="n")]
+[playsound(key="$d_gen_transmissionget")]
+[delay(time=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 , offset = "250,0" ,channel = 1,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 1, type = 3, slot = "r", switch = true,name = "avg_npc_037", pfrom = "270,0", pto="270,0", duration = 0)]
+[interlude(channel = 1, type = 2, slot = "r", switch = true, pfrom = "670,0", pto="670,0", name = "bg_ruinsinterior", duration = 0)]
+[charslot(slot = "m", focus = "n")]
+[delay(time=1)]
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 1, switch = true)]
+[name="Yeti Squad Member"]   Kevin, orders from the boss! Retreat, now!
+[interlude(channel = 1, switch = false)]
+[charslot(slot = "l", name = "char_1002_nsabr_2")]
+[name="Kevin"]   What?
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 1, switch = true)]
+[name="Yeti Squad Member"]   Rhodes Island's on their way!
+[name="Yeti Squad Member"]   They're quick, FrostNova and the leader's holding them off—
+[dialog]
+[playsound(key="$d_gen_transmissionget", volume=0.4)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[interlude(channel = 1, clear = true, tsto="0,1", tsduration=0.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Gah! How are they so fast?!
+[dialog]
+[charslot]
+[CameraShake(duration=1, xstrength=8, ystrength=6, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0.7, r=0.95, g=0.95, b=0.95, fadetime=0.02, block=true)]
+[PlaySound(key="$d_sp_ballista")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.25, block=true)]
+[delay(time=2)]
+[charslot(slot = "m", name = "char_1002_nsabr_1")]
+[name="Reunion Warrior"]   These robots are packing some crazy firepower! C'mon, Kevin! Think of something!
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   I got it! Let's just force our way out first!
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Doctor, come with us.
+[dialog]
+[charslot]
+[Decision(options="They're after me. You can leave me here.",values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Don't be stupid.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Who knows what a company like Rhodes Island might do with you?
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   We'll protect you!
+[dialog]
+[charslot]
+[Decision(options="...It's not the best time to contact Rhodes Island now.;Seems like I'll have to meet Reunion's leader.",values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Doctor, what are you talking to yourself for?!
+[dialog]
+[charslot]
+[Decision(options="They're well-prepared.;Forcing a rash breakout will only leave you with heavy losses.",values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   I know that!
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   But as long as we can regroup with the others, we can figure something out!
+[dialog]
+[charslot]
+[Decision(options="If you're willing to let me take command—",values="1")]
+[Predicate(references="1")]
+[Decision(options="I could find a way to get everyone out alive.",values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   You're... serious?
+[dialog]
+[charslot]
+[Decision(options="Yes.;...;Of course.",values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   You sound just like the leader right now.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   And...
+[dialog]
+[charslot]
+[Decision(options="And?",values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Your hood looks a little like mine.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Doctor... we can trust you, yeah?
+[dialog]
+[charslot]
+[Decision(options="Of course.;...;Perhaps.",values="1;2;3")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Unbelievable.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Dunno why, but I'm feeling so much more at ease.
+[Predicate(references="2")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   You've already begun calculating a strategy, right?
+[Predicate(references="3")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   You were never a part of our fight.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   So even if we lose, no one's gonna blame you.
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   In that case...
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Doctor, we need you to show your smarts here.
+[charslot(slot = "m", name = "char_1002_nsabr_2")]
+[name="Kevin"]   Help us defeat Rhodes Island!
+[Predicate(references="1;2;3")]
+[Dialog]
+[charslot]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=3, block=true)]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]
