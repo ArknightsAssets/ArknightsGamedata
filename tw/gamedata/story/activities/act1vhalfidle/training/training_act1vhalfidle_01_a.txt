@@ -1,0 +1,122 @@
+[HEADER(is_tutorial=true, is_skippable=true)] 次生预案教学关1_a
+[InputBlocker(blockInput=true)]
+[Delay(time=1.5)]
+[Battle.Pause]
+[InputBlocker(blockInput=true, black=0.4)]
+[PopupDialog(dialogHead="$avatar_closure")]喂，阿米婭，聽得到嗎？通信訊號已經建立，和大家打個招呼吧，博士。
+[PopupDialog(dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]博士，還有可露希爾！先遣隊都到齊了，聽候博士指揮。
+[PopupDialog(dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]只是……目前的後勤物資比較缺乏，我們只能就地取材進行建設了。
+[Battle.UnlockFunction(mask="CHARACTER_INFO")]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true, black=0)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, cardIndex=1, rightStart=true, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="put_down", charId="char_002_amiya",posX=1,posY=3, \
+          dialogHead="$avatar_closure", animStyle="Drag", \
+          startCardIndex=1, startRightStart=true, endTileX=1, endTileY=3)] \
+博士，快部署阿米婭，試著先擊敗那隻源石蟲吧。
+[Delay(time=0.5)]
+[InputBlocker(blockInput=true, tileX=2,tileY=3, validWidth=160, validHeight=160)]
+[Tutorial(waitForSignal="select_direction", dialogHead="$avatar_amiya", animStyle="Drag", \
+          startTileX=2, startTileY=3, endTileX=3, endTileY=3, dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true)]
+[Battle.Delay(time=6)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, black=0)]
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]已擊敗目標！我好像又累積了一些新的<@tu.kw>作戰經驗</>，<@tu.kw>培訓等級</>也提升了。
+[Tutorial(dialogHead="$avatar_closure")]不只那些，現在我們可以開始對<@tu.kw>環境進行改造</>了。
+[Tutorial(focusWidth=100, focusHeight=100, \
+          dialogHead="$avatar_closure", animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          cardIndex=0, rightStart=true)] \
+          博士應該看到剛剛出現的<@tu.kw>生產模組</>了吧？
+[InputBlocker(blockInput=true, cardIndex=0, rightStart=true, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="char_info",focusWidth=100, focusHeight=100, \
+          dialogHead="$avatar_closure", animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          cardIndex=0, rightStart=true)] \
+          沒錯，我為複雜的生產系統都換了個相對簡單易懂的形式。
+[InputBlocker(blockInput=false)]
+[Battle.LockFunction(mask="SYSTEM_MENU")]
+[Tutorial(waitForSignal="put_down",charId="trap_1500_lhgras", posX=4, posY=3, focusWidth=100, focusHeight=100, \
+          dialogHead="$avatar_closure", animStyle="Click", focusStyle="HighlightCircle", \
+          tileX=4, tileY=3, black=0)] \
+          現在試著部署那片<@tu.kw>草叢</>吧，直接<@tu.kw>點選</>或者拖動操作都可以喔。
+[Battle.Pause(pause=false)]
+[InputBlocker(blockInput=true)]
+[Battle.Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, black=0)]
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]指令已收到……地形改造完成。
+[Battle.UnlockFunction(mask="SYSTEM_MENU")]
+[Tutorial(focusX=40, focusY=130, focusWidth=100, focusHeight=100, anchor="Left", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          你看，<@tu.kw>部署草叢</>會為我們提供一些<@tu.kw>培訓手冊</>。
+[Tutorial(focusX=130,focusY=20, focusWidth=200, focusHeight=200, anchor="Left", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          擊敗不同的敵人，會獲得不同的資源。
+[Tutorial(dialogHead="$avatar_closure", protectTime=0.5)]同樣，妥善利用我準備的這些<@tu.kw>生產裝置</>，也能產出許多資源。
+[InputBlocker(blockInput=true, black=0)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=6)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]小心，更多敵人出現了！不過，我還沒有觀察到目標點的位置。
+[Tutorial(dialogHead="$avatar_closure", black=0, protectTime=0.5)]這是因為在前哨支點的戰鬥中，我們<@tu.kw>不再需要守護目標點</>了。
+[Tutorial(dialogHead="$avatar_closure", black=0, protectTime=0.5)]敵人會按照固定路線在場地中行進。
+[Tutorial(focusX=-100,focusY=0, focusWidth=120, focusHeight=120, anchor="Top", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", protectTime=0.5)]\
+          如果場地內<@tu.kw>同時存在過多的敵人</>，我們的生產建設就會受到影響，<@tu.kw>目標生命值也會不斷流失</>。
+[Tutorial(focusX=-100,focusY=0, focusWidth=120, focusHeight=120, anchor="Top", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", protectTime=0.5)]\
+          也就是說，我們需要及時將這些敵人清除掉，減少敵人的數量。
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Tutorial(waitForSignal="act1vhalfidle_battle_gain_equip")]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=-35,focusY=110,  focusWidth=90, focusHeight=90, anchor="Right",  \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          欸，這是什麼？好像是某種可以提供<@tu.kw>增益</>的物品。
+[Tutorial(target="pool_act1vhalfidle_equip_thumbnail_btn", \
+          waitForSignal="act1vhalfidle_battle_open_equip_panel", \
+          animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          在博士的指揮介面裡，這些可以提供臨時增益的物品被我統稱為<@tu.kw>“戰術擴充”</>。
+[Delay(time=0.3)]
+[Tutorial(target="pool_act1vhalfidle_equip_in_bag_btn", \
+          animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          試著點選一下，裝備這個<@tu.kw>戰術擴充</>吧。
+[Tutorial(focusX=-120,focusY=0,  focusWidth=300, focusHeight=300, anchor="Right", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          博士最多可以同時裝備<@tu.kw>三個</>不同類型的<@tu.kw>戰術擴充</>，為正在戰鬥的幹員們提供增益。
+[Delay(time=0.3)]
+[Tutorial(target="pool_act1vhalfidle_equip_thumbnail_btn", \
+          animStyle="Click", focusStyle="HighlightRect", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure")]\
+          在指揮介面點擊，就可以關閉戰術擴充面板了。
+[Tutorial(dialogHead="$avatar_closure",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]<@tu.kw>戰術擴充</>和<@tu.kw>生產模組</>是非常重要的助力，相信博士肯定能妥善運用它們。
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=6)]
+[InputBlocker(blockInput=true, black=0)]
+[Battle.Pause(pause=true)]
+[Tutorial(tileX=6,tileY=2,  focusWidth=140, focusHeight=140, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]\
+          眼前這一隻源石蟲，似乎有些特別？
+[Tutorial(dialogHead="$avatar_closure",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]牠就是這片區域的<@tu.kw>領袖敵人</>了！每個關卡都會出現領袖敵人，這些重要目標會影響關卡的完成度。
+[Tutorial(focusX=0,focusY=-100,  focusWidth=150, focusHeight=150, anchor="Top", \
+          animStyle="Highlight", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_closure", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]荒地上的環境非常艱險，我們在每個關卡的<@tu.kw>作戰時間都會受到限制</>。
+[Tutorial(dialogHead="$avatar_closure",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=1)]每次<@tu.kw>部署生產模組</>進行環境改造，區域內的領袖敵人都會被驚動並<@tu.kw>提前出現</>。
+[Tutorial(dialogHead="$avatar_amiya",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black=0, protectTime=0.5)]博士，讓我們擊敗牠，建立起我們的第一座前哨支點吧！
