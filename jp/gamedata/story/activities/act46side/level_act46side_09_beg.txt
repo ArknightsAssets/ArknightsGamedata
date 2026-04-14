@@ -1,0 +1,446 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="45_g8_kjeragstreet",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_snowfall",volume=1)]
+[Delay(time=2.5)]
+遠くで絶えず響く轟音が梢に薄く積もった雪を震わせて、本来静かであるはずの街道には不吉な熱気が漂っていた。
+ここは本来カランドの麓から蔓珠院へ通じる道なのだが、今や道路の中央を塞ぐヴィクトリアの部隊と、路面に轍を残すキャタピラーが、はばかりもせずに越え難い障害を作り出していた。
+戦車のスピーカーからは、はっきりとしたイェラグ語のアナウンスが聞こえている。
+[Dialog]
+[PlaySound(key="$radio",channel="o",volume=1)]
+[Delay(time=1)]
+「イェラグの皆様、どうかご安心ください。こちらは現在の情勢を考慮しての行動であり、我々ヴィクトリアが皆様の安全を保障いたします。」
+「本作戦は皆様の生活を妨げるものではありません。ですが、ただいまの天候を加味して、自宅待機を推奨しております。」
+「加えて、ヴィクトリア人を拉致した犯人及びその関係者に警告します。ただちに人質を解放してください。従わない場合、ただちに作戦を開始します！」
+[Dialog]
+[stopsound(channel="o",fadetime=2)]
+[PlayMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_279_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="イェラグの老人"]すみませんが、向こうに渡らせてはもらえませんか？
+[name="イェラグの老人"]自宅に戻って火を起こさねばならんのです。もう食事の時間で、妻がわしを待っとりまして……
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="ヴィクトリア兵士"]ここはすでに封鎖された。迂回するか、もしくはここで待機していてくれ。
+[charslot(slot="m",name="avg_npc_279_1#1$1",focus="m")]
+[name="イェラグの老人"]しかし……ただ通りの向こうに渡りたいだけなのですが。
+[name="イェラグの老人"]ご心配なら、わしの持ち物を検査していただいてもいいですよ。食糧以外に何も持ってはおりませんし。
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="ヴィクトリア兵士"]あんたは蔓珠院の人か？
+[charslot(slot="m",name="avg_npc_279_1#1$1",focus="m")]
+[name="イェラグの老人"]いえ、ただの鍛冶屋です。
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="ヴィクトリア兵士"]だったら迂回するか、この場で待機してくれ。
+[charslot(slot="m",name="avg_npc_279_1#1$1",focus="m")]
+[name="イェラグの老人"]わしはこの道を何十年も通ってきたというのに……
+[Dialog]
+[charslot]
+[name="心配そうな通行人"]おじいさん、やめなって！　揉め事起こしてもいいことないよ！
+[name="無力感に苛まれる通行人"]その人の言う通りにして、早く離れな！
+[Dialog]
+[charslot(slot="m",name="avg_npc_408_1#1$1",focus="m")]
+[name="ヴィクトリア兵士"]これ以上言わせてくれるなよ。
+[charslot(slot="m",name="avg_npc_279_1#1$1",focus="m")]
+[name="イェラグの老人"]……
+[Dialog]
+[charslot]
+老人はよろよろとその場を離れた。振り返れば、妻もまた店の窓から彼を見ていた。
+そこで、彼は手振りで、妻にそこから離れるようにと伝えた。
+[charslot(slot="m",name="avg_npc_279_1#1$1",focus="m")]
+[name="イェラグの老人"]イェラガンドよ……どうか彼らに罰を下してください……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="67_i06",screenadapt="coverall",fadetime=0,block=true)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=45, block=false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[name="怒りの収まらない通行人"]俺たちの土地にズカズカ上がり込みやがって、さっさと失せろ！　聞こえてんのか！？　ここから出ていけって言ってんだよ！
+[name="心配そうな通行人"]「ヴィクトリア」って言葉を聞くだけで憎らしくなってくるよ。
+[name="心配そうな通行人"]……こんな時にあの連中の仲間をさらう奴がいるなんてなあ。
+[name="無力感に苛まれる通行人"]まだわからないのか？　そんなのただの言い訳だよ、あの卑劣な連中め！　ああ、ヴィクトリア人が来たからには、イェラグは変わってしまうんだろうな……
+[name="怒りの収まらない通行人"]*イェラグスラング*！　この根性なし、お前は三日飯を抜いた駄獣以下の腰抜けだ！　指くわえて見てるだけじゃなく、泣き言までほざくとは！　見てろ、俺が奴らに思い知らせてやる！
+[name="心配そうな通行人"]おいおい、騒ぐなら向こうでやってくれ！　俺まであんたの仲間だと思われるのは御免だぞ！
+[name="無力感に苛まれる通行人"]そ、そうだ、カランド貿易へ行ったらどうだ。あそこには警備員がいるだろう？
+[name="怒りの収まらない通行人"]チッ、役立たずどもめ……
+[name="無力感に苛まれる通行人"]随分なことを言ってくれるな。確かにお前は度胸もあるし恐れ知らずだが、家族はいるのか？
+[name="無力感に苛まれる通行人"]仮に、これが交渉の結果だったとしたら、三大名家にも、蔓珠院にも、カランド貿易にもどうしようもなかったってことだろ……そんなの、俺たちに何ができるって言うんだ？
+[name="無力感に苛まれる通行人"]ああ、イェラガンドよ……どうか私の恐れを、臆病さをお赦しください……
+怒り、恐怖、不安……様々な感情が武器を持たない民衆の胸中に満ちていたが、それでも目の前に立ちはだかる完全武装の軍隊には何の脅威を与えることもできない。
+やがて彼らの声は、轟くエンジン音にかき消されてしまった。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="67_G12_deck",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>「グロリアーナ」号甲板</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_npc_2013_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="カスター親衛隊隊長"]当艦隊はイェラグの雪山入り口を包囲しました。
+[name="カスター親衛隊隊長"]イェラグ内の先遣部隊も、同様に蔓珠院を厳重に包囲しています。イェラグの武装勢力には、我々に抵抗する力などありません。
+[charslot(slot="m",name="avg_npc_2013_1#4$1",focus="m")]
+[name="カスター親衛隊隊長"]イェラグの巫女は現状行方不明ですが、彼女が姿を現し次第、確実に位置を特定いたします。
+[name="カスター親衛隊隊長"]状況は我々の制御下にあると言えるでしょう……ゆえに僭越ながら申し上げます。
+[charslot(slot="m",name="avg_npc_2013_1#1$1",focus="m")]
+[name="カスター親衛隊隊長"]閣下が御自ら前線に立たれる必要はないかと。
+[charslot(slot="m",name="avg_npc_726_1#1$1",focus="m")]
+[name="カスター公爵"]……そう焦らないで、フィリッパ。
+[name="カスター公爵"]言葉には気をつけなさい。前にも指摘したけれど、イェラグは私たちの敵ではなく、重視すべきパートナーなのよ。
+[charslot(slot="m",name="avg_npc_2013_1#1$1",focus="m")]
+[name="カスター親衛隊隊長"]ですが、カランド貿易は今なお我々の交渉要請に正式な返答をしてきておりません。
+[charslot(slot="m",name="avg_npc_726_1#8$1",focus="m")]
+[name="カスター公爵"]ふふっ……想像はつくわ。
+[charslot(slot="m",name="avg_npc_726_1#1$1",focus="m")]
+[name="カスター公爵"]エンシオディスはプライドの高い子だから……今回のような敗北を受け入れるのはとても難しいことなのでしょう。
+[name="カスター公爵"]あなたも彼の話は多少なりとも聞いたことはあるわよね。彼も一応あなたの血縁者だもの。
+[charslot(slot="m",name="avg_npc_2013_1#1$1",focus="m")]
+[name="カスター親衛隊隊長"]しかし、理解できかねます。彼が噂ほど聡明な人物なのであれば、なぜ閣下のおそばに留まる機会を放棄してまで、このような山奥に埋もれることを選んだのでしょうか？
+[charslot(slot="m",name="avg_npc_726_1#1$1",focus="m")]
+[name="カスター公爵"]言ったでしょう、彼はプライドの高い子なの。
+[name="カスター公爵"]少し時間を与えてあげましょう……六時間ほどね。
+[name="カスター公爵"]それでもイェラグ側が私たちの提案を受け入れないというのなら、事態は残念な結末を迎えることでしょう。
+[charslot(slot="m",name="avg_npc_2013_1#1$1",focus="m")]
+[name="カスター親衛隊隊長"]かしこまりました。
+[name="カスター親衛隊隊長"]ですが閣下、まだもう一点、気にかけるべきかを判断しかねる些事がございますので、ご指示をいただきたく。
+[charslot(slot="m",name="avg_npc_2013_1#4$1",focus="m")]
+[name="カスター親衛隊隊長"]表向きは死んだことになっているブラウンテイル家の当主ですが、彼女の活動の痕跡を再び発見いたしました。
+[charslot(slot="m",name="avg_npc_2013_1#1$1",focus="m")]
+[name="カスター親衛隊隊長"]今は蔓珠院に潜伏しており、黒騎士が護衛についているようです。
+[charslot(slot="m",name="avg_npc_726_1#6$1",focus="m")]
+[name="カスター公爵"]ふむ……こんな時期に、エンシオディスがわざわざ手間をかけてどうでもいい人物を匿うとは思えないわ。
+[charslot(slot="m",name="avg_npc_726_1#1$1",focus="m")]
+[name="カスター公爵"]取るに足らないことではあるけど……私は不確定要素が嫌いなの。
+[name="カスター公爵"]彼女のところへ人を送って、何を隠しているのかを調べてきてちょうだい。
+[charslot(slot="m",name="avg_npc_2013_1#1$1",focus="m")]
+[name="カスター親衛隊隊長"]承知しました、閣下。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="30_ex1_snowmount",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_npc_867_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="「グレーシルクハット」"]了解。限定的に人員配置を行った上で、さらなるご指示をお待ちします。
+[name="「グレーシルクハット」"]総員警戒。第一隊は正面を固め、第二隊は北門へ向かい封鎖せよ。第三、四隊は高台を確保して院内を監視せよ。
+[name="「グレーシルクハット」"]全員、厳戒態勢で挑め。一人でも逃せば、公爵にお目にかかることになるぞ。
+[Dialog]
+[PlaySound(key="$d_gen_soldiersrun", volume=1)]
+[Delay(time=3.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="45_g11_karlanheadquarters",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1162_1#1$1",focus="m")]
+[name="カランド貿易の従業員"]失礼ですが、こちらではヴィクトリアの方を入れるようにという指示は受けておりません。
+[charslot(slot="m",name="avg_npc_2012_1#1$1",focus="m")]
+[name="ヴィクトリア大使"]承知しておりますとも。我々はここで返答をお待ちしたいだけなのです。
+[charslot(slot="m",name="avg_npc_1162_1#1$1",focus="m")]
+[name="カランド貿易の従業員"]会長からは、いかなる要請も受け付けないよう通達が出ておりますので、ここでお待ちいただいたとて……
+[charslot(slot="m",name="avg_npc_2012_1#3$1",focus="m")]
+[name="ヴィクトリア大使"]構いません。私はここで辛抱強く待ち続けますよ。イェラグの方々が厳しい冬が過ぎるのを待つのと同じように。
+[charslot(slot="m",name="avg_npc_2012_1#1$1",focus="m")]
+[name="ヴィクトリア大使"]冬と言えば、イェラグ人が如何にして今年の冬を越すおつもりかは非常に興味がありますね。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_206_gnosis_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="ノーシス"]それをあなたがその身で経験する機会はないだろうな。
+[charslot(slot="m",name="avg_npc_2012_1#1$1",focus="m")]
+[name="ヴィクトリア大使"]私は個人としての話をしているわけではなく、私自身が経験するかどうかは重要ではないのです。
+[name="ヴィクトリア大使"]すべての人に平等に発言の機会を与える姿勢こそが、こうした悲惨な状況下では必要であると私は信じております。あなたはどうお考えですか？
+[charslot(slot="m",name="avg_206_gnosis_1#1$1",focus="m")]
+[name="ノーシス"]……今更何の目的でこちらに？
+[charslot(slot="m",name="avg_npc_2012_1#2$1",focus="m")]
+[name="ヴィクトリア大使"]ご安心ください、現会長。
+[name="ヴィクトリア大使"]今回私は、公爵閣下に代わりエンシオディスさんに交渉の申し入れをお伝えするために来たまでです。
+[name="ヴィクトリア大使"]これは単に、両国の関係を維持するための平和的な交渉にすぎません。
+[charslot(slot="m",name="avg_206_gnosis_1#1$1",focus="m")]
+[name="ノーシス"]公然と軍隊を派遣してイェラグを包囲し、一般の民へ砲口を向け、兵士に都市を封鎖させておきながら――
+[name="ノーシス"]そのすべてが「平和的な」交渉の一部だと？
+[charslot(slot="m",name="avg_npc_2012_1#1$1",focus="m")]
+[name="ヴィクトリア大使"]ノーシスさん……
+[name="ヴィクトリア大使"]公爵閣下はイェラグの真の主にご理解いただきたいだけなのです。高速航行する艦船は甲板上の人間など気にも留めぬのですから、多くの人にはその手すりを握っていることが最善の選択であると。
+[name="ヴィクトリア大使"]この事実を深く理解するまでの過程には、長い時間が与えられることもあれば、わずかな時間しか与えられないこともあるものですが……それはあなたも聞き及んでいるであろう「命令」次第ですね。
+[charslot(slot="m",name="avg_206_gnosis_1#1$1",focus="m")]
+[name="ノーシス"]回りくどい物言いはやめてもらおうか。あなたが何を言うべきかなど、私が教えるまでもないはずだが。
+[charslot(slot="m",name="avg_npc_2012_1#1$1",focus="m")]
+[name="ヴィクトリア大使"]私としては、「命令」どころか「お願い」と呼びたいくらいなのですよ。ヴィクトリアが「お願い」をするなど、滅多にないことですから。
+[name="ヴィクトリア大使"]我々は誠意をもってエンシオディスさんをお招きしているのです。公爵閣下と共に、イェラグの未来を論ずる熱意ある会談に。
+[name="ヴィクトリア大使"]それが円滑に進行することはこちらで保証いたしましょう。閣下からも、「誰一人傷つけるな」とご指示をいただいておりますので。
+[charslot(slot="m",name="avg_206_gnosis_1#1$1",focus="m")]
+[name="ノーシス"]こちらにも立場があるのでな。ヴィクトリアに対しては、現在行われている軍事侵攻を即刻停止するよう求めるばかりだ。
+[charslot(slot="m",name="avg_npc_2012_1#1$1",focus="m")]
+[name="ヴィクトリア大使"]遺憾ではございますが、それはエンシオディスさんと公爵閣下の会談次第ですね。私には、閣下に代わってお約束する権利はありませんので。
+[name="ヴィクトリア大使"]今の私の望みは、温かい場所でこの冬を越すことのみです。ささやかな願いとしては、そこがイェラグであればとも思いますね。
+[charslot(slot="m",name="avg_206_gnosis_1#1$1",focus="m")]
+[name="ノーシス"]……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", amount=1, keep=true)]
+[bgeffect(name = "$eb_lightsnow" ,layer = 1)]
+[Background(image="30_ex1_snowmount_s",screenadapt="coverall")]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2,fadetime=1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2,fadetime=1)]
+[Delay(time=1)]
+[PlayMusic(key="$monastery_sad_loop", volume=0.6)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=2, block=true)]
+[Sticker(id="st1", text="人はいかなる面持ちで主と向き合うべきか", x=180,y=250, alignment="left", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st2", text="私はかつて己に幾度もそれを問い、それでも答えは見つからず、ただ後ろめたさに涙した", x=180,y=320, alignment="left", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st3", text="風雪の中を彷徨い、何一つ見つけられずにいる今と同じく", x=180,y=420, alignment="left", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=0.5)]
+[Sticker(id="st2",duration=0.5)]
+[Sticker(id="st3",duration=0.5)]
+[Delay(time=1)]
+[Sticker(id="st1",text="カランドの心は、曖昧な誇張的表現に過ぎず", x=180,y=250, alignment="left", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st2",text="夢の中に描く絵画や、崖間の泥に過ぎぬ", x=180,y=320, alignment="left", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st3",text="蔓珠院曰く、人は死に瀕した時、主のご尊顔を見るらしい", x=180,y=390, alignment="left", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st4",text="恐らくはこれが最後の機会となろう", x=180,y=460, alignment="left", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=0.5)]
+[Sticker(id="st2",duration=0.5)]
+[Sticker(id="st3",duration=0.5)]
+[Sticker(id="st4",duration=0.5)]
+[Delay(time=1)]
+[Sticker(id="st1", text="だが私は、あなたに何一つ証明できない", x=180,y=250, alignment="left", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st2",text="我が目に映るはかがり火のそばの母や、窓辺に佇む妻", x=180,y=320, alignment="left", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st3",text="本来あったはずの暮らしばかりだ", x=180,y=420, alignment="left", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=0.5)]
+[Sticker(id="st2",duration=0.5)]
+[Sticker(id="st3",duration=0.5)]
+[Delay(time=1)]
+[Sticker(id="st1", text="あなたはこの不信心な信徒が己のために記した墓碑銘を読み終えた", x=180,y=250, alignment="left", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st2",text="最後に私はあなたに願う", x=180,y=320, alignment="left", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st3",text="どうか墓碑の上の雪を拭い落としてほしい", x=180,y=420, alignment="left", size=24, delay=0.001, width=700,block = true,duration=1)]
+[Sticker(id="st1",duration=0.5)]
+[Sticker(id="st2",duration=0.5)]
+[Sticker(id="st3",duration=0.5)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[bgeffect(layer =1, fadetime = 2.5)]
+[curtain(direction = 0,fillfrom = 0.2,fillto = 0.01,fadetime=2.5)]
+[curtain(direction = 4,fillfrom = 0.2,fillto = 0.01,fadetime=2.5)]
+[CameraEffect(effect="Grayscale", amount=0,fadetime=2, keep=true)]
+[Delay(time=2.5)]
+[bgeffect]
+[curtain]
+道端にぽつりと立った墓の前で、エンヤとアドソは足を止めた。
+[Dialog]
+[charslot(slot="m",name="avg_npc_1998_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="アドソ"]私はただ、彼を埋葬しただけでした。
+[charslot(slot="m",name="avg_npc_1998_1#7$1",focus="m")]
+[name="アドソ"]死の間際、彼に残されていたのは己の墓碑を刻む時間のみだったのです。
+[charslot(slot="m",name="avg_npc_2010_1#12$1",focus="m")]
+[name="エンヤ"]では、道中見かけた白骨はすべて……
+[charslot(slot="m",name="avg_npc_1998_1#1$1",focus="m")]
+[name="アドソ"]ええ、人の亡骸です。
+[name="アドソ"]価値や意義に意味を見出し、麻痺させるのは人だけですから……カランドに登るため、主のおそばへと歩み寄るため、主の存在を確かめるために、彼らは喜んで命を捧げてきたのです。
+[Dialog]
+[charslot(slot="m",name="avg_npc_2010_1#4$1",focus="m")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_2010_1#4$1",focus="m")]
+巫女は右手で欠けた木の墓標を撫でて、墓の主の願いを叶えてやった。
+すると、冷たい風が彼女に何かを掴ませようとするかのように指の間を吹き抜けていく。顔を上げ、白雪に覆われた尾根に目を向ければ、若い女性の笑い声が耳元に響いてきたように感じた。
+[charslot(slot="m",name="avg_npc_2010_1#1$1",focus="m")]
+[name="エンヤ"]長老、今、聞こえまし――
+[Dialog]
+[charslot(slot="m",name="avg_npc_2010_1#1$1",focus="m")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_2010_1#4$1",focus="m")]
+彼女は問いを飲み込んだ。その笑い声は尾根の間をこだましながら徐々に弱まっていき、やがてただ記憶の中に消えていった。
+[charslot(slot="m",name="avg_npc_1998_1#1$1",focus="m")]
+[name="アドソ"]いえ、何も聞こえませんでした。
+[name="アドソ"]先を急ぎましょう、巫女様。
+[Dialog]
+[charslot(slot="m",name="avg_npc_2010_1#1$1",focus="m")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_snowbootwalk", volume=1)]
+[charslot(duration=1)]
+[Delay(time=2.5)]
+エンヤは一瞬ためらった後に一つ頷き、ますます暗くなっていく空のほうへ、厚い雪に覆われた山頂へと歩き続けた。
+吹き荒ぶ風雪は巫女の衣を巻き上げて、枯れ木に降り積もるそれと同じように、雪粒が眉間に貼り付いてくる。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Dialog]
+[Background(image="30_ex1_snowmount_s",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_snowbootwalk", volume=1)]
+[charslot(slot="l",name="avg_4211_snhunt_1#1$1",duration=1.5)]
+[charslot(slot="r",name="avg_1047_halo2_1#8$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot="l",name="avg_4211_snhunt_1#1$1",focus="l")]
+[name="ジョアンナ"]ほら、もっと気合い入れて。あたしに引っ張られてばっかじゃエンヤ様に追いつけないよ。
+[charslot(slot="r",name="avg_1047_halo2_1#8$1",focus="r")]
+[name="エレナ"]はぁ……はぁ……たった、これだけの距離だし……そんなに、そばにいなくても……いいでしょ……
+[charslot(slot="r",name="avg_1047_halo2_1#18$1",focus="r")]
+[name="エレナ"]……そうだ。
+[name="エレナ"]さっき、あの二人……ここで、何かに話しかけてなかった……？
+[charslot(slot="l",name="avg_4211_snhunt_1#1$1",focus="l")]
+[name="ジョアンナ"]うん……そう見えた。
+[charslot(slot="r",name="avg_1047_halo2_1#2$1",focus="r")]
+[name="エレナ"]でも、ここには……雪と、岩しか……はぁ、そんなの気にすることないか……
+[Dialog]
+[PlaySound(key="$d_avg_snowbootwalk", volume=1)]
+[charslot(slot="l", afrom=1, ato=0, duration=1)]
+[charslot(slot="l", posfrom="0,0", posto="150,0", duration=1.5)]
+[charslot(slot="r", afrom=1, ato=0, duration=1)]
+[charslot(slot="r", posfrom="0,0", posto="150,0", duration=1.5)]
+[Delay(time=2.5)]
+エレナが必死に数歩踏み出すと、踏みしめた雪がぼんやりと青白い光を放ち始めた。
+それと同時に、誰かからの視線をかすかに感じたが、そばには彼女の腕を掴んで歯を食いしばるジョアンナのほかには誰もいない。
+風で頭をやられたんだろう。きっとこれは錯覚だ。エレナが心の中でそう思った瞬間、誰かがため息をつく音が聞こえた。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="67_G7_cave",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_npc_1998_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="アドソ"]……あなたは決して勝ち目のない賭けに足を踏み入れたのです。
+[name="アドソ"]巫女様。
+[charslot(slot="m",name="avg_npc_2010_1#1$1",focus="m")]
+[name="エンヤ"]ここが……
+[charslot(slot="m",name="avg_npc_1998_1#1$1",focus="m")]
+[name="アドソ"]ええ。
+[charslot(slot="m",name="avg_npc_1998_1#7$1",focus="m")]
+[name="アドソ"]山々の奥……「カランドの心」の在り処です。
+[Dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot="l",name="avg_4211_snhunt_1#1$1",afrom=0, ato=1, duration=1)]
+[charslot(slot="l", posfrom="150,0", posto="0,0", duration=1.5)]
+[Delay(time=2.5)]
+[name="ジョアンナ"]エンヤ様、お望み通りこの人を連れてきましたよ！
+[charslot(slot="l",name="avg_4211_snhunt_1#4$1",focus="l")]
+[name="ジョアンナ"]（声を抑える）ほら、着いたよ。ぼーっとしてないで。
+[Dialog]
+[charslot(slot="r",name="avg_1047_halo2_1#8$1",afrom=0, ato=1, duration=1)]
+[charslot(slot="r", posfrom="150,0", posto="0,0", duration=2.5)]
+[Delay(time=3.5)]
+[charslot(slot="r",name="avg_1047_halo2_1#4$1",focus="r")]
+[name="エレナ"]えっ……
+[name="エレナ"]……そんな、これって……違う、そんなはずない！
+[Dialog]
+[charslot]
+エレナは思いきり首を横に振り、己の頬を叩くと、大小さまざまな機器を洞窟の壁に向けて操作し始めた。
+この場所はイェラグならどこにでもあるような普通の洞窟に見え、特別な点と言えばカランドの頂上付近に存在することくらいに思えた。エンヤはかすかに息を弾ませて、さらに奥へと進んでいく。
+洞窟の奥行きは100メートルほど、幅は五、六人が並べる程度で決して広くはない。その岩壁はコケと地衣類でうっすらと覆われており、土の匂いとカビ臭さが混じった空気はじっとりとしていた。
+[charslot(slot="m",name="avg_npc_1998_1#7$1",focus="m")]
+[name="アドソ"]主を探そうとしたのはなにもあなた方が最初ではなく、私ですらその第一人者ではありません……
+[charslot(slot="m",name="avg_npc_1998_1#1$1",focus="m")]
+[name="アドソ"]若かりし頃の私は、主の真のお姿を目の当たりにし、その御前に真の意味でひれ伏すことを願って、蔵経閣の書物を読み漁り、詩の一行一行を読み解き、主の存在の証拠を探し求めていました。
+[name="アドソ"]すると多くの先人も様々な記録と分析を残しており、その中にこの場所――カランドでも無二の洞窟に言及した者がいたのです。
+[charslot(slot="m",name="avg_npc_1998_1#3$1",focus="m")]
+[name="アドソ"]その後、長く険しき山道を越え、私はついにここへ辿り着きました……
+[charslot(slot="m",name="avg_npc_2010_1#4$1",focus="m")]
+[name="エンヤ"]記録によると、かつて蔓珠院の修道士はカランドの奥に避難したとありましたね。
+[charslot(slot="m",name="avg_npc_1998_1#1$1",focus="m")]
+[name="アドソ"]まさしく。
+[name="アドソ"]あなたも、イェラガンドを目覚めさせたというかの巫女の物語は覚えておられるでしょう。
+[charslot(slot="m",name="avg_npc_2010_1#10$1",focus="m")]
+[name="エンヤ"]……伝説によると、イェラガンドが天罰を下し、その後蔓珠院が祈りを捧げさせるべく百人の少女を山へ登らせ、そのうち最後の一人が主のお怒りを鎮めたとあります。
+[charslot(slot="m",name="avg_npc_2010_1#1$1",focus="m")]
+[name="エンヤ"]ですがその真相は、最後の少女がある家の当主の娘であったため、各家が結託して蔓珠院に攻め込んだというものでした。
+[charslot(slot="m",name="avg_npc_1998_1#1$1",focus="m")]
+[name="アドソ"]そうして行われた殺戮を生き延びた修道士がここへ逃げ込み、その後いわゆる「神の奇跡」が降臨し、イェラグには平和が戻ったのです。
+[charslot(slot="m",name="avg_npc_2010_1#1$1",focus="m")]
+[name="エンヤ"]その「神の奇跡」はどう説明なさるおつもりなのですか？
+[charslot(slot="m",name="avg_npc_1998_1#8$1",focus="m")]
+[name="アドソ"]今のイェラグを見れば答えは明白でしょう。理由もなく突然終わる戦争など、聞いたことがありますか？
+[name="アドソ"]少女を謀殺したことさえもが「奇跡」と称されるのならば、政治的な妥協が宗教的な伝説に書き換えられるのも無理はありますまい。
+[charslot(slot="m",name="avg_npc_2010_1#12$1",focus="m")]
+[name="エンヤ"]謀殺……長老は当時の蔓珠院の行いをそう捉えておられるのですね……
+[charslot(slot="m",name="avg_npc_1998_1#7$1",focus="m")]
+[name="アドソ"]ええ。彼らはそうした殺人に慰めを求め、愚行に心を駆り立てられていた……それは蔓珠院が「イェラガンド」のために背負った血なまぐさい負債であると言えましょう。
+[name="アドソ"]永遠を保証してくれる神などいないのですから、我らは薄氷を踏むが如く、一歩一歩に慎重を期さねばなりません。
+[charslot(slot="m",name="avg_npc_1998_1#8$1",focus="m")]
+[name="アドソ"]さて、巫女様。イェラガンドの真相はすでに示した通りです……
+[name="アドソ"]あなたがどれほど足掻かれようと、私は待ち続けるとしましょう。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_4211_snhunt_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_1047_halo2_1#4$1",focus="r")]
+[name="エレナ"]エンヤ！　これ見て！
+[name="エレナ"]一番奥の壁、石を積み上げて作られてるんだと思う。自然物には見えないよ。まるでこの奥に続く道を隠してるみたい。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1998_1#1$1",focus="m")]
+[name="アドソ"]……かつての修道士たちがここを隠れ家としようとしていたのだから、何が見つかろうと不思議ではない。
+[charslot(slot="m",name="avg_npc_2010_1#12$1",focus="m")]
+[name="エンヤ"]となれば……あるいはこの「壁」の奥こそが、蔓珠院の修道士たちの隠れ家となった場所であり、そこには数多の秘密が眠っているかもしれないということですね……
+[charslot(slot="m",name="avg_npc_1998_1#8$1",focus="m")]
+[name="アドソ"]それどころか、壁の向こうには何もないという可能性のほうが高いと思いますが。
+[charslot(slot="m",name="avg_npc_2010_1#1$1",focus="m")]
+[name="エンヤ"]ならば、それを確かめさせてください。
+[charslot(slot="m",name="avg_npc_1998_1#1$1",focus="m")]
+[name="アドソ"]……
+[Dialog]
+[charslot(slot="m",name="avg_npc_2010_1#1$1",focus="m")]
+[Delay(time=1.5)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=1.5)]
+[Delay(time=2)]
+巫女は薄く目を閉じると、歴史を語った老人の前を通り過ぎ、洞窟の最深部へと近付いていく。
+そうして、深く息を吸い込むと、久方ぶりに会う人と抱擁を交わすようにして、奥の壁にぴったりと身を寄せた。
+両手と頬は土で汚れ、髪の先にはコケがついている。その姿は大地の上でまどろんでいるかのようだ。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_npc_2010_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[name="エンヤ"]……感じます。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_4211_snhunt_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_1047_halo2_1#11$1",focus="r")]
+[name="エレナ"]探査機の反応を見るに、この薄い壁の向こうに大きな空洞が広がってるみたいだね。
+[name="エレナ"]だけど、入り口は見当たらないや……必要なら、この壁を爆破してもいいんだけど。
+[charslot(slot="l",name="avg_4211_snhunt_1#6$1",focus="l")]
+[name="ジョアンナ"]ちょっと、聖地にそんな真似――
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2010_1#1$1",focus="m")]
+[name="エンヤ"]ええ、お願いします。
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_4211_snhunt_1#10$1",focus="l")]
+[charslot(slot="r",name="avg_1047_halo2_1#11$1",focus="l")]
+[name="ジョアンナ"]なっ、エンヤ様！？
+[charslot(slot="r",name="avg_1047_halo2_1#9$1",focus="r")]
+[name="エレナ"]我らのイェラガンドに……
+[name="エレナ"]真相を明らかにするために、どうか無礼をお赦しください……！
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=1)]
+[Character]
+[Image]
