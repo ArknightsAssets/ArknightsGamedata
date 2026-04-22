@@ -1,0 +1,805 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_airridsrn", volume=1, loop=true, channel="ai")]
+[Delay(time=1.5)]
+[SoundVolume(volume=0.2, channel="ai",fadetime=4)]
+[PlaySound(key="$d_avg_telegraph_loop", volume=1, loop=true, channel="e")]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[Delay(time=1)]
+“這裡是調度中心。”
+“目標已鎖定，正在向涅瓦湖方向移動。”
+“各單位暫停炮火打擊，依計劃包圍座標位置。”
+“座標已傳送至終端。”
+……
+[dialog]
+[StopSound(channel="e", fadetime=3)]
+[StopSound(channel="ai", fadetime=3)]
+[PlayMusic(key="$darkness_03_loop", volume=0.6)]
+[Background(image="bg_newiceforest_2",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1", duration=1, isblock=true)]
+[name="阿米婭"]Raidian，你們成功穿越樹林了嗎？
+[dialog]
+[charslot(slot = "m", focus="n")]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "Raidian", switch = true, style = 1,offset = "-450,125", channel = 3)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#5$1", duration = 0)]
+[Delay(time=0.5)]
+[name="Raidian"]先遣隊已經到達會合地點。
+[dialog]
+[interlude(channel = 3, switch = false)]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "阿洛伊澤", switch = true, style = 1,offset = "450,125", channel = 4)]
+[interlude(channel = 4, type = 3, slot = "m", switch = true, pfrom = "480,-80", pto="480,-80", name = "avg_npc_1966_1#4$1", duration = 0)]
+[Delay(time=0.5)]
+[name="阿洛伊澤"]第一批接應的車輛到了，等待後續車輛抵達還需要一點時間。
+[dialog]
+[name="阿洛伊澤"]抱歉，事先沒有料想到會是這麼緊急的狀況。
+[interlude(channel = 4, switch = false)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]Raidian，你有偵測到集團軍後續的動向嗎？
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#3$1", duration = 0)]
+[name="Raidian"]還沒有……自從我們發出全域廣播後，集團軍的軍用頻段就沉默了。他們應該已經有所防範，我們暫時無法掌握集團軍的更多動向。
+[name="Raidian"]這裡太安靜了，反而讓人有點不安……
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#2$1", duration = 0)]
+[name="Raidian"]阿米婭，你們一定要注意隱藏行蹤。
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]知道了，我們會小心的。
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#4$1", duration = 0)]
+[name="Raidian"]好，保持聯絡。Mantra的情況怎麼樣？
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]Mantra女士還處於脫力狀態，精神也尚未恢復。別喬克他們幫忙做了一個簡易擔架——
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, switch = false)]
+[name="Mantra"]阿米婭。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="阿米婭"]Mantra女士！請您不要繼續“說話”了……
+[charslot(slot = "m", focus="n")]
+[name="Mantra"]我已經清醒了。請告訴極境，我能站起來自己行動。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="阿米婭"]不，您不可以。
+[charslot(slot = "m", focus="n")]
+[name="極境"]我就說還不可以！
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#6$1", duration = 0)]
+[name="Raidian"]Mantra，記得上次煌因為任務受傷必須在床上靜養半個月的時候嗎？我們甚至都沒讓她的腳尖碰地超過一秒。
+[name="Raidian"]現在，你也別想。
+[interlude(channel = 3, switch = false)]
+[name="Mantra"]……情況不同。
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#5$1", duration = 0)]
+[name="Raidian"]唔。或者各退一步吧，等你們順利穿越樹林，你在我和極境當中選一個當你的拐杖。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[interlude(channel = 3, clear = true)]
+[interlude(channel = 4, clear = true)]
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1969_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l", name = "avg_4207_branch_1#1$1", posfrom="-200,0", posto="0,0", duration=1.5, isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_4207_branch_1#10$1", focus="l")]
+[name="別喬克"]走過去，穿越結冰的，湖面，前面就是……聖駿堡嗎？
+[name="別喬克"]我聽說，感染者……都不能進入，移動城市。
+[charslot(slot = "r", name = "avg_npc_1969_1#1$1", focus="r")]
+[name="礦工"]還沒感染的時候，我也沒去過移動城市。進礦區之前我都待在村子裡，直到天災降臨，把大部分的村民都變成了感染者。
+[name="礦工"]不過那些人不是說不需要我們自己走過去嗎？不是會有車來接我們，就像我們之前找到的那些。
+[name="礦工"]我記得尼克托那個小子就是從聖駿堡來的，只可惜他現在不在這裡。
+[name="礦工"]“小枝條”，你覺得尼克托和雷爾金他們現在正在做什麼呢？他們走得比較早，會不會已經到那個什麼農莊了？
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_4207_branch_1#2$1", focus="l")]
+[name="別喬克"]也、也許……有可能。
+[name="別喬克"]我希望，是這樣。
+[dialog]
+[charslot]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_avg_drone", volume=0.5)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.3)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.5)]
+[Delay(time=1.5)]
+[name="Mantra"]……所有人，馬上就近尋找掩體臥倒！
+[dialog]
+[CameraShake(duration=1, xstrength=10, ystrength=10, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion_stone", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_wilderness_n",screenadapt="coverall")]
+[PlayMusic(intro="$shatterpoint_01_intro", key="$shatterpoint_01_loop", volume=0.6)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="n")]
+[name="Raidian"]——！
+[charslot(slot = "l", name = "avg_npc_1966_1#11$1", focus="l")]
+[name="阿洛伊澤"]轟炸——在樹林那邊！集團軍抵達了？！
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]我探測到了……就在剛剛，又有一支軍隊從東面發動突襲。
+[name="Raidian"]他們好像掌握了我們的位置……他們準備把我們往涅瓦湖的方向驅趕。
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "l", name = "avg_npc_1966_1#6$1", focus="l")]
+[name="阿洛伊澤"]他們瘋了！這裡已經是中央區的地界，集團軍不可能不清楚這代表什麼！
+[dialog]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[Delay(time=1)]
+[SoundVolume(volume=0.2, channel="sn",fadetime=2)]
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]“聖駿堡的安全受到威脅……集團軍……即將消滅敵人。”
+[name="Raidian"]這是公開廣播，他們還在向聖駿堡傳送訊號，聲稱這是剿滅叛亂的行動！
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="阿洛伊澤"]不……不不不……哈……原來，原來是這樣……
+[charslot(slot = "l", name = "avg_npc_1966_1#5$1", focus="l")]
+[name="阿洛伊澤"]屠殺、驅趕……集團軍就是打著鎮壓叛亂的名義陳兵聖駿堡城下，用炮口對準聖駿堡的城門，再去跟議會談判！
+[name="阿洛伊澤"]這就是他們的目的……這就是他們用遠北幾十萬人的性命，想要達成的結果。
+[dialog]
+[charslot(slot = "l", focus="n")]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]阿米婭，聽得到嗎？
+[name="Raidian"]在你們東側有集團軍的部隊，小心躲避——
+[dialog]
+[charslot(slot = "l", focus="n")]
+[PlaySound(key="$d_avg_telegraph_loop", volume=1, loop=true, channel="e")]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[StopSound(channel="e", fadetime=4)]
+[Delay(time=2)]
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]……磁暴帶來的影響太強烈了，這個距離沒有辦法建立穩定的通訊。
+[name="Raidian"]阿洛伊澤，大部隊的人很快就會到達，我需要你留在這裡指揮大家依序上車撤離。
+[charslot(slot = "l", name = "avg_npc_1966_1#11$1", focus="l")]
+[name="阿洛伊澤"]女士，那您呢？
+[charslot(slot = "r", name = "avg_npc_1730_1#6$1", focus="r")]
+[name="Raidian"]我必須回去，為他們指引撤離的方向。
+[charslot(slot = "l", name = "avg_npc_1966_1#11$1", focus="l")]
+[name="阿洛伊澤"]你要把我和這些撤離的車留在一起？你就不怕我丟下你們自己逃回聖駿堡？
+[charslot(slot = "r", name = "avg_npc_1730_1#5$1", focus="r")]
+[name="Raidian"]如果那是你最終的決定，我也希望你可以提前通知我。
+[name="Raidian"]羅德島會另想辦法。
+[charslot(slot = "l", name = "avg_npc_1966_1#11$1", focus="l")]
+[name="阿洛伊澤"]你……
+[charslot(slot = "l", name = "avg_npc_1966_1#1$1", focus="l")]
+[name="阿洛伊澤"]呵……那個叫羅德島的地方，裡面的人都跟你一樣嗎？
+[charslot(slot = "r", name = "avg_npc_1730_1#1$1", focus="r")]
+[name="Raidian"]……他們都是比我還要勇敢的人。
+[name="Raidian"]這裡的指揮就交給你了，“中士”。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_newiceforest_2",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[CameraShake(duration=1, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n", volume=0.6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[CameraShake(duration=3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion_stone", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=0.5)]
+[charslot(slot = "m", name = "avg_npc_1969_1#1$1", posfrom="-200,0", posto="0,0", duration=0.5, isblock=true)]
+[name="礦工"]在追我們的到底是什麼東西？簡直像是憑空出現——
+[charslot]
+[name="Mantra"]（踉蹌）
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "char_401_elysm_na_1#6")]
+[name="極境"]隊長小心！
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="極境"]集團軍在無差別轟炸，我們是不是換一條路比較好？
+[charslot]
+[charslot(slot = "l", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]極境先生，你可以聯絡到Raidian嗎？先遣隊的處境可能會比我們更加危險！
+[dialog]
+[charslot(slot = "l", focus="n")]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = true, offset = "250,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "260,0", pto="260,0", name = "avg_npc_1730_1#6$1", duration = 1)]
+[Delay(time=0.5)]
+[name="Raidian"]阿米婭！你們在哪裡？
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "l", name = "avg_1037_amiya3_1#4$1", focus="l")]
+[name="阿米婭"]我們還在涅瓦湖東岸的樹林裡！我們正在遭受集團軍的炮火攻擊——
+[charslot(slot = "l", focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "260,0", pto="260,0", name = "avg_npc_1730_1#6$1", duration = 0)]
+[name="Raidian"]集團軍在東邊增派了部隊，我們現在只能儘快穿過涅瓦湖！穿過涅瓦湖……就到聖駿堡了。
+[name="Raidian"]集團軍未經允許不能踏上涅瓦湖西岸的土地，這是他們最後的底線，也是我們現在唯一的生路。
+[name="Raidian"]阿米婭，無論如何，我們必須趕在集團軍徹底合圍之前儘快穿過涅瓦湖——
+[dialog]
+[PlaySound(key="$transmission", volume=1)]
+[interlude(channel = 3, clear = true, tsto="0,1", tsduration=0.5)]
+[Delay(time=1)]
+[charslot(slot = "l", name = "avg_1037_amiya3_1#4$1", focus="l")]
+[name="阿米婭"]Raidian？Raidian？！
+[dialog]
+[charslot(slot = "l", focus="n")]
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[Delay(time=1)]
+[name="Raidian"]磁暴——通訊——
+[name="Raidian"]——向西南——冰面——
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="66_g8_farnorthtundra_aurora",screenadapt="coverall")]
+[bgeffect(name="$eb_blizzard",layer=1)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]請大家不要使用任何照明設備，我們只能摸黑前進，儘快穿過冰面。
+[name="阿米婭"]一直向西南……我會為大家指引方向的。
+[charslot(slot = "m", name = "avg_4207_branch_1#4$1")]
+[name="別喬克"]我明白。看著星星，有方向——
+[dialog]
+[charslot]
+[CameraShake(duration=1, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n", volume=0.6)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.1, block=true)]
+[CameraShake(duration=3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion_stone", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[Delay(time=1)]
+零星的炮彈開始像驚雷一樣砸下，而後在人群中央炸開。破片四散，巨大的衝擊將原本聚集的隊伍輕易撕裂成兩半。
+[charslot(slot = "m", name = "avg_4207_branch_1#6$1")]
+[name="別喬克"]畢揚叔叔——！
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_surfacefrozen", volume=1)]
+[delay(time=1)]
+橫亙在中間的，是開裂的冰面與那些來不及反應而墜落其中的同伴。
+[dialog]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=1, loop=true, channel="cr")]
+[StopSound(channel="cr", fadetime=6)]
+[name="驚慌的礦工"]啊！！
+[name="驚慌的礦工"]冰面還在開裂——我們過不去了！
+[charslot(slot = "m", name = "avg_1037_amiya3_1#4$1")]
+[name="阿米婭"]先往另一邊跑！不要過來！
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="極境"]阿米婭，他們越來越近了！
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]極境先生，聯絡到Raidian了嗎？！
+[name="阿米婭"]隊伍被打散了，現在有一些落單的礦工需要接應，就在剛才炮彈落下位置的西北方——
+[dialog]
+[charslot]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 ,switch = true, offset = "0,0", channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "10,0", pto="10,0", name = "avg_npc_1730_1#6$1", duration = 1)]
+[Delay(time=0.5)]
+[name="Raidian"]收到。
+[name="Raidian"]我正在趕過去。
+[interlude(channel = 3, clear = true)]
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="恍惚的礦工"]嘶——嗚……
+[charslot(slot = "m", name = "avg_4207_branch_1#7$1")]
+[name="別喬克"]達雅，你的腿上，有血……我幫你，止血！
+[dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot = "m", name = "avg_npc_501_1#1$1", posfrom="-200,0", posto="0,0", duration=1)]
+[Delay(time=1.5)]
+[name="醫療幹員"]我來幫忙——
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="恍惚的礦工"]呼……不。別喬克，就把我丟在這裡吧。
+[name="恍惚的礦工"]我身上還有打火石。你留根乾柴給我，然後快走。我幫你們引開那些傢伙，至少還能多拖一陣子。
+[charslot(slot = "m", name = "avg_4207_branch_1#5$1")]
+[name="別喬克"]達雅，我扶著你。我可以，扶著你！
+[name="別喬克"]不要……不要放棄。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]沒錯，不要放棄！血馬上就能止住了，等上車之後，我們就能幫你進一步包紮——
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="恍惚的礦工"]但那些不停丟出源石炸彈的傢伙不會等！他們正在把我們當野生的裂獸一樣驅趕，你們難道都沒有發現嗎？
+[name="恍惚的礦工"]如果只是為了殺死我們，那把經過的所有地方都點燃、都炸成廢墟，也能達成目的。
+[name="恍惚的礦工"]我不信他們沒有這樣的能力。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]……但這不是我們應該放棄的理由……
+[charslot(slot = "m", name = "avg_npc_1970_1#1$1")]
+[name="恍惚的礦工"]你不瞭解。還沒被丟進礦井之前，我是個獵戶，我知道城裡那些人最喜歡什麼樣的狩獵遊戲。
+[name="恍惚的礦工"]他們最喜歡把獵物驅趕到一起，先打死一兩隻，然後觀賞剩下的獵物在包圍網內激烈地反抗。
+[name="恍惚的礦工"]說真的，我甚至都不確定自己能不能至少引開他們一下下，但我得試試看。
+[name="恍惚的礦工"]只是腿上被炸了個洞，沒什麼大不了的，就算往東邊爬，我也能爬個幾十公尺。
+[name="恍惚的礦工"]所以別再浪費時間了，把乾柴留下，你們……快走。
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="恍惚的礦工"]快點！
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[bgeffect]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[verticalbg(imagegroup="66_i15_4/66_i15_3/66_i15_2/66_i15_1", solidwidth=1280, solidheight="720/720/720/625", y=540)]
+[largebgtween(duration = 30, yFrom = 1800, yTo = 800, block = false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[name="擔憂的幹員"]請大家依序上車！我們會在這裡停留十五分鐘，不必——
+[name="擔憂的幹員"]——推擠……
+幹員的聲音突然變小了，因為她發現隊伍既沒有推擠，也不混亂。
+人群只是沉默著，不斷前進。
+[dialog]
+[PlaySound(key="$d_avg_footsteps_flock", volume=1)]
+[SoundVolume(volume=0.2, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[verticalbg]
+[Background(image="bg_wilderness_n",screenadapt="coverall")]
+[Delay(time=1)]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]……我得說，我從來都沒有看過這麼安靜、有秩序的撤離行動。
+[name="阿洛伊澤"]連以治軍嚴苛聞名的第一集團軍可能都做不到這樣。
+[charslot(slot = "m", name = "avg_npc_1560_1#1$1")]
+[name="擔憂的幹員"]這是好事吧？
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]還是有點反常，不是嗎？就好像他們的求生本能都被關閉了一樣。
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="阿洛伊澤"]算了，也可能是我想太多。
+[name="阿洛伊澤"]你的隊長還在最後面收尾，你不擔心嗎？
+[charslot(slot = "m", name = "avg_npc_1560_1#1$1")]
+[name="擔憂的幹員"]隊長是我們當中救援經驗最豐富的。
+[charslot]
+幹員踮起腳抬頭，視線越過與漆黑冰面融為一體的人群，嘗試尋找隊長的身影。
+但她看到的只有最遠處那抹刺目的紅。
+[charslot(slot = "m", name = "avg_npc_1560_1#1$1")]
+[name="擔憂的幹員"]難道他們真的停在了那裡……
+[dialog]
+[charslot]
+[PlaySound(key="$d_sp_ballista",volume=0.3)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_explosion_stone",volume=0.3)]
+[delay(time=1)]
+[playsound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=1)]
+[name="Raidian"]敵人開始轟炸冰面了！
+[name="Raidian"]我聯絡不到駕駛員，需要附近的人去通知她把車輛保持啟動狀態，以便隨時撤離。
+[name="Raidian"]收到請回覆！
+[charslot(slot = "m", name = "avg_npc_1560_1#1$1")]
+[name="擔憂的幹員"]收、收到！
+[name="擔憂的幹員"]阿洛伊澤小姐，請您先上車吧，這裡有我——
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]不，你先上去，幫你的隊長跟駕駛員溝通。
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1")]
+[name="阿洛伊澤"]我——
+[name="阿洛伊澤"]我留在這裡。
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[curtain(direction = 2,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[verticalbg(imagegroup="66_i16_4/66_i16_3/66_i16_2/66_i16_1", solidwidth=1280, solidheight="720/720/720/625", xScale=0.9, yScale=0.9)]
+[largebgtween(duration = 20, yFrom = 600, yTo = 750, block = false)]
+[Delay(time=1)]
+[PlayMusic(key="$m_avg_ursusspecial_loop", volume=0.6)]
+[PlaySound(key="$d_avg_cndlbrn", volume=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+轉移了近衛軍注意的是一簇火。
+起先只是一簇，站在隊伍最後的某個人舉起的火。
+沒有人聽到他是否說了什麼，也沒有人知道他為什麼要這樣做。那個人似乎只是停下腳步，舉起火，然後開始往回走。
+[name="礦工"]誰點火的？不是說不能照明——
+[name="礦工"]是基安。
+[name="礦工"]基安？以前幫大家做打火石的基安？他剛才還把乾木柴拿給達雅。
+[name="礦工"]是他。他在往回走，但東邊都是軍隊！難道他也要去送死？
+[name="礦工"]他要做和達雅一樣的事。
+[name="礦工"]但我們明明馬上就能得救——
+[name="礦工"]我也有打火石，我也有乾木柴。
+[name="礦工"]你要做什麼？
+[name="礦工"]冰面被轟炸了，他們不會放過我們。如果什麼也不做，這樣下去……
+[name="礦工"]沒有人可以活下來。
+[name="礦工"]但我想活下來，我想去聖駿堡！
+[name="礦工"]我們本來會死在礦區裡的，記得嗎？和烏薩斯所有的感染者一樣。
+[name="礦工"]如果我們現在能讓最前面的其他同伴，讓那些來救我們的年輕人活下去……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[curtain(direction = 2,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[verticalbg(imagegroup="66_i17_4/66_i17_3/66_i17_2/66_i17_1", solidwidth=1280, solidheight="720/720/720/625", xScale=0.9, yScale=0.9)]
+[largebgtween(duration = 20, yFrom = 1100, yTo = 1300, block = false)]
+[PlaySound(key="$d_avg_cndlbrn", volume=0.2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_cndlbrn", volume=0.5)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_cndlbrn", volume=1)]
+[name="礦工"]就會有人記得這裡發生了什麼，比我們這些老傢伙記得更久、更清楚。
+火從一支火把的頂端，傳遞到另一支火把的頂端。
+一個人放棄了生路，接著是第二個、第三個、第四個……
+越來越多還沒上車的礦工舉起火，開始往回走去。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[curtain]
+[verticalbg(imagegroup="66_i18_4/66_i18_3/66_i18_2/66_i18_1", solidwidth=1280, solidheight="720/720/720/720",y=2160)]
+[largebgtween(duration = 50, yFrom = 2160, yTo = 0, block = false)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_bionicuavs", volume=0, loop=true, channel="bi")]
+[SoundVolume(volume=0.2, channel="bi",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_footsteps_flock", volume=1)]
+他們走向基安，走向達雅，走向所有被拋在身後的腳印，也走向那越來越逼近的威脅。
+[name="別喬克"]他們……不能再……掩埋……我們。
+[name="別喬克"]不能。
+[name="礦工"]沒錯，他們不能再悄無聲息地掩埋我們，無論是埋在雪裡，還是埋在礦井裡、湖水裡！
+[name="礦工"]我們從兄弟姐妹手中取走火，點起光，照亮路……
+[name="礦工"]我們在這裡，是要讓整個烏薩斯都看見——
+[name="礦工"]看見我們曾經活過。
+[dialog]
+主動選擇殿後的礦工們，在寒夜中一個接著一個舉起火把。
+他們選擇暴露自己的位置，在冰面上形成一條清晰而穩定的火帶。
+“烏薩斯無法將今夜像往常一樣掩埋。”他們這樣堅信。
+[dialog]
+[SoundVolume(volume=0.5, channel="bi",fadetime=2)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_shipwhistle", volume=1)]
+[delay(time=2)]
+而在這道火光的盡頭，紅色的眼睛並未停止注視。
+[dialog]
+[PlaySound(key="$d_avg_mechwarrior", volume=1)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.5)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.8)]
+[stopmusic(fadetime=2)]
+[StopSound(channel="bi", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[verticalbg]
+[curtain]
+[PlaySound(key="$d_avg_snowstormflp", volume=1, loop=true, channel="sn")]
+[Background(image="66_g8_farnorthtundra_aurora",screenadapt="coverall")]
+[bgeffect(name="$eb_blizzard",layer=1)]
+[Delay(time=1)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion_stone")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[StopSound(channel="sn", fadetime=2)]
+[PlayMusic(intro="$m_avg_prts_intro", key="$m_avg_prts_loop", volume=0.6)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_gen_surfacefrozen", volume=1)]
+[delay(time=2)]
+轟炸仍在持續，冰面仍在開裂，不斷有人從那些歙張的大口中墜落。
+直到被吞沒的最後一刻，他們都高喊著舉起手中燃燒的火把，只有聲音中微不可聞的顫抖，洩露了他們的恐懼。
+不可能不害怕，不可能不畏縮。
+但他們還是高舉著火，試圖用自己的死，為身後的人換一條生路。
+即使羅德島眾人試圖阻止，也沒有一個人聽從。
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="極境"]阿米婭，轟炸還在持續！阿洛伊澤那邊的車已經載滿人了，等待後續車輛抵達還需要時間——
+[charslot(slot = "m", name = "char_401_elysm_na_1#7")]
+[name="極境"]阿米婭！
+[charslot(slot = "m", name = "avg_1037_amiya3_1#10$1")]
+[name="阿米婭"]為什麼……他們為什麼要這麼做……
+[name="阿米婭"]我們得繼續阻止他們，不能這樣下去——
+[charslot(slot = "m", name = "avg_4204_mantra_1#3$1")]
+[name="Mantra"]我現在的能力無法阻攔這麼多人。
+[name="Mantra"]但是阿米婭，這裡一定有我們能做到的事。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#2$1")]
+[name="阿米婭"]Mantra女士……！
+[name="阿米婭"]我能感覺到，我能感覺到他們……
+[name="阿米婭"]他們的……憤怒。
+[name="阿米婭"]這份情感太強大了，就好像他們自己都快被這股憤怒燒成灰燼一樣。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]……不可以……
+[name="阿米婭"]不可以再這樣下去了。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#4$1")]
+[name="阿米婭"]必須——
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="阿米婭"]必須停止這場屠殺！
+[charslot]
+憤怒，相似的憤怒。
+這是阿米婭一直以來都在努力克制的情緒，這是她永遠不會放任的情緒。
+憤怒如同眼中的星火一樣點燃了阿米婭的心臟，流向她的指尖。
+[dialog]
+[musicvolume(volume=0.2, fadetime=0.5)]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="“即使我不報復也不懷恨，我也有永遠憤怒下去的權利！”", x=300, y=350, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+青與黑的長劍，怒火打磨的長劍，如願再度出現在她手中。
+[dialog]
+[image]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2, fadetime=0.1)]
+[Background(image="66_g8_farnorthtundra_aurora", screenadapt="coverall", xScale=1.4, yScale=1.4, y=-200, fadetime=0)]
+[focusout(type="bg", id="66_g8_farnorthtundra_aurora", from=0, to=1, duration=0.1, block=false)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#4$1", posfrom="60,-30", posto="60,-30", duration=0)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.6, duration = 0)]
+[PlaySound(key="$d_avg_humanchange", volume=1)]
+[delay(time=0.4)]
+[musicvolume(volume=0.6, fadetime=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="阿米婭"]影霄——
+[dialog]
+[PlaySound(key="$firestorm", volume=1)]
+[PlaySound(key="$d_sp_chixiaobadao", volume=1)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.03, block=true)]
+[bgeffect(name="$eb_hoshiguma_boost_down",layer=2)]
+[backgroundTween(yFrom=0, yTo=150, duration=10)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#4$4", duration=0)]
+[charslot(slot = "m", posfrom="0,350", posto="0,420", duration=10)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.6, duration = 0)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=2, block=true)]
+[Delay(time=3)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[charslot]
+[curtain]
+[Background]
+[focusout(type="bg", id="66_g8_farnorthtundra_aurora", from=1, to=0, duration=0.1, block=false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$d_avg_tswordlight", volume=1)]
+[PlaySound(key="$d_avg_swrdgnlght", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Image(image="66_i24", screenadapt="coverall")]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=20, block=false)]
+[PlaySound(key="$d_avg_firerockfall", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_mgctrntsrkshld", volume=1)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_drkcludsthdr", volume=0, loop=true, channel="dr")]
+[SoundVolume(volume=1, channel="dr",fadetime=2)]
+[playsound(key="$d_avg_churchfire", loop=true, channel="f", volume=0)]
+[SoundVolume(volume=0.4, fadetime=2,channel="f")]
+[delay(time=2)]
+隨著揮劍的動作，青色的火焰自劍鋒處迸發而出，高度凝結的能量束瞬間就在冰上劃出一道火牆，同時也是一條漫長而明確的分界線。
+一側，是裂痕正在擴散的冰面和被擋在火牆之外的炮彈。
+另一側，是渺小的卡特斯與手舉火焰的感染者。
+[name="阿米婭"]你們……
+而後，阿米婭將劍指向對岸，指向那將人如牲畜般驅趕與殺戮的源頭——集團軍。
+[dialog]
+[SoundVolume(volume=0.2, channel="f",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Sticker(id="st1", multi = true, text="“在此停下。”", x=300, y=350, alignment="center", duration=1, size=28, delay=0.04, width=700)]
+[Sticker(id="st1", duration=1, block = false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[SoundVolume(volume=0.4, channel="f",fadetime=2)]
+[PlaySound(key="$d_gen_thunders_amb", volume=1)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.03, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+劍鋒閃爍，青焰升騰，她以此告誡製造屠殺的劊子手，無論是炮火、士兵，還是軍艦本身，在怒火消弭、背棄都得到清算前……
+他們將永遠無法跨越這條界線。
+[dialog]
+[StopSound(channel="f", fadetime=2)]
+[PlaySound(key="$d_avg_firerockfall", volume=1)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[SoundVolume(volume=0.4, channel="dr",fadetime=2)]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[charslot]
+[verticalbg(imagegroup="66_i18_4/66_i18_3/66_i18_2/66_i18_1", solidwidth=1280, solidheight="720/720/720/625")]
+[largebgtween(duration = 0, yFrom = 1240, yTo = 0, block = false)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_bionicuavs", volume=0, loop=true, channel="bi")]
+[SoundVolume(volume=1, channel="bi",fadetime=2)]
+[PlaySound(key="$d_avg_warning_scifi", volume=1)]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+“報告，前方偵測到來源不明的高能量源石反應。”
+“……謹慎觀察，暫緩推進。”
+“收到。”
+[dialog]
+[StopSound(channel="dr", fadetime=2)]
+[StopSound(channel="bi", fadetime=2)]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=4, block=true)]
+[verticalbg]
+[bgeffect(name="$eb_blizzard",layer=1)]
+[Background(image="66_g8_farnorthtundra_aurora",screenadapt="coverall")]
+[PlaySound(key="$d_avg_snowstormflp", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=1, channel="sn",fadetime=2)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.5)]
+[musicvolume(volume=0.4, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_tankbiggun", volume=0.2)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "char_401_elysm_na_1#6")]
+[name="極境"]……他們要停火了？
+[dialog]
+[PlaySound(key="$transmission", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "Raidian", switch = true, style = 1,offset = "-450,125", channel = 3)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#3$1", duration = 0)]
+[Delay(time=0.5)]
+[charslot(slot = "m", focus="n")]
+[name="Raidian"]沒有，轟炸還在持續，只是頻率降低了。
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#6$1", duration = 0)]
+[name="Raidian"]阿米婭，你已經成功擋住了部分攻擊，請儘快歸隊。
+[interlude(channel = 3, switch = false)]
+[charslot(slot = "m", name = "char_401_elysm_na_1#8")]
+[name="極境"]支援的車輛應該很快就要到達了，準備撤離！
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$4")]
+[name="阿米婭"]……不。
+[name="阿米婭"]我留在最後，等所有人都離開。
+[charslot(slot = "m", name = "char_401_elysm_na_1#6")]
+[name="極境"]等一下……有新的情況！
+[name="極境"]西邊好像有車輛正在向我們加速駛來，但那不是我們的車——好像是卡車！
+[name="極境"]他們直接開上了冰面！
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-450,20", pto="-435,20", name = "avg_npc_1730_1#6$1", duration = 0)]
+[name="Raidian"]全體戒備——
+[dialog]
+[StopSound(channel="sn", fadetime=2)]
+[interlude(channel = 3, switch = false)]
+[PlaySound(key="$transmission", volume=1)]
+[interlude(maskid = "group_interclude_square_common", char = "Mon3tr", switch = true, style = 1,offset = "450,125", channel = 4)]
+[interlude(channel = 4, type = 3, slot = "m", switch = true, pfrom = "455,-20", pto="455,-20", name = "avg_4179_monstr_1#10$1", duration = 0)]
+[Delay(time=0.5)]
+[name="Mon3tr"]Raidian！這個東西終於派上用場了，是我們！我和博士，還有科謝尼婭——
+[dialog]
+[charslot(slot = "m", focus="n")]
+[interlude(channel = 3, switch = false)]
+[interlude(channel = 4, switch = false)]
+[Decision(options="還有柳德米拉。;還有幹員弒君者。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="羅德島……;準備集合。", values="1;2")]
+[Predicate(references="1;2")]
+[musicvolume(volume=0.2, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[interlude(channel = 4, clear = true)]
+[interlude(channel = 3, clear = true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$rungeneral", volume=1, loop=true, channel="r")]
+[StopSound(channel="r", fadetime=1)]
+[charslot(slot = "m", name = "avg_4179_monstr_1#12$1", posfrom="-200,0", posto="0,0", duration=0.5, isblock=true)]
+[Delay(time=0.5)]
+[name="Mon3tr"]阿米婭！
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$4")]
+[name="阿米婭"]博士！Mon3tr！你們怎麼——
+[name="阿米婭"]而且幹員弒君者……？
+[dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_1502_crosly_1#1$1", duration=1.5, isblock=true)]
+[Delay(time=0.5)]
+[name="弒君者"]趕路的時候沒時間閒聊，我也有很多問題想問。
+[name="弒君者"]但現在，先上車。
+[dialog]
+[charslot]
+[Decision(options="託卡車互助會的福。;之後再告訴你。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="大家都還好嗎？", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_4204_mantra_1#8$1")]
+[name="Mantra"]不會讓你失望。
+[dialog]
+[charslot]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=1.5)]
+[name="Raidian"]還好。可以之後再慢慢敘舊，我們必須儘快撤離了。
+[dialog]
+[Decision(options="對。總之，幹員Mon3tr、幹員弒君者……;以及{@nickname}，歸隊。", values="1;2")]
+[Predicate(references="1;2")]
+涅瓦湖西南岸崗哨的所有監視器光束，在快速掃過冰面上的倖存者之後，指向對岸的集團軍。
+白光散射，與紅光無聲對峙，而後，轟炸的頻率再度降低。
+[dialog]
+[PlaySound(key="$d_avg_telegraph_loop", volume=1, loop=true, channel="e")]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=1.5)]
+“各單位注意，這裡是調度中心。”
+“根據聖駿堡緊急電報要求，各單位立即停火。”
+“重複，各單位立即停火。”
+“收到請回覆。”
+“……”
+“……”
+“……”
+“收到。”
+[StopSound(channel="e", fadetime=3)]
+[charslot(slot = "m", name = "char_401_elysm_na_1#9")]
+[name="極境"]這次好像是……真的停止了。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$4")]
+[name="阿米婭"]而且，全員都歸隊了。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#9$4")]
+[name="阿米婭"]太好了……
+[dialog]
+[charslot]
+[Decision(options="是的……", values="1")]
+[Predicate(references="1")]
+[Decision(options="看來，我們都趕上了。", values="1")]
+[Predicate(references="1")]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

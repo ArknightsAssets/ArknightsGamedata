@@ -1,0 +1,21 @@
+[HEADER(is_tutorial=true, is_autoable=false, is_skippable=false)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[InputBlocker(blockInput=true)]
+[Delay(time=0.5)]
+[Battle.SwitchToDefaultUIState]
+[Battle.Pause]
+[popupdialog(dialogHead="$avatar_mcreep_a",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black="$f_tut_black", protectTime=0.5)] 你們是救援隊嗎？這種奇怪的汙染還在蔓延，我們熟悉這裡的情況，可以幫你們排除它的影響。
+[popupdialog(dialogHead="$avatar_mcreep_a",dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", black="$f_tut_black", protectTime=0.5)] 問題出在那些<@tu.kw>嚴重汙染設施</>上，打碎它們，就能消除汙染。
+[Battle.EnsureMinSp(charId="trap_270_spawnp", sp=15)]
+[Battle.UnlockFunction(mask="CHARACTER_MENU")]
+[InputBlocker(blockInput=true, tileX=1, tileY=6, validWidth=85, validHeight=85)]
+[Tutorial(tileX=1, tileY=6, focusWidth=85, focusHeight=85, waitForSignal="char_info", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_mcreep_a", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 這裡是<@tu.kw>隱蔽礦道</>，我們通常在這裡活動。
+[InputBlocker(blockInput=true)]
+[Delay(time=0.3)]
+[Tutorial(target="btn_skill", waitForSignal="use_skill", \
+          animStyle="Click", focusStyle="HighlightCircle", black="$f_tut_black", \
+          protectTime=0.5, dialogHead="$avatar_mcreep_a")] 如果有需要，你們可以向我們求助。
+[InputBlocker(blockInput=true)]
+[Battle.UnLockFunction(mask="SYSTEM_MENU_INTERACT")]

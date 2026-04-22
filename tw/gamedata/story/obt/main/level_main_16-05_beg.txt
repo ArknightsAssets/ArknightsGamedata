@@ -1,0 +1,394 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="66_g10_instituteinterior",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>烏薩斯，遠北中心礦區研究所</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot = "left", name = "avg_4208_wintim_1#1$2",duration=1)]
+[charslot(slot = "right", name = "avg_4179_monstr_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot(slot = "right", name = "avg_4179_monstr_1#8$1",focus="r")]
+[name="Mon3tr"]她剛剛……是不是說了“內衛”？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="我聽到她說的是……; 殺死內衛。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "right", name = "avg_4179_monstr_1#5$1",focus="r")]
+[name="Mon3tr"]她的意思是……這種叫“奧卡”的物質，殺死了內衛？
+[name="Mon3tr"]這有可能嗎？難道這是某種比“國度”更恐怖的邪魔產物？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="一種從礦井中發現的未知物質。; 研究所用它分別在感染者和非感染者身上做了實驗。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="實驗結果顯示，它會使感染者的病情加重。", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "right", name = "avg_4179_monstr_1#2$1",focus="r")]
+[name="Mon3tr"]也許，這是這裡的研究員對某種物質的特殊稱呼，在見到實物之前，我們都沒辦法下定論。
+[charslot(slot = "right", name = "avg_4179_monstr_1#6$1",focus="r")]
+[name="Mon3tr"]科謝尼婭，科謝尼婭！看著我，你還能再想起什麼？
+[charslot(slot = "left", name = "avg_4208_wintim_1#1$2",focus="l")]
+[name="科謝尼婭"]我……你是……
+[charslot(slot = "m", focus = "n")]
+Mon3tr以為這次呼喚會與之前一樣毫無收穫，但女人迷濛的雙眼卻忽地睜大了。
+緊接著，她反手死死抓住眼前人的衣服，把Mon3tr拉到身前。
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "left", name = "avg_4208_wintim_1#6$2",focus="l")]
+[name="科謝尼婭"]你是——您是所長？凱爾希所長？
+[name="科謝尼婭"]您來接我了嗎？我想回去，我還想見到老師——
+[charslot(slot = "left", name = "avg_4208_wintim_1#7$2",focus="l")]
+[name="科謝尼婭"]我想見伊利亞老師……還有柳達……嗚……
+[name="科謝尼婭"]但他們……他們還想見我嗎？我這麼懦弱，什麼也做不到……我還有資格見到他們嗎？
+[name="科謝尼婭"]嗚……嗚嗚——啊！！！
+[charslot(slot = "right", name = "avg_4179_monstr_1#9$1",focus="r")]
+[name="Mon3tr"]我……我——
+[charslot(slot = "m", focus = "n")]
+然而還沒等Mon3tr作出回應，女人又猛地放手，跌坐回去。
+[charslot(slot = "left", name = "avg_4208_wintim_1#8$2",focus="l")]
+[name="科謝尼婭"]不，不對……
+[name="科謝尼婭"]你不是凱爾希所長。我再也沒見過她了，就像我再也沒見過其他人。她不該在這裡。
+[name="科謝尼婭"]我甚至見過她後來的同伴，他們……他們……
+[charslot(slot = "right", name = "avg_4179_monstr_1#8$1",focus="r")]
+[name="Mon3tr"]你見過？你見過誰？是不是一位個子小小的、總是面帶微笑的黎博利？
+[charslot(slot = "left", name = "avg_4208_wintim_1#1$2",focus="l")]
+[name="科謝尼婭"]黎博利……是啊，我見過她。
+[charslot(slot = "right", name = "avg_4179_monstr_1#8$1",focus="r")]
+[name="Mon3tr"]她去哪裡了？
+[charslot(slot = "left", name = "avg_4208_wintim_1#1$2",focus="l")]
+[name="科謝尼婭"]我不知道……
+[name="科謝尼婭"]那群殺死內衛的人……那些感染者，她之前和那些人在一起。
+[name="科謝尼婭"]他們會死！所有人都會死！
+[charslot(slot = "left", name = "avg_4208_wintim_1#7$2",focus="l")]
+[name="科謝尼婭"]嗚……我不知道——我不知道……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="她需要鎮靜劑。; 她有脫水的症狀。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "right", name = "avg_4179_monstr_1#1$1",focus="r")]
+[name="Mon3tr"]那這些消息——
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="礦工的逃跑與內衛有關。; Mantra說過內衛造成的汙染在向南蔓延。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="答案已經很明顯了。", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "right", name = "avg_4179_monstr_1#5$1",focus="r")]
+[name="Mon3tr"]可是，內衛真的被殺了嗎？被一群礦工？這有可能嗎？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="或許我們應該考慮……; 如果這是真的，那將代表著什麼。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "right", name = "avg_4179_monstr_1#5$1",focus="r")]
+[name="Mon3tr"]那位女大公封鎖礦區的真正目的，是為了隱藏有個內衛死在了她的轄區的事實？
+[charslot(slot = "right", name = "avg_4179_monstr_1#8$1",focus="r")]
+[name="Mon3tr"]但這不可能！無論是皇帝還是集團軍都不會善罷甘休的，如果她真的想要掩蓋這件事，一開始就不會答應讓我們進入礦區。
+[charslot(slot = "right", name = "avg_4179_monstr_1#4$1",focus="r")]
+[name="Mon3tr"]還有那位近衛軍，她知道這件事嗎？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="沒錯……; 這些正是我們需要擔心的事。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="先通知Mantra和阿米婭吧。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[Background(image="66_g9_institutecorridor",screenadapt="coverall")]
+[playsound(key="$d_gen_transmissionget")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="Mantra"]收到，博士。
+[name="Mantra"]我們這裡同樣有些發現，與你們得到的情報相符。
+[name="Mantra"]有個場所內有打鬥痕跡，並且遺落了一些醫療用品。
+[name="Mantra"]是來自羅德島的醫療用品。
+[name="Mantra"]我們馬上跟你們會合。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[Background(image="bg_Morgue",screenadapt="coverall")]
+[playsound(key="$d_gen_transmissionget")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[name="阿米婭"]知道了……博士。
+[name="阿米婭"]我們馬上就到。
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]怎麼了？你的同伴那邊有什麼發現？
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]恐怕需要我們會合後才能說明。
+[name="阿米婭"]阿洛伊澤小姐，這裡還有什麼需要注意的線索嗎？
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="阿洛伊澤"]我所知有限，找不到什麼更有效的訊息，有必要的話，等一下讓那位博士親自來查看也無妨。
+[name="阿洛伊澤"]不過這倒是更加讓我確信了軍方毫無底線……
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]阿洛伊澤小姐，我想問，對於發生在礦區的事，您還知道什麼嗎？
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]嗯？你是想問什麼？這座研究所裡的實驗還是發生變異的感染者？
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="阿洛伊澤"]……怎麼了？
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]……
+[charslot(slot = "m", focus = "n",name = "avg_npc_1966_1#10$1")]
+[PlaySound(key="$d_avg_crystalmagic_loop")]
+阿米婭向來抗拒在這樣的情況下以這種方式使用自己的能力，但她仍舊嘗試觸碰了眼前這位近衛軍的思緒。
+阿洛伊澤的心頭滿是陰霾和疑惑，卻並未摻雜心虛。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="阿米婭"]沒什麼，我們走吧。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g10_instituteinterior",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]博士，這些資料……還有遺書，該怎麼辦？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="這份遺書沒有提及太多與石棺有關的內容。; 那位近衛軍提供了不少情報，我們也該適當地回報。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot]
+[playsound(key="$d_avg_openftstpwalk")]
+[playsound(key="$d_avg_churchfootstep",delay=0.3,volume=0.5,channel="2")]
+[name="靠近的聲音"]是在這邊嗎？還真是難找……
+[name="靠近的聲音"]果然，藏得這麼深，一定有秘密——
+[dialog]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1",duration=0.5)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="阿洛伊澤"]——等等，這是誰？
+[charslot(slot = "m", focus = "n", name = "avg_4208_wintim_1#2$2")]
+近衛軍的目光投向斜靠在牆邊那名面色蒼白、雙目緊閉的女人。
+[charslot]
+[charslot(slot = "m", name = "avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]科謝尼婭，一個沒有撤離的研究員。
+[name="Mon3tr"]研究所與流動醫療隊可能有往來，本來想問她我們那些同伴的去向，但她的精神恍惚、嚴重脫水，不適合繼續詢問她。
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]那地上這些蠟燭和線路又是……？
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]……我猜，這是她為自我了斷所做的準備。博士，這裡到底發生了什麼事情？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="我們及時趕到，阻止了爆炸發生。; 情況很複雜。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]你手上拿的那些文件是什麼？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="遺書，你也看看吧。; （遞給她）", values="1;2")]
+[Predicate(references="1;2")]
+[playsound(key="$d_avg_paper2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[delay(time=1.5)]
+[name="阿洛伊澤"]……一事無成的研究員，名叫“奧卡”的神秘物質……人體實驗。
+[name="阿洛伊澤"]看樣子，我們在下面見到的那些死者，是被這個“奧卡”殺死的。
+[charslot(slot = "m", name = "char_401_elysm_na_1#6")]
+[name="極境"]這裡真的在做人體實驗？
+[charslot(slot = "m", name = "char_401_elysm_na_1#7")]
+[name="極境"]該死，我當時只是說說而已——
+[charslot(slot = "m", name = "avg_4204_mantra_1#2$1")]
+[name="Mantra"]（搖頭）
+[charslot(slot = "m", name = "avg_npc_1966_1#5$1")]
+[name="阿洛伊澤"]哼，看來女大公果真隱瞞了很多東西。
+[name="阿洛伊澤"]但是這個實驗的目的是什麼？這裡的研究員會使用這種卑劣的手段，我並不意外，但他們肯定有什麼企圖！
+[name="阿洛伊澤"]這位研究員呢？她什麼也沒說嗎？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="看起來有些研究資料已經被人為銷毀了。; 但不確定是礦工還是這裡的研究員自己銷毀的。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]所以，我們還是不知道那些變異感染者誕生的原因。
+[name="阿洛伊澤"]起碼我們現在知道這裡還有活下來的礦工逃走了，先不論這位研究員，那些逃走的礦工很有可能就是整件事的唯一切入點了。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="那些感染者礦工在洗劫了研究所後離開了。; 他們往南去了，這是唯一的線索。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]我們的動作要快點了……這位研究員恢復到可以接受詢問的狀態還需要多久？
+[charslot(slot = "m", name = "avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]很難預估。她嚴重脫水，剛見面時精神狀況也很糟糕，我們得先幫她治療。
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]真麻煩……
+[name="阿洛伊澤"]我們還不清楚礦工已經逃跑多久了，既然知道了方向，就必須盡快追上去。
+[name="阿洛伊澤"]但我們不可能帶著沒有行動能力的傷員上路。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="我和Mon3tr留下照顧科謝尼婭。; 你們去追蹤離開的礦工隊伍。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#10$1")]
+[name="阿洛伊澤"]呃……你們確定要單獨留在這裡？
+[name="阿洛伊澤"]雖然這是你們的自由，但我還是有必要提醒你們一下。
+[name="阿洛伊澤"]現在沒有人知道遠北這些礦區都處於什麼樣的狀態，同樣也沒有人能保障你們的安全。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="我們有能力保護好自己的安全。", values="1")]
+[Predicate(references="1")]
+[Decision(options="你們可以相信阿米婭的指揮。", values="1")]
+[Predicate(references="1")]
+[charslot]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="阿米婭"]博士？
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="你可以的，阿米婭。; 相信你自己的判斷。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot]
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"]我會和阿米婭一起。
+[name="Mantra"]博士，希望你們一切順利。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="等科謝尼婭恢復行動能力，我們就去找你們會合。; 離開汙染區之後，通訊應該會逐漸恢復。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]那就這樣。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]博士，如果通訊一直沒有恢復，那我們找到那群礦工之後就回研究所和你們會合。
+[charslot(slot = "m", name = "avg_4204_mantra_1#1$1")]
+[name="Mantra"]（點頭）
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]好，現在備案也有了，我們快點出發吧。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_battlefield",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>烏薩斯遠北中心礦區</><p=2>三天前</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playsound(key="$d_avg_truckengine", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.8, channel="bgs",fadetime=2)]
+[delay(time=2)]
+[StopSound(channel="bgs", fadetime=1)]
+[delay(time=1)]
+[playMusic(intro="$escape_intro",key="$escape_loop", volume=0.6)]
+[name="激動的糾察隊隊員"]就在這邊……快點過來！
+[dialog]
+[charslot(slot="l",name="avg_npc_082",duration=0.5)]
+[delay(time=1)]
+[name="疑惑的糾察隊隊員"]喂，你幹嘛用跑的！這個爛定位時好時壞，說不定根本不在這裡。
+[name="疑惑的糾察隊隊員"]上次有個礦場的馱獸為了找草吃跑出了界，那時牠跑了十幾公里之後這個東西才發送訊號給崗哨，誰知道這次會不會也是一樣的情況？
+[dialog]
+[playsound(key="$d_avg_snowbootwalk")]
+[charslot(slot="r",name="avg_npc_082",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="散漫的糾察隊隊員"]按理說這些人不該出現在南出口周圍，這條路早就封了——
+[charslot(slot="l",name="avg_npc_082",focus="l")]
+[name="疑惑的糾察隊隊員"]嗯？你怎麼會從那邊過來？
+[name="疑惑的糾察隊隊員"]不對，你不是我們隊的吧？你在這裡做什麼？
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="散漫的糾察隊隊員"]我還想問你呢。這裡不在你們隊的管轄範圍內吧？
+[charslot(slot="l",name="avg_npc_082",focus="l")]
+[name="疑惑的糾察隊隊員"]現在早就沒人在管什麼轄不轄區了，誰先接到消息、先找到逃跑的感染者，那功勞就是誰的。
+[name="疑惑的糾察隊隊員"]走開，別擋路。
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="散漫的糾察隊隊員"]照你的說法，是我們先來的，那這次的功勞應該是我們的。
+[charslot(slot="l",name="avg_npc_082",focus="l")]
+[name="疑惑的糾察隊隊員"]誰找到就*烏薩斯粗口*算誰的。
+[charslot]
+[dialog]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_082",duration=1)]
+[delay(time=1.5)]
+[name="糾察隊隊長"]托夏，你幹嘛啦？不要跟他講那麼多廢話，先找人吧。
+[charslot]
+[name="激動的糾察隊隊員"]在這邊！他們都躲在——哈哈哈哈啊哈哈！
+[charslot(slot="m",name="avg_npc_082")]
+[name="疑惑的糾察隊隊員"]他笑成這樣，是發現什麼了嗎？
+[charslot(slot="m",name="avg_npc_082")]
+[name="糾察隊隊長"]走，過去看看。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="激動的糾察隊隊員"]前面有個不深不淺的洞，那幾個礦工就躲在裡面，還以為我們發現不了——
+[name="激動的糾察隊隊員"]天啊，哈哈哈哈哈啊哈哈……這太好笑了。
+[charslot(slot="l",name="avg_npc_082",focus="l")]
+[name="糾察隊隊長"]哼。他們以為那是什麼，戰壕嗎？
+[name="糾察隊隊長"]托夏、戈沙，帶著所有人，你們快點過去把那些馱獸不如的笨蛋給我抓出來。
+[dialog]
+[charslot(slot="r",name="avg_npc_082",duration=0.5)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="散漫的糾察隊隊員"]從定位上來看，這些逃竄的感染者礦工數量還不少呢，需要幫忙嗎？
+[charslot(slot="l",name="avg_npc_082",focus="l")]
+[name="糾察隊隊長"]你們隊有多少人？
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="散漫的糾察隊隊員"]不多，加上我也只有六個人。
+[charslot(slot="l",name="avg_npc_082",focus="l")]
+[name="糾察隊隊長"]太多了。
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="散漫的糾察隊隊員"]隨便你怎麼說。我們是這附近僅剩的兩支有空的隊伍，而且是我們先來這裡的。
+[name="散漫的糾察隊隊員"]這次的功勞，就算你們不想分，也得算我們一份。
+[dialog]
+[charslot]
+[stopmusic(fadetime=2)]
+[Delay(time=0.5)]
+[charslot(slot = "l",action="zoom", poszoom = "0.5,0.5", scale=0.95,duration = 0, name = "avg_npc_082",afrom=0,ato=0)]
+[charslot(slot = "r",action="zoom", poszoom = "0.5,0.5", scale=0.95,duration = 0, name = "avg_npc_082",afrom=0,ato=0)]
+[charslot(slot = "right",posfrom = "120,0", posto = "0,0",duration = 0.7,afrom=0,ato=1,focus="m")]
+[Delay(time=0.5)]
+[charslot(slot = "l",posfrom = "-120,0", posto = "0,0",duration = 0.7,afrom=0,ato=1,focus="m")]
+[Delay(time=1)]
+[charslot(duration=0.5)]
+[Delay(time=0.6)]
+[charslot]
+[charslot(slot="l",name="avg_npc_082",posfrom = "50,0", posto = "50,0",duration = 0.7)]
+[Delay(time=0.5)]
+[charslot(slot="r",name="avg_npc_082",posfrom = "-50,0", posto = "-50,0",duration = 0.7)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot="l",name="avg_npc_082",focus="l")]
+[charslot(slot="r",name="avg_npc_082",focus="l")]
+[name="糾察隊隊長"]……
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="散漫的糾察隊隊員"]怎麼——
+[playMusic(intro="$calamity_intro",key="$calamity_loop", volume=0.6)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot]
+[name="激動的糾察隊隊員"]——啊！！！
+[charslot]
+尖叫聲打破了兩支隊伍的對峙。
+[PlaySound(key="$fightgeneral",volume=0.7)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_punch_xshield",channel="2",delay=0.3)]
+[playsound(key="$d_avg_riot", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.2, channel="bgs",fadetime=2)]
+緊隨其後的是肢體搏鬥、鈍器砸碎骨肉的聲響。
+[charslot(slot="m",name="avg_npc_082")]
+[name="糾察隊隊長"]發生什麼——
+[charslot]
+[name="激動的糾察隊隊員"]救命！救我！他們都瘋了——
+[name="激動的糾察隊隊員"]這些該死的感染者都*烏薩斯粗口*瘋了！
+[dialog]
+[charslot]
+[Delay(time=1)]
+[playsound(key="$d_avg_snowbootwalk")]
+[charslot(slot="m",name="avg_npc_1963_1#10$1",duration=1.5)]
+[delay(time=2)]
+[name="雷爾金"]你說得對……
+[charslot(slot="m",name="avg_npc_1963_1#5$1")]
+[name="雷爾金"]我會讓你們見識一下，感染者的憤怒，還有瘋狂。
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot] 

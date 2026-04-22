@@ -1,0 +1,404 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="bg_black",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[name="侍衛"]尊敬的客人，久等了，請跟我來。
+[Dialog]
+[delay(time=1)]
+應衛兵的要求，你在大廳內耐心等待著，等待阿洛伊澤與那位傳聞中的女大公的談話得出一個結果。
+沉悶的室內沒有任何可以確認時間的裝置，彷彿是刻意不允許訪客擁有掌握時間的權利。
+百般無聊中，你回想起了不久前的談話——
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=0.7, block=true)]
+[Background(image="66_g1_bleskstreet",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(intro="$loading_intro",key="$loading_loop", volume=0.6)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_4179_monstr_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#5$1",focus="l")]
+[name="阿米婭"]只允許博士一個人去會面？
+[charslot(slot = "r", name = "avg_4179_monstr_1#5$1",focus="r")]
+[name="Mon3tr"]我也覺得這是不合理的要求。如果發生意外，我和阿米婭都沒有辦法第一時間保護你。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="畢竟這是在對方的地盤。;對方似乎並不打算給我們討價還價的空間。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#7$1",focus="l")]
+[name="阿米婭"]那位阿洛伊澤小姐說願意幫我們引見女大公，但我們仍然不知道她到底為什麼要幫助我們……
+[charslot(slot = "r", name = "avg_4179_monstr_1#4$1",focus="r")]
+[name="Mon3tr"]我的記憶庫裡也沒有提到烏薩斯有這樣一位年輕貴族。
+[charslot(slot = "r", name = "avg_4179_monstr_1#2$1",focus="r")]
+[name="Mon3tr"]可是能夠擔任特使，還與那位女大公直接認識的人，怎樣都不會是普通人才對。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="她顯然還隱藏著許多秘密。;來自聖駿堡的特使與地方貴族之間的關係的確很微妙。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="但她也明確表示過，需要我們和她一起進入礦區。", values="1")]
+[Predicate(references="1")]
+[Decision(options="無論如何，我們與她的合作都是必要的。;這是我們目前僅有的能夠進入礦區的機會。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#1$1",focus="l")]
+[name="阿米婭"]但畢竟羅德島的確曾出現在烏薩斯官方的視野內，我們現在還無法確定這裡的管理者對我們的態度。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="我從過去的事中累積到了一些經驗。;這樣的場合對我來說不完全算是陌生……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "left", name = "avg_1037_amiya3_1#6$1",focus="l")]
+[name="阿米婭"]博士，我會支持你的決定，但請你務必小心。
+[charslot(slot = "r", name = "avg_4179_monstr_1#6$1",focus="r")]
+[name="Mon3tr"]帶好通訊終端！要是出現了什麼意外狀況請立刻通知我們，就算要撞破這棟大樓我們也會第一時間衝進去把博士你救出來的！
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="我會見機行事。;我會盡可能避免出現這樣的情況……", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="只是……", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Background(image="bg_black",screenadapt="coverall")]
+封鎖礦區，究竟是想要隱瞞什麼……？
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_openftstpwalk")] 
+[delay(time=1.5)]
+與這座城市的街道一樣，這座建築內的走廊同樣異常空曠。
+引路者將你帶到這裡，微微點頭後快步離開，全程不發一言。
+他似乎篤定你憑直覺就能找到正確的房間，又或者只是習慣性考驗一下來訪的客人。
+所幸，你分辨出了那位近侍身上散發出的蘋果木燃燒後的暖融氣息，它指引你推開了這裡唯一一扇散發出了相似味道的門。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i05", fadetime=0, xScale=1, yScale=1,screenadapt="coverall")]
+[Background(image="bg_black",screenadapt="coverall")]
+[PlaySound(key="$d_avg_gateopen")]
+[playsound(key="$d_avg_woodcracle", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=0.7, channel="bgs",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[playMusic(key="$m_avg_ursusdaily_loop", volume=0.6)]
+這是個幽寂的房間。
+[ImageTween( xScaleFrom=1, yScaleFrom=1, xScaleTo=1.3, yScaleTo=1.3, duration=60)]
+彷彿是巨大而沉默的石壁在這座陰冷的城市中隔絕出了一處不容打擾的空間。
+目之所及，只有一抹雍容的灰藍色身影佇立在空闊房間的盡頭。
+[Dialog]
+[Decision(options="您好。", values="1")]
+[Predicate(references="1")]
+[Decision(options="尊敬的葉莉薩維塔·康斯坦丁諾夫娜·拉齊薩拉女大公殿下。;……", values="1;2")]
+[Predicate(references="1")]
+[name="葉莉莎女大公"]我可以感受到你的敬意。不必拘謹，你可以像我的朋友一樣，稱我為葉莉莎女大公。
+[name="葉莉莎女大公"]我能感覺到，你一定是位心思機敏的人。
+[Predicate(references="2")]
+[name="阿洛伊澤"]你可以稱呼她葉莉莎女大公。
+[name="阿洛伊澤"]……我很抱歉，女大公殿下。我應該提醒此人注意禮數的。
+[name="葉莉莎女大公"]這有什麼關係呢？
+[name="葉莉莎女大公"]真誠的善意是不依賴於禮數而存在的，讓我們的客人放鬆一點吧。
+[Predicate(references="1;2")]
+那是一道出乎你意料的、柔和而天真的聲音。
+這裡的主人緩緩轉過身。
+[Dialog]
+[SoundVolume(volume=0.4, channel="bgs",fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[image]
+[Background(image="66_g2_farnorthgovernment",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1962_1#3$1",duration=1.5)]
+[delay(time=2.5)]
+[name="葉莉莎女大公"]我歡迎每一位到訪布列斯克的客人……
+[name="葉莉莎女大公"]阿洛達，是不是該向我介紹一下你的朋友？
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]哦，當然……這位就是我剛剛和您提起的，來自羅德島製藥公司的博士——
+[Dialog]
+[charslot]
+[Decision(options="我的名字是{@nickname}。;您可以叫我Dr.{@nickname}。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="很榮幸能受到您的接見。;希望我的拜訪並不冒昧。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#3$1")]
+[name="葉莉莎女大公"]不必那麼拘束，請上前一點吧，坐在離火爐更近一點的地方。侍從馬上會端熱茶過來。
+[name="葉莉莎女大公"]遠道而來的客人或許很難適應這個季節的布列斯克，雖然此地偏遠，但實際上也有溫和宜人的時候。
+[name="葉莉莎女大公"]那麼，您來這裡的路上還順利嗎？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="恐怕很難稱為順利……;布列斯克是一座治安很好的城市。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="葉莉莎女大公"]請您相信，您在這裡所見到的一切，其目的都是維護這座城市來之不易的安寧。
+[name="葉莉莎女大公"]阿洛達已經向我充分說明了，她新結識的朋友是多麼優秀的礦石病專家，正是這座城市如今非常需要的人才。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="這裡需要礦石病專家？;烏薩斯……需要礦石病專家？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="葉莉莎女大公"]我們年輕的皇帝陛下有意要將他的恩寵平等地降在每一位帝國的子民身上，他甚至不願意讓感染與否成為區分他的子民的一道標準。
+[name="葉莉莎女大公"]陛下為此付出了萬分辛苦的努力，甚至到了每一位臣子看了都要心痛的程度。
+[name="葉莉莎女大公"]但很少有人真正理解，陛下這樣純真的心性是多麼珍貴的寶物。身為他的追隨者，我們應當努力踐行他的意志。
+[name="葉莉莎女大公"]布列斯克與遠北最大的礦區毗鄰，但這裡對礦石病的醫療手段還達不到陛下的理想。所以，我們需要一些有能力的醫生。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]若是出於這樣的目的，Dr.{@nickname}一定是您能在此處尋找到的最優秀的合作夥伴。
+[name="阿洛伊澤"]我曾見識過羅德島發表的學術巨著——和帝國大學中那些只會拾人牙慧的蛀蟲學究不同，羅德島在礦石病方面擁有領先的知識。
+[charslot(slot="m",name="avg_npc_1962_1#3$1")]
+[name="葉莉莎女大公"]哦……我還從來沒有在任何場合聽到這位驕傲的青年軍官對任何人表達過欣賞。
+[name="葉莉莎女大公"]是聖駿堡的工作改變了你的脾氣嗎？我清楚地記得，你的父親抱怨過你是如何一次次在公爵的宴會上讓他下不了台階的。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]讓您見笑了，女大公殿下。
+[name="阿洛伊澤"]我還是想說些傲慢的辯解——我向來敬佩有真才實學的人，如您，還有我身邊的這位Dr.{@nickname}。
+[name="阿洛伊澤"]承蒙您還記得家父，我都差點忘了替他向您問好。
+[charslot(slot="m",name="avg_npc_1962_1#3$1")]
+[name="葉莉莎女大公"]至少他的工廠還在為遠北的每一位戰士生產最好的軍裝，邊境舉辦的每一場宴會上也都還能聽到他的名字。
+[name="葉莉莎女大公"]……還是說回我們的這位朋友吧。
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="葉莉莎女大公"]讓我們開誠布公地談談吧——羅德島，在布列斯克都有什麼打算呢？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="我們希望您能夠准許我們進入遠北礦區。;我們有一支流動醫療隊在中心礦區失聯了。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#2$1")]
+[delay(time=1.5)]
+[charslot(slot = "m", focus = "n")]
+聽到你的話語，女大公在一瞬間表現出了不至失態的驚訝。
+她看向了阿洛伊澤，而你準確地捕捉到了這位年輕近衛軍眼神中的閃躲。
+女大公長嘆了一口氣，似乎在很認真地苦惱著。
+[charslot(slot="m",name="avg_npc_1962_1#4$1")]
+[name="葉莉莎女大公"]唉……Dr.{@nickname}——是這樣稱呼，對嗎？
+[name="葉莉莎女大公"]如果是這位年輕人讓您產生了不該有的誤會，那我感到遺憾。
+[name="葉莉莎女大公"]我們歡迎羅德島在布列斯克建設辦事處，我願意提供一些力所能及的幫助……
+[name="葉莉莎女大公"]但遠北的礦區，目前並不是可供客人遊覽的時候。
+[name="葉莉莎女大公"]如果您的夥伴們在礦區走丟了，留下他們最後的行蹤和外貌描述吧，我會派遣足夠的人手幫您找到他們的。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="請原諒，但我認為我們還需要再仔細談談……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#4$1")]
+[name="葉莉莎女大公"]那恐怕……
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]女大公殿下。
+[name="阿洛伊澤"]如果是以我的名義，邀請他們與我同行呢？
+[charslot(slot="m",name="avg_npc_1962_1#4$1")]
+[name="葉莉莎女大公"]哦，阿洛達……你總是有這樣淘氣的小把戲。
+[name="葉莉莎女大公"]你明明知道，布列斯克需要專業的礦石病醫生。
+[name="葉莉莎女大公"]明明只要有你的推薦，我甚至不會將此當作一個人情，我會允許你的朋友在這裡開展業務。
+[name="葉莉莎女大公"]但你看看，你現在在做什麼？讓我們寶貴的客人捲入泥雪一樣的麻煩？
+[name="葉莉莎女大公"]阿洛達……你正在把事情變得更複雜。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]這不是一件複雜的事情——請原諒，女大公殿下。
+[name="阿洛伊澤"]我從來都沒有隱瞞過我這次來的目的。
+[name="阿洛伊澤"]皇帝在上，聖駿堡不會有半個人擔憂您治下的布列斯克會有任何不安定的可能。
+[name="阿洛伊澤"]但是對此時此刻正在封閉的礦區，對感染者異變感到好奇的人，不在少數。
+[name="阿洛伊澤"]來到這裡的可能會是某個遊手好閒的年輕新貴族，或者是研究礦石病的專家。當然也有可能是某個集團軍的上尉，或者是議會的大人物。
+[charslot(slot = "m", focus = "n")]
+年輕近衛軍的語氣依舊輕佻，令人幾乎無法辨別其話語中的尖銳是不懂禮數的冒犯，還是別有深意的刺探。
+葉莉莎女大公的眼睛眯了起來。
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="葉莉莎女大公"]要是他們有疑問，那就讓他們帶著疑問來吧。
+[name="葉莉莎女大公"]集團軍眼中討好新貴族的牆頭草派，議會眼中的邊境女大公，我已經習慣所有人對布列斯克抱有疑問與獵奇心理了。
+[name="葉莉莎女大公"]那麼，親愛的阿洛達，你又是代表著誰，來向我問責的呢？
+[charslot(slot="m",name="avg_npc_1966_1#11$1")]
+[name="阿洛伊澤"]不不不！您一定是誤會我的意思了！
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]您知道的，拜訪您的封地，對我來說是再好不過的美差。
+[name="阿洛伊澤"]我來到這裡，只是想向您請願，能否允許這些礦石病專家，與我一同去礦區查明感染者的異狀呢？
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="葉莉莎女大公"]……
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="兩位，能否容我插一句話？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="葉莉莎女大公"]見諒，尊敬的客人，請說吧。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="我希望說明羅德島的立場。", values="1")]
+[Predicate(references="1")]
+[Decision(options="羅德島只是一家嘗試解決感染者問題的醫藥公司。;我們擔憂失聯的朋友的安危，需要儘快找到他們。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="對於其他的事，羅德島不會，也無從插手。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="葉莉莎女大公"]雖然剛才沒有問起，但是我不得不好奇——
+[name="葉莉莎女大公"]您的同伴，又是為何前往中心礦區的呢？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="他們去那裡蒐集礦石病的病例。;他們是烏薩斯人。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="葉莉莎女大公"]哦……
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="羅德島的目的很純粹。", values="1")]
+[Predicate(references="1")]
+[Decision(options="畢竟，羅德島的背後沒有任何勢力。;畢竟，羅德島對這裡一無所知。", values="1;2")]
+[Predicate(references="1")]
+話音剛落，你突然意識到過於直白的話語反而讓承諾顯得不可信，但這樣輕率的表態又很難讓人懷疑背後有所陰私。
+女大公的表情帶著一絲玩味。
+[Predicate(references="2")]
+一直認真聽著你說話的女大公，終於在此時表現出了一絲鬆動。
+她臉上的表情變化十分地克制，但你似乎能感覺到她的眼神的確緩和了幾分。
+[Predicate(references="1;2")]
+[Dialog]
+[Decision(options="總之，一切都只是為了找到我們的同伴。;這是我們僅有的訴求。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="葉莉莎女大公"]一邊是我關懷的後輩，一邊是只是想找回同伴的礦石病醫生……
+[name="葉莉莎女大公"]如果我再拒絕的話，是否會顯得我過於不近人情了呢？
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]我很明白，您只是在擔憂遠道而來的朋友，害怕他們會陷入危險。
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="葉莉莎女大公"]我當然不希望有任何人在這片土地上遭遇不幸，如果我有足夠的時間，我情願為每一個凍土之上的人送去火爐。
+[name="葉莉莎女大公"]阿洛達，你願意保證，會儘力保障朋友的安全嗎？
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]……懇請您相信。
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="葉莉莎女大公"]好，好。Dr.{@nickname}，去吧，去找回你的同伴。
+[name="葉莉莎女大公"]我准許羅德島在遠北礦區通行。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="謝謝您的仁慈。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="葉莉莎女大公"]我希望我的確是仁慈的，可是真的很少有人會感謝他人的仁慈。
+[name="葉莉莎女大公"]人們會敬畏將權利從他們手中奪走的人，又會對將其中一部分權利歸還給他們的人感恩戴德。但我想，這無論如何都稱不上是仁慈。
+[name="葉莉莎女大公"]遠北的風很冷，請準備好禦寒的衣服，Dr.{@nickname}。
+[stopmusic(fadetime=2)]
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g1_bleskstreet",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$darkness01_intro",key="$darkness01_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#8$1",duration=0.5)]
+[delay(time=1)]
+[name="阿米婭"]博士，你們出來了！
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]呃……也不用這麼激動吧，阿米婭小姐。
+[name="阿洛伊澤"]這裡是布列斯克的行政中樞，又不是什麼魔窟——我們聊得還算順利，對嗎？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Dialog]
+[Decision(options="非常順利。;有一些意外的插曲。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="你還是有所隱瞞。;無論是對我們，還是對那位女大公。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#2$1")]
+[name="阿洛伊澤"]好吧，我承認。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]但這的確是我能創造的最理想的對話機會了。就結果而言，還不錯吧？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="那位女大公……", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]怎麼了？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="和我的預期有點不同。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]哦？你預期的是什麼樣子的？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="更冷酷。;更難以說服。", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]如果只針對她處理異常事務的手段，那你這麼說也沒錯。
+[charslot(slot="m",name="avg_npc_1966_1#3$1")]
+[name="阿洛伊澤"]異變發生之後，相關感染者立刻被送往礦區研究所進行管控，她還要求研究員們在一週之內查明原因，否則就會被流放或驅逐。
+[name="阿洛伊澤"]隨後她又宣布遠北地區戒嚴，將礦工全部封鎖在礦區內，封鎖所有通訊手段，使外界得不到半點消息。
+[name="阿洛伊澤"]高效，卻也算得上冷酷。
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]只要你能一針見血地指出她想迴避或隱藏的內容，想說服她就不算困難。
+[charslot(slot="m",name="avg_npc_1966_1#3$1")]
+[name="阿洛伊澤"]問題在於，很多時候，你可能都會被她蒙在鼓裡，找不到那些切入點。
+[name="阿洛伊澤"]比如那些感染者。他們發生的是病理性異變，是某種礦石病的新病徵，還是其他呢？
+[name="阿洛伊澤"]沒有更多細節，這就是問題所在。消息傳到聖駿堡時內容只有這麼多——感染者一發生異變就立刻被送往礦區研究所進行管控了。
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]我看過你們羅德島發表的那篇關於源石變化和礦石病新病徵的論文，烏薩斯各地的研究所也都已經參考該論文開始展開研究。
+[name="阿洛伊澤"]如果是論文中提及的變異情況，不至於引起這樣的反應。
+[name="阿洛伊澤"]礦區發生的感染者異變極有可能代表某種全新的威脅出現了。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]全新的威脅……
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]研究所著手查明原因，礦區整體戒嚴，所有礦工全部隔離。
+[name="阿洛伊澤"]這樣，大家就覺得事情已經解決了，但實際上呢？
+[name="阿洛伊澤"]事發以來，礦區作業停止，通訊中斷，聖駿堡的追問卻遲遲沒有得到回應。沒人能夠，也沒人膽敢深入其中。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="但如果你說的這位女大公有心隱瞞……;那我們從一開始就進不了布列斯克。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]你已經見過她了，或許會以為她其實算得上是一位“仁慈”的管理者。
+[name="阿洛伊澤"]她當然會讓我們進來，畢竟這裡是“烏薩斯境內對感染者最友好的地界”、“遠北明珠”、“烏薩斯北方的天堂”——
+[name="阿洛伊澤"]布列潔諾伊的首府，布列斯克。
+[name="阿洛伊澤"]除了看起來人煙稀少外，這兩天你們沒在城裡發現任何異常，這就是她治理遠北的方式。
+[charslot(slot="m",name="avg_npc_1966_1#5$1")]
+[name="阿洛伊澤"]就像從她上任總督之後，轄區內從未有人被判處死刑，但這裡枉死的人因此減少了嗎？從未。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="你好像對她有很大的意見。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]哦，這你就錯怪我了。我發誓剛才的評論沒有夾雜任何私人的感情，只是有問必答罷了。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]畢竟我們要合作，不是嗎？
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="阿米婭"]我明白了，阿洛伊澤小姐。那麼這些異變感染者如今還處在礦區研究所的管控之下嗎？
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]沒錯。準確地說，他們是在遠北中心礦區研究所。
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="那是不是……？;……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="阿米婭"]那也是我們要去的第一站。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]是這樣嗎？如果目的地本來就相同，那就好辦了。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]你們還有什麼想問的嗎？
+[Dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="你很真誠。;你很急切。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]沒錯，所以一開始我就沒打算跟你們拐彎抹角。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="阿米婭"]阿洛伊澤小姐，我還有一個問題。
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]請說。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#1$1")]
+[name="阿米婭"]先前在您朋友家裡，我們的交談結束得很匆忙。這個問題是我一開始就應該詢問的，卻一直沒有找到機會。
+[charslot(slot = "m", name = "avg_1037_amiya3_1#6$1")]
+[name="阿米婭"]就您個人而言，您想從這場調查中，得到怎樣的結果呢？
+[charslot(slot="m",name="avg_npc_1966_1#1$1")]
+[name="阿洛伊澤"]……認真地說？
+[Dialog]
+[charslot(slot="m",name="avg_npc_1966_1#3$1")]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1966_1#10$1")]
+[name="阿洛伊澤"]我想要一個真相，一個關於中心礦區感染者異變的真相。
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]我不希望感染者礦工無故受難，也不希望烏薩斯人民對可能發生的災難一無所知。
+[Dialog]
+[Delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot] 

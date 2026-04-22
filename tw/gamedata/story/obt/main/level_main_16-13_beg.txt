@@ -1,0 +1,454 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_rockfall",volume=1)]
+[playsound(key="$d_avg_rainlight_loop", loop=true, channel="bgs",volume=0)]
+[SoundVolume(volume=1, channel="bgs",fadetime=2)]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=40, randomness=90, fadeout=true, block=false)]
+[Background(image="66_g6_magnetofluidwaterfall",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[Decision(options="……;……", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="牠是不是……;不動了？", values="1;2")]
+[Predicate(references="1;2")]
+[Delay(time=0.5)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot="m",name="avg_4208_wintim_1#8$1",duration=1)]
+[Delay(time=2)]
+[name="科謝尼婭"]好像……是這樣沒錯。
+[name="科謝尼婭"]吼聲，還有那種粗重的呼吸聲都消失了，是我們的攻擊對牠起作用了嗎？
+[name="科謝尼婭"]但是牠還站著，沒有倒下——
+[charslot(slot="m",name="avg_4179_monstr_1#6$1")]
+[name="Mon3tr"]你們先不要動！我過去看看。
+[dialog]
+[playsound(key="$d_avg_shallowswalk", loop=true, channel="w1")]
+[charslot(duration=1)]
+[delay(time=1.5)]
+[StopSound(channel="w1", fadetime=0.5)]
+Mon3tr確認兩人所在的位置安全後，獨自向前走去。
+數秒前還無比癲狂的裂獸，此時已經被削去了部分體表的源石。牠異常安靜地站立著，就連奇怪的前肢也垂下，凝滯在身前。
+Mon3tr小心翼翼地朝牠靠近。
+她觀察著這隻裂獸，原本危險的野獸，軀體上發生的畸變使牠的樣貌詭異萬分。
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]是因為源石的影響，身體在急速向“人類”的方向轉變……
+[name="Mon3tr"]一定很痛苦吧……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$smallearthquake", loop=true, channel="a")]
+[CameraShake(duration=1.5, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.6)]
+[StopSound(channel="a", fadetime=0.5)]
+[Delay(time=0.5)]
+[Decision(options="Mon3tr，小心！;牠又動了！", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]呃——
+[charslot]
+但預想中的攻擊並未發生。裂獸沒有移動，而是沉重地、毫無徵兆地向前倒下——
+[dialog]
+[PlaySound(key="$d_avg_giantmonster_fall")]
+[delay(time=1)]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+直到牠的四肢重新接觸大地。
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]……
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="……Mon3tr，我認為我們應該趁這個機會離開。;離開這裡，回研究所。現在馬上。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]不，博士。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="Mon3tr？", values="1")]
+[Predicate(references="1")]
+[PlaySound(key="$d_avg_giantmonster_breathe")]
+[charslot(slot="m",name="avg_4179_monstr_1#8$1")]
+[name="Mon3tr"]牠背上甚至還有起伏，牠還在呼吸！
+[charslot(slot="m",name="avg_4179_monstr_1#5$1")]
+[name="Mon3tr"]而且牠聽起來……很痛苦？我不知道。
+[name="Mon3tr"]我沒有阿米婭那種感受他人情緒的能力，更何況牠還只是一隻變異的動物，而且……
+[charslot(slot="m",name="avg_4179_monstr_1#9$1")]
+[name="Mon3tr"]我知道就算不管牠，把牠留在這裡，牠也會死。
+[name="Mon3tr"]源石已經刺穿牠的喉嚨，牠全身沒有一處不痛，想把自己已經變異的器官都抓出來卻沒有能力。
+[name="Mon3tr"]或許這也是為什麼之前牠會攻擊我們。牠沒辦法控制自己。
+[dialog]
+[charslot(slot = "m", focus = "n")]
+[Decision(options="那就結束牠的痛苦吧。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]對。
+[charslot(slot="m",name="avg_4179_monstr_1#3$1")]
+[name="Mon3tr"]……
+[charslot(slot="m",name="avg_4179_monstr_1#2$1")]
+[name="Mon3tr"]不，沒錯。我能做到。我能……
+[name="Mon3tr"]結束牠的痛苦。
+[dialog]
+[stopmusic(fadetime=2)]
+[charslot(duration=1)]
+[playsound(key="$d_avg_shallowswalk", loop=true, channel="w1")]
+[delay(time=1.5)]
+[StopSound(channel="w1", fadetime=0.5)]
+她繼續走向倒下的野獸，停在牠的近側，用爪子緊緊貼住一塊少有結晶的皮毛。
+Mon3tr望著裂獸，打量牠的身體，眼底只有異樣的平靜。
+然後，她以做微創手術般精準俐落的動作，掐滅了變異裂獸最後的、斷續的喘息。
+[Dialog]
+[PlaySound(key="$knifegore")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=2)]
+[name="Mon3tr"]……我們走吧，博士。
+[name="Mon3tr"]回研究所。
+[Dialog]
+[StopSound(channel="bgs", fadetime=2)]
+[charslot]
+[delay(time=3)]
+[imgeffect(name="$ib_screendistortion", image="66_i09")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[playMusic(intro="$suspenseful_intro",key="$suspenseful_loop", volume=0.6)]
+Mantra保持著聆聽狀態。
+她深知自己視野中的景象已不再可信，無論它是遭到了有意的扭曲，還是意外地反映了真實。
+於是她聽著，直到人群之中，最後一句禱詞如同第一片雪花落下。
+[name="Mantra"]聖愚……
+[name="Mantra"]“迦弗里伊爾”。
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="我在聽。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="Mantra"]那就停下來。
+[name="Mantra"]停止——
+[name="Mantra"]這一切！
+[dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Subtitle(text="我無權停止，因它從未開始。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="你所見，只是你所想。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+於是Mantra不再嘗試溝通。她向前一步，試圖將那顫動著的紅、白、黑色線條穩定下來。
+然而就在她伸手的瞬間——
+[dialog]
+[Dialog]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$d_avg_tinnitus")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1.5, block=true)]
+[imgeffect]
+[name="Mantra"]……！
+[name="忽近忽遠的聲音"]Mantra——
+[dialog]
+[image]
+[charslot]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Raidian"]Mantra！
+[charslot(slot="m",name="avg_4204_mantra_1#6$1")]
+[name="Mantra"]……什麼？
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="Raidian"]你剛才一動不動。
+[name="Raidian"]我從來都沒看過你這樣……你怎麼了？
+[charslot(slot="m",name="avg_4204_mantra_1#3$1")]
+[name="Mantra"]你們沒有聽見嗎？
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]聽見什麼？
+[charslot]
+年長的女人沒有立刻回答。
+她環視四周，發現留下的礦工姿態並不像先前那樣如出一轍。眼前的景象令她皺起眉頭，轉而看向自己身旁。
+[charslot(slot="m",name="avg_4204_mantra_1#10$1")]
+[name="Mantra"]阿洛伊澤在哪裡？
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="Raidian"]她聽了我的話，跑出去了。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]所以，至少你剛才確實有叫我們離開。
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="Raidian"]是，但我一點也不記得我為什麼要叫你們離開……這太奇怪了。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]精神類源石技藝。
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]你確定嗎？我們專門為此訓練過，如果受到這類攻擊，我不會毫無防備。
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="Mantra"]Raidian，檢查自己的短期記憶是否遭到了干擾。
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="Raidian"]哪種干擾？
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="Mantra"]我能造成的干擾。
+[name="Mantra"]有次我讓Mechanist忘了去找你是要借用“小樹”和“小軸”的事，本質上不是抹除了那段記憶，而是阻斷了記憶的形成。
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]我記得……那是你第一次嘗試像這樣使用自己的源石技藝？大腦內的資訊沒有被成功儲存就會造成記憶缺失，也就是遺忘。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]沒錯，來自你的提議。在對人體電訊號的瞭解和利用上，你比我更有經驗。
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="Raidian"]你覺得這裡有人能跟你使用一樣的源石技藝？
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]無法確定，也可能我只是比你們看到、聽到了更多。
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="Raidian"]怎麼說？
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="Mantra"]Raidian，烏薩斯的聖愚可能在這裡。
+[charslot(slot="m",name="avg_npc_1730_1#4$1")]
+[name="Raidian"]聖愚？為什麼突然提起——
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="Raidian"]聖愚在這裡？但烏薩斯僅存的聖愚，兩年前就已經在聖駿堡被燒死了，這麼短的時間之內，有可能誕生另一個聖愚嗎？
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]我不知道。這是我接下來要去確認的。
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="Raidian"]如果真的是聖愚，如果他隱藏在隊伍裡，一路上我卻什麼都沒發現……那就太危險了。
+[name="Raidian"]我會讓其他人保持警戒，你也注意安全。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]目前的危險不是物理上的，至少暫時不是。
+[name="Mantra"]如果需要，我會及時求助。
+[charslot(slot="m",name="avg_npc_1730_1#2$1")]
+[name="Raidian"]別忘了。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_gen_walk_n")] 
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+Mantra轉身，邁向數秒前那紅色曾經存在的位置。
+路上，不斷有擁擠著靠在一起的礦工為她讓出路來，或向她伸出了手。
+[dialog]
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="別喬克"]女士，您想找……誰？
+[name="別喬克"]我們還會，離開，去聖駿堡，對嗎？
+[name="別喬克"]我們會，活、活下去……
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]（點頭）
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="別喬克"]但他們，好像，不想離開？我也問了，畢揚叔叔，他不想離開。
+[charslot(slot="m",name="avg_4207_branch_1#10$1")]
+[name="別喬克"]他寧願，讓傷口，爛掉，也……不願再、再逃了。
+[name="別喬克"]可是，活著……難道不比，其他所有事，都重要嗎？
+[charslot(slot="m",name="avg_4204_mantra_1#2$1")]
+[name="Mantra"]……
+[charslot(slot="m",name="avg_4207_branch_1#1$1")]
+[name="別喬克"]您，不說話……
+[charslot(slot="m",name="avg_npc_1969_1#1$1")]
+[name="疲倦的礦工"]陌生人。
+[name="疲倦的礦工"]你要去見娜迦，是不是？那你該膝行過去，仰著頭瞧她。
+[name="疲倦的礦工"]看著她，懺悔，然後得到寬恕。很快你就會發現從前不斷掙扎、始終無法得到平靜的自己，簡直就是愚蠢至極。
+[charslot]
+Mantra不置可否。她沒有使用源石技藝與這些人對話，只是頷首，而後目不轉睛地盯著房間深處，與他們錯身。
+[name="疲倦的礦工"]你會明白的……等到了她的跟前，你就會明白的。
+屋內盡頭，在其他人眼中佝僂而渺小的灰白身影正靜靜坐著，彷彿一尊雕像。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="66_g15_ursusvillage_ruins",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_1966_1#11$1",duration=0.5)]
+[delay(time=1)]
+[name="阿洛伊澤"]——聖愚？！
+[charslot(slot="m",name="avg_npc_1966_1#5$1")]
+[name="阿洛伊澤"]這不可能。絕不可能！聖愚已經死了！
+[name="阿洛伊澤"]當初陛下出於仁慈，在定罪前允許那個瘋子為自己的罪行進行辯護。
+[name="阿洛伊澤"]結果整整七天！整整七天他滴水未進，只為一刻不停地發表詭辯，拖延時間。
+[name="阿洛伊澤"]當時他甚至還膽敢站在帝國議會的中央，對每一個走進來旁聽的人說——
+[charslot(slot="m",name="avg_npc_1966_1#8$1")]
+[name="阿洛伊澤"]“我原諒你”！
+[charslot(slot="m",name="avg_npc_1966_1#4$1")]
+[name="阿洛伊澤"]最後陛下忍無可忍，親自宣判了他的死刑，但仍有被他蠱惑的信眾去劫法場，進而爆發了近十年來發生在聖駿堡城區內最大的一場騷亂。
+[charslot(slot="m",name="avg_npc_1730_1#3$1")]
+[name="Raidian"]你說的這些事我們都知道。
+[charslot(slot="m",name="avg_npc_1966_1#10$1")]
+[name="阿洛伊澤"]……
+[charslot(slot="m",name="avg_npc_1730_1#5$1")]
+[name="Raidian"]問題在於，如果Mantra說那是聖愚，一定是因為對方露出了可供揣摩的痕跡。
+[name="Raidian"]我們要做的只是保護好自己，然後等待她的消息。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]……
+[charslot(slot = "m", focus = "n")]
+Mantra並未像先前礦工說的那樣俯下身去。
+她踏進背光的陰影裡，直視前方，彷彿眼前是一雙回望的眼瞳。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]我知道，你能“聽見”。
+[dialog]
+[charslot]
+[delay(time=1)]
+[playMusic(intro="$kjerag_n_intro",key="$kjerag_n_loop", volume=0.6)]
+[focusout(duration=1.5, type="bg", from=0, to=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="我聽見，你飽含疑問。", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]希望你不是只會模仿我的源石技藝和說話方式，聖愚。
+[charslot]
+[dialog]
+[Blocker(a=0.2, r=0, g=0, b=0, fadetime=1.5)]
+[delay(time=2)]
+[name="娜迦"]“聖愚”……如果你需要我是這個名字。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]請解釋這句話的含義。
+[charslot]
+[name="娜迦"]迦弗里伊爾、索洛米達、貝斯梅特、阿芙羅拉、娜迦……又或者，“聖愚”。
+[name="娜迦"]所有這些，都是“我”。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]……告訴我，你為什麼要混入這些受苦的人當中？
+[charslot]
+[name="娜迦"]因為，這是一場佈道。
+[name="娜迦"]我將行遍這片廣袤的土地，為了贖去人們遭受的苦。
+[name="娜迦"]也因為，我看見了她，聽見了她。
+[name="娜迦"]我為她的痛苦所挽留，也因此駐足。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]“她”是誰？
+[charslot]
+[name="娜迦"]一個受苦的靈魂。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]你誘騙她，讓她稱你為“娜迦”？
+[charslot]
+[name="娜迦"]我從未誘騙。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]說謊。
+[charslot]
+[name="娜迦"]她像你一樣提問，我像我一般回答。
+[name="娜迦"]僅此而已。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]沒有意義的回答。你到底是什麼？
+[charslot]
+[name="娜迦"]你也看到我。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]我看到無序的虛影。
+[charslot]
+[name="娜迦"]是的，我是。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]但在其他人眼中，你不是。
+[name="Mantra"]解釋。
+[charslot]
+[name="娜迦"]世人看到的我的模樣，只反映了他們對我的認知和期待。
+[name="娜迦"]我以為，在所有靈魂當中，只有你會理解我為何如此存在。
+[name="娜迦"]畢竟……
+[name="娜迦"]你是那個未完成的雕像，你曾會成為——
+[name="娜迦"]“我”。
+Mantra緊緊盯著眼前詭異的虛影，卻不確定自己能否從那上面看出任何有助於自己判斷的資訊。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]……
+[charslot]
+[name="娜迦"]很久以前，你曾剝除過一塊黑色的腐肉。
+[name="娜迦"]我也一樣。它追趕我，我驅逐它，像在呼吸之間從身上割下一塊腐肉。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]荒謬的比喻。
+[charslot]
+[name="娜迦"]不。這只是簡單的道理。
+[name="娜迦"]如果它已經腐爛，不再與你身體的其他部分同氣連枝……
+[name="娜迦"]那又為何還要保留？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Image(image="avg_8_29",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Mantra"]……這是……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i01",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Mantra"]你的記憶？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i02",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="66_i03",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[delay(time=1)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[Background(image="bg_ibindoor",screenadapt="coverall")]
+[Blocker(a=0.2, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Mantra"]但也是我——
+[charslot(slot="m",name="avg_4204_mantra_1#10$1")]
+[name="Mantra"]不。內衛……你能影響內衛，你當然也能影響那些礦工。
+[charslot]
+[name="娜迦"]你殺死它。你成為我。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]如果這是我們之間唯一的共通點，那麼……
+[charslot(slot="m",name="avg_4204_mantra_1#6$1")]
+[name="Mantra"]“身體”、“腐肉”。你與內衛的關係——聖愚是內衛實驗的源頭。
+[charslot]
+從顫動著的虛影之中，不再有聲音傳來。既不辯駁，也不肯定。
+Mantra開始後退，離開了陰影的邊緣。
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5)]
+[focusout(duration=1.5, type="bg", from=1, to=0, block=true)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]……Raidian，我需要支援。
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]我在。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]已確認先前的推測。
+[name="Mantra"]另外，補充資訊……
+[name="Mantra"]聖愚隱藏在礦工之中，幫助他們殺死了內衛。
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]……我明白了。
+[name="Raidian"]你需要我們怎麼做？
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]我需要你繼續想辦法聯絡羅德島在烏薩斯其他地區的支援隊伍，同時請阿米婭拖住阿洛伊澤。
+[name="Mantra"]我們現在不能馬上離開這裡，至少在我找到能喚醒礦工們的辦法之前不行。
+[name="Mantra"]讓極境留在我的源石技藝使用範圍之內，我可能會需要他的幫助。
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]你想做什麼？
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]解除聖愚施加在礦工們身上的影響。
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]你認為是聖愚控制了這些礦工，讓他們拒絕離開？
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]沒錯。
+[charslot(slot="m",name="avg_4204_mantra_1#4$1")]
+[name="Mantra"]我們無法直接殺死聖愚，但他卻隨時可以殺死這裡的每一個人。
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]……也許阿米婭能幫忙。
+[charslot(slot="m",name="avg_4204_mantra_1#1$1")]
+[name="Mantra"]也許可以，但阿米婭並不瞭解聖愚。我不希望她一無所知地捲入其中。
+[name="Mantra"]聖愚與我的能力很相似，這也是為什麼只有我能做出這樣的判斷。
+[name="Mantra"]他依靠他人的認知建立自身，我需要找到使他建立起“娜迦”這個身分的關鍵，然後才能解除聖愚施加的影響。
+[charslot(slot = "m", focus = "n")]
+[name="Raidian"]你有懷疑的對象了。
+[charslot(slot="m",name="avg_4204_mantra_1#2$1")]
+[name="Mantra"]……沒錯。
+[charslot]
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_4207_branch_1#9$1",duration=1.5)]
+[Delay(time=2.5)]
+[charslot(slot = "m", focus = "n")]
+Mantra將視線投向四周的礦工，最後落到正從自己身旁經過，走向聖愚的女孩身上。
+她茫然地呢喃著，惶惑而悲傷。
+[charslot(slot="m",name="avg_4204_mantra_1#3$1")]
+[name="Mantra"]我只是需要時間確認。
+[Dialog]
+[Delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot]  
