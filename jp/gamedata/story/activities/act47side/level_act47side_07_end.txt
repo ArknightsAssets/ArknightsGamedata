@@ -1,0 +1,637 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="68_g4_floatingplatform",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot = "left", name = "avg_npc_2046_1#1$1",posfrom = "0,0", posto = "0,0",duration = 0.8)]
+[charslot(slot = "right", name = "avg_npc_2046_1#1$1",posfrom = "0,0", posto = "0,0",duration = 0.8)]
+[delay(time=1.5)]
+[charslot(slot = "left",focus="l")]
+[name="エージェントA"]どういうことだ、妨害装置も予備起爆装置も効いてないだと？
+[charslot(slot = "r",focus="r")]
+[name="エージェントB"]フィードバックされた信号によると、すべての装置は起動済みで、九つのターゲットキャビンのコアエンジンはすべて停止している。
+[name="エージェントB"]ただ、届いた信号はすごく乱れてるんだ。受信機がおかしいのかもしれない。発信機を取り付けなかったキャビンからも信号が届いている……
+[charslot(slot = "left",focus="l")]
+[name="エージェントA"]事故原因の調査に一小隊向かわせろ。第一段階の行動で残した取り付けの痕跡をすべて取り除いて、発信機を回収するんだ。
+[charslot(slot = "r",focus="r")]
+[name="エージェントB"]隊長……それって任務の失敗を明言しているようなものでは。
+[charslot(slot = "left",focus="l")]
+[name="エージェントA"]マイレンダーのルールを忘れたのか？　実際の状況が計画と著しく食い違った時は、速やかに任務遂行を一時中止すること。俺たちはランクウッドのスパイ映画でヒーロー気取る主役じゃないからな。
+[Dialog]
+[playsound(key="$d_avg_walkfast")]
+[charslot(slot = "r",afrom=1,ato=0,duration=1,posfrom = "0,0", posto = "150,0")]
+[Delay(time=2)]
+[playsound(key="$d_gen_transmissionget")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 , offset = "200,0" ,channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "r", pfrom = "190,0", pto="190,0", name = "avg_4151_tinman_1#1$1",duration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "r", switch = true)]
+[Delay(time=1)]
+[charslot(slot="m",focus="n")]
+[name="ブリキ"]どうやら売れ筋の商業映画に対して、いくらか偏見を持っているようですね。
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "left",focus="l")]
+[name="エージェントA"]俺たちには撮り直しのチャンスがない。
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[charslot(slot = "m", focus = "n")]
+[name="ブリキ"]選択肢がないわけではありませんよ。
+[name="ブリキ"]ターゲットキャビンに人をやって調べる必要はありません。おそらくバンシーの呪文があれら本来墜落すべき「おもちゃ」を操っています。
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "left",focus="l")]
+[name="エージェントA"]だが、ナスティは監獄にいるはずだ。
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[charslot(slot = "m", focus = "n")]
+[name="ブリキ"]私が話したバンシーは彼女のことではありませんよ。
+[name="ブリキ"]目下のところ、呪文の影響で浮遊層にある施設の連結に根本的な変化が生じています。信号受信器の異常がその証明です。
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "left",focus="l")]
+[name="エージェントA"]……浮遊層のエネルギー供給パイプラインが呪文による操作を受け入れて、電気信号を発し、指示を共有しているってことですか？　そんなデタラメな。
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[charslot(slot = "m", focus = "n")]
+[name="ブリキ"]このパーク内の全パイプラインとシステムは、ナスティが一手にデザインしたものですからね。ライン生命十傑に名を連ねたのは、エンジニア学における才能だけが理由ではありません。
+[name="ブリキ"]ですが、現在の上層エネルギー供給ネットワークを借りるのなら、一箇所のエンジンを起爆させるだけで、浮遊層を丸ごと墜落させることができます。
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "left",focus="l")]
+[name="エージェントA"]ま、丸ごと……
+[name="エージェントA"]それは……
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[charslot(slot = "m", focus = "n")]
+[name="ブリキ"]今から二十五分後にパークはD.C.と連結します。我々はその時「プロペラパラダイス」に逆さ花火を捧げるべきでしょう。
+[name="ブリキ"]計画を変更します。上層は人手を集め、外周のサブプラットフォームを汎用エネルギー供給パイプラインに繋いでください。下層は墜落地点を計算し、避難誘導に随時備えておくように。
+[name="ブリキ"]総務部門の者に協力させて開会演説の時間を遅らせるよう、ギュスターヴに伝えておきます。
+[name="ブリキ"]それと、監獄に人を遣ってナスティの動きを確認してください。エレベーター広場及び上層に通じる全通路にエリート小隊を最低三つ配置すること。彼女が浮遊層に戻ってくるのは時間の問題です。
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "left",focus="l")]
+[name="エージェントA"]参加しないのか？
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[charslot(slot = "m", focus = "n")]
+[name="ブリキ"]ええ、私はこれから後輩の監督と指導をせねばなりません。ご存知の通り、マイレンダーのエージェントの評定制度は面倒なものですからね。終わったら迅速に合流しますよ。
+[name="ブリキ"]では、各小隊行動を開始してください。
+[interlude(channel = 3, clear = true,tsto="0,1",tsduration=0.5)]
+[Dialog]
+[playsound(key="$transmission")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="68_g7_airrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[name="ゴードン"]……
+[charslot(slot = "m", focus = "n")]
+大きな中継スクリーンがクラウドレストランに吊るされている。派手な企業ロゴや、目新しいフロート装置の映像がかわるがわる映り、オークリーの興奮した声がスピーカーから響く。
+スクリーンの左下に映っているのは、コントロールルームから送られてきたリアルタイム映像だ。位置確認地図の上で「プロペラパラダイス」を表す赤い点が点滅しながらD.C.に近づいていく。
+雲のような絨毯に二台のカメラが設置されており、ぽつんと置かれた椅子に向けられている――それはまるで、ゴードンを待ち構えている裁判のように思えた。
+[Dialog]
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="ギュスターヴ"]遅刻だな。
+[charslot(slot = "l", name = "avg_npc_2042_1#8$1",focus="l")]
+[name="ギュスターヴ"]……なんという格好をしている。あと二十分もすれば開会演説が始まるんだぞ。新しい衣装に着替える時間はないんだ。
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="ゴードン"]管理局が支給する制服は、ネクタイがキツすぎる。息苦しくていけねぇよ。
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="ギュスターヴ"]ははっ。六年前に君が管理局の正規局員になり、真新しい制服が支給された時、私が着映えを整えてやったな。その時の君は気が狂いそうなほど喜んでいた。
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="ゴードン"]あんたはあの時、この制服にふさわしくなるために、俺が学ぶべきものはまだまだ多くあると言った。その後、俺は一番末端の部署で六年間働いた。
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="ギュスターヴ"]最初に完璧に習得したことが反省文の書き方だという新人は君だけだ。私自ら着映えを整えてやったことを後悔したこともあったよ。
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="ゴードン"]じゃあ今はどうだ？
+[charslot(slot = "r", name = "avg_4213_skybx_1#7$1",focus="r")]
+[name="ゴードン"]「プロペラパラダイス」の事故責任者という服は、誰が俺に着せたんだ？
+[charslot(slot = "l", name = "avg_npc_2042_1#6$1",focus="l")]
+[name="ギュスターヴ"]ふむ、気がついたのか。
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="ゴードン"]密輸がバレた夜、俺のブツが二箱あんたに取り上げられた。てっきり処理してくれるのかと思っていたが、さっきそれらがあんたやマイレンダーの奴らの手に渡ったことに気がついたよ。
+[name="ゴードン"]長官よ、この謝罪原稿だって、別にあの夜に書いたモンじゃねぇんだろ？
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="ギュスターヴ"]続けたまえ。
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="ゴードン"]俺がクルビア以外から輸入した源石装置は、明らかに管理局の規定に反している。ちょっとでも安全性に問題が出れば、俺がこのパーク全体にとって罪人になるのも誰だってわかる道理だ。
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="ギュスターヴ"]君はまだ、私たちの間の私怨だと考えているのかい？
+[charslot(slot = "r", name = "avg_4213_skybx_1#7$1",focus="r")]
+[name="ゴードン"]でなきゃなんだ？　あんたにとって俺はいつまで経ってもスラム上がりのチンピラで、ルールも守れなけりゃ教養もないんだろ。俺が自分の努力で出世したから、あんたは余計俺が目障りで……
+[charslot(slot = "l", name = "avg_npc_2042_1#3$1",focus="l")]
+[name="ギュスターヴ"]自分の努力でと言ったか？　処罰を喰らった記録も、百以上の反省文の記録も身上調書に残っている無能が、自分の努力だけで大人気の浮遊サイエンスパークに赴任できると本当に思っているのかな？
+[charslot(slot = "r", name = "avg_4213_skybx_1#5$1",focus="r")]
+[name="ゴードン"]なんだと……？
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="ギュスターヴ"]実に失望した。君の現状に対する認識の鈍さは昔とまるで変わっていない。
+[name="ギュスターヴ"]君が「プロペラパラダイス」に踏み入れた瞬間から今までの肩書や得た投資、業績と成果、何もかもが私からの「プレゼント」だ。
+[name="ギュスターヴ"]ゴードン・タネン、なぜ自分があれほど順調に他国から源石製品を買い取れるのか、考えたことは一度もないのか？
+[charslot(slot = "r", name = "avg_4213_skybx_1#9$1",focus="r")]
+[name="ゴードン"]俺の商売をとっくに知っていたのか……
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="ギュスターヴ"]君の仕入れリストは、すべて私が慎重に厳選したものだからね。
+[name="ギュスターヴ"]リターニア産の三又のアーツユニットは、金律法衛が軍事訓練に使う秘密装置だ。
+[name="ギュスターヴ"]カジミエーシュの征戦騎士専用のパワード防護盾は三つにバラされて、君に三つの企業の展示品に組み込まれたな。
+[charslot(slot = "r", name = "avg_4213_skybx_1#6$1",focus="r")]
+[name="ゴードン"]あの源石エンジンやアーツコアの数々は、全部他の国の軍事装備から来ているってことか？　もしパークがそのせいで爆発したら、その時は……
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="ギュスターヴ"]頭は回らないが、目の付け所は悪くない。「プロペラパラダイス」は確かに広い実験畑ではあるが、実験したいのは、そのような空飛ぶおもちゃではないのだよ。
+[name="ギュスターヴ"]これから十数分後、君が「天空フィーバー」につけた情熱の炎は、クルビア大衆の「他の国のスパイ」への怒りの炎になるだろう。
+[name="ギュスターヴ"]空を飛ぶ万にも及ぶ展示品のパーツと、それらを生み出した先進的技術はいずれも外敵に対抗するための軍事的備蓄だ。「プロペラパラダイス」が軍備実験基地とみなされるのも自然な流れだろう。
+[charslot(slot = "r", name = "avg_4213_skybx_1#9$1",focus="r")]
+[name="ゴードン"]軍備……あんたなら少なくとも管理局の利益を考えると思っていたんだがな……
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="ギュスターヴ"]「クルビアを代表する時、我々は永遠に一心同体だ。」――この一文の重心は、いつだって「クルビア」にある。
+[name="ギュスターヴ"]今回の公開謝罪は、君が新しい肩書を得るための試金石だ。もしかしたら国防部で君にいいポジションを見繕ってやれるかもしれないな。
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="ゴードン"]俺にここまであけすけに伝えるなんてな。俺があんたの計画を滅茶苦茶にすると思わねぇのか？
+[charslot(slot = "l", name = "avg_npc_2042_1#3$1",focus="l")]
+[name="ギュスターヴ"]君は演説稿を持ってここに来た。つまり、賢明な決断を下したということだ。
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="ギュスターヴ"]正直、最初は君が有用な駒足り得るかどうか確信はなかったが、今は君の隣にいる小さな化け物が君の代わりに答えを示してくれている。
+[name="ギュスターヴ"]金持ちがシガーや腕時計を愛するように、彼らはこういったちょっとした趣味がもたらす優越感を享受しているだけだ。
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="ゴードン"]……零五四は「天空フィーバー」に迎合するためのちょっとした趣味じゃねぇよ。
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="ギュスターヴ"]だが、君はもう発明と改造しか頭にない粗忽者ではなくなった。
+[name="ギュスターヴ"]管理局は君の持つ角をとり、世渡り上手に育て、自分が定めた「規則」の中ですべてが動くことを望むように誘導した――君を私に似させたのだ。
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="ゴードン"]……
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="ギュスターヴ"]君の小さな化け物をおめかししてやりなさい。公開謝罪では、共に登壇するんだ。
+[name="ギュスターヴ"]それは「プロペラパラダイス」のある種のシンボルにふさわしいからな――凡俗でいいとこ取りの、使い道がない極端な浪費だ。
+[charslot(slot = "r", name = "avg_4213_skybx_1#4$1",focus="r")]
+[name="ゴードン"]……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="68_g6_floatinglabmodule",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4214_cairn_1#4$1",duration = 0.5)]
+[charslot(slot = "right", name = "avg_npc_2041_1#1$1",duration = 0.5)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4214_cairn_1#4$1",focus="l")]
+[name="フェルネ"]高度計の示す数字は安定しているよ。浮遊ポッドはこれ以上墜落していないみたい、エンジンも変な音はしていない……これって、あたしたちはもう安全ってこと？
+[charslot(slot = "right", name = "avg_npc_2041_1#5$1",focus="r")]
+[name="アスペン"]五十メートル……「ラッキーシスティビースト」の浮遊ポッドが五十メートルも下に落ちただと……
+[charslot(slot = "left", name = "avg_4214_cairn_1#9$1",focus="l")]
+[name="フェルネ"]アスペンさん、なんて？
+[charslot(slot = "right", name = "avg_npc_2041_1#1$1",focus="r")]
+[name="アスペン"]半年前に進駐手続きをした時、登録センターには人がひしめき合っていた。俺は列の最先頭に並んで、「ラッキーシスティビースト」のために一番目立つ浮遊ポッドを選んだんだ。
+[name="アスペン"]星のさやに近ければ近いほど幸運に恵まれるのだと、パークの誰もがそう思ってた。最終的に取れたキャビンが隣よりもわずか十センチ高い程度でもよかったんだ。
+[name="アスペン"]より空に近いキャビンを手に入れるために夜通し並んで、エキスポ参加資格のために必要のないモニターを百人近く雇い「ラッキーシスティビースト」が存続できるように禁制品の密輸に関わって……
+[charslot(slot = "left", name = "avg_4214_cairn_1#10$1",focus="l")]
+[name="フェルネ"]……
+[charslot(slot = "right", name = "avg_npc_2041_1#1$1",focus="r")]
+[name="アスペン"]あんたはこういう競争を好まないのだろう。見ればわかる。だがこれが「プロペラパラダイス」の基本的な法則なんだ。解説員を担当していた時に感じたことがあるんじゃないか。
+[charslot(slot = "left", name = "avg_4214_cairn_1#4$1",focus="l")]
+[name="フェルネ"]更新された企業リストと十以上の全く新しい企業資料が毎日届いてたね。昨日まで、過去の酷い暮らしのことをあたしに話してた人らが、次の日にはその暮らしに逆戻りすることもあった。
+[charslot(slot = "right", name = "avg_npc_2041_1#1$1",focus="r")]
+[name="アスペン"]ほんの一ヶ月前にここに来たあんたにとっちゃ、なんとなく鑑賞する観光地なんだろうが、「サイエンスパーク」は俺たちにとっては未来に向かう唯一の道なんだ。大抵が振り落とされる狭い道だ。
+[name="アスペン"]手詰まりになっておかしくなった奴の言葉を聞いているような気分になっているか？
+[charslot(slot = "right", name = "avg_npc_2041_1#4$1",focus="r")]
+[name="アスペン"]それでも浮遊プラットフォームや何百何千ものキャビンが空に飛んだ時には、みんなわけもなく興奮するだろう？
+[name="アスペン"]俺は「ラッキーシスティビースト」にすべてを注ぎ込んだ。賭けに勝たなきゃいけない理由があるんだ。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="68_g4_floatingplatform",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$m_bat_walkinthedust_intro",key="$m_bat_walkinthedust_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_2049_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="ライン生命研究員"]やはり、樹形装置を中心に段階的に測定・計算すると、呪文は工事のエネルギー供給パイプラインを通じて複数のプラットフォームとキャビンを繋げられる。それでも範囲が限られるが。
+[name="ライン生命研究員"]ブライアン、スカイチームにサインを送ってくれ、エネルギー連結方法の規則性を見つけたと。
+[name="ライン生命研究員"]ブライアン――
+[Dialog]
+[PlaySound(key="$fightgeneral", volume=0.7)]
+[CameraShake(duration=0.2, xstrength=30, ystrength=30, vibrato=20, randomness=90, fadeout=true, block=false)]
+[name="ライン生命研究員"]うっ……
+[Dialog]
+[CameraShake(duration=0.1, xstrength=20, ystrength=20, vibrato=10, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m",posfrom = "0,0", posto = "0,-80",duration = 0.6,afrom=1,ato=0)]
+[PlaySound(key="$bodyfalldown1", volume=0.7)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2047_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="エージェント"]さすが科学者の脳みそは回転が早い。任務ターゲットを見つけてくれて感謝する。
+[Dialog]
+[playsound(key="$d_gen_transmissionget")]
+[delay(time=1)]
+[name="エージェント"]うちのエンジニアに伝えろ。もう研究しなくていい。俺の足元のプラットフォームを中心に、外周を警備する者は速やかに予備電源を切って、他の手段でエネルギー供給パイプラインを繋げるか試せ。
+[name="エージェント"]それとライン生命の人間は俺たちの計画に気がついたな。四番浮遊プラットフォームに研究員を二人発見し、すでに対処した。
+[name="エージェント"]急いでパトロールしろ。連中を見つけ次第位置の報告をするんだ。スタジオにいる仲間がカメラを切り替えて時間を稼いでくれる。
+[name="エージェント"]早くしろよ。
+[playsound(key="$transmission")]
+[Dialog]
+[delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="68_g5_floatingstation",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$rungeneral", loop=true, channel="bgs")]
+[StopSound(channel="bgs", fadetime=2.5)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2044_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="モニター"]はぁ……はぁ……
+[name="モニター"]*クルビアスラング*本当にしつこく追ってくるな。マイレンダーのこいつらって飛べたりするのか？　どこにでもいるじゃないか。
+[name="モニター"]幸いさっき連中の注意をひけたから、ここには警備がいない……
+[name="モニター"]いや、違う！
+[Dialog]
+[PlaySound(key="$fightgeneral", volume=0.7)]
+[CameraShake(duration=0.2, xstrength=30, ystrength=30, vibrato=20, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[CameraShake(duration=0.1, xstrength=10, ystrength=10, vibrato=10, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m",posfrom = "0,0", posto = "0,-80",duration = 0.6,afrom=1,ato=0)]
+[PlaySound(key="$bodyfalldown1", volume=0.7)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_2046_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="エージェント"]十七番サブプラットフォームにモニターを五名、ライン生命の職員を二名発見した。いずれも対処完了、五分後に下層に収監させる。
+[name="エージェント"]捜査と逮捕は順調に進んでる。相手の人数は少なく、各エリアに散らばっていて統制はとれていない。
+[Dialog]
+[playsound(key="$d_gen_transmissionget")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 , offset = "200,0" ,channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "r", pfrom = "200,0", pto="200,0", name = "avg_npc_2047_1#1$1",duration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "r", switch = true)]
+[Delay(time=1)]
+[charslot(slot="m",focus="n")]
+[name="ベテランエージェント"]専攻は人それぞれだからな。それに連中には通信設備もなければ、指揮する者もいない。
+[name="ベテランエージェント"]ナスティは？
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "left",focus="l")]
+[name="エージェント"]十分前に下層監獄から脱走し、今のところライン生命のどの職員ともまだ接触していないようだ。
+[charslot(slot="m",focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[name="ベテランエージェント"]やつはパークの建築構造を知りすぎている。時間がない。私たちは優勢とは言い難い。
+[name="ベテランエージェント"]だが、かくれんぼは一人でやるゲームではない。
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "left",focus="l")]
+[name="エージェント"]パトロールを続けます。何人かのモニターや研究員が任務に大きな影響を与えることはないだろう。
+[charslot(slot="m",focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[name="ベテランエージェント"]気をつけろよ。何かあったらすぐ報告するんだ。
+[Dialog]
+[interlude(channel = 3, clear = true,tsto="0,1",tsduration=0.5)]
+[playsound(key="$transmission")]
+[delay(time=2)]
+[charslot(slot="l",name="avg_npc_2046_1#1$1")]
+[name="エージェント"]……さっき、ここに誰かいなかったか？
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "l",posfrom = "0,0", posto = "-150,0",duration = 1,afrom=1,ato=0)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_2039_1#7$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_2045_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "right",focus="r")]
+[name="モニター"]ふぅ。よかった、気づかれなかった……引っ張ってくれてありがとう、スカイさん。
+[charslot(slot = "m", name = "avg_npc_2039_1#7$1",focus="m")]
+[name="スカイ"]気にするな。大丈夫か？
+[charslot(slot = "right",focus="r")]
+[name="モニター"]正直、他の奴らがあんなにあっさりやられるのを見ると、尻込みはします。
+[charslot(slot = "m", name = "avg_npc_2039_1#7$1",focus="m")]
+[name="スカイ"]まだ走れるか？
+[charslot(slot = "right",focus="r")]
+[name="モニター"]問題ありません。
+[charslot(slot = "m", name = "avg_npc_2039_1#7$1",focus="m")]
+[name="スカイ"]手分けして行くぞ、俺たちが立ち止まるのは今じゃない。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_prison_commandroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$doorknockquite")]
+[delay(time=1.5)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_2037_1#1$1",duration=1)]
+[delay(time=2)]
+[name="マーシア"]先輩、参りました。
+[charslot(slot="m",name="avg_4151_tinman_1#1$1")]
+[name="ブリキ"]（パイプを拭く）いらっしゃい。一服終わるのを待っていただけますか、マーちゃん。
+[name="ブリキ"]まずはあの監視モニターの数々を研究しておいてください。
+[charslot]
+マーシアは壁にかけられた十数のスクリーンを見つめた。空中エレベーター、浮遊プラットフォーム、ロープウェイステーションなど「プロペラパラダイス」のほぼすべてのエリアに対応している。
+奇妙で色鮮やかな空中施設は、今にもスクリーンから飛び出して咲き誇らんと、この薄暗い部屋の中に似合わず表示されている。マーシアはまるでポストモダンアートのエキスポを見ている気分だ。
+[charslot(slot="m",name="avg_npc_2037_1#7$1")]
+[name="マーシア"]ここは……
+[charslot(slot="m",name="avg_4151_tinman_1#1$1")]
+[name="ブリキ"]ここは？
+[charslot(slot="m",name="avg_npc_2037_1#7$1")]
+[name="マーシア"]……いえ。ただ「プロペラパラダイス」にこのような……閉鎖空間があるとは思いませんでした。
+[charslot(slot="m",name="avg_4151_tinman_1#1$1")]
+[name="ブリキ"]もしやうちの尋問室を思い出しましたか？
+[charslot(slot="m",name="avg_npc_2037_1#5$1")]
+[name="マーシア"]……ところで、私をお探しになっていたそうですが？
+[charslot(slot="m",name="avg_4151_tinman_1#1$1")]
+[name="ブリキ"]右上の監視カメラ映像を観てください。先程の爆発音は聞こえましたね。ライン生命の「木」を繋ぐ十近くの浮遊ポッドは、本来すでに荒野で煙を立てるくず鉄になっているはずでした。
+[charslot(slot="m",name="avg_4151_tinman_1#8$1")]
+[name="ブリキ"]マーちゃん……あれらが未だ空中に留まっているのは何故か、あなたはご存知でしょう。
+[charslot(slot="m",name="avg_npc_2037_1#10$1")]
+[name="マーシア"]……呪文ですね。この件は先輩に伝えていませんでした。
+[charslot(slot="m",name="avg_4151_tinman_1#8$1")]
+[name="ブリキ"]はぁ。応急対策管理監督協会の同僚たちは爆発を作り出した危険分子を取り押さえたばかりだというのに、また身内の職務怠慢を対処しなければならないとは。
+[name="ブリキ"]見ての通り、バンシーの呪文は浮遊層全体の連結方法を変えています。なにか予想外な出来事が生じた場合、影響は九つの浮遊ポッド以外にも及ぶでしょう。
+[name="ブリキ"]これは大事ですよ。
+[charslot(slot="m",name="avg_npc_2037_1#10$1")]
+[name="マーシア"]先輩……
+[name="マーシア"]秘書としてもマイレンダーのエージェントとしても、上司に向かってこのような口を利くべきではないと考えていますが、少なくとも私は同僚のことを理解して、協会の規則も把握しています。
+[charslot(slot="m",name="avg_npc_2037_1#16$1")]
+[name="マーシア"]先程の監視カメラ映像で、彼らはコットンキャンディを食べています。しかし本当に緊急事態である場合、このような効率の低い偽装手段は禁じられているはずです。
+[charslot(slot="m",name="avg_npc_2037_1#7$1")]
+[name="マーシア"]ゴードン長官や各テクノロジー企業の監視に、彼らが秘匿する秘密の調査、私が「プロペラパラダイス」で遂行を命じられた任務はいずれも完遂いたしました。しかし今見ると……
+[name="マーシア"]これらの任務は、最初からエキスポを順調に開催させるためのものではありません。
+[charslot(slot="m",name="avg_npc_2037_1#14$1")]
+[name="マーシア"]最初の秘密も、先程の爆発も、今後の「なにか予想外な出来事が生じた場合」も……全部あなたの計画のうちですよね？
+[charslot(slot="m",name="avg_4151_tinman_1#1$1")]
+[name="ブリキ"]あはは、洞察力は合格です。
+[charslot(slot="m",name="avg_npc_2037_1#12$1")]
+[name="マーシア"]……
+[charslot(slot="m",name="avg_npc_2037_1#4$1")]
+[name="マーシア"]これは一体……
+[charslot(slot="m",name="avg_4151_tinman_1#1$1")]
+[name="ブリキ"]まあ座ってください。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[Image(image="68_i08_3", xScale=1.3, yScale=1.3,screenadapt="coverall",fadetime=0,x=50)]
+[curtain(direction = 2,fillfrom = 0.1,fillto = 0.6, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="三人"]座れ座れ。
+[name="ブリキ"]三人とも、行儀よくするように。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Image(image="68_i08_3", xScale=1.3, yScale=1.3,screenadapt="coverall",fadetime=0,x=-50)]
+[curtain(direction = 2,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.1,fillto = 0.6, fadetime=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[name="マーシア"]これはマイレンダーを裏切った者に対する裁判ですか、それとも……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="68_i08_1", xScale=1, yScale=1,screenadapt="coverall",fadetime=0)]
+[curtain]
+[Dialog]
+[bgeffect(name="$eb_068cg_dust",layer=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="ブリキ"]それとも、私がようやく後輩の面倒な監督と指導を進める時間を捻出できたのかもしれませんね。
+[name="ブリキ"]心配は無用です。老いぼれが未来有望な後輩に少しばかり道理を話そうとしているだけですから。
+[name="マーシア"]非常に興味があります。拝聴させていただきます。
+[name="ブリキ"]聞いた者に嫌われること間違い無しの屁理屈ですよ、マーちゃん。
+[name="ブリキ"]一年前ライン生命は、星の庭が遺した技術を研究し、発展させるプロジェクトをD.C.に申請しました。それがストリータ議員の一声で国を対象とした大型企画に化けました。
+[name="ブリキ"]なんでも、彼の秘書は夜なべでスライドを仕上げてたそうですよ。トリマウンツの空が割ける様を目の当たりにした議員が、それ以来日夜見続けた夢の光景をひたすらに書いていたそうです……
+[name="ビッグラリー"]（マーシアの帽子を抱えて噛みつく）ビルの基礎工事は雲の上に！
+[name="オールドカリー"]（マーシアのリボンを引っ張って散歩）雨も晴れも足元よりずーっと下！
+[name="リトルモー"]（マーシアの髪先にぶら下がって滑空）一つまた一つの旅行団体が星のさやを離れ、双月の表面にはクルビアの国旗がびっしりと！
+[name="ブリキ"]……とまあ、こんな具合に、連合議会は新計画に対して投票を行いました。その結果といえば？
+[name="ビッグラリー"]273対65、八割超の議員が賛成に票を入れた。ちっ。
+[name="ブリキ"]政府はこのような白昼夢に水と肥料をやりたくてうずうずしています。
+[name="ブリキ"]「プロペラパラダイス」の公開後に、どれだけのテクノロジー企業やモニターが代償をも問わずに入場の権利を争ったかについては、マーちゃん、あなたのほうがよく知っていますよね。
+[name="マーシア"]数え切れません。
+[name="ブリキ"]まさしく。クルビアの半数近くの企業が空をテーマとした業務部門を追加しました。ノンフライヤーを生産する町工場でさえ、調理適用対象一覧に「雲」と付け加えています。
+[name="オールドカリー"]ブリキ、株のことも忘れるな！
+[name="オールドカリー"]空に関連する株は二百以上の種類に細分化されて、登録された一番長い発効年は三百年後だぞ、わははー。
+[name="オールドカリー"]企業はどこも利率が市場相場数倍する事業金融を借りてまで、「プロペラパラダイス」の隅に場所がほしいと考えてる……
+[name="ブリキ"]ゴードンの事件関連書類で見つけた資料ですが、アスペンという男が点検をクリアするためにやむを得ずゴードンから禁制品を購入したようです。
+[name="ブリキ"]彼が、そこに手を出したのは法知識がないからではなく、すでに離婚して財産を売り捌き、山程の借金を背負って後がないからです。このパークは、彼の一生を定める豪快な博打だというわけです。
+[name="ブリキ"]実に残念です。
+[name="マーシア"]……残念、ですか？
+[name="ブリキ"]あの方は、もともとD.C.の航路近くにある小さな町で雑貨店を開いていました。もしかしたら今も彼から買った工具を使っている開拓者がいるかも知れません。
+[name="ブリキ"]しかし彼のパークでの発明といえば「人は回れど酒は回らず」の浮遊回転バー……恨みがある相手に酒を奢る時以外、このブリキの頭が壊れるほど考えても他の使い道が思いつきません。
+[name="ブリキ"]まるで試験用紙に先生へのおべっかを一生懸命書き綴って、満点を恵んでほしい受験生のようです。
+[name="ブリキ"]しかし、もしも未来が本当に試験であるのなら、一体誰が試験官なのでしょう？　あなたや私？　それとも国防部の将軍たちや、D.C.の議員たち？
+[name="ブリキ"]つい先程すべての征戦騎士にパワードスーツを配備したカジミエーシュ？　あるいはすべての学校の時間割に「アーツ作戦基礎」の授業を加えたリターニア？
+[name="ブリキ"]軍隊を集結させているウルサスや、彼らの鉱脈を丸ごと空っぽにした偉大なる力かもしれませんね？　砲火をイベリア近海に降らせているエーギルや、彼らが戦う海の怪物である可能性もあります。
+[name="ブリキ"]この中で浮遊回転バーのお客さんになる確率が一番高いのは、おそらく海の怪物たちでしょう。
+[name="マーシア"]先輩、つまりクルビア人の天空に対する熱は……
+[name="マーシア"]まったく無意味であると？
+[name="ブリキ"]この時代の他の出来事と比べてではありますが、そうなりますね。
+[name="ブリキ"]「熱」は常にこのクルビアという国を動かすエンジンでした。マーシア、あなたの出身なら、このことについてはしっかりと認識していると思います。
+[name="ブリキ"]自由への熱がなければ、八十数年前の開拓区での反抗もなく、クルビアは今もヴィクトリア人に踏みつけられていたでしょう。
+[name="ブリキ"]富への熱がなければ、盛大な開拓運動もなく、クルビアの国土の半分近くは今も最も強靭な駄獣でさえ超えられないような荒野だったでしょう。
+[name="ブリキ"]しかし今回は……無駄に垂れ流しになっています。
+[name="マーシア"]だから「プロペラパラダイス」が責任を取れ、と？
+[name="ブリキ"]まさか。「プロペラパラダイス」はこの上なく完璧に使命を果たしました……あと一歩の地点まではね。
+[name="ブリキ"]ここは私が想像するよりも遥かに上手にクルビア人の熱を煽り立てました。そして今必要なのは、その熱を「方向転換」させることだけです。
+[name="マーシア"]それを破壊して、ですか？
+[name="ブリキ"]それが「破壊されること」で、です。
+[name="マーシア"]誰にですか？　このパークには他に誰が……
+[name="マーシア"]待ってください。ゴードン長官の所有する品物の数々、カジミエーシュやリターニア、サルゴン、果てはカズデルからの密輸品……
+[name="ブリキ"]それらはすべて、他国のスパイがクルビアのテクノロジー成果を意図的に破壊し、クルビア人の空飛ぶ夢を破るために手配された武器だということになります。
+[name="ブリキ"]そして、八十数年の時間を超え、クルビア人の憤怒に再度火が点けられるのですよ。
+[name="ブリキ"]己の税金が征戦騎士の鎧になるのをカジミエーシュ人が見たがるとは限らないですし、リターニアの子どもたちも「アーツ作戦基礎」のつまらない授業をサボタージュするかもしれません。
+[name="ブリキ"]しかし、クルビア人にはクルビア人なりの熱があります。我々が未来へと進む時は、いつだって数千万の者が共に歩んでいるのです。
+[name="ブリキ"]その熱を、しかるべき道へと誘導できたなら……
+[name="マーシア"]……「すべての意志を束ね、あらゆる真理を手中にする」。
+[name="マーシア"]先輩からは過去の話を伺ったこともありましたから……ずっと戦争のことがお嫌いだと思っていました。
+[name="ブリキ"]何万年も過ぎました。私の手にかかった亡霊は、もはや一度の戦争の死者数にも及ぶでしょう。
+[name="ブリキ"]あの時に私がカズデルの溶炉で燃えるのを良しとしなかったのは、無意味な犠牲を嫌っていたからに過ぎません。
+[name="ブリキ"]しかし今回……軍備拡張競争がきっかけになるかもしれません。それが「備え」に留まる訳が無いことをあなたも私も知っています。大開拓が鉱石にとどまらなかったように。
+[name="マーシア"]そして、クルビアがこの競争のために出す犠牲も、このパークだけには留まらないと……そうなのですね？
+[name="ブリキ"]最初に言ったでしょう。すべて屁理屈だと。
+[name="ブリキ"]マーちゃん、本来、マイレンダーはこうした道理をあなたに説明する義理はありません。しかし、あなたは時間をかけていずれ受け入れていかなければなりません。たとえ納得していなくてもね。
+[name="マーシア"]……
+[name="ブリキ"]忘れないでくださいね……あなたの苗字は、「セレーネ」です。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[image]
+[delay(time=1)]
+[bgeffect(name="$eb_scorchedearth",layer=3,y=-150)]
+[Background(image="68_g5_floatingstation",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[charslot(slot="l",name="avg_4212_nasti_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="ナスティ"]これは……
+[charslot(slot = "m", focus = "n")]
+パークの上層と下層を繋ぐエレベーターは隙間なく封鎖され、唯一「木」にたどり着けるロープウェイステーションも運行停止していた。ナスティはここにたどり着くだけで力尽きそうだった。
+途中の浮遊ポッドは外壁がヒビだらけで、黒い煙がそこからもくもくと漏れ出している。コアとなる動力装置が破壊されたのだ。本来すでに地上の残骸と化していてもおかしくなかった。
+しかし、すべての浮遊ポッドは強がるように雲の間にとどまり、まるで見えない手に支えられているように不安定な道を作り出している。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="68_g5_floatingstation",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[playsound(key="$rungeneral", loop=true, channel="r")]
+[StopSound(channel="r", fadetime=2.5)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_2046_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_2046_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[name="エージェントA&B"]あれはナスティ？
+[playMusic(intro="$act19side_intro",key="$act19side_loop", volume=0.6)]
+[charslot(slot = "left", focus="l")]
+[name="エージェントA"]皆に知らせろ、私がひとまず足止めする。
+[Dialog]
+[charslot(slot="l",duration=1,posfrom = "0,0", posto = "-450,0",afrom=1,ato=0)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[charslot]
+[charslot(slot="l",name="avg_4212_nasti_1#1$1")]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0, block=true)] 
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = false, fadetime=1, block=true)]
+[interlude(maskid = "ui_cutin_mask_vertical", style = 1, size = "580, 720",offset = "300,0", channel = 2)]
+[interlude(channel = 2, type = 3, slot = "r", offset = "0,0", name = "avg_npc_2046_1#1$1", aduration = 0.5, sfrom = "1,1", sto = "1,1")]
+[interlude(channel = 2, type = 3, slot = "r", pfrom = "300,0", pto = "300,0", duration = 0)]
+[delay(time=1)]
+[charslot(slot = "m",focus="n")]
+エージェントがナスティめがけて駆け寄ろうとしたが、足を踏み出した瞬間、足元の石材が位置を変えた。
+[Dialog]
+[charslot(slot = "m",focus="all")]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[CameraShake(duration=-1, xstrength=2, ystrength=2, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_airbuzz_5", loop=true, channel="sx")]
+[focusparam(effect="Grayscale", blur=true)]
+[focusout(duration=2, type="bg", from=0, to=1, block=true)]
+[charslot(slot = "r", focus="r")]
+[name="エージェントA"]うわーっ！
+[Dialog]
+[interlude(channel = 2, type = 3, slot = "r", pfrom = "300,0", pto = "0,0", duration = 1)]
+[interlude(channel = 2, clear = true,tsfrom="1,1", tsto ="0,1",tsduration = 0.6)]
+[delay(time=1)]
+[StopSound(channel="sx", fadetime=0.5)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[bgeffect(layer=1)]
+[CameraShake(duration=0.1, xstrength=2, ystrength=2, vibrato=30, randomness=90, fadeout=true, block=false)]
+[focusout(duration=0, type="bg", from=1, to=0)]
+[interlude(maskid = "ui_cutin_mask_vertical", style = 1, size = "580, 720",offset = "0,0", channel = 2)]
+[interlude(channel = 2, type = 3, slot = "r", offset = "0,0", name = "avg_npc_2046_1#1$1", aduration = 0.5, sfrom = "1,1", sto = "1,1")]
+[interlude(channel = 2, type = 3, slot = "r", pfrom = "0,0", pto = "0,0", duration = 0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[playsound(key="$d_gen_transmissionget")]
+[delay(time=1)]
+[name="エージェントB"]ターゲット確認。現在地はフライイングドーナッツ駅だ。支援を頼む。
+[name="エージェントB"]足止めを試みたが状況がおかしくて、こちらは――ぎゃあーっ！
+[Dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[CameraShake(duration=-1, xstrength=2, ystrength=2, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_airbuzz_5", loop=true, channel="sx")]
+[focusparam(effect="Grayscale", blur=true)]
+[focusout(duration=1, type="bg", from=0, to=1, block=true)]
+[delay(time=1.5)]
+[interlude(channel = 2, type = 3, slot = "r", pfrom = "0,0", pto = "250,0", duration = 1)]
+[interlude(channel = 2, clear = true,tsfrom="1,1", tsto ="0,1",tsduration = 0.6)]
+[delay(time=1.5)]
+[bgeffect(layer=1)]
+[StopSound(channel="sx", fadetime=1)]
+[focusout(duration=1, type="bg", from=1, to=0)]
+[CameraShake(duration=1, xstrength=2, ystrength=2, vibrato=30, randomness=90, fadeout=true, block=true)]
+[delay(time=1)]
+[charslot]
+[charslot(slot = "m", name = "avg_4212_nasti_1#5$1",duration=1)]
+[delay(time=2)]
+[name="ナスティ"]……（サルカズ語）秩序の喪失？
+[charslot(slot = "m", focus = "n")]
+ナスティは、バンシーの河谷の入口を通る川筋を思い出した。穏やかで、幼子でも安心して舟を浮かべられる川だ。
+しかし渡し守のいない侵入者たちにとっては、両側の森が常に位置を変えて、まるで移動する迷宮であるように見える。遠い河岸はいつまでも濃い霧の彼方に隠れていた。
+しばし沈黙すると、ナスティはポッドから歩み出て、なにもない空へと進む。すると石材が彼女の歩みに応じて現れた。
+[Dialog]
+[playsound(key="$d_avg_highheelfts")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[focusparam]
+[bgeffect]
+[charslot(slot = "m", name = "avg_4212_nasti_1#2$1")]
+[Background(image="68_g9_treeplatform_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="ナスティ"]（サルカズ語）秩序の喪失。
+[name="ナスティ"]呪文で繋げられた道だな。
+[charslot(duration=1)]
+河谷のバンシーは、よくこの手段で外来者の来訪を拒み、また己の庭園を飾っていた。
+かつて彼女はリングラボで同じ手段を用いてサリアを少しばかり足止めしたことがあった。
+……これはナスティのために敷かれた道だ。
+[playsound(key="$d_avg_scan")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background(image="68_g11_treeinside",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4212_nasti_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="ナスティ"]……
+[charslot(slot = "m", focus = "n")]
+ナスティにとって予想外なことに「木」を中心としたエリア全体が呪文で再構成されているにもかかわらず、「木」の最も核心的なエリアであるその根系の間には、呪文使用者の姿がなかった。
+「木」の根系だけが、いつも通り呼吸している。
+[playsound(key="$getcast")]
+[name="機械音"]権限の認証を行います。
+[charslot(slot = "m", name = "avg_4212_nasti_1#1$1")]
+[name="ナスティ"]ライン生命、エンジニア課主任、ナスティ・ルノレイ。
+[Dialog]
+[charslot(duration=0.5)]
+[playsound(key="$rungeneral", loop=true, channel="bgs")]
+[StopSound(channel="bgs", fadetime=1.5)]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.2, fadetime=1.5)]
+[backgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.2, yScaleTo=1.2, duration=1.3,block=false,yTo=-50)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.2, fadetime=1.5)]
+ナスティは装置の根へと駆け寄った。己が離れていた間に、この装置に異変が生じたかどうかを確認しなければならない。
+これは生態研究園の最後の遺産。そしてライン生命がどのような対価を支払っても守る秘密である。今後パークの動乱がいかなる形で終着するとしても、現状ナスティが持つ唯一の取引材料だった。
+[Dialog]
+[bgeffect(name="$eb_church_02",layer=1,y=-200,x=200)]
+[playsound(key="$d_avg_messageconverge_loop", loop=true, channel="sj")]
+[Blocker(a=0.15, r=1, g=1, b=1, fadetime=2, block=true)]
+彼女は装置の根系に触れる。データが指先から注ぎ込まれて行き、腰にある「枝」で合流することを許可する。
+ミュルジスはいつも彼女のことを人形のコンピュータみたいだと揶揄しており、ナスティもいつもそれを褒め言葉として受け取っている。
+バイオテクノロジーとバンシーの巫術が結合した状況においては、彼女の体そのものが最良のデータケーブルであるかもしれない。
+「枝」が急速に震えだした。装置がオーバークロックで演算していることを表している。ほぼ同時に、ナスティは温度を感じた――凝縮液の冷たさでも、電流の灼熱でもなく、むしろ……
+[Dialog]
+[stopmusic(fadetime=2)]
+[StopSound(channel="sj", fadetime=1)]
+[name="ナスティ"]体温？
+彼女はふとそんな錯覚を抱いた。ライン生命エンジニア課主任が装置の動作状況を確認しているのではなく、一人のバンシーが同族に触れているような……
+まるで何年も昔に、あの人が手を握ってくれて、草笛の鳴らし方を教えてくれた時のような。
+ナスティはバッと顔を上げた――
+[Dialog]
+[playMusic(intro="$lab_intro",key="$lab_loop", volume=0.6)]
+[curtain(direction = 0,fillfrom = 0.2,fillto = 0, fadetime=2)]
+[curtain(direction = 4,fillfrom = 0.2,fillto = 0, fadetime=2)]
+[focusout(duration=5, type="bg", from=0, to=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=5)]
+[backgroundTween( duration=20,block=false,yTo=-50)]
+[delay(time=2)]
+[bgeffect(name="$eb_sunlight_l",layer=2,x=-250,y=500)]
+[charslot(slot = "m", name = "avg_npc_2036_1#1$1",duration=3)]
+[charslot(slot = "m",posfrom = "0,50", posto = "0,0",duration = 10)]
+[delay(time=5)]
+[playsound(key="$d_avg_enchantress_cheer_2")]
+[name="ヴァエラ？"]……
+[charslot(slot = "m", name = "avg_npc_2036_1#3$1")]
+[name="ヴァエラ？"]（苦しげなうわ言）
+[charslot(slot = "m", name = "avg_npc_2036_1#7$1")]
+[name="ヴァエラ？"]（嬉しそうな独り言）
+[charslot(slot = "m", name = "avg_npc_2036_1#9$1")]
+[name="ヴァエラ？"]ナスティ、かわいい娘……
+[name="ヴァエラ？"]おかえりなさい。
+[Dialog]
+[delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot] 

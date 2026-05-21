@@ -1,0 +1,726 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="68_g4_floatingplatform",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playMusic(intro="$act19side_01_intro",key="$act19side_01_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_4214_cairn_1#1$1",duration=0.5)]
+[delay(time=1.5)]
+[PlaySound(key="$d_avg_gunload", volume=1)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4214_cairn_1#5$1")]
+[delay(time=0.5)]
+[charslot(slot = "r",focus="r")]
+[name="エージェントA"]動くな。
+[charslot(slot = "m", name = "avg_4214_cairn_1#5$1")]
+[name="フェルネ"]待って、話せばわかるって。きゃっ――
+[Dialog]
+[charslot(slot = "l",posfrom = "200,0", posto = "200,0",duration = 0.5, name = "avg_npc_2046_1#1$1",focus="m")]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4214_cairn_1#9$1")]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot ="m", action="shake", power=6, times=20, duration=0.3,focus="m")]
+[delay(time=0.5)]
+[charslot(slot = "m",afrom = 1, ato = 0,duration = 1,focus="m")]
+[delay(time=1.5)]
+[charslot(slot = "l",posfrom = "200,0", posto = "0,0",duration =1,focus="l")]
+[delay(time=1.5)]
+[name="エージェントA"]暴動に参加した者は全員ここにいる。
+[Dialog]
+[charslot(slot="r",name="avg_npc_2047_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "r",focus="r")]
+[name="エージェントB"]全員下層の監獄にぶち込んで、D.C.に着いたら法廷に引き渡そう。
+[name="エージェントB"]もうすぐ計画の開始時間だ。全員、不備がないように、もう一度降下用装備のチェックしろ。
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_erthshkng", loop=true, channel="es", volume=0.7)]
+[CameraShake(duration=-1, xstrength=1, ystrength=1, vibrato=30, randomness=90, fadeout=false, block=false)]
+[delay(time=1.5)]
+[charslot(slot="r",name="avg_npc_2047_1#1$1",focus="r")]
+[charslot(slot="l",name="avg_npc_2046_1#1$1",focus="r")]
+[name="エージェントB"]どういうことだ！　誰か予定より早く起爆スイッチを押したのか？
+[charslot(slot="l",focus="l")]
+[name="エージェントA"]ありえない、区画はD.C.まであとたったの最後の数百メートルだというのに……いや待て、遠くの政府ビルの先端を見る限り、むしろD.C.から遠ざかっているのか？
+[charslot(slot = "m", focus = "n")]
+[name="フェルネ"]これはこれは、計画が変化に追いついてない感じかな？
+[charslot(slot="r",focus="r")]
+[name="エージェントB"]……
+[name="エージェントB"]お前たち、最初から爆発を阻止するつもりなどなくて、ただ区画が方向転換するための時間稼ぎをしていただけなのか？
+[charslot(slot = "m", focus = "n")]
+[name="フェルネ"]あたしたちが鍛えに鍛えられた専門チームに対抗する手段なんてないでしょ？
+[charslot(slot="r",focus="r")]
+[name="エージェントB"]……計画が変化に追いついてない、か……
+[Dialog]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[delay(time=1.5)]
+[name="エージェントB"]任務内容の変更だ。
+[name="エージェントB"]下層で待機しているエージェントは予定ルートから撤退しろ。上層チームは周りの民間人を守り、パラシュートで降下する準備を。
+[name="エージェントB"]ポイント・ゼロ、起爆。
+[Dialog]
+[charslot]
+[delay(time=1)]
+[CameraShake(duration=2, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n", volume=0.7)]
+[StopSound(channel="es", fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[CameraShake(duration=-1, xstrength=1, ystrength=1, vibrato=30, randomness=90, fadeout=false, block=false)]
+[Background(image="68_g1_groundparkstreet_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "m", name = "avg_npc_1000_1#2$1",duration=0.5)]
+[delay(time=1)]
+[name="オークリー"]何が起こったんだ！　スタジオの画面が全部消えた……外の配信画面はまだ信号を受信できてるか？
+[charslot(slot = "m", name = "avg_npc_2045_1#1$1")]
+[name="モニター"]まだ配信の心配してるの？　監督協会の避難通告が聞こえてない！？
+[name="モニター"]浮遊構造層に酷いエネルギー事故が起こって、十分もしないうちにすべての浮遊施設が墜落してしまうのよ！　早く応急施設に避難しないと！
+[Dialog]
+[playsound(key="$rungeneral", loop=true, channel="bgs")]
+[StopSound(channel="bgs", fadetime=2.5)]
+[charslot(slot = "m",posfrom = "0,0", posto = "300,0",duration = 1,afrom=1,ato=0)]
+[delay(time=2)]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1000_1#3$1")]
+[name="オークリー"]墜落……？
+[charslot(slot = "m", focus = "n")]
+オークリーが上を向くと、数百の小型の浮遊ポッドが六百メートルの上空で炎の塊と化し、広範囲に飛び散る燃え滓が明るい空を暗くしていた。
+日の光に照らされなくなると、雲のように軽やかで透き通っていたキャビンが、再び本来それらを形成していた重たい金属に逆戻りをして、回転しながらパークの下層に襲い掛かる。
+[name="？？？"]気を付けるんだ。
+[Dialog]
+[charslot(slot = "r",duration = 0.3, name = "avg_npc_2044_1#1$1",posfrom = "-50,0", posto = "-50,0")]
+[delay(time=0.7)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$bodyfalldown1", volume=0.7)]
+[charslot(slot = "r",duration = 0.7, posfrom = "-50,0", posto = "-250,-50",afrom=1,ato=0)]
+[charslot(slot = "m",duration = 0.7, posfrom = "0,0", posto = "-200,-50",afrom=1,ato=0)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_container_smash", volume=0.7)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1000_1#3$1")]
+[charslot(slot = "r", name = "avg_npc_2044_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot = "l", name = "avg_npc_1000_1#3$1",focus="l")]
+[name="オークリー"]げほっごほっ……危なかった、ありがとう。
+[name="オークリー"]あれ？　あんたはどのテクノロジー企業のモニターだ？　会ったことないよな？
+[charslot(slot = "r",focus="r")]
+[name="モニター？"]……
+[name="モニター？"]今は自己紹介している場合じゃない、オークリーさん。
+[name="モニター？"]道の両側にはあまり遮蔽物がない、落ちてくる欠片で怪我をしてしまうかもしれないから、早く応急施設に避難するんだ。
+[charslot(slot = "l", name = "avg_npc_1000_1#3$1",focus="l")]
+[name="オークリー"]ああ、わかった……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_snowstormlp", loop=true, channel="fs", volume=0.6)]
+墜落。
+コントロールを失ってひたすら落下していく。
+フェルネの心臓は跳ね回って落ち着く様子がなく、まるで次の瞬間にも胸から飛び出しそうだ。
+彼女はできる限り呼吸を制御しようとした。ヘルメットの両側についたベルトが彼女の頬を叩いており、その痛みが墜落への恐怖の抵抗の手助けとなっている。
+起爆器の信号が、連なる建築パイプラインを通って、ほぼ一瞬ですべての浮遊施設を燃やした。七番プラットフォームが完全に動力を失う前に、彼女は地面めがけて飛び降りた。
+[Dialog]
+[PlaySound(key="$d_avg_clothmovementsp")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[bgeffect(name="$eb_smoke_01",layer=1,y=-100)]
+[Image(image="68_i12", xScale=1.3, yScale=1.3,screenadapt="coverall",fadetime=0)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=1, block=false)]
+[CameraShake(duration=1.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=true)]
+[CameraShake(duration=-1, xstrength=1, ystrength=1, vibrato=30, randomness=90, fadeout=false, block=false)]
+[PlaySound(key="$d_avg_churchfire", volume=0.4,channel="f", loop=true)]
+[playMusic(intro="$Tremont_intro",key="$Tremont_loop", volume=0.6)]
+墜落するキャビンはまるで漆黒の流星のように、悲鳴を上げながらフェルネの横を通り過ぎていく。
+キャンディ色の広告塗料が炎に焼き尽くされ、焼き切れた柔らかいワイヤーが気流に乗って舞い、空気にはコールタールの苦い匂いが満ちている。
+そして、浮遊層そのものが突き破られた風船のように、名残惜しく空中で揺れている。
+「ラッキーシスティビースト」に、「ワンブーツ」、「ビーチブレラ」……
+フェルネは自分とともに墜落している企業ロゴを識別する。このような光景なら、ボーンヤードの夕日と並べても引けを取らないかもしれない、と胸の内で思いながら。
+[name="アスペン"]フェルネさん、パラシュートを！
+[name="フェルネ"]あっ、忘れるところだった。
+[StopSound(channel="fs", fadetime=2.5)]
+[PlaySound(key="$d_avg_parachute_open")]
+[CameraShake(duration=2, xstrength=5, ystrength=2, vibrato=5, randomness=90, fadeout=true, block=false)]
+[ImageTween( xScaleTo=1, yScaleTo=1, duration=60, block=false)]
+上昇気流が、明るいフェリーンを軽々と掬い上げた。人々が集まると、パラシュートが大きな雲を形成した。
+[name="アスペン"]俺たち、成功したのか？
+[name="アスペン"]地面層のやつらは、まだ何があったかわからないんだろうな。自分の投資と製品が灰になったのを見るのはきっとショックがでかいぞ……
+[name="フェルネ"]命が助かっただけでも儲けものでしょ。もし区画が加速して方向転換しなかったら、浮遊層の大型残骸がパークの下層に落ちてしまうのは免れなかったよね。
+[name="フェルネ"]それに、誰かがただ彼らに夢を見るのを諦めさせるためだけに、わざわざ陰謀を企てたなんて永遠に知ることもないからね。
+[name="アスペン"]……
+[name="アスペン"]俺たちはこれからどこに行くんだ、フェルネさん？
+[name="フェルネ"]北ノースビルに奥さんに会いに行くといいよ、アスペンさん。
+[name="アスペン"]そりゃもちろん。だがその後はどうするんだ？
+[name="フェルネ"]その後？
+[name="フェルネ"]そうだね。もう一度地面に立って、空を仰げるようになってから考えることにするよ。
+燃える炎が人々の顔を照らす。すでに面影もなくなったパークを眺めながらも、人々の心にはあまり残念に思う気持ちはなかった。
+D.C.とパークの間の荒野のあちこちに「プロペラパラダイス」の残骸が転がっている。まるで返品されたプレゼントのようだ。
+フェルネはリラックスした気分で両目を閉じた。彼女は「パラダイス」とともに空から墜落し、人の世に戻ってきたのだ。
+[stopmusic(fadetime=2)]
+[Dialog]
+[StopSound(channel="f", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[delay(time=1)]
+[image]
+[Background(image="68_g11_treeinside",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(key="$wasteland_loop", volume=0.6)]
+老衰したバンシーが二百年前の戦争の思い出を語った時、彼女は炎に包まれながら墜落する同族のことを、まるで糸の切れた凧のようだったと言っていた。
+しかし今や彼女はもがきながら空中に浮かんでいる。あまりに多くの糸によって地上に縫い留められた凧のように、数え切れないほどの根と枝が揺れる彼女の身体をつなぎ留めている。
+彼女が望む通り、永遠に糸の切れない凧となった。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_2036_1#3$1",duration=1)]
+[delay(time=2)]
+[name="ヴァエラ"]止まり木……それは私があの大きな木に付けた名前だった。その木の足元に小屋を建てて、すべてのバンシーの還るところにしたの。
+[name="ヴァエラ"]しかしラケラマリンが私をその木の元に送り届けてくれた時……私はひたすら恐怖だけを感じていた。
+[name="ヴァエラ"]まるで大きなうろみたいだった。月の光も、灯火も、蛍も、そこを照らせなかった。そこはただ沈黙して、少しずつ私の思い出を吸い取るだけだった……
+[name="ヴァエラ"]暗闇の中で私はその木が枯れていく気配を嗅ぎ取ることができた。枯死は我々には治せず、土石の子でさえ無力だった。
+[name="ヴァエラ"]それは毎分毎秒、私に河谷がいかに痛ましいかを伝え続けていた。
+[name="ヴァエラ"]殿下と将軍は結局戦争と死と引き換えにしてサルカズの明日を掴み取り、アエファニルは今もバンシーのために新たな未来を探している。
+[name="ヴァエラ"]しかし私のすべては、私の河谷は……ただの失敗した避難所でしかなく、静かに衰弱して死んでいく。
+[name="ヴァエラ"]それなのに、私は河谷のためにできることが何もない。
+[charslot(slot = "m", name = "avg_4212_nasti_1#12$1")]
+[name="ナスティ"]だから君は止まり木から、安息地から、死から逃げ出した。
+[name="ナスティ"]だが、なぜここなんだ？
+[charslot(slot = "m", name = "avg_npc_2036_1#1$1")]
+[name="ヴァエラ"]河谷以外の土地は皆同じ。暗くて、雑然としていて、方向さえわからなくなる。
+[name="ヴァエラ"]あの時私がまだ覚えていた道は、たった一つ。あの日、あなたが口にした見知らぬ名前……リターニア、ラテラーノ、クルビア……
+[name="ヴァエラ"]私はそれらの名前を、あなたの気配を追って……最終的にどこへ行けばいいのかも、何をすべきかもわかりはしなかったけど、ただ……あの木によって空っぽになりたくなかった。
+[charslot(slot = "m", name = "avg_4212_nasti_1#12$1")]
+[name="ナスティ"]だが君は最終的に、別の木に入っていくことにした。
+[charslot(slot = "m", name = "avg_npc_2036_1#1$1")]
+[name="ヴァエラ"]最初、あなたがここにもう一本の止まり木を植えたのを見た時、私はただ悲しかった。
+[name="ヴァエラ"]あの日、私は枯死する気配がここに広がるのを感じた……あなたが私たちの失敗を繰り返すことになると思った。
+[charslot(slot = "m", name = "avg_npc_2036_1#3$1")]
+[name="ヴァエラ"]河谷の止まり木は、今更どうあがいても救えないとしても……私はせめて、この木のために何かしたかった。
+[name="ヴァエラ"]少しでも枯れるのが遅くなってくれたら、少しでもあなたの悲しみが減ってくれたら、それでいいと思ったの。
+[charslot(slot = "m", name = "avg_npc_2036_1#9$1")]
+[name="ヴァエラ"]だけど実際に会った時に気づいたの……私がこの木にできることは何もないけど、この木は……この木は私を救ってくれると。
+[name="ヴァエラ"]河谷の止まり木は私の思い出をただ抜き出していくだけ。だけどこの木は、分け与えてくれる。
+[name="ヴァエラ"]河谷の物語を、そしてあなたの旅路を……私がまだ生きていると感じさせてくれる。
+[charslot(slot = "m", name = "avg_npc_2036_1#4$1")]
+[name="ヴァエラ"]ごめんなさい、ナスティ、ごめんなさい。あなたのために崩れた道を結ぶよりずっと前に、私はすでにこの木と一つになっていた。私はまた……あなたを騙してしまった。
+[charslot(slot = "m", name = "avg_4212_nasti_1#12$1")]
+[name="ナスティ"]……だから今の君の記憶は、これほどはっきりしているのか。
+[name="ナスティ"]そして、だからこそ「木」は私の呪文を排斥するという本来ありえない挙動をしている。君は文法と、運行のロジックを完全に書き換えたのか。
+[name="ナスティ"]「木」が君の命をつなぎとめていると同時に君が「木」を動かしている。双方とも本来とは似て異なるものとなっているというのに。
+[name="ナスティ"]まるでバグに頼って走っているプログラムのようだな……
+[charslot(slot = "m", name = "avg_npc_2036_1#8$1")]
+[name="ヴァエラ"]バグ……プログラム？
+[charslot(slot = "m", name = "avg_4212_nasti_1#12$1")]
+[name="ナスティ"]……まるで、寄生している蔦のおかげで倒れない枯れ木のようだ。
+[charslot(slot = "m", name = "avg_npc_2036_1#9$1")]
+[name="ヴァエラ"]それでも、いいのではない？
+[name="ヴァエラ"]この「木」が永遠に枯れないようにできるのであれば、私も遂に何かを成し遂げたことになる。あなたのために、バンシーのために、そしてサルカズのために。
+[name="ヴァエラ"]私はこの木と、あなたを連れて、河谷に帰ることができる。
+[charslot(slot = "m", name = "avg_4212_nasti_1#12$1")]
+[name="ナスティ"]そんなことに意味はない。
+[Dialog]
+[charslot]
+[playsound(key="$smallearthquake", loop=true, channel="bgs")]
+[StopSound(channel="bgs", fadetime=2)]
+[CameraShake(duration=2, xstrength=5, ystrength=5, vibrato=30, randomness=30, fadeout=true, block=true)]
+[charslot(slot = "m", name = "avg_npc_2036_1#5$1")]
+[name="ヴァエラ"]――！
+[name="ヴァエラ"]どうして……この木、もうコントロールできない……
+[charslot(slot = "m", name = "avg_4212_nasti_1#1$1")]
+[name="ナスティ"]効果が発揮され始めたということだな。
+[charslot(slot = "m", focus = "n")]
+[playsound(key="$d_avg_papermagic_loop", loop=true, channel="zd",volume=0)]
+[SoundVolume(volume=1, channel="zd",fadetime=1)]
+軽やかな音とともに、ナスティの腰の装置の外殻が外れ、紙のテープがこぼれた。形なき設計図にしたがっているように、それらはナスティの周りに広がり、厳格な枠を構成する。
+紙のテープには、すべて細かい穴があけられている。呪文だったそれらはナスティ特有の文法を構築し、ナスティの掲げる規則を守り、狂ったように蔓延る根茎と枝を拒んでいる。
+[charslot(slot = "m", name = "avg_4212_nasti_1#1$1")]
+[name="ナスティ"]言っただろう。この場で起きたことを理解した後でようやく、私はこの誤った結合を終わらせるのだと。
+[name="ナスティ"]もう、十分理解した。
+[charslot(slot = "m", focus = "n")]
+ナスティは筆を掲げ、一つの関数、一つの呪文を綴った。
+[charslot(slot = "m", name = "avg_4212_nasti_1#9$1")]
+[name="ナスティ"]（サルカズ語）再構成せよ。
+[Dialog]
+[charslot]
+[StopSound(channel="zd", fadetime=2)]
+[Blocker(a=0.1, r=1, g=1, b=1, fadetime=2)]
+[CameraShake(duration=3, xstrength=2, ystrength=2, vibrato=30, randomness=30, fadeout=true, block=false)]
+[playsound(key="$d_avg_airbuzz_3")]
+[bgeffect(name="$eb_tyndall",layer=1)]
+[focusparam(effect="Grayscale", blur=true)]
+[focusout(duration=2, type="bg", from=0, to=0.5, block=true)]
+[delay(time=1.5)]
+[playsound(key="$d_avg_enchantress_pain",volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_2036_1#4$1")]
+[name="ヴァエラ"]いや……木が分け与えてくれた思い出が……消えてゆく。
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="ヴァエラ"]ナスティ……何をしているの！　ナスティ！
+[charslot(slot = "m", name = "avg_4212_nasti_1#2$1")]
+[name="ナスティ"]「木」にプリロードしていたデータをすべて抹消している。それが君に共有したのは、実験用の臨時データに過ぎない。
+[name="ナスティ"]君が忘却を拒んでいるのは知っている。しかし君が本当に覚えたいと、残したいと思っているのは、きっとこんな実験のために一時的にかき集めた臨時データではないはずだ。
+[charslot(slot = "m", name = "avg_npc_2036_1#3$1")]
+[name="ヴァエラ"]それでも、ナスティ……
+[name="ヴァエラ"]私が最後に見るのが、あなたが自分の心血を注いだものを壊す場面は嫌……
+[name="ヴァエラ"]あなたはこのためにあれほど遠い道を歩み、あれほどの辛いことを経験してきたというのに……
+[charslot(slot = "m", name = "avg_4212_nasti_1#2$1")]
+[name="ナスティ"]君は河谷を自分の命のように大切に思っているが……私にそのような感情が存在したことはない。
+[name="ナスティ"]私には目的だけがある。この「木」はその手段だ。
+[charslot(slot = "m", name = "avg_4212_nasti_1#9$1")]
+[name="ナスティ"]私がこの「木」に対して判断を下すとき、その基準はどれだけのものを注ぎ込んだかではない。ただ私の目的を果たしてくれるか否かだ。
+[charslot(slot = "m", name = "avg_4212_nasti_1#2$1")]
+[name="ナスティ"]君は、今の結合状態で「木」を永遠に枯れないようにしたいというが、枯れないことでこの「木」がさらに有用なものになるという事実は存在しない。
+[charslot(slot = "m", name = "avg_4212_nasti_1#12$1")]
+[name="ナスティ"]……まさに、河谷の止まり木のようにな。
+[name="ナスティ"]あまり酷なことは言いたくないが、止まり木は最初から本当の意味で死にゆく者を慰めることなどできないんだ。あれはただの呪文の重みで曲がってしまったウメハリの木だ。
+[name="ナスティ"]タルガンギルスニガキ科、ウメハリ属、テラ東南部全域でよく見られる建材用樹木だ。ライン生命加入後、エルフの同僚に再度確認もしてもらった。
+[name="ナスティ"]あれが河谷の安息地となれたのは君がそれを一つの象徴としたがっていて、その変化に悲しむから、それだけだ。
+[name="ナスティ"]そして止まり木が枯死したのも、ごく自然な生命サイクルの果てにたどり着いたから。それだけだ。
+[charslot(slot = "m", name = "avg_npc_2036_1#1$1")]
+[name="ヴァエラ"]ただ、それだけなの……
+[charslot(slot = "m", name = "avg_4212_nasti_1#12$1")]
+[name="ナスティ"]あれの枝に流れる変幻自在の色彩も、おそらく単に長年呪文を注ぎ込まれたためにああなっただけだ。
+[charslot(slot = "m", name = "avg_npc_2036_1#1$1")]
+[name="ヴァエラ"]最初はどんな色だったかなんて、もう覚えていないわ……
+[name="ヴァエラ"]だけど、ナスティ、もし本当にそうなのだったら……
+[name="ヴァエラ"]なぜあなたは自分の木を、あんなに止まり木に似せたの？
+[charslot(slot = "m", name = "avg_4212_nasti_1#3$1")]
+[name="ナスティ"]そうすることで、君のことを思い出せるからだ。
+[name="ナスティ"]まさに、君が私を思っているように。
+[charslot(slot = "m", name = "avg_npc_2036_1#7$1")]
+[name="ヴァエラ"]……
+[charslot(slot = "m", name = "avg_4212_nasti_1#3$1")]
+[name="ナスティ"]ヴァエラ、なぜ私がこの「木」を植えたと思う？
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Image(image="68_i10", xScale=1, yScale=1,screenadapt="coverall",fadetime=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[playMusic(intro="$ghosthunter_intro",key="$ghosthunter_loop", volume=0.6)]
+[name="ナスティ"]別れの日のことを、私はまだ覚えている。
+[Dialog]
+[avgdisplay(id="1", name="act47side_01", style="animekv", slot="bgover", entryfrom=0, entryto=1, duration=4, block=false)]
+[Image(fadetime=1.5)]
+[delay(time=3)]
+[name="ナスティ"]君は私を呼んだが、私は振り返らなかった。振り返って、君と向き合ったら平静ではいられなくなるからだ。だが、どうしても我慢できずに水に映った君の顔を見た――
+[name="ナスティ"]君の顔を覚えていたかったんだ。
+[name="ナスティ"]あの時君は泣いていた。顔に残る古い涙の痕に沿って、次々に流れ落ちていた。まるでそういう規則がすでに定められたかのように。
+[name="ナスティ"]私は君と河谷で十数年ともに暮らしたが、私の記憶に残る君の顔には、いつもあの涙の痕があった。
+[name="ナスティ"]河谷での生活はいいものだった。カズデルと比べるなら、私は何度でも河谷を選ぶだろう。だが、ヴァエラ……
+[name="ナスティ"]河谷にいた二百年間、君が苦しみから解放された瞬間など少しもなかったのだろう？
+[name="ナスティ"]私は最初、すごく単純な方法で君の涙をぬぐい、笑わせることができると考えていた。
+[name="ヴァエラ"]ムシンカのわたで、一日中私の顔を拭いていたわね……
+[name="ナスティ"]後になって、ようやく君がなぜ苦しんでいるのかを知った。
+[name="ナスティ"]君の苦しみの根源は、あの決定、あの嘘だった。
+[name="ナスティ"]本能に逆らったために善き最期を得られない同族や、導く者がいないためにサルカズの魂に還れない同胞たちにあった。
+[name="ナスティ"]君の問題を解決するにはバンシーの、ひいてはすべてのサルカズの問題を解決する必要があった。
+[name="ナスティ"]そして答えは河谷の、カズデルの外にあり、この大地の私が知らない場所にある。
+[name="ナスティ"]身の程知らずにもそう考えていた時だ。ヴァエラ……
+[name="ナスティ"]私は、自分が君と共に空を舟で行く姿を見た。
+[name="ヴァエラ"]水面に映る逆さまの空を……
+[name="ナスティ"]あの日は風が吹いていなかったのに、あの一瞬だけ、予兆もなくさざ波が立ち、君の顔にあった拭い取れない涙跡を消し去った。おかげで、まるで君が笑っているように見えた。
+[name="ナスティ"]それ以来、君に笑顔をもたらす方法を考えるたびに、私は空を思い出す。
+[name="ナスティ"]もしかしたら……
+[name="ナスティ"]私たちの住処は、私たちの魂の還る場所は、空にあってもいいのかもしれない。
+[name="ナスティ"]（サルカズ語）空はサルカズの約束の地でもある。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_2036_1#1$1")]
+[Image]
+[avgdisplay(id="1")]
+[Background(image="68_g11_treeinside",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="ヴァエラ"]あなたが外でやってきた事は、空に浮かぶこの「木」は……
+[charslot(slot = "m", name = "avg_4212_nasti_1#3$1")]
+[name="ナスティ"]全てあそこから始まった。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_explo_n", channel=2, volume=0.8)]
+[CameraShake(duration=2, fadeout=true, xstrength=20, ystrength=20, vibrato=30, randomness=60, block=false)]
+[delay(time=2)]
+[playsound(key="$d_avg_keyboard_console", loop=true, channel="dz",volume=0.5)]
+[charslot(slot = "m", name = "avg_4212_nasti_1#2$1")]
+[delay(time=1)]
+[StopSound(channel="dz", fadetime=0)]
+[name="ナスティ"]監視カメラ映像を。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="68_i12", xScale=1, yScale=1,screenadapt="coverall",fadetime=0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="ヴァエラ"]つ、墜落……まるで糸の切れた凧のように……
+[name="ナスティ"]どうやら、結局マイレンダーはうまくやったようだ。何千何万ものD.C.の住民がこの大規模な墜落を目撃するだろう。
+[name="ナスティ"]だが先ほどの揺れは下層区画から来るものだ。まさか、ゴードンが……
+[name="ヴァエラ"]私たちも……墜落するの？
+[name="ナスティ"]まだわからない。私は結合状態を解除し、「木」の設定を初期化して、作業可能な状態に回復させた。
+[name="ナスティ"]だが「木」自体がそもそも未完成だ。
+[name="ヴァエラ"]ナスティ、せめて……せめて自分だけでも助かるように……
+[name="ナスティ"]三年前、アエファニルがサルカズの魂を導き、私の予想に足りていなかった条件を付け加えてくれた。二年前、ある友人が天幕を引き裂いて未来への道を指し示してくれた。
+[name="ナスティ"]それでも、私はずっと答えまであと一歩のところで足踏みをしていた。これからどうなるかは、私たちがそれを見つけられるかのみにかかっている。
+[name="ヴァエラ"]答え……私には見えないわ。もう二人とも空にいるけれど、それでも。
+[name="ヴァエラ"]全てのものが墜落していき、空はただ……がらんとしていて、空っぽ。
+[name="ナスティ"]……
+[name="ナスティ"]そうだな。空はいつも空っぽだ。そこにものを詰め込むのは……
+[name="ナスティ"]私たち自身だ。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[name="ナスティ"]ヴァエラ。答えは、確かに空にはないと思う。
+[name="ナスティ"]君の中にしかない。
+[Dialog]
+[charslot]
+[focusparam]
+[focusout(duration=0, type="bg", from=0, to=0, block=true)]
+[delay(time=1)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2,block=false)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.4,block=true)]
+[Image(image="68_i11_3", xScale=1.4, yScale=1.4,screenadapt="coverall",fadetime=0,y=-100)]
+[ImageTween(yTo=-200,  duration=30, block=false)]
+[playMusic(key="$m_avg_banshee_loop", volume=0.6)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="ナスティ"]君につきまとう咆哮や、罵倒、そして慟哭の数々は、私にすら聞こえている。
+[name="ヴァエラ"]私が渡し守となった、あるいはなれなかった同胞たち――ブラッドブルード、ナハツェーラー、ジャールに……バンシー。
+[name="ナスティ"]「木」にプリロードした臨時実験データはすべて削除した。
+[name="ナスティ"]未だ君につきまとうのは、君自身の未練や怒り、そして悲しみだ。君が二百年の間に見送ったバンシーたちや、幾千幾万年の中で魂に還ったサルカズも、今の君と同じだった。
+[name="ナスティ"]だからこそ、我々の同族は苦痛の中で忘却によって空っぽになる。だからこそサルカズの魂はいつも咆哮し、罵倒し、慟哭している。
+[name="ナスティ"]だが、我々の死後にも情報の残滓が消えないのが決定事項であるなら。サルカズの魂もそういった情報の残滓の集合体でしかないのなら……
+[name="ナスティ"]何故、最後に残るのが笑顔と歌声であってはならないんだ？
+[name="ナスティ"]私たちの本能がそれを許さないからか？
+[name="ナスティ"]いいや、そんな決まりはない。
+[name="ナスティ"]情報の残滓を処理するだけなら、サーバーを立てればいい。地上では受信範囲が十分でないなら、場所を空に移せばいい。
+[name="ナスティ"]生きる者の避難所としてだけでなく、「木」は死者の魂の還る場所にもなる。そしてこれからは、最後に何を残すかは、私たち自身が決めるんだ。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain]
+[delay(time=1)]
+[Image(image="68_i11_2",screenadapt="coverall")]
+[bgeffect(name="$eb_068cg_dissolve",layer=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[name="ナスティ"]この「木」に足りなかったのは、何らかの機能ではなく、たった一つの指令や、決定、そして真摯な願いだったのかもしれない。
+[name="ナスティ"]答えを教えてくれ、ヴァエラ――君が本当に残したいと願っているのは、一体なんだ？
+[name="ナスティ"]「木」は……私は、その記憶を保存し、残す。
+[name="ナスティ"]君が残したいものが忘却によって失われることは決してないんだ。
+[name="ヴァエラ"]……
+[name="ヴァエラ"]わからない。
+[name="ナスティ"]わからないのか……
+[name="ヴァエラ"]最初は、ただ仲間たちがそれほど苦しまず、怒らず、悲しまずに暮らせたらと思っていたの。
+[name="ヴァエラ"]だけど、どうすればそれが実現できるか、もうわからないの。河谷にできなくて、安息地や止まり木にもできないのなら……
+[name="ナスティ"]ヴァエラ……
+ナスティは何かをしたかった。何か声をかけたかった。しかし、彼女の唇は音もなく動いただけだった。
+まったく彼女らしくもなく、一つの考えが頭を支配していた。もしも、もっと早くにこの「木」を完成させていたら、もっと早く同胞を空の避難所に引っ越しさせられていたら……
+母は、慰めとなる記憶を忘れずにいられたのだろうか？
+百をも超える浮遊ポッドが炎に包まれながら墜落する。漆黒の流星のように。重い雨粒のように。あるいは、糸が切れた凧のように。
+母娘二人はただ沈黙し、見つめ合う。まるで、そうしていればこの瞬間が永遠に終わらないと信じているかのように。
+[name="ナスティ"]……
+[name="ヴァエラ"]いいえ……
+[name="ヴァエラ"]ナスティ……あなたは足を止めるような子ではないわ。子供の頃から、あなたはこれと決めた道を最後まで進み続ける子だった。
+[name="ヴァエラ"]今足を止めてはいけないわ。私にあなたが成したすべてのことの意義を奪わせないで。たとえ私の人生に意味などなかったとしても、あなたの努力は、きっと価値あるものだったはず……
+[name="ヴァエラ"]もし、この「木」がサルカズの新たな魂の還る場所になるのなら、私が最初の住民となるでしょう。
+[name="ヴァエラ"]二十数年前、私はあなたに家を見つけた。今、あなたも私に家を見つけてくれたのよ。
+[name="ナスティ"]だが、この先もし子供たちが「木」の周りに集まって、「木」が伝える声を聞いた時……彼らに聞こえるのが君の慟哭ではなく、笑い声であってほしい。
+[name="ナスティ"]君のことを思い出す時、私が思い浮かべるのも、君の笑う顔であってほしい……
+[name="ヴァエラ"]ナスティ、私の愛しい娘……
+[name="ヴァエラ"]あるわ……良い記憶が、笑顔を浮かべるような記憶が、私にもある……
+[name="ヴァエラ"]覚えてるわ、あれは……
+[Dialog]
+[playsound(key="$d_avg_wind")]
+[playsound(key="$d_avg_OriginiumArts_llfather_lp",channel="2",volume=0, loop=true)]
+[SoundVolume(volume=0.3, channel="2",fadetime=2)]
+[bgeffect(fade = true, fadetime = 1, layer=1)]
+[delay(time=2)]
+[StopSound(channel="2", fadetime=2)]
+[bgeffect(name="$eb_068cg_flower",layer=2,fade = true, fadetime = 4)]
+[delay(time=2)]
+彼女は最後まで話せなかった。
+忘却が始まったことを自覚し、止まり木の下にある木小屋から逃げ出してから、転々としながらナスティの痕跡を追ってクルビアに来るまで、すでに半年が過ぎていた。
+余命幾ばくもないバンシーにとって、この終わりに至る旅はあまりにも長い道のりだった。
+彼女の思った通りの再会ではなかったが、無理やり彼女を支えていた執念が消え去れば、死はついに彼女に追いついた。
+無数の場面がヴァエラの脳内で色褪せていき、ナスティの目の前で鮮明になる。
+[Dialog]
+[delay(time=1)]
+[Sticker(id="st1",multi = true, text="バンシーは手にした櫂を動かすのを止めたまましばらくじっとしていた。", x=300,y=200, alignment="left", size=24, delay=0.001, width=700,duration=1,block = false)]
+[Sticker(id="st1",multi = true, text="\nため息が彼女の耳に届いた。かつて同じ願いを思い描いたかの殿下が、もはや彼女の目には届かないはるか遠くで命を落としたのだ。",block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+[Sticker(id="st1",multi = true, text="バンシーは呆然と、止まり木の下で立ち尽くした。長く長くそこにいた。", x=300,y=200, alignment="left", size=24, delay=0.001, width=700,duration=1,block = false)]
+[Sticker(id="st1",multi = true, text="\n彼女は三ヶ月をかけて同族が彼女の嘘のせいで、忘却によって空っぽにされていくのを見届けた。しかし彼女は最初から最後まで無力だった。",block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+[Sticker(id="st1",multi = true, text="バンシーはボロ小屋の地面に長らく膝をついていた。", x=300,y=200, alignment="left", size=24, delay=0.001, width=700,duration=1,block = false)]
+[Sticker(id="st1",multi = true, text="\n彼女はかつて助けてくれたあるアンズーリシックの葬儀を執り行うと約束したが、今眼の前に残るのはとっくに石化した尻尾の先端のみだった。",block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+[Sticker(id="st1",multi = true, text="バンシーの悲しみにも悔しさにも果てはなく、まるで長き涙の川のように、ナスティの側から流れていく。", x=300,y=200, alignment="left", size=24, delay=0.001, width=700,duration=1,block = false)]
+[Sticker(id="st1",multi = true, text="\nしかしそれらがすべて消え去った後、残ったのは短くも軽やかな一場面だった。",block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+[Sticker(id="st1",multi = true, text="バンシーが一人の子供を寝かしつけている。彼女が河谷に連れて帰ってきたばかりの子供だ。", x=300,y=200, alignment="left", size=24, delay=0.001, width=700,duration=1,block = false)]
+[Sticker(id="st1",multi = true, text="\n彼女が旧友に向ける視線は疲れに満ちていたが、いざ口を開けばその子供の可愛さの話ばかりだった。",block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+[Sticker(id="st1",multi = true, text="バンシー自身も、かつては子供だった。", x=300,y=200, alignment="left", size=24, delay=0.001, width=700,duration=1,block = false)]
+[Sticker(id="st1",multi = true, text="\n彼女は目を開いたばかりで大地の良し悪しも知らず、そこに人生初めての視線を向けた。",block = true,duration=1)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=1.5)]
+[Sticker(id="st1",multi = true, text="だがナスティは、はっきりと彼女が笑っているのを見た。", x=300,y=200, alignment="left", size=24, delay=0.001, width=700,duration=1,block = true)]
+[Sticker(id="st1",duration=1,block = false)]
+[delay(time=2)]
+[Dialog]
+そうして、時がバンシーの体を通り抜けた。まるで風が霧の湖の水面を吹き抜けたように、何も残さなかった。
+そうして、ヴァエラは空中に消え去った。
+[Dialog]
+[bgeffect(fade = true, fadetime = 5, layer=2)]
+[delay(time=2)]
+[Image(image="68_i11_1", xScale=1, yScale=1,screenadapt="coverall",fadetime=1.5)]
+[delay(time=2)]
+一片の葉っぱがゆっくりと落ちてきた。
+[name="ナスティ"]君を受け止め、覚えていよう……
+[Dialog]
+[name="ナスティ"]母さん。
+ナスティはその葉を丁寧に受け止めた。かつて、母が木の下で葉っぱを摘んでくれた時のように。
+[name="ナスティ"]……笑顔のための伴奏なら、骨笛を使うこともない。
+[Dialog]
+[delay(time=1)]
+[Image(image="68_i11_4", xScale=1, yScale=1,screenadapt="coverall",fadetime=1.5)]
+[delay(time=2)]
+彼女は長らく黙り込んでいたが、やがて葉っぱで音を奏でた。
+草笛の旋律がまるで糸のように、彼女の一生で最も優しい呪文を紡ぎ出す。
+[Dialog]
+[playsound(key="$d_avg_enchantress_leaves",volume=0.2)]
+[delay(time=3)]
+[name="ナスティ"]どうか安らかに。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[image]
+[bgeffect]
+[delay(time=2)]
+[Background(image="38_g2_colombiaoffice",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[playMusic(key="$victorianormal_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_897_1#1$1",duration=1)]
+[delay(time=2)]
+[name="ジャクソン"]一つ賭けをしたいのですが、ヤラ女史。
+[name="ジャクソン"]私の秘書のパヴァール、あの真面目そうな子ですが、先ほど風船を届けてくれたあと、どれくらいの天空に関する関連株を買うかを当ててみませんか？
+[charslot(slot="m",name="avg_npc_1840_1#1$1")]
+[name="ヤラ"]一株も買えないでしょうね。私が来る時、証券取引所の入り口の列はすでに街二つ分以上になっていたもの。
+[charslot(slot="m",name="avg_npc_897_1#1$1")]
+[name="ジャクソン"]前にD.C.がこれほど賑やかなのを見たのは、国防部がボリバルに派兵すると決めた年でしたね。あの時誰もが持っていたサボテンの帽子は、今も私のオフィスにありますよ。
+[name="ジャクソン"]あの時、人々はその帽子をかぶって、街に出てスローガンを叫んでいました。D.C.を走る血管はすべて緑になりましたね。
+[charslot(slot="m",name="avg_npc_1840_1#1$1")]
+[name="ヤラ"]あれを被っている人は長い間見てないわ。
+[charslot(slot="m",name="avg_npc_897_1#1$1")]
+[name="ジャクソン"]ロバート・マケッソンと彼が掲げる「ボリバル人からボリバルを救い出す」偉業が夜のラジオでの笑いをとる鉄板ネタになって以来、税金が大砲になることを望む人はいなくなりました。
+[charslot(slot="m",name="avg_npc_1840_1#1$1")]
+[name="ヤラ"]今、人々があれの代わりに頭に付けているのはプロペラね。
+[charslot(slot="m",name="avg_npc_897_1#1$1")]
+[name="ジャクソン"]青い、くるくる回るプロペラの帽子。正直なところ、私には少し煩い音がします。
+[name="ジャクソン"]どうやらもっと上等なものもあるようで、回ると今やだれもが知る国民的なロックソングを自動的に流すらしいですね。
+[charslot(slot="m",name="avg_npc_1840_1#2$1")]
+[name="ヤラ"]……
+[charslot(slot="m",name="avg_npc_897_1#1$1")]
+[name="ジャクソン"]私は『我らにテラの祝福あれ』と『66番航路』を聞いて育ちました。きっと自分の代に子供が聴くのは『おやすみ、ホライズンアーク』だと思っていたのですがね。
+[name="ジャクソン"]ふたを開けてみれば『おやすみ、クリステン』でした。
+[name="ジャクソン"]クルビア人の未来に対する熱狂的な信念は、どの時代も変わりはしません。しかし追いかける相手は、いつの間にか変わっていくようです。
+[charslot(slot="m",name="avg_npc_1840_1#3$1")]
+[name="ヤラ"]「偶像」になることがクリステンの本意だったことはないわ。
+[charslot(slot="m",name="avg_npc_897_1#2$1")]
+[name="ジャクソン"]国防部だって、夜のラジオの鉄板ネタになるのは本意ではありませんでしたよ。
+[name="ジャクソン"]乾杯しながら国防部の失脚を祝っていた時、我々の誰もが、ボリバルからトリマウンツにかけて、信頼を失ったのは国防部だけではなかったと思いつきませんでした。
+[charslot(slot="m",name="avg_npc_1840_1#4$1")]
+[name="ヤラ"]そうね。大鍋いっぱいのクリームパスタを囲んで夜のラジオを聴いている人たちは、国防部、連合議会や内閣なんて区別しないもの。
+[charslot(slot="m",name="avg_npc_897_1#2$1")]
+[name="ジャクソン"]……
+[charslot(slot="m",name="avg_npc_1840_1#8$1")]
+[name="ヤラ"]あなたの言っていたように、この時代の人々は、政治的主張や約束事よりも、一つの伝奇的な出来事や奇跡に感化されたがっているように思うわ。
+[charslot(slot="m",name="avg_npc_897_1#7$1")]
+[name="ジャクソン"]ですが時には、奇跡を育む土地そのものに視線を戻してもらう必要があります。
+[name="ジャクソン"]「クルビア」そのものに。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[background]
+[charslot]
+[background(screenadapt="coverall", image="68_g16_sunnyday",xScale=1.2, yScale=1.2,y=30)]
+[backgroundTween( duration=15, yTo=0,block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="『テクノロジー評論』記者"]我々はようやく、誰もが期待する「プロペラパラダイス」を目の当たりにしました。二年前の夜から今日まで、我々は毎日その姿に思いを馳せ……
+[name="『ザ・セイヴァー』ゲスト"]先ほどの整然とした空中の方向転換は、たとえ平和な時代で運転しているのが浮遊ポッドであっても、我々のエースパイロットが以前と変わらない腕を持っていることを証明し……
+[name="『挑戦の足音』公式放送"]そして今、「プロペラパラダイス」はクルビアン・ドリームの結晶を用いて、一つまた一つの想像を超える奇跡でもって私たちに――
+[name="『テクノロジー評論』記者"]我々に証明を――
+[name="『ザ・セイヴァー』ゲスト"]我々に宣告を――
+[Dialog]
+[stopmusic(fadetime=1)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[background]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[CameraShake(duration=1.5, xstrength=10, ystrength=10, vibrato=40, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n", channel=2, volume=0.8)]
+[Image(image="68_i12", xScale=1, yScale=1,screenadapt="coverall",fadetime=1)]
+[delay(time=3)]
+……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Dialog]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.1, grad=true, fadetime=0)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.1, grad=true, fadetime=0)]
+[curtain(direction = 2,fillfrom = 0.01,fillto = 0.1, grad=true, fadetime=0)]
+[curtain(direction = 6,fillfrom = 0.01,fillto = 0.1, grad=true, fadetime=0)]
+[bgeffect(name="$eb_picturetube",layer=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+…………
+沈黙。
+全てのメディアからの、あらゆるチャンネルから響く感情豊かな、ヒステリックな、鋭い、厚みのある声が、まるで示し合わせたように沈黙に陥った。
+街に出た企業家や投資者、そして幾千幾万の一般人も、同時に黙り込んだ。
+数分の間、広大なマックスD.C.では、人々の頭上にあるプロペラ帽子だけがカサカサと音を立てていた。
+カサカサ、カタカタ、くるくる。葉が落ちるような音だ。D.C.の数百万人が盛大な墜落を目撃する時の、唯一の伴奏だった。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[image]
+[curtain]
+[bgeffect]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_1840_1#8$1")]
+[Background(image="38_g2_colombiaoffice",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0.6)]
+[name="ヤラ"]……「奇跡を育てる土地そのものに視線を戻してもらう」。
+[charslot(slot="m",name="avg_npc_897_1#7$1")]
+[name="ジャクソン"]「クルビア」そのものに。
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_oldtvelectricity", loop=true, channel="tv")]
+[name="『挑戦の足音』公式放送"]テロ襲撃？
+[name="『テクノロジー評論』記者"]計画された……テロ襲撃です。
+[name="『ザ・セイヴァー』ゲスト"]現場のジャーナリストが確認したところ、爆発は汎用パーツに偽装された一部のアーツ兵器によるものでした。
+[name="『ザ・セイヴァー』ゲスト"]その出所を探ると複数の中核国家まで辿り着きます。その中には……
+[name="『テクノロジー評論』記者"]とうに騎士精神と道を違えたカジミエーシュ、古くからアーツとともに歩んできたリターニア。彼らは恥じるべき手段を我々に用いました。
+[name="『挑戦の足音』公式放送"]本日のクルビアに「進歩」の声などありません。我々の八十年余りの歴史の中で、間違いなく最も暗き一日で……
+[Dialog]
+[StopSound(channel="tv", fadetime=0.5)]
+[charslot(slot="m",name="avg_npc_897_1#7$1")]
+[delay(time=1)]
+[name="ジャクソン"]今、クルビアが私の発言を待っています。
+[name="ジャクソン"]私はこう言うべきです。「彼らが破壊したのはサイエンスパークだけではない。クルビア人ひとりひとりがそこに託した夢と、投じた情熱もまた壊された。」
+[name="ジャクソン"]そしてこうとも。「このような恥じるべき、一線を越えた襲撃行動は、我々の輝かしさを憎み、我らが国民を脅かし、委縮させようという試みである。」
+[name="ジャクソン"]最後にこう言いましょう。「しかし彼らの目論見は失敗に終わるだろう。クルビアは倒されはしない。いかなる陰謀も、大地の西の灯火と孤星が永遠に輝くことを阻止できない。」
+[charslot(slot="m",name="avg_npc_1840_1#1$1")]
+[name="ヤラ"]そうすれば、クルビア人は再び税金を大砲にすることに同意してくれるわけね？
+[charslot(slot="m",name="avg_npc_897_1#7$1")]
+[name="ジャクソン"]人々は狂熱的に「プロペラパラダイス」に投じたすべて――空に関する関連株、カタカタ回るプロペラ帽子――を、「盾と剣」に変えるでしょう。
+[name="ジャクソン"]煙が消え、物一つなくなった空は、どのような宣伝文句よりも人々の神経を激しく刺激するでしょう。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[background]
+[charslot]
+[background(screenadapt="coverall", image="68_g15_skyblue",xScale=1.3, yScale=1.3,y=30)]
+[backgroundTween( duration=15, yTo=0,block=false)]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+クルビアの荒野の風は、一瞬たりとも止まったことがない。たった数分の間に、風は「プロペラパラダイス」を覆う煙と雲を無情にも追い払った。
+色鮮やかで派手な墜落が終われば、雲よりも高い空は今までよりもずっと寂しく見えた。
+しかし、そこが空っぽであるというわけではなかった。
+[Dialog]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=2, block=true)]
+[background]
+[charslot]
+[gridbg]
+[bgeffect(name="$eb_sunlight_l",layer=1,x=-600,y=250)]
+[cgitem(image="cgitem_68_i13", style="cg",layer = 2, sfrom=1, sto=1.2,sduration=0,rfrom=-5, rto=-5,rduration=0)]
+[focusout(duration=0, type="cg", from=0, to=1)]
+[Image(image="68_i13_1", xScale=1, yScale=1,screenadapt="coverall")]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=2, block=true)]
+[delay(time=0.5)]
+[cgitem(image="cgitem_68_i13", style="cg",layer = 2, sfrom=1, sto=1.2,sduration=0, rfrom=-5, rto=0,rduration=2)]
+[playsound(key="$d_avg_telescope_adjust", loop=true, channel="tj")]
+[playMusic(intro="$act25side_intro",key="$act25side_loop", volume=0.6)]
+[focusout(duration=2, type="cg", from=1, to=0)]
+[delay(time=1)]
+[StopSound(channel="tj", fadetime=0)]
+[delay(time=2)]
+[name="ジャクソン"]まさか、私の目にゴミが入ったのでしょうか？
+[name="ヤラ"]私にも見えているわ、副大統領。
+[name="ヤラ"]D.C.の数百万人にも、おそらく見えているわね。
+大きな熱気球と、複雑なプロペラによって支えられた浮遊プラットフォームは確かに墜落した。形状も機能も様々な実験用の浮遊ポッドも墜落した。
+浮遊層を一つにつなげていたロープウェイシステムは、数百のポッドとともに残らず崩れ落ちた。地面と空をつなぐ皿型の高塔と、それに支えられた空中エレベーターも崩壊した。
+しかしたった一つだけ、とある浮遊施設が、分厚い雲を突き破り、クルビアの青天に昇ったのだ。
+[name="ヤラ"]……
+[name="ジャクソン"]……
+[Dialog]
+[PlaySound(key="$doorknockquite")]
+[delay(time=1.5)]
+[name="副大統領秘書"]副大統領、マイレンダーからの情報です。
+[name="副大統領秘書"]「プロペラパラダイス」は先ほどD.C.への接近を停止し、南東の辺境地帯に向けて加速しながら進み始めました。
+[name="副大統領秘書"]クルビアからの脱出を目論んでいる可能性が高いとのこと。マイレンダーは、この行為が国への反逆と認められる可能性もあると述べています。
+[name="副大統領秘書"]辺境地帯に駐在する機動騎兵部隊が現在「プロペラパラダイス」めがけて進軍中。相手の前進可能なルートをすべて断ち切るつもりです。
+[name="副大統領秘書"]さらに空を飛ぶ性質不明の浮遊施設に関しては、D.C.航路に配備された都市防衛砲がすでに狙いをつけました。
+[name="副大統領秘書"]副大統領、演説がじきに始まります。あの施設についてどうお考えか皆が聞きたがっています。
+[name="副大統領秘書"]国防部は本来の筋書き通り、今すぐに攻撃を行うべきだと進言しています。マイレンダーからは施設が残ったことを基に別の宣伝路線に切り替える可能性を提案しています。
+[name="副大統領秘書"]しかし同時に、そうする際のリスクも指摘しました。何分、件の施設はまたもやライン生命の手によるものだそうですから。
+[name="ジャクソン"]彼らが行動に出る前に、まずはその浮遊施設とやらをじっくり見てみたいですね。
+[Dialog]
+[PlaySound(key="$d_avg_telescope_adjust")]
+[cgitem(image="cgitem_68_i13", style="cg",layer = 2, rfrom=0, rto=10,rduration=3,sfrom=1.2, sto=1.25,sduration=3)]
+[focusout(duration=1, type="cg", from=0, to=0.5)]
+[Image(image="68_i13_2", xScale=1, yScale=1,screenadapt="coverall",fadetime=1.5, block=true)]
+[delay(time=1)]
+[focusout(duration=1.5, type="cg", from=0.5, to=0, block=true)]
+[delay(time=1)]
+[name="ジャクソン"]一本の「木」ですか？
+[name="ヤラ"]一本の「木」ね。
+[name="ジャクソン"]さすがはライン生命ですね、ヤラ女史。樹形の施設ですが、どういうものかはご存じでしょうか？
+[name="ヤラ"]私は何も知らないわ、副大統領。あなたがライン生命が原因で怒り狂う時に、気分をよくするジョークを言ってあげるくらいしかできないの。
+[name="ジャクソン"]ははっ、それもかまいませんよ。
+[name="ジャクソン"]人々から見れば、あれはすぐに飛べない風船と同じく、本来何なのかなど、関係なくなります。
+[name="ジャクソン"]国防部の筋書き通りであれば、あれは騎士に屠られる赤ん坊や、巫王に害される使者となるはずです。その墜落は、人々の怒りを頂点へと押し上げるでしょう。
+[name="ジャクソン"]マイレンダーが提案した可能性に従えば、あれはクルビアの次の精神的象徴になり、そのシルエットは今後十年生産されるすべての帽子に印刷されるでしょう。
+[name="ヤラ"]そうかしら？　私には「木」そのものにしか見えないけど。
+[name="ヤラ"]あの羽獣たちを見たかしら？　羽毛を整えて、くちばしを磨いている羽獣たち。
+[name="ヤラ"]すでにあれを木であると認めたみたいよ、足を休める止まり木と。
+[name="ジャクソン"]クルビアという国全体の傷口の上に、空飛ぶ木を？　国民はそれをどう理解すれば良いのですか？
+[name="ヤラ"]理解する必要なんてないわ。
+[name="ヤラ"]あなたが、若いころ授業をさぼって荒野へ見物に行った移動式採掘プラットフォームのことを理解する必要がないように。
+[name="ヤラ"]昔のあなたは理解していたの？　あれが乗せていたのはやる気に満ちた開拓者と行く当てのない破産者のどちら？　成果を満載にしての移動か、あてもなく巡航しているだけなのか、どちらかしら？
+[name="ジャクソン"]……あはは。
+[name="ジャクソン"]あの日はどうしても試験に参加したくなくて、それであの移動式採掘プラットフォームも単に夕日を追っていただけでしたよ。
+[name="ヤラ"]夕日を追う採掘プラットフォームと、空を飛ぶ木。
+[name="ヤラ"]そんなに違いはないのではなくて？
+[name="副大統領秘書"]では、副大統領のご意見は？
+[name="ジャクソン"]ヤラ女史。私はクルビアの副大統領で、私なりの立場と責務があります。
+[name="ジャクソン"]もはや昔のように、自分勝手に授業をさぼって夕日を追う移動式採掘プラットフォームを見に行くことが叶いません。
+[name="ジャクソン"]ですが……
+[name="ジャクソン"]間違いなくあのことがあったからこそ、私は初めてクルビアというこの土地に情を抱くようになったのです。
+[name="ジャクソン"]もしもクルビアの次なる時代を育む土壌が「空」であるのなら、そうですね……
+[Dialog]
+[bgeffect(name="$eb_sunlight_l",layer=1,x=-600,y=250,xto=-400,yto=0,movetime = 5)]
+[cgitem(image="cgitem_68_i13", style="cg",layer = 2, afrom=1,ato=0,aduration=2,sfrom=1.25, sto=1.3,sduration=3)]
+[delay(time=3)]
+[name="ジャクソン"]そこが、一本程度の空を飛ぶ木を受け入れられぬとは限らないでしょう。
+[Dialog]
+[delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot] 
