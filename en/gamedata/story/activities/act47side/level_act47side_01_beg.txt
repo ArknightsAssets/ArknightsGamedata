@@ -1,0 +1,443 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="38_g5_rhinelab_indoor",screenadapt="coverall")]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=0, amount=1, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_magic_3", volume=1)]
+[name="Nasti"](In Sarkaz) Freeze.
+[playMusic(intro="$chasing_intro",key="$chasing_loop", volume=0)]
+[MusicVolume(volume=0.6, fadetime=2)]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[CameraEffect(effect="Grayscale", fadetime=2, keep=true, initamount=1, amount=0, block=true)]
+[PlaySound(key="$d_avg_labamb",channel="lab",loop=true, volume=0.4)]
+[charslot(slot = "m", name = "avg_npc_896_1#1$1", isblock=true)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.1, duration = 0.3)]
+[charslot(slot = "m", afrom = 1, ato = 0, duration = 0.4,isblock=true)]
+[delay(time=0.3)]
+[charslot]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[PlaySound(key="$d_avg_punch",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.15, block=true)]
+[delay(time=0.3)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.1, block=true)]
+[PlaySound(key="$d_avg_punchairwall",volume=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.15, block=true)]
+[delay(time=0.2)]
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.2, block=true)]
+[PlaySound(key="$d_avg_punchairwall",volume=1)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.4, block=true)]
+[delay(time=0.5)]
+The sound of rapid punching.
+The incantation draws an invisible wall in midair, blocking every one of the Vouivre's punches. The letters abbreviating her alma mater, the Trimounts Institute of Technology, on her boxing gloves are soaked with sweat.
+[stopmusic(fadetime=2)]
+[delay(time=0.5)]
+Finally, the Vouivre stops.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[delay(time=1.2)]
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_896_1#1$1", duration=1.5)]
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#4$1", duration=1.5,isblock=true)]
+[delay(time=0.5)]
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#1$1")]
+[name="Saria"]Phew—let's call it a day. Thanks for agreeing to be my practice partner, Nasti.
+[playMusic(intro="$m_dia_street_intro",key="$m_dia_street_loop", volume=0)]
+[MusicVolume(volume=0.6, fadetime=2)]
+[stopsound(channel="lab",fadetime=2)]
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#4$1")]
+[name="Nasti"]We've only done half your normal routine.
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#1$1")]
+[name="Saria"]It's time for you to go. Have you said goodbye to the others?
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#4$1")]
+[name="Nasti"]Not yet. Maryam goes without saying; Muelsyse is in Kjerag, and I don't know the new directors of HR and Structural all that well yet.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#8$1")]
+[name="Nasti"]As for Justin Jr. and Ferdinand, I think it's better that those two see each other in private...
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#4$1")]
+[name="Nasti"]They can give each other an audience to name drop fancy banquet guests, or rattle off a couple of fanciful theories that are <i>this</i> close to crowning a new king of science.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#4$1")]
+[name="Nasti"]Besides, it's just a business trip.
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#6$1")]
+[name="Saria"]There are few things that require a business trip from the head of Engineering personally.
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#5$1")]
+[name="Saria"]The District has approved our application to consolidate resources for the Horizon Arc Project, and continue developing levitation technology based on the legacy of Galleria Stellaria.
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#10$1")]
+[name="Saria"]But they have also opened their doors to every tech firm in Columbia, designating an entire plate for the purpose.
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#10$1")]
+[name="Saria"]Did you see the list of names? Administrators from the ATAO, and even Maylander.
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#10$1")]
+[name="Saria"]Our proposal is now merely one of thousands. They're already showing as much respect as they could by allowing Rhine Lab to provide foundational engineering support for the plate.
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#9$1")]
+[name="Saria"]Government officials, tech firm representatives... things will be very busy on the plate. You're not used to dealing with these things.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#1$1")]
+[name="Nasti"]I haven't heard you complaining about anything... Control.
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#1$1")]
+[name="Saria"]......
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#8$1")]
+[name="Nasti"]The Starpod is recovering, but the eyes cast up to the sky linger. When common sense is turned upside-down, what was once ignored has naturally become the center of attention.
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#10$1")]
+[name="Saria"]Naturally? Since the announcement of the Special Loan Policy, one third of major enterprises have added an aerial operations department, and SMEs are climbing over one anther to jump on the 'sky fever' bandwagon.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#1$1")]
+[name="Nasti"]I know what you're implying, but I'm not interested in political games.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#2$1")]
+[name="Nasti"]Even if how things develop is out of our control, Rhine Lab must maintain the initiative as the original proponent, in order to protect what Kristen left behind.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#2$1")]
+[name="Nasti"]That's not so hard to understand.
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#6$1")]
+[name="Saria"]Yes. Well, thanks for helping out.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#11$1")]
+[name="Nasti"]One more thing. Why did you hang a sign that says 'Components Control Section' outside your old office, instead of moving into Kristen's old room?
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#6$1")]
+[name="Saria"]I'm used to this place.
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#6$1")]
+[name="Saria"]Muelsyse asked the same question. She grabbed my arm and asked with watery eyes whether I made this choice to honor Kristen, to ensure there would always be a place for Kristen at the company.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#4$1")]
+[name="Nasti"]I suppose you just feel more comfortable in your old place. You personally oversaw every little detail here, after all.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#4$1")]
+[name="Nasti"]You were watching over my shoulder the whole time I was furnishing your office. You were even more OCD than Parvis was.
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#7$1")]
+[name="Saria"]......
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#6$1")]
+[name="Saria"]Rhine Lab is the same as it ever was.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#4$1")]
+[name="Nasti"]I wouldn't quite say that. At least staff who come looking for the Control will actually find her once in a while.
+[charslot(slot="l",focus="l",name = "avg_npc_896_1#5$1")]
+[name="Saria"]...I'm not sure you're the right person to say that.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#4$1")]
+[name="Nasti"]Is this why you chose me for the trip?
+[dialog]
+[charslot]
+[charslot(slot = "r",focus="all")]
+[stopmusic(fadetime=2)]
+[CameraEffect(effect="Grayscale", fadetime=3, keep=true, initamount=0, amount=1, block=true)]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.5, block=true)]
+[CameraEffect(effect="Grayscale", fadetime=0, keep=true, initamount=1, amount=0)]
+[charslot]
+[Background(image="68_g1_groundparkstreet_d",screenadapt="coverall")]
+[charslot(slot = "m", name = "avg_4212_nasti_1#1$1",isblock=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_tractor_amb",volume=0, channel="f", loop=true)]
+[SoundVolume(volume=0.1, channel="f",fadetime=2)]
+[charslot(slot = "m", name = "avg_4212_nasti_1#2$1")]
+[name="Nasti"]Make a cut here. Yes, that's the right angle. That way, the branches of the main trunk will not be affected.
+[dialog]
+[charslot(slot = "m", focus="n")]
+[PlaySound(key="$d_avg_prunethebranch", volume=0.8)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4212_nasti_1#1$1")]
+[name="Nasti"]Test passed. Give it a tug for me before we pave it, Sky.
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_activation")]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_4212_nasti_1#5$1",duration=0.8,isblock=true)]
+[name="Nasti"]Next set. Light sensor performance, normal. Levitation attitude, stable. Energy input and output, check. This needs a tug, too.
+[charslot(slot = "m", name = "avg_4212_nasti_1#1$1")]
+[name="Nasti"]Oh, and get the disassembly set from the toolbox for me as well.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_2037_1#1$1", bstart=0.2, bend=0.7)]
+[name="Sky?"]Do you still need the high-speed screwdriver and multi-function wrench, then?
+[charslot(slot = "m", name = "avg_4212_nasti_1#6$1")]
+[name="Nasti"]Depends... huh? What happened to your voice?
+[dialog]
+[charslot(slot = "m", name = "avg_npc_2037_1#1$1",bstart=0.2,bend=0.7,focus="m")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=false)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_2037_1#1$1",posfrom = "0,0", posto = "200,0",focus="n")]
+[charslot(slot = "m", name = "avg_npc_2037_1#1$1",bstart=0,bend=0,duration=2,focus="m")]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_2037_1#1$1",focus="m")]
+[stopsound(channel="f",fadetime=1)]
+[playMusic(intro="$holiday_intro",key="$holiday_loop", volume=0.6)]
+[name="Gentle Woman"]I would love to help, but I have a scissor hanging from my buttons, and I'm holding five... trees? I really can't take any more.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[curtain]
+[focusout(type="bg", id="51_g13_seabornnest", from=0.8, to=0,block=false)]
+[background]
+[Background(image="68_g1_groundparkstreet_d",screenadapt="coverall")]
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#11$1")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[name="Nasti"]Sorry, I'll get it. Did Sky leave?
+[dialog]
+[PlaySound(key="$d_avg_highheeledshoe_carpet_fts", volume=1)]
+[charslot(slot = "l",focus="l",name = "avg_npc_2037_1#6$1",duration=1.5, isblock=true)]
+[name="Gentle Woman"]He told you three times that he was going to the levitation layer for inspections. You didn't acknowledge him at all.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#1$1")]
+[name="Nasti"]You could have given me a heads-up.
+[charslot(slot = "l",focus="l",name = "avg_npc_2037_1#1$1")]
+[name="Gentle Woman"]The First Rule of Secretaries: Stand to one side and smile politely, only stirring when directed by your boss, and shut your ears when the conversation turns confidential.
+[charslot(slot = "l",focus="l",name = "avg_npc_2037_1#1$1")]
+[name="Gentle Woman"]I assure you I did not hear any of the figures or nouns that you just discussed, nor would I have understood a word of it.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#5$1")]
+[name="Nasti"]I remember you now. You're from Administration—Gordon Tannen's secretary.
+[charslot(slot = "l",focus="l",name = "avg_npc_2037_1#1$1")]
+[name="Gentle Woman"]I'm flattered that you remember me, Director Lunorey.
+[charslot(slot = "l",focus="l",name = "avg_npc_2037_1#1$1")]
+[name="Mercia"]My name is Mercia. You may call me Merry. Mr. Tannen would like to invite you to lunch.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#1$1")]
+[name="Nasti"]Do you manage his work inbox?
+[charslot(slot = "l",focus="l",name = "avg_npc_2037_1#1$1")]
+[name="Mercia"]He received your last sixteen rejections.
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#2$1")]
+[name="Nasti"]Then I'll get straight to the point. I know he's not interested in foundation engineering, and he knows that I have no interest in 'proposals' outside of work.
+[charslot(slot = "l",focus="l",name = "avg_npc_2037_1#8$1")]
+[name="Mercia"]Hm...
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#4$1")]
+[name="Nasti"]Speaking of lunch, though...
+[charslot(slot = "l",focus="l",name = "avg_npc_2037_1#6$1")]
+[name="Mercia"]Have you changed your mind?
+[charslot(slot = "r",focus="r",name = "avg_4212_nasti_1#4$1")]
+[name="Nasti"]It is, indeed, time for lunch.
+[charslot]
+Nasti flips through her toolbox, taking out a rectangular object wrapped in foil from underneath all the instruments and neatly-packed toolboxes.
+Mercia's curiosity brings her closer. She wants to know what could make this enigmatic director of Rhine Lab decline the most luxurious course at Cloud, the park's fine dining establishment.
+A crack appears in her impeccable secretarial smile, however, as she watches Nasti impassively unwrap the object.
+[dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[background]
+[curtain(direction = 0,fillfrom = 0.5,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.5,fillto = 0.2, fadetime=0.1)]
+[curtain(direction = 2,fillfrom = 0.55,fillto = 0.55, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.3,fillto = 0.3, fadetime=0.1)]
+[Image(image="68_i15", screenadapt="coverall", xScale=1.35, yScale=1.35,x=-30,y=-10,fadetime=3)]
+[delay(time=1)]
+[ImageTween(image="68_i15",xTo=-80,yTo=40,duration=5,block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Mercia"]Is this... brick... your lunch?
+[name="Nasti"](Mumbles) Ration bar.
+[name="Mercia"]What?
+Mercia cannot look away from the 'brick'.
+[name="Nasti"]Are you hungry? Would you like a bite?
+[dialog]
+[curtain(direction = 0,fillfrom = 0.2,fillto = 0.1, fadetime=0)]
+[curtain(direction = 4,fillfrom = 0.2,fillto = 0.4, fadetime=0)]
+[curtain(direction = 2,fillfrom = 0.55,fillto = 0.2, fadetime=0)]
+[curtain(direction = 6,fillfrom = 0.3,fillto = 0.51, fadetime=0)]
+[PlaySound(key="$d_avg_cakebgflgrnd", volume=0.8)]
+[ImageTween(image="68_i15",xTo=-100,yTo=0,duration=0.5,block=false)]
+[delay(time=1.2)]
+[name="Mercia"]I... I suppose. Thank you...
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[curtain]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[ImageTween(image="68_i15",xScaleTo=1,yScaleTo=1,xTo=0,yTo=0,duration=20, block=false)]
+[Delay(time=1)]
+[name="Mercia"](Chews with great difficulty)
+[name="Mercia"](Swallows arduously)
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Mercia"]*cough* *cough*!
+[name="Nasti"]......
+[name="Nasti"]You didn't have to say yes.
+[name="Mercia"]The Second Rule of Secretaries: Never decline an offer from your boss's guest, for even the smallest trifle might sour a relationship.
+[name="Nasti"]How many rules are there?
+[name="Mercia"]Mr. Tannen gave me a booklet that is two centimeters thick.
+[name="Mercia"]However, the most important one, and the one that I memorized first, was—
+[name="Mercia"]Do whatever it takes to carry out your orders, for no one will listen to your excuses.
+[name="Nasti"]......
+[name="Nasti"]Don't force yourself to eat it.
+[name="Mercia"]Thank goodness... I mean, thank you for the hospitality.
+[dialog]
+[name="Nasti"]I have a rule of my own, although it's a bit simpler.
+[name="Mercia"]What is it?
+[name="Nasti"]I was born in Kazdel. The first rule I learned there is that food is precious, and no one may lie before it.
+[name="Nasti"]You're holding my lunch, Mercia, so kindly tell me the truth.
+[name="Nasti"]What exactly does Mr. Tannen want to 'discuss' with me?
+[dialog]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[image]
+[Background(image="68_g6_floatinglabmodule",screenadapt="coverall")]
+[Delay(time=1)]
+[charslot(slot = "m",name = "avg_npc_2045_1#1$1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_energywell", volume=0.2, loop=true, channel="en")]
+[Delay(time=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Tester A"]Reporting in! The core concept of this project is a perfect combination of zero-G simulation and wine tasting by substituting gravity with centrifugal force. 'You may spin, but your wine won't!'
+[dialog]
+[charslot(slot = "m", action="jump", posto="50,0", power=20, times=1, duration=0.5, isblock=true)]
+[name="Tester A"]Come to the Lucky Cystybeast floating revolving bar, where it's not just the wine that makes your head spin—
+[stopmusic(fadetime=2)]
+[charslot(slot = "m",name = "avg_npc_2039_1#7$1",isblock=true)]
+[name="Sky Jagger"]No need to read me the marketing copy. I'm just here to assess and ask questions from an engineering perspective.
+[charslot(slot = "m",name = "avg_npc_2039_1#7$1")]
+[name="Sky Jagger"]Where's the other tester? Any feedback after the rectifications?
+[charslot(slot = "m",name = "avg_npc_2044_1#1$1",isblock=true)]
+[name="Tester B"]*Vomit*...
+[dialog]
+[charslot(slot="m",posfrom="0,0",posto="0,-150",afrom="1",ato="0",duration=0.5)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[delay(time=0.8)]
+[charslot]
+[charslot(slot = "r",name = "avg_npc_2039_1#7$1",isblock=true)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l",name = "avg_npc_2041_1#1$1",duration=1, isblock=true)]
+[delay(time=0.3)]
+[playMusic(intro="$ponder_intro", key="$ponder_loop", volume=0.6)]
+[charslot(slot = "l",focus="l",name = "avg_npc_2041_1#4$1")]
+[name="???"]He didn't sleep well last night! We passed the re-check, didn't we, Mr. Jagger? We won't have our permit revoked?
+[charslot(slot = "r",focus="r",name = "avg_npc_2039_1#3$1")]
+[name="Sky Jagger"]The Lucky Cystybeast's floating revolving bar does not meet requirements, whether based on engineering reports or tester feedback.
+[stopsound(channel="en",fadetime=2)]
+[charslot(slot = "l",focus="l",name = "avg_npc_2041_1#5$1")]
+[name="Aspen"]We would love to solve the technical issue of unstable power supply, but we need time...
+[charslot(slot = "r",focus="r",name = "avg_npc_2039_1#3$1")]
+[name="Sky Jagger"]You had three days, in accordance with the rules of Propeller Paradise.
+[charslot(slot = "l",focus="l",name = "avg_npc_2041_1#5$1")]
+[name="Aspen"]But it takes at least five days for the developers to discuss a solution!
+[charslot(slot = "r",focus="r",name = "avg_npc_2039_1#7$1")]
+[name="Sky Jagger"]Propeller Paradise has as many corporations as there are cars on the crossroads of Trimounts Square. Every driver has somewhere to be, but no one pleads to the traffic lights.
+[charslot(slot = "l",focus="l",name = "avg_npc_2041_1#1$1")]
+[name="Aspen"]There must be another way... I know! We hired close to a hundred testers. We could fire them and hire more researchers with the money!
+[charslot]
+[charslot(slot = "m",name = "avg_npc_2045_1#1$1")]
+[name="Tester A"]But you promised us yesterday—
+[charslot]
+[charslot(slot = "l",name = "avg_npc_2041_1#1$2",focus="l")]
+[charslot(slot = "r",name = "avg_npc_2039_1#7$1",focus="l")]
+[name="Aspen"]Shut up!
+[charslot(slot = "r",focus="r",name = "avg_npc_2039_1#7$1")]
+[name="Sky Jagger"]I've reviewed the registration details for Lucky Cystybeast.
+[charslot(slot = "r",focus="r",name = "avg_npc_2039_1#3$1")]
+[name="Sky Jagger"]You were a grocer in a small town. You lack the professional knowledge for levitation technology research, even if the banks have relaxed the loan criteria for businesses in the aerial sector.
+[charslot(slot = "r",focus="r",name = "avg_npc_2039_1#7$1")]
+[name="Sky Jagger"]We stand upon Terra's first and only floating plate. Everything here must be worthy of it.
+[charslot(slot = "l",focus="l",name = "avg_npc_2041_1#4$1")]
+[name="Aspen"]Please, don't tear off that ticket, I put my life savings into the Lucky Cystybeast, please...
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_papertear", volume=1)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[charslot(slot = "r", name = "avg_npc_2045_1#1$1")]
+[charslot(slot = "l", name = "avg_npc_2044_1#1$1")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="r",focus="r")]
+[name="Tester A"]That's it?
+[name="Tester A"]I'll be back to cleaning Trimounts office building windows in a couple of days?
+[charslot(slot="l",focus="l")]
+[name="Tester B"]*Vomit*...
+[charslot(slot="r",focus="r")]
+[name="Tester A"]Go on, barf your heart out. At least we got a taste of life in the sky... you won't have anything to throw up when you get back to the frontier, back to the cold and hunger.
+[dialog]
+[charslot]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name = "avg_npc_2039_1#7$1",posfrom="-300,0",posto="0,0",duration=1.5,isblock=true)]
+[delay(time=0.3)]
+[charslot(slot="m",name = "avg_npc_2039_1#3$1")]
+[name="Sky Jagger"]......
+[stopmusic(fadetime=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name = "avg_npc_2039_1#3$1",posfrom="0,0",posto="300,0",afrom=1,ato=0,duration=1.5)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="68_g1_groundparkstreet_d",screenadapt="coverall")]
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#2$1")]
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#1$1")]
+[Delay(time=1.5)]
+[playMusic(key="$darkness_03_loop", volume=0)]
+[MusicVolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#2$1",focus="r")]
+[name="Nasti"]Skip the technical inspections before the opening? Absolutely not.
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#6$1",focus="l")]
+[name="Mercia"]Everyone on Propeller Paradise is racing against the clock to get across the finish line. Mr. Tannen believes that any delay to projects caused by inspections will compromise Propeller Paradise's opening.
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#1$1",focus="l")]
+[name="Mercia"]In addition, reducing the amount of communication you have to conduct with other tech firms will allow you to devote more of your time to your Rhine Lab research. Mr. Tannen has your best interests at heart.
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#11$1",focus="r")]
+[name="Nasti"]My best interests?
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#10$1",focus="r")]
+[name="Nasti"]I spent years wandering the frontier when I first came to Columbia, building houses for the Pioneer Teams and killing bandits for the caravans. Life was hard until I finally got my big break.
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#10$1",focus="r")]
+[name="Nasti"]If I had someone like Gordon Tannen with my best interests at heart, handling everything I wasn't comfortable with...
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#6$1",focus="l")]
+[name="Mercia"]That would have been very fortunate, I'm sure.
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#1$1",focus="r")]
+[name="Nasti"]I would have died out there in the wilderness, I'm sure.
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#2$1",focus="l")]
+[name="Mercia"]......
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#2$1",focus="r")]
+[name="Nasti"]Besides, what he really wants isn't for Rhine to forfeit our control over technical inspections.
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#5$1",focus="l")]
+[name="Mercia"]How do you know?
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#2$1",focus="r")]
+[name="Nasti"]You imitate his negotiating style too well. The traps and pitfalls are obvious.
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#2$1",focus="r")]
+[name="Nasti"]I'm not a Cautus. I'm not in the habit of diving into holes.
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#2$1",focus="r")]
+[name="Nasti"]Spit it out. What does he really want?
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#9$1",focus="l")]
+[name="Mercia"]You are as astute and decisive as he said you were.
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#1$1",focus="l")]
+[name="Mercia"]In that case, I'm sure you understand that, while Mr. Tannen is in charge of Propeller Paradise's overall administration, it is Rhine that has a stranglehold on public opinion.
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#1$1",focus="l")]
+[name="Mercia"]He doesn't need any accidents at such a critical juncture, nor can he afford one. Therefore, he has put together a list based on project progress, and asks that you perform the inspections in this order.
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#1$1",focus="l")]
+[name="Mercia"]This way, at least the inspections will have a minimal impact on the progress of individual projects, and minimize the chance of conflict, setting aside the issue of engineering control.
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#17$1",focus="l")]
+[name="Mercia"]The less hassle for you, the less hassle for him.
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#2$1",focus="r")]
+[name="Nasti"]......
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#5$1",focus="r")]
+[name="Nasti"]I won't try to speculate about Tannen's intentions with the order. We have a compromise.
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#4$1",focus="r")]
+[name="Nasti"]Give me the list.
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#6$1",focus="l")]
+[name="Mercia"]Thank you for your understanding, Director Lunorey. I won't trouble you any longer.
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#11$1",focus="r")]
+[name="Nasti"]One last question. Which rule were you following in the negotiation just now?
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#1$1",focus="l")]
+[name="Mercia"]The twelfth: Know your boss, and communicate his intentions with absolute faithfulness when negotiating, for you are his personal representative.
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#1$1",focus="l")]
+[name="Mercia"]However—
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#11$1",focus="r")]
+[name="Nasti"]Yes?
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#1$1",focus="l")]
+[name="Mercia"]Before I came, Mr. Tannen stressed how difficult the head of Rhine Lab's Engineering Section was.
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#1$1",focus="l")]
+[name="Mercia"]I packed blankets because I thought I might have to spend the night in front of your office.
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#6$1",focus="l")]
+[name="Mercia"]But that's not what I see. You don't need concern from other people, and you're used to cutting through the problem in the most direct possible way. But you still care about people.
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#6$1",focus="l")]
+[name="Mercia"]Which is why I now have the time to enjoy my lunch in peace, something that I have not done in a long time.
+[charslot(slot = "l",posfrom="-50,0",posto="-50,0",name = "avg_npc_2037_1#1$1",focus="l")]
+[name="Mercia"]Thank you.
+[dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "l",afrom=1,ato=0,duration=1,isblock=true)]
+[delay(time=0.5)]
+[charslot(slot = "r",posfrom="50,0",posto="50,0",name = "avg_4212_nasti_1#1$1",focus="r")]
+[name="Nasti"]......
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

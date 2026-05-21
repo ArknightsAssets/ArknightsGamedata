@@ -1,0 +1,637 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="68_g4_floatingplatform",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=2)]
+[playMusic(intro="$ponder_intro",key="$ponder_loop", volume=0.6)]
+[charslot(slot = "left", name = "avg_npc_2046_1#1$1",posfrom = "0,0", posto = "0,0",duration = 0.8)]
+[charslot(slot = "right", name = "avg_npc_2046_1#1$1",posfrom = "0,0", posto = "0,0",duration = 0.8)]
+[delay(time=1.5)]
+[charslot(slot = "left",focus="l")]
+[name="Agent A"]What's going on? The jammer and our backup detonators aren't working?
+[charslot(slot = "r",focus="r")]
+[name="Agent B"]The transmitted signals show the devices are all activated, but the nine target pods' core engines have stopped.
+[name="Agent B"]Somehow, the received signals are all messed up. Even pods without transmitters attached are sending signals...
+[charslot(slot = "left",focus="l")]
+[name="Agent A"]Get a team to investigate this. Have them remove all traces of our work from earlier, and retrieve the transmitters.
+[charslot(slot = "r",focus="r")]
+[name="Agent B"]Captain... that's equivalent to calling the operation a failure.
+[charslot(slot = "left",focus="l")]
+[name="Agent A"]You forget how we do things at Maylander? If reality happens to significantly deviate from our plan, cease all action immediately. We're not some Wrankwood espionage flick heroes trying to be tough.
+[Dialog]
+[playsound(key="$d_avg_walkfast")]
+[charslot(slot = "r",afrom=1,ato=0,duration=1,posfrom = "0,0", posto = "150,0")]
+[Delay(time=2)]
+[playsound(key="$d_gen_transmissionget")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 , offset = "200,0" ,channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "r", pfrom = "190,0", pto="190,0", name = "avg_4151_tinman_1#1$1",duration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "r", switch = true)]
+[Delay(time=1)]
+[charslot(slot="m",focus="n")]
+[name="Tin Man"]Seems like someone is biased against blockbuster hits.
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "left",focus="l")]
+[name="Agent A"]We don't get reshoots.
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[charslot(slot = "m", focus = "n")]
+[name="Tin Man"]It's not as if we have no other choice.
+[name="Tin Man"]Don't send anyone to the pods. It's probably the Banshee's incantation that's keeping those 'toys' from falling straight down.
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "left",focus="l")]
+[name="Agent A"]But Nasti should be in jail right now, right?
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[charslot(slot = "m", focus = "n")]
+[name="Tin Man"]She's not the Banshee I'm referring to.
+[name="Tin Man"]The incantation has fundamentally changed how the levitation layer facilities are connected. The malfunctioning receivers prove this.
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "left",focus="l")]
+[name="Agent A"]...You're telling me the Banshee's incantation is able to connect to the levitation layer's power supply structure, send signals and synchronize commands? That's the craziest thing I've ever heard!
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[charslot(slot = "m", focus = "n")]
+[name="Tin Man"]Nasti designed the entire park's conduits and systems herself, after all. She didn't become one of the Rhine Lab Ten solely on her engineering talent.
+[name="Tin Man"]Though, if we utilize the upper level's power grid, and detonate just one engine, that will cause the entire layer to fall.
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "left",focus="l")]
+[name="Agent A"]Th-The entire layer...?
+[name="Agent A"]So you mean...?
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[charslot(slot = "m", focus = "n")]
+[name="Tin Man"]The park will connect with D.C. in twenty-five minutes. We'll have to present a reverse firework display to Propeller Paradise.
+[name="Tin Man"]Change of plans. Those on the upper layer, mobilize personnel and connect the support platforms surrounding the levitation layer to the common power grid; those on the lower layer, calculate the crash zone and prepare for evacuation measures at any moment.
+[name="Tin Man"]I'll let Gustave know of this, and have the admin staff coordinate with us to delay the opening speech.
+[name="Tin Man"]Also, send a group to the jail to confirm Nasti's position, and deploy at least three elite squads to the elevator square and any ascendable routes—it's only a matter of time before she returns to the levitation layer.
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "left",focus="l")]
+[name="Agent A"]Are you not going to join?
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[charslot(slot = "m", focus = "n")]
+[name="Tin Man"]Oh, I have to go supervise an agent of mine. Maylander has quite the troublesome evaluation systems after all. I'll join the rest of you once I'm done.
+[name="Tin Man"]Alright teams, move out.
+[interlude(channel = 3, clear = true,tsto="0,1",tsduration=0.5)]
+[Dialog]
+[playsound(key="$transmission")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="68_g7_airrestaurant",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[name="Gordon"]......
+[charslot(slot = "m", focus = "n")]
+A giant broadcast screen hangs in the Cloud restaurant, incessantly switching between gaudy company logos and the newest levitation devices, while Oakley's agitated voice booms from the speakers.
+The lower left of the screen is a real-time feed from the control room. A small red dot representing Propeller Paradise flashes, heading for Max, D.C.
+Two cameras stand on a cloud-like carpet, pointing at a lone chair—like a defendant's dock awaiting Gordon Tannen's attendance.
+[Dialog]
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="Gustave"]You're late.
+[charslot(slot = "l", name = "avg_npc_2042_1#8$1",focus="l")]
+[name="Gustave"]Why did you come dressed like that? There's no time to prepare a new outfit. We only have twenty minutes until your speech.
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="Gordon"]The tie on my ATAO uniform was too tight.
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="Gustave"]Heh. I remember six years back when you just got that set of clothes after your promotion to a full-time role. I personally adjusted it for you. So giddy from joy, you were.
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="Gordon"]You told me I had a lot to learn to be worthy of that uniform. And then I stayed in the same entry-level role for the next six years.
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="Gustave"]No newbie's first skill is writing self-reflection letters. It's not that I've never regretted helping you into that uniform.
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="Gordon"]And what about now?
+[charslot(slot = "r", name = "avg_4213_skybx_1#7$1",focus="r")]
+[name="Gordon"]This outfit, the blame for causing the accident—who put them on me?
+[charslot(slot = "l", name = "avg_npc_2042_1#6$1",focus="l")]
+[name="Gustave"]Oh, so you've figured it out?
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="Gordon"]You seized two crates of my goods the night I was exposed. I thought you were helping me dispose of them, but I found out they ended up in the hands of you and Maylander.
+[name="Gordon"]I bet this apology speech wasn't written that night either, was it, sir?
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="Gustave"]Go on.
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="Gordon"]Importing Originium devices into Columbia clearly violates ATAO regulations, and if security is compromised, I'll be the sin eater for the whole park.
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="Gustave"]So you still think this is a personal grudge?
+[charslot(slot = "r", name = "avg_4213_skybx_1#7$1",focus="r")]
+[name="Gordon"]Am I wrong? I've always been a slum boy to you, a bad little rule-breaker. As I climbed through the ranks on my own effort, you only came to hate me more...
+[charslot(slot = "l", name = "avg_npc_2042_1#3$1",focus="l")]
+[name="Gustave"]Your own effort? Do you honestly think a useless bum with disciplinary records and hundreds of self-reflection letters on file could manage a transfer to the highly coveted levitating experimental park on his own?
+[charslot(slot = "r", name = "avg_4213_skybx_1#5$1",focus="r")]
+[name="Gordon"]What...?
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="Gustave"]You disappoint me, honestly. Even now you still have only a superficial understanding of our current situation.
+[name="Gustave"]Your title, investments, achievements, and results from the very moment you stepped onto Propeller Paradise were all 'gifts' from me to you.
+[name="Gustave"]Gordon Tannen, have you ever wondered how you manage to procure foreign Originium products so easily?
+[charslot(slot = "r", name = "avg_4213_skybx_1#9$1",focus="r")]
+[name="Gordon"]You knew about my dealings from the start...
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="Gustave"]Even your stock lists were meticulously picked by my hand.
+[name="Gustave"]The trident Arts units from Leithanien are secret equipment used by the Gesatzswächter for military training.
+[name="Gustave"]The power shields used by Kazimierzian campaign knights were disassembled into three parts, and you put them into the exhibits of three different companies.
+[charslot(slot = "r", name = "avg_4213_skybx_1#6$1",focus="r")]
+[name="Gordon"]And the Originium engines and Arts cores sourced from foreign military equipment? If the park blows up because of them...
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="Gustave"]You aren't the brightest bulb on the chandelier, but you have a good eye. Propeller Paradise is indeed a giant testing ground, but it's not testing those toys in the sky.
+[name="Gustave"]Give it about ten more minutes, and the 'sky fever' you helped ignite will burn into Columbian flames of fury for 'foreign spies'.
+[name="Gustave"]The countless exhibits in the sky with their core technologies inside them? They are all military reserves for countering our foreign foes. Naturally, Propeller Paradise will become a base for arms testing.
+[charslot(slot = "r", name = "avg_4213_skybx_1#9$1",focus="r")]
+[name="Gordon"]Military...? I thought you would've considered ATAO's interests, at least.
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="Gustave"]'We'll always be of one mind when we stand for Columbia.'—What matters is our country, man.
+[name="Gustave"]So, this apology speech is your stepping stone to a new role. I might even be able to pull some strings and get you a new role at the Department of Defense.
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="Gordon"]Why all the honesty? Not worried I'll sabotage the speech?
+[charslot(slot = "l", name = "avg_npc_2042_1#3$1",focus="l")]
+[name="Gustave"]The fact that you've shown up here with the speech in hand means you've already made the wise choice.
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="Gustave"]To be honest, I wasn't sure you would make a qualified piece on the board. But now? That little monster beside you has answered that question for me.
+[name="Gustave"]Same as the rich love their cigars and watches. Simply enjoying the sense of superiority with their little hobbies.
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="Gordon"]...Five-Four isn't a toy made to cater to sky fever.
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="Gustave"]Sure, but you're no longer the reckless young man only concerned with invention and modification.
+[name="Gustave"]ATAO sanded down your edges, educated you in the ways of the land, made you think to operate within the 'rules' you set yourself—it made you like me.
+[charslot(slot = "r", name = "avg_4213_skybx_1#1$1",focus="r")]
+[name="Gordon"]......
+[charslot(slot = "l", name = "avg_npc_2042_1#1$1",focus="l")]
+[name="Gustave"]Go, get your little monster ready too. Let's have it join your public apology.
+[name="Gustave"]It's a fitting symbol of what Propeller Paradise represents—gimmicky, kitschy, useless. An absolute waste.
+[charslot(slot = "r", name = "avg_4213_skybx_1#4$1",focus="r")]
+[name="Gordon"]......
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="68_g6_floatinglabmodule",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4214_cairn_1#4$1",duration = 0.5)]
+[charslot(slot = "right", name = "avg_npc_2041_1#1$1",duration = 0.5)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_4214_cairn_1#4$1",focus="l")]
+[name="Ferne"]Altitude readings are stable, and the pods show no sign of falling any further, while the engines aren't making any strange sounds... We should be safe now, right?
+[charslot(slot = "right", name = "avg_npc_2041_1#5$1",focus="r")]
+[name="Aspen"]Fifty meters... Lucky Cystybeast's pod fell fifty meters...
+[charslot(slot = "left", name = "avg_4214_cairn_1#9$1",focus="l")]
+[name="Ferne"]What's that, Aspen?
+[charslot(slot = "right", name = "avg_npc_2041_1#1$1",focus="r")]
+[name="Aspen"]Six months ago, I was at the crowded registration center going through the paperwork. I was first in line, and chose the most conspicuous levitation pod for my Lucky Cystybeast.
+[name="Aspen"]The closer you are to the Starpod, the more luck you get. That's what everyone in the park thinks, even if your pod is only a few inches higher than your neighbor's.
+[name="Aspen"]I lined up overnight just to get a spot closer to the sky, I hired over a hundred testers to secure an exhibit spot, and got smuggled contraband just to keep my Lucky Cystybeast running...
+[charslot(slot = "left", name = "avg_4214_cairn_1#10$1",focus="l")]
+[name="Ferne"]......
+[charslot(slot = "right", name = "avg_npc_2041_1#1$1",focus="r")]
+[name="Aspen"]Miss Barn, I can tell you're no fan of the competition, but this is the basic law of Propeller Paradise. I'm sure you've seen it yourself on your tours.
+[charslot(slot = "left", name = "avg_4214_cairn_1#4$1",focus="l")]
+[name="Ferne"]I get a list of companies and corporate data updated daily, and there are people who just complain about their terrible lives only to head right back to their misery.
+[charslot(slot = "right", name = "avg_npc_2041_1#1$1",focus="r")]
+[name="Aspen"]You only got here a month ago. To you, this is a place you just happened to visit. To us, it's our only path to a future, and only a few will survive.
+[name="Aspen"]Maybe you think I'm just a desperate, sick man talking out of his ass.
+[charslot(slot = "right", name = "avg_npc_2041_1#4$1",focus="r")]
+[name="Aspen"]But when the levitation platforms rise alongside the thousands of pods, we just feel the excitement coursing through our veins for no reason, don't we?
+[name="Aspen"]I poured everything I had into the Lucky Cystybeast, and that's why I have to win this gamble.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="68_g4_floatingplatform",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$m_bat_walkinthedust_intro",key="$m_bat_walkinthedust_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_2049_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="Rhine Lab Researcher"]I knew it. Even though the incantation can link multiple platforms and pods through the power lines, its range is still limited when calculated outward from the tree.
+[name="Rhine Lab Researcher"]Barian, send a signal to Sky's team. Tell them we've found the pattern of the power connections.
+[name="Rhine Lab Researcher"]Barian—
+[Dialog]
+[PlaySound(key="$fightgeneral", volume=0.7)]
+[CameraShake(duration=0.2, xstrength=30, ystrength=30, vibrato=20, randomness=90, fadeout=true, block=false)]
+[name="Rhine Lab Researcher"]Ugh...
+[Dialog]
+[CameraShake(duration=0.1, xstrength=20, ystrength=20, vibrato=10, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m",posfrom = "0,0", posto = "0,-80",duration = 0.6,afrom=1,ato=0)]
+[PlaySound(key="$bodyfalldown1", volume=0.7)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2047_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="Agent"]The scientific mind truly is brilliant, don't you agree? Thanks for helping us locate our mission objective.
+[Dialog]
+[playsound(key="$d_gen_transmissionget")]
+[delay(time=1)]
+[name="Agent"]Inform our engineering experts to stop their research. Centering on the platform beneath my feet, have the personnel stationed at the perimeter immediately cut all backup power and attempt to connect the supply lines through alternative methods.
+[name="Agent"]Also, it is highly probable the Rhine Labbers have discovered our plan. Two researchers were found on Platform 4, but have been dealt with.
+[name="Agent"]All patrols, speed up. Report anyone you see ASAP. Your colleagues in the broadcasting studio will buy us time by switching the camera feeds.
+[name="Agent"]Act fast.
+[playsound(key="$transmission")]
+[Dialog]
+[delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="68_g5_floatingstation",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playsound(key="$rungeneral", loop=true, channel="bgs")]
+[StopSound(channel="bgs", fadetime=2.5)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2044_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="Tester"]*huff*... *gasp*...
+[name="Tester"]Those agents are effing persistent... Can those Maylander guys fly or something? How are they everywhere?
+[name="Tester"]Good thing we lured them away, and there's no one here...
+[name="Tester"]No!
+[Dialog]
+[PlaySound(key="$fightgeneral", volume=0.7)]
+[CameraShake(duration=0.2, xstrength=30, ystrength=30, vibrato=20, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[CameraShake(duration=0.1, xstrength=10, ystrength=10, vibrato=10, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m",posfrom = "0,0", posto = "0,-80",duration = 0.6,afrom=1,ato=0)]
+[PlaySound(key="$bodyfalldown1", volume=0.7)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_2046_1#1$1",duration=0.5)]
+[delay(time=1)]
+[name="Agent"]Five testers and two Rhine Labbers found on support Platform 17. They have all been dealt with, and will be sent to detention on the lower level five minutes from now.
+[name="Agent"]The operation is going smoothly. They lack the numbers, and are scattered like headless houseflies.
+[Dialog]
+[playsound(key="$d_gen_transmissionget")]
+[interlude(maskid = "group_interclude_vertical_common" ,size = "290,760", style=0 , offset = "200,0" ,channel = 3,tsfrom = "0,1", tsto="1,1",tsduration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "r", pfrom = "200,0", pto="200,0", name = "avg_npc_2047_1#1$1",duration = 0.5)]
+[interlude(channel = 3, type = 3, slot = "r", switch = true)]
+[Delay(time=1)]
+[charslot(slot="m",focus="n")]
+[name="Senior Agent"]Well, everyone excels in their own fields, and they lack communication equipment or anyone to direct them.
+[name="Senior Agent"]What about Nasti?
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "left",focus="l")]
+[name="Agent"]She escaped from the lower-level cells ten minutes ago, but no contact has been noted between her and any of her staff.
+[charslot(slot="m",focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[name="Senior Agent"]She knows the park structure. We're at a disadvantage with such a tight time window.
+[name="Senior Agent"]But hide and seek is not a single-player game.
+[interlude(channel = 3, type = 3, slot = "m", switch = false)]
+[charslot(slot = "left",focus="l")]
+[name="Agent"]We'll continue our patrols. A smattering of testers and researchers will not significantly affect our operation.
+[charslot(slot="m",focus="n")]
+[interlude(channel = 3, type = 3, slot = "m", switch = true)]
+[name="Senior Agent"]Stay wary, and report back promptly.
+[Dialog]
+[interlude(channel = 3, clear = true,tsto="0,1",tsduration=0.5)]
+[playsound(key="$transmission")]
+[delay(time=2)]
+[charslot(slot="l",name="avg_npc_2046_1#1$1")]
+[name="Agent"]Wasn't there one more person here just now?
+[Dialog]
+[playsound(key="$d_gen_walk_n")]
+[charslot(slot = "l",posfrom = "0,0", posto = "-150,0",duration = 1,afrom=1,ato=0)]
+[delay(time=2.5)]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_2039_1#7$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_2045_1#1$1",duration = 1)]
+[delay(time=2)]
+[charslot(slot = "right",focus="r")]
+[name="Tester"]Phew, he didn't notice me... Thanks for pulling me back, Mr. Jagger.
+[charslot(slot = "m", name = "avg_npc_2039_1#7$1",focus="m")]
+[name="Sky Jagger"]You're welcome. You good?
+[charslot(slot = "right",focus="r")]
+[name="Tester"]Truth be told, seeing the others knocked down so easily still has my knees feeling like spaghetti.
+[charslot(slot = "m", name = "avg_npc_2039_1#7$1",focus="m")]
+[name="Sky Jagger"]Can you run?
+[charslot(slot = "right",focus="r")]
+[name="Tester"]I can.
+[charslot(slot = "m", name = "avg_npc_2039_1#7$1",focus="m")]
+[name="Sky Jagger"]Let's split up here then. No time to slow down.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="bg_prison_commandroom",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$doorknockquite")]
+[delay(time=1.5)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_2037_1#1$1",duration=1)]
+[delay(time=2)]
+[name="Mercia"]I'm here, sir.
+[charslot(slot="m",name="avg_4151_tinman_1#1$1")]
+[name="Tin Man"](Wipes pipe) Let me have a smoke first, Merry.
+[name="Tin Man"]You can look at those screens while I'm at it.
+[charslot]
+Mercia fixes her gaze at the dozen or so monitors on the wall, and sees the high-altitude elevator, the floating platforms, the ropeway station—almost every inch of Propeller Paradise is displayed on the screens.
+The bright and bizarre structures in the sky seem to pop out from the screens, a strange sight in the dark room. As if Mercia was attending a post-modern art exhibition instead.
+[charslot(slot="m",name="avg_npc_2037_1#7$1")]
+[name="Mercia"]This place...
+[charslot(slot="m",name="avg_4151_tinman_1#1$1")]
+[name="Tin Man"]What of it?
+[charslot(slot="m",name="avg_npc_2037_1#7$1")]
+[name="Mercia"]...Nothing. I just didn't think Propeller Paradise would have such a... sealed off space.
+[charslot(slot="m",name="avg_4151_tinman_1#1$1")]
+[name="Tin Man"]Hmm? Reminds you of our interrogation room?
+[charslot(slot="m",name="avg_npc_2037_1#5$1")]
+[name="Mercia"]So, may I know why you were looking for me?
+[charslot(slot="m",name="avg_4151_tinman_1#1$1")]
+[name="Tin Man"]Look at the upper right monitor. You heard the explosion earlier, didn't you? The nearly ten floating pods connected to that Rhine Lab 'tree' should have been smoking heaps of scrap metal in the wastes by now.
+[charslot(slot="m",name="avg_4151_tinman_1#8$1")]
+[name="Tin Man"]Merry, I'm sure you know... what sort of force keeps them in the air still.
+[charslot(slot="m",name="avg_npc_2037_1#10$1")]
+[name="Mercia"]An incantation. I kept this secret from you, sir.
+[charslot(slot="m",name="avg_4151_tinman_1#8$1")]
+[name="Tin Man"]*sigh* Our colleagues at the Emergency Management Council have only just captured the dangerous criminals responsible for the explosion, and now they have to clean up the mess caused by their own people's negligence.
+[name="Tin Man"]You've seen it. The Banshee's incantation has changed the way the levitation layer connects to the other platforms and pods. Any other incident happens, and it'll affect more than just nine pods.
+[name="Tin Man"]The situation is dire.
+[charslot(slot="m",name="avg_npc_2037_1#10$1")]
+[name="Mercia"]Sir...
+[name="Mercia"]I shouldn't be speaking to you like this as a secretary, or a Maylander agent. But I understand my colleagues, and I know how the Council works.
+[charslot(slot="m",name="avg_npc_2037_1#16$1")]
+[name="Mercia"]Just now, I was looking at the surveillance footage, and they were busy munching on cotton candy. Inefficient methods of deception like that should be forbidden on such serious occasions.
+[charslot(slot="m",name="avg_npc_2037_1#7$1")]
+[name="Mercia"]I've completed my mission on Propeller Paradise, both monitoring Mr. Tannen and the many tech companies, and exposing their secrets. But now I see...
+[name="Mercia"]These missions were never to ensure the expo ran smoothly.
+[charslot(slot="m",name="avg_npc_2037_1#14$1")]
+[name="Mercia"]Be it the secret from the start, the explosion just now, or the so-called 'other incident' you mentioned... they've all been part of your plan, yes?
+[charslot(slot="m",name="avg_4151_tinman_1#1$1")]
+[name="Tin Man"]Haha. You're keen. You pass.
+[charslot(slot="m",name="avg_npc_2037_1#12$1")]
+[name="Mercia"]......
+[charslot(slot="m",name="avg_npc_2037_1#4$1")]
+[name="Mercia"]So what exactly...
+[charslot(slot="m",name="avg_4151_tinman_1#1$1")]
+[name="Tin Man"]Let's sit down before we continue.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background]
+[Image(image="68_i08_3", xScale=1.3, yScale=1.3,screenadapt="coverall",fadetime=0,x=50)]
+[curtain(direction = 2,fillfrom = 0.1,fillto = 0.6, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="Big Larry & Ol' Curly & Lil' Mo"]Sit down sit down.
+[name="Tin Man"]Come on, you three. Some manners would be good.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Image(image="68_i08_3", xScale=1.3, yScale=1.3,screenadapt="coverall",fadetime=0,x=-50)]
+[curtain(direction = 2,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 6,fillfrom = 0.1,fillto = 0.6, fadetime=0.1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[name="Mercia"]Is this a Maylander trial for a traitor, or...?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="68_i08_1", xScale=1, yScale=1,screenadapt="coverall",fadetime=0)]
+[curtain]
+[Dialog]
+[bgeffect(name="$eb_068cg_dust",layer=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Tin Man"]Or have I finally found time to handle a junior's troublesome evaluation process?
+[name="Tin Man"]Don't worry. I'm just an old fart who wishes to impart some wisdom to the younger generation.
+[name="Mercia"]I'm curious what that wisdom is.
+[name="Tin Man"]Oh, Merry. I'm sure you'll hate this rotten nonsense.
+[name="Tin Man"]One year ago, Rhine Lab submitted a proposal to D.C., a project developing tech from Galleria Stellaria, and Congressman Street was inspired to expand the project for the whole country.
+[name="Tin Man"]His secretary burned the midnight oil to prepare a slide show, showcasing what the congressman saw in his dreams after having seen the sky over Trimounts being torn apart...
+[name="Big Larry"](Holding and biting on Mercia's hat) Foundation stones built on the clouds!
+[name="Ol' Curly"](Walking while twirling Mercia's bow) Rain or shine, it'll all be under our feet!
+[name="Lil' Moe"](Swinging mid-air while holding onto Mercia's hair) Tour groups leaving the Starpod, one-by-one, as the twin moons are covered with Columbian flags!
+[name="Tin Man"]And so on and so on. Congress voted. How did that turn out?
+[name="Big Larry"]Two hundred and seventy-three to sixty-five. More than eighty percent voted yea. Hah.
+[name="Tin Man"]And the government is eager to water and fertilize these fantasies.
+[name="Tin Man"]I'm sure you know better than I do just how many companies and testers were scrambling to get into Propeller Paradise at any cost after that, Merry.
+[name="Mercia"]Too many to count.
+[name="Tin Man"]Nearly half the companies in Columbia have added a sky-related department, and even air fryer manufacturers have been trying to add 'clouds' to applicable product lines.
+[name="Ol' Curly"]Tin Man, don't forget about the stocks!
+[name="Ol' Curly"]There are over two hundred sub-categories of sky-related concept stocks, with the longest registered validity period extending three hundred years into the future, hahaha~!
+[name="Ol' Curly"]Companies willingly apply for loans with interest rates several times higher than the prevailing market rate just to secure a spot on Propeller Paradise...
+[name="Tin Man"]I remember looking through Gordon's case files, and coming across a certain Aspen who bought contraband goods from him, just to clear inspections.
+[name="Tin Man"]Now, it wasn't because he didn't know the law. It was because he was divorced, had sold his family assets, and was burdened with a hopeless mountain of debt. The so-called Lucky Cystybeast is a high-stakes gamble that will decide the rest of his life.
+[name="Tin Man"]What a shame.
+[name="Mercia"]...A shame?
+[name="Tin Man"]He used to run a grocery store in a town by the shipping routes near D.C., and even now there might be some pioneers out there still using the tools he peddled.
+[name="Tin Man"]But here he is with this invention, that floating revolving bar where 'the people turn, but not the beer'... What else can you even do with that? Other than invite your foes for a drink?
+[name="Tin Man"]Simply put, what he's done is akin to a student frantically writing compliments in the margins, hoping the teacher will give him a perfect score.
+[name="Tin Man"]Take the future as a real test. Who's going to be the examiner? You? Me? The generals at the DOD? Or maybe Congress?
+[name="Tin Man"]Maybe it'll be Kazimierz, who just equipped all their campaign knights with power armor? Or Leithanien, with their recent addition of a 'Basic Arts Tactics' course to all school curricula?
+[name="Tin Man"]Or perhaps Ursus, with its growing army, their mighty force that's left their mines empty? Could it be Ægir, currently shelling the Iberian coast with artillery along with the Sea Monsters?
+[name="Tin Man"]Among these parties, I fear it is the Sea Monsters who are the most likely to visit a floating revolving bar.
+[name="Mercia"]Sir, you mean to say that the Columbians' fanaticism for the sky...
+[name="Mercia"]Is completely meaningless?
+[name="Tin Man"]Compared to what's happening everywhere else right now, I'm afraid so.
+[name="Tin Man"]Columbia has always been driven by fanaticism. I'm sure you're crystal clear on this, given your background, Mercia.
+[name="Tin Man"]Without a fanatical drive for freedom, we wouldn't have had our frontier rebels eighty-plus years ago, and we Columbians would still be living under the Victorians' heel.
+[name="Tin Man"]Without a lust for wealth, our mass pioneer movement would not have happened, and nearly half of Columbian land today would remain an untraversable wilderness even for the strongest burdenbeasts.
+[name="Tin Man"]But this time... it's just a waste.
+[name="Mercia"]So you think Propeller Paradise should take the blame?
+[name="Tin Man"]Why would I? It has already accomplished its mission perfectly... well, it's one step away.
+[name="Tin Man"]It's stirred up the Columbians' zeal more effectively than I could've ever hoped to. Now, it just needs to 'redirect' it.
+[name="Mercia"]Through its ruin?
+[name="Tin Man"]Through it 'being destroyed'.
+[name="Mercia"]By who? Who else in this park could...?
+[name="Mercia"]Wait. Mr. Tannen's goods, smuggled from all across Terra... Kazimierz, Leithanien, Sargon, and even Kazdel...
+[name="Tin Man"]They'll become weapons planted by foreign spies, deliberately intended to ruin Columbia's display of achievements and destroy our people's fantasies of taking to the skies.
+[name="Tin Man"]Eighty-plus years later, the Columbians' rage will be reignited once more.
+[name="Tin Man"]Kazimierzians might not want to see their tax money turn into knight armor, while Leithanian children might just run away from boring 'Basic Arts Tactics' classes.
+[name="Tin Man"]But Columbians, we have our fervor. As we move to the future, we move forward together, tens of millions strong.
+[name="Tin Man"]As long as we can direct this zeal onto a proper path.
+[name="Mercia"]'Collate our wills, and seize the truth of everything'...
+[name="Mercia"]Sir, I remember you telling me your story... I thought you always hated war.
+[name="Tin Man"]It's been tens of thousands of years. The number of lost souls in my hand is no less than the casualties of a military campaign.
+[name="Tin Man"]The reason I didn't burn in Kazdel's furnace then is that I hate meaningless sacrifices.
+[name="Tin Man"]But this time... an arms race might just be the beginning. You and I know it won't end there, just like how the Great Expansion didn't end with the discovery of some ore.
+[name="Mercia"]So, the sacrifices Columbia needs for this competition won't be enough with just this park... correct?
+[name="Tin Man"]I told you before, right? This is a whole bunch of rotten nonsense.
+[name="Tin Man"]The Maylander Foundation didn't have to explain all of this to you, my dear agent. But the day will come when you'll have to accept the truth, even if you don't agree with it.
+[name="Mercia"]......
+[name="Tin Man"]Don't forget your family name, Mercia... You're a Selene.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[image]
+[delay(time=1)]
+[bgeffect(name="$eb_scorchedearth",layer=3,y=-150)]
+[Background(image="68_g5_floatingstation",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playMusic(intro="$loneliness_intro",key="$loneliness_loop", volume=0.6)]
+[charslot(slot="l",name="avg_4212_nasti_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="Nasti"]This is...
+[charslot(slot = "m", focus = "n")]
+The elevators connecting the park's upper and lower levels have been sealed off, and the only ropeway station leading to the 'tree' is also out of service. Nasti has exhausted herself just by getting here.
+Floating pods by her side are riddled with cracks, black smoke billowing from within. A sign their core energy modules have been destroyed, and they should have all crashed to the ground.
+But the pods stubbornly remain amongst the clouds, piecing together a precarious path, as if an invisible pair of hands are holding them up.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[delay(time=1)]
+[Background(image="68_g5_floatingstation",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[playsound(key="$rungeneral", loop=true, channel="r")]
+[StopSound(channel="r", fadetime=2.5)]
+[delay(time=1)]
+[charslot(slot = "left", name = "avg_npc_2046_1#1$1",duration = 1)]
+[charslot(slot = "right", name = "avg_npc_2046_1#1$1",duration = 1)]
+[delay(time=1.5)]
+[name="Agents A & B"]Nasti?
+[playMusic(intro="$act19side_intro",key="$act19side_loop", volume=0.6)]
+[charslot(slot = "left", focus="l")]
+[name="Agent A"]Update the others. I'll go get her.
+[Dialog]
+[charslot(slot="l",duration=1,posfrom = "0,0", posto = "-450,0",afrom=1,ato=0)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[charslot]
+[charslot(slot="l",name="avg_4212_nasti_1#1$1")]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=0, block=true)] 
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = false, fadetime=1, block=true)]
+[interlude(maskid = "ui_cutin_mask_vertical", style = 1, size = "580, 720",offset = "300,0", channel = 2)]
+[interlude(channel = 2, type = 3, slot = "r", offset = "0,0", name = "avg_npc_2046_1#1$1", aduration = 0.5, sfrom = "1,1", sto = "1,1")]
+[interlude(channel = 2, type = 3, slot = "r", pfrom = "300,0", pto = "300,0", duration = 0)]
+[delay(time=1)]
+[charslot(slot = "m",focus="n")]
+The agent rushes towards her, but just as he takes a step forward, the bricks under his feet shift.
+[Dialog]
+[charslot(slot = "m",focus="all")]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[CameraShake(duration=-1, xstrength=2, ystrength=2, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_airbuzz_5", loop=true, channel="sx")]
+[focusparam(effect="Grayscale", blur=true)]
+[focusout(duration=2, type="bg", from=0, to=1, block=true)]
+[charslot(slot = "r", focus="r")]
+[name="Agent A"]Ah—
+[Dialog]
+[interlude(channel = 2, type = 3, slot = "r", pfrom = "300,0", pto = "0,0", duration = 1)]
+[interlude(channel = 2, clear = true,tsfrom="1,1", tsto ="0,1",tsduration = 0.6)]
+[delay(time=1)]
+[StopSound(channel="sx", fadetime=0.5)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[bgeffect(layer=1)]
+[CameraShake(duration=0.1, xstrength=2, ystrength=2, vibrato=30, randomness=90, fadeout=true, block=false)]
+[focusout(duration=0, type="bg", from=1, to=0)]
+[interlude(maskid = "ui_cutin_mask_vertical", style = 1, size = "580, 720",offset = "0,0", channel = 2)]
+[interlude(channel = 2, type = 3, slot = "r", offset = "0,0", name = "avg_npc_2046_1#1$1", aduration = 0.5, sfrom = "1,1", sto = "1,1")]
+[interlude(channel = 2, type = 3, slot = "r", pfrom = "0,0", pto = "0,0", duration = 0)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[playsound(key="$d_gen_transmissionget")]
+[delay(time=1)]
+[name="Agent B"]Target sighted. Location: Flying Donut station. Requesting backup.
+[name="Agent B"]We tried to intercept her, but something's up here. We—AH—!
+[Dialog]
+[bgeffect(name="$eb_tvnoise",layer=1)]
+[CameraShake(duration=-1, xstrength=2, ystrength=2, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_airbuzz_5", loop=true, channel="sx")]
+[focusparam(effect="Grayscale", blur=true)]
+[focusout(duration=1, type="bg", from=0, to=1, block=true)]
+[delay(time=1.5)]
+[interlude(channel = 2, type = 3, slot = "r", pfrom = "0,0", pto = "250,0", duration = 1)]
+[interlude(channel = 2, clear = true,tsfrom="1,1", tsto ="0,1",tsduration = 0.6)]
+[delay(time=1.5)]
+[bgeffect(layer=1)]
+[StopSound(channel="sx", fadetime=1)]
+[focusout(duration=1, type="bg", from=1, to=0)]
+[CameraShake(duration=1, xstrength=2, ystrength=2, vibrato=30, randomness=90, fadeout=true, block=true)]
+[delay(time=1)]
+[charslot]
+[charslot(slot = "m", name = "avg_4212_nasti_1#5$1",duration=1)]
+[delay(time=2)]
+[name="Nasti"]...(Speaks in Sarkaz) Disorder?
+[charslot(slot = "m", focus = "n")]
+Nasti recalls the river at the mouth of the Convallis of the Banshees. Still and calm, where even a child could safely row a boat on their own.
+However, unassisted intruders find the dense forests on both sides constantly shifting positions, like a mobile labyrinth, with the distant riverbank always hidden beyond the thick mist.
+After a momentary silence, Nasti steps out of the pod and into the empty sky. Brick and stone immediately form a floor beneath her.
+[Dialog]
+[playsound(key="$d_avg_highheelfts")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[focusparam]
+[bgeffect]
+[charslot(slot = "m", name = "avg_4212_nasti_1#2$1")]
+[Background(image="68_g9_treeplatform_d",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[name="Nasti"](Speaks in Sarkaz) Disorder.
+[name="Nasti"]A path held together by an incantation.
+[charslot(duration=1)]
+Convallis Banshees often isolate themselves from outsiders, or decorate their own courtyards with this method.
+She also used the same tactic to momentarily stall Saria back in the Ring Lab.
+...This is a path specially paved, just for her.
+[playsound(key="$d_avg_scan")]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background(image="68_g11_treeinside",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4212_nasti_1#1$1",duration=1)]
+[delay(time=1.5)]
+[name="Nasti"]......
+[charslot(slot = "m", focus = "n")]
+To her surprise, the whole area centered on the 'tree' has been reconstructed by the incantation, but she fails to find the caster within the tree's core, among its roots.
+Only the roots of the 'tree' are breathing, just as always.
+[playsound(key="$getcast")]
+[name="Robotic Voice"]Please verify your credentials.
+[charslot(slot = "m", name = "avg_4212_nasti_1#1$1")]
+[name="Nasti"]Nasti Lunorey. Director of Engineering, Rhine Lab.
+[Dialog]
+[charslot(duration=0.5)]
+[playsound(key="$rungeneral", loop=true, channel="bgs")]
+[StopSound(channel="bgs", fadetime=1.5)]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.2, fadetime=1.5)]
+[backgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.2, yScaleTo=1.2, duration=1.3,block=false,yTo=-50)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.2, fadetime=1.5)]
+Nasti dashes towards the roots. She must confirm if any abnormal changes have happened while she was away.
+This is what is left of the Vivarium, and the secret Rhine Lab has been protecting at all costs. No matter how the unrest in the park ends, it is the only bargaining chip in Nasti's hand.
+[Dialog]
+[bgeffect(name="$eb_church_02",layer=1,y=-200,x=200)]
+[playsound(key="$d_avg_messageconverge_loop", loop=true, channel="sj")]
+[Blocker(a=0.15, r=1, g=1, b=1, fadetime=2, block=true)]
+She touches the roots, allowing data to flow into her fingertips and gather in the 'branches' around her waist.
+Muelsyse always teased Nasti about being a human computer, and she always took it as praise.
+In the current situation where biotechnology has fused with Banshee witchcraft, her body is perhaps the best data cable to use.
+The 'branches' begin to vibrate quickly, a sign of the device overclocking. Almost simultaneously, Nasti feels some sort of temperature shift—not the chill of condensation, not the heat of electricity, but...
+[Dialog]
+[stopmusic(fadetime=2)]
+[StopSound(channel="sj", fadetime=1)]
+[name="Nasti"]Body heat?
+She experiences a strange feeling out of nowhere. Here and now, she is no longer Director of Rhine Lab's Engineering Section checking if a device is still operating normally, but a Banshee touching another of her kind...
+Just like so many years ago, when that woman held her own hand and taught her how to blow a leaf whistle.
+Nasti abruptly looks up—
+[Dialog]
+[playMusic(intro="$lab_intro",key="$lab_loop", volume=0.6)]
+[curtain(direction = 0,fillfrom = 0.2,fillto = 0, fadetime=2)]
+[curtain(direction = 4,fillfrom = 0.2,fillto = 0, fadetime=2)]
+[focusout(duration=5, type="bg", from=0, to=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=5)]
+[backgroundTween( duration=20,block=false,yTo=-50)]
+[delay(time=2)]
+[bgeffect(name="$eb_sunlight_l",layer=2,x=-250,y=500)]
+[charslot(slot = "m", name = "avg_npc_2036_1#1$1",duration=3)]
+[charslot(slot = "m",posfrom = "0,50", posto = "0,0",duration = 10)]
+[delay(time=5)]
+[playsound(key="$d_avg_enchantress_cheer_2")]
+[name="Væla?"]......
+[charslot(slot = "m", name = "avg_npc_2036_1#3$1")]
+[name="Væla?"](Pained murmurs)
+[charslot(slot = "m", name = "avg_npc_2036_1#7$1")]
+[name="Væla?"](Elated murmurs)
+[charslot(slot = "m", name = "avg_npc_2036_1#9$1")]
+[name="Væla?"]Nasti, my child...
+[name="Væla?"]You're back.
+[Dialog]
+[delay(time=2)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[stopmusic(fadetime=2)]
+[hidecgitem]
+[Image]
+[charslot] 
