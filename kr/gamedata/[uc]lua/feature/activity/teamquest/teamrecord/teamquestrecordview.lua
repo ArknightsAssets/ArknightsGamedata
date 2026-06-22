@@ -99,14 +99,11 @@ function TeamQuestRecordView : OnShareClick()
   if (playerSkin == nil) then
     return;
   end
-  local skinTmpl = 0
-  if playerSkin.tmpl ~= nil then
-    local suc, val = playerSkin.tmpl:TryGetValue(playerSkin.selected)
-    if suc then
-      skinTmpl = val
-    end
+  if (playerSkin.tmpl == nil)then
+    additionModel:SetSkinId(playerSkin.selected, nil);
+  else
+    additionModel:SetSkinId(playerSkin.selected, playerSkin.tmpl[playerSkin.selected]);
   end
-  additionModel:SetSkinId(playerSkin.selected, skinTmpl)
 
   inputParam.remakePrefabPath = CS.Torappu.ResourceUrls.GetTeamQuestSharePath();
   inputParam.additionModel = additionModel;

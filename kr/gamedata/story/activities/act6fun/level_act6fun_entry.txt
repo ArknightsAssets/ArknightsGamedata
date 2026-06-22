@@ -5,27 +5,27 @@
 [Delay(time=1)]
 [PlayMusic(key="$babel_loop", volume=0.8, delay=0.2)]
 [Delay(time=2)]
-[name=""]   어, 너구나.
+[name=""]   너구나.
 [Dialog]
-[name=""]   저번에 본 이후로 오랜 시간이 흘렀네.
-[name=""]   그동안…… 너는 절벽 끝에서 계속 헤매고 있었어.
+[name=""]   마지막에 본 뒤로 시간이 많이 지났네.
+[name=""]   최근에 넌…… 계속 절벽 근처를 배회하고 있었다고 들었어.
 [Dialog]
 [Delay(time=1.3)]
-[name=""]   네가 자신의 정체를 잊어버렸을 수도 있겠지만, 이름 정도는 아마 기억하고 있을 거야. 그거면 돼.
+[name=""]   네가 누구인지 기억하지 못하는 것 같았지만, 그 이름만 기억하고 있다면 충분하겠지.
 [Dialog]
-[name=""]   ……가자, 여기 오래 머물면 안 돼.
-[name=""]   어쨌든 너는 내 손님도 아니고, 여기에 나타나서도 안 됐어.
-[name=""]   많은 사람들에게 네가 필요해.
+[name=""]   ……자, 이곳에 오래 머물 순 없어.
+[name=""]   너는 내 손님이 아니거든. 본래 이곳에 있어선 안 될 존재고.
+[name=""]   많은 사람들에겐, 네가 필요해.
 [Dialog]
 [Delay(time=1)]
 [name=""]   4월 1일.
-[name=""]   어쩌면 너는 이날이 네게 무슨 의미인지 잊어버렸을지도 몰라.
-[name=""]   이건 너를 매우 위험한 상황에 빠뜨릴 거야.
+[name=""]   이 날짜가 네게 어떤 의미가 있는지 지금은 기억이 안 날지도 모르겠지만,
+[name=""]   이게 널 위험한 상황에 빠지게 할 거야.
 [name=""]   ……
 [Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
 [Image]
 [name=""]   아니.
-[name=""]   반드시 떠올려야 해.
+[name=""]   넌 반드시 기억해내야 해.
 [Dialog]
 [stopmusic(fadetime=2)]
 [delay(time=2)]
@@ -36,18 +36,18 @@
 [Blocker(a=0, fadetime=0.3, block=true)]
 [CameraEffect(effect="Grayscale", fadetime=18, amount=0, block=false)]
 [Delay(time=3)]
-[name="희미한 목소리"]   ……찾았다…… 커다란 상자. 그런데…… 안 열리네.
+[name="정체불명의 목소리"]   ……찾았다…… 커다란 상자. 그런데…… 안 열리네.
 [name="전자음"]   음성 암호를 입력하여 주십시오.
-[name="희미한 목소리"]   ……
-[name="희미한 목소리"]   '로도스를 위하여'?
+[name="정체불명의 목소리"]   ……
+[name="정체불명의 목소리"]   '로도스를 위하여'?
 [name="전자음"]   음성 암호가 틀렸습니다.
 [name="전자음"]   음성 인증 실패. 비인가 개체의 음성 암호 입력이 감지되었습니다.
 [name="전자음"]   불법 침입이 의심됩니다. 즉시 올바른 음성 암호를 입력하여 주십시오. 그렇지 않으면 자가 방어 프로토콜을 실행해 침입자를 퇴거시키겠습니다.
 [CameraEffect(effect="Grayscale", fadetime=8, amount=1, block=false)]
-[name="희미한 목소리"]   아, 맞다…… 출발 전에 리더가…… 카드……
-[name="희미한 목소리"]   나 인증 카드 있어!
+[name="정체불명의 목소리"]   아, 맞다…… 출발 전에 리더가…… 카드……
+[name="정체불명의 목소리"]   나 인증 카드 있어!
 [name="전자음"]   음성 암호가 틀렸습니다. 곧 자가 방어 프로토콜을 실행합니다.
-[name="희미한 목소리"]   어떡하지…… 아, 맞다, 카드를 올려놓아야지!
+[name="정체불명의 목소리"]   어떡하지…… 아, 맞다, 카드를 올려놓아야지!
 [dialog]
 [PlaySound(key="$d_avg_clothmovement", volume=0.6)]
 [delay(time=2)]
@@ -60,12 +60,12 @@
 [name="전자음"]   장치가 곧 열립니다.
 [Dialog]
 [Delay(time=1)]
-[name="희미한 목소리"]   후우…… 아찔했다……
+[name="정체불명의 목소리"]   후우…… 아찔했다……
 [dialog]
 [playsound(key="$d_avg_labamb", loop=false, channel="aa",volume=0.8)]
 [stopSound(channel="aa", fadetime=3)]
 [Delay(time=3)]
-[name="희미한 목소리"]   사람…… 이네!
+[name="정체불명의 목소리"]   사람…… 이네!
 [Dialog]
 [Delay(time=0.5)]
 [StopMusic(fadetime=1)]
@@ -176,13 +176,13 @@
 [charslot(slot = "m", name = "char_1002_nsabr_2")]
 [name="케빈"]   심지어 내 동생보다도 말랐잖아.
 [charslot(slot = "m", name = "char_1002_nsabr_2")]
-[name="케빈"]   왜, 뭐?
+[name="케빈"]   야, 왜그래?
 [dialog]
 [charslot]
 [Decision(options="나…… 난 누구지?;내가 '악령'이라고? 그게 무슨 소리야?",values="1;2")]
 [Predicate(references="1;2")]
 [charslot(slot = "m", name = "char_1002_nsabr_2")]
-[name="케빈"]   내가 그걸 어떻게 알아.
+[name="케빈"]   난들 어떻게 알아.
 [charslot(slot = "m", name = "char_1002_nsabr_2")]
 [name="케빈"]   우리 리더 탈룰라가 정보를 입수했는데, 한 달 후에 로도스가 여기서 굉장히 무시무시한 악령을 부활시킨다고 했어.
 [charslot(slot = "m", name = "char_1002_nsabr_2")]
@@ -191,7 +191,7 @@
 [name="케빈"]   그래서 우리가 먼저 와서 널 가로채려고 한 거지.
 [dialog]
 [charslot]
-[Decision(options="로도스?;……?!;어디서 많이 들어본 이름인데……",values="1;2;3")]
+[Decision(options="로도스?;……?!;어디서 많이 들어본 거 같은데……",values="1;2;3")]
 [Predicate(references="1;2;3")]
 [charslot(slot = "m", name = "char_1002_nsabr_2")]
 [name="케빈"]   로도스는 감염자들의 가장 큰 적이야.

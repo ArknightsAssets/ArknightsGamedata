@@ -3,8 +3,9 @@ local list =
 {
   
   "HotFixes/TestStubHotfixer",
-  "HotFixes/AutoChessDragStateHotfixer",
-  "HotFixes/AutoChessShopHotfixer",
+  "HotFixes/BackgroundMultiFormHotfixer",
+  "HotFixes/CGGalleryHotfixer",
+  "HotFixes/PCHotfixer"
 };
 
 return list;
