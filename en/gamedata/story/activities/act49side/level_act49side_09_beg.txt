@@ -1,0 +1,497 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.1, fadetime=0.1)]
+[Background(image="70_g10_wardowntown",screenadapt="coverall")]
+[focusout(type="bg", id="70_g10_wardowntown", from=0, to=0.8, duration=0.1, block=false)]
+[playMusic(intro="$m_bat_ymmons_intro",key="$m_bat_ymmons_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1",isblock=true)]
+[charslot(slot = "R", name = "avg_npc_2135_1#1$1", action="jump", posto="-200,0", power=0, times=1, duration=0.5)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$sheildimpact",volume=1)] 
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[charslot(slot = "R", action="jump", posto="50,0", power=5, times=1, duration=1)]
+[Delay(time=0.5)]
+[charslot(slot = "l",posfrom="0,0",posto="60,0",duration=0.1,isblock=true)]
+[PlaySound(key="$d_avg_attack_heavy",volume=1)] 
+[charslot(slot = "r", action="shake", afrom=1 , ato=1, power=3, times=30, duration=0.3,isblock=true)]
+[charslot(slot = "l",posfrom="60,0",posto="0,0",duration=1.2,isblock=false)]
+[PlaySound(key="$d_avg_fog_blowaway", volume=0.8)]
+[Effect(name="$e_vanish", layer = 1,x=120)]
+[charslot(slot = "r", afrom=1,ato=0, duration=0.8)]
+[delay(time=1)]
+[charslot]
+[PlaySound(key="$d_avg_magic_5",volume=1)] 
+[Blocker(a=0.8, r=1, g=1, b=1, fadetime=0.3, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[charslot(slot = "r", name = "avg_npc_2135_1#1$1",posfrom = "150,-50", posto = "150,0",duration=1,isblock=false)]
+[delay(time=0.3)]
+[charslot(slot = "l", name = "avg_npc_2135_1#1$1",posfrom = "-150,-50", posto = "-150,0",duration=1,isblock=false)]
+[delay(time=0.3)]
+[charslot(slot = "m", name = "avg_npc_2135_1#1$1",posfrom = "0,-50", posto = "0,0",duration=1.2, isblock=true)]
+[delay(time=1)]
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1", focus="l")]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1", focus="l",isblock=true)]
+[name="Exhausted Guard"]There's no end to them...
+[charslot(slot = "r", focus="r")]
+[name="Anxious Guard"]Look out!
+[dialog]
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1",posfrom="150,0", posto="150,0")]
+[charslot(slot = "l", name = "avg_npc_2135_1#1$1",posfrom="-100,0", posto="200,0",duration=0.5, isblock=false)]
+[delay(time=0.3)]
+[charslot(slot = "m", name = "avg_npc_1637_1#1$1",posfrom="400,0", posto="100,0",duration=0.25, focus="m",isblock=true)]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[PlaySound(key="$swordtsing5",volume=1)] 
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.05, block=true)]
+[charslot(slot = "l", action="jump", posto="-350,0", power=5, times=1, duration=0.5,isblock=true)]
+[PlaySound(key="$d_avg_fog_blowaway", volume=0.8)]
+[Effect(name="$e_vanish", layer = 1,x=-350)]
+[charslot(slot = "l", afrom=1,ato=0, duration=0.8,isblock=true)]
+[Delay(time=0.5)]
+[charslot]
+[charslot(slot = "r", name = "avg_npc_1637_1#1$1", focus="r")]
+[charslot(slot = "l", name = "avg_npc_1637_1#1$1", focus="r",isblock=true)]
+[name="Exhausted Guard"]Where did these monsters even come from, and just how many of them are there?!
+[charslot(slot = "l", focus="l",isblock=true)]  
+[name="Anxious Guard"]They don't even seem to be decreasing... in fact, there's more of them now.
+[name="Anxious Guard"]I heard last night, the third battalion in the north lost half their numbers...
+[charslot(slot = "r",focus="r",isblock=true)]
+[name="Exhausted Guard"]What?!
+[charslot(slot = "l", focus="l",isblock=true)]
+[name="Anxious Guard"]Have you noticed? I don't know when it started, but these mysterious monsters are looking even more realistic than they did, and more aggressive to boot...
+[charslot(slot = "r",focus="r",isblock=true)]
+[name="Exhausted Guard"]Where's our <i>ta ma de</i> backup?!
+[name="Exhausted Guard"]We're in dire straits, if this keeps up—
+[dialog]
+[delay(time=0.3)]
+[charslot(slot="r",posfrom="0,0",posto="0,-30",duration=0.5,isblock=true)]
+[charslot(slot="r",posfrom="0,-30",posto="0,-150",afrom="1",ato="0",duration=0.3)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[delay(time=0.8)]
+[charslot]
+[curtain(direction = 0,fillfrom = 0.1,fillto = 0.01, fadetime=1.5,block=false)]
+[focusout(type="bg", id="70_g10_wardowntown", from=0.8, to=0, duration=1.5, block=false)]
+[curtain(direction = 4,fillfrom = 0.1,fillto = 0.01, fadetime=1.5,block=true)]
+[curtain]
+[delay(time=0.8)]
+[PlaySound(key="$d_avg_fsmetal", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1", afrom = 0, ato = 0, duration=0)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=0.95,duration = 0)]
+[delay(time=0.1)]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1,duration = 1.5)]
+[charslot(slot = "m", afrom = 0, ato = 1, duration = 1.5, isblock=true)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot = "r", name = "avg_npc_2135_1#1$1",posfrom = "150,0", posto = "150,0",isblock=false)]
+[charslot(slot = "l", name = "avg_npc_2135_1#1$1",posfrom = "-150,0", posto = "-150,0",isblock=false)]
+[charslot(slot = "m", name = "avg_npc_2135_1#1$1",isblock=true)]
+[delay(time=0.3)]
+[playsound(key="$e_skill_skulsrsword")]
+[Effect(name="$e_bladeline_01_large",rox=0,roy=0,roz=0,layer = 1)]
+[delay(time=0.2)]
+[playsound(key="$e_skill_skulsrsword")]
+[Effect(name="$e_bladeline_01_large",rox=0,roy=0,roz=-40,layer =2)]
+[PlaySound(key="$d_avg_fog_blowaway", volume=0.8)]
+[Effect(name="$e_vanish", layer = 1,x=-250)]
+[PlaySound(key="$d_avg_fog_blowaway", volume=0.8)]
+[Effect(name="$e_vanish", layer = 2,x=0)]
+[PlaySound(key="$d_avg_fog_blowaway", volume=0.8)]
+[Effect(name="$e_vanish", layer =3,x=250)]
+[charslot(slot = "r",afrom=1,ato=0,duration=1,block=false)]
+[charslot(slot = "l",afrom=1,ato=0,duration=1,block=false)]
+[charslot(slot = "m",afrom=1,ato=0,duration=1,block=true)]
+[delay(time=1)]
+[charslot]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1")]
+[name="Imperial Guard"]Stand up.
+[name="Imperial Guard"]We must uphold our duty to guard the land.
+[charslot(slot = "m", name = "avg_npc_1637_1#1$1")]
+[name="Exhausted Guard"]Imperial Guards?!
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1")]
+[name="Imperial Guard"]All units, form a line and prepare to meet the enemy.
+[dialog]
+[playsound(key="$d_avg_drum")]
+[delay(time=1)]
+[playsound(key="$d_avg_marchturnaround")]
+[delay(time=1)]
+[playsound(key="$d_avg_drum")]
+[name="Imperial Guard"]There is no retreat until we annihilate all evil inside the city.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="58_g5_dragonpalace",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(key="$midautumn", volume=0.6)]
+[charslot(slot = "m",posfrom="0,0",posto="0,-30",duration=1, name = "avg_npc_1239_1#1$1",isblock=true)]
+[name="Grand Commandant"]Your Imperial Majesty.
+[dialog]
+[charslot]
+[name="True Lung"]The Grand Commandant's sickness seems to be gone... this gladdens me.
+[name="True Lung"]What is it that has you looking for me at this hour?
+[dialog]
+[charslot(slot = "m",posfrom="0,-30",posto="0,0",duration=1, name = "avg_npc_1239_1#1$1",isblock=true)]
+[name="Grand Commandant"]Has Your Imperial Majesty forgotten? Just the other day, You commanded me to be here for the morning court.
+[dialog]
+[charslot]
+[name="True Lung"]I fear you must have slept to delirium... court is long over. You are late.
+[charslot(slot = "m", name = "avg_npc_1239_1#4$1")]
+[name="Grand Commandant"]No, not yet... the day of the full moon is tomorrow.
+[charslot(slot = "m", name = "avg_npc_1239_1#4$1")]  
+[name="Grand Commandant"]This old servant shall accompany Your Majesty and await your order.
+[dialog]
+[charslot]
+[name="True Lung"]...I find myself uncertain why the Grand Commandant wants this done in haste.
+[charslot(slot = "m", name = "avg_npc_1239_1#7$1")]  
+[name="Grand Commandant"]I know not what Your Majesty awaits.
+[charslot(slot = "m", name = "avg_npc_1239_1#4$1")]
+[name="Grand Commandant"]And also... what Your Majesty has planned for the day.
+[dialog]
+[charslot]
+[name="True Lung"]That is none of your business.
+[charslot(slot = "m", name = "avg_npc_1239_1#1$1")]
+[name="Grand Commandant"]Your Majesty's silence only keeps this servant guessing.
+[charslot(slot = "m", name = "avg_npc_1239_1#1$1")]
+[name="Grand Commandant"]Would Your Imperial Majesty truly risk your sacred person to activate Bu Fan to settle the crisis within the Tomb of Sui?
+[dialog]
+[charslot]
+[name="True Lung"]...
+[charslot(slot = "m", name = "avg_npc_1239_1#4$1")]
+[name="Grand Commandant"]I know not whose slander Your Majesty has heard... to resort to such an ill-advised course.
+[dialog]
+[charslot]
+[name="True Lung"]With no counsel offered, am I not capable of making my own decision?
+[charslot(slot = "m", name = "avg_npc_1239_1#3$1")]
+[name="Grand Commandant"]Forty years ago... when Your Majesty ascended the throne, it was the Grand Tutor and I who went with you to survey Bu Fan.
+[charslot(slot = "m", name = "avg_npc_1239_1#3$1")]  
+[name="Grand Commandant"]I still remember following our visit to that remote room, three whole days came and went without a single court session. To this day I remain unaware of Your Majesty's thoughts at the time.
+[dialog]
+[charslot]
+[name="True Lung"]I remember then as well... But now I no longer fear the Grand Commandant deriding me, so perhaps I shall share.
+[name="True Lung"]I was only thinking... in Yan's thousand year history with this object, not even once has there been a single True Lung who used it.
+[name="True Lung"]If Great Yan were forced to use Bu Fan while I sat the throne... would I not become the weakest ruler in our history?
+[charslot(slot = "m", name = "avg_npc_1239_1#4$1")]  
+[name="Grand Commandant"]If you would grant me a presumptuous question... If Your Imperial Majesty were to sacrifice yourself for the nation, how would it be run, subsequently?
+[dialog]
+[charslot]
+[name="True Lung"]Is there a cause for worry...? Is my replacement not already in Baizao as we speak?
+[charslot(slot = "m", name = "avg_npc_1239_1#4$1")]  
+[name="Grand Commandant"]The mandarins would be unsatisfied if the deposed imperial heir Yan Wu were to take the throne, and the country would descend into chaos. And what will happen then?
+[dialog]
+[charslot]
+[name="True Lung"]The fault will lie on the mandarins' shoulders.
+[charslot(slot = "m", name = "avg_npc_1239_1#4$1")] 
+[name="Grand Commandant"]I only wish for Your Majesty to abandon this thought.
+[dialog]
+[charslot]
+[name="True Lung"]Ridiculous...
+[name="True Lung"]You know well I am no match for the late emperor, whom you so admired...
+[name="True Lung"]Why not accept and anticipate my brother's imminent ascension to the throne, where he will be able to realize your ambitions...?
+[name="True Lung"]Why trouble yourself to persuade me?
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(slot = "m", name = "avg_npc_1239_1#5$1")]
+[name="Grand Commandant"]Your Majesty!
+[dialog]
+[charslot]
+The old man suddenly tenses up, his trembling voice nearly hoarse.
+The man on the throne seems to have forgotten when he last saw the old man this agitated.
+[charslot(slot = "m", name = "avg_npc_1239_1#8$1")]
+[name="Grand Commandant"]For the past forty years, I have witnessed Your Majesty toil tirelessly to grow our country... not even once did you slacken from your imperial duties.
+[charslot(slot = "m", name = "avg_npc_1239_1#8$1")]
+[name="Grand Commandant"]In those years, Great Yan has enjoyed stability. Our population swelled, and the treasury remains full.
+[charslot(slot = "m", name = "avg_npc_1239_1#6$1")]
+[name="Grand Commandant"]Has there been an era in our history... even more prosperous than this one... Or an emperor... more capable and benevolent than the one we have now?
+[dialog]
+[charslot]
+[name="True Lung"]...
+[charslot(slot = "m", name = "avg_npc_1239_1#6$1")]
+[name="Grand Commandant"]And yet, Your Majesty... do you intend to idly watch as our nation's golden age...
+[charslot(slot = "m", name = "avg_npc_1239_1#6$1")]  
+[name="Grand Commandant"]Vanishes into night during this turbulent time?
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=4, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=6)]
+[PlaySound(key="$d_avg_rockfall", volume=0.3)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_fsmetal", volume=1)]
+[delay(time=0.4)]
+[charslot(slot = "m", name = "avg_npc_1634_1#1$1",posfrom="100,0",posto="0,0",duration=1.2,isblock=true)]
+[name="Imperial Guard"]An urgent message from the Sui Regulator. A strong energy wave has been reported from the depths of the Tomb of Sui.
+[name="Imperial Guard"]Far stronger than the wave a hundred and twenty years ago.
+[dialog]
+[charslot]
+[name="True Lung"]And how fare the troops and civilians?
+[charslot(slot = "m", posfrom="0,-30",posto="0,-30", name = "avg_npc_1634_1#1$1")]
+[name="Imperial Guard"]Under control at the moment. Baizao's peripheral blocks moved away before the energy blast, and non-mobile settlements nearby have also been largely evacuated. The damage is minor.
+[name="Imperial Guard"]Mt. Mang has suffered more damage, but the Tianshis are at their posts, and the Garden of Grotesqueries is still suppressing Sui.
+[charslot(slot = "m",posfrom="0,-30",posto="0,-30", name = "avg_npc_1634_1#1$1")]
+[name="Imperial Guard"]There are geists running amok in the city, and the Imperial Guards are cooperating with the Patrol Battalion to establish a defense line. They will give it their all.
+[dialog]
+[charslot]
+[name="True Lung"]I see... You may go.
+[dialog]
+[charslot]
+[PlaySound(key="$d_avg_fsmetal", volume=1)]
+[charslot(slot = "m",afrom=1,ato=0,duration=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_clothmovementsp", volume=0.3)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_curtain_jade", volume=0.3)]
+[PlaySound(key="$d_avg_emperor_fts", volume=0.3)]
+From behind the curtain, the True Lung rises from his throne, and descends the steps until he is next to the older man.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_2132_1#1$1",duration=1, isblock=true)]  
+[name="True Lung"]It's about time.
+[name="True Lung"]You may withdraw, Grand Commandant. The battlefronts of Baizao and Yumen await your commands.
+[charslot(slot = "m", name = "avg_npc_1239_1#7$1")]
+[name="Grand Commandant"]Your Imperial Majesty...
+[charslot(slot = "m", name = "avg_npc_1239_1#8$1")]
+[name="Grand Commandant"]For the sake of Yan... Is Your Majesty truly unaware why I so strongly advocate for war?
+[charslot(slot = "m", name = "avg_npc_1239_1#8$1")]
+[name="Grand Commandant"]Do you still remember why the court came up with the Twenty-Eight Policies?
+[charslot(slot = "m", name = "avg_npc_1239_1#3$1")]
+[name="Grand Commandant"]Victoria, Leithanien, Kazdel... this whole great land is plagued by unrest, Great Yan aside.
+[charslot(slot = "m", name = "avg_npc_1239_1#2$1")]
+[name="Grand Commandant"]We are now in terrible peril... and the nation cannot afford to be passive. We must proactively seek change...
+[charslot(slot = "m", name = "avg_npc_1239_1#1$1")]
+[name="Grand Commandant"]Has Your Majesty not learned from what happened in Ursus?!
+[charslot(slot = "m", name = "avg_npc_2132_1#1$1")]  
+[name="True Lung"]...
+[charslot(slot = "m", name = "avg_npc_1239_1#2$1")]
+[name="Grand Commandant"]The Chamber of Heaven's Designs has yet to figure out what sort of power managed to wipe out that entire Originium vein.
+[charslot(slot = "m", name = "avg_npc_1239_1#2$1")]
+[name="Grand Commandant"]If the Crystal Age truly ends with the depletion of every prime vein, then Great Yan must take the responsibility and prepare to lead all of Terra.
+[charslot(slot = "m", name = "avg_npc_1239_1#2$1")]
+[name="Grand Commandant"]Attack Ursus in the north, repel Victoria in the west, pacify Mitsukue and Kusarigawa in the east, and settle Rim Billiton to the south. Furthermore, we must keep a close eye on Columbia's developments as well as possible naval incursions from Ægir's own sea.
+[charslot(slot = "m", name = "avg_npc_1239_1#4$1")] 
+[name="Grand Commandant"]And before all of that... while Great Yan stands at the height of its power, we must seize the chance in this fight against the bestial Sui to sweep away decades of weakness hiding under peace and prosperity!
+[charslot(slot = "m", name = "avg_npc_1239_1#4$1")]
+[name="Grand Commandant"]Only then... will we manage to stand tall in this chaotic realm... undeterred for the next millennium.
+[dialog]
+[charslot]
+The True Lung falls silent at the old man's speech. Not only to consider all that was said, but also to calm his own mind.
+No one knows how much time has passed before he finally speaks.
+[charslot(slot = "m", name = "avg_npc_2132_1#1$1")]  
+[name="True Lung"]You dedicated your life to wars for the country, and your military merit is without equal, but this has also left you with injuries and ailments...
+[name="True Lung"]Have I ever doubted your undying loyalty to the country?
+[name="True Lung"]But earlier, you spoke of what befell Ursus, and that makes me wonder...
+[name="True Lung"]Do you remember... what happened to Gaul?
+[charslot(slot = "m", name = "avg_npc_1239_1#6$1")]
+[name="Grand Commandant"]Your Imperial Majesty...?
+[charslot(slot = "m", name = "avg_npc_2132_1#1$1")]  
+[name="True Lung"]Your words were incisive...
+[name="True Lung"]Yes, Great Yan should seek change, and must change...
+[name="True Lung"]But the way I see it, compared to the lives we may lose to this war with the bestial Sui...
+[name="True Lung"]What we need even less is a True Lung past his prime... and this power accessible only to the True Lung for the past thousand years...
+[charslot(slot = "m", name = "avg_npc_1239_1#7$1")]
+[name="Grand Commandant"]...
+[charslot(slot = "m", name = "avg_npc_2132_1#1$1")]  
+[name="True Lung"]If we talk of Great Yan's future, then I must say, my outlook is indeed brighter than yours, Grand Commandant...
+[name="True Lung"]Has Great Yan these past forty years... lacked for loyal and righteous men?
+[name="True Lung"]The Grand Preceptor, Yu Cheng, Gu Quan... the Grand Tutor, and yourself...
+[name="True Lung"]My officials are loyal, my soldiers are fearless, my people are principled... Where is this 'weakness hiding under peace and prosperity' you speak of?
+[name="True Lung"]As for the future you mentioned, you can take a look in my stead...
+[charslot(slot = "m", name = "avg_npc_1239_1#8$1")]
+[name="Grand Commandant"]Your Majesty... you still insist...
+[charslot(slot = "m", name = "avg_npc_2132_1#1$1")]  
+[name="True Lung"]That Hunt of my ancestors' days; the remnants of the bestial Sui plaguing Yan for a thousand years... should end with me.
+[name="True Lung"]If we must inevitably spill some blood...
+[name="True Lung"]Then the True Lung should be the first one to spill it.
+[dialog]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_2132_1#1$1")]  
+[PlaySound(key="$d_avg_curtain_jade", volume=0.5, loop=true, channel="ja")]
+[PlaySound(key="$d_avg_emperor_fts", volume=0.8, loop=true, channel="wa")]
+[charslot(slot = "m", action="zoom", poszoom = "0.5,0.5", scale=1.03, duration =1.2)]
+[charslot(slot = "m", afrom = 1, ato = 0, duration =1.2)]
+[delay(time=2)]
+[SoundVolume(volume=0, channel="ja",fadetime=2)]
+[SoundVolume(volume=0, channel="wa",fadetime=2)]
+After a short silence, the True Lung walks to the doors. It has been a long time since he has stepped out of the place.
+Only an old man remains in the vast palace.
+[StopSound(channel="ja", fadetime=0.1)]
+[StopSound(channel="wa", fadetime=0.1)]
+[dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_1239_1#1$1")]
+[name="Grand Commandant"]If I cannot dissuade Your Majesty, then I can only strive to serve my duty.
+[charslot(slot = "m", name = "avg_npc_1239_1#1$1")]
+[name="Grand Commandant"]Send word to Yumen, it's time to make a move.
+[dialog]
+[playsound(key="$d_avg_oldman_walk")]
+[charslot(duration=2)]
+[delay(time=2)]
+After the brief order, he disconnects the terminal and slowly walks forward.
+He passes through the curtain, finally stopping before the throne, closing his eyes and staying in his spot, as if waiting for something...
+Until a cough he can no longer suppress bursts from his throat.
+The cough is so violent he bends over, and has to grab onto the throne for support.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=3, block=true)]
+[charslot]
+[Background(image="58_g7_forbiddencity",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_slmddrprn",volume=0, channel="rain", loop=true)]
+[SoundVolume(volume=0.3, channel="rain",fadetime=2)]
+[PlaySound(key="$d_avg_rainlight_loop", volume=0.5, loop=true, channel="ra")]
+[avgdisplay(id = "1", style = "bgeffect", name = "$eb_raingrey", slot = "bgover",y=-250, layer = 1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_medium", pos = "-400,-200", block = false)]<p=2>One day before the full moon, Hour of Hai</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playMusic(key="$act16_loop", volume=0.6)]
+[charslot(slot="m",name="char_2005_weiyw_1#1",focus="m")]
+[name="Wei Yenwu"]You came, in the end.
+[charslot(slot="m",name="avg_1050_chen3_1#1$1")]
+[name="Ch'en"]So you were here.
+[charslot(slot="m",name="avg_1050_chen3_1#1$1")]
+[name="Ch'en"]You don't seem surprised at all to see me, though.
+[dialog]
+[charslot]
+Ch'en Hui-chieh is somewhat caught off-guard by her target simply showing up before her.
+Still the overbearing posture, still the unfathomable look, as if they are not standing in Baizao's Forbidden City, but in the backyard of his official residence in Lungmen.
+The buildings behind him seamlessly blend into his dark coat, as if those palaces are merely an excessively ornate cloak over his shoulders.
+[charslot(slot="m",name="avg_1050_chen3_1#11$1")]
+[name="Ch'en"]So, at least you weren't kidnapped.
+[charslot(slot="m",name="char_2005_weiyw_1#1",focus="m")] 
+[name="Wei Yenwu"]I still don't know just who on this land could manage that.
+[charslot(slot="m",name="char_2005_weiyw_1#1",focus="m")]
+[name="Wei Yenwu"]Everything I've done has been of my own volition.
+[charslot(slot="m",name="avg_1050_chen3_1#11$1")]
+[name="Ch'en"]I'll never stop hating that attitude of yours...
+[charslot(slot="m",name="avg_1050_chen3_1#11$1")]
+[name="Ch'en"]Why are you here? Is this that backup plan the Grand Tutor kept telling you to make?
+[charslot(slot="m",name="char_2005_weiyw_1#5",focus="m")]
+[name="Wei Yenwu"]His words should not be followed entirely... the situation should never have developed as he suggested, in the first place.
+[charslot(slot="m",name="char_2005_weiyw_1#5",focus="m")]
+[name="Wei Yenwu"]I have another plan in mind.
+[charslot(slot="m",name="avg_1050_chen3_1#7$1")]
+[name="Ch'en"]Either way, you're safe. So what comes next won't be much of a problem.
+[charslot(slot="m",name="char_2005_weiyw_1#2",focus="m")]
+[name="Wei Yenwu"]And what are <i>you</i> preparing to do?
+[charslot(slot="m",name="avg_1050_chen3_1#10$1")]
+[name="Ch'en"]Ensure you're safe, get you out of Baizao, then...
+[dialog]
+[charslot]
+[Effect(name="$e_chixiao_slash01",rox=-80,roy=89,roz=150,layer = 1)]
+[PlaySound(key="$d_avg_bldwhoosh")]
+[delay(time=0.5)]
+Ch'en casually waves the writing knife in her right hand, its simple form leaving a light yellow scroll-like afterimage in the air.
+[charslot(slot="m",name="avg_1050_chen3_1#11$1")]
+[name="Ch'en"]...Correct some mistakes made by you and your brother.
+[charslot(slot="m",name="char_2005_weiyw_1#2",focus="m")]
+[name="Wei Yenwu"]I see... so the artifact is with you.
+[charslot(slot="m",name="char_2005_weiyw_1#1",focus="m")]
+[name="Wei Yenwu"]I'm not too surprised.
+[charslot(slot="m",name="avg_1050_chen3_1#1$1")]
+[name="Ch'en"]Hah. And who were you supposing would deliver this writing knife to you?
+[charslot(slot="m",name="char_2005_weiyw_1#2",focus="m")]  
+[name="Wei Yenwu"]That's no longer important...
+[charslot(slot="m",name="char_2005_weiyw_1#5",focus="m")]
+[name="Wei Yenwu"]Since you have it, then you ought to know how to use it... and everything else about it.
+[charslot(slot="m",name="avg_1050_chen3_1#4$1")]
+[name="Ch'en"]I was pretty surprised. Every secret I've learned about you since coming to the city has... opened my eyes.
+[charslot(slot="m",name="avg_1050_chen3_1#1$1")]
+[name="Ch'en"]You know, I almost admire your ability to hide so many secrets.
+[charslot(slot="m",name="char_2005_weiyw_1#5",focus="m")]
+[name="Wei Yenwu"]If you truly wish to rectify the mistake I made then, you should follow me.
+[charslot(slot="m",name="avg_1050_chen3_1#1$1")]
+[name="Ch'en"]Follow you...
+[charslot(slot="m",name="avg_1050_chen3_1#10$1")]
+[name="Ch'en"]Where?
+[charslot(slot="m",name="char_2005_weiyw_1#5",focus="m")]
+[name="Wei Yenwu"]Beneath the Forbidden City, to the first Originium.
+[charslot(slot="m",name="char_2005_weiyw_1#5",focus="m")]
+[name="Wei Yenwu"]The writing knife you hold will be of use, and will solve Great Yan's crisis. All will be made right.
+[charslot(slot="m",name="char_2005_weiyw_1#1",focus="m")]
+[name="Wei Yenwu"]Of course, I prefer you hand the knife to me instead. It'll be quicker, and you'll have less trouble to contend with.
+[charslot(slot="m",name="char_2005_weiyw_1#1",focus="m")]  
+[name="Wei Yenwu"]But you won't trust me. I'm sure you want to see it all yourself before you'll give up. I don't really mind, though.
+[charslot(slot="m",name="avg_1050_chen3_1#11$1")]
+[name="Ch'en"]Haven't had enough of playing the tragic hero? You're just conveniently skipping over the part where you'd actually lose your life.
+[charslot(slot="m",name="char_2005_weiyw_1#5",focus="m")]
+[name="Wei Yenwu"]We stand before a great crisis... and this is a small cost Yan can afford.
+[charslot(slot="m",name="char_2005_weiyw_1#5",focus="m")]
+[name="Wei Yenwu"]There are no victims in this case. Your work ends here, Superintendent Ch'en.
+[charslot(slot="m",name="avg_1050_chen3_1#11$1")]
+[name="Ch'en"]Don't tell me you forgot. I resigned right in front of you, five years ago.
+[charslot(slot="m",name="avg_1050_chen3_1#11$1")]
+[name="Ch'en"]Though the man standing before me now isn't even fit to be called 'Chief Wei'.
+[charslot(slot="m",name="char_2005_weiyw_1#5",focus="m")]
+[name="Wei Yenwu"]...
+[charslot(slot="m",name="avg_1050_chen3_1#10$1")]
+[name="Ch'en"]You're telling me to watch you throw your life away, and that's not even the part of your words that's pissing me off the most.
+[charslot(slot="m",name="avg_1050_chen3_1#11$1")]
+[name="Ch'en"]Your sacrifice isn't going to move anyone's heart but your own.
+[charslot(slot="m",name="avg_1050_chen3_1#1$1")]
+[name="Ch'en"]And right now, you don't even have the right to end your life just like that.
+[charslot(slot="m",name="char_2005_weiyw_1#3",focus="m")]
+[name="Wei Yenwu"]Hui-chieh, this is no petty squabble. This matter concerns the fate of Yan and its people!
+[charslot(slot="m",name="avg_1050_chen3_1#11$1")]
+[name="Ch'en"]Of course I know that...
+[charslot(slot="m",name="avg_1050_chen3_1#2$1")]
+[name="Ch'en"]But get over your own ego. The country's fate doesn't fall on your shoulders alone. There are definitely other things you should be doing, besides glorifying your own suicide.
+[charslot(slot="m",name="char_2005_weiyw_1#5",focus="m")]
+[name="Wei Yenwu"]Very well.
+[charslot(slot="m",name="char_2005_weiyw_1#4",focus="m")]
+[name="Wei Yenwu"]You don't have to come with me.
+[charslot(slot="m",name="char_2005_weiyw_1#4",focus="m")]
+[name="Wei Yenwu"]Give me the writing knife and go back to Lungmen.
+[charslot(slot="m",name="avg_1050_chen3_1#11$1")]
+[name="Ch'en"]It's too bad I got two blades here, but I can't lend you either of them.
+[charslot(slot="m",name="char_2005_weiyw_1#4",focus="m")]
+[name="Wei Yenwu"]We don't have any more time to lose, and you still want it your way, Superintendent Ch'en?
+[charslot(slot="m",name="avg_1050_chen3_1#11$1")]
+[name="Ch'en"]I'm not the one insisting on having it my way.
+[charslot(slot="m",name="char_2005_weiyw_1#4",focus="m")]
+[name="Wei Yenwu"]Must you force my hand...?
+[charslot(slot="m",name="char_2005_weiyw_1#3",focus="m")]
+[name="Wei Yenwu"]Fine, show me. Let me see how much your swordplay has grown in the last five years!
+[charslot(slot="m",name="avg_1050_chen3_1#11$1")] 
+[name="Ch'en"]That's more like it.
+[dialog]
+[charslot]
+Ch'en Hui-chieh grips the hilt of her sword.
+Since she first took up the Chi Xiao, she knew this moment would one day come.
+[dialog]
+[PlaySound(key="$d_sp_chixiaobadao")]
+[PlaySound(key="$d_avg_breezetree")]
+[Blocker(a=0.2, r=0.92, g=0.4, b=0.3, fadetime=0.6, block=true)]
+[Blocker(a=0, r=0.92, g=0.4, b=0.3, fadetime=0.4, block=true)]
+She unsheathes her blade, pointing it at the Baizao autumn breeze blowing between her and Wei Yenwu.
+[dialog]
+[charslot]
+[charslot(slot="m",name="avg_1050_chen3_1#10$1")] 
+[name="Ch'en Hui-chieh"]As sword ere shadow's trace...
+[charslot(slot="m",name="char_2005_weiyw_1#5",focus="m")]
+[name="Wei Yenwu"]...Cast off as cast.
+[StopSound(channel="rain", fadetime=2)]
+[StopSound(channel="ra", fadetime=2)]
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[avgdisplay(id = "1")]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]
