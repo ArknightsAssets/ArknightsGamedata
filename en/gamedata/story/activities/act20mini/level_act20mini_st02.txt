@@ -1,0 +1,744 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="56_g1_newvolsiniistreet_d",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[Dialog]
+[PlaySound(key="$dooropenquite", volume=1)]
+[PlaySound(key="$d_avg_doorbell",volume=0.6,delay=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[name="Restaurant Owner"]Scusa, Bettina, I'd love to help you, but... I'm running a small business here too, y'know.
+[name="Restaurant Owner"]Those bottles I got from you last time are still on my wine rack, gathering dust. Why not go ask at the corner store?
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]Right, I'll go do that! Grazie, Zio Paolo!
+[Dialog]
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[delay(time=0.5)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]...I already asked, actually. Nobody wants any.
+[name="Bettina"]I've gotta move all this out of the way first. If I keep standing around here like a fool, I'll affect Zio Paolo's business.
+[Dialog]
+[playsound(key="$d_avg_dragheavybox")]
+[PlaySound(key="$d_avg_cloakmovement", volume=1,delay=0.9)]
+[charslot(slot = "m",posfrom = "0,0", posto = "200,0",duration = 2)]
+[delay(time=2.3)]
+[playsound(key="$d_avg_putonwoodenfloor_xshield", volume=0.7)]
+[PlaySound(key="$d_avg_bottlecollide", volume=0.7,delay=0.3)]
+[charslot(slot = "m", action="shake",random=true, power=8, times=40,duration=0.8)]
+[name="Bettina"]Hup—Wh-Wh-Whoaaaaawha?!
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="l",name="avg_npc_2202_1#10$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="l",name="avg_npc_2202_1#10$1",focus="l")]
+[name="Passing Girl"]Careful!
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="Passing Girl"]That was close... Here, hold it tight now.
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]Th-Thank you, signorina.
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="Passing Girl"]Man, this is heavy, no wonder a little kid like you couldn't carry it right. What's in this—
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="Passing Girl"]Oh, it's Verdi.
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]You know it?
+[name="Bettina"]I'm Bettina, and this is from the Verdi Winery where my nonno works! The winery's got decades of history behind it! Would you like to buy a bottle, signorina?
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="Passing Girl"]...I see.
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="Passing Girl"]Bettina, right? I guess it's fate I've bumped into you, so let's make friends.
+[name="Tosia"]I'm Tosia. Here, my card.
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]Wow, cool, a business card! Sorry, I don't have one... Huh?
+[name="Bettina"]Kazimierz Golden Prairie Winery, Nuova Volsinii branch... sales representative?
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[multiline(name="Tosia")]I'm betting that before long, it'll say 'Senior Relationship Manager'... 
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[multiline(name="Tosia")]But that's the thing. I'm afraid we're competitors, so I won't be buying your wine.
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="Tosia"]Now, if you wouldn't mind scooching out of the way, little Miss Bettina, I have a great deal to make with Signor Paolo.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_manorindoor",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]You just arrived in Nuova Volsinii, and you've already talked the locals into some huge deals! Excellent work!
+[name="Czarek"]Come, Tosia! Today, we give our top sales rep the welcome feast she deserves!
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#4$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="r")]
+[name="Tosia"]You're too kind, Wujek Czarek!
+[charslot(slot="r",name="avg_npc_2202_1#1$1",focus="r")]
+[name="Tosia"]You've been busy getting the Red Wine Championship ready, so of course you didn't have time for dinner. I just hope I haven't been much trouble.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]Not at all! I'm a lucky man, getting an experienced sales girl to join us at Golden Prairie!
+[name="Czarek"]But I heard you were doing well at the Krzywy Domek Department Store. Why Nuova Volsinii all of a sudden?
+[charslot(slot="r",name="avg_npc_2202_1#9$1",focus="r")]
+[name="Tosia"]It's... a long story.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]Let me guess, it's something to do with that... 'Silverlance Pegasus corruption case' that's got Kawalerielki all abuzz lately?
+[charslot(slot="l",name="avg_npc_176",focus="n")]
+Though Czarek lowered his voice, the mention of the case has Tosia jerking her head upwards.
+[charslot(slot="r",name="avg_npc_2202_1#3$1",focus="r")]
+[name="Tosia"]How did you...?
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]I was told that the G.C.C. sent agents to Krzywy Domek and took one of your managers a few days ago. Your old manager, even.
+[charslot(slot="r",name="avg_npc_2202_1#7$1",focus="r")]
+[name="Tosia"]Guess there's no hiding anything from you. She took good care of me, but... one of her relatives is a Silverlance Pegasus.
+[name="Tosia"]It was a point of pride, but once the G.C.C. started poking around... Whenever they can't directly move against the Adeptus Sprawiedliwi, they take the people around them for 'questioning'.
+[name="Tosia"]And more and more people keep getting involved in the case. Some poor souls get the entire book thrown at them, even though anyone with eyes can see they're totally innocent...
+[name="Tosia"]If normal folk like us get pulled into this kind of trouble, how're we supposed to resist giants like the G.C.C.?
+[charslot(slot="r",name="avg_npc_2202_1#9$1",focus="r")]
+[name="Tosia"]That's why I thought it'd be better to come here and expand—
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]Tosia, Golden Prairie would not have grown this large in Nuova Volsinii without behind-the-scenes support from the G.C.C.
+[name="Czarek"]When the big shots show some initiative and want to expand their horizons, that is a good thing for businesspeople like us.
+[charslot(slot="r",name="avg_npc_2202_1#7$1",focus="r")]
+[name="Tosia"]...You're right.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]Let's not think too much about Kawalerielki while we're here.
+[name="Czarek"]Just keep your enthusiasm flowing and do a good job. When my business is growing, it's only good for you, no?
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="Tosia"]Then I'll thank you in advance, Wujek Czarek.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]Clever girl. I won't belabor the point, then.
+[name="Czarek"]I've already ordered the food, just need to know what you want to drink.
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[multiline(name="Tosia")]Sorry for putting all that on you. Honestly, I'm not too good at handling wine. 
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[multiline(name="Tosia")]Let me see...
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="Tosia"]Oh, right, I'm looking for a certain brown-colored soft drink. I think it's a local Siracusan brand, tastes like orange with a bit of bitterness?
+[Dialog]
+[charslot]
+[name="Waiter"]Do you mean Chinotto, signorina? I am terribly sorry, but we don't carry that one.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="l")]
+[name="Czarek"]Where did you even learn of that old beverage? Since we put out our soft drink line, the local brands have pretty much all died out.
+[charslot(slot="r",name="avg_npc_2202_1#3$1",focus="r")]
+[name="Tosia"]Huh... Really?
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]Did you forget our slogan, Tosia? 'Nuova Volsinii, Vita Nuova'. Leave the retro nostalgia to the Leithanians.
+[name="Czarek"]How about some zero-proof sparkling water?
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="r")]
+[name="Tosia"]Haha, sure! Let's go with that, then.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]Good, good. Oh, almost forgot. Come, I wanted to show this to you.
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_paper1")]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[name="Tosia"]It's a... shelf display agreement?
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]Just a draft template. I was hoping to hear what our top sales representative thought before we deployed it.
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[name="Tosia"]It's very clear on the criteria, and the rewards are generous... There shouldn't be too many retailers who decline.
+[name="Tosia"]But if they do accept, it means they can only display our products while the agreement is in force.
+[charslot(slot="r",name="avg_npc_2202_1#3$1",focus="r")]
+[name="Tosia"]Wouldn't an exclusivity clause like that create legal issues under local law?
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]There's nothing in the New Urban Management Act that says we can't have one.
+[name="Czarek"]The way I see it, those Lupos with their heads full of dreams and faith won't see any issues with it.
+[Dialog]
+Czarek shrugs, a smile of victory on his face.
+[name="Czarek"]But it's you frontline employees who will be talking to the retailers, not me. I'm eager to see how you do, when the time comes, Tosia.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_plateplace", volume=1)]
+[delay(time=1.5)]
+[name="Waiter"]Thank you for waiting. Your zero-proof sparkling water, signorina.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="l")]
+[name="Czarek"]Come, to Nuova Volsinii, and to vita nuova! Na zdrowie!
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="Tosia"]...I would never let you down, Wujek Czarek.
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="r")]
+[name="Tosia"]Na zdrowie!
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="all")]
+[delay(time=0.5)]
+[PlaySound(key="$clink", volume=1)]
+[delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[multiline(name="Tosia")]Whew... I'm stuffed! 
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[multiline(name="Tosia")]'Chef's Selection'... Seriously? Tiny portions and way too much fuss.
+[Dialog]
+[charslot]
+After shoving the last piece of pizza into her mouth, Tosia brushes the crumbs off her hands and continues her walk back to her place alongside the night breeze.
+The street is lit up in vibrant colors by a chaotic mix of billboards, shining as bright as day. This nightscape is breathtaking, but it could not be more different from the Siracusa Tosia imagined.
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="Tosia"]...Shelf display agreement, more like shelf monopoly agreement.
+[name="Tosia"]It's going to get a whole lot of people fired, maybe even bankrupted, won't it? Like that kid from before. Once the agreement's signed, she won't be able to sell her wine, no matter how much legwork she puts in...
+[multiline(name="Tosia")]But it's got to be done. Those Victorians and Columbians aren't going to let an opportunity this big slip by, even if we did. 
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[multiline(name="Tosia")]Hmm?
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]Oh? It's you, the lady from this morning.
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[multiline(name="Tosia")]How's it going? Manage to sell any...? 
+[charslot(slot="m",name="avg_npc_2202_1#7$1",focus="m")]
+[multiline(name="Tosia")]*sigh* You're still carrying the same bottles, aren't you?
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]Yeah...
+[name="Bettina"]You're a really good saleswoman, right, Signorina Tosia? Can you—
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="Tosia"]Nope.
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]Huh? But I didn't even get to ask...
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="Tosia"]You want me to teach you a trick or two, right? I can read it on your face. Anyway, no can do, no way.
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]But why?
+[Dialog]
+[charslot(slot="m",name="avg_npc_2202_1#11$1",focus="m")]
+The despondency and incomprehension on the girl's face force a long sigh out of Tosia.
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="Tosia"]How old are you, Bettina?
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]I'm ten next week.
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="Tosia"]Ten, huh... Alright, let me put this in a way you can understand.
+[name="Tosia"]Listen, I know having to make a living at your age isn't easy. If things were different, I wouldn't mind helping you out.
+[name="Tosia"]I only got to where I am today thanks to the help of others. A favor is an investment, not a cost.
+[name="Tosia"]But here's the problem: there's only so much wine one Nuova Volsinian can drink in a day.
+[name="Tosia"]You're selling Verdi, I'm selling Golden Prairie. We're business rivals, enemies even.
+[PlayMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="Tosia"]Of course, in a situation like this, some people would drop any cost-benefit analysis, and choose to help a helpless little kid like you... but that's not me.
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2202_1#1$1",focus="m")]
+[bgeffect(name="$eb_speedline",layer=1)]
+[BackgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.3, yScaleTo=1.3, duration=0, block=false,screenadapt="coverall")]
+[CameraShake(duration=0.3, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",action="zoom",poszoom="0.5,0.55",scale=1.2,duration=0,isblock=true)]
+[Delay(time=0.2)]
+[multiline(name="Tosia")]Because I'm a woman with a heart of stone! 
+[BackgroundTween(xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1.5, yScaleTo=1.5, duration=0, block=false,screenadapt="coverall")]
+[CameraShake(duration=0.3, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",action="zoom",poszoom="0.5,0.6",scale=1.5,duration=0,isblock=true)]
+[Delay(time=0.2)]
+[multiline(name="Tosia")]The business world is a battlefield! Helping your enemy is just stabbing yourself in the back!
+[BackgroundTween(xScaleFrom=1.5, yScaleFrom=1.5, xScaleTo=1.7, yScaleTo=1.7, duration=0, block=false,screenadapt="coverall")]
+[CameraShake(duration=0.3, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",action="zoom",poszoom="0.49,0.65",scale=1.8,duration=0,isblock=true)]
+[Delay(time=0.2)]
+[name="Tosia"]I've set my mind on flying up the ranks and living the good life, and I'm not going to go soft on my foe just because she's a kid! You got that?!
+[Dialog]
+[charslot]
+[bgeffect(layer = 1)]
+[BackgroundTween(xScaleFrom=1.7, yScaleFrom=1.7, xScaleTo=1, yScaleTo=1, duration=0, block=false,screenadapt="coverall")]
+[delay(time=0.2)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]Got it...
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="Tosia"]Good! I'm off, then. You keep at it.
+[Dialog]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2.5)]
+[charslot(slot = "m", posfrom="0,0", posto="-150,0", afrom=1, ato=0, duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_runstop", volume=0.7)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="Tosia"]...Was I too harsh on her?
+[name="Tosia"]Can't blame me for it. That black-hearted uncle of mine is obviously trying to use pie-in-the-sky promises to trick me into doing his dirty work.
+[charslot(slot="m",name="avg_npc_2202_1#11$1",focus="m")]
+[name="Tosia"]If I want to find my footing here, I don't have time to get involved in other people's business.
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[name="Tosia"]But... she's not crying, is she? Let's just turn around and get a quick look, just one look...
+[Dialog]
+[musicvolume(volume=0, fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)] 
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=0.7, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]Hm...
+[name="Bettina"](Droops head, as if grieving)
+[name="Bettina"](Grabs hold of bridge railing)
+[name="Bettina"](Stands on top of railing)
+[name="Bettina"](As if about to jump—)
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="n")]
+[name="Tosia"]Whoa, whoa, WHOA! WAIT, WAIT! DON'T JUST THROW YOUR LIFE AWAY LIKE THAT—!
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Bettina"]Wha—?!
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=0.7)]
+[charslot(slot="r",name="avg_npc_2202_1#8$1",posfrom="300,0",posto="30,0",afrom=0,ato=1,duration=0.5)]
+[Delay(time=0.6)]
+[PlaySound(key="$d_avg_clothmovementsp",volume=0.8)]
+[PlaySound(key="$bodyfalldown1", volume=1,delay=0.3)]
+[CameraShake(duration=0.7, xstrength=20, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(duration=0.5)]
+[Delay(time=2)]
+[musicvolume(volume=0.6, fadetime=1.5)]
+[charslot(slot="m",name="avg_npc_2202_1#7$1",duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2202_1#7$1",focus="m")]
+[name="Tosia"]Made it... Good thing I got quick reflexes...
+[charslot(slot="m",name="avg_npc_2202_1#10$1",focus="m")]
+[name="Tosia"]Kids these days have no mental fortitude! I'll teach you, okay?!
+[name="Tosia"]Seriously, even when my performance was in the gutter, and I was homeless and living under a bridge, eating thrown-out fries, things weren't <i>that</i> bad!
+[multiline(name="Tosia")]You're young, you've got plenty of time ahead of you! As long as you're alive, there's hope! Even if things are hard now, you need to believe things will get bet... 
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[multiline(name="Tosia")]ter...
+[name="Tosia"]Why are you looking at me like that?
+[Dialog]
+[charslot(duration=0.2)]
+[Delay(time=0.4)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="r")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]I think you misunderstood something, Signorina Tosia. I was trying to save Pane.
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="Tosia"]...Pane?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]Over there, on the other side of the railing. It's so naughty, wandering off like that...
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_dogbarknormal", volume=1)]
+[name="Pane"]Woof!
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="Tosia"]So you weren't trying to...?
+[charslot(slot="l",name="avg_npc_2202_1#4$1",focus="l")]
+[name="Tosia"]Haha, thank goodness. I guess I looked real stupid trying to calm you down just now, worried as I was.
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="Tosia"]But even if you were trying to save it, you didn't need to go over the railing, you know! That's dangerous!
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]But my arms aren't long enough...
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[name="Tosia"]...
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="Tosia"]Alright, fine, out of the way! You better not bite me, Pane!
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g6_courtsquare_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(key="$comedy_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[name="Well-Dressed Woman"]<i>Sono molto grata</i>, Bettina! If you hadn't brought my bambino back to me, why, I don't know what to do!
+[name="Well-Dressed Woman"]We'll head back home now. Say ciao to Bettina, Pane.
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]Okay! Ciao, Signora Bianca! Ciao, Pane!
+[Dialog]
+[charslot]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="Tosia"]Huh? Wait, aren't you going to ask her?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]Ask her what?
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="Tosia"]About the wine! I feel like getting sales through personal connections is rather high-cost-low-efficiency, but any port in a storm. Definitely beats starving.
+[name="Tosia"]Didn't you help her find Pane so she would buy your wine?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]Huh?
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="Tosia"]Don't tell me you did it out of the goodness of your heart.
+[name="Tosia"]Am I misunderstanding something? Is your family not in big trouble? Does it not matter if this stuff sells?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]No, of course it matters! I just want to help sell the wine. Nonno says sales have been getting worse and worse lately, and if we can't make enough this month, the winery will have to close...
+[name="Bettina"]What should I do? You said you'd teach me.
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="Tosia"]What? When did I say that—
+[Dialog]
+[musicvolume(volume=0.3, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.7, keep=true)]
+[charslot(slot="m",name="avg_npc_2202_1#10$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[name="Tosia"]Kids these days have no mental fortitude! I'll teach you, okay?!
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="56_g6_courtsquare_n",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[musicvolume(volume=0.6, fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="Tosia"]Oh. I guess I did. Though I thought you were going to... Ahem.
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="Tosia"]I'm not trying to wiggle out of what I said, but take a good look at your product. Cheap, local wines like your Verdi are the worst performers in the current market.
+[name="Tosia"]Outdated production facilities, careless cost control, old-fashioned marketing... While Golden Prairie offers some better-quality budget wines, and they are only half the price. Only a fool would pick the other option.
+[name="Tosia"]The winery your nonno works for is doomed. My advice to him is to start looking for a new job sooner rather than later.
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]But the adults all say there's no such thing as an unsellable product, only salespeople who can't sell it.
+[name="Bettina"]I know Verdi is hard to sell... Is it so bad that not even you could sell it, Signorina Tosia?
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="Tosia"]...
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="Tosia"]First you trick me into giving you advice, then you go for a psychological tactic? You've got moves.
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]Trick...?
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="Tosia"]But I won't fall for it, hehe.
+[name="Tosia"]I don't have to get mixed up in your problems to prove myself. I'm last year's sales star at the Krzywy Domek Department Store, and the future top salesperson at Golden Prairie. There's nothing I can't sell...
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="Tosia"]That's right, absolutely nothing! Alright, since you've talked your way this far, allow me to teach you a thing or two!
+[charslot(slot="l",name="avg_npc_2202_1#4$1",focus="l")]
+[name="Tosia"]With my secret sales techniques, forget selling a few bottles, you'll be selling crates by the dozen!
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g3_newvolsiniialley_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",duration=0.7)]
+[charslot(slot="r",name="avg_npc_700_1#1$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="Tosia"]...Alright, tell me the story. Why is it you haven't sold a single bottle yet?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]Sorry, I know how hard it was for you to find free time to teach me, but I... *sniff*
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="Tosia"]I can afford a day off, I've built enough of a lead on second place. Gotta leave myself some room for improvement next month...
+[charslot(slot="l",name="avg_npc_2202_1#10$1",focus="l")]
+[name="Tosia"]The important thing is, you're my apprentice, how can you be getting stuck like this?! Are you really doing things the way I taught you?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]I did my best to use the words you taught me, but...
+[charslot(slot="l",name="avg_npc_2202_1#10$1",focus="l")]
+[name="Tosia"]But?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]Things like 'the wine is full-bodied, with exquisite balance and a lively zing'. I don't understand what they mean at all, so how am I supposed to pretend I do when talking to people?
+[name="Bettina"]And then saying things like our wine 'comes from a winery with deep historical roots'... We just use grapes from our own vineyard. Isn't this misleading?
+[name="Bettina"]Nonno says we should put ourselves in other people's shoes, and be sincere when dealing with them. That way, everyone will trust us. It's the only way to get a good deal that everyone's happy with, so I... I...
+[charslot(slot="l",name="avg_npc_2202_1#7$1",focus="l")]
+[name="Tosia"]*sigh*... I knew it.
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="Tosia"]Listen to me. Your playbook is outdated.
+[name="Tosia"]You're being sincere, but other people aren't necessarily going to be sincere back. Gullible idiots get swindled and lose everything. Even if they put it all on the line to make some cash, they just burn themselves out.
+[name="Tosia"]You'll see, when you find yourself in a desperate situation. Then you'll look around and see no one ready to lend you a hand. Sincerity means nothing in the face of profit.
+[name="Tosia"]You can't entrust your survival to anyone else. We need to be smart, or we'll get gobbled up. You hear me?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]I... I don't know...
+[Dialog]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="n")]
+The sight of the girl with her head lowered, clutching at her clothes, makes Tosia decide to lighten up a bit.
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="Tosia"]Look, I'm not saying you need to become a swindler yourself. You just need to package it a little nicer, that's all.
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]Package it?
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[multiline(name="Tosia")]Yep, like using a ribbon to tie a pretty bow, and putting it in a nice bag... 
+[PlaySound(key="$d_avg_plasticbag", volume=1)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[multiline(name="Tosia")]There we go! Looks much more presentable than before.
+[Dialog]
+[charslot(slot="r",afrom=1,ato=0,duration=0.3)]
+[delay(time=0.5)]
+[charslot(slot = "l", posfrom="0,0", posto="200,0", duration=0.7)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="Tosia"]You might've already noticed, but there's a huge change coming to the wine racks of Nuova Volsinii.
+[name="Tosia"]Used to be that they'd only stock a few types of wine. But now, you can easily find Pinot noirs from Victoria, Cabernet Sauvignons from Columbia, sweet rosés from Bolívar...
+[name="Tosia"]It's a miracle for sure, but can you see where the issue lies when you lift up your glass?
+[name="Tosia"]This miracle was born from stringent production criteria, and carried all across Terra in cargo containers. They're appropriately priced, and are stable in quality, but what they lack is soul.
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="Tosia"]Wine isn't meant to lack personality like a fast-food burger! Put those dime-a-dozen industrial goods back on the shelf, and look at the premium gold label Sangiovese in my hand!
+[name="Tosia"]The product of craftsmanship honed over decades at a local Siracusan winery! A unique flavor with a lingering aftertaste! One sip will delight the mind, two sips will bring good health—
+[Dialog]
+[charslot]
+[delay(time=0.3)]
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_wadmoney", volume=1)]
+[name="Travel-Stained Man"]I'd like one. Will this be enough?
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="Tosia"]Huh?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]Wha?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="Travel-Stained Man"]Aren't you two selling wine? I'm pressed for time, so give it here quick. Err... How do I look?
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="Tosia"]Ah, er, you look perfectly fine... Where's the fire, signor?
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="Travel-Stained Man"]I find myself needing to meet someone, but it's rather last-minute. I didn't expect them to be in Nuova Volsinii, and in my rush, I wasn't able to prepare a gift. Lucky I ran into you.
+[name="Travel-Stained Man"]Grazie mille, signorine. I hope your business goes well.
+[Dialog]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="Tosia"]Signor, wait—Damn, he's fast.
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="Tosia"]Err... I was only trying to give you an example. Didn't expect there to be anyone crazy enough to actually buy it. Probably a foreigner, since he didn't recognize the wine?
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="r")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]He gave us enough to buy a ton of Verdi...
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="Tosia"]This is great, though! We finally sold our first bottle! How about a high-five?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]But... Mm...
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="Tosia"]Why the long face? Selling something is a victory, even if it was a misunderstanding. It's his own fault for not studying up...
+[name="Tosia"]...
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]...
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[name="Tosia"]But he did look like he was <i>really</i> in a rush. Must be a really important meeting?
+[charslot(slot="l",name="avg_npc_2202_1#7$1",focus="l")]
+[name="Tosia"]Hey, kid... If you show up with a bottle of cheap wine in Siracusa... What happens?
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g1_newvolsiniistreet_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2202_1#7$1",focus="m")]
+[name="Tosia"]—So that's why we're really sorry!
+[name="Tosia"]Here's your money back. Please, use it for some other gift. This isn't a high-quality wine, it's just a bottle of—
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="Travel-Stained Man"]Verdi, right? So that's why you two were chasing after me in a panic.
+[charslot(slot="m",name="avg_npc_2202_1#2$1",focus="m")]
+[name="Tosia"]You know it?
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="Travel-Stained Man"]How could I not, considering all the years I've drank? I was born in Sorrento, and many years ago, I had a falling out with my family. In my anger, I ran off to Columbia.
+[name="Travel-Stained Man"]You can laugh if you want. My Siracusan is a little rusty these days.
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[name="Tosia"]But if you knew, then why did you...?
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="Travel-Stained Man"]Haha! If I brought a fancy foreign wine as a gift, I'm afraid my papà would slam the door in my face.
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[name="Tosia"]The meeting is with your own family?
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="Travel-Stained Man"]I didn't know they moved here. I saw them while I was out on the street, nearly didn't recognize them.
+[name="Travel-Stained Man"]What once felt like the biggest deal in all of Siracusa now barely feels important at all. All these years, I had no contact at all. It's time I finally dropped by.
+[name="Travel-Stained Man"]My family was not well-off, so we had Verdi with dinner. I don't know why Papà never tired of it... I hope that once he sees this bottle, he'll let me in.
+[name="Travel-Stained Man"]So there's been no misunderstanding here. A bottle of common, ordinary Verdi, wrapped with care, appeared in front of me precisely when I needed it. And for that, I am willing to pay this price.
+[name="Travel-Stained Man"]If it still weighs on your conscience, then why not offer me a 'good luck' as a bonus?
+[charslot(slot="m",name="avg_npc_2202_1#4$1",focus="m")]
+[name="Tosia"]...Sure! Best of luck to you!
+[Dialog]
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[delay(time=0.3)]
+[playsound(key="$d_gen_walk_n", volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="Tosia"]Never thought I'd see the day I'd chase down a buyer to get my product back... You're looking chipper. Happy now?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]Mhm! When I tell Nonno, he's gonna say I made a good deal.
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="Tosia"]Then how about a high-five?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]Yay!
+[Dialog]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="all")]
+[delay(time=0.3)]
+[CameraShake(duration=0.3, xstrength=5, ystrength=8, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_clapsolo", loop=true, channel="1")]
+[StopSound(channel="1", fadetime=0.3)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="Tosia"]No time to rest on your laurels, though. We've only sold one bottle. You can't count on more happy accidents—
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_365_1#1$1",focus="m")]
+[name="Foreign Young Man"]Excuse me, are you Bettina?
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]I am. Who might you be, signore?
+[charslot(slot="m",name="avg_npc_365_1#1$1",focus="m")]
+[name="Foreign Young Man"]Finally found you. Miss Bianca says you sell traditional Siracusan red wine. Is that right?
+[name="Foreign Young Man"]I'm planning to open a Siracusan restaurant in Victoria, and I might consider bringing a few such items back with me. Could you introduce your product?
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="Bettina"]Oh, you mean...?
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[multiline(name="Tosia")]A golden opportunity is knocking, Bettina! Don't just stand there, the important part is putting your marketing skills to good use next! Still remember what I taught you—
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[multiline(name="Tosia")]Hm.
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="Bettina"]Signorina Tosia?
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="Tosia"]Never mind, kid. You... You graduated.
+[name="Tosia"]Just forget everything I said. It's better you do things your own way.
+[Dialog]
+[charslot]
+Tosia watches the girl and the young man move to the curb, listing out the gains and losses in her head out of habit.
+[Dialog]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="Tosia"]A Siracusan restaurant... Even if he's looking for a local wine, he'd make more profit if he went for something a couple grades higher than Verdi. Well, it's all about what the buyer thinks, in the end.
+[multiline(name="Tosia")]Just gotta hope he signs a long-term agreement. Though, even if he does, it's still a drop in the bucket. This label isn't going to escape bankruptcy or acquisition that easily... 
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[multiline(name="Tosia")]Hmm?
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="n")]
+The conversation nearby seems to pause for a moment. The girl turns to Tosia, jumping and waving her hands, a bright smile plastered all over her face.
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="Tosia"]Looks like things are going well.
+[name="Tosia"]Whatever... As long as she's happy.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_manorindoor",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+One week later.
+[Dialog]
+[charslot(slot="m",name="avg_npc_223",focus="m")]
+[name="Secretary"]I've spoken with Mr. Roger, and he approves of your idea. He simply has some hesitation about getting involved, and is worried about the risks.
+[charslot(slot="m",name="avg_npc_176",focus="m")]
+[name="Czarek"]No rush, the Adeptus Sprawiedliwi isn't making any big moves right now, but this doesn't mean things will go the way G.C.C. planned.
+[name="Czarek"]We may be backed by the G.C.C. right now... but we need to make our own preparations.
+[name="Czarek"]No matter which of these titans lets something slip through its fingers, we shall enjoy a sumptuous feast.
+[name="Czarek"]We are not the only ones waiting to get a slice of the pie. We simply need to be ready, and wait for the perfect wave to carry us aloft...
+[Dialog]
+[charslot(slot="m",name="avg_npc_223",focus="m")]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="nw")]
+[stopsound(fadetime=2, channel="nw")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]Ohoho, look who it is! Our shining star of the market finally arrives.
+[name="Czarek"]Sales tells me you got quite a few local retailers to sign our shelf display agreement, so I thought we should celebrate!
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="Tosia"]Thanks. It was just like you said, not much resistance when we were talking.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]I meant to have this celebratory dinner yesterday, but my secretary told me you were busy with something?
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="Tosia"]I made friends with a local girl these past few days. She invited me to her home for dinner. Sorry, I know you don't splurge often...
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]Why apologize? This is great. We're foreigners in Nuova Volsinii. Only by understanding the Siracusans can we empty their pockets.
+[name="Czarek"]It seems my lovely niece has some tricks up her sleeve. You always know exactly why you do things. That's what I like the most about you.
+[name="Czarek"]Come, na zdrowie!
+[charslot(slot="r",name="avg_npc_2202_1#9$1",focus="r")]
+[name="Tosia"]...
+[name="Tosia"]I think you've misunderstood something, Wujek Czarek. I didn't go to the kid's place to fish for some information. It was just to sing her 'Happy Birthday'.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]Oh, is that so?
+[charslot(slot="l",name="avg_npc_176",focus="n")]
+The glass filled with first-rate red wine freezes in midair, while the young lady on the other side of the table gives him a smile.
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="Tosia"]Her family's as ordinary as can be. They even brought all their furniture in from the countryside. A family that's the complete opposite to our 'Nuova Volsinii, Vita Nuova'.
+[name="Tosia"]I did manage to get one piece of good news there, though. Look.
+[Dialog]
+[PlaySound(key="$d_avg_plateplace", volume=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="n")]
+Tosia pulls out a soft drink in a glass bottle, resting it on the pure white satin tablecloth. Czarek cannot help but laugh.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="Czarek"]You're here to eat dinner, you know. Why bring your own drink?
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="Tosia"]This is the Chinotto I asked about last week. Her family says there are still grocers in the city who sell it.
+[name="Tosia"]I'm not sure if you remember, but my tata often went to Siracusa for work. Every time he came back, he'd bring some snacks and toys for me.
+[name="Tosia"]My favorite was this drink, and I'd always beg him to bring more back next time. Haha, it would've been way too heavy, now that I think about it.
+[name="Tosia"]Well, you know what happened next. He lost his job, so I didn't get to drink Chinotto anymore, naturally.
+[Dialog]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_openbeer", volume=1)]
+Tosia pries off the cap, the soft drink in the brown glass bottle letting out a cheerful hiss.
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="Tosia"]I've always wanted to try it again. I'm starting to think that if these 'old-fashioned things' really did disappear, it would be a real shame.
+[charslot(slot="m",name="avg_npc_2202_1#1$1",focus="m")]
+[name="Tosia"]Na zdrowie, Wujek Czarek.
+[Dialog]
+Tosia lifts up the bottle, knocking it against the wine glass.
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="Tosia"]Honestly, that zero-proof sparkling water from last week? Not my cup of tea. No offense.
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]
