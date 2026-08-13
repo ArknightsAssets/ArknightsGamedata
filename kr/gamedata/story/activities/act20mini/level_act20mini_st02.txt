@@ -1,0 +1,744 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="56_g1_newvolsiniistreet_d",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[Dialog]
+[PlaySound(key="$dooropenquite", volume=1)]
+[PlaySound(key="$d_avg_doorbell",volume=0.6,delay=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[name="식당 주인"]베티나, 미안해. 아저씨도 도와주고 싶은데…… 너도 알다시피 나도 그냥 구멍가게 주인이라.
+[name="식당 주인"]저번에 너한테서 들여온 와인 몇 병이 아직도 먼지 쌓인 채 그대로 있단다. 아니면 길모퉁이에 있는 가게에 가서 한번 물어보는 게 어때?
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]네, 그럴게요. 고맙습니다, 폴 아저씨!
+[Dialog]
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[delay(time=0.5)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]……사실 길모퉁이에 있는 그 가게에도 물어봤었는데, 다들 '필요 없어'라 말했어.
+[name="베티나"]일단 물건부터 치우자. 여기에 서 있으면 폴 아저씨의 장사에 방해가 될 테니까.
+[Dialog]
+[playsound(key="$d_avg_dragheavybox")]
+[PlaySound(key="$d_avg_cloakmovement", volume=1,delay=0.9)]
+[charslot(slot = "m",posfrom = "0,0", posto = "200,0",duration = 2)]
+[delay(time=2.3)]
+[playsound(key="$d_avg_putonwoodenfloor_xshield", volume=0.7)]
+[PlaySound(key="$d_avg_bottlecollide", volume=0.7,delay=0.3)]
+[charslot(slot = "m", action="shake",random=true, power=8, times=40,duration=0.8)]
+[name="베티나"]읏차…… 으아아앗?!
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="l",name="avg_npc_2202_1#10$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="l",name="avg_npc_2202_1#10$1",focus="l")]
+[name="지나가던 소녀"]조심해!
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="지나가던 소녀"]큰일 날 뻔했네…… 자, 똑바로 들어.
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]고, 고마워요, 언니.
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="지나가던 소녀"]진짜 무겁네. 너같이 꼬맹이가 이걸 어떻게 든다고. 도대체 뭐가 들었길래……
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="지나가던 소녀"]어라, '베르디'잖아.
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]이걸 아세요?
+[name="베티나"]이건 우리 할아버지가 일하는 베르디 와이너리에서 만든 와인이에요. 우리 와이너리는 역사가 수십 년이나 돼요! 언니, 한 병 구매해서 드셔보실래요?
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="지나가던 소녀"]……그랬구나.
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="지나가던 소녀"]너, 이름이 베티나지? 여기서 만난 것도 인연인데 통성명이나 하자.
+[name="토시아"]나는 토시아라고 해. 자, 이건 내 명함이야.
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]명함이라니, 우와, 정말 멋진데요! 하지만 죄송해요, 베티나는 명함이 없어서…… 어?
+[name="베티나"]카시미어 골든 플레인 와이너리, 뉴 볼시니 지사…… 영업 담당?
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[multiline(name="토시아")]뭐, 곧 있으면 '시니어 어카운트 매니저'가 되겠지만…… 
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[multiline(name="토시아")]아무튼, 그렇게 됐어. 아쉽게도 우리는 경쟁 상대니까, 네 와인은 구매하지 않을 거야.
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="토시아"]이제 좀 비켜줄래? 베티나…… 나는 폴 씨랑 미팅이 있거든.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_manorindoor",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]뉴 볼시니에 온 지 얼마 되지도 않았는데, 벌써 큰 거래를 몇 건이나 성사시켰군. 정말 대단해!
+[name="차레크"]자, 토시아, 오늘은 우리 최우수 영업사원을 위해 뒤늦게나마 환영 식사 자리를 마련했다.
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#4$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="r")]
+[name="토시아"]뭘 이렇게까지 해줘, 삼촌!
+[charslot(slot="r",name="avg_npc_2202_1#1$1",focus="r")]
+[name="토시아"]삼촌도 요즘 계속 와인 챔피언십을 준비하느라 바빴잖아. 내가 와서 폐를 끼친 건 아닌지 걱정이야.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]폐는 무슨! 너같이 경험 많은 영업사원이 우리 '골든 플레인'에 합류해 줬으니, 내가 오히려 횡재한 거지.
+[name="차레크"]그나저나, 크시비 도메크 백화점에서 잘나가고 있었다고 들었는데, 어쩌다 지금 같은 시기에 뉴 볼시니로 올 생각을 했어?
+[charslot(slot="r",name="avg_npc_2202_1#9$1",focus="r")]
+[name="토시아"]그게…… 말하자면 길어.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]설마 최근 그랜드 나이트 영지를 떠들썩하게 했던…… 그 '실버랜스 페가수스 부정부패 사건'과 관련이 있는 건가?
+[charslot(slot="l",name="avg_npc_176",focus="n")]
+차레크가 목소리를 낮췄음에도 토시아는 그 말을 듣자마자 고개를 번쩍 들었다.
+[charslot(slot="r",name="avg_npc_2202_1#3$1",focus="r")]
+[name="토시아"]삼촌이 어떻게 그걸……
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]얼마 전, 상업연합회가 크시비 도메크 백화점에서 너희 쪽 담당자 한 명을 연행했다고 들었는데, 공교롭게도 너희 부서 책임자였더라고.
+[charslot(slot="r",name="avg_npc_2202_1#7$1",focus="r")]
+[name="토시아"]……역시 삼촌한테는 숨길 수 없네. 내게는 은인 같은 분이셨어. 그런데…… 그분 친척 중에 실버랜스 페가수스가 있거든.
+[name="토시아"]원래는 영예로운 일이었는데, 상업연합회가 괴롭히기 시작하면서…… 상업연합회는 감정회 사람들을 직접 건드리기 어려울 때 주변인들을 '연행 조사'하더라고.
+[name="토시아"]사건이 갈수록 커지면서, 억울하게 연루되는 사람들도 생기고 있어. 누가 봐도 아무 관계 없는 사람들한테도 이것저것 죄명을 씌우고 있으니……
+[name="토시아"]우리 같은 평범한 사람이 잘못 휘말리기라도 하면, 상업연합회 같은 거물과 무슨 수로 맞서겠어?
+[charslot(slot="r",name="avg_npc_2202_1#9$1",focus="r")]
+[name="토시아"]그래서 차라리 나와서 새 출발하자 싶었지……
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]토시아, 우리 '골든 플레인'이 뉴 볼시니에서 이 정도 규모까지 클 수 있었던 건 상업연합회라는 뒷배가 있었기 때문이란다.
+[name="차레크"]위에 계신 분들이 성장과 확장을 도모하는 건 우리 같은 상인들에게도 좋은 일이니까.
+[charslot(slot="r",name="avg_npc_2202_1#7$1",focus="r")]
+[name="토시아"]……삼촌 말이 맞아.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]여기 온 이상, 그랜드 나이트 영지 일은 그만 잊어버려.
+[name="차레크"]그리고 지금처럼 뚝심 있게 열심히 일해. 나중에 삼촌 사업이 더 커지면, 네 몫도 더 커지지 않겠어?
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="토시아"]……고마워, 삼촌.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]넌 영리한 아이니까, 내가 더 말하지 않아도 되겠지.
+[name="차레크"]요리는 이미 시켰는데, 네가 뭘 마실지 모르겠네.
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[multiline(name="토시아")]신경 써 줘서 고마워. 사실 나 술은 잘 못하거든. 
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[multiline(name="토시아")]어디 보자……
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="토시아"]참, 여기 그 갈색 탄산수 있어? 시라쿠사 현지 브랜드인데, 약간 씁쓸하면서 오렌지 맛이 나는 거 말이야.
+[Dialog]
+[charslot]
+[name="웨이터"]혹시 '키노토' 말씀이십니까? 죄송하지만, 저희 가게에는 없습니다.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="l")]
+[name="차레크"]그런 구닥다리 음료를 네가 어떻게 알지? 우리 회사 음료가 들어오고 나서, 현지 브랜드들은 거의 다 밀려났는데.
+[charslot(slot="r",name="avg_npc_2202_1#3$1",focus="r")]
+[name="토시아"]아…… 정말?
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]토시아, 우리 회사 슬로건을 잊었니? “뉴 볼시니, 새로운 삶.” 레트로니 향수니 하는 건 라이타니엔 놈들에게나 맡겨 두라고.
+[name="차레크"]자, 우리 회사 무알코올 탄산수 한 잔 어때?
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="r")]
+[name="토시아"]아하하, 그래! 삼촌 말대로 할게.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]그래야지. 참, 하마터면 까먹을 뻔했군. 오늘 이것도 좀 봐줬으면 해.
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_paper1")]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[name="토시아"]이건…… 상품 진열 계약서?
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]갓 잡은 초안이다. 정식 시행하기 전에 우리 영업왕의 의견도 좀 들어보고 싶어서.
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[name="토시아"]기준도 명확하고, 보상도 후하니…… 거절할 소매상이 거의 없겠는걸.
+[name="토시아"]하지만 이걸 수락하면, 현지 소매상은 계약 기간 동안 우리 상품만 진열해야 하잖아.
+[charslot(slot="r",name="avg_npc_2202_1#3$1",focus="r")]
+[name="토시아"]이런 노골적인 독점 조항은 현지 법규에 저촉되지 않을까?
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]어쨌든 《신도시 관리법》에서는 금하지 않았으니까.
+[name="차레크"]머릿속에 이상과 신념만 가득한 루포 녀석들은 그게 문제가 될 수 있다는 것조차 깨닫지 못할 거다.
+[Dialog]
+차레크가 어깨를 으쓱하며 자신만만한 웃음을 지어 보였다.
+[name="차레크"]그래도 실제로 발로 뛰며 그 소매업체들과 협상하는 건 너희 같은 일선 직원들이잖니. 토시아, 네 활약을 기대하마.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_plateplace", volume=1)]
+[delay(time=1.5)]
+[name="웨이터"]오래 기다리셨습니다, 무알코올 탄산수 나왔습니다.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="l")]
+[name="차레크"]자, 뉴 볼시니를 위해, 새로운 삶을 위해, 건배할까?
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="토시아"]……물론이지, 삼촌. 절대 실망시키지 않을게.
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="r")]
+[name="토시아"]건배!
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="all")]
+[delay(time=0.5)]
+[PlaySound(key="$clink", volume=1)]
+[delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[multiline(name="토시아")]후…… 이제야 좀 배가 차네! 
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[multiline(name="토시아")]'셰프 특선 만찬'은 무슨, 양은 쥐꼬리만 하면서 따지는 건 더럽게 많고.
+[Dialog]
+[charslot]
+마지막 피자 조각을 입에 넣은 토시아는 손에 남은 부스러기를 털고 저녁 바람을 맞으며 거처로 걸음을 옮겼다.
+형형색색의 광고판들이 환하게 비춘 거리는 흡사 대낮을 방불케 했다. 그 야경은 감탄을 자아낼 만했지만, 토시아가 소문으로만 전해 들었던 시라쿠사의 모습과는 사뭇 달랐다.
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="토시아"]……상품 진열 계약서라니, '독점 입점 계약서'란 이름이 더 어울리겠구만.
+[name="토시아"]이걸로 또 직장을 잃거나 파산하는 사람들이 줄줄이 나오겠지? 낮에 본 꼬맹이도, 계약이 시행되고 나면 발에 불이 나도록 뛰어다녀 봤자 와인을 팔지 못할 거잖아……
+[multiline(name="토시아")]그래도 어쩔 수 없지, 뭐. 이런 큰 비즈니스 기회가 있는데, 우리가 가만히 있는다고 해도, 빅토리아인이나 컬럼비아인들이 그냥 지나치지 않을 테니까…… 
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[multiline(name="토시아")]어?
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]어? 낮에 본 언니네요.
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[multiline(name="토시아")]너였구나. 어떻게, 와인을 한 병이라도 팔…… 
+[charslot(slot="m",name="avg_npc_2202_1#7$1",focus="m")]
+[multiline(name="토시아")]지는 못했네.
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]네……
+[name="베티나"]토시아 언니, 언니는 영업을 잘하시죠? 그렇다면 부탁이……
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="토시아"]안 돼.
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]어? 아직 다 말하지도 않았는데요……
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="토시아"]나한테 한 수 가르쳐 달라는 거 아니야? 표정만 봐도 무슨 말 하려는지 뻔해. 안 돼, 꿈도 꾸지 마.
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]왜요?
+[Dialog]
+[charslot(slot="m",name="avg_npc_2202_1#11$1",focus="m")]
+소녀의 얼굴에 드러난 또렷한 낙담과 의문에 토시아는 안타까운 한숨을 내쉬었다.
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="토시아"]베티나, 너 몇 살이야?
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]다음 주면 10살이에요.
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="토시아"]10살…… 알겠어, 그럼 확실히 말할게.
+[name="토시아"]네 나이에 생계를 위해 나온 건 분명 그럴만한 사정이 있어서겠지. 나도 다른 상황이었다면 기꺼이 도와줬을 거야.
+[name="토시아"]사실 나도 누군가의 도움으로 여기까지 온 거니까. 인정을 베푸는 것도 투자라면 투자고, 밑지는 장사가 아니거든.
+[name="토시아"]하지만 문제는, 뉴 볼시니엔 사람이 적고, 한 사람이 하루에 마실 수 있는 와인의 양은 정해져 있다는 거야.
+[name="토시아"]너는 '베르디'를 팔고, 나는 '골든 플레인'을 팔지. 그러니까, 우리는 경쟁 상대야. 적이라고.
+[PlayMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="토시아"]물론, 세상에는 그래도 이해득실을 따지지 않고 너같이 가엾은 꼬마를 도와주는 사람도 있겠지…… 근데 나는 달라.
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2202_1#1$1",focus="m")]
+[bgeffect(name="$eb_speedline",layer=1)]
+[BackgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.3, yScaleTo=1.3, duration=0, block=false,screenadapt="coverall")]
+[CameraShake(duration=0.3, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",action="zoom",poszoom="0.5,0.55",scale=1.2,duration=0,isblock=true)]
+[Delay(time=0.2)]
+[multiline(name="토시아")]나는 피도 눈물도 없는 차가운 여자니까! 
+[BackgroundTween(xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1.5, yScaleTo=1.5, duration=0, block=false,screenadapt="coverall")]
+[CameraShake(duration=0.3, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",action="zoom",poszoom="0.5,0.6",scale=1.5,duration=0,isblock=true)]
+[Delay(time=0.2)]
+[multiline(name="토시아")]장사판은 전쟁터야. 적을 돕는 건 나 자신을 배신하는 거라고!
+[BackgroundTween(xScaleFrom=1.5, yScaleFrom=1.5, xScaleTo=1.7, yScaleTo=1.7, duration=0, block=false,screenadapt="coverall")]
+[CameraShake(duration=0.3, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",action="zoom",poszoom="0.49,0.65",scale=1.8,duration=0,isblock=true)]
+[Delay(time=0.2)]
+[name="토시아"]나는 잘 먹고 잘 살겠다고 단단히 마음먹은 사람이야. 상대가 꼬마라고 해서 함부로 정 베풀 생각은 추호도 없어! 알겠어?
+[Dialog]
+[charslot]
+[bgeffect(layer = 1)]
+[BackgroundTween(xScaleFrom=1.7, yScaleFrom=1.7, xScaleTo=1, yScaleTo=1, duration=0, block=false,screenadapt="coverall")]
+[delay(time=0.2)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]알겠어요……
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="토시아"]좋아! 그럼 계속 열심히 해. 나는 이만 갈게.
+[Dialog]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2.5)]
+[charslot(slot = "m", posfrom="0,0", posto="-150,0", afrom=1, ato=0, duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_runstop", volume=0.7)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="토시아"]……내가 너무 심했나?
+[name="토시아"]그래도 어쩔 수 없지. 그 양심 없는 삼촌은 보장도 없는 약속 하나 달랑 내걸고 날 부려 먹겠다는 생각으로 가득하니까.
+[charslot(slot="m",name="avg_npc_2202_1#11$1",focus="m")]
+[name="토시아"]여기서 자리 잡으려면, 남의 일에 신경 쓸 여유 같은 건 없어……
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[name="토시아"]근데…… 설마 울진 않겠지? 한 번만 돌아볼까, 딱 한 번만……
+[Dialog]
+[musicvolume(volume=0, fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)] 
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=0.7, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]흐윽……
+[name="베티나"](고개를 떨구고 무척 슬픈 기색을 하고 있다)
+[name="베티나"](다리 난간을 붙잡는다)
+[name="베티나"](난간 위에 올라선다)
+[name="베티나"](뛰어내리려고 한다……)
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="n")]
+[name="토시아"]으아아아아아, 잠깐잠깐, 극단적인 생각 하지 마~~~!!!
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="베티나"]꺄아악?!
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=0.7)]
+[charslot(slot="r",name="avg_npc_2202_1#8$1",posfrom="300,0",posto="30,0",afrom=0,ato=1,duration=0.5)]
+[Delay(time=0.6)]
+[PlaySound(key="$d_avg_clothmovementsp",volume=0.8)]
+[PlaySound(key="$bodyfalldown1", volume=1,delay=0.3)]
+[CameraShake(duration=0.7, xstrength=20, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(duration=0.5)]
+[Delay(time=2)]
+[musicvolume(volume=0.6, fadetime=1.5)]
+[charslot(slot="m",name="avg_npc_2202_1#7$1",duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2202_1#7$1",focus="m")]
+[name="토시아"]엄청 위험했잖아. 내가 재빨랐기 망정이지……
+[charslot(slot="m",name="avg_npc_2202_1#10$1",focus="m")]
+[name="토시아"]요즘 애들은 멘탈이 왜 이렇게 약해! 알았어, 알았다고, 가르쳐 주면 되잖아?
+[name="토시아"]정말이지, 나는 예전에 실적도 못 내고, 집도 없이 다리 밑에 살면서, 패스트푸드점의 남은 감자튀김 주워 먹어도 이런 극단적인 생각은 안 했는데!
+[multiline(name="토시아")]넌 아직 어리잖아, 앞날이 얼마나 긴데! 살아있는 한 희망은 있어. 지금 아무리 힘들어도, 반드시 나아질 거라고 미…… 
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[multiline(name="토시아")]믿어야……
+[name="토시아"]그 표정, 뭐야?
+[Dialog]
+[charslot(duration=0.2)]
+[Delay(time=0.4)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="r")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]토시아 언니, 뭔가 오해하신 거 아니에요? 저는 빵이를 구하려던 거였는데요……
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="토시아"]……무슨 빵?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]저기, 저 난간 밖에요. 빵이가 너무 장난꾸러기라, 저기까지 들어갔어요……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_dogbarknormal", volume=1)]
+[name="빵이"]멍!
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="토시아"]그럼 아까 그건……
+[charslot(slot="l",name="avg_npc_2202_1#4$1",focus="l")]
+[name="토시아"]아하핫, 뭐야! 그럼 아까처럼 필사적으로 설득할 필요가 없었네! 다행이다~!
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="토시아"]아니, 그래도 강아지 하나 구하자고 난간을 넘으면 안 되지! 얼마나 위험한데!
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]하지만 손이 안 닿아요……
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[name="토시아"]……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="토시아"]에이 진짜, 비켜봐 내가 할게! ……빵이야, 물면 안 돼!
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g6_courtsquare_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(key="$comedy_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[name="단정한 차림의 여성"]정말 고맙구나, 베티나! 네가 이 아이를 데려와 주지 않았으면 정말 어쩔 뻔했는지……
+[name="단정한 차림의 여성"]그럼 우리는 먼저 갈게. 빵이야, 베티나 언니한테 인사해야지.
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]네, 비앙카 언니 안녕히 가세요. 빵이도 잘 가!
+[Dialog]
+[charslot]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="토시아"]……음? 잠깐잠깐, 너 왜 방금 사람한테 아무것도 안 물어봐?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]뭘요?
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="토시아"]와인 구매하지 않겠냐고 물어봐야지. 인맥 영업이 고비용 저효율이긴 하지만, 하나라도 파는 게 아무것도 못 파는 것보단 나으니까.
+[name="토시아"]그 '빵이'를 찾아줬으니까, 와인 한 병 구매해달라고 할 수 있었잖아?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]네?
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="토시아"]……설마 그냥 순수하게 좋은 일 한 거라고 말하는 건 아니겠지?
+[name="토시아"]아니면, 내가 오해한 건가? 사실은 집에 딱히 급한 사정도 없고, 팔리든 안 팔리든 그다지 상관없는 거야?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]아니에요, 어떻게 상관없겠어요! 꼭 팔아야 해요. 할아버지가 요즘 갈수록 판매량이 떨어진다고, 이번 달에도 팔지 못하면 와이너리를 이어갈 수 없다고 했어요……
+[name="베티나"]어떻게 해야 해요? 토시아 언니, 아까 가르쳐 주겠다고 하셨잖아요.
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="토시아"]뭐? 내가 언제 가르쳐 주겠다고……
+[Dialog]
+[musicvolume(volume=0.3, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.7, keep=true)]
+[charslot(slot="m",name="avg_npc_2202_1#10$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[name="토시아"]요즘 애들은 멘탈이 왜 이렇게 약해! 알았어, 알았다고, 가르쳐 주면 되잖아?
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="56_g6_courtsquare_n",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[musicvolume(volume=0.6, fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="토시아"]끙, 진짜 말했네. 근데 그건 아까 네가 뛰어내릴까 봐…… 크흠.
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="토시아"]말을 바꾸겠다는 게 아니라, 네가 파는 물건을 좀 봐. '베르디'잖아. 요즘 제일 안 팔리는 게 바로 이런 싸구려 현지 와인이거든.
+[name="토시아"]노후화된 설비, 허술한 원가 관리, 뒤떨어진 홍보 방식…… '골든 플레인'이 가격은 반값에 품질이 더 좋은데, 누가 '베르디'를 사겠어?
+[name="토시아"]네 할아버지가 일하는 와이너리가 망하는 건 시간문제야. 하루빨리 다른 일을 알아보시는 편이 좋을 거야.
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]하지만 와이너리의 어른들이 그랬어요. “팔리지 않는 물건은 없다. 팔지 못하는 사람만 있을 뿐이다.”
+[name="베티나"]저도 '베르디'가 팔기 어렵다는 거 알아요…… 그런데 토시아 언니도 못 팔 정도인가요?
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="토시아"]……
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="토시아"]아까는 교묘하게 흥미를 끌더니, 이번엔 도발 작전이야? 제법인데.
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]흥미를…… 끌어요?
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="토시아"]흐흥, 그래도 난 그런 수법에 안 넘어가.
+[name="토시아"]굳이 이런 일에 끼어들어서 증명하지 않아도, 나는 크시비 도메크 백화점의 전년도 우수 사원이자 '골든 플레인'의 미래 영업왕이야. 내가 못 파는 물건이 있을 리가 없지……
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="토시아"]그래, 내가 못 파는 물건은 없어! 좋아, 네가 그렇게까지 말하니까, 내가 한 수 가르쳐 줄게!
+[charslot(slot="l",name="avg_npc_2202_1#4$1",focus="l")]
+[name="토시아"]이 영업왕의 지도를 받으면, 몇 병이 뭐야? 열 상자도 거뜬하다고!
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g3_newvolsiniialley_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",duration=0.7)]
+[charslot(slot="r",name="avg_npc_700_1#1$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="토시아"]……설명해 봐, 왜 한 병도 못 팔았어?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]죄송해요. 토시아 언니가 시간 내서 가르쳐 주셨는데, 저는…… 흐윽.
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="토시아"]하루 정도 쉬는 건 별일 아니야. 어차피 2등이랑 격차를 크게 벌려 놨고, 지금 적당히 해야 다음 달 실적을 끌어올릴 여지도 생기거든……
+[charslot(slot="l",name="avg_npc_2202_1#10$1",focus="l")]
+[name="토시아"]그것보단 내 제자가 이런 실적이라는 게 더 문제야! 너 진짜 내가 가르쳐 준 방법대로 한 거 맞아?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]토시아 언니가 가르쳐 주신 말들은 열심히 외웠어요. 그런데……
+[charslot(slot="l",name="avg_npc_2202_1#10$1",focus="l")]
+[name="토시아"]그런데?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]“바디감이 풍성하고, 절묘한 균형감과 생동감이 있다.”라는 말 같은 거요. 무슨 뜻인지도 모르는 걸 어떻게 아는 척하고 남한테 얘기해요?
+[name="베티나"]그리고 우리 와인이 “역사가 가장 오래된 생산지에서 왔다.”라고 말하는 것도…… 우리 와이너리는 우리 포도밭에서 나는 포도로 와인을 만드는데, 이렇게 말하면 사람들이 오해하잖아요?
+[name="베티나"]할아버지는 상대방의 입장에서 생각하고, 상대방을 진심으로 대해야 한다고 하셨어요. 그래야 서로 믿을 수 있고, 서로 만족하는 '좋은 거래'를 할 수 있다고요. 그래서 저는…… 저는……
+[charslot(slot="l",name="avg_npc_2202_1#7$1",focus="l")]
+[name="토시아"]……하, 내 이럴 줄 알았어.
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="토시아"]잘 들어. 그런 방식은 진작에 구식이 됐어.
+[name="토시아"]내가 진심으로 대한다고 해서 상대도 항상 진심인 건 아니야. 남을 쉽게 믿는 바보는 알거지가 될 때까지 사기나 당하고, 착실한 멍청이가 몸 갈아 넣으며 일해봤자 자기 몸부터 망가뜨리게 될 뿐이라고.
+[name="토시아"]정말 벼랑 끝에 몰리고 나서야, 손 내밀어 줄 사람이 없다는 걸 알게 되지. 이해득실 앞에서 진심은 아무런 값어치도 없어.
+[name="토시아"]생존의 희망은 남한테 기대서 이룰 수는 없는 거야. 뒤처지지 않으려면 좀 더 약삭빨라야 해, 알겠어?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]저는…… 잘 모르겠어요……
+[Dialog]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="n")]
+여전히 고개를 숙인 채 옷자락을 비틀고 있는 소녀의 모습을 보자, 토시아는 목소리를 조금 부드럽게 낮췄다.
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="토시아"]그리고 진짜 누굴 속이라는 건 아니야. 그냥 조금 포장을 하라는 거지.
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]포장이요?
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[multiline(name="토시아")]그래. 이렇게 예쁜 리본을 묶고, 선물 상자에 넣어서…… 
+[PlaySound(key="$d_avg_plasticbag", volume=1)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[multiline(name="토시아")]좋아! 이제야 좀 그럴듯해 보이네.
+[Dialog]
+[charslot(slot="r",afrom=1,ato=0,duration=0.3)]
+[delay(time=0.5)]
+[charslot(slot = "l", posfrom="0,0", posto="200,0", duration=0.7)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="토시아"]……크흠! 이미 눈치채셨을지도 모르겠지만, 지금 뉴 볼시니의 주류 진열대에는 엄청난 변화가 펼쳐지고 있습니다.
+[name="토시아"]예전에는 와인 종류가 몇 개 되지 않았죠. 하지만 지금은 빅토리아의 피노 누아, 컬럼비아의 카베르네 소비뇽, 볼리바르의 스위트 로제 와인을 손쉽게 찾아볼 수 있게 됐습니다……
+[name="토시아"]이건 틀림없는 기적이죠. 그런데, 잔을 들어 올릴 때 어딘가 석연치 않다는 느낌이 들지는 않으셨나요?
+[name="토시아"]이 기적들은 엄격한 생산 기준에서 태어나 컨테이너에 실려 사방으로 팔려 나갑니다. 적절한 가격과 안정적인 품질을 갖추고 있지만, 자신의 영혼만큼은 빠져 있죠.
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="토시아"]와인이 패스트푸드점의 햄버거처럼 개성이 없어서는 안 되죠! 이제 그 천편일률적인 공산품들은 진열대에 돌려놓고, 제 손에 들린 이 최고급 골든 라벨의 산지오베제를 보십시오!
+[name="토시아"]시라쿠사 현지 와이너리에서 수십 년간 장인의 솜씨로 빚어낸 와인! 독특한 풍미, 기나긴 여운! 한 모금이면 몸과 마음이 상쾌해지고, 두 모금이면 기운이 절로……
+[Dialog]
+[charslot]
+[delay(time=0.3)]
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_wadmoney", volume=1)]
+[name="피곤해 보이는 남자"]한 병 주세요. 이 정도면 되나요?
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="토시아"]엥?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]어?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="피곤해 보이는 남자"]와인 팔고 있는 거 아닌가요? 시간 없으니 빨리 주세요. 후우…… 지금 내 모습이 어때 보이나요?
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="토시아"]어, 괜찮아 보이시는데요…… 혹시 급한 일이라도 있으신가요?
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="피곤해 보이는 남자"]갑자기 약속이 생겨서요. 그분들도 뉴 볼시니에 계실 줄은 몰라서, 아무 선물도 준비하지 못했지 뭐예요. 당신들을 만나서 정말 다행이군요.
+[name="피곤해 보이는 남자"]고마워요, 두 아가씨. 장사 번창하길 바랄게요.
+[Dialog]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="토시아"]잠깐만요…… 벌써 가버렸네.
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="토시아"]흠…… 그냥 예시를 보여주고 싶었을 뿐인데, 진짜 덥석 사 가는 호구가 있을 줄이야. 이 와인을 모르는 걸 보면 아마 외지 사람인가 봐?
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="r")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]그 아저씨, '베르디'를 몇 병이나 더 살 수 있을 만큼 돈을 주고 갔어요……
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="토시아"]그러니까 잘 된 거지! 드디어 한 병 팔았으니까, 하이파이브 한 번 할래?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]하지만……
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="토시아"]아, 왜 울상이야? 팔았으면 됐지. 뭔가 오해가 있었다고 해도, 그건 물건 볼 줄 모르는 사람 탓이니까……
+[name="토시아"]……
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]……
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[name="토시아"]그나저나, 그 사람 꽤 긴장한 것처럼 보이던데, 가려는 곳이 꽤 중요한 자리라는 뜻 아닐까?
+[charslot(slot="l",name="avg_npc_2202_1#7$1",focus="l")]
+[name="토시아"]꼬맹아, 하나만 물어볼게. 시라쿠사에서 그런 자리에 싸구려 와인을 사 들고 가면…… 어떻게 돼?
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g1_newvolsiniistreet_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2202_1#7$1",focus="m")]
+[name="토시아"]……이번 일은 정말 죄송했습니다!
+[name="토시아"]돈은 돌려드릴 테니 다른 선물을 구하세요. 이건 고급 와인이 아니라……
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="피곤해 보이는 남자"]이건 '베르디'잖아요? 저를 허겁지겁 쫓아온 게 이것 때문이었나요?
+[charslot(slot="m",name="avg_npc_2202_1#2$1",focus="m")]
+[name="토시아"]설마 알고 계셨어요?
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="피곤해 보이는 남자"]이렇게 오래 마신 와인을 모를 리가 있겠나요? 저는 소렌토 출신입니다만, 오래전에 집안과 사이가 틀어져서 홧김에 컬럼비아로 떠나버렸죠……
+[name="피곤해 보이는 남자"]부끄러운 이야기지만, 이젠 시라쿠사 말도 좀 어눌해졌어요.
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[name="토시아"]알고 계셨으면서 왜……?
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="피곤해 보이는 남자"]하하! 값비싼 수입 와인을 사 갔다가는 도리어 우리 집 영감한테 쫓겨날 거예요.
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[name="토시아"]찾아뵙는 분이 가족분이세요?
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="피곤해 보이는 남자"]이쪽으로 이사 온 줄 모르고 있었는데, 아까 길에서 봤을 때 하마터면 못 알아볼 뻔했지 뭐예요.
+[name="피곤해 보이는 남자"]……예전엔 정말 큰 일이라 여겼는데, 지금 생각하니 참 별일도 아니었죠. 이렇게 오랫동안 연락 한번 안 하고 살았으니, 이제는 다시 얼굴을 봐야죠.
+[name="피곤해 보이는 남자"]우리 집은 넉넉하지 않아서, 식탁에 오를 와인이라고는 '베르디'가 전부였어요. 아버지가 아무리 마셔도 질려 하지 않으셨던 와인이 있다면…… 이 와인을 봐서라도 문을 열어주지 않을까 싶네요.
+[name="피곤해 보이는 남자"]그러니 오해가 있을 것도 없어요. 절묘한 시기에 나타난, 정성스럽게 포장된, 하지만 더없이 평범한 '베르디' 한 병, 이게 바로 제게 필요했던 것이니, 기꺼이 그 값을 치른 것뿐이죠.
+[name="피곤해 보이는 남자"]그래도 마음이 불편하다면, 행운을 빈다는 말 한마디 얹어주지 않겠어요?
+[charslot(slot="m",name="avg_npc_2202_1#4$1",focus="m")]
+[name="토시아"]……물론이죠! 행운을 빌어요!
+[Dialog]
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[delay(time=0.3)]
+[playsound(key="$d_gen_walk_n", volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="토시아"]내가 직접 판 걸 되찾으러 달려가는 날이 올 줄이야…… 그렇게 좋아? 이제 기분 좀 풀렸어?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]네! 할아버지가 아시면 분명 “좋은 거래를 했구나”라고 칭찬하실 거예요.
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="토시아"]그럼, 이제 하이파이브 할까?
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]예!
+[Dialog]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="all")]
+[delay(time=0.3)]
+[CameraShake(duration=0.3, xstrength=5, ystrength=8, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_clapsolo", loop=true, channel="1")]
+[StopSound(channel="1", fadetime=0.3)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="토시아"]하지만 너무 우쭐대지는 마. 이제 겨우 한 병 팔린 것뿐이고, 이런 행운이 늘 따르는 건 아니니까……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_365_1#1$1",focus="m")]
+[name="외국인 청년"]저기, 혹시 네가 베티나니?
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]맞아요. 오빠는 누구세요?
+[charslot(slot="m",name="avg_npc_365_1#1$1",focus="m")]
+[name="외국인 청년"]비앙카 씨한테 소개를 받아서, 널 찾고 있었어. 네가 시라쿠사 전통 와인을 판매하고 있다면서?
+[name="외국인 청년"]빅토리아에 시라쿠사 레스토랑을 오픈할 계획이거든. 와인이 괜찮다면 조금 더 들여놓을 수도 있을 것 같아. 와인 소개 좀 부탁해도 될까?
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="베티나"]음, 그러니까……
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[multiline(name="토시아")]큰 고객이잖아! 자, 멍하니 있지 말고, 제대로 팔아야지! 내가 가르쳐준 걸 활용해서…… 
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[multiline(name="토시아")]아니다.
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="베티나"]토시아 언니?
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="토시아"]됐어, 꼬맹아. 너는…… 이제 졸업이야.
+[name="토시아"]내가 가르쳐 준 건 다 잊어버리고, 네 방식대로 해.
+[Dialog]
+[charslot]
+토시아는 소녀와 청년이 길가로 걸어가는 모습을 지켜보며, 늘 하듯 이해득실을 계산했다.
+[Dialog]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="토시아"]시라쿠사 레스토랑이라…… 시라쿠사 현지 와인을 들여놓아야 한다고 해도, '베르디'보다는 고급인 와인을 들여놓아야 이윤을 남기기 더 좋을 텐데. 뭐, 본인의 생각이 더 중요하지.
+[multiline(name="토시아")]장기 계약이라도 땄으면 좋겠는데. 하지만 그래봤자 새 발의 피일 테지. 앞으로 이 브랜드는 파산이나 인수합병을 피하기 어려울 거야…… 
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[multiline(name="토시아")]음?
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="n")]
+멀지 않은 곳에서 대화가 일단락된 듯했다. 소녀가 얼굴에 환한 웃음꽃을 피운 채 폴짝폴짝 뛰며 토시아 쪽을 향해 손을 흔들었다.
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="토시아"]꽤 잘 풀린 모양이네.
+[name="토시아"]……됐다. 적어도 지금은 베티나가 행복하면 그만이야.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_manorindoor",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+일주일 후
+[Dialog]
+[charslot(slot="m",name="avg_npc_223",focus="m")]
+[name="비서"]로저 씨와 얘기해 보니, 사장님의 의견에 동의하시면서도 들어갈 시기에 대해서는 아직 망설이고 계시고, 숨은 위험도 걱정하시는 눈치였습니다……
+[charslot(slot="m",name="avg_npc_176",focus="m")]
+[name="차레크"]급할 것 없어. 지금 감정회 쪽에서 별다른 움직임은 없지만, 그렇다고 일이 상업연합회의 계획대로 흘러간다는 뜻은 아니니까.
+[name="차레크"]우리가 지금 상업연합회를 등에 업고 있지만…… 나름의 준비는 해둬야지.
+[name="차레크"]그 두 거물 중 한쪽에서만 꿀이 떨어져도 우리에게는 더없이 풍성한 잔칫상이 될 거야.
+[name="차레크"]그때 숟가락 얹으려는 건 우리뿐만이 아니겠지. 미리 준비를 잘 해두고, 가장 완벽한 파도가 올 때만을 기다리면 돼……
+[Dialog]
+[charslot(slot="m",name="avg_npc_223",focus="m")]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="nw")]
+[stopsound(fadetime=2, channel="nw")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]어이쿠, 이것 봐라! 우리의 새 영업왕이 드디어 왔군.
+[name="차레크"]영업부에서 올라온 보고서를 봤다. 현지 유통사들과 상품 진열 계약을 꽤 많이 맺었더구나. 안 그래도 축하 자리를 한 번 더 마련할 생각이었다!
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="토시아"]고마워. 삼촌 말대로, 협상할 때 별다른 저항은 없었어.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]어제 바로 자리를 마련하려고 했는데, 네게 선약이 있다고 비서한테 들어서 말이야.
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="토시아"]며칠 전에 우연히 이 동네 아이를 알게 됐는데, 그 아이가 집에 초대해 줬거든. 삼촌이 신경 써줬는데, 미안해……
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]사과할 필요 없어. 오히려 잘했다. 뉴 볼시니에서 우리는 어디까지나 외지인이니까, 시라쿠사인을 잘 사귀고 이해해 둬야 놈들 호주머니에서 돈을 꺼낼 수 있지 않겠니.
+[name="차레크"]우리 조카에게 나름의 비결이 있었구먼. 너는 늘 무엇을 위해 그 일을 하는지를 알지. 그게 바로 내가 제일 높게 평가하는 점이다.
+[name="차레크"]자, 건배!
+[charslot(slot="r",name="avg_npc_2202_1#9$1",focus="r")]
+[name="토시아"]……
+[name="토시아"]삼촌, 오해야. 그 꼬맹이 집에 간 건 뭘 알아보러 간 게 아니라, 그냥 생일 축하 노래 불러주러 간 거였어.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]아, 그래?
+[charslot(slot="l",name="avg_npc_176",focus="n")]
+고급 와인이 담긴 잔이 허공에 머물렀고, 식탁 맞은편의 소녀는 그를 향해 미소를 지었다.
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="토시아"]형편은 그저 그렇더라고. 가구며 살림이며 전부 시골에서 가져온 것들 그대로였어. 삼촌 말을 빌리자면, 우리의 “뉴 볼시니, 새로운 삶”과는 어울리지 않는 집이었지.
+[name="토시아"]그래도 거기서 좋은 소식을 하나 알게 됐어. 봐.
+[Dialog]
+[PlaySound(key="$d_avg_plateplace", volume=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="n")]
+토시아가 유리병에 든 탄산수를 꺼내 새하얀 비단 식탁보 위에 올려놓자, 차레크는 어이없다는 듯 웃음을 터뜨렸다.
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="차레크"]이 녀석이, 레스토랑에 밥 먹으러 오면서 음료를 직접 가져왔어?
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="토시아"]이게 내가 지난번에 물어봤던 '키노토'야. 걔네 가족이 아직 이걸 파는 잡화점이 있다고 알려줬거든.
+[name="토시아"]삼촌이 기억할지는 모르겠는데, 우리 아빠가 예전에 시라쿠사 출장을 자주 다녔잖아. 돌아올 때마다 항상 과자나 장난감을 사다 줬어.
+[name="토시아"]그 중에서 내가 제일 좋아했던 게 바로 이 음료였어. 매번 몇 병씩 더 챙겨 오라고 떼를 썼지…… 하하, 지금 생각해 보니 꽤 무거웠겠네.
+[name="토시아"]물론, 그 뒷일은 삼촌도 아는 대로야. 아빠가 직장을 잃는 바람에 음료도 마실 수 없게 됐지.
+[Dialog]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_openbeer", volume=1)]
+소녀가 병뚜껑을 열자, 갈색 유리병 안에서 기포가 경쾌하게 지글거렸다.
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="토시아"]이걸 한 번 더 맛보고 싶었어. 그리고 이제는 이런 '낡은 것'들이 진짜로 사라지면, 그것도 꽤 아쉬울 것 같다는 생각이 들기 시작했거든.
+[charslot(slot="m",name="avg_npc_2202_1#1$1",focus="m")]
+[name="토시아"]건배하자, 삼촌.
+[Dialog]
+소녀가 탄산수병을 들어 와인잔 가장자리에 살짝 부딪쳤다.
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="토시아"]……사실 지난번 무알코올 탄산수는 내 입맛에 맞지 않았어. 서운하게 생각하지는 말아 줘.
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

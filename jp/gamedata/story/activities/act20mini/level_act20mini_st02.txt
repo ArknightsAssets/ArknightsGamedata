@@ -1,0 +1,744 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="56_g1_newvolsiniistreet_d",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[Dialog]
+[PlaySound(key="$dooropenquite", volume=1)]
+[PlaySound(key="$d_avg_doorbell",volume=0.6,delay=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[name="レストランオーナー"]ごめんよ、ベッティーナちゃん。おじさんも助けてあげたいんだけど……うちも余裕はなくてねえ。
+[name="レストランオーナー"]前に君のところから仕入れたボトルだって、いまだに酒棚の上で埃を被ってるくらいなんだ。そうだな……曲がり角にあるお店にも聞いてみたらどうだい？
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]うん、行ってみるね。ありがとう、パウロおじさん！
+[Dialog]
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[delay(time=0.5)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]……実は、曲がり角にあるお店には、もう行ってみたんだけどね。みんな「いらない」って言うから……はぁ。
+[name="ベッティーナ"]とりあえず、荷物をどけないと。ここでぼーっとしてたら、レストランの邪魔になっちゃうし。
+[Dialog]
+[playsound(key="$d_avg_dragheavybox")]
+[PlaySound(key="$d_avg_cloakmovement", volume=1,delay=0.9)]
+[charslot(slot = "m",posfrom = "0,0", posto = "200,0",duration = 2)]
+[delay(time=2.3)]
+[playsound(key="$d_avg_putonwoodenfloor_xshield", volume=0.7)]
+[PlaySound(key="$d_avg_bottlecollide", volume=0.7,delay=0.3)]
+[charslot(slot = "m", action="shake",random=true, power=8, times=40,duration=0.8)]
+[name="ベッティーナ"]よいしょ……っと、うわわわっ！？
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="l",name="avg_npc_2202_1#10$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="l",name="avg_npc_2202_1#10$1",focus="l")]
+[name="通りすがりの少女"]危ない！
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="通りすがりの少女"]間に合ったぁ……はい、しっかり持ってね。
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]あ、ありがとう、お姉さん。
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="通りすがりの少女"]どういたしまして。にしてもその荷物、すっごく重たいね。君みたいな小さい子が持つのは無茶だと思うけど、一体何が入って――
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="通りすがりの少女"]あれっ、「ヴェルディ」じゃん。
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]お姉さん、知ってるの？
+[name="ベッティーナ"]ベッティーナのおじいちゃんは、ヴェルディ醸造所で働いてるの。何十年もの歴史があるワイナリーなんだよ！　お姉さんも一本買ってみない？
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="通りすがりの少女"]……なるほどね。
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="通りすがりの少女"]君はベッティーナっていうのかな？　ここで会ったのも何かの縁だし、自己紹介しよっか。
+[name="トシア"]私はトシア。ほら、これが私の名刺。
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]わあ、かっこいい！　ごめんなさい、わたしは名刺なんて持ってなくて……あれ？
+[name="ベッティーナ"]カジミエーシュ・ゴールデン・プレーン酒造、ヌオバ・ウォルシーニ支社――営業担当？
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[multiline(name="トシア")]まあ、もう少ししたら、肩書は「シニア・リレーションシップ・マネージャー」に変わると思うけどね。
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[multiline(name="トシア")]とにかくそういうわけで、残念だけど私たちはライバルだから、あなたのワインは買えないの。
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="トシア"]悪いけど、そこを通してもらってもいい？　私、パウロさんと大事な商談があるの。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_manorindoor",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]まだヌオバ・ウォルシーニに来たばかりだというのに、大きな契約をいくつもまとめてくれているとは、君は素晴らしいな！
+[name="チャレク"]さあ、トシア。今日は我らがエースたる君の歓迎会も兼ねて、私がご馳走してあげよう。
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#4$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="r")]
+[name="トシア"]そんなそんな！　お構いなく、おじ様！
+[charslot(slot="r",name="avg_npc_2202_1#1$1",focus="r")]
+[name="トシア"]この頃はワインコンクールの準備でお忙しかったはずですよね。私が来たことでお手間を掛けていないか、そればかりが心配だったんです。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]手間だなどと、そんなわけがないだろう！　君のような経験豊富な営業がこのゴールデン・プレーンに加わってくれるなら、大きなメリット以外の何物でもないさ。
+[name="チャレク"]しかし、クシヴィ・ドメック百貨店でもかなり活躍していたと聞くが、どうして今ヌオバ・ウォルシーニに来たんだね？
+[charslot(slot="r",name="avg_npc_2202_1#9$1",focus="r")]
+[name="トシア"]それは……いろいろありまして。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]もしかすると、最近大騎士領で大きな騒ぎになっている、例の……「銀槍のペガサス汚職事件」と関係しているんじゃないか？
+[charslot(slot="l",name="avg_npc_176",focus="n")]
+チャレクは声を落として言ったが、トシアはそれを聞くや、パッと顔を上げた。
+[charslot(slot="r",name="avg_npc_2202_1#3$1",focus="r")]
+[name="トシア"]どうしてそれを……
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]先日、商業連合会の者たちがクシヴィ・ドメック百貨店のビルに現れて、ある部署の責任者をひとり連行したと聞いたんだ。そしてそれは、君が所属していた部署だったそうだからね。
+[charslot(slot="r",name="avg_npc_2202_1#7$1",focus="r")]
+[name="トシア"]……やっぱり、おじ様に隠し事はできませんね。その責任者というのが、私の恩人だったんです。けれど……彼女の親戚に、銀槍のペガサスがいたそうで。
+[name="トシア"]本来なら誇るべきことでしたが、国を掌握しようとし始めてからの商業連合会は……監査会の人に直接手を出せない時には、事情聴取と称してその関係者を連行するようなこともしていて。
+[name="トシア"]あの事件の影響は広がる一方です。どう見ても無実の人でも、運が悪いと、適当にでっちあげられた罪で告発されることもあって……
+[name="トシア"]私たちのような普通の人間が、この騒動に巻き込まれでもしたら、商業連合会ほどの大きな存在には太刀打ちできません。
+[charslot(slot="r",name="avg_npc_2202_1#9$1",focus="r")]
+[name="トシア"]それなら、いっそカジミエーシュの外でキャリアを積もうと――
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]トシア、我がゴールデン・プレーンがヌオバ・ウォルシーニでこの規模の会社にまで成長できたのは、商業連合会の後ろ盾があってこそなんだぞ。
+[name="チャレク"]上層部の人々が野心的に勢力を広げようとするのは、我々商人からすれば良いことだ。
+[charslot(slot="r",name="avg_npc_2202_1#7$1",focus="r")]
+[name="トシア"]……仰る通りです。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]さあ、この街に来たからには、大騎士領のことなど忘れなさい。
+[name="チャレク"]それよりも、チャレンジ精神を忘れず、しっかり頑張るように。私のビジネスが今よりも大きくなっていけば、君にもそれだけ分け前が入るわけだからね。
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="トシア"]……ありがとうございます、おじ様。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]よろしい。君は賢い子だからね。私がこれ以上とやかく言う必要はあるまい。
+[name="チャレク"]料理はもう頼んであるぞ。飲み物はどうする？
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[multiline(name="トシア")]お気遣いいただいて、ありがとうございます。実は、お酒はあまり得意ではなくて。
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[multiline(name="トシア")]少しメニューを拝見して……
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="トシア"]このお店、茶色いソーダはありますか？　シラクーザの地元ブランドで、少し苦みのあるオレンジ風味の物なんですが。
+[Dialog]
+[charslot]
+[name="ホールスタッフ"]「キノット」のことでしょうか？　申し訳ありませんが、当店では取り扱っておりません。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="l")]
+[name="チャレク"]そんな古臭い飲み物、一体どこで知ったんだ？　うちの会社がこの都市のソフトドリンク市場に参入したあと、そういう地元のブランドは大抵競争に負けて消えていったんだが。
+[charslot(slot="r",name="avg_npc_2202_1#3$1",focus="r")]
+[name="トシア"]えっ……そうなんですか？
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]うちのキャッチコピーを忘れたわけじゃないだろう？　「ヌオバ・ウォルシーニで新しい生活を」。レトロだのノスタルジーだのは、リターニア人に任せておけばいいのさ。
+[name="チャレク"]ほら、そんなジュースなんかじゃなく、うちの会社のノンアルコールスパークリングでも飲まないか？
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="r")]
+[name="トシア"]あはは、そうですね！　それじゃ、おじ様のオススメでお願いします。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]そうしなさい……おっと、忘れるところだった。今日はこれも見せておきたくてね。
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_paper1")]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[name="トシア"]これは……「競合製品取り扱い制限契約」ですか？
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]ああ。まだ仮のテンプレートだが、本格的に導入する前に、我らがエースの意見を聞いておきたいんだ。
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[name="トシア"]これなら、基準も明確ですし、ここまで手厚いインセンティブがあるのなら……ほとんどの小売店は断らないと思います。
+[name="トシア"]ですが、この契約を結ぶと、契約期間中は、私たちの商品以外並べられないということになりますよね。
+[charslot(slot="r",name="avg_npc_2202_1#3$1",focus="r")]
+[name="トシア"]ここまで露骨な独占目的の条件をつけたら、現地の法律に触れてしまうのでは？
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]今のところ、『新都市管理法』上は禁止されていないから問題ないさ。
+[name="チャレク"]それに、理想だの信念だのに熱を上げているループスの若造たちはこんなことには当分気付きはしないだろう。
+[Dialog]
+チャレクは肩をすくめると、自信に満ちた笑みを浮かべた。
+[name="チャレク"]ただ、実際に小売店と交渉するのは君たち現場の社員だからね。活躍を楽しみにしているよ。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_plateplace", volume=1)]
+[delay(time=1.5)]
+[name="ホールスタッフ"]お待たせいたしました。ノンアルコールスパークリングでございます。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="l")]
+[name="チャレク"]それでは、ヌオバ・ウォルシーニに、そして新しい生活に、乾杯しようじゃないか。
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="トシア"]……はい、おじ様。必ずご期待に応えてみせますね。
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="r")]
+[name="トシア"]乾杯！
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="all")]
+[delay(time=0.5)]
+[PlaySound(key="$clink", volume=1)]
+[delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[multiline(name="トシア")]ふぅ……買い食い最高！　お腹いっぱい！
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[multiline(name="トシア")]　「シェフのスペシャルセレクト」だとか気取っちゃって、量は少ないのに作法がどうとか産地がどうとか、めんどくさいっての！
+[Dialog]
+[charslot]
+道中で買ったピッツァの最後のひとかけらを口に放り込むと、トシアは手についたくずを払い、夜風に吹かれながら帰路についた。
+通りは色とりどりの広告に照らされ、昼間にも劣らぬほど明るい。その夜景は素晴らしいものだったが、トシアが話に聞いていたシラクーザの雰囲気とは大きくかけ離れていた。
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="トシア"]……「競合製品取り扱い制限契約」とかいうのも、もういっそ「競合製品取り扱い禁止契約」って名前にしたほうが合ってると思うけどね。
+[name="トシア"]あーあ、これでまた大勢の人が失業したり破産したりするんだろうな。昼間に会った女の子も、小売店の間にこの契約が広がれば、どんなに走り回ってもワインを買ってもらえなくなるし……
+[multiline(name="トシア")]でも、どうしようもないよね。こんなに大きなビジネスチャンスが転がってたら、私たちが動かなくても、ヴィクトリア人やクルビア人が放っておかないだろうから……
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[multiline(name="トシア")]あれ？
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]あっ、トシアさん。
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[multiline(name="トシア")]また会ったね。どう？　あのあと、ワインは売れて……
+[charslot(slot="m",name="avg_npc_2202_1#7$1",focus="m")]
+[multiline(name="トシア")]ないかあ。一本も減ってないね……
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]うん……
+[name="ベッティーナ"]トシアさんは、すごい営業さんなんだよね？　それなら、お願いがあるんだけど――
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="トシア"]ダメ。
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]えっ、まだ最後まで言ってないのに……
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="トシア"]コツを教えてほしいんでしょ？　その顔を見れば、言いたいことはなんとなくわかるよ。でも、ダメ。絶対できないからね。
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]どうして？
+[Dialog]
+[charslot(slot="m",name="avg_npc_2202_1#11$1",focus="m")]
+あからさまに肩を落として困惑する少女を見て、トシアは思わず無力感を覚え、ため息をこぼした。
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="トシア"]ベッティーナ、君いくつなの？
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]来週で十歳になるよ。
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="トシア"]十歳か……それじゃあ、はっきり言うね。
+[name="トシア"]君の歳で働かなきゃいけないなら、それなりの事情があるんだろうなってことはわかるよ。私だって、状況が違えば助けてあげたかったし。
+[name="トシア"]実際私自身、人に助けられてここまで来たからね。それに、恩を売るのも投資の一つで、まるっきり損ってわけでもないから。
+[name="トシア"]だけど――ヌオバ・ウォルシーニは人口が少ないし、人間が一日に飲む量だって決まってるでしょ。
+[name="トシア"]そんな中で、君はヴェルディを、私はゴールデン・プレーンを売ってるの。つまり、私たちはライバル、敵同士なんだよ。
+[PlayMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="トシア"]もちろん、損得なんて気にせずに、君みたいな子に手を差し伸べる人もいるだろうけど……私は違うよ。
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2202_1#1$1",focus="m")]
+[bgeffect(name="$eb_speedline",layer=1)]
+[BackgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.3, yScaleTo=1.3, duration=0, block=false,screenadapt="coverall")]
+[CameraShake(duration=0.3, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",action="zoom",poszoom="0.5,0.55",scale=1.2,duration=0,isblock=true)]
+[Delay(time=0.2)]
+[multiline(name="トシア")]だって私、血も涙もない冷酷女だから！
+[BackgroundTween(xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1.5, yScaleTo=1.5, duration=0, block=false,screenadapt="coverall")]
+[CameraShake(duration=0.3, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",action="zoom",poszoom="0.5,0.6",scale=1.5,duration=0,isblock=true)]
+[Delay(time=0.2)]
+[multiline(name="トシア")]　市場と言う名の戦場で生き残るには、敵を助けてなんかいられないの！
+[BackgroundTween(xScaleFrom=1.5, yScaleFrom=1.5, xScaleTo=1.7, yScaleTo=1.7, duration=0, block=false,screenadapt="coverall")]
+[CameraShake(duration=0.3, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",action="zoom",poszoom="0.49,0.65",scale=1.8,duration=0,isblock=true)]
+[Delay(time=0.2)]
+[name="トシア"]私は絶対出世して、めちゃめちゃ良い暮らしをするって決めてるんだ！　そのためなら、相手が子供だろうと、情に流されたりしないよ！　わかった？
+[Dialog]
+[charslot]
+[bgeffect(layer = 1)]
+[BackgroundTween(xScaleFrom=1.7, yScaleFrom=1.7, xScaleTo=1, yScaleTo=1, duration=0, block=false,screenadapt="coverall")]
+[delay(time=0.2)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]わかった……
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="トシア"]よろしい！　じゃあ、引き続き頑張ってね。私はもう行くよ。
+[Dialog]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2.5)]
+[charslot(slot = "m", posfrom="0,0", posto="-150,0", afrom=1, ato=0, duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_runstop", volume=0.7)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="トシア"]……ちょっと言い方キツすぎたかな？
+[name="トシア"]だけど、仕方ないよね。うちの良心の欠片もないおじ様は、明らかに適当な約束だけして私をこき使う気満々だし。
+[charslot(slot="m",name="avg_npc_2202_1#11$1",focus="m")]
+[name="トシア"]ここで生き残るためには、他人のことに首を突っ込んでる暇なんてないんだから……
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[name="トシア"]でも……あの子、泣いてなきゃいいんだけど。ちらっと振り向いてみようかな、一瞬だけ……
+[Dialog]
+[musicvolume(volume=0, fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)] 
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=0.7, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]うぅ……
+[name="ベッティーナ"]（とても悲しそうにうなだれている）
+[name="ベッティーナ"]（橋の欄干を掴む）
+[name="ベッティーナ"]（欄干の上に立つ）
+[name="ベッティーナ"]（今にも飛び降りそうな様子で――）
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="n")]
+[name="トシア"]うわあああああ待って待って早まらないで～～～！！
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="ベッティーナ"]きゃっ！？
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=0.7)]
+[charslot(slot="r",name="avg_npc_2202_1#8$1",posfrom="300,0",posto="30,0",afrom=0,ato=1,duration=0.5)]
+[Delay(time=0.6)]
+[PlaySound(key="$d_avg_clothmovementsp",volume=0.8)]
+[PlaySound(key="$bodyfalldown1", volume=1,delay=0.3)]
+[CameraShake(duration=0.7, xstrength=20, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(duration=0.5)]
+[Delay(time=2)]
+[musicvolume(volume=0.6, fadetime=1.5)]
+[charslot(slot="m",name="avg_npc_2202_1#7$1",duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2202_1#7$1",focus="m")]
+[name="トシア"]あ、危なかったぁ……！　間に合ってよかった……！
+[charslot(slot="m",name="avg_npc_2202_1#10$1",focus="m")]
+[name="トシア"]もう、最近の子ってメンタル弱すぎない！？　わかったよ、教えてあげればいいんでしょ！？
+[name="トシア"]まったく……私なんか、昔はろくな成績出せないわ家がないわで、橋の下で暮らしてたし、他人が残したポテトとかゴミ箱漁って食べてたけど、それでも死のうと思ったことなんてなかったよ！
+[multiline(name="トシア")]君はまだ小さいんだし、人生先は長いんだからね！　生きてたら希望はあるんだよ。今がどんなにつらくても、きっとチャンスは巡って来るって信じ……
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[multiline(name="トシア")]なくちゃ……
+[name="トシア"]ちょっと、何その顔？
+[Dialog]
+[charslot(duration=0.2)]
+[Delay(time=0.4)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="r")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]もしかして、勘違いさせちゃった？　ベッティーナは、パーネを助けようとしてただけなんだけど……
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="トシア"]……パーネって？　パンのこと？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]ほら、あそこ。欄干の外側にいるの、見えるでしょ。やんちゃな子だから、あんなところまで行っちゃったみたいで……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_dogbarknormal", volume=1)]
+[name="パーネ"]ワン！
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="トシア"]じゃあ、君は別に、飛び降りようとしてたわけじゃなくて……
+[charslot(slot="l",name="avg_npc_2202_1#4$1",focus="l")]
+[name="トシア"]あははっ、なーんだ！　勘違いしちゃって、私バカすぎ！　あんなに必死こいて説得することなかったじゃん！
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="トシア"]だけど、助けるにしたって欄干に乗っちゃダメでしょ！　危なすぎるよ！
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]だって、手が届かないんだもん……
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[name="トシア"]……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="トシア"]しょうがないなあ、そこどいて！　――パーネ、噛んだら許さないからね！
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g6_courtsquare_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(key="$comedy_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[name="上品な身だしなみの女性"]ありがとう、ベッティーナちゃん！　あなたがパーネを連れ戻してくれなかったら、どうしたらいいかわからないところだったわ……
+[name="上品な身だしなみの女性"]それじゃあ、私たちは帰るわね。ほらパーネ、ベッティーナちゃんにバイバイして。
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]うん！　ビアンカさん、バイバイ！　パーネも、またね！
+[Dialog]
+[charslot]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="トシア"]……えっ？　ちょっとちょっと、どうして今の人になんにも聞いてみなかったの？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]聞くって何を？
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="トシア"]ワインを買ってくれないかってことに決まってるでしょ。信頼関係構築型のスタイルは、営業コストが高いわりにコンバージョン率は低いけど、売り上げゼロになるよりマシだから。
+[name="トシア"]「パーネ」を見つけてあげたのだって、ワインを買ってもらうためじゃないの？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]えっ？
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="トシア"]……まさか、単なる善意だけでやりましたなんて言わないよね？
+[name="トシア"]それとも、実はあなたの家は全然貧しくなんかなくて、商品が売れなくたって困らないとか？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]そんなことない、困っちゃうよ！　最近はどんどん売り上げが落ちてるから、今月も売れなかったらワイナリーが潰れちゃうかもっておじいちゃんが……だから、ワインを売らないと。
+[name="ベッティーナ"]ねえ、どうすればいいの？　トシアさん、教えてくれるんだよね？
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="トシア"]えっ、そんなこと言ったっけ――
+[Dialog]
+[musicvolume(volume=0.3, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.7, keep=true)]
+[charslot(slot="m",name="avg_npc_2202_1#10$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[name="トシア"]もう、最近の子ってメンタル弱すぎない！？　わかったよ、教えてあげればいいんでしょ！？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="56_g6_courtsquare_n",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[musicvolume(volume=0.6, fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="トシア"]あー、確かに言ったわ。でも、あれは君が早まったんじゃないかと思ってたからで……
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="トシア"]とにかく、別に約束を破るつもりはないけど、商品自体がねえ……だってヴェルディみたいな地元の安いワインって、今一番売れないタイプでしょ。
+[name="トシア"]設備は古いし、コスト管理はずさんだし、宣伝は時代遅れだし……うちで出してるワインのほうが高品質で、値段はヴェルディの半額だよ。この状況で、誰がヴェルディを買うっていうの？
+[name="トシア"]ワイナリーが潰れるのも時間の問題だよ。なるべく早く、別の仕事を探したほうがいいと思う。
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]だけど、ワイナリーの大人はみんな、売れない商品なんてない、売れないとすればそれは営業のせいだって言ってたよ。
+[name="ベッティーナ"]ヴェルディを売るのが難しいのはわかってるけど……トシアさんでも無理ってこと？
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="トシア"]……
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="トシア"]へえ？　嘘刷り込んで誘導して、挙句挑発で言うこと聞かせようっての？　なかなかやるね。
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]嘘って……？
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="トシア"]ふっふーん、そんな手には乗らないんだから。だって、こんな話に首突っ込んで、実力を証明する必要ないもん。
+[name="トシア"]私はクシヴィ・ドメック百貨店の前年度トップセールスを叩き出した、ゴールデン・プレーンのトップ営業になる女だよ。売れないものなんて……
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="トシア"]そう、私に売れないものなんてなーい！　そこまで言うならちょっとだけ教えてあげようじゃない！
+[charslot(slot="l",name="avg_npc_2202_1#4$1",focus="l")]
+[name="トシア"]この営業王のアドバイスがあれば、数本どころか十箱売るのだってちょろいもんよ！
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g3_newvolsiniialley_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",duration=0.7)]
+[charslot(slot="r",name="avg_npc_700_1#1$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="トシア"]……それで？　どうして一本も売れなかったの？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]ごめんなさい、せっかくトシアさんが、わざわざ時間を作って教えてくれたのに……ううっ……
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="トシア"]私は一日くらい休んだってどうってことないから。二位の営業とは大差つけてるし、ほどほどにしておけば来月の営業成績の成長率をぐっと伸ばせる余地もあるし……
+[charslot(slot="l",name="avg_npc_2202_1#10$1",focus="l")]
+[name="トシア"]それよりも、私が教えてるのに、君が何一つ成長してないことのほうが問題でしょ！　本当に教えた通りにやったの？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]トシアさんに教えてもらった営業トークは、頑張って暗記したんだよ。でも……
+[charslot(slot="l",name="avg_npc_2202_1#10$1",focus="l")]
+[name="トシア"]でも？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]たとえば「活力に溢れていながらバランスに優れた、奥深いフルボディ」とか……どういう意味なのかもわからないのに、わかったフリして言うことなんてできないよ。
+[name="ベッティーナ"]あと、「このワインは最も歴史ある産地のもの」って言いなさいって言われたけど……うちのワイナリーでは、自家栽培のブドウしか使ってないのに、これじゃ誤解させちゃうんじゃないかな？
+[name="ベッティーナ"]おじいちゃんが言うには、相手の立場に立って誠実に接するのが大切なんだって。そうすればみんな信頼してくれて、お互い満足のいく「誠実な商売」ができるんだって。だから……
+[charslot(slot="l",name="avg_npc_2202_1#7$1",focus="l")]
+[name="トシア"]……はぁ、やっぱりね。
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="トシア"]あのね、君たちのやり方はとっくに時代遅れなの。
+[name="トシア"]こっちが真心こめて接しても、相手から同じものが返って来るとは限らないんだよ。すぐに他人を信じちゃう人は破産するまで騙されるし、バカ正直な人が命を削って働いても、身体を壊すだけ。
+[name="トシア"]そうして、どん底に落ちて初めて、誰一人手を差し伸べてなんかくれないってことに気付くの。真心なんて、損得の前では何の価値もないんだよ。
+[name="トシア"]生き残るための希望を他人任せにしちゃダメ。競争に負けないためにも、賢くならないといけないの。わかる？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]わ……わかんないよ……
+[Dialog]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="n")]
+少女がうつむいたまま、服の裾をぎゅっと握っているのを見て、トシアは少しだけ口調をやわらげた。
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="トシア"]何も、誰かを騙せって言ってるわけじゃないんだよ。ただ商品が良く見えるように、ラッピングしなさいって言ってるの。
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]ラッピング？
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[multiline(name="トシア")]そう。たとえば、こうしてギフトバッグに入れて、リボンを結んで……
+[PlaySound(key="$d_avg_plasticbag", volume=1)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[multiline(name="トシア")]よし！　これでだいぶ良くなったね！
+[Dialog]
+[charslot(slot="r",afrom=1,ato=0,duration=0.3)]
+[delay(time=0.5)]
+[charslot(slot = "l", posfrom="0,0", posto="200,0", duration=0.7)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="トシア"]――こほん！　皆様はすでにお気付きかもしれませんが、ヌオバ・ウォルシーニのワイン事情には、今まさに大きな変化が起きています。
+[name="トシア"]かつてはほんの数種類しか選択肢がありませんでしたが、今やヴィクトリアのピノ・ノワールも、クルビアのカベルネ・ソーヴィニヨンも、ボリバルの甘口ロゼも、簡単に手に入るのです。
+[name="トシア"]これはまごうことなき奇跡ですが――グラスを掲げた時、何か違和感を覚えませんか？
+[name="トシア"]この奇跡の賜物たちは、厳格な生産基準のもとで生まれ、コンテナに乗せられて大地の至る所へと運ばれています。その価格も品質も安定していますが、唯一「魂」だけが、どこか欠けているのです。
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="トシア"]ワインがファストフード店のハンバーガーのように無個性であってはなりません！　面白みに欠けた工場生産のワインなどやめて、この金ラベルのサンジョヴェーゼをお手に取ってみてください！
+[name="トシア"]シラクーザの地元ワイナリーの匠が、数十年の技で作り上げた逸品です！　独特の風味と長く続く余韻に、一口飲めば心身ともに満たされますし、二口飲めば滋養強壮にも――
+[Dialog]
+[charslot]
+[delay(time=0.3)]
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_wadmoney", volume=1)]
+[name="長旅で疲れた男"]一本くれ。これで足りるか？
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="トシア"]えっ？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]えっ……！？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="長旅で疲れた男"]そのワイン、売り物なんだろう？　時間がないから、早いところ包んでもらえると嬉しい。はぁ……俺の格好、おかしくないか？
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="トシア"]いえ、素敵だと思いますよ。お急ぎのご用事ですか？
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="長旅で疲れた男"]ああ、急に人に会う予定ができてな。相手がヌオバ・ウォルシーニにいるとは思わず、何の用意もなくて困っていたんだ。偶然君たちに会えて良かったよ。
+[name="長旅で疲れた男"]ありがとう、お嬢さんたち。商売が上手くいくといいな。
+[Dialog]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="トシア"]お待ちを――ああ、もう行っちゃった。
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="トシア"]にしても……お手本を見せようと思っただけなのに、あれで本当に買うような良いカモがいるなんてね。このワインのことも全然知らなかったみたいだし、外国の人かな？
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="r")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]さっきのおじさん、ヴェルディが何本も買えるくらいのお金を置いて行っちゃった……
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="トシア"]でも、よかったじゃん！　やっと一本売れたんだからさ。ほら、ハイタッチ！
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]だけど……
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="トシア"]どうしてそんなにしょんぼりしてるの？　売れたんだからそれでいいでしょ。仮に、何か誤解があったとしても、商品の価値をわかってない相手が悪いんだし……
+[name="トシア"]……
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]……
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[name="トシア"]ああ、でも……さっきの人、すごく緊張してたね。ってなると、この後誰かに会いに行くのって、すごく大事な予定なのかな？
+[charslot(slot="l",name="avg_npc_2202_1#7$1",focus="l")]
+[name="トシア"]ねえ、おちびさん。シラクーザで、そういう大事な場に安いワインを持っていったら……どうなると思う？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g1_newvolsiniistreet_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2202_1#7$1",focus="m")]
+[name="トシア"]――今回の件、本当に申し訳ありませんでした！
+[name="トシア"]代金はお返しいたしますので、ほかの贈り物をご検討いただけますか。こちらは高級ワインではなく、デイリーワインの――
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="長旅で疲れた男"]ヴェルディだろ？　なるほど、それで慌てて追いかけてきたのか。
+[charslot(slot="m",name="avg_npc_2202_1#2$1",focus="m")]
+[name="トシア"]ご存じだったのですか？
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="長旅で疲れた男"]ああ。長年ワインを飲んでるからな。間違えるはずもないさ。実のところ俺はソレント生まれなんだが、若い頃に家族と大喧嘩して、カッとなって飛び出して、クルビアまで行ってしまってな……
+[name="長旅で疲れた男"]恥ずかしい話だが、今じゃシラクーザ語も流暢に話せなくなってしまったくらいなんだ。
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[name="トシア"]ですが、デイリーワインと知っていて、なぜ……？
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="長旅で疲れた男"]ははっ！　輸入物の高級ワインなんか持っていったら、うちの親父に追い返されかねないからな。
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[name="トシア"]では、ご家族に会いに行かれるところだったのですね。
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="長旅で疲れた男"]そうだよ。この街に引っ越してたことも知らなかったから、さっき偶然見かけた時も、一瞬わからなかったんだけどな。
+[name="長旅で疲れた男"]……喧嘩した当時は、譲れないと思ってたことも、今思えば大したことじゃないなって感じてさ。これまでずっと連絡すら取ってこなかったから、そろそろ頭を下げようと思ったんだ。
+[name="長旅で疲れた男"]うちは裕福じゃなかったし、食卓に上る酒と言ったらこれでな。親父がいくら飲んでも飲み飽きなかったヴェルディがあれば……これに免じて、家に上がらせてくれないかなって期待してるのさ。
+[name="長旅で疲れた男"]つまるところ、これぞまさに、今の俺に必要なものだったんだ。心を込めてラッピングされた、ごく普通のヴェルディ。だから、その価値に見合う額を出したまでだよ。
+[name="長旅で疲れた男"]どうしてもその額じゃ気が引けるって言うなら、良かったら、俺の幸運を祈っててくれないか。
+[charslot(slot="m",name="avg_npc_2202_1#4$1",focus="m")]
+[name="トシア"]……もちろんです！　上手くいきますように！
+[Dialog]
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[delay(time=0.3)]
+[playsound(key="$d_gen_walk_n", volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="トシア"]しかし、まさかこの私が、取引の済んだ商品のことで、お客さんを追いかける日が来るなんてね……ベッティーナったら、随分嬉しそうな顔してるじゃん。これで満足した？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]うん！　きっとおじいちゃんも、「誠実な商売をしたな」って誉めてくれると思う！
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="トシア"]じゃあ、今度こそハイタッチしよっか？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]いぇーい！
+[Dialog]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="all")]
+[delay(time=0.3)]
+[CameraShake(duration=0.3, xstrength=5, ystrength=8, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_clapsolo", loop=true, channel="1")]
+[StopSound(channel="1", fadetime=0.3)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="トシア"]ただし、あんまり調子に乗らないようにね。まだ一本しか売れてないんだから。こんなラッキーなことなんて、そうそうないわけだし……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_365_1#1$1",focus="m")]
+[name="異国の青年"]失礼、君がベッティーナさんかな？
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]そうだよ。お兄さんは？
+[charslot(slot="m",name="avg_npc_365_1#1$1",focus="m")]
+[name="異国の青年"]ビアンカさんの紹介を受けて、君を探していたんだ。君のところでシラクーザ伝統のワインが買えると聞いてね。
+[name="異国の青年"]実は今度ヴィクトリアで、シラクーザ料理のレストランを開く予定でね。ぴったりのワインがあれば仕入れていきたいと思っているんだ。良ければ、君のところのワインを見せてもらえないか？
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="ベッティーナ"]そ、それって……
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[multiline(name="トシア")]大口顧客だよ！　ほら、ぼーっとしてないでしっかり売りな！　私が教えたことをちゃんと活かして――
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[multiline(name="トシア")]ううん。
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="ベッティーナ"]トシアさん？
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="トシア"]何でもないよ、あなたはもう……一人前だから。
+[name="トシア"]私の教えなんて忘れて、自分のやり方でやってみなよ。
+[Dialog]
+[charslot]
+トシアは、少女と青年が道の端へ寄っていくのを見送りつつ、頭の中ではいつもの如く、損得勘定をしていた。
+[Dialog]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="トシア"]シラクーザ料理のレストランか……地元のワインを選ぶにしても、ヴェルディより上のランクの高級ワインを選ぶほうが利益率が高いと思うけど、まあ、クライアントの考え方次第かな。
+[multiline(name="トシア")]長期契約を結べたら理想だね。ただ、仮にうまくいったとしても焼け石に水っていうか、このブランドは結局、倒産するか買収されるかする可能性が高……
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[multiline(name="トシア")]ん？
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="n")]
+二人の会話はひと段落着いたようで、少し離れたところから、少女がぴょんぴょんと跳ねながら、満面の笑みで手を振ってきていた。
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="トシア"]どうやら、上手くいったみたいだね。
+[name="トシア"]……まあ、それでいっか。ベッティーナが嬉しそうにしてるし。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_manorindoor",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+一週間後
+[Dialog]
+[charslot(slot="m",name="avg_npc_223",focus="m")]
+[name="秘書"]本件については、すでにロジャーさんとも相談しました。彼もあなたのご意見に賛同していますが、参入のタイミングについてはまだ迷われているようです。加えて、リスクも懸念されていて……
+[charslot(slot="m",name="avg_npc_176",focus="m")]
+[name="チャレク"]なあに、急ぐ必要はない。現状、監査会側に大きな動きはないが、すべてが商業連合会の計画通りに進むとも限らないからな。
+[name="チャレク"]我々は今、商業連合会を後ろ盾としているわけだが……それでも、いざという時のために、備えを進めておかなくては。
+[name="チャレク"]二大勢力の手のひらから、ほんの少しでも利益が零れ落ちてきたなら、それは我々からすればご馳走だ。
+[name="チャレク"]その時を狙い、おこぼれにあずかろうとしているのは、我々だけではないからな。事前に準備を整えて、最高の波が来るのを待たねば……
+[Dialog]
+[charslot(slot="m",name="avg_npc_223",focus="m")]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="nw")]
+[stopsound(fadetime=2, channel="nw")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]おお、これはこれは！　我らが新たなトップ営業のお出ましだ。
+[name="チャレク"]営業部から報告を受けたよ。君はもう、この地で相当数の販売代理店と、競合製品取り扱い制限契約を結んだそうじゃないか。この業績をお祝いしなくてはな！
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="トシア"]ありがとうございます。おじ様の仰っていた通り、特に問題なく契約を結べましたよ。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]そうかそうか。本当は昨日祝いの席を設けようと思っていたが、秘書から聞いた話では、君のほうに何か先約があったそうだね。
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="トシア"]そうなんです。せっかくお誘いをいただいたのに、本当に申し訳ありません。少し前に、偶然この街のお子さんと知り合いまして、昨日はその子のお家へ食事に呼ばれていたんです。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]謝る必要はない、むしろ良いことだよ。ヌオバ・ウォルシーニからすると、結局のところ我々はよそ者でしかないからな。シラクーザ人を理解してこそ、財布を開かせることもできるというものだ。
+[name="チャレク"]我が優秀なる姪は、すでに商売の秘訣を掴んでいるらしい。君はいつでも、何のために行動するのかをよく考えているわけだ。そういうところを、私は何より評価しているのだよ。
+[name="チャレク"]さあ、乾杯しよう！
+[charslot(slot="r",name="avg_npc_2202_1#9$1",focus="r")]
+[name="トシア"]……
+[name="トシア"]何か誤解があるようですね。その子の家に行ったのは、情報収集のためではなく、単にバースデーソングを歌うためです。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]なに、そうなのか？
+[charslot(slot="l",name="avg_npc_176",focus="n")]
+彼の持つ上等なワインが注がれたグラスは、宙に掲げられるばかりだ。テーブルの反対側に座ったトシアはただ彼に向けて微笑んだ。
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="トシア"]その子の家は経済状況も普通ですし、田舎から持ってきた家具ばかりを使っているような、「ヌオバ・ウォルシーニで新しい生活を」送ってはいない家庭です。
+[name="トシア"]とはいえ、良い情報が手に入ったのも確かです。こちらをご覧ください。
+[Dialog]
+[PlaySound(key="$d_avg_plateplace", volume=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="n")]
+トシアは、ソーダの入ったガラス瓶を真っ白なテーブルクロスの上に置いた。それを見たチャレクは、思わず失笑した。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="チャレク"]こらこら、まったく。レストランに飲み物を持ち込むとは。
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="トシア"]これは、前にこちらに置いているか聞いた「キノット」です。昨日会った子の家族が、まだこれを置いている雑貨屋があると教えてくれたんですよ。
+[name="トシア"]おじ様はもう覚えていらっしゃらないでしょうが……父は昔、シラクーザに出張に行くたびに、お菓子やおもちゃをお土産に買ってきてくれていたんです。
+[name="トシア"]その中でも、私の一番のお気に入りが、このジュースでした。いつも多めに買ってきてとねだっていましたが……ふふっ、今思うと、相当重たかったでしょうね。
+[name="トシア"]その後のことは、おじ様もご存じの通りです。父は職を失い、私がこのジュースを口にすることもなくなりました。
+[Dialog]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_openbeer", volume=1)]
+彼女が栓を開けると、茶色いガラス瓶の中で、泡がしゅわしゅわと楽しげな音を立てた。
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="トシア"]だから、ずっともう一度飲みたいと思っていたんです。それに最近は、こういう「古臭いもの」が本当に消えてしまったら、少しもったいないような気すらしてるんですよ。
+[charslot(slot="m",name="avg_npc_2202_1#1$1",focus="m")]
+[name="トシア"]では、乾杯しましょう、おじ様。
+[Dialog]
+彼女はソーダの瓶を掲げて、ワイングラスに軽く合わせた。
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="トシア"]――気を悪くしないでほしいんですが、実を言うと、前回いただいたスパークリングは、あんまり好みに合わなかったんですよね。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]
