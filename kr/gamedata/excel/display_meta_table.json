@@ -2293,6 +2293,28 @@
                 ]
             },
             {
+                "avatarId": "avatar_activity_AC_2",
+                "avatarType": "ACTIVITY",
+                "avatarDesc": "[위수 협의: 맹약] 공훈 교환소",
+                "isSecret": true,
+                "avatarStartTs": 1787209200,
+                "avatarLimit": true,
+                "avatarIdSort": 78,
+                "avatarIdDesc": "[위수 협의: 맹약] 공훈 교환소\n“시뮬레이션 재개!”",
+                "avatarItemName": "“시뮬레이션 재개!”",
+                "avatarItemDesc": "장비 세팅, 전략 수립, 팀을 정비하여, 다시 진격!",
+                "avatarItemUsage": "개성을 과시하는 이미지. 프로필로 설정할 수 있습니다.",
+                "obtainApproach": "위수 협의: 맹약 이벤트 획득",
+                "dynAvatarId": null,
+                "limitDatas": [
+                    {
+                        "avatarId": "avatar_activity_AC_2",
+                        "descShowTs": 1787209200,
+                        "descHideTs": 1791053999
+                    }
+                ]
+            },
+            {
                 "avatarId": "avatar_dyn_01",
                 "avatarType": "DYNAMIC",
                 "avatarDesc": "[누적 출석] 보상",
@@ -2766,7 +2788,8 @@
                     "avatar_activity_pcAct",
                     "avatar_activity_HS",
                     "avatar_activity_RL5_1",
-                    "avatar_activity_RL5_2"
+                    "avatar_activity_RL5_2",
+                    "avatar_activity_AC_2"
                 ]
             },
             "DEFAULT": {
@@ -7057,6 +7080,48 @@
                 "sortId": 1006,
                 "picId": "pic_cooperate_battle",
                 "desc": null
+            },
+            "autochess_battle_noproblem": {
+                "id": "autochess_battle_noproblem",
+                "type": "AUTOCHESS_BATTLE",
+                "sortId": 1007,
+                "picId": "pic_noproblem_battle",
+                "desc": null
+            },
+            "autochess_battle_respect": {
+                "id": "autochess_battle_respect",
+                "type": "AUTOCHESS_BATTLE",
+                "sortId": 1008,
+                "picId": "pic_respect_battle",
+                "desc": null
+            },
+            "autochess_battle_call": {
+                "id": "autochess_battle_call",
+                "type": "AUTOCHESS_BATTLE",
+                "sortId": 1009,
+                "picId": "pic_call_battle",
+                "desc": null
+            },
+            "autochess_battle_playingcool": {
+                "id": "autochess_battle_playingcool",
+                "type": "AUTOCHESS_BATTLE",
+                "sortId": 1010,
+                "picId": "pic_playingcool_battle",
+                "desc": null
+            },
+            "autochess_battle_sad": {
+                "id": "autochess_battle_sad",
+                "type": "AUTOCHESS_BATTLE",
+                "sortId": 1011,
+                "picId": "pic_sad_battle",
+                "desc": null
+            },
+            "autochess_battle_dying": {
+                "id": "autochess_battle_dying",
+                "type": "AUTOCHESS_BATTLE",
+                "sortId": 1012,
+                "picId": "pic_dying_battle",
+                "desc": null
             }
         },
         "emoticonThemeDataDict": {
@@ -7147,6 +7212,14 @@
                 "autochess_battle_thanks",
                 "autochess_battle_thinking",
                 "autochess_battle_nice_cooperate"
+            ],
+            "emoticon_autochess_basic_2": [
+                "autochess_battle_noproblem",
+                "autochess_battle_respect",
+                "autochess_battle_call",
+                "autochess_battle_playingcool",
+                "autochess_battle_sad",
+                "autochess_battle_dying"
             ]
         },
         "emoticonThemeTypeDict": null,
@@ -8279,6 +8352,68 @@
                         "canBeSet": false,
                         "defaultKeyId": "bannedRightArrow",
                         "sortId": 4
+                    }
+                ]
+            },
+            "autoChess": {
+                "groupId": "autoChess",
+                "name": "위수 협의",
+                "funcType": "BATTLE",
+                "keyEffectGroup": "BATTLE",
+                "isHidden": false,
+                "relatedActType": "AUTOCHESS_SEASON",
+                "gameModeTag": "autochess",
+                "sortId": 4,
+                "startTs": 1787209200,
+                "itemList": [
+                    {
+                        "funcId": "autochessRefresh",
+                        "funcName": "갱신",
+                        "canBeSet": true,
+                        "defaultKeyId": "alphaD",
+                        "sortId": 1
+                    },
+                    {
+                        "funcId": "autochessFreeze",
+                        "funcName": "동결",
+                        "canBeSet": true,
+                        "defaultKeyId": "alphaS",
+                        "sortId": 2
+                    },
+                    {
+                        "funcId": "autochessLevelUp",
+                        "funcName": "승급",
+                        "canBeSet": true,
+                        "defaultKeyId": "alphaG",
+                        "sortId": 3
+                    },
+                    {
+                        "funcId": "autochessShop",
+                        "funcName": "보급센터",
+                        "canBeSet": true,
+                        "defaultKeyId": "alphaA",
+                        "sortId": 4
+                    },
+                    {
+                        "funcId": "autochessReady",
+                        "funcName": "준비 완료",
+                        "canBeSet": true,
+                        "defaultKeyId": "alphaC",
+                        "sortId": 5
+                    },
+                    {
+                        "funcId": "autochessSale",
+                        "funcName": "판매",
+                        "canBeSet": true,
+                        "defaultKeyId": "alphaX",
+                        "sortId": 6
+                    },
+                    {
+                        "funcId": "autochessViewEnemy",
+                        "funcName": "적 정보",
+                        "canBeSet": true,
+                        "defaultKeyId": "alphaW",
+                        "sortId": 7
                     }
                 ]
             }

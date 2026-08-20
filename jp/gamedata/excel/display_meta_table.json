@@ -2293,6 +2293,28 @@
                 ]
             },
             {
+                "avatarId": "avatar_activity_AC_2",
+                "avatarType": "ACTIVITY",
+                "avatarDesc": "【堅守協定：盟約】\n勲功引換所",
+                "isSecret": true,
+                "avatarStartTs": 1787209200,
+                "avatarLimit": true,
+                "avatarIdSort": 78,
+                "avatarIdDesc": "【堅守協定：盟約】勲功引換所\n「シミュレーション再起動！」",
+                "avatarItemName": "「シミュレーション再起動！」",
+                "avatarItemDesc": "装備を整え、戦略を練り、部隊を編成し直したら、もう一度出撃だ！",
+                "avatarItemUsage": "個性を表すための画像。プロファイルアイコンとして設定可能。",
+                "obtainApproach": "堅守協定：盟約報酬",
+                "dynAvatarId": null,
+                "limitDatas": [
+                    {
+                        "avatarId": "avatar_activity_AC_2",
+                        "descShowTs": 1787209200,
+                        "descHideTs": 1791053999
+                    }
+                ]
+            },
+            {
                 "avatarId": "avatar_dyn_01",
                 "avatarType": "DYNAMIC",
                 "avatarDesc": "【累計ログイン】報酬",
@@ -2766,7 +2788,8 @@
                     "avatar_activity_pcAct",
                     "avatar_activity_HS",
                     "avatar_activity_RL5_1",
-                    "avatar_activity_RL5_2"
+                    "avatar_activity_RL5_2",
+                    "avatar_activity_AC_2"
                 ]
             },
             "DEFAULT": {
@@ -7057,6 +7080,48 @@
                 "sortId": 1006,
                 "picId": "pic_cooperate_battle",
                 "desc": null
+            },
+            "autochess_battle_noproblem": {
+                "id": "autochess_battle_noproblem",
+                "type": "AUTOCHESS_BATTLE",
+                "sortId": 1007,
+                "picId": "pic_noproblem_battle",
+                "desc": null
+            },
+            "autochess_battle_respect": {
+                "id": "autochess_battle_respect",
+                "type": "AUTOCHESS_BATTLE",
+                "sortId": 1008,
+                "picId": "pic_respect_battle",
+                "desc": null
+            },
+            "autochess_battle_call": {
+                "id": "autochess_battle_call",
+                "type": "AUTOCHESS_BATTLE",
+                "sortId": 1009,
+                "picId": "pic_call_battle",
+                "desc": null
+            },
+            "autochess_battle_playingcool": {
+                "id": "autochess_battle_playingcool",
+                "type": "AUTOCHESS_BATTLE",
+                "sortId": 1010,
+                "picId": "pic_playingcool_battle",
+                "desc": null
+            },
+            "autochess_battle_sad": {
+                "id": "autochess_battle_sad",
+                "type": "AUTOCHESS_BATTLE",
+                "sortId": 1011,
+                "picId": "pic_sad_battle",
+                "desc": null
+            },
+            "autochess_battle_dying": {
+                "id": "autochess_battle_dying",
+                "type": "AUTOCHESS_BATTLE",
+                "sortId": 1012,
+                "picId": "pic_dying_battle",
+                "desc": null
             }
         },
         "emoticonThemeDataDict": {
@@ -7147,6 +7212,14 @@
                 "autochess_battle_thanks",
                 "autochess_battle_thinking",
                 "autochess_battle_nice_cooperate"
+            ],
+            "emoticon_autochess_basic_2": [
+                "autochess_battle_noproblem",
+                "autochess_battle_respect",
+                "autochess_battle_call",
+                "autochess_battle_playingcool",
+                "autochess_battle_sad",
+                "autochess_battle_dying"
             ]
         },
         "emoticonThemeTypeDict": null,
@@ -8279,6 +8352,68 @@
                         "canBeSet": false,
                         "defaultKeyId": "bannedRightArrow",
                         "sortId": 4
+                    }
+                ]
+            },
+            "autoChess": {
+                "groupId": "autoChess",
+                "name": "堅守協定",
+                "funcType": "BATTLE",
+                "keyEffectGroup": "BATTLE",
+                "isHidden": false,
+                "relatedActType": "AUTOCHESS_SEASON",
+                "gameModeTag": "autochess",
+                "sortId": 4,
+                "startTs": 1787209200,
+                "itemList": [
+                    {
+                        "funcId": "autochessRefresh",
+                        "funcName": "更新",
+                        "canBeSet": true,
+                        "defaultKeyId": "alphaD",
+                        "sortId": 1
+                    },
+                    {
+                        "funcId": "autochessFreeze",
+                        "funcName": "凍結",
+                        "canBeSet": true,
+                        "defaultKeyId": "alphaS",
+                        "sortId": 2
+                    },
+                    {
+                        "funcId": "autochessLevelUp",
+                        "funcName": "Lv.UP",
+                        "canBeSet": true,
+                        "defaultKeyId": "alphaG",
+                        "sortId": 3
+                    },
+                    {
+                        "funcId": "autochessShop",
+                        "funcName": "管理センター",
+                        "canBeSet": true,
+                        "defaultKeyId": "alphaA",
+                        "sortId": 4
+                    },
+                    {
+                        "funcId": "autochessReady",
+                        "funcName": "準備完了",
+                        "canBeSet": true,
+                        "defaultKeyId": "alphaC",
+                        "sortId": 5
+                    },
+                    {
+                        "funcId": "autochessSale",
+                        "funcName": "売却",
+                        "canBeSet": true,
+                        "defaultKeyId": "alphaX",
+                        "sortId": 6
+                    },
+                    {
+                        "funcId": "autochessViewEnemy",
+                        "funcName": "敵状況",
+                        "canBeSet": true,
+                        "defaultKeyId": "alphaW",
+                        "sortId": 7
                     }
                 ]
             }
