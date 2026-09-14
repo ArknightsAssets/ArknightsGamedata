@@ -1,94 +1,35 @@
-local PCHotfixer = Class("PCHotfixer", HotfixBase)
-local SDKHelper = CS.Torappu.SDK.SDKHelper
-local SDKViewState = SDKHelper.SDKViewState
+local PCHotfixer = Class("PCHotfixer", HotfixBase);
 
-local ShopCashPurchaseUtil = CS.Torappu.ShopCashPurchaseUtil
-local HotUpdateMgr = CS.Torappu.Resource.HotUpdateMgr
-local ResPreferenceController = CS.Torappu.Resource.ResPreferenceController
-local LoginViewController = CS.Torappu.UI.Login.LoginViewController
+local TorappuKeyBoardLogic = CS.Torappu.KeyEntityGroupBase.TorappuKeyBoardLogic;
+local KeyEntityGroupBase = CS.Torappu.KeyEntityGroupBase;
 
-local function _Fix_Pay(storeId, orderInfo)
-  SDKHelper.instance:MaskSdkViewState(SDKViewState.SDK_VIEW_PAY)
-  ShopCashPurchaseUtil._Pay(storeId, orderInfo)
-end
-
-local function _Fix_OnPurchaseSuc(response)
-  SDKHelper.instance:UnmaskSdkViewState(SDKViewState.SDK_VIEW_PAY)
-  ShopCashPurchaseUtil._OnPurchaseSuc(response)
-end
-
-local function _Fix_OnPurchaseFail()
-  SDKHelper.instance:UnmaskSdkViewState(SDKViewState.SDK_VIEW_PAY)
-  ShopCashPurchaseUtil._OnPurchaseFail()
-end
-
-local function _FixSDKHandleExtraInfo(self, extraData)
-  self:HandleExtraInfo(extraData)
-  if extraData == nil then
-     return 
-  end
-  local code = extraData.code:GetHashCode()
-  if code == 12 then
-    SDKHelper.instance:UnmaskSdkViewState(SDKViewState.SDK_VIEW_INIT_LICENSE)
-  end
-end
-
-local function _Fix_ResetBeforeLoginStart()
-  LoginViewController._ResetBeforeLoginStart()
-  HotUpdateMgr.SetUpdate(ResPreferenceController.TYPE_VIDEO, true)
+local function _Fix_LoadDefaultGroupData(self)
+  local group = CS.Torappu.NormalKeyEntityGroup();
+  group.showBtnCard = self.m_displaySetting.showNormalBtn;
+  self.m_normalGroupDict:Add(CS.Torappu.UI.UIButtonUtil.DEFAULT_ESC_GROUP, group);
+  group:_LoadData(CS.Torappu.PCKeyConst.DEFAULT_GROUP_DATA);
+  group:_CheckKeyCodeSetting(self.m_userSettingDict);
 end
 
 function PCHotfixer:OnInit()
-  
-  if CS.Torappu.DeviceInfoUtil:IsPCMode() then
-    xlua.private_accessible(LoginViewController)
-    self:Fix_ex(LoginViewController, "_ResetBeforeLoginStart", function()
-      local ok, err = xpcall(_Fix_ResetBeforeLoginStart, debug.traceback)
-      if not ok then
-        LogError("[PCHotfixer] _ResetBeforeLoginStart fix: " .. tostring(err))
-        LoginViewController._ResetBeforeLoginStart()
-      end
-    end)
+  if not CS.Torappu.DeviceInfoUtil:IsPCMode() then
+      return;
   end
 
-  if not CS.Torappu.DeviceInfoUtil:IsPCMode() or CS.U8.SDK.U8SDKInterface.Instance.isNativePlugin then
-    return
+  local groupData = CS.Torappu.PCKeyConst.DEFAULT_GROUP_DATA;
+  if groupData ~= nil and groupData.itemList ~= nil and groupData.itemList[0] ~= nil then
+    groupData.itemList[0].funcName = CS.Torappu.UI.UIButtonUtil.DEFAULT_ESC_GROUP;
   end
 
-  
-  xlua.private_accessible(ShopCashPurchaseUtil)
-
-  self:Fix_ex(ShopCashPurchaseUtil, "_Pay", function(storeId, orderInfo)
-    local ok, err = xpcall(_Fix_Pay, debug.traceback, storeId, orderInfo)
+  xlua.private_accessible(KeyEntityGroupBase);
+  xlua.private_accessible(TorappuKeyBoardLogic);
+  self:Fix_ex(TorappuKeyBoardLogic, "_LoadDefaultGroupData", function(self)
+    local ok, err = xpcall(_Fix_LoadDefaultGroupData, debug.traceback, self);
     if not ok then
-      LogError("[PCHotfixer] _Pay fix: " .. tostring(err))
-      ShopCashPurchaseUtil._Pay(storeId, orderInfo)
+      LogError("[PCHotfixer] _LoadDefaultGroupData fix: " .. tostring(err));
+      self:_LoadDefaultGroupData();
     end
-  end)
-
-  self:Fix_ex(ShopCashPurchaseUtil, "_OnPurchaseSuc", function(response)
-    local ok, err = xpcall(_Fix_OnPurchaseSuc, debug.traceback, response)
-    if not ok then
-      LogError("[PCHotfixer] _OnPurchaseSuc fix: " .. tostring(err))
-      ShopCashPurchaseUtil._OnPurchaseSuc(response)
-    end
-  end)
-
-  self:Fix_ex(ShopCashPurchaseUtil, "_OnPurchaseFail", function()
-    local ok, err = xpcall(_Fix_OnPurchaseFail, debug.traceback)
-    if not ok then
-      LogError("[PCHotfixer] _OnPurchaseFail fix: " .. tostring(err))
-      ShopCashPurchaseUtil._OnPurchaseFail()
-    end
-  end)
-
-  
-  self:Fix_ex(CS.Torappu.SDK.SDKExtraInfoHandler, "HandleExtraInfo", function(self, extraData)
-    local ok, err = xpcall(_FixSDKHandleExtraInfo, debug.traceback, self, extraData)
-    if not ok then
-      LogError("[PCHotfixer] HandleExtraInfo fix: " .. tostring(err))
-    end
-  end)
+  end);
 end
 
 function PCHotfixer:OnDispose()

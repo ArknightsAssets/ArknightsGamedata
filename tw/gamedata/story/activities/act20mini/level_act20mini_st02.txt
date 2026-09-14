@@ -1,0 +1,744 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="56_g1_newvolsiniistreet_d",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[Dialog]
+[PlaySound(key="$dooropenquite", volume=1)]
+[PlaySound(key="$d_avg_doorbell",volume=0.6,delay=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[name="餐廳老闆"]抱歉啊小貝蒂，叔叔也想幫你的，只是……你看，我這裡也是小本生意。
+[name="餐廳老闆"]上次從你那裡進的幾瓶酒現在還放在架子上生灰塵呢，不然這樣好了，你去街角那家店問問看？
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]嗯，我去問問看，謝謝保羅叔叔！
+[Dialog]
+[charslot(slot="m",name="avg_npc_242",focus="m")]
+[delay(time=0.5)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]……街角那家店其實貝蒂也已經問過了，大家都說“不用了”。
+[name="小貝蒂"]先把東西移開吧，傻傻站在這裡會影響保羅叔叔做生意的。
+[Dialog]
+[playsound(key="$d_avg_dragheavybox")]
+[PlaySound(key="$d_avg_cloakmovement", volume=1,delay=0.9)]
+[charslot(slot = "m",posfrom = "0,0", posto = "200,0",duration = 2)]
+[delay(time=2.3)]
+[playsound(key="$d_avg_putonwoodenfloor_xshield", volume=0.7)]
+[PlaySound(key="$d_avg_bottlecollide", volume=0.7,delay=0.3)]
+[charslot(slot = "m", action="shake",random=true, power=8, times=40,duration=0.8)]
+[name="小貝蒂"]嘿……咻唔唔呃呃？！
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="l",name="avg_npc_2202_1#10$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="l",name="avg_npc_2202_1#10$1",focus="l")]
+[name="路過的少女"]小心！
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="路過的少女"]好險……來，拿好吧。
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]謝、謝謝姐姐。
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="路過的少女"]這真的好重喔，難怪身材嬌小的你拿不動，裡面裝的是什麼——
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="路過的少女"]咦，是“維爾蒂”啊。
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]姐姐你知道嗎？
+[name="小貝蒂"]這是貝蒂爺爺工作的維爾蒂酒莊生產的紅酒，我們酒莊已經有幾十年的歷史囉！姐姐要不要買一瓶喝喝看？
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="路過的少女"]……原來如此。
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="路過的少女"]你叫貝蒂對吧？既然在這裡碰到了也是緣分，認識一下吧。
+[name="托希婭"]我是托希婭，給你，這是我的名片。
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]名片，好厲害！對不起，貝蒂沒有名片……咦？
+[name="小貝蒂"]卡西米爾黃金平原酒業，新沃爾西尼分公司——業務代表？
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[multiline(name="托希婭")]雖然我想過不了多久，它就會變成“高級客戶經理”了……
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[multiline(name="托希婭")]不過，就是這麼一回事。很遺憾，我們是競爭對手，所以我不會買你的酒。
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="托希婭"]現在請你借過一下吧，貝蒂小姐——我和保羅先生有約，正準備談一筆大生意。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_manorindoor",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]你剛來新沃爾西尼不久，就談成了好幾筆大生意。真不錯！
+[name="沙雷"]來，托希婭，今天就算是為我們的金牌業務補上接風洗塵的這一頓吧！
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#4$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="r")]
+[name="托希婭"]舅舅，您太客氣了！
+[charslot(slot="r",name="avg_npc_2202_1#1$1",focus="r")]
+[name="托希婭"]這陣子您一直在忙著籌備紅酒錦標賽，肯定很忙吧，只希望我過來沒給您添麻煩就好。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]怎麼會添麻煩呢！有你這樣經驗豐富的業務來加入“黃金平原”，那是我撿了一個大便宜。
+[name="沙雷"]不過我聽說你之前在斜屋百貨做得還不錯，怎麼會想到在這種時候來新沃爾西尼？
+[charslot(slot="r",name="avg_npc_2202_1#9$1",focus="r")]
+[name="托希婭"]這個……說來話長。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]我想，是和最近大騎士領鬧得沸沸揚揚的那起……“銀槍天馬貪腐案”有關吧？
+[charslot(slot="l",name="avg_npc_176",focus="n")]
+儘管沙雷壓低了聲音，最後的那幾個字仍引得托希婭猛然抬起了頭。
+[charslot(slot="r",name="avg_npc_2202_1#3$1",focus="r")]
+[name="托希婭"]您是怎麼……
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]我聽說前幾天商業聯合會帶人到斜屋百貨的樓下，帶走了你們的一名主管，剛好是你原先所在部門的負責人。
+[charslot(slot="r",name="avg_npc_2202_1#7$1",focus="r")]
+[name="托希婭"]……看來還是瞞不過您。那位主管算是我的恩人，但……她的親戚裡有一位銀槍天馬。
+[name="托希婭"]原本這是件很有面子的好事，但自從商業聯合會開始發難……他們有時沒辦法直接對監正會的人出手，就把他們身邊的人“帶走調查”。
+[name="托希婭"]這個案子如今牽扯得越來越大，有些倒楣鬼，哪怕是那些明眼人一看就知道完全無辜的人，也要被扣上這樣那樣的罪名……
+[name="托希婭"]我們普通人要是不小心被捲進這場風波，又怎麼可能對抗得了商業聯合會這樣的巨獸？
+[charslot(slot="r",name="avg_npc_2202_1#9$1",focus="r")]
+[name="托希婭"]我就想不如出來發展——
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]托希婭，我們“黃金平原”能在新沃爾西尼有如今的規模，少不了商業聯合會在背後的扶持。
+[name="沙雷"]上層的人銳意進取，想要擴張版圖，那對我們每一個商人來說，都是好事。
+[charslot(slot="r",name="avg_npc_2202_1#7$1",focus="r")]
+[name="托希婭"]……您說的對。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]你既然都已經來了這裡，就別再多想大騎士領的事了。
+[name="沙雷"]不如維持這種敢闖敢拼的精神好好工作，等以後舅舅的生意做得更大了，絕對不會虧待你的。
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="托希婭"]……那我先謝謝舅舅了。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]你是個聰明的孩子，其他的我就不多說了。
+[name="沙雷"]我已經點過菜了，只是不知道你想喝些什麼。
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[multiline(name="托希婭")]讓您費心了，我確實不太會喝酒。
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[multiline(name="托希婭")]我看看……
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="托希婭"]對了，請問這邊有沒有一款棕色的汽水？應該是敘拉古本土的品牌，柳橙口味的，但有點苦？
+[Dialog]
+[charslot]
+[name="侍者"]您是說“金諾托”？不好意思，本店沒有這款飲品。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="l")]
+[name="沙雷"]你從哪裡知道那種老古董的？自從我們公司的飲料產線進來之後，那些本土的品牌基本上都被淘汰了。
+[charslot(slot="r",name="avg_npc_2202_1#3$1",focus="r")]
+[name="托希婭"]咦……是嗎？
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]托希婭，你忘了我們的廣告是怎麼說的嗎？“新沃爾西尼，新生活”，復古懷舊這套還是留給那些萊塔尼亞人去搞吧。
+[name="沙雷"]來杯我們公司的無酒精氣泡水怎麼樣？
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="r")]
+[name="托希婭"]哈哈，也是！聽您的。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]這才對嘛。差點忘了，來，今天我還想讓你看看這個。
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_paper1")]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[name="托希婭"]這是……貨架陳列協議？
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]剛擬的範本，在正式實施前，我想聽聽我們王牌業務的意見。
+[charslot(slot="r",name="avg_npc_2202_1#6$1",focus="r")]
+[name="托希婭"]標準很清晰，而且有這麼豐厚的陳列獎勵……應該不會有幾個零售商拒絕。
+[name="托希婭"]但接受之後就代表在協議期間，本地的零售商只能陳列我們的商品。
+[charslot(slot="r",name="avg_npc_2202_1#3$1",focus="r")]
+[name="托希婭"]如此顯而易見的排他性條款，在當地會不會引起法規層面的糾紛？
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]反正《新都市管理法案》上沒有規定不可以。
+[name="沙雷"]我看，那些滿腦子只有理想和信念的魯珀小鬼們恐怕根本都不會意識到這個能有什麼問題。
+[Dialog]
+沙雷聳了聳肩，臉上帶著勝券在握的笑容。
+[name="沙雷"]只是實際去和那些零售商談的還是你們這些一線員工，托希婭，我很期待你到時候的表現。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_plateplace", volume=1)]
+[delay(time=1.5)]
+[name="侍者"]讓您久等了，這是您的無酒精氣泡水。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="l")]
+[name="沙雷"]來，為新沃爾西尼，為新生活，乾杯？
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="托希婭"]……當然，舅舅。我肯定不會讓您失望的。
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="r")]
+[name="托希婭"]乾杯！
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#4$1",focus="all")]
+[delay(time=0.5)]
+[PlaySound(key="$clink", volume=1)]
+[delay(time=1)]
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[multiline(name="托希婭")]呼……終於吃飽了！
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[multiline(name="托希婭")]什麼“主廚精選晚餐”，規矩一大堆，分量卻少得可憐。
+[Dialog]
+[charslot]
+將最後一小塊披薩送入口中後，托希婭拍了拍手上的碎屑，繼續踏著晚風向住處走去。
+街道被流光溢彩的各色廣告牌照亮，竟不比白晝時遜色。這番夜景引人讚嘆，只是難免與托希婭曾聽聞的敘拉古風貌大相徑庭。
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="托希婭"]……貨架陳列協議，我看叫“貨架壟斷協議”更貼切。
+[name="托希婭"]這下大概會有一大堆人失業甚至破產吧？又比如白天的那個小不點，等協議全面推行，就算她跑斷腿也不可能把酒賣出去……
+[multiline(name="托希婭")]不過這也是沒辦法的事。這麼大的商機，就算我們不出手，那些維多利亞人和哥倫比亞人肯定也不會白白放過……
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[multiline(name="托希婭")]嗯？
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]咦？是白天的姐姐。
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[multiline(name="托希婭")]是你啊，怎麼樣？你後來有賣出去……
+[charslot(slot="m",name="avg_npc_2202_1#7$1",focus="m")]
+[multiline(name="托希婭")]唉，你的酒一瓶都沒少啊。
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]嗯……
+[name="小貝蒂"]托希婭姐姐，你是很厲害的業務對不對？能不能請你——
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="托希婭"]不能。
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]咦？但我還沒有說完……
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="托希婭"]你想讓我教你一些技巧對不對？看到你的表情我就猜到你想說什麼了。不行，沒門。
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]為什麼？
+[Dialog]
+[charslot(slot="m",name="avg_npc_2202_1#11$1",focus="m")]
+女孩顯而易見的低落與不解引來了托希婭一聲無奈的嘆息。
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="托希婭"]貝蒂，你幾歲了？
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]下週就十歲了。
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[name="托希婭"]十歲啊……好吧，那我就把話說清楚一點。
+[name="托希婭"]聽好，我知道你這個年紀就要出來討生活肯定是有什麼難處，要是在別的情況下我也不介意幫你一把。
+[name="托希婭"]畢竟我也是因為有別人的幫助才走到今天的，賣個人情也是筆投資，不是什麼虧本生意。
+[name="托希婭"]但問題在於，新沃爾西尼就只有這麼一點人，一個人每天能喝下的也就這麼一點酒。
+[name="托希婭"]你賣“維爾蒂”，我賣“黃金平原”，我們是競爭對手，是敵人。
+[PlayMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="托希婭"]當然了，可能有些人即便如此，也會不計較利益得失地選擇幫助像你這樣可憐的小孩……但我不一樣。
+[Dialog]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2202_1#1$1",focus="m")]
+[bgeffect(name="$eb_speedline",layer=1)]
+[BackgroundTween(xScaleFrom=1, yScaleFrom=1, xScaleTo=1.3, yScaleTo=1.3, duration=0, block=false,screenadapt="coverall")]
+[CameraShake(duration=0.3, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",action="zoom",poszoom="0.5,0.55",scale=1.2,duration=0,isblock=true)]
+[Delay(time=0.2)]
+[multiline(name="托希婭")]因為我是鐵石心腸的女人！
+[BackgroundTween(xScaleFrom=1.3, yScaleFrom=1.3, xScaleTo=1.5, yScaleTo=1.5, duration=0, block=false,screenadapt="coverall")]
+[CameraShake(duration=0.3, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",action="zoom",poszoom="0.5,0.6",scale=1.5,duration=0,isblock=true)]
+[Delay(time=0.2)]
+[multiline(name="托希婭")]商場如戰場，幫助敵人就是背叛自己！
+[BackgroundTween(xScaleFrom=1.5, yScaleFrom=1.5, xScaleTo=1.7, yScaleTo=1.7, duration=0, block=false,screenadapt="coverall")]
+[CameraShake(duration=0.3, ystrength=15, vibrato=15, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",action="zoom",poszoom="0.49,0.65",scale=1.8,duration=0,isblock=true)]
+[Delay(time=0.2)]
+[name="托希婭"]畢竟我是打定主意要飛黃騰達過上好日子，絕對不會因為對手是個小孩就心軟！你聽懂了嗎！
+[Dialog]
+[charslot]
+[bgeffect(layer = 1)]
+[BackgroundTween(xScaleFrom=1.7, yScaleFrom=1.7, xScaleTo=1, yScaleTo=1, duration=0, block=false,screenadapt="coverall")]
+[delay(time=0.2)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]我知道了……
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="托希婭"]很好！那你繼續努力吧，我先走了。
+[Dialog]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=2.5)]
+[charslot(slot = "m", posfrom="0,0", posto="-150,0", afrom=1, ato=0, duration=1)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_runstop", volume=0.7)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="托希婭"]……我是不是太兇了？
+[name="托希婭"]這也不能怪我，那個沒良心的舅舅，擺明了就只是想用空中的餡餅來騙我做事。
+[charslot(slot="m",name="avg_npc_2202_1#11$1",focus="m")]
+[name="托希婭"]想在這裡站穩腳跟，我才沒空管其他人的閒事……
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[name="托希婭"]不過……她不會哭了吧？不然回頭看一眼好了，就一眼……
+[Dialog]
+[musicvolume(volume=0, fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)] 
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=0.7, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]嗯……
+[name="小貝蒂"]（腦袋低垂，似乎很傷心的樣子）
+[name="小貝蒂"]（抓住橋邊的欄杆）
+[name="小貝蒂"]（站上欄杆）
+[name="小貝蒂"]（作勢欲跳下——）
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="n")]
+[name="托希婭"]啊啊啊啊啊啊等一下不要輕生啊——！！！
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[CameraShake(duration=0.3, xstrength=20, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="小貝蒂"]哇？！
+[Dialog]
+[PlaySound(key="$d_avg_runstop", volume=0.7)]
+[charslot(slot="r",name="avg_npc_2202_1#8$1",posfrom="300,0",posto="30,0",afrom=0,ato=1,duration=0.5)]
+[Delay(time=0.6)]
+[PlaySound(key="$d_avg_clothmovementsp",volume=0.8)]
+[PlaySound(key="$bodyfalldown1", volume=1,delay=0.3)]
+[CameraShake(duration=0.7, xstrength=20, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(duration=0.5)]
+[Delay(time=2)]
+[musicvolume(volume=0.6, fadetime=1.5)]
+[charslot(slot="m",name="avg_npc_2202_1#7$1",duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2202_1#7$1",focus="m")]
+[name="托希婭"]好險，幸好我眼疾手快……
+[charslot(slot="m",name="avg_npc_2202_1#10$1",focus="m")]
+[name="托希婭"]現在的小孩心理承受能力也太差了！我教你可以了吧？！
+[name="托希婭"]真是的，想當年我做不出業績沒有房子只能住橋洞撿速食店人家吃剩的薯條的時候，也沒有要死要活的啊！
+[multiline(name="托希婭")]你年紀小，未來還很長啊！只要活著就有希望，就算現在再艱難，也要相信會有轉……
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[multiline(name="托希婭")]機……
+[name="托希婭"]你怎麼這個表情？
+[Dialog]
+[charslot(duration=0.2)]
+[Delay(time=0.4)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="r")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]托希婭姐姐，你是不是誤會了？貝蒂是想要把麵包救上來……
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="托希婭"]……什麼麵包？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]就在那裡，欄杆的外面。牠太調皮了，竟然鑽到那種地方去了……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_dogbarknormal", volume=1)]
+[name="麵包"]汪！
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="托希婭"]所以你剛才不是想……
+[charslot(slot="l",name="avg_npc_2202_1#4$1",focus="l")]
+[name="托希婭"]哈哈，太棒了，剛才擔心得要命還在那裡開解你的我想必傻得要死。
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="托希婭"]不對，就算想救牠，你也不用從欄杆上面翻過去吧？太危險了！
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]可是我的手太短了……
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[name="托希婭"]……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[name="托希婭"]真是的，讓開我來！——麵包，你不准咬我哦！
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g6_courtsquare_n",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(key="$comedy_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[name="衣著得體的女性"]謝謝你小貝蒂！要不是你把這個孩子送回來，我真的不知道該怎麼辦才好……
+[name="衣著得體的女性"]那我們就先回家了。麵包，快點和貝蒂姐姐說再見。
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]好哦，畢安卡姐姐再見，麵包再見！
+[Dialog]
+[charslot]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="托希婭"]……嗯？等等，你怎麼不問她？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]問什麼？
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="托希婭"]酒啊？雖然我是覺得關係型業務的這套做法成本高、效率低，但能開個張總比喝西北風好吧。
+[name="托希婭"]你幫她找回那隻“麵包”，不就是為了讓她買你的酒嗎？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]咦？
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="托希婭"]……別告訴我你只是單純在當好人做好事。
+[name="托希婭"]難道是我誤會了？其實你家裡根本沒有什麼苦衷，貨賣不賣得出去都無所謂？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]不是的，怎麼會無所謂！貝蒂要幫忙把酒賣掉才行。爺爺說最近銷路越來越差，要是這個月還賣不出去，酒莊就要辦不下去了……
+[name="小貝蒂"]我應該怎麼做？托希婭姐姐，你剛才說會教貝蒂的。
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="托希婭"]什麼？我什麼時候說過要教你——
+[Dialog]
+[musicvolume(volume=0.3, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="56_g2_newvolsiniistreet_n",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.7, keep=true)]
+[charslot(slot="m",name="avg_npc_2202_1#10$1",focus="m")]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[name="托希婭"]現在的小孩心理承受能力也太差了！我教你可以了吧？！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="56_g6_courtsquare_n",screenadapt="coverall", block=true)]
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[delay(time=0.5)]
+[musicvolume(volume=0.6, fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="托希婭"]呃，我還真的說過。但那是因為我當時誤以為你……咳。
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="托希婭"]不是我說話不算數，你看你的商品——“維爾蒂”，現在最難賣的就是這種本地的廉價酒了。
+[name="托希婭"]老舊的生產設備、馬虎的成本控制、落伍的行銷理念……“黃金平原”比它品質更好的平價紅酒，價格也只有它的一半，怎麼可能還有冤大頭買這個？
+[name="托希婭"]你爺爺工作的那間酒莊倒閉只是時間的問題，我建議他還是儘早開始找工作吧。
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]可是酒莊裡的大人們都說，沒有賣不出去的東西，只有賣不出去東西的業務。
+[name="小貝蒂"]貝蒂知道“維爾蒂”不好賣……就連托希婭姐姐也沒辦法把這些賣出去嗎？
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[name="托希婭"]……
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="托希婭"]先是詐欺性誘導，然後是激將法嗎？有一套嘛。
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]詐欺性……嗯？
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="托希婭"]哼哼，但我是不會中計的。
+[name="托希婭"]就算不捲入這件事來證明自己，我也是斜屋百貨的前年度之星、“黃金平原”未來的王牌業務，怎麼可能有我賣不出去的東西……
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="托希婭"]當然不會有我賣不出去的東西！好吧，既然你都說到這個地步了，我就教你幾招吧！
+[charslot(slot="l",name="avg_npc_2202_1#4$1",focus="l")]
+[name="托希婭"]有我這個王牌業務的指點，別說賣這幾瓶酒了，賣十箱酒都不成問題！
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g3_newvolsiniialley_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",duration=0.7)]
+[charslot(slot="r",name="avg_npc_700_1#1$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="托希婭"]……解釋一下吧，為什麼一瓶都沒有賣出去？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]對不起，難得托希婭姐姐願意抽時間教我，我卻……嗚。
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="托希婭"]我休息一天倒沒什麼，反正第二名已經被我甩開了一大截，正好給下月的業績增長率留點餘地……
+[charslot(slot="l",name="avg_npc_2202_1#10$1",focus="l")]
+[name="托希婭"]重要的是，你是我教出來的學生，拿個這樣的業績真不像話！我問你，你真的有按照我教你的方法來嗎？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]我有努力背下托希婭姐姐教給我的那些話，但是……
+[charslot(slot="l",name="avg_npc_2202_1#10$1",focus="l")]
+[name="托希婭"]但是？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]比如像是“酒體飽滿，有絕妙的平衡感和生命力”之類的話，明明我根本不懂是什麼意思，怎麼能假裝懂了然後告訴別人呢？
+[name="小貝蒂"]還有說我們的酒“來自歷史最悠久的產區”……我們酒莊的酒用的都是自家葡萄園產的葡萄，這樣說不是在誤導人嗎？
+[name="小貝蒂"]爺爺說要將心比心，要以誠待人，這樣大家才會信任我們，談成的才會是讓彼此滿意的“好生意”，所以我……我……
+[charslot(slot="l",name="avg_npc_2202_1#7$1",focus="l")]
+[name="托希婭"]……唉，我就知道。
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="托希婭"]聽我說，你們那一套早就過時了。
+[name="托希婭"]你真心待人，別人不一定真心待你。輕信別人的傻瓜會被騙到傾家蕩產，老實本分的笨蛋就算拿命換錢，也只會先把自己的身體拖垮……
+[name="托希婭"]等跌入絕境的時候，你才會發現沒有一個人願意伸出援手，所謂真心，在利益得失面前一文不值。
+[name="托希婭"]不能把生存的希望寄託在別人身上，我們都必須要聰明點才不會被淘汰，明白嗎？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]我……我不知道……
+[Dialog]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="n")]
+見女孩仍然垂著頭、絞著衣角，托希婭略微放軟了語氣。
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[name="托希婭"]再說我也沒有真的叫你去騙人，只是說要稍微包裝一下而已。
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]包裝？
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[multiline(name="托希婭")]沒錯，比方說用緞帶打個漂亮的蝴蝶結，放進禮品袋……
+[PlaySound(key="$d_avg_plasticbag", volume=1)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[multiline(name="托希婭")]好！這樣才像樣一點。
+[Dialog]
+[charslot(slot="r",afrom=1,ato=0,duration=0.3)]
+[delay(time=0.5)]
+[charslot(slot = "l", posfrom="0,0", posto="200,0", duration=0.7)]
+[delay(time=1)]
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="托希婭"]——也許您已經注意到了，在新沃爾西尼的酒牆上正上演著一場天翻地覆的變化。
+[name="托希婭"]過去上面只有寥寥數種紅酒。但如今，我們能輕鬆找到來自維多利亞的黑皮諾、哥倫比亞的卡本內蘇維翁、玻利瓦爾的甜型桃紅葡萄酒……
+[name="托希婭"]這毫無疑問是一個奇蹟，但舉起酒杯時，您是否察覺到哪裡不對勁？
+[name="托希婭"]這份奇蹟自嚴格的生產標準中誕生，乘著貨櫃銷往天南海北。有適當的價格、穩定的品質，卻唯獨少了屬於自己的靈魂。
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="托希婭"]紅酒不該像速食店裡的漢堡那樣毫無個性——把那些千篇一律的工業化產品放回貨架，看看我手裡的這款至尊金牌桑嬌維塞吧！
+[name="托希婭"]敘拉古本土酒莊幾十年匠心工藝釀造！風味獨特、餘味悠長！喝一口身心愉悅，喝兩口滋補養生——
+[Dialog]
+[charslot]
+[delay(time=0.3)]
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_wadmoney", volume=1)]
+[name="風塵僕僕的男子"]我要了，這些夠不夠？
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2202_1#2$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="托希婭"]啊？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]咦？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="風塵僕僕的男子"]你們不是在賣酒嗎？我趕時間，快點給我吧。呼……我看起來怎麼樣？
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="托希婭"]呃，您看起來一切都很好……請問您有什麼急事嗎？
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="風塵僕僕的男子"]我臨時要去拜訪一戶人家，之前沒想到他們也在新沃爾西尼，倉促之下來不及準備什麼東西，幸好遇到了你們。
+[name="風塵僕僕的男子"]多謝了，兩位小妹妹。祝你們生意興隆。
+[Dialog]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="托希婭"]您稍等——走得還真快。
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="托希婭"]呃……其實我只是想舉個例子，沒想到還真的有冤大頭過來買。既然他不認識這個酒，應該是個外地人？
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="r")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]那個叔叔留下的錢都能買不知道多少瓶“維爾蒂”回去了……
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="托希婭"]這樣不是很好嘛！現在我們終於賣出去一瓶酒了，來擊個掌？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]可是……唔。
+[charslot(slot="l",name="avg_npc_2202_1#3$1",focus="l")]
+[name="托希婭"]幹嘛愁眉苦臉的？東西賣出去了就是勝利，就算這裡有什麼誤會，也是不識貨的人自己不好……
+[name="托希婭"]……
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]……
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[name="托希婭"]不過那個大叔好像很緊張的樣子，也就是說他接下來的拜訪還蠻重要的？
+[charslot(slot="l",name="avg_npc_2202_1#7$1",focus="l")]
+[name="托希婭"]小不點，我問你，在你們敘拉古如果這種時候帶了一瓶廉價的酒上門……會怎麼樣啊？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="56_g1_newvolsiniistreet_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2202_1#7$1",focus="m")]
+[name="托希婭"]——所以真的很抱歉！
+[name="托希婭"]錢我們退給您，您還是另外換份禮物吧。畢竟這不是什麼高級的酒，只是一瓶——
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="風塵僕僕的男子"]“維爾蒂”，對吧？原來你們兩個急急忙忙地追上來就是為了這個。
+[charslot(slot="m",name="avg_npc_2202_1#2$1",focus="m")]
+[name="托希婭"]您知道？
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="風塵僕僕的男子"]喝了那麼多年的酒，我怎麼會認錯呢？我就是在索倫托出生的，只是早年和家裡鬧得不愉快，一氣之下才跑去了哥倫比亞……
+[name="風塵僕僕的男子"]我也不怕你們笑我，現在我的敘拉古語都有點說得不流利了。
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[name="托希婭"]但您既然知道，為什麼還……？
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="風塵僕僕的男子"]哈哈！我要是真的買了什麼外國進口的好酒，恐怕反而會被我家那個老頭子趕出來吧。
+[charslot(slot="m",name="avg_npc_2202_1#3$1",focus="m")]
+[name="托希婭"]您要拜訪的是您的家人？
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[name="風塵僕僕的男子"]我都不知道他們搬來這裡了，剛才我在街上看見他們的時候，差點認不出來。
+[name="風塵僕僕的男子"]……當年覺得天大的事，現在想想也不過如此。這麼多年我一直沒和家裡聯絡過，也是時候了。
+[name="風塵僕僕的男子"]過去我家不富裕，佐餐配的就是“維爾蒂”的酒，老頭子怎麼喝都喝不膩……我就指望他能看在這個東西的面子上，為我打開家門了。
+[name="風塵僕僕的男子"]所以這其中沒有什麼誤會。一瓶在最好的時機出現的、包裝用心卻再平凡不過的“維爾蒂”就是我需要的，我願意為它付那個價錢。
+[name="風塵僕僕的男子"]如果你們實在過意不去，不如附贈我一句“祝你好運”？
+[charslot(slot="m",name="avg_npc_2202_1#4$1",focus="m")]
+[name="托希婭"]……當然，祝您好運！
+[Dialog]
+[charslot(slot="m",name="avg_npc_271_1#1$1",focus="m")]
+[delay(time=0.3)]
+[playsound(key="$d_gen_walk_n", volume=0.6)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_npc_2202_1#6$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[name="托希婭"]沒想到竟然有一天，我會去把自己賣出的東西追回來……你看你笑成這樣，現在開心了？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]嗯！等爺爺知道了，也一定會誇我“做了一筆好生意”的。
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[name="托希婭"]那現在，擊掌？
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]耶！
+[Dialog]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="all")]
+[delay(time=0.3)]
+[CameraShake(duration=0.3, xstrength=5, ystrength=8, vibrato=10, randomness=90, fadeout=true, block=false)]
+[playsound(key="$d_avg_clapsolo", loop=true, channel="1")]
+[StopSound(channel="1", fadetime=0.3)]
+[delay(time=1.5)]
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="托希婭"]不過別太得意了，只不過是賣出去一瓶而已。這樣的好事也不是每次都能遇到的……
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_365_1#1$1",focus="m")]
+[name="異國青年"]打擾一下，請問你是貝蒂嗎？
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]是的，請問大哥哥你是？
+[charslot(slot="m",name="avg_npc_365_1#1$1",focus="m")]
+[name="異國青年"]終於找到你了。是畢安卡小姐介紹我來的，聽說你這裡有賣敘拉古傳統的紅酒？
+[name="異國青年"]我正打算在維多利亞開一家敘拉古風情餐廳，如果味道適合的話可能會考慮多進一點貨回去。可以請你介紹一下你的酒嗎？
+[charslot(slot="m",name="avg_npc_700_1#1$1",focus="m")]
+[name="小貝蒂"]咦，也就是說……
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2202_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="l")]
+[multiline(name="托希婭")]別發呆了，大生意上門了！接下來能不能把東西推銷出去才是重頭戲！還記不記得我是怎麼教你——
+[charslot(slot="l",name="avg_npc_2202_1#9$1",focus="l")]
+[multiline(name="托希婭")]唔。
+[charslot(slot="r",name="avg_npc_700_1#1$1",focus="r")]
+[name="小貝蒂"]托希婭姐姐？
+[charslot(slot="l",name="avg_npc_2202_1#5$1",focus="l")]
+[name="托希婭"]算了，小不點，你……出師了。
+[name="托希婭"]把我教你的那套忘了吧，按照你自己的方式來就好。
+[Dialog]
+[charslot]
+托希婭目送女孩和青年走向路邊，腦中仍習慣性地羅列起利害得失的公式。
+[Dialog]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot="m",name="avg_npc_2202_1#6$1",focus="m")]
+[name="托希婭"]敘拉古風情餐廳……就算要選本地酒，比起“維爾蒂”，還是高級一點的精品酒利潤更高。不過這也看對方是怎麼想的了。
+[multiline(name="托希婭")]要是能簽下長期合約就好了。雖然就算成功了也是杯水車薪，未來這個品牌恐怕還是逃不過倒閉或者被收購的命運……
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="m")]
+[multiline(name="托希婭")]嗯？
+[charslot(slot="m",name="avg_npc_2202_1#9$1",focus="n")]
+不遠處的談話似乎暫時告一段落了。女孩向托希婭的方向蹦跳著揮著手，臉上綻放出燦爛的笑容。
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="托希婭"]看來還蠻順利的。
+[name="托希婭"]……算了，至少貝蒂現在開心就好。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_manorindoor",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$path_intro", key="$path_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+一週後 
+[Dialog]
+[charslot(slot="m",name="avg_npc_223",focus="m")]
+[name="秘書"]我和羅傑先生談過了，他贊同您的意見，只是對入局的時機還有些遲疑，也擔心這背後的風險……
+[charslot(slot="m",name="avg_npc_176",focus="m")]
+[name="沙雷"]不急，目前監正會那邊始終沒有什麼大動作，但這也不代表事情就會依照商業聯合會的計劃發展。
+[name="沙雷"]我們現在雖然背靠著商業聯合會……但也得幫自己做點準備。
+[name="沙雷"]無論是那兩個龐然大物哪一個從手心裡漏下一些肉，對我們來說都是場饕餮盛宴。
+[name="沙雷"]到時候等待著分一杯羹的不只有我們，我們只需要提前做好準備，等待最完美的那個浪頭到來……
+[Dialog]
+[charslot(slot="m",name="avg_npc_223",focus="m")]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="nw")]
+[stopsound(fadetime=2, channel="nw")]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]哦，看啊！我們的新晉王牌業務終於來了。
+[name="沙雷"]業務部向我報告說，你與不少本地經銷商都簽下了貨架陳列協議，我就想著又該幫你慶祝一下了！
+[Dialog]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="托希婭"]謝謝。確實如您所說，談的時候沒受到什麼阻力。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]昨天我就想幫你辦這場慶功宴了，只是秘書和我說你有約了？
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="托希婭"]我前幾天機緣巧合認識了一個本地的孩子，碰巧她請我去她家吃飯。難得您一番好意，實在抱歉……
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]道什麼歉？這很好啊。在新沃爾西尼我們始終是外來者，得足夠瞭解這些敘拉古人，才能把他們口袋裡的錢掏出來。
+[name="沙雷"]看來我的好外甥女有自己的秘訣。你從來都知道自己做事是為了什麼，這就是我最欣賞你的一點。
+[name="沙雷"]來，乾杯！
+[charslot(slot="r",name="avg_npc_2202_1#9$1",focus="r")]
+[name="托希婭"]……
+[name="托希婭"]舅舅，您誤會了。我去那個小不點家不是為了打探什麼，只是去幫她唱首生日快樂歌而已。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]呃，是這樣？
+[charslot(slot="l",name="avg_npc_176",focus="n")]
+裝了上等紅酒的酒杯懸在空中，餐桌對側的少女朝他笑了笑。
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="托希婭"]她家境普通，傢俱陳設用的都還是從鄉下搬來的那一套。用您的話來說，就是和我們的“新沃爾西尼，新生活”格格不入的一家人。
+[name="托希婭"]不過我倒的確從那裡得知了一個好消息，您看。
+[Dialog]
+[PlaySound(key="$d_avg_plateplace", volume=0.7)]
+[delay(time=1)]
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="n")]
+一瓶玻璃裝的汽水被托希婭掏出置於雪白的棉緞桌布上，沙雷啞然失笑。
+[charslot(slot="l",name="avg_npc_176",focus="l")]
+[name="沙雷"]你這個孩子來餐廳吃飯，怎麼還帶瓶飲料？
+[charslot(slot="r",name="avg_npc_2202_1#5$1",focus="r")]
+[name="托希婭"]這就是上次我問過的“金諾托”，是那家人告訴我城裡還有家雜貨店在賣。
+[name="托希婭"]不知道您還記不記得，我那個老爸以前常來敘拉古出差，每次回家都會帶一些零食玩具給我。
+[name="托希婭"]我最喜歡的就是這種飲料，總是撒嬌讓他多背幾瓶回來……哈哈，現在想想肯定很重吧。
+[name="托希婭"]當然了，後來的事您也知道。他丟了工作，我自然也沒有飲料喝了。
+[Dialog]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_openbeer", volume=1)]
+少女撬開瓶蓋，棕褐色的玻璃瓶中氣泡們歡快地嘶嘶作響。
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="托希婭"]我一直都想再嚐一次這個味道。現在我開始覺得這些“老舊東西”要是真的消失了，還是蠻可惜的。
+[charslot(slot="m",name="avg_npc_2202_1#1$1",focus="m")]
+[name="托希婭"]乾杯，舅舅。
+[Dialog]
+少女舉起那瓶汽水，磕碰上紅酒杯的邊緣。
+[charslot(slot="m",name="avg_npc_2202_1#5$1",focus="m")]
+[name="托希婭"]——其實，上次那瓶無酒精氣泡水不太合我的口味，希望您別介意。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]
