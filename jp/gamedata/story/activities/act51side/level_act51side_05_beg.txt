@@ -1,0 +1,537 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[charslot]
+[Background(image="72_g2_sjbstreet_n",screenadapt="coverall",xScale=1.2, yScale=1.2,x=50,y=50)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_steamburst", volume=0.8)]
+[Delay(time=0.8)]
+[PlaySound(key="$d_avg_audience_chaos",volume=0.5)]
+[Delay(time=0.8)]
+[PlaySound(key="$d_avg_male_scream", volume=0.5)]
+[Delay(time=0.3)]
+[PlaySound(key="$d_avg_tinnitus",volume=0, channel="z", loop=true)]
+[SoundVolume(volume=0.8, channel="z",fadetime=1)]
+[name="？？？"]……アンナ！　クソッ、向かい側の街灯も全部消えてやがる。どうなってんだ――
+[name="？？"]そんなことを気にしている場合ではありません。
+[name="？？"]リェータ、この松明を持って後方に回り、遅れている学生たちに、明かりを頼りに私の方へとゆっくり進むよう伝令をお願いします。また倒れている人がいたら、手を貸してあげてください。
+[name="？？？"]おう、任せろ！
+……
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[focusout(type="bg", from=0, to=1, duration=0.01, block=false)]
+[backgroundTween(yFrom =50,yTo=20,xFrom =50,xTo=20, duration=3.5,ease="OutQuad",block=false)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=false)]
+[Delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="？？"]あなたも、こんな所で何をしているのですか……早く起きて、行きますよ！
+[name="？？"]オリガ！
+[dialog]
+[StopSound(channel="z", fadetime=2)]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0)]
+[MusicVolume(volume=0.6, fadetime=2)]
+[bgeffect(name="$eb_dim_openeye",layer=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2156_1#2$1")]
+[Dialog]
+[focusout(type="bg", from=1, to=0.5, duration=2, block=false)]
+[Blocker(a=0.7, r=0, g=0, b=0, fadetime=0.8, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.8, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",focus="n")]
+[name="オリガ"]あ、アンナ……ここは……？
+[charslot(slot="m",name="avg_npc_2156_1#8$1",focus="m")]
+[name="イースチナ"]ツァレフグラード区を抜けたところです。他の皆さんも、後方からついてきています。
+[charslot(slot="m",name="avg_npc_2156_1#2$1",focus="m")]
+[name="イースチナ"]それよりも、怪我はどうです？　立てそうですか？
+[charslot(slot="m",focus="n")]
+[name="オリガ"]痛っ……ひっ、左足が……！
+[charslot(slot="m",name="avg_npc_2156_1#11$1",focus="m")]
+[name="イースチナ"]……誰か、手を貸してあげてください。
+[charslot(slot="m",focus="n")]
+[Dialog]
+イースチナは思わず唾を飲もうとしたが、乾ききった喉を通ったのは裂けるような痛みだけ。凍えるような風が吹きつける中、もはやどれだけ歩き続けてきたかもわからなかった。
+夜のサンクト・グリファーブルクは、まるで知らない街のようだ。まばらに光を漏らしたごく少数の城と高層ビルを除けば、街灯から民家……そして街そのものまでもが闇に呑み込まれている。
+しかし、その理由を考える余裕はない。イースチナは松明を高く掲げ、荒い息をつきながら周囲を見渡した。揺らめく火のもと、この異様な暗がりの中で見知った顔を探す。
+[charslot(slot="m",name="avg_npc_2156_1#11$1",focus="m")]
+[name="イースチナ"]セルゴ、こちらに。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2176_1#4$1")]
+[charslot(slot = "m", action="shake", power=1, times=10, duration=0.3)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2176_1#1$1",posfrom="0,0",posto="-50,0",afrom=1,ato=1,duration=1)]
+[Delay(time=1)]
+[name="セルゴ"]え……僕は、その――
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2156_1#2$1")]
+[charslot(slot="r",name="avg_npc_2176_1#1$1",posfrom="60,0",posto="0,0",duration=1)]
+[Delay(time=1.1)]
+[charslot(slot="l",name="avg_npc_2156_1#9$1",focus="l")]
+[name="イースチナ"]オリガに肩を貸してあげてください。言いたいことがあるなら、この不気味な場所を抜け出してから聞きますので。
+[charslot(slot="r",name="avg_npc_2176_1#1$1",focus="r")]
+[name="セルゴ"]でも……これからどこに向かうんだい？
+[charslot(slot="l",name="avg_npc_2156_1#9$1",focus="l")]
+[name="イースチナ"]……劇場です。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[focusout(type="bg", from=0.5, to=0, duration=0.01, block=false)]
+[Background(image="66_g12_deitygrypherburgmeeting",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2159_1#7$1")]
+[name="オリガ"]……そうして、あの夜は家に帰るのではなく、学生たちの列について廃劇場へと向かいました。
+[charslot(slot = "m", name = "avg_npc_2168_1#1$1")]
+[name="仲裁人"]オリガさん、一つ申し上げておきます。これまでの三名による証言は、程度の差こそあれ、いずれも本筋から逸脱しておりました。
+[name="仲裁人"]時間の浪費を避けるためにも、今後は事実関係のみに絞って証言していただきますようお願いいたします。
+[name="仲裁人"]公聴会の事前調査で、貴方は明確におっしゃいましたね。デモ活動がご自身の予想を逸脱したものになったため、他の学生たちとは決別したと。
+[name="仲裁人"]しかしその直後、アンナは貴方を拉致するよう学生に命じ、その失踪を利用してトレープレフ公爵を誘導した。こちらに相違はありませんね？
+[charslot(slot="m",name="avg_npc_2159_1#8$1")]
+[name="オリガ"]……はい。
+[charslot(slot="m",name="avg_npc_2159_1#8$1")]
+[name="オリガ"]ですので、私はアンナたちがどのように計画を立て、ソニアの暴力行為に加担していったのかを、この目で見てきました。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_crwddiscuss_inside",volume=0, channel="f", loop=true)]
+[SoundVolume(volume=0.5, channel="f",fadetime=2)]
+[name="辛辣な貴族"]ようやくまともな証人が現れたか。やはりトレープレフ家の人間だけは信用できる。
+[charslot(slot = "m", name = "avg_npc_2168_1#1$1")]
+[name="仲裁人"]結構です。
+[name="仲裁人"]では、続けてください。より具体的で、真実に基づいた仔細を――アンナはどのようにしてソニアを助け、封鎖エリアの秩序を破壊したのですか？
+[Dialog]
+[charslot]
+オリガが落ち着かない様子で頷き、証言台の縁を指でなぞっていると、どこかから慣れ親しんだ咳払いが聞こえた。どうやら、父親は自分以上に緊張しているようだ。
+[charslot(slot="m",name="avg_npc_2159_1#10$1")]
+[name="オリガ"]劇場に到着した私たちは、恐怖のあまり正常な判断力を失っていました。泣いていた学生を除き、誰もが互いを非難し合っていて……
+[stopmusic(fadetime=2)]
+[StopSound(channel="f", fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="72_g3_podium",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot = "l", name = "avg_npc_2177_1$2",focus="L")]
+[charslot(slot = "r", name = "avg_npc_2187_1#1$1",focus="L")]
+[name="「近衛軍」メンバー"]……くそっ、どうして通信機が繋がらないんだ！
+[charslot(slot = "r", focus="R")]
+[name="「討論会」メンバー"]そのガラクタ弄りをやめたまえ、「近衛軍」――いや、「偉大なる作戦」の首謀者と呼ぼうか。他に言うことはないのかい？
+[charslot(slot = "l",focus="L")]
+[name="「近衛軍」メンバー"]勝手なことを言うな、俺たちは元々――
+[charslot(slot = "r", focus="R")]
+[name="「討論会」メンバー"]刑務所を襲撃するつもりだったって？　結局、武器すら持っていないのにこんな目に遭わされたんだ。君たちの戯言を真に受けていたら、今頃は全員殺されていただろうね！
+[name="「討論会」メンバー"]そもそも、最初に暴力で解決すべきだと煽り立てたのは君たちだ。言い逃れはできないぞ！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2178_1#6$1")]
+[name="失望した学生"]問題は今回のデモそのものじゃない。国を信じようとせず、むやみに皆を煽り立て、ツァレフグラード区で陛下を罵るスローガンを叫んだ君たち自身だ。
+[name="失望した学生"]僕たちはただ陳情を伝えたかっただけなんだ。騒ぎが大きくなって陛下の耳まで届けば、調査官が派遣されて全てが解決するはずだった。
+[charslot(slot="m",name="avg_npc_2178_1#3$1")]
+[name="失望した学生"]それがこの惨状だ……もう後戻りもできやしない。
+[charslot(slot="m",name="avg_npc_2176_1#5$1")]
+[name="セルゴ"]そうだ、僕たちが悪いんじゃない！　自分たちの意見を強引に押し通した「近衛軍」が全部悪いんだ。ファッデイに責任を取らせろ！
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_2177_1$2",focus="L")]
+[charslot(slot = "r", name = "avg_npc_2187_1#1$1",focus="L")]
+[name="「近衛軍」メンバー"]それなら、どうして多数決の時に反対しなかったんだ？
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2176_1#1$1")]
+[name="セルゴ"]僕がずっと支持してたのは、ソニアと学生自治団だ。僕の知り合いなら誰でも知ってるはずだよ。でも、賛成しない人は連合大会から除籍するような空気を君たちが出してたから――
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_2177_1$2",focus="L")]
+[charslot(slot = "r", name = "avg_npc_2187_1#1$1",focus="L")]
+[name="「近衛軍」メンバー"]あの日も、今日のデモ活動でも何も言わなかったくせに、失敗した途端に出てきて被害者ぶるつもりか！
+[charslot(slot = "r", focus="R")]
+[name="「討論会」メンバー"]「近衛軍」のくせにまだ口出しするのか？　ちょうどいい、これで君たちを懲らしめる理由ができたよ！
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2156_1#7$1",focus="m")]
+[name="イースチナ"]そこまでです。今は言い争っている場合ではありません。
+[charslot(slot="m",name="avg_npc_2156_1#7$1",focus="m")]
+[name="イースチナ"]まずは拘束された人数を確認し、助け出す方法を模索しましょう。すぐに助けられなくとも、せめて彼らの状況は早急に確認しなければなりません。
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_2177_1$2",focus="r")]
+[charslot(slot = "r", name = "avg_npc_2187_1#1$1",focus="r")]
+[name="「討論会」メンバー"]方法なんてあるものか。「近衛軍」のせいでレオニードまで捕まってしまったんだ。最初から彼の言う通りにしていれば、こんなことにはならなかったのに！
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_194_leto_1#13$1")]
+[name="リェータ"]だからって、いつまでもケンカしてる場合かよ。今はとにかく動かなきゃいけねー状況だろ？
+[charslot(slot="m",name="avg_npc_2178_1#3$1")]
+[name="失望した学生"]僕たちにできるのは、大人しく家に帰って、親と先生に正直に謝って、退学にならないようお願いすることだけだよ……
+[charslot(slot = "m", name = "avg_196_sunbr_1#11$1")]
+[name="グム"]だめ、みんなを助けなきゃ！　グムはズィマーお姉ちゃんを助けに行くよ！
+[charslot(slot="m",name="avg_npc_2178_1#6$1")]
+[name="失望した学生"]ラーダ、現実を見なよ。
+[name="失望した学生"]ソニアは君を助けようとして捕まってしまった。あのソニアすら敵わなかった相手に、僕たちが勝てるわけないだろう？
+[charslot(slot = "m", name = "avg_196_sunbr_1#10$1")]
+[name="グム"]違うよ！　ズィマーお姉ちゃんは、グムだけじゃなくてみんなも助けてくれたんだから。それに、お姉ちゃんみたいに助けてくれた人は他にもいて、みんなの代わりに苦しんでるんだよ！
+[charslot(slot = "m", name = "avg_196_sunbr_1#7$1")]
+[name="グム"]だから……グムたちが諦めちゃだめ。
+[charslot(slot = "m", name = "avg_194_leto_1#1$1")]
+[name="リェータ"]グムの言う通りだ。やってみなきゃわかんねーだろ？　私たちで作戦を考えて、最後まで戦おうぜ！
+[charslot(slot="m",name="avg_npc_2178_1#1$1")]
+[name="失望した学生"]戦う？　ふん、口で言うのは簡単だが、武器はどうするんだ。アンナがいつも持ち歩いている役に立たない本か？　それとも、君の野蛮な腕力だけで戦うのかい？
+[charslot(slot = "m", name = "avg_194_leto_1#4$1")]
+[name="リェータ"]野蛮で悪いかよ？　まだ足が動いて拳でぶん殴れる限り、絶対にみんなを連れ戻すからな！
+[charslot(slot = "m", name = "avg_194_leto_1#4$1")]
+[name="リェータ"]嫌味ばっかり言いやがって。ビビリは黙って眺めてろ！
+[charslot(slot="m",name="avg_npc_2178_1#1$1")]
+[name="失望した学生"]好きにすればいいさ、どうせ僕は無関係だしね。
+[name="失望した学生"]君と同じような無鉄砲だから、ソニアも捕まる羽目になったんだ。今頃どこかに閉じ込められて、助けたことを後悔――
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "l", name = "avg_194_leto_1#4$1",afrom=1,ato=1,posfrom="-110,0",posto="30,10",duration=0.5)]
+[Delay(time=0.1)]
+[charslot(slot = "m", posfrom="0,0",posto="0,15",afrom=1,ato=1,duration=0.4)]
+[Delay(time=0.8)]
+[charslot(slot = "m",focus="n")]
+リェータは、吊るし上げんばかりの勢いで無神経な学生の胸倉を掴んだ。イースチナやグムですら、これほど激昂するリェータは滅多に見たことがなかった。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2156_1#7$1",focus="m")]
+[name="イースチナ"]落ち着いてください、ロザリン。今は争いごとをしている場合ではありません。
+[charslot(slot = "m", name = "avg_194_leto_1#9$1")]
+[name="リェータ"]チッ……
+[charslot(slot = "m", name = "avg_194_leto_1#4$1")]
+[name="リェータ"]アンナ、お前はまだこのビビリ野郎どもに耐えられるかもしれねーけど、私はもうウンザリだ。同じ空間にいるだけでヘドが出そうだぜ。
+[charslot(slot = "m", name = "avg_194_leto_1#9$1")]
+[name="リェータ"]私はこれから、何とかして冬将軍を探し出す。アンナとラーダも、こいつらに嫌気が差したら私のもとに来いよ。自治団のみんなで一緒に行こうぜ！
+[Dialog]
+[PlaySound(key="$rungeneral")]
+[charslot(slot = "m", name="avg_194_leto_1#9$1",posfrom="0,0",posto="120,0",afrom=1,ato=0,duration=0.6)]
+[Delay(time=0.8)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="66_g12_deitygrypherburgmeeting",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2159_1#8$1")]
+[name="オリガ"]……そのまま、ロザリンは去ってしまいました。アンナとラーダが入り口まで追いかけ、何度も呼び止めましたが、彼女は振り返ることすらしませんでした。
+[charslot(slot = "m", name = "avg_npc_2168_1#1$1")]
+[name="仲裁人"]これでウクシク嬢の証言とも辻褄が合いました。つまり、ロザリンが封鎖エリアに潜入したのはあくまで彼女個人の行動であり、学生連合大会の計画ではなかったということですね。
+[charslot(slot="m",name="avg_npc_2159_1#8$1")]
+[name="オリガ"]はい、彼女はソニアと同じ学生自治団に所属していますので。これは彼女たちの団結力ゆえの行動であり、学生連合大会とは一切関係ありません。
+[charslot(slot = "m", name = "avg_npc_2168_1#1$1")]
+[name="仲裁人"]どうやら「カトルガ事件」の責任を問うべき者の範囲が絞れてきたようです。では続いて、貴方が拉致された経緯についてお話してください。
+[charslot(slot="m",name="avg_npc_2159_1#7$1")]
+[name="オリガ"]……あの時、私は多くの方から問われました。これからどうすればいいのかと。
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="72_g3_podium",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$drift_intro", key="$drift_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_2159_1#10$2",posfrom="-50,0",posto="-50,0")]
+[charslot(slot="r",name="avg_npc_2183_1#7$1",posfrom="50,0",posto="50,0")]
+[Delay(time=0.8)]
+[charslot(slot="r",focus="r")]
+[name="怯えた学生"]……オリガ、大会を先導して、デモを決定したのはあなたよね。
+[Dialog]
+[charslot(slot="l",name="avg_npc_2159_1#10$2",afrom=1,ato=1,posfrom="-50,0",posto="-65,0",duration=0.8)]
+[Delay(time=0.8)]
+[charslot(slot="l",name="avg_npc_2159_1#10$2",focus="l")]
+[name="オリガ"]わ、私はそんなこと……
+[Dialog]
+[charslot(slot="r",name="avg_npc_2183_1#7$1",afrom=1,ato=1,posfrom="50,0",posto="20,0",duration=0.8)]
+[Delay(time=0.8)]
+[charslot(slot="r",focus="r")]
+[name="怯えた学生"]いつも言ってたじゃない。ペトラチェフスキーグループの時みたいに、あなたのお父様が全部解決してくれるって。
+[name="怯えた学生"]私たちはどうすればいいの……？
+[Dialog]
+[charslot(slot="l",name="avg_npc_2159_1#9$2",focus="l")]
+[name="オリガ"]私……家に帰って、お父様に聞いてみるわ。なんとかしてみんなの状況を確認する。
+[charslot(slot="r",focus="r")]
+[name="怯えた学生"]つまり、なんとかなるってこと？　家に帰って一晩寝たら、起きた時には全部がいい方向に向かっているのね？
+[charslot(slot="l",name="avg_npc_2159_1#10$2",focus="l")]
+[name="オリガ"]……
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_2187_1#1$1")]
+[name="「討論会」メンバー"]オリガ、君が帰って父親に相談するなら、僕たちも家に帰るべきなんじゃないか？
+[name="「討論会」メンバー"]皆にとっても辛い一日だったし、早めに解散した方がいいだろう。
+[charslot(slot="m",name="avg_npc_2159_1#10$2")]
+[name="オリガ"]そうね……今日はここで解散にしましょう。ひとまず家に帰って、みんなしっかり休んだ方がいいわ。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_studentsexhausted_fts_loop",volume=0, channel="foot", loop=true)]
+[SoundVolume(volume=0.3, channel="foot",fadetime=2)]
+「家に帰って」――その言葉は恩赦のようでもあり、皮肉な呪文のようでもあった。
+学生たちは顔を見合わせた。初めは躊躇いが浮かんでいた彼らの表情も、やがて逃亡した兵士のような安堵の表情に変わっていく。張り詰めていた空気がほどけ、まばらな足音がホールに響き始めた。
+[Dialog]
+[charslot(slot="m",name="avg_npc_2159_1#10$2")]
+[Delay(time=0.8)]
+[charslot(slot="m",focus="n")]
+オリガは孤独に舞台の上に立ちすくみ、逃げるように離れていく背中をただ見つめていた。
+「もう明日はないのに」――どこからか聞こえてきた冷ややかな声に、彼女は真っ青な唇を噛み締めた。
+[StopSound(channel="foot", fadetime=2)]
+[name="？？？"]どこへ行くのですか？
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1", duration=1.5, block=true)]
+[Delay(time=2)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2178_1#1$1")]
+[name="失望した学生"]アンナ、オリガの指示が聞こえなかったのか？　君たちも帰ろう。
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="イースチナ"]捕まった学生たちをどう探し出すのか、まだ大会の結論が出ていないでしょう。それに、ここには怪我をして歩けない人もたくさんいます。
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="イースチナ"]それを解決しないまま解散するなんて、ありえません。
+[Dialog]
+[charslot]
+[charslot(slot = "r",name = "avg_196_sunbr_1#1$1")]
+[charslot(slot = "l",name = "avg_npc_2181_1#1$1")]
+[charslot(slot = "l", posfrom = "-20,0", posto = "40,0",afrom=1,ato=1,duration=1)]
+[Delay(time=0.5)]
+[charslot(slot = "r", posfrom = "10,0", posto = "-20,0",afrom=1,ato=1,duration=0.4)]
+[Delay(time=0.5)]
+[charslot(slot = "l",focus="n")]
+出口に向かって一歩踏み出した学生の前で、グムは両手を広げて立ちはだかった。
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2176_1#6$1")]
+[name="セルゴ"]ラーダ？
+[charslot(slot = "m", name = "avg_196_sunbr_1#11$1")]
+[name="グム"]みんな、待って！　まだ話したいことがあるの！
+[charslot(slot = "m", name = "avg_196_sunbr_1#11$1")]
+[name="グム"]さっき話し合った時も、自治団が正しかったって言ってくれた人はいっぱいいたよね。それなのに、どうして今はグムたちの話を聞いてくれないの？
+[charslot(slot = "m", name = "avg_npc_2187_1#1$1")]
+[name="「討論会」メンバー"]君たちだけじゃなく、最初はほとんど全員が暴力に反対していたんだ。なのに、ファッデイが強引に押し通そうとするから、オリガが妥協案を出したんだろう。
+[name="「討論会」メンバー"]だから、この件はオリガのツテに頼って解決してもらえばいい。少なくとも僕たちの責任じゃないからね。大会の全員で「近衛軍」の無謀な行動のツケを払わされるなんて、絶対にごめんだ！
+[name="「討論会」メンバー"]皆も時間を浪費するのはやめて、さっさと――
+[charslot(slot = "m", name = "avg_npc_2156_1#7$1")]
+[name="イースチナ"]いい加減にしなさい！
+[charslot(slot = "m", name = "avg_npc_2156_1#2$1")]
+[name="イースチナ"]グム……ハチミツ飴を一つもらえますか？
+[stopmusic(fadetime=2)]
+[charslot(slot = "m", name = "avg_196_sunbr_1#2$1")]
+[name="グム"]えっ、イースチナお姉ちゃん……？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot = "l", name = "avg_npc_2187_1#1$1",posfrom="50,0",posto="50,0")]
+[charslot(slot = "r", name = "avg_npc_2156_1#2$1",posfrom="-70,0",posto="-70,0")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "l", action="shake", power=3, times=30, duration=0.3)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r", name = "avg_npc_2156_1#2$1",posfrom="-70,0",posto="-300,0",afrom=1,ato=0,duration=1.8)]
+[Delay(time=2)]
+[charslot]
+イースチナは学生たちを押し退け、人波に分け入って劇場の奥へと突き進んでいく。普段は大人しく理知的な彼女が、周囲の学生たちを睨みつけながら。
+[playMusic(intro="$dignified_intro",key="$dignified_loop", volume=0.6)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_2156_1#2$1",duration=1.5)]
+[Delay(time=1.5)]
+[name="イースチナ"]あなたたち一人ひとりが自ら手を挙げて賛成票を投じ、旗を振り、スローガンを叫んだのです。誰かに強要されたわけでもなく。
+[charslot(slot = "m", name = "avg_npc_2156_1#2$1")]
+[name="イースチナ"]誰が最も大きく声を張り上げていたか。誰が最もラニアを案じていたか。誰が最も言葉巧みに貴族を罵倒したか。誰が最も進むべき道を示していたか。意気揚々と張り合っていたではありませんか。
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="イースチナ"]結果はどうですか？　騒ぎを起こして仲間が窮地に陥っているにもかかわらず、平然と逃げ出す。そして自分たちの罵倒した貴族が、全て水に流してくれるはずだと祈るだけ。
+[charslot(slot = "m", name = "avg_npc_2156_1#7$1")]
+[name="イースチナ"]あなたたちの言う「偉業」とは、そのような茶番だったのですか？
+[charslot(slot = "m", name = "avg_npc_2187_1#1$1")]
+[name="「討論会」メンバー"]アンナ、それは誤解だ。僕たち「討論会」は真剣に向き合っていたじゃないか。だからこそ、僕たちは理論をあれだけ研究して――
+[charslot(slot = "m", name = "avg_npc_2156_1#7$1")]
+[name="イースチナ"]その研究の成果とやらが、順調な時だけ「偉業」に取り組んでいると自己暗示し、失敗し始めれば無関係だと切り捨てることなのですか？
+[charslot(slot = "m", name = "avg_npc_2156_1#7$1")]
+[name="イースチナ"]普段は「新しいウルサス人」などと喚いておきながら、少しでも危険になると安全な場所ですくみ上がる……気骨のあるウルサス人なら、あなたたちと行動を共にしようとは思わないでしょう。
+[charslot(slot = "m", name = "avg_npc_2187_1#1$1")]
+[name="「討論会」メンバー"]……
+[charslot(slot = "m", name = "avg_npc_2177_1#1$2")]
+[name="「近衛軍」メンバー"]アンナの言う通りだ、いつも団結すべき時に反対意見を唱えやがって。所詮は腰抜けの――
+[charslot(slot = "m", name = "avg_npc_2156_1#11$1")]
+[name="イースチナ"]では「近衛軍」は？　どうしたら、いつも樽一本分のハチミツ酒を飲み干した後のような発言ができるのですか？
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="イースチナ"]古い武器をいくつか買い取り、引っ張り出したブレスクの地図に軍旗や突破線、防衛線などを書き込んだだけで、ウルサス憲兵と渡り合える気になるなんて……
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="イースチナ"]そうして一分で決断を下した結果、一時間足らずで連行されたのです。その落書きだらけの民間地図を探偵小説に置き換えた方が、よほど連合大会の議論に深みが増していたでしょう！
+[charslot(slot = "m", name = "avg_npc_2177_1#1$2")]
+[name="「近衛軍」メンバー"]……
+[charslot(slot="m",name="avg_npc_2178_1#1$1")]
+[name="失望した学生"]でも家に帰るのは、ここにいる皆の総意で――
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="イースチナ"]あなたもです！　先ほどは「ただ陳情を伝えたかっただけ」などとよく言えましたね。
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="イースチナ"]貴族が平和な議論に興じてくれるとでも思っていたのでしょう。しかし私たちのような学生は、声を張り上げるほど、彼らが陛下に献上するための「反乱分子」と見られていくのです。
+[charslot(slot = "m", name = "avg_npc_2156_1#7$1")]
+[name="イースチナ"]仲間が捕まった後で白旗を上げようと言い出し、周囲に冷ややかな態度を取る。あなたには、恥という概念がないのですか？
+[charslot(slot="m",name="avg_npc_2178_1#1$1")]
+[name="失望した学生"]……
+[charslot(slot="m",name="avg_npc_2176_1#1$1")]
+[name="セルゴ"]……
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="イースチナ"]それにあなたも！
+[charslot(slot="m",name="avg_npc_2176_1#1$1")]
+[name="セルゴ"]えっ？　僕は何も言ってないけど。ずっと自治団を支持してきたのも本当だし――
+[charslot(slot = "m", name = "avg_npc_2156_1#2$1")]
+[name="イースチナ"]……手を貸してください。劇場にまだ使える照明がいくつあるか、確認してきてもらえますか？
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_spotlight")]
+スポットライトが空中に漂う埃を突き抜け、舞台に光を落とす。学生たちは目を細め、光の輪の縁へと向かっていく小柄な影を呆然と見つめていた。
+この瞬間、ばらばらだった視線が初めて一箇所に集まり、イースチナの姿に釘付けになる。
+[Dialog]
+[charslot(slot="l",name="avg_npc_2159_1#8$2")]
+[charslot(slot = "r", name = "avg_npc_2156_1#2$1",posfrom="80,0",posto="0,0",duration=1)]
+[Delay(time=1)]
+[charslot(slot = "r",focus="r")]
+[name="イースチナ"]……オリガ？
+[charslot(slot="l",name="avg_npc_2159_1#10$2",focus="l")]
+[name="オリガ"]お願い、みんなの力になって。私ではもう――
+[charslot(slot = "r", name = "avg_npc_2156_1#2$1",focus="r")]
+[name="イースチナ"]……
+[stopmusic(fadetime=2)]
+[Dialog]
+[charslot(slot = "r", name = "avg_npc_2156_1#2$1",posfrom="0,0",posto="-80,0",afrom=1,ato=0,duration=1)]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_openftstpwalk")]
+[delay(time=4)]
+[charslot]
+[Background]
+[bgeffect(name="$eb_072cg_solarhalo",layer=1)]
+[Image(image="72_i07", xScale=1.05, yScale=1.05, x=-80, y=-100)]
+[ImageTween(xFrom=-40, xTo=40, duration=50,ease="6", block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=false)]
+[Delay(time=1.2)]
+[playMusic(key="$aboutfuture_loop", volume=0)]
+[MusicVolume(volume=0.6, fadetime=2)]
+[name="イースチナ"]この場にいる、良識を持った皆さん――
+[name="イースチナ"]私たちは帰ってきました。疲れきって、途方に暮れながらも、なんとか安全と言えるこの小さな劇場まで辿り着き、ようやく光と温もりを感じることができました。
+[name="イースチナ"]しかし、私たちと昼夜を分かち合ってきた優秀な仲間たちは、今も暗闇と寒さに耐え忍んでいます。
+[name="イースチナ"]失敗した、もう終わりだ――そう言う人もいるでしょう。ですが、一つ聞かせてください。「失敗」とは何なのですか？
+[name="イースチナ"]何も起こらなかったような顔をして、他人に代償を押しつけ、荷物をまとめて希望のない生活を受け入れる――皆さんは、これを「勝利」と呼ぶのですか？
+[name="イースチナ"]本当の失敗とは、打ち負かされることではありません。理不尽に抗う力を持ちながら、心に宿る火を鎮め、ひれ伏し方が足りないという非難に怯えながら頭を下げることです。
+[name="イースチナ"]本当の失敗とは、檻に閉じ込められることではありません。より公平で、より自由な大地を思い描く勇気すら、奪われてしまうことです。
+[name="イースチナ"]掌を見つめ、高く掲げた時の胸の高鳴りを思い出してください。あなたたちは知ったはずです。その手は権力者に拍手を送り、媚びへつらうためではなく、高い壁を押し倒すためにあるのだと。
+[Dialog]
+[playsound(key="$d_avg_crowdtalk_fear", loop=true, channel="a",volume=0)]
+[SoundVolume(volume=1, channel="a",fadetime=2)] 
+[bgeffect]
+[Image(image="72_i07", xScale=0.95, yScale=0.95, x=-50, y=-50,fadetime=2,block=false)]
+[ImageTween(xScaleFrom=0.95, yScaleFrom=0.95, xScaleTo=0.8, yScaleTo=0.8,xTo=0,yTo=0, duration=25,block=false)]
+[Delay(time=2)]
+[name="舞台下の学生A"]アンナ……あなたの言っていること、頭ではわかっているの。でも……みんな連れて行かれて、どこにいるかもわからない。そんな状態で――
+[name="舞台下の学生B"]スローガンを叫ぶだけじゃ無意味だ。皆の居場所を突き止める方法があるのか？
+[name="舞台下の学生C"]僕のルームメイトも捕まったんだ！　今は生きてるかどうかもわからなくて……
+[name="イースチナ"]……ええ、皆さんが連れて行かれた場所はわかりません。ですが、誰が連れ去ったかはわかっています。
+[name="イースチナ"]ではここで一つ、皆さんにお聞きします――あなたたちが強く望んでいることは何ですか？　私の顔色を窺うのではなく、自分自身のために答えてください。
+[StopSound(channel="a", fadetime=2)]
+短い沈黙が流れた。ある者は俯いて自分の手を見つめ、ある者は他人と視線を交わす。
+[name="グム"]いじめられたらやり返せって、ズィマーお姉ちゃんが言ってたよ。だから……グムは最後まで戦う！
+[name="舞台下の学生D"]僕は……せめて皆が無事かどうかだけでも知りたい。それに、僕たちが諦めてないことを伝えたい！
+[name="舞台下の学生E"]もう後ろに隠れているのは嫌！　俯くたびに、みんなにも……自分にも申し訳なくなるんだもの。
+[name="舞台下の学生たち"]そうだ、皆で戦おう！　全員を助け出すんだ！
+[name="イースチナ"]ならば、答えは一つ――戦いましょう！　戦って、鎖を打ち砕きましょう！　降伏は、鎖を脱する力そのものを永遠に失うのみ！
+[name="イースチナ"]ウルサスに知らしめるのです。私たちは仲間のため、友人のため、家族のため――そして、自分自身のために戦うのだと！
+[Dialog]
+[playsound(key="$d_avg_cheer_street",volume=0.5)]
+[Delay(time=2)]
+[name="舞台下の学生たち"]やってやろう！　アンナ、皆を導いてくれ！
+[name="イースチナ"]それでは、まず点呼を取り、誰がいないかを確認します。皆さんはしばらくここに留まってください。
+[name="イースチナ"]確認の際に負傷者を見つけたら、ラーダから手当てを受けるよう伝えてください。また臨床経験がある人は、ラーダの補助をお願いします。
+[name="イースチナ"]そして、これだけは胸に刻んでください。これより私たちは険しい道を歩むことになります。だからこそ、自分の責任をしっかりと自覚しなければならないと。
+[name="イースチナ"]よろしいですね？　では――
+[name="イースチナ"]行動開始です！
+[Dialog]
+[playsound(key="$d_avg_cheer_street")]
+[Delay(time=2)]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1.5)]
+[charslot]
+[image]
+[Background(image="72_g3_podium",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[charslot(slot = "r", name = "avg_npc_2178_1#1$1",focus="r")]
+[charslot(slot = "l", name = "avg_npc_2156_1#2$1",focus="r")]
+[name="失望した学生"]アンナ……書き終えたよ。
+[charslot(slot = "l", name = "avg_npc_2156_1#2$1",focus="l")]
+[name="イースチナ"]あなたの気持ちはわかりました。もう帰って構いませんよ。
+[charslot(slot = "r", name = "avg_npc_2178_1#1$1",focus="r")]
+[name="失望した学生"]……
+[name="失望した学生"]僕は君のようにはなれない。単位のために学生団体に入って、真剣になった時もあるかもしれないけど……僕が求めてるのは、平穏な生活なんだ。
+[charslot(slot = "l", name = "avg_npc_2156_1#1$1",focus="l")]
+[name="イースチナ"]自分の選択について、弁明する必要はありません。あなたが一日でも早く大学に戻り、望むような日々を送れることを願っています。
+[charslot(slot = "l", name = "avg_npc_2156_1#1$1",focus="l")]
+[name="イースチナ"]もしあなたの大切な人も捕まっているなら、彼らの無事と、私たちの作戦の成功を祈ってください。
+[charslot(slot = "r", name = "avg_npc_2178_1#1$1",focus="r")]
+[name="失望した学生"]……ごめん、アンナ。それとラーダにも。自治団やソニアを一方的に責めるべきじゃなかった。
+[name="失望した学生"]もし機会があれば……いや、君たちがロザリンに会ったら、僕からの謝罪を伝えてくれ。
+[charslot(slot = "l", name = "avg_npc_2156_1#8$1",focus="l")]
+[name="イースチナ"]……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_2159_1#10$2", duration=1.5, block=true)]
+[Delay(time=2)]
+[name="オリガ"]アンナ……ちょっといいかしら？
+[charslot(slot = "m", name = "avg_npc_2156_1#6$1")]
+[name="イースチナ"]オリガ、あなたはラーダのもとで手当てを受けてください。それとも、あなたも大会を――
+[charslot(slot = "m", name = "avg_npc_2159_1#9$2")]
+[name="オリガ"]そんなつもりはないわ……ただ、あなたが一体どんな作戦を立てたか聞いておきたくて。
+[charslot(slot = "m", name = "avg_npc_2156_1#8$1")]
+[name="イースチナ"]実のところ、絶対に成功するという確証はありませんが。
+[charslot(slot = "m", name = "avg_npc_2156_1#8$1")]
+[name="イースチナ"]私たちが取れる手立ては、学生それぞれの大学や家柄に紐づくものが多く、大きな個人差があります。
+[charslot(slot = "m", name = "avg_npc_2156_1#11$1")]
+[name="イースチナ"]しかし裏を返せば、社会のあらゆる階層から情報を手に入れるルートを持っているとも言えます。
+[charslot(slot = "m", name = "avg_npc_2159_1#9$2")]
+[name="オリガ"]あなたは……みんなの家族を利用するつもりなの？
+[charslot(slot = "m", name = "avg_npc_2159_1#8$2")]
+[name="オリガ"]アンナ、もし貴族から情報を盗み出そうとしているのなら、それがどんな結果を招くのか、よく考えておいた方がいいと思うわ。
+[charslot(slot = "m", name = "avg_npc_2156_1#13$1")]
+[name="イースチナ"]……皆さんが情報を書き終えるまでは、結論を出すつもりはありません。
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="イースチナ"]ですが、ウルサスを呑み込んでいる波は、もはや避けられないところまで来ています。
+[charslot(slot = "m", name = "avg_npc_2156_1#8$1")]
+[name="イースチナ"]もちろん私たちは、家に帰り、何も選択せず、汚名や罪を背負うことなく過ごすこともできます。
+[charslot(slot = "m", name = "avg_npc_2156_1#8$1")]
+[name="イースチナ"]ですが、私たちにはもう一つの道があります――この波の中で、互いの手を強く握り締めることです。
+[charslot(slot = "m", name = "avg_npc_2156_1#2$1")]
+[name="イースチナ"]大切な人を守るためなら、私は全てを捧げます。
+[charslot(slot = "m", name = "avg_npc_2156_1#2$1")]
+[name="イースチナ"]望むのであれば、この道はあなたの道にもなるでしょう……オリガ議長。
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

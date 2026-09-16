@@ -1,0 +1,14 @@
+[header(is_skippable=false, is_tutorial=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[inputblocker(blockInput=true, black=0.3)]
+[popupdialog(dialogHead="$avatar_leto")]이런, 나 들킨 것 같아!
+[InputBlocker(blockInput=false, black=0)] 
+[Tutorial(protectTime=0.5,waitForSignal="put_down", dialogHead="$avatar_headb2", animStyle="Drag", \
+           startCardIndex=0, startRightStart=true, endTileX=4, endTileY=4)] \
+빨리 <@tu.kw>위장 도구</>를 써서 몸을 숨겨!
+[inputblocker(blockInput=true, black=0.3)]
+[popupdialog(dialogHead="$avatar_leto")]이게 그 리프로바 '친구'한테서 빌려왔다던 물건이야? 무슨 작용이 있는데?
+[popupdialog(dialogHead="$avatar_headb2")]이걸 쓰면 일정 시간 동안 적에게 발견되지 않지만, 대신 적을 <@tu.kw>저지할 수 없는 상태</> 가 돼. 게다가 잠복 중에는 자동 스킬이 발동되지 않아. 하지만 수동으로 발동하면 바로 <@tu.kw>잠복 상태가 해제</>될 거야.
+[popupdialog(dialogHead="$avatar_headb2", protectTime=0.5)]걱정 마, 남은 놈들은 내가 처리할 테니까!
+[battle.pause(pause=false)]
