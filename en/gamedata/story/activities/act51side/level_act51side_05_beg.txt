@@ -1,0 +1,537 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[stopmusic]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[charslot]
+[Background(image="72_g2_sjbstreet_n",screenadapt="coverall",xScale=1.2, yScale=1.2,x=50,y=50)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_steamburst", volume=0.8)]
+[Delay(time=0.8)]
+[PlaySound(key="$d_avg_audience_chaos",volume=0.5)]
+[Delay(time=0.8)]
+[PlaySound(key="$d_avg_male_scream", volume=0.5)]
+[Delay(time=0.3)]
+[PlaySound(key="$d_avg_tinnitus",volume=0, channel="z", loop=true)]
+[SoundVolume(volume=0.8, channel="z",fadetime=1)]
+[name="???"]...Anna! The street lamps ahead are out! <i>Chyort</i>... why is this happening?
+[name="??"]Don't worry about that for now.
+[name="??"]Take this torch, Leto, and call out to the students who have fallen behind. Have them follow the light towards me, slowly, and watch out for anyone who might've collapsed.
+[name="???"]Gotcha.
+......
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[focusout(type="bg", from=0, to=1, duration=0.01, block=false)]
+[backgroundTween(yFrom =50,yTo=20,xFrom =50,xTo=20, duration=3.5,ease="OutQuad",block=false)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=false)]
+[Delay(time=1)]
+[Blocker(a=0.5, r=0, g=0, b=0, fadetime=1, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[name="??"]What are you doing here... get up! We need to go!
+[name="??"]Olga!
+[dialog]
+[StopSound(channel="z", fadetime=2)]
+[playMusic(intro="$newhope01_intro",key="$newhope01_loop", volume=0)]
+[MusicVolume(volume=0.6, fadetime=2)]
+[bgeffect(name="$eb_dim_openeye",layer=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2156_1#2$1")]
+[Dialog]
+[focusout(type="bg", from=1, to=0.5, duration=2, block=false)]
+[Blocker(a=0.7, r=0, g=0, b=0, fadetime=0.8, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.8, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="m",focus="n")]
+[name="Olga"]A-Anna... where are we?
+[charslot(slot="m",name="avg_npc_2156_1#8$1",focus="m")]
+[name="Istina"]Out of Tsarevgrad, on the streets. The rest of them are behind us.
+[charslot(slot="m",name="avg_npc_2156_1#2$1",focus="m")]
+[name="Istina"]Enough talk, are you hurt? Can you stand?
+[charslot(slot="m",focus="n")]
+[name="Olga"]M-My left foot!
+[charslot(slot="m",name="avg_npc_2156_1#11$1",focus="m")]
+[name="Istina"]...I need a hand! Anyone?
+[charslot(slot="m",focus="n")]
+[Dialog]
+Istina tries to swallow, but she feels only piercing pain in her parched throat. She does not know how long she has walked in the cold wind.
+For the first time, Grypherburg's dark night seems so unfamiliar. Aside from a few lights on isolated castles and towers, everything else is swallowed by darkness, from street lamps to houses...
+But now is not the time to ponder the reason. She raises the torch and looks left and right with ragged breath, attempting to recognize familiar faces in this abnormal darkness.
+[charslot(slot="m",name="avg_npc_2156_1#11$1",focus="m")]
+[name="Istina"]Over here, Sergo.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2176_1#4$1")]
+[charslot(slot = "m", action="shake", power=1, times=10, duration=0.3)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2176_1#1$1",posfrom="0,0",posto="-50,0",afrom=1,ato=1,duration=1)]
+[Delay(time=1)]
+[name="Sergo"]I... I, she—
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2156_1#2$1")]
+[charslot(slot="r",name="avg_npc_2176_1#1$1",posfrom="60,0",posto="0,0",duration=1)]
+[Delay(time=1.1)]
+[charslot(slot="l",name="avg_npc_2156_1#9$1",focus="l")]
+[name="Istina"]Grab Olga's arm for me. We'll talk after we get out of here.
+[charslot(slot="r",name="avg_npc_2176_1#1$1",focus="r")]
+[name="Sergo"]Then... where are we going?
+[charslot(slot="l",name="avg_npc_2156_1#9$1",focus="l")]
+[name="Istina"]The theater.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[focusout(type="bg", from=0.5, to=0, duration=0.01, block=false)]
+[Background(image="66_g12_deitygrypherburgmeeting",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2159_1#7$1")]
+[name="Olga"]...Therefore, I didn't go home that night, but instead went to an abandoned theater with the rest of the students.
+[charslot(slot = "m", name = "avg_npc_2168_1#1$1")]
+[name="Arbiter"]Baryshnya Olga Trepleva, as the three previous witnesses all strayed from the subject one way or another—
+[name="Arbiter"]I need your statement to be strictly based on facts, so that we might avoid wasting our time.
+[name="Arbiter"]During the committee's preliminary investigation, you clearly stated that you chose to part ways with them as their actions went beyond the pale.
+[name="Arbiter"]However, Anna Morozova and the students kidnapped you, and used your disappearance to deceive Duke Treplev. Is that correct?
+[charslot(slot="m",name="avg_npc_2159_1#8$1")]
+[name="Olga"]...Yes.
+[charslot(slot="m",name="avg_npc_2159_1#8$1")]
+[name="Olga"]And so, I witnessed Anna Morozova's group planning, and how they participated in Sonya Mikhailivna's violent actions.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_crwddiscuss_inside",volume=0, channel="f", loop=true)]
+[SoundVolume(volume=0.5, channel="f",fadetime=2)]
+[name="Scathing Noble"]Finally, a sensible witness. I knew we could count on the House of Treplev.
+[charslot(slot = "m", name = "avg_npc_2168_1#1$1")]
+[name="Arbiter"]Very good.
+[name="Arbiter"]Please continue. The committee needs to hear more truthful details—how did Anna Morozova help Sonya Mikhailivna sabotage the order of the quarantine zone?
+[Dialog]
+[charslot]
+Olga nods nervously, rubbing her palms on the edge of the witness stand. She hears a familiar cough—her father is, apparently, even more nervous.
+[charslot(slot="m",name="avg_npc_2159_1#10$1")]
+[name="Olga"]Those of us in the theater were terribly frightened. We had lost our reason, and everyone was either crying, or accusing one another...
+[stopmusic(fadetime=2)]
+[StopSound(channel="f", fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="72_g3_podium",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot = "l", name = "avg_npc_2177_1$2",focus="L")]
+[charslot(slot = "r", name = "avg_npc_2187_1#1$1",focus="L")]
+[name="Vanguards Member"]...Damn, what happened to the communications gear? I'm not getting anything.
+[charslot(slot = "r", focus="R")]
+[name="Symposium Member"]Quit fiddling with that trash, Vanguards. What do you have to say for yourself, instigator of 'great action'?
+[charslot(slot = "l",focus="L")]
+[name="Vanguards Member"]Nonsense! We were going to—
+[charslot(slot = "r", focus="R")]
+[name="Symposium Member"]Raid the prison? See what they did to us, even though we were unarmed. We would all be dead, if we believed your crap!
+[name="Symposium Member"]You were the ones who were calling for violence first! Don't try to hide!
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2178_1#6$1")]
+[name="Disappointed Student"]The problem isn't with this action. It's with your lack of faith in the nation, blindly expanding conflict and slandering His Imperial Majesty in Tsarevgrad.
+[name="Disappointed Student"]We were going there to petition. His Imperial Majesty would have appointed an inspector if word reached him.
+[charslot(slot="m",name="avg_npc_2178_1#3$1")]
+[name="Disappointed Student"]Now, there's no way back...
+[charslot(slot="m",name="avg_npc_2176_1#5$1")]
+[name="Sergo"]This has nothing to do with us! It's the Vanguards who forced it through! Faddey must be held responsible!
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_2177_1$2",focus="L")]
+[charslot(slot = "r", name = "avg_npc_2187_1#1$1",focus="L")]
+[name="Vanguards Member"]I didn't see you vote against it.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2176_1#1$1")]
+[name="Sergo"]Everyone knows I've always been a supporter of Sonya and the Self-Government Group. It was because you people were threatening to expel and punish anyone who didn't cooperate—
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_2177_1$2",focus="L")]
+[charslot(slot = "r", name = "avg_npc_2187_1#1$1",focus="L")]
+[name="Vanguards Member"]You didn't say anything at the meeting, didn't say anything today at the scene, and <i>now</i> you want to act superior after things went wrong?
+[charslot(slot = "r", focus="R")]
+[name="Symposium Member"]You're one to talk, Vanguard! I was looking for an excuse to teach you a lesson!
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2156_1#7$1",focus="m")]
+[name="Istina"]Stop. Now is not the time to argue.
+[charslot(slot="m",name="avg_npc_2156_1#7$1",focus="m")]
+[name="Istina"]We need to figure out how many were arrested, then discuss how to rescue them. At the very least, we need to learn what happened to them.
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_2177_1$2",focus="r")]
+[charslot(slot = "r", name = "avg_npc_2187_1#1$1",focus="r")]
+[name="Symposium Member"]What are our options? These Vanguards got Leonid arrested. None of this would have happened if we'd listened to him!
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_194_leto_1#13$1")]
+[name="Leto"]So you want to keep yelling? We have to do something!
+[charslot(slot="m",name="avg_npc_2178_1#3$1")]
+[name="Disappointed Student"]We must go home, apologize to our parents and teachers, and hope that we're not expelled...
+[charslot(slot = "m", name = "avg_196_sunbr_1#11$1")]
+[name="Gummy"]No, I'm gonna help them! We need to help Sonya!
+[charslot(slot="m",name="avg_npc_2178_1#6$1")]
+[name="Disappointed Student"]Quit dreaming, Lada.
+[name="Disappointed Student"]I know, Sonya saved you, but how are we supposed to save Sonya when not even she could get herself out of there?
+[charslot(slot = "m", name = "avg_196_sunbr_1#10$1")]
+[name="Gummy"]She didn't just help me, she helped everyone! People like her were standing in front of us, and now they're hurting for our sakes!
+[charslot(slot = "m", name = "avg_196_sunbr_1#7$1")]
+[name="Gummy"]I... we can't give up.
+[charslot(slot = "m", name = "avg_194_leto_1#1$1")]
+[name="Leto"]That's right. How do we know it wouldn't work? We'll find a way, we'll keep fighting!
+[charslot(slot="m",name="avg_npc_2178_1#1$1")]
+[name="Disappointed Student"]Fight? Easy for you to say. What are you going to fight with? Those books Anna carries with her, and your spirit?
+[charslot(slot = "m", name = "avg_194_leto_1#4$1")]
+[name="Leto"]Yeah, what about my spirit? I'll bring Sonya and the others back, as long as I can still move my arms and legs!
+[charslot(slot = "m", name = "avg_194_leto_1#4$1")]
+[name="Leto"]You don't have the guts, you can shut up and watch from the sidelines, but stuff your jokes up your ass!
+[charslot(slot="m",name="avg_npc_2178_1#1$1")]
+[name="Disappointed Student"]Those that want to go can go. It's none of my business.
+[name="Disappointed Student"]Sonya was reckless, just like you, which is why she got herself arrested. She's probably locked up somewhere, regretting that she ever tried to—
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "l", name = "avg_194_leto_1#4$1",afrom=1,ato=1,posfrom="-110,0",posto="30,10",duration=0.5)]
+[Delay(time=0.1)]
+[charslot(slot = "m", posfrom="0,0",posto="0,15",afrom=1,ato=1,duration=0.4)]
+[Delay(time=0.8)]
+[charslot(slot = "m",focus="n")]
+Leto grabs the big-mouthed student by the collar and almost lifts him into the air with one hand. Even Istina and Gummy have rarely seen her so angry.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2156_1#7$1",focus="m")]
+[name="Istina"]Calm down, Rosalind. We don't need a fight.
+[charslot(slot = "m", name = "avg_194_leto_1#9$1")]
+[name="Leto"]......
+[charslot(slot = "m", name = "avg_194_leto_1#4$1")]
+[name="Leto"]Maybe YOU can tolerate these cowards, Anna, but I've had enough. Even the air here makes me want to puke.
+[charslot(slot = "m", name = "avg_194_leto_1#9$1")]
+[name="Leto"]I'm gonna find General Zima. Come find me when you and Lada have had enough of this trash, and the SSG will go together!
+[Dialog]
+[PlaySound(key="$rungeneral")]
+[charslot(slot = "m", name="avg_194_leto_1#9$1",posfrom="0,0",posto="120,0",afrom=1,ato=0,duration=0.6)]
+[Delay(time=0.8)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="66_g12_deitygrypherburgmeeting",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2159_1#8$1")]
+[name="Olga"]...Then Rosalind left, and neither Anna nor Lada could catch her. They called out to her from the door, but she never turned back.
+[charslot(slot = "m", name = "avg_npc_2168_1#1$1")]
+[name="Arbiter"]This corroborates Ukusik's testimony that Rosalind entered the quarantine zone of her own accord, and not as part of the Student Assembly's plan.
+[charslot(slot="m",name="avg_npc_2159_1#8$1")]
+[name="Olga"]Yes. She and Sonya Mikhailivna were both members of the Ursus Student Self-Government Group, a testament to their internal unity. This has nothing to do with the Student Assembly.
+[charslot(slot = "m", name = "avg_npc_2168_1#1$1")]
+[name="Arbiter"]It seems we are now able to further narrow the responsibility for the Katorga Incident. Let us go to how you were kidnapped.
+[charslot(slot="m",name="avg_npc_2159_1#7$1")]
+[name="Olga"]...Many people were asking me what the students should do.
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="72_g3_podium",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$drift_intro", key="$drift_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_2159_1#10$2",posfrom="-50,0",posto="-50,0")]
+[charslot(slot="r",name="avg_npc_2183_1#7$1",posfrom="50,0",posto="50,0")]
+[Delay(time=0.8)]
+[charslot(slot="r",focus="r")]
+[name="Frightened Student"]...You were the one who led us, led the Assembly to protest.
+[Dialog]
+[charslot(slot="l",name="avg_npc_2159_1#10$2",afrom=1,ato=1,posfrom="-50,0",posto="-65,0",duration=0.8)]
+[Delay(time=0.8)]
+[charslot(slot="l",name="avg_npc_2159_1#10$2",focus="l")]
+[name="Olga"]I, I don't know.
+[Dialog]
+[charslot(slot="r",name="avg_npc_2183_1#7$1",afrom=1,ato=1,posfrom="50,0",posto="20,0",duration=0.8)]
+[Delay(time=0.8)]
+[charslot(slot="r",focus="r")]
+[name="Frightened Student"]You said your father would smooth things over, just like the Petrachevsky Group at first.
+[name="Frightened Student"]What do we do, Olga...?
+[Dialog]
+[charslot(slot="l",name="avg_npc_2159_1#9$2",focus="l")]
+[name="Olga"]I... I'll go and ask him. I'll try my best to find out about the other students.
+[charslot(slot="r",focus="r")]
+[name="Frightened Student"]We'll be alright, won't we? We'll go to bed, and things will get better when we wake up in the morning, won't they?
+[charslot(slot="l",name="avg_npc_2159_1#10$2",focus="l")]
+[name="Olga"]......
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_2187_1#1$1")]
+[name="Symposium Member"]If you're going to ask your father, should we all go back to our homes right now?
+[name="Symposium Member"]It's been a long and hard day for everyone. Better to dismiss everyone early.
+[charslot(slot="m",name="avg_npc_2159_1#10$2")]
+[name="Olga"]You're right... let's call it a day? Let's all go home and get some rest, and we'll figure things out tomorrow.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_studentsexhausted_fts_loop",volume=0, channel="foot", loop=true)]
+[SoundVolume(volume=0.3, channel="foot",fadetime=2)]
+Go home? The words are like a pardon, or an ironic spell.
+The students look at each other, frozen hesitation turning to relief. The tightly wound crowd begins to loosen and disperse, and the theater becomes filled with scattered footsteps.
+[Dialog]
+[charslot(slot="m",name="avg_npc_2159_1#10$2")]
+[Delay(time=0.8)]
+[charslot(slot="m",focus="n")]
+Olga stands lonely on stage, watching the silhouettes that cannot wait to get away.
+Someone quips, 'If there's a tomorrow.' She bites her pale-white lower lip.
+[StopSound(channel="foot", fadetime=2)]
+[name="???"]Where are you going?
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1", duration=1.5, block=true)]
+[Delay(time=2)]
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2178_1#1$1")]
+[name="Disappointed Student"]Didn't you hear Olga's instructions, Anna? We're going home.
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="Istina"]The Assembly hasn't determined a plan to find and help the captive students. Many in the theater are still too weak to move.
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="Istina"]We should not disperse before these issues are resolved.
+[Dialog]
+[charslot]
+[charslot(slot = "r",name = "avg_196_sunbr_1#1$1")]
+[charslot(slot = "l",name = "avg_npc_2181_1#1$1")]
+[charslot(slot = "l", posfrom = "-20,0", posto = "40,0",afrom=1,ato=1,duration=1)]
+[Delay(time=0.5)]
+[charslot(slot = "r", posfrom = "10,0", posto = "-20,0",afrom=1,ato=1,duration=0.4)]
+[Delay(time=0.5)]
+[charslot(slot = "l",focus="n")]
+Someone takes a step forward. Gummy spreads her arms wide to stop them.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2176_1#6$1")]
+[name="Sergo"]Lada?
+[charslot(slot = "m", name = "avg_196_sunbr_1#11$1")]
+[name="Gummy"]Please stop! We have something to say!
+[charslot(slot = "m", name = "avg_196_sunbr_1#11$1")]
+[name="Gummy"]A lot of you said the Self-Government Group was right when we were talking. Why not hear us out?
+[charslot(slot = "m", name = "avg_npc_2187_1#1$1")]
+[name="Symposium Member"]But it wasn't just you; most of us were opposed to violence. Olga only proposed the compromise because Faddey's group was insistent.
+[name="Symposium Member"]This is not our responsibility. Let Olga take care of it. I'm not going to have all of us pick up the bill for the Vanguards' recklessness!
+[name="Symposium Member"]Let's not waste any more time here. We're all—
+[charslot(slot = "m", name = "avg_npc_2156_1#7$1")]
+[name="Istina"]Enough!
+[charslot(slot = "m", name = "avg_npc_2156_1#2$1")]
+[name="Istina"]Gummy. A honey drop, please.
+[stopmusic(fadetime=2)]
+[charslot(slot = "m", name = "avg_196_sunbr_1#2$1")]
+[name="Gummy"]Huh? Istina...
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot = "l", name = "avg_npc_2187_1#1$1",posfrom="50,0",posto="50,0")]
+[charslot(slot = "r", name = "avg_npc_2156_1#2$1",posfrom="-70,0",posto="-70,0")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot = "l", action="shake", power=3, times=30, duration=0.3)]
+[Delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "r", name = "avg_npc_2156_1#2$1",posfrom="-70,0",posto="-300,0",afrom=1,ato=0,duration=1.8)]
+[Delay(time=2)]
+[charslot]
+Istina pushes past the student in her way. Normally gentle and rational, she walks straight through the crowd, glaring at everyone left and right as she heads towards the center of the theater.
+[playMusic(intro="$dignified_intro",key="$dignified_loop", volume=0.6)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_2156_1#2$1",duration=1.5)]
+[Delay(time=1.5)]
+[name="Istina"]You, every single one of you, voted to do this, chose to wave the banners, and chose to shout those slogans. No one made you do anything.
+[charslot(slot = "m", name = "avg_npc_2156_1#2$1")]
+[name="Istina"]You argued over whose slogan was the most powerful, who cared the most for Rania, who could come up with the most creative insults about the aristocracy, and who was the most fit to guide the future direction of the student movement.
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="Istina"]And the result? You caused a commotion, threw your friends under the bus, and ran away satisfied with a good night's work, hoping for mercy from the nobles you just insulted, so that you can pretend nothing happened?
+[charslot(slot = "m", name = "avg_npc_2156_1#7$1")]
+[name="Istina"]Is this 'great work' that you advocate nothing more than a farce?
+[charslot(slot = "m", name = "avg_npc_2187_1#1$1")]
+[name="Symposium Member"]You misunderstand, Anna. The Symposium is very serious about this. This is why we study the theories—
+[charslot(slot = "m", name = "avg_npc_2156_1#7$1")]
+[name="Istina"]So the result of your studies is to convince yourself that you're doing great things when things go smoothly, and pretend none of it has anything to do with it when things don't go smoothly?
+[charslot(slot = "m", name = "avg_npc_2156_1#7$1")]
+[name="Istina"]You shout about 'new Ursines', yet you run off and hide when the smallest thing happens. Why would any Ursine with the slightest bit of spirit want to associate themselves with you?
+[charslot(slot = "m", name = "avg_npc_2187_1#1$1")]
+[name="Symposium Member"]......
+[charslot(slot = "m", name = "avg_npc_2177_1#1$2")]
+[name="Vanguards Member"]Anna's right. You people are always undermining things when unity is needed. You're a bunch of cowardly—
+[charslot(slot = "m", name = "avg_npc_2156_1#11$1")]
+[name="Istina"]And you, Vanguards! How do you manage to sound like you just downed a whole cask of mead whenever you open your mouth to speak?
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="Istina"]Get your hands on a few old weapons, draw a few lines and put a few wargame pieces on some old maps of Bresk, and suddenly you think you're ready to fight the gendarmes?
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="Istina"]You spend less than a minute deciding, and get thrown into jail in less than an hour. The assembly meetings would have more substance if we replaced your vandalized civilian maps with cheap detective novels!
+[charslot(slot = "m", name = "avg_npc_2177_1#1$2")]
+[name="Vanguards Member"]......
+[charslot(slot="m",name="avg_npc_2178_1#1$1")]
+[name="Disappointed Student"]But we all want to go home—
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="Istina"]I haven't gotten to you yet! 'We were going there to petition'! How did you manage to say that with a straight face?
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="Istina"]The more students like us shout our slogans, the more we become 'seditious elements' that the nobles look to hand over to the tsar in chains. Why would they want to sit down at a table and talk to us?
+[charslot(slot = "m", name = "avg_npc_2156_1#7$1")]
+[name="Istina"]Now you sneer and scoff and talk about surrender, after your fellow students have been arrested. Do you dare say those same words to their faces?
+[charslot(slot="m",name="avg_npc_2178_1#1$1")]
+[name="Disappointed Student"]......
+[charslot(slot="m",name="avg_npc_2176_1#1$1")]
+[name="Sergo"]......
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="Istina"]And you!
+[charslot(slot="m",name="avg_npc_2176_1#1$1")]
+[name="Sergo"]Huh? I didn't say anything, Anna, I've always been on the side of the SSG—
+[charslot(slot = "m", name = "avg_npc_2156_1#2$1")]
+[name="Istina"]...Check the theater for functioning lights.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_spotlight")]
+Spotlights shine through the dust. The crowd narrow their eyes at the light, as they watch in awe the tiny figure walk towards the edge of the light.
+For the first time, their gazes are no longer weak and scattered; they are focused tightly on Istina.
+[Dialog]
+[charslot(slot="l",name="avg_npc_2159_1#8$2")]
+[charslot(slot = "r", name = "avg_npc_2156_1#2$1",posfrom="80,0",posto="0,0",duration=1)]
+[Delay(time=1)]
+[charslot(slot = "r",focus="r")]
+[name="Istina"]...Olga?
+[charslot(slot="l",name="avg_npc_2159_1#10$2",focus="l")]
+[name="Olga"]Go, if you can help them. I-I'm—
+[charslot(slot = "r", name = "avg_npc_2156_1#2$1",focus="r")]
+[name="Istina"]......
+[stopmusic(fadetime=2)]
+[Dialog]
+[charslot(slot = "r", name = "avg_npc_2156_1#2$1",posfrom="0,0",posto="-80,0",afrom=1,ato=0,duration=1)]
+[Delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_openftstpwalk")]
+[delay(time=4)]
+[charslot]
+[Background]
+[bgeffect(name="$eb_072cg_solarhalo",layer=1)]
+[Image(image="72_i07", xScale=1.05, yScale=1.05, x=-80, y=-100)]
+[ImageTween(xFrom=-40, xTo=40, duration=50,ease="6", block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=false)]
+[Delay(time=1.2)]
+[playMusic(key="$aboutfuture_loop", volume=0)]
+[MusicVolume(volume=0.6, fadetime=2)]
+[name="Istina"]Fellow students, all you who know where your consciences lie—
+[name="Istina"]We are back. We have returned, tired and lost, to this tiny theater that is safe for now, where we found light and warmth.
+[name="Istina"]But our friends, the ones whom we see every day, the finest amongst us, continue to endure cold and darkness out there.
+[name="Istina"]Some say that we have failed, that it is all over. To them I ask: What is failure?
+[name="Istina"]Should we pack up, pretend nothing ever happened, let others pay the price for us, and continue to live without hope? Is this your idea of victory?
+[name="Istina"]True failure is not being struck down. It is choosing to extinguish the flame in your heart, lowering your head in fear that you aren't kneeling submissively enough, even when you still have a choice, a choice to fight against injustice.
+[name="Istina"]True failure is not being locked away behind bars, but being stripped of even the courage to imagine a land that is more just, more free.
+[name="Istina"]Look at your hands. Remember how they made your hearts tremble when you voted with them. You know that you were not born with them to applaud and offer gifts to the rich and powerful, but to topple the high walls!
+[Dialog]
+[playsound(key="$d_avg_crowdtalk_fear", loop=true, channel="a",volume=0)]
+[SoundVolume(volume=1, channel="a",fadetime=2)] 
+[bgeffect]
+[Image(image="72_i07", xScale=0.95, yScale=0.95, x=-50, y=-50,fadetime=2,block=false)]
+[ImageTween(xScaleFrom=0.95, yScaleFrom=0.95, xScaleTo=0.8, yScaleTo=0.8,xTo=0,yTo=0, duration=25,block=false)]
+[Delay(time=2)]
+[name="Student A"]Anna... we understand what you're saying. But they were taken away, and we don't even know where they are. We—
+[name="Student B"]Just shouting slogans won't do anything, Anna. Do you have a way to find them?
+[name="Student C"]They took my roommate too! I have no clue if he is even alive anymore...
+[name="Istina"]...Yeah, we do not know exactly where they are, but we know who took them.
+[name="Istina"]Please answer a question first—what is your deepest desire? Answer me, not for my sake, but for your own.
+[StopSound(channel="a", fadetime=2)]
+A brief silence. Some look down at their hands, while others exchange glances.
+[name="Gummy"]Sonya taught me that if you are being pushed around, you have to fight back. I am going to... I am going to fight to the end!
+[name="Student D"]At the very least, we need to know what happened to them! We need them to know that we haven't given up!
+[name="Student E"]I've had enough of hiding in the back! Every time I look down, I feel like I've failed them... that I've failed myself.
+[name="Students"]Yes! We must fight, until we free everyone!
+[name="Istina"]Then we have the answer—we fight! Only by fighting can we break our shackles. Surrender, and we will forever lose the strength to ever break free again.
+[name="Istina"]Tell Ursus that we are fighting for our fellow students, our friends, our families! We are fighting for ourselves!
+[Dialog]
+[playsound(key="$d_avg_cheer_street",volume=0.5)]
+[Delay(time=2)]
+[name="Students"]Tell us! What is to be done?
+[name="Istina"]First, everyone needs to stay here and do a head count, so that we know who's missing.
+[name="Istina"]If anyone is injured, inform Lada so she can provide medical treatment. Anyone who has medical experience is invited to volunteer as well.
+[name="Istina"]Next, everyone needs to understand that we are facing a daunting mission. I hope everyone can be aware of their own responsibilities.
+[name="Istina"]Understood? Then—
+[name="Istina"]Let's move!
+[Dialog]
+[playsound(key="$d_avg_cheer_street")]
+[Delay(time=2)]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1.5)]
+[charslot]
+[image]
+[Background(image="72_g3_podium",screenadapt="coverall")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[charslot(slot = "r", name = "avg_npc_2178_1#1$1",focus="r")]
+[charslot(slot = "l", name = "avg_npc_2156_1#2$1",focus="r")]
+[name="Disappointed Student"]Anna... I've signed in.
+[charslot(slot = "l", name = "avg_npc_2156_1#2$1",focus="l")]
+[name="Istina"]I understand. You are free to leave.
+[charslot(slot = "r", name = "avg_npc_2178_1#1$1",focus="r")]
+[name="Disappointed Student"]......
+[name="Disappointed Student"]I couldn't be like you. I joined the group for credits. Maybe I believed in it at one point—but you got to understand, I'm looking for a peaceful life.
+[charslot(slot = "l", name = "avg_npc_2156_1#1$1",focus="l")]
+[name="Istina"]You don't need to justify your choice. I hope you get back to school, and get to enjoy the life you want.
+[charslot(slot = "l", name = "avg_npc_2156_1#1$1",focus="l")]
+[name="Istina"]If you care about any of the missing persons, please pray for their safety, and for our success.
+[charslot(slot = "r", name = "avg_npc_2178_1#1$1",focus="r")]
+[name="Disappointed Student"]...I want to apologize to you and Lada. It was not my place to judge Sonya or the Self-Government Group.
+[name="Disappointed Student"]If I ever get a chance... no, when you see Rosalind, please tell her I'm sorry.
+[charslot(slot = "l", name = "avg_npc_2156_1#8$1",focus="l")]
+[name="Istina"]......
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot = "m", name = "avg_npc_2159_1#10$2", duration=1.5, block=true)]
+[Delay(time=2)]
+[name="Olga"]Anna... do you have a moment?
+[charslot(slot = "m", name = "avg_npc_2156_1#6$1")]
+[name="Istina"]Olga, you should get Lada to look at your injuries, or do you want to—
+[charslot(slot = "m", name = "avg_npc_2159_1#9$2")]
+[name="Olga"]No... I just want to ask, what is your plan?
+[charslot(slot = "m", name = "avg_npc_2156_1#8$1")]
+[name="Istina"]Honestly, I'm not totally sure it's going to work.
+[charslot(slot = "m", name = "avg_npc_2156_1#8$1")]
+[name="Istina"]The resources available to the students are mostly associated with school or family, varying considerably from one individual to another.
+[charslot(slot = "m", name = "avg_npc_2156_1#11$1")]
+[name="Istina"]This also means, however, that they have access to information from all strata of society.
+[charslot(slot = "m", name = "avg_npc_2159_1#9$2")]
+[name="Olga"]You want to... leverage our families?
+[charslot(slot = "m", name = "avg_npc_2159_1#8$2")]
+[name="Olga"]Anna, if you're trying to steal information from the nobility, you need to think about the consequences.
+[charslot(slot = "m", name = "avg_npc_2156_1#13$1")]
+[name="Istina"]...I won't come to any conclusions until sign-ins are done.
+[charslot(slot = "m", name = "avg_npc_2156_1#9$1")]
+[name="Istina"]But I know that an inexorable tide has crashed over Ursus.
+[charslot(slot = "m", name = "avg_npc_2156_1#8$1")]
+[name="Istina"]We could go home, avoid making a choice, and avoid the potential responsibility and scorn that comes with it.
+[charslot(slot = "m", name = "avg_npc_2156_1#8$1")]
+[name="Istina"]But there is something else that we can do—take each other's hands in this tide.
+[charslot(slot = "m", name = "avg_npc_2156_1#2$1")]
+[name="Istina"]I will give everything to protect those close to me.
+[charslot(slot = "m", name = "avg_npc_2156_1#2$1")]
+[name="Istina"]This path can be yours too, if you wish it... Chairman Trepleva.
+[dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Background]
+[Image]

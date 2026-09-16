@@ -1,0 +1,14 @@
+[header(is_skippable=false, is_tutorial=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[inputblocker(blockInput=true, black=0.3)]
+[popupdialog(dialogHead="$avatar_leto")]Oh no, I think it saw me!
+[InputBlocker(blockInput=false, black=0)] 
+[Tutorial(protectTime=0.5,waitForSignal="put_down", dialogHead="$avatar_headb2", animStyle="Drag", \
+           startCardIndex=0, startRightStart=true, endTileX=4, endTileY=4)] \
+Quick! Use the <@tu.kw>Disguise Kit</> to hide!
+[inputblocker(blockInput=true, black=0.3)]
+[popupdialog(dialogHead="$avatar_leto")]Borrowed that from your Reproba friend? What's it for?
+[popupdialog(dialogHead="$avatar_headb2")]It'll hide you from the enemies for a while, but this means you <@tu.kw>won't be able to Block them</> either. Automatic skills won't trigger with it active, and manually activating a skill will <@tu.kw>remove your camouflaged status</>.
+[popupdialog(dialogHead="$avatar_headb2", protectTime=0.5)]Don't worry, I'll take care of the rest!
+[battle.pause(pause=false)]
