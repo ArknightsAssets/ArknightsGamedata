@@ -941,6 +941,9 @@
         "ba.enemy": "<color=#D83C3C>{0}</color>",
         "ba.drop": "<color=#36ACFF>{0}</color>",
         "ba.acrem": "<color=#727272>{0}</color>",
+        "ba.velc": "<color=#21ffc3>{0}</color>",
+        "ba.delc": "<color=#ff9000>{0}</color>",
+        "ba.dgrey": "<color=#9a9a9a>{0}</color>",
         "eb.key": "<color=#00FFFF>{0}</color>",
         "eb.danger": "<color=#FF0000>{0}</color>",
         "ro.get": "<color=#0098DC>{0}</color>",
@@ -948,6 +951,7 @@
         "rolv.rem": "<color=#FF4C22>{0}</color>",
         "lv.description": "<color=#d8d769>{0}</color>",
         "lv.extrades": "<color=#d8d769>{0}</color>",
+        "lv.sand2desc": "<color=#a0a001>{0}</color>",
         "lv.item": "<color=#FFFFFF>{0}</color>",
         "lv.rem": "<color=#FFFFFF>{0}</color>",
         "lv.fs": "<color=#FF0000>{0}</color>",
@@ -1066,6 +1070,9 @@
         "char.amor": "<color=#aa4477>{0}</color>",
         "char.tmor": "<color=#335566>{0}</color>",
         "act.timelimit": "<color=#ffe300>{0}</color>",
+        "lv.pycitem": "<color=#D14631>{0}</color>",
+        "lv.pyctx": "<color=#1B1B1B>{0}</color>",
+        "lv.pycfs": "<color=#D14631>{0}</color>",
         "vc.text": "<color=#898989>{0}</color>",
         "vc.endtime": "<color=#ff0327>{0}</color>",
         "firework.animal": "<color=#0098dc>{0}</color>",
@@ -1094,7 +1101,7 @@
     "commonPotentialLvlUpCount": 4,
     "weeklyOverrideDesc": "",
     "voucherDiv": 5,
-    "recruitPoolVersion": 24,
+    "recruitPoolVersion": 25,
     "v006RecruitTimeStep1Refresh": 1577169000,
     "v006RecruitTimeStep2Check": 1577151000,
     "v006RecruitTimeStep2Flush": 1577646000,
@@ -1463,6 +1470,16 @@
             "termName": "침식 손상 (아군)",
             "description": "최대치 도달 시 폭발(일반, 정예 경우 1000, 리더 경우 2000), 적에게 5000 원소 대미지를 입히며 상대의 방어력 120 영구 감소(중첩 가능), 쿨타임 8초"
         },
+        "ba.slowdown": {
+            "termId": "ba.slowdown",
+            "termName": "둔화",
+            "description": "이동 속도, 공격 속도, 일부 스킬의 시전 속도 및 쿨타임, 일부 상태 이상의 회복 속도가 해당 비율만큼 감소 (동종 효과 중 최대 수치만 적용)"
+        },
+        "ba.costlowerbound": {
+            "termId": "ba.costlowerbound",
+            "termName": "배치 코스트 하한",
+            "description": "배치 코스트가 하한보다 낮게 감소 가능, 배치 코스트가 0보다 적을 경우 배치 코스트의 자연 회복 속도 -50%"
+        },
         "cc.bd_A_1": {
             "termId": "cc.bd_A_1",
             "termName": "염력",
@@ -1726,7 +1743,7 @@
         "cc.c.skill": {
             "termId": "cc.c.skill",
             "termName": "일부 스킬",
-            "description": "다음 스킬 포함\n오른팔, S.W.E.E.P, 간식 네트워크, 처분 협의, 대리인, 필요책임, 호위, 꼬마 리더, 독선기신, 봄날 같은 웃음, 금잔화 시회, 수호의 길, 박식한 풋내기, 세심한 배려"
+            "description": "다음 스킬 포함\n오른팔, S.W.E.E.P, 간식 네트워크, 처분 협의, 대리인, 필요책임, 호위, 꼬마 리더, 독선기신, 봄날 같은 웃음, 금잔화 시회, 수호의 길, 박식한 풋내기, 세심한 배려, 수석 엔지니어"
         },
         "cc.t.strong2": {
             "termId": "cc.t.strong2",
@@ -1796,7 +1813,7 @@
         "cc.tag.op": {
             "termId": "cc.tag.op",
             "termName": "작업 플랫폼",
-            "description": "다음 오퍼레이터 포함\nLancet-2, Castle-3, THRM-EX, 저스티스 나이트, Friston-3, PhonoR-0, CONFESS-47"
+            "description": "다음 오퍼레이터 포함\nLancet-2, Castle-3, THRM-EX, 저스티스 나이트, Friston-3, PhonoR-0, CONFESS-47, GALLUS²"
         },
         "cc.tag.knight": {
             "termId": "cc.tag.knight",
@@ -1833,6 +1850,11 @@
             "termName": "특별 독점 오더",
             "description": "페페가 제공하는 특별 귀금속 오더, 해당 오더의 수주 시간과 수익은 고정이며, 납품하는 순금 수량은 0"
         },
+        "cc.tra.closure": {
+            "termId": "cc.tra.closure",
+            "termName": "클로저의 특별 오더",
+            "description": "클로저가 제공하는 특별 귀금속 오더, 해당 오더의 수주 시간과 수익은 고정이며, 납품하는 순금 수량은 2"
+        },
         "cc.bd_mujica": {
             "termId": "cc.bd_mujica",
             "termName": "열정",
@@ -1860,8 +1882,8 @@
         }
     },
     "storyReviewUnlockItemLackTip": "기록 조각이 부족합니다. 증명서 상점 또는 이벤트 기간에 열리는 상점을 통해 교환할 수 있습니다.",
-    "dataVersion": "51.10.0",
-    "resPrefVersion": "72d0d0",
+    "dataVersion": "52.0.0",
+    "resPrefVersion": "73d0d0",
     "announceWebBusType": "ak_announcement",
     "videoPlayerWebBusType": "ak_video_player",
     "gachaLogBusType": "ak_gacha_log",

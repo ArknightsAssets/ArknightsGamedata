@@ -15072,6 +15072,160 @@
                     ]
                 }
             ]
+        },
+        "char_4228_closur": {
+            "charId": "char_4228_closur",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_mp_cost[014]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_closure[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_1052_kalts2": {
+            "charId": "char_1052_kalts2",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "workshop_proc_probability[041]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "workshop_proc_probability[050]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "hire_spd_tag[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4226_veen": {
+            "charId": "char_4226_veen",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "train_spd_doubleProf[301]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "train_spd_doubleProf[310]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "manu_prod_spd_train&lv[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4225_tanya": {
+            "charId": "char_4225_tanya",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "dorm_rec_oneself[040]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "manu_formula_spd&limit&cost[100]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4227_gallus": {
+            "charId": "char_4227_gallus",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "power_rec_spd[0010]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "power_rec_spd_ext&tag[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 30
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     },
     "buffs": {
@@ -15726,6 +15880,21 @@
             "buffIcon": "control",
             "skillIcon": "bskill_ctrl_cost",
             "sortId": 1113,
+            "buffColor": "#005752",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "CONTROL",
+            "description": "제어 센터에 배치 시, 제어 센터 내 모든 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.05</>",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "control_mp_cost[014]": {
+            "buffId": "control_mp_cost[014]",
+            "buffName": "수석 엔지니어",
+            "buffIcon": "control",
+            "skillIcon": "bskill_ctrl_cost",
+            "sortId": 1114,
             "buffColor": "#005752",
             "textColor": "#ffffff",
             "buffCategory": "FUNCTION",
@@ -16800,6 +16969,21 @@
             "targetGroupSortId": 0,
             "targets": {}
         },
+        "power_rec_spd[0010]": {
+            "buffId": "power_rec_spd[0010]",
+            "buffName": "닭기 공학",
+            "buffIcon": "power",
+            "skillIcon": "bskill_pow_spd1",
+            "sortId": 2009,
+            "buffColor": "#8fc31f",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "POWER",
+            "description": "발전소에 배치 시, 드론 회복 <@cc.vup>+10%</>",
+            "efficiency": 10,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
         "power_count[000]": {
             "buffId": "power_count[000]",
             "buffName": "아침 햇살",
@@ -16871,6 +17055,21 @@
             "buffCategory": "OUTPUT",
             "roomType": "POWER",
             "description": "발전소에 배치 시, 다른 <$cc.g.laterano><@cc.kw>라테라노</></> 오퍼레이터가 발전소에 배치되어 있으면, 드론 회복 속도 <@cc.vup>+5%</>",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "power_rec_spd_ext&tag[000]": {
+            "buffId": "power_rec_spd_ext&tag[000]",
+            "buffName": "닭려 매커니즘",
+            "buffIcon": "power",
+            "skillIcon": "bskill_power_rec_spd_ext&tag",
+            "sortId": 2000,
+            "buffColor": "#8fc31f",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "POWER",
+            "description": "발전소에 배치 시, 다른 <$cc.tag.op><@cc.kw>작업 플랫폼</></>이 발전소에 배치되어 있을 경우, 드론 회복 속도 <@cc.vup>+5%</>",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -18034,6 +18233,25 @@
                 "F_DIAMOND"
             ]
         },
+        "manu_prod_spd_train&lv[000]": {
+            "buffId": "manu_prod_spd_train&lv[000]",
+            "buffName": "수공업자",
+            "buffIcon": "manufacture",
+            "skillIcon": "bskill_man_spd_veen",
+            "sortId": 3602,
+            "buffColor": "#ffd800",
+            "textColor": "#333333",
+            "buffCategory": "OUTPUT",
+            "roomType": "MANUFACTURE",
+            "description": "제조소에 배치 시, 훈련실의 레벨 1당 해당 제조소의 생산력 <@cc.vup>+10%</>, 최대 <@cc.vup>30%</>",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": [
+                "F_GOLD",
+                "F_EXP",
+                "F_DIAMOND"
+            ]
+        },
         "manu_prod_spd_bd_n1[000]": {
             "buffId": "manu_prod_spd_bd_n1[000]",
             "buffName": "초감각",
@@ -18384,6 +18602,23 @@
             "buffCategory": "OUTPUT",
             "roomType": "MANUFACTURE",
             "description": "제조소에 배치 시, <@cc.kw>작전기록</>류에 대한 생산력 <@cc.vup>+35%</>, 시간당 컨디션 소모 <@cc.vup>-0.25</>",
+            "efficiency": 35,
+            "targetGroupSortId": 2,
+            "targets": [
+                "F_EXP"
+            ]
+        },
+        "manu_formula_spd&limit&cost[100]": {
+            "buffId": "manu_formula_spd&limit&cost[100]",
+            "buffName": "'풀가동'",
+            "buffIcon": "manufacture",
+            "skillIcon": "bskill_man_exp&spd&cost1",
+            "sortId": 3812,
+            "buffColor": "#ffd800",
+            "textColor": "#333333",
+            "buffCategory": "OUTPUT",
+            "roomType": "MANUFACTURE",
+            "description": "제조소에 배치 시, <@cc.kw>작전기록</>류에 대한 생산력 <@cc.vup>+35%</>, 시간당 컨디션 소모 <@cc.vdown>+0.25</>",
             "efficiency": 35,
             "targetGroupSortId": 2,
             "targets": [
@@ -19140,6 +19375,21 @@
             "roomType": "TRADING",
             "description": "무역소에 배치 시, 오더 수주 효율 <@cc.vup>+25%</>, 응접실 레벨 1레벨당 추가로 수주 효율 <@cc.vup>5%</> 제공, 최대 <@cc.vup>40%</> 제공",
             "efficiency": 25,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "trade_ord_closure[000]": {
+            "buffId": "trade_ord_closure[000]",
+            "buffName": "특별 오더",
+            "buffIcon": "trading",
+            "skillIcon": "bskill_tra_closure",
+            "sortId": 4851,
+            "buffColor": "#0075a9",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "TRADING",
+            "description": "무역소에 배치 시, 오더 수주 효율 <@cc.vup>+10%</>, <$cc.tra.closure><@cc.kw>클로저의 특별 오더</></> 고정 획득 (위약 오더로 간주하지 않음)",
+            "efficiency": 10,
             "targetGroupSortId": 0,
             "targets": {}
         },
@@ -20410,6 +20660,46 @@
             "roomType": "WORKSHOP",
             "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>70%</> 상승",
             "efficiency": 70,
+            "targetGroupSortId": 0,
+            "targets": [
+                "F_BUILDING",
+                "F_EVOLVE",
+                "F_SKILL",
+                "F_ASC"
+            ]
+        },
+        "workshop_proc_probability[041]": {
+            "buffId": "workshop_proc_probability[041]",
+            "buffName": "기술 설명",
+            "buffIcon": "workshop",
+            "skillIcon": "bskill_ws_p5",
+            "sortId": 7142,
+            "buffColor": "#e3eb00",
+            "textColor": "#333333",
+            "buffCategory": "FUNCTION",
+            "roomType": "WORKSHOP",
+            "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>70%</> 상승",
+            "efficiency": 70,
+            "targetGroupSortId": 0,
+            "targets": [
+                "F_BUILDING",
+                "F_EVOLVE",
+                "F_SKILL",
+                "F_ASC"
+            ]
+        },
+        "workshop_proc_probability[050]": {
+            "buffId": "workshop_proc_probability[050]",
+            "buffName": "이론 혁신",
+            "buffIcon": "workshop",
+            "skillIcon": "bskill_ws_p_kalts2",
+            "sortId": 7151,
+            "buffColor": "#e3eb00",
+            "textColor": "#333333",
+            "buffCategory": "FUNCTION",
+            "roomType": "WORKSHOP",
+            "description": "가공소에 배치해 <@cc.kw>임의류 재료</> 가공 시, 부산물 산출 확률 <@cc.vup>80%</> 상승",
+            "efficiency": 80,
             "targetGroupSortId": 0,
             "targets": [
                 "F_BUILDING",
@@ -22434,6 +22724,42 @@
                 "WARRIOR"
             ]
         },
+        "train_spd_doubleProf[301]": {
+            "buffId": "train_spd_doubleProf[301]",
+            "buffName": "'모르겠는걸'",
+            "buffIcon": "training",
+            "skillIcon": "bskill_train_caster&vanguard1",
+            "sortId": 9907,
+            "buffColor": "#7d0022",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "TRAINING",
+            "description": "훈련실에 배치 시, <@cc.kw>캐스터</> 및 <@cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <@cc.vup>+30%</>",
+            "efficiency": 30,
+            "targetGroupSortId": 2,
+            "targets": [
+                "CASTER",
+                "WARRIOR"
+            ]
+        },
+        "train_spd_doubleProf[310]": {
+            "buffId": "train_spd_doubleProf[310]",
+            "buffName": "'통찰 응용'",
+            "buffIcon": "training",
+            "skillIcon": "bskill_train_caster&vanguard2",
+            "sortId": 9908,
+            "buffColor": "#7d0022",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "TRAINING",
+            "description": "훈련실에 배치 시, <@cc.kw>캐스터</> 및 <@cc.kw>가드</> 오퍼레이터의 스킬 훈련 속도 <@cc.vup>+45%</>",
+            "efficiency": 45,
+            "targetGroupSortId": 2,
+            "targets": [
+                "CASTER",
+                "WARRIOR"
+            ]
+        },
         "train_spd_doubleProf[110]": {
             "buffId": "train_spd_doubleProf[110]",
             "buffName": "드라코 혈통",
@@ -23899,6 +24225,21 @@
             "buffCategory": "RECOVERY",
             "roomType": "DORMITORY",
             "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <@cc.vup>+1</>",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "dorm_rec_oneself[040]": {
+            "buffId": "dorm_rec_oneself[040]",
+            "buffName": "모처럼의 휴식",
+            "buffIcon": "dormitory",
+            "skillIcon": "bskill_dorm_one1",
+            "sortId": 5001,
+            "buffColor": "#21cdcb",
+            "textColor": "#ffffff",
+            "buffCategory": "RECOVERY",
+            "roomType": "DORMITORY",
+            "description": "숙소에 배치 시, 자신의 시간당 컨디션 회복 <@cc.vup>+0.55</>",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -25688,6 +26029,21 @@
             "targetGroupSortId": 0,
             "targets": {}
         },
+        "hire_spd_tag[000]": {
+            "buffId": "hire_spd_tag[000]",
+            "buffName": "'테라의 방주'",
+            "buffIcon": "hire",
+            "skillIcon": "bskill_hire_kalts2",
+            "sortId": 8500,
+            "buffColor": "#565656",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "HIRE",
+            "description": "인사부 사무실에 배치 시, 인맥 레퍼런스의 누적 속도 <@cc.vup>+30%</>, 기반시설(어시스턴트 및 활동실 사용자 미포함) 내 <$cc.g.elite><@cc.kw>정예 오퍼레이터</></>가 배치된 시설 1개당 인맥 레퍼런스의 누적 속도가 추가로 <@cc.vup>+4%</> (최대 <@cc.kw>5</>개)",
+            "efficiency": 30,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
         "meet_spd[000]": {
             "buffId": "meet_spd[000]",
             "buffName": "단서 수집 α",
@@ -26568,7 +26924,7 @@
             "textColor": "#ffffff",
             "buffCategory": "FUNCTION",
             "roomType": "MEETING",
-            "description": "응접실에 배치 시, 단서 보드 중 보유 중인 단서를 더 쉽게 획득",
+            "description": "응접실에 배치 시, 단서 보드 중 보유한 단서를 더 쉽게 획득",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -90211,7 +90567,7 @@
                 "height": 7,
                 "comfort": 270,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "전통 스타일을 이어받아 암홍색으로 칠한 목재 식탁 수납장. 수납장 문의 유리에는 복을 물고 온다는 뜻의 황금 린수가 그려져 있다.\n에프이터가 식사하러 왔을 때 남긴 기념 사진을 가게 주인이 금빛 액자로 장식해 놨는데, 주인의 말에 따르면 재물을 기원하는 장식품보다 그 사진이 훨씬 효과가 좋다고 한다.",
+                "description": "전통 스타일을 이어받아 암홍색으로 칠한 목재 식탁 수납장. 수납장 문의 유리에는 복을 물고 온다는 뜻의 황금린수가 그려져 있다.\n에프이터가 식사하러 왔을 때 남긴 기념 사진을 가게 주인이 금빛 액자로 장식해 놨는데, 주인의 말에 따르면 재물을 기원하는 장식품보다 그 사진이 훨씬 효과가 좋다고 한다.",
                 "obtainApproach": "일부 스테이지 럭키 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 5,
@@ -91235,7 +91591,7 @@
                 "height": 3,
                 "comfort": 135,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "검은 대리석 재질의 진열장. 받침대에 황금 린수 도안이 그려져 있다.\n《주간 호시카와》에 나오는 원본 받침대에는 황금 린수가 없다. 그런데 여기 그려져 있는 이유는 엔지니어링부에서 재현할 때 참고한 것이 하루카가 낙서한 이후의 버전이기 때문이다.",
+                "description": "검은 대리석 재질의 진열장. 받침대에 황금린수 도안이 그려져 있다.\n《주간 호시카와》에 나오는 원본 받침대에는 황금린수가 없다. 그런데 여기 그려져 있는 이유는 엔지니어링부에서 재현할 때 참고한 것이 하루카가 낙서한 이후의 버전이기 때문이다.",
                 "obtainApproach": "가구상점 한정 구매",
                 "processedProductId": "3401",
                 "processedProductCount": 123,
@@ -91555,7 +91911,7 @@
                 "height": 3,
                 "comfort": 170,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "황금 린수가 그려진 청색 부채가 전시된 장식장. 장식장 몸체엔 옅은 금색 문양 장식이 새겨져 있다.\n이곳에 놓인 부채는 하루카의 개인 물건으로, 종종 그녀가 장식장 주변을 천천히 돌며 부채에 그려진 린수를 감상하는 모습을 볼 수 있다.",
+                "description": "황금린수가 그려진 청색 부채가 전시된 장식장. 장식장 몸체엔 옅은 금색 문양 장식이 새겨져 있다.\n이곳에 놓인 부채는 하루카의 개인 물건으로, 종종 그녀가 장식장 주변을 천천히 돌며 부채에 그려진 린수를 감상하는 모습을 볼 수 있다.",
                 "obtainApproach": "가구상점 한정 구매",
                 "processedProductId": "3401",
                 "processedProductCount": 155,
@@ -91715,7 +92071,7 @@
                 "height": 5,
                 "comfort": 220,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "황금 린수 어항을 본떠 만든 장식대. 투명한 장식대에는 유영하는 황금 린수가 그려져 있고, 내부에는 석조 조경이 배치되어 있다.\n과거 하루카가 이 장식대에 조심스레 다가가 혹 황금 린수가 살아있는 것이 아닌지 몇 번이고 확인한 후에야 손을 뻗어 이 장식대를 만져보는 장면을 목격한 사람이 있다.",
+                "description": "황금린수 어항을 본떠 만든 장식대. 투명한 장식대에는 유영하는 황금린수가 그려져 있고, 내부에는 석조 조경이 배치되어 있다.\n과거 하루카가 이 장식대에 조심스레 다가가 혹 황금린수가 살아있는 것이 아닌지 몇 번이고 확인한 후에야 손을 뻗어 이 장식대를 만져보는 장면을 목격한 사람이 있다.",
                 "obtainApproach": "가구상점 한정 구매",
                 "processedProductId": "3401",
                 "processedProductCount": 163,
@@ -98510,6 +98866,1190 @@
                 "enableRoomType": 4112,
                 "quantity": 1
             },
+            "furni_closureRoom_shelf_01": {
+                "id": "furni_closureRoom_shelf_01",
+                "sortId": 2245,
+                "name": "시계 수납장",
+                "iconId": "furni_closureRoom_shelf_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CABINET",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_1",
+                "width": 4,
+                "depth": 2,
+                "height": 4,
+                "comfort": 185,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "전자시계가 탑재된 소형 수납장. 시계 옆의 버튼으로 투명 수납장 문을 여닫을 수 있다.\n클로저가 즐겨 마시는 고과당 에너지 음료로 가득 차 있으며, 이성을 회복하는 데 효과적이다. 걱정 마시라, 뱀파이어는 살이 안 찌니까!",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 153,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_collectioncabinet_01": {
+                "id": "furni_closureRoom_collectioncabinet_01",
+                "sortId": 2246,
+                "name": "다용도 뮤직 플레이어",
+                "iconId": "furni_closureRoom_collectioncabinet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "ENTERTAINMENT",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_1",
+                "width": 3,
+                "depth": 3,
+                "height": 8,
+                "comfort": 250,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "수집, 전시, 재생 기능을 하나로 통합한 뮤직 플레이어. 오디오 파형 디스플레이로 다양한 파형을 재생할 수 있다.\n클로저가 전면 개조한 끝에, 이제는 클로저의 실시간 정신 상태에 맞춰 자동으로 서로 다른 D.D.D.의 앨범을 재생할 수 있게 됐다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 185,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_computerdesk_01": {
+                "id": "furni_closureRoom_computerdesk_01",
+                "sortId": 2247,
+                "name": "'메인 콘솔'",
+                "iconId": "furni_closureRoom_computerdesk_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_1",
+                "width": 6,
+                "depth": 5,
+                "height": 9,
+                "comfort": 570,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "일체형 본체, 자동 호환 주변기기, 그리고 여러 대의 초고화질 모니터로 구성된 클로저의 대형 전자 워크스테이션이다.\n메시지 확인, 로도스 아일랜드 운행 상황 모니터링, 회계 심사, 글리치 스피드런 공략법 연마 등 다양한 작업을 동시에 처리할 수 있으며, 모든 디테일까지 한눈에 파악할 수 있다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 420,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_ledchair_01": {
+                "id": "furni_closureRoom_ledchair_01",
+                "sortId": 2248,
+                "name": "네온 조명 의자",
+                "iconId": "furni_closureRoom_ledchair_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "BENCH",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_1",
+                "width": 5,
+                "depth": 2,
+                "height": 2,
+                "comfort": 170,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "측면에 가변 조명이 장식된 의자 세트. 조명 패턴은 의자의 조합 형태에 따라 바뀐다.\n클로저는 종종 로도스 아일랜드의 미디어 데이터베이스에서 마이너하고 기괴한 영화를 찾은 뒤, 이곳저곳에서 데려온 다른 오퍼레이터들과 함께 의자에 앉아 관람하곤 한다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 140,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_poster_01": {
+                "id": "furni_closureRoom_poster_01",
+                "sortId": 2249,
+                "name": "《하트 투 하트》포스터",
+                "iconId": "furni_closureRoom_poster_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "POSTER",
+                "location": "POSTER",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 2,
+                "depth": 1,
+                "height": 2,
+                "comfort": 60,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "폴리비전 박물관의 게임 프로그램인 《하트 투 하트》의 게임 포스터로, 시즌 우승 상품 중 하나다.\n점수 랭킹에서 클로저와 여러 도전자들이 똑같이 만점을 받았으나, 결국 서버에 가장 가까이 앉아 있던 그녀가 점수 달성 시간에서 판정승을 거뒀다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 55,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_poster_02": {
+                "id": "furni_closureRoom_poster_02",
+                "sortId": 2250,
+                "name": "《탄막 요새》포스터",
+                "iconId": "furni_closureRoom_poster_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "POSTER",
+                "location": "POSTER",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 4,
+                "depth": 1,
+                "height": 3,
+                "comfort": 105,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "게임 《탄막 요새》의 홍보 포스터. 위에는 '개발자 스티커'가 붙어 있다.\n게임 초판 당시, 이 포스터를 표지로 한 개발 비하인드 영상이 있었으나, 게임의 싫어요 비율이 너무 높은 까닭에 영상은 더 이상 공개되지 않았다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 95,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_officedesk_01": {
+                "id": "furni_closureRoom_officedesk_01",
+                "sortId": 2251,
+                "name": "'만능 워크스테이션'",
+                "iconId": "furni_closureRoom_officedesk_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 8,
+                "depth": 2,
+                "height": 6,
+                "comfort": 335,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "클로저의 서브 워크스테이션. 성능은 메인 콘솔과 동일하나, 전체적인 설계는 훨씬 간결하고 사용하기 쉽다.\n그녀는 이곳에서 '로도스 아일랜드 전면 통제'와 '듀얼 채널 자동 예측 베팅' 프로그램을 개발했지만, 테스트 단계에서 사용했던 계정들은 각각 켈시와 주최 측에 의해 정지당했다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 248,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_chair_01": {
+                "id": "furni_closureRoom_chair_01",
+                "sortId": 2252,
+                "name": "자동 조절 작업 의자",
+                "iconId": "furni_closureRoom_chair_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "CHAIR",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 5,
+                "depth": 4,
+                "height": 4,
+                "comfort": 290,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "맞춤형으로 개량된 인체공학 사무용 의자로, 사용자의 필요에 따라 자동으로 형태가 조절된다.\n이 의자의 안락함은 그 비싼 제작비가 절대 아깝지 않다. 엔지니어링부에서 이를 복제할 당시, 클로저는 옆에서 감자칩을 씹으며 “모두에게 하나씩 보급해 줘야 해.”라고 말했다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 215,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_stool_01": {
+                "id": "furni_closureRoom_stool_01",
+                "sortId": 2253,
+                "name": "'신호 간섭' 작은 의자",
+                "iconId": "furni_closureRoom_stool_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "STOOL",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_3",
+                "width": 2,
+                "depth": 2,
+                "height": 2,
+                "comfort": 130,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "아날로그 신호 고장 패턴이 인쇄된 작은 의자로, 비슷한 패턴을 지닌 여러 부품을 조립해 완성했다.\n클로저의 주장에 따르면, 고장 무늬를 겉에 두면 일종의 액땜이 되어 자신이 프로그램을 개발할 때 에러 발생률이 낮아진다고 한다. 물론 그녀의 헛된 바람일 뿐이라는 게 곧 사실로 증명되었지만.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 118,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_ceilingLight_01": {
+                "id": "furni_closureRoom_ceilingLight_01",
+                "sortId": 2254,
+                "name": "'기계의 빛'",
+                "iconId": "furni_closureRoom_ceilingLight_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_3",
+                "width": 5,
+                "depth": 2,
+                "height": 4,
+                "comfort": 125,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "여러 개의 기계 팔이 달린 천장등. 밝기와 조명 각도 모두 워크스테이션에서 제어할 수 있다.\n클로저는 천장등에 게임이나 미디어 시스템이 결합된 여러 가지 조명 모드의 프로그램을 설계했으나, 최근 그녀가 가장 많이 애용하는 모드는 '업무' 아니면 '수면'이다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 113,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_equipmentdesk_01": {
+                "id": "furni_closureRoom_equipmentdesk_01",
+                "sortId": 2255,
+                "name": "설비 전시 테이블",
+                "iconId": "furni_closureRoom_equipmentdesk_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_3",
+                "width": 3,
+                "depth": 4,
+                "height": 5,
+                "comfort": 250,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "클로저의 주변기기를 전시하는 테이블. 모든 전시 공간을 그녀가 직접 만들었다.\n“예전의 그 컨트롤러는 왜 안 쓰냐고? 이미 두 달 전에 유행이 지난 스타일이라, 새 걸 개발했거든.”",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 205,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_cabinet_01": {
+                "id": "furni_closureRoom_cabinet_01",
+                "sortId": 2256,
+                "name": "'업적 진열장'",
+                "iconId": "furni_closureRoom_cabinet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CABINET",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_3",
+                "width": 6,
+                "depth": 3,
+                "height": 10,
+                "comfort": 445,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "클로저 개인의 수납장. 혹은 그녀 본인의 표현을 빌리자면 '트로피 컬렉션 룸'이다.\n각종 게임 대회 및 게임 개발 대회에서 휩쓴 트로피들이 보관되어 있다. 다만 눈치 빠른 사람이라면 누구나 알 수 있듯, 그녀 어깨에 짊어진 무게가 무거워진 이후로 트로피의 개수는 오랫동안 늘어나지 않고 있다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 328,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_table_01": {
+                "id": "furni_closureRoom_table_01",
+                "sortId": 2257,
+                "name": "온도 조절 테이블",
+                "iconId": "furni_closureRoom_table_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 3,
+                "depth": 2,
+                "height": 3,
+                "comfort": 185,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "상판 전체가 온도 조절 패널로 이루어진 테이블. 그 위에 올려둔 물건을 간편하게 급속으로 가열하거나 차갑게 냉각할 수 있다.\n본래는 희귀한 감열성 소재를 연구하기 위해 특수 설계된 작업대지만, 실상은 대부분 시간 박사의 전기주전자를 고치는 데 쓰고 있다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 168,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_workbench_01": {
+                "id": "furni_closureRoom_workbench_01",
+                "sortId": 2258,
+                "name": "'공학 기적 작업대'",
+                "iconId": "furni_closureRoom_workbench_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 3,
+                "depth": 5,
+                "height": 6,
+                "comfort": 290,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "기계 및 전자 설비 수리 기능이 결합된 작업대. 각종 수리 공구를 보관할 수 있는 수납장이 딸려 있다.\n클로저는 박사가 자신에게 예산을 조금만 더 할당해 주어, 이 작업대에 고온 단조로와 유압 프레스까지 추가로 설치할 수 있기를 바라고 있다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 215,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_carpet_01": {
+                "id": "furni_closureRoom_carpet_01",
+                "sortId": 2259,
+                "name": "감응식 카펫",
+                "iconId": "furni_closureRoom_carpet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CARPET",
+                "subType": "NONE",
+                "location": "CARPET",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 8,
+                "depth": 8,
+                "height": 1,
+                "comfort": 130,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "압력 감지 패드가 내장된 십자형 카펫. 내장된 무선 장치를 통해 워크스테이션과 신호를 주고받을 수 있다.\n“와파린이 하도 운동 좀 하라고 잔소리하길래, 리듬 댄스 게임 정도면 충분하다고 생각했지.” 클로저가 말했다. 하지만 카펫 위로 뽀얗게 내려앉은 먼지를 보면…… 과연 한 번이라도 밟긴 했던 걸까?",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 118,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_carpet_02": {
+                "id": "furni_closureRoom_carpet_02",
+                "sortId": 2260,
+                "name": "'형상 재구성'",
+                "iconId": "furni_closureRoom_carpet_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CARPET",
+                "subType": "NONE",
+                "location": "CARPET",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 4,
+                "depth": 6,
+                "height": 1,
+                "comfort": 65,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "픽셀 아트 패턴이 메인인 불규칙 카펫으로, 방수 및 내유 기능이 뛰어난 특수 소재로 제작되었다.\n예전에 클로저가 평범한 카펫 위에 윤활유와 커피를 쏟는 대참사를 벌인 적이 있는데, 오후 내내 낑낑대며 청소해도 전혀 수습이 안 되자, 결국 지금의 이 카펫으로 교체해 버렸다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 60,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_wallpaper_01": {
+                "id": "furni_closureRoom_wallpaper_01",
+                "sortId": 2261,
+                "name": "'코어'",
+                "iconId": "furni_closureRoom_wallpaper_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLPAPER",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "WALL",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 34,
+                "depth": 1,
+                "height": 10,
+                "comfort": 240,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "클로저의 방에 설치된 벽면. 단열 및 방음 처리가 된 통유리를 통해 로도스 아일랜드 서버의 가동 상태를 언제든지 확인할 수 있다.\n서버 구역의 전체적인 설계도는 그녀 혼자의 힘으로 완성해 낸 것인데, 적어도 이 일에 관해서만큼은 그녀도 평소와 달리 누구보다 진지한 태도로 임했다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 198,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_floor_01": {
+                "id": "furni_closureRoom_floor_01",
+                "sortId": 2262,
+                "name": "'새로운 계획'",
+                "iconId": "furni_closureRoom_floor_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "FLOOR",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "FLOOR",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 34,
+                "depth": 10,
+                "height": 1,
+                "comfort": 240,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "테크웨어풍으로 디자인된 클로저의 방바닥. 방 안에는 자동 청소용 드론이 배치되어 있다.\n클로저는 바닥의 청결을 유지하기 위해 자동 청소 모드를 4단계로 설계했다. 각각 쾌속, 일반, 정밀, 그리고 대망의 4레벨인 '켈시급'이다. 그녀는 이 마지막 단계가 무엇을 의미하는지 끝끝내 입을 열지 않았다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 198,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_ceilinglamp_01": {
+                "id": "furni_rabbitCinema_ceilinglamp_01",
+                "sortId": 2263,
+                "name": "필름 조명등",
+                "iconId": "furni_rabbitCinema_ceilinglamp_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_1",
+                "width": 3,
+                "depth": 3,
+                "height": 3,
+                "comfort": 90,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "영화 필름 스타일의 등갓이 달린 천장등. 중간 부분은 필름 캔 모양으로 디자인되었다.\n자동 조명 조정 모드로 영화에 맞춰 다른 분위기를 낼 수 있다. 공포 영화를 보는 오퍼레이터들이 놀라서 비명 지르는 모습을 보고 싶다면, 이것이 딱이다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_table_01": {
+                "id": "furni_rabbitCinema_table_01",
+                "sortId": 2264,
+                "name": "'프레시 픽셀'",
+                "iconId": "furni_rabbitCinema_table_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_1",
+                "width": 6,
+                "depth": 3,
+                "height": 7,
+                "comfort": 315,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "산뜻한 배색이 돋보이는 소형 테이블로, 상판 아래에는 픽셀 스타일의 하얀 꽃이 장식되어 있다.\n이곳에서 정기적으로 '영화 속 음식 재현 대회'가 열린다. 심지어 판타지 영화에 나오는 요리까지 기어이 구현해 내고야 마는 도전자들이 있어, 행사가 열릴 때마다 엄청난 대성황을 이룬다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_stool_01": {
+                "id": "furni_rabbitCinema_stool_01",
+                "sortId": 2265,
+                "name": "'리플레이' 하이스툴",
+                "iconId": "furni_rabbitCinema_stool_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "STOOL",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_1",
+                "width": 2,
+                "depth": 2,
+                "height": 2,
+                "comfort": 110,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "십자 형태의 하이스툴로, 위에 다채로운 색상의 체크무늬가 인쇄되어 있다.\n액션 영화 《신 백화점 사투》 개봉 후, 엔지니어링부는 오퍼레이터들이 영화 속 주인공의 의자 액션을 따라하지 못하게 모든 스툴을 바닥에 단단히 고정해야만 했다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_ceilinglamp_02": {
+                "id": "furni_rabbitCinema_ceilinglamp_02",
+                "sortId": 2266,
+                "name": "깃털 천장등",
+                "iconId": "furni_rabbitCinema_ceilinglamp_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 5,
+                "depth": 3,
+                "height": 4,
+                "comfort": 130,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "심플한 금속 프레임으로 만든 천장등. 촬영에 종종 쓰이는 파울비스트 소품으로 장식되어 있다.\n티피에게 이 소품들이 촬영 중에 어떻게 쓰이는지 물어볼 수는 있으나, 수시로 떠날 수 있도록 적당한 핑계를 만들어야 한다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_shelf_01": {
+                "id": "furni_rabbitCinema_shelf_01",
+                "sortId": 2267,
+                "name": "미디어룸 간식 선반",
+                "iconId": "furni_rabbitCinema_shelf_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "CATERING",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_1",
+                "width": 4,
+                "depth": 3,
+                "height": 8,
+                "comfort": 260,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "휴게 구역에 배치된 간식 선반. 투명문이 달린 작은 냉장고가 딸려 있다.\n여기서 랭크우드 영화 콜라보 내지는 랭크우드 스타가 광고하는 간식을 종종 볼 수 있다. 물론 발견되는 즉시 동이 나버리지만.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_plant_01": {
+                "id": "furni_rabbitCinema_plant_01",
+                "sortId": 2268,
+                "name": "'생생한 레코드'",
+                "iconId": "furni_rabbitCinema_plant_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "PLANT",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 3,
+                "depth": 2,
+                "height": 6,
+                "comfort": 165,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "바니와 카세트 테이프 그림이 그려져 있는 화분. 안에는 상록 식물이 심어져 있다.\n화분 옆의 버튼 장식이 너무나도 리얼해서, 종종 카세트 테이프 재생 버튼으로 착각하는 사람들 덕분에 주변은 늘 웃음바다가 된다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_table_02": {
+                "id": "furni_rabbitCinema_table_02",
+                "sortId": 2269,
+                "name": "'필름 릴' 사이드 테이블",
+                "iconId": "furni_rabbitCinema_table_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 2,
+                "depth": 2,
+                "height": 2,
+                "comfort": 110,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "영화 필름 릴 모양의 작은 원형 테이블. 기존의 크랭크 축을 끼워 넣던 빈 공간에 음료를 놓을 수 있다.\n시라쿠사의 최신 느와르 영화《카모라》는 각지의 와인 판매량을 단숨에 끌어올렸다. 멋진 와인과 함께 이 명작을 감상해 보자.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_desk_01": {
+                "id": "furni_rabbitCinema_desk_01",
+                "sortId": 2270,
+                "name": "스탠드 파티션 테이블",
+                "iconId": "furni_rabbitCinema_desk_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 9,
+                "depth": 2,
+                "height": 8,
+                "comfort": 375,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "스탠드가 여러 개 달린 심플하고 긴 테이블. 테이블 위에는 장식물을 올려놓는 장식대가 있다.\n일정 시간마다 시청각 엔터테인먼트 관련 물건들이 가득 차는데, 랭크우드 영화 피규어에서 극동의 아이돌 굿즈까지 모두 갖춰져 있다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_sofa_01": {
+                "id": "furni_rabbitCinema_sofa_01",
+                "sortId": 2271,
+                "name": "'골든바니 어워즈' 소파",
+                "iconId": "furni_rabbitCinema_sofa_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "SOFA",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 4,
+                "depth": 4,
+                "height": 3,
+                "comfort": 210,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "등받이가 바니의 귀 모양인 금색 소파. 방석이 매우 푹신하다.\n이 소파에서 쪽잠을 잘 수도 있고, 위에서 즐겁게 춤을 출 수도 있으며, 무서운 장면을 보면 머리를 등받이에 파묻을 수도 있다. 이게 바로 푹신푹신한 만능 소파다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_carpet_01": {
+                "id": "furni_rabbitCinema_carpet_01",
+                "sortId": 2272,
+                "name": "'이미징' 러그",
+                "iconId": "furni_rabbitCinema_carpet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CARPET",
+                "subType": "NONE",
+                "location": "CARPET",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 13,
+                "depth": 6,
+                "height": 1,
+                "comfort": 130,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "빨강, 파랑, 노랑 삼색의 필름 패턴이 프린트된 타원형 러그. 구김이 덜 가고 미끄러짐을 방지하는 기능성 원단을 사용했다.\n영화 상영 도중 잠시 자리를 비워야 할 상황은 언제든 생기기 마련이다. 주변이 어두울 때 이동해야 한다면 각별히 발밑을 조심해야 한다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_ceilinglamp_03": {
+                "id": "furni_rabbitCinema_ceilinglamp_03",
+                "sortId": 2273,
+                "name": "'롱필름' 천장등",
+                "iconId": "furni_rabbitCinema_ceilinglamp_03",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 10,
+                "depth": 2,
+                "height": 2,
+                "comfort": 150,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "펼쳐진 필름을 연상케 하는 긴 천장등. 방 안에서 재생되는 미디어의 상황에 따라 조명 연출이 자동으로 조절된다.\n가끔 '독립 영화'를 감상할 때면 조명이 갑자기 깜빡이기도 하는데, 당황할 필요 없다. 이건 누군가 일부러 세팅한 것이니까.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_sofa_02": {
+                "id": "furni_rabbitCinema_sofa_02",
+                "sortId": 2274,
+                "name": "관람용 벤치 소파",
+                "iconId": "furni_rabbitCinema_sofa_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "SOFA",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 9,
+                "depth": 2,
+                "height": 3,
+                "comfort": 260,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "작은 간식 테이블이 딸린 긴 소파. 등받이는 영화 관람 시 다양한 자세에도 편할 수 있도록 특별히 디자인되었다.\n본함으로 돌아온 하디야가 반드시 하는 것 중의 하나가 바로, 여기에 앉아 감자칩을 먹으며 황무지 영화 한 편을 감상하는 것이다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_shelf_02": {
+                "id": "furni_rabbitCinema_shelf_02",
+                "sortId": 2275,
+                "name": "미니멀 소형 책장",
+                "iconId": "furni_rabbitCinema_shelf_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "STORAGE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 2,
+                "depth": 2,
+                "height": 3,
+                "comfort": 125,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "소박한 단색 책장. 차지하는 공간은 적지만, 많은 책을 보관할 수 있다.\n엔터테인먼트 산업 관련 잡지 말고도 인기 연재 만화인 《비욘드 리뎀션》의 최신권이 있어, 미디어룸을 찾는 사람도 많다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_curtain_01": {
+                "id": "furni_rabbitCinema_curtain_01",
+                "sortId": 2276,
+                "name": "바니 프로젝터 스크린",
+                "iconId": "furni_rabbitCinema_curtain_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILING",
+                "subType": "CURTAIN_C",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 9,
+                "depth": 5,
+                "height": 3,
+                "comfort": 200,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "중앙에 커다란 바니 장식 프레임이 달린 빔프로젝터. 롤 스크린은 음성 인식을 비롯한 다양한 방식으로 조작할 수 있다.\n조명을 어둡게 하고 스크린을 내리면 준비 완료. 마치 진짜 영화관에 온 듯한 기분으로 고전 명작 《신귀현기: 기인신장》을 다시 한번 감상해 보자.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_tv_01": {
+                "id": "furni_rabbitCinema_tv_01",
+                "sortId": 2277,
+                "name": "'올 인 픽처스'",
+                "iconId": "furni_rabbitCinema_tv_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "DEVICE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 8,
+                "depth": 3,
+                "height": 6,
+                "comfort": 360,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "맞춤 제작된 올인원 미디어 수납장. 최신형 커브드 TV를 탑재했으며, 다기능 멀티 플레이어와 다양한 영상 미디어 자료가 구비되어 있다.\nTV는 특수한 멀티미디어 데이터베이스와 연결되어 있어, 영화사 초창기의 고전 명작부터 최신 화제작까지 원하는 작품을 손쉽게 찾아볼 수 있다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_coffeeTable_01": {
+                "id": "furni_rabbitCinema_coffeeTable_01",
+                "sortId": 2278,
+                "name": "'즐거운 시간' 티 테이블",
+                "iconId": "furni_rabbitCinema_coffeeTable_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 7,
+                "depth": 4,
+                "height": 3,
+                "comfort": 290,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "미디어룸을 위해 특별히 제작된 기하학적 패턴의 티 테이블. 아래 공간에는 푹신한 쿠션을 덧대어 다리를 뻗어 편안하게 쉴 수 있다.\n최근 빅토리아의 드라마 《절명의 탐정》가 폭발적인 인기를 끌면서, 상영이 끝난 후에도 오퍼레이터들이 테이블 주위에 남아 누가 사건의 진범인지를 두고 열띤 토론을 벌이곤 한다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_shelf_03": {
+                "id": "furni_rabbitCinema_shelf_03",
+                "sortId": 2279,
+                "name": "디스크 진열대",
+                "iconId": "furni_rabbitCinema_shelf_03",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CABINET",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 4,
+                "depth": 3,
+                "height": 10,
+                "comfort": 295,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "소형 펜던트 등이 딸린 디스크 진열대. 보관 기능뿐만 아니라, 엄선한 디스크를 위에 올려서 전시하는 기능도 있다.\n가끔 취향을 바꿔보고 싶다면, 여기서《샤이닝 스텝스》의 최신 고화질 콘서트를 집어 보는 게 어떨까. 아마 훌륭한 선택이 될 것이다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_wallpaper_01": {
+                "id": "furni_rabbitCinema_wallpaper_01",
+                "sortId": 2280,
+                "name": "'여유로운 장초점'",
+                "iconId": "furni_rabbitCinema_wallpaper_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLPAPER",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "WALL",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 34,
+                "depth": 1,
+                "height": 10,
+                "comfort": 240,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "경이로운 대자연 다큐멘터리가 재생되고 있는 파노라마 디스플레이. 바라보고 있으면 마치 아름다운 자연의 한가운데로 공간 이동한 듯한 착각을 불러일으킨다.\n엔지니어링부는 현재 더욱 업그레이드된 디스플레이 개발에 박차를 가하고 있다. 나중에 이 풍경이 지겨워지면 버튼 하나로 손쉽게 배경을 전환할 수 있게 만들 예정이니, 부디 기대해 주시길!",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_floor_01": {
+                "id": "furni_rabbitCinema_floor_01",
+                "sortId": 2281,
+                "name": "'다 함께 플레이리스트'",
+                "iconId": "furni_rabbitCinema_floor_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "FLOOR",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "FLOOR",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 34,
+                "depth": 10,
+                "height": 1,
+                "comfort": 240,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "미디어룸에서 사용하는 패브릭 패턴의 바닥. 방음, 방수 기능을 겸하고 있으며, 발에 닿는 감촉 역시 매우 편하다.\n갑자기 튀어나온 귀신 때문에 비명을 지르든, 피가 끓어오르는 액션씬에 흥분해 환호성을 내지르든 다른 사람에게 방해될까 걱정할 필요 없다. 미디어룸의 방음은 절대적으로 보장된다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
             "furni_oct1st_deckChair_01": {
                 "id": "furni_oct1st_deckChair_01",
                 "sortId": 9998,
@@ -100778,7 +102318,7 @@
                 "processedByProductPercentage": 0,
                 "processedByProductGroup": {},
                 "canBeDestroy": false,
-                "isOnly": 1,
+                "isOnly": 2,
                 "enableRoomType": 4112,
                 "quantity": 0
             },
@@ -100810,7 +102350,7 @@
                 "processedByProductPercentage": 0,
                 "processedByProductGroup": {},
                 "canBeDestroy": false,
-                "isOnly": 1,
+                "isOnly": 2,
                 "enableRoomType": 4112,
                 "quantity": 0
             },
@@ -102435,7 +103975,7 @@
                 "height": 5,
                 "comfort": 140,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "아미야갸 엔지니어링부에 특별히 의뢰해 만든 작은 우편함, 위에는 아미야가 직접 만든 봉제 인형이 놓여 있다.\n얼마 지나지 않아 우편함은 새해를 축하하는 편지로 가득 찼다. 함께 앉아 친구들이 어떤 따뜻한 말을 보냈는지 살펴보도록 하자!",
+                "description": "아미야가 엔지니어링부에 특별히 의뢰해 만든 작은 우편함으로, 위에는 아미야가 직접 만든 봉제 인형이 놓여 있다.\n얼마 지나지 않아 우편함은 새해를 축하하는 편지로 가득 찼다. 함께 앉아 친구들이 어떤 따뜻한 말을 보냈는지 살펴보도록 하자!",
                 "obtainApproach": "이벤트 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -102544,7 +104084,7 @@
             },
             "furni_act73d0_rabbits_01": {
                 "id": "furni_act73d0_rabbits_01",
-                "sortId": 10257,
+                "sortId": 10259,
                 "name": "'함께 하는 축제'",
                 "iconId": "furni_act73d0_rabbits_01",
                 "interactType": "NONE",
@@ -106126,6 +107666,38 @@
                 "enableRoomType": 4144,
                 "quantity": 0
             },
+            "furni_terracommericials_CrucibleCreamPuff_01": {
+                "id": "furni_terracommericials_CrucibleCreamPuff_01",
+                "sortId": 11113,
+                "name": "플레이트 《단짝》",
+                "iconId": "furni_terracommericials_CrucibleCreamPuff_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "PLAQUE",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "",
+                "groupId": "",
+                "width": 4,
+                "depth": 1,
+                "height": 2,
+                "comfort": 75,
+                "usage": "숙소와 활동실, 응접실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "사람들이 대지를 여행할 수 있도록 지탱해 주는 것은 신앙만이 아니다. 슈크림 빵도 있다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4144,
+                "quantity": 0
+            },
             "furni_contract_s0_01": {
                 "id": "furni_contract_s0_01",
                 "sortId": 12001,
@@ -106147,7 +107719,7 @@
                 "height": 4,
                 "comfort": 75,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "어느 번화한 이동도시의 깃발. 재앙으로 인해 하루아침에 무너져버렸지만, 생존자들은 이를 기억하고자 깃발을 복원하였다.",
+                "description": "어느 번화한 이동도시의 깃발.\n재앙으로 인해 불행히도 하루아침에 파괴되었으나, 생존자들이 이를 기념하기 위해 깃발을 복원하였다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106179,7 +107751,7 @@
                 "height": 4,
                 "comfort": 75,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "어느 전설의 용병들이 사용하는 깃발. 이 용병들은 어느 위기 협약 임무에서 전멸했지만, 재앙정보전달자들이 이들의 깃발을 복원하였다.",
+                "description": "어느 전설적인 용병대가 사용했던 깃발.\n이 용병대는 어느 위기 협약 임무에서 전멸했지만, 재앙정보전달자들이 이들을 기념하기 위해 깃발을 복원하였다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106211,7 +107783,7 @@
                 "height": 4,
                 "comfort": 75,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "어느 소실된 무기의 마크가 그려진 깃발. 무기 자체는 이미 파손되었으나, 그 양식은 사람들에게 복원되어, 지금까지도 기념되고 있다.",
+                "description": "어느 소실된 무기의 표식이 찍힌 깃발.\n무기 자체는 이미 오래전에 파손되었으나, 추종자들이 이를 기념하고자 그 양식을 본떠 깃발을 복원하였다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106243,7 +107815,7 @@
                 "height": 4,
                 "comfort": 75,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "어떤 재앙정보전달자의 개인 표식이 찍힌 깃발. 해당 전달자는 이미 재앙으로 순직했지만, 그녀가 남긴 표식은 현지인에 의해 복원되어 기념되고 있다.",
+                "description": "어느 재앙정보전달자의 개인 표식이 찍힌 깃발.\n해당 전달자는 이미 재앙으로 순직했지만, 현지인들이 그녀가 남긴 표식을 기념하기 위해 깃발을 복원하였다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106275,7 +107847,7 @@
                 "height": 4,
                 "comfort": 75,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "어떤 리드씰 인장의 깃발을 묘사했다. 버려지고 재난을 당한 독립 도시 코어의 기밀 인장이 숨겨져 있어, 사람들에게 알려져서는 안 된다.",
+                "description": "어느 리드 씰 인장을 묘사한 깃발.\n재앙으로 폐허가 되어 버려진 어느 독립 도시의 코어에 숨겨져 있던 기밀 인장으로, 본래라면 세상 사람들에게 알려져서는 안 되는 것이었다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106307,7 +107879,7 @@
                 "height": 4,
                 "comfort": 75,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "어느 한 기사 가문의 훈장이 새겨진 깃발. 이 훈장의 주인은 한 번도 영예를 얻은 적이 없는 기사다. 하지만, 그의 영향력은 대단해 마니아들이 그를 기념하기 위해 이 훈장을 복원했다.",
+                "description": "어느 기사 가문의 문장이 새겨진 깃발.\n이 문장은 단 한 번도 영예를 얻지 못한 기사의 것이지만, 그의 폭넓은 영향력 덕분에 팬들이 그를 기념하고자 깃발을 복원하였다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106339,7 +107911,7 @@
                 "height": 4,
                 "comfort": 75,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "희귀한 짐승의 비늘무늬를 본뜬 깃발. 세상에 단 하나뿐이기에 무한한 값어치를 가지고 있다고만 알려졌으며, 그걸 얻지 못한 사람들은 무늬를 훈장에 새겨 기념한다.",
+                "description": "어느 희귀한 짐승의 비늘 무늬를 그려 넣은 깃발.\n만에 하나 있을까 말까 할 정도로 가치가 어마어마하다고 알려졌기에, 이를 직접 얻지 못한 사람들이 그 무늬를 본떠 깃발을 복원하였다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106371,7 +107943,7 @@
                 "height": 4,
                 "comfort": 75,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "어느 화가의 낙관 문양을 본떠 그린 깃발. 화가의 낙관은 자신을 입증하기 위함인데, 세상 사람들은 그걸 부의 상징으로 기념하고자 한다.",
+                "description": "어느 화가의 도장 문양을 본떠 그린 깃발.\n화가 본인은 자신을 증명하기 위해 도장을 찍었으나, 세상 사람들은 이를 부의 상징으로 기념하고자 깃발을 복원하였다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106403,7 +107975,7 @@
                 "height": 4,
                 "comfort": 75,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "홀로 타고 있는 횃불을 묘사한 깃발. 횃불은 들판에서 오래도록 빛을 밝혔고, 빛을 갈망하는 사람들은 불타는 횃불을 심벌로 그려 기념했다.",
+                "description": "어느 홀로 타오르는 횃불을 묘사한 깃발.\n횃불은 들판에서 오랫동안 빛을 발했고, 빛을 갈망하던 사람들은 불타는 그 모습을 기호로 그려내어 기념했다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106435,7 +108007,7 @@
                 "height": 4,
                 "comfort": 75,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "어떤 이상한 조수를 묘사한 깃발. 조수는 바다의 맥박이고, 사람들은 이를 통해 더 깊은 곳의 비밀을 엿보아 그 모습을 새겨 기념하려고 한다.",
+                "description": "어느 기이한 조수를 묘사한 깃발.\n조수는 바다의 맥동으로, 사람들은 그 속에서 더 깊은 곳의 비밀을 엿보려 애쓰며 간신히 그 형태를 기록하여 기념했다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106467,7 +108039,7 @@
                 "height": 4,
                 "comfort": 75,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "어느 파손된 건물을 묘사한 깃발. 포탄은 도시의 피부에 큰 상처를 남겼고, 사람들의 마음속에도 영원히 아물지 않는 상처를 남겼다. 사람들은 그 모양을 그려 기념한다.",
+                "description": "어느 파손된 건축물을 묘사한 깃발.\n포탄은 도시의 피부에 상처를 내었고 사람들의 마음속에도 영원히 아물지 않을 흉터를 남겼으며, 사람들은 그 형상을 묘사하여 기념했다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106499,7 +108071,7 @@
                 "height": 4,
                 "comfort": 75,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "어떤 금융 물결의 이미지를 묘사한 깃발. 이 거짓 현금 흐름의 밑바닥에는 유행을 좇아 파도에 휩쓸린 거의 익사에 가까운 무수히 많은 영혼이 존재한다. 그들은 전방에 부가 없다고 하여도, 그 모습을 묘사하여 기념하려고 한다.",
+                "description": "어떤 금융의 물결을 형상화하여 묘사한 깃발.\n허구의 현금 흐름 아래에는 유행을 좇다 거의 익사해가는 무수한 영혼들이 있으며, 그들은 눈앞에 부가 없음을 알면서도 그 형태를 묘사하여 기념했다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106531,7 +108103,7 @@
                 "height": 4,
                 "comfort": 75,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "어떤 콘셉트의 프로토타입 이미지를 모티브로 만든 깃발. 지나간 풍경은 앨범에 저장되고, 새로운 파도가 곧 다가올 예정이다. 그래서 사람들은 이 표식을 새겨 순간을 기념하고자 한다.",
+                "description": "어떤 개념적 원형 도안을 묘사한 깃발.\n지나간 풍경은 화보집에 봉인되고 새로운 물결이 머지않아 다가오자, 사람들은 앞다투어 이 표식을 각인하여 기념했다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106595,7 +108167,7 @@
                 "height": 5,
                 "comfort": 120,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "어떤 들불이 타오르는 듯한 풍경을 묘사한 깃발. 불은 꺼졌지만, 생존자들은 늪지대에 떠있는 잿가루를 먹 삼아 이 순간을 기념하고자 한다.",
+                "description": "어떤 들불이 번지는 광경을 묘사한 깃발.\n불길은 이미 꺼졌지만, 생존자들은 늪에 뜬 잿가루를 먹물에 갈아 넣어 흩날리는 풍경을 그려냄으로써 기념했다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106627,7 +108199,7 @@
                 "height": 5,
                 "comfort": 120,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "바다 위의 아침 풍경을 담은 깃발, 땅 위에서 부서진 파도를 밟으며 사람들은 아침 햇살을 품은 파도의 아름다움에 감탄했고, 그 찬란한 장면을 그려내 기념으로 삼았다.",
+                "description": "어떤 바다 위 새벽빛의 광경을 묘사한 깃발.\n대지 위의 부서진 물결을 밟고 지나며, 사람들은 조수와 아침 햇살이 어우러지는 장관에 감탄하여 그 찬란한 풍경을 그려내 기념했다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106659,7 +108231,7 @@
                 "height": 5,
                 "comfort": 120,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "석양이 지는 풍경을 묘사한 깃발. 모든 죄악은 녹슨 하늘 아래에서 깨끗이 사라졌고, 생존자들은 지울 수 없는 상처에 통곡하며 그 황폐한 모습을 기념했다.",
+                "description": "어떤 스러지는 석양의 광경을 묘사한 깃발.\n모든 죄악이 녹슨 하늘 아래에서 정화되었고, 생존자들은 지울 수 없는 상처에 통곡하며 그 황폐해진 풍경을 묘사하여 기념했다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -106691,7 +108263,7 @@
                 "height": 5,
                 "comfort": 120,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
-                "description": "어떤 하늘이 부서지는 듯한 풍경을 묘사한 깃발.\n눈부신 빛이 구름 속에서 쏟아져 내리고, 사람들은 거대한 그림자 뒤에 숨겨진 희망을 바라보며 이 아득한 순간을 기념하고자 한다.",
+                "description": "어떤 창공이 부서지는 듯한 광경을 묘사한 깃발.\n눈부신 빛이 구름 사이로 쏟아져 내리고, 사람들은 거대한 그림자 이면에 숨겨진 희망을 우러러보며 그 광활한 풍경을 묘사하여 기념했다.",
                 "obtainApproach": "위기 협약 시즌 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -109550,6 +111122,38 @@
                 "enableRoomType": 32,
                 "quantity": 0
             },
+            "furniM_act73d0_messageboard_01": {
+                "id": "furniM_act73d0_messageboard_01",
+                "sortId": 90117,
+                "name": "최신형 정보 단말기",
+                "iconId": "furniM_act73d0_messageboard_01",
+                "interactType": "FUNCTION",
+                "musicId": "",
+                "type": "FUNCTION",
+                "subType": "VISITOR",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "",
+                "groupId": "",
+                "width": 7,
+                "depth": 4,
+                "height": 8,
+                "comfort": 0,
+                "usage": "[기능성 가구 - 게시판] 응접실을 꾸밀 수 있다",
+                "description": "엔지니어링부에서 새롭게 설계하고 개조한 고급 방문객 정보 단말기. 다양한 정보 교류 수요를 충족할 수 있다.\n메시지, 선물 전달, 방문 기록 기능을 하나로 통합한 이 편리한 기기는 많은 방문객에게 호평받고 있다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 32,
+                "quantity": 0
+            },
             "furniM_taiko_ropeChandelier_01": {
                 "id": "furniM_taiko_ropeChandelier_01",
                 "sortId": 80117,
@@ -110051,7 +111655,7 @@
                 "height": 6,
                 "comfort": 0,
                 "usage": "응접실을 꾸밀 수 있다.",
-                "description": "윗부분에 동이 랜턴이 달린 대나무 재질의 스탠드. 축제용 소품을 놓기에 딱이다.\n부채, 북채, 여름옷, 황금 린수, 풍선, 풍어기, 게다가 정성껏 만들어진 목각 인형까지 둔다면, 축제의 즐거운 요소가 모이게 된다.",
+                "description": "윗부분에 동이 랜턴이 달린 대나무 재질의 스탠드. 축제용 소품을 놓기에 딱이다.\n부채, 북채, 여름옷, 황금린수, 풍선, 풍어기, 게다가 정성껏 만들어진 목각 인형까지 둔다면, 축제의 즐거운 요소가 모이게 된다.",
                 "obtainApproach": "태고 축제 오락실",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -130462,6 +132066,301 @@
                     "furni_ursusRoom_floor_01"
                 ]
             },
+            "furni_set_closureRoom": {
+                "id": "furni_set_closureRoom",
+                "enableRoomType": 4112,
+                "sortId": 127,
+                "name": "클로저의 만능 공간",
+                "themeType": "NORMAL",
+                "desc": "클로저의 사무실을 그대로 재현한 방. 업무 처리와 각종 오락이 가능할 뿐만 아니라, 취미를 위한 개인용 연구 장비까지 구비되어 있다. 용도가 지나치게 다양해 보이는가? 로도스 아일랜드의 수석 엔지니어가 왜 밤낮없이 깨어 있는지 떠올려 보면 전혀 이상한 일이 아니다.",
+                "quickSetup": [
+                    {
+                        "furnitureId": "furni_closureRoom_shelf_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_collectioncabinet_01",
+                        "pos0": 0,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_computerdesk_01",
+                        "pos0": 7,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_ledchair_01",
+                        "pos0": 6,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_poster_01",
+                        "pos0": 11,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_poster_02",
+                        "pos0": 12,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_officedesk_01",
+                        "pos0": 13,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_chair_01",
+                        "pos0": 13,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_stool_01",
+                        "pos0": 18,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_ceilingLight_01",
+                        "pos0": 15,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_equipmentdesk_01",
+                        "pos0": 20,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_cabinet_01",
+                        "pos0": 24,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_table_01",
+                        "pos0": 26,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_workbench_01",
+                        "pos0": 31,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_carpet_01",
+                        "pos0": 10,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_carpet_02",
+                        "pos0": 30,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_wallpaper_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_floor_01",
+                        "pos0": 0,
+                        "pos1": 10,
+                        "dir": 0
+                    }
+                ],
+                "groups": [
+                    "furni_set_closureRoom_1",
+                    "furni_set_closureRoom_2",
+                    "furni_set_closureRoom_3",
+                    "furni_set_closureRoom_4"
+                ],
+                "furnitures": [
+                    "furni_closureRoom_shelf_01",
+                    "furni_closureRoom_collectioncabinet_01",
+                    "furni_closureRoom_computerdesk_01",
+                    "furni_closureRoom_ledchair_01",
+                    "furni_closureRoom_poster_01",
+                    "furni_closureRoom_poster_02",
+                    "furni_closureRoom_officedesk_01",
+                    "furni_closureRoom_chair_01",
+                    "furni_closureRoom_stool_01",
+                    "furni_closureRoom_ceilingLight_01",
+                    "furni_closureRoom_equipmentdesk_01",
+                    "furni_closureRoom_cabinet_01",
+                    "furni_closureRoom_table_01",
+                    "furni_closureRoom_workbench_01",
+                    "furni_closureRoom_carpet_01",
+                    "furni_closureRoom_carpet_02",
+                    "furni_closureRoom_wallpaper_01",
+                    "furni_closureRoom_floor_01"
+                ]
+            },
+            "furni_set_rabbitCinema": {
+                "id": "furni_set_rabbitCinema",
+                "enableRoomType": 4112,
+                "sortId": 128,
+                "name": "해피 바니 미디어룸",
+                "themeType": "EVENT",
+                "desc": "아기자기한 바니 테마로 꾸며진 로도스 아일랜드 미디어룸. 엔지니어링부가 이 방을 위해 세심하게 설계한 음향 시스템과 영상의 매력을 온전히 구현하는 프로젝터가 갖춰져 있다. 오퍼레이터들은 분명 이곳에서 최고의 여가 시간을 보낼 수 있을 것이다.",
+                "quickSetup": [
+                    {
+                        "furnitureId": "furni_rabbitCinema_ceilinglamp_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_table_01",
+                        "pos0": 0,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_stool_01",
+                        "pos0": 4,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_ceilinglamp_02",
+                        "pos0": 6,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_shelf_01",
+                        "pos0": 5,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_plant_01",
+                        "pos0": 9,
+                        "pos1": 1,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_table_02",
+                        "pos0": 11,
+                        "pos1": 7,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_desk_01",
+                        "pos0": 13,
+                        "pos1": 1,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_sofa_01",
+                        "pos0": 9,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_carpet_01",
+                        "pos0": 12,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_ceilinglamp_03",
+                        "pos0": 11,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_sofa_02",
+                        "pos0": 13,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_shelf_02",
+                        "pos0": 22,
+                        "pos1": 1,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_curtain_01",
+                        "pos0": 22,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_tv_01",
+                        "pos0": 25,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_coffeeTable_01",
+                        "pos0": 17,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_shelf_03",
+                        "pos0": 28,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_wallpaper_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_floor_01",
+                        "pos0": 0,
+                        "pos1": 10,
+                        "dir": 0
+                    }
+                ],
+                "groups": [
+                    "furni_set_rabbitCinema_1",
+                    "furni_set_rabbitCinema_2",
+                    "furni_set_rabbitCinema_3",
+                    "furni_set_rabbitCinema_4"
+                ],
+                "furnitures": [
+                    "furni_rabbitCinema_ceilinglamp_01",
+                    "furni_rabbitCinema_table_01",
+                    "furni_rabbitCinema_stool_01",
+                    "furni_rabbitCinema_ceilinglamp_02",
+                    "furni_rabbitCinema_shelf_01",
+                    "furni_rabbitCinema_plant_01",
+                    "furni_rabbitCinema_table_02",
+                    "furni_rabbitCinema_desk_01",
+                    "furni_rabbitCinema_sofa_01",
+                    "furni_rabbitCinema_carpet_01",
+                    "furni_rabbitCinema_ceilinglamp_03",
+                    "furni_rabbitCinema_sofa_02",
+                    "furni_rabbitCinema_shelf_02",
+                    "furni_rabbitCinema_curtain_01",
+                    "furni_rabbitCinema_tv_01",
+                    "furni_rabbitCinema_coffeeTable_01",
+                    "furni_rabbitCinema_shelf_03",
+                    "furni_rabbitCinema_wallpaper_01",
+                    "furni_rabbitCinema_floor_01"
+                ]
+            },
             "furniM_set_basicRoom": {
                 "id": "furniM_set_basicRoom",
                 "enableRoomType": 32,
@@ -138383,6 +140282,123 @@
                     "furni_ursusRoom_wallpaper_01",
                     "furni_ursusRoom_floor_01"
                 ]
+            },
+            "furni_set_closureRoom_1": {
+                "id": "furni_set_closureRoom_1",
+                "sortId": 1,
+                "name": "'마스터 컨트롤' 작업 구역",
+                "themeId": "furni_set_closureRoom",
+                "comfort": 290,
+                "count": 4,
+                "furniture": [
+                    "furni_closureRoom_shelf_01",
+                    "furni_closureRoom_collectioncabinet_01",
+                    "furni_closureRoom_computerdesk_01",
+                    "furni_closureRoom_ledchair_01"
+                ]
+            },
+            "furni_set_closureRoom_2": {
+                "id": "furni_set_closureRoom_2",
+                "sortId": 2,
+                "name": "'스코어 보드' 게임 구역",
+                "themeId": "furni_set_closureRoom",
+                "comfort": 210,
+                "count": 5,
+                "furniture": [
+                    "furni_closureRoom_poster_01",
+                    "furni_closureRoom_poster_02",
+                    "furni_closureRoom_officedesk_01",
+                    "furni_closureRoom_chair_01",
+                    "furni_closureRoom_carpet_01"
+                ]
+            },
+            "furni_set_closureRoom_3": {
+                "id": "furni_set_closureRoom_3",
+                "sortId": 3,
+                "name": "'업적실' 전시 구역",
+                "themeId": "furni_set_closureRoom",
+                "comfort": 220,
+                "count": 4,
+                "furniture": [
+                    "furni_closureRoom_stool_01",
+                    "furni_closureRoom_ceilingLight_01",
+                    "furni_closureRoom_equipmentdesk_01",
+                    "furni_closureRoom_cabinet_01"
+                ]
+            },
+            "furni_set_closureRoom_4": {
+                "id": "furni_set_closureRoom_4",
+                "sortId": 4,
+                "name": "'제도기' 연구 개발 구역",
+                "themeId": "furni_set_closureRoom",
+                "comfort": 215,
+                "count": 5,
+                "furniture": [
+                    "furni_closureRoom_table_01",
+                    "furni_closureRoom_workbench_01",
+                    "furni_closureRoom_carpet_02",
+                    "furni_closureRoom_wallpaper_01",
+                    "furni_closureRoom_floor_01"
+                ]
+            },
+            "furni_set_rabbitCinema_1": {
+                "id": "furni_set_rabbitCinema_1",
+                "sortId": 1,
+                "name": "'숏폼' 스낵 존",
+                "themeId": "furni_set_rabbitCinema",
+                "comfort": 190,
+                "count": 4,
+                "furniture": [
+                    "furni_rabbitCinema_ceilinglamp_01",
+                    "furni_rabbitCinema_table_01",
+                    "furni_rabbitCinema_stool_01",
+                    "furni_rabbitCinema_shelf_01"
+                ]
+            },
+            "furni_set_rabbitCinema_2": {
+                "id": "furni_set_rabbitCinema_2",
+                "sortId": 2,
+                "name": "'롱테이크' 시네마 존",
+                "themeId": "furni_set_rabbitCinema",
+                "comfort": 230,
+                "count": 5,
+                "furniture": [
+                    "furni_rabbitCinema_table_02",
+                    "furni_rabbitCinema_sofa_01",
+                    "furni_rabbitCinema_carpet_01",
+                    "furni_rabbitCinema_sofa_02",
+                    "furni_rabbitCinema_coffeeTable_01"
+                ]
+            },
+            "furni_set_rabbitCinema_3": {
+                "id": "furni_set_rabbitCinema_3",
+                "sortId": 3,
+                "name": "'풀 아카이브' 미디어 존",
+                "themeId": "furni_set_rabbitCinema",
+                "comfort": 340,
+                "count": 5,
+                "furniture": [
+                    "furni_rabbitCinema_desk_01",
+                    "furni_rabbitCinema_shelf_02",
+                    "furni_rabbitCinema_tv_01",
+                    "furni_rabbitCinema_curtain_01",
+                    "furni_rabbitCinema_shelf_03"
+                ]
+            },
+            "furni_set_rabbitCinema_4": {
+                "id": "furni_set_rabbitCinema_4",
+                "sortId": 4,
+                "name": "'스테레오' 릴렉스 존",
+                "themeId": "furni_set_rabbitCinema",
+                "comfort": 185,
+                "count": 5,
+                "furniture": [
+                    "furni_rabbitCinema_wallpaper_01",
+                    "furni_rabbitCinema_floor_01",
+                    "furni_rabbitCinema_ceilinglamp_02",
+                    "furni_rabbitCinema_plant_01",
+                    "furni_rabbitCinema_ceilinglamp_03"
+                ]
             }
         },
         "types": {
@@ -140791,6 +142807,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -140929,6 +142955,16 @@
                 {
                     "weight": 57,
                     "itemId": "31094",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
                     "itemCount": 1
                 }
             ],
@@ -141069,6 +143105,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141208,6 +143254,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141342,6 +143398,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141471,6 +143537,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141498,6 +143574,304 @@
                 }
             ],
             "requireStages": {}
+        },
+        "68": {
+            "sortId": 2092,
+            "formulaId": "68",
+            "rarity": 0,
+            "itemId": "31114",
+            "count": 1,
+            "goldCost": 300,
+            "apCost": 1440000,
+            "formulaType": "F_EVOLVE",
+            "buffType": "W_EVOLVE",
+            "extraOutcomeRate": 0.1,
+            "extraOutcomeGroup": [
+                {
+                    "weight": 50,
+                    "itemId": "30013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30083",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "30093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
+                }
+            ],
+            "costs": [
+                {
+                    "id": "30063",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "31103",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "31113",
+                    "count": 1,
+                    "type": "MATERIAL"
+                }
+            ],
+            "requireRooms": [
+                {
+                    "roomId": "WORKSHOP",
+                    "roomLevel": 3,
+                    "roomCount": 1
+                }
+            ],
+            "requireStages": [
+                {
+                    "stageId": "main_17-10",
+                    "rank": 2
+                }
+            ]
+        },
+        "67": {
+            "sortId": 2093,
+            "formulaId": "67",
+            "rarity": 0,
+            "itemId": "31104",
+            "count": 1,
+            "goldCost": 300,
+            "apCost": 1440000,
+            "formulaType": "F_EVOLVE",
+            "buffType": "W_EVOLVE",
+            "extraOutcomeRate": 0.1,
+            "extraOutcomeGroup": [
+                {
+                    "weight": 50,
+                    "itemId": "30013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30083",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "30093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
+                }
+            ],
+            "costs": [
+                {
+                    "id": "30053",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "31093",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "31103",
+                    "count": 1,
+                    "type": "MATERIAL"
+                }
+            ],
+            "requireRooms": [
+                {
+                    "roomId": "WORKSHOP",
+                    "roomLevel": 3,
+                    "roomCount": 1
+                }
+            ],
+            "requireStages": [
+                {
+                    "stageId": "main_17-04",
+                    "rank": 2
+                }
+            ]
         },
         "65": {
             "sortId": 2094,
@@ -141604,6 +143978,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -141744,6 +144128,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141882,6 +144276,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -142022,6 +144426,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -142160,6 +144574,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -142300,6 +144724,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -142438,6 +144872,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -142578,6 +145022,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -142716,6 +145170,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -142856,6 +145320,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -142989,6 +145463,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -143124,6 +145608,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -143257,6 +145751,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -143510,6 +146014,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -143761,6 +146275,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -144014,6 +146538,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -144265,6 +146799,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -144518,6 +147062,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -144769,6 +147323,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -146530,6 +149094,19 @@
                 "unlockType": "MainBG",
                 "unlockParams": [
                     "bg_rogue_5"
+                ]
+            },
+            "bgm_bg_elitelounge_1": {
+                "bgmId": "bgm_bg_elitelounge_1",
+                "bgmSortId": 30,
+                "bgmStartTime": 1791943200,
+                "bgmName": "집념 - (Believed Believes) Believing (Instrumental)",
+                "gameMusicId": "music_elitelounge_1",
+                "obtainApproach": "누적 출석 1,500일 획득",
+                "bgmDescUnlocked": "배경에 동봉된 음원",
+                "unlockType": "MainBG",
+                "unlockParams": [
+                    "bg_elitelounge_1"
                 ]
             }
         }

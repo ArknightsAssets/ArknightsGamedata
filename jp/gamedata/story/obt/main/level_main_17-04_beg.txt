@@ -1,0 +1,1070 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[gridbg(imagegroup="47_g14_skyovercast_L1/47_g14_skyovercast_R1/47_g14_skyovercast_L2/47_g14_skyovercast_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-640,fadetime=1)]
+[largebgtween(duration = 60,yFrom = 360, yTo = 720,block = false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$m_avg_ursusdaily_loop", volume=0.6)]
+[delay(time=0.5)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0, block=true)]
+[Subtitle(text="「残念ながら、我々は無期限の保証はしかねる。だが、しかるべき助言を与えることは可能だ。」", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle(text="「サンクト・グリファーブルクと各軍の関係は、両手と数種類の手袋のようなものだ。」", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle(text="「第一軍は、最上級の駄獣の毛を惜しみなく使用して作られた。だがそれゆえ、サイズが限られ、予備に回った。手に馴染んだことは一度もなく、またそれを期待されたこともない。」", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle(text="「つまりその手袋を身につける時は、誰であれ上手に扱うためのコツを掴む必要があり、同時にある程度の苦痛に耐えなければならない。」", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[gridbg]
+[Dialog]
+[charslot]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>ゼルグラード接続エリア 林の中</><p=2>1102年1月20日 12:08</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_1037_amiya3_1#1$1",afrom=0, ato=1,duration=1.5)]
+[charslot(slot="r",name="avg_4179_monstr_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_1037_amiya3_1#1$1",focus="l")]
+[name="アーミヤ"]接続エリア……では、この向こうがゼルグラードの市街区ですね。
+[name="アーミヤ"]地図に書かれた案内では、公式の許可証を持つ団体は優先ルートを通るべきだそうです。私たちの持つ許可証には時間制限がありますので、できるだけ早く都市に入らなければなりません。
+[charslot(slot="r",name="avg_4179_monstr_1#1$1",focus="r")]
+[name="Mon3tr"]前の方にいくつか列があるぞ。でも優先ルートと書いてあるものは見当たらないな。
+[Dialog]
+[charslot(slot="l",name="avg_1037_amiya3_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_4179_monstr_1#1$1",focus="n")]
+[Decision(options="それに、ここには迎えの者がいるはずだが。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_1037_amiya3_1#7$1",focus="l")]
+[name="アーミヤ"]ここで少し待ってみましょう。もしかしたらすぐに――
+[charslot(slot="r",name="avg_4179_monstr_1#10$1",focus="r")]
+[name="Mon3tr"]ちょっと誰か捕まえて聞いてみよう。
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1,channel="1")]
+[charslot(slot="r",afrom=1, ato=0,duration=1.5,focus="r")]
+[stopsound(channel="1",fadetime=1.5)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_1037_amiya3_1#5$1",focus="l")]
+[name="アーミヤ"]Mon3trさん！
+[charslot]
+[Dialog]
+[Decision(options="好きにさせよう。;加減は知っているはずだ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#2$1",focus="m")]
+[name="アーミヤ"]もし感染者だと見なされ、攻撃を受けたらと思うと心配で――
+[charslot(slot="m",name="avg_npc_1730_1#3$1",focus="m")]
+[name="Raidian"]ここの兵力配置は、私が知ってる機密行政区と同じ構成だし、第一軍はそんな騒ぎが起こることなんて許さないよ。感染者の受け入れを宣言した以上は、余計にね。
+[charslot(slot="m",name="avg_npc_1730_1#2$1",focus="m")]
+[name="Raidian"]でも確かに、近くの電気信号にはちょっと不安になるかも……
+[charslot(slot="m",name="avg_4228_closur_1#14$1",focus="m")]
+[name="クロージャ"]そう？　じゃあドローン飛ばしてみよっか？
+[charslot]
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1,channel="2")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1",afrom=0, ato=1,duration=1.5)]
+[stopsound(channel="2",fadetime=1.5)]
+[delay(time=1.5)]
+[name="Mon3tr"]聞いてきたよ！
+[charslot(slot="m",name="avg_4179_monstr_1#4$1",focus="m")]
+[name="Mon3tr"]優先ルートは使用停止になっているそうだ。なんでも何時間か前、審査から逃れるために、そこからこっそり都市に入ろうとする人がいたらしい。
+[charslot(slot="m",name="avg_4179_monstr_1#2$1",focus="m")]
+[name="Mon3tr"]一般ルートは使用停止にこそなっていないけど、人を通すスピードはとても速いとは言えない。
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="m")]
+[name="アーミヤ"]……どうやら運が悪かったようですね。
+[Dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="n")]
+[Decision(options="アーミヤ、一番遅くて何時までに入る必要がある？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="アーミヤ"]今日の夜六時までです。接続エリアから中心部の出入口までは少し離れているので、連絡用の送迎車に乗ったとしても、少なくとも四時間はかかります。
+[name="アーミヤ"]あまりここで時間をかけてはいられません。今のスピードでゆっくりと並んでいたら、許可証の有効期限に間に合わないでしょう。
+[charslot(slot="m",name="avg_4228_closur_1#4$1",focus="m")]
+[name="クロージャ"]話の通じそうな人に許可証を見せて、ちょっと融通を利かせてもらうことはできないの？
+[charslot(slot="m",name="avg_npc_1730_1#3$1",focus="m")]
+[multiline(name="Raidian")]ウルサスの軍人は、「話が通じる」相手に見えたとしても、簡単に融通を利かせてくれないよ。
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[multiline(name="Raidian")]でもちょっとしたコツを使えば、彼らに要求を飲ませることもできるんだ。
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="Raidian"]ドクター。
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="何をすればいい？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1730_1#8$1",focus="m")]
+[name="Raidian"]簡単だよ。ドクターはただ必要な時に、なんだか深い考えがあるように頷いてくれたらいいの。
+[charslot]
+そう言う彼女の背後から、ロボットアームが動き出した。大きな動きではなく、近づく者に彼女が行動を始めたことに気づかせる程度の動きだった。
+その直後、周囲の衛兵全員の通信装置が、揃って甲高い音を響かせ始めた。
+すぐさま一人の将校らしき人物が、ロドス一行に向かって足早に近づいてくる。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[name="冷淡な軍人"]お前たち、何者だ！？　通信を破壊したのはお前の仕業か？
+[charslot(slot="m",name="avg_npc_1730_1#5$1",focus="m")]
+[name="Raidian"]やっと来た。ゼルグラードにはもう真面目に仕事する兵士がいなくなったのかと思ったよ。
+[charslot(slot="m",name="avg_npc_1730_1#5$1",focus="m")]
+[name="Raidian"]私たちはサンクト・グリファーブルクから来た、医薬品開発を行っている研究チームだよ。議会を代表して機密プロジェクトの進捗の視察に来たの。陛下の印付きの許可証も持ってる。
+[charslot(slot="m",name="avg_npc_1730_1#6$1",focus="m")]
+[name="Raidian"]そしてこちらにいるのが、陛下が直々に、特別に招いた技術顧問の方だよ。なのにこんな失礼な扱いをするなんて！
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="（深い考えがあるように頷く）;（傲慢に頷く）", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷淡な軍人"]申し訳ありません……ですが、ウルサスの方には見えませんね。
+[charslot(slot="m",name="avg_npc_1730_1#6$1",focus="m")]
+[name="Raidian"]へえ。私たちは迎えに来てくれるはずだった人がなかなか来ないせいでここで待っているんだけど、あなたたちには疑わしい人物に見えるってこと？
+[name="Raidian"]これが第一軍のやり方なんだね？　素晴らしいなぁ。陛下への報告書にしっかり書いておくね。
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷淡な軍人"]申し訳ございません。どうかお待ちください、我々は知らせを受け取っておらず――
+[charslot]
+[Dialog]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$rungeneral", volume=1,channel="4")]
+[stopsound(channel="4",fadetime=1)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",bstart=0.2,bend=0.7,afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",bstart=0.2,bend=0.7,focus="m")]
+[name="？？？"]入るな！
+[charslot(slot="m",name="avg_npc_1730_1#9$1",focus="m")]
+[name="Raidian"]――！？
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",bstart=0.2,bend=0.7,focus="m")]
+[name="？？？"]ゼルグラードに入るな！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$plot_intro", key="$plot_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1969_1#1$1",posfrom="0,0", posto="-100,0",duration=0)]
+[charslot(slot="r",name="avg_npc_1971_1#1$1",posfrom="0,0", posto="100,0",duration=0)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="焦る坑夫"]まだまだかかりそうですね……
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="r")]
+[name="落ち着いた若者"]後ろも長くなり続けているよ。どうやらかなりの人が、ゼルグラードで感染者の受け入れをしているという情報を知ったようだ。
+[charslot(slot="r",name="avg_npc_2225_1#3$1",focus="r")]
+[name="落ち着いた若者"]だけど心配いらないよ。
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[name="焦る坑夫"]その心配をしてるんじゃ――
+[charslot]
+[Dialog]
+[delay(time=1)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.4,channel="out1")]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="焦る坑夫"]待ってください、後ろの方が騒がしいみたいで。
+[name="焦る坑夫"]あの人、変な格好ですね……
+[name="焦る坑夫"]というか、本当に人間なの？
+[Dialog]
+[stopsound(channel="out1",fadetime=0.5)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.7,channel="out2")]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+異様な格好をした人型の何かが、列の最後尾にいる人々に向かってまっすぐに突撃する。人々がそれを避けると、隣の列も瞬く間に崩れていく。
+その短い間に、無数の戸惑いと動揺の視線が一点に集中した。
+[stopsound(channel="out2",fadetime=0.5)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="？？？"]聞いてくれ、ゼルグラードに入ったらダメだ！
+[name="？？？"]変なものがあるんだ！　見たことがない粉で、人の体に付くと感染して――
+[charslot(slot="m",name="avg_1037_amiya3_1#5$1",focus="m")]
+[name="アーミヤ"]粉……？
+[charslot]
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1,channel="3")]
+[charslot(slot="m",name="avg_npc_082",afrom=0, ato=1,duration=1.5)]
+[stopsound(channel="3",fadetime=1.5)]
+[delay(time=1.5)]
+[name="慌てる警備員"]――この野郎！　いいから黙れ！
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="？？？"]今のここは安全じゃない！　だから入ったらダメなんだ！　わかったな！？
+[name="？？？"]早くここを離れて――
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷淡な軍人"]……またお前か……
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="慌てる警備員"]申し訳ありません、グリーシャ中尉！　我々の不注意で、こいつが運送車に紛れ込んでしまい――
+[name="慌てる警備員"]今すぐ連れていきます！
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷淡な軍人"]早くしろ。
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="？？？"]もう時間がない、みんな覚えていてくれ――
+[name="？？？"]入ってくるな！
+[Dialog]
+[charslot(slot="r",name="avg_npc_082",afrom=0, ato=1,posfrom="120,0", posto="70,0",duration=1)]
+[delay(time=1)]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="r",afrom=1, ato=0,posfrom="70,0", posto="150,0",duration=1)]
+[charslot(slot="m",afrom=1, ato=0,posfrom="0,0", posto="80,0",duration=1)]
+[delay(time=1.5)]
+[charslot]
+[name="一同"]……
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷淡な軍人"]散れ、散れ。三十秒以内に自分たちの列に戻れ、さもなくば最後尾から並び直しだ！
+[charslot]
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_npc_1969_1#1$1",posfrom="0,0", posto="-100,0",duration=0)]
+[charslot(slot="r",name="avg_npc_1971_1#1$1",posfrom="0,0", posto="100,0",duration=0)]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",duration=0,afrom=1, ato=0,duration=1)]
+[charslot(slot="m",duration=0,afrom=1, ato=0,duration=1.5)]
+[charslot(slot="r",duration=0,afrom=1, ato=0,duration=1.8)]
+[delay(time=2)]
+[charslot]
+[playMusic(key="$m_avg_ursusdaily_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1730_1#4$1",focus="m")]
+[name="Raidian"]さすがに気になるんだけど、あれは……？
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷淡な軍人"]頭に問題がある者です、気にしないでください。
+[charslot(slot="m",name="avg_npc_1730_1#4$1",focus="m")]
+[name="Raidian"]どこに連れていかれるの？
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷淡な軍人"]保釈してやる者がいなければ、留置場でそれなりの日数は拘束されることになるはずです。
+[charslot(slot="m",name="avg_npc_1730_1#2$1",focus="m")]
+[name="Raidian"]なんだか初めてじゃないように聞こえるね。
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷淡な軍人"]そんなことはどうでもいいでしょう。
+[charslot(slot="m",name="avg_npc_1730_1#5$1",focus="m")]
+[name="Raidian"]とても大事だよ。
+[name="Raidian"]少し変わった人も受け入れるからこそ、ゼルグラードは「未来の都市」と呼ばれるにふさわしい。そうでしょう？
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷淡な軍人"]……
+[charslot]
+冷徹な面持ちの兵士は答えなかった。Raidianの言葉を肯定も否定もせず、ただその顔を射抜くように見つめ、静かな威圧感を与えようとしていた。
+しかしRaidianは、彼から通常とは異なる電気信号の震えが発せられているのを読み取った。
+彼女は微笑みを浮かべた。
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="Raidian"]でも、こんなものを見せられると、どうしてもちょっと心配しちゃうよ。
+[name="Raidian"]これが私たちの杞憂で、本当に問題がないっていう確証は、ゼルグラードに入ってちゃんとこの目で見ないと得られないものだし。
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷淡な軍人"]……まずはあなたたちの身分と書類が本物であるかを確認しなければなりません。
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="Raidian"]もちろんそれは問題ないよ。ただ、なるべく急いでほしいな。いいよね？
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="Raidian"]だって私たちは結局、ゼルグラード側の不備のせいで、都市に入るのが遅れてるんだから。
+[charslot]
+[Dialog]
+[PlaySound(key="$d_avg_paper1",volume=1)]
+[delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_paper1",volume=1)]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷淡な軍人"]……お待たせいたしました。身分にも書類にも問題はありません。
+[name="冷淡な軍人"]もう一度情報を確認させてください。会社名と来訪者数は？
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="アーミヤ"]ロドス・アイランド製薬、五人です。
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷淡な軍人"]来訪の目的は？
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="アーミヤ"]「プロジェクト・ゼロ」の研究を支援するために、議会により派遣されました。
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷淡な軍人"]確認が取れました、間違いありません。
+[name="冷淡な軍人"]私の後に続いてください。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_npc_2225_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="苛立つ衛兵"]だから言ってんだろ、検査するから荷台にある物を全部下ろせ。
+[name="苛立つ衛兵"]同じことを言わせるな。お前も不法侵入しようってわけじゃないならな。
+[charslot(slot="l",name="avg_npc_2225_1#10$1",focus="l")]
+[name="落ち着いた若者"]「お前も」……？
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[name="落ち着いた若者"]もちろんそのようなつもりはありません。皆さんの時間を無駄にしたいわけではないのですが、どうか聞いてください――
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_1037_amiya3_1#5$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1976_1#1$1",focus="n")]
+[name="アーミヤ"]あちらは……？
+[charslot(slot="r",name="avg_npc_1976_1#1$1",focus="r")]
+[name="冷淡な軍人"]感染者用の一般ルートです。
+[charslot(slot="l",name="avg_1037_amiya3_1#7$1",focus="l")]
+[name="アーミヤ"]たくさんの方が並んでいますね。今は冬なのに、あんな風にずっと外で並んでいるのでしょうか？　優先ルートは私たち以外に誰もいなくてがら空きなのに。
+[charslot(slot="r",name="avg_npc_1976_1#1$1",focus="r")]
+[name="冷淡な軍人"]それが規則ですから。
+[name="冷淡な軍人"]本来、正式な通知が届くまでは、優先ルートも閉鎖したままにするはずでした。
+[name="冷淡な軍人"]第一軍は、あなた方のために例外的処置を取っているのです。
+[charslot(slot="l",name="avg_1037_amiya3_1#3$1",focus="l")]
+[name="アーミヤ"]ご配慮には感謝しています。ですが、私が言いたいのは……
+[charslot]
+[name="言い争う声"]たく……ければ……無駄な抵抗は――
+[name="言い争う声"]――を携えて――
+[name="言い争う声"]ゼルグラードに入るんじゃない！！
+それほど遠くないもう一つの入口の方で、完全武装した衛兵たちが小柄な感染者を力任せに押しやっている。それに合わせ、怒号も次第に大きくなっていく。
+しかし虐げられている者に怯む様子はなく、大人しく数歩下がりつつも、背筋はピンと伸ばしたままだ。
+その隣には、見るからに労働者らしい身なりの者が何人か立っていた。坑夫らしき者や、建築作業員らしき者……
+誰もがその感染者の傍に立ち、明確にその人物を守る態勢を取っている。
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="m")]
+[name="アーミヤ"]……
+[charslot(slot="m",name="avg_4179_monstr_1#8$1",focus="m")]
+[name="Mon3tr"]アーミヤ？
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷淡な軍人"]これ以上時間をかけるようなら、許可証が保証する有効期限に間に合いませんよ。
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="アーミヤ"]すみません。ですが、どうしても先に――
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_2225_1#9$1")]
+[charslot(slot="r",name="avg_npc_082")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[charslot(slot="r",name="avg_npc_082",focus="n")]
+[name="落ち着いた若者"]……規則に従って、ここでもう三日間も並んで待ちました。その途中でそちらの見回りの方が荷台を一度検査したのに、なぜもう一度調べる必要があるのですか？
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[name="落ち着いた若者"]一体どうして？　ゼルグラードに入るためには、わずかに残った生活物資すら持ち込んではいけないのですか？
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="苛立つ衛兵"]言っただろう。ゼルグラードじゃお前らが食うものや着るものに困ることはない！　物資の持ち込みは禁止だ！　例外はない！
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[name="落ち着いた若者"]だからと言って、私たちのなけなしの財産を取り上げるのはあんまりです。
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="苛立つ衛兵"]ちっ、本当に話が通じないな――
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[name="アーミヤ"]お話の途中に失礼します……
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="苛立つ衛兵"]何だ急に、後ろに並べ！
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="アーミヤ"]私は優先ルートから来ました。
+[Dialog]
+[charslot]
+それを聞いた衛兵は、優先ルートの方をちらりと見た。がらんとした入口には数人がまばらに立っており、その全員がこちらを見つめている。
+優先ルートの将校たちから視線を戻すと、衛兵が目の前の女性に向ける視線に探りの色が宿る。
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="苛立つ衛兵"]（小声）優先ルートってどういうことだ、今日は閉鎖してるんじゃなかったのか？　もしかしてどこかのお偉いさんなのか……
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="アーミヤ"]なぜ口論になっているのか、教えていただけませんか？
+[charslot(slot="m",name="avg_npc_2225_1#9$1",focus="m")]
+[name="落ち着いた若者"]この人が、私たちの持ち込んだ生活物資を差し押さえると言って聞かないんです。言うことを受け入れなければ、ゼルグラードに入れてもらえないんだと。
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="苛立つ衛兵"]そういう規則だ！
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="アーミヤ"]この車両に積んでいるのが何か、お伺いしてもいいでしょうか？
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="落ち着いた若者"]少しばかりの麦と、それを挽いた粉です。どれも私たちが採掘場で勤めていた時に少しずつ貯めたものです。
+[charslot]
+若者はそう言うと、荷台を覆うシートの一角をめくり上げ、中身をアーミヤに見せた。
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="m")]
+[name="アーミヤ"]（どう見てもただの食糧で、この方々からも敵意は感じません。）
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="アーミヤ"]（でも、この麻袋の形……他にも何か隠しているのでしょうか？）
+[charslot]
+アーミヤは少しばかりの好奇心を抱いて若者を見やった。すると、若者のまっすぐな目と視線がぶつかった。
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="アーミヤ"]……
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="アーミヤ"]あの、これは私の通行許可証です。この方々については、私が保証人になります。
+[name="アーミヤ"]ゼルグラードに入るのに、他にどのような「特殊な規則」があるかは知りませんが、この方たちが運んでいるのはただの麦です。お金にもなりませんし、誰も傷つけません。
+[charslot(slot="m",name="avg_1037_amiya3_1#16$1",focus="m")]
+[name="アーミヤ"]彼らは採掘場からここに来たそうです。道中はきっと大変な思いをしたでしょう。懸命に運んできた食糧をお腹に収めるくらいは、見逃していただけますよね？
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="苛立つ衛兵"]……チッ。
+[name="苛立つ衛兵"]仕方ない。最後にもう一度検査して、何もなければ通っていい。
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="アーミヤ"]わかりました。ですが、袋を破かないように、どうか気をつけていただけませんか？
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="苛立つ衛兵"]いちいちうるせぇな……もういい、とっとと荷物を持って通れ。道を塞ぐな、問題も起こすなよ！
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="落ち着いた若者"]ありがとうございます。
+[charslot(slot="m",name="avg_npc_2225_1#3$1",focus="m")]
+[name="落ち着いた若者"]親切なお嬢さんも、ありがとうございました。そう言えば、まだお名前を伺っていませんね――
+[charslot(slot="m",name="avg_1037_amiya3_1#12$1",focus="m")]
+[name="アーミヤ"]大丈夫です、お構いなく！
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#12$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+その若者が顔を上げると、コータスはすでに元の場所へと戻っていた。小柄な若者の視界に映るのは、彼女の後ろ姿だけだった。
+その後すぐに、列は再び動き出した。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_driveincar",loop=true,channel="car",volume=0.5)]
+[delay(time=2)]
+[name="放送音"]「トンネルを抜けますと、すぐにゼルグラードの中心部が広がります。」
+[name="放送音"]「都市を豊かで美しい緑が囲み、高層ビルや建物は不揃いながら整然と並び、自然と未来性がほどよく調和しています。」
+[name="放送音"]「ゼルグラードでは、勤勉な労働を通して、誰もが己の手で人々の尊敬を集め、自分らしい暮らしを築くことができます。」
+[name="放送音"]「ここは夢を掴む都市であり、未来の都市なのです。」
+[Dialog]
+[Background(image="73_g1_exurbstreet_d",screenadapt="coverall")]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2,block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2,block=true)]
+[StopSound(channel="car",fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0, block=true)]
+[Subtitle(text="「……ゼルグラード新市民の皆様、ようこそ。そして、おかえりなさい。」", x=300, y=350, alignment="center", size=25, delay=0.04, width=700)]
+[delay(time=1)]
+[Subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[curtain(direction = 4,fillfrom = 0.2,fillto = 0.01,block=false,fadetime=1.5)]
+[curtain(direction = 0,fillfrom = 0.2,fillto = 0.01,block=true,fadetime=1.5)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>ゼルグラード中心部 市街地</><p=2>1102年1月20日 16:32</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlayMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="焦る坑夫"]先生、見てください！　あの建物の後ろのものはなんでしょう？
+[charslot(slot="r",name="avg_npc_2225_1#10$1",focus="r")]
+[name="落ち着いた若者"]山のような特殊な地形のように見えるね。それとも……壁かな？
+[charslot]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="真面目な衛兵"]今回のはこれで全員か？
+[name="真面目な衛兵"]よし。ここからは私についてきてくれ。
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="焦る坑夫"]……どこに連れて行くつもり？　ゼルグラードが出してきた宣伝文句通りなら、私たちはこれから自分たちの手で――
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="真面目な衛兵"]「暮らしを築く」、その通りだ。だがまずは休める場所を確保してから、お前たちは付近の工場や工業区画の仕事を割り振られることになる。
+[name="真面目な衛兵"]自分たちの幸運を噛み締めることだな。ゼルグラードの行政は、資質審査を通過した者には相応の住処も提供している。
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="焦る坑夫"]……そんなことが？　一度も聞いたことがない……
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="真面目な衛兵"]ゼルグラードが独自で行っている政策だ。我々は居住許可を持った合法的な住民には、一律の住居を安価で提供し、労働者の暮らしや仕事、娯楽の効率を最大化している。
+[name="真面目な衛兵"]だからこそ、この都市を訪れた人々はここを離れない。代々この都市を発展させ、ここで暮らし続けることを選ぶのだ。
+[name="真面目な衛兵"]以前までは、労働者の中で最も勤勉な者か、創造性を発揮した者だけがそういう待遇を受けていた。しかし今は審査に合格した人間すべてが対象だ。たとえ感染者であってもな。
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="落ち着いた若者"]なるほど、ゼルグラード内部からの情報が届かなかったのも頷けますね。
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="真面目な衛兵"]外で様々な噂が流れているのは把握している。それが本当かどうかは、自分の目で確かめるといい。
+[name="真面目な衛兵"]そうすれば、道中で聞いた宣伝文句が誇張ではないことがわかるだろう。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="l",name="avg_npc_1970_1#1$1")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1")]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",afrom=1, ato=0,duration=1.5)]
+[charslot(slot="r",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1502_crosly_1#2$1",bstart=0.2,bend=0.5,afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[name="？？？"]……
+[charslot(slot="m",name="avg_1502_crosly_1#1$1",bstart=0.2,bend=0.5,focus="m")]
+[name="？？？"]また感染者の一団が来たか。
+[name="？？？"]収容のペースが上がっているようだ。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="73_g3_exurbroom",screenadapt="coverall")]
+[Delay(time=2)]
+[PlayMusic(intro="$ponder_intro", key="$ponder_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+少なくとも住む場所を提供するという点に関しては、ゼルグラードの宣伝に誇張はなかった。
+裏返った空のミルクのパック、残された鍋や器などの調理器具、まだ青々としている観葉植物。板張りの床に敷かれた、色褪せた絨毯……
+それらすべてが、確かにここで誰かが暮らしていたことを物語っていた。
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="焦る坑夫"]これって、本当に……
+[name="焦る坑夫"]（小声）私が昔、チェルノボーグで家庭教師をやってた頃に住んでたのよりいい家ですよ！
+[charslot(slot="r",name="avg_npc_2225_1#4$1",focus="r")]
+[name="落ち着いた若者"]（小声）だけど、一つの階に少なくとも八から十の家族が押し込まれている。
+[name="落ち着いた若者"]（小声）つまり、消防面ではかなりの潜在的リスクを抱えていることになるよ。
+[charslot]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="真面目な衛兵"]この家はファミリー向けで、寝室が二つありキッチンも大きめだ。つい先日、都市東部の新しい工業区画に越したばかりの一家が、多くのものを残していったのだ。
+[name="真面目な衛兵"]だが、残ったものはそのまま使っても構わない。どのみち引越し先で使うために違うものを買っているから、もう必要ないだろう。
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="落ち着いた若者"]それなら、家庭を持たない人たちはどうするのでしょうか？
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="真面目な衛兵"]今空いているのはファミリー向けの家が多くてな。二人か三人程度をまとめて一つの世帯として、後ほど一階で登録しておけば大丈夫だ。
+[name="真面目な衛兵"]お前たちの人数からして、この建物で十分足りるだろう。
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="落ち着いた若者"]すみません、今この建物に住んでいるのは、全員感染者なのでしょうか？　先に来た人たちもここにいますか？
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="真面目な衛兵"]ああ、全員が感染者だ。だが先に来た連中がいるかどうかはわからないな。結構な人数が入ってきているから、全員が一箇所に住めることはないだろう。
+[charslot(slot="m",name="avg_npc_2225_1#8$1",focus="m")]
+[name="落ち着いた若者"]……
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="真面目な衛兵"]他に質問がなければ、すぐに部屋割りを相談しろ。終わったら一階での登録に連れて行く。
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="焦る坑夫"]いいよ、あんたの手を煩わせなくても、私たちは自分で――
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="落ち着いた若者"]ニカ。
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="焦る坑夫"]はい？
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="落ち着いた若者"]そこまで。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g12_ursusroom",screenadapt="coverall")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_opencabinet",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",afrom=0, ato=1,duration=1.5)]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="焦る坑夫"]（小声）さっきはなんで止めたんですか？　これじゃ邪魔な尻尾がいつまでもくっついてきますよ。
+[charslot(slot="r",name="avg_npc_2225_1#4$1",focus="r")]
+[name="落ち着いた若者"]（小声）見て、この部屋の台の上には塵一つない。しっかり清掃されているのがわかる。
+[name="落ち着いた若者"]（小声）ただ、室内の物の置かれ方からはそこまでの几帳面さは感じない。
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="r")]
+[name="落ち着いた若者"]（小声）たとえ前に住んでた人たちが、本当に全員引っ越したばかりだとしても変だ。どんな痕跡があったら、わざわざ清掃する必要があると思う？
+[charslot(slot="r",name="avg_npc_2225_1#9$1",focus="r")]
+[name="落ち着いた若者"]（小声）これはおかしい。彼女に警戒心を抱かせないようにしながら、どうにかまたパヴェルと連絡が取れるようにしないと。
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[name="焦る坑夫"]やっぱりおかしい……
+[charslot]
+[name="後ろから聞こえる声"]どうした？
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="落ち着いた若者"]いえ、お構いなく。ただこの住居を誰に割り当てようかと相談しているだけなので。
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="落ち着いた若者"]そうだね、この寝室一つだけの住居はガリーナに使わせようか。
+[charslot(slot="m",name="avg_npc_2225_1#8$1",focus="m")]
+[name="落ち着いた若者"]彼女はたった一人の子供を道中で亡くした。精神的に不安定で、仕事をする気力は残っていない。誰か面倒を見る人が必要だから、二人として見積もっておこう……
+[charslot]
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2225_1#8$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[PlaySound(key="$dooropenquite",volume=1)]
+[delay(time=1)]
+頭の中でどう邪魔な尻尾を振り落とせるか考えを巡らせながら、小柄なリーダーは歩を進めた。すると唐突に奥の寝室のドアが開き、若者は咄嗟に後ずさって衝突を回避したが――
+[Dialog]
+[PlaySound(key="$d_avg_doorbreak",volume=1)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[delay(time=1)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[delay(time=1)]
+中から飛び出した影もまた、咄嗟に判断を下していた。彼は手元の椅子を引っ掴むと、「侵入者」めがけて振り下ろしたのだ。
+[name="落ち着いた若者"]うっ……
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_080",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[name="警戒する感染者"]都市に入れてもらえる上に、食うものも住む場所も与えられる。そんな美味い話があるはずないだろう！
+[name="警戒する感染者"]レイド、早く手を貸してくれ――
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="焦る坑夫"]あんたたち、なんてことするの！？
+[charslot]
+[name="落ち着いた若者"]……待って、やり返したらだめだ……
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_328_1$1",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[name="レイド"]あなたたちは……
+[name="レイド"]何者だ？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="bg_cellroom_1",screenadapt="coverall")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_opencabinet",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="看守"]トーニャ・アリルーエワ。
+[charslot]
+[name="？？？"]……
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="看守"]アリルーエワ！
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="m",name="avg_4225_tanya_1#13$1",posfrom="0,-100", posto="0,0",afrom=0, ato=1,duration=1)]
+[Delay(time=1)]
+[name="？？？"]あっ――はい。
+[charslot(slot="m",name="avg_4225_tanya_1#6$1",focus="m")]
+[name="トーニャ"]ここに……
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="看守"]その無気力そうな面は、誰に見せているつもりだ？　我々はお前を痛めつけてはいないだろう。
+[name="看守"]「パニックを扇動する言説の流布」、「無断での職務放棄」、「公務執行妨害」、「違法集会」……どれをとっても、優に半月はお前をぶちこんでおける。
+[charslot(slot="m",name="avg_4225_tanya_1#8$1",focus="m")]
+[name="トーニャ"]出す気がないなら、何の用事であたしを呼んだ？
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="看守"]……お前は運がいい。また保釈してくれる奴が現れた。
+[name="看守"]だが保釈後は、森林区で六十時間の義務労働が待っている。五日以内に終わらせろ。さもなければ再収監され、二度と保釈は認められないぞ。
+[name="看守"]理解できたか？　わかったのなら頷け。
+[charslot(slot="m",name="avg_4225_tanya_1#8$1",focus="m")]
+[name="トーニャ"]（頷く）
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_dooropen", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="看守"]ああ、それともう一つ。外に出たら、もう二度と「レユニオン」を自称するな。お前は奴らと無関係だろう？
+[name="看守"]よし、もう行っていい。
+[charslot(slot="m",name="avg_4225_tanya_1#4$1",focus="m")]
+[name="トーニャ"]……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="73_g2_exurbstreet_n",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]……
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_082")]
+[charslot(slot="r",name="avg_npc_082")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",afrom=1, ato=0,duration=1.5)]
+[charslot(slot="r",afrom=1, ato=0,duration=1.5)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]（サーチライト……巡回の頻度が昼間より上がっているわ。）
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="m")]
+[name="シルカ"]（地上で動くのはもう無理ね。何とかしないと……）
+[charslot]
+「帰るために、あの船に戻るために、私はどこまでやれる？」
+女性は無表情のまま、頭の中で選択肢を取捨していく。たかが脱走兵の一人、軍にとっては価値などない。自分は何らかの取引のきっかけか、恩とも呼べない恩を売るのに使われるのがせいぜいだ。
+だが連中は果たして、第四軍の行く末を気にかけるだろうか？　肝心なのはそこだ。第一軍にはこの戦争に深入りする理由がない。幾度となく歴史がそれを示してきたし、今回も例外ではないだろう。
+前線に撃ち込まれた新兵器は、単なる威嚇と牽制に過ぎない。エフゲニーは、とっくにあの代物に目をつけているはずだ。例の若将軍……あれは致命的な弱点だが、どう利用すべきだろうか？
+逃亡者は慣れた足取りでサーチライトの軌道を避けながら、引き続き痕跡を隠す方法や、必要な混乱を引き起こす手段、そして……
+かつての居場所に帰る方法を、考えていた。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g14_dimunder",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="半酔いの兵士"]……無理だ、これ以上飲めねぇ。
+[name="半酔いの兵士"]もう帰らねぇと……
+[charslot]
+地下。広大な基礎構造が、生活層全体をいくつかの区画に隔てている。そう遠くない場所にある、わずかに開いた鉄の扉――その向こうの部屋からは、人々の喧騒と暖かな色の光が漏れ出していた。
+扉の側で取っ組み合っている二人の人物は、自分たちに向けられている視線にまったく気づかない様子だ。
+[charslot(slot="m",name="avg_npc_2227_1#5$1",focus="m")]
+[name="暑苦しい労働者"]前もそうだったじゃねぇか、舌の先を湿らせたくらいで「飲み過ぎた」とか言い出しやがって。そんなはずがあるか！
+[charslot(slot="m",name="avg_npc_2227_1#3$1",focus="m")]
+[name="暑苦しい労働者"]ほらよ、まだまだいけるだろ。あの壁の向こうに異動になったら、二度と飲めなくなるんだぞ――
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",posfrom="-150,0", posto="0,0",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]失礼、通るわよ。
+[charslot(slot="m",name="avg_npc_2227_1#4$1",focus="m")]
+[name="暑苦しい労働者"]お、おう。悪いな。
+[Dialog]
+[charslot]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2227_1#7$1",focus="m")]
+[name="暑苦しい労働者"]いや待て、なんで貴族がこんなところに……？
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="半酔いの兵士"]じゃあな。俺は勤務に戻らねぇと。
+[charslot(slot="m",name="avg_npc_2227_1#7$1",focus="m")]
+[name="暑苦しい労働者"]あっ、おい！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g16_conutryinside",screenadapt="coverall")]
+[Delay(time=2)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.7,channel="out4")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>ゼルグラード中心部 地下酒場</><p=2>1102年1月20日 21:13</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+予想していた通り、店内はほとんど満席だった。
+兵士も職人も、農民も教師も関係ない。彼らが昼間に何をしていようと、この場にいるのは一つの身分――「酔っ払い」だけだ。
+一つの場所にごった返し、大騒ぎをしながら同じ安酒を呷り、完全に酔い潰れてしまう前に、自分の体を宿舎へと引きずって帰る。
+ゼルグラードにはこうした一角が無数にある。かつては第四軍の駐屯地も同様だった。
+[stopsound(channel="out4",fadetime=0.5)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]……
+[charslot]
+誰も彼女を振り向かない。この店にバーテンダーはおらず、存在するのは今にも眠りに落ちそうな店主、積み上げられた樽、窮屈な通路、そして道具を使わない多様な酒場の遊びだけだった。
+変装し、この場に完全に溶け込んだその姿を認めると、シルカは店内にひしめき合う木のテーブルを巧みに避けつつ、酒場の最奥まで辿り着いた。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]エフセイ・ルキッチ。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]あ？　俺に話しかけてんのか？
+[charslot]
+女性はそれ以上の言葉を交わすことなく、服の裾を捲り上げ、隠していた認識票を露わにした。そして、第四軍の番号が刻まれた面を彼に向けた。
+彼女は相手をじっと見つめ、些細な表情の変化すら見逃すまいとしていた。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]（小声）少尉……？
+[name="エフセイ？"]うっ……
+[name="エフセイ？"]（周囲を見回す）
+[name="エフセイ？"]とりあえず、ついてきてくれ。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g14_dimunder",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]だが何でクランタが……？
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="シルカ"]その文句、あなたの職務怠慢と合わせて総司令に報告しておこうかしら、上級軍曹さん？　私が知る限りでは、あなたは第一軍の新兵器に関する情報を即座に伝えなかったようね。
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="n")]
+そうでなければ、第四軍が今も動きを見せないはずがない。シルカはそう考えつつ、数歩先を歩く相手に合わせて足を止めた。
+[charslot]
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]……い、いや、やめてくれ。
+[name="エフセイ？"]そろそろ誰かが来るだろうと思ってたから、こっちから報告してなかっただけで……ただ、これまでのハンドラーたちと違って、クランタが来るとは思わなくてな。どの大隊の所属だ？
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="シルカ"]無駄話を聞きにきたわけではないわ。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]じゃあ何が聞きたいんだ？　直近の報告書は全部セーフティハウスに置いてある。タイミングが悪かったな、今は手が離せねぇんだ。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="n")]
+彼は背後の酒場を指さした。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]地下酒場を経営しているのね。情報のハブとしては典型的だけど、本当にうまく活用できているの？
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]俺はここに潜入して四年になるが、一度もヘマをやらかしてはないし、ウラジミール勲章まで貰ってるんだぞ、この――
+[charslot(slot="m",name="avg_npc_2249_1#5$1",focus="m")]
+[name="シルカ"]私は確かにただの少尉だけど、それでもあなたより階級は上よ。そういった言葉を反射的に吐く前に、少しは頭を使うことをお勧めするわ。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]……何が知りたい？
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="シルカ"]前回の報告以降に知り得た、レッドラベルの情報をすべて。
+[name="シルカ"]口頭で報告して。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]ここでか？　あんた、機密保持の意識ってもんがねぇのか――
+[Dialog]
+[stopmusic(fadetime=1)]
+[charslot]
+[Sticker(id="st1", multi = true, text="<color=#888888>シルカ</color>", hidelog=true, x=240, y=625, alignment="left", size=31, delay=0.04, width=700, duration=0.01, block = false)]
+[spellsticker(id="spell2", action="show", style="fire", x=-240, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>「夜の雪は痕を残さず、声を潜めよ。」</><p=2>“Ночной снег без следа, молчи.”</>
+[Sticker(id="st1")]
+[spellstickerclear(block=false)]
+[PlaySound(key="$d_avg_OriginiumArts_soundwave",volume=1)]
+[Delay(time=1)]
+ほんの一瞬で、男は己という存在がこの空間から隔絶されたような錯覚に陥った。酔っ払いの喧騒は遠ざかり、下水道の水が滴る音さえも刹那のうちに消え去った。
+空気の壁が彼と目の前のクランタを隔てている。どれだけ声を上げたつもりでも自分の声は聞こえず、向かい合った相手の唇の動きが何を意味しているかもわからなかった。
+偽りの窒息感が、脳を支配する。彼はそれが幻覚か現実かも定かではないまま、ただ両手で喉を掻きむしった。
+[Dialog]
+[Sticker(id="st1", multi = true, text="<color=#888888>シルカ</color>", hidelog=true, x=240, y=625, alignment="left", size=31, delay=0.04, width=700, duration=0.01, block = false)]
+[spellsticker(id="spell2", action="show", style="fire", x=-240, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>「声よ、戻れ。」</><p=2>“Звук вернись.”</>
+[Sticker(id="st1")]
+[spellstickerclear(block=false)]
+[PlaySound(key="$d_avg_spellattack_1",volume=1)]
+[Delay(time=1)]
+[charslot]
+[Delay(time=1)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]ゲホッ、ゲホッ！
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]繰り返すつもりはないわ、エフセイ上級軍曹。
+[name="シルカ"]始めて。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]……ゲホッ……ハハハッ。
+[name="エフセイ？"]それ、聞いたことがあるぜ。戦争術師に捨てられた、音のない環境を作り出す以外何の役にも立たないゴミアーツだってな。
+[name="エフセイ？"]まさか、あれほど名高い特殊戦術兵団の少尉が来るとはな。あの哀れなラージンの手下か……その大道芸もあいつから教わったんだろう？
+[name="エフセイ？"]悪くない。よし、教えてやろう。一応はまだ共同戦線を張っている以上、あんたらみたいなどっちつかずの連中がまた寝返る前に、まず「情報共有」をしようじゃないか。
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="シルカ"]落ち着きなさい。さっきの行動は、この空間が安全だということをあなたに示しただけ。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]この*ウルサススラング*が、お高く留まりやがって。あんたらは同僚を駄獣と同じように殺すらしいじゃねぇか。この俺の耳にも入ってるぞ、十二月のあの反乱で――
+[name="エフセイ？"]全員を皆殺しにしたらしいな！　尋問すらかけずに、一人も生かさなかったんだって？　戦艦を丸ごと血まみれにして、雪が降ってようやく血生臭さがいくらか収まったと聞いてるぜ。
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="m")]
+[name="シルカ"]ええ、その通りよ。私はまさにそこで鉱石病に感染したわ。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]……何だって？
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="m")]
+[name="シルカ"]私は反乱者を掃討する最中に感染した。だから私にとって、これは元帥への忠誠を示す最後の機会よ。感染者という身分を利用して、今のゼルグラードに潜入する……
+[name="シルカ"]これが何を意味するのか、そしてなぜ私でなければならないのか。理解できるでしょう？
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]反乱の掃討者で、感染者で、そして少尉か……がはははっ！
+[name="エフセイ？"]なるほど、そういうことか……
+[name="エフセイ？"]確かにそうだ。何せ元帥にとって、あんたらはいつもただの道具でしかねぇ。艦隊一つを丸ごと失うよりは、いずれ流刑になる感染者を一人死なせる方がずっと安上がりってわけだ――
+[charslot(slot="m",name="avg_npc_2249_1#4$1",focus="m")]
+[name="シルカ"]何の話？
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]ああ、いや、何でもねぇ。
+[name="エフセイ？"]そういうことなら、手を貸してやる。感染者として都市に入ったんなら、また団地の方に戻らなきゃいけねぇだろ。その前に一番必要な情報は何だ？
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]現在のゼルグラードにおける第一軍の配置状況、彼らの元帥の現在位置、それと新兵器の全情報。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]あのスヴェトラーナって女に直接手を出そうってのか？　だったらまだ自殺した方がマシだぞ。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]なら、配置状況と新兵器の情報を。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]いいか、現状だとせいぜい直近の市内の防衛配置状況を口頭で教えられるだけだ。あんたは俺のハンドラーじゃないし、レッドラベルの情報を得る権限もない。
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="シルカ"]……
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]市内の巡回は時間帯で分かれてるが、あの若将軍がいつ隊を率いて巡回に混ざるかまではわからねぇ。ちょうどここ数日、俺は奴が現れるタイミングの法則を「まとめ」てみたところだ。
+[name="エフセイ？"]あの甘やかされて育ったガキは、外出の時にいつも取り巻きを連れてやがる。ままごとみてぇなもんだ。運転手、世話係、親衛隊……一人になる時は一切ねぇ。
+[name="エフセイ？"]だから俺は奴の屋敷の使用人に当たってみるしかなかった。気まぐれに行動することはあるが、大抵は街の中心部で夜間の衛兵が交代する一、二時間前に現れるらしい。
+[name="エフセイ？"]情報を聞き出した後、俺は提供者を口封じせざるを得なかった。だがその情報は本物のはずだぜ。もしお前が行動を起こすなら、ちょうど俺の代わりにその法則の正確さを検証して――
+[stopmusic(fadetime=1)]
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="シルカ"]もういいわ、十分よ。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="エフセイ？"]何？
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_throatslitting",volume=1,channel="knife")]
+[Delay(time=1)]
+[name="エフセイ？"]がはっ――！？
+[Dialog]
+[PlaySound(key="$d_avg_spurtblood",volume=1,channel="blood")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_knife",volume=1)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_piercechest",volume=1)]
+[Delay(time=1)]
+動きを目で追う間すらなく、銀白色の短剣が男の喉を掻き切った。
+続けて短剣は胸を貫き、再度引き抜かれた刃は、最後には脇の下へと深々と突き刺さる。
+極めて鮮やかで、淀みがない動きだった。
+[Dialog]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$blooddrop",channel="blood",volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]それが私の最も知りたかったことよ。ありがとう、エフセイ。
+[name="シルカ"]いいえ、ここではプロホルと呼ぶべきかもね……随分と時間が経ったから、ここであなたの足跡を見つけられるかどうか、それほど大きな期待はしていなかったけれど。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="プロホル？"]うっ……ぐっ――
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]だけど、あなたはずっと職務に忠実だった。素晴らしいことだわ。
+[charslot]
+男は血溜まりの中でもがいたが、誰かに届くような声を発することはできなかった。
+シルカは歩み寄り、血に染まったポケットから見つけられる限りの所有物を取り出し、持ち去ることにした。これで誰がこの現場を発見しても、突発的な強盗殺人だと思い込むだろう。
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="シルカ"]さようなら、プロホルさん。
+[name="シルカ"]エフゲニー元帥に代わり、あなたの奉仕に感謝を。
+[name="シルカ"]（小声）約束するわ。あの若将軍の暗殺に成功した暁には、あなたの功績も数に入れると。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="66_g12_deitygrypherburgmeeting",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$suspenseful_intro", key="$suspenseful_loop", volume=0.6)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.6,channel="out3")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_188_helage_1#1$1",afrom=0, ato=1,duration=1.5)]
+[charslot(slot="r",name="avg_npc_1966_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="興奮した「議員」"]……「行政区自治権」とは、憲法が各行政区に与えた、独自の政策を行う権利のことよ。理解するのがそんなに難しいかしら？　それとも、人間の言葉がわからないの？
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="蔑む「議員」"]行政区、区画を分けて、それからどうするんだ？　誰が治めて、誰がその資金を捻出して、誰がその結果で発生した責任を負うんだ？
+[name="蔑む「議員」"]それに進めたところで得られる結果は、クソほどかかる手間の割に合わないんじゃないか？
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="興奮した「議員」"]軍から権力を分散させようとしているのよ！　集中と濫用の防止のためだってわからないわけ？　そんなボロボロの身なりでここに来てるあたり、もしかして公立学校に通ったこともないんじゃない？
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="蔑む「議員」"]ああ通ってないさ、それが何だ？　あんたが必死で貴族のブーツを舐める勉強をしてた頃に、俺と家族は国境警備隊のためにテントの生産に追われてたんだよ！
+[charslot]
+アロイジウスはヘラグを連れて騒々しい群衆の間を通り抜ける。口論に夢中になっている人々は、彼らに一切の関心を向けなかった。
+ヘラグは黙って周囲の声に耳を傾けていたが、その表情は次第に強張っていった。
+[stopsound(channel="out3",fadetime=1)]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1966_1#20$1",focus="n")]
+[name="ヘラグ"]ここは議会議事堂だと思っていたが……
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="アロイジウス"]ええ、その通りです。
+[charslot(slot="l",name="avg_188_helage_1#3$1",focus="l")]
+[name="ヘラグ"]どうやら、今ここにいるのは、以前ここに座っていた議員たちではないようだな。無期限休会というのは、実のところこの準備のためだったのか？
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="アロイジウス"]将軍のことを「政治に疎い」と評した人がいましたが、とんだ見当違いですね。あっという間に状況をご理解なさるなんて。あれは誰だったかしら……
+[charslot(slot="l",name="avg_188_helage_1#9$1",focus="l")]
+[name="ヘラグ"]……
+[charslot(slot="r",name="avg_npc_1966_1#13$1",focus="r")]
+[name="アロイジウス"]思い出しました、副議長です。将軍に対して、まだどこか高潔な恩師としてのフィルターがかかっているのでしょう。どうかお気になさらず。
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="ヘラグ"]なぜ私をここに連れてきた？
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="アロイジウス"]どうぞ、お座りになってください。せっかく議論の始まりを聞けたことですから、ひとまず私と続きに耳を傾けてみましょう。
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="アロイジウス"]ご安心ください、すぐに終わるでしょう。彼らはいつも同じことについて言い争っているだけなので。
+[charslot]
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="蔑む「議員」"]……支離滅裂なことをごちゃごちゃと言いやがって、さっぱりわからん。そんな戯言を聞かせるために陛下が俺たちを呼んだのなら、議会の弁論でも聞いてる方がずっとマシだ！
+[name="蔑む「議員」"]あの判子押しどもの方が、少なくとも俺やお前よりは上品な言い争いをしていたはずだ――
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="興奮した「議員」"]陛下が市民議会を開かれるのは、あなたみたいな下賎な人に厚かましく金や土地を要求させるためではないわ！
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="蔑む「議員」"]陛下が市民議会を開くのは俺たちの訴えを聞くためだ。オーナーの工場が倒産しちまった以上、俺は金と土地を要求するぞ。それで皆が喜ぶからな！
+[name="蔑む「議員」"]そうすれば少なくとも自分たちで農地を耕したり、簡単な手仕事をしたりできるようになって、皆が失業する事態は避けられる。ジェレーズナヤ区がカトルガ区と同じ轍を踏むこともなくなるだろう！
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="興奮した「議員」"]……「皆のため」と言いつつ、行間からは自分のためだって意図が見え見えよ。ジェレーズナヤ区から選出された「労働者代表」が、まさかこんな有様だなんて……
+[name="興奮した「議員」"]もうあなたとは話すことはないわ。
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="蔑む「議員」"]俺は市民の一票一票を集めて選ばれたんだ。お前こそ何様だ？　この*ウルサススラング*め――
+[charslot]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="n")]
+[name="ヘラグ"]取っ組み合いが始まるぞ。
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="アロイジウス"]そんなことにはなりませんよ。大通りではないのですから。
+[Dialog]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="n")]
+[PlaySound(key="$d_avg_fight_amb_loop",loop=true,volume=0.6,channel="fight")]
+[delay(time=2)]
+[charslot(slot="r",name="avg_npc_1966_1#10$1",focus="r")]
+[name="アロイジウス"]ええと……
+[name="アロイジウス"]少し様子を見て――
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2248_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[stopsound(channel="fight",fadetime=1)]
+[charslot(slot="m",name="avg_npc_2248_1#1$1",focus="m")]
+[name="温厚な「議員」"]お二人とも。
+[charslot(slot="m",name="avg_npc_2248_1#2$1",focus="m")]
+[name="温厚な「議員」"]今はまだ意見を募っている段階ですから、意見の食い違いはあって当然です。落ち着いて腰を下ろし、ゆっくり話し合いましょう。
+[name="温厚な「議員」"]僕たちは貴族ではありませんが、どうかできるだけ体面を保つようにしてください……この身分が一時的なものに過ぎないとしても、「議員」としての体面を。
+[charslot(slot="m",name="avg_npc_2248_1#7$1",focus="m")]
+[name="温厚な「議員」"]ほら、本物の議員の紳士淑女に笑われてはいけませんから。ね？
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="蔑む「議員」"]ふん。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_081",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="興奮した「議員」"]スヴェトザールさん！　てっきりもう口添えしてくださらないのかと。
+[name="興奮した「議員」"]意見書を提出する前に、まだ少し誰かに相談しておきたい問題があるのです。良いところに来てくださいました、どうしても、どうしてもあなたのご意見が必要だったんです……
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2175_1#1$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="アロイジウス"]なるほど。
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="ヘラグ"]……
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="アロイジウス"]ご覧になって、何かお気づきになりましたか？
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="ヘラグ"]君の父親の言う通りだ。確かに、私は政治に明るくない。
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="アロイジウス"]ですが、将軍はもうお気づきかと思います。少なくとも、ある部分については。
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="アロイジウス"]あの二人が言い争っていた間、将軍は終始冷静な態度を保っていました。彼らが取っ組み合いを始めようとしても、特に大きな反応を示しませんでしたね。
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="アロイジウス"]ですが、最後にあの「議員」が近づいてきた時、急に顔色を変えました。なぜですか？
+[charslot(slot="l",name="avg_188_helage_1#3$1",focus="l")]
+[name="ヘラグ"]ただ、彼が他の者たちとはいくらか違うと感じただけだ。
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="アロイジウス"]それは、彼が本物の貴族かもしれないからではないですか？
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="ヘラグ"]「かもしれない」？
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="アロイジウス"]確たる証拠が見つかるまで、あらゆる見解はただの憶測に過ぎませんので。
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="ヘラグ"]君は先ほど、私がある部分に気づいていると言ったな。
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="アロイジウス"]ええ。あれは……
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="アロイジウス"]将軍がお気づきにならなかった部分は、おそらく言い争っていたあの二人のどちらも、陛下がお会いになりたいはずの「市民議員」ではないということでしょう。
+[name="アロイジウス"]これは、彼らの中に汚い言葉を使わない者がいたからでも、彼らの身の丈に合わない語彙や概念を口に出す者がいたからでもありません。
+[charslot(slot="r",name="avg_npc_1966_1#10$1",focus="r")]
+[name="アロイジウス"]そうではなく……それぞれの主張があまりに明確で、はっきりしすぎているからです。
+[charslot(slot="r",name="avg_npc_1966_1#4$1",focus="r")]
+[name="アロイジウス"]間違いなく、裏で何者かが手引きしているのでしょう。もし陛下ご自身が開催を宣言され、意見を直接お求めになるための市民議会にまで細工をする者がいるとすれば……
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="アロイジウス"]行き着く先は、失敗に終わった改革が一つ増えるだけでしょう。
+[charslot(slot="l",name="avg_188_helage_1#9$1",focus="l")]
+[name="ヘラグ"]……もう一度聞きたい。
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="ヘラグ"]なぜ私をここに連れてきた？
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="アロイジウス"]興味深い劇にご招待したまでです。そして、これはその劇の幕開けに過ぎません。新しい劇とは、開演をほんの数分でも見逃してしまえば、続きを観る楽しみが減ってしまうものですから。
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="アロイジウス"]はあ、私は心から将軍を案じているというのに、どうしても気持ちを受け取ってはくださらないのですね。残念です。
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="アロイジウス"]ですが、無理強いはいたしません。将軍を私たちのもとに引き戻す手段はいくらでもありますが、私はそのようなことはいたしませんので。
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="ヘラグ"]君は、自分が他のウルサス人とは違うのだと示したいのだな。
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="アロイジウス"]いえ、むしろ私は大半のウルサス人とさして変わらないと自覚しています。
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="アロイジウス"]私たちはただ、明日という日がまだ存在することを、個人の、そして民族の明日があることを望んでいるだけです。今となっては、それが極めて困難で……贅沢な望みになりつつありますが。
+[name="アロイジウス"]ですから、私は手に入る限りの助力を掴まなければなりません――そう、すべて。将軍の実力と過去は私の計画に大きな力となりますが、お望みでないのなら、他の道を探すしかありませんね。
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="ヘラグ"]……君の計画とは……
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="アロイジウス"]もう少し、機が熟してからお話ししましょう。
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="アロイジウス"]少々お時間を取らせてしまいましたね。急いでオドエフ区へお送りいたします。子供たちも、あなたの訪れを待ち望んでいるでしょうから。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[gridbg]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

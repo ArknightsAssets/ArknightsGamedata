@@ -941,6 +941,9 @@
         "ba.enemy": "<color=#D83C3C>{0}</color>",
         "ba.drop": "<color=#36ACFF>{0}</color>",
         "ba.acrem": "<color=#727272>{0}</color>",
+        "ba.velc": "<color=#21ffc3>{0}</color>",
+        "ba.delc": "<color=#ff9000>{0}</color>",
+        "ba.dgrey": "<color=#9a9a9a>{0}</color>",
         "eb.key": "<color=#00FFFF>{0}</color>",
         "eb.danger": "<color=#FF0000>{0}</color>",
         "ro.get": "<color=#0098DC>{0}</color>",
@@ -948,6 +951,7 @@
         "rolv.rem": "<color=#FF4C22>{0}</color>",
         "lv.description": "<color=#d8d769>{0}</color>",
         "lv.extrades": "<color=#d8d769>{0}</color>",
+        "lv.sand2desc": "<color=#a0a001>{0}</color>",
         "lv.item": "<color=#FFFFFF>{0}</color>",
         "lv.rem": "<color=#FFFFFF>{0}</color>",
         "lv.fs": "<color=#FF0000>{0}</color>",
@@ -1066,6 +1070,9 @@
         "char.amor": "<color=#aa4477>{0}</color>",
         "char.tmor": "<color=#335566>{0}</color>",
         "act.timelimit": "<color=#ffe300>{0}</color>",
+        "lv.pycitem": "<color=#D14631>{0}</color>",
+        "lv.pyctx": "<color=#1B1B1B>{0}</color>",
+        "lv.pycfs": "<color=#D14631>{0}</color>",
         "vc.text": "<color=#898989>{0}</color>",
         "vc.endtime": "<color=#ff0327>{0}</color>",
         "firework.animal": "<color=#0098dc>{0}</color>",
@@ -1094,7 +1101,7 @@
     "commonPotentialLvlUpCount": 4,
     "weeklyOverrideDesc": "",
     "voucherDiv": 5,
-    "recruitPoolVersion": 24,
+    "recruitPoolVersion": 25,
     "v006RecruitTimeStep1Refresh": 1577169000,
     "v006RecruitTimeStep2Check": 1577151000,
     "v006RecruitTimeStep2Flush": 1577646000,
@@ -1213,7 +1220,7 @@
         "ba.shield": {
             "termId": "ba.shield",
             "termName": "シールド",
-            "description": "ダメージを受けるとき、シールドを1枚消耗することによって被ダメージを1回無効化できる"
+            "description": "ダメージを受けるとき、シールドを1枚消費することによって被ダメージを1回無効化できる"
         },
         "ba.protect": {
             "termId": "ba.protect",
@@ -1308,7 +1315,7 @@
         "ba.physhield": {
             "termId": "ba.physhield",
             "termName": "対物理シールド",
-            "description": "ダメージを受けるとき、対物理シールドを1枚消耗することによって物理の被ダメージを1回無効化できる"
+            "description": "ダメージを受けるとき、対物理シールドを1枚消費することによって物理の被ダメージを1回無効化できる"
         },
         "ba.magicfragile": {
             "termId": "ba.magicfragile",
@@ -1459,6 +1466,16 @@
             "termId": "ba.dt.erosion2",
             "termName": "侵蝕損傷・味方",
             "description": "損傷が一定値（通常の敵及び【エリート】は1000、敵【ボス】は2000）蓄積すると爆発し、対象は即時に5000の元素ダメージを受け、かつ防御力が永続的に120減少する（重複可能）。効果発動後、8秒後再発動可能になる"
+        },
+        "ba.slowdown": {
+            "termId": "ba.slowdown",
+            "termName": "鈍化",
+            "description": "移動速度、攻撃速度、一部スキルの発動速度と再発動までの時間、一部状態異常の回復速度が効果値分低下（同名の状態は効果値が高いほうのみ適用）"
+        },
+        "ba.costlowerbound": {
+            "termId": "ba.costlowerbound",
+            "termName": "所持コスト下限",
+            "description": "コストが0未満になる場合でも、所持コスト下限までコストを消費可能。コストが0未満の時、コストの自然回復速度-50%"
         },
         "cc.bd_A_1": {
             "termId": "cc.bd_A_1",
@@ -1723,7 +1740,7 @@
         "cc.c.skill": {
             "termId": "cc.c.skill",
             "termName": "一部のスキル",
-            "description": "対象スキル：\n腹心、S.W.E.E.P.、おやつネット、執行協定、影武者、責任感、ボディガード、小さなリーダー、社交辞令、癒しの微笑み、カレンデュラの詩会、守護の決意、駆け出しの識者、細やかな気配り"
+            "description": "対象スキル：\n腹心、S.W.E.E.P.、おやつネット、執行協定、影武者、責任感、ボディガード、小さなリーダー、社交辞令、癒しの微笑み、カレンデュラの詩会、守護の決意、駆け出しの識者、細やかな気配り、チーフエンジニア"
         },
         "cc.t.strong2": {
             "termId": "cc.t.strong2",
@@ -1793,7 +1810,7 @@
         "cc.tag.op": {
             "termId": "cc.tag.op",
             "termName": "作業用プラットフォーム",
-            "description": "対象オペレーター：\nLancet-2、Castle-3、THRM-EX、ジャスティスナイト、Friston-3、PhonoR-0、CONFESS-47"
+            "description": "対象オペレーター：\nLancet-2、Castle-3、THRM-EX、ジャスティスナイト、Friston-3、PhonoR-0、CONFESS-47、GALLUS²"
         },
         "cc.tag.knight": {
             "termId": "cc.tag.knight",
@@ -1830,6 +1847,11 @@
             "termName": "特別独占オーダー",
             "description": "ペペが提供する特別な貴金属を取り扱う注文リスト。この注文リストの獲得時間と収益は固定であり、必要となる純金の納品数は0"
         },
+        "cc.tra.closure": {
+            "termId": "cc.tra.closure",
+            "termName": "クロージャの特別オーダー",
+            "description": "クロージャが提供する特別な貴金属を取り扱う注文リスト。この注文リストの収益は固定であり、必要となる純金の納品数は2"
+        },
         "cc.bd_mujica": {
             "termId": "cc.bd_mujica",
             "termName": "パッション",
@@ -1857,8 +1879,8 @@
         }
     },
     "storyReviewUnlockItemLackTip": "事象の欠片の数が足りません。購買資格証ショップあるいはイベントショップで購入してください",
-    "dataVersion": "51.10.0",
-    "resPrefVersion": "72d0d0",
+    "dataVersion": "52.0.0",
+    "resPrefVersion": "73d0d0",
     "announceWebBusType": "ak_announcement",
     "videoPlayerWebBusType": "ak_video_player",
     "gachaLogBusType": "ak_gacha_log",

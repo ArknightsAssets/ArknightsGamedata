@@ -1055,7 +1055,7 @@
                             "candidates": [
                                 {
                                     "displayRangeId": false,
-                                    "upgradeDescription": "召喚物「カラクリ羽獣」を使用可能（配置時に5体獲得）。カラクリ羽獣とサンドレコナーは敵【ロボット】への与ダメージが20%上昇、カラクリ羽獣の攻撃速度+5",
+                                    "upgradeDescription": "召喚物「カラクリ羽獣」を使用可能（配置時に5体獲得）。カラクリ羽獣とサンドレコナーは敵【機械】への与ダメージが20%上昇、カラクリ羽獣の攻撃速度+5",
                                     "talentIndex": 0,
                                     "validModeIndices": null,
                                     "unlockCondition": {
@@ -1103,7 +1103,7 @@
                             "candidates": [
                                 {
                                     "displayRangeId": false,
-                                    "upgradeDescription": "敵【ロボット】への与ダメージが20%上昇、攻撃速度+5",
+                                    "upgradeDescription": "敵【機械】への与ダメージが20%上昇、攻撃速度+5",
                                     "talentIndex": 0,
                                     "validModeIndices": null,
                                     "unlockCondition": {
@@ -1185,7 +1185,7 @@
                             "candidates": [
                                 {
                                     "displayRangeId": false,
-                                    "upgradeDescription": "召喚物「カラクリ羽獣」を使用可能（配置時に5体獲得）。カラクリ羽獣とサンドレコナーは敵【ロボット】への与ダメージが20%上昇、カラクリ羽獣の攻撃速度+8",
+                                    "upgradeDescription": "召喚物「カラクリ羽獣」を使用可能（配置時に5体獲得）。カラクリ羽獣とサンドレコナーは敵【機械】への与ダメージが20%上昇、カラクリ羽獣の攻撃速度+8",
                                     "talentIndex": 0,
                                     "validModeIndices": null,
                                     "unlockCondition": {
@@ -1233,7 +1233,7 @@
                             "candidates": [
                                 {
                                     "displayRangeId": false,
-                                    "upgradeDescription": "敵【ロボット】への与ダメージが20%上昇、攻撃速度+8",
+                                    "upgradeDescription": "敵【機械】への与ダメージが20%上昇、攻撃速度+8",
                                     "talentIndex": 0,
                                     "validModeIndices": null,
                                     "unlockCondition": {
@@ -64390,7 +64390,7 @@
                             "candidates": [
                                 {
                                     "displayRangeId": false,
-                                    "upgradeDescription": "配置から10秒後、物理回避と術回避+60%、敵に狙われにくくなる。ダメージを受けていない場合、20秒間攻撃力が徐々に上昇し（最大110%まで）、ダメージを受けると攻撃力はリセットされる",
+                                    "upgradeDescription": "配置から10秒後、物理回避と術回避+60%、敵に狙われにくくなる。ダメージを受けていない場合、20秒間攻撃力が徐々に上昇し（最大+10%まで）、ダメージを受けると攻撃力はリセットされる",
                                     "talentIndex": 0,
                                     "validModeIndices": null,
                                     "unlockCondition": {
@@ -161636,7 +161636,7 @@
                             "candidates": [
                                 {
                                     "displayRangeId": false,
-                                    "upgradeDescription": "",
+                                    "upgradeDescription": "HPが最大値の80%以上の敵を攻撃時、3秒間対象への与ダメージ+20%。<@ba.kw>生息演算</>において、12秒ごとに戦場中のユニット最大4体に雷撃を行い（密集したユニットを優先的に選択）、範囲内の敵全員にパッセンジャーの攻撃力の400%の術ダメージを与え、さらに12秒間雷撃した範囲の視野を獲得",
                                     "talentIndex": 0,
                                     "validModeIndices": null,
                                     "unlockCondition": {
@@ -161645,7 +161645,7 @@
                                     },
                                     "requiredPotentialRank": 0,
                                     "prefabKey": "1",
-                                    "name": null,
+                                    "name": "メカニズムアナライズ",
                                     "description": null,
                                     "rangeId": null,
                                     "blackboard": [
@@ -161665,6 +161665,76 @@
                                             "valueStr": null
                                         }
                                     ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "HPが最大値の80%以上の敵を攻撃時、3秒間対象への与ダメージ+25%<@ba.talpu>（+5%）</>。<@ba.kw>生息演算</>において、12秒ごとに戦場中のユニット最大4体に雷撃を行い（密集したユニットを優先的に選択）、範囲内の敵全員にパッセンジャーの攻撃力の400%の術ダメージを与え、さらに12秒間雷撃した範囲の視野を獲得",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 5,
+                                    "prefabKey": "1",
+                                    "name": "メカニズムアナライズ",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "hp_ratio",
+                                            "value": 0.8,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "pasngr_t_1[enhance].damage_scale",
+                                            "value": 1.25,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "pasngr_t_1[enhance].duration",
+                                            "value": 3.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "HPが最大値の80%以上の敵を攻撃時、3秒間対象への与ダメージ+20%。<@ba.kw>生息演算</>において、12秒ごとに戦場中のユニット最大4体に雷撃を行い（密集したユニットを優先的に選択）、範囲内の敵全員にパッセンジャーの攻撃力の400%の術ダメージを与え、さらに12秒間雷撃した範囲の視野を獲得",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "#",
+                                    "name": "メカニズムアナライズ",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": {},
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "HPが最大値の80%以上の敵を攻撃時、3秒間対象への与ダメージ+25%<@ba.talpu>（+5%）</>。<@ba.kw>生息演算</>において、12秒ごとに戦場中のユニット最大4体に雷撃を行い（密集したユニットを優先的に選択）、範囲内の敵全員にパッセンジャーの攻撃力の400%の術ダメージを与え、さらに12秒間雷撃した範囲の視野を獲得",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 5,
+                                    "prefabKey": "#",
+                                    "name": "メカニズムアナライズ",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": {},
                                     "tokenKey": null,
                                     "isHideTalent": false
                                 }
@@ -161761,38 +161831,6 @@
                                             "valueStr": null
                                         }
                                     ],
-                                    "tokenKey": null,
-                                    "isHideTalent": false
-                                }
-                            ]
-                        },
-                        "overrideTraitDataBundle": {
-                            "candidates": null
-                        }
-                    },
-                    {
-                        "resKey": null,
-                        "target": "TALENT_DATA_ONLY",
-                        "isToken": false,
-                        "validInGameTag": null,
-                        "validInMapTag": null,
-                        "addOrOverrideTalentDataBundle": {
-                            "candidates": [
-                                {
-                                    "displayRangeId": false,
-                                    "upgradeDescription": "HPが最大値の80%以上の敵を攻撃時、3秒間対象への与ダメージ+20%。<@ba.kw>生息演算</>において、12秒ごとに戦場中のユニット最大4体に雷撃を行い（密集したユニットを優先的に選択）、範囲内の敵全員にパッセンジャーの攻撃力の400%の術ダメージを与え、さらに12秒間雷撃した範囲の視野を獲得",
-                                    "talentIndex": 0,
-                                    "validModeIndices": null,
-                                    "unlockCondition": {
-                                        "phase": "PHASE_2",
-                                        "level": 60
-                                    },
-                                    "requiredPotentialRank": 0,
-                                    "prefabKey": "#",
-                                    "name": "メカニズムアナライズ",
-                                    "description": null,
-                                    "rangeId": null,
-                                    "blackboard": {},
                                     "tokenKey": null,
                                     "isHideTalent": false
                                 }
@@ -161899,7 +161937,7 @@
                             "candidates": [
                                 {
                                     "displayRangeId": false,
-                                    "upgradeDescription": "",
+                                    "upgradeDescription": "HPが最大値の80%以上の敵を攻撃時、3秒間対象への与ダメージ+20%。<@ba.kw>生息演算</>において、10秒ごとに戦場中のユニット最大5体に雷撃を行い（密集したユニットを優先的に選択）、範囲内の敵全員にパッセンジャーの攻撃力の500%の術ダメージを与え、さらに12秒間雷撃した範囲の視野を獲得。命中した味方ユニットはSPを2回復",
                                     "talentIndex": 0,
                                     "validModeIndices": null,
                                     "unlockCondition": {
@@ -161908,7 +161946,7 @@
                                     },
                                     "requiredPotentialRank": 0,
                                     "prefabKey": "1",
-                                    "name": null,
+                                    "name": "メカニズムアナライズ",
                                     "description": null,
                                     "rangeId": null,
                                     "blackboard": [
@@ -161928,6 +161966,76 @@
                                             "valueStr": null
                                         }
                                     ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "HPが最大値の80%以上の敵を攻撃時、3秒間対象への与ダメージ+25%<@ba.talpu>（+5%）</>。<@ba.kw>生息演算</>において、10秒ごとに戦場中のユニット最大5体に雷撃を行い（密集したユニットを優先的に選択）、範囲内の敵全員にパッセンジャーの攻撃力の500%の術ダメージを与え、さらに12秒間雷撃した範囲の視野を獲得。命中した味方ユニットはSPを2回復",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 5,
+                                    "prefabKey": "1",
+                                    "name": "メカニズムアナライズ",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "hp_ratio",
+                                            "value": 0.8,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "pasngr_t_1[enhance].damage_scale",
+                                            "value": 1.25,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "pasngr_t_1[enhance].duration",
+                                            "value": 3.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "HPが最大値の80%以上の敵を攻撃時、3秒間対象への与ダメージ+20%。<@ba.kw>生息演算</>において、10秒ごとに戦場中のユニット最大5体に雷撃を行い（密集したユニットを優先的に選択）、範囲内の敵全員にパッセンジャーの攻撃力の500%の術ダメージを与え、さらに12秒間雷撃した範囲の視野を獲得。命中した味方ユニットはSPを2回復",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "#",
+                                    "name": "メカニズムアナライズ",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": {},
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "HPが最大値の80%以上の敵を攻撃時、3秒間対象への与ダメージ+25%<@ba.talpu>（+5%）</>。<@ba.kw>生息演算</>において、10秒ごとに戦場中のユニット最大5体に雷撃を行い（密集したユニットを優先的に選択）、範囲内の敵全員にパッセンジャーの攻撃力の500%の術ダメージを与え、さらに12秒間雷撃した範囲の視野を獲得。命中した味方ユニットはSPを2回復",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 5,
+                                    "prefabKey": "#",
+                                    "name": "メカニズムアナライズ",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": {},
                                     "tokenKey": null,
                                     "isHideTalent": false
                                 }
@@ -162029,38 +162137,6 @@
                                             "valueStr": null
                                         }
                                     ],
-                                    "tokenKey": null,
-                                    "isHideTalent": false
-                                }
-                            ]
-                        },
-                        "overrideTraitDataBundle": {
-                            "candidates": null
-                        }
-                    },
-                    {
-                        "resKey": null,
-                        "target": "TALENT_DATA_ONLY",
-                        "isToken": false,
-                        "validInGameTag": null,
-                        "validInMapTag": null,
-                        "addOrOverrideTalentDataBundle": {
-                            "candidates": [
-                                {
-                                    "displayRangeId": false,
-                                    "upgradeDescription": "HPが最大値の80%以上の敵を攻撃時、3秒間対象への与ダメージ+20%。<@ba.kw>生息演算</>において、10秒ごとに戦場中のユニット最大5体に雷撃を行い（密集したユニットを優先的に選択）、範囲内の敵全員にパッセンジャーの攻撃力の500%の術ダメージを与え、さらに12秒間雷撃した範囲の視野を獲得。命中した味方ユニットはSPを2回復",
-                                    "talentIndex": 0,
-                                    "validModeIndices": null,
-                                    "unlockCondition": {
-                                        "phase": "PHASE_2",
-                                        "level": 60
-                                    },
-                                    "requiredPotentialRank": 0,
-                                    "prefabKey": "#",
-                                    "name": "メカニズムアナライズ",
-                                    "description": null,
-                                    "rangeId": null,
-                                    "blackboard": {},
                                     "tokenKey": null,
                                     "isHideTalent": false
                                 }
@@ -166833,17 +166909,17 @@
                                     "blackboard": [
                                         {
                                             "key": "skadi2_e_003_t_2[atk][1].atk",
-                                            "value": 0.08,
+                                            "value": 0.09,
                                             "valueStr": null
                                         },
                                         {
                                             "key": "skadi2_e_003_t_2[atk][2].atk",
-                                            "value": 0.15,
+                                            "value": 0.2,
                                             "valueStr": null
                                         },
                                         {
                                             "key": "skadi2_e_003_t_2[def].def",
-                                            "value": 0.06,
+                                            "value": 0.08,
                                             "valueStr": null
                                         },
                                         {
@@ -166872,17 +166948,17 @@
                                     "blackboard": [
                                         {
                                             "key": "skadi2_e_003_t_2[atk][1].atk",
-                                            "value": 0.11,
+                                            "value": 0.12,
                                             "valueStr": null
                                         },
                                         {
                                             "key": "skadi2_e_003_t_2[atk][2].atk",
-                                            "value": 0.18,
+                                            "value": 0.23,
                                             "valueStr": null
                                         },
                                         {
                                             "key": "skadi2_e_003_t_2[def].def",
-                                            "value": 0.06,
+                                            "value": 0.08,
                                             "valueStr": null
                                         },
                                         {
@@ -167310,6 +167386,3097 @@
                     {
                         "key": "atk",
                         "value": 75.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_002_tanya": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "resKey": "tanya_equip_1_1_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "敵をブロック中、自身の与える元素損傷<@ba.kw>+15%</>",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": [
+                                        {
+                                            "key": "ep_damage_scale",
+                                            "value": 1.15,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 200.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "def",
+                        "value": 40.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "resKey": "tanya_equip_1_2_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "敵をブロック中、自身の与える元素損傷<@ba.kw>+15%</>",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": [
+                                        {
+                                            "key": "ep_damage_scale",
+                                            "value": 1.15,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": null,
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "自身が受ける<$ba.dt.element>元素損傷</>-13%、<$ba.dt.erosion>侵蝕損傷</>の場合は追加で-15%",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": "粗悪溶剤耐性",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "ep_damage_resistance[other]",
+                                            "value": 0.13,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "ep_damage_resistance[water]",
+                                            "value": 0.15,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "自身が受ける<$ba.dt.element>元素損傷</>-15%<@ba.talpu>（-2%）</>、<$ba.dt.erosion>侵蝕損傷</>の場合は追加で-17%<@ba.talpu>（-2%）</>",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "1",
+                                    "name": "粗悪溶剤耐性",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "ep_damage_resistance[other]",
+                                            "value": 0.15,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "ep_damage_resistance[water]",
+                                            "value": 0.17,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 270.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "def",
+                        "value": 55.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "resKey": "tanya_equip_1_3_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "敵をブロック中、自身の与える元素損傷<@ba.kw>+15%</>",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": [
+                                        {
+                                            "key": "ep_damage_scale",
+                                            "value": 1.15,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": null,
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "自身が受ける<$ba.dt.element>元素損傷</>-13%、<$ba.dt.erosion>侵蝕損傷</>の場合は追加で-18%",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": "粗悪溶剤耐性",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "ep_damage_resistance[other]",
+                                            "value": 0.13,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "ep_damage_resistance[water]",
+                                            "value": 0.18,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "自身が受ける<$ba.dt.element>元素損傷</>-15%<@ba.talpu>（-2%）</>、<$ba.dt.erosion>侵蝕損傷</>の場合は追加で-20%<@ba.talpu>（-2%）</>",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 50
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "1",
+                                    "name": "粗悪溶剤耐性",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "ep_damage_resistance[other]",
+                                            "value": 0.15,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "ep_damage_resistance[water]",
+                                            "value": 0.2,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 350.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "def",
+                        "value": 70.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_002_closur": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "resKey": null,
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {},
+                                    "overrideDescripton": "攻撃範囲内で<@ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍にブロックされている敵を攻撃する際、攻撃力が150%まで上昇\n援軍はブロックしている敵からの被ダメージ-<@ba.kw>15%</>。",
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "closur_equip_1_1_p1",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "damage_scale",
+                                            "value": 0.85,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 150.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 20.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "def",
+                        "value": 15.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "resKey": null,
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {},
+                                    "overrideDescripton": "攻撃範囲内で<@ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍にブロックされている敵を攻撃する際、攻撃力が150%まで上昇\n援軍はブロックしている敵からの被ダメージ-<@ba.kw>15%</>。",
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "closur_equip_1_1_p1",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "damage_scale",
+                                            "value": 0.85,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": null,
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "編成中、<$ba.costlowerbound>所持コスト下限</>-4、味方【ロドス】の攻撃力+6%",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "極限スケジューリング",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "cost",
+                                            "value": -4.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "atk",
+                                            "value": 0.06,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "編成中、<$ba.costlowerbound>所持コスト下限</>-5<@ba.talpu>（-1）</>、味方【ロドス】の攻撃力+6%",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 2,
+                                    "prefabKey": "2",
+                                    "name": "極限スケジューリング",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "cost",
+                                            "value": -5.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "atk",
+                                            "value": 0.06,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 170.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 25.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "def",
+                        "value": 20.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "resKey": null,
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {},
+                                    "overrideDescripton": "攻撃範囲内で<@ba.kw>戦術召集点</>を指定し援軍を召喚できる\n自身が援軍にブロックされている敵を攻撃する際、攻撃力が150%まで上昇\n援軍はブロックしている敵からの被ダメージ-<@ba.kw>15%</>。",
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "closur_equip_1_1_p1",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "damage_scale",
+                                            "value": 0.85,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": null,
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "編成中、<$ba.costlowerbound>所持コスト下限</>-5、味方【ロドス】の攻撃力+8%",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "極限スケジューリング",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "cost",
+                                            "value": -5.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "atk",
+                                            "value": 0.08,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "編成中、<$ba.costlowerbound>所持コスト下限</>-6<@ba.talpu>（-1）</>、味方【ロドス】の攻撃力+8%",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 2,
+                                    "prefabKey": "2",
+                                    "name": "極限スケジューリング",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "cost",
+                                            "value": -6.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "atk",
+                                            "value": 0.08,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 180.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 30.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "def",
+                        "value": 25.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_002_veen": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "resKey": null,
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "攻撃エネルギーがある時、攻撃速度+30",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {},
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "veen_equip_1_1_p1",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10_root",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "attack_speed",
+                                            "value": 30.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 80.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 85.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "resKey": null,
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "攻撃エネルギーがある時、攻撃速度+30",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {},
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "veen_equip_1_2_p1",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10_root",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "attack_speed",
+                                            "value": 30.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": null,
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻撃およびチャージしたエネルギー発射時、攻撃対象に5秒間毎秒100の術ダメージを与える（最大4回まで重複可能。転置エネルギー発射時は一度に効果が3回分重複）。ヴィイはこの効果を受けている敵を攻撃対象にしない",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "戦争術師の素養",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "attack@duration",
+                                            "value": 5.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "attack@value",
+                                            "value": 100.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "attack@max_stack_cnt",
+                                            "value": 4.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 125.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 112.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "resKey": null,
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "攻撃エネルギーがある時、攻撃速度+30",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {},
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "veen_equip_1_2_p1",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10_root",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "attack_speed",
+                                            "value": 30.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": null,
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻撃およびチャージしたエネルギー発射時、攻撃対象に5秒間毎秒120の術ダメージを与える（最大4回まで重複可能。転置エネルギー発射時は一度に効果が3回分重複）。ヴィイはこの効果を受けている敵を攻撃対象にしない",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "戦争術師の素養",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "attack@duration",
+                                            "value": 5.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "attack@value",
+                                            "value": 120.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "attack@max_stack_cnt",
+                                            "value": 4.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 190.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 120.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_003_blkkgt": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "resKey": "blkkgt_equip_2_1_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "攻撃時、対象の防御力を<@ba.vup>{def_penetrate_fixed}</>無視",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": [
+                                        {
+                                            "key": "def_penetrate_fixed",
+                                            "value": 70.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 100.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 50.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "resKey": "blkkgt_equip_2_2_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "攻撃時、対象の防御力を<@ba.vup>{def_penetrate_fixed}</>無視",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": [
+                                        {
+                                            "key": "def_penetrate_fixed",
+                                            "value": 70.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "blkkgt_equip_2_2_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻撃力+5%、<$ba.tremble>戦慄</>状態の敵を攻撃時、対象の防御力を30%無視。地上の敵が自身の攻撃範囲に入ったとき、敵ごとに一度だけ、対象に6秒間の<$ba.tremble>戦慄</>状態を付与",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "生ける伝説",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "def_penetrate",
+                                            "value": 0.3,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "atk",
+                                            "value": 0.05,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "not_combat",
+                                            "value": 6.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻撃力+5%、<$ba.tremble>戦慄</>状態の敵を攻撃時、対象の防御力を35%<@ba.talpu>（+5%）</>無視。地上の敵が自身の攻撃範囲に入ったとき、敵ごとに一度だけ、対象に6秒間の<$ba.tremble>戦慄</>状態を付与",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "2",
+                                    "name": "生ける伝説",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "def_penetrate",
+                                            "value": 0.35,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "atk",
+                                            "value": 0.05,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "not_combat",
+                                            "value": 6.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 130.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 67.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "resKey": "blkkgt_equip_2_3_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "攻撃時、対象の防御力を<@ba.vup>{def_penetrate_fixed}</>無視",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": [
+                                        {
+                                            "key": "def_penetrate_fixed",
+                                            "value": 70.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "blkkgt_equip_2_3_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻撃力+8%、<$ba.tremble>戦慄</>状態の敵を攻撃時、対象の防御力を33%無視。地上の敵が自身の攻撃範囲に入ったとき、敵ごとに一度だけ、対象に6秒間の<$ba.tremble>戦慄</>状態を付与",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "生ける伝説",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "def_penetrate",
+                                            "value": 0.33,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "atk",
+                                            "value": 0.08,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "not_combat",
+                                            "value": 6.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "攻撃力+8%、<$ba.tremble>戦慄</>状態の敵を攻撃時、対象の防御力を38%<@ba.talpu>（+5%）</>無視。地上の敵が自身の攻撃範囲に入ったとき、敵ごとに一度だけ、対象に6秒間の<$ba.tremble>戦慄</>状態を付与",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "2",
+                                    "name": "生ける伝説",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "def_penetrate",
+                                            "value": 0.38,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "atk",
+                                            "value": 0.08,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "not_combat",
+                                            "value": 6.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 150.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 80.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_003_rmixer": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "resKey": "rmixer_equip_2_1_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "攻撃距離+1（スキルによる攻撃範囲変化の影響を受けない）",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": [
+                                        {
+                                            "key": "ability_range_forward_extend",
+                                            "value": 1.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "atk",
+                        "value": 60.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "def",
+                        "value": 50.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "resKey": "rmixer_equip_2_2_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "攻撃距離+1（スキルによる攻撃範囲変化の影響を受けない）",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": [
+                                        {
+                                            "key": "ability_range_forward_extend",
+                                            "value": 1.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": null,
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "5秒間通常攻撃せずにいると、最大HPの15%までの被ダメージを吸収可能な<$ba.barrier>バリア</>を獲得（バリア再獲得までの時間はバリアを失った時点から再度カウントされる）。この能力によるバリアがあるとき、攻撃力+8%",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "見送りの儀・盾を構えて",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "interval",
+                                            "value": 5.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "shield",
+                                            "value": 0.15,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "5秒間通常攻撃せずにいると、最大HPの18%<@ba.talpu>（+3%）</>までの被ダメージを吸収可能な<$ba.barrier>バリア</>を獲得（バリア再獲得までの時間はバリアを失った時点から再度カウントされる）。この能力によるバリアがあるとき、攻撃力+8%",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "2",
+                                    "name": "見送りの儀・盾を構えて",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "interval",
+                                            "value": 5.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "shield",
+                                            "value": 0.18,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": "rmixer_equip_2_2_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "21_root",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "atk",
+                                            "value": 0.08,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "atk",
+                        "value": 68.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "def",
+                        "value": 57.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "resKey": "rmixer_equip_2_3_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "攻撃距離+1（スキルによる攻撃範囲変化の影響を受けない）",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": [
+                                        {
+                                            "key": "ability_range_forward_extend",
+                                            "value": 1.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": null,
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "5秒間通常攻撃せずにいると、最大HPの20%までの被ダメージを吸収可能な<$ba.barrier>バリア</>を獲得（バリア再獲得までの時間はバリアを失った時点から再度カウントされる）。この能力によるバリアがあるとき、攻撃力+15%",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "見送りの儀・盾を構えて",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "interval",
+                                            "value": 5.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "shield",
+                                            "value": 0.2,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "5秒間通常攻撃せずにいると、最大HPの23%<@ba.talpu>（+3%）</>までの被ダメージを吸収可能な<$ba.barrier>バリア</>を獲得（バリア再獲得までの時間はバリアを失った時点から再度カウントされる）。この能力によるバリアがあるとき、攻撃力+15%",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "2",
+                                    "name": "見送りの儀・盾を構えて",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "interval",
+                                            "value": 5.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "shield",
+                                            "value": 0.23,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": "rmixer_equip_2_3_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "21_root",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "atk",
+                                            "value": 0.15,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "atk",
+                        "value": 74.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "def",
+                        "value": 63.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_003_texas2": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "resKey": "texas2_equip_2_1_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "撤退時に今回の配置時のコストを<@ba.kw>大量に</>返却",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": [
+                                        {
+                                            "key": "withdraw_cost_recover_ratio",
+                                            "value": 0.8,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 130.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 46.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "resKey": "texas2_equip_2_2_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "撤退時に今回の配置時のコストを<@ba.kw>大量に</>返却",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": [
+                                        {
+                                            "key": "withdraw_cost_recover_ratio",
+                                            "value": 0.8,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "texas2_equip_2_2_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "配置後、敵を1体倒すまで攻撃速度+12、被ダメージ-30%。敵を1体倒すと、今回撤退後の再配置時間-10%",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "テキサスの剣技",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "attack_speed",
+                                            "value": 12.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "damage_resistance",
+                                            "value": 0.3,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "respawn_time",
+                                            "value": 0.9,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "配置後、敵を1体倒すまで攻撃速度+14<@ba.talpu>（+2）</>、被ダメージ-35%<@ba.talpu>（-5%）</>。敵を1体倒すと、今回撤退後の再配置時間-10%",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "2",
+                                    "name": "テキサスの剣技",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "attack_speed",
+                                            "value": 14.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "damage_resistance",
+                                            "value": 0.35,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "respawn_time",
+                                            "value": 0.9,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 150.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 62.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "resKey": "texas2_equip_2_3_p1",
+                        "target": "TRAIT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "撤退時に今回の配置時のコストを<@ba.kw>大量に</>返却",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": [
+                                        {
+                                            "key": "withdraw_cost_recover_ratio",
+                                            "value": 0.8,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "texas2_equip_2_3_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "配置後、敵を1体倒すまで攻撃速度+15、被ダメージ-30%。敵を1体倒すと、今回撤退後の再配置時間-20%",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "2",
+                                    "name": "テキサスの剣技",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "attack_speed",
+                                            "value": 15.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "damage_resistance",
+                                            "value": 0.3,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "respawn_time",
+                                            "value": 0.8,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "配置後、敵を1体倒すまで攻撃速度+17<@ba.talpu>（+2）</>、被ダメージ-35%<@ba.talpu>（-5%）</>。敵を1体倒すと、今回撤退後の再配置時間-20%",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "2",
+                                    "name": "テキサスの剣技",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "attack_speed",
+                                            "value": 17.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "damage_resistance",
+                                            "value": 0.35,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "respawn_time",
+                                            "value": 0.8,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 160.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 69.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_004_typhon": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "resKey": null,
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "<@ba.kw>統合戦略</>において、重量ランクが3以上の敵を攻撃時、物理回避を無視し、物理の与ダメージ+40%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {},
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "typhon_equip_3_1_p1",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10_root",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "damage_scale",
+                                            "value": 1.4,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "value",
+                                            "value": 3.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 100.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 70.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "resKey": null,
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "<@ba.kw>統合戦略</>において、重量ランクが3以上の敵を攻撃時、物理回避を無視し、物理の与ダメージ+40%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {},
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "typhon_equip_3_2_p1",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10_root",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "damage_scale",
+                                            "value": 1.4,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "value",
+                                            "value": 3.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": null,
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "スキル発動中、同じ敵に初めてダメージを与える際、攻撃力が160%まで上昇し、対象を3秒間<$ba.sluggish>足止め</>\n<@ba.kw>統合戦略</>において、配置中、戦場で最も重量の重い敵1体をマークし続け、対象が<$ba.sluggish>足止め</>または<$ba.stun>スタン</>状態になると、対象へ向けて矢の雨を放つ（8秒ごとに最大1回まで発動可能）。矢の雨は対象とその周囲の敵をランダムに8回攻撃し、攻撃力の90%の物理ダメージを与え、0.1秒間<$ba.stun>スタン</>させる",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "#",
+                                    "name": "泥沼の如く",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "atk_scale",
+                                            "value": 1.6,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "sluggish",
+                                            "value": 3.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "スキル発動中、同じ敵に初めてダメージを与える際、攻撃力が170%<@ba.talpu>（+10%）</>まで上昇し、対象を3秒間<$ba.sluggish>足止め</>\n<@ba.kw>統合戦略</>において、配置中、戦場で最も重量の重い敵1体をマークし続け、対象が<$ba.sluggish>足止め</>または<$ba.stun>スタン</>状態になると、対象へ向けて矢の雨を放つ（8秒ごとに最大1回まで発動可能）。矢の雨は対象とその周囲の敵をランダムに8回攻撃し、攻撃力の90%の物理ダメージを与え、0.1秒間<$ba.stun>スタン</>させる",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "#",
+                                    "name": "泥沼の如く",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "atk_scale",
+                                            "value": 1.7,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "sluggish",
+                                            "value": 3.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": "typhon_equip_3_2_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "20_root",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "atk_scale",
+                                            "value": 0.9,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "cast_interval",
+                                            "value": 8.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "stun",
+                                            "value": 0.1,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "projectile_life_time",
+                                            "value": 2.5,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "max_hit_num",
+                                            "value": 8.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "hit_interval",
+                                            "value": 0.2,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 130.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 81.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "resKey": null,
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "<@ba.kw>統合戦略</>において、重量ランクが3以上の敵を攻撃時、物理回避を無視し、物理の与ダメージ+40%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {},
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "typhon_equip_3_3_p1",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10_root",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "damage_scale",
+                                            "value": 1.4,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "value",
+                                            "value": 3.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": null,
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "スキル発動中、同じ敵に初めてダメージを与える際、攻撃力が160%まで上昇し、対象を3秒間<$ba.sluggish>足止め</>\n<@ba.kw>統合戦略</>において、配置中、戦場で最も重量の重い敵1体をマークし続け、対象が<$ba.sluggish>足止め</>または<$ba.stun>スタン</>状態になると、対象へ向けて矢の雨を放つ（8秒ごとに最大1回まで発動可能）。矢の雨は対象とその周囲の敵をランダムに8回攻撃し、攻撃力の110%の物理ダメージを与え、0.1秒間<$ba.stun>スタン</>させる",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "#",
+                                    "name": "泥沼の如く",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "atk_scale",
+                                            "value": 1.6,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "sluggish",
+                                            "value": 3.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                },
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "スキル発動中、同じ敵に初めてダメージを与える際、攻撃力が170%<@ba.talpu>（+10%）</>まで上昇し、対象を3秒間<$ba.sluggish>足止め</>\n<@ba.kw>統合戦略</>において、配置中、戦場で最も重量の重い敵1体をマークし続け、対象が<$ba.sluggish>足止め</>または<$ba.stun>スタン</>状態になると、対象へ向けて矢の雨を放つ（8秒ごとに最大1回まで発動可能）。矢の雨は対象とその周囲の敵をランダムに8回攻撃し、攻撃力の110%の物理ダメージを与え、0.1秒間<$ba.stun>スタン</>させる",
+                                    "talentIndex": 1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 4,
+                                    "prefabKey": "#",
+                                    "name": "泥沼の如く",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "atk_scale",
+                                            "value": 1.7,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "sluggish",
+                                            "value": 3.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": "typhon_equip_3_3_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "20_root",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "atk_scale",
+                                            "value": 1.1,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "cast_interval",
+                                            "value": 8.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "stun",
+                                            "value": 0.1,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "projectile_life_time",
+                                            "value": 2.5,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "max_hit_num",
+                                            "value": 8.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "hit_interval",
+                                            "value": 0.2,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 150.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 90.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            }
+        ]
+    },
+    "uniequip_004_ghost2": {
+        "phases": [
+            {
+                "equipLevel": 1,
+                "parts": [
+                    {
+                        "resKey": null,
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "<@ba.kw>統合戦略</>において、自身と<身替り>の物理と術の与ダメージ+40%、物理と術の被ダメージ-40%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {},
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "ghost2_equip_3_1_p1",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10_root",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "output_damage_scale",
+                                            "value": 1.4,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "take_damage_scale",
+                                            "value": 0.6,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 240.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 40.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 2,
+                "parts": [
+                    {
+                        "resKey": null,
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "<@ba.kw>統合戦略</>において、自身と<身替り>の物理と術の与ダメージ+40%、物理と術の被ダメージ-40%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {},
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "ghost2_equip_3_2_p1",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10_root",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "output_damage_scale",
+                                            "value": 1.4,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "take_damage_scale",
+                                            "value": 0.6,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": null,
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "<身替り>状態時、周囲の敵の移動速度-40%、1秒ごとに攻撃力の40%の術ダメージを与える\n<@ba.kw>統合戦略</>において、<身替り>状態時、周囲の敵に追加で1秒ごとに攻撃力の100%の術ダメージを与える",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "#",
+                                    "name": "内なる抱擁",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": {},
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": "ghost2_equip_3_2_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": "x-4",
+                                    "blackboard": [
+                                        {
+                                            "key": "move_speed",
+                                            "value": -0.4,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "atk_scale",
+                                            "value": 0.4,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "talent_override_rangeid_flag",
+                                            "value": 1.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "atk_scale_2",
+                                            "value": 1.0,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 275.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 57.0,
+                        "valueStr": null
+                    }
+                ],
+                "tokenAttributeBlackboard": {}
+            },
+            {
+                "equipLevel": 3,
+                "parts": [
+                    {
+                        "resKey": null,
+                        "target": "DISPLAY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": null
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": [
+                                {
+                                    "additionalDescription": "<@ba.kw>統合戦略</>において、自身と<身替り>の物理と術の与ダメージ+40%、物理と術の被ダメージ-40%",
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "blackboard": {},
+                                    "overrideDescripton": null,
+                                    "prefabKey": null,
+                                    "rangeId": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "resKey": "ghost2_equip_3_3_p1",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": -1,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "10_root",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "output_damage_scale",
+                                            "value": 1.4,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "take_damage_scale",
+                                            "value": 0.6,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": null,
+                        "target": "TALENT_DATA_ONLY",
+                        "isToken": false,
+                        "validInGameTag": null,
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "<身替り>状態時、周囲の敵の移動速度-40%、1秒ごとに攻撃力の40%の術ダメージを与える\n<@ba.kw>統合戦略</>において、<身替り>状態時、周囲の敵に追加で1秒ごとに攻撃力の160%の術ダメージを与える。周囲8マスの地上にいる他のオペレーターが致命的なダメージを受けたとき、帰溟スペクターが<身替り>状態でなければ、1回限り対象のオペレーターに「8秒間HPが1以下にならず、その間周囲の敵に<身替り>の周囲にいる場合と同等の効果を与える」の効果を付与。その後、帰溟スペクターは<身替り>と入れ替わり、<身替り>から再び自身へと入れ替わると、上述の効果がリセットされる",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "#",
+                                    "name": "内なる抱擁",
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": {},
+                                    "tokenKey": null,
+                                    "isHideTalent": false
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": "ghost2_equip_3_3_p2",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "1",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": "x-4",
+                                    "blackboard": [
+                                        {
+                                            "key": "move_speed",
+                                            "value": -0.4,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "atk_scale",
+                                            "value": 0.4,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "talent_override_rangeid_flag",
+                                            "value": 1.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "atk_scale_2",
+                                            "value": 1.6,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    },
+                    {
+                        "resKey": "ghost2_equip_3_3_p3",
+                        "target": "TALENT",
+                        "isToken": false,
+                        "validInGameTag": "roguelike",
+                        "validInMapTag": null,
+                        "addOrOverrideTalentDataBundle": {
+                            "candidates": [
+                                {
+                                    "displayRangeId": false,
+                                    "upgradeDescription": "",
+                                    "talentIndex": 0,
+                                    "validModeIndices": null,
+                                    "unlockCondition": {
+                                        "phase": "PHASE_2",
+                                        "level": 60
+                                    },
+                                    "requiredPotentialRank": 0,
+                                    "prefabKey": "21_root",
+                                    "name": null,
+                                    "description": null,
+                                    "rangeId": null,
+                                    "blackboard": [
+                                        {
+                                            "key": "protect_duration",
+                                            "value": 8.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "undead_duration",
+                                            "value": 8.0,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "atk_scale",
+                                            "value": 0.4,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "atk_scale_2",
+                                            "value": 1.6,
+                                            "valueStr": null
+                                        },
+                                        {
+                                            "key": "move_speed",
+                                            "value": -0.4,
+                                            "valueStr": null
+                                        }
+                                    ],
+                                    "tokenKey": null,
+                                    "isHideTalent": true
+                                }
+                            ]
+                        },
+                        "overrideTraitDataBundle": {
+                            "candidates": null
+                        }
+                    }
+                ],
+                "attributeBlackboard": [
+                    {
+                        "key": "max_hp",
+                        "value": 300.0,
+                        "valueStr": null
+                    },
+                    {
+                        "key": "atk",
+                        "value": 70.0,
                         "valueStr": null
                     }
                 ],

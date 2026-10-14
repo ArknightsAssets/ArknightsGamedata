@@ -1,0 +1,1230 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_informationdeluge_loop", volume=0, loop=true, channel="inf")]
+[PlaySound(key="$d_avg_erthshkng", volume=0, loop=true, channel="er")]
+[SoundVolume(volume=0.7, channel="inf",fadetime=2)]
+[SoundVolume(volume=0.5, channel="er",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[Decision(options="早く……;彼女を見つけた……", values="1;2")]
+[Predicate(references="1;2")]
+[name="クロージャ"]あの空間との接続が断たれた！　情報の奔流がものすごい速さで引いてく――
+[name="クロージャ"]Mon3tr、こっちに来て手伝って！　ケルシーの基底コードを、丸ごと漏らさず転送するよ！
+[Dialog]
+[stopsound(channel="inf", fadetime=2.5)]
+[stopsound(channel="er", fadetime=2.5)]
+[delay(time=1.5)]
+[name="クロージャ"]……ダンプボックス、セット完了。さあ、想像して。これは絶対に安全な転送装置で……
+[name="Mon3tr"]そうは思えないが――
+[name="クロージャ"]じゃあ、キミたち二人のテレパシーで、「異常コード」を安定させる方法を考えて！
+[name="Mon3tr"]意味不明だぞ！
+[name="クロージャ"]つまり――しっかり掴まっててねってこと！
+[Dialog]
+[Dialog]
+[cgitem(image="cgitem_73_i16_1",afrom=0,ato=1,pfrom = "0,-95",pto = "0,-95",pduration = 0,aduration=2.5, style="cg",layer=1)]
+[delay(time=3)]
+[PlaySound(key="$d_avg_machineactive", volume=1, loop=true, channel="ma")]
+[StopSound(channel="ma", fadetime=1.5)]
+[PlaySound(key="$d_avg_codeexecution_loop", volume=0, loop=true, channel="inf1")]
+[SoundVolume(volume=0.5, channel="inf1",fadetime=3.5)]
+[hidecgitem(fadetime=5)]
+[bgeffect(name="$eb_073_code_01",layer=1)]
+[playMusic(intro="$lab_intro",key="$lab_loop", volume=0.4)]
+[Image(image="73_i16_2",screenadapt="coverall", fadetime=4,block=true)]
+[delay(time=3.5)]
+透明の外装になるようエンコードされた臨時ダンプボックスの内部で、緑色の「方解石」がまばゆい光を放つ。
+[Dialog]
+[delay(time=1)]
+[name="クロージャ"]――！
+[name="Mon3tr"]成功した……感じるぞ。
+[name="Mon3tr"]……
+[name="Mon3tr"]本当に不思議だ。ケルシーと私にも、こんなに小さな時期があったなんて。
+[Dialog]
+[delay(time=1)]
+クロージャはすぐには口を開かなかった。
+ダンプボックスに備えられた検出プログラムが動作を続け、そこに表示されていく情報を彼女は瞬きもせず見つめていた。コードの自律ループスレッドが実行中だと確認できるまで。
+それこそが、本当の転送完了を意味していた。
+[name="クロージャ"]やった！　石棺のエネルギー出力も安定してきたよ！
+[name="クロージャ"]でも、これはまだほんの第一歩。臨時ダンプボックスの隔離能力には限界があるから、ケルシーをずっとこの中に置いておくわけにはいかない。次は、比較的静かな環境を見つけないと……
+[Dialog]
+[stopsound(channel="inf1", fadetime=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[bgeffect]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[name="？？？"]コケーッ！　なんなんじゃこの不気味な場所は、なぜこんなに暗いんじゃ！
+[name="クロージャ"]……？
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="73_g9_reactor_s",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>ゼルグラード機密区 石棺のコア</><p=2>1102年1月22日 14:33</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playMusic(intro="$sjoyasorrow_intro", key="$sjoyasorrow_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_2244_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="m")]
+[name="？？？"]おお、目が見えるようになってきおった――
+[name="？？？"]……なんじゃ？　ヒトか？
+[Dialog]
+[charslot]
+[Decision(options="これも感染生物か？;感染生物が……喋っている？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2",focus="m")]
+[name="アーミヤ"]ドクター、外で軍隊がここを攻撃しているようです。それと、私たちはさっきの空間から移動して、また最初の場所に戻ってきました――
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2",focus="m")]
+[name="アーミヤ"]……あれ？　これは一体何でしょう？
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="m")]
+[name="？？？"]おやおや、おんしもウサギの耳が生えとるのに、おらさまがニワトリだとわからんのか？
+[charslot(slot="m",name="avg_4228_closur_1#8$1",focus="m")]
+[name="クロージャ"]あたしたちが中に入ってきた時は、こんなものなかったよ！
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="m")]
+[name="？？？"]大声を出すでない、頭が痛くなるじゃろう！
+[name="？？？"]よく聞け！　おらさまは「感染生物」などではないし、「もの」でもない！　おらさまはニワトリさま、正真正銘メスのニワトリさまじゃ！　そんなに理解し難いことか？
+[Dialog]
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="n")]
+[Decision(options="何やら聞き覚えがあるような……;小屋のような見た目だが。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="m")]
+[name="？？？"]おんしは黙っておれ！
+[name="？？？"]（尾羽を振るわせる）（周囲を見回す）
+[name="？？？"]おかしい……
+[name="？？？"]確かケルシーには、あの黒いやつの近くに埋めろと言ったはずじゃぞ？　なぜ死ねなかったどころか、目が覚めたらこんなもんの中に入ってるんじゃ？
+[Dialog]
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="n")]
+[Decision(options="ここは石棺の「観察室」だ。;一万年後の世界へようこそ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="m")]
+[name="？？？"]（名状しがたい鋭い鳴き声）なんじゃと――
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_erthshkng", volume=0, loop=true, channel="er1")]
+[SoundVolume(volume=1, channel="er1",fadetime=1)]
+[CameraShake(duration=2, xstrength=10, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2.5)]
+[stopsound(channel="er1", fadetime=3)]
+[Decision(options="まずは、早くここから出る方法を考えなければ。;この小屋はケルシーを知っていそうだ。連れて行こう。", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[stopmusic(fadetime=2)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2242_1#5$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2242_1#5$1",focus="m")]
+[name="クリム"]ええと……
+[name="クリム"]君たちは……石棺を止めたのかい？
+[charslot(slot="m",name="avg_4228_closur_1#7$1",focus="m")]
+[name="クロージャ"]あれっ、あなたも入ってきてたの？　てっきり上に残ってるものだと――
+[charslot(slot="m",name="avg_npc_2242_1#1$1",focus="m")]
+[name="クリム"]……君が慌ただしく出て行ってしまったから、聞きそびれたんだが……あの識別コードを手に入れたということは、ラーダの知り合いなんだね？
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2",focus="m")]
+[multiline(name="アーミヤ")]あ……あなたは、もしかしてラーダさんのお父様でしょうか？　それに、クロージャさんがこの場所に入る手助けをしてくださったのも……？
+[charslot(slot="m",name="avg_1037_amiya3_1#17$2",focus="m")]
+[multiline(name="アーミヤ")]　つまり、あなたはアリタさんの――
+[Dialog]
+[PlayMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_2242_1#2$1",focus="m")]
+[delay(time=1)]
+男はどこか虚ろな笑みを浮かべ、自嘲するように首を横に振った。
+[charslot(slot="m",name="avg_npc_2242_1#2$1",focus="m")]
+[name="クリム"]リタはいつだってそうだ。私は永遠に彼女の歩みに追いつけない。
+[charslot(slot="m",name="avg_1037_amiya3_1#2$2",focus="m")]
+[name="アーミヤ"]……
+[charslot(slot="m",name="avg_4228_closur_1#5$1",focus="m")]
+[name="クロージャ"]えーっと、さっき石棺について聞いてたよね、ちょっと待って……
+[charslot(slot="m",name="avg_4228_closur_1#6$1",focus="m")]
+[name="クロージャ"]石棺は安定してきてるよ。兵器化に使われてたモジュールも、エネルギーの衝突でメルトダウンしたし。今はエネルギー出力モジュールだけが稼働してる状態だね。
+[charslot(slot="m",name="avg_npc_2242_1#2$1",focus="m")]
+[name="クリム"]ああ、それは本当に……よかった。リタはいつも、正しい選択をしてくれる。
+[name="クリム"]君たちは多くの人々を救ってくれた。どう感謝していいものか……本当にありがとう。
+[charslot(slot="m",name="avg_1037_amiya3_1#16$2",focus="m")]
+[name="アーミヤ"]いえ、私たちこそあなたに感謝すべきです。ここでの一件がすべて片付いたら――
+[charslot(slot="m",name="avg_npc_2242_1#1$1",focus="m")]
+[multiline(name="クリム")]君たちはすぐにここから離れた方がいい、第一軍はここを放棄するつもりだ。
+[charslot(slot="m",name="avg_npc_2242_1#4$1",focus="m")]
+[multiline(name="クリム")]まだ外にいた頃から、彼らの通信には……第四軍の名が頻繁に出ていた。
+[charslot(slot="m",name="avg_1037_amiya3_1#10$2",focus="m")]
+[name="アーミヤ"]でも、第四軍はまだ中央区の境にいるはずですよね。
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2",focus="m")]
+[multiline(name="アーミヤ")]まさか、石棺を奪いに来るつもりでしょうか？
+[charslot(slot="m",name="avg_npc_2242_1#10$1",focus="m")]
+[name="クリム"]それはわからない……今の状況をすべて把握している者は、誰もいないんだ。
+[Dialog]
+[charslot]
+[Decision(options="どの軍にも石棺を渡すわけにはいかない。;少なくとも、一時的に隠す手段を考えなければ。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="石棺に集まるエネルギーには合理的な出口がある。;それを利用して石棺のエネルギー反応を最小限にする。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_2242_1#10$1",focus="m")]
+[name="クリム"]……君たちの情報は完璧だし、君はずいぶん頭が切れるようだ。
+[name="クリム"]それなら、この件は私に任せてくれ……君たちはここから離れて、やるべきことをやるんだ。
+[charslot(slot="m",name="avg_4228_closur_1#13$1",focus="m")]
+[multiline(name="クロージャ")]本当に一人で残る気なの！？
+[charslot(slot="m",name="avg_4228_closur_1#12$1",focus="m")]
+[multiline(name="クロージャ")]　ここは砲火に晒されてるんだよ。あたしたちと一緒に処理して、一緒に脱出した方がいいって！
+[charslot(slot="m",name="avg_npc_2242_1#9$1",focus="m")]
+[name="クリム"]もういいんだ……
+[charslot(slot="m",name="avg_npc_2242_1#10$1",focus="m")]
+[name="クリム"]私の妻はここで命を落としてしまった……せめて最後くらい、私たちに二人きりの時間をくれないか。
+[charslot(slot="m",name="avg_4228_closur_1#12$1",focus="m")]
+[name="クロージャ"]でも――
+[charslot(slot="m",name="avg_npc_2242_1#10$1",focus="m")]
+[name="クリム"]……こう見えても、私はここの研究員だからね。
+[name="クリム"]もうみんな死んでしまったり、逃げ出したりしてしまった。ここを最後まで見届けることが……
+[name="クリム"]私の責任なんだ。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g5_megastructure",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_explosion_stone", volume=1)]
+[CameraShake(duration=3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playMusic(key="$formal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>ゼルグラード機密区 地上</><p=2>1102年1月22日 14:45</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_avg_crowdrun", volume=1)]
+[delay(time=2.5)]
+石壁の門に爆破による穴が穿たれると、多くの者がそこを通り抜けた。さらに、簡易の手押し車や担架が続き……
+[Dialog]
+[charslot(slot="l",name="char_1002_nsabr_1",focus="l")]
+[charslot(slot="r",name="char_1002_nsabr_1",focus="l")]
+[name="レユニオン構成員A"]皆、急いで人数を確認しろ。我々の仲間と救出した感染者が、全員揃っているか確かめるんだ。
+[charslot(slot="r",name="char_1002_nsabr_1",focus="r")]
+[name="レユニオン構成員B"]運は我々に味方してるな。守備兵は敗走中で、俺たちを止められる奴はもういない。
+[Dialog]
+[charslot]
+最後の一人が石壁を通って避難すると同時に、煙と土埃の中から一つの人影がゆっくりと現れた。
+[Dialog]
+[charslot(slot="m",name="avg_npc_2247_1#9$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2247_1#9$1",focus="m")]
+[name="タルラ"]そこが問題なんだ。連中の撤退があまりにも潔すぎる。
+[name="タルラ"]むしろ、我々が突入したこのエリアに配置された火力も兵力も、機密区とは思えないほどお粗末だった。まるで、初めから撤退する予定だったかのようだ。
+[charslot(slot="m",name="avg_npc_2247_1#10$1",focus="m")]
+[name="タルラ"]……我々が突入する前も、外の軍人の一部は、避難する感染者に対して積極的な攻撃を仕掛けてはこなかった。
+[charslot(slot="m",name="avg_npc_2247_1#9$1",focus="m")]
+[name="タルラ"]連中の内部で何かが起きているのか、それとも最初から我々を誘い込み一網打尽にするつもりなのか。いずれにせよ、安全のため早急にここを離れなければ――
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_grenadethrow")]
+[playsound(key="$d_gen_explo_n",delay=1)]
+[delay(time=1)]
+[CameraShake(duration=1, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[bgeffect(name="$eb_scorchedearth",layer=1,y=-100)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[delay(time=1)]
+その時、一発の砲弾がタルラの頭上を掠め、轟音と共に人々の後方へと直撃した。
+周囲から泣き声が上がり、タルラは砲弾が飛来した方向に目を向ける――そこには、巨大な戦艦のブリッジと、風になびく第一軍の旗があった。
+[charslot(slot="m",name="avg_npc_2247_1#4$1",focus="m")]
+[name="タルラ"]……自らの都市を砲撃するとは、正気か……
+[charslot(slot="m",name="avg_npc_2247_1#3$1",focus="m")]
+[name="タルラ"]全員に伝えろ、予定ルートに沿って撤退！　私が奴らの注意を引きつける！
+[charslot(slot="m",name="char_1002_nsabr_1",focus="m")]
+[name="レユニオン構成員B"]タルラ――
+[charslot(slot="m",name="avg_npc_2247_1#3$1",focus="m")]
+[name="タルラ"]早く行け！
+[Dialog]
+[charslot]
+[PlaySound(key="$grenade_explosion",volume=0.7)]
+[CameraShake(duration=3, xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion", volume=0.7, loop=false, channel="explo",delay=1)]
+[PlaySound(key="$d_gen_explo_n", volume=0.7, loop=false, channel="explo1",delay=2)]
+[delay(time=2)]
+二発目の砲弾が地面に落ち、さらに三発目が続く……石の塵が舞い上がり、高い壁が崩れ落ちる。窮地を脱したばかりの衰弱しきった感染者たちは、涙を拭うだけで精一杯だった。
+レユニオンのメンバーたちはあちこちを駆け回りながら、感染者たちを半ば引きずり、半ば抱きかかえるようにして避難させる。そんな中、ただ一つ遠方の砲火を見つめて佇む人影があった。
+[Dialog]
+[charslot(slot="m",name="avg_npc_2249_1#8$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="シルカ"]……
+[charslot(slot="m",name="char_1002_nsabr_1",focus="m")]
+[name="レユニオン構成員C"]シルカさん？　ここは危険だ、早く我々と共に撤退を。
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="シルカ"]いいえ、あなたたちは先に行って。
+[name="シルカ"]どうしても取り戻さなければならないものを、あの若将軍の屋敷に忘れてきてしまったの。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[name="慌てる将校"]若将軍！　若将軍、お待ちください！　プライベート回線を開いてください、元帥閣下がご用があるとのことです。
+[name="アナトリー"]失せろ！　全員失せろ！
+[name="アナトリー"]母上の名を騙って脅しをかける前に、その勲章を見てよく考えてみろ――反逆者を見ただけで震え上がるようなクズどもに、ウルサスの軍人を名乗る資格があるのかどうかをな！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="73_g13_ursuswscommandroom",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_2235_1#10$1",duration=0.7)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="艦砲指揮官"]若将軍、どうしてこちらへ――
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[name="アナトリー"]今、艦砲を操作しているのは誰だ？　お前たちのその哀れな指は、トランプをめくるくらいにしか使えないほど退化したのか？
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="艦砲指揮官"]そ、それには訳が……
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[name="アナトリー"]職務怠慢を誤魔化せるとでも思っているのか。なぜ石壁の入口周辺に火力を集中させない？　主砲の予熱が未だに終わっていないのはどういうことだ？
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="艦砲指揮官"]決して怠慢ではございません。撤退命令が下されてからまだ十分も経っておらず、もし今主砲を使用すれば、機密区に留まっている多くの兵士たちが――
+[charslot(slot="m",name="avg_npc_2235_1#7$1",focus="m")]
+[name="アナトリー"]機密区にはそれ以上の反逆者がいるんだぞ！　僕が策定した通りに動けば、奴らが自ら死に急ぐほど愚かでない限り、巻き添えの規模は許容範囲に収まる。
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[name="アナトリー"]安っぽい同情心を言い訳にして誤魔化されるのはもううんざりだ、ボンダレンコ中佐。
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="艦砲指揮官"]……うっ――
+[Dialog]
+[PlaySound(key="$d_avg_swordexsheath", volume=1)]
+[Delay(time=1)]
+ぎらりと光る刃が、将校の首筋に押し当てられる。
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[name="アナトリー"]ゼルグラードは僕の街だ。そして、ウルサスの都市でもあることを忘れるな。入隊以来お前が腹に収めてきたライ麦の一粒一粒は、すべて今ここでの絶対の服従と引き換えに与えられたものだぞ。
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="艦砲指揮官"]若将軍、その――
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[name="アナトリー"]最後の機会を与えてやる。五分以内に主砲の準備を終わらせろ。
+[charslot(slot="m",name="avg_npc_2235_1#10$1",focus="m")]
+[name="アナトリー"]忘れるなよ、第一軍の艦砲指揮官はお前一人じゃないんだ！
+[Dialog]
+[PlaySound(key="$d_gen_transmissionget",volume=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2235_1#10$1",focus="n")]
+[name="慌てる将校"]……も、もしもし、元帥閣下、わ、私です……大変申し訳ございません、こちらが若将軍のプライベート回線であることは重々承知しておりますが……
+[name="慌てる将校"]若将軍、元帥閣下からの通信を私の一存で切るわけにはまいりません。どうか代わっていただけませんか？
+[charslot(slot="m",name="avg_npc_2235_1#4$1",focus="m")]
+[name="アナトリー"]……よこせ。あとは下がっていろ。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2235_1#10$1",focus="m")]
+[name="アナトリー"]ふん、「第一軍の軍人」か、とっくの昔に枯れ果てた栄誉だな……
+[Dialog]
+[charslot]
+[name="通信機からの声"]……もう少し部下を尊重しろ、アナトリー。これを忠告するのは初めてではないはずだ。
+[name="通信機からの声"]だが今は、もっと重要なことがある。約束したはずだろう？　石棺のデータを手に入れたら、すぐに戻ってくると。
+[charslot(slot="m",name="avg_npc_2235_1#9$1",focus="m")]
+[name="アナトリー"]母上……僕は全力でやってみたよ。母上が望む結果を勝ち取る、ただそのためだけに。
+[name="アナトリー"]それなのに、母上はこう命じるんだ。骨に群がる虫けらどもが僕の街を這い回るのを黙って見ていろ、命を惜しむ臆病者どもと肩を並べ、恥を忍んで逃げ回れって――
+[charslot(slot="m",name="avg_npc_2235_1#5$1",focus="m")]
+[name="アナトリー"]そんなの、僕に死ねと言っているようなものじゃないか。
+[Dialog]
+[charslot]
+[name="通信機からの声"]アナトリー……私がしてきたことのすべては、ただお前をこの無意味な戦場から遠ざけるためだ。
+[name="通信機からの声"]第四軍は、刻一刻とゼルグラードに迫っている。自分の息子が泥沼に足を踏み入れるのを、どうして黙って見ていられるというのだ？
+[charslot(slot="m",name="avg_npc_2235_1#1$1",focus="m")]
+[name="アナトリー"]第四軍か……ふん、奴らはゼルグラードにいる反逆者どもと何が違うっていうの？　皆この偉大なる帝国も、母上が僕に教えてくれた信条も裏切っているじゃないか。
+[name="アナトリー"]忠誠を尽くす人間であれ、僕にそう教えたのは母上だよ――それなのに、どうして今になって手を離そうとするの？
+[Dialog]
+[charslot]
+[name="通信機からの声"]……
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[name="通信機からの声"]……ザザッ……
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[name="アナトリー"]……？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g5_megastructure",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_openftstprun", volume=1, loop=true, channel="o")]
+[StopSound(channel="o", fadetime=4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[delay(time=1.5)]
+走っていたタルラは立ち止まり、遠くにそびえる山のような巨大な物体を見つめた。
+本来ならば開けた目立つ場所を見つけ、さらにアーツを放ち、自身の帰還を第一軍に知らしめて挑発することで、彼らの注意を引くつもりだった。
+しかし、その軍艦は突然沈黙し、展開されていた副砲すらもしばらく動きを見せていない。
+[charslot(slot="m",name="avg_npc_2247_1#5$1",focus="m")]
+[name="タルラ"]これは一体……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="72_g13_nobleroom",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[interlude(maskid = "group_interclude_square_common", char = "アナトリー", switch = true, style = 1,offset = "-450,125", channel = 3)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-460,-50", pto="-460,-50",name = "avg_npc_2235_1#8$1", duration =0.5)]
+[interlude(maskid = "group_interclude_square_common", char = "スヴェトラーナ", switch = true, style = 1,offset = "450,125", channel = 4)]
+[interlude(channel = 4, type = 3, slot = "m", switch = true, pfrom = "450,-70", pto="450,-70", name = "avg_npc_2231_1#8$1", duration = 0.5)]
+[interlude(channel = 3, switch = false)]
+[interlude(channel = 4, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",duration=0.7)]
+[delay(time=1)]
+[interlude(channel = 3, switch = true)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="n")]
+[name="アナトリー"]……もう一度言ってみろ。
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="m")]
+[name="シルカ"]聞き間違いではありませんよ。私は今、機密区にあるあなたの屋敷から、あなたのプライベート回線を使ってお話ししています。
+[name="シルカ"]そして私は、第四軍から諜報のために派遣された――
+[interlude(channel = 3, switch = true)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="n")]
+[name="アナトリー"]お、お前は……まさか、あの日僕を暗殺しようとした奴か？
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="m")]
+[name="シルカ"]ええ、そのまさかです。これこそがエフゲニー元帥の手口。彼は第一軍の要人を全員リストアップし、水面下で丸三年間も計画を練ってきました。
+[interlude(channel = 3, switch = true)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="n")]
+[name="アナトリー"]それで、今のお前は僕に命乞いをしているのか？
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]あなたと元帥が先ほど約束されたように、第一軍が私を軍艦に迎え入れるまで、停戦をお願いします。
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="m")]
+[name="シルカ"]その時は、私の命の保証だけではなく……口にするのも憚られますが、私とエフゲニー元帥との間には、もっと根深い遺恨がありますので。
+[interlude(channel = 4, switch = true)]
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="n")]
+[name="スヴェトラーナ"]……「口にするのも憚られる」という理由で、私が求める情報を隠すつもりならば、いつでも喜んで砲撃を再開するが。
+[name="スヴェトラーナ"]なぜ自分の家に忍び込んだ泥棒であり暗殺者であるお前を、私たちが信用すると思っている？
+[interlude(channel = 4, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]誉れ高き元帥閣下。細かな事実を突き合わせ、丸一日かけて私の身分を証明しても構いませんが、その間も第四軍の進軍は止まりません。
+[name="シルカ"]そこで、もっと効率的な方法があります――私が直接エフゲニー元帥の極秘回線に繋ぎ、元帥閣下がお知りになりたい情報をすべて、彼自身の口から引き出してみせましょう。
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-460,-50", pto="-460,-50", name = "avg_npc_2235_1#6$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="アナトリー"]なんだって！？
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[playsound(key="$d_avg_phonebutton_3", volume=0.5)]
+[Delay(time=2)]
+[interlude(channel = 4, switch = true)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="スヴェトラーナ"]待て――
+[dialog]
+[interlude(channel = 4, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[delay(time=0.5)]
+[dialog]
+[PlaySound(key="$d_gen_transmissionget",volume=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="エフゲニー"]……エフセイか？　何か報告でも？
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]エフゲニー元帥閣下、私は彼の諜報活動を引き継いだ者です。緊急事態につき、彼の通信機を借用しています。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="エフゲニー"]身分を確認させてもらおう。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]私は彼の指示で、内通者としてゼルグラードに潜入しました。身分照会用の暗号コードは、五分前に司令部へ送信済みです。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="エフゲニー"]……
+[name="エフゲニー"]「緊急事態」と言ったな？
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]現在この都市は戦火に包まれており、彼とは一時的に連絡が取れなくなっています。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="エフゲニー"]ゼルグラードで内乱が起きたのか？
+[name="エフゲニー"]いいだろう、報告を続けろ。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]身元不明の暴徒が多数ゼルグラードに潜入し、市内の感染者と結託して機密区へと攻撃を仕掛けました。
+[name="シルカ"]駐屯軍の一部は彼らの行動に同調しているようで、消極的な戦闘を続けています。例の若将軍も、すでにこの都市を見捨てるつもりのようです。
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-460,-50", pto="-460,-50", name = "avg_npc_2235_1#4$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="アナトリー"]……っ。
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]軍の内部でも反乱が企てられている……どこかで見覚えのある状況です。おそらくは何らかの影響を受けているのでしょう。
+[name="シルカ"]「カッシアン号」の反乱を覚えておられますか？　最後まであなたのお父上を支持していたあの部隊は、あなたの一連の軍制改革を受け入れられませんでした。
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="n")]
+[name="エフゲニー"]散々話し尽くされた話題だな。奴らはとうに自らの無謀さの代償を支払った。
+[name="エフゲニー"]それは第四軍の内部でも、もはや機密と呼ぶには程遠い。父は多くの弊害と火種を残した。現在の決定の多くも、その尻拭いのための苦肉の策に過ぎない。
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="m")]
+[name="シルカ"]無礼を承知でお伺いします。火種というのは「痴情のもつれ」に関わることでしょうか？
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="n")]
+[name="エフゲニー"]……君がもたらす情報は、そのような根も葉もない噂だけか？
+[charslot(slot="m",name="avg_npc_2249_1#2$1",focus="m")]
+[name="シルカ"]その件は、私が得た情報と確実に関連がありますので。
+[name="シルカ"]ウルサスの上層部であり、あなたのご尊父――アンドリアン元帥を知らない者はいません。忠誠心に厚く、剛毅で、その一方で頑固で粗暴でもある、典型的な帝国軍人……
+[name="シルカ"]しかし同時に、帝国では有名なプレイボーイであったことも広く知られています。あの「カッシアン号」の艦長は、お父上の最後の愛人の従兄にあたる人物でした。
+[name="シルカ"]今もこのような噂が囁かれています。十数年前、軍の首脳陣がサンクト・グリファーブルクに戻り陛下に職務報告を行った際、お父上と当時は元帥でなかったスヴェトラーナ将軍が――
+[charslot(slot="m",name="avg_npc_2249_1#2$1",focus="n")]
+[name="エフゲニー"]黙れ！　貴様は何を――！
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-460,-50", pto="-460,-50", name = "avg_npc_2235_1#8$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="アナトリー"]（歯を食いしばる）
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#12$1",focus="m")]
+[name="シルカ"]あなたは、一族の名誉のためにこれほど心血を注ぎ、お父上を自らの手に掛けてまで、あの愚かな血脈を受け継いでいないことを証明しようとしました。にもかかわらず……
+[charslot(slot="m",name="avg_npc_2249_1#12$1",focus="n")]
+[name="エフゲニー"]――！
+[charslot(slot="m",name="avg_npc_2249_1#2$1",focus="m")]
+[name="シルカ"]誠に遺憾ながら申し上げます。今なお、あなたのやり方を認めず、あなたの継承権を剥奪しようと目論む者がいるのです、閣下。
+[name="シルカ"]それどころか、あなたが血眼になって探している、アンドリアン元帥によって密かに匿われていた隠し子、あの卑しいクランタの娘も……現在ゼルグラード市内に潜伏しています。
+[charslot(slot="m",name="avg_npc_2249_1#2$1",focus="n")]
+[name="エフゲニー"]……貴様は一体何者だ！？　待て、その声はもしや――
+[charslot(slot="m",name="avg_npc_2249_1#2$1",focus="m")]
+[name="シルカ"]そのような話をする暇はありません。すぐにゼルグラードへと攻め込み、彼女の口を封じなければ、彼女は先ほどの「噂」の生き証人として、あなたの忠実な軍隊の前に姿を現すことになるでしょう。
+[name="シルカ"]そうなれば、あなたの権威は――
+[charslot(slot="m",name="avg_npc_2249_1#2$1",focus="n")]
+[name="エフゲニー"]もういい！
+[name="エフゲニー"]事実を捻じ曲げ、私を唆して今すぐ第一軍に無謀な攻撃を仕掛けさせようという魂胆か――ふん、どうやってエフセイを見つけたのかは知らんが、貴様の末路はすでに定まった。
+[dialog]
+[PlaySound(key="$transmission",volume=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="シルカ"]承知しました……
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="m")]
+[name="シルカ"]というわけで、今お聞きになった通りです。スヴェトラーナ元帥、それにアナトリー将軍――
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-460,-50", pto="-460,-50", name = "avg_npc_2235_1#7$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="n")]
+[name="アナトリー"]*ウルサススラング*！
+[interlude(channel = 3, switch = false)]
+[interlude(channel = 4, switch = true)]
+[interlude(channel = 4, type = 4, slot = "m", switch = true, pfrom = "450,-70", pto="450,-70", name = "avg_npc_2231_1#8$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="n")]
+[name="スヴェトラーナ"]アナトリー――
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 4, switch = false)]
+[name="アナトリー"]もういい、もう我慢できないよ、母上！　アンドリアンが吐き出した雑種め、よくも第一軍の元帥を侮辱してくれたな！
+[name="アナトリー"]誓ってやる！　僕の手で、お前に最も惨たらしく屈辱的な死を与えてやると！　その穢れた血溜まりに頭を沈めて、お前のような*ウルサススラング*な雑種が一体何分息を保てるか見物だな！
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="m")]
+[name="シルカ"]あら、誉れ高き若将軍、ご自身の父親に会ったことは？
+[charslot(slot="m",name="avg_npc_2249_1#2$1",focus="m")]
+[name="シルカ"]あるいはいつの日か、血縁が私たちを再び引き合わせてくれるかもしれませんね……親愛なる兄弟さん。
+[dialog]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[PlaySound(key="$transmission",volume=0.6)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[interlude(channel = 3, clear = true, tsto="0,1", tsduration=0.2)]
+[interlude(channel = 4, clear = true, tsto="0,1", tsduration=0.2)]
+[Background(image="73_g13_ursuswscommandroom",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_2235_1#10$1",focus="m")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2235_1#10$1",focus="m")]
+[name="アナトリー"]母上……
+[charslot(slot="m",name="avg_npc_2235_1#10$1",focus="n")]
+[name="スヴェトラーナ"]アナトリー、容易に騙されるな。彼女はただお前を怒らせたいだけだ。どのような目論見があるのか、私たちで――
+[Dialog]
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_ldrdhtgrnd", volume=1)]
+[playsound(key="$transmission",volume=0.4,delay=0.6)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2235_1#7$1",focus="m")]
+[name="アナトリー"]副官！
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="慄く将校"]……何でしょうか？
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[name="アナトリー"]命令だ。動員可能な人員をすべて機密区へ向かわせて、奴を捕らえろ。
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="慄く将校"]し、しかし、我々にはもう――
+[charslot(slot="m",name="avg_npc_2235_1#7$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="アナトリー"]お前の命もここまでだ……あの雑種め！！！
+[charslot(slot = "m", name = "avg_npc_2246_1#10$1",focus="m")]
+[name="ヒアダ"]……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g1_exurbstreet_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$loading_intro", key="$loading_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>ゼルグラード出入口</><p=2>1102年1月22日 16:49</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_avg_studentsexhausted_fts_loop",volume=0, channel="foot", loop=true)]
+[SoundVolume(volume=0.4, channel="foot",fadetime=1)]
+[delay(time=2)]
+[StopSound(channel="foot", fadetime=2)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="トーニャ"]慌てるな、お年寄りと子供が先だ！
+[dialog]
+[charslot]
+彼女は枯れた声で呼びかけ続けた。道の両側には避難を助ける人々が並び、群衆が目の前を通り過ぎるのを見守っていた。
+遠くで断続的に爆発音が響き、足元の地面が震える。人々の中には恐怖に顔を歪める者もいたが、多くはただ茫然と前へ歩き、荷物を持つ手を固く握りしめていた。
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="トーニャ"]危ない！　人の流れに逆らって歩くな！
+[name="トーニャ"]それと、ガスマスクを渡された人はできるだけ着用するんだ！　ない人はタオルで口と鼻を覆って、変な見た目の生物には触らないように――
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="トーニャ"]ん？　リュドミラさん、どうした？
+[charslot(slot="m",name="avg_1502_crosly_1#5$1",focus="m")]
+[name="クラウンスレイヤー"]この女性が倒れてしまった。台車に空きはあるか？
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="トーニャ"]ちょっと詰めれば入るはずだ。やってみよう。
+[dialog]
+[charslot]
+リュドミラは身を屈め、背負っていた意識不明の人を引き渡す。
+[name="忙しい坑夫"]リュドミラ！　すぐに前の方に来てくれ。トゥーリン先生が厄介なことに巻き込まれちまった！
+[charslot(slot="m",name="avg_1502_crosly_1#1$1",focus="m")]
+[name="クラウンスレイヤー"]わかった。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[charslot(slot="m",name="avg_npc_2225_1#11$1",focus="m")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_2225_1#11$1",focus="m")]
+[name="トゥーリン"]……また会ったね、ラトコフ。
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="寡黙な軍人"]……お前を逃がすべきではなかった。
+[name="寡黙な軍人"]俺が受けた命令は、都市内の反逆者を粛清することだ。
+[charslot(slot="m",name="avg_npc_2225_1#11$1",focus="m")]
+[name="トゥーリン"]あなたの言う反逆者とは、私の後ろにいる人々のことかな？
+[name="トゥーリン"]彼らはただ自分たちの命を守りたいだけだ。ゼルグラードとウルサスのために尽くしてきた人々を、反逆罪で裁くつもり？
+[name="トゥーリン"]ラトコフ、まだチャンスは――
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_crossbowbolts_fire")]
+[playsound(key="$d_avg_crossbowbolts_fire",channel="a",delay=0.4)]
+[playsound(key="$d_avg_crossbowbolts_fire",channel="b",delay=0.6)]
+[CameraShake(duration=1.5, xstrength=12, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.2)]
+[PlaySound(key="$swordtsing1",volume=0.7)]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_pendrop",volume=0.7)]
+[Delay(time=1)]
+言葉の途中で、目の前の軍人たちが唐突に武器を構える。そして、数本の矢がトゥーリンの背後へと放たれた。
+トゥーリンは反射的に身をすくめて振り返った。そこにはリュドミラが立っており、矢を軽々と防いでいた。
+[Dialog]
+[charslot(slot="m",name="avg_1502_crosly_1#5$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="寡黙な軍人"]俺の言った反逆者とは、彼女のことだ……だが見ての通り、粛清は失敗に終わった。
+[name="寡黙な軍人"]レユニオンがここに来たという話は広まっている。第一軍の防衛力では、彼らに対抗するには不十分だと判断した。
+[name="寡黙な軍人"]若将軍に何かレユニオンに対抗できる策があるというのなら、勝手にすればいい。
+[name="寡黙な軍人"]我々は、撤退する。
+[Dialog]
+[charslot]
+ラトコフと呼ばれた軍人は、数歩前に出て折りたたまれた紙を取り出し、トゥーリンの手に押しつける。
+[Dialog]
+[playsound(key="$d_avg_armywalking", loop=true, channel="a")]
+[Delay(time=2)]
+[StopSound(channel="a", fadetime=3)]
+その後、トゥーリンたちの驚きの眼差しを背に、一個中隊の兵士が一糸乱れぬ動きで都市の出入口の左側へと去っていった。誰一人言葉を発さず、ただ軍靴の音だけが響き渡った。
+[charslot(slot="m",name="avg_1502_crosly_1#1$1",focus="m")]
+[name="クラウンスレイヤー"]あいつの独断だな。あるいは、あいつらと言うべきか。
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="トゥーリン"]……
+[charslot(slot="m",name="avg_1502_crosly_1#1$1",focus="m")]
+[name="クラウンスレイヤー"]……どうした、トゥーリン？
+[Dialog]
+[charslot]
+リュドミラの目には、紙を広げるその手がわずかに震えているのが映った。びっしり文字が書き込まれた図面に向けられる視線は――焦点が定まらず、まるで宙を漂っているようだった。
+トゥーリンが手に持った図面がわずかに傾き、慌てたように戻された。若者の瞬きの速度が急激に速くなる。
+[charslot(slot="m",name="avg_1502_crosly_1#5$1",focus="m")]
+[name="クラウンスレイヤー"]トゥーリン、大丈夫か？
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="トゥーリン"]……ああ、リュドミラ……
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="トゥーリン"]もしよければ、この紙に何が書かれているか、代わりに読んでくれないか。私は、少し……
+[charslot(slot="m",name="avg_1502_crosly_1#5$1",focus="m")]
+[name="クラウンスレイヤー"]……「出入口の扉の制御室は東側にあり、共通パスワードの入力が必要、付属資料参照」か。これは扉の操作マニュアルだな。
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="トゥーリン"]なるほど。これを私の仲間に渡してほしい、そうすればすぐ外に出られるはずだ。
+[Dialog]
+[charslot]
+傍らにいた坑夫が図面を受け取って立ち去ると、トゥーリンは深く息を吐き出した。
+[charslot(slot="m",name="avg_npc_2225_1#3$1",focus="m")]
+[name="トゥーリン"]ありがとう、リュドミラ。ああいう文字を、特にあんな風に密度の高いものを見るとどうしても……
+[charslot(slot="m",name="avg_1502_crosly_1#1$1",focus="m")]
+[name="クラウンスレイヤー"]てっきり、本をよく読む人間だと思っていた。
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="トゥーリン"]本の中の知識や物語には確かに興味がある。でもほとんどの場合、誰かに読んでもらわないといけないんだ。だから、いつも他の人より学習に時間がかかって。
+[charslot(slot="m",name="avg_1502_crosly_1#5$1",focus="m")]
+[name="クラウンスレイヤー"]……
+[name="クラウンスレイヤー"]だが、「イヴァン・トゥーリン」は……
+[name="クラウンスレイヤー"]筆を休めることのない生粋の作家のはずだ。近年のウルサス語の作家の中で、彼ほど見事に、そして長大な作品を書ける者はいない。
+[name="クラウンスレイヤー"]サンクト・グリファーブルクの大学生たちが好んで語り合うのは、彼の本に見られる膨大で巧妙な引用の数々だ。彼らはいつもイヴァン・トゥーリンの読書量を絶賛している……
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="トゥーリン"]……
+[charslot(slot="m",name="avg_1502_crosly_1#5$1",focus="m")]
+[name="クラウンスレイヤー"]お前は――
+[stopmusic(fadetime=2)]
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_heavymetalgate_open")]
+[CameraShake(duration=5, xstrength=8, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=4)]
+[charslot(slot="m",name="avg_npc_1969_1#1$1",focus="m")]
+[name="切羽詰まった坑夫"]トゥーリン先生、成功しましたよ！
+[charslot(slot="m",name="avg_npc_2225_1#3$1",focus="m")]
+[name="トゥーリン"]……ああ。
+[name="トゥーリン"]皆！　指示をよく聞いてくれ。これからゼルグラードを離れる！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="73_i21", screenadapt="coverall",fadetime=0, xScale=1.3, yScale=1.3, x=180,y=40,block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_wind_howling", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=0.3, channel="sn",fadetime=7)]
+[ImageTween(xFrom=180,xTo=0, yFrom=40,yTo=0,duration=40, block=false)]
+[playMusic(key="$resurrection_loop", volume=0)]
+[musicvolume(volume=0.6, fadetime=4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[delay(time=1)]
+あちこちから上がる歓声が壁を越え、人々は重厚な扉を飛び出していく。
+ある者は両手を高く掲げて歓喜し、ある者はしゃがみ込んで外の地面を撫でる。笑顔を浮かべる者の目には涙が光り、涙を流す者の口元は綻んでいた。
+彼らは一度来た道を振り返り、そして踵を返すと、鈍い足音を響かせながら歩き出していった。
+彼らの背中が遠くの土埃に溶け込む頃、トゥーリンの喉がわずかに動き、自身にしか聞こえないほどの小さなため息が漏れた。
+リュドミラは、トゥーリンが顔を背け、ツルハシの柄を握る手が少し緩んだのを見た。
+[Dialog]
+[SoundVolume(volume=0.6, channel="sn",fadetime=4)]
+[Image(image="73_i21", screenadapt="coverall",fadetime=3, block=true)]
+[delay(time=1)]
+[name="トゥーリン"]……リュドミラ。また別の機会に、あの作家の物語を話さなければいけないね。
+[name="トゥーリン"]彼は何年も前に、私たちの元を離れざるを得なくなった。そしてある日、私でさえ完全に彼の消息を掴めなくなってしまったんだ。
+[name="トゥーリン"]ウルサスは彼を貶め、追放し、殺すことさえできるかもしれない……それでも、彼を打ち砕くことは永遠に不可能だ。
+[name="トゥーリン"]なぜならまだ私たちがいて、まだ私たちには明日があるから。
+[Dialog]
+[delay(time=1)]
+夕暮れが、その決意に満ちた頬を少しずつ覆っていく。小さく呟かれた言葉は、徐々に強まる風の音にかき消されていった。
+[Dialog]
+[stopmusic(fadetime=2)]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="73_g13_ursuswscommandroom",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$m_bat_essenceofevolution_intro", key="$m_bat_essenceofevolution_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>「リヴァーノフ号」強襲艦 司令室</><p=2>1102年1月22日 09:59</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[CameraShake(duration=1,xstrength=10,ystrength=12,vibrato=30,randomness=90,fadeout=true,block=false)]
+[bgeffect(name="$eb_burn",layer = 2)]
+[bgEffect(layer = 1)]
+[PlaySound(key="$e_skill_ignite_cast", volume=0.7)]
+[PlaySound(key="$b_char_fireharm",volume=1,delay=0.4)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.8, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4226_veen_1#1$1",focus="m")]
+[name="スチョーパ"]少なくとも……「モールヴァン」の効果が切れるまでは持ち堪えたぞ。
+[charslot(slot = "m", name = "avg_4226_veen_1#2$1",focus="m")]
+[name="スチョーパ"]はっ、これで……お前たちも正々堂々戦うしかなくなったな。
+[charslot(slot = "m", name = "avg_4226_veen_1#4$1",focus="m")]
+[CameraShake(duration=0.3,xstrength=20,ystrength=20,vibrato=30,randomness=90,fadeout=true,block=false)]
+[name="スチョーパ"]がはっ――
+[Dialog]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_2237_1#1$1",focus="m")]
+[name="戦争術師"]どうやら、多くの戦友の命を捨てるつもりのようだな。
+[charslot(slot="m",name="avg_npc_2241_1#6$1",focus="m")]
+[name="オレグ"]そいつから離れろ！
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_2237_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_darkmagic", volume=1)]
+[name="戦争術師"]（ウルサスの古い方言）「主の意志を忘れしその手よ、自らの刃を己の身に降り落とせ。」
+[Dialog]
+[charslot(slot="m",name="avg_npc_2241_1#5$1",focus="m")]
+[PlaySound(key="$d_avg_swrdbrnsh", volume=1)] 
+[charslot(slot = "m", action="shake",random=true, power=8, times=60,duration=0.5)]
+[delay(time=0.3)]
+[name="オレグ"]がっ――！
+[Dialog]
+[charslot]
+鞘から抜かれた曲刀が、突如として持ち主自身の首筋へと振り下ろされる。鋭い刃がほんの一瞬で肉と骨を断ち切ろうとした、その刹那――
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_windmagic", volume=1)]
+[Sticker(id="st1", multi = true, text="<color=#888888>スチョーパ</color>", hidelog=true, x=240, y=625, alignment="left", size=31, delay=0.04, width=700, duration=0.01, block = false)]
+[spellsticker(id="spell2", action="show", style="fire", x=-240, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>「風は息を潜めん、止まれ。」</><p=2>“Ветер задержит дыхание, остановись.”</>
+[Sticker(id="st1")]
+[spellstickerclear(block=false)]
+[Delay(time=1)]
+[Dialog]
+[charslot(slot = "m", name = "avg_4226_veen_1#11$1",duration=1.5)]
+[delay(time=2.5)]
+[charslot(slot = "m", name = "avg_npc_2237_1#1$1",focus="m")]
+[name="戦争術師"]貴様――
+[Dialog]
+[charslot(slot = "m", name = "avg_4226_veen_1#11$1",focus="m")]
+[delay(time=0.1)]
+[PlaySound(key="$d_avg_magicshimmer",volume=1)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="<color=#888888>スチョーパ</color>", hidelog=true, x=240, y=625, alignment="left", size=31, delay=0.04, width=700, duration=0.01, block = false)]
+[spellsticker(id="spell2", action="show", style="fire", x=-240, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>「矢は波と共に去る、手を離せ。」</><p=2>“Стрела уходит с волной, отпусти.”</>
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[spellstickerclear(block=false)]
+[Delay(time=0.5)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_metalcollar", volume=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2241_1#4$1",focus="m")]
+[charslot(slot = "m", action="shake",random=true, power=5, times=60,duration=0.5)]
+[name="オレグ"]……スチョーパ、俺は――
+[charslot(slot = "m", name = "avg_4226_veen_1#11$1",focus="m")]
+[name="スチョーパ"]オレグ、俺の後ろへ。
+[charslot(slot = "m", name = "avg_npc_2237_1#1$1",focus="m")]
+[name="戦争術師"]……単なる半端な術師だと思っていたが、まさか……
+[name="戦争術師"]貴様は生きながらにして、己の運命から逃れた。すなわち、かつてないほど死に相応しい存在になったということだ。
+[charslot(slot = "m", name = "avg_4226_veen_1#1$1",focus="m")]
+[name="スチョーパ"]今の言葉は呪文として唱えるべきだったな、「同胞」よ。
+[charslot(slot = "m", name = "avg_4226_veen_1#11$1",focus="m")]
+[name="スチョーパ"]だが、もうお前たちにチャンスはない。お前たちが無声呪文の使い手であることは知ってるが、とっくに廃れたこの略式呪文の扱いなら、俺に並ぶ奴なんていないからな。
+[Dialog]
+[charslot(slot = "m", name = "avg_4226_veen_1#11$1",focus="m")]
+[delay(time=0.1)]
+[PlaySound(key="$d_avg_OriginiumArts_soundwave",volume=1)]
+[Sticker(id="st1", multi = true, text="<color=#888888>スチョーパ</color>", hidelog=true, x=240, y=625, alignment="left", size=31, delay=0.04, width=700, duration=0.01, block = false)]
+[spellsticker(id="spell2", action="show", style="fire", x=-240, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>「夜の雪は痕を残さず、声を潜めよ。」</><p=2>“Ночной снег без следа, молчи.”</>
+[Sticker(id="st1")]
+[spellstickerclear(block=false)]
+[Delay(time=0.2)]
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_2237_1#1$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_sphere", volume=1)]
+[CameraEffect(effect="Colorinverse",amount = 1,keep = true)]
+[Delay(time=0.2)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.05, block=true)]
+[CameraEffect(effect="Colorinverse",keep = false)]
+[bgeffect]
+[Blocker(a=0, r=255,g=255, b=255,  fadetime=0.7, block=true)]
+[PlaySound(key="$d_avg_dimnlspamb", volume=0, loop=true, channel="di")]
+[SoundVolume(volume=0.5, channel="di",fadetime=2)]
+[Delay(time=0.5)]
+[name="戦争術師"]――！
+[Dialog]
+[playsound(key="$d_avg_tirelightwave")]
+[playsound(key="$d_avg_tirelightwave",channel="a",delay=0.4)]
+[playsound(key="$d_avg_tirelightwave",channel="b",volume=1,delay=0.8)]
+[playsound(key="$d_avg_beamamb",volume=0.5,delay=0.5)]
+[CameraShake(duration=1.5,xstrength=20,ystrength=20,vibrato=30,randomness=90,fadeout=true,block=false)]
+[delay(time=1)]
+同時に、無数の荒々しいエネルギーの衝撃が戦争術師の周囲から迸る。しかし、あくまでそれは一時的な沈黙の空間を埋め尽くすのみだった。
+呪縛を強引に突き破ろうとする鋭い破壊音は、すべてその静寂に掻き消されて虚無へと還っていく。
+[Dialog]
+[charslot(slot = "m", name = "avg_4226_veen_1#11$1",focus="m")]
+[name="スチョーパ"]オレグ、すぐに全員を司令室から退避させろ。
+[name="スチョーパ"]稼げる時間は長くても二分だ――
+[charslot(slot = "m", name = "avg_npc_2237_1#1$1",focus="m")]
+[name="戦争術師"]――かくも……下劣な呪文とは――
+[name="戦争術師"]ふざけた真似を！
+[PlaySound(key="$d_avg_phantommagic", volume=1)]
+[name="戦争術師"]（ウルサスの古い方言）「汝に苦痛を、その歩む道に果てはなく、水すらもその穢れをそそげぬよう――」
+[name="戦争術師"]（ウルサスの古い方言）「死ですらも、汝にいかなる安寧をもたらさぬよう！」
+[Dialog]
+[charslot]
+[stopsound(channel="di", fadetime=1)]
+[PlaySound(key="$d_gen_heartbeat",channel="ht",loop=false, volume=0.8)]
+[stopsound(channel="ht",fadetime=2)]
+[Background(image="73_g13_ursuswscommandroom",screenadapt="coverall", xScale=1.02,yScale=1.02,fadetime=0.3)]
+[Delay(time=0.3)]
+[Background(image="73_g13_ursuswscommandroom",screenadapt="coverall",fadetime=1)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_4226_veen_1#5$1",focus="m")]
+[name="スチョーパ"]……
+[charslot(slot = "m", name = "avg_4226_veen_1#6$1",focus="m")]
+[name="スチョーパ"]早く――
+[Dialog]
+[charslot]
+[CameraEffect(effect="Chaos",from = "chaos_none", to = "chaos_hard", fadetime =2, keep=true)]
+[Delay(time=2)]
+[Blocker(a=1, r=255,g=255, b=255,  fadetime=4, block=false)]
+[Delay(time=2)]
+彼の視界では、副官の姿が瞬く間に青色と重なり合うように滲み、続いて果てしない白に覆われたように見えた。
+全身を襲う極限の痛みに抗い、完全に力尽きる前に、彼は口を開いた――
+[stopmusic(fadetime=2)]
+[CameraEffect(effect="Chaos", keep= false)]
+[name="スチョーパ"]……
+[PlaySound(key="$d_avg_firemagic")]
+[spellsticker(id="spell2", action="show", style="fire", x=-210, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>「火は尽き灰は散る、共に還らん。」</><p=2>“Огонь угас, пепел рассеян, вместе падём.”</>
+[Dialog]
+[spellstickerclear(block=false)]
+[Delay(time=1.2)]
+[bgeffect(name="$eb_blackfire_swirl",layer=1)]
+[delay(time=1)]
+[playsound(key="$d_avg_firemagic_hurry")]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[Blocker(a=0, r=255,g=255, b=255,  fadetime=2, block=true)]
+[Delay(time=1)]
+呪文の最後の音と共に、黒と見紛うほどの深い紫の炎が突如として舞い上がり、対峙する双方を呑み込んだ。
+[Dialog]
+[Delay(time=3)]
+[PlaySound(key="$d_avg_tinnitus", volume=1)]
+[Delay(time=1.5)]
+[name="？？？"]――おい――
+[name="？？？"]おい、起きろ！　スチョーパ、ボス！
+[Dialog]
+[focusout(duration=0.2, type="bg", from=0, to=1, block=true)]
+[Delay(time=1)]
+[Background(image="73_g13_ursuswscommandroom",screenadapt="coverall",fadetime=2.5, block=true)]
+[Delay(time=1.5)]
+[focusout(duration=2, type="bg", from=1, to=0, block=true)]
+[Delay(time=1)]
+[PlayMusic(key="$calm_loop", volume=0.6)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(slot = "m", name = "avg_4226_veen_1#12$3",duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_4226_veen_1#12$3",focus="m")]
+[name="スチョーパ"]……なんだ……
+[name="スチョーパ"]俺はヴィイに会いに行ったはずなのに……なんでお前まで？
+[charslot(slot = "m", name = "avg_4226_veen_1#4$3",focus="m")]
+[name="スチョーパ"]ゲホッ、ゲホッ！　もし俺がお前を巻き込んじまったなら、他の奴らは――
+[charslot(slot="m",name="avg_npc_2241_1#2$1",focus="m")]
+[name="オレグ"]死んでねぇし、誰も巻き込まれてねぇよ！　まぁちょっと幻覚のせいで痛んでるが、大したことはない。
+[charslot(slot = "m", name = "avg_4226_veen_1#4$3",focus="m")]
+[name="スチョーパ"]……俺は、死んでないのか？
+[charslot(slot="m",name="avg_npc_2241_1#2$1",focus="m")]
+[name="オレグ"]死ぬわけないだろ！　お前がブツブツ何かの呪文を唱えたと思ったら、室内が*ウルサススラング*みたいに燃え上がったんだ。
+[name="オレグ"]でも、その黒い火はすぐに消えた。あの戦争術師どもと一緒にな。
+[charslot(slot = "m", name = "avg_4226_veen_1#12$3",focus="m")]
+[name="スチョーパ"]……
+[name="スチョーパ"]あいつらは撤退したのか。だが、どうしてだ？
+[charslot(slot="m",name="avg_npc_2241_1#2$1",focus="m")]
+[name="オレグ"]さあな。でも結果オーライだろ。てっきりお前があいつらを焼き殺したのかと思ってたよ。
+[charslot(slot = "m", name = "avg_4226_veen_1#12$3",focus="m")]
+[name="スチョーパ"]俺にそんな芸当はできねぇよ。
+[charslot(slot="m",name="avg_npc_2241_1#3$1",focus="m")]
+[name="オレグ"]何言ってんだ。ヴィイに会いに行ったとか言ってたが、あの御先祖様はお前に会いたくなんてないだろ。何せ、お前の方が凄いんだからよ！
+[charslot(slot = "m", name = "avg_4226_veen_1#8$3",focus="m")]
+[name="スチョーパ"]……ふん。
+[charslot(slot = "m", name = "avg_4226_veen_1#10$3",focus="m")]
+[name="スチョーパ"]で、何をボサッと突っ立ってるんだ？　さっさと全員に下船の準備をさせろ！
+[charslot(slot="m",name="avg_npc_2241_1#7$1",focus="m")]
+[name="オレグ"]は？　お前まさか、まだ――
+[charslot(slot = "m", name = "avg_4226_veen_1#10$3",focus="m")]
+[name="スチョーパ"]ああ。エフゲニーに別れの挨拶をたっぷりしてやらないとな。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)] 
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)] 
+[charslot]
+[Background(image="73_g11_ursuswarshipdeck_d",screenadapt="coverall", block=true)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_wind_howling", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=0.4, channel="sn",fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[playMusic(key="$ouat_loop", volume=0.6)]
+[delay(time=1)]
+最上部の甲板で、クランタは眼下に整然と並ぶ隊列を見下ろし、物思いに耽っていた。
+峡谷から吹く冷たい風が、何日も手入れされず降り積もった塵を巻き上げ、見守る者の思考もろとも遠くへ運んでいく。
+[StopSound(channel="sn", fadetime=2)]
+[charslot(slot = "l", name = "avg_4226_veen_1#3$3",focus="l")]
+[charslot(slot = "r", name = "avg_npc_2241_1#2$1",focus="l")]
+[name="スチョーパ"]……
+[charslot(slot="r",name="avg_npc_2241_1#2$1",focus="r")]
+[name="オレグ"]本当に決めたのか？　今ならまだ皆を呼び戻せるぞ。
+[charslot(slot = "l", name = "avg_4226_veen_1#1$3",focus="l")]
+[name="スチョーパ"]奴には思い知らせてやる必要がある。二度と俺たちを見下せないようにな。
+[name="スチョーパ"]すべてが終わったら、お前たちの元に向かおう。
+[charslot(slot="r",name="avg_npc_2241_1#3$1",focus="r")]
+[name="オレグ"]ふん、すべてが終わったら、か……俺たちの問題に、本当に終わりなんて来るのか？
+[charslot(slot = "l", name = "avg_4226_veen_1#2$3",focus="l")]
+[name="スチョーパ"]来るさ、必ずな。
+[name="スチョーパ"]たとえ何百年と見て見ぬふりされてきたことにだって、いつかはケリがつくもんだ。
+[Dialog]
+[charslot(duration=1)]
+[delay(time=1.5)]
+陽が照らす中で、甲板に立つ人物にただ挨拶をするためだけに、多くの戦士がわざわざ遠回りをしてやって来ていた。
+「リヴァーノフ号」を下船する際、ほとんどの者が彼らの指揮官に別れを告げに来た。それはまるで、ただの夏季休暇に、ただしばしの帰省へと向かうかのような光景だった――
+耕作を待つ畑へ、深い山や森へ、そして、青々とした葦のそよぐ小川のほとりへと。
+[Dialog]
+[image(image="73_i18",screenadapt="coverall",xScale=1.2,yScale=1.2,fadetime=3)]
+[ImageTween(xScaleTo=1, yScaleTo=1, duration=30, block=false)]
+[delay(time=4)]
+[name="気さくな兵士"]ボス、誰に会いに行くつもりなんだ？　俺たちを連れて行けないような相手なのか？　巨人か、大祖母様か、それともヴィイか？
+[name="気さくな兵士"]誰に会いに行くにせよ、向かう前に歌でも歌ってやるよ！　オレグが言ってた、あんたたちが一度も歌いきれなかったっていう、あの歌をな――
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="<i>小道の果てに横たわるヴィイ、それは皇帝でも、神でもなく♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>ただの怪物、巨躯は重く、瞼を上げるにも頼るしかない♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>それに祈る者はない、前に立つ者は皆、無意味であると知っている♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>彼らはただ自分を手放す、二度と着ない鎧を脱ぎ捨てるように♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>ヴィイが目を開けても、お前を見ない♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>ヴィイが見るのはただ――♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>お前が差し出したものが、どうお前を作ってきたか♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+[image(fadetime=2.5)]
+[gridbg(imagegroup="47_g15_eveningglow_L1/47_g15_eveningglow_R1/47_g15_eveningglow_L2/47_g15_eveningglow_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-640,y=360,fadetime=1)]
+[largebgtween(duration =60,xFrom =-640, xTo = -380,block = false)]
+[Delay(time=3)]
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="<i>それは時に戦争、時にいくつもの時代を越えた憎しみ♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>そして時に、ただ天災に潰された草原♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>夢の中でさえやまない、数多くの泣き叫ぶ声♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>そしてその視線が再び伏せられる時♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>お前は知る、事実がいくつか、ひっそりと変わったのだと♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>干上がっては、また水が満ちる川床♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>命を落としては、また故郷へ帰る子供♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>そのどれもが、起こり得ないはずのこと♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+[image(image="73_i18",screenadapt="coverall",fadetime=2.5,block=true)]
+[gridbg]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="<i>だから我々は歌わない、ヴィイの元へ歩む者のためには♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>その者のために、墓碑銘を残しもしない♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>我々はただ地面に酒を垂らし、静かに呟く♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[name="気さくな兵士"]その者は我々の代わりに、進めぬ場所まで歩んでくれたと♪
+[name="オレグ"]翌日になり、朝日が昇れば♪
+[name="気さくな兵士"]我々はまた進み、刀を抜き、敵を殺す♪
+[name="オレグ"]また血を流し、地に倒れ、埋められる♪
+[name="気さくな兵士"]それでもなお、歴史の奔流に、幾度となく己の刃の上へと押し戻される！
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="73_g17_exurbforest_in",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(key="$m_sys_act15main_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>ゼルグラード拡張ブロック 林の中</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+ロドス一行と騒がしい「小屋」は、クリムの手描きの地図に従い、ようやく地下を脱出した。
+とあるひっそりとした人工林に着く頃には、すっかり夜が明けていた。
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="m")]
+[name="騒がしい「小屋」"]……ともかく、おらさま自身もどうしてあそこに現れたのか、わからんのじゃ。
+[name="騒がしい「小屋」"]今がとっくにおらさまの知る時代ではないなら、もう行く当てなどない。いや、どこへでも行けると言うべきじゃろうか。
+[name="騒がしい「小屋」"]おんしはクロージャじゃったな、その「カガミ」とやらをもう一回見せてくれ。今のこの体に慣れておきたいんじゃ――
+[charslot(slot="m",name="avg_4228_closur_1#13$1",focus="m")]
+[name="クロージャ"]キミ、石棺の近くに埋められたって話だったよね。石棺の発掘現場の近くに、前までは源石採掘場があったんだ。だからチェルノボーグは、ウルサスの荒れ果てた東部で急速に発展できたんだよ。
+[charslot(slot="m",name="avg_4228_closur_1#11$1",focus="m")]
+[name="クロージャ"]……
+[name="クロージャ"]遺体、源石採掘場、以前の石棺……「小屋」、あたしがうっかりこぼしちゃった「空白の源石」、機能が分割された今の「プロトタイプ」――
+[charslot(slot="m",name="avg_4228_closur_1#7$1",focus="m")]
+[name="クロージャ"]……あっ、わかった！　そういうことか！
+[multiline(name="クロージャ")]試してみる価値はあるかも――
+[charslot(slot="m",name="avg_4228_closur_1#12$1",focus="m")]
+[multiline(name="クロージャ")]ううん、絶対に試してみなきゃ。
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4179_monstr_1#5$1",focus="m")]
+[name="Mon3tr"]クロージャ？
+[Dialog]
+[charslot]
+クロージャはそこで言葉を止め、手品のようにポケットから折り畳みモニターを取り出して広げた。続けて、普段はエンジニア部のオフィスでしか見ないような、奇妙な機材を次々と取り出す。
+彼女が地面に座り込むと、「小屋」も興味津々といった様子で飛び跳ねながら近づき、その様子を覗き込んだ。
+[Dialog]
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="m")]
+[name="騒がしい「小屋」"]何がわかったんじゃ？　ケルシーのことなら、おらさまはまだ何も話しておらんぞ。
+[name="騒がしい「小屋」"]もちろん、あやつが死んだのは知っておる。あやつほどの者でも、いつかそんな日が来るとは思っておった。じゃが、一体何がわかったというのじゃ？
+[charslot(slot="m",name="avg_1037_amiya3_1#13$1",focus="m")]
+[name="アーミヤ"]今までの実験に欠けていた鍵が何だったか、ですよね？
+[charslot(slot="m",name="avg_4228_closur_1#14$1",focus="m")]
+[name="クロージャ"]その通り！　それと、彼女を連れ戻す方法もね！
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="クロージャ"]エネルギー源として、創生ポッドとしての石棺。記憶を形作るケルシーの初期データ。体の構成基盤になる空白の源石「オカ」……それと、さっき見つけた基底コード。
+[charslot(slot="m",name="avg_4228_closur_1#10$1",focus="m")]
+[name="クロージャ"]あたしはずっと、復活の実験を生物学的な課題として扱ってた。でも、生命って本当は長期実行されるプロセスみたいなもので、静的なコードじゃないってことに気づいてなかった。
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="クロージャ"]ケルシーが特別だったのは、彼女の最初の自己改変コマンドが設計通りに構造を変えることだけじゃなくて、自分自身を呼び出すループを構築したからでもあるんじゃないかな。
+[Dialog]
+[charslot]
+[Decision(options="情報の奔流に満ちたあの空間で、あるものを見た。", values="1")]
+[Predicate(references="1")]
+[Decision(options="君のたとえに従うなら――;ケルシーは自ら「ループ」を維持することを選んだ。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="クロージャ"]……もしケルシーがループを構築した瞬間から、単なる実行プログラムじゃなくなって、自分自身を呼び出してはアップデートして、それをイテレーションし始めたんだとしたら……
+[charslot(slot="m",name="avg_4228_closur_1#10$1",focus="m")]
+[name="クロージャ"]それなら、彼女の一番最初の自己改変コマンドこそが、そもそも彼女の「意識」だったってことだよ。
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="クロージャ"]「レヴァナント」とか、そういうものだったらわからないけど……もし、彼女の魂の奥底に刻まれているものや、人としての意志そのものを表すものがあるとしたら――
+[charslot(slot="m",name="avg_4228_closur_1#14$1",focus="m")]
+[name="クロージャ"]それは間違いなく、その最初の自己改変コマンドだよ。
+[Dialog]
+[charslot]
+[Decision(options="……;……", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="よくわかった。", values="1")]
+[Predicate(references="1")]
+[Decision(options="始めてくれ、クロージャ。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g17_exurbforest_in",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+クロージャは石棺から取り外したエネルギーストレージを取り出すと、ハードディスクやヒートシンクと組み立て始めた。
+仮組みしたケースからは何本もの黒いケーブルが伸び、ラック代わりにされたガラス張りの小屋に接続されている。
+基底コードをなす「方解石」は、ダンプボックスから取り出せないため、そのまま空き地の中央に据え置かれていた。
+オカは透明なガラス管に入っているが、出発時より少しばかり減っている。
+携帯型創生ポッドが展開され、空き地一帯に、石棺のデータ環境を模した領域が現れた。それは純白の「水溜まり」のようだった。
+すべての準備が整った。クロージャは電源を入れ、モニターが立ち上がるのを待つ。
+[Dialog]
+[charslot(slot="m",name="avg_4228_closur_1#12$1",focus="m")]
+[name="クロージャ"]……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_systemstart",volume=1)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+[Sticker(id="st1", multi = true, text="System booting...", x=180,y=170, alignment="left", size=24, delay=0.1, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_keyboard_console", volume=0.7, loop=true, channel="key")]
+[StopSound(channel="key", fadetime=2)]
+[Delay(time=1.5)]
+彼女は瞬きすらせず、一瞬たりとも手を止めることなく残りのコマンドを淀みなく打ち込み続ける。
+この実験は、すべてが迅速かつ連続的でなければならないのだ。
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_mechalock", volume=1)]
+[Sticker(id="st1", multi = true, text="生体モデル構築------------------100%", x=180,y=170, alignment="left", size=24, delay=0.07, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n生理機能シミュレーション------------------100%",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n……",block = true)]
+[Sticker(id="st1", multi = true, text="\n\nニューロンデータアップロード------------------100%",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_4228_closur_1#7$1",focus="m")]
+[name="クロージャ"]――！
+[charslot(slot="m",name="avg_4179_monstr_1#8$1",focus="m")]
+[name="Mon3tr"]これって、もしかして……
+[charslot(slot="m",name="avg_1037_amiya3_1#5$1",focus="m")]
+[name="アーミヤ"]……
+[Dialog]
+[charslot]
+画面上に、今まで一度も見たことのないメッセージが表示される。その瞬間、その場にいた誰もが息を呑んだ。
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_electronicbuzz")]
+[Sticker(id="st1",  multi = true, text="Initiate life-phase transition?", x=300, y=340, alignment="center", size=28, delay=0, duration=1.5, width=700)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+いくつもの熱を帯びた視線が、クロージャへと注がれる。
+彼女は、確定のキーを押した。
+[Dialog]
+[PlaySound(key="$d_avg_keyboard_confirm")]
+[delay(time=1.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+[skipnode(mode="nofirstskip")]
+[Dialog(fadetime=0)]
+[charslot(duration=0)]
+[stopmusic(fadetime=0)]
+[image(fadetime=0)]
+[bgeffect(fadetime=0)]
+[StopSound(channel="foot", fadetime=0)]
+[StopSound(channel="a", fadetime=0)]
+[stopsound(channel="di", fadetime=0)]
+[stopsound(channel="ht",fadetime=0)]
+[StopSound(channel="sn", fadetime=0)]
+[StopSound(channel="key", fadetime=0)]
+[stopsound(channel="inf", fadetime=0)]
+[stopsound(channel="er", fadetime=0)]
+[StopSound(channel="ma", fadetime=0)]
+[stopsound(channel="inf1", fadetime=0)]
+[StopSound(channel="o", fadetime=0)]
+[StopSound(channel="er1", fadetime=0)]
+[stickerclear]
+[animtextclean]
+[spellstickerclear(block=false)]
+[interlude(channel = 3,clear = true,fadetime=0)]
+[interlude(channel = 4,clear = true,fadetime=0)]
+[subtitle(fadetime=0)]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[interlude(channel = 2,clear = true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[Dialog]
+[Character]
+[theater(mode=true)]
+[Video(res="video/03.mp4")]
+[Dialog]
+[theater(mode=false)]
+[skipnode(mode="skip")]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+おかえり。
+ケルシー。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[image]

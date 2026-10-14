@@ -1,0 +1,1070 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[gridbg(imagegroup="47_g14_skyovercast_L1/47_g14_skyovercast_R1/47_g14_skyovercast_L2/47_g14_skyovercast_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-640,fadetime=1)]
+[largebgtween(duration = 60,yFrom = 360, yTo = 720,block = false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$m_avg_ursusdaily_loop", volume=0.6)]
+[delay(time=0.5)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0, block=true)]
+[Subtitle(text="“무기한으로 보장할 수는 없지만, 적절한 선에서 주의를 건네는 건 가능합니다.”", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle(text="“디에티 그라이퍼부르크와 각 군단의 관계는 마치 한 쌍의 손과 여러 쌍의 장갑과 같다고 할 수 있죠.”", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle(text="“제1군단은 최상급 버든비스트 털로 만들어진 가장 자주 쓰이는 장갑이지만, 그 때문에 크기가 정해진 예비품과 같죠. 손에 딱 맞지도 않고, 애초에 손에 맞을 거란 기대조차 하지 않아요.”", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle(text="“다시 말해, 누구든 그 장갑을 끼려면 요령을 파악해야 하고, 어느 정도의 불편함은 감수해야 한다는 뜻이죠.”", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[gridbg]
+[Dialog]
+[charslot]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>젤그라드 연계 구역, 숲속</><p=2>1102년 1월 20일 12:08</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_1037_amiya3_1#1$1",afrom=0, ato=1,duration=1.5)]
+[charslot(slot="r",name="avg_4179_monstr_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_1037_amiya3_1#1$1",focus="l")]
+[name="아미야"]연계 구역…… 저 앞이 젤그라드 도심부겠네요.
+[name="아미야"]이 지도에 공식 방문 서류 소지자는 전용 통로를 이용하라고 적혀 있어요. 서류에 유효 기간이 있으니, 최대한 빨리 들어가야 해요.
+[charslot(slot="r",name="avg_4179_monstr_1#1$1",focus="r")]
+[name="Mon3tr"]앞에 줄이 몇 개 있는데, 전용 통로라고 적힌 곳은 안 보여.
+[Dialog]
+[charslot(slot="l",name="avg_1037_amiya3_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_4179_monstr_1#1$1",focus="n")]
+[Decision(options="그리고 연계 구역에 도착하면 누군가 마중을 나와야 했을 텐데.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_1037_amiya3_1#7$1",focus="l")]
+[name="아미야"]여기서 조금만 기다리다 보면 금방……
+[charslot(slot="r",name="avg_4179_monstr_1#10$1",focus="r")]
+[name="Mon3tr"]내가 아무나 잡아서 물어볼게.
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1,channel="1")]
+[charslot(slot="r",afrom=1, ato=0,duration=1.5,focus="r")]
+[stopsound(channel="1",fadetime=1.5)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_1037_amiya3_1#5$1",focus="l")]
+[name="아미야"]Mon3tr 씨!
+[charslot]
+[Dialog]
+[Decision(options="가게 둬.;알아서 잘 처신할 거야.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#2$1",focus="m")]
+[name="아미야"]감염자인 줄 알고 공격을 당하기라도 할까 봐 걱정돼요……
+[charslot(slot="m",name="avg_npc_1730_1#3$1",focus="m")]
+[name="라이디언"]이 일대의 병력 배치는 내가 아는 보안 행정 구역의 표준 배치와 일치해. 제1군단은 그런 소란을 용납하지 않을 거야. 특히 지금처럼 공식적으로 감염자 수용을 선언한 시점에는 더더욱.
+[charslot(slot="m",name="avg_npc_1730_1#2$1",focus="m")]
+[name="라이디언"]다만 근처의 전기 신호가 약간 불안한 느낌이 들긴 하는데……
+[charslot(slot="m",name="avg_4228_closur_1#14$1",focus="m")]
+[name="클로저"]그래? 그럼 드론 날려서 확인해 볼까?
+[charslot]
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1,channel="2")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1",afrom=0, ato=1,duration=1.5)]
+[stopsound(channel="2",fadetime=1.5)]
+[delay(time=1.5)]
+[name="Mon3tr"]물어보고 왔어!
+[charslot(slot="m",name="avg_4179_monstr_1#4$1",focus="m")]
+[name="Mon3tr"]전용 통로는 임시 운영 중단이래. 몇 시간 전에 누가 검문을 피해 그 통로로 몰래 들어가려고 했나 봐.
+[charslot(slot="m",name="avg_4179_monstr_1#2$1",focus="m")]
+[name="Mon3tr"]일반 통로는 아직 열려 있는데, 속도는 기대하기 어렵겠더라.
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="m")]
+[name="아미야"]……운이 썩 좋지는 않네요.
+[Dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="n")]
+[Decision(options="아미야, 늦어도 언제까지 들어가야 하지?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="아미야"]오늘 저녁 6시 전까지는 들어가야 해요. 연계 구역에서 도심 출입구까지 거리가 좀 있어서, 셔틀버스를 타도 최소 4시간은 걸릴 거예요.
+[name="아미야"]여기서 지체할 여유가 없어요. 여기에 줄을 서서 지금 속도로 들어간다면, 통행 서류 유효 기간 안에 못 들어갈 것 같아요.
+[charslot(slot="m",name="avg_4228_closur_1#4$1",focus="m")]
+[name="클로저"]말이 잘 통할 것 같은 사람 하나 찾아서 서류 내밀고 문 열어달라고 하면 안 되나?
+[charslot(slot="m",name="avg_npc_1730_1#3$1",focus="m")]
+[multiline(name="라이디언")]우르수스 군인 중에는 말이 잘 통하게 생겼다고 봐주는 사람 같은 건 없어. 
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[multiline(name="라이디언")]하지만, 그래도 다루는 방법은 있지.
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="라이디언"]박사.
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="내가 뭘 하면 될까?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1730_1#8$1",focus="m")]
+[name="라이디언"]간단해. 이따가 박사는 필요한 순간에 그냥 심오하게 고개만 끄덕여 주면 돼.
+[charslot]
+말이 끝나기 무섭게, 라이디언의 등 뒤에 달린 기계 팔이 움직이기 시작했다. 동작이 크진 않았지만, 가까이 있는 사람이라면 그녀가 움직이고 있다는 것쯤은 알아챌 수 있었다.
+곧이어 주변에 있는 위병 전원의 통신 장치에서 날카로운 굉음이 일제히 울려 퍼졌다.
+곧 장교처럼 보이는 한 군인이 로도스 아일랜드 일행을 향해 성큼성큼 걸어오기 시작했다.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[name="냉담한 군인"]당신들! 정체가 뭡니까? 오리지늄 아츠로 통신을 교란한 게 당신이죠?
+[charslot(slot="m",name="avg_npc_1730_1#5$1",focus="m")]
+[name="라이디언"]오, 드디어 와주셨네. 젤그라드에 성실하게 복무하는 병사가 없는 줄 알았는데.
+[charslot(slot="m",name="avg_npc_1730_1#5$1",focus="m")]
+[name="라이디언"]우리는 의약 개발에 종사하는 연구팀이야. 의회를 대표해 젤그라드의 비밀 프로젝트 진행 상황 점검차 디에티 그라이퍼부르크에서 왔어. 이건 폐하께서 날인하신 통행 서류야.
+[charslot(slot="m",name="avg_npc_1730_1#6$1",focus="m")]
+[name="라이디언"]옆에 계신 분은 폐하께서 친히 초빙한 기술 고문이지. 근데, 그런 분을 이렇게 푸대접하다니!
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="(심각한 느낌으로 고개를 끄덕인다);(거만한 느낌으로 고개를 끄덕인다)", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="냉담한 군인"]당신은…… 우르수스인처럼 보이지 않는데요.
+[charslot(slot="m",name="avg_npc_1730_1#6$1",focus="m")]
+[name="라이디언"]적당히 하지? 원래 마중 나와야 했을 사람이 나오지 않았길래 여기서 기다리고 있었더니, 수상한 사람으로 몰아가려는 거야?
+[name="라이디언"]너희 제1군단은 일을 이딴 식으로 처리하나? 좋아, 폐하께 올라갈 보고서에 사실대로 쓰지.
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="냉담한 군인"]죄송합니다. 잠시만 기다려 주십시오. 저희가 통보를 받지 못해서……
+[charslot]
+[Dialog]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$rungeneral", volume=1,channel="4")]
+[stopsound(channel="4",fadetime=1)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",bstart=0.2,bend=0.7,afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",bstart=0.2,bend=0.7,focus="m")]
+[name="???"]들어오지 마!
+[charslot(slot="m",name="avg_npc_1730_1#9$1",focus="m")]
+[name="라이디언"]……?!
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",bstart=0.2,bend=0.7,focus="m")]
+[name="???"]젤그라드에 들어오면 안 돼!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$plot_intro", key="$plot_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1969_1#1$1",posfrom="0,0", posto="-100,0",duration=0)]
+[charslot(slot="r",name="avg_npc_1971_1#1$1",posfrom="0,0", posto="100,0",duration=0)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="초조한 광부"]줄이 너무 긴데……
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="r")]
+[name="차분한 청년"]줄이 계속 길어지고 있는 걸 보니, 젤그라드의 감염자 수용 소식을 들은 사람이 많은 모양이네요.
+[charslot(slot="r",name="avg_npc_2225_1#3$1",focus="r")]
+[name="차분한 청년"]걱정하지 마세요.
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[name="초조한 광부"]난 그걸 걱정하는 게 아니라……
+[charslot]
+[Dialog]
+[delay(time=1)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.4,channel="out1")]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="초조한 광부"]잠깐, 뒤에 무슨 일이 있는 것 같아.
+[name="초조한 광부"]저 사람, 차림새가 이상해……
+[name="초조한 광부"]아냐 잠깐, 저거, 사람이긴 한가?
+[Dialog]
+[stopsound(channel="out1",fadetime=0.5)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.7,channel="out2")]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+이상한 모습을 한 사람이 대열 끄트머리에 있던 일행을 향해 돌진했고, 느닷없는 난입에 사람들은 흩어졌다.
+일순간, 어리둥절해하는 사람들의 시선이 한곳에 모였다.
+[stopsound(channel="out2",fadetime=0.5)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="???"]내 말 들어. 젤그라드에 들어오지 마!
+[name="???"]이상한 게 있어. 처음 보는 분진인데, 사람이 닿기만 해도 감염돼!
+[charslot(slot="m",name="avg_1037_amiya3_1#5$1",focus="m")]
+[name="아미야"]분진……?
+[charslot]
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1,channel="3")]
+[charslot(slot="m",name="avg_npc_082",afrom=0, ato=1,duration=1.5)]
+[stopsound(channel="3",fadetime=1.5)]
+[delay(time=1.5)]
+[name="당황한 경비"]……젠장! 그 입 안 닥쳐!
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="???"]지금 여기는 안전하지 않아. 들어오지 마! 들어오면 안 돼!
+[name="???"]빨리 떠나!
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="냉담한 군인"]……또 너냐……
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="당황한 경비"]죄송합니다, 그리샤 중위님! 저희의 부주의로 이 여자가 운송차에 섞여 들어갔습니다!
+[name="당황한 경비"]당장 데리고 가겠습니다!
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="냉담한 군인"]서두르세요.
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="???"]시간이 없어. 내 말 잊지 마!
+[name="???"]들어오면 안 돼!
+[Dialog]
+[charslot(slot="r",name="avg_npc_082",afrom=0, ato=1,posfrom="120,0", posto="70,0",duration=1)]
+[delay(time=1)]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="r",afrom=1, ato=0,posfrom="70,0", posto="150,0",duration=1)]
+[charslot(slot="m",afrom=1, ato=0,posfrom="0,0", posto="80,0",duration=1)]
+[delay(time=1.5)]
+[charslot]
+[name="사람들"]……
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="냉담한 군인"]모두 물러나세요. 30초 안에 자기 줄로 돌아가지 않으면, 맨 뒤로 가서 다시 줄을 서게 될 겁니다!
+[charslot]
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_npc_1969_1#1$1",posfrom="0,0", posto="-100,0",duration=0)]
+[charslot(slot="r",name="avg_npc_1971_1#1$1",posfrom="0,0", posto="100,0",duration=0)]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",duration=0,afrom=1, ato=0,duration=1)]
+[charslot(slot="m",duration=0,afrom=1, ato=0,duration=1.5)]
+[charslot(slot="r",duration=0,afrom=1, ato=0,duration=1.8)]
+[delay(time=2)]
+[charslot]
+[playMusic(key="$m_avg_ursusdaily_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1730_1#4$1",focus="m")]
+[name="라이디언"]이건 반드시 물어봐야 할 것 같은데, 저건 뭐야……?
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="냉담한 군인"]미친 사람입니다. 신경 쓰지 마세요.
+[charslot(slot="m",name="avg_npc_1730_1#4$1",focus="m")]
+[name="라이디언"]저 여자를 어디로 데려가는 거지?
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="냉담한 군인"]보석금을 내주는 사람이 없으면, 적어도 며칠은 유치장 신세를 져야 할 겁니다.
+[charslot(slot="m",name="avg_npc_1730_1#2$1",focus="m")]
+[name="라이디언"]처음 있는 일은 아닌 것 같던데.
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="냉담한 군인"]그게 중요합니까?
+[charslot(slot="m",name="avg_npc_1730_1#5$1",focus="m")]
+[name="라이디언"]중요해.
+[name="라이디언"]오히려 젤그라드가 저런 미치광이까지 용인할 수 있으니까 '내일의 도시'라는 이름으로 불릴 수 있는 게 아닐까?
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="냉담한 군인"]……
+[charslot]
+차가운 얼굴의 병사는 아무 말도 하지 않았다. 그는 가만히 라이디언을 바라보며 라이디언의 발언에 긍정도 부정도 하지 않았다. 마치 침묵으로 상대를 압박하려는 것 같았다.
+하지만, 라이디언은 그의 전기 신호가 비정상적으로 떨린다는 사실을 알아챘다.
+이어서 라이디언은 미소를 지었다.
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="라이디언"]근데, 확실히 우려되는 부분이 있는 것 같긴 하네.
+[name="라이디언"]우리가 직접 젤그라드에 들어가서 사실은 이 도시에 아무 일이 없고, 내가 쓸데없는 걱정을 했다는 걸 직접 확인해야겠어.
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="냉담한 군인"]……먼저 여러분 모두의 신분과 서류의 진위를 검증해야 합니다.
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="라이디언"]당연하지. 대신, 최대한 빨리 부탁할게, 괜찮지?
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="라이디언"]어쨌든 우리의 출입이 지체된 근본적인 원인은 젤그라드 측의 부주의에 있으니까.
+[charslot]
+[Dialog]
+[PlaySound(key="$d_avg_paper1",volume=1)]
+[delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_paper1",volume=1)]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="냉담한 군인"]……오래 기다리셨습니다. 신분과 서류는 문제없습니다.
+[name="냉담한 군인"]추가 정보를 확인하겠습니다. 회사 이름과 방문 인원수를 말씀해 주십시오.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="아미야"]로도스 아일랜드 제약회사, 5명이요.
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="냉담한 군인"]방문 목적은요?
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="아미야"]의회의 파견으로 '프로젝트 제로' 연구를 보조하러 왔습니다.
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="냉담한 군인"]이상 없습니다.
+[name="냉담한 군인"]따라오시죠.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_npc_2225_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="짜증 내는 위병"]말했잖아, 트레일러에 있는 물건을 다 내려서 확인해야 한다니까.
+[name="짜증 내는 위병"]너도 몰래 들어가려던 게 아니라면 같은 말 두 번 하게 하지 마.
+[charslot(slot="l",name="avg_npc_2225_1#10$1",focus="l")]
+[name="차분한 청년"]너도라뇨……?
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[name="차분한 청년"]물론 아닙니다, 선생님. 저도 시간을 빼앗고 싶지 않습니다만, 제 말을 좀 들어주세요……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_1037_amiya3_1#5$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1976_1#1$1",focus="n")]
+[name="아미야"]저쪽은 뭐죠……?
+[charslot(slot="r",name="avg_npc_1976_1#1$1",focus="r")]
+[name="냉담한 군인"]감염자용 일반 통로입니다.
+[charslot(slot="l",name="avg_1037_amiya3_1#7$1",focus="l")]
+[name="아미야"]줄이 많이 기네요. 이 겨울에 저렇게 계속 밖에 줄을 서서 기다려야 하는 건가요? 전용 통로 쪽에는 아무도 없잖아요.
+[charslot(slot="r",name="avg_npc_1976_1#1$1",focus="r")]
+[name="냉담한 군인"]규칙이 그렇습니다.
+[name="냉담한 군인"]원래 전용 통로도 공식 통지가 내려지기 전까지는 쭉 폐쇄할 예정이었습니다.
+[name="냉담한 군인"]제1군단에서 이례적으로 이렇게 해드리는 거예요.
+[charslot(slot="l",name="avg_1037_amiya3_1#3$1",focus="l")]
+[name="아미야"]도움은 감사합니다. 다만 제가 드리고 싶은 말씀은……
+[charslot]
+[name="다투는 소리"]……다루고 싶진…… 더 이상…… 헛소리……
+[name="다투는 소리"]……가져갈……
+[name="다투는 소리"]……젤그라드에!!
+멀지 않은 곳에 있는 또 다른 입구에서, 무장한 위병들이 점점 큰 소리로 욕설을 퍼부으며 키 작은 감염자를 밀어내고 있었다.
+떠밀리는 사람은 순순히 몇 걸음 물러서긴 했지만, 꼿꼿한 자세에서는 두려움을 찾아볼 수 없었다.
+그 사람 곁에는 광부, 인부 등, 누가 봐도 노동자로 보이는 사람들이 있었다……
+그들은 모두 그 감염자 주변에 서서 그 감염자를 보호하려는 것처럼 보였다.
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="m")]
+[name="아미야"]……
+[charslot(slot="m",name="avg_4179_monstr_1#8$1",focus="m")]
+[name="Mon3tr"]아미야?
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="냉담한 군인"]더 이상 미루면 서류의 기한을 맞출 수 없을 겁니다.
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="아미야"]죄송합니다. 그래도……
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_2225_1#9$1")]
+[charslot(slot="r",name="avg_npc_082")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[charslot(slot="r",name="avg_npc_082",focus="n")]
+[name="차분한 청년"]……규칙대로 사흘 동안 줄을 섰습니다. 기다리는 동안 그쪽 순찰대원에게 트레일러를 검사받았는데, 왜 다시 검사를 받아야 하죠?
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[name="차분한 청년"]이유가 도대체 뭡니까? 설마 젤그라드에 들어가려면 생존에 필요한 이 마지막 물자들조차도 포기해야 합니까?
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="짜증 내는 위병"]말했잖아. 젤그라드에는 너희가 먹고 입을 게 부족하지 않을 거라고! 마음대로 이렇게 많은 물자를 가지고 들어갈 수 있는 사람은 없어!
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[name="차분한 청년"]그렇다 한들, 우리의 남은 물자를 빼앗을 수는 없습니다.
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="짜증 내는 위병"]쳇, 고집이 보통이 아니네……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[name="아미야"]저기, 실례합니다만……
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="짜증 내는 위병"]뒤로 가서 서!
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="아미야"]저는 전용 통로에서 왔어요.
+[Dialog]
+[charslot]
+그녀의 말을 들은 위병은 전용 통로가 있는 곳을 바라보았다. 텅 비어 있는 대열 입구에 있는 몇몇 사람들이 전부 이곳을 보고 있었다.
+그곳에 서 있던 장교에게서 시선을 거둔 후, 병사는 조금 더 탐구심 어린 눈빛으로 소녀를 바라봤다.
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="짜증 내는 위병"](작은 목소리로) 전용 통로라니, 그건 오늘 다 닫은 거 아니었나? 설마 높으신 분은 아니겠지……
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="아미야"]왜 다투고 있는지 여쭤봐도 될까요?
+[charslot(slot="m",name="avg_npc_2225_1#9$1",focus="m")]
+[name="차분한 청년"]이 사람은 우리가 가져온 생필품을 압수하려고 하고 있어요. 동의하지 않으면 젤그라드에 들어갈 수 없다더군요.
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="짜증 내는 위병"]규칙이라고 했잖아!
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="아미야"]트레일러에 뭐가 있는지 여쭤봐도 될까요?
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="차분한 청년"]밀 조금이랑 갈아둔 밀가루요. 광산에서 일할 때 어렵게 모은 거예요.
+[charslot]
+청년은 말과 함께 트레일러에 덮인 천의 한 귀퉁이를 들춰 아미야에게 보여주었다.
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="m")]
+[name="아미야"](식량 조금이 다잖아. 적의도 느껴지지도 않는데.)
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="아미야"](그런데 마대의 모양이…… 안에 뭔가를 숨겨뒀나?)
+[charslot]
+호기심에 찬 아미야는 청년의 정직한 눈빛을 마주 봤다.
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="아미야"]……
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="아미야"]저기, 이건 제 통행증이에요. 제가 이분들을 위해 보증을 서고 싶어요.
+[name="아미야"]젤그라드에 들어가면 또 어떤 '특별한 규칙'이 있을지 모르겠지만, 이 사람들이 가진 건 밀 조금이 다예요. 돈도 안 되고, 누구에게도 해를 끼치지도 않는 거잖아요.
+[charslot(slot="m",name="avg_1037_amiya3_1#16$1",focus="m")]
+[name="아미야"]광산에서 여기까지 오는 동안 고생은 충분히 하셨을 거예요. 당신도 이 사람들이 배부르게 밥 몇 끼를 먹는 것 정도는 괜찮지 않나요?
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="짜증 내는 위병"]……쳇.
+[name="짜증 내는 위병"]알겠습니다. 마지막으로 한 번만 더 검사하고 보내드리죠.
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="아미야"]네. 하지만 이 자루들이 터지지 않게 조심해 주시겠어요?
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="짜증 내는 위병"]귀찮아 죽겠네, 진짜…… 빨리 거기 있는 물건 챙겨서 가버려, 길 막지 말고. 내 앞에서 허튼짓할 생각도 하지 말고!
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="차분한 청년"]감사합니다.
+[charslot(slot="m",name="avg_npc_2225_1#3$1",focus="m")]
+[name="차분한 청년"]친절한 아가씨, 감사합니다. 성함이 어떻게 되시는지……
+[charslot(slot="m",name="avg_1037_amiya3_1#12$1",focus="m")]
+[name="아미야"]고마워할 필요 없어요!
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#12$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+차분한 인상의 청년이 고개를 들었을 때, 카우투스는 이미 원래 줄을 향해 걸어가고 있는 중이었다. 키가 작은 그 사람의 눈에 남은 건, 카우투스의 뒷모습이었다.
+곧이어 줄이 다시 움직이기 시작했다.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_driveincar",loop=true,channel="car",volume=0.5)]
+[delay(time=2)]
+[name="방송 소리"]“터널을 통과하면 바로 젤그라드 도심부가 나옵니다.”
+[name="방송 소리"]“도시를 둘러싼 울창한 녹지, 그 사이에 들어선 고층 건물, 자연과 미래가 조화를 이루고 있습니다.”
+[name="방송 소리"]“젤그라드에서는 성실히 일하기만 하면 누구나 자신의 손으로 마땅한 존중을 받고 아름다운 삶을 만들어갈 수 있습니다.”
+[name="방송 소리"]“이곳은 기회의 도시, 내일의 도시입니다.”
+[Dialog]
+[Background(image="73_g1_exurbstreet_d",screenadapt="coverall")]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2,block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2,block=true)]
+[StopSound(channel="car",fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0, block=true)]
+[Subtitle(text="“……환영합니다. 젤그라드의 새로운 시민 여러분.”", x=300, y=350, alignment="center", size=25, delay=0.04, width=700)]
+[delay(time=1)]
+[Subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[curtain(direction = 4,fillfrom = 0.2,fillto = 0.01,block=false,fadetime=1.5)]
+[curtain(direction = 0,fillfrom = 0.2,fillto = 0.01,block=true,fadetime=1.5)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>젤그라드 도심부, 거리</><p=2>1102년 1월 20일 16:32</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlayMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="초조한 광부"]저, 저기를 봐! 저 집들 뒤에 있는 건 뭘까?
+[charslot(slot="r",name="avg_npc_2225_1#10$1",focus="r")]
+[name="차분한 청년"]산 같은 특수한 지형처럼 보이는데, 아니면…… 벽일까요?
+[charslot]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="성실한 위병"]인원은 다 모였습니까?
+[name="성실한 위병"]좋습니다. 모두 저를 따라오십시오.
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="초조한 광부"]……우리를 어디로 데려가려는 거야? 오는 길에서 들은 홍보 문구들은 이제부터 우리가 직접 두 손으로……
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="성실한 위병"]물론, '삶을 만들어갈'수 있습니다. 맞습니다. 하지만, 그러려면 우선 머물 곳이 필요합니다. 그래야 근처 공장이나 단지에 일자리를 배정해 드릴 수 있으니까요.
+[name="성실한 위병"]운이 좋은 편입니다. 젤그라드 시청에서 자격 심사 통과자에게 거주지까지 제공하거든요.
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="초조한 광부"]……그런 게 있었다고? 처음 듣는 얘기인데……
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="성실한 위병"]젤그라드만의 정책입니다. 합법적인 주민들에게 저렴한 가격으로 공동 주택을 제공해 노동자들의 생활, 업무, 여가의 효율을 극대화하는 거죠.
+[name="성실한 위병"]그렇게 되면, 이곳 주민들은 떠나지 않고 대대손손 이곳을 일구며 살아가게 되겠죠.
+[name="성실한 위병"]예전에는 가장 성실하고 생산성 있는 노동자에게만 주어지던 혜택이지만, 지금은 감염자를 포함한 심사 통과자 전원에게 열려 있습니다.
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="차분한 청년"]밖에서 젤그라드 내부 소식을 거의 들을 수 없었던 게 이런 이유 때문이었군요.
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="성실한 위병"]밖에 여러 소문이 있다는 건 알지만, 그 소문이 사실인지는 직접 보면 알게 되실 겁니다.
+[name="성실한 위병"]그 홍보 문구들이 과장이 아니라는 걸 알게 되실 거예요.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="l",name="avg_npc_1970_1#1$1")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1")]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",afrom=1, ato=0,duration=1.5)]
+[charslot(slot="r",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1502_crosly_1#2$1",bstart=0.2,bend=0.5,afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[name="???"]……
+[charslot(slot="m",name="avg_1502_crosly_1#1$1",bstart=0.2,bend=0.5,focus="m")]
+[name="???"]감염자 무리가 또 들어왔군.
+[name="???"]속도가 빨라지고 있어.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="73_g3_exurbroom",screenadapt="coverall")]
+[Delay(time=2)]
+[PlayMusic(intro="$ponder_intro", key="$ponder_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+적어도 거처에 대한 설명만큼은 결코 과장된 게 없었다.
+빈 치스티밀크팩, 챙겨가지 못한 냄비와 그릇들, 아직 파릇파릇한 화분, 마룻바닥에 깔린 낡은 카펫……
+그 모든 것이 누군가 이곳에서 살았음을 증명하고 있었다.
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="초조한 광부"]이럴 수가……
+[name="초조한 광부"](내가 체르노보그에서 과외 선생을 했을 때 살던 곳보다 더 좋잖아!)
+[charslot(slot="r",name="avg_npc_2225_1#4$1",focus="r")]
+[name="차분한 청년"](작은 목소리로) 그런데 한 층에 최소 여덟에서 열 가구는 욱여넣은 것 같아요.
+[name="차분한 청년"](작은 목소리로) 이건 화재가 발생하면 아주 커다란 문제가 생긴다는 뜻이죠.
+[charslot]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="성실한 위병"]여기입니다. 이건 가족용 호실이라, 침실 2개에 부엌도 좀 더 큽니다. 이사 나간 가족이 얼마 전에 동쪽에 있는 새 단지로 옮겨간 터라, 짐이 많이 남아 있어요.
+[name="성실한 위병"]그냥 쓰셔도 됩니다. 이사 간 곳에 새로운 살림을 장만했을 테니 필요 없을 거예요.
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="차분한 청년"]가족이 없는 사람은요?
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="성실한 위병"]지금은 가족용 호실이 많이 비어 있어서요. 두세 명이 한 집을 같이 쓰시고, 1층에 가서 등록하시면 됩니다.
+[name="성실한 위병"]여러분의 인원수를 기준으로 보면, 이곳에서 충분히 살 수 있을 겁니다.
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="차분한 청년"]실례지만, 이 동에 지금 사는 분들은 다 감염자인가요? 전에 들어온 분들도 다 여기 계신 건가요?
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="성실한 위병"]네, 이 건물은 감염자 동입니다. 두 번째 질문은 저도 모르겠군요. 여기엔 들어왔던 분들이 워낙 많아서 다 같은 데 모실 수는 없었거든요.
+[charslot(slot="m",name="avg_npc_2225_1#8$1",focus="m")]
+[name="차분한 청년"]……
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="성실한 위병"]다른 질문이 없다면, 방 배정을 상의해 주세요. 다 끝나면 1층에 등록하러 가시죠.
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="초조한 광부"]우리끼리 가도 되는데, 괜히 번거롭게……
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="차분한 청년"]니카.
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="초조한 광부"]어?
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="차분한 청년"]그만해요.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g12_ursusroom",screenadapt="coverall")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_opencabinet",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",afrom=0, ato=1,duration=1.5)]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="초조한 광부"](작은 목소리로) 아까는 왜 말린 거야? 덕분에 귀찮게 감시하는 사람이 생겨버렸잖아.
+[charslot(slot="r",name="avg_npc_2225_1#4$1",focus="r")]
+[name="차분한 청년"](작은 목소리로) 봐요, 선반 위에 먼지가 거의 없어요. 꼼꼼하게 닦은 것 같아요.
+[name="차분한 청년"](작은 목소리로) 그런데 물건들이 놓인 모양새를 봤을 때, 전에 살던 사람들이 이렇게 세세한 부분까지는 신경 쓰지 않았을 것 같거든요.
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="r")]
+[name="차분한 청년"](작은 목소리로) 전에 살던 사람들이 방금 막 이사를 나갔다고는 하지만, 어딘가 이상해요. 대체 어떤 흔적이길래 굳이 청소까지 해둔 걸까요?
+[charslot(slot="r",name="avg_npc_2225_1#9$1",focus="r")]
+[name="차분한 청년"](작은 목소리로) 뭔가 이상해요. 저 사람의 경계를 풀어야 파벨 일행과 다시 연락할 방법을 찾을 수 있을 거예요.
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[name="초조한 광부"]이상한데……
+[charslot]
+[name="등 뒤의 목소리"]무슨 일이죠?
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="차분한 청년"]아니에요. 이 방을 누구한테 줄지 상의하는 중이었어요.
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="차분한 청년"]제 생각엔 침실이 하나뿐이니까 갈리나에게 주는 게 좋겠어요.
+[charslot(slot="m",name="avg_npc_2225_1#8$1",focus="m")]
+[name="차분한 청년"]오는 길에 하나뿐인 아이를 잃었거든요. 지금은 정신이 온전치 않아 일을 할 수 없는 상황이고, 다른 사람이 곁에서 봐줘야 하니, 2명으로 하고……
+[charslot]
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2225_1#8$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[PlaySound(key="$dooropenquite",volume=1)]
+[delay(time=1)]
+작은 체구의 리더는 따라붙은 골칫거리를 떼어낼 방법을 궁리하며 앞으로 걸음을 옮겼다. 그때 안쪽 침실의 문이 갑자기 열렸다. 청년은 반사적으로 뒤로 물러나 문짝에 부딪히는 걸 간신히 피했다.
+[Dialog]
+[PlaySound(key="$d_avg_doorbreak",volume=1)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[delay(time=1)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[delay(time=1)]
+그것과 거의 동시에, 안에서 나온 사람도 상황을 파악했는지 손 닿는 곳에 있는 의자를 집어 들어 '침입자'를 내리쳤다.
+[name="차분한 청년"]윽……
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_080",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[name="경계하는 감염자"]도시에 들여보내 주고, 먹여주고, 재워준다더니, 이럴 줄 알았어. 이렇게 좋은 일이 그냥 생길 리가 없지!
+[name="경계하는 감염자"]레드, 빨리 와서 도와줘……
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="초조한 광부"]뭐하는 짓이야!
+[charslot]
+[name="차분한 청년"]……잠깐만, 일단 가만히 있어 봐요……
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_328_1$1",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[name="레드"]너희는……
+[name="레드"]누구지?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="bg_cellroom_1",screenadapt="coverall")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_opencabinet",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="경비"]토냐 알릴루예바.
+[charslot]
+[name="???"]……
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="경비"]알릴루예바!
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="m",name="avg_4225_tanya_1#13$1",posfrom="0,-100", posto="0,0",afrom=0, ato=1,duration=1)]
+[Delay(time=1)]
+[name="???"]아…… 난데.
+[charslot(slot="m",name="avg_4225_tanya_1#6$1",focus="m")]
+[name="토냐"]여기 있어……
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="경비"]그 꼴은 도대체 뭐야? 누구에게 보이려고 그러는 거야? 여기 너를 학대하는 사람은 없어.
+[name="경비"]그거 알아? '유언비어 유포', '근무지 무단이탈', '공무집행방해', '불법 집회'…… 이 중 어떤 죄목을 갖다 붙여도 널 열흘에서 보름쯤은 거뜬히 가둬둘 수 있어.
+[charslot(slot="m",name="avg_4225_tanya_1#8$1",focus="m")]
+[name="토냐"]그러면 난 왜 부른 건데?
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="경비"]……운이 좋더군, 누가 꺼내주러 왔어.
+[name="경비"]하지만, 앞으로 5일 내에 완수해야 하는 산림 의무 노동이 60시간 남아 있어. 그렇지 않으면 보석 없이 다시 수감될 거야.
+[name="경비"]알아들었어? 알아들었으면 고개 끄덕여.
+[charslot(slot="m",name="avg_4225_tanya_1#8$1",focus="m")]
+[name="토냐"](고개를 끄덕인다)
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_dooropen", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="경비"]아, 그리고 하나 더. 더 이상 밖에 나가서 '리유니온'이라고 떠들어대지 마. 이젠 너랑 아무런 상관도 없잖아.
+[name="경비"]됐어, 가.
+[charslot(slot="m",name="avg_4225_tanya_1#4$1",focus="m")]
+[name="토냐"]……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="73_g2_exurbstreet_n",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="시르카"]……
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_082")]
+[charslot(slot="r",name="avg_npc_082")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",afrom=1, ato=0,duration=1.5)]
+[charslot(slot="r",afrom=1, ato=0,duration=1.5)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="시르카"](탐조등…… 순찰이 낮보다 잦아졌어.)
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="m")]
+[name="시르카"](더 이상 지상에서 활동할 수 없겠어. 방법을 생각해야 해……)
+[charslot]
+“그 배로 돌아가기 위해 내가 할 수 있는 일은 무엇일까?”
+여자는 무표정한 얼굴로 머릿속에서 선택지를 하나씩 배제했다. 군단에게 탈영병은 전혀 중요하지 않았으며, 자신은 기껏해야 어떤 교섭의 계기나 작은 호의에 불과했다.
+하지만 핵심은 그들이 제4군단을 어떻게 생각하느냐 하는 것이었다. 제1군단은 굳이 그 전쟁에 개입할 이유가 없었다. 우르수스의 역사가 수없이 증명했듯, 이번에도 예외는 아닐 것이다.
+최전선에 투입된 신무기는 과시와 위협용일 뿐이었고, 예브게니는 벌써 그 물건을 노리고 있을 터였다. 장군…… 꼬마 장군, 그 거대한 약점을 어떻게 활용하면 좋을까?
+도망자는 탐조등의 궤적을 능숙하게 피하며, 계속해서 흔적을 숨기고 적절한 혼란을 유발할 방법을 생각했다……
+그리고 집에 돌아갈 방법까지.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g14_dimunder",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="약간 취한 병사"]……안 돼. 진짜 더 마시면 안 돼.
+[name="약간 취한 병사"]돌아가야겠어……
+[charslot]
+지하의 광활한 기초 골조가 지하 생활층 전체를 여러 구역으로 분리하고 있었다. 멀리 떨어지지 않은 곳에 있는 닫힌 철문 근처에서 시끌벅적한 소리와 따뜻한 빛이 새어 나오고 있었다.
+그리고 문 근처에서 옥신각신하는 두 사람은 자신들을 바라보는 시선을 전혀 눈치채지 못했다.
+[charslot(slot="m",name="avg_npc_2227_1#5$1",focus="m")]
+[name="친절한 노동자"]아니 저번에도 입술만 살짝 적셔놓고 많이 마셨다고 했잖습니까. 그런 게 어딨나요!
+[charslot(slot="m",name="avg_npc_2227_1#3$1",focus="m")]
+[name="친절한 노동자"]아무튼, 조금만 더 마시자고요. 그 장벽 뒤로 발령 나면 언제 또 마실 수 있……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",posfrom="-150,0", posto="0,0",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="시르카"]좀 지나갈게, 실례.
+[charslot(slot="m",name="avg_npc_2227_1#4$1",focus="m")]
+[name="친절한 노동자"]엇, 아, 예.
+[Dialog]
+[charslot]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2227_1#7$1",focus="m")]
+[name="친절한 노동자"]그런데 귀족이 어떻게 여길……
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="약간 취한 병사"]당직 서러 가야 해. 간다.
+[charslot(slot="m",name="avg_npc_2227_1#7$1",focus="m")]
+[name="친절한 노동자"]아이, 참!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g16_conutryinside",screenadapt="coverall")]
+[Delay(time=2)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.7,channel="out4")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>젤그라드 도심부, 지하 술집</><p=2>1102년 1월 20일 21:13</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+예상대로 안에는 빈자리가 거의 없었다.
+병사와 장인, 농부와 교사, 그들이 낮에 무엇을 하든, 이 순간만큼은 모든 사람이 주정뱅이라는 똑같은 신분을 갖고 있었다.
+좁아터진 곳에 다 같이 처박혀, 시끌벅적하게 떠들며 싸구려 알코올이나 퍼마시다가, 완전히 인사불성이 되기 전에 무거운 몸을 질질 끌며 숙소로 돌아간다.
+젤그라드에는 이런 곳이 셀 수 없이 많았다. 예전 제4군단의 주둔지도 마찬가지였다.
+[stopsound(channel="out4",fadetime=0.5)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="시르카"]……
+[charslot]
+아무도 고개를 들고 그녀를 보지 않았다. 이곳에는 바텐더가 없었고, 꾸벅꾸벅 졸고 있는 주인과 한쪽에 쌓인 나무통들, 좁은 복도, 그리고 도구 없이도 할 수 있는 온갖 술자리 게임만이 있었다.
+시르카는 위장을 마친 후, 그 속에 완전히 녹아든 인물에게 시선을 고정한 채 실내에 빼곡히 들어찬 나무 탁자들 사이를 날렵하게 지나 술집 안쪽 끝에 다다랐다.
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="시르카"]예프세이 루키치.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]어? 그거 나한테 하는 말인가?
+[charslot]
+여자는 말없이 옷자락을 걷고 안에 숨겨둔 명패를 꺼낸 다음 제4군단의 번호가 새겨진 면을 내밀어 보였다.
+여자는 미세한 표정 변화도 놓치지 않기 위해, 상대를 똑바로 바라봤다.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"](작은 목소리로) 소위……?
+[name="예프세이?"]윽……
+[name="예프세이?"](주변을 둘러본다)
+[name="예프세이?"]일단 따라와.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g14_dimunder",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]어떻게 쿠란타가……
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="시르카"]상사, 네 불만과 직무 유기 상황을 총사령관께 보고할까? 제1군단의 신무기 관련 정보를 제때 보고하지 않은 걸로 아는데.
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="n")]
+그게 아니었다면, 제4군단이 지금까지 아무 움직임도 보이지 않을 리가 없다. 시르카는 이렇게 생각하며 앞선 이의 걸음을 따라 멈췄다.
+[charslot]
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]……아, 아니.
+[name="예프세이?"]이제 슬슬 누가 올 때가 됐다 싶어서 그냥 기다리고 있었던 거야…… 근데 쿠란타가 올 줄은 몰랐군. 예전 연락책들이랑 다른데. 어느 대대 소속이지?
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="시르카"]쓸데없는 말이나 듣자고 온 게 아닌데.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]그렇다면 무슨 말이 듣고 싶은 거지? 최근 보고서는 전부 안전 가옥에 뒀어. 지금은 자리를 뜰 수 없고.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="n")]
+그는 등 뒤의 술집을 가리켰다.
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="시르카"]지하 술집이라, 고전적인 정보 유통처네. 그런데 제대로 활용하고 있는 건 맞아?
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]나는 여기서 4년을 버티면서 한 번도 실수한 적 없고, 블라디미르 훈장까지 받았어. 이……
+[charslot(slot="m",name="avg_npc_2249_1#5$1",focus="m")]
+[name="시르카"]아무리 소위라지만, 내 계급은 너보다 높아. 뇌를 안 거치고 말을 내뱉기 전에, 다시 한번 생각해보길 권하지.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]……뭘 알고 싶은데?
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="시르카"]마지막 보고 이후의 적색 정보 전부.
+[name="시르카"]구두로 보고해.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]여기서? 보안 의식이라는 게 있기는……
+[Dialog]
+[stopmusic(fadetime=1)]
+[charslot]
+[Sticker(id="st1", multi = true, text="<color=#888888>시르카</color>", hidelog=true, x=240, y=625, alignment="left", size=31, delay=0.04, width=700, duration=0.01, block = false)]
+[spellsticker(id="spell2", action="show", style="fire", x=-240, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>“흔적 없는 밤눈이여, 침묵하라.”</><p=2>“Hoчной снег без следа, молчи.”</>
+[Sticker(id="st1")]
+[spellstickerclear(block=false)]
+[PlaySound(key="$d_avg_OriginiumArts_soundwave",volume=1)]
+[Delay(time=1)]
+그 순간, 남자는 자신이 딛고 있는 공간 전체로부터 완전히 단절되는 느낌을 받았다. 술집 안의 시끌시끌한 소리가 멀어지더니, 하수관의 물 떨어지는 소리마저 순식간에 사라졌다.
+공기로 된 장벽이 그와 눈앞의 쿠란타 사이를 가로막았다. 그는 소리를 내려 했지만 자기 목소리가 들리지 않았고, 맞은편 사람의 입 모양을 봐도 무슨 뜻인지 알 수 없었다.
+거짓된 숨 막힘이 머리를 가득 채웠고, 이어서 그는 두 손으로 자신의 목을 잡았다. 이게 환각인지 현실인지 분간할 수 없었다.
+[Dialog]
+[Sticker(id="st1", multi = true, text="<color=#888888>시르카</color>", hidelog=true, x=240, y=625, alignment="left", size=31, delay=0.04, width=700, duration=0.01, block = false)]
+[spellsticker(id="spell2", action="show", style="fire", x=-240, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>“소리여, 돌아오라.”</><p=2>“Звук вернись.”</>
+[Sticker(id="st1")]
+[spellstickerclear(block=false)]
+[PlaySound(key="$d_avg_spellattack_1",volume=1)]
+[Delay(time=1)]
+[charslot]
+[Delay(time=1)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]콜록, 콜록콜록!
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="시르카"]말 여러 번 하게 하지 마, 예프세이 상사.
+[name="시르카"]시작해.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]……콜록…… 허허.
+[name="예프세이?"]네 오리지늄 아츠, 들어봤어. 소리나 없애주는 게 다인 쓸모없는 아츠라고 전쟁 캐스터에게 버림받은 거잖아.
+[name="예프세이?"]그 유명하신 특수전술병단의 소위가 올 줄은 몰랐네. 불쌍한 라진의 부하…… 이것도 그 녀석이 가르쳐 준 거지?
+[name="예프세이?"]좋아, 알겠어. 말할게. 어차피 우리는 같은 전장에 있으니까, 너희 박쥐 같은 놈들이 또 배신하기 전에 '정보 공유'나 해보자고.
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="시르카"]우선 진정해, 방금은 이 공간이 얼마나 안전한지 보여주려고 한 거야.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]*우르수스 욕설*, 그런 소리 집어치워. 너희는 동료도 전우도 버든비스트 잡듯 패 죽이잖아. 나도 12월의 그 반란 얘기를 들었어……
+[name="예프세이?"]싹 다 죽였잖아. 심문도 없이, 예외도 없이! 전함 전체가 피바다가 될 때까지 죽였지. 눈이 내리고 나서야 그 피비린내가 좀 덮인 거잖아.
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="m")]
+[name="시르카"]맞아, 그래. 나도 거기서 광석병에 걸렸어.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]……뭐?
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="m")]
+[name="시르카"]반란을 진압하다가 광석병에 걸렸어. 그래서 이걸 원수님께 내 충성을 보일 마지막 기회로 삼고 감염자 신분을 이용해 젤그라드에 잠입한 거야……
+[name="시르카"]이게 무슨 의미인지, 왜 나여야만 하는지 알겠지.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]반란 진압, 감염자, 소위…… 하하하하하하!
+[name="예프세이?"]그랬군, 그랬어……
+[name="예프세이?"]그래, 원수는 너희를 도구로만 생각했으니까. 어차피 유배될 감염자 하나가 죽는 게 멀쩡한 함대를 통째로 날리는 것보다야 훨씬 이득이지……
+[charslot(slot="m",name="avg_npc_2249_1#4$1",focus="m")]
+[name="시르카"]그게 무슨 소리지?
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]아, 아니야. 중요한 건 아니야.
+[name="예프세이?"]그런 사정이라면 내가 도와주지. 감염자 신분으로 들어왔으면 공동 주택 쪽으로 돌아가야 하잖아. 그 전에, 네가 가장 알고 싶은 건 뭐지?
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="시르카"]현재 젤그라드의 제1군단 배치 현황, 원수의 위치, 그리고 신무기 관련 정보 전부.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]설마 스베틀라나 그 여자에게 직접 손을 쓰려고? 충고하건대, 차라리 그냥 자살하는 게 더 빠를 거야.
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="시르카"]그럼 배치 현황이랑 신무기 정보만 줘.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]잘 들어. 지금 내가 말해줄 수 있는 건 최근 시내 방어 병력 배치 현황이 전부야. 너는 내 연락책이 아니라서 적색 정보를 받을 권한이 없거든.
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="시르카"]……
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]시내 순찰은 시간대별로 나뉘어서 진행되는데, 그 꼬마 장군이 수시로 순찰 위병들 사이에 불쑥 나타날 가능성이 있어. 요 며칠 그 녀석이 나타나는 패턴을 '정리'해 봤지.
+[name="예프세이?"]귀하게 자란 녀석이라 그런지, 외출할 때마다 앞뒤로 사람들이 잔뜩 붙어 있더군. 소꿉놀이하는 것도 아니고 말이야. 운전기사, 보모, 친위대까지, 혼자 있는 순간이 없어.
+[name="예프세이?"]그래서 저택 하인들을 찾아가는 수밖에 없었지. 녀석은 제멋대로 움직일 때도 있지만, 보통은 도심부의 저녁 순찰 교대 한두 시간 전에 나타났어.
+[name="예프세이?"]정보를 캐내고 나서 놈들의 입을 막아야 했지만, 어쨌든 정보는 쓸만할 거야. 네가 움직일 거라면 마침 잘 됐다. 이 패턴이 정확한지 직접 확인……
+[stopmusic(fadetime=1)]
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="시르카"]좋아, 충분해.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="예프세이?"]뭐라고?
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_throatslitting",volume=1,channel="knife")]
+[Delay(time=1)]
+[name="예프세이?"]커억……?!
+[Dialog]
+[PlaySound(key="$d_avg_spurtblood",volume=1,channel="blood")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_knife",volume=1)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_piercechest",volume=1)]
+[Delay(time=1)]
+그가 상대의 동작을 제대로 알아채기도 전에, 은빛 단검이 그의 목을 그어버렸다.
+이어서 단검은 곧장 흉부를 꿰뚫었고, 뽑혀 나온 다음 마지막으로 겨드랑이에 박혔다.
+깔끔하고 빠른 솜씨였다.
+[Dialog]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$blooddrop",channel="blood",volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="시르카"]그게 내가 가장 알고 싶었던 정보야. 고마워, 예프세이.
+[name="시르카"]아, 여기서는 프로호르라고 불러야겠지…… 시간이 꽤 흘러서, 솔직히 여기서 네 흔적을 찾을 수 있을 거라고는 크게 기대 안 했어.
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="프로호르?"]끄윽…… 커억!
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="시르카"]그래도 넌 끝까지 맡은 바에 충실했어. 잘했어.
+[charslot]
+남자는 피를 흘리며 몸을 꿈틀댔지만, 다른 사람이 들을 수 있는 소리는 전혀 내지 못했다.
+시르카는 그에게 다가간 후, 피로 물든 옷 주머니에서 물건을 전부 꺼냈다. 누가 봐도 충동적인 강도 살인처럼 보일 터였다.
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="시르카"]잘 가, 프로호르.
+[name="시르카"]예브게니 원수님 대신 감사 인사 전하지.
+[name="시르카"](작은 목소리로) 그 꼬마 장군을 암살하는 데 성공하면, 그 공훈에 네 몫도 꼭 넣을게. 약속이야.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="66_g12_deitygrypherburgmeeting",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$suspenseful_intro", key="$suspenseful_loop", volume=0.6)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.6,channel="out3")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_188_helage_1#1$1",afrom=0, ato=1,duration=1.5)]
+[charslot(slot="r",name="avg_npc_1966_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="흥분한 '의원'"]……'구역 자치권'은 헌법이 각 행정구역 정부에 명백하게 부여한 자치 권력이라는 말이 이해하기 어렵습니까? 아니면 사람 말을 못 알아듣는 겁니까?
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="무시하는 '의원'"]구역을 나누면, 그다음은요? 누구에게 돈을 걷고, 누가 다스리고, 또 누가 그 결과를 책임집니까?
+[name="무시하는 '의원'"]결국 이렇게 하나씩 따져보면, 또 겉만 번지르르한 쓸데없는 짓이나 하고 있는 거 아닙니까?!
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="흥분한 '의원'"]이건 군대가 들고 있는 권력을 나눠 가지려는 시도입니다! 이건 견제와 균형입니다. 알기는 하십니까? 그리고, 옷차림이 그게 뭡니까? 공립학교는 나왔습니까?!
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="무시하는 '의원'"]못 나왔어요. 그게 뭐요? 당신이 귀족들 신발이나 핥고 있을 때 저와 제 식구들은 변방 병사들의 천막을 짓고 있었어요!
+[charslot]
+근위군은 헬라그를 데리고 시끌벅적한 인파 사이를 헤쳐 나갔다. 언쟁에 빠진 사람들은 그들을 눈여겨보지 않았다.
+조용히 듣고만 있던 헬라그의 표정은 점차 굳어갔다.
+[stopsound(channel="out3",fadetime=1)]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1966_1#20$1",focus="n")]
+[name="헬라그"]여기는 의회 홀인 줄 알았건만……
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="알로이즈"]네, 의회 홀 맞습니다.
+[charslot(slot="l",name="avg_188_helage_1#3$1",focus="l")]
+[name="헬라그"]여기 앉아 있는 사람들은 의원들이 아닌 것 같은데. 휴회가 기약 없이 길어졌던 건, 이것 때문이었나?
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="알로이즈"]당신이 정치에 둔감하다고 한 게 누굽니까? 한 번에 알아보셨군요.
+[charslot(slot="l",name="avg_188_helage_1#9$1",focus="l")]
+[name="헬라그"]……
+[charslot(slot="r",name="avg_npc_1966_1#13$1",focus="r")]
+[name="알로이즈"]아, 생각났어요. 부의장님이 그러셨죠. 당신을 때 한 점 묻지 않은 은사님으로 보고 계시는 것 같은데, 신경 쓰지 마세요.
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="헬라그"]왜 나를 이곳에 데려왔지?
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="알로이즈"]앞부분은 들으셨으니, 저랑 좀 더 앉아서 들어보시죠.
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="알로이즈"]금방 끝날 테니, 걱정하지 마세요. 다투는 사안도 몇 개 안 됩니다.
+[charslot]
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="무시하는 '의원'"]……대체 무슨 소리를 하는 건지 모르겠군요. 폐하께서 이런 소리나 들으라고 저를 부르신 거라면, 그냥 의회 토론이나 계속 듣는 게 낫겠습니다!
+[name="무시하는 '의원'"]도장이나 찍는 그 작자들은 우리보다는 고운 말로 싸우……
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="흥분한 '의원'"]폐하께서 시민의회를 연 건, 당신처럼 천박한 사람이 기어들어와서 돈이나 달라고 징징거리는 모습을 보기 위한 것이 아닙니다!
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="무시하는 '의원'"]폐하께서 시민의회를 연 건 우리의 요구를 듣기 위해서였습니다. 공장이 망하게 생겼는데, 당연히 돈과 땅을 요구해야죠. 그래야 서로 좋은 것 아닙니까!
+[name="무시하는 '의원'"]그래야 농사를 하든, 가내수공업을 하든지 할 것 아닙니까? 그래야 최소한 모두가 다 실직하는 일이 없을 거고, 젤레즈나야 구가 제2의 카토르가 구가 되는 일은 없겠지요!
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="흥분한 '의원'"]……입만 열면 '모두를 위해서'라고 말은 하지만, 결국 다 본인을 위한 것 아닙니까. 젤레즈나야 구에서 뽑힌 '노동 대표'가 저 모양이라니……
+[name="흥분한 '의원'"]당신이랑은 더 얘기하고 싶지 않아요.
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="무시하는 '의원'"]저는 사람들이 투표해서 뽑힌 사람입니다. 당신이 뭐라도 됩니까? *우르수스 욕설*……
+[charslot]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="n")]
+[name="헬라그"]싸움이 일어나겠군.
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="알로이즈"]안 날 거예요. 여기는 길거리가 아니니까요.
+[Dialog]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="n")]
+[PlaySound(key="$d_avg_fight_amb_loop",loop=true,volume=0.6,channel="fight")]
+[delay(time=2)]
+[charslot(slot="r",name="avg_npc_1966_1#10$1",focus="r")]
+[name="알로이즈"]음……
+[name="알로이즈"]제가 좀 가서……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2248_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[stopsound(channel="fight",fadetime=1)]
+[charslot(slot="m",name="avg_npc_2248_1#1$1",focus="m")]
+[name="온화한 '의원'"]두 분.
+[charslot(slot="m",name="avg_npc_2248_1#2$1",focus="m")]
+[name="온화한 '의원'"]지금은 의견 수렴 기간이니, 이견이 있는 게 당연해요. 다들 진정하고 앉아서 차분하게 이야기해 보죠.
+[name="온화한 '의원'"]우리가 귀족은 아니지만, 그래도…… '의원'으로서의 품위는 최대한 지켜야 합니다…… 잠시뿐인 자리이지만 말이에요.
+[charslot(slot="m",name="avg_npc_2248_1#7$1",focus="m")]
+[name="온화한 '의원'"]진짜 의원 나리들에게 웃음거리가 되어서는 안 되지 않겠습니까?
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="무시하는 '의원'"]쳇.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_081",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="흥분한 '의원'"]스베토자르 씨! 제 편을 들어주실 줄은 몰랐습니다.
+[name="흥분한 '의원'"]의견서를 제출하기 전에 얘기가 필요한 문제가 조금 있었는데, 마침 잘 오셨습니다. 당신의 의견이 필요한 게 천 개, 만 개는 돼요……
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2175_1#1$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="알로이즈"]그래.
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="헬라그"]……
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="알로이즈"]뭔가 감이 조금 잡히시나요?
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="헬라그"]자네 부친의 말이 맞네. 나는 정치를 몰라.
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="알로이즈"]그래도 뭔가 눈치채긴 했잖아요, 적어도 일부는요.
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="알로이즈"]저 두 사람이 다투는 동안 당신은 내내 평온한 표정이었습니다. 싸움이 날 것 같은 순간에도 별 동요가 없으셨죠.
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="알로이즈"]그러다 마지막에 그 '의원'이 다가왔을 때 갑자기 안색이 바뀌었습니다. 이유가 뭐죠?
+[charslot(slot="l",name="avg_188_helage_1#3$1",focus="l")]
+[name="헬라그"]다른 사람들이랑 좀 달라 보였을 뿐이라네.
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="알로이즈"]제 추측으론, 그 사람이 진짜 귀족이기 때문인 것 같습니다.
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="헬라그"]자네의 '추측'이라고?
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="알로이즈"]증거를 찾기 전까지는 모든 견해가 추측일 뿐이니까요.
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="헬라그"]내가 뭔가 눈치챘다고 말하지 않았나.
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="알로이즈"]아, 그거요.
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="알로이즈"]당신이 눈치채지 못한 건 아마 다투던 두 사람도 폐하께서 만나보려고 했던 '시민 의원'이 아니었다는 점일 겁니다.
+[name="알로이즈"]제가 이렇게 말하는 건, 한쪽이 욕설을 뱉지 않았기 때문도 아니고, 한쪽이 본인 수준에 맞지 않는 단어와 개념을 입에 올렸기 때문도 아닙니다.
+[charslot(slot="r",name="avg_npc_1966_1#10$1",focus="r")]
+[name="알로이즈"]오히려…… 각자의 요구를 너무 명확하고 분명하게 표현했기 때문입니다.
+[charslot(slot="r",name="avg_npc_1966_1#4$1",focus="r")]
+[name="알로이즈"]뒤에 분명 다른 사람이 있을 겁니다. 폐하께서 시민들의 의견을 듣기 위해 만든 시민의회에까지 이런 수작질이 벌어지고 있는 거라면……
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="알로이즈"]결국 이것도 또 하나의 실패한 개혁으로 끝나겠죠.
+[charslot(slot="l",name="avg_188_helage_1#9$1",focus="l")]
+[name="헬라그"]……다시 묻겠네.
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="헬라그"]왜 나를 이곳에 데려왔지?
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="알로이즈"]그냥 재밌는 공연을 보여드리고 싶었습니다. 방금은 그 공연의 시작이었고요. 단 몇 분이라도 공연의 시작을 놓치면, 감상이 달라지는 법이거든요.
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="알로이즈"]하아, 진심으로 당신을 위한 거였는데, 아쉽게도 당신은 달갑지 않아 하시는 것 같군요.
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="알로이즈"]그래도 계속 강요하지는 않겠습니다. 당신을 저희 쪽으로 끌어들일 방법이야 많지만, 그렇게 하지는 않을 겁니다.
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="헬라그"]자네가 여타 우르수스인과 다르다는 것을 보여주고 싶은 모양이로군.
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="알로이즈"]아니요, 정반대입니다. 저는 제가 대부분의 우르수스인과 별반 다르지 않다고 생각해요.
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="알로이즈"]그저 내일이 있기를 바라는 겁니다. 개인의 내일, 종족의 내일. 하지만, 지금 같은 세상에서는 바라기 힘들죠…… 분에 넘치는 사치라도 된 것 같아요.
+[name="알로이즈"]그래서 저는 잡을 수 있는 건 뭐든 붙잡아야 합니다. 당신의 능력과 역사가 제 계획에 큰 도움이 되겠지만, 원하지 않으신다면 다른 방법을 찾는 수밖에 없겠죠.
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="헬라그"]……자네의 계획이라는 건……
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="알로이즈"]좀 더 무르익으면 말씀드리겠습니다.
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="알로이즈"]시간을 좀 지체했네요. 얼른 오도예프 구로 모셔다드리겠습니다. 아이들이 기다리고 있을 테니까요.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[gridbg]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

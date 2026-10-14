@@ -3,10 +3,17 @@ local list =
 {
   
   "HotFixes/TestStubHotfixer",
-  "HotFixes/PCHotfixer",
-  "HotFixes/UICharTabGroupInAutochessHotfixer",
-  "HotFixes/EPControllerHotfixer",
-  "Hotfixes/AVGControllerHotfixer"
+  "HotFixes/SandboxV3CatchedAnimalManagerHotfixer",
+  "HotFixes/VSandBoxFurnitureEntityHotfixer",
+  "HotFixes/ReturnConstructMaterialProcessorHolderHotfixer",
+  "HotFixes/SandboxV3BasementDetailStateHotfixer",
+  "HotFixes/SandboxV3BuildSaveManagerHotfixer",
+  "HotFixes/ConvexHullHotfixer",
+  "HotFixes/Act24sideQuestStateHotfixer",
+  "HotFixes/RebuildCharacterOnTileInRangeHotfixer",
+  "HotFixes/RebuildCharacterOnRandomTileHotfixer",
+  "HotFixes/UICharacterTabGroupAddtionHotfixer",
+  "HotFixes/SandboxV3BattleSaveManagerHotfixer",
 };
 
 return list;

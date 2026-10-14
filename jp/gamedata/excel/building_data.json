@@ -15072,6 +15072,160 @@
                     ]
                 }
             ]
+        },
+        "char_4228_closur": {
+            "charId": "char_4228_closur",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_mp_cost[014]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_closure[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_1052_kalts2": {
+            "charId": "char_1052_kalts2",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "workshop_proc_probability[041]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "workshop_proc_probability[050]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "hire_spd_tag[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4226_veen": {
+            "charId": "char_4226_veen",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "train_spd_doubleProf[301]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "train_spd_doubleProf[310]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "manu_prod_spd_train&lv[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4225_tanya": {
+            "charId": "char_4225_tanya",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "dorm_rec_oneself[040]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "manu_formula_spd&limit&cost[100]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4227_gallus": {
+            "charId": "char_4227_gallus",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "power_rec_spd[0010]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "power_rec_spd_ext&tag[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 30
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     },
     "buffs": {
@@ -15726,6 +15880,21 @@
             "buffIcon": "control",
             "skillIcon": "bskill_ctrl_cost",
             "sortId": 1113,
+            "buffColor": "#005752",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "CONTROL",
+            "description": "制御中枢配置時、制御中枢内全員の体力が1時間ごとに<@cc.vup>+0.05</>回復",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "control_mp_cost[014]": {
+            "buffId": "control_mp_cost[014]",
+            "buffName": "チーフエンジニア",
+            "buffIcon": "control",
+            "skillIcon": "bskill_ctrl_cost",
+            "sortId": 1114,
             "buffColor": "#005752",
             "textColor": "#ffffff",
             "buffCategory": "FUNCTION",
@@ -16800,6 +16969,21 @@
             "targetGroupSortId": 0,
             "targets": {}
         },
+        "power_rec_spd[0010]": {
+            "buffId": "power_rec_spd[0010]",
+            "buffName": "コケニクス",
+            "buffIcon": "power",
+            "skillIcon": "bskill_pow_spd1",
+            "sortId": 2009,
+            "buffColor": "#8fc31f",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "POWER",
+            "description": "発電所配置時、ドローンの回復速度<@cc.vup>+10%</>",
+            "efficiency": 10,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
         "power_count[000]": {
             "buffId": "power_count[000]",
             "buffName": "曙光",
@@ -16871,6 +17055,21 @@
             "buffCategory": "OUTPUT",
             "roomType": "POWER",
             "description": "発電所配置時、他の<$cc.g.laterano><@cc.kw>ラテラーノ</></>オペレーターが発電所に配置されている場合、ドローンの回復速度<@cc.vup>+5%</>",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "power_rec_spd_ext&tag[000]": {
+            "buffId": "power_rec_spd_ext&tag[000]",
+            "buffName": "コケニズム",
+            "buffIcon": "power",
+            "skillIcon": "bskill_power_rec_spd_ext&tag",
+            "sortId": 2000,
+            "buffColor": "#8fc31f",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "POWER",
+            "description": "発電所配置時、他の<$cc.tag.op><@cc.kw>作業用プラットフォーム</></>が発電所に配置されている場合、ドローンの回復速度<@cc.vup>+5%</>",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -18034,6 +18233,25 @@
                 "F_DIAMOND"
             ]
         },
+        "manu_prod_spd_train&lv[000]": {
+            "buffId": "manu_prod_spd_train&lv[000]",
+            "buffName": "器用な手先",
+            "buffIcon": "manufacture",
+            "skillIcon": "bskill_man_spd_veen",
+            "sortId": 3602,
+            "buffColor": "#ffd800",
+            "textColor": "#333333",
+            "buffCategory": "OUTPUT",
+            "roomType": "MANUFACTURE",
+            "description": "製造所配置時、訓練室のレベル1につき、配置製造所の製造効率<@cc.vup>+10%</>（最大<@cc.vup>30%</>まで）",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": [
+                "F_GOLD",
+                "F_EXP",
+                "F_DIAMOND"
+            ]
+        },
         "manu_prod_spd_bd_n1[000]": {
             "buffId": "manu_prod_spd_bd_n1[000]",
             "buffName": "超感覚",
@@ -18384,6 +18602,23 @@
             "buffCategory": "OUTPUT",
             "roomType": "MANUFACTURE",
             "description": "製造所配置時、<@cc.kw>作戦記録</>製造の製造効率<@cc.vup>+35%</>、1時間ごとの体力消費量<@cc.vup>-0.25</>",
+            "efficiency": 35,
+            "targetGroupSortId": 2,
+            "targets": [
+                "F_EXP"
+            ]
+        },
+        "manu_formula_spd&limit&cost[100]": {
+            "buffId": "manu_formula_spd&limit&cost[100]",
+            "buffName": "「バイト漬け」",
+            "buffIcon": "manufacture",
+            "skillIcon": "bskill_man_exp&spd&cost1",
+            "sortId": 3812,
+            "buffColor": "#ffd800",
+            "textColor": "#333333",
+            "buffCategory": "OUTPUT",
+            "roomType": "MANUFACTURE",
+            "description": "製造所配置時、<@cc.kw>作戦記録</>製造の製造効率<@cc.vup>+35%</>、1時間ごとの体力消費量<@cc.vdown>+0.25</>",
             "efficiency": 35,
             "targetGroupSortId": 2,
             "targets": [
@@ -19140,6 +19375,21 @@
             "roomType": "TRADING",
             "description": "貿易所配置時、受注効率<@cc.vup>+25%</>、応接室のレベル1につき、追加で受注効率<@cc.vup>+5%</>、最大<@cc.vup>+40%</>まで",
             "efficiency": 25,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "trade_ord_closure[000]": {
+            "buffId": "trade_ord_closure[000]",
+            "buffName": "特別オーダー",
+            "buffIcon": "trading",
+            "skillIcon": "bskill_tra_closure",
+            "sortId": 4851,
+            "buffColor": "#0075a9",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "TRADING",
+            "description": "貿易所配置時、受注効率<@cc.vup>+10%</>、<$cc.tra.closure><@cc.kw>クロージャ特別オーダー</></>（違約オーダーと見なされない）を必ず受注する",
+            "efficiency": 10,
             "targetGroupSortId": 0,
             "targets": {}
         },
@@ -20410,6 +20660,46 @@
             "roomType": "WORKSHOP",
             "description": "加工所で<@cc.kw>任意の素材</>を加工時、副産物の入手確率<@cc.vup>+70%</>",
             "efficiency": 70,
+            "targetGroupSortId": 0,
+            "targets": [
+                "F_BUILDING",
+                "F_EVOLVE",
+                "F_SKILL",
+                "F_ASC"
+            ]
+        },
+        "workshop_proc_probability[041]": {
+            "buffId": "workshop_proc_probability[041]",
+            "buffName": "技術解明",
+            "buffIcon": "workshop",
+            "skillIcon": "bskill_ws_p5",
+            "sortId": 7142,
+            "buffColor": "#e3eb00",
+            "textColor": "#333333",
+            "buffCategory": "FUNCTION",
+            "roomType": "WORKSHOP",
+            "description": "加工所で<@cc.kw>任意の素材</>を加工時、副産物の入手確率<@cc.vup>+70%</>",
+            "efficiency": 70,
+            "targetGroupSortId": 0,
+            "targets": [
+                "F_BUILDING",
+                "F_EVOLVE",
+                "F_SKILL",
+                "F_ASC"
+            ]
+        },
+        "workshop_proc_probability[050]": {
+            "buffId": "workshop_proc_probability[050]",
+            "buffName": "理論革新",
+            "buffIcon": "workshop",
+            "skillIcon": "bskill_ws_p_kalts2",
+            "sortId": 7151,
+            "buffColor": "#e3eb00",
+            "textColor": "#333333",
+            "buffCategory": "FUNCTION",
+            "roomType": "WORKSHOP",
+            "description": "加工所で<@cc.kw>任意の素材</>を加工時、副産物の入手確率<@cc.vup>+80%</>",
+            "efficiency": 80,
             "targetGroupSortId": 0,
             "targets": [
                 "F_BUILDING",
@@ -22434,6 +22724,42 @@
                 "WARRIOR"
             ]
         },
+        "train_spd_doubleProf[301]": {
+            "buffId": "train_spd_doubleProf[301]",
+            "buffName": "「わからないよ」",
+            "buffIcon": "training",
+            "skillIcon": "bskill_train_caster&vanguard1",
+            "sortId": 9907,
+            "buffColor": "#7d0022",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "TRAINING",
+            "description": "訓練室で協力者として配置時、<@cc.kw>術師</>と<@cc.kw>前衛</>の訓練速度<@cc.vup>+30%</>",
+            "efficiency": 30,
+            "targetGroupSortId": 2,
+            "targets": [
+                "CASTER",
+                "WARRIOR"
+            ]
+        },
+        "train_spd_doubleProf[310]": {
+            "buffId": "train_spd_doubleProf[310]",
+            "buffName": "「なんとかなった」",
+            "buffIcon": "training",
+            "skillIcon": "bskill_train_caster&vanguard2",
+            "sortId": 9908,
+            "buffColor": "#7d0022",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "TRAINING",
+            "description": "訓練室で協力者として配置時、<@cc.kw>術師</>と<@cc.kw>前衛</>の訓練速度<@cc.vup>+45%</>",
+            "efficiency": 45,
+            "targetGroupSortId": 2,
+            "targets": [
+                "CASTER",
+                "WARRIOR"
+            ]
+        },
         "train_spd_doubleProf[110]": {
             "buffId": "train_spd_doubleProf[110]",
             "buffName": "赤龍の血",
@@ -23899,6 +24225,21 @@
             "buffCategory": "RECOVERY",
             "roomType": "DORMITORY",
             "description": "宿舎休養時、自身の1時間ごとの体力回復量<@cc.vup>+1</>",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "dorm_rec_oneself[040]": {
+            "buffId": "dorm_rec_oneself[040]",
+            "buffName": "束の間の休息",
+            "buffIcon": "dormitory",
+            "skillIcon": "bskill_dorm_one1",
+            "sortId": 5001,
+            "buffColor": "#21cdcb",
+            "textColor": "#ffffff",
+            "buffCategory": "RECOVERY",
+            "roomType": "DORMITORY",
+            "description": "宿舎休養時、自身の1時間ごとの体力回復量<@cc.vup>+0.55</>",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -25685,6 +26026,21 @@
             "roomType": "HIRE",
             "description": "事務室配置時、事務連絡速度<@cc.vup>+5%</>。宿舎の合計レベルが1につき、事務連絡速度がさらに<@cc.vup>+2%</>",
             "efficiency": 5,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "hire_spd_tag[000]": {
+            "buffId": "hire_spd_tag[000]",
+            "buffName": "「テラの方舟」",
+            "buffIcon": "hire",
+            "skillIcon": "bskill_hire_kalts2",
+            "sortId": 8500,
+            "buffColor": "#565656",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "HIRE",
+            "description": "事務室配置時、事務連絡速度<@cc.vup>+30%</>。<$cc.g.elite><@cc.kw>エリートオペレーター</></>が配置されている施設1室（補佐と活動室利用者である場合を除く）ごとに、追加で事務連絡速度<@cc.vup>+4%</>（最大<@cc.kw>5</>室まで）",
+            "efficiency": 30,
             "targetGroupSortId": 0,
             "targets": {}
         },
@@ -80675,7 +81031,7 @@
                 "height": 9,
                 "comfort": 800,
                 "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
-                "description": "海外の書籍に登場する黄金の都市で、諸王の王の宮殿へと向かう道の途中に置かれた調度品のひとつとして描写されることが多い。しかし実際には、これはサルゴンの子供たち用の「王座」である。\n「——カニテクメット家からの贈り物」",
+                "description": "他国の書籍に登場する黄金の都市で、諸王の王の宮殿へと向かう道の途中に置かれた調度品のひとつとして描写されることが多い。しかし実際には、これはサルゴンの子供たち用の「王座」である。\n「——カニテクメット家からの贈り物」",
                 "obtainApproach": "購買部期間限定",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -98510,6 +98866,1190 @@
                 "enableRoomType": 4112,
                 "quantity": 1
             },
+            "furni_closureRoom_shelf_01": {
+                "id": "furni_closureRoom_shelf_01",
+                "sortId": 2245,
+                "name": "時計付きミニキャビネット",
+                "iconId": "furni_closureRoom_shelf_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CABINET",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_1",
+                "width": 4,
+                "depth": 2,
+                "height": 4,
+                "comfort": 185,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "電子時計が付いた小型のキャビネット。透明な扉は時計の横にあるボタンで開閉できる。\nクロージャが愛飲している砂糖たっぷりのエナジードリンクがぎっしり詰め込まれており、理性を効果的に回復してくれる。大丈夫、ブラッドブルードは体重増加など恐れない！",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 153,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_collectioncabinet_01": {
+                "id": "furni_closureRoom_collectioncabinet_01",
+                "sortId": 2246,
+                "name": "多機能ミュージックマシン",
+                "iconId": "furni_closureRoom_collectioncabinet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "ENTERTAINMENT",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_1",
+                "width": 3,
+                "depth": 3,
+                "height": 8,
+                "comfort": 250,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "再生、コレクション、展示機能が一体化した音楽プレーヤー。複数の表示モードを切り替えられる音声波形ディスプレイがついている。\nクロージャの施した改造により、このプレーヤーは今や、彼女のリアルタイムの精神状態に基づいて、自動的にD.D.D.の様々なアルバムを再生できるようになった。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 185,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_computerdesk_01": {
+                "id": "furni_closureRoom_computerdesk_01",
+                "sortId": 2247,
+                "name": "「1stコンソール」",
+                "iconId": "furni_closureRoom_computerdesk_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_1",
+                "width": 6,
+                "depth": 5,
+                "height": 9,
+                "comfort": 570,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "クロージャの大型電子ワークステーション。オールインワン型コンピュータと自動調整式の周辺機器、そして複数の超高画質モニターまでも完備している。\nメッセージの閲覧、ロドスの稼働状況のモニタリング、帳簿の監査、邪道なRTAテクニックの学習など、様々な操作を同時進行しつつ、すべての詳細を見逃すことなく把握できる。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 420,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_ledchair_01": {
+                "id": "furni_closureRoom_ledchair_01",
+                "sortId": 2248,
+                "name": "LEDスツール",
+                "iconId": "furni_closureRoom_ledchair_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "BENCH",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_1",
+                "width": 5,
+                "depth": 2,
+                "height": 2,
+                "comfort": 170,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "側面に様々な色で輝くライトが取り付けられたスツールセット。スツールの組み合わせによってライトが光るパターンも変化する。\nクロージャはよく、ロドスのメディアライブラリからマイナーなホラー映画を見つけ出しては、あちこちからオペレーターを引っ張ってきてこのスツールに座らせ、一緒に鑑賞している。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 140,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_poster_01": {
+                "id": "furni_closureRoom_poster_01",
+                "sortId": 2249,
+                "name": "『こころの輪』ポスター",
+                "iconId": "furni_closureRoom_poster_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "POSTER",
+                "location": "POSTER",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 2,
+                "depth": 1,
+                "height": 2,
+                "comfort": 60,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "視像博物館のゲームコンテンツ『こころの輪』のポスター。シーズン優勝者向けの賞品の一つ。\nスコアランキング上では、クロージャをはじめとする多くの挑戦者がフルスコアを獲得したが、最終的に彼女はサーバーに一番近い場所に座っていたことで、スコア達成時間の判定により勝利を収めた。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 55,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_poster_02": {
+                "id": "furni_closureRoom_poster_02",
+                "sortId": 2250,
+                "name": "『弾幕要塞』ポスター",
+                "iconId": "furni_closureRoom_poster_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "POSTER",
+                "location": "POSTER",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 4,
+                "depth": 1,
+                "height": 3,
+                "comfort": 105,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "ゲーム『弾幕要塞』のプロモーションポスター。「開発者ステッカー」が貼られている。\nリリース当初は、このポスターをサムネイルにした開発の舞台裏動画も存在していたが、ゲームの低評価の割合があまりにも高かったため、その動画は現在非公開となっている。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 95,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_officedesk_01": {
+                "id": "furni_closureRoom_officedesk_01",
+                "sortId": 2251,
+                "name": "「万能ワークステーション」",
+                "iconId": "furni_closureRoom_officedesk_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 8,
+                "depth": 2,
+                "height": 6,
+                "comfort": 335,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "クロージャのサブワークステーション。性能はメインワークステーションと同じだが、よりシンプルで使いやすいデザインになっている。\n彼女はここで「ロドス全艦制御」プログラムと「デュエルチャンネル自動評価ベッティング」プログラムを開発したが、テスト段階で使用したアカウントはすべて、ケルシーと主催者によってあっけなく利用停止にされた。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 248,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_chair_01": {
+                "id": "furni_closureRoom_chair_01",
+                "sortId": 2252,
+                "name": "自動調節式ワークチェア",
+                "iconId": "furni_closureRoom_chair_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "CHAIR",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 5,
+                "depth": 4,
+                "height": 4,
+                "comfort": 290,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "使用者の好みに合わせて改良された、人間工学に基づいたデザインのワークチェア。ニーズに応じて様々な形態に自動で調節される。\nこのワークチェアの快適性は、その製造コストに見合うものだ。エンジニア部がこれを複製した際、クロージャは隣でポテトチップスを頬張りながら、「全員に一脚配るべきだよ」と言っていた。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 215,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_stool_01": {
+                "id": "furni_closureRoom_stool_01",
+                "sortId": 2253,
+                "name": "スツール「ジャミング」",
+                "iconId": "furni_closureRoom_stool_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "STOOL",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_3",
+                "width": 2,
+                "depth": 2,
+                "height": 2,
+                "comfort": 130,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "アナログ信号のエラーを模した模様がプリントされたスツール。似たような模様のパーツをいくつか組み合わせて作られている。\nクロージャによると、エラーをこうして物理的に外に出しておけば、プログラム開発時の不具合発生率が下がるらしい。もちろん、それが単なる希望的観測に過ぎないことはすでに証明されている。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 118,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_ceilingLight_01": {
+                "id": "furni_closureRoom_ceilingLight_01",
+                "sortId": 2254,
+                "name": "「機械の輝き」",
+                "iconId": "furni_closureRoom_ceilingLight_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_3",
+                "width": 5,
+                "depth": 2,
+                "height": 4,
+                "comfort": 125,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "複数の機械式アームを備えた吊り下げ照明。照明の明るさと角度はワークステーションからコントロール可能。\nクロージャはゲームや映像・音響システムと連動する照明プログラムをいくつも設計したが、ここ最近は「仕事」モード以外の時間はすべて「睡眠」モードとなっている。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 113,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_equipmentdesk_01": {
+                "id": "furni_closureRoom_equipmentdesk_01",
+                "sortId": 2255,
+                "name": "設備展示台",
+                "iconId": "furni_closureRoom_equipmentdesk_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_3",
+                "width": 3,
+                "depth": 4,
+                "height": 5,
+                "comfort": 250,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "クロージャがコレクションしている外付けデバイスを展示するための台。展示スペースはすべてクロージャの手作りである。\n「どうして前のコントローラーを使わないのかって？二か月前に使ってたのなんてもう時代遅れでしょ。今は新しいのを開発してる最中なんだから。」",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 205,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_cabinet_01": {
+                "id": "furni_closureRoom_cabinet_01",
+                "sortId": 2256,
+                "name": "「トロフィーショーケース」",
+                "iconId": "furni_closureRoom_cabinet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CABINET",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_3",
+                "width": 6,
+                "depth": 3,
+                "height": 10,
+                "comfort": 445,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "クロージャの私物がしまわれているキャビネット。彼女の言葉を借りるなら、「トロフィーコレクションルーム」と呼ぶべきだろう。\n様々なゲーム大会やゲーム開発コンテストのトロフィーが保管されているが、負う責任が増えてからは、長らく新しいトロフィーが追加されていないことは誰の目にも明らかだ。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 328,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_table_01": {
+                "id": "furni_closureRoom_table_01",
+                "sortId": 2257,
+                "name": "加熱冷却板つきミニテーブル",
+                "iconId": "furni_closureRoom_table_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 3,
+                "depth": 2,
+                "height": 3,
+                "comfort": 185,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "加熱・冷却機能がついた天板の敷かれたテーブル。上に置いたものを手軽に素早く熱したり、冷やしたりできる。\n希少な感熱素材の研究用に設計された作業台だが、ドクターのポットの修理以外にはほとんど使われていない。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 168,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_workbench_01": {
+                "id": "furni_closureRoom_workbench_01",
+                "sortId": 2258,
+                "name": "作業台「工学の奇跡」",
+                "iconId": "furni_closureRoom_workbench_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 3,
+                "depth": 5,
+                "height": 6,
+                "comfort": 290,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "機械と電子機器の修理機能を備えた作業台。様々な修理用工具を収納するキャビネットが付いている。\nクロージャは、ドクターにもう少し予算を回してもらって、この作業台に高温鍛造炉と油圧プレス機を増設したいと常々思っている。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 215,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_carpet_01": {
+                "id": "furni_closureRoom_carpet_01",
+                "sortId": 2259,
+                "name": "センサー式絨毯",
+                "iconId": "furni_closureRoom_carpet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CARPET",
+                "subType": "NONE",
+                "location": "CARPET",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 8,
+                "depth": 8,
+                "height": 1,
+                "comfort": 130,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "感圧式パネルが組み込まれた十字型の絨毯。内蔵された無線装置を通じて、ワークステーションに信号を送ることができる。\n「ワルファリンちゃんにはもっと運動したほうがいいって言われたけど、ダンスゲームでも十分だよね」とクロージャは言う。しかし、絨毯の表面にはうっすらと埃が積もっている。果たして、これが本当に使われたことはあるのだろうか？",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 118,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_carpet_02": {
+                "id": "furni_closureRoom_carpet_02",
+                "sortId": 2260,
+                "name": "「ピクセル再構築」",
+                "iconId": "furni_closureRoom_carpet_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CARPET",
+                "subType": "NONE",
+                "location": "CARPET",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 4,
+                "depth": 6,
+                "height": 1,
+                "comfort": 65,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "ピクセル模様の変形ラグ。耐油性と防水性に優れた素材で作られている。\nクロージャが、以前使っていた普通の絨毯に誤って潤滑油とコーヒーをこぼし、午後を丸ごと費やして悪戦苦闘し掃除したにもかかわらず、まったく綺麗にできなかったため、今のものに替えられた。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 60,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_wallpaper_01": {
+                "id": "furni_closureRoom_wallpaper_01",
+                "sortId": 2261,
+                "name": "「コア」",
+                "iconId": "furni_closureRoom_wallpaper_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLPAPER",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "WALL",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 34,
+                "depth": 1,
+                "height": 10,
+                "comfort": 240,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "クロージャの部屋の壁紙。断熱性と防音性のあるガラス越しに、いつでもロドスのサーバーの稼働状況を確認できる。\nサーバーエリアの全体的な設計は彼女が一手に引き受けている。この件に関しては、普段以上に真面目に取り組んだという。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 198,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_floor_01": {
+                "id": "furni_closureRoom_floor_01",
+                "sortId": 2262,
+                "name": "「新しい計画」",
+                "iconId": "furni_closureRoom_floor_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "FLOOR",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "FLOOR",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 34,
+                "depth": 10,
+                "height": 1,
+                "comfort": 240,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "クロージャの部屋のハイテク風床。彼女の部屋には自動清掃用のドローンが配備されている。\n床を清潔に保つため、クロージャは4段階の自動清掃モードを設計した。クイック、ノーマル、ディープ――そして「ケルシー級」と呼ばれる第4レベルだが、これについて彼女は何のコメントもしていない。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 198,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_ceilinglamp_01": {
+                "id": "furni_rabbitCinema_ceilinglamp_01",
+                "sortId": 2263,
+                "name": "フィルムライト",
+                "iconId": "furni_rabbitCinema_ceilinglamp_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_1",
+                "width": 3,
+                "depth": 3,
+                "height": 3,
+                "comfort": 90,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "映画のフィルムのようなランプシェードが付いた天井照明。中央部分はフィルムリールの形にデザインされている。\n自動で照明モードを調節し、映像に合わせて様々な雰囲気を演出できる。ホラー映画を観るオペレーターたちに悲鳴を上げさせるには欠かせないアイテムだ。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_table_01": {
+                "id": "furni_rabbitCinema_table_01",
+                "sortId": 2264,
+                "name": "「ピクセルリフレッシュ」",
+                "iconId": "furni_rabbitCinema_table_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_1",
+                "width": 6,
+                "depth": 3,
+                "height": 7,
+                "comfort": 315,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "とても爽やかな配色の小型ダイニングテーブル。天板の下にはピクセルアート風の白い花が飾られている。\nここでは定期的に「映画グルメ再現コンテスト」が開催される。ファンタジー映画に登場する食べ物でさえ再現しようとする人がおり、毎回イベントは大盛況を博している。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_stool_01": {
+                "id": "furni_rabbitCinema_stool_01",
+                "sortId": 2265,
+                "name": "スツール「振り返り」",
+                "iconId": "furni_rabbitCinema_stool_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "STOOL",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_1",
+                "width": 2,
+                "depth": 2,
+                "height": 2,
+                "comfort": 110,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "十字型のハイスツール。座面にはカラフルなチェック柄がプリントされている。\nアクション映画『新・百貨店の死闘』が公開されて以来、主人公が椅子を武器にして戦うシーンをオペレーターたちが真似するのを防ぐため、エンジニア部はすべての椅子を床に固定せざるを得なくなった。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_ceilinglamp_02": {
+                "id": "furni_rabbitCinema_ceilinglamp_02",
+                "sortId": 2266,
+                "name": "パタパタ照明",
+                "iconId": "furni_rabbitCinema_ceilinglamp_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 5,
+                "depth": 3,
+                "height": 4,
+                "comfort": 130,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "シンプルな金属製のフレームで作られた吊り下げ式照明。撮影でよく使われる羽獣の小道具が飾られている。\nこうした小道具が撮影でどう使われているかについてはティッピに聞くのがいいだろう。だが、その際に彼女が突然何かを閃いて、どこかへ行ってしまうことを覚悟しておかねばならない。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_shelf_01": {
+                "id": "furni_rabbitCinema_shelf_01",
+                "sortId": 2267,
+                "name": "シアタールームのおやつ棚",
+                "iconId": "furni_rabbitCinema_shelf_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "CATERING",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_1",
+                "width": 4,
+                "depth": 3,
+                "height": 8,
+                "comfort": 260,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "休憩エリアに置かれたおやつ棚。透明な扉付きの小型冷蔵庫が備え付けられている。\nここにはしばしば、ランクウッド映画のコラボ商品や、タレントが広告に起用されたお菓子が置かれているが、当然すぐに奪い合いになり、なくなってしまう。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_plant_01": {
+                "id": "furni_rabbitCinema_plant_01",
+                "sortId": 2268,
+                "name": "「成長記録」",
+                "iconId": "furni_rabbitCinema_plant_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "PLANT",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 3,
+                "depth": 2,
+                "height": 6,
+                "comfort": 165,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "うさぎとカセットテープの模様が描かれた植木鉢。中には常緑植物が植えられている。\n側面のボタンの飾りがリアルすぎるせいで、本当にカセットテープを再生できると勘違いする者が後を絶たず、それがいつも周囲の笑いを誘っている。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_table_02": {
+                "id": "furni_rabbitCinema_table_02",
+                "sortId": 2269,
+                "name": "テーブル「フィルムリール」",
+                "iconId": "furni_rabbitCinema_table_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 2,
+                "depth": 2,
+                "height": 2,
+                "comfort": 110,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "映画のフィルムリールを模した小さな丸テーブル。本来のリールについているのはシャフトを固定するための穴だが、このテーブルにおいては飲み物を置くスペースとして利用できる。\nシラクーザの最新のフィルム・ノワール『カモッラ』は、各地の赤ワインの売上を一気に引き上げた。美酒を味わいながら、この大作を楽しもう。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_desk_01": {
+                "id": "furni_rabbitCinema_desk_01",
+                "sortId": 2270,
+                "name": "ライト付き仕切り机",
+                "iconId": "furni_rabbitCinema_desk_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 9,
+                "depth": 2,
+                "height": 8,
+                "comfort": 375,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "いくつもの照明が備え付けられたシンプルなロングデスク。卓上にはインテリアを飾るための専用スタンドもある。\nこのデスクは定期的に、映像コンテンツ関連のグッズで埋め尽くされる。ランクウッド映画のフィギュアから極東のアイドルグッズまで、ありとあらゆるものが揃っている。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_sofa_01": {
+                "id": "furni_rabbitCinema_sofa_01",
+                "sortId": 2271,
+                "name": "ソファ「ゴールデンラビット賞」",
+                "iconId": "furni_rabbitCinema_sofa_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "SOFA",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 4,
+                "depth": 4,
+                "height": 3,
+                "comfort": 210,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "うさ耳をイメージした背もたれのついた金色のソファ。クッションはとても柔らかい。\nここでうたた寝をするもよし、上で楽しく踊るもよし、映画の怖いシーンが流れたら頭を背もたれに埋めるもよし……まさに万能のふかふかソファだ。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_carpet_01": {
+                "id": "furni_rabbitCinema_carpet_01",
+                "sortId": 2272,
+                "name": "絨毯「イメージング」",
+                "iconId": "furni_rabbitCinema_carpet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CARPET",
+                "subType": "NONE",
+                "location": "CARPET",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 13,
+                "depth": 6,
+                "height": 1,
+                "comfort": 130,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "赤・青・黄の三色のフィルム模様がプリントされた楕円形の絨毯。よりシワになりにくく、滑りにくい素材を使っている。\n上映中に少しだけ席を外さなければならないこともある。暗い中で移動する際は、十分に気をつけよう。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_ceilinglamp_03": {
+                "id": "furni_rabbitCinema_ceilinglamp_03",
+                "sortId": 2273,
+                "name": "照明「ロングフィルム」",
+                "iconId": "furni_rabbitCinema_ceilinglamp_03",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 10,
+                "depth": 2,
+                "height": 2,
+                "comfort": 150,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "展開されたフィルムを思わせる長い天井照明。シアタールームで再生されている内容に合わせて、光が自動的に調節される。\n一部の「インディーズ映画」を再生している時、途中で突然明かりが点滅するかもしれないが、誰かが意図的に設定したものなので慌てる必要はない。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_sofa_02": {
+                "id": "furni_rabbitCinema_sofa_02",
+                "sortId": 2274,
+                "name": "シアターロングソファ",
+                "iconId": "furni_rabbitCinema_sofa_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "SOFA",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 9,
+                "depth": 2,
+                "height": 3,
+                "comfort": 260,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "スナックを置ける小さなテーブルが付いたソファ。背もたれは特別仕様となっており、映画鑑賞時のあらゆる姿勢に対応できる。\nハディヤが本艦に戻った後のルーティンの一つは、ここに座ってポテトチップスの袋を開け、荒野の映画を再生することだ。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_shelf_02": {
+                "id": "furni_rabbitCinema_shelf_02",
+                "sortId": 2275,
+                "name": "シンプルな小型本棚",
+                "iconId": "furni_rabbitCinema_shelf_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "STORAGE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 2,
+                "depth": 2,
+                "height": 3,
+                "comfort": 125,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "とてもシンプルな単色の本棚。コンパクトでありながら、大量の本を収納できる。\nエンタメ関連の雑誌のほか、大人気連載漫画『赦されざる者』の最新巻も置かれているため、それを目当てにシアタールームを訪れるオペレーターも多い。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_curtain_01": {
+                "id": "furni_rabbitCinema_curtain_01",
+                "sortId": 2276,
+                "name": "うさうさスクリーン",
+                "iconId": "furni_rabbitCinema_curtain_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILING",
+                "subType": "CURTAIN_C",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 9,
+                "depth": 5,
+                "height": 3,
+                "comfort": 200,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "中央に大きなうさぎの装飾がついた棚が備え付けられたプロジェクター。スクリーンは音声認識を含む複数の方法で操作可能。\n照明を落とし、スクリーンを下ろして、映画館気分で名作を――『萌えよ危機一髪の奇怪神拳』を見直そう。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_tv_01": {
+                "id": "furni_rabbitCinema_tv_01",
+                "sortId": 2277,
+                "name": "「森羅万象」",
+                "iconId": "furni_rabbitCinema_tv_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "DEVICE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 8,
+                "depth": 3,
+                "height": 6,
+                "comfort": 360,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "特注の一体型映写キャビネット。最新式の曲面テレビを搭載し、多機能プロジェクターと各種映像記録媒体が備わっている。\nテレビは特別なマルチメディアデータベースに接続されており、映画史に残る初期の作品から最新の話題作までを、簡単に見つけ出すことができる。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_coffeeTable_01": {
+                "id": "furni_rabbitCinema_coffeeTable_01",
+                "sortId": 2278,
+                "name": "テーブル「ハッピータイム」",
+                "iconId": "furni_rabbitCinema_coffeeTable_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 7,
+                "depth": 4,
+                "height": 3,
+                "comfort": 290,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "シアタールーム用にデザインされた、幾何学模様を組み合わせたローテーブル。天板の下には専用のクッションが取り付けられており、足を伸ばしてリラックスできる空間が最大限に確保されている。\n最近大流行しているヴィクトリアの連続テレビドラマ『あぶない探偵』が放送された後は、多くのオペレーターがそのままテーブルの周りに留まり、誰が真犯人なのかを議論し合っている。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_shelf_03": {
+                "id": "furni_rabbitCinema_shelf_03",
+                "sortId": 2279,
+                "name": "ディスク展示用ラック",
+                "iconId": "furni_rabbitCinema_shelf_03",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CABINET",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 4,
+                "depth": 3,
+                "height": 10,
+                "comfort": 295,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "小型照明付きのディスクラック。収納だけでなく、厳選したディスクを飾るのにも使える。\n気分を変えたくなった時には、ここから『シャイニングステップ』の高画質版最新ライブ映像を一枚取って再生してみるのも悪くないだろう。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_wallpaper_01": {
+                "id": "furni_rabbitCinema_wallpaper_01",
+                "sortId": 2280,
+                "name": "「悠然たる望遠」",
+                "iconId": "furni_rabbitCinema_wallpaper_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLPAPER",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "WALL",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 34,
+                "depth": 1,
+                "height": 10,
+                "comfort": 240,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "絶景の自然ドキュメンタリーを映し出したウォールディスプレイ。見ていると、美しい大自然の中に身を置いているような気分にさせてくれる。\nエンジニア部では、よりハイテクなディスプレイシステムを鋭意開発中である。それが完成すれば、仮にこの景色に飽きたとしても、ボタン一つで風景を切り替えられるようになる。乞うご期待！",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_floor_01": {
+                "id": "furni_rabbitCinema_floor_01",
+                "sortId": 2281,
+                "name": "「鑑賞会用リスト」",
+                "iconId": "furni_rabbitCinema_floor_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "FLOOR",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "FLOOR",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 34,
+                "depth": 10,
+                "height": 1,
+                "comfort": 240,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "シアタールームに採用されたファブリック調の床。防音性と防水性を兼ね備えており、踏み心地も非常に快適だ。\n突然現れたお化けに驚いて悲鳴を上げても、白熱するバトルに夢中になって歓声を上げても、他人に迷惑をかける心配はない。シアタールームの防音性は保証されているのだ。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
             "furni_oct1st_deckChair_01": {
                 "id": "furni_oct1st_deckChair_01",
                 "sortId": 9998,
@@ -100778,7 +102318,7 @@
                 "processedByProductPercentage": 0,
                 "processedByProductGroup": {},
                 "canBeDestroy": false,
-                "isOnly": 1,
+                "isOnly": 2,
                 "enableRoomType": 4112,
                 "quantity": 0
             },
@@ -100810,7 +102350,7 @@
                 "processedByProductPercentage": 0,
                 "processedByProductGroup": {},
                 "canBeDestroy": false,
-                "isOnly": 1,
+                "isOnly": 2,
                 "enableRoomType": 4112,
                 "quantity": 0
             },
@@ -102339,7 +103879,7 @@
                 "height": 5,
                 "comfort": 120,
                 "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
-                "description": "アニメの放送終了を記念して特別に制作された映写機。\n夜の焔が灰燼に帰し、曙光がついに顔を覗かせた。記憶という長き川を遡れば、景色は次第に霞んでいく。そこに今も残っているのは、どのような人々の面影だろうか。",
+                "description": "アニメの放送終了を記念して特別に製作された映写機。\n夜の焔が灰燼に帰し、曙光がついに顔を覗かせた。記憶という長き川を遡れば、景色は次第に霞んでいく。そこに今も残っているのは、どのような人々の面影だろうか。",
                 "obtainApproach": "イベント報酬",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -102576,7 +104116,7 @@
             },
             "furni_act73d0_rabbits_01": {
                 "id": "furni_act73d0_rabbits_01",
-                "sortId": 10257,
+                "sortId": 10259,
                 "name": "「邂逅のひととき」",
                 "iconId": "furni_act73d0_rabbits_01",
                 "interactType": "NONE",
@@ -106158,6 +107698,38 @@
                 "enableRoomType": 4144,
                 "quantity": 0
             },
+            "furni_terracommericials_CrucibleCreamPuff_01": {
+                "id": "furni_terracommericials_CrucibleCreamPuff_01",
+                "sortId": 11113,
+                "name": "パネル「伴侶」",
+                "iconId": "furni_terracommericials_CrucibleCreamPuff_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "PLAQUE",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "",
+                "groupId": "",
+                "width": 4,
+                "depth": 1,
+                "height": 2,
+                "comfort": 75,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする。また、応接室に飾ることもできる。",
+                "description": "大地を旅する人々の支えとなるのは、信仰だけとは限らない。それはシュークリームであってもいいのだ。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4144,
+                "quantity": 0
+            },
             "furni_contract_s0_01": {
                 "id": "furni_contract_s0_01",
                 "sortId": 12001,
@@ -109646,6 +111218,38 @@
                 "enableRoomType": 32,
                 "quantity": 0
             },
+            "furniM_act73d0_messageboard_01": {
+                "id": "furniM_act73d0_messageboard_01",
+                "sortId": 90117,
+                "name": "新型情報端末",
+                "iconId": "furniM_act73d0_messageboard_01",
+                "interactType": "FUNCTION",
+                "musicId": "",
+                "type": "FUNCTION",
+                "subType": "VISITOR",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "",
+                "groupId": "",
+                "width": 7,
+                "depth": 4,
+                "height": 8,
+                "comfort": 0,
+                "usage": "【機能家具-伝言板】応接室に飾れる",
+                "description": "エンジニア部が設計・改造した最新式のハイテク来客情報端末。あらゆる情報交流のニーズに応えることができる。\n伝言、手土産の受け取り、来客記録機能が一つにまとめられたこの便利な機械は、多くの客人に好評を博している。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 32,
+                "quantity": 0
+            },
             "furniM_taiko_ropeChandelier_01": {
                 "id": "furniM_taiko_ropeChandelier_01",
                 "sortId": 80117,
@@ -111171,7 +112775,7 @@
                 "height": 5,
                 "comfort": 600,
                 "usage": "宿舎と活動室に飾れば、雰囲気を良くする。また、応接室に飾ることもできる。",
-                "description": "すべての命が、本来享受すべき安らぎを得られますように。\n「この歌を君だけに　夢見の国へーー」",
+                "description": "アニメ放映を記念して特別に製作されたオルゴールで、ゼンマイを巻くと子守歌の音符が浮かび上がります。\nすべての命が、本来享受すべき安らぎを得られますように。「この歌を君だけに　夢見の国へ――」",
                 "obtainApproach": "イベント報酬",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -130558,6 +132162,301 @@
                     "furni_ursusRoom_floor_01"
                 ]
             },
+            "furni_set_closureRoom": {
+                "id": "furni_set_closureRoom",
+                "enableRoomType": 4112,
+                "sortId": 127,
+                "name": "クロージャの万能空間",
+                "themeType": "NORMAL",
+                "desc": "クロージャの執務室を再現した部屋。仕事上のニーズに応えるのみならず、様々な娯楽も用意されており、趣味の工作・技術開発用の工具も置いてある。些か機能が多様化しすぎているようにも思えるが……ロドスのチーフエンジニアがいつも休まず徹夜している理由を考えれば、自然と納得できるだろう。",
+                "quickSetup": [
+                    {
+                        "furnitureId": "furni_closureRoom_shelf_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_collectioncabinet_01",
+                        "pos0": 0,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_computerdesk_01",
+                        "pos0": 7,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_ledchair_01",
+                        "pos0": 6,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_poster_01",
+                        "pos0": 11,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_poster_02",
+                        "pos0": 12,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_officedesk_01",
+                        "pos0": 13,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_chair_01",
+                        "pos0": 13,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_stool_01",
+                        "pos0": 18,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_ceilingLight_01",
+                        "pos0": 15,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_equipmentdesk_01",
+                        "pos0": 20,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_cabinet_01",
+                        "pos0": 24,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_table_01",
+                        "pos0": 26,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_workbench_01",
+                        "pos0": 31,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_carpet_01",
+                        "pos0": 10,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_carpet_02",
+                        "pos0": 30,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_wallpaper_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_floor_01",
+                        "pos0": 0,
+                        "pos1": 10,
+                        "dir": 0
+                    }
+                ],
+                "groups": [
+                    "furni_set_closureRoom_1",
+                    "furni_set_closureRoom_2",
+                    "furni_set_closureRoom_3",
+                    "furni_set_closureRoom_4"
+                ],
+                "furnitures": [
+                    "furni_closureRoom_shelf_01",
+                    "furni_closureRoom_collectioncabinet_01",
+                    "furni_closureRoom_computerdesk_01",
+                    "furni_closureRoom_ledchair_01",
+                    "furni_closureRoom_poster_01",
+                    "furni_closureRoom_poster_02",
+                    "furni_closureRoom_officedesk_01",
+                    "furni_closureRoom_chair_01",
+                    "furni_closureRoom_stool_01",
+                    "furni_closureRoom_ceilingLight_01",
+                    "furni_closureRoom_equipmentdesk_01",
+                    "furni_closureRoom_cabinet_01",
+                    "furni_closureRoom_table_01",
+                    "furni_closureRoom_workbench_01",
+                    "furni_closureRoom_carpet_01",
+                    "furni_closureRoom_carpet_02",
+                    "furni_closureRoom_wallpaper_01",
+                    "furni_closureRoom_floor_01"
+                ]
+            },
+            "furni_set_rabbitCinema": {
+                "id": "furni_set_rabbitCinema",
+                "enableRoomType": 4112,
+                "sortId": 128,
+                "name": "シアタールーム「うさうさ大喝采」",
+                "themeType": "EVENT",
+                "desc": "ゆるいうさちゃんのモチーフで飾られたロドスのシアタールーム。エンジニア部が丹念に設計した音響システムと、映像の魅力を存分に引き出すプロジェクター設備の相乗効果により、オペレーターたちはここで極上のエンターテインメントを味わえる。",
+                "quickSetup": [
+                    {
+                        "furnitureId": "furni_rabbitCinema_ceilinglamp_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_table_01",
+                        "pos0": 0,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_stool_01",
+                        "pos0": 4,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_ceilinglamp_02",
+                        "pos0": 6,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_shelf_01",
+                        "pos0": 5,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_plant_01",
+                        "pos0": 9,
+                        "pos1": 1,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_table_02",
+                        "pos0": 11,
+                        "pos1": 7,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_desk_01",
+                        "pos0": 13,
+                        "pos1": 1,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_sofa_01",
+                        "pos0": 9,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_carpet_01",
+                        "pos0": 12,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_ceilinglamp_03",
+                        "pos0": 11,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_sofa_02",
+                        "pos0": 13,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_shelf_02",
+                        "pos0": 22,
+                        "pos1": 1,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_curtain_01",
+                        "pos0": 22,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_tv_01",
+                        "pos0": 25,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_coffeeTable_01",
+                        "pos0": 17,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_shelf_03",
+                        "pos0": 28,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_wallpaper_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_floor_01",
+                        "pos0": 0,
+                        "pos1": 10,
+                        "dir": 0
+                    }
+                ],
+                "groups": [
+                    "furni_set_rabbitCinema_1",
+                    "furni_set_rabbitCinema_2",
+                    "furni_set_rabbitCinema_3",
+                    "furni_set_rabbitCinema_4"
+                ],
+                "furnitures": [
+                    "furni_rabbitCinema_ceilinglamp_01",
+                    "furni_rabbitCinema_table_01",
+                    "furni_rabbitCinema_stool_01",
+                    "furni_rabbitCinema_ceilinglamp_02",
+                    "furni_rabbitCinema_shelf_01",
+                    "furni_rabbitCinema_plant_01",
+                    "furni_rabbitCinema_table_02",
+                    "furni_rabbitCinema_desk_01",
+                    "furni_rabbitCinema_sofa_01",
+                    "furni_rabbitCinema_carpet_01",
+                    "furni_rabbitCinema_ceilinglamp_03",
+                    "furni_rabbitCinema_sofa_02",
+                    "furni_rabbitCinema_shelf_02",
+                    "furni_rabbitCinema_curtain_01",
+                    "furni_rabbitCinema_tv_01",
+                    "furni_rabbitCinema_coffeeTable_01",
+                    "furni_rabbitCinema_shelf_03",
+                    "furni_rabbitCinema_wallpaper_01",
+                    "furni_rabbitCinema_floor_01"
+                ]
+            },
             "furniM_set_basicRoom": {
                 "id": "furniM_set_basicRoom",
                 "enableRoomType": 32,
@@ -138479,6 +140378,123 @@
                     "furni_ursusRoom_wallpaper_01",
                     "furni_ursusRoom_floor_01"
                 ]
+            },
+            "furni_set_closureRoom_1": {
+                "id": "furni_set_closureRoom_1",
+                "sortId": 1,
+                "name": "作業エリア「メインコントロール」",
+                "themeId": "furni_set_closureRoom",
+                "comfort": 290,
+                "count": 4,
+                "furniture": [
+                    "furni_closureRoom_shelf_01",
+                    "furni_closureRoom_collectioncabinet_01",
+                    "furni_closureRoom_computerdesk_01",
+                    "furni_closureRoom_ledchair_01"
+                ]
+            },
+            "furni_set_closureRoom_2": {
+                "id": "furni_set_closureRoom_2",
+                "sortId": 2,
+                "name": "娯楽エリア「スコアボード」",
+                "themeId": "furni_set_closureRoom",
+                "comfort": 210,
+                "count": 5,
+                "furniture": [
+                    "furni_closureRoom_poster_01",
+                    "furni_closureRoom_poster_02",
+                    "furni_closureRoom_officedesk_01",
+                    "furni_closureRoom_chair_01",
+                    "furni_closureRoom_carpet_01"
+                ]
+            },
+            "furni_set_closureRoom_3": {
+                "id": "furni_set_closureRoom_3",
+                "sortId": 3,
+                "name": "展示エリア「アチーブメント」",
+                "themeId": "furni_set_closureRoom",
+                "comfort": 220,
+                "count": 4,
+                "furniture": [
+                    "furni_closureRoom_stool_01",
+                    "furni_closureRoom_ceilingLight_01",
+                    "furni_closureRoom_equipmentdesk_01",
+                    "furni_closureRoom_cabinet_01"
+                ]
+            },
+            "furni_set_closureRoom_4": {
+                "id": "furni_set_closureRoom_4",
+                "sortId": 4,
+                "name": "開発エリア「プロッター」",
+                "themeId": "furni_set_closureRoom",
+                "comfort": 215,
+                "count": 5,
+                "furniture": [
+                    "furni_closureRoom_table_01",
+                    "furni_closureRoom_workbench_01",
+                    "furni_closureRoom_carpet_02",
+                    "furni_closureRoom_wallpaper_01",
+                    "furni_closureRoom_floor_01"
+                ]
+            },
+            "furni_set_rabbitCinema_1": {
+                "id": "furni_set_rabbitCinema_1",
+                "sortId": 1,
+                "name": "おやつエリア「ショートドラマ」",
+                "themeId": "furni_set_rabbitCinema",
+                "comfort": 190,
+                "count": 4,
+                "furniture": [
+                    "furni_rabbitCinema_ceilinglamp_01",
+                    "furni_rabbitCinema_table_01",
+                    "furni_rabbitCinema_stool_01",
+                    "furni_rabbitCinema_shelf_01"
+                ]
+            },
+            "furni_set_rabbitCinema_2": {
+                "id": "furni_set_rabbitCinema_2",
+                "sortId": 2,
+                "name": "シアターエリア「ロングテイク」",
+                "themeId": "furni_set_rabbitCinema",
+                "comfort": 230,
+                "count": 5,
+                "furniture": [
+                    "furni_rabbitCinema_table_02",
+                    "furni_rabbitCinema_sofa_01",
+                    "furni_rabbitCinema_carpet_01",
+                    "furni_rabbitCinema_sofa_02",
+                    "furni_rabbitCinema_coffeeTable_01"
+                ]
+            },
+            "furni_set_rabbitCinema_3": {
+                "id": "furni_set_rabbitCinema_3",
+                "sortId": 3,
+                "name": "メディアエリア「コレクション」",
+                "themeId": "furni_set_rabbitCinema",
+                "comfort": 340,
+                "count": 5,
+                "furniture": [
+                    "furni_rabbitCinema_desk_01",
+                    "furni_rabbitCinema_shelf_02",
+                    "furni_rabbitCinema_tv_01",
+                    "furni_rabbitCinema_curtain_01",
+                    "furni_rabbitCinema_shelf_03"
+                ]
+            },
+            "furni_set_rabbitCinema_4": {
+                "id": "furni_set_rabbitCinema_4",
+                "sortId": 4,
+                "name": "リラックスエリア「ステレオ」",
+                "themeId": "furni_set_rabbitCinema",
+                "comfort": 185,
+                "count": 5,
+                "furniture": [
+                    "furni_rabbitCinema_wallpaper_01",
+                    "furni_rabbitCinema_floor_01",
+                    "furni_rabbitCinema_ceilinglamp_02",
+                    "furni_rabbitCinema_plant_01",
+                    "furni_rabbitCinema_ceilinglamp_03"
+                ]
             }
         },
         "types": {
@@ -140887,6 +142903,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141025,6 +143051,16 @@
                 {
                     "weight": 57,
                     "itemId": "31094",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
                     "itemCount": 1
                 }
             ],
@@ -141165,6 +143201,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141304,6 +143350,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141438,6 +143494,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141567,6 +143633,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141594,6 +143670,304 @@
                 }
             ],
             "requireStages": {}
+        },
+        "68": {
+            "sortId": 2092,
+            "formulaId": "68",
+            "rarity": 0,
+            "itemId": "31114",
+            "count": 1,
+            "goldCost": 300,
+            "apCost": 1440000,
+            "formulaType": "F_EVOLVE",
+            "buffType": "W_EVOLVE",
+            "extraOutcomeRate": 0.1,
+            "extraOutcomeGroup": [
+                {
+                    "weight": 50,
+                    "itemId": "30013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30083",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "30093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
+                }
+            ],
+            "costs": [
+                {
+                    "id": "30063",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "31103",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "31113",
+                    "count": 1,
+                    "type": "MATERIAL"
+                }
+            ],
+            "requireRooms": [
+                {
+                    "roomId": "WORKSHOP",
+                    "roomLevel": 3,
+                    "roomCount": 1
+                }
+            ],
+            "requireStages": [
+                {
+                    "stageId": "main_17-10",
+                    "rank": 2
+                }
+            ]
+        },
+        "67": {
+            "sortId": 2093,
+            "formulaId": "67",
+            "rarity": 0,
+            "itemId": "31104",
+            "count": 1,
+            "goldCost": 300,
+            "apCost": 1440000,
+            "formulaType": "F_EVOLVE",
+            "buffType": "W_EVOLVE",
+            "extraOutcomeRate": 0.1,
+            "extraOutcomeGroup": [
+                {
+                    "weight": 50,
+                    "itemId": "30013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30083",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "30093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
+                }
+            ],
+            "costs": [
+                {
+                    "id": "30053",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "31093",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "31103",
+                    "count": 1,
+                    "type": "MATERIAL"
+                }
+            ],
+            "requireRooms": [
+                {
+                    "roomId": "WORKSHOP",
+                    "roomLevel": 3,
+                    "roomCount": 1
+                }
+            ],
+            "requireStages": [
+                {
+                    "stageId": "main_17-04",
+                    "rank": 2
+                }
+            ]
         },
         "65": {
             "sortId": 2094,
@@ -141700,6 +144074,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -141840,6 +144224,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141978,6 +144372,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -142118,6 +144522,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -142256,6 +144670,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -142396,6 +144820,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -142534,6 +144968,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -142674,6 +145118,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -142812,6 +145266,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -142952,6 +145416,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -143085,6 +145559,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -143220,6 +145704,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -143353,6 +145847,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -143606,6 +146110,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -143857,6 +146371,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -144110,6 +146634,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -144361,6 +146895,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -144614,6 +147158,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -144865,6 +147419,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -146626,6 +149190,19 @@
                 "unlockType": "MainBG",
                 "unlockParams": [
                     "bg_rogue_5"
+                ]
+            },
+            "bgm_bg_elitelounge_1": {
+                "bgmId": "bgm_bg_elitelounge_1",
+                "bgmSortId": 30,
+                "bgmStartTime": 1791943200,
+                "bgmName": "執着-(Believed Believes) Believing (Instrumental)",
+                "gameMusicId": "music_elitelounge_1",
+                "obtainApproach": "累計1500日ログインで獲得",
+                "bgmDescUnlocked": "背景付属",
+                "unlockType": "MainBG",
+                "unlockParams": [
+                    "bg_elitelounge_1"
                 ]
             }
         }
