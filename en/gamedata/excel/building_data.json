@@ -15072,6 +15072,160 @@
                     ]
                 }
             ]
+        },
+        "char_4228_closur": {
+            "charId": "char_4228_closur",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_mp_cost[014]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_closure[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_1052_kalts2": {
+            "charId": "char_1052_kalts2",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "workshop_proc_probability[041]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "workshop_proc_probability[050]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "hire_spd_tag[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4226_veen": {
+            "charId": "char_4226_veen",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "train_spd_doubleProf[301]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "train_spd_doubleProf[310]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "manu_prod_spd_train&lv[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4225_tanya": {
+            "charId": "char_4225_tanya",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "dorm_rec_oneself[040]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "manu_formula_spd&limit&cost[100]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4227_gallus": {
+            "charId": "char_4227_gallus",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "power_rec_spd[0010]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "power_rec_spd_ext&tag[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 30
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     },
     "buffs": {
@@ -15726,6 +15880,21 @@
             "buffIcon": "control",
             "skillIcon": "bskill_ctrl_cost",
             "sortId": 1113,
+            "buffColor": "#005752",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "CONTROL",
+            "description": "When this Operator is assigned to the Control Center, increases Morale of all Operators in the Control Center by <@cc.vup>+0.05</> per hour.",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "control_mp_cost[014]": {
+            "buffId": "control_mp_cost[014]",
+            "buffName": "Chief Engineer",
+            "buffIcon": "control",
+            "skillIcon": "bskill_ctrl_cost",
+            "sortId": 1114,
             "buffColor": "#005752",
             "textColor": "#ffffff",
             "buffCategory": "FUNCTION",
@@ -16800,6 +16969,21 @@
             "targetGroupSortId": 0,
             "targets": {}
         },
+        "power_rec_spd[0010]": {
+            "buffId": "power_rec_spd[0010]",
+            "buffName": "Clucktrical Engineering",
+            "buffIcon": "power",
+            "skillIcon": "bskill_pow_spd1",
+            "sortId": 2009,
+            "buffColor": "#8fc31f",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "POWER",
+            "description": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by <@cc.vup>+10%</>",
+            "efficiency": 10,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
         "power_count[000]": {
             "buffId": "power_count[000]",
             "buffName": "Dawnlight",
@@ -16871,6 +17055,21 @@
             "buffCategory": "OUTPUT",
             "roomType": "POWER",
             "description": "When this Operator is assigned to a Power Plant, if another <$cc.g.laterano><@cc.kw>Laterano</></> Operator is assigned to a Power Plant, drone charging speed <@cc.vup>+5%</>",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "power_rec_spd_ext&tag[000]": {
+            "buffId": "power_rec_spd_ext&tag[000]",
+            "buffName": "Clucktivation Mechanism",
+            "buffIcon": "power",
+            "skillIcon": "bskill_power_rec_spd_ext&tag",
+            "sortId": 2000,
+            "buffColor": "#8fc31f",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "POWER",
+            "description": "When this Operator is assigned to a Power Plant, if another <$cc.tag.op><@cc.kw>Operation Platform</></> is assigned to a Power Plant, drone charging speed <@cc.vup>+5%</>",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -18034,6 +18233,25 @@
                 "F_DIAMOND"
             ]
         },
+        "manu_prod_spd_train&lv[000]": {
+            "buffId": "manu_prod_spd_train&lv[000]",
+            "buffName": "Artisan",
+            "buffIcon": "manufacture",
+            "skillIcon": "bskill_man_spd_veen",
+            "sortId": 3602,
+            "buffColor": "#ffd800",
+            "textColor": "#333333",
+            "buffCategory": "OUTPUT",
+            "roomType": "MANUFACTURE",
+            "description": "When this Operator is assigned to a Factory, current Factory Productivity <@cc.vup>+10%</> for every level of each Training Room level, up to <@cc.vup>30%</>",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": [
+                "F_GOLD",
+                "F_EXP",
+                "F_DIAMOND"
+            ]
+        },
         "manu_prod_spd_bd_n1[000]": {
             "buffId": "manu_prod_spd_bd_n1[000]",
             "buffName": "Extrasensory",
@@ -18384,6 +18602,23 @@
             "buffCategory": "OUTPUT",
             "roomType": "MANUFACTURE",
             "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> productivity <@cc.vup>+35%</>, and Morale consumed per hour <@cc.vup>-0.25</>",
+            "efficiency": 35,
+            "targetGroupSortId": 2,
+            "targets": [
+                "F_EXP"
+            ]
+        },
+        "manu_formula_spd&limit&cost[100]": {
+            "buffId": "manu_formula_spd&limit&cost[100]",
+            "buffName": "'Round the Clock'",
+            "buffIcon": "manufacture",
+            "skillIcon": "bskill_man_exp&spd&cost1",
+            "sortId": 3812,
+            "buffColor": "#ffd800",
+            "textColor": "#333333",
+            "buffCategory": "OUTPUT",
+            "roomType": "MANUFACTURE",
+            "description": "When this Operator is assigned to a Factory, <@cc.kw>Battle Record</> productivity <@cc.vup>+35%</>, and Morale consumed per hour <@cc.vdown>+0.25</>",
             "efficiency": 35,
             "targetGroupSortId": 2,
             "targets": [
@@ -19140,6 +19375,21 @@
             "roomType": "TRADING",
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+25%</>, +<@cc.vup>5%</> per Reception Room level, up to a maximum of <@cc.vup>40%</>",
             "efficiency": 25,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "trade_ord_closure[000]": {
+            "buffId": "trade_ord_closure[000]",
+            "buffName": "Special Order",
+            "buffIcon": "trading",
+            "skillIcon": "bskill_tra_closure",
+            "sortId": 4851,
+            "buffColor": "#0075a9",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "TRADING",
+            "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+10%</>, <$cc.tra.closure><@cc.kw>Closure's Special Order</></> will be obtained at a fixed rate (not considered as Defaulted trades).",
+            "efficiency": 10,
             "targetGroupSortId": 0,
             "targets": {}
         },
@@ -20410,6 +20660,46 @@
             "roomType": "WORKSHOP",
             "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, the production rate of byproduct increases by <@cc.vup>70%</>",
             "efficiency": 70,
+            "targetGroupSortId": 0,
+            "targets": [
+                "F_BUILDING",
+                "F_EVOLVE",
+                "F_SKILL",
+                "F_ASC"
+            ]
+        },
+        "workshop_proc_probability[041]": {
+            "buffId": "workshop_proc_probability[041]",
+            "buffName": "Technical Elucidation",
+            "buffIcon": "workshop",
+            "skillIcon": "bskill_ws_p5",
+            "sortId": 7142,
+            "buffColor": "#e3eb00",
+            "textColor": "#333333",
+            "buffCategory": "FUNCTION",
+            "roomType": "WORKSHOP",
+            "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, the production rate of byproduct increases by <@cc.vup>70%</>",
+            "efficiency": 70,
+            "targetGroupSortId": 0,
+            "targets": [
+                "F_BUILDING",
+                "F_EVOLVE",
+                "F_SKILL",
+                "F_ASC"
+            ]
+        },
+        "workshop_proc_probability[050]": {
+            "buffId": "workshop_proc_probability[050]",
+            "buffName": "Theoretical Innovation",
+            "buffIcon": "workshop",
+            "skillIcon": "bskill_ws_p_kalts2",
+            "sortId": 7151,
+            "buffColor": "#e3eb00",
+            "textColor": "#333333",
+            "buffCategory": "FUNCTION",
+            "roomType": "WORKSHOP",
+            "description": "When this Operator is assigned to the Workshop to process <@cc.kw>any material</>, the production rate of byproduct increases by <@cc.vup>80%</>",
+            "efficiency": 80,
             "targetGroupSortId": 0,
             "targets": [
                 "F_BUILDING",
@@ -22434,6 +22724,42 @@
                 "WARRIOR"
             ]
         },
+        "train_spd_doubleProf[301]": {
+            "buffId": "train_spd_doubleProf[301]",
+            "buffName": "'I Don't Get It'",
+            "buffIcon": "training",
+            "skillIcon": "bskill_train_caster&vanguard1",
+            "sortId": 9907,
+            "buffColor": "#7d0022",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "TRAINING",
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> and <@cc.kw>Guard</> Operators' Specialization training speed <@cc.vup>+30%</>",
+            "efficiency": 30,
+            "targetGroupSortId": 2,
+            "targets": [
+                "CASTER",
+                "WARRIOR"
+            ]
+        },
+        "train_spd_doubleProf[310]": {
+            "buffId": "train_spd_doubleProf[310]",
+            "buffName": "'Learning By Analogy'",
+            "buffIcon": "training",
+            "skillIcon": "bskill_train_caster&vanguard2",
+            "sortId": 9908,
+            "buffColor": "#7d0022",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "TRAINING",
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Caster</> and <@cc.kw>Guard</> Operators' Specialization training speed <@cc.vup>+45%</>",
+            "efficiency": 45,
+            "targetGroupSortId": 2,
+            "targets": [
+                "CASTER",
+                "WARRIOR"
+            ]
+        },
         "train_spd_doubleProf[110]": {
             "buffId": "train_spd_doubleProf[110]",
             "buffName": "Red Dragon's Blood",
@@ -23903,6 +24229,21 @@
             "targetGroupSortId": 0,
             "targets": {}
         },
+        "dorm_rec_oneself[040]": {
+            "buffId": "dorm_rec_oneself[040]",
+            "buffName": "A Rare Rest",
+            "buffIcon": "dormitory",
+            "skillIcon": "bskill_dorm_one1",
+            "sortId": 5001,
+            "buffColor": "#21cdcb",
+            "textColor": "#ffffff",
+            "buffCategory": "RECOVERY",
+            "roomType": "DORMITORY",
+            "description": "When this Operator is assigned to a Dormitory, self Morale recovered <@cc.vup>+0.55</> per hour",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
         "dorm_rec_oneself[030]": {
             "buffId": "dorm_rec_oneself[030]",
             "buffName": "Concealed Gourmet",
@@ -24625,7 +24966,7 @@
         },
         "dorm_rec_single&oneself[021]": {
             "buffId": "dorm_rec_single&oneself[021]",
-            "buffName": "Karlan Saint",
+            "buffName": "Karlan Saintess",
             "buffIcon": "dormitory",
             "skillIcon": "bskill_dorm_single&one22",
             "sortId": 5122,
@@ -25685,6 +26026,21 @@
             "roomType": "HIRE",
             "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+5%</>, with a further increase of <@cc.vup>+2%</> for every level of each Dormitory",
             "efficiency": 5,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "hire_spd_tag[000]": {
+            "buffId": "hire_spd_tag[000]",
+            "buffName": "'Terra's Ark'",
+            "buffIcon": "hire",
+            "skillIcon": "bskill_hire_kalts2",
+            "sortId": 8500,
+            "buffColor": "#565656",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "HIRE",
+            "description": "When this Operator is assigned to the HR Office, HR contacting speed <@cc.vup>+30%</>; for every facility in the Base with an <$cc.g.elite><@cc.kw>Elite Operator</></> assigned (excluding Assistants and Activity Rooms), HR contacting speed <@cc.vup>+4%</> (max <@cc.kw>5</> facilities)",
+            "efficiency": 30,
             "targetGroupSortId": 0,
             "targets": {}
         },
@@ -98510,6 +98866,1190 @@
                 "enableRoomType": 4112,
                 "quantity": 1
             },
+            "furni_closureRoom_shelf_01": {
+                "id": "furni_closureRoom_shelf_01",
+                "sortId": 2245,
+                "name": "Clock Cabinet",
+                "iconId": "furni_closureRoom_shelf_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CABINET",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_1",
+                "width": 4,
+                "depth": 2,
+                "height": 4,
+                "comfort": 185,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Cabinet equipped with electronic clock. The door can be opened with a button next to the clock. Filled with Closure's favorite sugary energy drinks, perfect for restoring sanity. Good thing vampires don't get fat.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 153,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_collectioncabinet_01": {
+                "id": "furni_closureRoom_collectioncabinet_01",
+                "sortId": 2246,
+                "name": "Combo Music Player",
+                "iconId": "furni_closureRoom_collectioncabinet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "ENTERTAINMENT",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_1",
+                "width": 3,
+                "depth": 3,
+                "height": 8,
+                "comfort": 250,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "All-in-one music player integrating playback, storage, and display functions, with multiple visualizer modes. Extensively modified by Closure, it now auto-plays different D.D.D. albums based on her real-time mental state.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 185,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_computerdesk_01": {
+                "id": "furni_closureRoom_computerdesk_01",
+                "sortId": 2247,
+                "name": "'Console One'",
+                "iconId": "furni_closureRoom_computerdesk_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_1",
+                "width": 6,
+                "depth": 5,
+                "height": 9,
+                "comfort": 570,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Closure's large workstation with an all-in-one PC, smart accessories and multiple HD screens. She can simultaneously read messages, monitor Rhodes Island's status, review ledgers, and learn speedrun shortcuts, missing no detail.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 420,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_ledchair_01": {
+                "id": "furni_closureRoom_ledchair_01",
+                "sortId": 2248,
+                "name": "Glowing Stool",
+                "iconId": "furni_closureRoom_ledchair_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "BENCH",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_1",
+                "width": 5,
+                "depth": 2,
+                "height": 2,
+                "comfort": 170,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Stools equipped with side lights that change patterns based on how the stools are arranged. Closure often drags other operators to sit on these stools and watch weird, niche movies from the Rhodes Island media library with her.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 140,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_poster_01": {
+                "id": "furni_closureRoom_poster_01",
+                "sortId": 2249,
+                "name": "HEART TO HEART Poster",
+                "iconId": "furni_closureRoom_poster_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "POSTER",
+                "location": "POSTER",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 2,
+                "depth": 1,
+                "height": 2,
+                "comfort": 60,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "A poster of HEART TO HEART, given to winners in the Poly Vision Museum. While multiple players finished with a maxed-out score, Closure won the time-based tiebreaker by virtue of being physically closest to the server.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 55,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_poster_02": {
+                "id": "furni_closureRoom_poster_02",
+                "sortId": 2250,
+                "name": "Barrage Fortress Poster",
+                "iconId": "furni_closureRoom_poster_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "POSTER",
+                "location": "POSTER",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 4,
+                "depth": 1,
+                "height": 3,
+                "comfort": 105,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "A poster of Barrage Fortress, with a developer's sticker on it. The first edition of the game came with a behind-the-scenes video featuring this poster as its cover, but it was taken down because of the game's negative reviews.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 95,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_officedesk_01": {
+                "id": "furni_closureRoom_officedesk_01",
+                "sortId": 2251,
+                "name": "'Power Workstation'",
+                "iconId": "furni_closureRoom_officedesk_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 8,
+                "depth": 2,
+                "height": 6,
+                "comfort": 335,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Closure's secondary workstation, with the same functions but simpler. This is where she programmed 'Rhodes Island Total Control' and 'Duel Channel Auto-Betting', but her test accounts were banned by Kal'tsit and the organizers respectively.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 248,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_chair_01": {
+                "id": "furni_closureRoom_chair_01",
+                "sortId": 2252,
+                "name": "Self-Adjusting Chair",
+                "iconId": "furni_closureRoom_chair_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "CHAIR",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 5,
+                "depth": 4,
+                "height": 4,
+                "comfort": 290,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Personalized ergonomic chair, automatically adjustable based on the user's needs. The comfort is well worth the price. As Engineering replicated it, Closure munched chips and gave a ringing endorsement: 'Everyone should get one.'",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 215,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_stool_01": {
+                "id": "furni_closureRoom_stool_01",
+                "sortId": 2253,
+                "name": "'Error' Stool",
+                "iconId": "furni_closureRoom_stool_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "STOOL",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_3",
+                "width": 2,
+                "depth": 2,
+                "height": 2,
+                "comfort": 130,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Stool printed with analog signal glitch patterns, assembled from similar pieces. Closure claims that putting the errors outside prevents them from getting into her programs. It's proven to be all in the mind, of course.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 118,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_ceilingLight_01": {
+                "id": "furni_closureRoom_ceilingLight_01",
+                "sortId": 2254,
+                "name": "'Lux Machina'",
+                "iconId": "furni_closureRoom_ceilingLight_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_3",
+                "width": 5,
+                "depth": 2,
+                "height": 4,
+                "comfort": 125,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Ceiling lamp with several mechanical arms. The brightness and angle can be directly controlled from the workstation. Closure designed various lighting programs for gaming or movies, but lately she mostly uses 'work' and 'sleep' modes.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 113,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_equipmentdesk_01": {
+                "id": "furni_closureRoom_equipmentdesk_01",
+                "sortId": 2255,
+                "name": "Equipment Display Table",
+                "iconId": "furni_closureRoom_equipmentdesk_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_3",
+                "width": 3,
+                "depth": 4,
+                "height": 5,
+                "comfort": 250,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Table that displays Closure's collection of peripherals, built by her own hands. 'You're asking what happened to my old controller? That's two months old—I'm already developing a new one.'",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 205,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_cabinet_01": {
+                "id": "furni_closureRoom_cabinet_01",
+                "sortId": 2256,
+                "name": "'Achievements Showcase'",
+                "iconId": "furni_closureRoom_cabinet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CABINET",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_3",
+                "width": 6,
+                "depth": 3,
+                "height": 10,
+                "comfort": 445,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Closure's personal storage, or 'trophy collection' as she puts it. It holds her gaming and development trophies, but no new trophy has been added to it in a long time, not since her responsibilities grew.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 328,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_table_01": {
+                "id": "furni_closureRoom_table_01",
+                "sortId": 2257,
+                "name": "Thermo Table",
+                "iconId": "furni_closureRoom_table_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 3,
+                "depth": 2,
+                "height": 3,
+                "comfort": 185,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "A table with a temperature-controlled surface that can quickly heat or cool anything placed on it. It was developed for the study of rare thermosensitive materials, but is mostly used to fix the Doctor's hot water kettle.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 168,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_workbench_01": {
+                "id": "furni_closureRoom_workbench_01",
+                "sortId": 2258,
+                "name": "'Miracle of Engineering'",
+                "iconId": "furni_closureRoom_workbench_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 3,
+                "depth": 5,
+                "height": 6,
+                "comfort": 290,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Workbench that combines mechanical and electronic repair functions, complete with cabinet for storing tools. Closure has been lobbying for additional budget to add a calcination furnace and hydraulic press.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 215,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_carpet_01": {
+                "id": "furni_closureRoom_carpet_01",
+                "sortId": 2259,
+                "name": "Sensor Carpet",
+                "iconId": "furni_closureRoom_carpet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CARPET",
+                "subType": "NONE",
+                "location": "CARPET",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_2",
+                "width": 8,
+                "depth": 8,
+                "height": 1,
+                "comfort": 130,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Cross-shaped rug that integrates pressure-sensitive panels, connected wirelessly to the workstation. 'Warfarin recommended exercise, so I play dance games on it.' The layer of dust shows that it has not been used in a long time.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 118,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_carpet_02": {
+                "id": "furni_closureRoom_carpet_02",
+                "sortId": 2260,
+                "name": "'Image Reconstruction'",
+                "iconId": "furni_closureRoom_carpet_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CARPET",
+                "subType": "NONE",
+                "location": "CARPET",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 4,
+                "depth": 6,
+                "height": 1,
+                "comfort": 65,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Irregular carpet based on a pixelated design, made from oil- and waterproof materials. Closure began using it after spilling lubricant and coffee on her previous carpet and failing to clean it up all afternoon.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 60,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_wallpaper_01": {
+                "id": "furni_closureRoom_wallpaper_01",
+                "sortId": 2261,
+                "name": "'Inner Core'",
+                "iconId": "furni_closureRoom_wallpaper_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLPAPER",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "WALL",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 34,
+                "depth": 1,
+                "height": 10,
+                "comfort": 240,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "The walls of Closure's room are equipped with heat- and soundproof glass, allowing her to constantly monitor the Rhodes Island servers. She showed unprecedented passion as she personally completed the overall planning of the server area.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 198,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_closureRoom_floor_01": {
+                "id": "furni_closureRoom_floor_01",
+                "sortId": 2262,
+                "name": "'New Plans'",
+                "iconId": "furni_closureRoom_floor_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "FLOOR",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "FLOOR",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_closureRoom",
+                "groupId": "furni_set_closureRoom_4",
+                "width": 34,
+                "depth": 10,
+                "height": 1,
+                "comfort": 240,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "The high-tech floor of Closure's room is equipped with cleaning drones that work automatically. She designed them with four cleaning modes: Fast, Normal, Deep, and 'Kal'tsit-class'. She has never elaborated on this.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 198,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": true,
+                "isOnly": -1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_ceilinglamp_01": {
+                "id": "furni_rabbitCinema_ceilinglamp_01",
+                "sortId": 2263,
+                "name": "Film Reel Pendant",
+                "iconId": "furni_rabbitCinema_ceilinglamp_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_1",
+                "width": 3,
+                "depth": 3,
+                "height": 3,
+                "comfort": 90,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Ceiling lamp with a filmstrip-style lampshade and a reel-shaped center. The lighting mode can be automatically adjusted to fit the movie playing. A significant contributor to the screaming in horror flick marathons.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_table_01": {
+                "id": "furni_rabbitCinema_table_01",
+                "sortId": 2264,
+                "name": "'Fresh Pixel'",
+                "iconId": "furni_rabbitCinema_table_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_1",
+                "width": 6,
+                "depth": 3,
+                "height": 7,
+                "comfort": 315,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "A dining table with a clean color scheme, and white pixelated flower decorations under the table. The popular movie-food recreation contest is held here regularly. Some contestants even try to recreate food from fantasy movies.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_stool_01": {
+                "id": "furni_rabbitCinema_stool_01",
+                "sortId": 2265,
+                "name": "'Playback' Stool",
+                "iconId": "furni_rabbitCinema_stool_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "STOOL",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_1",
+                "width": 2,
+                "depth": 2,
+                "height": 2,
+                "comfort": 110,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Cross-shaped high stool printed with colorful plaid. Ever since the release of <i>Battle for Mall City</i>, Engineering has had to nail the stools to the floor to prevent Operators from recreating the hero's stool-fighting scene.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_ceilinglamp_02": {
+                "id": "furni_rabbitCinema_ceilinglamp_02",
+                "sortId": 2266,
+                "name": "Feather Lamp",
+                "iconId": "furni_rabbitCinema_ceilinglamp_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 5,
+                "depth": 3,
+                "height": 4,
+                "comfort": 130,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Lamp made from a simple metal rack, decorated with some fowlbeast props. Tippi would be the perfect person to explain how these props are used, if she weren't prone to suddenly walking away after a burst of inspiration.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_shelf_01": {
+                "id": "furni_rabbitCinema_shelf_01",
+                "sortId": 2267,
+                "name": "Media Room Snack Cabinet",
+                "iconId": "furni_rabbitCinema_shelf_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "CATERING",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_1",
+                "width": 4,
+                "depth": 3,
+                "height": 8,
+                "comfort": 260,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Snack rack in the rest area, complete with a small refrigerator with a transparent door. Snacks co-branded with Wrankwood films or endorsed by celebrities are often found here, but are snatched up quickly.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_plant_01": {
+                "id": "furni_rabbitCinema_plant_01",
+                "sortId": 2268,
+                "name": "'Lush Record'",
+                "iconId": "furni_rabbitCinema_plant_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "PLANT",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 3,
+                "depth": 2,
+                "height": 6,
+                "comfort": 165,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Flowerpot with an evergreen plant, and bunny and tape decorations. The button decoration on its side is so realistic that people often have mistaken it for a real tape player, drawing laughter all around.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_table_02": {
+                "id": "furni_rabbitCinema_table_02",
+                "sortId": 2269,
+                "name": "'Film Reel' Side Table",
+                "iconId": "furni_rabbitCinema_table_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 2,
+                "depth": 2,
+                "height": 2,
+                "comfort": 110,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Small round table in the style of a film reel, with cup holders where the spindle holes would be. Sit down, have some wine, and watch Siracusa's latest film noir <i>Camorra</i>, which has been a boon to wine sales everywhere.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_desk_01": {
+                "id": "furni_rabbitCinema_desk_01",
+                "sortId": 2270,
+                "name": "Lamp Partition Table",
+                "iconId": "furni_rabbitCinema_desk_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 9,
+                "depth": 2,
+                "height": 8,
+                "comfort": 375,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Simple long table complete with a multi-prong lamp and accessory display. Periodically filled with entertainment items, ranging from Wrankwood film figures to Higashinese idol goods.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_sofa_01": {
+                "id": "furni_rabbitCinema_sofa_01",
+                "sortId": 2271,
+                "name": "'Golden Bunny' Sofa",
+                "iconId": "furni_rabbitCinema_sofa_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "SOFA",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 4,
+                "depth": 4,
+                "height": 3,
+                "comfort": 210,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Soft golden sofa with bunny-ear backrest. Take a nap, happily dance on it, or bury your face into the backrest whenever there is a jumpscare... A versatile comfy sofa for any purpose.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_carpet_01": {
+                "id": "furni_rabbitCinema_carpet_01",
+                "sortId": 2272,
+                "name": "'Imaging' Carpet",
+                "iconId": "furni_rabbitCinema_carpet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CARPET",
+                "subType": "NONE",
+                "location": "CARPET",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 13,
+                "depth": 6,
+                "height": 1,
+                "comfort": 130,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Oval rug printed with red, blue, and yellow film patterns. Made of a more crease-proof and non-slip fabric. Watch your step in the darkness if you have to get up in the middle of a movie.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_ceilinglamp_03": {
+                "id": "furni_rabbitCinema_ceilinglamp_03",
+                "sortId": 2273,
+                "name": "'Film Strip' Hanging Lamp",
+                "iconId": "furni_rabbitCinema_ceilinglamp_03",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 10,
+                "depth": 2,
+                "height": 2,
+                "comfort": 150,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Ceiling lamp reminiscent of unrolled film, auto-adjusting based on media playback. No need to panic if the lights suddenly flash while playing certain indie films. That is entirely intentional.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_sofa_02": {
+                "id": "furni_rabbitCinema_sofa_02",
+                "sortId": 2274,
+                "name": "Viewing Sofa",
+                "iconId": "furni_rabbitCinema_sofa_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "SOFA",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 9,
+                "depth": 2,
+                "height": 3,
+                "comfort": 260,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Long sofa with a snack table. The backrest is specially designed for various seating postures during movie viewing. Hadiya always sits here to open a bag of chips and play a wilderness movie whenever she returns to the ship.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_shelf_02": {
+                "id": "furni_rabbitCinema_shelf_02",
+                "sortId": 2275,
+                "name": "Simple Bookshelf",
+                "iconId": "furni_rabbitCinema_shelf_02",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "STORAGE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 2,
+                "depth": 2,
+                "height": 3,
+                "comfort": 125,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Plain solid-color bookshelf that holds many books in a compact space. Besides entertainment magazines, it carries the latest issue of the popular serialized comic <i>Beyond Redemption</i>. Many operators visit the media room just for this.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_curtain_01": {
+                "id": "furni_rabbitCinema_curtain_01",
+                "sortId": 2276,
+                "name": "Bunny Projection Screen",
+                "iconId": "furni_rabbitCinema_curtain_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILING",
+                "subType": "CURTAIN_C",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 9,
+                "depth": 5,
+                "height": 3,
+                "comfort": 200,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Projector with a large decorative bunny rack in the middle. The screen supports multiple controls, including voice. Dim the lights, lower the screen, and revisit the classic <i>Divine Palm of the Phantom Godfist</i> in a true cinema environment.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_tv_01": {
+                "id": "furni_rabbitCinema_tv_01",
+                "sortId": 2277,
+                "name": "'Everything Archive'",
+                "iconId": "furni_rabbitCinema_tv_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "DEVICE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 8,
+                "depth": 3,
+                "height": 6,
+                "comfort": 360,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "A customized all-in-one media cabinet with a new curved-screen TV, combo player, and various video storage. The TV connects to a special multimedia library, making it easy to find everything from early films to the latest blockbusters.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_coffeeTable_01": {
+                "id": "furni_rabbitCinema_coffeeTable_01",
+                "sortId": 2278,
+                "name": "'Happy Hour' Tea Table",
+                "iconId": "furni_rabbitCinema_coffeeTable_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_2",
+                "width": 7,
+                "depth": 4,
+                "height": 3,
+                "comfort": 290,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "A geometric mosaic tea table specially designed for the media room, with a soft cushion underneath to provide more legroom. Even after screenings, operators stay here arguing over who is the real culprit in the hit Victorian series <i>Desperate Detective</i>.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_shelf_03": {
+                "id": "furni_rabbitCinema_shelf_03",
+                "sortId": 2279,
+                "name": "Disc Rack",
+                "iconId": "furni_rabbitCinema_shelf_03",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CABINET",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_3",
+                "width": 4,
+                "depth": 3,
+                "height": 10,
+                "comfort": 295,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Disc rack with its own light, providing storage while displaying selected discs at the top. For a change of pace, picking a brand-new <i>Shining Steps</i> concert video in full HD from here is a great choice.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_wallpaper_01": {
+                "id": "furni_rabbitCinema_wallpaper_01",
+                "sortId": 2280,
+                "name": "'Serene Focus'",
+                "iconId": "furni_rabbitCinema_wallpaper_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLPAPER",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "WALL",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 34,
+                "depth": 1,
+                "height": 10,
+                "comfort": 240,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Panoramic display showing a stunning nature documentary, instantly making the viewer feel like they are outdoors. Engineering is working to upgrade the system so if tired of this scenery, the view can be changed with one click. Stay tuned!",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_rabbitCinema_floor_01": {
+                "id": "furni_rabbitCinema_floor_01",
+                "sortId": 2281,
+                "name": "'Shared Joy'",
+                "iconId": "furni_rabbitCinema_floor_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "FLOOR",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "FLOOR",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_rabbitCinema",
+                "groupId": "furni_set_rabbitCinema_4",
+                "width": 34,
+                "depth": 10,
+                "height": 1,
+                "comfort": 240,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "The media room's fabric-textured flooring is soundproof, waterproof, and comfortable to walk on. Its excellent soundproofing ensures that you can scream at sudden monsters or cheer wildly at thrilling fights, without disturbing others.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
             "furni_oct1st_deckChair_01": {
                 "id": "furni_oct1st_deckChair_01",
                 "sortId": 9998,
@@ -100778,7 +102318,7 @@
                 "processedByProductPercentage": 0,
                 "processedByProductGroup": {},
                 "canBeDestroy": false,
-                "isOnly": 1,
+                "isOnly": 2,
                 "enableRoomType": 4112,
                 "quantity": 0
             },
@@ -100810,7 +102350,7 @@
                 "processedByProductPercentage": 0,
                 "processedByProductGroup": {},
                 "canBeDestroy": false,
-                "isOnly": 1,
+                "isOnly": 2,
                 "enableRoomType": 4112,
                 "quantity": 0
             },
@@ -102544,7 +104084,7 @@
             },
             "furni_act73d0_rabbits_01": {
                 "id": "furni_act73d0_rabbits_01",
-                "sortId": 10257,
+                "sortId": 10259,
                 "name": "'In Celebration'",
                 "iconId": "furni_act73d0_rabbits_01",
                 "interactType": "NONE",
@@ -106126,6 +107666,38 @@
                 "enableRoomType": 4144,
                 "quantity": 0
             },
+            "furni_terracommericials_CrucibleCreamPuff_01": {
+                "id": "furni_terracommericials_CrucibleCreamPuff_01",
+                "sortId": 11113,
+                "name": "Plaque - Companion",
+                "iconId": "furni_terracommericials_CrucibleCreamPuff_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "PLAQUE",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "",
+                "groupId": "",
+                "width": 4,
+                "depth": 1,
+                "height": 2,
+                "comfort": 75,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory, or decorate the Reception Room.",
+                "description": "Faith and cream puffs, the most important things on a journey.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4144,
+                "quantity": 0
+            },
             "furni_contract_s0_01": {
                 "id": "furni_contract_s0_01",
                 "sortId": 12001,
@@ -109540,6 +111112,38 @@
                 "comfort": 0,
                 "usage": "[Functional Furniture - Pinboard] Can be used to decorate the Reception Room",
                 "description": "A free doughnut dispenser at the Shrine of Nurtury entrance. You have to pray before you get one, and if your prayer is earnest enough, the doughnut of your desire sprouts a halo.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 32,
+                "quantity": 0
+            },
+            "furniM_act73d0_messageboard_01": {
+                "id": "furniM_act73d0_messageboard_01",
+                "sortId": 90117,
+                "name": "New Model Data Terminal",
+                "iconId": "furniM_act73d0_messageboard_01",
+                "interactType": "FUNCTION",
+                "musicId": "",
+                "type": "FUNCTION",
+                "subType": "VISITOR",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "",
+                "groupId": "",
+                "width": 7,
+                "depth": 4,
+                "height": 8,
+                "comfort": 0,
+                "usage": "[Functional Furniture - Pinboard] Can be used to decorate the Reception Room",
+                "description": "The latest advanced visitor info terminal designed and modified by the Engineering Department. Combining message, gift, and log functions for visitors, this convenient machine is highly regarded by guests.",
                 "obtainApproach": "Event Reward",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -130462,6 +132066,301 @@
                     "furni_ursusRoom_floor_01"
                 ]
             },
+            "furni_set_closureRoom": {
+                "id": "furni_set_closureRoom",
+                "enableRoomType": 4112,
+                "sortId": 127,
+                "name": "Closure's All-Purpose Room",
+                "themeType": "NORMAL",
+                "desc": "A recreation of Closure's office, meeting the needs of both work and play, as well as her unique demand for developing new tech. Overwhelmed by the plethora of functions? Remember how many all-nighters Rhodes Island's chief engineer pulls.",
+                "quickSetup": [
+                    {
+                        "furnitureId": "furni_closureRoom_shelf_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_collectioncabinet_01",
+                        "pos0": 0,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_computerdesk_01",
+                        "pos0": 7,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_ledchair_01",
+                        "pos0": 6,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_poster_01",
+                        "pos0": 11,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_poster_02",
+                        "pos0": 12,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_officedesk_01",
+                        "pos0": 13,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_chair_01",
+                        "pos0": 13,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_stool_01",
+                        "pos0": 18,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_ceilingLight_01",
+                        "pos0": 15,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_equipmentdesk_01",
+                        "pos0": 20,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_cabinet_01",
+                        "pos0": 24,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_table_01",
+                        "pos0": 26,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_workbench_01",
+                        "pos0": 31,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_carpet_01",
+                        "pos0": 10,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_carpet_02",
+                        "pos0": 30,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_wallpaper_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_closureRoom_floor_01",
+                        "pos0": 0,
+                        "pos1": 10,
+                        "dir": 0
+                    }
+                ],
+                "groups": [
+                    "furni_set_closureRoom_1",
+                    "furni_set_closureRoom_2",
+                    "furni_set_closureRoom_3",
+                    "furni_set_closureRoom_4"
+                ],
+                "furnitures": [
+                    "furni_closureRoom_shelf_01",
+                    "furni_closureRoom_collectioncabinet_01",
+                    "furni_closureRoom_computerdesk_01",
+                    "furni_closureRoom_ledchair_01",
+                    "furni_closureRoom_poster_01",
+                    "furni_closureRoom_poster_02",
+                    "furni_closureRoom_officedesk_01",
+                    "furni_closureRoom_chair_01",
+                    "furni_closureRoom_stool_01",
+                    "furni_closureRoom_ceilingLight_01",
+                    "furni_closureRoom_equipmentdesk_01",
+                    "furni_closureRoom_cabinet_01",
+                    "furni_closureRoom_table_01",
+                    "furni_closureRoom_workbench_01",
+                    "furni_closureRoom_carpet_01",
+                    "furni_closureRoom_carpet_02",
+                    "furni_closureRoom_wallpaper_01",
+                    "furni_closureRoom_floor_01"
+                ]
+            },
+            "furni_set_rabbitCinema": {
+                "id": "furni_set_rabbitCinema",
+                "enableRoomType": 4112,
+                "sortId": 128,
+                "name": "Bunny Cheer Audio-Video Room",
+                "themeType": "EVENT",
+                "desc": "Rhodes Island's media room, decorated in bunny fashion. The Engineering Department's custom audio system and cinema-grade projection equipment deliver a first-rate entertainment experience.",
+                "quickSetup": [
+                    {
+                        "furnitureId": "furni_rabbitCinema_ceilinglamp_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_table_01",
+                        "pos0": 0,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_stool_01",
+                        "pos0": 4,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_ceilinglamp_02",
+                        "pos0": 6,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_shelf_01",
+                        "pos0": 5,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_plant_01",
+                        "pos0": 9,
+                        "pos1": 1,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_table_02",
+                        "pos0": 11,
+                        "pos1": 7,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_desk_01",
+                        "pos0": 13,
+                        "pos1": 1,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_sofa_01",
+                        "pos0": 9,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_carpet_01",
+                        "pos0": 12,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_ceilinglamp_03",
+                        "pos0": 11,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_sofa_02",
+                        "pos0": 13,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_shelf_02",
+                        "pos0": 22,
+                        "pos1": 1,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_curtain_01",
+                        "pos0": 22,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_tv_01",
+                        "pos0": 25,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_coffeeTable_01",
+                        "pos0": 17,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_shelf_03",
+                        "pos0": 28,
+                        "pos1": 5,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_wallpaper_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_rabbitCinema_floor_01",
+                        "pos0": 0,
+                        "pos1": 10,
+                        "dir": 0
+                    }
+                ],
+                "groups": [
+                    "furni_set_rabbitCinema_1",
+                    "furni_set_rabbitCinema_2",
+                    "furni_set_rabbitCinema_3",
+                    "furni_set_rabbitCinema_4"
+                ],
+                "furnitures": [
+                    "furni_rabbitCinema_ceilinglamp_01",
+                    "furni_rabbitCinema_table_01",
+                    "furni_rabbitCinema_stool_01",
+                    "furni_rabbitCinema_ceilinglamp_02",
+                    "furni_rabbitCinema_shelf_01",
+                    "furni_rabbitCinema_plant_01",
+                    "furni_rabbitCinema_table_02",
+                    "furni_rabbitCinema_desk_01",
+                    "furni_rabbitCinema_sofa_01",
+                    "furni_rabbitCinema_carpet_01",
+                    "furni_rabbitCinema_ceilinglamp_03",
+                    "furni_rabbitCinema_sofa_02",
+                    "furni_rabbitCinema_shelf_02",
+                    "furni_rabbitCinema_curtain_01",
+                    "furni_rabbitCinema_tv_01",
+                    "furni_rabbitCinema_coffeeTable_01",
+                    "furni_rabbitCinema_shelf_03",
+                    "furni_rabbitCinema_wallpaper_01",
+                    "furni_rabbitCinema_floor_01"
+                ]
+            },
             "furniM_set_basicRoom": {
                 "id": "furniM_set_basicRoom",
                 "enableRoomType": 32,
@@ -138383,6 +140282,123 @@
                     "furni_ursusRoom_wallpaper_01",
                     "furni_ursusRoom_floor_01"
                 ]
+            },
+            "furni_set_closureRoom_1": {
+                "id": "furni_set_closureRoom_1",
+                "sortId": 1,
+                "name": "'Main Terminal' Work Zone",
+                "themeId": "furni_set_closureRoom",
+                "comfort": 290,
+                "count": 4,
+                "furniture": [
+                    "furni_closureRoom_shelf_01",
+                    "furni_closureRoom_collectioncabinet_01",
+                    "furni_closureRoom_computerdesk_01",
+                    "furni_closureRoom_ledchair_01"
+                ]
+            },
+            "furni_set_closureRoom_2": {
+                "id": "furni_set_closureRoom_2",
+                "sortId": 2,
+                "name": "'Scoreboard' Play Zone",
+                "themeId": "furni_set_closureRoom",
+                "comfort": 210,
+                "count": 5,
+                "furniture": [
+                    "furni_closureRoom_poster_01",
+                    "furni_closureRoom_poster_02",
+                    "furni_closureRoom_officedesk_01",
+                    "furni_closureRoom_chair_01",
+                    "furni_closureRoom_carpet_01"
+                ]
+            },
+            "furni_set_closureRoom_3": {
+                "id": "furni_set_closureRoom_3",
+                "sortId": 3,
+                "name": "'Achievement Room' Display Zone",
+                "themeId": "furni_set_closureRoom",
+                "comfort": 220,
+                "count": 4,
+                "furniture": [
+                    "furni_closureRoom_stool_01",
+                    "furni_closureRoom_ceilingLight_01",
+                    "furni_closureRoom_equipmentdesk_01",
+                    "furni_closureRoom_cabinet_01"
+                ]
+            },
+            "furni_set_closureRoom_4": {
+                "id": "furni_set_closureRoom_4",
+                "sortId": 4,
+                "name": "'Cartograph' Development Zone",
+                "themeId": "furni_set_closureRoom",
+                "comfort": 215,
+                "count": 5,
+                "furniture": [
+                    "furni_closureRoom_table_01",
+                    "furni_closureRoom_workbench_01",
+                    "furni_closureRoom_carpet_02",
+                    "furni_closureRoom_wallpaper_01",
+                    "furni_closureRoom_floor_01"
+                ]
+            },
+            "furni_set_rabbitCinema_1": {
+                "id": "furni_set_rabbitCinema_1",
+                "sortId": 1,
+                "name": "'Short Skit' Snack Zone",
+                "themeId": "furni_set_rabbitCinema",
+                "comfort": 190,
+                "count": 4,
+                "furniture": [
+                    "furni_rabbitCinema_ceilinglamp_01",
+                    "furni_rabbitCinema_table_01",
+                    "furni_rabbitCinema_stool_01",
+                    "furni_rabbitCinema_shelf_01"
+                ]
+            },
+            "furni_set_rabbitCinema_2": {
+                "id": "furni_set_rabbitCinema_2",
+                "sortId": 2,
+                "name": "'Long Lens' Viewing Zone",
+                "themeId": "furni_set_rabbitCinema",
+                "comfort": 230,
+                "count": 5,
+                "furniture": [
+                    "furni_rabbitCinema_table_02",
+                    "furni_rabbitCinema_sofa_01",
+                    "furni_rabbitCinema_carpet_01",
+                    "furni_rabbitCinema_sofa_02",
+                    "furni_rabbitCinema_coffeeTable_01"
+                ]
+            },
+            "furni_set_rabbitCinema_3": {
+                "id": "furni_set_rabbitCinema_3",
+                "sortId": 3,
+                "name": "'Collection' Media Zone",
+                "themeId": "furni_set_rabbitCinema",
+                "comfort": 340,
+                "count": 5,
+                "furniture": [
+                    "furni_rabbitCinema_desk_01",
+                    "furni_rabbitCinema_shelf_02",
+                    "furni_rabbitCinema_tv_01",
+                    "furni_rabbitCinema_curtain_01",
+                    "furni_rabbitCinema_shelf_03"
+                ]
+            },
+            "furni_set_rabbitCinema_4": {
+                "id": "furni_set_rabbitCinema_4",
+                "sortId": 4,
+                "name": "'Stereo' Leisure Zone",
+                "themeId": "furni_set_rabbitCinema",
+                "comfort": 185,
+                "count": 5,
+                "furniture": [
+                    "furni_rabbitCinema_wallpaper_01",
+                    "furni_rabbitCinema_floor_01",
+                    "furni_rabbitCinema_ceilinglamp_02",
+                    "furni_rabbitCinema_plant_01",
+                    "furni_rabbitCinema_ceilinglamp_03"
+                ]
             }
         },
         "types": {
@@ -140791,6 +142807,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -140929,6 +142955,16 @@
                 {
                     "weight": 57,
                     "itemId": "31094",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
                     "itemCount": 1
                 }
             ],
@@ -141069,6 +143105,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141208,6 +143254,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141342,6 +143398,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141471,6 +143537,16 @@
                     "weight": 57,
                     "itemId": "31094",
                     "itemCount": 1
+                },
+                {
+                    "weight": 57,
+                    "itemId": "31104",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 53,
+                    "itemId": "31114",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141498,6 +143574,304 @@
                 }
             ],
             "requireStages": {}
+        },
+        "68": {
+            "sortId": 2092,
+            "formulaId": "68",
+            "rarity": 0,
+            "itemId": "31114",
+            "count": 1,
+            "goldCost": 300,
+            "apCost": 1440000,
+            "formulaType": "F_EVOLVE",
+            "buffType": "W_EVOLVE",
+            "extraOutcomeRate": 0.1,
+            "extraOutcomeGroup": [
+                {
+                    "weight": 50,
+                    "itemId": "30013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30083",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "30093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
+                }
+            ],
+            "costs": [
+                {
+                    "id": "30063",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "31103",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "31113",
+                    "count": 1,
+                    "type": "MATERIAL"
+                }
+            ],
+            "requireRooms": [
+                {
+                    "roomId": "WORKSHOP",
+                    "roomLevel": 3,
+                    "roomCount": 1
+                }
+            ],
+            "requireStages": [
+                {
+                    "stageId": "main_17-10",
+                    "rank": 2
+                }
+            ]
+        },
+        "67": {
+            "sortId": 2093,
+            "formulaId": "67",
+            "rarity": 0,
+            "itemId": "31104",
+            "count": 1,
+            "goldCost": 300,
+            "apCost": 1440000,
+            "formulaType": "F_EVOLVE",
+            "buffType": "W_EVOLVE",
+            "extraOutcomeRate": 0.1,
+            "extraOutcomeGroup": [
+                {
+                    "weight": 50,
+                    "itemId": "30013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 42,
+                    "itemId": "30073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "30083",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "30093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "30103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31013",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31023",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 36,
+                    "itemId": "31033",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31043",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31053",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31063",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31073",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 25,
+                    "itemId": "31083",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
+                }
+            ],
+            "costs": [
+                {
+                    "id": "30053",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "31093",
+                    "count": 1,
+                    "type": "MATERIAL"
+                },
+                {
+                    "id": "31103",
+                    "count": 1,
+                    "type": "MATERIAL"
+                }
+            ],
+            "requireRooms": [
+                {
+                    "roomId": "WORKSHOP",
+                    "roomLevel": 3,
+                    "roomCount": 1
+                }
+            ],
+            "requireStages": [
+                {
+                    "stageId": "main_17-04",
+                    "rank": 2
+                }
+            ]
         },
         "65": {
             "sortId": 2094,
@@ -141604,6 +143978,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -141744,6 +144128,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -141882,6 +144276,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -142022,6 +144426,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -142160,6 +144574,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -142300,6 +144724,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -142438,6 +144872,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -142578,6 +145022,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -142716,6 +145170,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -142856,6 +145320,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -142989,6 +145463,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -143124,6 +145608,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -143257,6 +145751,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -143510,6 +146014,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -143761,6 +146275,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -144014,6 +146538,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -144265,6 +146799,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -144518,6 +147062,16 @@
                     "weight": 31,
                     "itemId": "31093",
                     "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
+                    "itemCount": 1
                 }
             ],
             "costs": [
@@ -144769,6 +147323,16 @@
                 {
                     "weight": 31,
                     "itemId": "31093",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 28,
+                    "itemId": "31103",
+                    "itemCount": 1
+                },
+                {
+                    "weight": 31,
+                    "itemId": "31113",
                     "itemCount": 1
                 }
             ],
@@ -146530,6 +149094,19 @@
                 "unlockType": "MainBG",
                 "unlockParams": [
                     "bg_rogue_5"
+                ]
+            },
+            "bgm_bg_elitelounge_1": {
+                "bgmId": "bgm_bg_elitelounge_1",
+                "bgmSortId": 30,
+                "bgmStartTime": 1791979200,
+                "bgmName": "Resolve - (Believed Believes) Believing (Instrumental)",
+                "gameMusicId": "music_elitelounge_1",
+                "obtainApproach": "Obtained from Cumulative Sign-In: 1500 days",
+                "bgmDescUnlocked": "Gift from background",
+                "unlockType": "MainBG",
+                "unlockParams": [
+                    "bg_elitelounge_1"
                 ]
             }
         }

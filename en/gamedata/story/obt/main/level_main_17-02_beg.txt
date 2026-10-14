@@ -1,0 +1,1227 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="72_g1_sjbstreet_d",screenadapt="coverall", block=true)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.13, fadetime=0.01)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.13, fadetime=0.01)]
+[Delay(time=1)]
+[playMusic(key="$m_avg_ursusdaily_loop", volume=0.6)]
+[PlaySound(key="$d_avg_drtywndblw", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_carriage_loop", loop=true, channel="car",volume=0)]
+[SoundVolume(volume=0.7, channel="car",fadetime=2)]
+[delay(time=1.2)]
+[PlaySound(key="$d_avg_carriagebell",volume=1)]
+[delay(time=1)]
+[Decision(options="Hff... brr...;It's cold...", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#16$1", duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_1037_amiya3_1#16$1",focus="m")]
+[name="Amiya"]Are you still cold, Doctor? I should've reminded you to bring heavier clothes.
+[Dialog]
+[charslot]
+Amiya clutches your fingertips. Her palm is cold too.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]Hang in there for a while. Things will be better in Tsarevgrad.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="n")]
+[Decision(options="I thought this would be another solo audience.;I thought the Tsar would be more wary of us.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]On the contrary, His Imperial Majesty was very impressed by Rhodes Island's feats in the Far North. He is eager to see you.
+[name="Eloysius"]Especially after hearing that the leader of Rhodes Island is so young.
+[charslot(slot="m",name="avg_1037_amiya3_1#16$1",focus="m")]
+[name="Amiya"]I didn't do very much...
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]Now is not the time for humility. Make the most of the good first impression—it can only be a good thing for the meeting.
+[name="Eloysius"]There are a few things about Grypherburg that I must communicate before we meet His Imperial Majesty.
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="m")]
+[name="Eloysius"]First... I'm sure you're not oblivious as to why the Tsar has chosen to grant you an audience.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="n")]
+[Decision(options="While His Majesty is known for his benevolence—;He would not give us access to the Sarcophagus for no reason.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="Eloysius"]You want the secrets of the Sarcophagus. So do we.
+[name="Eloysius"]We hope that this meeting will result in mutually beneficial cooperation.
+[multiline(name="Eloysius")]You understand the most pressing matter facing Ursus... 
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="m")]
+[multiline(name="Eloysius")]Or at the very least, Grypherburg.
+[name="Eloysius"]It has been two months since the Fourth Army began pressing toward Grypherburg. Now they remain in a tense standoff against the Second Army along the eastern shore of Lake Neva, with the occasional skirmish.
+[name="Eloysius"]They have not gone any further for now, but we can ill-afford to be optimistic.
+[name="Eloysius"]They continue to petition the State Council, demanding full support for the war that they intend to start.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="n")]
+[Decision(options="Most curious.", values="1")]
+[Predicate(references="1")]
+[Decision(options="If the Fourth Army's intention is to start a war of conquest—;They should be on the borders of Ursus, not the outskirts of Grypherburg.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]Hah... everyone knows what these traitors are planning. They continue their despicable attacks on the Council.
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="Eloysius"]There was an attempt on Chairman Witte's life the day after the Fourth Army's First Division was routed. The assassin's methods bore clear associations with those of the Fourth Army.
+[name="Eloysius"]Yet in the face of such provocation, the Royal Guard somehow failed to capture or kill the assassin.
+[name="Eloysius"]There is also reason to believe that the assassin's accomplice, or accomplices, remain at large in the city.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="n")]
+[Decision(options="The Fourth Army is only the most immediate issue.;At the end of the day, Ursus must confront the reality of ore exhaustion.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]Exactly. Most see two paths before the empire, war or peace, yet neither is sufficiently convincing to everyone.
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="m")]
+[name="Eloysius"]His Imperial Majesty places his hopes in the Sarcophagus, currently under the First Army's control.
+[name="Eloysius"]A breakthrough in this direction may represent the empire's last hope for a solution, absurd as it may sound.
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1", focus="m")]
+[name="Eloysius"]Even so...
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1", focus="n")]
+[Decision(options="Research into the Sarcophagus is not going smoothly.;The Council faces issues beyond research progress.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="We were not invited as scholars.;We're here at the invitation of the Council, not the First Army.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1", focus="m")]
+[name="Eloysius"]Astute as always, Dr. {@nickname}.
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="Eloysius"]However, I would recommend against such overt astuteness during your audience with the Tsar.
+[name="Eloysius"]It appears that the First Army is indeed hiding something... though it's better for you to hear from His Imperial Majesty himself.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="n")]
+[Decision(options="What do you think of the Tsar?", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]Even in a private setting like this, such a question is bound to raise suspicions.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="n")]
+[Decision(options="I just want to hear your thoughts.;I just want to be prepared.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]You must have heard rumors about him from various channels. It's not my place to try to change opinions. All I can do is answer truthfully.
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="m")]
+[name="Eloysius"]If there is anyone in Ursus who will fight to the bitter end for her, it is His Imperial Majesty.
+[name="Eloysius"]For he has nothing, save Ursus.
+[Dialog]
+[charslot(duration=0.5)]
+[delay(time=0.7)]
+[stopsound(channel="car", fadetime=2)]
+[PlaySound(key="$d_avg_carriagegoaway",channel="step2",loop=false, volume=1)]
+[stopsound(channel="step2",fadetime=2)]
+[PlaySound(key="$d_avg_carriagebell",volume=1)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0, loop=true, channel="c")]
+[SoundVolume(volume=0.2, channel="c",fadetime=2)]
+[delay(time=2.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[curtain]
+[Background(image="72_g1_sjbstreet_d",screenadapt="coverall", block=true)]
+[SoundVolume(volume=0.5, channel="c",fadetime=1.5)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "l", name = "avg_npc_2170_1#1$1", posfrom="-150,0",posto="-150,0",duration=0.5)]
+[charslot(slot = "r", name = "avg_npc_2170_1#1$1",posfrom="150,0", posto="150,0",duration=0.5)]
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="Police Officer"]...Off-limits...
+[name="Police Officer"]This place is off-limits! Go away!
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_2174_1#1$1", focus="m")]
+[name="Worried Citizen"]Please, sir, I'm not Infected! The new pass—see here, the pass! We bought it, we're law-abiding citizens...
+[name="Worried Citizen"]We must deliver these goods in time! The nobles won't take them otherwise, even if they're unspoiled, and we'll be ruined!
+[charslot(slot = "m", name = "avg_npc_2175_1#1$1", focus="m")]
+[name="Lamenting Citizen"]We can't afford heat anymore, and our child is sick in bed... please, have mercy and let us pass—
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_2170_1#1$1", posfrom="-150,0",posto="-150,0",focus="m")]
+[charslot(slot = "r", name = "avg_npc_2170_1#1$1", posfrom="150,0", posto="150,0",focus="m")]
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="Police Officer"]Tsarevgrad Raion is currently under lockdown. Not even a pass made of gold will buy you passage.
+[name="Police Officer"]Take your things and leave. An announcement will be made once the lockdown is lifted.
+[Dialog]
+[StopSound(channel="c", fadetime=1.5)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="72_g1_sjbstreet_d",screenadapt="coverall", block=true)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.13, fadetime=0.01)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.13, fadetime=0.01)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1", focus="m")]
+[name="Eloysius"]......
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]Is that a roadblock?
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="Eloysius"]Stay in the vehicle. I'll check it out.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[curtain]
+[Background(image="72_g1_sjbstreet_d",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="Police Officer"]Didn't you hear me? This place is off-limits—
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="n")]
+[PlaySound(key="$d_avg_snowbootwalk", volume=1)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="Police Officer"]...Oh.
+[Dialog]
+[charslot]
+[Delay(time=0.2)]
+[charslot(slot = "m", name = "avg_npc_1966_1#13$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1966_1#13$1", focus="m")]
+[name="Eloysius"]<i>Zdravstvuyte</i>.
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="Police Officer"](Salutes)
+[name="Police Officer"]What do you need, ma'am?
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]His Imperial Majesty wishes to meet these good people.
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="Police Officer"]Tsarevgrad Raion is on lockdown. Even deliveries of necessities must be met by someone from inside.
+[name="Police Officer"]By order of the Tsar.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]You're doing your duty, I understand.
+[name="Eloysius"]But I'm curious, what do you do when His Imperial Majesty's orders contradict themselves?
+[name="Eloysius"]Because I'm operating by order of the Tsar myself. In fact, I have his edict right here.
+[Dialog]
+[PlaySound(key="$d_avg_scroll", volume=1)]
+[Delay(time=1)]
+[charslot]
+The young Imperial Guard unrolls a piece of paper with a bright red seal on the bottom corner.
+It is the Tsar's administrative seal.
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="Police Officer"]Uh... I...
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]I understand. We can wait a little while, if there is some difficulty.
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="Police Officer"]I'm afraid waiting won't do any good, ma'am. The situation is unlikely to change until the culprit is caught.
+[Dialog]
+[charslot]
+Eloysius fights her urge to roll her eyes. She puts the edict back, places her hand on her sword hilt, and straightens her back.
+She looks up again, her expression completely changed.
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1", focus="m")]
+[name="Eloysius"]The Grypherburg Police are under the jurisdiction of the Ursus Guard. You have people inside Tsarevgrad.
+[name="Eloysius"]All you need to do is inform your commander that His Imperial Majesty's guests have arrived. The rest is no longer your concern.
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="Police Officer"]But—
+[charslot(slot = "m", name = "avg_npc_1966_1#5$1", focus="m")]
+[name="Eloysius"]'Lieutenant Eloysius Vasilyevna Gorchekova, Imperial Guard Tsar's Battalion, accepts all responsibility for carrying out His Imperial Majesty's orders and consents to all inspections.'
+[name="Eloysius"]Pass that message to your commander.
+[charslot(slot = "m", name = "avg_npc_1966_1#6$1", focus="m")]
+[name="Eloysius"]Can you remember the whole thing?
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="Police Officer"]...Yes, ma'am.
+[name="Police Officer"]Please wait here for a moment.
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1", focus="m")]
+[name="Eloysius"]One more thing.
+[name="Eloysius"]The couple hauling the goods over there, they are with us too.
+[name="Eloysius"]The items are meant for the Tsar. You may include them in your report.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="72_g1_sjbstreet_d",screenadapt="coverall", block=true)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.13, fadetime=0.01)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.13, fadetime=0.01)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]Done.
+[charslot(slot="m",name="avg_1037_amiya3_1#10$1",focus="m")]
+[name="Amiya"]The road's not open?
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]It's open, but only for us.
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="Eloysius"]Let's not waste the opportunity.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=1)]
+[name="Voice from Inside"]Enter.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="73_g14_prolocutoroffice",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[playMusic(intro="$loading_intro",key="$loading_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", focus="m")]
+[name="Respectful Servant"]Please wait here with the guests, Lieutenant Gorchekova.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]Thank you.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", focus="m")]
+[delay(time=0.3)]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=3)]
+[Background(image="73_g14_prolocutoroffice",screenadapt="coverall",x=-120,xScale=1.3, yScale=1.3,fadetime=2,block=false)]
+[backgroundTween(xFrom=-120, xTo=120, duration=30, block=false)]
+[delay(time=3)]
+You look around as the servant departs.
+The room's furnishing is minimalistic compared to the luxury that you saw on your way here, but its owner's position of authority is obvious.
+The curtains are closed even during the day, electric lights shine brightly, documents are stacked up on a cart, and the corners of the table have been repaired with gold.
+[Dialog]
+[Background(image="73_g14_prolocutoroffice",screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+[Decision(options="The office seems to be in frequent use.;You brought us in here directly?", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="Eloysius"]How can you tell?
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]There are multiple rooms with identical furnishings in the Amber Palace, as a safety measure. This is just one of them.
+[name="Eloysius"]You should not make blind guesses.
+[Predicate(references="2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]What else did you think we need?
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="m")]
+[name="Eloysius"]These may be unusual times, but nothing opens doors like one's rank in Tsarevgrad, even without all the medals on my chest.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]The only people allowed to access this area are the Tsar, his most trusted ministers, and people who have been granted special permission.
+[name="Eloysius"]You should therefore be respectful. Conversation is permitted, but I would refrain from commentary, if I were you.
+[Predicate(references="1;2")]
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="n")]
+[Decision(options="I meant no offense.", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]I understand.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[multiline(name="Eloysius")]Just keep your patience, as you did last time, until His Imperial Majesty is finished... 
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="m")]
+[multiline(name="Eloysius")]with the things that are troubling him right now.
+[Dialog]
+[charslot]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_walkingstick_slow", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", duration=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1966_1#11$1", focus="m")]
+[name="Eloysius"]—Chairman?
+[name="Eloysius"]I thought Your High Excellency was still recovering at home—
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]I'm here on His Imperial Majesty's behalf. He has urgent matters to attend to.
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="Witte"]Your work here is done, lieutenant. I would meet with our guests privately.
+[name="Witte"]I've spoken to your father. He is concerned about how busy you have been lately, and hopes that you come home once in a while, if you could.
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="Eloysius"]Your High Excellency's concern is appreciated, Chairman Witte.
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="Eloysius"]I will take my leave.
+[Dialog]
+[PlaySound(key="$d_avg_armyboots_walk", volume=1, loop=true, channel="ar")]
+[StopSound(channel="ar", fadetime=2)]
+[charslot(duration=1)]
+[delay(time=2)]
+The young woman claps her heels together in a military salute, then turns and departs.
+The chairman watches her leave, only turning around once the door is fully closed.
+[Dialog]
+[Decision(options="Greetings, Chairman Witte.;Your reputation precedes you, Chairman Witte.", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="Witte"]Greetings, guests from afar. Thank you for accepting our invitation.
+[Predicate(references="2")]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]I see we have learned of each other, in different ways.
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="Witte"]Please, take a seat.
+[name="Witte"]There is little time for pleasantries. Let us be frank and honest with each other.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="72_g7_ballroom",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="Proud Officer"]Your Imperial Majesty, it is my honor to report the progress that the First Army has made on Project Zero.
+[name="Proud Officer"]Her High Excellency the Marshal understands that you are much troubled by matters of state and the traitors' movements. I hope the news I bring will do something to soothe these troubles.
+[charslot(slot = "m", name = "avg_npc_2155_1#7$2", focus="m")]
+[name="Fyodor"]...Where is Marshal Buterina?
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="Proud Officer"]She remains in her domain.
+[charslot(slot = "m", name = "avg_npc_2155_1#7$2", focus="m")]
+[name="Fyodor"]She's supervising Project Zero, and she should be the one reporting to me.
+[name="Fyodor"]Why are you here in her stead?
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="Proud Officer"]I apologize, Your Imperial Majesty, I should have explained.
+[name="Proud Officer"]The Marshal's son, Anatoliy, was attacked a few days ago, and remains in serious condition. Her High Excellency has no choice but to remain behind, both to punish the perpetrators, and to prevent further instability.
+[name="Proud Officer"]After all, we are not like the Fourth Army; no hint of rebellion is permitted, whether internal or external.
+[charslot(slot = "m", name = "avg_npc_2155_1#7$2", focus="m")]
+[name="Fyodor"]Why have I not been informed?
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="Proud Officer"]It is the Marshal's private family matter, after all.
+[name="Proud Officer"]Now, if you have no other questions, I will continue my report.
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Angry Servant"]How could you speak to the Tsar like this? You insolent—
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="Proud Officer"]I am simply stating the facts, yet you make a serious accusation. I am fully able to take responsibility for my words. Can you say the same?
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="Angry Servant"]Why you—!
+[charslot(slot = "m", name = "avg_npc_2155_1#1$2", focus="m")]
+[name="Fyodor"]That will do... continue, Kapitan.
+[name="Fyodor"]Grypherburg has already committed tremendous resources to Project Zero. If there is no material progress...
+[charslot(slot = "m", name = "avg_npc_2155_1#2$2", focus="m")]
+[name="Fyodor"]There will be consequences.
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="Proud Officer"]Rest assured, you will not be disappointed.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="73_g14_prolocutoroffice",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="Witte"]Before we begin, allow me to satisfy my curiosity.
+[name="Witte"]I understand Rhodes Island came a long way to the Far North, rescuing the Infected miners there.
+[name="Witte"]May I ask why?
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]Rhodes Island is a medical concern, and our mission is to combat Oripathy. We are committed to providing treatment for any Oripathy sufferer who needs it.
+[name="Amiya"]Does the Empire of Ursus feel the need to question every act of kindness towards the Infected?
+[Dialog]
+[charslot]
+You tug the corner of Amiya's skirt.
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]...Infected, Cautus, leader of Rhodes Island.
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="Witte"]You are known by the mononym Amiya, correct?
+[name="Witte"]Understand that I am not seeking to interrogate Rhodes Island on your aims.
+[name="Witte"]Lieutenant Gorchekova thinks highly of you. She is a good soldier, and I trust that her assessment is a result of objective observation.
+[name="Witte"]Let me make it clear that I am very grateful to you for your actions in the Far North, which laid the foundation for this meeting.
+[Dialog]
+[charslot]
+[Decision(options="We mean no offense, Your Excellency.", values="1")]
+[Predicate(references="1")]
+[Decision(options="Allow me to introduce myself.", values="1")]
+[Predicate(references="1")]
+[Decision(options="I am Dr. {@nickname}.", values="1")]
+[Predicate(references="1")]
+[Decision(options="I'm Rhodes Island's medical advisor.;I'm Rhodes Island's expert on Originium.", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1984_1#4$1", focus="m")]
+[name="Witte"]Medical advisor?
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="Witte"]I take it there is more to this title than meets the eye, if you're here as a representative of Rhodes Island.
+[Predicate(references="2")]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]An Originium expert. Your arrival may be serendipitous for us.
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]Go ahead, Doctor.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="n")]
+[Decision(options="We know Ursus is looking for Kal'tsit.", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[multiline(name="Witte")]'Kal'tsit'... 
+[charslot(slot = "m", name = "avg_npc_1984_1#3$1", focus="m")]
+[multiline(name="Witte")]Indeed, perhaps we should dispense with the formalities.
+[Dialog]
+[charslot]
+You notice that Witte tapped the floor with his walking stick gently, discreetly shifting his center of gravity.
+He is considering what to say.
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]If not for the deep-rooted corruption within the Third Bureau, this name would have been known to our secret police sooner, not recently discovered in old piles of paper.
+[name="Witte"]This is a good starting point, and you've brought it up of your own accord without trying to hide it. Perhaps we can come to an agreement.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="n")]
+[Decision(options="Are you looking for Kal'tsit in order to open the Sarcophagus?", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]Obviously, as Elotta has told you.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[delay(time=1)]
+He takes a meaningful pause and glances at you.
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]Due to various circumstances, we have had to... restructure our energy planning. It is the source of the empire's present dilemma.
+[name="Witte"]Research into the Sarcophagus has resumed, but things are not going well.
+[charslot(slot = "m", name = "avg_npc_1984_1#3$1", focus="m")]
+[name="Witte"]We need Kal'tsit and her knowledge from Chernobog to help the people survive this winter.
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="Amiya"]By studying the Sarcophagus as she did in the Chernobog lab?
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]I see you understand that it is the fastest way.
+[name="Witte"]Now, can you tell me where Kal'tsit is?
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="Amiya"]......
+[Dialog]
+[charslot]
+[Decision(options="Why do you ask?;You don't believe what the lieutenant told you.", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]Please understand that I ask out of an abundance of caution.
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="Witte"]After all, we both know that Kal'tsit was 'alive and kicking', so to speak, for all those years that the secret police thought she was dead.
+[name="Witte"]I hope our conversation will not stand on unnecessary deception.
+[Predicate(references="2")]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]I ask not because I don't trust Elotta, but because I need to make sure that Rhodes Island is in a position to assist our research into the Sarcophagus.
+[name="Witte"]We all keep certain secrets, of course, but some questions must be confronted, not evaded.
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]Dr. Kal'tsit is... indisposed.
+[name="Amiya"]And if I may be frank, we also have reservations about this cooperation.
+[name="Amiya"]We want to know if Ursus's ongoing research into the Sarcophagus will lead to a repeat of the Chernobog tragedy.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="72_g7_ballroom",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="Proud Officer"]...That concludes the report. In summary, the First Army is currently holding position in the southwest.
+[name="Proud Officer"]Several shells powered by Project Zero energy were tested several days ago at a location in the wilderness of the Central Governorate.
+[name="Proud Officer"]The destruction has already left a deep impression on the Third Army.
+[name="Proud Officer"]It is no exaggeration when I say that this weapon will completely transform the current stalemate on the northern front.
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="Angry Servant"]They're acting without the Tsar's permission or the State Council's! They deployed this devastating weapon without even bothering to evacuate the nearby civilians—
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="Proud Officer"]Nothing grows on that barren soil but weeds. It is the perfect place to test the weapon. Why get worked up over a few vagrants?
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Angry Servant"]It is His Imperial Majesty's land, and those were His Imperial Majesty's people!
+[charslot(slot = "m", name = "avg_npc_2155_1#8$2", focus="m")]
+[name="Fyodor"]......
+[charslot(slot = "m", name = "avg_npc_2155_1#2$2", focus="m")]
+[name="Fyodor"]Do you have the details?
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="Proud Officer"]Right here.
+[Dialog]
+[charslot]
+The seething servant takes the report and brings it to the Tsar sitting at the end of the hall.
+[Dialog]
+[PlaySound(key="$d_avg_paper1",volume=1)]
+[PlaySound(key="$d_avg_paper2",volume=1,delay=2)]
+[delay(time=1)]
+Fyodor flips through the pages in silence, carefully reading through their contents.
+The smell of bitter almond fills the empty hall.
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="Angry Servant"]Your Imperial Majesty...
+[charslot(slot = "m", name = "avg_npc_2155_1#8$2", focus="m")]
+[name="Fyodor"](Raises a hand)
+[charslot(slot = "m", name = "avg_npc_2155_1#1$2", focus="m")]
+[name="Fyodor"]Tell the Marshal that the results are quite satisfactory. However, regarding the requests made in the report—the lost data from Chernobog and further energy supplies...
+[name="Fyodor"]Grypherburg cannot provide these at this time.
+[name="Fyodor"]The priority for Project Zero was to obtain a stable energy supply from the Sarcophagus. This was a hurdle that the Chernobog research never overcame, and our most pressing need.
+[charslot(slot = "m", name = "avg_npc_2155_1#7$2", focus="m")]
+[name="Fyodor"]But you have chosen to prioritize the weaponization of the Sarcophagus.
+[name="Fyodor"]This was not the outcome I wanted when I made Project Zero a national priority.
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="Proud Officer"]Your Imperial Majesty, the Marshal is ready to fight and triumph over the enemies of Ursus.
+[name="Proud Officer"]If you do not support Her High Excellency, you will be allowing the traitors to bash open Grypherburg's gates and plunder the empire's treasures.
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[CameraShake(duration=0.4, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Angry Servant"]Insolence! How dare you speak to His Imperial Majesty in such a manner!
+[charslot(slot = "m", name = "avg_npc_2155_1#4$2", focus="m")]
+[name="Fyodor"]......
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="73_g14_prolocutoroffice",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]Yes, Mr. Chairman, Rhodes Island is currently in possession of Dr. Kal'tsit's research and her data on the Sarcophagus...
+[name="Amiya"]But we need to ensure Rhodes Island's safety before any agreement.
+[Dialog]
+[charslot]
+[Decision(options="Amiya—", values="1")]
+[Predicate(references="1")]
+You stop mid-sentence as you see Amiya wink at you, realizing that she has an idea.
+[charslot(slot = "m", name = "avg_npc_1984_1#7$1", focus="m")]
+[name="Witte"]Yes... it should be a fair trade.
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]I have devoted many years to making Ursus a more civilized nation, and it is for this vision that I have stood at the Tsar's side all these years. We share the same dream.
+[name="Witte"]I assure you that I will not give up my principles for the sake of convenience, especially not when there is another choice.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]I apologize. I meant no offense.
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="Witte"]I understand. Caution is a virtue rarely seen in the young.
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]But I think we have gone around in circles long enough. What are your terms?
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]We wish to borrow the Sarcophagus.
+[charslot(slot = "m", name = "avg_npc_1984_1#4$1", focus="m")]
+[name="Witte"]'Borrow'?
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="Witte"]To what extent? How? And... why?
+[Dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_pcket", volume=1)]
+[delay(time=1)]
+[name="Amiya"]Here is the plan for your perusal.
+[name="Amiya"]In short, we wish to enter the facility to ascertain the Sarcophagus's unknown function, which Dr. Kal'tsit mentions in her records.
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="Witte"]Its what?
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]We're not certain it truly exists. We are, however, certain that ascertaining it will not damage the Sarcophagus.
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="Amiya"]Dr. Kal'tsit's data indicates that it may be of help to Rhodes Island in our research into the new symptoms of Oripathy, and that the Sarcophagus may be more than just a source of energy.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]Policy support from Ursus will, of course, be necessary for any follow-up research.
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="Witte"]So Rhodes Island will share with us this function that may or may not exist.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]It's part of Dr. Kal'tsit's research, after all.
+[charslot(slot = "m", name = "avg_npc_1984_1#3$1", focus="m")]
+[name="Witte"]......
+[Dialog]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="Witte"]So...
+[name="Witte"]All you seek is a solution the existence of which you aren't even sure about.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]It may not be important to anyone else, but it's of paramount importance to Rhodes Island.
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]What if the function doesn't exist?
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]Our agreement still stands.
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]Even if you get nothing from your investment?
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="Amiya"]We're prepared.
+[charslot(slot = "m", name = "avg_npc_1984_1#7$1", focus="m")]
+[name="Witte"]......
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="Witte"]What preparations have you made?
+[dialog]
+[musicvolume(volume=0.3, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="21_G9_rhodes_xqoffice",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.7, keep=true)]
+[bgeffect(name="$eb_blackmask",layer=1)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="m")]
+[name="Amiya"]What kind of plan do we need to convince the government of Ursus?
+[charslot(slot="m",name="avg_4179_monstr_1#1$1",focus="m")]
+[name="Mon3tr"]I have retained all of Kal'tsit's data on the Sarcophagus, which will help Ursus restart the Sarcophagus's energy core.
+[name="Mon3tr"]Doctor, you must decide whether we hand the power to restart the Sarcophagus to Ursus again.
+[dialog]
+[charslot]
+[Decision(options="What do you think, Amiya?;What do you think, Mon3tr?;What do you think, Closure?", values="1;2;3")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#16$1",focus="m")]
+[name="Amiya"]If I were the one making the decision, I wouldn't want the Sarcophagus to be controlled by any regime.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]But the Ursine Originium mines are drying up, and there are many people who urgently need the Sarcophagus's energy...
+[name="Amiya"]And we need the Sarcophagus's miracle...
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1",focus="m")]
+[name="Mon3tr"]Honestly, I'm not sure.
+[charslot(slot="m",name="avg_4179_monstr_1#9$1",focus="m")]
+[name="Mon3tr"]We witnessed the tragedy at the lab. No one can guarantee it won't happen again.
+[name="Mon3tr"]But Kal'tsit decided to seal the Sarcophagus away, rather than destroy it. I think she wanted to believe that there will come a time when the people of Terra will enjoy its benefits.
+[Predicate(references="3")]
+[charslot(slot="m",name="avg_4228_closur_1#9$1",focus="m")]
+[name="Closure"]Oh, you're asking me?
+[charslot(slot="m",name="avg_4228_closur_1#11$1",focus="m")]
+[name="Closure"]Well... dealing with Ursus is kind of scary. But we have to take certain risks to bring Kal'tsit back.
+[charslot(slot="m",name="avg_4228_closur_1#4$1",focus="m")]
+[name="Closure"]Maybe I can add another layer of protection for the data. First we use it to reach an agreement with the Ursine government, then we unlock it once we're sure it's the right time.
+[Predicate(references="1;2;3")]
+[dialog]
+[charslot]
+[Decision(options="The situation is urgent.", values="1")]
+[Predicate(references="1")]
+[Decision(options="For us, and for Ursus.", values="1")]
+[Predicate(references="1")]
+[Decision(options="We must choose cooperation over conflict wherever we can.;We must all learn to put a little bit of trust in one another.", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[bgeffect]
+[Background(image="73_g14_prolocutoroffice",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[Delay(time=0.5)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]The data that we are offering will be unlocked in segments in a terminal we provide, fully unlocking once we leave Zelgrad safely.
+[name="Amiya"]Any information Rhodes Island obtains from Zelgrad will be shared with you.
+[charslot(slot = "m", name = "avg_npc_1984_1#4$1", focus="m")]
+[multiline(name="Witte")]I see... 
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[multiline(name="Witte")]You're not exaggerating when you said you're prepared.
+[name="Witte"]And it seems you already know the current location of the Sarcophagus.
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]I expect the location of the Sarcophagus would have been part of any deal we reach.
+[name="Amiya"]We simply did some homework.
+[charslot(slot = "m", name = "avg_npc_1984_1#3$1", focus="m")]
+[name="Witte"]Yes, you know quite a few things... which saves me the effort of explaining.
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="Witte"]But the information you possess also represents risk factors out of my control. I would not have considered cooperating with you, if our situation was not so dire.
+[name="Witte"]I have one more question for you, my guests.
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="Witte"]This mysterious scholar, known by the mononym Kal'tsit. She came to Ursus from afar, directed research into the Sarcophagus, and sealed it away herself.
+[name="Witte"]She was neither a subject of Ursus, nor our enemy... and then there is Rhodes Island, who followed in her footsteps, until the two of you sit before me today.
+[name="Witte"]What exactly are you after?
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]Would you believe a verbal explanation?
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="Witte"]Yes, I want to hear it in your own words.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="n")]
+[Decision(options="Rhodes Island's answer is not a credible one from the perspective of interests.;We hope you will listen to us from an idealistic perspective.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="We hope you'll be willing to believe.", values="1")]
+[Predicate(references="1")]
+[Decision(options="That there are people on this land who are willing to fight for justice, unbound by national borders.;That there are people in this land who want to secure the future for everyone.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="Witte"]Moving words, certainly...
+[dialog]
+[charslot]
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="nw")]
+[stopsound(fadetime=2.5, channel="nw")]
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", duration=1)]
+[delay(time=1.5)]
+A servant emerges from another door. He approaches the Chairman and bends down.
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", focus="m")]
+[name="Servant"]Should I serve wine to our guests?
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="Witte"]Bring last year's Taman red wine. The sunlight there was good last year.
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", focus="m")]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="nw1")]
+[stopsound(fadetime=2, channel="nw1")]
+[charslot(duration=0.7)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1984_1#6$1", focus="m")]
+[name="Witte"]...I see.
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="Witte"]The name Rhodes Island came to our attention long ago. We have been watching...
+[name="Witte"]Rhodes Island's deeds have earned you an opportunity for cooperation.
+[name="Witte"]I will write a letter of safe passage to Zelgrad on behalf of His Imperial Majesty. It's the only thing I can do for you right now.
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="Amiya"]Thank you for your understanding.
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="Witte"]And there's no need to hack the government servers to understand the distance between Grypherburg and Zelgrad.
+[name="Witte"]Zelgrad is Ursus's pride, her 'green city', the 'city of tomorrow'. It objectively welcomes any visitors.
+[name="Witte"]I hope you find what you're looking for there.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="72_g7_ballroom",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_npc_2155_1#7$2")]
+[delay(time=1)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2155_1#7$2", focus="m")]
+[name="Fyodor"]......
+[Dialog]
+[charslot]
+Fyodor gazes at the report in his hands, forgetting that he is not supposed to show emotion.
+The reporting officer remains utterly calm, unfazed by the Tsar's silence.
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", focus="m")]
+[name="Polite Servant"]Would Your Imperial Majesty like some wine?
+[charslot(slot = "m", name = "avg_npc_2155_1#4$2", focus="m")]
+[name="Fyodor"]Mm... what's available?
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", focus="m")]
+[name="Polite Servant"]Taman red wine. The grapes there were of good quality last year.
+[charslot(slot = "m", name = "avg_npc_2155_1#2$2", focus="m")]
+[name="Fyodor"]I will have some, then.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", focus="m")]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_walk_stage", volume=1, loop=true, channel="c")]
+[StopSound(channel="c", fadetime=2)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="Proud Officer"]Your Majesty.
+[charslot(slot = "m", name = "avg_npc_2155_1#2$2", focus="m")]
+[name="Fyodor"]I do not say this to criticize Marshal Buterina. The pursuit of strength runs in the veins of every Ursine soldier... and the results have certainly left an impression on the rebels.
+[name="Fyodor"]Remind Marshal Buterina, however, not to forget the mission the empire has tasked her with—strength is important, but strength alone will neither feed the people nor keep them warm.
+[charslot(slot = "m", name = "avg_npc_2155_1#1$2", focus="m")]
+[name="Fyodor"]...I will continue to supply Zelgrad.
+[name="Fyodor"]I will also be sending several academicians from the Imperial Institute of Energy Science, in order to assist you with Project Zero's energy research.
+[name="Fyodor"]I look forward to similar progress in that area.
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="Proud Officer"]......
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="Angry Servant"]And why the silence? Are you not pleased by the Tsar's magnanimity?
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="Proud Officer"]...The First Army will not disappoint you.
+[charslot(slot = "m", name = "avg_npc_2155_1#4$2", focus="m")]
+[name="Fyodor"]Certainly.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="72_g7_ballroom",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2155_1#4$2", focus="m")]
+[name="Fyodor"]......
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="Angry Servant"]Your Imperial Majesty.
+[charslot(slot = "m", name = "avg_npc_2155_1#1$2", focus="m")]
+[name="Fyodor"]I'm tired, Saveliy. Where is Witte? Still meeting with the guests?
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="Angry Servant"]His message indicates that a conclusion has been reached. Perhaps the meeting has already ended.
+[charslot(slot = "m", name = "avg_npc_2155_1#2$2", focus="m")]
+[PlaySound(key="$d_avg_chairrub", volume=1)]
+[name="Fyodor"]It's urgent. I must see him, I must...
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement_heavy2", volume=0.8)]
+[CameraShake(duration=0.7, xstrength=10, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(duration=1)]
+[delay(time=0.5)]
+[name="Fyodor"]Ugh—
+Fyodor tries to stand, but feels a bout of dizziness and almost falls back upon his chair.
+He waves away the servant and presses his own forehead with his hand.
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="Angry Servant"]It must be that insolent brute!
+[name="Angry Servant"]Their marshal brushing off the mistake of forced conscription as merely an 'abundance of caution' was one thing, but how dare a mere captain of the First Army act with such impertinence!
+[name="Angry Servant"]How long must we continue to endure, Majesty?
+[Dialog]
+[charslot]
+[name="Fyodor"]No...
+[name="Fyodor"](Softly) It's not time yet.
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="Angry Servant"]What was that?
+[Dialog]
+[charslot]
+[name="Fyodor"]The scent is dissipating, Saveliy. I can no longer smell the bitter aroma.
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="Angry Servant"]Ah, I'll refill it—
+[Dialog]
+[charslot]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_clothtrailground", volume=1)]
+[charslot(slot = "m", name = "avg_npc_2155_1#3$2", duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_2155_1#3$2", focus="m")]
+[name="Fyodor"]Never mind.
+[charslot(slot = "m", name = "avg_npc_2155_1#1$2", focus="m")]
+[name="Fyodor"]Someone was waiting outside the door... the civil representatives from Odoyev Raion, I believe? Have them come in first. And tell them to be at ease.
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="Angry Servant"]Perhaps you can rest first. There is heat in the corridor; they will not freeze.
+[charslot(slot = "m", name = "avg_npc_2155_1#1$2", focus="m")]
+[name="Fyodor"]I summoned them. I should not make them wait.
+[name="Fyodor"]If I am to know their true thoughts, I must make them trust me, not just fear or worship me.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="72_g1_sjbstreet_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]Ah, there you are.
+[name="Eloysius"]How did the meeting go? Not too badly, judging by your faces.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_pcket", volume=1)]
+You take out the letter of safe passage.
+[Dialog]
+[Decision(options="We reached an agreement with the Chairman.;We have an opportunity to approach the Sarcophagus.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]I said you'd be fine, but your friends just wouldn't believe me.
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_4228_closur_1#1$1", posfrom="-150,0",posto="-150,0",duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4228_closur_1#1$1", focus="l")]
+[multiline(name="Closure")]Hey, you don't get to see an Ursine imperial palace every day. 
+[charslot(slot = "l", name = "avg_4228_closur_1#2$1", focus="l")]
+[multiline(name="Closure")]I guess flying a drone here would be an act of war...
+[Dialog]
+[charslot(slot = "m", name = "avg_4179_monstr_1#6$1", duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4179_monstr_1#6$1", focus="m")]
+[name="Mon3tr"](Looks around warily)
+[Dialog]
+[charslot(slot = "r", name = "avg_npc_1730_1#4$1",posfrom="150,0",posto="150,0", duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1730_1#4$1", focus="r")]
+[name="Raidian"]I suppose Chairman Witte set conditions in exchange for entry into Zelgrad?
+[Dialog]
+[charslot]
+[Decision(options="We must share some information with them.;They need someone to reveal the secrets of the Sarcophagus.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="Chairman Witte bears us no ill will.;Amiya played the part of a consummate diplomat.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#16$1",focus="m")]
+[name="Amiya"]Doctor, I was nervous!
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="Amiya"]We got permission, we should set out soon.
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]Personally, I would love to come with you, but unfortunately, there are other matters that require my attention.
+[name="Eloysius"]Just one thing... will you have enough hands at the Grypherburg Oripathy treatment center when you're away?
+[Dialog]
+[charslot]
+[Decision(options="Is anyone threatening the safety of the Infected miners?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]You promised they would be safe in Grypherburg.
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="Eloysius"]They are safe, at least officially... but as I said, things are not so peaceful in the capital right now.
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="Eloysius"]I'll do what I can to protect them, but you should prepare some contingencies.
+[Dialog]
+[charslot]
+[delay(time=0.3)]
+[charslot(slot = "m", name = "avg_188_helage_1#2$1", duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_188_helage_1#2$1",focus="m")]
+[name="Hellagur"]I'll be here.
+[name="Hellagur"]It would be inconvenient for me to go to Zelgrad with the Doctor. My place is here, protecting Rhodes Island's patients.
+[charslot(slot = "m", name = "avg_npc_1966_1#11$1", focus="m")]
+[multiline(name="Eloysius")]Oh... 
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[multiline(name="Eloysius")]I forgot about you. This is much more reassuring.
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="Eloysius"]One final reminder.
+[name="Eloysius"]You may have the Council's permission, but don't expect things to go smoothly in Zelgrad.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="n")]
+[Decision(options="We're used to it.;What's the difference?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="m")]
+[name="Eloysius"]I just heard about this, but there has been a change in the First Army garrison at Zelgrad.
+[name="Eloysius"]It is now commanded by Anatoliy, Marshal Buterina's only son.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="n")]
+[Decision(options="Is he dangerous?;Is he difficult?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]Ask about Grypherburg in high society, and the most likely answer you'll get is... 'crazy'.
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="Eloysius"]If half the rumors about him are true, he's not fit to be a soldier, much less a general...
+[name="Eloysius"]However, his mother, Marshal Buterina of the First Army, is undoubtedly an intelligent woman.
+[name="Eloysius"]She knows Zelgrad's strategic importance. I doubt nepotism is the only reason she made this assignment, at a time like this.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="n")]
+[Decision(options="We'll be careful.", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]I hope you find what you're looking for... and help Ursus deal with this headache.
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="n")]
+[Decision(options="Are you calling the Sarcophagus a 'headache'?;Isn't it supposed to be 'hope'?", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="Eloysius"]Headache and hope... why not both?
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="Eloysius"]Well, I shouldn't talk too much about rumors and hearsay.
+[name="Eloysius"]Stay safe, Doctor.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g18_ursuswarshipdeck_n",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_npc_2235_1#4$1", focus="m")]
+[delay(time=1)]
+[playMusic(key="$monastery_sad_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_2235_1#4$1", focus="n")]
+[PlaySound(key="$d_avg_walk_stage")]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_2235_1#4$1", focus="m")]
+[name="Anatoliy"]I don't appreciate being snuck up on from behind.
+[Dialog]
+[charslot]
+[delay(time=0.3)]
+[charslot(slot = "m", name = "avg_npc_2246_1#8$1", duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2246_1#8$1", focus="m")]
+[name="Hierda"]...Sorry.
+[charslot(slot = "m", name = "avg_npc_2235_1#1$1", focus="m")]
+[name="Anatoliy"]<i>Mama</i> wants you to babysit me, doesn't she?
+[name="Anatoliy"]But look at you, a frail and feeble Infected. Ridiculous, isn't it? I might end up having to protect you, should anything happen.
+[charslot(slot = "m", name = "avg_npc_2246_1#2$1", focus="m")]
+[name="Hierda"]Please don't worry about me, if anything happens.
+[charslot(slot = "m", name = "avg_npc_2235_1#1$1", focus="m")]
+[name="Anatoliy"]Of course I won't!
+[name="Anatoliy"]Until then, however, I'll allow you to stay.
+[charslot(slot = "m", name = "avg_npc_2246_1#2$1", focus="m")]
+[name="Hierda"]When do we leave?
+[charslot(slot = "m", name = "avg_npc_2235_1#9$1", focus="m")]
+[name="Anatoliy"]Never mind that. I have questions. Answer them.
+[name="Anatoliy"]Why is it that I don't feel any more pain, even though the rocks are still there?
+[charslot(slot = "m", name = "avg_npc_2235_1#4$1", focus="m")]
+[name="Anatoliy"]It doesn't hurt anymore... it's strange.
+[charslot(slot = "m", name = "avg_npc_2246_1#8$1", focus="m")]
+[name="Hierda"]Because all I've done is soothe the pain, to relieve the constant fear of death. People are often confused at first, doubting that it's true...
+[charslot(slot = "m", name = "avg_npc_2235_1#9$1", focus="m")]
+[name="Anatoliy"]How many people have you blessed this way?
+[charslot(slot = "m", name = "avg_npc_2246_1#1$1", focus="m")]
+[name="Hierda"]Countless.
+[charslot(slot = "m", name = "avg_npc_2235_1#1$1", focus="m")]
+[name="Anatoliy"]So, everyone who seeks your help.
+[charslot(slot = "m", name = "avg_npc_2246_1#2$1", focus="m")]
+[name="Hierda"]Everyone who suffers.
+[charslot(slot = "m", name = "avg_npc_2235_1#6$1", focus="m")]
+[name="Anatoliy"]Did they all see it? That golden, endless river... am I not special?
+[charslot(slot = "m", name = "avg_npc_2235_1#9$1", focus="m")]
+[name="Anatoliy"]Why did you show up, claiming that you couldn't cure Oripathy, yet you somehow soothed my pain? What exactly was it that you showed me?
+[multiline(name="Anatoliy")]Tell me—
+[charslot(slot = "m", name = "avg_npc_2235_1#7$1", focus="m")]
+[PlaySound(key="$d_avg_clothmovement_heavy1", volume=0.8)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=false)]
+[multiline(name="Anatoliy")]Tell me!
+[Dialog]
+[charslot]
+The young man turns around abruptly and grabs Hierda's thin shoulders, as though he thinks he can squeeze the answer out of them.
+But Hierda does not understand the reason for his excitement.
+[charslot(slot = "m", name = "avg_npc_2246_1#2$1", focus="m")]
+[name="Hierda"]Excuse me...?
+[charslot(slot = "m", name = "avg_npc_2235_1#6$1", focus="m")]
+[name="Anatoliy"]The golden, still river! The endless river that I saw when you healed me!
+[charslot(slot = "m", name = "avg_npc_2246_1#2$1", focus="m")]
+[name="Hierda"]You saw—
+[charslot(slot = "m", name = "avg_npc_2235_1#4$1", focus="m")]
+[name="Anatoliy"]I only caught a glimpse, but it was when all my pain left me. There must be some meaning to it.
+[name="Anatoliy"]Is that the land of eternity that you talked about? Can everyone go there? But if so...
+[name="Anatoliy"]What's the difference between this land of eternity and the one beneath our feet?
+[charslot(slot = "m", name = "avg_npc_2246_1#1$1", focus="m")]
+[name="Hierda"]I'm not sure what you saw, but if it calms and frees you from pain and hatred, perhaps that is your land of eternity.
+[name="Hierda"]I'm glad you saw it.
+[charslot(slot = "m", name = "avg_npc_2235_1#4$1", focus="m")]
+[name="Anatoliy"]...Just seeing it isn't enough.
+[charslot(slot = "m", name = "avg_npc_2235_1#9$1", focus="m")]
+[name="Anatoliy"]How can we go there? Tell me!
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_footsteps_flock", volume=0.6, loop=true, channel="f")]
+[StopSound(channel="f", fadetime=2)]
+[delay(time=1.5)]
+[name="Distant Voice"]—Generalik—
+[name="Distant Voice"]Did you find him?
+[name="Distant Voice"]<i>Blyat</i>, we're supposed to leave ASAP, but neither of them are anywhere to be found—
+[name="Distant Voice"]Did I hear something over there? You, check it out.
+[charslot(slot = "m", name = "avg_npc_2235_1#5$1", focus="m")]
+[name="Anatoliy"]Tell me...
+[charslot(slot = "m", name = "avg_npc_2246_1#1$1", focus="m")]
+[name="Hierda"]I think someone's looking for us.
+[name="Hierda"]We should go, first. I'll tell you everything you want to know on the way.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=3)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="step2")]
+[stopsound(channel="step",fadetime=3)]
+[delay(time=2)]
+[name="Attentive Soldier"]—This is what the apartment's interior looks like. Most of your companions are housed here. It's on the edge of the satellite city, but the facilities are comparable to those in the city center.
+[name="Attentive Soldier"]Would you like to go inside?
+[name="Hierda"]Of course. Thank you for leading the way...
+[Dialog]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Background(image="73_g3_exurbroom",screenadapt="coverall", fadetime=1.5,block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2259_1#1$1", focus="m")]
+[name="Surprised Vagrant"]Who's there—
+[name="Surprised Vagrant"]Hierda?
+[charslot(slot = "m", name = "avg_npc_2246_1#3$1", focus="m")]
+[name="Hierda"]Zaya! Is everyone here?
+[charslot(slot = "m", name = "avg_npc_2260_1#1$1", focus="m")]
+[name="Friendly Vagrant"]Those soldiers herded us into this building. We were all confused, but it turns out it has everything we need, even though it's not much to look at...
+[name="Friendly Vagrant"]Don't worry about us!
+[charslot(slot = "m", name = "avg_npc_2246_1#1$1", focus="m")]
+[name="Hierda"]How could I not be worried?
+[name="Hierda"]I was wondering where you are, whether you're cold. But it seems that things are much better than I could have imagined.
+[Dialog]
+Hierda turns to the soldier who brought her here.
+[charslot(slot = "m", name = "avg_npc_2246_1#9$1", focus="m")]
+[multiline(name="Hierda")]Please communicate my gratitude to the Marshal. 
+[charslot(slot = "m", name = "avg_npc_2246_1#1$1", focus="m")]
+[multiline(name="Hierda")]For taking care of my companions, and giving them a roof over their heads, to protect them from the wind and snow—
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_runstop", volume=0.8)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2235_1#3$1", duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot = "m", name = "avg_npc_2235_1#3$1", focus="m")]
+[name="Anatoliy"]You should thank <i>me</i>.
+[charslot(slot = "m", name = "avg_npc_2246_1#1$1", focus="m")]
+[name="Hierda"]Of course. Thank you, sir.
+[charslot(slot = "m", name = "avg_npc_2235_1#1$1", focus="m")]
+[name="Anatoliy"]You don't know why you should thank me, do you?
+[charslot(slot = "m", name = "avg_npc_2246_1#1$1", focus="m")]
+[name="Hierda"]I could not have come to visit my companions, if you had not given permission.
+[charslot(slot = "m", name = "avg_npc_2235_1#3$1", focus="m")]
+[name="Anatoliy"]Hmph. True enough.
+[Dialog]
+[charslot]
+Anatoliy takes a look around, then leans in to Hierda and lowers his voice.
+[charslot(slot = "l", name = "avg_npc_2235_1#9$1", focus="l")]
+[charslot(slot = "r", name = "avg_npc_2246_1#1$1", focus="l")]
+[name="Anatoliy"]So they're like me.
+[charslot(slot = "r", name = "avg_npc_2246_1#1$1", focus="r")]
+[name="Hierda"]Yes. We're all the same. In the end, we'll arrive at the same place in peaceful bliss.
+[charslot(slot = "l", name = "avg_npc_2235_1#9$1", focus="l")]
+[name="Anatoliy"]The 'land of eternity'?
+[charslot(slot = "r", name = "avg_npc_2246_1#9$1", focus="r")]
+[name="Hierda"]Yes, the land of eternity, as I told you on our way here.
+[charslot(slot = "l", name = "avg_npc_2235_1#4$1", focus="l")]
+[name="Anatoliy"]'We will all return to the same peace...'
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_2260_1#1$1", focus="m")]
+[name="Friendly Vagrant"]Is this gentleman one of us, Hierda?
+[Dialog]
+[charslot]
+Hierda looks up into Anatoliy's eyes.
+[Dialog]
+[charslot(slot = "l", name = "avg_npc_2235_1#4$1", focus="r")]
+[charslot(slot = "r", name = "avg_npc_2246_1#2$1", focus="r")]
+[name="Hierda"]He—
+[charslot(slot = "l", name = "avg_npc_2235_1#4$1", focus="l")]
+[name="Anatoliy"]...Hmph.
+[charslot(slot = "r", name = "avg_npc_2246_1#1$1", focus="r")]
+[name="Hierda"]Of course... he's one of us.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="73_g3_exurbroom",screenadapt="coverall", block=true)]
+[charslot(slot = "l", name = "avg_npc_2260_1#1$1")]
+[charslot(slot = "r", name = "avg_npc_2246_1#8$1")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_2246_1#8$1", focus="r")]
+[name="Hierda"]......
+[charslot(slot = "l", name = "avg_npc_2260_1#1$1", focus="l")]
+[name="Friendly Vagrant"]When can we leave, Hierda?
+[charslot(slot = "r", name = "avg_npc_2246_1#2$1", focus="r")]
+[name="Hierda"]What?
+[charslot(slot = "l", name = "avg_npc_2260_1#1$1", focus="l")]
+[name="Friendly Vagrant"]We can't stay here forever, can we? This place has everything we need, but there are more Infected out there who need your help.
+[charslot(slot = "r", name = "avg_npc_2246_1#8$1", focus="r")]
+[name="Hierda"]Of course, we won't stay here forever. For now, however...
+[Dialog]
+[charslot]
+Hierda looks up at the gaunt silhouette of the young man in the corridor outside. It is as though the scent of blood in the command room still lingers at the tip of her nose.
+She recalls the words that she accidentally overheard on the deck, and clenches her fist as she thinks.
+[charslot(slot = "l", name = "avg_npc_2260_1#1$1", focus="r")]
+[charslot(slot = "r", name = "avg_npc_2246_1#2$1", focus="r")]
+[name="Hierda"]We're in the custody of the army right now. That Generalik will not let us go easily, and I promised his mother to take care of him during this time.
+[charslot(slot = "l", name = "avg_npc_2260_1#1$1", focus="l")]
+[name="Friendly Vagrant"]Do you mean—
+[charslot(slot = "r", name = "avg_npc_2246_1#2$1", focus="r")]
+[name="Hierda"](Whisper) You and Zaya will need to take care of the others, until we're able to leave safely.
+[name="Hierda"](Whisper) I must keep watch over him... his impulsive nature is a danger, not just to himself, but to others as well.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[name="???"]I think this is the place...
+[name="???"]I wrapped Nina in this jacket when the power was out. There must be something wrong with it, that's what made strange things grow from her—
+[name="???"]But I had only worn it when washing the clothes of those in white coats—
+[name="???"]......
+[name="???"]No, I should have burned it, like burning things contaminated with Originium dust...
+[name="???"]But the green spots on it are nothing like Originium dust—
+[Dialog]
+[playsound(key="$d_avg_button",volume=1)]
+[Background(image="49_g13_smallroom",screenadapt="coverall", fadetime=1,block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2228_1#4$1", focus="m")]
+[name="Friendly Worker"]There you are!
+[charslot(slot = "m", name = "avg_npc_2228_1#1$1", focus="m")]
+[name="Friendly Worker"]There are still two more spots for laundry workers tomorrow. Are you going? I'll put your name in if you are—
+[charslot(slot = "m", name = "avg_npc_2228_1#7$1", focus="m")]
+[name="Friendly Worker"]Hey, what's up with the outfit? Are you going to work at the Originium factory? But I thought it was closed.
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4225_tanya_1#1$2", duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_4225_tanya_1#1$2", focus="m")]
+[name="???"]No... I'm not going...
+[name="???"]I can't. Nina's still at the clinic.
+[charslot(slot = "m", name = "avg_npc_2228_1#6$1", focus="m")]
+[name="Friendly Worker"]Oh, I see, alright then. Family comes first.
+[charslot(slot = "m", name = "avg_npc_2228_1#7$1", focus="m")]
+[name="Friendly Worker"]Say, you haven't gotten sick too, have you? You used to work three jobs every day, wind or rain, but you're letting a well-paying job get away now?
+[charslot(slot = "m", name = "avg_4225_tanya_1#1$2", focus="m")]
+[name="???"]...No...
+[name="???"]I have to go. Make sure you wash your clothes thoroughly after the job, or—
+[name="???"]Or just burn it...
+[charslot(slot = "m", name = "avg_npc_2228_1#7$1", focus="m")]
+[name="Friendly Worker"]What—
+[Dialog]
+[charslot(slot = "m", name = "avg_4225_tanya_1#1$2", focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2228_1#7$1", focus="m")]
+[name="Friendly Worker"]What do you mean? Why should I burn the clothes?
+[name="Friendly Worker"]She's been acting weird lately, ever since the number of Infected in the city started rising...
+[charslot(slot = "m", name = "avg_npc_2228_1#6$1", focus="m")]
+[name="Friendly Worker"]Well, it's not like I have the luxury of worrying about other people.
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

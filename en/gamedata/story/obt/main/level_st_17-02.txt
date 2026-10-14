@@ -1,0 +1,1069 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[Background(image="73_g17_exurbforest_in",screenadapt="coverall")]
+[focusout(duration=1, type="bg", from=0, to=1, block=true)]
+[playMusic(key="$desolate_loop", volume=0)]
+[PlaySound(key="$d_avg_lifesupportpod_exhaust")]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_lifesupportpod_open")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3.5, block=true)]
+[Delay(time=2)]
+Slowly, the life pod opens.
+There, you see a familiar face, just as you have hoped to see thousands of times.
+Once again, you take her hand.
+[name="Kal'tsit"]Dr. {@nickname}?
+[Dialog]
+[musicvolume(volume=0.6, fadetime=2)]
+[focusout(duration=3.5, type="bg", from=1, to=0, block=true)]
+Slowly, the woman inside gets up.
+[Dialog]
+[charslot(slot="m",name="avg_1052_kalts2_1#8$2",duration=2.5)]
+[charslot(slot="l",name="avg_1052_kalts2_1#8$2",posfrom="200,0",posto="200,0",duration=2.5)]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_1052_kalts2_1#1$2",focus="m")]
+[charslot(slot="l",afrom=1,ato=0,duration=2.5)]
+[Delay(time=2.5)]
+[name="Kal'tsit"]I...
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_1037_amiya3_1#13$1",focus="all")]
+[charslot(slot="r",name="avg_4179_monstr_1#13$1",focus="all")]
+[name="Amiya/Mon3tr"]Dr. Kal'tsit! / Kal'tsit!
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1730_1#7$1",focus="m")]
+[name="Raidian"]Kal'tsit...
+[charslot(slot="m",name="avg_4228_closur_1#7$1",focus="m")]
+[multiline(name="Closure")]I did it? 
+[charslot(slot="m",name="avg_4228_closur_1#3$1",focus="m")]
+[multiline(name="Closure")]Woohoo, I did it!
+[charslot(slot="m",name="avg_4228_closur_1#14$1",focus="m")]
+[name="Closure"]Kal'tsit, is that you? Do you recognize me? If not, you gotta at least recognize the Doctor and Amiya, right?
+[Dialog]
+[charslot]
+Amiya suppresses the urge to dash forward to embrace Kal'tsit, as Mon3tr digs her sharp claws deep into the soil beneath. Each and every one of them looks on nervously, as not one of them can so easily believe this outcome.
+In contrast, the woman who has just been roused from her slumber looks to each member of the group gathered around her. Slowly, her bewildered expression begins to soften.
+[charslot(slot="m",name="avg_1052_kalts2_1#4$2",focus="m")]
+[name="Kal'tsit"]Somebody tell me... Why am I here?
+[charslot(slot="m",name="avg_4179_monstr_1#10$1",focus="m")]
+[name="Mon3tr"]It's all thanks to the Doctor—and Closure, too!
+[name="Mon3tr"]We've been racking our brains to recreate the gemini cycle function and use blank Originium to sculpt a body for you!
+[name="Mon3tr"]The experiments haven't been going well, but somehow, we managed to find AMa-10's source code in the Sarcophagus in Ursus—
+[charslot(slot="m",name="avg_1052_kalts2_1#1$2",focus="m")]
+[name="Kal'tsit"]That's practically impossible, in theory...
+[charslot(slot="m",name="avg_4179_monstr_1#10$1",focus="m")]
+[name="Mon3tr"]Doesn't matter!
+[name="Mon3tr"]Well... Are you feeling okay? Are your memories all jumbled? And, um—
+[charslot(slot="m",name="avg_4179_monstr_1#13$1",focus="m")]
+[name="Mon3tr"]Do you still remember me?
+[charslot(slot="m",name="avg_1052_kalts2_1#3$2",focus="m")]
+[name="Kal'tsit"]How could I ever forget you...?
+[name="Kal'tsit"]Mon3tr...
+[charslot(slot="m",name="avg_4179_monstr_1#9$1",focus="m")]
+[name="Mon3tr"]I...
+[name="Mon3tr"]I really missed you...
+[Dialog]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[charslot(slot="m",afrom=1,ato=0,duration=0.5)]
+[charslot(duration=1)]
+[Delay(time=1.5)]
+[charslot]
+[PlaySound(key="$d_avg_clothmovementsp",volume=1)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot="m",name="avg_1037_amiya3_1#10$1",focus="m")]
+[name="Amiya"]Watch out, Mon3tr! Dr. Kal'tsit may still be very weak!
+[charslot(slot="m",name="avg_1037_amiya3_1#2$1",focus="m")]
+[name="Amiya"]We... I...
+[Dialog]
+[charslot(slot="m",name="avg_1052_kalts2_1#7$2",focus="m")]
+[name="Kal'tsit"]Thank you, Amiya...
+[charslot(slot="m",name="avg_1052_kalts2_1#4$2",focus="m")]
+[name="Kal'tsit"]Don't worry... I can tell... my condition isn't particularly serious.
+[charslot(slot="m",name="avg_1052_kalts2_1#11$2",focus="m")]
+[name="Kal'tsit"]What I really want to know is... where are we, and what is the current situation?
+[name="Kal'tsit"](Pants weakly)
+[Dialog]
+[charslot]
+[Decision(options="You don't need to be in such a hurry to figure out what's going on.;Don't push yourself. We still have time.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="I don't want you to worry...", values="1")]
+[Predicate(references="1")]
+[Decision(options="All's well at Rhodes Island.;Everyone is here.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1052_kalts2_1#9$2",focus="m")]
+[name="Kal'tsit"]Dr. {@nickname}...
+[name="Kal'tsit"]I must say... I really do not agree with how you led Rhodes Island... on such a dangerous operation.
+[Dialog]
+[charslot(slot="m",name="avg_1052_kalts2_1#9$2",focus="none")]
+[Decision(options="We need you to come back to fight alongside us.;Amiya and I arrived at this decision together.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1052_kalts2_1#9$2",focus="m")]
+[name="Kal'tsit"]Dr. {@nickname}, I've never doubted your decisions for a long time. However...
+[charslot(slot="m",name="avg_1052_kalts2_1#8$2",focus="m")]
+[name="Kal'tsit"]I'm afraid I'll have to reevaluate your decision-making now.
+[Dialog]
+[charslot(slot="m",name="avg_1052_kalts2_1#8$2",focus="none")]
+[Decision(options="I'll get your whole critique once we're back at Rhodes Island.", values="1")]
+[Predicate(references="1")]
+[Decision(options="Naturally, I had other reasons too.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1052_kalts2_1#1$2",focus="m")]
+[name="Kal'tsit"]For example?
+[Dialog]
+[charslot(slot="m",name="avg_1052_kalts2_1#1$2",focus="none")]
+[Decision(options="A promise.", values="1")]
+[Predicate(references="1")]
+[Decision(options="Have you found yourself yet... Kal'tsit?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1052_kalts2_1#5$2",focus="m")]
+[name="Kal'tsit"]......
+[charslot(slot="m",name="avg_1052_kalts2_1#7$2",focus="m")]
+[name="Kal'tsit"]...I never forgot.
+[Dialog]
+[charslot(slot="m",name="avg_1052_kalts2_1#7$2",focus="none")]
+[Decision(options="Once again...", values="1")]
+[Predicate(references="1")]
+[Decision(options="Welcome back, Kal'tsit.", values="1")]
+[Predicate(references="1")]
+[charslot]
+[PlaySound(key="$d_avg_airwaramb", channel="a",volume=0.3)]
+[Delay(time=1.5)]
+[SoundVolume(volume=0, channel="a",fadetime=2.5)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_1052_kalts2_1#1$2",focus="m")]
+[name="Kal'tsit"]I hear fighting... I suppose Ursus's many factions are still vying for the Sarcophagus?
+[Dialog]
+[charslot(slot="m",name="avg_1052_kalts2_1#1$2",focus="none")]
+[Decision(options="This does indeed have to do with the Sarcophagus.;The situation is a little more complicated than that.", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="We should get ready to pull out.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1052_kalts2_1#1$2",focus="m")]
+[name="Kal'tsit"]Doctor, I need to know... where is the Sarcophagus?
+[charslot(slot="m",name="avg_1052_kalts2_1#4$2",focus="m")]
+[name="Kal'tsit"]I still have... unfinished business.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g7_newinstitutelaboratory", screenadapt="coverall", block=true)]
+[Delay(time=2)]
+[playMusic(key="$monastery_sad_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Zelgrad Sealed District Laboratory</><p=2> Jan 22, 1102, 18:53</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_npc_2242_1#4$1",duration=2.5)]
+[Delay(time=3.5)]
+[name="Klim"]......
+[Dialog]
+[charslot]
+After stopping in front of the bloody palm print on the door for a brief moment, the man starts to slowly walk out of the dark corridor.
+The only energy pipeline from the satellite city has begun to operate once more. He has fulfilled his promise.
+Nothing following that is of any importance to him.
+[charslot(slot="m",name="avg_npc_2242_1#10$1",focus="m")]
+[name="Klim"]Alita...
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="0,-30",duration=2.5)]
+[Delay(time=2.5)]
+The man slowly falls to his knees and picks up one of the countless ice-cold bodies on the floor.
+Had you long since given up the ideals that you talked about as a girl, when you fed fowlbeasts by the pond, would you really have ended up like this?
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[focusout(duration=1, type="bg", from=0, to=1, block=true)]
+[Background(image="73_g7_newinstitutelaboratory", xScale=1.4,yScale=1.4)]
+[BackgroundTween(yFrom=0, yTo=130, duration=0,ease="OutQuad",block=false)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_2242_1#10$1",afrom=0,ato=1,duration=2.5)]
+[charslot(slot="m",action="zoom",poszoom="0.62,0.68",scale=1.8,duration=0,isblock=true)]
+[charslot(slot="m",name="avg_npc_2242_1#10$1",action="zoom",poszoom="0.62,0.68",scale=1.8,focus="m")]
+[name="Klim"]I never had the courage to tell you... I'd actually completely forgotten the promises I made before the statues of our forebears... those lies I told for the empire's sake.
+[name="Klim"]And I've never really cared about their so-called 'better tomorrow.'
+[name="Klim"]All I know is that, when a soldier leaves home, his family is always there to send him off, yet when we left Chernobog, the entire city was still asleep.
+[name="Klim"]For so many days and nights, all I've wanted is to go back to Lada's bedside.
+[name="Klim"]But I had to keep an eye on you, too.
+[charslot(slot="m",name="avg_npc_2242_1#9$1",action="zoom",poszoom="0.62,0.68",scale=1.8,focus="m")]
+[name="Klim"]I have to look after you... so you won't be alone... chasing things and hurting yourself in the process.
+[charslot(slot="m",name="avg_npc_2242_1#10$1",action="zoom",poszoom="0.62,0.68",scale=1.8,focus="m")]
+[name="Klim"]......
+[name="Klim"]Hah...
+[name="Klim"]Klim Valuev... In the end...
+[charslot(slot="m",name="avg_npc_2242_1#9$1",action="zoom",poszoom="0.62,0.68",scale=1.8,focus="m")]
+[name="Klim"]You still managed to accomplish nothing.
+[Dialog]
+[charslot(slot="m",focus="m")]
+[bgeffect(name="$eb_blacksmoke_02",fade = true, fadetime = 2,layer=1)]
+[Delay(time=1.5)]
+[Background(image="bg_black", xScale=1.2,yScale=1.2,fadetime=0.5)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_2242_1#9$1",action="zoom",poszoom="0.62,0.68",scale=1.8,focus="none")]
+[name="Indistinct Voice"]All clear...
+[name="Indistinct Voice"]The bodies...
+[Dialog]
+[bgeffect(layer = 1, fadetime = 1.5)]
+[Background(image="73_g7_newinstitutelaboratory", xScale=1.4,yScale=1.4,fadetime=2)]
+[BackgroundTween(yFrom=0, yTo=130, duration=0,ease="OutQuad",block=false)]
+[PlaySound(key="$d_avg_Warlockarrow", volume=1)]
+[charslot(slot="l",name="avg_npc_2237_1#1$1",afrom=0,ato=1,duration=0.8,bstart=0.1,bend=0.8,focus="none")]
+[charslot(slot="l",action="zoom",poszoom="0.46,0.5",scale=2,duration=0,isblock=true,focus="none")]
+[Delay(time=2.5)]
+[name="???"]......
+[name="???"]Found a survivor.
+[charslot(slot="m",name="avg_npc_2242_1#7$1",action="zoom",poszoom="0.62,0.68",scale=1.8,focus="m")]
+[name="Klim"]Who are you people?
+[charslot(slot="m",name="avg_npc_2242_1#10$1",action="zoom",poszoom="0.62,0.68",scale=1.8,focus="m")]
+[name="Klim"]Never mind. Doesn't matter.
+[name="Klim"]If you're here for the Sarcophagus. It's right behind me.
+[name="Klim"]If that's not what you are after...
+[charslot(slot="m",name="avg_npc_2242_1#9$1",action="zoom",poszoom="0.62,0.68",scale=1.8,focus="m")]
+[name="Klim"]Then get out. Now.
+[Dialog]
+[bgeffect(name="$eb_blacksmoke_02",fade = true, fadetime = 2,layer=1)]
+[Delay(time=1.5)]
+[Background(image="bg_black", xScale=1.2,yScale=1.2,fadetime=0.5)]
+[Delay(time=0.5)]
+[Background(image="73_g7_newinstitutelaboratory", xScale=1.4,yScale=1.4,fadetime=2)]
+[BackgroundTween(yFrom=0, yTo=130, duration=0,ease="OutQuad",block=false)]
+[bgeffect(layer = 1, fadetime = 1.5)]
+[PlaySound(key="$d_avg_Warlockarrow", volume=1)]
+[charslot(slot="l",name="avg_npc_2237_1#1$1",afrom=1,ato=0,duration=0.8,bstart=0.1,bend=0.8,focus="m")]
+[Delay(time=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[musicvolume(volume=0, fadetime=2)]
+[focusout(duration=1, type="bg", from=1, to=0, block=true)]
+[Background(image="73_g9_reactor_s", screenadapt="coverall", block=true)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_npc_2237_1#1$1",duration=2.5)]
+[Delay(time=3.5)]
+[PlaySound(key="$transmission", volume=1)]
+[name="War Caster"]Assessment complete.
+[name="War Caster"]The Sarcophagus weaponization module has been completely destroyed. Only its energy transformation stabilizer module remains, with an external channel still operational.
+[name="War Caster"]The Sarcophagus's core structure is massive and complex. It is nigh impossible to neatly dismantle for transportation with such little time. Please advise.
+[name="War Caster"]......
+[name="War Caster"]Right, it's irreparable. It cannot be done, even with all of us deploying the strongest evocation-conversion Arts at once.
+[name="War Caster"]The weaponization module's damage appears to have been caused by some sort of even greater power.
+[Dialog]
+[CameraShake(duration=1, xstrength=40, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[Effect(name="$e_sandfall_01",layer = 1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=3, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=3)]
+[PlaySound(key="$d_avg_rockfall", volume=1)]
+[delay(time=2.5)]
+[name="War Caster"]Furthermore, based on observations prior to entry, the plate housing the Sarcophagus has suffered continual external attack. We can surmise that the First Army has already abandoned Zelgrad.
+[name="War Caster"]Acknowledged.
+[name="War Caster"]We'll pull out immediately.
+[Dialog]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g7_newinstitutelaboratory", screenadapt="coverall", block=true)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_gen_soldiersrun",volume=1)]
+[Delay(time=3.5)]
+From afar, the soldiers, having just received their orders, look upon the sole survivor.
+The sound of explosions outside is drawing ever closer, yet it seems he is making no effort to escape at all.
+[Dialog]
+[charslot(slot="m",name="avg_npc_2237_1#1$1",duration=2.5)]
+[Delay(time=3.5)]
+[name="War Caster"]......
+[Dialog]
+[charslot(duration=2.5)]
+[Delay(time=3.5)]
+Why waste time on a man who will not live?
+[Dialog]
+[musicvolume(volume=0.6, fadetime=2)]
+[PlaySound(key="$d_gen_explo_n")]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[Effect(name="$e_sandfall_01",layer = 1)]
+[PlaySound(key="$d_avg_erthshkng", volume=1, loop=true, channel="e")]
+[CameraShake(duration=3, xstrength=10, ystrength=10, vibrato=90, randomness=90, fadeout=true, block=false)]
+[StopSound(channel="e", fadetime=3)]
+[PlaySound(key="$d_avg_rockfall", volume=1)]
+[delay(time=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=2.5)]
+[charslot(slot="m",name="avg_npc_2242_1#4$1",focus="m")]
+[name="Klim"]Hm...
+[charslot(slot="m",name="avg_npc_2242_1#10$1",focus="m")]
+[name="Klim"]This is the last time. Forgive my cowardice, Alita.
+[charslot(slot="m",name="avg_npc_2242_1#9$1",focus="m")]
+[name="Klim"]After all... you've always been the bravest of us.
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot]
+[Delay(time=2)]
+[Background(image="73_g14_prolocutoroffice", screenadapt="coverall", block=true)]
+[Delay(time=2)]
+[playMusic(intro="$mist_intro",key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="l",name="avg_npc_1984_1#1$1",duration=2.5)]
+[charslot(slot="r",name="avg_npc_2155_1#1$2",duration=2.5)]
+[Delay(time=3.5)]
+[charslot(slot="r",name="avg_npc_2155_1#7$2",focus="r")]
+[name="Fyodor"]Even the Second Army... Even the Second Army has turned against me, Witte!
+[charslot(slot="r",name="avg_npc_2155_1#5$2",focus="r")]
+[name="Fyodor"]What are we waiting for? For the traitors to march into Grypherburg and Tsarevgrad—for them to breach the palace and impale me on the throne?
+[charslot(slot="l",name="avg_npc_1984_1#7$1",focus="l")]
+[name="Witte"]Your Imperial Majesty... You must know why the Second Army resorted to such means.
+[name="Witte"]The Winter Emergency Resource Allocation Act.
+[charslot(slot="r",name="avg_npc_2155_1#7$2",focus="r")]
+[name="Fyodor"]What?
+[charslot(slot="l",name="avg_npc_1984_1#3$1",focus="l")]
+[name="Witte"]They think this bill will inevitably hurt their interests, perhaps even the Army's authority independent of the legislature. That's why they chose to turn a blind eye to the Fourth Army's actions.
+[charslot(slot="r",name="avg_npc_2155_1#5$2",focus="r")]
+[name="Fyodor"]No... Even suppose they had a problem with that, they wouldn't have gone against the edict like this... Someone must be fanning the flames!
+[charslot(slot="r",name="avg_npc_2155_1#7$2",focus="r")]
+[name="Fyodor"]Is it her... or who else would it be? My dear aunt...
+[charslot(slot="l",name="avg_npc_1984_1#3$1",focus="l")]
+[name="Witte"]Majesty... All things considered, our top priority should be the crisis at hand.
+[charslot(slot="l",name="avg_npc_1984_1#1$1",focus="l")]
+[name="Witte"]That said, each day that this bill isn't passed is another day that the Second Army doesn't point their spears directly to Grypherburg.
+[name="Witte"]Therefore, strictly speaking, they have yet to form any kind of coalition of mutual interest, and we still have a chance to negotiate with the Second Army.
+[name="Witte"]Moreover—
+[charslot(slot="r",name="avg_npc_2155_1#5$2",focus="r")]
+[name="Fyodor"]Witte, Witte! Listen to yourself. What nonsense are you talking?
+[name="Fyodor"]Even a traitor like Saveliy knows that the Second Army's decision to stand on the sidelines is tantamount to rebellion against us, and you're still making excuses for them.
+[name="Fyodor"]If I didn't know you and trust you, such words would be enough to brand you a traitor like the rest of them!
+[charslot(slot="l",name="avg_npc_1984_1#7$1",focus="l")]
+[name="Witte"]If such thinking calms your nerves, then fine, but I also know that you are no tyrant. You want to solve <i>real</i> problems, not emotional ones.
+[charslot(slot="l",name="avg_npc_1984_1#1$1",focus="l")]
+[name="Witte"]Which is why, no matter how furious you may be, you still have that basic level of sanity. You are not like those wild beasts.
+[charslot(slot="r",name="avg_npc_2155_1#1$2",focus="r")]
+[name="Fyodor"]......
+[charslot(slot="r",name="avg_npc_2155_1#2$2",focus="r")]
+[name="Fyodor"]What will you do, Witte? Will you really accede to their demands and postpone the citizen's forum indefinitely?
+[charslot(slot="l",name="avg_npc_1984_1#1$1",focus="l")]
+[name="Witte"]No, Majesty, I won't. The final deadline that we gave them is tomorrow's citizen's forum.
+[charslot(slot="r",name="avg_npc_2155_1#1$2",focus="r")]
+[name="Fyodor"]Why?
+[charslot(slot="l",name="avg_npc_1984_1#1$1",focus="l")]
+[name="Witte"]If, before the citizen's forum is called, we fail to cut a deal with the Second Army, make no progress on the Sarcophagus's energy, and the Grand Duchess doesn't change her position...
+[name="Witte"]Then we will have no choice but to mobilize the Central Army and stop all these sides from coming to blows, and at the same time put a stop to all this sedition once and for all... There will be no mercy or patience.
+[name="Witte"]Even if none of us know whether the empire can still withstand a civil war of such scale.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="66_g2_farnorthgovernment", screenadapt="coverall", block=true)]
+[PlaySound(key="$burningloop1", volume=0, loop=true, channel="fire")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[SoundVolume(volume=0.5, channel="fire",fadetime=2.5)]
+[Delay(time=2.5)]
+Within the fire burns the final urgent letter from the south.
+Before the flames can reach her fingertips, Elisaveta lets go of the letter and pulls back her hand.
+[Dialog]
+[StopSound(channel="fire", fadetime=3)]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_npc_1962_1#2$1",duration=1.5)]
+[Delay(time=2)]
+[name="Grand Duchess Elisabeth"]So the Second Army chose to stand on the sidelines too?
+[name="Grand Duchess Elisabeth"]Although this development is hardly unexpected.
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]Hm...
+[name="Grand Duchess Elisabeth"]It's just that the Chairman may have to play his very last card.
+[name="Grand Duchess Elisabeth"]My merciful, fledgling, and pitiful liege... Within you flows the blood of the old Tsar, yet unlike your father, you are not fit to be autocrat of all the Ursines.
+[name="Grand Duchess Elisabeth"]Nor is there an advisor at your side, as capable as the late Empress was.
+[name="Grand Duchess Elisabeth"]If all you're doing is pushing things through, how long can you possibly last?
+[name="Grand Duchess Elisabeth"]It's a good thing, then, that an individual more suited to the job has returned...
+[Dialog]
+[charslot]
+Her gaze turns to a woman looking at a painting on the wall.
+Her features are practically the same as those of a woman in the portrait.
+[charslot(slot="m",name="avg_npc_2230_1#11$1",focus="m")]
+[name="Anastasia"]Auntie.
+[name="Anastasia"]Is this... a painting of me?
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]No, my love. That is your mother. Your father, too.
+[charslot(slot="m",name="avg_npc_2230_1#2$1",focus="m")]
+[name="Anastasia"]It seems I have forgotten their smiles.
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]It's a cruel side effect that sometimes comes with the pains of life, not to mention that you've been through far too much these past few years.
+[charslot(slot="m",name="avg_npc_2230_1#2$1",focus="m")]
+[name="Anastasia"]But I must remember.
+[charslot(slot="m",name="avg_npc_1962_1#3$1",focus="m")]
+[name="Grand Duchess Elisabeth"]You will. I will help you... I will always help you, and stand by your side.
+[name="Grand Duchess Elisabeth"]Ever since you were a child, you have been strong and unwilling to concede defeat. You are far too much like your father.
+[charslot(slot="m",name="avg_npc_2230_1#7$1",focus="m")]
+[name="Anastasia"]My father... What was he like?
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]A ruler with excellent foresight, ambition, gallantry. He poured his heart and soul into revitalizing Ursus's territorial expansion and feeding his citizens, never resting even a moment until his death.
+[name="Grand Duchess Elisabeth"]One could say that he was the greatest man to ever grace Ursus, second only to Igor Velikiy, who forged this empire.
+[charslot(slot="m",name="avg_npc_2230_1#8$1",focus="m")]
+[name="Anastasia"]He sounds very... distant.
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]Right, he was extraordinarily hard to get close to. Only your mother ever dared to stand near him.
+[charslot(slot="m",name="avg_npc_2230_1#8$1",focus="m")]
+[name="Anastasia"]Really? That sounds very lonely.
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]...I doubt he ever felt that way, other than when your mother passed—
+[name="Grand Duchess Elisabeth"]......
+[charslot(slot="m",name="avg_npc_2230_1#11$1",focus="m")]
+[name="Anastasia"]Auntie, what's wrong?
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]Let's talk about something else, Nastya.
+[name="Grand Duchess Elisabeth"]Do you want to go back to Grypherburg?
+[charslot(slot="m",name="avg_npc_2230_1#17$1",focus="m")]
+[name="Anastasia"]Grypherburg...
+[Dialog]
+[charslot]
+A hesitant expression, one that Elisaveta is all too familiar with, appears on Anastasia's face. After a brief moment, she speaks her will.
+[charslot(slot="m",name="avg_npc_2230_1#1$1",focus="m")]
+[name="Anastasia"]I want to see Fedya.
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]What?
+[charslot(slot="m",name="avg_npc_2230_1#1$1",focus="m")]
+[name="Anastasia"]Fyodor, my little brother.
+[name="Anastasia"]I want to see him.
+[charslot(slot="m",name="avg_npc_2230_1#14$1",focus="m")]
+[name="Anastasia"]If I must return to Grypherburg to see him, then I wish to go back.
+[name="Anastasia"]If he is not there, then I will go to where he is.
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]No matter where he is?
+[charslot(slot="m",name="avg_npc_2230_1#1$1",focus="m")]
+[name="Anastasia"]Yes, no matter where he is.
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]And why do you wish to see him?
+[charslot(slot="m",name="avg_npc_2230_1#14$1",focus="m")]
+[name="Anastasia"]Must I have a special reason? I think he probably wants to see me, too.
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]......
+[name="Grand Duchess Elisabeth"]If that is the case, Anastasia, then you must know a certain truth first.
+[charslot(slot="m",name="avg_npc_2230_1#1$1",focus="m")]
+[name="Anastasia"]I am listening.
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]While you were missing... no, wandering all over Ursus, Fyodor succeeded your father and tried his best to be a good Tsar.
+[name="Grand Duchess Elisabeth"]Unfortunately, he is simply no good at it, and the job is not a good fit for him either.
+[charslot(slot="m",name="avg_npc_2230_1#1$1",focus="m")]
+[name="Anastasia"]If memory serves, he loves reading, and he even wrote his own poems. Does he still do that?
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]His role as the Tsar has no doubt consumed a significant majority of his time. Even if he still does write, it is most likely satirical poems written to vent his anger.
+[name="Grand Duchess Elisabeth"]That is just conjecture, though.
+[name="Grand Duchess Elisabeth"]It has been a very long time since he spoke to me. Even his letters are penned by others on his behalf.
+[charslot(slot="m",name="avg_npc_2230_1#8$1",focus="m")]
+[name="Anastasia"]It seems that he hasn't changed at all... He worries about how others see him, too much for his own good.
+[name="Anastasia"]My poor Fedya. I can practically imagine how hard he pushes himself to become an unbiased—even ruthless—symbol... because that is what the people want.
+[name="Anastasia"]But he should never show that facade to you, of all people. After all, you are the only family we have, and we used to be so close... Right?
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]That was a long time ago.
+[name="Grand Duchess Elisabeth"]There have since been certain things that I handled in a less than satisfactory way, even if it was all out of concern for him. The saddest thing is that we share the same name and should be helping one another.
+[name="Grand Duchess Elisabeth"]Instead, he trusted an outsider, and one from the bottom rung of society with no foresight, to the point that he dragged all of Ursus into a terrible mess.
+[name="Grand Duchess Elisabeth"]Now, this great land faces a hopeless future because of his reckless actions.
+[name="Grand Duchess Elisabeth"]If he would turn away a loyal family member and subject like myself at this perilous juncture... then how many do you think still stand by his side?
+[charslot(slot="m",name="avg_npc_2230_1#13$1",focus="m")]
+[name="Anastasia"]...I understand now.
+[name="Anastasia"]What do you want me to do?
+[charslot(slot="m",name="avg_npc_1962_1#4$1",focus="m")]
+[name="Grand Duchess Elisabeth"]Save him, and save Ursus, my dear Nastya.
+[name="Grand Duchess Elisabeth"]You are the only one. Only you can do this.
+[name="Grand Duchess Elisabeth"]Because... within you flows his blood.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="l",name="avg_npc_1984_1#1$1")]
+[charslot(slot="r",name="avg_npc_2155_1#1$2")]
+[Background(image="73_g14_prolocutoroffice", screenadapt="coverall", block=true)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=2)]
+[charslot(slot="r",name="avg_npc_2155_1#1$2",focus="r")]
+[name="Fyodor"]......
+[charslot(slot="r",name="avg_npc_2155_1#4$2",focus="r")]
+[name="Fyodor"]I should never have doubted your loyalty, my dear Witte.
+[charslot(slot="r",name="avg_npc_2155_1#1$2",focus="r")]
+[name="Fyodor"]But if worse comes to worst, as you said, then you'll have to forgive my stubbornness, as I will have to take to the front lines.
+[charslot(slot="l",name="avg_npc_1984_1#4$1",focus="l")]
+[name="Witte"]—?!
+[charslot(slot="r",name="avg_npc_2155_1#2$2",focus="r")]
+[name="Fyodor"]My most loyal men will be fighting for me, and with the Second Army turning against me, that is the most effective way to rouse my people.
+[charslot(slot="l",name="avg_npc_1984_1#11$1",focus="l")]
+[name="Witte"]Your Imperial Majesty!
+[charslot(slot="r",name="avg_npc_2155_1#2$2",focus="r")]
+[name="Fyodor"]Trust me, Witte. After all, I'm not like those weak tin soldiers in the fortress. I am—
+[charslot(slot="r",name="avg_npc_2155_1#7$2",focus="r")]
+[name="Fyodor"]The Emperor and Autocrat of All the Ursines.
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_npc_1982_1#1$1",duration=2.5)]
+[Delay(time=3.5)]
+[name="Respectful Servant"]Your Imperial Highness, we have news from the Deity Grypherburg Power Dispatch Center.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1984_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_2155_1#1$2",focus="r")]
+[name="Fyodor"]What have they discovered?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1982_1#1$1",focus="m")]
+[name="Respectful Servant"]They say that the high-voltage fencing's isolated failure points have been restored. Once the transformer is in place, we will be able to use the node to restore power to some of the affected areas.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1984_1#3$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2155_1#1$2",focus="l")]
+[name="Witte"]Which line did the failures originate in?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1982_1#1$1",focus="m")]
+[name="Respectful Servant"]The lines connected to the newly built energy pipeline. That said, the power facilities are old.
+[name="Respectful Servant"]They were originally intended for use only while the city was stationary, but the lines failed not too long ago, so we temporarily isolated the failure points for investigation. They have been restored now.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_1984_1#3$1",focus="r")]
+[charslot(slot="r",name="avg_npc_2155_1#1$2",focus="r")]
+[name="Fyodor"]......
+[name="Fyodor"]Thank you. You are excused.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1982_1#1$1",focus="m")]
+[Delay(time=1.5)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=2.5)]
+[Delay(time=3.5)]
+[charslot(slot="l",name="avg_npc_1984_1#1$1",focus="r")]
+[charslot(slot="r",name="avg_npc_2155_1#8$2",focus="r")]
+[name="Fyodor"]It's better than nothing, but can this tiny bit of energy really feed the entire empire?
+[charslot(slot="l",name="avg_npc_1984_1#3$1",focus="l")]
+[name="Witte"]No... This is a sign, Majesty.
+[name="Witte"]One that tells us the worst is yet to come.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="66_g2_farnorthgovernment",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[Delay(time=2)]
+[playMusic(key="$darkness_03_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_monocycle_bell", channel="a",volume=1)]
+[Delay(time=0.5)]
+[StopSound(channel="a", fadetime=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]Shh. She's asleep. Please, try not to wake her...
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2257_1#1$1",duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",focus="m")]
+[name="???"](In Sami) So, you got yourself involved.
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]I know what I am getting myself into.
+[charslot(slot="m",name="avg_npc_2257_1#1$1")]
+[name="???"](In Sami) Says everyone who is willingly deceived.
+[name="???"](In Sami) Despite appearances, its heart is completely empty. Everything you hear and see is a mere projection of your desires.
+[charslot(slot="m",name="avg_npc_1962_1#1$1")]
+[name="Grand Duchess Elisabeth"]If you are really worried, then stay here and help me.
+[name="Grand Duchess Elisabeth"]Use your Shaman eyes to help me see through this darkness.
+[charslot(slot="m",name="avg_npc_2257_1#2$1")]
+[name="???"](In Sami) No, that is not part of our deal.
+[charslot(slot="m",name="avg_npc_2257_1#1$1")]
+[name="???"](In Sami) The ritual is complete. I shall take my leave.
+[name="???"](In Sami) Before your vulgar and stupid desires backfire on you, do not forget to fulfill your end of the bargain.
+[Dialog]
+[charslot(slot="m",afrom=1,ato=0,duration=2.5)]
+[charslot(slot="m",posfrom="0,0",posto="-150,0",duration=2.5)]
+[Delay(time=2.5)]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g1_exurbstreet_d", screenadapt="coverall", block=true)]
+[Delay(time=2)]
+[playMusic(intro="$darkness02_intro",key="$darkness02_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[name="Communicator"]Main forces... retreating...
+[name="Communicator"]This is your final order... Eliminate... Infected creatures—
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Ursine Soldier"]Acknowledged.
+[Dialog]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=2)]
+[name="Ursine Soldier"]Staying behind to clean up again...
+[Dialog]
+[charslot]
+The soldier tosses his communicator to the side and takes a swig of vodka.
+This morning, while he was kneading dough in the field kitchen, he found himself dragged outside by his officer.
+This wasn't his first time using Originium bolts, but it was his first time taking a life, even if it was a mutated animal.
+Before he left, he stuffed all the spirits he had into his backpack. Ever since, every time he's fired a bolt, he's taken a swig. It is the only way to keep his fingers from shaking.
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Ursine Soldier"]......
+[Dialog]
+[charslot]
+A cloudbeast, or perhaps something that resembled a cloudbeast.
+He thinks back to how the fluffy little things would hop into the kitchen and tug on his pants with their claws, and he would tear off a chunk of bread in exchange for a chance to pat their heads.
+[Dialog]
+[PlaySound(key="$d_avg_crossbowbolts_fire", volume=1)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Ursine Soldier"]Sorry, old friend...
+[Dialog]
+[charslot]
+He approaches the creature lying on the ground unsteadily and reaches his right hand out—
+[Dialog]
+[PlaySound(key="$d_avg_snarl_2", volume=1)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=0.5)]
+Suddenly, the creature violently bounces up and turns into a black shadow. It leaps toward the soldier, causing him to shriek and raise his arms instinctively.
+[Dialog]
+[PlaySound(key="$d_avg_crossbowbolts_fire",channel="1", volume=1)]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_crossbow_hit",channel="2", volume=1)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=0.5)]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot="m",name="avg_npc_1977_1#1$1",duration=2.5)]
+[Delay(time=3.5)]
+[name="Ursine Officer"]<i>Blyat!</i> How many times have I told you?! Hold your weapon upright, get a bead on your target, then fire!
+[name="Ursine Officer"]Once I'm done with these <i>ublyudki</i>, I'll drown you in your vodka!
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_snarl_2", volume=1)]
+[CameraShake(duration=0.5, xstrength=20, ystrength=20, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=0.5)]
+Right after he reprimands his subordinate, despite the bolt pierced through its body, the mutated creature shrieks and leaps up again.
+[Dialog]
+[PlaySound(key="$d_avg_enemyappear_weird", volume=1)]
+[CameraShake(duration=4, xstrength=5, ystrength=5, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$firestorm", volume=1, loop=true, channel="fire")]
+[PlaySound(key="$d_avg_churchfire",volume=0, channel="f", loop=true)]
+[SoundVolume(volume=0.2, channel="f",fadetime=2)]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=0.2, r=0.92, g=0.4, b=0.3, fadetime=2, block=false)]
+[StopSound(channel="fire", fadetime=6)]
+[StopSound(channel="f", fadetime=2)]
+[delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+Before the two are able to react, a scorching hot wave blasts past them. The beast is incinerated, turned to ash, while the pavement beneath it melts into a charred black pit.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_npc_2247_1#1$1",duration=2.5)]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Ursine Soldier"]Wait! You're—
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="Ursine Officer"]Slow down, Private. Lower your weapon. Stand aside and stay alert. I will handle her.
+[Dialog]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",afrom=1,ato=0,duration=1)]
+[charslot(slot="m",posfrom="0,0",posto="-100,0",duration=2.5)]
+[Delay(time=3)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2247_1#1$1",focus="m")]
+[name="Talulah"]He shouldn't stay here. Neither should you.
+[name="Talulah"]These creatures are crawling all over this city. No one should be here.
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="Ursine Officer"]That is not for you to decide, Reunion. My commanding officer says the area is abandoned, but I have not received orders to move out.
+[name="Ursine Officer"]And so, I cannot allow these crazed creatures to flee Zelgrad. They would go southwest and spread their disease to the people there.
+[name="Ursine Officer"]Somebody has to stay... A few hundred lives for thousands more. It's a fair price to pay.
+[charslot(slot="m",name="avg_npc_2247_1#9$1",focus="m")]
+[name="Talulah"]I've seen many soldiers lay down their arms during confrontation with Reunion, letting civilians leave in peace.
+[name="Talulah"]Were those your orders, too?
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="Ursine Officer"]No, they were decisions we made on the spot. You won... temporarily, at least.
+[name="Ursine Officer"]The First Army has had losses before, but even the greenest of our soldiers stood steadfast in the face of Gaulish artillery. They waited where they stood with their stump legs for the Tsar's reinforcements.
+[name="Ursine Officer"]Zelgrad belongs to the First Army... From now on, whenever Ursine citizens bring up the city, it will be known as the front line of the empire's glory, where all the monsters were quelled.
+[name="Ursine Officer"]Which is why, if you aren't here to kill us, I ask you to let us fulfill our duty as Ursine soldiers.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=2.5)]
+[Delay(time=3.5)]
+The woman nods, and the old officer lowers his guard. He signals to the soldier standing nearby and walks away with him in silence.
+[charslot(slot="m",name="avg_npc_2247_1#10$1",focus="m")]
+[name="Talulah"]......
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(slot="l",name="avg_npc_415_1#1$1",bstart=0.1,bend=0.8,posform="50,0",posto="50,0",duration=2,focus="m")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_2247_1#10$1",focus="m")]
+[name="Elegant Voice"]Hmm...
+[name="Elegant Voice"]You're still easily swayed by noble-sounding speeches. Perhaps that will always be your flaw, my dear...
+[charslot(slot="m",name="avg_npc_2247_1#4$1",focus="m")]
+[name="Talulah"]You—!
+[Dialog]
+[Effect(name="$e_slash_01_l",x =25.2,y=-88.8,rox=62.6,roy=115.7,roz=150.9,layer = 1)]
+[charslot(slot="m",posfrom="0,0",posto="200,0",duration=0.5,focus="m")]
+[charslot(slot="l",afrom=1,ato=0,duration=0.5,focus="m")]
+[charslot(slot="l",posfrom="0,0",posto="-100,0",duration=0.5,focus="m")]
+[PlaySound(key="$d_avg_katanamagic", volume=1,channel="2")]
+[delay(time=0.3)]
+She unsheathes her blade the moment she hears that familiar voice.
+[Dialog]
+But when she turns, she finds not that familiar individual, but the ruined streets.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g15_exurbforest", screenadapt="coverall", block=true)]
+[Delay(time=2)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="l",name="avg_npc_2225_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="l")]
+[name="Tulin"]The main forces have retreated.
+[name="Tulin"]Lyudmila, our Reunion friends are still fighting the army in the city. I can bring a few men with me to help.
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Crownslayer"]Let's just leave this to them. This kind of back alley brawl is exactly Reunion's forte. Besides, you've seen how intense the battles can get in the city.
+[charslot(slot="r",name="avg_1502_crosly_1#3$1",focus="r")]
+[name="Crownslayer"]I'm not trying to sell you short... Anyone who can still hold a blade should stay to protect their friends.
+[charslot(slot="l",name="avg_npc_2225_1#3$1",focus="l")]
+[name="Tulin"]Now that I've had a front-row seat to Reunion's combat style, I must say it's really quite remarkable.
+[charslot(slot="r",name="avg_1502_crosly_1#2$1",focus="r")]
+[name="Crownslayer"]...I haven't been one of them for a while now.
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Crownslayer"]But just to be safe, I'll be heading back to check on things and fill Red in on your situation over here.
+[charslot(slot="l",name="avg_npc_2225_1#1$1",focus="l")]
+[name="Tulin"]Right. For safety's sake, I'll take everyone deeper into the forest. We'll meet up at the western boundary of the forest.
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Crownslayer"]Sounds good to me.
+[name="Crownslayer"]But before that...
+[name="Crownslayer"]I need to know who you really are.
+[charslot(slot="l",name="avg_npc_2225_1#1$1",focus="l")]
+[name="'Tulin'"]Sure enough...
+[charslot(slot="r",name="avg_1502_crosly_1#2$1",focus="r")]
+[name="Crownslayer"]Ivan Tulin was an incredible warrior. If someone is taking his name, I need to know why.
+[charslot(slot="l",name="avg_npc_2225_1#3$1",focus="l")]
+[name="'Tulin'"]Isn't that exactly why?
+[name="'Tulin'"]Ivan Tulin. This name is like a banner in the Northern Tundra. I don't want this name to disappear from the public consciousness.
+[charslot(slot="r",name="avg_1502_crosly_1#4$1",focus="r")]
+[name="Crownslayer"]You mean he's—
+[charslot(slot="l",name="avg_npc_2225_1#4$1",focus="l")]
+[name="'Tulin'"]It was maybe three years ago. In the end, he wasn't able to escape the Patrol Units' manhunt.
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Crownslayer"]......
+[charslot(slot="l",name="avg_npc_2225_1#3$1",focus="l")]
+[name="'Tulin'"]I know I'm not the only person to have learned and received help from him, and I may not be the one most deserving of taking up his name. I just believe that somebody has to do it.
+[name="'Tulin'"]I couldn't afford to wait for somebody to step up to the task, so I did.
+[charslot(slot="r",name="avg_1502_crosly_1#2$1",focus="r")]
+[name="Crownslayer"]Perhaps Talulah will be disappointed once she learns the truth... but I believe you.
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Crownslayer"]Could you at least tell me your real identity, your actual name?
+[charslot(slot="l",name="avg_npc_2225_1#3$1",focus="l")]
+[name="'Tulin'"]...Milana.
+[name="Milana"]A normal miner, the daughter of peasants.
+[name="Milana"]All my miner brothers and sisters know this, but they prefer to call me Tulin, out of habit.
+[charslot(slot="l",name="avg_npc_2225_1#7$1",focus="l")]
+[name="Milana"]But it'd make me very happy to have a good friend willing to call me Milana.
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="r")]
+[name="Crownslayer"]Alright, Milana—
+[charslot(slot="r",name="avg_1502_crosly_1#1$1",focus="none")]
+[name="???"]*sob*... *sob*...
+[Dialog]
+[charslot(slot="l",name="avg_npc_2225_1#3$1",focus="l")]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="l",afrom=1,ato=0,duration=1)]
+[charslot(slot="l",posfrom="0,0",posto="-200,0",duration=2.5)]
+[Delay(time=2.5)]
+[charslot]
+With a hint of remorse, Milana nods to Crownslayer, bidding her farewell.
+Then, she slowly walks toward the source of the sobbing—a young girl, and some broken parts scattered across the ground.
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_2233_1#1$1",duration=2.5)]
+[charslot(slot="r",name="avg_npc_2234_1#1$1",duration=2.5)]
+[Delay(time=3.5)]
+[charslot(slot="l",name="avg_npc_2233_1#1$1",focus="l")]
+[name="Ursine Boy"]Come on, Yana, don't cry. I'll help you look. We'll put it back together.
+[charslot(slot="r",name="avg_npc_2234_1#1$1",focus="r")]
+[name="Ursine Girl"]No... *sob*... We can't do it. Only Papa knows how.
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_2225_1#3$1",focus="m")]
+[name="Milana"]Um, did something happen here?
+[Dialog]
+[charslot]
+[charslot(slot="m",name="avg_npc_1969_1#1$1",focus="m")]
+[name="Ursine Worker"]*sigh* This young lady here fell and broke her pocket watch.
+[name="Ursine Worker"]Her father... Li'l Letov, was the best watchmaker in town. He died this morning under a collapsed beam in their house. It's what he left her.
+[Dialog]
+[charslot]
+The young woman nods and drops to her knees to get on the same level as the little girl. She reaches her right hand out, and dusts off the girl's dirty clothes.
+[Dialog]
+[charslot(slot="l",name="avg_npc_2225_1#3$1",duration=2.5)]
+[charslot(slot="r",name="avg_npc_2234_1#1$1",duration=2.5)]
+[Delay(time=3.5)]
+[charslot(slot="l",name="avg_npc_2225_1#3$1",focus="l")]
+[name="Milana"]Yana, right? Can I call you Yanushka?
+[charslot(slot="r",name="avg_npc_2234_1#1$1",focus="r")]
+[name="Ursine Girl"]...Mhm.
+[charslot(slot="l",name="avg_npc_2225_1#3$1",focus="l")]
+[name="Milana"]I remember you. You were so brave during the evacuation. You aren't crying just because of the broken watch, right?
+[charslot(slot="r",name="avg_npc_2234_1#1$1",focus="r")]
+[name="Ursine Girl"]Papa... died. Our home... is gone.
+[name="Ursine Girl"]I don't know... where we can go...
+[charslot(slot="l",name="avg_npc_2225_1#3$1",focus="l")]
+[name="Milana"]Perhaps none of us know...
+[charslot(slot="l",name="avg_npc_2225_1#7$1",focus="l")]
+[name="Milana"]But we need to keep walking until we find our new home.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[Background(image="bg_snow_2", screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[playMusic(key="$m_sys_act4mainss_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="none")]
+[name="Ivan Tulin"]...Go back, Milana. Your leg hasn't completely healed. This is far enough.
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="Milana"]Leithanien is very far, Tulin. I don't know if this might be the last time we see each other.
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="none")]
+[name="Ivan Tulin"]Maybe it will be... but that place is free of the Ursine military police. I will be able to study and create in peace again, for a while.
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="Milana"]Yes, I hear they have towering spires, taller than even the clouds. And their magic and music can bring warmth to even the coldest nights.
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="none")]
+[name="Ivan Tulin"]But I don't need warmth. I need to find that spark of fire for the people.
+[name="Ivan Tulin"]I can feel Ursus's harsh cold, but I don't know how to strike at its source... Just like my brother... I can only go to see more, and see for myself all the suffering faces across the lands.
+[name="Ivan Tulin"]To me, Leithanien isn't a punishment. I will tear up all those arrogant scriptures, and turn even their most complicated spells into language that the workers can understand, to bring an end to this cold once and for all.
+[charslot(slot="m",name="avg_npc_2225_1#3$1",focus="m")]
+[name="Milana"]A language that even I can understand?
+[charslot(slot="m",name="avg_npc_2225_1#3$1",focus="none")]
+[name="Ivan Tulin"]Haha, you're right... Milana, as a friend, I have one earnest request.
+[name="Ivan Tulin"]After I'm gone, I want to entrust everyone here—all the miners coughing up blood in the mines, and all the children looking for bread in the snow fields, I entrust them to you.
+[charslot(slot="m",name="avg_npc_2225_1#11$1",focus="m")]
+[name="Milana"]...Tulin, are you kidding me? I'm not like you. I'm an ordinary woman.
+[charslot(slot="m",name="avg_npc_2225_1#11$1",focus="none")]
+[name="Ivan Tulin"]No, I'm an ordinary man myself. Every great person out there is actually as ordinary as can be.
+[name="Ivan Tulin"]Greatness isn't a gift you are born with. It's simply the hope that numerous ordinary folk have placed in those who are willing to carry a burden.
+He reaches his right hand out to Milana.
+[name="Ivan Tulin"]Promise me, Milana. Whether I come back with glory... or send back a broken, blood-soaked chapter... you must live.
+[name="Ivan Tulin"]Look after them in my place. Don't let them simply bear with the pain. Let them grow roots in the pain.
+[charslot(slot="m",name="avg_npc_2225_1#11$1",focus="m")]
+[name="Milana"]Tulin... Will I... ever see you again?
+[charslot(slot="m",name="avg_npc_2225_1#11$1",focus="none")]
+[name="Ivan Tulin"]As long as I'm still alive, I will do whatever I can to write back.
+[name="Ivan Tulin"]But the moment we must part ways has come.
+[name="Ivan Tulin"]Goodbye, my dear friend...
+[name="Ivan Tulin"]If we will never see dawn again, then light up each and every cold night in your own way.
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=2, block=true)]
+[charslot]
+[charslot(slot="l",name="avg_npc_2225_1#3$1")]
+[charslot(slot="r",name="avg_npc_2234_1#1$1")]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[Background(image="73_g15_exurbforest", screenadapt="coverall", block=true)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_npc_2225_1#3$1",focus="l")]
+[name="Milana"]A lot of times, the roads that we walk are slippery and full of potholes. Even the most incredible men are bound to stumble and fall.
+[name="Milana"]That's not our fault. The fault lies with the place where we run and stand.
+[name="Milana"]It's just like how your papa could fix all kinds of pocket watches, but if a watch's shell was bent, then your papa wouldn't be able to fix it, no matter how much he polished its parts.
+[charslot(slot="l",name="avg_npc_2225_1#7$1",focus="l")]
+[name="Milana"]All we can do is find a new shell and fit it with parts and make it better than the original. Your papa would be so proud, if you managed to do that.
+[charslot(slot="l",name="avg_npc_2225_1#7$1",focus="none")]
+Milana finishes and lifts her head to find the workers slowly gathering around her and the two children.
+All of them are listening intently, with some of them fighting back tears.
+[charslot(slot="l",name="avg_npc_2225_1#1$1",focus="l")]
+[name="Milana"]Yanushka, everyone... Today, you have no choice but to leave your homes—
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g4_exurbstonewallstreet_d", screenadapt="coverall", block=true)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[name="Helpless Civilian"]Help... Just what is going on?
+[name="Helpless Civilian"]There are bombs falling from the sky, and the whole town is crawling with monsters—
+[name="Helpless Civilian"]Why... What happened to the army? Have they given up on this place, on protecting us?
+[name="Helpless Civilian"]Bozhe moi... We've been abandoned again...
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_npc_415_1#1$1",duration=2.5)]
+[Delay(time=3.5)]
+[charslot(slot="m",name="avg_npc_415_1#2$1",focus="m")]
+[name="Koshelna"]Why wait for anyone to save us?
+[name="Koshelna"]Why do you always need to rely on others for protection? Why must you keep indulging in the city's false spring?
+[name="Koshelna"]Don't you have the same strength as those high and mighty men with big names?
+[charslot(slot="m",name="avg_npc_415_1#2$1",focus="none")]
+Standing atop ruins of the recent past, the white-haired Liberi peers down—Those who are unwilling to leave their homes are gathered in front of her, listening to her speech.
+Among them are workers, soldiers, the elderly, and children... Faces you see in just about every city in Ursus. They are confused. They are strong.
+[charslot(slot="m",name="avg_npc_415_1#1$1",focus="m")]
+[name="Koshelna"]Friends of Zelgrad. You have my praise for your resilience and my compliments for your bravery.
+[name="Koshelna"]But, esteemed friends, do you know which words the empire uses to describe you? 'Restrained,' 'kind,' 'obedient.' Yes...
+[name="Koshelna"]They kissed you on your foreheads and branded them with the words 'restrained.'
+[name="Koshelna"]They drained your blood and poured 'kindness' into your veins.
+[charslot(slot="m",name="avg_npc_415_1#5$1",focus="m")]
+[name="Koshelna"]They inflicted your bodies and souls with weariness to make you 'obedient' and easy to bend to their will.
+[name="Koshelna"]Under the banner of equality, they bestowed upon you equal destitution. And with hatred and envy, they traded for your love of life and courage in the face of fate.
+[name="Koshelna"]More importantly, they sealed your lips and made you ashamed to speak that sacred word—strength.
+[name="Koshelna"]Yes, 'strength.' Something that should be abundant in your lives.
+[name="Koshelna"]For they know that once you think you have strength, you will crush their extravagant palaces and smash their authority.
+[name="Koshelna"]People of Ursus, you can do this—
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="66_g2_farnorthgovernment", screenadapt="coverall", block=true)]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot(slot="m",name="avg_npc_2230_1#13$1",focus="m")]
+[name="Anastasia"]...If you want me to do this, Auntie, then I will.
+[name="Anastasia"]I will make them believe, and my voice will reach them... throughout Ursus, and to Grypherburg.
+[charslot(slot="m",name="avg_npc_1962_1#1$1",focus="m")]
+[name="Grand Duchess Elisabeth"]Yes, dear Nastya. Watch them. They are waiting for you.
+[Dialog]
+[charslot(slot="m",name="avg_npc_2230_1#13$1",focus="m")]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(duration=2.5)]
+[Delay(time=3.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+The noble princess nods slightly and begins walking down the stairs to the starving men gathered below.
+The men are haggard and weary. They are starved to the point that they can't even lift their heads, and their hunched backs appear slight in the darkness. Right now, there is only one thing on their minds—
+[Dialog]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[Delay(time=3.5)]
+'Yurodstvo.'
+Once, they willingly endured, but now they have desire. Yet before any of them can voice their wishes, a peaceful, unquestionable voice rings out.
+[name="Anastasia"]My suffering brothers and sisters, people of Ursus... I have returned.
+The voice sounds the same to every one of its listeners, as though it is capable of cleansing the lands of all injustice and bringing salvation to all suffering.
+[name="Anastasia"]I see your tears have run dry, yet you still cry out for mercy.
+[name="Anastasia"]I see your bodies are covered with scars, yet you still crawl forward in the mud.
+[name="Anastasia"]Until this day, when you finally look upon me—the Grand Princess of Ursus.
+[name="Anastasia"]And I shall declare to you the meaning of patience.
+All of a sudden, there are bread, cheese, and cured meat... as if they have fallen from the sky.
+Everyone in attendance forces themselves to lift their heads and reach their hands out. Though they are battered and bruised, not a single voice carries resentment. The only thing that can be heard is thunderous applause: 'Long live the Princess.'
+Each of them clasps their hands for the Yurodstvo.
+The Grand Duchess looks to the top of her castle and nods.
+[name="Anastasia"]Children of Ursus, hear me...
+[name="Anastasia"]I see your teary eyes—
+[Dialog]
+[charslot]
+[Image(image="73_i09", xScale=1.1, yScale=1.1,screenadapt="coverall",fadetime=2)]
+[ImageTween(xScaleFrom=1.1, yScaleFrom=1.1, xScaleTo=1, yScaleTo=1, duration=85, block=false)]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[name="Anastasia"]There is no need to wail simply because your wounds are torn asunder. It will wash away the dust coating your souls.
+[name="Anastasia"]Do not curse the arrival of your suffering. It will open the door to eternity for you.
+[name="Koshelna"]Your suffering will from now on be your sustenance. It will bring you boundless strength.
+[name="Koshelna"]Use this strength to repay those who took joy in your suffering.
+[name="Milana"]There will come a day when we deserve these hardships we suffer, which we will use to measure the weight of our lives.
+[name="Milana"]But we will never sing the praises of our suffering. We willingly let our suffering fade away, because no one should be born to suffer.
+[name="Anastasia"]All of us will die, but if you will allow me, I guarantee to all of you a brief, transient happiness while you yet walk among the living.
+[name="Anastasia"]Everything will take a turn for the better. Everything will be etched into your flesh and blood. Each bloody trail you leave in the snow is a red carpet that leads directly to our holy dominion.
+[name="Koshelna"]Do you hear that? Your souls are calling out to you. They are screaming, thirsting for pillage and conquest.
+[name="Koshelna"]We will endure no longer. Every show of tolerance is an act of suicide. After all, the only thing that stands eternal above this field of permafrost is the truth that strength reigns supreme.
+[name="Milana"]Now come with me. We will be the vanguard that opens the way.
+[name="Milana"]As long as we cut open a small crack on the surface of the ice, the surging waters within will wash away our shackles.
+[name="Anastasia"]The bread that fills our stomachs is but an insignificant manifestation of power.
+[name="Anastasia"]I will make Ursus spread her arms wide. The empire's embrace will be a place where tears are no longer shed.
+[name="Koshelna"]The future that I see has no golden idols or noble masters. Only the strong will walk side-by-side.
+[name="Koshelna"]Now go. You are the thunderclaps of this storm. Let our will bring order to Ursus!
+[name="Milana"]Once these seeds break through the snow, the wilderness will be white no longer. This is a future where we won't need to be given bread, a future where we all work the fields for one another.
+[name="Milana"]We will no longer be lonely seeds, but field upon field of golden wheat. That day will surely come, just as the sun will rise tomorrow—
+[name="Anastasia"]Come, Ursines. Follow in the footsteps of your forebears.
+[name="Anastasia"]In my eyes, you already stand...
+[name="Anastasia"]...in the kingdom of heaven.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image]
+[Background(image="73_g13_ursuswscommandroom", screenadapt="coverall", block=true)]
+[Delay(time=2)]
+[playMusic(intro="$m_bat2_act4mainss_intro",key="$m_bat2_act4mainss_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Assault Ship Volnov, Command Center</><p=2> Jan 22, 1102, 21:44</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[charslot(slot="m",name="avg_4226_veen_1#11$1",focus="m")]
+[name="Scioppa"]Alright, Oleg is gone too. Ship's all clear!
+[name="Scioppa"]Operation manual, control panel...
+[Dialog]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4226_veen_1#6$1",focus="m")]
+[name="Scioppa"]Gah, what a pain.
+[Dialog]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4226_veen_1#11$1",focus="m")]
+[name="Scioppa"]Let's see...
+[name="Scioppa"]...Looks like there's a reason why this big girl needs a crew of eight just to keep her trudging along.
+[name="Scioppa"]But that's just fine. If it's a suicide mission, we don't need a full complement.
+[name="Scioppa"]As long as we tune the presets right—
+[Dialog]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4226_veen_1#1$1",focus="m")]
+[name="Scioppa"]......
+[Dialog]
+[PlaySound(key="$d_gen_transmissionget", volume=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4226_veen_1#7$1",focus="m")]
+[name="Scioppa"]Command, right? Any further instructions?
+[charslot(slot="m",name="avg_4226_veen_1#7$1",focus="none")]
+[name="Intermittent Voice"]...back...
+[charslot(slot="m",name="avg_4226_veen_1#2$1",focus="m")]
+[name="Scioppa"]Oh, I almost forgot. We've been coasting along for some time since we entered stealth mode. Soon, we'll be out of maximum comms range.
+[name="Scioppa"]If we can't hear each other, then I'll hang up.
+[charslot(slot="m",name="avg_4226_veen_1#2$1",focus="none")]
+[name="Intermittent Voice"]In position...
+[name="Intermittent Voice"]...Sechin, all units...
+[charslot(slot="m",name="avg_4226_veen_1#1$1",focus="m")]
+[name="Scioppa"]I can't make that out. You want all Sechin units to report back? That's easy. I'll be right there.
+[charslot(slot="m",name="avg_4226_veen_1#1$1",focus="none")]
+[name="Intermittent Voice"]...Razin—
+[Dialog]
+[PlaySound(key="$transmission", volume=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_4226_veen_1#3$1",focus="m")]
+[name="Scioppa"]Is that 'all units?' Can't say for sure.
+[name="Scioppa"]But we can at least <i>return</i> the Volnov in one piece. That's bringing everything to a proper conclusion.
+[Dialog]
+[charslot(slot="m",name="avg_4226_veen_1#3$1",focus="none")]
+The young man follows the figures in the operation manual and adjusts the buttons and knobs on the control panel one-by-one, taking momentary pauses to observe the corresponding readings.
+Once everything is ready and confirmed, he lifts the protective cover and presses the button underneath to lock down on the driving mode.
+[charslot(slot="m",name="avg_4226_veen_1#11$1",focus="m")]
+[name="Scioppa"]Ship's log, record. January 22, 1102. The <i>Volnov</i> will turn around in an empty field and sail full speed ahead.
+[name="Scioppa"]Our objective: The flagship of the Fourth Army's main fleet.
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

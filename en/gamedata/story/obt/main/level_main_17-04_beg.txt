@@ -1,0 +1,1070 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[gridbg(imagegroup="47_g14_skyovercast_L1/47_g14_skyovercast_R1/47_g14_skyovercast_L2/47_g14_skyovercast_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-640,fadetime=1)]
+[largebgtween(duration = 60,yFrom = 360, yTo = 720,block = false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$m_avg_ursusdaily_loop", volume=0.6)]
+[delay(time=0.5)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0, block=true)]
+[Subtitle(text="'We cannot provide an indefinite guarantee, but we can offer a reminder.'", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle(text="'The relationship between Deity Grypherburg and the Armies is like that of a hand and several pairs of gloves.'", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle(text="'The First Army was made from the finest burdenbeast fur. It fits poorly because of it, and no one expects otherwise.'", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle(text="'One must understand the right trick to put it on, and put up with a little inevitable pain.'", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[gridbg]
+[Dialog]
+[charslot]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Forest in Zelgrad Transfer Area</><p=2> Jan 20, 1102, 12:08</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_1037_amiya3_1#1$1",afrom=0, ato=1,duration=1.5)]
+[charslot(slot="r",name="avg_4179_monstr_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_1037_amiya3_1#1$1",focus="l")]
+[name="Amiya"]The transfer area... Zelgrad proper should be just ahead.
+[name="Amiya"]According to the map, travelers bearing official documents should take the express channel. Our document is time-limited, and we should enter the city as soon as possible.
+[charslot(slot="r",name="avg_4179_monstr_1#1$1",focus="r")]
+[name="Mon3tr"]There are several queues, but I don't see any signs about an express channel.
+[Dialog]
+[charslot(slot="l",name="avg_1037_amiya3_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_4179_monstr_1#1$1",focus="n")]
+[Decision(options="Besides, I thought there would be someone here to meet us.", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_1037_amiya3_1#7$1",focus="l")]
+[name="Amiya"]Let's wait a little bit. Maybe—
+[charslot(slot="r",name="avg_4179_monstr_1#10$1",focus="r")]
+[name="Mon3tr"]I'll ask someone.
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1,channel="1")]
+[charslot(slot="r",afrom=1, ato=0,duration=1.5,focus="r")]
+[stopsound(channel="1",fadetime=1.5)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_1037_amiya3_1#5$1",focus="l")]
+[name="Amiya"]Mon3tr!
+[charslot]
+[Dialog]
+[Decision(options="Let her go.;She knows what she's doing.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#2$1",focus="m")]
+[name="Amiya"]But what if someone thought she was an Infected and attacked her—
+[charslot(slot="m",name="avg_npc_1730_1#3$1",focus="m")]
+[name="Raidian"]The troop deployments here are typical of a secret administrative region. The First Army would not permit such chaos, especially not when they've already announced that they're accepting the Infected.
+[charslot(slot="m",name="avg_npc_1730_1#2$1",focus="m")]
+[name="Raidian"]However, the electrical signals in the area do make one anxious...
+[charslot(slot="m",name="avg_4228_closur_1#14$1",focus="m")]
+[name="Closure"]Should I fly a drone to check?
+[charslot]
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1,channel="2")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1",afrom=0, ato=1,duration=1.5)]
+[stopsound(channel="2",fadetime=1.5)]
+[delay(time=1.5)]
+[name="Mon3tr"]Got an answer!
+[charslot(slot="m",name="avg_4179_monstr_1#4$1",focus="m")]
+[name="Mon3tr"]The express channel is suspended because someone tried to sneak through a few hours ago.
+[charslot(slot="m",name="avg_4179_monstr_1#2$1",focus="m")]
+[name="Mon3tr"]The regular channel is still in use, but they're letting people through slowly.
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="m")]
+[name="Amiya"]Looks like we came at a bad time.
+[Dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="n")]
+[Decision(options="When do we have to be inside the city?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="Amiya"]By 6 PM. There's some distance between the transfer area and the entrance to the city. It'll take at least four hours, even by shuttle bus.
+[name="Amiya"]We can't stay here for long. At this rate, the letter of safe passage may expire before we get in if we stay in the queue.
+[charslot(slot="m",name="avg_4228_closur_1#4$1",focus="m")]
+[name="Closure"]Can't we show the letter to someone who looks reasonable and have them let us in?
+[charslot(slot="m",name="avg_npc_1730_1#3$1",focus="m")]
+[multiline(name="Raidian")]Ursine soldiers wouldn't make exceptions for you, even if they look reasonable. 
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[multiline(name="Raidian")]Different methods are required to deal with them.
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="Raidian"]Doctor.
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="What do you need from me?", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1730_1#8$1",focus="m")]
+[name="Raidian"]Simple. Just act important and nod at the right time.
+[charslot]
+Her mechanical arms begin moving. The motions are not particularly large, just enough for those who approach to see that she is doing something.
+Then, all the soldiers' communicators begin emitting a piercing wail.
+A few moments later, an officer storms towards the Rhodes Island team.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[name="Aloof Soldier"]Are you the ones jamming our communications? Who are you?
+[charslot(slot="m",name="avg_npc_1730_1#5$1",focus="m")]
+[name="Raidian"]Finally, someone came. I was worried there wasn't a single serious soldier in Zelgrad anymore.
+[charslot(slot="m",name="avg_npc_1730_1#5$1",focus="m")]
+[name="Raidian"]We are a medical research team from Grypherburg, here in Zelgrad to inspect the confidential project on behalf of the Council. Here is the Tsar's sealed letter of safe passage.
+[charslot(slot="m",name="avg_npc_1730_1#6$1",focus="m")]
+[name="Raidian"]His Imperial Majesty personally commissioned our technical advisor, who is standing beside me. How dare you treat us with such negligence!
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="(Nod solemnly);(Nod haughtily)", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Aloof Soldier"]You don't look Ursine to me...
+[charslot(slot="m",name="avg_npc_1730_1#6$1",focus="m")]
+[name="Raidian"]You're leveraging accusations now? After we've been made to wait for our contact in this place?
+[name="Raidian"]Is this how the First Army operates? I assure you, the Tsar will hear of this.
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Aloof Soldier"]M-My apologies, we were not notified. One moment, please—
+[charslot]
+[Dialog]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$rungeneral", volume=1,channel="4")]
+[stopsound(channel="4",fadetime=1)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",bstart=0.2,bend=0.7,afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",bstart=0.2,bend=0.7,focus="m")]
+[name="???"]Stay away!
+[charslot(slot="m",name="avg_npc_1730_1#9$1",focus="m")]
+[name="Raidian"]—?!
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",bstart=0.2,bend=0.7,focus="m")]
+[name="???"]Stay away from Zelgrad!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$plot_intro", key="$plot_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1969_1#1$1",posfrom="0,0", posto="-100,0",duration=0)]
+[charslot(slot="r",name="avg_npc_1971_1#1$1",posfrom="0,0", posto="100,0",duration=0)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="Anxious Miner"]There's a long line...
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="r")]
+[name="Calm Youth"]It keeps getting longer. Looks like a lot of people heard the news about Zelgrad accepting the Infected.
+[charslot(slot="r",name="avg_npc_2225_1#3$1",focus="r")]
+[name="Calm Youth"]Don't worry.
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[name="Anxious Miner"]That's not what I'm worried about—
+[charslot]
+[Dialog]
+[delay(time=1)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.4,channel="out1")]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="Anxious Miner"]Wait, there's movement.
+[name="Anxious Miner"]Hey, that guy's clothes are really strange...
+[name="Anxious Miner"]Is that even a person?
+[Dialog]
+[stopsound(channel="out1",fadetime=0.5)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.7,channel="out2")]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+The strangely dressed figure goes straight towards a procession at the end of the queue, disrupting the adjacent lines.
+Countless confused gazes fall upon the same place.
+[stopsound(channel="out2",fadetime=0.5)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="???"]Listen to me! Stay away from Zelgrad!
+[name="???"]Strange things, dust never seen before that infects people—
+[charslot(slot="m",name="avg_1037_amiya3_1#5$1",focus="m")]
+[name="Amiya"]Dust...?
+[charslot]
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1,channel="3")]
+[charslot(slot="m",name="avg_npc_082",afrom=0, ato=1,duration=1.5)]
+[stopsound(channel="3",fadetime=1.5)]
+[delay(time=1.5)]
+[name="Flustered Guard"]—<i>Blyat!</i> Shut your mouth!
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="???"]It's not safe! Stay away! Stay away!!
+[name="???"]Leave—
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Aloof Soldier"]You again...
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="Flustered Guard"]Sorry, Lieutenant Grisha, I guess she slipped onto a shuttle while we weren't looking—
+[name="Flustered Guard"]We'll take her away at once!
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Aloof Soldier"]Then get on with it.
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="???"]There's no time. Remember what I said—
+[name="???"]Stay away!
+[Dialog]
+[charslot(slot="r",name="avg_npc_082",afrom=0, ato=1,posfrom="120,0", posto="70,0",duration=1)]
+[delay(time=1)]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="r",afrom=1, ato=0,posfrom="70,0", posto="150,0",duration=1)]
+[charslot(slot="m",afrom=1, ato=0,posfrom="0,0", posto="80,0",duration=1)]
+[delay(time=1.5)]
+[charslot]
+[name="Everyone"]......
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Aloof Soldier"]Quit gawking and get back to your queues in thirty seconds, or you're going to the back of the line!
+[charslot]
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_npc_1969_1#1$1",posfrom="0,0", posto="-100,0",duration=0)]
+[charslot(slot="r",name="avg_npc_1971_1#1$1",posfrom="0,0", posto="100,0",duration=0)]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",duration=0,afrom=1, ato=0,duration=1)]
+[charslot(slot="m",duration=0,afrom=1, ato=0,duration=1.5)]
+[charslot(slot="r",duration=0,afrom=1, ato=0,duration=1.8)]
+[delay(time=2)]
+[charslot]
+[playMusic(key="$m_avg_ursusdaily_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1730_1#4$1",focus="m")]
+[name="Raidian"]What was that about?
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Aloof Soldier"]A lunatic. Pay no heed.
+[charslot(slot="m",name="avg_npc_1730_1#4$1",focus="m")]
+[name="Raidian"]Where is she being taken?
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Aloof Soldier"]She'll be spending the next few days in jail, if nobody bails her out.
+[charslot(slot="m",name="avg_npc_1730_1#2$1",focus="m")]
+[name="Raidian"]Sounds like it's not the first time.
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Aloof Soldier"]Is that important?
+[charslot(slot="m",name="avg_npc_1730_1#5$1",focus="m")]
+[name="Raidian"]It is.
+[name="Raidian"]Zelgrad's reputation as the 'city of tomorrow' is even more deserved by its tolerance of such people.
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Aloof Soldier"]......
+[charslot]
+The soldier says nothing, staring at Raidian as though trying to put pressure on her.
+But Raidian detects unusual tremors in his electrical signals.
+She smiles.
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="Raidian"]But there is certainly cause for concern.
+[name="Raidian"]We must enter Zelgrad to confirm whether these concerns are justified, whether things are indeed normal here.
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Aloof Soldier"]...I must first verify your identities and the authenticity of your document.
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="Raidian"]Of course, but please be quick.
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="Raidian"]After all, it is Zelgrad's fault that our entrance into the city has been delayed.
+[charslot]
+[Dialog]
+[PlaySound(key="$d_avg_paper1",volume=1)]
+[delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_paper1",volume=1)]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Aloof Soldier"]...Thank you for waiting. Your identities and document have been verified.
+[name="Aloof Soldier"]Just to confirm, what is your organization and the number of visitors?
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]Rhodes Island Pharmaceuticals. There are five of us.
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Aloof Soldier"]For what purpose are you visiting?
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="Amiya"]The State Council has sent us to assist with Project Zero's research.
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Aloof Soldier"]Confirmed.
+[name="Aloof Soldier"]Follow me.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_npc_2225_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="Impatient Guard"]I said, unload everything from the cart for inspection.
+[name="Impatient Guard"]I'm not going to repeat myself again, unless you're trying to smuggle something too.
+[charslot(slot="l",name="avg_npc_2225_1#10$1",focus="l")]
+[name="Calm Youth"]Too...?
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[name="Calm Youth"]Of course not, sir. I don't mean to cause any delays, but please, hear me out—
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_1037_amiya3_1#5$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1976_1#1$1",focus="n")]
+[name="Amiya"]What's that?
+[charslot(slot="r",name="avg_npc_1976_1#1$1",focus="r")]
+[name="Aloof Soldier"]The regular channel for the Infected.
+[charslot(slot="l",name="avg_1037_amiya3_1#7$1",focus="l")]
+[name="Amiya"]There's a lot of people there. Are they gonna be waiting all day out there, in the middle of winter? There's no one here at the express channel.
+[charslot(slot="r",name="avg_npc_1976_1#1$1",focus="r")]
+[name="Aloof Soldier"]That's the rules.
+[name="Aloof Soldier"]Even the express channel was supposed to be closed until further notice.
+[name="Aloof Soldier"]The First Army is already making an exception for you.
+[charslot(slot="l",name="avg_1037_amiya3_1#3$1",focus="l")]
+[name="Amiya"]Thank you for the help, sir, but what I wanted to say is...
+[charslot]
+[name="Arguing Voice"]No... stop... shut up—
+[name="Arguing Voice"]—take—
+[name="Arguing Voice"]—into Zelgrad!
+At another entrance a short distance away, armed soldiers are shoving a diminutive Infected, shouting loudly.
+The Infected does not seem intimidated. Taking a few steps back, the figure remains straight-backed.
+Around the Infected are civilians from the working class, some of whom seem to be miners, while others seem to be construction workers...
+Their stance is clearly protective.
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="m")]
+[name="Amiya"]......
+[charslot(slot="m",name="avg_4179_monstr_1#8$1",focus="m")]
+[name="Mon3tr"]Amiya?
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Aloof Soldier"]Your document will expire, if you delay any further.
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="Amiya"]Sorry, sir, but I must—
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_2225_1#9$1")]
+[charslot(slot="r",name="avg_npc_082")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[charslot(slot="r",name="avg_npc_082",focus="n")]
+[name="Calm Youth"]...We've been standing in queue for three days, following the rules. Your people have already inspected the cart. Why do you have to do it again?
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[name="Calm Youth"]For what? Are we not allowed to bring the last bit of possessions we have into Zelgrad?
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="Impatient Guard"]I told you, Zelgrad will have all the necessities for you! No one gets to bring so much stuff inside!
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[name="Calm Youth"]You can't just take the very last things we own.
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="Impatient Guard"]Gah, you stupid little—
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[name="Amiya"]Excuse me...
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="Impatient Guard"]The back of the line's that way!
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="Amiya"]I came from the express channel.
+[Dialog]
+[charslot]
+The soldier takes a look at the express passage. A few people are standing there, all looking in his direction.
+He looks away from the officer standing there and back at the girl, this time with a questioning gaze.
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="Impatient Guard"](Mutters) I thought the express channel was closed today. Who could have gotten it opened up...?
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="Amiya"]Can you tell me what you're arguing about?
+[charslot(slot="m",name="avg_npc_2225_1#9$1",focus="m")]
+[name="Calm Youth"]They want to confiscate our supplies. Won't allow us to enter Zelgrad if we refuse.
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="Impatient Guard"]It's the rules!
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="Amiya"]May I ask what's in the cart?
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="Calm Youth"]Just some wheat and flour that we painstakingly saved from working in the mines.
+[charslot]
+The youth pulls open the cloth on the cart and shows Amiya the contents.
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="m")]
+[name="Amiya"](It's just some food, and I sense no hostility from them.)
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="Amiya"](But the shape of these bags... are there other things in them?)
+[charslot]
+Amiya looks at the youth curiously, and meets the gaze straight-on.
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="Amiya"]......
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="Amiya"]I'll vouch for these people. Here's my pass.
+[name="Amiya"]I don't know what 'special rules' there are to enter Zelgrad, but all they have is wheat. It's harmless, hardly worth anything.
+[charslot(slot="m",name="avg_1037_amiya3_1#16$1",focus="m")]
+[name="Amiya"]They've suffered a lot coming all this way from the mines. Surely letting them have a few more good meals won't do any harm?
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="Impatient Guard"]...Ugh.
+[name="Impatient Guard"]Fine. One last check, and you can go.
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="Amiya"]Of course, but please be careful not to rip the bags.
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="Impatient Guard"]What a bother... fine, fine, take your stuff and go through. Stop holding the line up, and don't let me see you get into trouble!
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="Calm Youth"]Thank you, sir.
+[charslot(slot="m",name="avg_npc_2225_1#3$1",focus="m")]
+[name="Calm Youth"]And thank you too, <i>devushka.</i> I didn't ask your name—
+[charslot(slot="m",name="avg_1037_amiya3_1#12$1",focus="m")]
+[name="Amiya"]No need to thank me!
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#12$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+By the time the calm youth looks up, the Cautus has already turned around to her own companions. What's lingered is but a distant silhouette.
+The line begins to move again.
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_driveincar",loop=true,channel="car",volume=0.5)]
+[delay(time=2)]
+[name="Announcer"]'You will see the city of Zelgrad once we pass through the tunnel.'
+[name="Announcer"]'Tall buildings rise out of the green vegetation that surrounds the city, balancing nature and future perfectly.'
+[name="Announcer"]'Here, anyone who is willing to work can earn respect and a beautiful life with their own two hands.'
+[name="Announcer"]'The city of opportunity, the city of tomorrow.'
+[Dialog]
+[Background(image="73_g1_exurbstreet_d",screenadapt="coverall")]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2,block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2,block=true)]
+[StopSound(channel="car",fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0, block=true)]
+[Subtitle(text="'...Welcome home, new citizens of Zelgrad.'", x=300, y=350, alignment="center", size=25, delay=0.04, width=700)]
+[delay(time=1)]
+[Subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[curtain(direction = 4,fillfrom = 0.2,fillto = 0.01,block=false,fadetime=1.5)]
+[curtain(direction = 0,fillfrom = 0.2,fillto = 0.01,block=true,fadetime=1.5)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>Zelgrad Streets</><p=2> Jan 20, 1102, 16:32</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlayMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="Anxious Miner"]<i>Uchitel!</i> What's that behind those houses?
+[charslot(slot="r",name="avg_npc_2225_1#10$1",focus="r")]
+[name="Calm Youth"]Some sort of hill-like terrain... or wall?
+[charslot]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="Serious Soldier"]The whole batch is here?
+[name="Serious Soldier"]Good. All of you, follow me.
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="Anxious Miner"]Where are you taking us? The slogans said we were going to use our own two hands to—
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="Serious Soldier"]Earn a beautiful life, yes, but first you need a roof over your head. You will then be assigned to nearby factories or industrial districts.
+[name="Serious Soldier"]The city will provide appropriate accommodations for those who meet certain standards.
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="Anxious Miner"]Really? I've never heard anything like it...
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="Serious Soldier"]This policy is unique to Zelgrad. We provide standardized housing for lawful residents at low prices, maximizing the efficiency of workers' everyday lives, work, and entertainment.
+[name="Serious Soldier"]This way, people who come here will never leave again, but take root and remain for generations to come.
+[name="Serious Soldier"]Previously, such benefits were reserved for the most industrious or creative laborers, but now it's being expanded to anyone who passes the assessments, including the Infected.
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="Calm Youth"]No wonder there's been so little news coming from inside Zelgrad.
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="Serious Soldier"]There are many rumors out there. You can see for yourself whether they're true or not.
+[name="Serious Soldier"]And then you'll find out that those slogans were not exaggerated at all.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="l",name="avg_npc_1970_1#1$1")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1")]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",afrom=1, ato=0,duration=1.5)]
+[charslot(slot="r",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1502_crosly_1#2$1",bstart=0.2,bend=0.5,afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[name="???"]......
+[charslot(slot="m",name="avg_1502_crosly_1#1$1",bstart=0.2,bend=0.5,focus="m")]
+[name="???"]Another bunch of Infected.
+[name="???"]They're accelerating the process.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="73_g3_exurbroom",screenadapt="coverall")]
+[Delay(time=2)]
+[PlayMusic(intro="$ponder_intro", key="$ponder_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+At the very least, the descriptions about housing were not exaggerated.
+An empty carton of cystymilk on the floor, pots and pans lying around the place, plants that are still green, the greying carpet on the wooden floor...
+All signs that someone had lived here recently.
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="Anxious Miner"]Wow...
+[name="Anxious Miner"](It's better than my lodgings when I was a tutor in Chernobog!)
+[charslot(slot="r",name="avg_npc_2225_1#4$1",focus="r")]
+[name="Calm Youth"](Whisper) There are at least eight to ten households in every apartment.
+[name="Calm Youth"](Whisper) It's a serious fire hazard.
+[charslot]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="Serious Soldier"]These are family apartments with two bedrooms and a larger kitchen. The family that lived here left a lot of things when they moved out to the new district on the east end.
+[name="Serious Soldier"]They've already gotten new things, so you can continue using the ones that are here.
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="Calm Youth"]What about single people?
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="Serious Soldier"]Most of the vacancies are family quarters. You can have several people share a single unit. Just register on the ground floor.
+[name="Serious Soldier"]There should be enough room here for this entire batch.
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="Calm Youth"]Is everyone living in here Infected? Are the people who came here previously here too?
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="Serious Soldier"]Yes, all Infected. Not sure about the second question. A lot of people come in, and we can't put everyone in the same place.
+[charslot(slot="m",name="avg_npc_2225_1#8$1",focus="m")]
+[name="Calm Youth"]......
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="Serious Soldier"]If there are no more questions, figure out how you want to split the rooms quickly, and I'll take you to the ground floor to get your paperwork done.
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="Anxious Miner"]There's no need, we can do it ourselves—
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="Calm Youth"]Nika.
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="Anxious Miner"]Huh?
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="Calm Youth"]Say no more.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g12_ursusroom",screenadapt="coverall")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_opencabinet",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",afrom=0, ato=1,duration=1.5)]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="Anxious Miner"](Whisper) Why did you stop me? Now we've got a tail we can't shake.
+[charslot(slot="r",name="avg_npc_2225_1#4$1",focus="r")]
+[name="Calm Youth"](Whisper) Look at the tables. They're speckless, like someone cleaned them carefully.
+[name="Calm Youth"](Whisper) Yet the way stuff's laid out around the room gives the impression that the previous resident wasn't concerned about these details.
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="r")]
+[name="Calm Youth"](Whisper) It doesn't make sense, even if the previous residents just moved out. What kind of marks would need special cleaning?
+[charslot(slot="r",name="avg_npc_2225_1#9$1",focus="r")]
+[name="Calm Youth"](Whisper) Something's not right here. We need to get her to lower her guard, so that we can try to make contact with Pavel's group.
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[name="Anxious Miner"]It's so strange...
+[charslot]
+[name="Voice from Behind"]Is something the matter?
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="Calm Youth"]No, ma'am. We're just discussing who should get this unit.
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="Calm Youth"]There's just one bedroom here. I say we give it to Galina.
+[charslot(slot="m",name="avg_npc_2225_1#8$1",focus="m")]
+[name="Calm Youth"]Her kid died on the way here. She's devastated and can hardly work. She'll need someone to look after her, which makes two people...
+[charslot]
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2225_1#8$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[PlaySound(key="$dooropenquite",volume=1)]
+[delay(time=1)]
+The diminutive leader of the group walks forward, thinking about how to get the soldier off their tails. Suddenly, the bedroom door is thrown open, almost hitting the youth, who only avoids it by instinctively leaping back.
+[Dialog]
+[PlaySound(key="$d_avg_doorbreak",volume=1)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[delay(time=1)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[delay(time=1)]
+A figure emerges from inside, swinging a chair at the intruder.
+[name="Calm Youth"]Oh...
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_080",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[name="Wary Infected"]I knew it was too good to be true!
+[name="Wary Infected"]Red, help me—
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="Anxious Miner"]What are you doing?!
+[charslot]
+[name="Calm Youth"]Wait, don't fight back...
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_328_1$1",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[name="Red"]You...
+[name="Red"]Who are you?
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="bg_cellroom_1",screenadapt="coverall")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_opencabinet",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="Guard"]Tonya Alliluyeva.
+[charslot]
+[name="???"]......
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="Guard"]Alliluyeva!
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="m",name="avg_4225_tanya_1#13$1",posfrom="0,-100", posto="0,0",afrom=0, ato=1,duration=1)]
+[Delay(time=1)]
+[name="???"]Oh—yes.
+[charslot(slot="m",name="avg_4225_tanya_1#6$1",focus="m")]
+[name="Tonya"]I'm here...
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="Guard"]Who do you think you're putting on a show for? You're not being abused by anyone.
+[name="Guard"]Inciting panic, dereliction of duty, obstruction of public officials, illegal gathering... any one of the charges is enough to lock you away for weeks, if not months.
+[charslot(slot="m",name="avg_4225_tanya_1#8$1",focus="m")]
+[name="Tonya"]Then why are you calling my name?
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="Guard"]...You're lucky. Someone's bailing you out. Again.
+[name="Guard"]But you have sixty hours of forest labor service that must be completed in five days, or you'll be locked up again without bail.
+[name="Guard"]Do you understand? Nod if you do.
+[charslot(slot="m",name="avg_4225_tanya_1#8$1",focus="m")]
+[name="Tonya"](Nods)
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_dooropen", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="Guard"]And stop claiming to be Reunion. It's not like you have anything to do with them, do you?
+[name="Guard"]Alright, you can go.
+[charslot(slot="m",name="avg_4225_tanya_1#4$1",focus="m")]
+[name="Tonya"]......
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="73_g2_exurbstreet_n",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="Sirka"]......
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_082")]
+[charslot(slot="r",name="avg_npc_082")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",afrom=1, ato=0,duration=1.5)]
+[charslot(slot="r",afrom=1, ato=0,duration=1.5)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="Sirka"](Searchlights... patrols are more frequent than during the day.)
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="m")]
+[name="Sirka"](I can't stay above ground. I need to think of something...)
+[charslot]
+'To what lengths will I go to go back, back to that ship?'
+The impassive woman silently eliminates possibilities from her mind. A lone deserter matters little to the Fourth Army; at best, she is a bargaining chip, or a tiny favor.
+The question is, do they care about what the Fourth Army does? The First Army does not necessarily have to intervene in this war, as the history of Ursus has demonstrated time and again.
+The new weapon is merely a symbol, a deterrence. Evgeny undoubtedly has designs on it. The Generalik... the Generalik is a massive weakness, but how to use it?
+The fugitive evades the searchlights expertly as she ponders how to continue to remain undetected while causing just the right amount of chaos...
+And how to go home.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g14_dimunder",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Tipsy Soldier"]...No, I'm really at my limit.
+[name="Tipsy Soldier"]I'm going back...
+[charslot]
+The foundation structure separates the underground residential layer into several zones. Shouting can be heard coming from behind a half-closed metal door, warm light seeping from the cracks.
+The duo tangling by the door are oblivious to the eyes gazing upon them.
+[charslot(slot="m",name="avg_npc_2227_1#5$1",focus="m")]
+[name="Enthusiastic Worker"]That's what you said the last time. You said you had too much when your tongue hardly even touched the booze. Total nonsense!
+[charslot(slot="m",name="avg_npc_2227_1#3$1",focus="m")]
+[name="Enthusiastic Worker"]Come on, have some more, you won't get a chance once you're reassigned to behind that wall—
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",posfrom="-150,0", posto="0,0",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="Sirka"]Excuse me.
+[charslot(slot="m",name="avg_npc_2227_1#4$1",focus="m")]
+[name="Enthusiastic Worker"]Oh, okay.
+[Dialog]
+[charslot]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2227_1#7$1",focus="m")]
+[name="Enthusiastic Worker"]Hey, what's a noble doing here...?
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="Tipsy Soldier"]I got to go. I've got a shift coming up.
+[charslot(slot="m",name="avg_npc_2227_1#7$1",focus="m")]
+[name="Enthusiastic Worker"]Hey!
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g16_conutryinside",screenadapt="coverall")]
+[Delay(time=2)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.7,channel="out4")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>City of Zelgrad, Underground Pub</><p=2> Jan 20, 1102, 21:13</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+The establishment is unsurprisingly filled to the brim.
+Soldier and craftsman, farmer and teacher—whatever they were during the day, they are all just drunkards now.
+They pack themselves in this noisy space, gulping down the same cheap liquor, and drag themselves back to their quarters before they pass out.
+There are countless corners in Zelgrad like this one, as there were in the Fourth Army's base.
+[stopsound(channel="out4",fadetime=0.5)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="Sirka"]......
+[charslot]
+No one looks up at her. There are no waiters, only a sleepy owner, barrels piled up by the wall in the narrow passage, and drinking games that do not require any props.
+Sirka slips through between the wooden tables to the far end of the pub, where she finds the disguised figure that has fully blended in with the crowd.
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="Sirka"]Yevsey Lukic.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]Huh? You talking to me?
+[charslot]
+The woman lifts the edge of her jacket, revealing a nameplate with the Fourth Army's serial etched upon it.
+She keeps her eyes firmly fixed upon him, making sure not to miss the slightest change in expression.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"](Hushed) Lieutenant...?
+[name="Yevsey?"]Ugh...
+[name="Yevsey?"](Looks around)
+[name="Yevsey?"]Come with me.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g14_dimunder",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]I wasn't expecting a Kuranta...
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="Sirka"]I'll be sure to report your displeasure along with your negligence, Sergeant. You have not sent back intelligence about the First Army's new weapon in a timely manner.
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="n")]
+Otherwise, the Fourth Army would already have taken action, Sirka thinks as she follows the man's lead in stopping.
+[charslot]
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]...N-No, there's no need.
+[name="Yevsey?"]I was expecting someone to come, so I didn't... just didn't expect it would be a Kuranta, not like the previous contacts. Which battalion are you with?
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="Sirka"]I'm not here for small talk.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]What are you here for, then? My recent reports are all in the safehouse. But I'm busy right now.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="n")]
+He points to the pub behind him.
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="Sirka"]You're running an underground pub, a classic hub of information. But are you really leveraging it?
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]I've never had a slip-up in four years. I was even awarded the Vladimir Medal. How could you—
+[charslot(slot="m",name="avg_npc_2249_1#5$1",focus="m")]
+[name="Sirka"]A second lieutenant still outranks you. I suggest you think before speaking.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]What do you want to know?
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="Sirka"]All Code Red intel since your last report.
+[name="Sirka"]Verbally.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]Here? Have you no concept of secrecy—
+[Dialog]
+[stopmusic(fadetime=1)]
+[charslot]
+[Sticker(id="st1", multi = true, text="<color=#888888>Sirka</color>", hidelog=true, x=240, y=625, alignment="left", size=31, delay=0.04, width=700, duration=0.01, block = false)]
+[spellsticker(id="spell2", action="show", style="fire", x=-240, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>'The night snow leaves no trace, silence.</> <p=2>'Hoчной снег без следа, молчи.'</>
+[Sticker(id="st1")]
+[spellstickerclear(block=false)]
+[PlaySound(key="$d_avg_OriginiumArts_soundwave",volume=1)]
+[Delay(time=1)]
+In the blink of an eye, the man feels as though he has been separated from the space beneath his feet. The sounds of the rowdy drinkers grow distant, and the sound of water dripping from the pipes disappears.
+A wall of air separates him and the Kuranta. He tries to speak but can not hear himself, nor can he tell what words his counterpart's mouth is making.
+The sensation of suffocation fills his brain. He frantically grabs at his throat, unsure if what he is going through is real.
+[Dialog]
+[Sticker(id="st1", multi = true, text="<color=#888888>Sirka</color>", hidelog=true, x=240, y=625, alignment="left", size=31, delay=0.04, width=700, duration=0.01, block = false)]
+[spellsticker(id="spell2", action="show", style="fire", x=-240, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>'Sound, return.'</><p=2>'Звук вернись.'</>
+[Sticker(id="st1")]
+[spellstickerclear(block=false)]
+[PlaySound(key="$d_avg_spellattack_1",volume=1)]
+[Delay(time=1)]
+[charslot]
+[Delay(time=1)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]*cough* *cough*!
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="Sirka"]I hope I don't have to repeat myself, Sergeant Lukic.
+[name="Sirka"]Let's begin.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]...*cough*... hah.
+[name="Yevsey?"]I've heard of your Arts. Parlor tricks that war casters have long abandoned, good for nothing except to create a soundless environment.
+[name="Yevsey?"]So they sent a lieutenant from that famous Special Tactics Formation under that poor worm Razin... he taught you this trick, didn't he?
+[name="Yevsey?"]Fine, fine, I'll tell you. I guess we're on the same side, until the next time you people change sides.
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="Sirka"]I suggest you calm down. I was simply demonstrating the secrecy of this space.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]Could have fooled me, <i>suka</i>, you people kill comrades like slaughtering burdenbeasts. You think I didn't hear about that mutiny in December?
+[name="Yevsey?"]You killed everyone, no prisoners taken, no questioning, no survivors! You drenched a whole battleship in blood. Not even the snow could cover up the smell.
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="m")]
+[name="Sirka"]Yes, that was where I contracted Oripathy.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]...Huh?
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="m")]
+[name="Sirka"]I contracted Oripathy while suppressing the mutiny. This is my last chance to demonstrate my loyalty to the Marshal, infiltrating Zelgrad as an Infected...
+[name="Sirka"]You know what this means, and why it must be me, and only me.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]Suppressing mutiny, Infected, lieutenant... hahaha!
+[name="Yevsey?"]I see, I see.
+[name="Yevsey?"]It all makes sense now. The Marshal has always seen you people as a tool, after all. Much better to lose an Infected who was scheduled for exile to begin with, than to lose an entire fleet—
+[charslot(slot="m",name="avg_npc_2249_1#4$1",focus="m")]
+[name="Sirka"]What did you say?
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]Oh, nothing important.
+[name="Yevsey?"]Very well, I'll help you. I take it you'll be going back to the apartments since you entered the city as an Infected. What do you need to know the most?
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="Sirka"]The First Army's deployment in Zelgrad, the location of their marshal, and all the intel you have on the new weapon.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]You want to go after Svetlana Ulyanova? Do yourself a favor and just end your own life. Less painful that way.
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="Sirka"]Then tell me about the troop deployments and the new weapon.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]Listen, the most I can give you right now is the recent security arrangements in the city. You're not my contact, and thus not authorized to access Code Red intel.
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="Sirka"]......
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]Patrols are conducted in shifts, but the Generalik could show up amongst the patrols at any time. I've done my best to summarize the patterns of his appearance.
+[name="Yevsey?"]The spoiled brat always brings his retinue along. Driver, nanny, bodyguards, he's never alone.
+[name="Yevsey?"]I managed to get his house servants to reveal that, while he often operates on a whim, he usually shows up a couple of hours before the night shift change.
+[name="Yevsey?"]I had to dispose of those people, but the intel should be good. It'll be convenient if you could validate it—
+[stopmusic(fadetime=1)]
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="Sirka"]That will do.
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="Yevsey?"]What?
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_throatslitting",volume=1,channel="knife")]
+[Delay(time=1)]
+[name="Yevsey?"]Ngh—?!
+[Dialog]
+[PlaySound(key="$d_avg_spurtblood",volume=1,channel="blood")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_knife",volume=1)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_piercechest",volume=1)]
+[Delay(time=1)]
+The silver blade cuts his throat before he even sees it.
+Then, the same knife impales his chest, and finally his axilla.
+Swift and clean.
+[Dialog]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$blooddrop",channel="blood",volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="Sirka"]That was what I wanted to know. Thank you, Yevsey.
+[name="Sirka"]Or perhaps you prefer to be known as Prokhor? I wasn't all that optimistic about finding you after so much time has passed.
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="Prokhor?"]Ugh... uh—
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="Sirka"]But you remained true to your duty. Good.
+[charslot]
+The man twitches in his own blood, but nobody can hear him.
+Sirka digs through his bloody pockets, removing everything she found, disguising it simply as a robbery-murder.
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="Sirka"]<i>Proshchay</i>, Gospodin Prokhor.
+[name="Sirka"]On behalf of Marshal Kuznetsov, I thank you for your service.
+[name="Sirka"](Whisper) I promise you will share the credit for the assassination of the Generalik.
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="66_g12_deitygrypherburgmeeting",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$suspenseful_intro", key="$suspenseful_loop", volume=0.6)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.6,channel="out3")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_188_helage_1#1$1",afrom=0, ato=1,duration=1.5)]
+[charslot(slot="r",name="avg_npc_1966_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="Excited 'Councilor'"]...'Regional autonomy' means the clear autonomy of governance that the constitution bestows upon administrative regions. Is that so hard to understand? Are you deaf or stupid?
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="Scornful 'Councilor'"]Hmph, and who's going to be doing the governing? Who's going to give them the money to govern? And who's going to be responsible for the results of their governance?
+[name="Scornful 'Councilor'"]You're just doing something pointless the most roundabout and overblown way possible!
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="Excited 'Councilor'"]This is taking power from the Armies! Do you know what checks and balances are? Did you even go to public school? I'm guessing not, judging by the rags you wear.
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="Scornful 'Councilor'"]And what if I didn't? While you were learning how to lick noble boots, me and my family were making tents for soldiers fighting on the borders!
+[charslot]
+The Imperial Guard leads Hellagur through the arguing crowd, who fail to notice their presence.
+Hellagur listens quietly, as his expression gradually grows more bemused.
+[stopsound(channel="out3",fadetime=1)]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1966_1#20$1",focus="n")]
+[name="Hellagur"]I thought this was the council hall...
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="Eloysius"]Indeed it is.
+[charslot(slot="l",name="avg_188_helage_1#3$1",focus="l")]
+[name="Hellagur"]They don't look like the old councilors who used to sit here. Is this the reason the State Council was suspended for so long?
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="Eloysius"]And they said you weren't a politician.
+[charslot(slot="l",name="avg_188_helage_1#9$1",focus="l")]
+[name="Hellagur"]......
+[charslot(slot="r",name="avg_npc_1966_1#13$1",focus="r")]
+[name="Eloysius"]It was the Vice Chairman who said it. I suppose he still sees his old mentor through rose-tinted glasses—the perfect soldier who should be above such petty matters.
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="Hellagur"]Why did you bring me here?
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="Eloysius"]You already heard the opening. Why not sit down with me and continue listening?
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="Eloysius"]It won't take too long. They're always arguing about the same things.
+[charslot]
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="Scornful 'Councilor'"]...I got no idea what you're babbling about. If His Imperial Majesty called us here to listen to you talk, we might as well keep listening to the council's debate!
+[name="Scornful 'Councilor'"]At least those rubber-stampers are more pleasant to listen to than you and I—
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="Excited 'Councilor'"]His Imperial Majesty didn't call the citizen's forum so that louts like you could shamelessly demand money and land!
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="Scornful 'Councilor'"]His Imperial Majesty called the citizen's forum to listen to our voices. The factories aren't running anymore, so you bet I want money and land!
+[name="Scornful 'Councilor'"]We could farm and make little crafts so that we wouldn't be out of work, and Zheleznaya wouldn't become the next Katorga! Everyone's happy.
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="Excited 'Councilor'"]You say 'we', but it's all about yourself! Is that the kind of labor representative that Zheleznaya Raion has chosen?
+[name="Excited 'Councilor'"]I have nothing more to say to you.
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="Scornful 'Councilor'"]I was elected by our folks, one vote at a time. Who do you think YOU are, <i>svolotsch</i>—
+[charslot]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="n")]
+[name="Hellagur"]They're about to start fighting.
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="Eloysius"]Nah, we're not on the streets.
+[Dialog]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="n")]
+[PlaySound(key="$d_avg_fight_amb_loop",loop=true,volume=0.6,channel="fight")]
+[delay(time=2)]
+[charslot(slot="r",name="avg_npc_1966_1#10$1",focus="r")]
+[name="Eloysius"]Oh.
+[name="Eloysius"]Let me see—
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2248_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[stopsound(channel="fight",fadetime=1)]
+[charslot(slot="m",name="avg_npc_2248_1#1$1",focus="m")]
+[name="Gentle 'Councilor'"]Folks.
+[charslot(slot="m",name="avg_npc_2248_1#2$1",focus="m")]
+[name="Gentle 'Councilor'"]We're still in the public opinion gathering stage. It's normal to have differences, which we should settle by sitting down and talking like civilized people.
+[name="Gentle 'Councilor'"]We may not be nobles, but we should have dignity as representatives, even if it's only a temporary role.
+[charslot(slot="m",name="avg_npc_2248_1#7$1",focus="m")]
+[name="Gentle 'Councilor'"]We can't have the real councilors laughing at us, can we?
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="Scornful 'Councilor'"]Hmph.
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_081",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="Excited 'Councilor'"]Gospodin Svetozar! I thought you would never speak up.
+[name="Excited 'Councilor'"]There's something I want to get a second opinion on before I submit my brief. I would very much love to have your feedback...
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2175_1#1$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="Eloysius"]Hm.
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="Hellagur"]......
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="Eloysius"]What do you think?
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="Hellagur"]Your father was right. I'm no politician.
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="Eloysius"]But you saw through what's going on, at least part of it.
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="Eloysius"]Your expression never changed while those two were arguing, even as they looked like they were about to start a fight.
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="Eloysius"]But something changed when you saw that third 'councilor' approach. Why?
+[charslot(slot="l",name="avg_188_helage_1#3$1",focus="l")]
+[name="Hellagur"]He seemed different from the others.
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="Eloysius"]I'm guessing it's because he's a real noble.
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="Hellagur"]You're guessing?
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="Eloysius"]Guessing is all we can do, until we have evidence.
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="Hellagur"]You said I saw through part of it.
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="Eloysius"]Ah, yes.
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="Eloysius"]The part you didn't catch is that the two people who were arguing were not the 'citizen representatives' that the Tsar wanted to see.
+[name="Eloysius"]I say this not because there were too few expletives, or because they were using terms and concepts they should not be familiar with.
+[charslot(slot="r",name="avg_npc_1966_1#10$1",focus="r")]
+[name="Eloysius"]I say this because their appeals are too organized, too specific.
+[charslot(slot="r",name="avg_npc_1966_1#4$1",focus="r")]
+[name="Eloysius"]Someone is pulling the strings behind the scenes. And if this citizen's forum which His Imperial Majesty personally announced and is personally overseeing could be tampered with...
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="Eloysius"]This will likely end up as yet another failed reform.
+[charslot(slot="l",name="avg_188_helage_1#9$1",focus="l")]
+[name="Hellagur"]...Let me ask again.
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="Hellagur"]Why did you bring me here?
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="Eloysius"]I simply invited you to see a show. This is the opener. Miss the opener of a show, and it will affect your perception of everything thereafter.
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="Eloysius"]I wish you would be cognizant of the thought I am showing.
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="Eloysius"]But I won't force you to come back to us, even though there are many ways for me to do so.
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="Hellagur"]You want to show that you're different from other Ursines.
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="Eloysius"]Quite the contrary, I think I'm no different from the vast majority of Ursines.
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="Eloysius"]We just want tomorrow to come, for ourselves and for our people, but even this is rapidly becoming a luxury.
+[name="Eloysius"]This is why I need every bit of help I can get. Your abilities and your past will be of great help to my plan, but if you're unwilling, then I suppose I must seek other venues.
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="Hellagur"]Your plan...
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="Eloysius"]I'll tell you when the time is right.
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="Eloysius"]Speaking of time, it seems we've kept the children waiting long enough. Let me escort you to Odoyev Raion.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[gridbg]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]
