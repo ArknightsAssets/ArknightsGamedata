@@ -1,0 +1,36 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 09_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[Tutorial(waitForSignal="put_down", charId="trap_513_xb2bas", dialogHead="$avatar_closur", protectTime=1)] \
+박사, 내가 시스템을 업데이트했어! 그래서 공유할 사항이 있거든! 일단 여기에 로도스 아일랜드 채집기지부터 배치해 보자고.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_closur", protectTime=1)] 오랜만에 돌아올 오퍼레이터들한테 완전히 새로워진 로도스 아일랜드를 보여줘야 하잖아? 그러니까 건설할 때 미관도 좀 신경 써 줘야 해, 헤헤.
+[PopupDialog(dialogHead="$avatar_closur", protectTime=1)] 건설 화면에 있는 <@tu.kw>생산 시설</>과 <@tu.kw>경관 시설</>은 기지의 미관도를 올릴 수 있어.
+[SandboxBattle.LockCamera(enable=false)] 
+[InputBlocker(blockInput=true, tileX=2, tileY=8, validWidth=100, validHeight=80)]
+[Tutorial(waitForSignal="char_info", charId="trap_557_xb2fnt", tileX=2, tileY=8, focusWidth=100, focusHeight=100, dialogHead="$avatar_closur", animStyle="Click", focusStyle="HighlightCircle", black=0.5, protectTime=2, dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+이건 경관 시설 중 하나인 <@tu.kw>샘물 분수대</>인데, 이걸 배치하면 기지 분위기를 확 살리는 동시에 미관도도 챙길 수 있지!
+[SandboxBattle.LockCamera(enable=true)] 
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", \
+          protectTime=1, dialogHead="$avatar_closur")] \
+맞다, 그리고 <@tu.kw>경관 시설</>은 꾸준히 <@tu.kw>순금 원석 수입</>까지 챙겨주니까, 엄청 이득이지?
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=200, focusY=-25, focusWidth=120, focusHeight=70, anchor="Top",\
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=2, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+여기서 기지의 <@tu.kw>미관도</>를 확인할 수 있어.
+[PopupDialog(dialogHead="$avatar_closur", protectTime=1)] 하루가 지날 때마다 미관도 만큼 <@tu.kw>결정 파편</>을 추가로 받을 수 있는데, 이 파편으로 휴식기에 필요한 물자를 구입할 수 있거든.
+[Tutorial(focusX=0, focusY=-100, focusWidth=300, focusHeight=200, anchor="Top",\
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=2, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+여기를 탭 하면 미관도 덕분에 우리가 벌어들인 추가 수익을 볼 수 있어.
+[PopupDialog(dialogHead="$avatar_closur")] 미관도를 확실하게 챙겨서, 더 많은 임무를 클리어해 봐!
+[InputBlocker(blockInput=false)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]

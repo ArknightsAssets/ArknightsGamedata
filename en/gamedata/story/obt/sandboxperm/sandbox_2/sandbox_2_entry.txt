@@ -1,0 +1,128 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_bridge",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[delay(time=1)]
+[name="Closure"]Doctor? Amiya? You two still busy?
+[dialog]
+[PlaySound(key="$dooropenquite", volume=1)]
+[delay(time=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m",duration=2)]
+[delay(time=3)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#12$1")]
+[name="Amiya"]Closure! We were just about to wrap up this meeting.
+[charslot(slot = "m", name = "avg_1037_amiya3_1#10$1")]
+[name="Amiya"]Oh, Doctor. Are you alright?
+[dialog]
+[charslot]
+[Decision(options="(Struggle to breathe);(Blink heavily);(Stay silent)", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_4228_closur_1#2$1",focus="m")]
+[name="Closure"]Hm, I'll take that as a 'no'.
+[charslot(slot="m",name="avg_4228_closur_1#2$1",focus="m")]
+[name="Closure"]The last time you were this tired was when we were building the corrals on the plate—
+[dialog]
+[charslot]
+[Decision(options="(Try to stop her)", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4228_closur_1#11$1",focus="m")]
+[name="Closure"]You were struggling to get a leporibeast back into its pen, and ended up being on the receiving end of its kicks.
+[charslot(slot="m",name="avg_4228_closur_1#11$1",focus="m")]
+[name="Closure"]Honestly, it was probably just trying to play with you, before Mon3tr came over to help.
+[dialog]
+[charslot]
+[Decision(options="(Close eyes in exhaustion)", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#10$1")]
+[name="Amiya"]Doctor...?
+[dialog]
+[charslot]
+[Decision(options="I'm fine; just need a bit of rest.;No comment. Anything to add, Kal'tsit?", values="1;2")]
+[Predicate(references="1;2")]
+[musicvolume(volume=0.2, fadetime=2)]
+[delay(time=1)]
+The mysterious silence in the meeting room worries you, and you turn around to see her seat empty.
+[dialog]
+[charslot]
+[Decision(options="Kal'tsit?;—Kal'tsit?", values="1;2")]
+[Predicate(references="1;2")]
+[musicvolume(volume=0.6, fadetime=4)]
+Fortunately, a familiar silhouette quickly appears before you.
+[dialog]
+[PlaySound(key="$dooropenquite", volume=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1",duration=2)]
+[delay(time=3)]
+[name="Kal'tsit"]You must be truly exhausted, Doctor.
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="Kal'tsit"]Moments ago, I said I was going to fetch some water.
+[dialog]
+[charslot]
+[Decision(options="I thought...;......;(Cough to avoid replying)", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Decision(options="(Straighten back to demonstrate health);Leave the rest to me. Go have a good rest, Kal'tsit.;You've done plenty today, Kal'tsit, so go rest.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="Kal'tsit"]Hm.
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="Kal'tsit"]Ever since our reunion, I've noticed you repeating that sentiment quite often.
+[dialog]
+[charslot]
+[Decision(options="...Really?;I didn't even notice.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="Kal'tsit"]There is no need to worry about me, Doctor.
+[charslot(slot = "m", name = "avg_1052_kalts2_1#4$1")]
+[name="Kal'tsit"]Closure, I hear you've been looking for me?
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="Closure"]Yeah, you're hard to pin down these days. The office is practically stuffed with gifts for you from our operators. So? Your thoughts on the new Rhodes Island?
+[charslot(slot = "m", name = "avg_1052_kalts2_1#8$1")]
+[name="Kal'tsit"]It's more complete than I had imagined.
+[charslot(slot="m",name="avg_4228_closur_1#14$1",focus="m")]
+[name="Closure"]Heh, I may have exceed the budget forecast by juuust a bit, but the results speak for themselves, right?
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="Closure"]In short, we've got five types of plates now. A core plate at the top, and the remaining four are Medical, Accommodation, Engineering, and a port.
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="Closure"]Our medical zone has its own drug production line, and there's a small garden outside the hospital ward too. Patients can get some sun when the weather's nice.
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="Closure"]We rebuilt the cafeteria and the Convalescent Garden based on the original landship, and built a new and improved dormitory. The operators love it.
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="Closure"]We acquired another plate to serve as a port, while the Engineering Area has new production lines too. Going forward, this will help us secure more energy and more weapons.
+[charslot(slot="m",name="avg_4228_closur_1#3$1",focus="m")]
+[name="Closure"]Aaand that's pretty much it. 'Beepy' worked its ass off until it nearly overheated, so I'm gonna apply for a big fat bonus for everyone this year, okay!
+[dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot="m",name="avg_4179_monstr_1#11$1",duration=3)]
+[delay(time=3)]
+[name="Mon3tr"]Kal'tsit! I'm done with my field mission!
+[charslot(slot="m",name="avg_4179_monstr_1#11$1")]
+[name="Mon3tr"]Look, I even learned a new skill!
+[charslot(slot="m",name="avg_4179_monstr_1#7$1")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Mon3tr"](Fierce roar)
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="Amiya"]——!
+[charslot(slot="m",name="avg_4228_closur_1#7$1",focus="m")]
+[name="Closure"](Whisper) Hey Doc, don't you think Mon3tr's been a little more lively ever since Kal'tsit came back?
+[dialog]
+[charslot]
+[Decision(options="(Nods);(Whisper) More than a little.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="Kal'tsit"]Hm? What are you two discussing over there?
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="Closure"]Ahem, nothing important! Here, Kal'tsit. This is Rhodes Island's rebuilding mandate and mission report. Now let me give you a run down.
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="Closure"]Back then, we...
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=4, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

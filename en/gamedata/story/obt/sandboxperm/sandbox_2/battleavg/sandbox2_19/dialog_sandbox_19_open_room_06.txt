@@ -1,0 +1,17 @@
+[header(actId="sandbox_2", npcId="")] 
+Grab a crew to clear the path up to the plate ahead? Be prepared for any unknown dangers.
+[decision(option1="Spend 2 Support Mr. Booms", value1="1.1", option2="Spend 2 Support Originium Bombs", value2="1.2", option3="Never mind.", value3="1.3")]
+[predicate(references="1.1", selectableCondition="c0")]
+[deliveritem(itemId="sandbox_2_tactical_2", value=2)]
+[withdrawsource(withoutAnim=true)]
+Cleanup complete! The plate is open!
+[end]
+[predicate(references="1.2", selectableCondition="c1")]
+[deliveritem(itemId="sandbox_2_tactical_9", value=2)]
+[withdrawsource(withoutAnim=true)]
+Cleanup complete! The plate is open!
+[end]
+[predicate(references="1.3")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_tactical_2", value="2")]
+[condition(references="c1", key="itemGE", itemId="sandbox_2_tactical_9", value="2")]

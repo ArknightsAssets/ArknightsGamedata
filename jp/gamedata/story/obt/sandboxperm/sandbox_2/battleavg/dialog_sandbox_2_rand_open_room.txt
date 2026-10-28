@@ -1,0 +1,31 @@
+[header(actId="sandbox_2", npcId="")]
+前方のエリアは未整理状態です。施工隊に物資を納品して整理を依頼しますか？（新エリアには未知の危険が存在していますので、準備を整えて挑んでください。）
+[decision(option1="施工隊に木材を12個納品する。", value1="v5_0", option2="施工隊に石材を6個納品する。", value2="v7_0", option3="施工隊に鉄鉱石を3個納品する。", value3="v9_0", option4="他にも方法がある。", value4="v15_0")]
+[predicate(references="v5_0", selectableCondition="c12")]
+[deliveritem(itemId="sandbox_2_wood", value=12)]
+[withdrawsource(withoutAnim=true)]
+整理完了、新エリア開放！
+[end]
+[predicate(references="v7_0", selectableCondition="c13")]
+[deliveritem(itemId="sandbox_2_stone", value=6)]
+[withdrawsource(withoutAnim=true)]
+整理完了、新エリア開放！
+[end]
+[predicate(references="v9_0", selectableCondition="c14")]
+[deliveritem(itemId="sandbox_2_iron", value=3)]
+[withdrawsource(withoutAnim=true)]
+整理完了、新エリア開放！
+[end]
+[predicate(references="v15_0")]
+[decision(option1="施工隊に粗悪な地金を60個納品する。", value1="v16_0", option2="やめておこう。", value2="v11_0")]
+[predicate(references="v16_0", selectableCondition="c17")]
+[deliveritem(itemId="sandbox_2_gold", value=60)]
+[withdrawsource(withoutAnim=true)]
+整理完了、新エリア開放！
+[end]
+[predicate(references="v11_0")]
+[end]
+[condition(references="c12", key="itemGE", itemId="sandbox_2_wood", value="12")]
+[condition(references="c13", key="itemGE", itemId="sandbox_2_stone", value="6")]
+[condition(references="c14", key="itemGE", itemId="sandbox_2_iron", value="3")]
+[condition(references="c17", key="itemGE", itemId="sandbox_2_gold", value="60")]

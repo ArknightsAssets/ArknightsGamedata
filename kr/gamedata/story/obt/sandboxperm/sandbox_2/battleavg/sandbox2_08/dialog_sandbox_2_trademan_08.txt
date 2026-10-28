@@ -1,0 +1,19 @@
+[header(actId="sandbox_2", npcId="")] 
+[name="연락책", avatarId="trap_415_trademan", isAvatarRight="FALSE"]또 뵙네요! 이번에 새로 나온 '거대 암석 재생소 도면'을 입수했습니다. 건설하면 주변에 거대 암석이 끊임없이 생성됩니다. 물론, 이미 건설된 '거대 암석 재생소'도 준비되어 있죠! 한번 둘러보실래요?
+[name="연락책", avatarId="trap_415_trademan", isAvatarRight="FALSE"]이번엔 돈을 쓰실 필요 없어요. 목판만 가져오시면 교환해 드리죠!
+[decision(option1="목판 10개로 '거대 암석 재생소 도면' 교환", value1="1.1", option2="목판 4개로 '거대 암석 재생소' 교환", value2="1.2", option3="그만둔다", value3="1.3")]
+[predicate(references="1.1", selectableCondition="c0&&!cx")]
+[deliveritem(itemId="sandbox_2_plank", value=10)]
+[additem(itemId="sandbox_2_recipe_producer_2", itemCount=1)]
+[name="연락책", avatarId="trap_415_trademan", isAvatarRight="FALSE"]감사합니다!
+[end]
+[predicate(references="1.2", selectableCondition="c1")]
+[deliveritem(itemId="sandbox_2_plank", value=4)]
+[additem(itemId="sandbox_2_building_producer_2", itemCount=1)]
+[name="연락책", avatarId="trap_415_trademan", isAvatarRight="FALSE"]당신과의 거래는 언제나 기분이 좋단 말이죠!
+[end]
+[predicate(references="1.3")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_plank", value="10")]
+[condition(references="cx", key="itemGE", itemId="sandbox_2_recipe_producer_2", value="1")]
+[condition(references="c1", key="itemGE", itemId="sandbox_2_plank", value="4")]

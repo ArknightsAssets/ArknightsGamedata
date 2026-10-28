@@ -1,0 +1,11 @@
+[header(actId="sandbox_2", npcId="")] 
+전방의 섹터는 아직 정리되지 않았습니다. 공사팀을 불러 정리하시겠습니까? 미지의 위험이 존재할 수 있으니, 미리 대비하여 주십시오.
+[decision(option1="공사팀에 임시 채집기지 1개 지급", value1="1.1", option2="그만둔다", value2="1.2")]
+[predicate(references="1.1", selectableCondition="c0")]
+[deliveritem(itemId="sandbox_2_building_infrastructure_1", value=1)]
+[withdrawsource(withoutAnim=true)]
+정리 완료, 새로운 섹터 가동!
+[end]
+[predicate(references="1.2")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_building_infrastructure_1", value="1")]

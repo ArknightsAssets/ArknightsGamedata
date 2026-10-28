@@ -1,0 +1,23 @@
+[header(actId="sandbox_2", npcId="")]
+Spend resources to repair this damaged Resource Sentry Post? It will provide benefits.
+[decision(option1="Spend 10 Fresh Water to gain HP Regen.", value1="1.1", option2="Spend 15 Wood to gain SP Regen.", value2="1.2", option3="Spend 6 Stone to gain increased ASPD.", value3="1.3", option4="Never mind.", value4="1.4")]
+[predicate(references="1.1", selectableCondition="c0")]
+[deliveritem(itemId="sandbox_2_water", value=10)]
+[sandboxv3summontrap(x="1", y="1", charId="trap_524_xb2onf", isChar="FALSE", dir="LEFT", skillIndex="1")]
+Resource Sentry Post repaired!
+[end]
+[predicate(references="1.2", selectableCondition="c1")]
+[deliveritem(itemId="sandbox_2_wood", value=15)]
+[sandboxv3summontrap(x="1", y="1", charId="trap_524_xb2onf", isChar="FALSE", dir="LEFT", skillIndex="2")]
+Resource Sentry Post repaired!
+[end]
+[predicate(references="1.3", selectableCondition="c2")]
+[deliveritem(itemId="sandbox_2_stone", value=6)]
+[sandboxv3summontrap(x="1", y="1", charId="trap_524_xb2onf", isChar="FALSE", dir="LEFT", skillIndex="3")]
+Resource Sentry Post repaired!
+[end]
+[predicate(references="1.4")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_water", value="10")]
+[condition(references="c1", key="itemGE", itemId="sandbox_2_wood", value="15")]
+[condition(references="c2", key="itemGE", itemId="sandbox_2_stone", value="6")]

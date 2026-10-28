@@ -1,0 +1,43 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 13_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[Tutorial(waitForSignal="put_down", charId="trap_513_xb2bas")]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Delay(time=1)]
+[Battle.Pause(pause=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Tutorial(tileX=5, tileY=10, focusWidth=100, focusHeight=100, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="char_603_csnipe", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+Hm? Why is there an abandoned Drinks Supply Station here?
+[SandboxBattle.LockCamera(enable=false)] 
+[InputBlocker(blockInput=true, tileX=5, tileY=10, validWidth=100, validHeight=80)]
+[Tutorial(waitForSignal="char_info", charId="trap_582_xb2dstr", tileX=5, tileY=10, focusWidth=100, focusHeight=100, \
+          dialogHead="char_601_cguard", animStyle="Click", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=2, dialogHead="char_601_cguard", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+Let's see if it's still usable.
+[SandboxBattle.LockCamera(enable=true)] 
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", \
+          protectTime=2, dialogHead="char_601_cguard")] \
+Instructions on the back say: While skill is active, this Drinks Supply Station will <@tu.kw>continuously consume</> Drinks or Energy Boosters to <@tu.kw>maintain Prosperity points</>, while also <@tu.kw>granting buffs</> to all operators.
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=325, focusY=-25, focusWidth=150, focusHeight=70, anchor="Top",\
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=2, dialogHead="char_601_cguard", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+You can see our level of Prosperity here.
+[PopupDialog(dialogHead="char_601_cguard", protectTime=2)] When <@tu.kw>Prosperity hits a certain amount</>, <@tu.kw>our Build Scores will slowly increase</>.
+[Tutorial(focusX=0, focusY=-100, focusWidth=300, focusHeight=200, anchor="Top",\
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=2, dialogHead="char_601_cguard", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+Press here to see how fast the Build Scores are increasing. You can boost the speed further by increasing Prosperity.
+[PopupDialog(dialogHead="char_603_csnipe", protectTime=1)] Let's try out these blueprints from Engineering!
+[InputBlocker(blockInput=false)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]

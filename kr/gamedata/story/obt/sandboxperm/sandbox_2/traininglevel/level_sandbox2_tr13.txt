@@ -1,0 +1,43 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 13_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[Tutorial(waitForSignal="put_down", charId="trap_513_xb2bas")]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Delay(time=1)]
+[Battle.Pause(pause=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Tutorial(tileX=5, tileY=10, focusWidth=100, focusHeight=100, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="char_603_csnipe", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+음? 이런 곳에 웬 음료 공급소가?
+[SandboxBattle.LockCamera(enable=false)] 
+[InputBlocker(blockInput=true, tileX=5, tileY=10, validWidth=100, validHeight=80)]
+[Tutorial(waitForSignal="char_info", charId="trap_582_xb2dstr", tileX=5, tileY=10, focusWidth=100, focusHeight=100, \
+          dialogHead="char_601_cguard", animStyle="Click", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=2, dialogHead="char_601_cguard", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+쓸 수 있는지 확인해봐야겠어요.
+[SandboxBattle.LockCamera(enable=true)] 
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", \
+          protectTime=2, dialogHead="char_601_cguard")] \
+뒤에 설명이 있네요. “음료 공급소는 스킬 지속 시간 동안 음료나 활력제를 <@tu.kw>지속적으로 소모</>하여 <@tu.kw>일정 수준의 번영도</>를 유지하며, 동시에 모든 오퍼레이터에게 <@tu.kw>강력한 버프</>를 제공합니다.”
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=325, focusY=-25, focusWidth=150, focusHeight=70, anchor="Top",\
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=2, dialogHead="char_601_cguard", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+이곳에 번영도가 표시됩니다.
+[PopupDialog(dialogHead="char_601_cguard", protectTime=2)] <@tu.kw>번영도가 일정 수준</>에 도달하면 <@tu.kw>건설 수치가 서서히 증가</>합니다.
+[Tutorial(focusX=0, focusY=-100, focusWidth=300, focusHeight=200, anchor="Top",\
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=2, dialogHead="char_601_cguard", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+이곳을 탭 하여 건설 수치의 증가 속도를 확인할 수 있고, 번영도가 올라가면 건설 수치의 증가 속도도 더 빨라져요.
+[PopupDialog(dialogHead="char_603_csnipe", protectTime=1)] 엔지니어링부에서 관련 도면을 보내왔네. 그럼 한번 시작해 볼까!
+[InputBlocker(blockInput=false)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]

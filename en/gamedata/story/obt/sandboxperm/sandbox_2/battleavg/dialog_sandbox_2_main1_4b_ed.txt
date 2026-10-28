@@ -1,0 +1,42 @@
+[header(actId="sandbox_2", npcId="trap_628_xb2cls")]
+[summontrap(charId="trap_628_xb2cls", dir="RIGHT", x="2", y="9", isChar="False")]
+[summonenemy(enemyId="enemy_7078_xbblsk", x="4", y="9", endCol="3", endRow="9")]
+[move(enemyId="enemy_7078_xbblsk", x="3", y="9")]
+[summonenemy(enemyId="enemy_7081_xbmedc", x="1", y="8", endCol="2", endRow="8")]
+[move(enemyId="enemy_7081_xbmedc", x="2", y="8")]
+[delay(time="1")]
+[executeactionarray(target="trap_628_xb2cls", key="disable_global_skill_cast")]
+[camerafocusto(offsetX="2", offsetY="9", scale="DEFAULT", time="1")]
+[delay(time="1")]
+[playanim(id="enemy_7081_xbmedc", anim="Attack_1", dir="RIGHT")]
+[delay(time="1")]
+[name="Medic Operator", avatarId="char_605_cmedic", isAvatarRight="FALSE"]Our first batch of patients can move around now, but they're having some difficulties.
+[emoji(emoji="common_bubble_sad", target="enemy_7081_xbmedc")]
+[name="Injured Wastelander", avatarId="bavg_npc_010_vtskny_2", isAvatarRight="FALSE"]......
+[playanim(id="trap_628_xb2cls", anim="Attack", dir="RIGHT")]
+[delay(time="1")]
+[name="Closure", avatarId="char_4228_closur", isAvatarRight="FALSE"]Don't worry. We'll help out as much as we can.
+[name="Closure", avatarId="char_4228_closur", isAvatarRight="FALSE"]As for treatment fees, if you really want to, you can always return the favor by helping us a bit once you're healthy. But don't worry about it.
+[name="Closure", avatarId="char_4228_closur", isAvatarRight="FALSE"]So, could you tell us what you saw out there?
+[emoji(emoji="common_bubble_sad", target="enemy_7081_xbmedc")]
+[name="Injured Wastelander", avatarId="bavg_npc_010_vtskny_2", isAvatarRight="FALSE"]We're not sure either... but it was definitely a monster!
+[name="Closure", avatarId="char_4228_closur", isAvatarRight="FALSE"]A 'monster'?
+[emoji(emoji="common_bubble_sad", target="enemy_7081_xbmedc")]
+[name="Injured Wastelander", avatarId="bavg_npc_010_vtskny_2", isAvatarRight="FALSE"]Yes! One day, the rich folks from the city came and dumped something in the forest. And a few days later our burdenbeasts went out to graze and never came back.
+[emoji(emoji="common_bubble_angry", target="enemy_7078_xbblsk")]
+[name="Angry Wastelander", avatarId="bavg_npc_009_vtskny", isAvatarRight="FALSE"]We went looking for them, and found their skulls beneath a tree instead! And that tree—the tree was a monster! Those rich bastards released it there, I'm sure!
+[playanim(id="enemy_7078_xbblsk", anim="Special", dir="LEFT")]
+[delay(time="1")]
+[name="Warfarin", avatarId="char_171_bldsk", isAvatarRight="FALSE"]...That would be the tree slug Blaze and Rosmontis mentioned. They've already given us the data.
+[name="Closure", avatarId="char_4228_closur", isAvatarRight="FALSE"]Got it.
+[playanim(id="trap_628_xb2cls", anim="Special", dir="RIGHT")]
+[delay(time="1")]
+[name="Closure", avatarId="char_4228_closur", isAvatarRight="FALSE"]Don't worry, we're dispatching a squad as we speak.
+[name="Injured Wastelander", avatarId="bavg_npc_010_vtskny_2", isAvatarRight="FALSE"]Thank you!
+[withdraw(id="trap_628_xb2cls")]
+[withdraw(id="enemy_7078_xbblsk")]
+[withdraw(id="enemy_7081_xbmedc")]
+[delay(time="1")]
+[resetcamera(time="1")]
+[save]
+[end]

@@ -1,0 +1,128 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_bridge",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[delay(time=1)]
+[name="クロージャ"]ドクター？　アーミヤちゃん？　今、忙しい？
+[dialog]
+[PlaySound(key="$dooropenquite", volume=1)]
+[delay(time=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m",duration=2)]
+[delay(time=3)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#12$1")]
+[name="アーミヤ"]クロージャさん！　少しだけ待ってもらえますか、この会議ももうすぐ終わるところなので……
+[charslot(slot = "m", name = "avg_1037_amiya3_1#10$1")]
+[name="アーミヤ"]あっ、ドクターは大丈夫ですか？
+[dialog]
+[charslot]
+[Decision(options="（懸命に息をする）;（重たげに瞬きをする）;（力なく黙り込む）", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_4228_closur_1#2$1",focus="m")]
+[name="クロージャ"]うーん、なんかちょっとダメそうだね。
+[charslot(slot="m",name="avg_4228_closur_1#2$1",focus="m")]
+[name="クロージャ"]こんなに疲れたドクターを見るのなんて、飼育エリアを作ってた頃以来のような……
+[dialog]
+[charslot]
+[Decision(options="（話を制止しようとする）", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4228_closur_1#11$1",focus="m")]
+[name="クロージャ"]あの時は、畜舎に帰りたがらない小角跳獣とドクターがずっと格闘してたんだけど、結局頭突きでひっくり返されちゃってね。
+[charslot(slot="m",name="avg_4228_closur_1#11$1",focus="m")]
+[name="クロージャ"]Mon3trが助けに来てくれてなかったら、あの角跳獣は、ドクターが遊んでくれてると勘違いしたままだっただろうね。
+[dialog]
+[charslot]
+[Decision(options="（ぐったりと目を閉じる）", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#10$1")]
+[name="アーミヤ"]ドクター……？
+[dialog]
+[charslot]
+[Decision(options="少し座って休んでいれば大丈夫だ。;こちらからは以上だが、ケルシーは？", values="1;2")]
+[Predicate(references="1;2")]
+[musicvolume(volume=0.2, fadetime=2)]
+[delay(time=1)]
+会議室を包む奇妙な静けさに不安を覚えて振り返ると、ケルシーの席はいつの間にか空になっていた。
+[dialog]
+[charslot]
+[Decision(options="ケルシー？;――ケルシー？", values="1;2")]
+[Predicate(references="1;2")]
+[musicvolume(volume=0.6, fadetime=4)]
+だが、幸いにして、見慣れたその姿はすぐに目の前に現れた。
+[dialog]
+[PlaySound(key="$dooropenquite", volume=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1",duration=2)]
+[delay(time=3)]
+[name="ケルシー"]本当に疲れているようだな、ドクター。
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="ケルシー"]先ほど、水を取ってくると声をかけたのだが。
+[dialog]
+[charslot]
+[Decision(options="席が空になっていたから、つい……;……;（咳払いでごまかす）", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Decision(options="（姿勢を正して元気をアピールする）;ケルシー、あとのことは任せて、しっかり休んでくれ。;今日は随分働いただろう。もう休んでくれ、ケルシー。", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="ケルシー"]ああ。
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="ケルシー"]だが、再会して以来君は似たようなことを何度も口にしているな。
+[dialog]
+[charslot]
+[Decision(options="……そうだったか……;無意識だった……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="ケルシー"]私の心配は無用だ、ドクター。
+[charslot(slot = "m", name = "avg_1052_kalts2_1#4$1")]
+[name="ケルシー"]私を探していたそうだな、クロージャ。
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="クロージャ"]うん！　最近はケルシーを捕まえるだけでも一苦労なんだよねー。ケルシー宛てのプレゼントで執務室が埋まっちゃいそうなくらいだし。それでさ、どう？　ロドス新本部は！　良い感じでしょ？
+[charslot(slot = "m", name = "avg_1052_kalts2_1#8$1")]
+[name="ケルシー"]ああ、私の想像よりも遥かに充実しているな。
+[charslot(slot="m",name="avg_4228_closur_1#14$1",focus="m")]
+[name="クロージャ"]へへっ、ちょっとだけ予算オーバーしちゃったけど、出来栄えはかなりのものでしょ！
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="クロージャ"]今の区画は、大まかに五種類のエリアに分けられるんだ。中核エリアに始まって、医療エリア、生活エリア、工業エリア、それとポートエリアって感じで。
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="クロージャ"]医療エリアには独自の製薬ラインを構築して、入院部の外には小さな庭も作ったの。天気がいい日は、患者さんたちが日向ぼっこできるようにね。
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="クロージャ"]それで、生活エリアには、本艦をモデルに食堂や療養庭園を作って……新しい宿舎棟も建てたんだ。前よりずっと良い環境になってるし、オペレーターたちにもすごく喜ばれてるよ。
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="クロージャ"]それから、ポートとしての新しい区画も追加で買い付けて、工業エリアも生産ラインを再構築したから、今後はエネルギー資材も武器も、前よりずっと余裕が出るはずだよ。
+[charslot(slot="m",name="avg_4228_closur_1#3$1",focus="m")]
+[name="クロージャ"]と、大体こんな感じかな。一番立て込んでた時には「ブーブーちゃん」も煙を吐くほど働いてたし、今年はみんなへのボーナス増額してあげてよ、ケルシー！
+[dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot="m",name="avg_4179_monstr_1#11$1",duration=3)]
+[delay(time=3)]
+[name="Mon3tr"]ケルシー、外勤任務から戻ったよ！
+[charslot(slot="m",name="avg_4179_monstr_1#11$1")]
+[name="Mon3tr"]ほら見て、また新しい技を覚えたんだ！
+[charslot(slot="m",name="avg_4179_monstr_1#7$1")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Mon3tr"]（激しい咆哮）
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="アーミヤ"]――！
+[charslot(slot="m",name="avg_4228_closur_1#7$1",focus="m")]
+[name="クロージャ"]（小声）ねえドクター、ケルシーが戻ってきてから、Mon3trが前よりちょっと元気になったと思わない？
+[dialog]
+[charslot]
+[Decision(options="（頷く）;（小声）少しどころではない気がする。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="ケルシー"]何を話しているんだ？
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="クロージャ"]こほん、何でもないよ！　それより、はい、ケルシー。ロドス再建の任務報告書だよ。合わせて、詳しい報告も聞いてもらうからね。
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="クロージャ"]あの時、あたしたちは……
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=4, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

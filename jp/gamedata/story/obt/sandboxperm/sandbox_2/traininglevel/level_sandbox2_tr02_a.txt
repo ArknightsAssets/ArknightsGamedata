@@ -1,0 +1,29 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 02_a
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=1.5)]
+[Battle.Pause]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=100, validHeight=100)]
+[Tutorial(waitForSignal="put_down", charId="trap_513_xb2bas", posX=9, posY=7, dialogHead="$avatar_acfend", animStyle="Drag", \
+          startCardIndex=0, startAnchor="BottomRight", endTileX=9, endTileY=7, dialogHead="$avatar_acfend")] \
+野生の稲を発見したが、まだ実っていないようだな。
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Delay(time=1)]
+[Battle.Pause(pause=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Tutorial(tileX=8, tileY=7, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+医療オペレーターを一人送って、成長を早めてもらうね。
+[Battle.Pause(pause=false)]
+[Delay(time=9)]
+[Battle.Pause]
+[Tutorial(tileX=8, tileY=7, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+稲が成熟した後は、オペレーターか採取ロボが<@tu.kw>攻撃して収穫する</>必要があるんだ。早速収穫して、最初の任務を終わらせよう！

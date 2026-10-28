@@ -1,0 +1,13 @@
+[header(actId="sandbox_2", npcId="")] 
+[name="ムース", avatarId="char_185_frncat", isAvatarRight="FALSE"]新鮮なお米が手に入りましたね！　えっ？　施工隊のみんなも、ポン菓子を食べてみたいんですか？
+[decision(option1="施工隊に米を1個納品する。", value1="1.1", option2="やめておこう。", value2="1.2")]
+[predicate(references="1.1", selectableCondition="c0")]
+[deliveritem(itemId="sandbox_2_rice", value=1)]
+[withdrawsource(withoutAnim=true)]
+[name="ムース", avatarId="char_185_frncat", isAvatarRight="FALSE"]これで、稲がたくさん実っているエリアへ行けるようになりましたね。
+[name="ムース", avatarId="char_185_frncat", isAvatarRight="FALSE"]あっ、このエリアでは<color=#d8d769>野生動物</color>が活動していますね。それに<color=#d8d769>巣穴</color>もあって、中には野生動物がたくさんいるみたいです……
+[name="クロージャ", avatarId="char_4228_closur", isAvatarRight="FALSE"]野生動物も素材をドロップするからね。豊富な資源を無駄にしないように！
+[end]
+[predicate(references="1.2")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_rice", value="1")]

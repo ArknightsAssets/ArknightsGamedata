@@ -1,0 +1,19 @@
+[header(actId="sandbox_2", npcId="")] 
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]So we meet again! I have here a cutting-edge Monolith Spawner Blueprint. You need only build it to continuously generate Monoliths. Of course, I also have ready-made Spawners! Why not have a look?
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]I won't ask for money this time. Let's trade for your Planks!
+[decision(option1="Trade 10 Planks for Monolith Spawner Blueprint", value1="1.1", option2="Trade 4 Planks for Monolith Spawner", value2="1.2", option3="Never mind.", value3="1.3")]
+[predicate(references="1.1", selectableCondition="c0&&!cx")]
+[deliveritem(itemId="sandbox_2_plank", value=10)]
+[additem(itemId="sandbox_2_recipe_producer_2", itemCount=1)]
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]Thank you for your generosity!
+[end]
+[predicate(references="1.2", selectableCondition="c1")]
+[deliveritem(itemId="sandbox_2_plank", value=4)]
+[additem(itemId="sandbox_2_building_producer_2", itemCount=1)]
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]Always a pleasure doing business with you!
+[end]
+[predicate(references="1.3")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_plank", value="10")]
+[condition(references="cx", key="itemGE", itemId="sandbox_2_recipe_producer_2", value="1")]
+[condition(references="c1", key="itemGE", itemId="sandbox_2_plank", value="4")]

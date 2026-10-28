@@ -1,0 +1,43 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 13_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[Tutorial(waitForSignal="put_down", charId="trap_513_xb2bas")]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Delay(time=1)]
+[Battle.Pause(pause=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Tutorial(tileX=5, tileY=10, focusWidth=100, focusHeight=100, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="char_603_csnipe", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+あれっ、どうしてこんなところにドリンク供給所が……廃棄されたものか？
+[SandboxBattle.LockCamera(enable=false)] 
+[InputBlocker(blockInput=true, tileX=5, tileY=10, validWidth=100, validHeight=80)]
+[Tutorial(waitForSignal="char_info", charId="trap_582_xb2dstr", tileX=5, tileY=10, focusWidth=100, focusHeight=100, \
+          dialogHead="char_601_cguard", animStyle="Click", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=2, dialogHead="char_601_cguard", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+まだ使えるか見てみよっか。
+[SandboxBattle.LockCamera(enable=true)] 
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", \
+          protectTime=2, dialogHead="char_601_cguard")] \
+裏に説明があるね。ドリンク供給所はエナジードリンクまたはドリンクを<@tu.kw>持続的に消費</>してスキルを発動する。スキル発動中は、<@tu.kw>一定の繁栄度</>と、全オペレーターへの<@tu.kw>強力なバフ</>を提供する……だって。
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=325, focusY=-25, focusWidth=150, focusHeight=70, anchor="Top",\
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=2, dialogHead="char_601_cguard", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+ここに、今の繁栄度が表示されてるよ。
+[PopupDialog(dialogHead="char_601_cguard", protectTime=2)] <@tu.kw>繁栄度が一定程度に達する</>と、<@tu.kw>建設値もゆっくりと増加していく</>みたい。
+[Tutorial(focusX=0, focusY=-100, focusWidth=300, focusHeight=200, anchor="Top",\
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=2, dialogHead="char_601_cguard", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+ここをタップすると、建設値の増加速度を確認できる。繁栄度を上げることで、建設値もさらに早く増加するようになるな。
+[PopupDialog(dialogHead="char_603_csnipe", protectTime=1)] エンジニア部から関連設計図が送られてきたし、早速試してみよう！
+[InputBlocker(blockInput=false)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]

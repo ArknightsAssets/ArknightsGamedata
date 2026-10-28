@@ -1,0 +1,11 @@
+[header(actId="sandbox_2", npcId="")] 
+Grab a crew to clear the path up to the plate ahead? Be prepared for any unknown dangers.
+[decision(option1="Spend 3 Slabs", value1="1.1", option2="Never mind.", value2="1.2")]
+[predicate(references="1.1", selectableCondition="c0")]
+[deliveritem(itemId="sandbox_2_brick", value=3)]
+[withdrawsource(withoutAnim=true)]
+Cleanup complete! The plate is open!
+[end]
+[predicate(references="1.2")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_brick", value="3")]

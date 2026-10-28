@@ -1,0 +1,36 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 09_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[Tutorial(waitForSignal="put_down", charId="trap_513_xb2bas", dialogHead="$avatar_closur", protectTime=1)] \
+ドクター、システムを更新したから、いくつか情報を共有しておくね！　とりあえずはいつも通り、ロドス採取ステーションを配置してみて。
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_closur", protectTime=1)] オペレーターたちが帰ってきた時に、新しいロドスをお披露目できるように、建設の時には景観値にも少し気を遣わないとね。
+[PopupDialog(dialogHead="$avatar_closur", protectTime=1)] 建造画面にある<@tu.kw>生産設備</>と<@tu.kw>景観建築</>は、どちらも景観値を上乗せしてくれるよ。
+[SandboxBattle.LockCamera(enable=false)] 
+[InputBlocker(blockInput=true, tileX=2, tileY=8, validWidth=100, validHeight=80)]
+[Tutorial(waitForSignal="char_info", charId="trap_557_xb2fnt", tileX=2, tileY=8, focusWidth=100, focusHeight=100, dialogHead="$avatar_closur", animStyle="Click", focusStyle="HighlightCircle", black=0.5, protectTime=2, dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+これは景観建築――<@tu.kw>澄んだ噴水</>だよ。この泉が今、新本部の景観値をある程度向上させてくれてるんだ。
+[SandboxBattle.LockCamera(enable=true)] 
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", \
+          protectTime=1, dialogHead="$avatar_closur")] \
+<@tu.kw>景観建築</>は配置されている間、継続的に<@tu.kw>粗悪な地金の収入</>をもたらしてくれるよ。
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=200, focusY=-25, focusWidth=120, focusHeight=70, anchor="Top",\
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=2, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+ここには今の<@tu.kw>景観値</>が表示されてるよ。
+[PopupDialog(dialogHead="$avatar_closur", protectTime=1)] 一日の終わりになると、景観値によって追加の<@tu.kw>輝く結晶片</>を獲得できるよ。休憩期間では、それを使って物資を購入できるからね。
+[Tutorial(focusX=0, focusY=-100, focusWidth=300, focusHeight=200, anchor="Top",\
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=2, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+ここをタップして展開すると、景観値による追加収入を確認できるよ。
+[PopupDialog(dialogHead="$avatar_closur")] 景観値を上げて、より多くの任務を完了させよう。
+[InputBlocker(blockInput=false)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]

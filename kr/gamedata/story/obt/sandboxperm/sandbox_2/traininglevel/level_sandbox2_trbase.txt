@@ -1,0 +1,57 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 基地教学
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[inputblocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_closur")] 박사, 드디어 기지에 돌아왔네! 우리가 이 이동 섹터에 <@tu.kw>로도스 아일랜드 신기지</>를 건설할 거야. 보안 시스템은 이미 구축해 뒀으니까 <@tu.kw>적습은 걱정하지 않아도 돼</>.
+[PopupDialog(dialogHead="$avatar_closur")] 로도스 아일랜드 신기지 건설은 총 <@tu.kw>5기</> 공정으로 진행되는데, 지금 가진 자원으로는 <@tu.kw>1기</> 공정만 시작할 수 있을 것 같아. 우선 눈앞의 과제부터 해결해 볼까?
+[tutorial(focusWidth=110, focusHeight=110, animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=2, dialogHead="$avatar_closur",  cardIndex=0)]이건 <@tu.kw>정리용 메카닉파울</>이야. 한 세트면 미정리 섹터 하나를 깔끔하게 정리할 수 있지.
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="put_down", charId="trap_622_xb2clr", posX=21, posY=15, dialogHead="$avatar_closur", animStyle="Drag", startCardIndex=0, startAnchor="BottomRight", endTileX=21, endTileY=15)]
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Delay(time=5)]
+[PopupDialog(dialogHead="$avatar_closur")] 그리고 이건 내가 심혈을 기울여 만든, 이번 신기지 건설의 핵심인 에너지 생산 라인 시스템이야!
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, cardIndex=2, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="put_down", charId="trap_604_xb2ofb2", posX=21, posY=15, dialogHead="$avatar_closur", animStyle="Drag", \
+          startCardIndex=2, startAnchor="BottomRight", endTileX=21, endTileY=15)]에너지를 자급자족하려면 가장 먼저 에너지 전환 장치가 필요하잖아.
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[SandboxBattle.LockCamera(enable=false)] 
+[InputBlocker(blockInput=true, tileY=15, tileX=21, validWidth=40, validHeight=40)]
+[Tutorial(waitForSignal="char_info", charId="trap_604_xb2ofb2", tileX=21, tileY=15, focusWidth=100, focusHeight=100, \
+          dialogHead="$avatar_closur", animStyle="Click", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+<@tu.kw>목재 에너지 전환 장치</>를 건설한 후에, 작동할 수 있게 활성화해야 에너지가 생산돼.
+[SandboxBattle.LockCamera(enable=true)] 
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", protectTime=2, dialogHead="$avatar_closur")] 어떻게 활성화하냐고? 좋은 질문이야! 장치의 공격 범위 내에 <@tu.kw>목재 처리 센터</>를 짓기만 하면 되거든!
+[InputBlocker(blockInput=true, cardIndex=1, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="put_down", charId="trap_635_xb2owdp", posX=21, posY=14, dialogHead="$avatar_closur", animStyle="Drag", \
+          startCardIndex=1, startAnchor="BottomRight", endTileX=21, endTileY=14)]
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=500, focusY=-50, focusWidth=300, focusHeight=100, anchor="TopLeft", animStyle="Highlight", focusStyle="HighlightRect", black=0.5, protectTime=1, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 이제 에너지 생산량을 높이는 데는 성공했지만, 정작 가장 중요한 '코어 에너지 스테이션'이 없어서 전체 라인이 완전히 가동되지는 않고 있어.
+[Tutorial(focusWidth=110, focusHeight=110, animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=1, dialogHead="$avatar_closur",  cardIndex=0)] 이제 <@tu.kw>코어 에너지 스테이션</>만 건설하면 에너지를 사용해 자원을 생산할 수 있게 돼.
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="char_info", cardIndex=0, focusWidth=100, focusHeight=100, dialogHead="$avatar_closur", animStyle="Click", focusStyle="HighlightCircle", black=0.5, protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", protectTime=2, dialogHead="$avatar_closur")] 핵심 에너지기지는 일정 비율로 에너지를 건설 부품으로 변환하는데, <@tu.kw>업그레이드하면 건설 장치까지 생산</>할 수 있거든. <@tu.kw>원하는 위치</> 어디든 배치할 수 있지만, 한 가지 꼭 기억해. 이 건물은 <@tu.kw>오직 하나만</> 설치할 수 있다는 점!
+[PopupDialog(dialogHead="$avatar_closur",protectTime=2)] 배치가 마음에 안 든다? 그럼 바로 <@tu.kw>철거</>하면 돼. 건물을 철거해도 <@tu.kw>자원 손실 없이 배치 구역으로 되돌아오니까</>, 안심해.
+[PopupDialog(dialogHead="$avatar_closur",protectTime=2)] 더 많은 건물이나 정리용 메카닉파울이 필요하면 왼쪽 패널의 '후방지원부 상점'에서 구매할 수 있어. 그럼 박사, 이제 마음껏 기지를 꾸며봐!
+[Battle.Pause(pause=false)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]

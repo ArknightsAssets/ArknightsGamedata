@@ -1,0 +1,72 @@
+[HEADER(is_tutorial=true, is_skippable=true)] 教学关a
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[PopupDialog(dialogHead="$avatar_huang")] どうやら、エンジニア部が困ってるみたいだね。一緒に資源をいくつか持ち帰ってあげよう。
+[PopupDialog(dialogHead="$avatar_rosmon")] 端末を見るに、私たちに割り当てられてるのは木を伐ることみたいだね。
+[Tutorial(cardIndex=0, focusWidth=100, focusHeight=100, \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, protectTime=0.5, dialogHead="$avatar_huang")] \
+よし！　<@tu.kw>採取ステーション</>の稼働効率を試させてもらうよ！
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=100, validHeight=100)]
+[Tutorial(waitForSignal="put_down", charId="trap_513_xb2bas", posX=3, posY=7, dialogHead="$avatar_huang", animStyle="Drag", \
+          startCardIndex=0, startAnchor="BottomRight", endTileX=3, endTileY=7)] \
+いい感じの場所を見つけて<@tu.kw>配置</>したら、そこから作業を開始しよう。
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=5)]
+[Battle.Pause]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Tutorial(tileX=4, tileY=7, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_rosmon")] \
+<@tu.kw>採取ロボ</>が、自動で攻撃範囲内の資源を採取して運んでくれてるね。
+[PopupDialog(dialogHead="$avatar_closur")] でも、気を抜いちゃダメだよ。<@tu.kw>採取ステーション</>が敵に壊されちゃったら、作戦は失敗だから！
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=5)]
+[Battle.Pause]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[PopupDialog(dialogHead="$avatar_huang")] 了解、それじゃ私もチェーンソーで木を伐ってみようか！
+[Tutorial(tileX=1, tileY=9, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_huang", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+あっ、あいつが持ってる資源、結構使えそうだね。一緒に持って帰ろうか。
+[Tutorial(tileX=1, tileY=9, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_huang", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+重いなあ――小猫ちゃん、ちょっと手伝って！
+[Tutorial(tileX=1, tileY=9, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_rosmon", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+わかった。一人が背負える<@tu.kw>資源の数</>はその人の<@tu.kw>ブロック数</>によって決まるんだって。資源は、<@tu.kw>撤退</>時に持ち帰ることができるよ。
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=1)]
+[PopupDialog(dialogHead="$avatar_closur")] <@tu.kw>採取ロボ</>は、オペレーターが持っている資源を回収することもできるから、あとで試してみて。
+[Battle.Pause]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Tutorial(target="sandbox_2_focus_workbench", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur")] \
+ここからメニューを開いて<@tu.kw>通信装置</>を作れば、<@tu.kw>採取ステーション</>の攻撃範囲を拡張して、<@tu.kw>採取ロボ</>の運搬範囲を広げることができるよ。
+[Tutorial(target="sandbox_2_focus_daily_target", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+そうそう、<@tu.kw>建設値</>が目標に達すると、ステージクリアだからね。
+[Tutorial(target="sandbox_2_focus_remaining_time", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+ただし、<@tu.kw>行動時間が終わる</>と、建設が中止されちゃうから気を付けて。
+[Tutorial(target="sandbox_2_focus_task", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+よし、伝えたいことはこれくらいかな。それじゃ、任務を達成して<@tu.kw>建設値</>を上げて、新しい建築物を解放して、各区画の建設をどんどん終わらせていこう！
+[Battle.Pause(pause=false)]

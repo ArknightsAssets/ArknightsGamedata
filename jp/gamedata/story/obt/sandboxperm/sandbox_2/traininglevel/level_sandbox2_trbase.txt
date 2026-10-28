@@ -1,0 +1,57 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 基地教学
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[inputblocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_closur")] ドクター、やっと本部に戻ってきた！　あたしたちは、この移動区画に<@tu.kw>ロドス新本部を建設</>する予定なんだ。セキュリティシステムはすでに構築済みだから、ここは<@tu.kw>絶対に敵の襲撃を受けることはないよ</>。
+[PopupDialog(dialogHead="$avatar_closur")] ロドス新本部の建設は全部で<@tu.kw>5</>期の工程に分かれてるけど、今ある資源で建設できるのは第<@tu.kw>1</>期だけだよ。まずは目の前の作業から取り掛かろっか。
+[tutorial(focusWidth=110, focusHeight=110, animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=2, dialogHead="$avatar_closur",  cardIndex=0)]これは<@tu.kw>機械式清掃用羽獣</>だよ。1セットで整理待ちの区画を1つ片付けることができるんだ。
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="put_down", charId="trap_622_xb2clr", posX=21, posY=15, dialogHead="$avatar_closur", animStyle="Drag", startCardIndex=0, startAnchor="BottomRight", endTileX=21, endTileY=15)]
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Delay(time=5)]
+[PopupDialog(dialogHead="$avatar_closur")] これはね、あたしが心血を注いだ自信作で、本部建設の目玉でもある――エネルギー生産ラインシステムだよ！
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, cardIndex=2, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="put_down", charId="trap_604_xb2ofb2", posX=21, posY=15, dialogHead="$avatar_closur", animStyle="Drag", \
+          startCardIndex=2, startAnchor="BottomRight", endTileX=21, endTileY=15)]エネルギーの自給自足を実現するには、まずエネルギー変換装置が必要になるんだ。
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[SandboxBattle.LockCamera(enable=false)] 
+[InputBlocker(blockInput=true, tileY=15, tileX=21, validWidth=40, validHeight=40)]
+[Tutorial(waitForSignal="char_info", charId="trap_604_xb2ofb2", tileX=21, tileY=15, focusWidth=100, focusHeight=100, \
+          dialogHead="$avatar_closur", animStyle="Click", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+<@tu.kw>木材エネルギー変換装置</>を建設したあと、それを起動させれば、エネルギーを生産してくれるよ。
+[SandboxBattle.LockCamera(enable=true)] 
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", protectTime=2, dialogHead="$avatar_closur")] 起動する方法が知りたい？　良い質問だね！　その攻撃範囲内に<@tu.kw>木材処理センター</>を一つ建てればOKだよ！
+[InputBlocker(blockInput=true, cardIndex=1, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="put_down", charId="trap_635_xb2owdp", posX=21, posY=14, dialogHead="$avatar_closur", animStyle="Drag", \
+          startCardIndex=1, startAnchor="BottomRight", endTileX=21, endTileY=14)]
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=500, focusY=-50, focusWidth=300, focusHeight=100, anchor="TopLeft", animStyle="Highlight", focusStyle="HighlightRect", black=0.5, protectTime=1, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] エネルギーの生産能力を上げることには成功したけど、まだコアエネルギー基地がないから、生産ライン全体が完全には稼働していないんだ。
+[Tutorial(focusWidth=110, focusHeight=110, animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=1, dialogHead="$avatar_closur",  cardIndex=0)] 次は<@tu.kw>コアエネルギー基地</>を建造すれば、エネルギーから資源を産出できるようになるよ。
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=112, validHeight=116)]
+[Tutorial(waitForSignal="char_info", cardIndex=0, focusWidth=100, focusHeight=100, dialogHead="$avatar_closur", animStyle="Click", focusStyle="HighlightCircle", black=0.5, protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] 
+[InputBlocker(blockInput=true)]
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", protectTime=2, dialogHead="$avatar_closur")] コアエネルギー基地は、エネルギーを一定の割合で建設パーツに変換してくれるよ。しかも、<@tu.kw>アップグレード後は建設装置も産出できるようになるんだ</>。<@tu.kw>任意の場所</>に配置できるけど、<@tu.kw>1つしか作れないから</>気をつけてね！
+[PopupDialog(dialogHead="$avatar_closur",protectTime=2)] もし配置が気に入らなければ、建築物を<@tu.kw>撤去</>することもできるよ。撤去された建築物は<@tu.kw>そのまま手持ちに戻る</>からね。
+[PopupDialog(dialogHead="$avatar_closur",protectTime=2)] 建築物や機械式清掃用羽獣がもっと欲しいようなら、左側のパネルにあるロドス後方支援部のショップで購入できるよ。あとはドクターの好きなように基地を配置してみて。
+[Battle.Pause(pause=false)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]

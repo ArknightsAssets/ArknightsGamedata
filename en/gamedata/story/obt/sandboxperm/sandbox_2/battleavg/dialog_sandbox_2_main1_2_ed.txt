@@ -1,0 +1,54 @@
+[header(actId="sandbox_2", npcId="trap_415_trademan")]
+[summontrap(charId="trap_415_trademan", dir="RIGHT", x="8", y="9", isChar="False")]
+[summonenemy(enemyId="enemy_7079_xbshap", x="10", y="9", endCol="9", endRow="9")]
+[move(enemyId="enemy_7079_xbshap", x="9", y="9")]
+[summontrap(charId="trap_625_xb2smy", dir="RIGHT", x="8", y="8", isChar="False")]
+[summonenemy(enemyId="enemy_7113_xb2mcnrhd", x="11", y="9", endCol="10", endRow="9")]
+[move(enemyId="enemy_7113_xb2mcnrhd", x="10", y="9")]
+[summonenemy(enemyId="enemy_7114_xb2mcnrsh", x="6", y="9", endCol="7", endRow="9")]
+[move(enemyId="enemy_7114_xb2mcnrsh", x="7", y="9")]
+[delay(time="1")]
+[executeactionarray(target="trap_625_xb2smy", key="disable_global_skill_cast")]
+[camerafocusto(offsetX="8", offsetY="9", scale="DEFAULT", time="1")]
+[delay(time="1")]
+[playanim(id="trap_415_trademan", anim="Attack", dir="RIGHT")]
+[delay(time="1")]
+[emoji(emoji="common_bubble_happy", target="trap_415_trademan")]
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]Hey, everyone—Hi there! Aren't you exhausted, carrying your catch all the way back?
+[emoji(emoji="common_bubble_happy", target="trap_415_trademan")]
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]I see many new faces, but it must be fate that brought us together. I am the Liaison of Sunvalley Industries.
+[playanim(id="trap_415_trademan", anim="Special", dir="RIGHT")]
+[delay(time="1")]
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]It must be tough developing the area. But how lucky you were to run into me! I have everything you might possibly need, and the more you buy, the more discounts you get!
+[emoji(emoji="common_bubble_happy", target="trap_415_trademan")]
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]How about it?
+[playanim(id="trap_625_xb2smy", anim="Special", dir="RIGHT")]
+[delay(time="1")]
+[name="Stormeye", avatarId="char_511_asnipe", isAvatarRight="FALSE"]......
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]Ahaha, are you perhaps feeling guilty about accepting my generous discounts?
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]No worries! How about I tag along and have a chat with your boss? How about it?
+The Liaison politely hands over his business card.
+[playanim(id="enemy_7079_xbshap", anim="Attack", dir="LEFT")]
+[delay(time="1")]
+[name="Sharp", avatarId="char_508_aguard", isAvatarRight="FALSE"](Leafcarpet, Sunvalley's worked with Rhodes Island before, but we don't know this guy. Verify his identity.)
+[emoji(emoji="common_bubble_happy", target="enemy_7114_xb2mcnrsh")]
+[name="Leafcarpet", avatarId="bavg_npc_007_xb2mcnrsh", isAvatarRight="FALSE"](On it!)
+[emoji(emoji="common_bubble_happy", target="trap_415_trademan")]
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]Haha, I really get along with you all! Then it's settled!
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]Okay everyone, let's—
+[emoji(emoji="common_bubble_surprise", target="trap_415_trademan")]
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]Ahh! Why's everything up in the air?! My bag, my pass, my orders, my discount cards—
+[emoji(emoji="common_bubble_surprise", target="trap_415_trademan")]
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]Huh? They're all back on me? What's going on?
+[emoji(emoji="common_bubble_happy", target="enemy_7114_xb2mcnrsh")]
+[name="Leafcarpet", avatarId="bavg_npc_007_xb2mcnrsh", isAvatarRight="FALSE"]Identity verified!
+[name="Liaison", avatarId="trap_415_trademan", isAvatarRight="FALSE"]Uh, um... haha, well, everyone, let's go...?
+[withdraw(id="trap_415_trademan")]
+[withdraw(id="enemy_7079_xbshap")]
+[withdraw(id="trap_625_xb2smy")]
+[withdraw(id="enemy_7113_xb2mcnrhd")]
+[withdraw(id="enemy_7114_xb2mcnrsh")]
+[delay(time="1")]
+[resetcamera(time="1")]
+[save]
+[end]

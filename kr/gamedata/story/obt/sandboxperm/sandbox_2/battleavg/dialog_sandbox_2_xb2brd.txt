@@ -1,0 +1,20 @@
+[header(actId="sandbox_2", npcId="")] 
+파울비스트가 날개를 퍼덕이며 당신의 가방에 든 물건에 흥미를 보였다.
+[decision(option1="벼 3개를 건넨다", value1="1.1", option2="맑은 물 5개를 건넨다", value2="1.2", option3="나도 딱히 줄 게 없는데", value3="1.3")]
+[predicate(references="1.1", selectableCondition="c0")]
+[deliveritem(itemId="sandbox_2_wheat", value=5)]
+파울비스트는 매우 만족한 듯, 발밑의 보물 더미에서 1개를 골라 당신에게 건넸다.
+[additem(itemId="sandbox_2_randrelic_1", itemCount=1)]
+[withdrawsource(withoutAnim=true)]
+[end]
+[predicate(references="1.2", selectableCondition="c1")]
+[deliveritem(itemId="sandbox_2_water", value=3)]
+파울비스트는 매우 만족한 듯, 발밑의 보물 더미에서 1개를 골라 당신에게 건넸다.
+[additem(itemId="sandbox_2_randrelic_1", itemCount=1)]
+[withdrawsource(withoutAnim=true)]
+[end]
+[predicate(references="1.3")]
+……
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_wheat", value="3")]
+[condition(references="c1", key="itemGE", itemId="sandbox_2_water", value="5")]

@@ -1,0 +1,23 @@
+[header(actId="sandbox_2", npcId="")]
+資源前哨基地が破損しています。資源を消費して修理しますか？　修理後は一定の強化効果が得られます。
+[decision(option1="水を10個使用して、HP回復効果を獲得する。", value1="1.1", option2="木材を15個使用して、SP回復効果を獲得する。", value2="1.2", option3="石材を6個使用して、攻撃速度上昇効果を獲得する。", value3="1.3", option4="やめておこう。", value4="1.4")]
+[predicate(references="1.1", selectableCondition="c0")]
+[deliveritem(itemId="sandbox_2_water", value=10)]
+[sandboxv3summontrap(x="1", y="1", charId="trap_524_xb2onf", isChar="FALSE", dir="LEFT", skillIndex="1")]
+資源前哨基地、修理完了！
+[end]
+[predicate(references="1.2", selectableCondition="c1")]
+[deliveritem(itemId="sandbox_2_wood", value=15)]
+[sandboxv3summontrap(x="1", y="1", charId="trap_524_xb2onf", isChar="FALSE", dir="LEFT", skillIndex="2")]
+資源前哨基地、修理完了！
+[end]
+[predicate(references="1.3", selectableCondition="c2")]
+[deliveritem(itemId="sandbox_2_stone", value=6)]
+[sandboxv3summontrap(x="1", y="1", charId="trap_524_xb2onf", isChar="FALSE", dir="LEFT", skillIndex="3")]
+資源前哨基地、修理完了！
+[end]
+[predicate(references="1.4")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_water", value="10")]
+[condition(references="c1", key="itemGE", itemId="sandbox_2_wood", value="15")]
+[condition(references="c2", key="itemGE", itemId="sandbox_2_stone", value="6")]

@@ -1,0 +1,17 @@
+[header(actId="sandbox_2", npcId="")] 
+前方のエリアは未整理状態です。施工隊に物資を納品して整理を依頼しますか？（付近には危険な野生動物の活動痕跡があるようです。準備を整えて挑んでください。）
+[decision(option1="施工隊に粗悪な地金を10個納品する。", value1="1.1", option2="施工隊に木材を10個納品する。", value2="1.2", option3="やめておこう。", value3="1.3")]
+[predicate(references="1.1", selectableCondition="c0")]
+[deliveritem(itemId="sandbox_2_gold", value=10)]
+[withdrawsource(withoutAnim=true)]
+整理完了、新エリア開放！
+[end]
+[predicate(references="1.2", selectableCondition="c1")]
+[deliveritem(itemId="sandbox_2_wood", value=10)]
+[withdrawsource(withoutAnim=true)]
+整理完了、新エリア開放！
+[end]
+[predicate(references="1.3")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_gold", value="10")]
+[condition(references="c1", key="itemGE", itemId="sandbox_2_wood", value="10")]

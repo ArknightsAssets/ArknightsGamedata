@@ -1,0 +1,36 @@
+[header(actId="sandbox_2", npcId="trap_628_xb2cls")]
+[summontrap(charId="trap_628_xb2cls", dir="RIGHT", x="2", y="10", isChar="FALSE")]
+[summontrap(charId="trap_626_xb2tex", dir="LEFT", x="5", y="9", isChar="FALSE")]
+[summonenemy(enemyId="enemy_7083_xbswrd", x="5", y="9", endCol="4", endRow="9")]
+[move(enemyId="enemy_7083_xbswrd", x="4", y="9")]
+[summonenemy(enemyId="enemy_7081_xbmedc", x="4", y="8", endCol="4", endRow="8",enemyAliasId="enemy_7081_xbmedc#1")]
+[summonenemy(enemyId="enemy_7081_xbmedc", x="4", y="7", endCol="4", endRow="7",enemyAliasId="enemy_7081_xbmedc#2")]
+[summonenemy(enemyId="enemy_7081_xbmedc", x="4", y="6", endCol="4", endRow="6",enemyAliasId="enemy_7081_xbmedc#3")]
+[executeactionarray(target="trap_626_xb2tex", key="disable_global_skill_cast")]
+[delay(time="1")]
+[camerafocusto(offsetX="5", offsetY="9", scale="DEFAULT", time="1")]
+[delay(time="1")]
+[playanim(id="enemy_7083_xbswrd", anim="Attack", dir="LEFT")]
+[delay(time="1")]
+[name="엔지니어링부 오퍼레이터", avatarId="char_603_csnipe", isAvatarRight="FALSE"]섹터 장애물 제거 완료, 선로 재매설 완료……
+[name="엔지니어링부 오퍼레이터", avatarId="char_603_csnipe", isAvatarRight="FALSE"]물류 노선 테스트 완료, 항구 시운영을 정식으로 시작합니다.
+[name="엔지니어링부 오퍼레이터", avatarId="char_603_csnipe", isAvatarRight="FALSE"]물자 운송이 시작되었습니다!
+[playanim(id="enemy_7081_xbmedc", anim="Attack_1", dir="LEFT")]
+[delay(time="1")]
+[name="의료부 오퍼레이터", avatarId="char_605_cmedic", isAvatarRight="FALSE"]의약품 물자 수령했습니다.
+[name="후방지원부 오퍼레이터", avatarId="char_601_cguard", isAvatarRight="FALSE"]오퍼레이터 의복 및 식자재 수령했습니다.
+[name="엔지니어링부 오퍼레이터", avatarId="char_603_csnipe", isAvatarRight="FALSE"]공학 부품 수령했습니다.
+[name="엔지니어링부 오퍼레이터", avatarId="char_603_csnipe", isAvatarRight="FALSE"]후우…… 클로저 씨, 시운영 효율이 목표치에 도달했습니다. 항구는 언제든 정식 가동에 들어갈 수 있습니다.
+[emoji(emoji="common_bubble_happy", target="trap_628_xb2cls")]
+[name="클로저", avatarId="char_4228_closur", isAvatarRight="FALSE"]오케이!
+클로저는 단말기 화면을 열었다.
+플로우차트를 빽빽하게 채웠던 임무 목록과 해야 할 일들은 시간의 흐름에 따라 하나씩 완료 표시가 새겨져 있었다.
+그녀는 차트를 맨 아래까지 끌어내려, 마지막 체크 표시를 남겼다.
+[withdraw(id="trap_628_xb2cls")]
+[withdraw(id="trap_626_xb2tex")]
+[withdraw(id="enemy_7083_xbswrd")]
+[withdraw(id="enemy_7081_xbmedc")]
+[delay(time="1")]
+[resetcamera(time="1")]
+[save]
+[end]

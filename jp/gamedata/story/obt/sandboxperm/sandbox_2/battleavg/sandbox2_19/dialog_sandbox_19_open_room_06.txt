@@ -1,0 +1,17 @@
+[header(actId="sandbox_2", npcId="")] 
+前方のエリアは未整理状態です。施工隊に物資を納品して整理を依頼しますか？（新エリアには未知の危険が存在していますので、準備を整えて挑んでください。）
+[decision(option1="施工隊に支援ランブルを2個納品する。", value1="1.1", option2="施工隊に支援源石爆弾を2個納品する。", value2="1.2", option3="やめておこう。", value3="1.3")]
+[predicate(references="1.1", selectableCondition="c0")]
+[deliveritem(itemId="sandbox_2_tactical_2", value=2)]
+[withdrawsource(withoutAnim=true)]
+整理完了、新エリア開放！
+[end]
+[predicate(references="1.2", selectableCondition="c1")]
+[deliveritem(itemId="sandbox_2_tactical_9", value=2)]
+[withdrawsource(withoutAnim=true)]
+整理完了、新エリア開放！
+[end]
+[predicate(references="1.3")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_tactical_2", value="2")]
+[condition(references="c1", key="itemGE", itemId="sandbox_2_tactical_9", value="2")]

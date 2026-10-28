@@ -1,0 +1,31 @@
+[header(actId="sandbox_2", npcId="")]
+전방의 섹터는 아직 정리되지 않았습니다. 공사팀을 불러 정리하시겠습니까? 미지의 위험이 존재할 수 있으니, 미리 대비하여 주십시오.
+[decision(option1="공사팀에 목재 12개 지급", value1="v5_0", option2="공사팀에 석재 6개 지급", value2="v7_0", option3="공사팀에 철광석 3개 지급", value3="v9_0", option4="다른 방법도 있다", value4="v15_0")]
+[predicate(references="v5_0", selectableCondition="c12")]
+[deliveritem(itemId="sandbox_2_wood", value=12)]
+[withdrawsource(withoutAnim=true)]
+정리 완료, 새로운 섹터 가동!
+[end]
+[predicate(references="v7_0", selectableCondition="c13")]
+[deliveritem(itemId="sandbox_2_stone", value=6)]
+[withdrawsource(withoutAnim=true)]
+정리 완료, 새로운 섹터 가동!
+[end]
+[predicate(references="v9_0", selectableCondition="c14")]
+[deliveritem(itemId="sandbox_2_iron", value=3)]
+[withdrawsource(withoutAnim=true)]
+정리 완료, 새로운 섹터 가동!
+[end]
+[predicate(references="v15_0")]
+[decision(option1="공사팀에 순금 원석 60개 지급", value1="v16_0", option2="그만둔다", value2="v11_0")]
+[predicate(references="v16_0", selectableCondition="c17")]
+[deliveritem(itemId="sandbox_2_gold", value=60)]
+[withdrawsource(withoutAnim=true)]
+정리 완료, 새로운 섹터 가동!
+[end]
+[predicate(references="v11_0")]
+[end]
+[condition(references="c12", key="itemGE", itemId="sandbox_2_wood", value="12")]
+[condition(references="c13", key="itemGE", itemId="sandbox_2_stone", value="6")]
+[condition(references="c14", key="itemGE", itemId="sandbox_2_iron", value="3")]
+[condition(references="c17", key="itemGE", itemId="sandbox_2_gold", value="60")]

@@ -1,0 +1,9 @@
+[header(actId="sandbox_2", npcId="")] 
+[name="Warning Sign"]Unknown danger detected in the new plate ahead. Proceed to enter?
+[decision(option1="We're ready.", value1="1.1", option2="Never mind.", value2="1.2")]
+[predicate(references="1.1")]
+[withdrawsource(without=true)]
+[name="Warning Sign"]New plate now open.
+[end]
+[predicate(references="1.2")]
+[end]

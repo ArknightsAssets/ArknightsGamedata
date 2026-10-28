@@ -1,0 +1,13 @@
+[header(actId="sandbox_2", npcId="")] 
+[name="무스", avatarId="char_185_frncat", isAvatarRight="FALSE"]신선한 쌀이 생산됐어요! 어라? 공사팀 여러분도 튀밥을 맛보고 싶으신 건가요?
+[decision(option1="공사팀에 쌀 1개 지급", value1="1.1", option2="그만둔다", value2="1.2")]
+[predicate(references="1.1", selectableCondition="c0")]
+[deliveritem(itemId="sandbox_2_rice", value=1)]
+[withdrawsource(withoutAnim=true)]
+[name="무스", avatarId="char_185_frncat", isAvatarRight="FALSE"]이제 논밭으로 가면 되겠어요.
+[name="무스", avatarId="char_185_frncat", isAvatarRight="FALSE"]앗, 이 구역에는 <color=#d8d769>야생동물</color>들이 활동하고 있네요. 게다가 <color=#d8d769>둥지</color>도 하나 있는데, 안에 야생동물이 꽤 많이 있는 것 같아요……
+[name="클로저", avatarId="char_4228_closur", isAvatarRight="FALSE"]야생동물을 처치하면 재료도 얻을 수 있어. 이렇게 풍부한 자원을 그냥 놓칠 순 없지!
+[end]
+[predicate(references="1.2")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_rice", value="1")]

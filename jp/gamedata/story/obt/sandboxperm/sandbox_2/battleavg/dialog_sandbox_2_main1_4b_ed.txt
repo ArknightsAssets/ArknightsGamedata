@@ -1,0 +1,42 @@
+[header(actId="sandbox_2", npcId="trap_628_xb2cls")]
+[summontrap(charId="trap_628_xb2cls", dir="RIGHT", x="2", y="9", isChar="False")]
+[summonenemy(enemyId="enemy_7078_xbblsk", x="4", y="9", endCol="3", endRow="9")]
+[move(enemyId="enemy_7078_xbblsk", x="3", y="9")]
+[summonenemy(enemyId="enemy_7081_xbmedc", x="1", y="8", endCol="2", endRow="8")]
+[move(enemyId="enemy_7081_xbmedc", x="2", y="8")]
+[delay(time="1")]
+[executeactionarray(target="trap_628_xb2cls", key="disable_global_skill_cast")]
+[camerafocusto(offsetX="2", offsetY="9", scale="DEFAULT", time="1")]
+[delay(time="1")]
+[playanim(id="enemy_7081_xbmedc", anim="Attack_1", dir="RIGHT")]
+[delay(time="1")]
+[name="医療オペレーター", avatarId="char_605_cmedic", isAvatarRight="FALSE"]クロージャさん、最初に運ばれてきた負傷者たちは、歩けるくらいにまで回復したんですが、その人たちが少し困っているそうなんです。
+[emoji(emoji="common_bubble_sad", target="enemy_7081_xbmedc")]
+[name="負傷した荒野の民", avatarId="bavg_npc_010_vtskny_2", isAvatarRight="FALSE"]……
+[playanim(id="trap_628_xb2cls", anim="Attack", dir="RIGHT")]
+[delay(time="1")]
+[name="クロージャ", avatarId="char_4228_closur", isAvatarRight="FALSE"]もちろん、あたしたちにできることなら、何でも力になるよ。
+[name="クロージャ", avatarId="char_4228_closur", isAvatarRight="FALSE"]治療費のことは、どうしても気が引けるっていうなら、ケガが治ったあとに何日か仕事を手伝ってもらえたら、それで十分だからね。
+[name="クロージャ", avatarId="char_4228_closur", isAvatarRight="FALSE"]で、何があったのか教えてくれる？
+[emoji(emoji="common_bubble_sad", target="enemy_7081_xbmedc")]
+[name="負傷した荒野の民", avatarId="bavg_npc_010_vtskny_2", isAvatarRight="FALSE"]お、オレたちにもよくわからないんだが……あれは、怪物だ……！
+[name="クロージャ", avatarId="char_4228_closur", isAvatarRight="FALSE"]「怪物」？
+[emoji(emoji="common_bubble_sad", target="enemy_7081_xbmedc")]
+[name="負傷した荒野の民", avatarId="bavg_npc_010_vtskny_2", isAvatarRight="FALSE"]ああ！　最近、街の金持ち連中が森の奥に入っていったことがあってな。その数日後に、放牧してた駄獣たちが帰ってこなくなったんだが……
+[emoji(emoji="common_bubble_angry", target="enemy_7078_xbblsk")]
+[name="激怒する荒野の民", avatarId="bavg_npc_009_vtskny", isAvatarRight="FALSE"]探しに行ってみたら、ある木の下に駄獣たちの骨が落ちてたんだ。かと思えば、その木が――あれは怪物なんだ！　街の金持ちどもが放った怪物に違いない！
+[playanim(id="enemy_7078_xbblsk", anim="Special", dir="LEFT")]
+[delay(time="1")]
+[name="ワルファリン", avatarId="char_171_bldsk", isAvatarRight="FALSE"]……前にブレイズとロスモンティスが遭遇したという、木の形をしたオリジムシのことであろうな。データはすでに二人から共有されているぞ。
+[name="クロージャ", avatarId="char_4228_closur", isAvatarRight="FALSE"]了解。
+[playanim(id="trap_628_xb2cls", anim="Special", dir="RIGHT")]
+[delay(time="1")]
+[name="クロージャ", avatarId="char_4228_closur", isAvatarRight="FALSE"]私たちのほうで、小隊を派遣して対処するから安心してね。
+[name="負傷した荒野の民", avatarId="bavg_npc_010_vtskny_2", isAvatarRight="FALSE"]本当にありがとう……！
+[withdraw(id="trap_628_xb2cls")]
+[withdraw(id="enemy_7078_xbblsk")]
+[withdraw(id="enemy_7081_xbmedc")]
+[delay(time="1")]
+[resetcamera(time="1")]
+[save]
+[end]

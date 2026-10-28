@@ -1,0 +1,19 @@
+[header(actId="sandbox_2", npcId="")] 
+[name="連絡員", avatarId="trap_415_trademan", isAvatarRight="FALSE"]また会いましたね！　最新の岩石再生ステーションの設計図が入荷してますよ！　これを作れば、その周囲に絶えず岩石が作られるってわけです。もちろん、完成済みのステーションもありますからね！　どうです、見て行きません？
+[name="連絡員", avatarId="trap_415_trademan", isAvatarRight="FALSE"]そうそう、今回はお金じゃなくて、木の板材と交換してくれたらそれで大丈夫ですからね！
+[decision(option1="木の板材10個で岩石再生ステーションの設計図と交換する", value1="1.1", option2="木の板材4個で岩石再生ステーションと交換する", value2="1.2", option3="やめておこう。", value3="1.3")]
+[predicate(references="1.1", selectableCondition="c0&&!cx")]
+[deliveritem(itemId="sandbox_2_plank", value=10)]
+[additem(itemId="sandbox_2_recipe_producer_2", itemCount=1)]
+[name="連絡員", avatarId="trap_415_trademan", isAvatarRight="FALSE"]ありがとうございます！　実に気前のいい方ですね！
+[end]
+[predicate(references="1.2", selectableCondition="c1")]
+[deliveritem(itemId="sandbox_2_plank", value=4)]
+[additem(itemId="sandbox_2_building_producer_2", itemCount=1)]
+[name="連絡員", avatarId="trap_415_trademan", isAvatarRight="FALSE"]あなたとの取引は本当に気持ちがいいですよ！
+[end]
+[predicate(references="1.3")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_plank", value="10")]
+[condition(references="cx", key="itemGE", itemId="sandbox_2_recipe_producer_2", value="1")]
+[condition(references="c1", key="itemGE", itemId="sandbox_2_plank", value="4")]

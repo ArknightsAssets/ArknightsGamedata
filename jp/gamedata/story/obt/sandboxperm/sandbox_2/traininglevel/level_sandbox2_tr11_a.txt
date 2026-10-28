@@ -1,0 +1,43 @@
+[HEADER(is_tutorial=true, is_skippable=true)] 11_a
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=1)]
+[Battle.Pause]
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=100, validHeight=100)]
+[Tutorial(waitForSignal="put_down", charId="trap_513_xb2bas", posX=1, posY=10, dialogHead="$avatar_broca", animStyle="Drag", \
+          startCardIndex=0, startAnchor="BottomRight", endTileX=1, endTileY=10)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(tileX=2, tileY=8, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_broca", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+今回は野生動物の飼育任務か……お前たちは、野生動物の捕まえ方を知ってるか？　簡単そうには見えないが……
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, cardIndex=6, validWidth=1000, validHeight=100)]
+[Tutorial(waitForSignal="put_down", charId="trap_597_xb2cage", posX=1, posY=8, dialogHead="$avatar_aosta", animStyle="Drag", \
+          startCardIndex=6, startAnchor="BottomRight", endX=-100, endY=-50)] \
+マニュアルによると、野生動物を捕獲カゴの<@tu.kw>攻撃範囲</>内に収めれば捕獲できるようです。
+[InputBlocker(blockInput=false)]
+[Tutorial(waitForSignal="select_direction", dialogHead="$avatar_aosta", animStyle="Drag", \
+          startX=-60, startY=-45, endX=240, endY=-45)] \
+
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(tileX=4, tileY=8, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_chiave", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+俺様にも見せてくれよ！　なるほど、捕獲した野生動物は<@tu.kw>畜舎で飼育する</>と、自動的に資源を産出できるようになるみたいだな！
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_aosta")] 捕獲したあと、動物たちの生産効率を確認することもできますよ。
+[PopupDialog(dialogHead="$avatar_chiave")] ははっ、簡単そうだな！　これなら任務もあっという間に終わるんじゃねぇか？
+[PopupDialog(dialogHead="$avatar_aosta")] 野生動物の飼育関係の設計図をいくつか持ってきました。こちらをどうぞ。
+[PopupDialog(dialogHead="$avatar_aosta")] 最初の任務は、すぐに終わるはずですよ。
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]

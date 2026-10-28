@@ -1,0 +1,36 @@
+[header(actId="sandbox_2", npcId="trap_628_xb2cls")]
+[summontrap(charId="trap_628_xb2cls", dir="RIGHT", x="2", y="10", isChar="FALSE")]
+[summontrap(charId="trap_626_xb2tex", dir="LEFT", x="5", y="9", isChar="FALSE")]
+[summonenemy(enemyId="enemy_7083_xbswrd", x="5", y="9", endCol="4", endRow="9")]
+[move(enemyId="enemy_7083_xbswrd", x="4", y="9")]
+[summonenemy(enemyId="enemy_7081_xbmedc", x="4", y="8", endCol="4", endRow="8",enemyAliasId="enemy_7081_xbmedc#1")]
+[summonenemy(enemyId="enemy_7081_xbmedc", x="4", y="7", endCol="4", endRow="7",enemyAliasId="enemy_7081_xbmedc#2")]
+[summonenemy(enemyId="enemy_7081_xbmedc", x="4", y="6", endCol="4", endRow="6",enemyAliasId="enemy_7081_xbmedc#3")]
+[executeactionarray(target="trap_626_xb2tex", key="disable_global_skill_cast")]
+[delay(time="1")]
+[camerafocusto(offsetX="5", offsetY="9", scale="DEFAULT", time="1")]
+[delay(time="1")]
+[playanim(id="enemy_7083_xbswrd", anim="Attack", dir="LEFT")]
+[delay(time="1")]
+[name="エンジニア", avatarId="char_603_csnipe", isAvatarRight="FALSE"]区画の障害物除去に、配線の再敷設に……
+[name="エンジニア", avatarId="char_603_csnipe", isAvatarRight="FALSE"]物流ルートのテストまで完了した。ポートエリアの試験運用を正式に開始しよう。
+[name="エンジニア", avatarId="char_603_csnipe", isAvatarRight="FALSE"]物資輸送、開始！
+[playanim(id="enemy_7081_xbmedc", anim="Attack_1", dir="LEFT")]
+[delay(time="1")]
+[name="医療部オペレーター", avatarId="char_605_cmedic", isAvatarRight="FALSE"]薬品物資、到着しました。
+[name="支援オペレーター", avatarId="char_601_cguard", isAvatarRight="FALSE"]衣料品と食材も、到着。
+[name="エンジニア", avatarId="char_603_csnipe", isAvatarRight="FALSE"]工事用パーツ、到着しました。
+[name="エンジニア", avatarId="char_603_csnipe", isAvatarRight="FALSE"]ふぅ……クロージャさん、試験運用は効率基準をクリアしました。ポートエリア、いつでも正式運用開始できます！
+[emoji(emoji="common_bubble_happy", target="trap_628_xb2cls")]
+[name="クロージャ", avatarId="char_4228_closur", isAvatarRight="FALSE"]了解！
+クロージャは自身の端末の画面を開いた。
+スケジュール表にびっしりと書き込まれたタスクや予定には、時間の経過と共に一つ一つチェックマークがつけられていた。
+彼女は表を一番下までスクロールすると、最後のチェックマークをつけた。
+[withdraw(id="trap_628_xb2cls")]
+[withdraw(id="trap_626_xb2tex")]
+[withdraw(id="enemy_7083_xbswrd")]
+[withdraw(id="enemy_7081_xbmedc")]
+[delay(time="1")]
+[resetcamera(time="1")]
+[save]
+[end]

@@ -1,0 +1,72 @@
+[HEADER(is_tutorial=true, is_skippable=true)] 教学关a
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[PopupDialog(dialogHead="$avatar_huang")] 아무래도 엔지니어링부에 문제가 좀 생긴 것 같네. 고양아, 우리가 자원을 좀 가져가야겠다.
+[PopupDialog(dialogHead="$avatar_rosmon")] 단말기에 따르면 우리에게 배정된 임무는 나무를 베는 거래.
+[Tutorial(cardIndex=0, focusWidth=100, focusHeight=100, \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, protectTime=0.5, dialogHead="$avatar_huang")] \
+자! 그럼 <@tu.kw>채집기지</>의 효율이 어떤지 한번 시험해 볼까!
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=100, validHeight=100)]
+[Tutorial(waitForSignal="put_down", charId="trap_513_xb2bas", posX=3, posY=7, dialogHead="$avatar_huang", animStyle="Drag", \
+          startCardIndex=0, startAnchor="BottomRight", endTileX=3, endTileY=7)] \
+적당한 곳을 찾아 <@tu.kw>배치</>하면…… 여기서부터 시작하자.
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=5)]
+[Battle.Pause]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Tutorial(tileX=4, tileY=7, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_rosmon")] \
+이 <@tu.kw>채집 요원</>들은 공격 범위 안에 있는 자원을 자동으로 채집하고 운반해.
+[PopupDialog(dialogHead="$avatar_closur")] 하지만 조심해야 해. 만약 <@tu.kw>채집기지</>가 적에게 파괴되면 우리의 작전도 실패로 끝나.
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=5)]
+[Battle.Pause]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[PopupDialog(dialogHead="$avatar_huang")] 알겠어, 그럼 나도 전기톱으로 나무를 베는 효율이 어떤지 시험해 봐야겠다!
+[Tutorial(tileX=1, tileY=9, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_huang", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+어, 이 바위골렘 몸에 있는 자원도 꽤 괜찮아 보이네. 이것도 같이 가져가자.
+[Tutorial(tileX=1, tileY=9, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_huang", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+와, 무겁다…… 고양아, 좀 도와줘!
+[Tutorial(tileX=1, tileY=9, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_rosmon", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+각자 운반할 수 있는 <@tu.kw>자원 수량</>은 자신의 <@tu.kw>저지 가능 수</>에 따라 결정돼. 자원 획득 후 <@tu.kw>퇴각</>하면 자원을 성공적으로 회수할 수 있지.
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=1)]
+[PopupDialog(dialogHead="$avatar_closur")] <@tu.kw>채집 요원</>이 오퍼레이터가 들고 있는 자원을 회수할 수 있어. 너희도 한번 해 봐.
+[Battle.Pause]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Tutorial(target="sandbox_2_focus_workbench", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur")] \
+여기에서 <@tu.kw>통신 장치</>를 제작하면 <@tu.kw>채집기지</>의 공격 범위를 확장하고, <@tu.kw>채집 요원</>의 운반 범위도 늘릴 수 있어.
+[Tutorial(target="sandbox_2_focus_daily_target", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+아, 그리고 <@tu.kw>건설 수치</>가 목표치에 도달하면 승리하게 돼.
+[Tutorial(target="sandbox_2_focus_remaining_time", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+주의할 점은, <@tu.kw>작전 시간이 종료</>되면 건설도 자동으로 중단돼.
+[Tutorial(target="sandbox_2_focus_task", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+자, 당부할 건 이 정도야. 이제 너희는 임무를 완수해서 <@tu.kw>건설 수치</>를 올리고, 새로운 건물을 개방하고, 각 구역의 건설을 완료하면 돼!
+[Battle.Pause(pause=false)]

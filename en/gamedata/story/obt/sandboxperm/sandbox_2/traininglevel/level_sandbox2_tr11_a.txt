@@ -1,0 +1,43 @@
+[HEADER(is_tutorial=true, is_skippable=true)] 11_a
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=1)]
+[Battle.Pause]
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=100, validHeight=100)]
+[Tutorial(waitForSignal="put_down", charId="trap_513_xb2bas", posX=1, posY=10, dialogHead="$avatar_broca", animStyle="Drag", \
+          startCardIndex=0, startAnchor="BottomRight", endTileX=1, endTileY=10)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(tileX=2, tileY=8, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_broca", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+Our mission this time is to raise wild beasts... Do you know how to catch them? Seems hard.
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, cardIndex=6, validWidth=1000, validHeight=100)]
+[Tutorial(waitForSignal="put_down", charId="trap_597_xb2cage", posX=1, posY=8, dialogHead="$avatar_aosta", animStyle="Drag", \
+          startCardIndex=6, startAnchor="BottomRight", endX=-100, endY=-50)] \
+The guide says you catch them by having them walk into the Beast Trap's <@tu.kw>attack range</>. Once caught, you can view what resources they produce and how often.
+[InputBlocker(blockInput=false)]
+[Tutorial(waitForSignal="select_direction", dialogHead="$avatar_aosta", animStyle="Drag", \
+          startX=-60, startY=-45, endX=240, endY=-45)] \
+
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(tileX=4, tileY=8, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_chiave", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+Let me see... Yeah, just put captured beasts <@tu.kw>into Corrals</> and they'll automatically produce resources!
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_aosta")] You can check how often they produce their resources after capture.
+[PopupDialog(dialogHead="$avatar_chiave")] Haha, sounds like a piece of cake! Those missions will be cleared quickly.
+[PopupDialog(dialogHead="$avatar_aosta")] Here, I brought some blueprints to help with beast rearing.
+[PopupDialog(dialogHead="$avatar_aosta")] The first mission will be done in a jiffy.
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]

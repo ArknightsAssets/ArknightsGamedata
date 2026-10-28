@@ -1,0 +1,9 @@
+[header(actId="sandbox_2", npcId="")] 
+[name="警告標識"]前方の新エリアには未知のリスクが存在します。進入しますか？
+[decision(option1="準備はできている。", value1="1.1", option2="やめておこう。", value2="1.2")]
+[predicate(references="1.1")]
+[withdrawsource(without=true)]
+[name="警告標識"]新エリアが開放されました。
+[end]
+[predicate(references="1.2")]
+[end]

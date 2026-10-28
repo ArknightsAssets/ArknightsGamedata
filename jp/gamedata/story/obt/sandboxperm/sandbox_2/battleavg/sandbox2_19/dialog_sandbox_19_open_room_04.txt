@@ -1,0 +1,11 @@
+[header(actId="sandbox_2", npcId="")] 
+前方のエリアは未整理状態です。施工隊に物資を納品して整理を依頼しますか？（新エリアには未知の危険が存在していますので、準備を整えて挑んでください。）
+[decision(option1="施工隊に臨時採取ステーションを1つ納品する。", value1="1.1", option2="やめておこう。", value2="1.2")]
+[predicate(references="1.1", selectableCondition="c0")]
+[deliveritem(itemId="sandbox_2_building_infrastructure_1", value=1)]
+[withdrawsource(withoutAnim=true)]
+整理完了、新エリア開放！
+[end]
+[predicate(references="1.2")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_building_infrastructure_1", value="1")]

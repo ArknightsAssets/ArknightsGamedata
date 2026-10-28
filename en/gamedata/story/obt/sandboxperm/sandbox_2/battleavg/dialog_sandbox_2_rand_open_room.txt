@@ -1,0 +1,31 @@
+[header(actId="sandbox_2", npcId="")]
+Grab a crew to clear the path up to the plate ahead? Be prepared for any unknown dangers.
+[decision(option1="Spend 12 Wood", value1="v5_0", option2="Spend 6 Stone", value2="v7_0", option3="Spend 3 Iron Ore", value3="v9_0", option4="Let's try something else.", value4="v15_0")]
+[predicate(references="v5_0", selectableCondition="c12")]
+[deliveritem(itemId="sandbox_2_wood", value=12)]
+[withdrawsource(withoutAnim=true)]
+Cleanup complete! The plate is open!
+[end]
+[predicate(references="v7_0", selectableCondition="c13")]
+[deliveritem(itemId="sandbox_2_stone", value=6)]
+[withdrawsource(withoutAnim=true)]
+Cleanup complete! The plate is open!
+[end]
+[predicate(references="v9_0", selectableCondition="c14")]
+[deliveritem(itemId="sandbox_2_iron", value=3)]
+[withdrawsource(withoutAnim=true)]
+Cleanup complete! The plate is open!
+[end]
+[predicate(references="v15_0")]
+[decision(option1="Spend 60 Crude Gold", value1="v16_0", option2="Never mind.", value2="v11_0")]
+[predicate(references="v16_0", selectableCondition="c17")]
+[deliveritem(itemId="sandbox_2_gold", value=60)]
+[withdrawsource(withoutAnim=true)]
+Cleanup complete! The plate is open!
+[end]
+[predicate(references="v11_0")]
+[end]
+[condition(references="c12", key="itemGE", itemId="sandbox_2_wood", value="12")]
+[condition(references="c13", key="itemGE", itemId="sandbox_2_stone", value="6")]
+[condition(references="c14", key="itemGE", itemId="sandbox_2_iron", value="3")]
+[condition(references="c17", key="itemGE", itemId="sandbox_2_gold", value="60")]

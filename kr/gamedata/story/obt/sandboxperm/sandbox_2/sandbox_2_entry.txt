@@ -1,0 +1,128 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_bridge",screenadapt="coverall")]
+[Delay(time=1)]
+[playMusic(key="$calm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[delay(time=1)]
+[name="클로저"]박사? 아미야? 다들 아직도 바빠?
+[dialog]
+[PlaySound(key="$dooropenquite", volume=1)]
+[delay(time=2)]
+[PlaySound(key="$d_gen_walk_n", volume=1)]
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m",duration=2)]
+[delay(time=3)]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#12$1")]
+[name="아미야"]클로저 씨! 곧 끝나요. 이 회의도 이제 거의 마무리 단계거든요……
+[charslot(slot = "m", name = "avg_1037_amiya3_1#10$1")]
+[name="아미야"]앗, 박사님, 괜찮으세요?
+[dialog]
+[charslot]
+[Decision(options="(힘겹게 숨을 몰아쉰다);(무겁게 눈을 깜빡인다);(기운 없이 침묵을 지킨다)", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot="m",name="avg_4228_closur_1#2$1",focus="m")]
+[name="클로저"]음, 내가 보기엔 별로 안 괜찮아 보이는데.
+[charslot(slot="m",name="avg_4228_closur_1#2$1",focus="m")]
+[name="클로저"]박사가 이렇게까지 지친 모습은 지난번 축사를 지을 때 이후로 처음인 것 같아……
+[dialog]
+[charslot]
+[Decision(options="(제지하려고 노력한다)", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_4228_closur_1#11$1",focus="m")]
+[name="클로저"]그때 박사가 축사로 안 돌아가겠다고 버티고 있는 레포리비스트 숏혼이랑 한참을 씨름하다가, 결국 머리로 들이받혀서 나동그라졌었잖아.
+[charslot(slot="m",name="avg_4228_closur_1#11$1",focus="m")]
+[name="클로저"]그때 Mon3tr가 도와주지 않았다면, 그 녀석은 박사가 자기랑 놀아주는 줄 알았을걸?
+[dialog]
+[charslot]
+[Decision(options="(기력이 다해 눈을 감는다)", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#10$1")]
+[name="아미야"]박사님……?
+[dialog]
+[charslot]
+[Decision(options="괜찮아, 여기 잠시 앉아 있으면 돼.;나는 덧붙일 내용이 없어. 켈시, 할 말이 더 있나?", values="1;2")]
+[Predicate(references="1;2")]
+[musicvolume(volume=0.2, fadetime=2)]
+[delay(time=1)]
+회의실 안의 묘한 정적에 당신은 문득 가슴이 철렁했다. 뒤돌아보니 어느샌가 켈시의 자리는 텅 비어 있었다.
+[dialog]
+[charslot]
+[Decision(options="켈시……?;……켈시?", values="1;2")]
+[Predicate(references="1;2")]
+[musicvolume(volume=0.6, fadetime=4)]
+하지만 다행히도, 그 익숙한 실루엣이 곧 당신의 눈앞에 다시 나타났다.
+[dialog]
+[PlaySound(key="$dooropenquite", volume=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1",duration=2)]
+[delay(time=3)]
+[name="켈시"]정말 많이 피곤한 모양이군, 박사.
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="켈시"]방금 물 한 잔 떠오겠다고 말했는데.
+[dialog]
+[charslot]
+[Decision(options="난 또……;……;(민망한 듯 헛기침을 한다)", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[Decision(options="(상태가 좋은 척 즉시 허리를 곧게 펴고 앉는다);켈시, 남은 일은 나한테 맡기고 너는 좀 쉬어.;오늘 이미 너무 많은 일을 처리했잖아. 먼저 가서 쉬어, 켈시.", values="1;2;3")]
+[Predicate(references="1;2;3")]
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="켈시"]그래.
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="켈시"]하지만 박사, 우리가 재회한 이후로 그 말은 벌써 수없이 반복했어.
+[dialog]
+[charslot]
+[Decision(options="……그랬나……;전혀 의식하지 못했어……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="켈시"]내 걱정은 하지 마, 박사.
+[charslot(slot = "m", name = "avg_1052_kalts2_1#4$1")]
+[name="켈시"]클로저, 아까부터 계속 나를 찾았다면서?
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="클로저"]맞아! 요즘 켈시 얼굴 보기가 하늘의 별 따기라니까. 오퍼레이터들이 보낸 선물 때문에 사무실이 아주 터져 나갈 지경이야. 어때, 로도스 아일랜드 신기지가 괜찮지?
+[charslot(slot = "m", name = "avg_1052_kalts2_1#8$1")]
+[name="켈시"]상상보다 훨씬 더 완벽하군.
+[charslot(slot="m",name="avg_4228_closur_1#14$1",focus="m")]
+[name="클로저"]헤헤, 비록 예산이 예정보다 아주 조~금 더 들긴 했지만, 결과물은 정말 끝내준다니까!
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="클로저"]전체적으로 보면, 지금 이 섹터는 다섯 가지 유형으로 나뉘어. 코어 섹터를 중심으로 나머지 네 곳은 의료 구역, 생활 구역, 엔지니어링 구역, 그리고 항구야.
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="클로저"]의료 구역에는 우리만의 약품 생산 라인을 구축했고, 입원동 밖에는 작은 정원을 만들었어. 이제 날씨가 좋으면 환자들이 거기서 직접 햇볕을 쬘 수 있지.
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="클로저"]생활 구역에는 본함의 구조를 본떠서 식당이랑 요양정원을 만들었어…… 아, 숙소 건물도 새로 지었는데, 환경이 예전보다 훨씬 좋아져서 오퍼레이터들도 아주 좋아하더라고.
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="클로저"]게다가 이동 항구로 쓸 섹터를 하나 더 인수했고, 엔지니어링 구역에도 생산 라인을 새로 배치했어. 이제 에너지 물자든 무기든, 예전보다 훨씬 풍족해질 거야.
+[charslot(slot="m",name="avg_4228_closur_1#3$1",focus="m")]
+[name="클로저"]전체적인 상황은 대충 이래. 그동안 우리 '삐빅이'가 연기 날 정도로 바빴다니까? 그래서 말인데 켈시, 올해는 더 많은 보너스를 신청할 거야!
+[dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1)]
+[charslot(slot="m",name="avg_4179_monstr_1#11$1",duration=3)]
+[delay(time=3)]
+[name="Mon3tr"]켈시, 내 외근 임무 끝났어!
+[charslot(slot="m",name="avg_4179_monstr_1#11$1")]
+[name="Mon3tr"]이것 봐, 나 새로운 기술도 배웠다!
+[charslot(slot="m",name="avg_4179_monstr_1#7$1")]
+[CameraShake(duration=0.5, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="Mon3tr"](격렬하게 포효한다)
+[charslot(slot = "m", name = "avg_1037_amiya3_1#5$1")]
+[name="아미야"]……!
+[charslot(slot="m",name="avg_4228_closur_1#7$1",focus="m")]
+[name="클로저"](작은 목소리로) 박사, 켈시가 돌아온 뒤로 Mon3tr가 예전보다 좀 더 활발해진 것 같지 않아?
+[dialog]
+[charslot]
+[Decision(options="(고개를 끄덕인다);(작은 목소리로) 조금 정도가 아닌 것 같은데.", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1052_kalts2_1#1$1")]
+[name="켈시"]음? 둘이서 뭐라고 속닥거려?
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="클로저"]크, 크흠, 아무것도 아니야! 자, 켈시. 이건 로도스 아일랜드 재건 임무 보고서야. 이제부터 내가 상세하게 보고할 테니 잘 들어보라고.
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="클로저"]그때 말이야, 우리가……
+[Dialog]
+[Blocker(a=0, r=0,g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=4, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]

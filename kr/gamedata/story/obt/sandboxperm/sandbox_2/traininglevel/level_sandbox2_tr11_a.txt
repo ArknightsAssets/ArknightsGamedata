@@ -1,0 +1,43 @@
+[HEADER(is_tutorial=true, is_skippable=true)] 11_a
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=1)]
+[Battle.Pause]
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=100, validHeight=100)]
+[Tutorial(waitForSignal="put_down", charId="trap_513_xb2bas", posX=1, posY=10, dialogHead="$avatar_broca", animStyle="Drag", \
+          startCardIndex=0, startAnchor="BottomRight", endTileX=1, endTileY=10)]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(tileX=2, tileY=8, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_broca", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+이번엔 야생동물을 포획해서 사육하는 임무라니…… 다들 야생동물 잡는 법은 알아? 보기엔 영 쉬워 보이지가 않는데……
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true, cardIndex=6, validWidth=1000, validHeight=100)]
+[Tutorial(waitForSignal="put_down", charId="trap_597_xb2cage", posX=1, posY=8, dialogHead="$avatar_aosta", animStyle="Drag", \
+          startCardIndex=6, startAnchor="BottomRight", endX=-100, endY=-50)] \
+작업 매뉴얼을 보니까, 야생동물을 비스트 트랩의 <@tu.kw>공격 범위</> 안에 두기만 하면 잡을 수 있다네요. 포획하고 나면 얘네가 얼마나 효율적으로 생산을 해내는지도 확인할 수 있고.
+[InputBlocker(blockInput=false)]
+[Tutorial(waitForSignal="select_direction", dialogHead="$avatar_aosta", animStyle="Drag", \
+          startX=-60, startY=-45, endX=240, endY=-45)] \
+
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=0.5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Tutorial(tileX=4, tileY=8, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_chiave", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+자, 이몸이 한번 확인해볼게! 음, 포획한 야생동물을 <@tu.kw>축사에 넣어 사육</>하면 자동으로 자원이 생산되네!
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_aosta")] 포획한 다음 얘네들의 생산 효율도 체크할 수 있대요.
+[PopupDialog(dialogHead="$avatar_chiave")] 하하, 듣고 보니 생각보다 어렵진 않겠는데? 그럼 이 임무들은 눈 깜짝할 사이에 다 끝낼 수 있겠어!
+[PopupDialog(dialogHead="$avatar_aosta")] 자, 제가 야생동물 사육 관련 도면들도 가져왔어요.
+[PopupDialog(dialogHead="$avatar_aosta")] 첫 번째 임무는 쉽게 완수할 수 있을 겁니다.
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]

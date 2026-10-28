@@ -1,0 +1,36 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 09_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[Tutorial(waitForSignal="put_down", charId="trap_513_xb2bas", dialogHead="$avatar_closur", protectTime=1)] \
+Doctor, I updated the system, and I gotta update you on the changes too! Deploy the Gathering Station here.
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[PopupDialog(dialogHead="$avatar_closur", protectTime=1)] To ensure our operators will return to an all-new Rhodes Island, we should pay attention to our Appeal levels too, heh.
+[PopupDialog(dialogHead="$avatar_closur", protectTime=1)] Both <@tu.kw>Production Facilities</> and <@tu.kw>Decorations</> on the Construction page will add to your Appeal rating.
+[SandboxBattle.LockCamera(enable=false)] 
+[InputBlocker(blockInput=true, tileX=2, tileY=8, validWidth=100, validHeight=80)]
+[Tutorial(waitForSignal="char_info", charId="trap_557_xb2fnt", tileX=2, tileY=8, focusWidth=100, focusHeight=100, dialogHead="$avatar_closur", animStyle="Click", focusStyle="HighlightCircle", black=0.5, protectTime=2, dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+This <@tu.kw>Crystal Spring</> is a Decoration facility. Basically, it adds certain Appeal to our base.
+[SandboxBattle.LockCamera(enable=true)] 
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", \
+          protectTime=1, dialogHead="$avatar_closur")] \
+<@tu.kw>Decorations</> on the field will continuously generate <@tu.kw>Crude Gold</>.
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=200, focusY=-25, focusWidth=120, focusHeight=70, anchor="Top",\
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=2, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+You can see your <@tu.kw>Appeal</> rating here.
+[PopupDialog(dialogHead="$avatar_closur", protectTime=1)] Your Appeal rating will also grant you extra <@tu.kw>Crystalline Shards</> at the end of each day, which you can use to buy items during Rest Phases.
+[Tutorial(focusX=0, focusY=-100, focusWidth=300, focusHeight=200, anchor="Top",\
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=2, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+Press here to see Appeal bonuses in detail.
+[PopupDialog(dialogHead="$avatar_closur")] Increase your Appeal rating and complete more missions.
+[InputBlocker(blockInput=false)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]

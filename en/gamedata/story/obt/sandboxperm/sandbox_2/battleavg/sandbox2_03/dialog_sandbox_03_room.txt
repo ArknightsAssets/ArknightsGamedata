@@ -1,0 +1,13 @@
+[header(actId="sandbox_2", npcId="")] 
+[name="Mousse", avatarId="char_185_frncat", isAvatarRight="FALSE"]We got some freshly harvested husked rice! Huh? Does the crew want to try some popcorn too?
+[decision(option1="Spend 1 Husked Rice", value1="1.1", option2="Never mind.", value2="1.2")]
+[predicate(references="1.1", selectableCondition="c0")]
+[deliveritem(itemId="sandbox_2_rice", value=1)]
+[withdrawsource(withoutAnim=true)]
+[name="Mousse", avatarId="char_185_frncat", isAvatarRight="FALSE"]We can go into the rice fields now.
+[name="Mousse", avatarId="char_185_frncat", isAvatarRight="FALSE"]Oh, there are <color=#d8d769>wild beasts</color> active in this region, and I see some of their <color=#d8d769>Nests</color> too. There will plenty of beasts in those.
+[name="Closure", avatarId="char_4228_closur", isAvatarRight="FALSE"]They drop resources when defeated, so let's not waste them!
+[end]
+[predicate(references="1.2")]
+[end]
+[condition(references="c0", key="itemGE", itemId="sandbox_2_rice", value="1")]

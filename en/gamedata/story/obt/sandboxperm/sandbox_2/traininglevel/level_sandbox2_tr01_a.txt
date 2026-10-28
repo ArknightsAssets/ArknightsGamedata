@@ -1,0 +1,72 @@
+[HEADER(is_tutorial=true, is_skippable=true)] 教学关a
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=0.5)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause]
+[PopupDialog(dialogHead="$avatar_huang")] Seems like Engineering needs our help, kitten. They want us to bring resources back.
+[PopupDialog(dialogHead="$avatar_rosmon")] The terminal said our mission is to chop trees.
+[Tutorial(cardIndex=0, focusWidth=100, focusHeight=100, \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, protectTime=0.5, dialogHead="$avatar_huang")] \
+Come on! Let's see how well the <@tu.kw>Gathering Station</> works!
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[InputBlocker(blockInput=true, cardIndex=0, validWidth=100, validHeight=100)]
+[Tutorial(waitForSignal="put_down", charId="trap_513_xb2bas", posX=3, posY=7, dialogHead="$avatar_huang", animStyle="Drag", \
+          startCardIndex=0, startAnchor="BottomRight", endTileX=3, endTileY=7)] \
+<@tu.kw>Deploy</> it on a suitable spot, and then we proceed from there.
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=5)]
+[Battle.Pause]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Tutorial(tileX=4, tileY=7, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_rosmon")] \
+These <@tu.kw>Gatherers</> will automatically gather and transport resources in their operating range.
+[PopupDialog(dialogHead="$avatar_closur")] But be careful: if the <@tu.kw>Gathering Station</> is destroyed by enemies, the operation will be a failure.
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=5)]
+[Battle.Pause]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[PopupDialog(dialogHead="$avatar_huang")] Got it! Let's see if my chainsaw's any faster!
+[Tutorial(tileX=1, tileY=9, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_huang", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+Huh, this rock golem seems to have good stuff on it too. Let's bring it home.
+[Tutorial(tileX=1, tileY=9, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_huang", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+It's so heavy—help me out, kitten!
+[Tutorial(tileX=1, tileY=9, focusWidth=150, focusHeight=150, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_rosmon", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+Mm, every Operator can <@tu.kw>carry as much</> as their own <@tu.kw>Block Count</>. We can send the resources back by <@tu.kw>retreating</> from the field.
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]
+[Delay(time=1)]
+[PopupDialog(dialogHead="$avatar_closur")] <@tu.kw>Gatherers</> can also collect resources carried by Operators. Try it out.
+[Battle.Pause]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Tutorial(target="sandbox_2_focus_workbench", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur")] \
+Here, you can craft a <@tu.kw>Comms Device</> to expand the <@tu.kw>Gathering Station's</> operating range, as well as the <@tu.kw>Gatherers'</> transport range.
+[Tutorial(target="sandbox_2_focus_daily_target", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+Right, you'll clear the mission when you have enough <@tu.kw>Build Scores</>.
+[Tutorial(target="sandbox_2_focus_remaining_time", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+But note that all construction work will stop as soon as you <@tu.kw>run out of time</>.
+[Tutorial(target="sandbox_2_focus_task", \
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=0.5, dialogHead="$avatar_closur", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+Alright, that's all I have for now. Increase your <@tu.kw>Build Scores</> by clearing missions, unlock new Constructs, and complete the plate's construction!
+[Battle.Pause(pause=false)]
