@@ -941,6 +941,9 @@
         "ba.enemy": "<color=#D83C3C>{0}</color>",
         "ba.drop": "<color=#36ACFF>{0}</color>",
         "ba.acrem": "<color=#727272>{0}</color>",
+        "ba.velc": "<color=#21ffc3>{0}</color>",
+        "ba.delc": "<color=#ff9000>{0}</color>",
+        "ba.dgrey": "<color=#9a9a9a>{0}</color>",
         "eb.key": "<color=#00FFFF>{0}</color>",
         "eb.danger": "<color=#FF0000>{0}</color>",
         "ro.get": "<color=#0098DC>{0}</color>",
@@ -948,6 +951,7 @@
         "rolv.rem": "<color=#FF4C22>{0}</color>",
         "lv.description": "<color=#d8d769>{0}</color>",
         "lv.extrades": "<color=#d8d769>{0}</color>",
+        "lv.sand2desc": "<color=#a0a001>{0}</color>",
         "lv.item": "<color=#FFFFFF>{0}</color>",
         "lv.rem": "<color=#FFFFFF>{0}</color>",
         "lv.fs": "<color=#FF0000>{0}</color>",
@@ -1066,6 +1070,9 @@
         "char.amor": "<color=#aa4477>{0}</color>",
         "char.tmor": "<color=#335566>{0}</color>",
         "act.timelimit": "<color=#ffe300>{0}</color>",
+        "lv.pycitem": "<color=#D14631>{0}</color>",
+        "lv.pyctx": "<color=#1B1B1B>{0}</color>",
+        "lv.pycfs": "<color=#D14631>{0}</color>",
         "vc.text": "<color=#898989>{0}</color>",
         "vc.endtime": "<color=#ff0327>{0}</color>",
         "firework.animal": "<color=#0098dc>{0}</color>",
@@ -1094,7 +1101,7 @@
     "commonPotentialLvlUpCount": 4,
     "weeklyOverrideDesc": "",
     "voucherDiv": 5,
-    "recruitPoolVersion": 24,
+    "recruitPoolVersion": 25,
     "v006RecruitTimeStep1Refresh": 1577172600,
     "v006RecruitTimeStep2Check": 1577154600,
     "v006RecruitTimeStep2Flush": 1577649600,
@@ -1463,6 +1470,16 @@
             "termName": "侵蝕損傷·我方",
             "description": "累計滿時爆發（普通、精英敵人1000點，領袖2000點累計值），敵人立即受到5000點元素傷害且永久降低120點防禦力（可疊加）。8秒冷卻"
         },
+        "ba.slowdown": {
+            "termId": "ba.slowdown",
+            "termName": "遲鈍",
+            "description": "移動速度、攻擊速度、部分技能施放速度和冷卻速度、部分異常狀態的恢復速度降低相應比例（同名效果取最高）"
+        },
+        "ba.costlowerbound": {
+            "termId": "ba.costlowerbound",
+            "termName": "部署費用下限",
+            "description": "部署費用可降低至部署費用下限；部署費用小於0時部署費用自然回復速度-50%"
+        },
         "cc.bd_A_1": {
             "termId": "cc.bd_A_1",
             "termName": "念力",
@@ -1726,7 +1743,7 @@
         "cc.c.skill": {
             "termId": "cc.c.skill",
             "termName": "部分技能",
-            "description": "包含以下技能\n左膀右臂、S.W.E.E.P.、零食網路、清理協議、替身、必要責任、護衛、小小的領袖、獨善其身、笑靨如春、金盞花詩會、捍衛之道、博識生手、點滴關照"
+            "description": "包含以下技能\n左膀右臂、S.W.E.E.P.、零食網路、清理協議、替身、必要責任、護衛、小小的領袖、獨善其身、笑靨如春、金盞花詩會、捍衛之道、博識生手、點滴關照、總工程師"
         },
         "cc.t.strong2": {
             "termId": "cc.t.strong2",
@@ -1796,7 +1813,7 @@
         "cc.tag.op": {
             "termId": "cc.tag.op",
             "termName": "作業平台",
-            "description": "包含以下幹員\nLancet-2、Castle-3、THRM-EX、正義騎士號、Friston-3、PhonoR-0、CONFESS-47"
+            "description": "包含以下幹員\nLancet-2、Castle-3、THRM-EX、正義騎士號、Friston-3、PhonoR-0、CONFESS-47、GALLUS²"
         },
         "cc.tag.knight": {
             "termId": "cc.tag.knight",
@@ -1833,6 +1850,11 @@
             "termName": "特別獨占訂單",
             "description": "由佩佩提供的特殊貴金屬訂單，該訂單的獲取時長固定，收益恆定，所需赤金交付數為0"
         },
+        "cc.tra.closure": {
+            "termId": "cc.tra.closure",
+            "termName": "可露希爾特別訂單",
+            "description": "由可露希爾提供的特殊貴金屬訂單，該訂單的收益恆定，所需赤金交付數為2"
+        },
         "cc.bd_mujica": {
             "termId": "cc.bd_mujica",
             "termName": "熱情值",
@@ -1860,8 +1882,8 @@
         }
     },
     "storyReviewUnlockItemLackTip": "事相碎片數量不足，請前往採購憑證區或活動期間商店獲取",
-    "dataVersion": "51.6.0",
-    "resPrefVersion": "72d0d0",
+    "dataVersion": "52.0.0",
+    "resPrefVersion": "73d0d0",
     "announceWebBusType": "ak_announcement",
     "videoPlayerWebBusType": "ak_video_player",
     "gachaLogBusType": "ak_gacha_log",

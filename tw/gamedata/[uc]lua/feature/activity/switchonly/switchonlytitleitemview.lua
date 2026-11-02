@@ -7,6 +7,7 @@ local luaUtils = CS.Torappu.Lua.Util;
 
 
 
+
 local SwitchOnlyTitleItemView = Class("SwitchOnlyTitleItemView", UIWidget)
 
 
@@ -31,6 +32,7 @@ function SwitchOnlyTitleItemView:Refresh(unlocked, rewardTitle)
 
   self._textTitle.color = CS.Torappu.ColorRes.TweenHtmlStringToColor(textColor)
   self._textConst.color = CS.Torappu.ColorRes.TweenHtmlStringToColor(textColor)
+  self._textConst1.color = CS.Torappu.ColorRes.TweenHtmlStringToColor(textColor)
 end
 
 return SwitchOnlyTitleItemView

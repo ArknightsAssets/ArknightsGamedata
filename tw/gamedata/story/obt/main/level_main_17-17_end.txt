@@ -1,0 +1,1230 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_informationdeluge_loop", volume=0, loop=true, channel="inf")]
+[PlaySound(key="$d_avg_erthshkng", volume=0, loop=true, channel="er")]
+[SoundVolume(volume=0.7, channel="inf",fadetime=2)]
+[SoundVolume(volume=0.5, channel="er",fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[Decision(options="快……;我找到她了……", values="1;2")]
+[Predicate(references="1;2")]
+[name="可露希爾"]她脫離和剛才空間的連結了，資訊洪流正在急速消退——
+[name="可露希爾"]Mon3tr，過來幫我一下！我要把凱爾希的底層代碼完整轉移出來，一段都不能漏掉！
+[Dialog]
+[stopsound(channel="inf", fadetime=2.5)]
+[stopsound(channel="er", fadetime=2.5)]
+[delay(time=1.5)]
+[name="可露希爾"]……轉儲盒已就位。現在，想像這是一個絕對安全的裝置……
+[name="Mon3tr"]我想像不出來——
+[name="可露希爾"]那就想辦法用你們兩個之間的心電感應幫我把“異常代碼”穩定下來！
+[name="Mon3tr"]我聽不懂！
+[name="可露希爾"]意思是——抓穩就好了！
+[Dialog]
+[Dialog]
+[cgitem(image="cgitem_73_i16_1",afrom=0,ato=1,pfrom = "0,-95",pto = "0,-95",pduration = 0,aduration=2.5, style="cg",layer=1)]
+[delay(time=3)]
+[PlaySound(key="$d_avg_machineactive", volume=1, loop=true, channel="ma")]
+[StopSound(channel="ma", fadetime=1.5)]
+[PlaySound(key="$d_avg_codeexecution_loop", volume=0, loop=true, channel="inf1")]
+[SoundVolume(volume=0.5, channel="inf1",fadetime=3.5)]
+[hidecgitem(fadetime=5)]
+[bgeffect(name="$eb_073_code_01",layer=1)]
+[playMusic(intro="$lab_intro",key="$lab_loop", volume=0.4)]
+[Image(image="73_i16_2",screenadapt="coverall", fadetime=4,block=true)]
+[delay(time=3.5)]
+被編碼成透明外觀的臨時轉儲盒中，綠色的“方解石”正散發著耀眼的光芒。
+[Dialog]
+[delay(time=1)]
+[name="可露希爾"]——！
+[name="Mon3tr"]成功了……我能感覺到。
+[name="Mon3tr"]……
+[name="Mon3tr"]真神奇啊。凱爾希和我，竟然也有過這麼小的時候。
+[Dialog]
+[delay(time=1)]
+可露希爾沒有馬上出聲。
+轉儲盒內建的偵測程式正在運作，她目不轉睛地盯著盒身上顯示的訊息，直到確認代碼的自循環執行緒仍在執行。
+這才真正代表著轉移的結束。
+[name="可露希爾"]太好了！石棺的能量輸出也跟著穩定下來了！
+[name="可露希爾"]但這還只是第一步，臨時轉儲盒的隔離能力有限，不能讓凱爾希一直待在裡面。接下來，必須找個相對安靜的環境……
+[Dialog]
+[stopsound(channel="inf1", fadetime=2.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[image]
+[bgeffect]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[name="？？？"]天啊這是什麼鬼地方怎麼這麼黑！
+[name="可露希爾"]……？
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="73_g9_reactor_s",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>澤爾格勒保密區，石棺核心</><p=2>1102年1月22日 14:33</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[playMusic(intro="$sjoyasorrow_intro", key="$sjoyasorrow_loop", volume=0.6)]
+[charslot(slot = "m", name = "avg_npc_2244_1#1$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="m")]
+[name="？？？"]欸，我好像又能看見了——
+[name="？？？"]……人？
+[Dialog]
+[charslot]
+[Decision(options="這也是感染生物嗎？;感染生物……會說話？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2",focus="m")]
+[name="阿米婭"]博士，我能感覺到外面正有軍隊在攻擊這裡。而且這裡不是剛才的空間，我們又回到了一開始的地方——
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2",focus="m")]
+[name="阿米婭"]……嗯？這是什麼？
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="m")]
+[name="？？？"]嘶，你自己不是也長著兔子耳朵嗎？難道認不出我是一隻雞？
+[charslot(slot="m",name="avg_4228_closur_1#8$1",focus="m")]
+[name="可露希爾"]我們進來的時候裡面沒有這個東西啊！
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="m")]
+[name="？？？"]別那麼大聲，吵得我頭痛！
+[name="？？？"]聽好了，我不是什麼“感染生物”，也不是什麼“東西”！我是雞，母雞！很難懂嗎？
+[Dialog]
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="n")]
+[Decision(options="聽起來好像很熟悉……;但你看起來像個房子。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="m")]
+[name="？？？"]你先別說話！
+[name="？？？"]（抖動尾羽）（環視四周）
+[name="？？？"]不對……
+[name="？？？"]我不是讓凱爾希那個傢伙把我放在黑傢伙的外面埋起來了嗎？為什麼我沒有死，而且再睜開眼睛就在這個東西的裡面了？
+[Dialog]
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="n")]
+[Decision(options="這裡是石棺的“觀察室”。;歡迎來到一萬年以後。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="m")]
+[name="？？？"]（不可名狀的尖銳鳴啼）什麼——
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_erthshkng", volume=0, loop=true, channel="er1")]
+[SoundVolume(volume=1, channel="er1",fadetime=1)]
+[CameraShake(duration=2, xstrength=10, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=2.5)]
+[stopsound(channel="er1", fadetime=3)]
+[Decision(options="我們必須先馬上想辦法從這裡出去。;這個小房子認識凱爾希，我們得把它也一起帶走。", values="1;2")]
+[Predicate(references="1;2")]
+[Dialog]
+[stopmusic(fadetime=2)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2242_1#5$1",duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2242_1#5$1",focus="m")]
+[name="克利姆"]呃……
+[name="克利姆"]你們……讓石棺停下來了？
+[charslot(slot="m",name="avg_4228_closur_1#7$1",focus="m")]
+[name="可露希爾"]等等，原來你也進來了？我以為你留在上面了——
+[charslot(slot="m",name="avg_npc_2242_1#1$1",focus="m")]
+[name="克利姆"]……你走得太匆忙了，我都還沒來得及問……你們拿到了識別碼，這代表你們一定認識拉達，對嗎？
+[charslot(slot="m",name="avg_1037_amiya3_1#5$2",focus="m")]
+[multiline(name="阿米婭")]您——您難道是拉達的父親？而且還是那個幫助可露希爾進來的人嗎？
+[charslot(slot="m",name="avg_1037_amiya3_1#17$2",focus="m")]
+[multiline(name="阿米婭")]那您一定知道艾麗塔女士——
+[Dialog]
+[PlayMusic(intro="$loneliness_intro", key="$loneliness_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_2242_1#2$1",focus="m")]
+[delay(time=1)]
+男子搖了搖頭，露出一個有點恍惚的笑容。
+[charslot(slot="m",name="avg_npc_2242_1#2$1",focus="m")]
+[name="克利姆"]麗塔總是這樣，我永遠都趕不上她的腳步。
+[charslot(slot="m",name="avg_1037_amiya3_1#2$2",focus="m")]
+[name="阿米婭"]……
+[charslot(slot="m",name="avg_4228_closur_1#5$1",focus="m")]
+[name="可露希爾"]呃，你剛才在問石棺嗎？我看看……
+[charslot(slot="m",name="avg_4228_closur_1#6$1",focus="m")]
+[name="可露希爾"]石棺正在穩定下來，之前被用來武器化的模組也已經在能量對衝中熔毀了，現在只剩下能量輸出模組還在運作。
+[charslot(slot="m",name="avg_npc_2242_1#2$1",focus="m")]
+[name="克利姆"]啊，那真的……太好了。麗塔總是會做正確的選擇。
+[name="克利姆"]你們救下了很多人，我應該……謝謝你們。
+[charslot(slot="m",name="avg_1037_amiya3_1#16$2",focus="m")]
+[name="阿米婭"]我們也應該感謝您。等我們把這裡的事情都處理好——
+[charslot(slot="m",name="avg_npc_2242_1#1$1",focus="m")]
+[multiline(name="克利姆")]你們應該盡快離開，第一集團軍要放棄這裡了。
+[charslot(slot="m",name="avg_npc_2242_1#4$1",focus="m")]
+[multiline(name="克利姆")]還在外面的時候，他們的通訊裡就頻繁提到過……第四集團軍。
+[charslot(slot="m",name="avg_1037_amiya3_1#10$2",focus="m")]
+[name="阿米婭"]但第四集團軍不是還在中央區邊界上嗎？
+[charslot(slot="m",name="avg_1037_amiya3_1#6$2",focus="m")]
+[multiline(name="阿米婭")]難道他們想來搶奪石棺？！
+[charslot(slot="m",name="avg_npc_2242_1#10$1",focus="m")]
+[name="克利姆"]我不知道……沒有人知道完整的情況。
+[Dialog]
+[charslot]
+[Decision(options="我們不能就這樣把石棺交到任何一個集團軍手中。;至少要想辦法暫時把它隱藏一下。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="石棺聚集的能源有一個合理的出口。;我們可以利用出口將石棺的能量反應降至最低。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_2242_1#10$1",focus="m")]
+[name="克利姆"]……你們的情報很周全，你也很聰明。
+[name="克利姆"]好了，這件事就交給我吧……你們應該離開，去做你們該做的事。
+[charslot(slot="m",name="avg_4228_closur_1#13$1",focus="m")]
+[multiline(name="可露希爾")]你確定要一個人留下來？！
+[charslot(slot="m",name="avg_4228_closur_1#12$1",focus="m")]
+[multiline(name="可露希爾")]這裡正在遭受集團軍的炮火，我們可以一起處理，然後一起離開！
+[charslot(slot="m",name="avg_npc_2242_1#9$1",focus="m")]
+[name="克利姆"]夠了……
+[charslot(slot="m",name="avg_npc_2242_1#10$1",focus="m")]
+[name="克利姆"]我的妻子已經命喪於此……至少給我們最後一點獨處的時間吧。
+[charslot(slot="m",name="avg_4228_closur_1#12$1",focus="m")]
+[name="可露希爾"]可是——
+[charslot(slot="m",name="avg_npc_2242_1#10$1",focus="m")]
+[name="克利姆"]……別看我這樣，其實我也是這裡的研究員。
+[name="克利姆"]現在大家死的死，逃的逃，我對照看這裡直至終局……
+[name="克利姆"]負有責任。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g5_megastructure",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_explosion_stone", volume=1)]
+[CameraShake(duration=3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[playMusic(key="$formal_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>澤爾格勒保密區，地面</><p=2>1102年1月22日 14:45</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_avg_crowdrun", volume=1)]
+[delay(time=2.5)]
+石牆大門被炸出了一個缺口，數十雙腳先後從其中踏出，緊接著是簡易的推車、擔架……
+[Dialog]
+[charslot(slot="l",name="char_1002_nsabr_1",focus="l")]
+[charslot(slot="r",name="char_1002_nsabr_1",focus="l")]
+[name="整合運動成員A"]諸位，把握時間清點人數，確保我們的人和解救的感染者全員就位。
+[charslot(slot="r",name="char_1002_nsabr_1",focus="r")]
+[name="整合運動成員B"]運氣在我們這邊，守軍都在敗退，這裡已經沒有能阻止我們的人了。
+[Dialog]
+[charslot]
+隨著最後一員撤離石牆，一個身影緩緩從煙塵中浮現。
+[Dialog]
+[charslot(slot="m",name="avg_npc_2247_1#9$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2247_1#9$1",focus="m")]
+[name="塔露拉"]這就是問題所在，他們退得過於乾脆了。
+[name="塔露拉"]甚至不如說，在我們突入的這片區域裡，火力和軍力根本看不出來是保密區域應有的配置，像是人都故意被撤走了一樣。
+[charslot(slot="m",name="avg_npc_2247_1#10$1",focus="m")]
+[name="塔露拉"]……我們進來之前，外面的部分軍人也沒有主動攻擊那些撤離的感染者。
+[charslot(slot="m",name="avg_npc_2247_1#9$1",focus="m")]
+[name="塔露拉"]不知道他們內部到底出了什麼問題，又或者根本就是想把我們放進來一網打盡。安全起見，我們必須馬上離開——
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_grenadethrow")]
+[playsound(key="$d_gen_explo_n",delay=1)]
+[delay(time=1)]
+[CameraShake(duration=1, ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.05, block=true)]
+[bgeffect(name="$eb_scorchedearth",layer=1,y=-100)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=1, block=true)]
+[delay(time=1)]
+一枚炮彈幾乎擦過塔露拉的頭頂，呼嘯著擊向人群的後方。
+四周響起了哭聲，塔露拉看向炮彈襲來的方向——她看見了那艘高大戰艦的指揮艦橋，第一集團軍的旗幟隨風揚起。
+[charslot(slot="m",name="avg_npc_2247_1#4$1",focus="m")]
+[name="塔露拉"]……直接轟擊自己的城市，該死……
+[charslot(slot="m",name="avg_npc_2247_1#3$1",focus="m")]
+[name="塔露拉"]通知到所有人，按計劃路線撤退！我去想辦法吸引他們的注意！
+[charslot(slot="m",name="char_1002_nsabr_1",focus="m")]
+[name="整合運動成員B"]塔露拉——
+[charslot(slot="m",name="avg_npc_2247_1#3$1",focus="m")]
+[name="塔露拉"]快走！
+[Dialog]
+[charslot]
+[PlaySound(key="$grenade_explosion",volume=0.7)]
+[CameraShake(duration=3, xstrength=40,ystrength=40, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_explosion", volume=0.7, loop=false, channel="explo",delay=1)]
+[PlaySound(key="$d_gen_explo_n", volume=0.7, loop=false, channel="explo1",delay=2)]
+[delay(time=2)]
+第二枚炮彈砸落在地，緊接著是第三枚……碎石起落，高牆坍塌，而絕處逢生後虛弱的感染者們，光是擦去眼淚就用盡了力氣。
+整合運動的成員們四處奔走，半拉半扶著感染者們撤離。只有一人注視著遠方的炮火，駐足不前。
+[Dialog]
+[charslot(slot="m",name="avg_npc_2249_1#8$1",duration=0.7)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="西爾卡"]……
+[charslot(slot="m",name="char_1002_nsabr_1",focus="m")]
+[name="整合運動成員C"]西爾卡女士？這裡很危險，快和我們一起撤退吧。
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="西爾卡"]不，你們先走吧。
+[name="西爾卡"]我有一個必須取回的東西，遺落在那位小將軍的住所了。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[bgeffect]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[name="慌亂的軍官"]小將軍！小將軍請留步！請您打開私人通訊，元帥她有事要找您。
+[name="阿納托利"]滾！都給我滾！
+[name="阿納托利"]你們學會用我母親的名號威脅我之前，先對著勛章想清楚——見了逆賊就發抖的廢物，到底配不配自稱烏薩斯的軍人！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="73_g13_ursuswscommandroom",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[charslot(slot="m",name="avg_npc_2235_1#10$1",duration=0.7)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="艦炮指揮官"]小將軍，您怎麼來了——
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[name="阿納托利"]現在是誰在操作艦炮？你們那可悲的手指，已經退化到只能用來搓牌了嗎？
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="艦炮指揮官"]這，我可以解釋……
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[name="阿納托利"]別以為你們的失職與懈怠能瞞得過我。為什麼不集中火力轟擊石牆大門區域？為什麼主炮到現在都沒有預熱完畢？
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="艦炮指揮官"]這並非出於疏忽，小將軍。撤軍命令剛下達不到十分鐘，如果我們現在動用主炮，保密區那麼多留守的士兵——
+[charslot(slot="m",name="avg_npc_2235_1#7$1",focus="m")]
+[name="阿納托利"]保密區還有更多叛國賊！按照我制定的路線，只要他們還沒蠢到自尋死路，誤傷規模完全在可控範圍內。
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[name="阿納托利"]我已經厭倦你們用廉價的同情心當藉口敷衍我了，邦達連科中校。
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="艦炮指揮官"]……啊——
+[Dialog]
+[PlaySound(key="$d_avg_swordexsheath", volume=1)]
+[Delay(time=1)]
+明晃晃的刀刃貼上軍官的脖頸。
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[name="阿納托利"]澤爾格勒是我的城市，更別忘了它還是烏薩斯的城市。入伍以來，你吃的每一粒黑麥，都是為了換取你今日的絕對服從。
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="艦炮指揮官"]小將軍，呃——
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[name="阿納托利"]給你最後一次機會，邦達連科，五分鐘內我要看到主炮準備完畢。
+[charslot(slot="m",name="avg_npc_2235_1#10$1",focus="m")]
+[name="阿納托利"]記住，第一集團軍不只一名艦炮指揮官！
+[Dialog]
+[PlaySound(key="$d_gen_transmissionget",volume=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2235_1#10$1",focus="n")]
+[name="慌亂的軍官"]……喂，元帥，是、是我……萬分抱歉，我知道這是小將軍的私人通訊……
+[name="慌亂的軍官"]小將軍，元帥的通訊我實在不敢掛斷，拜託您了，還是接一下吧？
+[charslot(slot="m",name="avg_npc_2235_1#4$1",focus="m")]
+[name="阿納托利"]……遞過來，然後退下。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_walkfast", volume=0.7)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2235_1#10$1",focus="m")]
+[name="阿納托利"]呵，“第一集團軍的軍人”，這個已然枯朽的榮譽……
+[Dialog]
+[charslot]
+[name="通訊器裡的聲音"]……尊重你的下屬，阿納托利，這不是我第一次勸導你了。
+[name="通訊器裡的聲音"]但現在還有一件更重要的事，你明明答應過我的，對嗎？只要拿到石棺的資料，就馬上回來。
+[charslot(slot="m",name="avg_npc_2235_1#9$1",focus="m")]
+[name="阿納托利"]母親……我試過了，我用盡了力氣，只為了去討得您夢寐以求的結果。
+[name="阿納托利"]但您卻讓我，去坐視那群噬骨的螻蟻爬滿我的城市，還要讓我去與貪生怕死的懦夫同列，在恥辱中逃竄——
+[charslot(slot="m",name="avg_npc_2235_1#5$1",focus="m")]
+[name="阿納托利"]您簡直在要我的命。
+[Dialog]
+[charslot]
+[name="通訊器裡的聲音"]孩子，我所做的一切，都只為了讓你遠離這毫無意義的戰場。
+[name="通訊器裡的聲音"]每分每秒，第四集團軍都在迫近澤爾格勒，你要我如何眼睜睜地看著自己的兒子，陷入這片泥淖之中呢？
+[charslot(slot="m",name="avg_npc_2235_1#1$1",focus="m")]
+[name="阿納托利"]第四集團軍……呵呵，他們和城裡那些叛國者，又有什麼分別？他們都在背叛這個偉大的帝國，背叛您曾教導我的信條。
+[name="阿納托利"]我的母親，是您一直讓我做一個忠誠的人——但為什麼現在，先放手的卻是您呢？
+[Dialog]
+[charslot]
+[name="通訊器裡的聲音"]……
+[PlaySound(key="$d_avg_recorderglitch", volume=1)]
+[name="通訊器裡的聲音"]……滋滋……
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[name="阿納托利"]……？
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g5_megastructure",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_openftstprun", volume=1, loop=true, channel="o")]
+[StopSound(channel="o", fadetime=4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_runstop", volume=1)]
+[delay(time=1.5)]
+奔跑中的塔露拉停了下來，眺望著遠處山岳般的巨物。
+原本她想找到一個空曠顯眼的地方，進一步釋放自己的源石技藝，用自己的回歸挑釁第一集團軍，以吸引注意。
+然而，那艘軍艦突然間收斂了聲音，就連展開的副炮也許久不見動靜。
+[charslot(slot="m",name="avg_npc_2247_1#5$1",focus="m")]
+[name="塔露拉"]這到底……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="72_g13_nobleroom",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[interlude(maskid = "group_interclude_square_common", char = "阿納托利", switch = true, style = 1,offset = "-450,125", channel = 3)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-460,-50", pto="-460,-50",name = "avg_npc_2235_1#8$1", duration =0.5)]
+[interlude(maskid = "group_interclude_square_common", char = "斯韋特蘭納", switch = true, style = 1,offset = "450,125", channel = 4)]
+[interlude(channel = 4, type = 3, slot = "m", switch = true, pfrom = "450,-70", pto="450,-70", name = "avg_npc_2231_1#8$1", duration = 0.5)]
+[interlude(channel = 3, switch = false)]
+[interlude(channel = 4, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",duration=0.7)]
+[delay(time=1)]
+[interlude(channel = 3, switch = true)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="n")]
+[name="阿納托利"]……你再重複一遍？
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="m")]
+[name="西爾卡"]您沒有聽錯，我正在您位於保密區的住所，用您的私人頻段，與您對話。
+[name="西爾卡"]而我，正是第四集團軍所派出的間諜——
+[interlude(channel = 3, switch = true)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="n")]
+[name="阿納托利"]你、你是那天刺殺我的人。
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="m")]
+[name="西爾卡"]沒錯，這就是葉甫根尼元帥的手段，第一集團軍的所有重要人士都在他的名單上，為此已經暗中籌劃了整整三年。
+[interlude(channel = 3, switch = true)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="n")]
+[name="阿納托利"]所以，現在的你，在向我祈求一條生路？
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]如您和元帥剛才所應允的那樣，我向您祈求暫時的停火，直到第一集團軍能接應我登上軍艦。
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="m")]
+[name="西爾卡"]當然，除了我的性命之外……儘管難以啟齒，我與葉甫根尼元帥，還有更深重的仇怨。
+[interlude(channel = 4, switch = true)]
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="n")]
+[name="斯韋特蘭納"]……女士，如果你以“難以啟齒”為由，隱瞞我所需要的資訊，那麼我很樂意隨時恢復開火。
+[name="斯韋特蘭納"]你為什麼會認為，我們能夠信任一個闖入自己家中的竊賊與刺客？
+[interlude(channel = 4, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]尊敬的元帥，我願意與您對質種種細節、花費一整天以證實我的身分，但第四集團軍的行軍不會停下。
+[name="西爾卡"]而我有一個更有效的辦法——我將直接接入葉甫根尼元帥的秘密通訊，引導他說出您想知道的所有資訊。
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-460,-50", pto="-460,-50", name = "avg_npc_2235_1#6$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="阿納托利"]？！
+[Dialog]
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[playsound(key="$d_avg_phonebutton_3", volume=0.5)]
+[Delay(time=2)]
+[interlude(channel = 4, switch = true)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="斯韋特蘭納"]等等——
+[dialog]
+[interlude(channel = 4, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[delay(time=0.5)]
+[dialog]
+[PlaySound(key="$d_gen_transmissionget",volume=0.6)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="葉甫根尼"]……耶夫塞？有什麼消息需要彙報？
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]葉甫根尼元帥，我是與他交接的間諜，出於緊急情況借用他的通訊設備。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="葉甫根尼"]我必須確認你的身分。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]我是他安排在澤爾格勒城內的暗樁，辨識身分所用的密碼已經在五分鐘前發向指揮中心。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="葉甫根尼"]……
+[name="葉甫根尼"]你說，“緊急情況”？
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]目前這座城市已經陷入戰火，我暫時與他失去了聯絡。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="葉甫根尼"]澤爾格勒發生了內亂？
+[name="葉甫根尼"]很好，繼續彙報。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]許多身分不明的作亂分子潛入澤爾格勒，串通城中的感染者，向保密區發動了攻擊。
+[name="西爾卡"]城中部分駐軍似乎在配合他們的行動，消極應戰，而那位小將軍看起來也已經打算拋棄這座城市。
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-460,-50", pto="-460,-50", name = "avg_npc_2235_1#4$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="阿納托利"]（深呼吸）
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]軍隊內部的暴亂正在醞釀，熟悉的情況，也許是受到了某些影響。
+[name="西爾卡"]您還記得“卡西安號”的譁變嗎？那支直到最後都在支持您父親的隊伍，他們無法接受您的一系列軍制改革。
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="n")]
+[name="葉甫根尼"]老掉牙的話題，他們已經為自己的莽撞付出了代價。
+[name="葉甫根尼"]這在第四集團軍內也很難稱得上秘密，我的父親留下了許多積弊與隱憂，甚至如今的很多決策也是解決爛攤子的無奈之舉。
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="m")]
+[name="西爾卡"]恕我冒昧。隱憂，指的是“情債”嗎？
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="n")]
+[name="葉甫根尼"]……情報傳遞，難道指的就是這些捕風捉影的見聞嗎？
+[charslot(slot="m",name="avg_npc_2249_1#2$1",focus="m")]
+[name="西爾卡"]但這的確和我得知的情報有關。
+[name="西爾卡"]整個烏薩斯上層，無人不知您的父親——安德里安元帥，是一位典型的帝國軍人，忠誠、堅毅，頑固而粗暴……
+[name="西爾卡"]但他們也知道，他還是一位聞名帝國的情種。“卡西安號”的艦長，是他最後一位情人的侄兄。
+[name="西爾卡"]現在都有人傳言，在十多年前，集團軍首長們回到聖駿堡，向陛下述職時，他和當時還不是元帥的斯韋特蘭納將軍——
+[charslot(slot="m",name="avg_npc_2249_1#2$1",focus="n")]
+[name="葉甫根尼"]住口！你到底想說什麼？
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-460,-50", pto="-460,-50", name = "avg_npc_2235_1#8$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="阿納托利"]（咬牙）
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#12$1",focus="m")]
+[name="西爾卡"]即使您已經為家族榮譽殫精竭慮至此，甚至不惜親手殺死自己的父親，也要證明自己並未傳承那血脈中的荒唐……
+[charslot(slot="m",name="avg_npc_2249_1#12$1",focus="n")]
+[name="葉甫根尼"]——！
+[charslot(slot="m",name="avg_npc_2249_1#2$1",focus="m")]
+[name="西爾卡"]我也必須遺憾地告訴您，至今仍有人並不認同您的這一做法，還在試圖剝奪您的繼承權，長官。
+[name="西爾卡"]甚至，您一直沒能找到的，那位受到安德里安元帥小心保護的私生女，一個卑劣的庫蘭塔……如今也就在澤爾格勒城內。
+[charslot(slot="m",name="avg_npc_2249_1#2$1",focus="n")]
+[name="葉甫根尼"]……你到底是什麼人？！你的聲音——
+[charslot(slot="m",name="avg_npc_2249_1#2$1",focus="m")]
+[name="西爾卡"]更重要的是，如果您不把握機會打進澤爾格勒城將她滅口，她很快就會作為上面那些“傳聞”的實證，來到您忠誠的軍隊之中。
+[name="西爾卡"]到那時，您的權威——
+[charslot(slot="m",name="avg_npc_2249_1#2$1",focus="n")]
+[name="葉甫根尼"]夠了！
+[name="葉甫根尼"]編造事實，試圖鼓動我立刻向第一集團軍發動魯莽的進攻——雖然我不知道你是怎麼找到耶夫塞的，但你的結局已經注定。
+[dialog]
+[PlaySound(key="$transmission",volume=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]嗯……
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="m")]
+[name="西爾卡"]那麼如你們所聞，斯韋特蘭納元帥、阿納托利將軍——
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 3, type = 3, slot = "m", switch = true, pfrom = "-460,-50", pto="-460,-50", name = "avg_npc_2235_1#7$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="n")]
+[name="阿納托利"]*烏薩斯粗口*！
+[interlude(channel = 3, switch = false)]
+[interlude(channel = 4, switch = true)]
+[interlude(channel = 4, type = 4, slot = "m", switch = true, pfrom = "450,-70", pto="450,-70", name = "avg_npc_2231_1#8$1", duration = 0)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="n")]
+[name="斯韋特蘭納"]阿納托利——
+[interlude(channel = 3, switch = true)]
+[interlude(channel = 4, switch = false)]
+[name="阿納托利"]夠了，我受夠了，母親！這個被安德里安吐出來的雜種，竟敢出言汙衊第一集團軍的元帥。
+[name="阿納托利"]我發誓，我會親手讓你以最悲慘、最屈辱的方式死去！我會用你的那些髒血溺死你，看看你這*烏薩斯粗口*雜種能在裡面撐多久！
+[interlude(channel = 3, switch = false)]
+[charslot(slot="m",name="avg_npc_2249_1#3$1",focus="m")]
+[name="西爾卡"]哦，尊敬的小將軍，您可見過您的父親嗎？
+[charslot(slot="m",name="avg_npc_2249_1#2$1",focus="m")]
+[name="西爾卡"]或許有一天，我們會因同樣的血脈再見……我親愛的兄弟。
+[dialog]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[PlaySound(key="$transmission",volume=0.6)]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[interlude(channel = 3, clear = true, tsto="0,1", tsduration=0.2)]
+[interlude(channel = 4, clear = true, tsto="0,1", tsduration=0.2)]
+[Background(image="73_g13_ursuswscommandroom",screenadapt="coverall", block=true)]
+[charslot(slot="m",name="avg_npc_2235_1#10$1",focus="m")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2235_1#10$1",focus="m")]
+[name="阿納托利"]母親……
+[charslot(slot="m",name="avg_npc_2235_1#10$1",focus="n")]
+[name="斯韋特蘭納"]阿納托利，不要輕易被欺騙。她只是想激怒你，這背後有什麼目的我們可以——
+[Dialog]
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_ldrdhtgrnd", volume=1)]
+[playsound(key="$transmission",volume=0.4,delay=0.6)]
+[CameraShake(duration=1, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2235_1#7$1",focus="m")]
+[name="阿納托利"]副官！
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="惶恐的軍官"]……小將軍？
+[charslot(slot="m",name="avg_npc_2235_1#8$1",focus="m")]
+[name="阿納托利"]傳我的命令，所有能調動的人員，全部前往保密區抓人。
+[charslot(slot="m",name="avg_npc_1977_1#1$1",focus="m")]
+[name="惶恐的軍官"]但、但我們已經沒有——
+[charslot(slot="m",name="avg_npc_2235_1#7$1",focus="m")]
+[CameraShake(duration=0.5, xstrength=15, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="阿納托利"]你活不了多久了……雜種！！
+[charslot(slot = "m", name = "avg_npc_2246_1#10$1",focus="m")]
+[name="希爾達"]……
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g1_exurbstreet_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$loading_intro", key="$loading_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>澤爾格勒出入口</><p=2>1102年1月22日 16:49</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_avg_studentsexhausted_fts_loop",volume=0, channel="foot", loop=true)]
+[SoundVolume(volume=0.4, channel="foot",fadetime=1)]
+[delay(time=2)]
+[StopSound(channel="foot", fadetime=2)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="瑭雅"]不要急，讓老人和小孩走在前面！
+[dialog]
+[charslot]
+喊到啞了的喉嚨還在堅持，協助撤離的人們分立在道路兩旁，目送民眾從面前湧過。
+遠處爆炸聲斷斷續續，腳下土地震顫。人群中有人面露恐懼，更多的人只是茫然地往前走，握緊手裡的包袱。
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="瑭雅"]喂，不要逆著人流走，這樣很危險！
+[name="瑭雅"]還有，拿到了防毒面具的都儘量戴上，沒有的都用毛巾遮掩一下口鼻，不要去接觸長得奇怪的動物——
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="瑭雅"]嗯？柳德米拉小姐？你怎麼了？
+[charslot(slot="m",name="avg_1502_crosly_1#5$1",focus="m")]
+[name="弒君者"]這位女士暈倒了，你們的手推車上還有空間嗎？
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="瑭雅"]應該能再擠一下。來，試試看。
+[dialog]
+[charslot]
+柳德米拉蹲下身子，把背上昏迷的人交給了他們。
+[name="忙碌的礦工"]柳德米拉！快來前面，圖林可能有麻煩！
+[charslot(slot="m",name="avg_1502_crosly_1#1$1",focus="m")]
+[name="弒君者"]好。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)] 
+[charslot]
+[charslot(slot="m",name="avg_npc_2225_1#11$1",focus="m")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1, block=true)]
+[Delay(time=0.5)]
+[charslot(slot="m",name="avg_npc_2225_1#11$1",focus="m")]
+[name="圖林"]……我們又見面了，拉特科夫。
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="寡言的軍人"]……我不該放你走的。
+[name="寡言的軍人"]我接到的命令，是肅清城中的叛國賊。
+[charslot(slot="m",name="avg_npc_2225_1#11$1",focus="m")]
+[name="圖林"]你說的叛國賊，是我身後的這些民眾嗎？
+[name="圖林"]他們只想保住自己的生命，為澤爾格勒和烏薩斯勤勞奉獻過的生命，卻被定罪為叛國嗎？
+[name="圖林"]拉特科夫，還有機會——
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_crossbowbolts_fire")]
+[playsound(key="$d_avg_crossbowbolts_fire",channel="a",delay=0.4)]
+[playsound(key="$d_avg_crossbowbolts_fire",channel="b",delay=0.6)]
+[CameraShake(duration=1.5, xstrength=12, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=1.2)]
+[PlaySound(key="$swordtsing1",volume=0.7)]
+[Delay(time=0.2)]
+[PlaySound(key="$d_avg_pendrop",volume=0.7)]
+[Delay(time=1)]
+說話間，面前的軍人們突然舉起武器，幾枚弩箭射向圖林身後。
+圖林下意識地縮身，再回頭看去，柳德米拉正站在那裡，輕鬆地擋開了弩箭。
+[Dialog]
+[charslot(slot="m",name="avg_1502_crosly_1#5$1",duration=1)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="寡言的軍人"]我指的是她……但如你所見，我們失敗了。
+[name="寡言的軍人"]許多人都在說，整合運動來到了這裡。我們判斷，第一集團軍的守備力量，不足以對抗他們。
+[name="寡言的軍人"]如果小將軍還有什麼辦法能對付整合運動，那就隨他去想吧。
+[name="寡言的軍人"]而我們，決定撤退了。
+[Dialog]
+[charslot]
+名叫拉特科夫的軍人上前幾步，他拿出一張摺疊過的圖紙，塞進了圖林的手裡。
+[Dialog]
+[playsound(key="$d_avg_armywalking", loop=true, channel="a")]
+[Delay(time=2)]
+[StopSound(channel="a", fadetime=3)]
+隨後，在圖林一行人驚訝的目光中，一整支連隊的士兵整齊劃一，從城門的左側離開。每一個人都保持著沉默，只有軍靴留下了聲音。
+[charslot(slot="m",name="avg_1502_crosly_1#1$1",focus="m")]
+[name="弒君者"]他在自作主張，或者說他們。
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="圖林"]……
+[charslot(slot="m",name="avg_1502_crosly_1#1$1",focus="m")]
+[name="弒君者"]……圖林，怎麼了？
+[Dialog]
+[charslot]
+她看到圖林展開了紙張，手卻微微發顫，而圖林的目光掃過上面密密麻麻的文字——視線游移不定，完全無法聚焦。
+圖紙在圖林手裡微微傾斜，又被扶正。青年眨眼的頻率越來越快。
+[charslot(slot="m",name="avg_1502_crosly_1#5$1",focus="m")]
+[name="弒君者"]圖林，需要幫助嗎？
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="圖林"]……啊，柳德米拉……
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="圖林"]如果可以，能否幫我讀一下這張紙的內容，我有點……
+[charslot(slot="m",name="avg_1502_crosly_1#5$1",focus="m")]
+[name="弒君者"]……“城門的控制室在東側，需要輸入通用密碼，見附錄”，這是城門的操作指南。
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="圖林"]原來如此，把這個交給我的同伴吧，馬上我們就能出去了。
+[Dialog]
+[charslot]
+一旁的礦工接過圖紙後離開了，圖林深深吐出一口氣。
+[charslot(slot="m",name="avg_npc_2225_1#3$1",focus="m")]
+[name="圖林"]謝謝你，柳德米拉。我見到那些文字，尤其是那些過於密集的……
+[charslot(slot="m",name="avg_1502_crosly_1#1$1",focus="m")]
+[name="弒君者"]我原本以為，你會是那種習慣讀書的人。
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="圖林"]我確實對書上的知識與故事感興趣，但大多數時候，都需要有人幫我讀出來，因此也總是學得比其他人慢一點。
+[charslot(slot="m",name="avg_1502_crosly_1#5$1",focus="m")]
+[name="弒君者"]……
+[name="弒君者"]但是，“伊凡·圖林”……
+[name="弒君者"]一位筆耕不輟的作家，近些年的烏薩斯語作家，沒有人能比他寫得更好，也沒有人能比他寫得更長。
+[name="弒君者"]聖駿堡的大學生最津津樂道的，就是他書中那些龐雜而精妙的引用，他們總是在讚嘆伊凡·圖林的閱讀量……
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="圖林"]……
+[charslot(slot="m",name="avg_1502_crosly_1#5$1",focus="m")]
+[name="弒君者"]你是——
+[stopmusic(fadetime=2)]
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_heavymetalgate_open")]
+[CameraShake(duration=5, xstrength=8, ystrength=15, vibrato=30, randomness=90, fadeout=true, block=false)]
+[Delay(time=4)]
+[charslot(slot="m",name="avg_npc_1969_1#1$1",focus="m")]
+[name="急切的礦工"]圖林，我們成功了！
+[charslot(slot="m",name="avg_npc_2225_1#3$1",focus="m")]
+[name="圖林"]……嗯。
+[name="圖林"]所有人！聽好指揮，我們要離開澤爾格勒了！
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Image(image="73_i21", screenadapt="coverall",fadetime=0, xScale=1.3, yScale=1.3, x=180,y=40,block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_wind_howling", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=0.3, channel="sn",fadetime=7)]
+[ImageTween(xFrom=180,xTo=0, yFrom=40,yTo=0,duration=40, block=false)]
+[playMusic(key="$resurrection_loop", volume=0)]
+[musicvolume(volume=0.6, fadetime=4)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=4, block=true)]
+[delay(time=1)]
+此起彼伏的吶喊聲漫過城頭，人們湧出厚重的城門。
+有人高舉雙臂歡呼，有人蹲下身撫摸城外的土地，笑著的眼裡閃著淚，哭泣的卻嘴角上揚。
+他們回頭望了一眼來路，然後轉身，腳步踏出沉悶的迴響。
+等到眾人的背影融進遠處塵土，圖林喉頭動了動，那聲嘆息幾乎輕得只有自己能聽見。
+弒君者看到，圖林別過臉去，握緊鎬把的手掌略微鬆弛了一些。
+[Dialog]
+[SoundVolume(volume=0.6, channel="sn",fadetime=4)]
+[Image(image="73_i21", screenadapt="coverall",fadetime=3, block=true)]
+[delay(time=1)]
+[name="圖林"]……柳德米拉，我需要另找個時間，再向你講述那個作家的故事。
+[name="圖林"]許多年前，他不得不離我們而去，直到某日，連我也徹底失去了他的音訊。
+[name="圖林"]或許烏薩斯可以貶損他、放逐他，甚至殺死他……但烏薩斯永遠摧毀不了他。
+[name="圖林"]因為還有我們，而我們還有明天。
+[Dialog]
+[delay(time=1)]
+暮色爬上堅定的臉頰，那些輕聲唸出的話語被漸起的風聲淹沒。
+[Dialog]
+[stopmusic(fadetime=2)]
+[StopSound(channel="sn", fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="73_g13_ursuswscommandroom",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(intro="$m_bat_essenceofevolution_intro", key="$m_bat_essenceofevolution_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>“利沃諾夫號”攻擊艦，指揮室</><p=2>1102年1月22日09:59</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255, g=255, b=255, fadetime=0.03, block=true)]
+[CameraShake(duration=1,xstrength=10,ystrength=12,vibrato=30,randomness=90,fadeout=true,block=false)]
+[bgeffect(name="$eb_burn",layer = 2)]
+[bgEffect(layer = 1)]
+[PlaySound(key="$e_skill_ignite_cast", volume=0.7)]
+[PlaySound(key="$b_char_fireharm",volume=1,delay=0.4)]
+[Blocker(a=0, r=255, g=255, b=255, fadetime=0.8, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4226_veen_1#1$1",focus="m")]
+[name="斯喬帕"]至少……拖到“莫爾凡”失效了。
+[charslot(slot = "m", name = "avg_4226_veen_1#2$1",focus="m")]
+[name="斯喬帕"]哈哈，這下……你們就只能堂堂正正地和我打了。
+[charslot(slot = "m", name = "avg_4226_veen_1#4$1",focus="m")]
+[CameraShake(duration=0.3,xstrength=20,ystrength=20,vibrato=30,randomness=90,fadeout=true,block=false)]
+[name="斯喬帕"]咳呃——
+[Dialog]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_2237_1#1$1",focus="m")]
+[name="戰爭術師"]看來，你不要你這許多戰友的命。
+[charslot(slot="m",name="avg_npc_2241_1#6$1",focus="m")]
+[name="奧列格"]從他旁邊滾開！
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_2237_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_darkmagic", volume=1)]
+[name="戰爭術師"]（古老的烏薩斯方言）“讓他的手忘記主人的意志，讓他自己的刀，落在自己身上。”
+[Dialog]
+[charslot(slot="m",name="avg_npc_2241_1#5$1",focus="m")]
+[PlaySound(key="$d_avg_swrdbrnsh", volume=1)] 
+[charslot(slot = "m", action="shake",random=true, power=8, times=60,duration=0.5)]
+[delay(time=0.3)]
+[name="奧列格"]呃——！
+[Dialog]
+[charslot]
+出鞘的彎刀突然斬向持刀者自己的脖頸，只需一瞬，銳利的刀鋒就會將皮肉連著骨頭斬斷——
+[Dialog]
+[charslot]
+[playsound(key="$d_avg_windmagic", volume=1)]
+[Sticker(id="st1", multi = true, text="<color=#888888>斯喬帕</color>", hidelog=true, x=240, y=625, alignment="left", size=31, delay=0.04, width=700, duration=0.01, block = false)]
+[spellsticker(id="spell2", action="show", style="fire", x=-240, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>“風收一息，止住。”</><p=2>“Ветер задержит дыхание, остановись.”</>
+[Sticker(id="st1")]
+[spellstickerclear(block=false)]
+[Delay(time=1)]
+[Dialog]
+[charslot(slot = "m", name = "avg_4226_veen_1#11$1",duration=1.5)]
+[delay(time=2.5)]
+[charslot(slot = "m", name = "avg_npc_2237_1#1$1",focus="m")]
+[name="戰爭術師"]你——
+[Dialog]
+[charslot(slot = "m", name = "avg_4226_veen_1#11$1",focus="m")]
+[delay(time=0.1)]
+[PlaySound(key="$d_avg_magicshimmer",volume=1)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Sticker(id="st1", multi = true, text="<color=#888888>斯喬帕</color>", hidelog=true, x=240, y=625, alignment="left", size=31, delay=0.04, width=700, duration=0.01, block = false)]
+[spellsticker(id="spell2", action="show", style="fire", x=-240, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>“箭隨浪去，放手。”</><p=2>“Стрела уходит с волной, отпусти.”</>
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[spellstickerclear(block=false)]
+[Delay(time=0.5)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_metalcollar", volume=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2241_1#4$1",focus="m")]
+[charslot(slot = "m", action="shake",random=true, power=5, times=60,duration=0.5)]
+[name="奧列格"]……我、斯喬帕——
+[charslot(slot = "m", name = "avg_4226_veen_1#11$1",focus="m")]
+[name="斯喬帕"]奧列格，站到我身後。
+[charslot(slot = "m", name = "avg_npc_2237_1#1$1",focus="m")]
+[name="戰爭術師"]……本以為你只是個半吊子術師，沒想到……
+[name="戰爭術師"]你活著，卻逃離了你的命運。這代表，你比以往任何時候，都更應死去。
+[charslot(slot = "m", name = "avg_4226_veen_1#1$1",focus="m")]
+[name="斯喬帕"]你應該把剛才那句話當成咒語來說的，“同胞”。
+[charslot(slot = "m", name = "avg_4226_veen_1#11$1",focus="m")]
+[name="斯喬帕"]但我不會再給你們機會了。我知道你們都會使用無聲咒語，但是，你們不會比我更精通那些早已被廢棄的短咒。
+[Dialog]
+[charslot(slot = "m", name = "avg_4226_veen_1#11$1",focus="m")]
+[delay(time=0.1)]
+[PlaySound(key="$d_avg_OriginiumArts_soundwave",volume=1)]
+[Sticker(id="st1", multi = true, text="<color=#888888>斯喬帕</color>", hidelog=true, x=240, y=625, alignment="left", size=31, delay=0.04, width=700, duration=0.01, block = false)]
+[spellsticker(id="spell2", action="show", style="fire", x=-240, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>“夜雪無痕，噤聲。”</><p=2>“Hoчной снег без следа, молчи.”</>
+[Sticker(id="st1")]
+[spellstickerclear(block=false)]
+[Delay(time=0.2)]
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_2237_1#1$1",focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_avg_sphere", volume=1)]
+[CameraEffect(effect="Colorinverse",amount = 1,keep = true)]
+[Delay(time=0.2)]
+[Blocker(a=0, r=255,g=255, b=255, fadetime=0, block=true)]
+[Blocker(a=1, r=255,g=255, b=255, fadetime=0.05, block=true)]
+[CameraEffect(effect="Colorinverse",keep = false)]
+[bgeffect]
+[Blocker(a=0, r=255,g=255, b=255,  fadetime=0.7, block=true)]
+[PlaySound(key="$d_avg_dimnlspamb", volume=0, loop=true, channel="di")]
+[SoundVolume(volume=0.5, channel="di",fadetime=2)]
+[Delay(time=0.5)]
+[name="戰爭術師"]——！
+[Dialog]
+[playsound(key="$d_avg_tirelightwave")]
+[playsound(key="$d_avg_tirelightwave",channel="a",delay=0.4)]
+[playsound(key="$d_avg_tirelightwave",channel="b",volume=1,delay=0.8)]
+[playsound(key="$d_avg_beamamb",volume=0.5,delay=0.5)]
+[CameraShake(duration=1.5,xstrength=20,ystrength=20,vibrato=30,randomness=90,fadeout=true,block=false)]
+[delay(time=1)]
+幾乎是同一時間，無數暴戾的能量衝擊從戰爭術師周身迸發，充斥了整個被暫時噤聲的空間。
+所有試圖衝破咒語束縛所造成的尖銳聲響，都被消解為一片虛無。
+[Dialog]
+[charslot(slot = "m", name = "avg_4226_veen_1#11$1",focus="m")]
+[name="斯喬帕"]奧列格，立刻帶所有人離開指揮室。
+[name="斯喬帕"]我最多只能爭取兩分鐘時間——
+[charslot(slot = "m", name = "avg_npc_2237_1#1$1",focus="m")]
+[name="戰爭術師"]——如此……低劣的咒語——
+[name="戰爭術師"]無恥的戲弄！
+[PlaySound(key="$d_avg_phantommagic", volume=1)]
+[name="戰爭術師"]（古老的烏薩斯方言）“我要你痛苦，要你應行的路永無盡頭，要連水也不能替你洗清汙濁——”
+[name="戰爭術師"]（古老的烏薩斯方言）“就連死亡，也帶不給你任何安寧！”
+[Dialog]
+[charslot]
+[stopsound(channel="di", fadetime=1)]
+[PlaySound(key="$d_gen_heartbeat",channel="ht",loop=false, volume=0.8)]
+[stopsound(channel="ht",fadetime=2)]
+[Background(image="73_g13_ursuswscommandroom",screenadapt="coverall", xScale=1.02,yScale=1.02,fadetime=0.3)]
+[Delay(time=0.3)]
+[Background(image="73_g13_ursuswscommandroom",screenadapt="coverall",fadetime=1)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_4226_veen_1#5$1",focus="m")]
+[name="斯喬帕"]……
+[charslot(slot = "m", name = "avg_4226_veen_1#6$1",focus="m")]
+[name="斯喬帕"]快——
+[Dialog]
+[charslot]
+[CameraEffect(effect="Chaos",from = "chaos_none", to = "chaos_hard", fadetime =2, keep=true)]
+[Delay(time=2)]
+[Blocker(a=1, r=255,g=255, b=255,  fadetime=4, block=false)]
+[Delay(time=2)]
+副官的身影在自由民首領的眼中很快模糊成一片重疊的藍色，緊接著，是無盡的白。
+極端的疼痛從全身各處襲來，在因抵抗而徹底脫力之前，他開口了——
+[stopmusic(fadetime=2)]
+[CameraEffect(effect="Chaos", keep= false)]
+[name="斯喬帕"]……
+[PlaySound(key="$d_avg_firemagic")]
+[spellsticker(id="spell2", action="show", style="fire", x=-210, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>“火盡灰散，同歸。”</><p=2>“Огонь угас, пепел рассеян, вместе падём.”</>
+[Dialog]
+[spellstickerclear(block=false)]
+[Delay(time=1.2)]
+[bgeffect(name="$eb_blackfire_swirl",layer=1)]
+[delay(time=1)]
+[playsound(key="$d_avg_firemagic_hurry")]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[Blocker(a=0, r=255,g=255, b=255,  fadetime=2, block=true)]
+[Delay(time=1)]
+咒語的最後一個音節落下。陡然升騰的、深紫到與黑色無二的火焰，將對峙的雙方盡數吞沒。
+[Dialog]
+[Delay(time=3)]
+[PlaySound(key="$d_avg_tinnitus", volume=1)]
+[Delay(time=1.5)]
+[name="？？？"]——喂——
+[name="？？？"]喂，醒醒！斯喬帕，首領！
+[Dialog]
+[focusout(duration=0.2, type="bg", from=0, to=1, block=true)]
+[Delay(time=1)]
+[Background(image="73_g13_ursuswscommandroom",screenadapt="coverall",fadetime=2.5, block=true)]
+[Delay(time=1.5)]
+[focusout(duration=2, type="bg", from=1, to=0, block=true)]
+[Delay(time=1)]
+[PlayMusic(key="$calm_loop", volume=0.6)]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(slot = "m", name = "avg_4226_veen_1#12$3",duration=1)]
+[Delay(time=1.5)]
+[charslot(slot = "m", name = "avg_4226_veen_1#12$3",focus="m")]
+[name="斯喬帕"]……什麼……
+[name="斯喬帕"]怎麼我去見了維伊……結果你也在這裡？
+[charslot(slot = "m", name = "avg_4226_veen_1#4$3",focus="m")]
+[name="斯喬帕"]咳、咳咳！要是我誤傷了你，那其他人——
+[charslot(slot="m",name="avg_npc_2241_1#2$1",focus="m")]
+[name="奧列格"]你沒死，你也沒誤傷誰！好吧，頂多是我感覺有點幻痛，但沒事。
+[charslot(slot = "m", name = "avg_4226_veen_1#4$3",focus="m")]
+[name="斯喬帕"]……我沒死？
+[charslot(slot="m",name="avg_npc_2241_1#2$1",focus="m")]
+[name="奧列格"]你當然沒死！你嘰哩咕嚕地唸了一堆，然後整個艙室都*烏薩斯粗口*的燒起來了。
+[name="奧列格"]但那些黑色的火很快就熄滅了，那幾個戰爭術師也不見了。
+[charslot(slot = "m", name = "avg_4226_veen_1#12$3",focus="m")]
+[name="斯喬帕"]……
+[name="斯喬帕"]他們撤退了，為什麼？
+[charslot(slot="m",name="avg_npc_2241_1#2$1",focus="m")]
+[name="奧列格"]不知道，但總歸是好事吧。而且我還以為是你把他們燒死了呢。
+[charslot(slot = "m", name = "avg_4226_veen_1#12$3",focus="m")]
+[name="斯喬帕"]我做不到。
+[charslot(slot="m",name="avg_npc_2241_1#3$1",focus="m")]
+[name="奧列格"]說什麼呢。你說你去見維伊了，我看那個祖宗還不想見你呢，因為你比牠還厲害！
+[charslot(slot = "m", name = "avg_4226_veen_1#8$3",focus="m")]
+[name="斯喬帕"]……哼。
+[charslot(slot = "m", name = "avg_4226_veen_1#10$3",focus="m")]
+[name="斯喬帕"]說什麼，還能說什麼？我說快點讓所有人準備下船！
+[charslot(slot="m",name="avg_npc_2241_1#7$1",focus="m")]
+[name="奧列格"]嗯？你還是要——
+[charslot(slot = "m", name = "avg_4226_veen_1#10$3",focus="m")]
+[name="斯喬帕"]對，我還是要送給葉甫根尼一份臨別大禮。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)] 
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)] 
+[charslot]
+[Background(image="73_g11_ursuswarshipdeck_d",screenadapt="coverall", block=true)]
+[Delay(time=1.5)]
+[PlaySound(key="$d_avg_wind_howling", volume=0, loop=true, channel="sn")]
+[SoundVolume(volume=0.4, channel="sn",fadetime=3)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[playMusic(key="$ouat_loop", volume=0.6)]
+[delay(time=1)]
+最高層的甲板上，庫蘭塔望著下方有序的隊列，若有所思地沉默著。
+峽谷風冷冽地吹來，吹起地上連日來疏於打理所留的塵灰，也吹起守望者飄遠的思緒。
+[StopSound(channel="sn", fadetime=2)]
+[charslot(slot = "l", name = "avg_4226_veen_1#3$3",focus="l")]
+[charslot(slot = "r", name = "avg_npc_2241_1#2$1",focus="l")]
+[name="斯喬帕"]……
+[charslot(slot="r",name="avg_npc_2241_1#2$1",focus="r")]
+[name="奧列格"]真的決定了？現在叫大家回來還來得及。
+[charslot(slot = "l", name = "avg_4226_veen_1#1$3",focus="l")]
+[name="斯喬帕"]我一定得讓那個傢伙吃點教訓，讓他再也不能瞧不起我們。
+[name="斯喬帕"]等事情都結束了，我會去找你們。
+[charslot(slot="r",name="avg_npc_2241_1#3$1",focus="r")]
+[name="奧列格"]哼，事情結束……我們這些人的事情，真的有結束的那天嗎？
+[charslot(slot = "l", name = "avg_4226_veen_1#2$3",focus="l")]
+[name="斯喬帕"]會有的，一定會。
+[name="斯喬帕"]就算是那些幾百年來都沒有說法的事，也終究會有說法的。
+[Dialog]
+[charslot(duration=1)]
+[delay(time=1.5)]
+夕陽斜照，更多戰士繞路走來，只為向站在甲板上的人打聲招呼。
+幾乎每個人在離開“利沃諾夫號”時都會來找他們的首領告別，彷彿這只是一次夏休，他們只是短暫地回到家鄉——
+回到田地裡、山林間，回到飄蕩著蘆葦的小河旁。
+[Dialog]
+[image(image="73_i18",screenadapt="coverall",xScale=1.2,yScale=1.2,fadetime=3)]
+[ImageTween(xScaleTo=1, yScaleTo=1, duration=30, block=false)]
+[delay(time=4)]
+[name="熱情的士兵"]老大，你要去見誰？就連我們也不能帶著去？巨人、老祖母，還是維伊？
+[name="熱情的士兵"]不管你去見誰，我都唱首歌給你再走吧！唱首上次奧列格說，你們從沒唱完過的歌——
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="<i>小路的盡頭躺著維伊，不是皇帝，也不是神明♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>只是怪物，身軀沉重，連眼皮都需要別人來替牠抬起♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>沒有人向牠祈禱，走到牠面前的人都知道這樣沒有意義♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>他們只是把自己放下，像是卸下一副再也不會穿回去的盔甲♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>當維伊睜眼，牠不會看你♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>牠看到的只是——♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>你給出的東西曾怎樣塑造了你♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+[image(fadetime=2.5)]
+[gridbg(imagegroup="47_g15_eveningglow_L1/47_g15_eveningglow_R1/47_g15_eveningglow_L2/47_g15_eveningglow_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-640,y=360,fadetime=1)]
+[largebgtween(duration =60,xFrom =-640, xTo = -380,block = false)]
+[Delay(time=3)]
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="<i>有時是戰爭，有時是跨越了數個時代的仇恨♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>有時又只是一片轟毀在天災中的草原♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>那些在夢中也不曾停歇的哭喊聲♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>而當牠的目光再度垂下♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>你便知道有些事實，已經悄然改變♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>乾涸後重新漲水的河床♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>死去後重回故鄉的孩子♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>一切的一切，不可能的事♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+[image(image="73_i18",screenadapt="coverall",fadetime=2.5,block=true)]
+[gridbg]
+[delay(time=1)]
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[Subtitle(text="<i>因此我們不為走向維伊的人歌唱♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>也不為他留下碑銘♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[Subtitle(text="<i>我們只是把酒倒在地上，然後低聲說♪</i>", x=300, y=370, alignment="center", size=24, delay=0.04, width=700)]
+[subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=0.5)]
+[name="熱情的士兵"]他替我們走到了不能再走的地方♪
+[name="奧列格"]到第二天，太陽升起♪
+[name="熱情的士兵"]我們仍然前進、拔刀、殺伐♪
+[name="奧列格"]仍然流血、倒地、掩埋♪
+[name="熱情的士兵"]仍然，被歷史一次次推回自己的刀刃上！
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[image]
+[Background(image="73_g17_exurbforest_in",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[playMusic(key="$m_sys_act15main_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[dialog]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_only_heavy", pos = "-400,-200", block = false)]<p=1>澤爾格勒拓展地塊，樹林中</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+等羅德島一行人，外加一座聒噪的“小房子”，終於按照克利姆手繪地圖的路線離開地下。
+抵達一片僻靜的裝飾林中時，天色已完全亮了。
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="m")]
+[name="聒噪的“小房子”"]……總之，我也不知道自己怎麼就出現在那裡了。
+[name="聒噪的“小房子”"]既然你們說現在早就已經不是我所知道的那個時代，那我想必也沒地方可以去了，又或者說，是想去哪裡都可以了。
+[name="聒噪的“小房子”"]喂，可露希爾，把你那個什麼“鏡子”再給我看一下，讓我熟悉一下現在這個身體——
+[charslot(slot="m",name="avg_4228_closur_1#13$1",focus="m")]
+[name="可露希爾"]你說你被埋在石棺附近，而這副石棺的發掘現場附近曾有一片源石礦場，這也是切城後來在烏薩斯荒涼的東部得以快速發展的原因之一。
+[charslot(slot="m",name="avg_4228_closur_1#11$1",focus="m")]
+[name="可露希爾"]……
+[name="可露希爾"]遺體、源石礦場、從前的石棺……“小房子”，不小心被我弄撒了一點的“空白源石”，和現在被拆分了功能的“原型”——
+[charslot(slot="m",name="avg_4228_closur_1#7$1",focus="m")]
+[name="可露希爾"]……我明白了。我明白了！
+[multiline(name="可露希爾")]也許可以試試看——
+[charslot(slot="m",name="avg_4228_closur_1#12$1",focus="m")]
+[multiline(name="可露希爾")]不，我必須得試試看。
+[Dialog]
+[PlaySound(key="$d_avg_cloakmovement", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4179_monstr_1#5$1",focus="m")]
+[name="Mon3tr"]可露希爾？
+[Dialog]
+[charslot]
+可露希爾停下來，莫名其妙從口袋裡“變”出一台摺疊顯示器展開，接下來又拿出更多往常只在工程部辦公室裡出現過的古怪東西。
+她一屁股坐在地上，“小房子”也好奇地跳過去，在她身邊探看。
+[Dialog]
+[charslot(slot="m",name="avg_npc_2244_1#1$1",focus="m")]
+[name="聒噪的“小房子”"]你知道什麼了？如果是關於凱爾希的，那我什麼都還沒說呢。
+[name="聒噪的“小房子”"]當然，我知道她死了。我早就知道遲早會有這一天，就算是她這樣的傢伙也不例外。但你到底知道什麼了？
+[charslot(slot="m",name="avg_1037_amiya3_1#13$1",focus="m")]
+[name="阿米婭"]可露希爾小姐，你是不是知道之前那些實驗缺少的關鍵是什麼了？
+[charslot(slot="m",name="avg_4228_closur_1#14$1",focus="m")]
+[name="可露希爾"]沒錯，我也知道該怎麼帶她回來了。
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="可露希爾"]石棺作為能源來源和創生艙、凱爾希的原始資料形成記憶、空白源石“奧卡”作為構形基底……再加上我們剛才找到的底層代碼。
+[charslot(slot="m",name="avg_4228_closur_1#10$1",focus="m")]
+[name="可露希爾"]我一直在把復生實驗當作某種生物學上的課題來對待，卻沒有意識到生命其實類似一個長期運作的程式，不是一段靜態代碼。
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="可露希爾"]也許凱爾希之所以獨特，是因為屬於她的那條最初的自修改指令，並沒有像被設計的那樣只改變結構，而是建立了一個自我呼叫的迴圈。
+[Dialog]
+[charslot]
+[Decision(options="在那個充斥著資訊流的空間裡，我看到了一些東西。", values="1")]
+[Predicate(references="1")]
+[Decision(options="如果按照你的比喻——;凱爾希，是自己選擇了維持這個“迴圈”。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="可露希爾"]……而如果，她從建立起迴圈的那一刻起，就不再只是作為被執行的程式，而是開始自行呼叫更新，並持續迭代。
+[charslot(slot="m",name="avg_4228_closur_1#10$1",focus="m")]
+[name="可露希爾"]那麼，那條最初的自修改指令，就可以說是她一開始的“意識”。
+[charslot(slot="m",name="avg_4228_closur_1#1$1",focus="m")]
+[name="可露希爾"]雖然我是不懂“死魂靈”那些東西……但如果說，有什麼東西，是刻在了她的靈魂最深處，或者代表著她身為人的意志本身的話——
+[charslot(slot="m",name="avg_4228_closur_1#14$1",focus="m")]
+[name="可露希爾"]那一定就是那條最初的自修改指令了。
+[Dialog]
+[charslot]
+[Decision(options="……;……", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="我明白了。", values="1")]
+[Predicate(references="1")]
+[Decision(options="開始吧，可露希爾。", values="1")]
+[Predicate(references="1")]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g17_exurbforest_in",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+可露希爾拿出從石棺中拆出的儲能塊，和硬碟、散熱片組裝在一起。
+許多黑色的線纜從臨時組裝的機箱上延伸出去，連接到用玻璃小屋充當的固定架上。
+代表了底層代碼的“方解石”不能從轉儲盒中取出，直接被架在空地的中央。
+奧卡則裝在透明的玻璃管中，相比出發時少了一些。
+便攜創生艙展開，在空地中鋪設出一個模擬石棺資料環境的地界，看起來是一片純白的“水池”。
+一切準備就緒，可露希爾開啟電源，等待螢幕亮起。
+[Dialog]
+[charslot(slot="m",name="avg_4228_closur_1#12$1",focus="m")]
+[name="可露希爾"]……
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_systemstart",volume=1)]
+[Blocker(a=0.4, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+[Sticker(id="st1", multi = true, text="System booting...", x=180,y=170, alignment="left", size=24, delay=0.1, width=700,block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$d_avg_keyboard_console", volume=0.7, loop=true, channel="key")]
+[StopSound(channel="key", fadetime=2)]
+[Delay(time=1.5)]
+她目不轉睛地敲出剩下的命令，一刻也沒有停下來。
+對於這場實驗而言，一切必須是迅速而連續的。
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_mechalock", volume=1)]
+[Sticker(id="st1", multi = true, text="生物模型構建-------------------100%", x=180,y=170, alignment="left", size=24, delay=0.07, width=700,block = true)]
+[Sticker(id="st1", multi = true, text="\n\n生理機能模擬-------------------100%",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n……",block = true)]
+[Sticker(id="st1", multi = true, text="\n\n神經元數據上傳----------------100%",block = true)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=0.5)]
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_4228_closur_1#7$1",focus="m")]
+[name="可露希爾"]——！
+[charslot(slot="m",name="avg_4179_monstr_1#8$1",focus="m")]
+[name="Mon3tr"]這是不是……
+[charslot(slot="m",name="avg_1037_amiya3_1#5$1",focus="m")]
+[name="阿米婭"]……
+[Dialog]
+[charslot]
+在螢幕上最終躍出那行之前從未出現的提示時，所有人都下意識屏住了呼吸。
+[Dialog]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_electronicbuzz")]
+[Sticker(id="st1",  multi = true, text="Initiate life-phase transition？", x=300, y=340, alignment="center", size=28, delay=0, duration=1.5, width=700)]
+[Sticker(id="st1")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+幾雙熱切的眼睛，注視著可露希爾。
+她按下確定。
+[Dialog]
+[PlaySound(key="$d_avg_keyboard_confirm")]
+[delay(time=1.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[delay(time=1)]
+[skipnode(mode="nofirstskip")]
+[Dialog(fadetime=0)]
+[charslot(duration=0)]
+[stopmusic(fadetime=0)]
+[image(fadetime=0)]
+[bgeffect(fadetime=0)]
+[StopSound(channel="foot", fadetime=0)]
+[StopSound(channel="a", fadetime=0)]
+[stopsound(channel="di", fadetime=0)]
+[stopsound(channel="ht",fadetime=0)]
+[StopSound(channel="sn", fadetime=0)]
+[StopSound(channel="key", fadetime=0)]
+[stopsound(channel="inf", fadetime=0)]
+[stopsound(channel="er", fadetime=0)]
+[StopSound(channel="ma", fadetime=0)]
+[stopsound(channel="inf1", fadetime=0)]
+[StopSound(channel="o", fadetime=0)]
+[StopSound(channel="er1", fadetime=0)]
+[stickerclear]
+[animtextclean]
+[spellstickerclear(block=false)]
+[interlude(channel = 3,clear = true,fadetime=0)]
+[interlude(channel = 4,clear = true,fadetime=0)]
+[subtitle(fadetime=0)]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[interlude(channel = 2,clear = true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[Dialog]
+[Character]
+[theater(mode=true)]
+[Video(res="video/03.mp4")]
+[Dialog]
+[theater(mode=false)]
+[skipnode(mode="skip")]
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="bg_black", screenadapt="coverall", block=true)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+歡迎回來。
+凱爾希。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[image]

@@ -1,0 +1,1070 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[gridbg(imagegroup="47_g14_skyovercast_L1/47_g14_skyovercast_R1/47_g14_skyovercast_L2/47_g14_skyovercast_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-640,fadetime=1)]
+[largebgtween(duration = 60,yFrom = 360, yTo = 720,block = false)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[playMusic(key="$m_avg_ursusdaily_loop", volume=0.6)]
+[delay(time=0.5)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0, block=true)]
+[Subtitle(text="“很遺憾我們不能給出無期限的擔保，但適當給出一些提醒，卻是可以做到的。”", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle(text="“聖駿堡與各個集團軍的關係，就好比一雙手，與數雙不同的手套。”", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle(text="“第一集團軍是那雙用最多也最精良的馱獸毛製作，卻也因此被限制了尺碼的備用品。它從不合手，也無人對它投以這樣的期待。”", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle(text="“這代表著，任何人在嘗試將它套上時，都需要掌握恰到好處的方法，和容忍一些必要的痛苦。”", x=300, y=330, alignment="center", size=25, delay=0.04, width=700)]
+[Subtitle]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[gridbg]
+[Dialog]
+[charslot]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>澤爾格勒接駁區，林中</><p=2>1102年1月20日 12:08</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_1037_amiya3_1#1$1",afrom=0, ato=1,duration=1.5)]
+[charslot(slot="r",name="avg_4179_monstr_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_1037_amiya3_1#1$1",focus="l")]
+[name="阿米婭"]接駁區……那前面應該就是澤爾格勒的城區了。
+[name="阿米婭"]根據這張地圖上的指引，持有官方通行文書的隊伍應該走快速通道。我們的文書有時效限制，必須儘快進城。
+[charslot(slot="r",name="avg_4179_monstr_1#1$1",focus="r")]
+[name="Mon3tr"]前面有不同的隊列，但我沒看到寫著快速通道的。
+[Dialog]
+[charslot(slot="l",name="avg_1037_amiya3_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_4179_monstr_1#1$1",focus="n")]
+[Decision(options="而且按理來說，到接駁區之後，應該會有人接應。", values="1")]
+[Predicate(references="1")]
+[charslot(slot="l",name="avg_1037_amiya3_1#7$1",focus="l")]
+[name="阿米婭"]我們在這裡稍微等等，說不定等一下就——
+[charslot(slot="r",name="avg_4179_monstr_1#10$1",focus="r")]
+[name="Mon3tr"]我去抓個人問問。
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1,channel="1")]
+[charslot(slot="r",afrom=1, ato=0,duration=1.5,focus="r")]
+[stopsound(channel="1",fadetime=1.5)]
+[delay(time=2)]
+[charslot(slot="l",name="avg_1037_amiya3_1#5$1",focus="l")]
+[name="阿米婭"]Mon3tr小姐！
+[charslot]
+[Dialog]
+[Decision(options="讓她去吧。;她有分寸的。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#2$1",focus="m")]
+[name="阿米婭"]我擔心，萬一她被認為是感染者，受到了攻擊——
+[charslot(slot="m",name="avg_npc_1730_1#3$1",focus="m")]
+[name="Raidian"]這裡的兵力布置與我所知的保密行政區規格一致，第一集團軍不會容忍這樣的騷亂發生，尤其是在他們已經宣稱接納感染者的當下。
+[charslot(slot="m",name="avg_npc_1730_1#2$1",focus="m")]
+[name="Raidian"]不過，附近的電訊號的確讓人感覺有些焦慮……
+[charslot(slot="m",name="avg_4228_closur_1#14$1",focus="m")]
+[name="可露希爾"]嗯？那我讓無人機飛出去看看？
+[charslot]
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1,channel="2")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1",afrom=0, ato=1,duration=1.5)]
+[stopsound(channel="2",fadetime=1.5)]
+[delay(time=1.5)]
+[name="Mon3tr"]我問到了！
+[charslot(slot="m",name="avg_4179_monstr_1#4$1",focus="m")]
+[name="Mon3tr"]快速通道暫停使用了，說是幾個小時前有人為躲避審查，試圖利用快速通道偷溜進城。
+[charslot(slot="m",name="avg_4179_monstr_1#2$1",focus="m")]
+[name="Mon3tr"]常規通道倒是沒有停止使用，不過放人的速度算不上快。
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="m")]
+[name="阿米婭"]……看來我們的運氣不太好。
+[Dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="n")]
+[Decision(options="阿米婭，我們最晚應該在什麼時候入城？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="阿米婭"]今天晚上六點之前。接駁區和城區出入口之間還有一段距離，即使乘坐接駁車，也至少要花費四個小時。
+[name="阿米婭"]我們沒有太多時間在這裡逗留，如果按照現在的速度慢慢排隊進去，恐怕趕不上通關文書的最後時效。
+[charslot(slot="m",name="avg_4228_closur_1#4$1",focus="m")]
+[name="可露希爾"]我們就不能找個看起來好說話一點的人，把文書遞過去讓他給開個後門？
+[charslot(slot="m",name="avg_npc_1730_1#3$1",focus="m")]
+[multiline(name="Raidian")]烏薩斯的軍人可不會因為看起來好說話就對你網開一面。
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[multiline(name="Raidian")]不過與他們打交道也有一套章法。
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="Raidian"]博士。
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="要我配合你嗎？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_npc_1730_1#8$1",focus="m")]
+[name="Raidian"]很簡單，等一下博士只需要在必要的時候裝作很深沉的樣子，點點頭就好啦。
+[charslot]
+說話間，她背後的機械臂開始動作起來。幅度並不算大，只是能讓靠近的人看到，她有所行動。
+緊接著，周圍所有衛兵的通訊裝置裡都發出了一聲統一的尖嘯。
+很快，一個軍官模樣的人就開始往羅德島眾人的方向大步走來。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[name="冷漠的軍人"]你們！什麼人？就是你的源石技藝在破壞通訊？
+[charslot(slot="m",name="avg_npc_1730_1#5$1",focus="m")]
+[name="Raidian"]哦，你們終於願意過來了。我還以為澤爾格勒已經沒有在認真執勤的士兵了。
+[charslot(slot="m",name="avg_npc_1730_1#5$1",focus="m")]
+[name="Raidian"]我們是一支從事醫藥研發的科研團隊，從聖駿堡來，代表議會前往澤爾格勒視察保密計劃進度。這裡有陛下蓋章的通關文書。
+[charslot(slot="m",name="avg_npc_1730_1#6$1",focus="m")]
+[name="Raidian"]我身邊這位，就是陛下親自特聘的技術顧問，而你們竟敢如此怠慢！
+[Dialog]
+[charslot(slot="m",focus="n")]
+[Decision(options="（深沉地點點頭）;（傲慢地點點頭）", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷漠的軍人"]您……看起來不像是烏薩斯人。
+[charslot(slot="m",name="avg_npc_1730_1#6$1",focus="m")]
+[name="Raidian"]夠了，我們是因為遲遲沒有等到本該前來接應的人，才在這裡逗留，結果成了你們眼中的可疑人士？
+[name="Raidian"]這就是你們第一集團軍的處事方式？很好，我們會如實寫在呈給陛下的報告中的。
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷漠的軍人"]抱歉，請等一下，我們沒有收到通知——
+[charslot]
+[Dialog]
+[stopmusic(fadetime=1)]
+[PlaySound(key="$rungeneral", volume=1,channel="4")]
+[stopsound(channel="4",fadetime=1)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",bstart=0.2,bend=0.7,afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",bstart=0.2,bend=0.7,focus="m")]
+[name="？？？"]不要進來！
+[charslot(slot="m",name="avg_npc_1730_1#9$1",focus="m")]
+[name="Raidian"]——？！
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",bstart=0.2,bend=0.7,focus="m")]
+[name="？？？"]不要進入澤爾格勒！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$plot_intro", key="$plot_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1969_1#1$1",posfrom="0,0", posto="-100,0",duration=0)]
+[charslot(slot="r",name="avg_npc_1971_1#1$1",posfrom="0,0", posto="100,0",duration=0)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[delay(time=1)]
+[charslot]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="焦急的礦工"]還有好長的隊伍……
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="r")]
+[name="沉穩的青年"]隊列一直在變長，看來有很多人都聽到了澤爾格勒接納感染者的消息。
+[charslot(slot="r",name="avg_npc_2225_1#3$1",focus="r")]
+[name="沉穩的青年"]別擔心。
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[name="焦急的礦工"]我不是在擔心這——
+[charslot]
+[Dialog]
+[delay(time=1)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.4,channel="out1")]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="焦急的礦工"]等等，後面有動靜。
+[name="焦急的礦工"]那個人穿得好奇怪……
+[name="焦急的礦工"]不對。應該說，那真的是個人嗎？
+[Dialog]
+[stopsound(channel="out1",fadetime=0.5)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.7,channel="out2")]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+裝扮怪異的人形直接朝著站在隊伍末尾的一行人衝去，相鄰的隊列也很快被突如其來的動作打散。
+一時間，無數惶惑的目光都投向同一個地點。
+[stopsound(channel="out2",fadetime=0.5)]
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="？？？"]聽我的，不要進入澤爾格勒！
+[name="？？？"]有奇怪的東西，從沒見過的粉塵，人沾上之後會感染——
+[charslot(slot="m",name="avg_1037_amiya3_1#5$1",focus="m")]
+[name="阿米婭"]粉塵……？
+[charslot]
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1,channel="3")]
+[charslot(slot="m",name="avg_npc_082",afrom=0, ato=1,duration=1.5)]
+[stopsound(channel="3",fadetime=1.5)]
+[delay(time=1.5)]
+[name="慌亂的警衛"]——該死！快點給我閉嘴！
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="？？？"]現在這裡不安全，不要進來！不要進來！！
+[name="？？？"]快走——
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷漠的軍人"]……又是你……
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="慌亂的警衛"]抱歉，格列沙中尉！是我們沒注意，一不小心讓她混上了轉運車——
+[name="慌亂的警衛"]我們這就把這傢伙帶走！
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷漠的軍人"]快點。
+[charslot(slot="m",name="avg_4225_tanya_1#1$2",focus="m")]
+[name="？？？"]沒時間了，記住我說的——
+[name="？？？"]不要進來！
+[Dialog]
+[charslot(slot="r",name="avg_npc_082",afrom=0, ato=1,posfrom="120,0", posto="70,0",duration=1)]
+[delay(time=1)]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="r",afrom=1, ato=0,posfrom="70,0", posto="150,0",duration=1)]
+[charslot(slot="m",afrom=1, ato=0,posfrom="0,0", posto="80,0",duration=1)]
+[delay(time=1.5)]
+[charslot]
+[name="眾人"]……
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷漠的軍人"]都散了，在三十秒內回到自己的隊列裡去，否則就到隊尾重排！
+[charslot]
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_npc_1969_1#1$1",posfrom="0,0", posto="-100,0",duration=0)]
+[charslot(slot="r",name="avg_npc_1971_1#1$1",posfrom="0,0", posto="100,0",duration=0)]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",duration=0,afrom=1, ato=0,duration=1)]
+[charslot(slot="m",duration=0,afrom=1, ato=0,duration=1.5)]
+[charslot(slot="r",duration=0,afrom=1, ato=0,duration=1.8)]
+[delay(time=2)]
+[charslot]
+[playMusic(key="$m_avg_ursusdaily_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1730_1#4$1",focus="m")]
+[name="Raidian"]我必須得問，這是……？
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷漠的軍人"]那就是個瘋子，不用在意。
+[charslot(slot="m",name="avg_npc_1730_1#4$1",focus="m")]
+[name="Raidian"]她會被帶去哪裡？
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷漠的軍人"]沒人保釋的話，至少得在拘留所裡待上好幾天。
+[charslot(slot="m",name="avg_npc_1730_1#2$1",focus="m")]
+[name="Raidian"]聽起來這種事已經不是第一次發生了。
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷漠的軍人"]這很重要？
+[charslot(slot="m",name="avg_npc_1730_1#5$1",focus="m")]
+[name="Raidian"]這很重要。
+[name="Raidian"]不如說，正因為澤爾格勒連那樣的瘋子也能容忍，才更使這裡稱得上是“明日之城”，不是嗎？
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷漠的軍人"]……
+[charslot]
+面容冷峻的士兵沒有說話。他盯著Raidian的面孔，對她的話不置可否，似乎試圖以此施壓。
+但Raidian察覺到了他身上電訊號不尋常的顫動。
+她微笑起來。
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="Raidian"]不過，這看起來的確還是有些令人擔心啊，先生。
+[name="Raidian"]我們需要進入澤爾格勒，才能親眼證實這些擔憂只是多餘，這裡實際上一切如常。
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷漠的軍人"]……我必須先驗證你們所有人的身分和文書的真實性。
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="Raidian"]當然沒問題。只是儘快，好嗎？
+[charslot(slot="m",name="avg_npc_1730_1#1$1",focus="m")]
+[name="Raidian"]畢竟從根本上說，我們是因為澤爾格勒方面的疏漏，才被耽誤了入城的時間。
+[charslot]
+[Dialog]
+[PlaySound(key="$d_avg_paper1",volume=1)]
+[delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[PlaySound(key="$d_avg_paper1",volume=1)]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷漠的軍人"]……久等了。身分和文書都沒有問題。
+[name="冷漠的軍人"]再確認一下資訊。公司名稱和來訪人數？
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]羅德島製藥，五人。
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷漠的軍人"]來訪目的？
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]受到議會派遣，為“零號計劃”的研究提供幫助。
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷漠的軍人"]確認無誤。
+[name="冷漠的軍人"]跟我來。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_npc_2225_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="不耐煩的衛兵"]我說了，把拖車上的東西全都取下來檢查。
+[name="不耐煩的衛兵"]我不想再重複第二遍，除非你也是想直接偷渡進去。
+[charslot(slot="l",name="avg_npc_2225_1#10$1",focus="l")]
+[name="沉穩的青年"]也……？
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[name="沉穩的青年"]當然不是的，先生。我也不想耽誤大家的時間，但請您聽我說——
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_1037_amiya3_1#5$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1976_1#1$1",focus="n")]
+[name="阿米婭"]那邊是……？
+[charslot(slot="r",name="avg_npc_1976_1#1$1",focus="r")]
+[name="冷漠的軍人"]供感染者使用的一般通道。
+[charslot(slot="l",name="avg_1037_amiya3_1#7$1",focus="l")]
+[name="阿米婭"]排了好多人。現在是冬天，他們就這樣一直站在外面排隊等候嗎？但是明明快速通道這邊一個人也沒有。
+[charslot(slot="r",name="avg_npc_1976_1#1$1",focus="r")]
+[name="冷漠的軍人"]規則就是這樣。
+[name="冷漠的軍人"]在正式通知下發之前，原本連快速通道都會繼續保持關閉。
+[name="冷漠的軍人"]第一集團軍已經為你們破例。
+[charslot(slot="l",name="avg_1037_amiya3_1#3$1",focus="l")]
+[name="阿米婭"]感謝你們的幫助，先生，但我想說的是……
+[charslot]
+[name="爭執的聲音"]不想……別再……廢話——
+[name="爭執的聲音"]——帶著——
+[name="爭執的聲音"]進澤爾格勒！！
+不遠處的另一入口，全副武裝的衛兵們正推擠著一個矮小的感染者，還伴隨著逐漸大聲的叫罵。
+被欺凌者似乎並沒有感到害怕，只是順從地後退了幾步，背脊仍然挺得筆直。
+那人身旁，是一些明顯有著勞動者面貌的群眾。有的像礦工，有的像建築工人……
+他們都圍在那個感染者的身邊，站立的姿勢呈現明顯的保護狀態。
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="m")]
+[name="阿米婭"]……
+[charslot(slot="m",name="avg_4179_monstr_1#8$1",focus="m")]
+[name="Mon3tr"]阿米婭？
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="冷漠的軍人"]再拖下去，你們就要趕不上文書擔保的最後期限了。
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="阿米婭"]抱歉，先生。我必須得先——
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="73_g15_exurbforest",screenadapt="coverall")]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_2225_1#9$1")]
+[charslot(slot="r",name="avg_npc_082")]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[charslot(slot="r",name="avg_npc_082",focus="n")]
+[name="沉穩的青年"]……我們按照規則排隊，已經在這裡等待了三天。等待的過程中你們的巡邏隊員已經檢查過拖車，為什麼必須還要再來一遍？
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[name="沉穩的青年"]究竟為什麼？難道為了進入澤爾格勒，我們就連這最後一點賴以為生的物資都不能保留嗎？
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="不耐煩的衛兵"]我說了，澤爾格勒不會缺你們的吃穿！沒有人可以擅自帶這麼多物資進去！
+[charslot(slot="l",name="avg_npc_2225_1#9$1",focus="l")]
+[name="沉穩的青年"]就算是這樣，你也不能搶走我們僅剩的財物。
+[charslot(slot="r",name="avg_npc_082",focus="r")]
+[name="不耐煩的衛兵"]嘖，你這傢伙怎麼聽不懂人話——
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[name="阿米婭"]抱歉，但我必須打斷一下……
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="不耐煩的衛兵"]到後面去排隊！
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="阿米婭"]我是從快速通道那邊過來的。
+[Dialog]
+[charslot]
+衛兵聞言，往快速通道的方向看了一眼。孤零零的隊列入口，只零星站著幾個人，都望著自己的方向。
+從站立的軍官身上收回視線之後，他看向女孩的眼神多了幾分探究。
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="不耐煩的衛兵"]（低聲）什麼快速通道，今天不是都關了嗎，難道還是個大人物……
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="阿米婭"]可以告訴我你們爭執的原因嗎？
+[charslot(slot="m",name="avg_npc_2225_1#9$1",focus="m")]
+[name="沉穩的青年"]這位老爺執意要扣留我們帶來的生活物資，我們不同意的話就不能進入澤爾格勒。
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="不耐煩的衛兵"]這是規矩！
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="阿米婭"]我能問問，這輛車裝著的是什麼東西嗎？
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="沉穩的青年"]只是一些麥子，還有磨好的麵粉，都是我們還在礦場工作時，好不容易存下來的。
+[charslot]
+青年說著，將蓋在拖車上的布掀開了一角，展示給阿米婭看。
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="m")]
+[name="阿米婭"]（明明似乎只是一些糧食，從他們身上也感受不到敵意。）
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="阿米婭"]（可是這些麻袋的形狀……裡面還藏了什麼？）
+[charslot]
+阿米婭有些好奇地看向青年，迎上了青年直率的目光。
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="阿米婭"]……
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="阿米婭"]這位先生，這是我的通行證。我願意為這些人擔保。
+[name="阿米婭"]我不知道進入澤爾格勒還有什麼“特殊的規矩”，他們帶著的不過只是一些麥子，不值錢，也不會傷害到任何人。
+[charslot(slot="m",name="avg_1037_amiya3_1#16$1",focus="m")]
+[name="阿米婭"]他們從礦場來到這裡，一路上應該已經吃了很多苦。您應該也不會介意，這些勞苦的人多吃上幾頓飽飯對嗎？
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="不耐煩的衛兵"]……嘖。
+[name="不耐煩的衛兵"]算了，最後再讓我檢查一次，就放你們過去吧。
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="阿米婭"]當然，但是請您小心點，不要弄破這些袋子好嗎？
+[charslot(slot="m",name="avg_npc_082",focus="m")]
+[name="不耐煩的衛兵"]真夠麻煩……好了，趕快帶著你們這堆東西過去吧，別擋道，也別讓我看到你們惹什麼事！
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="沉穩的青年"]謝謝您。
+[charslot(slot="m",name="avg_npc_2225_1#3$1",focus="m")]
+[name="沉穩的青年"]好心的女士，也謝謝您。我還沒問過您的名字——
+[charslot(slot="m",name="avg_1037_amiya3_1#12$1",focus="m")]
+[name="阿米婭"]不客氣！
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#12$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+等沉穩的青年抬起頭，卡特斯已經向自己原本的隊列走去。留在小個子眼中的，只有一個背影。
+緊接著，隊伍重新開始流動。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_driveincar",loop=true,channel="car",volume=0.5)]
+[delay(time=2)]
+[name="播報聲"]“穿過隧道，即將出現在我們眼前的，就是澤爾格勒主城區。”
+[name="播報聲"]“環城植被綠意蔥蘢，高樓建築錯落有致，一半自然，一半未來。”
+[name="播報聲"]“在這裡，任何人只要勤勞工作，就能靠自己的雙手，得到應有的尊重，創造美好的生活。”
+[name="播報聲"]“這是機遇之城，也是明日之城。”
+[Dialog]
+[Background(image="73_g1_exurbstreet_d",screenadapt="coverall")]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.2,block=false)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.2,block=true)]
+[StopSound(channel="car",fadetime=1.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[Blocker(a=0.6, r=0, g=0, b=0, fadetime=0, block=true)]
+[Subtitle(text="“……歡迎回家，各位澤爾格勒的新市民。”", x=300, y=350, alignment="center", size=25, delay=0.04, width=700)]
+[delay(time=1)]
+[Subtitle]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[curtain(direction = 4,fillfrom = 0.2,fillto = 0.01,block=false,fadetime=1.5)]
+[curtain(direction = 0,fillfrom = 0.2,fillto = 0.01,block=true,fadetime=1.5)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>澤爾格勒主城區，街上</><p=2>1102年1月20日 16:32</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+[PlayMusic(key="$darkness_03_loop", volume=0.6)]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="焦急的礦工"]老師，你快看！那些房子後面，是什麼？
+[charslot(slot="r",name="avg_npc_2225_1#10$1",focus="r")]
+[name="沉穩的青年"]像是山一樣的特殊地形，還是……牆？
+[charslot]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="認真的衛兵"]這一批都在這裡了？
+[name="認真的衛兵"]好。接下來，你們都跟我走。
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="焦急的礦工"]……你要帶我們去哪裡？按照一路上那些宣傳語的說法，接下來我們難道不是必須靠自己的雙手——
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="認真的衛兵"]“創造生活”，對。但你們必須先有個落腳的地方，然後才會把你們安排在鄰近的工廠或園區工作。
+[name="認真的衛兵"]慶幸吧，澤爾格勒市政廳還會為通過資格審查的對象提供相應的住所。
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="焦急的礦工"]……還有這種事？我從來都沒有聽說過……
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="認真的衛兵"]這是澤爾格勒獨有的政策。我們低價為合法居民提供統一住所，使工人們的生活、工作、娛樂效率都得到最大化。
+[name="認真的衛兵"]由此，來到這裡的人才不會再選擇離開，而是會世世代代都建設這裡，生活在這裡。
+[name="認真的衛兵"]以前這樣的待遇只針對那些最辛勤或最有創造力的勞動者，現在，則對所有通過審查的人開放，包括感染者。
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="沉穩的青年"]難怪我們沒能得到太多從澤爾格勒城內傳出的消息。
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="認真的衛兵"]我知道外面有很多傳言，但到底是不是真的，你們可以自己去看。
+[name="認真的衛兵"]然後你們就會知道，那些宣講詞絕非誇大。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="l",name="avg_npc_1970_1#1$1")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1")]
+[delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",afrom=1, ato=0,duration=1.5)]
+[charslot(slot="r",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_1502_crosly_1#2$1",bstart=0.2,bend=0.5,afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[name="？？？"]……
+[charslot(slot="m",name="avg_1502_crosly_1#1$1",bstart=0.2,bend=0.5,focus="m")]
+[name="？？？"]又來了一批感染者。
+[name="？？？"]他們的速度加快了。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="73_g3_exurbroom",screenadapt="coverall")]
+[Delay(time=2)]
+[PlayMusic(intro="$ponder_intro", key="$ponder_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+至少在住所這點上，那些描述的確沒有誇大。
+翻倒的空瘤奶盒、沒有帶走的鍋碗瓢盆、尚且蔥鬱的綠植、木地板上發灰的地毯……
+一切都證實著的確有人曾在這裡生活。
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="焦急的礦工"]竟然……
+[name="焦急的礦工"]（這裡怎麼比我原來在切爾諾伯格當家教時的住處還好啊！）
+[charslot(slot="r",name="avg_npc_2225_1#4$1",focus="r")]
+[name="沉穩的青年"]（低聲）但一層樓，至少塞進了八到十戶人家。
+[name="沉穩的青年"]（低聲）這代表嚴重的消防安全隱患。
+[charslot]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="認真的衛兵"]這裡。這種是家庭房，有兩間臥室，廚房也稍微大一點。剛搬走的那一家去了城東的新園區，所以有很多東西都還留在這裡。
+[name="認真的衛兵"]不過你們可以直接繼續用，他們應該都已經自己添購了新東西，用不到了。
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="沉穩的青年"]那沒有組成家庭的人呢？
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="認真的衛兵"]目前只有家庭房空出來的比較多，你們可以兩三個人合住在一起，到時候去一樓登記就可以。
+[name="認真的衛兵"]按照你們這批的人數來計算，這棟樓裡還住得下。
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="沉穩的青年"]請問，這棟樓裡現在住著的都是感染者嗎？之前進來的人也都在這裡？
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="認真的衛兵"]對，這棟樓裡都是感染者。至於後一個問題，我就不清楚了。之前進來的人不少，不可能都安排在同一個地方。
+[charslot(slot="m",name="avg_npc_2225_1#8$1",focus="m")]
+[name="沉穩的青年"]……
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="認真的衛兵"]沒有其他問題的話，你們快點商量下怎麼分房，好了我帶你們去一樓登記。
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="焦急的礦工"]我們也可以自己去，不麻煩你——
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="沉穩的青年"]尼卡。
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="焦急的礦工"]嗯？
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="沉穩的青年"]別說了。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g12_ursusroom",screenadapt="coverall")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_opencabinet",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",afrom=0, ato=1,duration=1.5)]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="n")]
+[name="焦急的礦工"]（低聲）你剛才為什麼要阻止我？現在我們後面跟了個甩也甩不掉的尾巴。
+[charslot(slot="r",name="avg_npc_2225_1#4$1",focus="r")]
+[name="沉穩的青年"]（低聲）你看，這些房間的檯面上幾乎一點灰塵也沒有，像是仔細清掃過。
+[name="沉穩的青年"]（低聲）但那些東西擺放的樣子又讓人覺得之前的住戶並不注意這些細節。
+[charslot(slot="r",name="avg_npc_2225_1#1$1",focus="r")]
+[name="沉穩的青年"]（低聲）就算之前住在這裡的所有人都是前腳剛搬走，這也很奇怪。什麼樣的痕跡需要專門清掃？
+[charslot(slot="r",name="avg_npc_2225_1#9$1",focus="r")]
+[name="沉穩的青年"]（低聲）這不正常。要讓她放下戒備，我們才能有機會，想辦法和帕洪他們恢復聯絡。
+[charslot(slot="l",name="avg_npc_1970_1#1$1",focus="l")]
+[name="焦急的礦工"]太奇怪了……
+[charslot]
+[name="身後的聲音"]怎麼了？
+[charslot(slot="m",name="avg_npc_2225_1#1$1",focus="m")]
+[name="沉穩的青年"]沒事，女士。我們只是在商量這個房間應該給誰。
+[charslot(slot="m",name="avg_npc_2225_1#4$1",focus="m")]
+[name="沉穩的青年"]在我看來，這裡只有一個臥室，那就給加林娜吧。
+[charslot(slot="m",name="avg_npc_2225_1#8$1",focus="m")]
+[name="沉穩的青年"]她家本來有一個孩子，死在路途中了。她精神不濟，沒有什麼工作能力，還需要其他人幫忙照顧一下，算兩個人……
+[charslot]
+[Dialog]
+[stopmusic(fadetime=1.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2225_1#8$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[PlaySound(key="$dooropenquite",volume=1)]
+[delay(time=1)]
+暗自思索著該怎麼甩掉身後的麻煩，小個子的領袖往前走去。裡面臥室突然開門的一瞬間，青年條件反射地後退，才沒有撞上門板。
+[Dialog]
+[PlaySound(key="$d_avg_doorbreak",volume=1)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[delay(time=1)]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[delay(time=1)]
+幾乎同時，從裡面出來的人也做出了判斷。他抓起手邊的椅子，向“闖入者”砸去。
+[name="沉穩的青年"]呃……
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_080",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[name="警惕的感染者"]帶我們進城、給我們吃、給我們住。我就說絕對沒這麼好的事！
+[name="警惕的感染者"]雷德，快來幫我——
+[charslot(slot="m",name="avg_npc_1970_1#1$1",focus="m")]
+[name="焦急的礦工"]你做什麼！
+[charslot]
+[name="沉穩的青年"]……等等，先不要反擊……
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_328_1$1",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[name="雷德"]你們……
+[name="雷德"]是什麼人？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="bg_cellroom_1",screenadapt="coverall")]
+[Delay(time=2)]
+[PlaySound(key="$d_avg_opencabinet",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="警衛"]瑭雅·艾利盧耶娃。
+[charslot]
+[name="？？？"]……
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="警衛"]艾利盧耶娃！
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_clothmovement", volume=1)]
+[charslot(slot="m",name="avg_4225_tanya_1#13$1",posfrom="0,-100", posto="0,0",afrom=0, ato=1,duration=1)]
+[Delay(time=1)]
+[name="？？？"]啊——是我。
+[charslot(slot="m",name="avg_4225_tanya_1#6$1",focus="m")]
+[name="瑭雅"]我在這裡……
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="警衛"]看看你那要死不活的樣子，做給誰看？我們這裡沒人虐待你。
+[name="警衛"]“散播恐慌言論”、“擅離職守”、“妨礙公務”、“非法集會”……隨便哪條都夠把你關上個十天半個月的。
+[charslot(slot="m",name="avg_4225_tanya_1#8$1",focus="m")]
+[name="瑭雅"]那你叫我又是為了什麼呢？
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="警衛"]……你很幸運，又有人來保釋你。
+[name="警衛"]但之後你還有六十個小時的林區義務勞動，需要在五天內完成。否則，你會被重新收監，不得保釋。
+[name="警衛"]聽懂了嗎？聽懂了就點頭。
+[charslot(slot="m",name="avg_4225_tanya_1#8$1",focus="m")]
+[name="瑭雅"]（點頭）
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_dooropen", volume=1)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_2223_1#1$1",focus="m")]
+[name="警衛"]哦，還有一點。不要再到外面去自稱“整合運動”了。你跟那種東西又沒什麼關係，不是嗎？
+[name="警衛"]好了，你可以走了。
+[charslot(slot="m",name="avg_4225_tanya_1#4$1",focus="m")]
+[name="瑭雅"]……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="73_g2_exurbstreet_n",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]……
+[Dialog]
+[charslot]
+[charslot(slot="l",name="avg_npc_082")]
+[charslot(slot="r",name="avg_npc_082")]
+[Delay(time=0.5)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",afrom=1, ato=0,duration=1.5)]
+[charslot(slot="r",afrom=1, ato=0,duration=1.5)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]（探照燈……巡邏比白天頻繁。）
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="m")]
+[name="西爾卡"]（不能繼續在地面活動了。得想個辦法……）
+[charslot]
+“為了回去，為了回到那艘船上去，我可以做到哪一步？”
+女人面無表情地在腦海裡排除著選項。對集團軍而言，一個逃兵根本不重要，自己最多只能成為某種交涉的契機，或者一份微小的人情。
+但是關鍵在於，他們在乎第四集團軍如何嗎？第一集團軍沒有非要涉入這場戰爭的理由，烏薩斯的歷史無數次證明這點，這次也不會例外。
+砸在前線的新武器只是炫耀和威懾，葉甫根尼想必已經打起了那個東西的主意。小將軍……小將軍，一個巨大的軟肋，但要怎樣利用？
+流亡者熟練地躲避著探照燈的軌跡，思索著如何持續隱藏蹤跡，如何製造合適的混亂……
+以及如何回家。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g14_dimunder",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="微醺的士兵"]……不行，我真的不能再喝了。
+[name="微醺的士兵"]我要回去了……
+[charslot]
+地下，空曠的基礎結構將整個地下生活層隔絕出數個區域。不遠處虛掩的鐵門旁邊，喧嘩聲與暖色的光亮正從室內透出。
+站在門邊拉拉扯扯的兩人對注視他們的目光渾然不覺。
+[charslot(slot="m",name="avg_npc_2227_1#5$1",focus="m")]
+[name="熱情的工人"]你上次也這麼說，用舌頭沾了點酒，就說自己喝多了。哪有這樣的事！
+[charslot(slot="m",name="avg_npc_2227_1#3$1",focus="m")]
+[name="熱情的工人"]不管怎麼說都再喝點吧，等你被調到那牆後面去，可就再也喝不到了——
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",posfrom="-150,0", posto="0,0",afrom=0, ato=1,duration=1.5)]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]抱歉，借過。
+[charslot(slot="m",name="avg_npc_2227_1#4$1",focus="m")]
+[name="熱情的工人"]哦、哦。好。
+[Dialog]
+[charslot]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2227_1#7$1",focus="m")]
+[name="熱情的工人"]不對，貴族怎麼會來這裡……
+[charslot(slot="m",name="avg_npc_1976_1#1$1",focus="m")]
+[name="微醺的士兵"]我走了，得回去值班。
+[charslot(slot="m",name="avg_npc_2227_1#7$1",focus="m")]
+[name="熱情的工人"]欸，你這個人！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g16_conutryinside",screenadapt="coverall")]
+[Delay(time=2)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.7,channel="out4")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[animtext(id = "at1", name = "group_location_stamp", style="avg_both", pos = "-400,-200", block = false)]<p=1>澤爾格勒主城區，地下酒館</><p=2>1102年1月20日 21:13</>
+[delay(time=3)]
+[animtextclean]
+[delay(time=1)]
+不出所料，屋內幾乎座無虛席。
+士兵與工匠、農民和老師，無論白天他們是什麼人，此時都只共享同一個身分：酒鬼。
+擠在同一塊地方，吵吵鬧鬧地灌著同樣的劣質酒精，在徹底不省人事之前，把自己拖回宿舍。
+澤爾格勒有無數個這樣的角落，曾經第四集團軍的駐地也一樣。
+[stopsound(channel="out4",fadetime=0.5)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]……
+[charslot]
+沒有人抬頭看她。這裡沒有酒保，只有昏昏欲睡的老闆，堆放一旁的木桶和狹窄的走廊，以及任何不需要道具的酒桌遊戲。
+看著那個經過偽裝之後，已經完全融入其中的身影，西爾卡靈巧地穿過擠在屋內的數張木桌，來到酒館的盡頭。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]耶夫塞·盧基奇。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]嗯？你在跟我說話？
+[charslot]
+女人沒有多說，掀起衣擺，露出藏在下面的銘牌，朝他翻開刻著第四集團軍編號的那一面。
+她盯住對方，不打算錯過他的任何細微表情。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]（低聲）少尉……？
+[name="耶夫塞？"]呃……
+[name="耶夫塞？"]（環顧四周）
+[name="耶夫塞？"]你先跟我來。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="72_g14_dimunder",screenadapt="coverall")]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]怎麼是個庫蘭塔……
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="西爾卡"]需要我將你的不滿和失職情況一起上報給總司令嗎，上士？據我所知，你沒有及時傳回有關第一集團軍新武器的情報。
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="n")]
+否則，第四集團軍不會仍然毫無動作。西爾卡想著，隨前面的人停下腳步。
+[charslot]
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]……不、不用了。
+[name="耶夫塞？"]我在想最近也該有人來了，所以就沒有……只不過沒想到來的是個庫蘭塔，不像以前那些接頭人。你是哪個營的？
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="西爾卡"]我不是來聽廢話的。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]那你想聽什麼？我把近期的報告都留在安全屋裡了，你來得不是時候，現在我走不開。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="n")]
+他指了指身後的酒館。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]你經營了一家地下酒館，經典的情報流通處，但你真的有好好利用它嗎？
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]我在這裡滲透了四年，從未出過差錯，還被授予過弗拉基米爾勛章，你這——
+[charslot(slot="m",name="avg_npc_2249_1#5$1",focus="m")]
+[name="西爾卡"]即使我只是少尉，軍銜也仍在你之上。在吐出些不經大腦的話來之前，我建議你再思考一下。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]……你想知道什麼？
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="西爾卡"]自從你上一次彙報之後的所有紅標情報。
+[name="西爾卡"]口頭彙報給我。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]在這裡？你到底有沒有保密意識——
+[Dialog]
+[stopmusic(fadetime=1)]
+[charslot]
+[Sticker(id="st1", multi = true, text="<color=#888888>西爾卡</color>", hidelog=true, x=240, y=625, alignment="left", size=31, delay=0.04, width=700, duration=0.01, block = false)]
+[spellsticker(id="spell2", action="show", style="fire", x=-240, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>“夜雪無痕，噤聲。”</><p=2>“Hoчной снег без следа, молчи.”</>
+[Sticker(id="st1")]
+[spellstickerclear(block=false)]
+[PlaySound(key="$d_avg_OriginiumArts_soundwave",volume=1)]
+[Delay(time=1)]
+只是一瞬間，男人就感覺自己與腳下的整個空間被隔絕開來。喝酒吵嚷的聲音遠去了，就連下水道裡滴水的聲音也在霎時間消失。
+空氣牆阻擋在他和眼前的庫蘭塔之間。他想出聲，卻聽不見自己說話，也不知道對面人歙張的口型，究竟代表著什麼。
+虛假的窒息感充斥大腦，他的雙手拉扯著自己的喉嚨，不清楚這究竟是幻覺還是真實。
+[Dialog]
+[Sticker(id="st1", multi = true, text="<color=#888888>西爾卡</color>", hidelog=true, x=240, y=625, alignment="left", size=31, delay=0.04, width=700, duration=0.01, block = false)]
+[spellsticker(id="spell2", action="show", style="fire", x=-240, y=283, xScale=1, yScale=1, angle=0, alpha=1, block=true)]<p=1>“聲音，歸來。”</><p=2>“Звук вернись.”</>
+[Sticker(id="st1")]
+[spellstickerclear(block=false)]
+[PlaySound(key="$d_avg_spellattack_1",volume=1)]
+[Delay(time=1)]
+[charslot]
+[Delay(time=1)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=70, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]咳、咳咳！
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]我不想再重複一遍，耶夫塞上士。
+[name="西爾卡"]開始吧。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]……咳……呵呵。
+[name="耶夫塞？"]你的源石技藝，我聽說過，被戰爭術師拋棄的技藝，只能製造無聲環境的廢物術法。
+[name="耶夫塞？"]沒想到來的竟然是大名鼎鼎的特殊戰術兵團的少尉，那個可憐蟲拉辛的手下……這個把戲是他教給你的吧？
+[name="耶夫塞？"]好啊，好啊。沒問題，我會告訴你，既然我們還算是在同一條戰線上，在你們這群牆頭草再次倒戈之前，讓我們來“共享情報”吧。
+[charslot(slot="m",name="avg_npc_2249_1#8$1",focus="m")]
+[name="西爾卡"]我希望你能冷靜下來。剛才的行動，只是在向你展示這個空間的安全性。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]別*烏薩斯粗口*的裝了，你們殺同僚殺戰友和殺馱獸沒什麼區別，即使是我也聽說了十二月的那次叛亂——
+[name="耶夫塞？"]你們殺光了所有人，沒有審問，也沒有例外！你們殺得整艘戰艦上都是血，直到下了場雪，才稍微蓋住一點腥味。
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="m")]
+[name="西爾卡"]是啊，沒錯。我就是在那裡感染的礦石病。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]……嗯？
+[charslot(slot="m",name="avg_npc_2249_1#7$1",focus="m")]
+[name="西爾卡"]我在剿滅叛亂的時候感染了礦石病，所以這是我最後向元帥展示忠誠的機會。利用感染者身分，潛入現在的澤爾格勒……
+[name="西爾卡"]你應該知道這代表著什麼，又為什麼必須是我、只能是我。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]剿滅叛亂，感染者，少尉……哈哈哈哈哈哈！
+[name="耶夫塞？"]原來如此，原來如此……
+[name="耶夫塞？"]也是，畢竟元帥對你們的定位一直都是工具。死一個本來就要流放的感染者，絕對比直接葬送一整支艦隊要划算得多——
+[charslot(slot="m",name="avg_npc_2249_1#4$1",focus="m")]
+[name="西爾卡"]你說什麼？
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]哦，沒有。那不重要。
+[name="耶夫塞？"]既然是這樣，那我就幫你一把。你用感染者的身分進城，肯定還要回去集合住宅那邊吧，在這之前，你最需要知道什麼？
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]第一集團軍如今在澤爾格勒的部署情況，他們元帥所在的位置，還有新武器的所有情報。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]你想直接從斯韋特蘭納那個女人身上下手？那我勸你直接自殺還比較快。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]那就告訴我部署情況和新武器的情報。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]聽著，我現在最多口頭告訴你近期的城內防衛部署情況，你不是我的接頭人，沒有權限取得紅標情報。
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="西爾卡"]……
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]城裡的巡邏分時段進行，但那個小將軍隨時有可能帶隊出現在巡邏的衛兵之中，我這幾天剛好想辦法“總結”了一下他出現的規律。
+[name="耶夫塞？"]那個傢伙嬌生慣養的，出門從來都前呼後擁，跟扮家家酒一樣。司機、保姆、親衛隊，完全沒有落單的時候。
+[name="耶夫塞？"]所以我只能找到他宅邸裡的傭人，發現他雖然會臨時起意，但多數時候都出現在主城區的晚間衛兵換班前一兩個小時。
+[name="耶夫塞？"]雖然不得不在問到消息之後把那幾個人都滅口，但至少結果應該有效。如果你要行動，正好去幫我驗證一下這個規律的準確性——
+[stopmusic(fadetime=1)]
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="西爾卡"]好的，足夠了。
+[charslot(slot="m",name="avg_npc_2174_1#1$1",focus="m")]
+[name="耶夫塞？"]什麼？
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_throatslitting",volume=1,channel="knife")]
+[Delay(time=1)]
+[name="耶夫塞？"]咳呃——？！
+[Dialog]
+[PlaySound(key="$d_avg_spurtblood",volume=1,channel="blood")]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_knife",volume=1)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_piercechest",volume=1)]
+[Delay(time=1)]
+在他來得及看清對方的動作之前，銀色的匕首就劃破了他的喉嚨。
+緊接著，那匕首又立刻捅穿了胸腔，最後被拔出來刺進腋下。
+乾脆俐落。
+[Dialog]
+[PlaySound(key="$bodyfalldown2", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$blooddrop",channel="blood",volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]這就是我最想知道的內容。謝謝你，耶夫塞。
+[name="西爾卡"]或者說，在這裡我應該叫你普羅霍爾……時間過去很久了，對於能否在這裡找到你的行蹤，我原本並不抱太大的希望。
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="n")]
+[name="普羅霍爾？"]呃……啊——
+[charslot(slot="m",name="avg_npc_2249_1#1$1",focus="m")]
+[name="西爾卡"]但你始終盡忠職守，這很好。
+[charslot]
+男人在鮮血裡蠕動著，卻沒發出任何能被他人聽見的聲音。
+西爾卡走上前去，從血染的衣袋中掏出所有能找到的物品。任誰來看，這都只會是一場臨時起意的劫殺。
+[charslot(slot="m",name="avg_npc_2249_1#11$1",focus="m")]
+[name="西爾卡"]再見，普羅霍爾先生。
+[name="西爾卡"]我代替葉甫根尼元帥，感謝你的服役。
+[name="西爾卡"]（低聲）我向你保證，在我成功刺殺那位小將軍的功勞裡，也會有你的一份。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="66_g12_deitygrypherburgmeeting",screenadapt="coverall")]
+[Delay(time=1)]
+[PlayMusic(intro="$suspenseful_intro", key="$suspenseful_loop", volume=0.6)]
+[playsound(key="$d_avg_crwddiscuss_outside",loop=true,volume=0.6,channel="out3")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="l",name="avg_188_helage_1#1$1",afrom=0, ato=1,duration=1.5)]
+[charslot(slot="r",name="avg_npc_1966_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="激動的“議員”"]……“分區自治權”，就是憲法給不同的行政區政府賦予的明確的自治權力，很難理解嗎？還是說你聽不懂人話？
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="不屑的“議員”"]分區了，然後呢？誰來治理，誰來給錢讓這些人去治理，誰又為這群人的治理結果擦屁股？
+[name="不屑的“議員”"]繞了這麼一大圈，不就純粹是脫褲子放屁，還非得坐在赤金馬桶上嗎？
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="激動的“議員”"]這是在嘗試從軍隊手裡分權！這叫制衡，你懂什麼？你這傢伙來這裡都穿得破破爛爛的，不會連公立學校都沒上過吧！
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="不屑的“議員”"]沒上過，那又怎麼樣？畢竟在你忙著學習舔貴族靴子的時候，我和我家人都正忙著為邊防戰士生產帳篷呢！
+[charslot]
+近衛軍帶著赫拉格在吵嚷的人群中穿行，沉浸在爭執中的人們並未注意到他們。
+赫拉格靜默地聽著，神情逐漸有些不自然。
+[stopsound(channel="out3",fadetime=1)]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1966_1#20$1",focus="n")]
+[name="赫拉格"]我以為這裡是議會大廳……
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="阿洛伊澤"]沒錯，這裡是議會大廳。
+[charslot(slot="l",name="avg_188_helage_1#3$1",focus="l")]
+[name="赫拉格"]看起來大家都並非從前坐在這裡的那些議員。休會待續無期，其實是為了籌備這個？
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="阿洛伊澤"]誰說您對政治不敏感的，這不是一下子就懂了嗎。
+[charslot(slot="l",name="avg_188_helage_1#9$1",focus="l")]
+[name="赫拉格"]……
+[charslot(slot="r",name="avg_npc_1966_1#13$1",focus="r")]
+[name="阿洛伊澤"]噢，想起來了，是副議長說的。他對您可能多少還是有點什麼衣不染塵的恩師濾鏡吧，別在意。
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="赫拉格"]你為什麼要帶我來這裡？
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="阿洛伊澤"]既然您都聽見開頭了，那還是坐下來和我繼續聽下去吧。
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="阿洛伊澤"]放心，很快的。他們吵的也無非就是那麼幾件事。
+[charslot]
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="不屑的“議員”"]……說的都是什麼亂七八糟的東西，聽不懂。陛下叫我們過來如果是為了聽你說這些，那還不如直接繼續聽議會辯論呢！
+[name="不屑的“議員”"]那些負責蓋橡皮圖章的傢伙，至少吵起架來比我們文雅動聽——
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="激動的“議員”"]陛下召開公民大會，不是為了讓你這樣粗俗的傢伙進來恬不知恥地要錢要地的！
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="不屑的“議員”"]陛下召開公民大會是為了聽我們的訴求，老闆工廠開不下去了，我的訴求就是要錢要地，大家皆大歡喜！
+[name="不屑的“議員”"]這樣，大家至少可以自己種點田、做點小手工，不至於統統失業，鐵河區才不會成為下一個卡托加區！
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="激動的“議員”"]……一口一個“為了大家”，結果字裡行間全是為了自己。鐵河區選出來的“勞動代表”竟然是這副德行……
+[name="激動的“議員”"]我跟你沒什麼好說的了。
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="不屑的“議員”"]我是大家一票一票選出來的，你又是什麼東西？你這*烏薩斯粗口*——
+[charslot]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="n")]
+[name="赫拉格"]他們要打起來了。
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="阿洛伊澤"]不會的，這裡不是大街上。
+[Dialog]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="n")]
+[PlaySound(key="$d_avg_fight_amb_loop",loop=true,volume=0.6,channel="fight")]
+[delay(time=2)]
+[charslot(slot="r",name="avg_npc_1966_1#10$1",focus="r")]
+[name="阿洛伊澤"]呃。
+[name="阿洛伊澤"]我去看——
+[Dialog]
+[charslot]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2248_1#1$1",afrom=0, ato=1,duration=1.5)]
+[delay(time=2)]
+[stopsound(channel="fight",fadetime=1)]
+[charslot(slot="m",name="avg_npc_2248_1#1$1",focus="m")]
+[name="溫和的“議員”"]兩位。
+[charslot(slot="m",name="avg_npc_2248_1#2$1",focus="m")]
+[name="溫和的“議員”"]現在只是意見收集期，有分歧是很正常的，我們可以平心靜氣地坐下來慢慢談。
+[name="溫和的“議員”"]雖然我們都不是貴族，但也請儘量維持體面……維持作為“議員”的體面，即使這個身分只是暫時的。
+[charslot(slot="m",name="avg_npc_2248_1#7$1",focus="m")]
+[name="溫和的“議員”"]不能讓那些真正的議員先生和女士們看笑話，對吧？
+[charslot(slot="m",name="avg_npc_081",focus="m")]
+[name="不屑的“議員”"]哼。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_081",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_2175_1#1$1",focus="m")]
+[name="激動的“議員”"]斯維扎爾先生！我以為您不會來幫我說話了呢。
+[name="激動的“議員”"]在提交意見報告之前，我還有些問題需要找人聊聊。您來得正好，我一千個、一萬個需要您的意見……
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_2175_1#1$1",afrom=1, ato=0,duration=1.5)]
+[delay(time=2)]
+[charslot]
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="n")]
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="阿洛伊澤"]嗯。
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="赫拉格"]……
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="阿洛伊澤"]您看出些什麼門道來了嗎？
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="赫拉格"]你父親說得對，我的確不懂政治。
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="阿洛伊澤"]但您明明看出來了，至少看出了一部分。
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="阿洛伊澤"]在那兩位爭執的時候，您的神色一直平和，就算是看見他們快打起來了，也沒有太大的反應。
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="阿洛伊澤"]然而在最後那位“議員”走過來的時候，您的臉色卻突然變了。為什麼呢？
+[charslot(slot="l",name="avg_188_helage_1#3$1",focus="l")]
+[name="赫拉格"]我只是覺得他和其他人不太一樣。
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="阿洛伊澤"]我猜，是因為那傢伙是個真正的貴族。
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="赫拉格"]“猜”？
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="阿洛伊澤"]在找到證據之前，所有的觀點都只是猜測。
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="赫拉格"]你說我看出了一部分。
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="阿洛伊澤"]啊，這個。
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="阿洛伊澤"]您沒看出來的那部分大概是，爭執的那兩個人也都不是陛下想見的“公民議員”。
+[name="阿洛伊澤"]我這麼說，不是因為他們之中有的人沒說髒話，也不是因為有的人說出了不符合他們認知的詞語和概念。
+[charslot(slot="r",name="avg_npc_1966_1#10$1",focus="r")]
+[name="阿洛伊澤"]而是……他們各自的訴求都表達得太明確和清晰了。
+[charslot(slot="r",name="avg_npc_1966_1#4$1",focus="r")]
+[name="阿洛伊澤"]這背後必然有人引導。而如果連陛下親自宣布召開，直接聽取意見的公民大會都有人做手腳……
+[charslot(slot="r",name="avg_npc_1966_1#2$1",focus="r")]
+[name="阿洛伊澤"]到最後，這大概不過又是另一次失敗的改革罷了。
+[charslot(slot="l",name="avg_188_helage_1#9$1",focus="l")]
+[name="赫拉格"]……我必須再問一次。
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="赫拉格"]你為什麼要帶我來這裡？
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="阿洛伊澤"]我只是邀請您看一場好戲，而這是這場戲的開幕。錯過一部新戲的開場，哪怕只是幾分鐘，都會影響後續的觀感。
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="阿洛伊澤"]唉，我真的很為您考慮啊，可惜，您卻偏不領情。
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="阿洛伊澤"]但我也不會繼續勉強您。雖然我有很多方法可以強迫您回到我們之中，但我不會這樣做的。
+[charslot(slot="l",name="avg_188_helage_1#1$1",focus="l")]
+[name="赫拉格"]你想表現你和其他烏薩斯人不同。
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="阿洛伊澤"]不不不，剛好相反。我認為自己和大部分的烏薩斯人沒什麼不同。
+[charslot(slot="r",name="avg_npc_1966_1#3$1",focus="r")]
+[name="阿洛伊澤"]我們只是想要還有明天，個人的明天、族群的明天，但這在現在多麼困難……幾乎快要成為一種奢望。
+[name="阿洛伊澤"]因此，我必須抓住手邊能抓住的所有助力——所有。您的實力和您的過去會對我的計劃很有幫助，但如果您不願意，我也只能另尋出路。
+[charslot(slot="l",name="avg_188_helage_1#11$1",focus="l")]
+[name="赫拉格"]……你的計劃……
+[charslot(slot="r",name="avg_npc_1966_1#12$1",focus="r")]
+[name="阿洛伊澤"]還是等到更成熟的時候再說給您聽吧。
+[charslot(slot="r",name="avg_npc_1966_1#1$1",focus="r")]
+[name="阿洛伊澤"]耽誤了一些時間，得先趕快送您去奧多耶夫區了，也許那些孩子都在等著您呢。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[gridbg]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

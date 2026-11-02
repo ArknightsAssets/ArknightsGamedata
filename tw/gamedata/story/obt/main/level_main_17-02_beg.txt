@@ -1,0 +1,1227 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="72_g1_sjbstreet_d",screenadapt="coverall", block=true)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.13, fadetime=0.01)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.13, fadetime=0.01)]
+[Delay(time=1)]
+[playMusic(key="$m_avg_ursusdaily_loop", volume=0.6)]
+[PlaySound(key="$d_avg_drtywndblw", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1)]
+[playsound(key="$d_avg_carriage_loop", loop=true, channel="car",volume=0)]
+[SoundVolume(volume=0.7, channel="car",fadetime=2)]
+[delay(time=1.2)]
+[PlaySound(key="$d_avg_carriagebell",volume=1)]
+[delay(time=1)]
+[Decision(options="嘶……呼……;……好冷……", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_1037_amiya3_1#16$1", duration=1)]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_1037_amiya3_1#16$1",focus="m")]
+[name="阿米婭"]博士，你還是覺得冷嗎……唉，我應該記得提醒你多加點衣服的。
+[Dialog]
+[charslot]
+阿米婭用力握住了你的指尖，儘管你能清楚地感受到，她的掌心也是冰涼的。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]稍微忍耐一下吧，等一下進到薩列夫格勒區裡面會好很多。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="n")]
+[Decision(options="我還以為，這次還是會只允許我一個人去覲見。;我還以為，皇帝陛下也會對我們多有提防。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]剛好相反。陛下聽說了羅德島在遠北礦區的事蹟後，對羅德島的勇氣大加讚賞，非常想見見你們。
+[name="阿洛伊澤"]尤其在他聽說了，羅德島的領袖只是一個年紀輕輕的女孩之後。
+[charslot(slot="m",name="avg_1037_amiya3_1#16$1",focus="m")]
+[name="阿米婭"]不……實際上，我沒有做到太多事……
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]現在不是自謙的時候，你應該珍惜這份不錯的初印象——這對接下來的會面很有幫助。
+[name="阿洛伊澤"]在見到陛下之前，有些關於聖駿堡的消息，有必要讓你們知曉。
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="m")]
+[name="阿洛伊澤"]首先……想必你們應該大概清楚，陛下召見你們的意圖。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="n")]
+[Decision(options="儘管那位陛下有仁慈之名——;他應該也不會無故允許我們接觸對石棺的研究。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="阿洛伊澤"]你們想要解開石棺更深層的秘密，烏薩斯同樣如此。
+[name="阿洛伊澤"]所以我希望你們能夠將這次接觸，當作對雙方而言都有利可言的合作。
+[multiline(name="阿洛伊澤")]你們應該也清楚，烏薩斯……
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="m")]
+[multiline(name="阿洛伊澤")]或者說聖駿堡，目前面臨的最緊要的難題。
+[name="阿洛伊澤"]第四集團軍的大軍逼近聖駿堡已經兩個月有餘，如今正與第二集團軍在涅瓦湖東岸對峙，摩擦時有發生。
+[name="阿洛伊澤"]儘管他們暫時無法再前進一步，但局勢也算不上樂觀。
+[name="阿洛伊澤"]在這期間，他們不斷地向議會提出訴求，要求烏薩斯為他們即將發動的戰爭提供一切支援。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="n")]
+[Decision(options="這也實在令人好奇。", values="1")]
+[Predicate(references="1")]
+[Decision(options="如果第四集團軍的真實目的是對外開戰——;他們此刻也應該在烏薩斯的國境線，而非聖駿堡城外。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]呵……任誰都知道這群與盜匪無異的叛臣究竟想做什麼。就目前來看，他們只是在想方設法對議會進行最低劣的攻擊。
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="阿洛伊澤"]在前段時間，第四集團軍第一師潰敗的次日，維特議長遭遇了一次刺殺。刺客的潛入方式和襲擊手段與第四集團軍有直接關聯。
+[name="阿洛伊澤"]但奇怪的是，面臨這樣明顯的挑釁，在場的內衛竟然沒能將那刺客抓住或是擊殺。
+[name="阿洛伊澤"]並且我們有理由相信，直到現在，城內還潛伏著刺客的同謀，一名，或多名間諜。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="n")]
+[Decision(options="第四集團軍不過是眼前的難題。;烏薩斯總要面對礦脈枯竭的現實。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]你說得對。在大部分人看來，擺在烏薩斯面前的無非是戰爭與和平兩條路，可是兩條路都不夠有說服力，難以說服所有人。
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="m")]
+[name="阿洛伊澤"]陛下依然懷著一絲希望……目前掌握在第一集團軍手中的“石棺”。
+[name="阿洛伊澤"]如果這項研究能夠有所突破，或許真的能夠解決烏薩斯的困局。荒唐的是，這看起來真的是烏薩斯最後一線希望了。
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1", focus="m")]
+[name="阿洛伊澤"]但是就算是這樣……
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1", focus="n")]
+[Decision(options="石棺的研究顯然是不順利的。;除了研究的進度之外，議會應該還面臨著其他困難。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="我們不是作為石棺研究的學者被邀請的。;我們是被議會，而非被第一集團軍邀請的。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#2$1", focus="m")]
+[name="阿洛伊澤"]……你還是一貫地敏銳，Dr.{@nickname}。
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="阿洛伊澤"]不過我非常不建議你待會見到陛下的時候，把這份敏銳表現出來。
+[name="阿洛伊澤"]就現在的消息來看，第一集團軍的確有所隱瞞……具體的情況，還是等陛下親自告訴你吧。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="n")]
+[Decision(options="在你看來，那位陛下是什麼樣的人？", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]哈哈……哪怕是在這樣私密的場合，你問我這樣的問題，也會讓人懷疑你心有不軌的。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="n")]
+[Decision(options="我只是想聽聽你的看法。;我只是想做好準備。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]我知道，你們應該已經以各種方式聽到了這位陛下的傳聞，我沒有辦法改變誰的看法，我只能如實回答。
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="m")]
+[name="阿洛伊澤"]如果有誰會為這個國家奮戰到最後一刻的話，那一定是這位陛下了。
+[name="阿洛伊澤"]因為除了“烏薩斯”，他一無所有。
+[Dialog]
+[charslot(duration=0.5)]
+[delay(time=0.7)]
+[stopsound(channel="car", fadetime=2)]
+[PlaySound(key="$d_avg_carriagegoaway",channel="step2",loop=false, volume=1)]
+[stopsound(channel="step2",fadetime=2)]
+[PlaySound(key="$d_avg_carriagebell",volume=1)]
+[delay(time=2)]
+[PlaySound(key="$d_avg_crwddiscuss_outside", volume=0, loop=true, channel="c")]
+[SoundVolume(volume=0.2, channel="c",fadetime=2)]
+[delay(time=2.5)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[curtain]
+[Background(image="72_g1_sjbstreet_d",screenadapt="coverall", block=true)]
+[SoundVolume(volume=0.5, channel="c",fadetime=1.5)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "l", name = "avg_npc_2170_1#1$1", posfrom="-150,0",posto="-150,0",duration=0.5)]
+[charslot(slot = "r", name = "avg_npc_2170_1#1$1",posfrom="150,0", posto="150,0",duration=0.5)]
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1",duration=0.5)]
+[Delay(time=0.7)]
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="警察"]……禁入……
+[name="警察"]前方禁入，都別圍在這裡了！
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_2174_1#1$1", focus="m")]
+[name="擔憂的市民"]老爺，看看我吧，我不是感染者！而且新的通行票——您看、您看！通行票，我們也是買了的，我們都是良好市民，但……
+[name="擔憂的市民"]但是這些貨物再不送進去，就要過期限了。到時候哪怕東西一點沒壞，住在皇村裡的那些老爺們也不會再要了，我們會賠得血本無歸啊！
+[charslot(slot = "m", name = "avg_npc_2175_1#1$1", focus="m")]
+[name="哀愁的市民"]我們已經用不起暖氣了，孩子卻還臥病在床……老爺，求您行行好，就放我們過去吧——
+[Dialog]
+[charslot]
+[charslot(slot = "l", name = "avg_npc_2170_1#1$1", posfrom="-150,0",posto="-150,0",focus="m")]
+[charslot(slot = "r", name = "avg_npc_2170_1#1$1", posfrom="150,0", posto="150,0",focus="m")]
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="警察"]特殊時期，薩列夫格勒區全面禁入，就算是金子做的通行票也不管用。
+[name="警察"]帶著東西回去等通知吧。
+[Dialog]
+[StopSound(channel="c", fadetime=1.5)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="72_g1_sjbstreet_d",screenadapt="coverall", block=true)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.13, fadetime=0.01)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.13, fadetime=0.01)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1", focus="m")]
+[name="阿洛伊澤"]……
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]嗯？前面好像不能進……
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="阿洛伊澤"]你們先別離開車子，我去看看。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[curtain]
+[Background(image="72_g1_sjbstreet_d",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="警察"]都說了禁入沒聽見嗎——
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="n")]
+[PlaySound(key="$d_avg_snowbootwalk", volume=1)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="警察"]……呃。
+[Dialog]
+[charslot]
+[Delay(time=0.2)]
+[charslot(slot = "m", name = "avg_npc_1966_1#13$1",duration=0.7)]
+[Delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1966_1#13$1", focus="m")]
+[name="阿洛伊澤"]你好啊。
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="警察"]（敬禮）
+[name="警察"]你需要什麼？
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]我需要把陛下想見的人帶給他。
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="警察"]薩列夫格勒現在全面禁止出入了，就算是運輸生活必需用品，也要有裡面的人出來接應才行。
+[name="警察"]這是陛下的命令。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]我明白，你也只是盡忠職守。
+[name="阿洛伊澤"]不過，請原諒我的好奇。我想知道，當陛下的命令和命令之間相互衝突的時候，你們會怎麼辦呢？
+[name="阿洛伊澤"]因為你看，我這裡也有陛下的命令，甚至是手諭。
+[Dialog]
+[PlaySound(key="$d_avg_scroll", volume=1)]
+[Delay(time=1)]
+[charslot]
+年輕的近衛軍在對方面前展開了手中的紙卷。一個鮮紅的印章蓋在頁面右下方。
+是皇帝的行政用章。
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="警察"]這……
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]我理解。如果這仍使你為難，那我們可以再等一下。
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="警察"]我就直說吧，女士，等也沒用。在找到兇手之前，這情況恐怕不會有所改變。
+[Dialog]
+[charslot]
+阿洛伊澤忍住把眼睛往上翻的衝動。她收起手諭，把佩劍掛到一旁，換了個站立的姿勢。
+再抬頭，她的表情也陡然改變。
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1", focus="m")]
+[name="阿洛伊澤"]聖駿堡警察廳隸屬首都衛戍軍團，你們的人一定也在薩列夫格勒內部有所布置。
+[name="阿洛伊澤"]現在你只需要去通知你的上級，陛下的客人需要接應，剩下的，就不在你的職責範圍之內了。
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="警察"]可是——
+[charslot(slot = "m", name = "avg_npc_1966_1#5$1", focus="m")]
+[name="阿洛伊澤"]“隸屬於近衛軍皇家直屬營的阿洛伊澤·戈爾奇科娃中尉，為完成陛下的命令，願意接受首都衛戍軍團的所有檢查與可能的問責。”
+[name="阿洛伊澤"]你就這樣告訴你的上級。
+[charslot(slot = "m", name = "avg_npc_1966_1#6$1", focus="m")]
+[name="阿洛伊澤"]記住了嗎？
+[charslot(slot = "m", name = "avg_npc_2170_1#1$1", focus="m")]
+[name="警察"]……我記住了。
+[name="警察"]請在此稍作等待，長官。
+[charslot(slot = "m", name = "avg_npc_1966_1#4$1", focus="m")]
+[name="阿洛伊澤"]還有一件事。
+[name="阿洛伊澤"]剛才那對帶著貨物的夫妻，也是和我們一起的人。
+[name="阿洛伊澤"]那些東西最終都要獻給陛下，所以，請務必一同彙報。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="72_g1_sjbstreet_d",screenadapt="coverall", block=true)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 0.13, fadetime=0.01)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 0.13, fadetime=0.01)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=1.5, block=true)]
+[Delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]解決了。
+[charslot(slot="m",name="avg_1037_amiya3_1#10$1",focus="m")]
+[name="阿米婭"]是這條路不通嗎？
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]通，當然通。但只是對於我們而言。
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="阿洛伊澤"]珍惜機會……我們走吧。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[curtain]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=1)]
+[name="門內的聲音"]請進。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.5, block=true)]
+[charslot]
+[Background(image="73_g14_prolocutoroffice",screenadapt="coverall", block=true)]
+[delay(time=0.5)]
+[playMusic(intro="$loading_intro",key="$loading_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", focus="m")]
+[name="恭敬的近侍"]請與客人在此稍候，阿洛伊澤中尉。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]麻煩你了。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", focus="m")]
+[delay(time=0.3)]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=1)]
+[delay(time=3)]
+[Background(image="73_g14_prolocutoroffice",screenadapt="coverall",x=-120,xScale=1.3, yScale=1.3,fadetime=2,block=false)]
+[backgroundTween(xFrom=-120, xTo=120, duration=30, block=false)]
+[delay(time=3)]
+隨著近侍離開的腳步聲，你環視四周。
+這房間的陳設在一路走來所見的富麗風格當中，稱得上是回歸了簡樸，但又無處不彰顯著它主人特殊的身分。
+在白日裡也要拉上的窗簾、毫不顧忌地點亮的數盞電燈、整整齊齊堆在推車上的文書……以及桌角用黃金修補過的痕跡。
+[Dialog]
+[Background(image="73_g14_prolocutoroffice",screenadapt="coverall",fadetime=1.5,block=true)]
+[delay(time=1)]
+[Decision(options="這個辦公室應該蠻常被使用的。;你就直接這樣帶我們進來了？", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="阿洛伊澤"]……怎麼看出來的？
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]為了安全起見，琥珀宮裡還有很多相同陳設的房間，這大概也只是其中一個罷了。
+[name="阿洛伊澤"]最好不要亂猜。
+[Predicate(references="2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]不然呢？你以為還需要什麼？
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="m")]
+[name="阿洛伊澤"]雖然目前處於特殊時期，但在薩列夫格勒，身分是最好的通行證，即使我胸前沒帶那些亂七八糟的勛章也一樣。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]不過，能來到琥珀宮並進出這裡的，通常只有陛下最親密的近臣，或像你我一樣得到特許的人們。
+[name="阿洛伊澤"]所以最好還是保持恭敬。尋常的交談是被允許的，但不要隨意評論。
+[Predicate(references="1;2")]
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="n")]
+[Decision(options="抱歉，我無意冒犯。", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]我明白。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[multiline(name="阿洛伊澤")]總之請拿出和上次一樣的耐心吧。等陛下忙完……
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="m")]
+[multiline(name="阿洛伊澤")]那些讓他焦頭爛額的事情。
+[Dialog]
+[charslot]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_walkingstick_slow", volume=1)]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", duration=1)]
+[delay(time=2)]
+[charslot(slot = "m", name = "avg_npc_1966_1#11$1", focus="m")]
+[name="阿洛伊澤"]——議長？怎麼是您？
+[name="阿洛伊澤"]您不是還在自家宅邸裡養傷嗎？您的身體——
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]陛下正在優先處理別的事，所以我不得不代他前來。
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="維特"]感謝你的服務，中尉。現在，讓我單獨和這兩位客人談談吧。
+[name="維特"]對了，我已經見過你父親了，他對連日忙碌的你表示擔憂，希望如果你有空的話，還是回家看看吧。
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="阿洛伊澤"]……謝謝您的關心，議長大人。
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="阿洛伊澤"]那麼，我先告辭了。
+[Dialog]
+[PlaySound(key="$d_avg_armyboots_walk", volume=1, loop=true, channel="ar")]
+[StopSound(channel="ar", fadetime=2)]
+[charslot(duration=1)]
+[delay(time=2)]
+青年腳跟併攏，行了個標準的軍禮，然後轉身離去。
+被稱為議長的男人注視著她離開的方向，直到大門完全闔上，才回過頭來。
+[Dialog]
+[Decision(options="您好，議長大人。;久仰，維特議長。", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="維特"]你好，遠道而來的客人。感謝兩位願意抽出時間接受邀約。
+[Predicate(references="2")]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]嗯……看來我們都透過不同的方式瞭解過彼此。
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="維特"]總之，請坐吧。
+[name="維特"]我們已經沒有時間可以浪費在客套上，讓我們開誠布公地聊聊吧。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="72_g7_ballroom",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="倨傲的軍官"]尊敬的陛下，很榮幸今天由我來向您彙報，第一集團軍關於“零號計劃”的進度。
+[name="倨傲的軍官"]元帥深知陛下如今正在為各種政務以及叛臣的動向憂慮不已，希望我今天帶來的消息，可以拂去您心頭的憂愁。
+[charslot(slot = "m", name = "avg_npc_2155_1#7$2", focus="m")]
+[name="費奧多爾"]……卜捷里娜元帥如今身在何處？
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="倨傲的軍官"]正在駐地。
+[charslot(slot = "m", name = "avg_npc_2155_1#7$2", focus="m")]
+[name="費奧多爾"]零號計劃的總負責人是她，直接對我進行彙報的人也理應是她。
+[name="費奧多爾"]為什麼現在站在這裡的人卻是你？
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="倨傲的軍官"]噢，尊敬的陛下，請原諒我還未曾就此事進行說明。
+[name="倨傲的軍官"]元帥愛子阿納托利於數日前遇襲，至今仍然傷重。為懲處罪犯，整備軍務，防止進一步的動亂發生，元帥必須親自留守駐地。
+[name="倨傲的軍官"]畢竟，我們與第四集團軍不同。無論在內部還是外部，任何叛亂的苗頭都絕對不被允許。
+[charslot(slot = "m", name = "avg_npc_2155_1#7$2", focus="m")]
+[name="費奧多爾"]我對此事竟然不知情？
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="倨傲的軍官"]恕我直言，這畢竟是元帥的家事，陛下。
+[name="倨傲的軍官"]如果您沒有其他疑問的話，我就繼續了。
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="惱怒的近侍"]你怎麼敢這樣對陛下說話！你這無禮之人——
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="倨傲的軍官"]我只是直陳事實，但是您給出的指控卻相當嚴重。我能為我說出的每一句話負責，閣下呢？
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="惱怒的近侍"]你！
+[charslot(slot = "m", name = "avg_npc_2155_1#1$2", focus="m")]
+[name="費奧多爾"]罷了……先繼續吧，上尉。
+[name="費奧多爾"]我必須要說，聖駿堡為了零號計劃已經投入了太多的資源，如果我仍然看不到任何有效的進展……
+[charslot(slot = "m", name = "avg_npc_2155_1#2$2", focus="m")]
+[name="費奧多爾"]我就要進行必要的問責了。
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="倨傲的軍官"]放心吧陛下，一定不會讓您失望的。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="73_g14_prolocutoroffice",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="維特"]在開始前，請先允許我對一件事好奇。
+[name="維特"]我聽聞羅德島不遠萬里來到烏薩斯的遠北礦區，對那裡的感染者礦工進行救助。
+[name="維特"]我可以問問，你們這樣做的緣由嗎？
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]羅德島是一家專門應對礦石病的醫療公司，我們致力於為所有需要幫助的感染者提供治療。
+[name="阿米婭"]從烏薩斯的立場，所有對感染者的善意都是需要質疑的嗎？
+[Dialog]
+[charslot]
+你拉了拉阿米婭的衣角。
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]……感染者，卡特斯，羅德島的領導者。
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="維特"]阿米婭小姐，對吧？
+[name="維特"]請不要誤會，我並非在責問羅德島的目的。
+[name="維特"]阿洛伊澤中尉對你們有很高的評價。她是一位稱職的軍人，我相信她的評價來自足夠客觀的觀察。
+[name="維特"]希望你們不要見怪，我必須得說，我非常感謝你們在遠北礦區的行動。我們今日在此對話的前提都是基於此。
+[Dialog]
+[charslot]
+[Decision(options="再一次，我們無意冒犯。尊敬的議長閣下。", values="1")]
+[Predicate(references="1")]
+[Decision(options="請先允許我進行自我介紹。", values="1")]
+[Predicate(references="1")]
+[Decision(options="我是Dr.{@nickname}。", values="1")]
+[Predicate(references="1")]
+[Decision(options="羅德島的醫療顧問。;羅德島的源石專家。", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1984_1#4$1", focus="m")]
+[name="維特"]醫療顧問？
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="維特"]作為醫療顧問卻能代表羅德島應約前來，看來你在羅德島承擔的責任很多。
+[Predicate(references="2")]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]唔，源石專家，你的到來或許對烏薩斯而言另有價值。
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]總之，請講吧。羅德島的博士。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="n")]
+[Decision(options="我們知道烏薩斯正在尋找凱爾希。", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[multiline(name="維特")]“凱爾希”……
+[charslot(slot = "m", name = "avg_npc_1984_1#3$1", focus="m")]
+[multiline(name="維特")]果然。也許我們的確應該拋棄那些繁文縟節。
+[Dialog]
+[charslot]
+你注意到他的手杖在地上點了點，而後隱密地交換了雙腿受力的位置。
+他在斟酌著要給出的回答。
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]如果不是第三局裡盤根錯節、由來已久的腐敗，我們的秘密警察本該更早發現這個名字，而不是最近才從故紙堆中找出異常。
+[name="維特"]這是個很好的切入點，你們主動提起，並不企圖遮掩，這代表我們也許能達成一致。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="n")]
+[Decision(options="你們尋找凱爾希，是為了打開石棺嗎？", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]很顯然，就像阿洛達告訴你們的那樣。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[delay(time=1)]
+他意味深長地停頓了一下，短暫看向你們。
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]出於種種原因，我們不得不對能源進行重新規劃，這是烏薩斯如今窘困狀況的來源。
+[name="維特"]烏薩斯重啟了對石棺的研究，但是這並不順利。
+[charslot(slot = "m", name = "avg_npc_1984_1#3$1", focus="m")]
+[name="維特"]我們需要凱爾希，這位切城研究者的知識，來幫助民眾渡過眼前這場寒冬。
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="阿米婭"]透過研究石棺，就像曾經在切城的研究所那樣？
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]看來你們也清楚，這是最快的方法。
+[name="維特"]說到這裡，能否請兩位告訴我，凱爾希，如今在何處？
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="阿米婭"]……
+[Dialog]
+[charslot]
+[Decision(options="您為什麼這樣問？;您不相信中尉告訴您的消息。", values="1;2")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]請別介意，我提問只是出於謹慎。
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="維特"]畢竟，我們都知道，在那些秘密警察認定她已經死去的歲月裡，凱爾希其實都還一直活躍在某些地方，不是嗎？
+[name="維特"]我只是不希望我們的談話建立在不必要的欺瞞之上。
+[Predicate(references="2")]
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]與其說是不相信阿洛達的消息，不如說，我是需要確認如今的羅德島，是否還有協助烏薩斯進行石棺研究的能力。
+[name="維特"]我當然可以接受合作方保留一些自己的秘密，但前提是你們正面回答必要的疑問。
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]凱爾希醫生……她無法到場，議長閣下。
+[name="阿米婭"]而且，請原諒，但我們對這次合作同樣懷有疑慮。
+[name="阿米婭"]我們也希望知道，烏薩斯如今對石棺的研究，是否會引發與切爾諾伯格一樣的悲劇。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="72_g7_ballroom",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="倨傲的軍官"]……截至昨日，軍情彙報如上。總體來說，第一集團軍目前計劃按兵不動，繼續守衛西南地區。
+[name="倨傲的軍官"]為確認進度，我軍已於數日前向中部荒野地區定點投放了利用零號計劃能源驅動的炮彈樣品。
+[name="倨傲的軍官"]結果是，其對該地造成的毀滅性打擊，立刻對第三集團軍產生了威懾。
+[name="倨傲的軍官"]毫不誇張地說，陛下，這個武器將完全改變如今北線僵持的戰局。
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="惱怒的近侍"]但這是擅自行動！他們不僅沒有向您和議會徵得同意，甚至沒有提前通知附近的平民進行疏散，就毫無預警地投放了如此恐怖的武器——
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="倨傲的軍官"]只是死了一些流民，清掃了土壤貧瘠、雜草遍生的荒野，正好驗證武器的殺傷力。閣下為何動怒至此呢？
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="惱怒的近侍"]那都是陛下的子民，和陛下的土地！
+[charslot(slot = "m", name = "avg_npc_2155_1#8$2", focus="m")]
+[name="費奧多爾"]……
+[charslot(slot = "m", name = "avg_npc_2155_1#2$2", focus="m")]
+[name="費奧多爾"]詳細的報告呢？
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="倨傲的軍官"]就在這裡。
+[Dialog]
+[charslot]
+近侍忍著不悅，走上前去將報告接過，呈送給大殿盡頭的皇帝。
+[Dialog]
+[PlaySound(key="$d_avg_paper1",volume=1)]
+[PlaySound(key="$d_avg_paper2",volume=1,delay=2)]
+[delay(time=1)]
+費奧多爾反覆審閱著這幾頁輕飄的紙張，任由時間在寂靜中一分一秒地流逝。
+苦杏仁的氣味始終縈繞在空曠的大殿之中。
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="惱怒的近侍"]陛下……
+[charslot(slot = "m", name = "avg_npc_2155_1#8$2", focus="m")]
+[name="費奧多爾"]（抬手示意）
+[charslot(slot = "m", name = "avg_npc_2155_1#1$2", focus="m")]
+[name="費奧多爾"]請轉告你們的元帥，我對這份成果很滿意。但對你們在報告中提出的要求——取得在切城散失的資料，和更多的能源援助……
+[name="費奧多爾"]聖駿堡方面暫時無法提供。 
+[name="費奧多爾"]對於零號計劃而言，研究如何穩定地取得石棺中的能源才是重中之重，這是未被切城研究所攻克的難題，也是烏薩斯如今最緊迫的需求。
+[charslot(slot = "m", name = "avg_npc_2155_1#7$2", focus="m")]
+[name="費奧多爾"]但你們，卻選擇了先行將實驗成果用於推進石棺武器化。
+[name="費奧多爾"]這並非我決定傾舉國之力支持零號計劃時最想看到的結果。
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="倨傲的軍官"]陛下，元帥做好了準備去戰勝背叛了烏薩斯的敵人。
+[name="倨傲的軍官"]如果陛下不支持元帥，難道是要坐視那些叛臣打開聖駿堡的城門，掠奪烏薩斯的財富嗎？
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[CameraShake(duration=0.4, xstrength=30, ystrength=30, vibrato=30, randomness=90, fadeout=true, block=false)]
+[name="惱怒的近侍"]放肆！！你怎敢這樣同陛下講話！
+[charslot(slot = "m", name = "avg_npc_2155_1#4$2", focus="m")]
+[name="費奧多爾"]……
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="73_g14_prolocutoroffice",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]我必須坦白，議長閣下。羅德島的確擁有凱爾希醫生對石棺的所有研究報告和相關資料……
+[name="阿米婭"]但在展開合作之前，我們需要確保，羅德島的安全可以得到保障。
+[Dialog]
+[charslot]
+[Decision(options="阿米婭——", values="1")]
+[Predicate(references="1")]
+阿米婭側頭對你眨了眨眼。你意識到她有自己的安排，於是不再繼續。
+[charslot(slot = "m", name = "avg_npc_1984_1#7$1", focus="m")]
+[name="維特"]這理應是一場公平的交換……當然。
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]我為一個更加文明的烏薩斯，努力了許多年。至今都堅決地站在有著共同理想的陛下身旁，也是為了完成這個夙願。
+[name="維特"]請你相信，我不會為了貪圖一種簡單的解決方式，就輕易放棄信條，放棄對自我的約束，尤其是當我們都有別的選擇的時候。
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]抱歉，議長閣下，這並不是我的本意。
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="維特"]我明白，你只是謹慎。這是極少在你這樣的年輕人身上能看到的特質。
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]唉，今日就讓我為你們免去這些迂迴吧。告訴我，你們會為這一次合作索討什麼樣的條件？
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]我們想借用石棺。
+[charslot(slot = "m", name = "avg_npc_1984_1#4$1", focus="m")]
+[name="維特"]“借用”？
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="維特"]到哪種程度？具體如何利用？又……為了什麼？
+[Dialog]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[PlaySound(key="$d_avg_pcket", volume=1)]
+[delay(time=1)]
+[name="阿米婭"]請看吧，我們的計劃都在這裡了。
+[name="阿米婭"]簡單來說，我們想要進入石棺設施，去驗證凱爾希醫生在封存資料裡曾提起過的，石棺尚未被探明的功能。
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="維特"]未知功能？
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]我們不能保證的確會有，但可以保證至少驗證功能的實驗不會損害石棺。
+[charslot(slot="m",name="avg_1037_amiya3_1#7$1",focus="m")]
+[name="阿米婭"]根據凱爾希醫生的資料，它也許能為羅德島關於感染者新病徵的研究提供幫助，這也代表石棺可能擁有比單純供能更強大的作用。
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]當然，後續相關研究是否能夠繼續推進，也要仰賴烏薩斯的決策。
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="維特"]羅德島會與我們分享這個也許存在，也許不存在的功能。
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]它畢竟也屬於凱爾希醫生研究的一部分。
+[charslot(slot = "m", name = "avg_npc_1984_1#3$1", focus="m")]
+[name="維特"]……
+[Dialog]
+[PlaySound(key="$d_avg_paper2", volume=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="維特"]所以……
+[name="維特"]你們所求，只是去尋找一個不知是否存在的解法。
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]也許它對其他人來說不重要，但至少對羅德島來說，至關重要。
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]如果那個功能並不存在呢？
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]我們的交換依舊成立。
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]即使意味著它只是變成了一樁高投入零回報的買賣？
+[charslot(slot="m",name="avg_1037_amiya3_1#6$1",focus="m")]
+[name="阿米婭"]我們做好了準備。
+[charslot(slot = "m", name = "avg_npc_1984_1#7$1", focus="m")]
+[name="維特"]……
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="維特"]說說吧，你們的準備是什麼？
+[dialog]
+[musicvolume(volume=0.3, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[Background(image="21_G9_rhodes_xqoffice",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0.7, keep=true)]
+[bgeffect(name="$eb_blackmask",layer=1)]
+[Delay(time=0.5)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#3$1",focus="m")]
+[name="阿米婭"]如果我們要和烏薩斯官方進行合作，要怎樣的計劃才能使他們信服呢？
+[charslot(slot="m",name="avg_4179_monstr_1#1$1",focus="m")]
+[name="Mon3tr"]我還保留著凱爾希封鎖石棺的全部資料，這些資料可以幫助烏薩斯重新啟動石棺的能源核心。
+[name="Mon3tr"]博士，這還是需要由你來決定，我們到底要不要把開啟石棺的權力再交到烏薩斯手中。
+[dialog]
+[charslot]
+[Decision(options="阿米婭，你覺得呢？;Mon3tr你怎麼看？;可露希爾你有什麼主意？", values="1;2;3")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#16$1",focus="m")]
+[name="阿米婭"]博士……如果是我來做決定的話，我不會希望石棺掌握在任何一個政權手中。
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]可是在烏薩斯源石正在枯竭的當下，還有許多人切實需要石棺帶來的能源……
+[name="阿米婭"]我們也需要，石棺能帶來的奇蹟……
+[Predicate(references="2")]
+[charslot(slot="m",name="avg_4179_monstr_1#1$1",focus="m")]
+[name="Mon3tr"]博士，說實話，我也不清楚。
+[charslot(slot="m",name="avg_4179_monstr_1#9$1",focus="m")]
+[name="Mon3tr"]我見證過發生在研究所的慘劇，沒有人可以確保它不會再次發生。
+[name="Mon3tr"]但是，凱爾希當時選擇對石棺進行封存，而非毀滅。她應該是還相信著……在某個適當的時候，石棺能為泰拉的人們所用。
+[Predicate(references="3")]
+[charslot(slot="m",name="avg_4228_closur_1#9$1",focus="m")]
+[name="可露希爾"]啊，問我的意見？
+[charslot(slot="m",name="avg_4228_closur_1#11$1",focus="m")]
+[name="可露希爾"]唔啊……和烏薩斯打交道真的很嚇人啊。可是為了帶回凱爾希，我們也必須冒一點險吧。
+[charslot(slot="m",name="avg_4228_closur_1#4$1",focus="m")]
+[name="可露希爾"]也許，我可以再幫這些資料上一道保險。我們可以先用資料達成和烏薩斯的合作條件，等到真的確定時機合適的時候，再把資料解鎖呢？
+[Predicate(references="1;2;3")]
+[dialog]
+[charslot]
+[Decision(options="事態很緊急。", values="1")]
+[Predicate(references="1")]
+[Decision(options="不論是對我們，還是烏薩斯而言，都是如此。", values="1")]
+[Predicate(references="1")]
+[Decision(options="我們需要盡可能選擇合作，而非對抗。;我們都需要交付一點信任。", values="1;2")]
+[Predicate(references="1;2")]
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[charslot]
+[bgeffect]
+[Background(image="73_g14_prolocutoroffice",screenadapt="coverall", block=true)]
+[CameraEffect(effect="Grayscale", amount=0, keep=true)]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[Delay(time=0.5)]
+[musicvolume(volume=0.6, fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.7, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]作為交換的資料，會在我們提供的終端裡分時間段開啟，直到我們安全從澤爾格勒離開，才完全解鎖。
+[name="阿米婭"]並且，羅德島從澤爾格勒獲悉的情報，也會與您共享。
+[charslot(slot = "m", name = "avg_npc_1984_1#4$1", focus="m")]
+[multiline(name="維特")]原來是這樣……
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[multiline(name="維特")]你們的確早就準備好了。
+[name="維特"]而且聽起來，你們也已經知道石棺如今的位置。
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]如果您同意交換，石棺的所在，應該本來也會包含在聖駿堡的許諾中？
+[name="阿米婭"]我們只是提前進行了一些調查……
+[charslot(slot = "m", name = "avg_npc_1984_1#3$1", focus="m")]
+[name="維特"]嗯……你們知道的很多，這的確省去了我解釋的功夫。
+[charslot(slot = "m", name = "avg_npc_1984_1#1$1", focus="m")]
+[name="維特"]可是你們掌握的情報也代表著不可控的風險，如果不是烏薩斯面臨的情境格外緊迫，我不會考慮與你們合作。
+[name="維特"]羅德島的客人，能否再回答我一個問題。
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="維特"]凱爾希，這位神秘的學者，她不遠萬里來到烏薩斯，一手主導了石棺的研究與封閉。
+[name="維特"]她不是烏薩斯的臣民，也非烏薩斯的敵人……還有追隨她走過的道路，來到這裡的你們，名為羅德島的醫療組織。
+[name="維特"]你們的目的，究竟是什麼？
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]您願意相信，只是我們口頭給出的解釋？
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="m")]
+[name="維特"]是的，我只想聽到你們親口告訴我的答案。
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1984_1#9$1", focus="n")]
+[Decision(options="羅德島的答案從利益角度並不是可信的。;我們希望能從理想主義的角度請您相信。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="我們希望您願意相信。", values="1")]
+[Predicate(references="1")]
+[Decision(options="這片大地上依然有人願意為不囿於國別的正義而戰。;這片大地上依然有人想為所有人保留一個未來。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="維特"]嗯，這的確是……動人的說辭。
+[dialog]
+[charslot]
+[PlaySound(key="$doorknockquite", volume=1)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="nw")]
+[stopsound(fadetime=2.5, channel="nw")]
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", duration=1)]
+[delay(time=1.5)]
+從房間裡的另一扇門中，走出來一位近侍。他走到議長身邊，俯下身問道。
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", focus="m")]
+[name="近侍"]大人，是否要招待客人們用些什麼酒？
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="維特"]去年夏天塔曼的陽光很好，就來點那裡的淡紅酒吧。
+[dialog]
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", focus="m")]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="nw1")]
+[stopsound(fadetime=2, channel="nw1")]
+[charslot(duration=0.7)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_1984_1#6$1", focus="m")]
+[name="維特"]……我明白了。
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="維特"]在很早之前，烏薩斯就注意到了羅德島的名字，也做過不少調查……
+[name="維特"]羅德島的所作所為為自己爭取到了這一次合作的機會。
+[name="維特"]我會先代陛下寫一張出入澤爾格勒的通行敕令，這是目前我唯一能為你們做的事情。
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="阿米婭"]感謝您的諒解。
+[charslot(slot = "m", name = "avg_npc_1984_1#2$1", focus="m")]
+[name="維特"]另外，其實不需要駭入政務網站，也能摸清聖駿堡與澤爾格勒之間的位置距離。
+[name="維特"]澤爾格勒如今是烏薩斯引以為傲的“綠城”。一座“明日之城”。從客觀上講，它歡迎任何人的到來。
+[name="維特"]我由衷地祝願你們，能在那裡找到自己想要的東西。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="72_g7_ballroom",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_npc_2155_1#7$2")]
+[delay(time=1)]
+[playMusic(key="$saferoom_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2155_1#7$2", focus="m")]
+[name="費奧多爾"]……
+[Dialog]
+[charslot]
+費奧多爾沉默地再度看向手中的報告，已經忘記去控制自己喜怒不形於色。
+做報告的軍官依然平靜如常——他並不畏懼這位皇帝的沉默。
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", focus="m")]
+[name="禮貌的近侍"]陛下，您在這裡坐的時間很久了，需要點什麼酒水嗎？
+[charslot(slot = "m", name = "avg_npc_2155_1#4$2", focus="m")]
+[name="費奧多爾"]嗯……這裡準備了什麼酒？
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", focus="m")]
+[name="禮貌的近侍"]塔曼的淡紅酒。去年那裡的葡萄品質不錯。
+[charslot(slot = "m", name = "avg_npc_2155_1#2$2", focus="m")]
+[name="費奧多爾"]好，那就來一點吧。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1982_1#1$1", focus="m")]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_walk_stage", volume=1, loop=true, channel="c")]
+[StopSound(channel="c", fadetime=2)]
+[charslot(duration=1)]
+[delay(time=2.5)]
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="倨傲的軍官"]陛下。
+[charslot(slot = "m", name = "avg_npc_2155_1#2$2", focus="m")]
+[name="費奧多爾"]我這樣說，並不是為了責備卜捷里娜元帥。對強大的追逐，幾乎刻在了烏薩斯軍人的骨血裡。更何況這一成果的確對叛軍造成了威懾。
+[name="費奧多爾"]但記得提醒卜捷里娜元帥，烏薩斯交給她的任務——強大的武力很必要，但僅靠強大的武力，幫不了飢寒交迫的子民。
+[charslot(slot = "m", name = "avg_npc_2155_1#1$2", focus="m")]
+[name="費奧多爾"]……我會維持對澤爾格勒的物資援助。
+[name="費奧多爾"]同樣的，稍後我會命人從帝國能源科學研究院調動幾位院士，派往澤爾格勒，去協助你們展開零號計劃在能源方向上的研究。
+[name="費奧多爾"]希望你們能儘快取得類似的進展。
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="倨傲的軍官"]……
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="惱怒的近侍"]哼。如今你的沉默又是因為什麼呢？難道是對陛下心懷怨憤嗎？
+[charslot(slot = "m", name = "avg_npc_1977_1#1$1", focus="m")]
+[name="倨傲的軍官"]……第一集團軍不會辜負您的信任。
+[charslot(slot = "m", name = "avg_npc_2155_1#4$2", focus="m")]
+[name="費奧多爾"]當然。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="72_g7_ballroom",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2155_1#4$2", focus="m")]
+[name="費奧多爾"]……
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="惱怒的近侍"]陛下。
+[charslot(slot = "m", name = "avg_npc_2155_1#1$2", focus="m")]
+[name="費奧多爾"]我累了，薩瓦爾。維特呢？維特還在與那些客人會談嗎？
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="惱怒的近侍"]也許已經結束了，他傳來了訊息，說明他那邊已經得出了結果。
+[charslot(slot = "m", name = "avg_npc_2155_1#2$2", focus="m")]
+[PlaySound(key="$d_avg_chairrub", volume=1)]
+[name="費奧多爾"]事情很緊急，我應該儘快去見他，我必須……
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement_heavy2", volume=0.8)]
+[CameraShake(duration=0.7, xstrength=10, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[charslot(duration=1)]
+[delay(time=0.5)]
+[name="費奧多爾"]呃——
+費奧多爾試圖從座位上站起，卻因為頭暈而踉蹌，差點跌坐回去。
+他揮手拒絕了侍從的攙扶，自己用手緩慢按壓著眉心。
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="惱怒的近侍"]您一定是因為被那該死的莽夫衝撞了！
+[name="惱怒的近侍"]先前他們的元帥將強制徵兵的失誤用“過度警惕”一筆帶過也就罷了，沒想到這第一集團軍裡，連區區一個上尉也如此傲慢！
+[name="惱怒的近侍"]陛下，請恕我直言，我們還要這樣忍耐多久？
+[Dialog]
+[charslot]
+[name="費奧多爾"]不……
+[name="費奧多爾"]（低聲）還沒到時候。
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="惱怒的近侍"]您說什麼？
+[Dialog]
+[charslot]
+[name="費奧多爾"]氣味開始散去了，薩瓦爾。我已經聞不到苦澀的香氣了。
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="惱怒的近侍"]啊，我現在就去添加些新的——
+[Dialog]
+[charslot]
+[delay(time=0.3)]
+[PlaySound(key="$d_avg_clothtrailground", volume=1)]
+[charslot(slot = "m", name = "avg_npc_2155_1#3$2", duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_2155_1#3$2", focus="m")]
+[name="費奧多爾"]算了。
+[charslot(slot = "m", name = "avg_npc_2155_1#1$2", focus="m")]
+[name="費奧多爾"]我記得還有人等在門外。是從……奧多耶夫區來的公民代表嗎？先叫他們都進來吧，然後務必請他們不必拘束。
+[charslot(slot = "m", name = "avg_npc_2169_1#1$1", focus="m")]
+[name="惱怒的近侍"]也許您可以先休息一下。他們都在外面，走廊裡燒著暖氣，多等一段時間也不會冷的。
+[charslot(slot = "m", name = "avg_npc_2155_1#1$2", focus="m")]
+[name="費奧多爾"]沒有這樣的道理。沒有我邀請人們前來，卻使他們久久等待的道理。
+[name="費奧多爾"]如果我想知道他們最真實的想法，那就必須使他們先信任我，而不只是畏懼我，或崇敬我。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="72_g1_sjbstreet_d",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$m_dia_street_intro", key="$m_dia_street_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]哦，你們出來了。
+[name="阿洛伊澤"]和議長聊得如何？嗯……看你們的表情大概也能猜到了。
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_pcket", volume=1)]
+你拿出了方才取得的那一紙通行令。
+[Dialog]
+[Decision(options="我們與議長達成了合作。;我們得到了接觸石棺的機會。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]我都說了你們一定會平安無事的，但是你們的同伴就是不相信。
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot = "l", name = "avg_4228_closur_1#1$1", posfrom="-150,0",posto="-150,0",duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "l", name = "avg_4228_closur_1#1$1", focus="l")]
+[multiline(name="可露希爾")]我還從來沒有見過烏薩斯的皇宮，也想來看看嘛……
+[charslot(slot = "l", name = "avg_4228_closur_1#2$1", focus="l")]
+[multiline(name="可露希爾")]如果在這裡放飛無人機的話，應該會被當作敵對行為吧……
+[Dialog]
+[charslot(slot = "m", name = "avg_4179_monstr_1#6$1", duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_4179_monstr_1#6$1", focus="m")]
+[name="Mon3tr"]（警惕地張望）
+[Dialog]
+[charslot(slot = "r", name = "avg_npc_1730_1#4$1",posfrom="150,0",posto="150,0", duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_1730_1#4$1", focus="r")]
+[name="Raidian"]博士、阿米婭，維特議長允許我們進入澤爾格勒，他應該也提出了別的條件？
+[Dialog]
+[charslot]
+[Decision(options="我們需要分享一部分情報作為交換。;他們需要有人協助揭開石棺的秘密。", values="1;2")]
+[Predicate(references="1;2")]
+[Decision(options="維特議長對我們沒有敵意。;阿米婭表現得像是一位真正的外交家。", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot="m",name="avg_1037_amiya3_1#16$1",focus="m")]
+[name="阿米婭"]博士……我剛才，還是很緊張的啊。
+[charslot(slot="m",name="avg_1037_amiya3_1#8$1",focus="m")]
+[name="阿米婭"]我們既然已經得到了許可，最好儘快動身了。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]從個人意願上我很願意與你們一起去，但不巧的是，我最近也有沒辦法脫身的事。
+[name="阿洛伊澤"]只是姑且一提……你們離開後，還有足夠的人手，留守聖駿堡的感染者收治中心嗎？
+[Dialog]
+[charslot]
+[Decision(options="有人會威脅感染者礦工的安全？", values="1")]
+[Predicate(references="1")]
+[charslot(slot="m",name="avg_1037_amiya3_1#1$1",focus="m")]
+[name="阿米婭"]阿洛伊澤小姐，你承諾過在聖駿堡他們是安全的。
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="阿洛伊澤"]從烏薩斯官方的立場上，他們的確是安全的。但就如我之前所說的……現在的聖駿堡，並不安寧。
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="阿洛伊澤"]我會盡自己所能提供保障，但也建議你們，為可能發生的意外做好準備。
+[Dialog]
+[charslot]
+[delay(time=0.3)]
+[charslot(slot = "m", name = "avg_188_helage_1#2$1", duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_188_helage_1#2$1",focus="m")]
+[name="赫拉格"]有我在。
+[name="赫拉格"]我的身分不方便與博士一同前往澤爾格勒，為羅德島的病人提供一份保障，自當效勞。
+[charslot(slot = "m", name = "avg_npc_1966_1#11$1", focus="m")]
+[multiline(name="阿洛伊澤")]啊……
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[multiline(name="阿洛伊澤")]我都忘了還有您，好，現在真是安心多了。
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="阿洛伊澤"]最後，還是要叮囑一下。
+[name="阿洛伊澤"]雖然你們得到了來自議會的許可，但最好不要期待在澤爾格勒的任務會多順利。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="n")]
+[Decision(options="我們已經習慣了。;這次會有什麼不同嗎？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="m")]
+[name="阿洛伊澤"]我也是剛剛才得到消息，幾天前，第一集團軍對澤爾格勒進行了換防。
+[name="阿洛伊澤"]現在駐守澤爾格勒的人，是卜捷里娜元帥的獨生子，阿納托利將軍。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#3$1", focus="n")]
+[Decision(options="這個人很危險？;這個人很強硬？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]如果你是在聖駿堡的上流圈子中詢問他的風評，很有可能得到的答案是……“瘋癲”。
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="阿洛伊澤"]從我聽說的那些荒唐事蹟來看，這個人絕不是合格的將領，甚至不是合格的軍人……
+[name="阿洛伊澤"]但相對的，他的母親，第一集團軍的最高領袖卜捷里娜元帥，絕對是一位足夠聰明的人。
+[name="阿洛伊澤"]她不可能不知道澤爾格勒的戰略意義，此時此刻她做出這樣的用人決定，很難讓人相信只是為自己的孩子謀一份軍功。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="n")]
+[Decision(options="我們會小心行事的。", values="1")]
+[Predicate(references="1")]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]總之，祝你們找到自己需要的東西，也能幫烏薩斯解決這個麻煩吧。
+[Dialog]
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="n")]
+[Decision(options="你說石棺是“麻煩”？;難道不是一種“希望”？", values="1;2")]
+[Predicate(references="1;2")]
+[charslot(slot = "m", name = "avg_npc_1966_1#20$1", focus="m")]
+[name="阿洛伊澤"]希望、麻煩……怎麼不能“都是”呢。
+[charslot(slot = "m", name = "avg_npc_1966_1#1$1", focus="m")]
+[name="阿洛伊澤"]作為一個局外人，也不能繼續對種種風言道聽塗說了。
+[name="阿洛伊澤"]再一次，祝你們平安，博士。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="73_g18_ursuswarshipdeck_n",screenadapt="coverall", block=true)]
+[charslot(slot = "m", name = "avg_npc_2235_1#4$1", focus="m")]
+[delay(time=1)]
+[playMusic(key="$monastery_sad_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_npc_2235_1#4$1", focus="n")]
+[PlaySound(key="$d_avg_walk_stage")]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_npc_2235_1#4$1", focus="m")]
+[name="阿納托利"]我討厭有人鬼鬼祟祟地待在我背後。
+[Dialog]
+[charslot]
+[delay(time=0.3)]
+[charslot(slot = "m", name = "avg_npc_2246_1#8$1", duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2246_1#8$1", focus="m")]
+[name="希爾達"]……抱歉。
+[charslot(slot = "m", name = "avg_npc_2235_1#1$1", focus="m")]
+[name="阿納托利"]母親讓你來當我的保姆，是不是？
+[name="阿納托利"]看看你，一個孱弱的感染者。這決定難道不令人發笑嗎？說不好，碰到危險的時候還需要我來保護你。
+[charslot(slot = "m", name = "avg_npc_2246_1#2$1", focus="m")]
+[name="希爾達"]如果有那種時刻，請您不必顧慮我。
+[charslot(slot = "m", name = "avg_npc_2235_1#1$1", focus="m")]
+[name="阿納托利"]哼，我當然不會！
+[name="阿納托利"]不過，在那之前，我允許你待在我身邊。
+[charslot(slot = "m", name = "avg_npc_2246_1#2$1", focus="m")]
+[name="希爾達"]我們什麼時候啟程呢？
+[charslot(slot = "m", name = "avg_npc_2235_1#9$1", focus="m")]
+[name="阿納托利"]別管那些。我還有問題，你先回答我。
+[name="阿納托利"]為什麼這些石頭沒有從我的身體裡和皮膚上消失，我卻感受不到疼痛了？
+[charslot(slot = "m", name = "avg_npc_2235_1#4$1", focus="m")]
+[name="阿納托利"]突然就不再痛了……這多奇怪啊。
+[charslot(slot = "m", name = "avg_npc_2246_1#8$1", focus="m")]
+[name="希爾達"]因為我所做的，僅僅是撫去了痛苦，使我們免於總是憂慮死亡，從而消去對它的恐懼。人們起初會覺得恍惚，感覺這並非真實……
+[charslot(slot = "m", name = "avg_npc_2235_1#9$1", focus="m")]
+[name="阿納托利"]你把這樣的賜福給了多少人？
+[charslot(slot = "m", name = "avg_npc_2246_1#1$1", focus="m")]
+[name="希爾達"]不計其數。
+[charslot(slot = "m", name = "avg_npc_2235_1#1$1", focus="m")]
+[name="阿納托利"]那就是所有向你尋求幫助的人。
+[charslot(slot = "m", name = "avg_npc_2246_1#2$1", focus="m")]
+[name="希爾達"]也正是所有受苦的人。
+[charslot(slot = "m", name = "avg_npc_2235_1#6$1", focus="m")]
+[name="阿納托利"]那難道所有人也都看到了嗎？看到那金色的、無盡的河流……難道我其實並不特殊？
+[charslot(slot = "m", name = "avg_npc_2235_1#9$1", focus="m")]
+[name="阿納托利"]你為什麼要出現，宣稱自己無法治癒礦石病卻又消除了我的病痛？你讓我看到的究竟是什麼？
+[multiline(name="阿納托利")]告訴我——
+[charslot(slot = "m", name = "avg_npc_2235_1#7$1", focus="m")]
+[PlaySound(key="$d_avg_clothmovement_heavy1", volume=0.8)]
+[CameraShake(duration=0.5, xstrength=10, ystrength=12, vibrato=30, randomness=90, fadeout=true, block=false)]
+[multiline(name="阿納托利")]告訴我吧！
+[Dialog]
+[charslot]
+少年突然轉身，抓住希爾達瘦弱的肩膀。他捏得那樣用力，彷彿只要如此就能從對方口中得到想要的答案。
+但希爾達並未立刻理解使他情緒陡然激動的緣由。
+[charslot(slot = "m", name = "avg_npc_2246_1#2$1", focus="m")]
+[name="希爾達"]您說……什麼？
+[charslot(slot = "m", name = "avg_npc_2235_1#6$1", focus="m")]
+[name="阿納托利"]金色的、靜止的河流！一望無際的河流，在你治癒我時，我看見的景象！
+[charslot(slot = "m", name = "avg_npc_2246_1#2$1", focus="m")]
+[name="希爾達"]您看見了——
+[charslot(slot = "m", name = "avg_npc_2235_1#4$1", focus="m")]
+[name="阿納托利"]我只窺見了一眼，卻是在一切肉體的疼痛從身上褪去的時刻，這一定代表著什麼。
+[name="阿納托利"]難道那就是你說的永恆之地嗎？所有人都有資格前往那裡嗎？但是如果是這樣的話……
+[name="阿納托利"]那所謂的永恆之地又和我們腳下這片大地有什麼區別？
+[charslot(slot = "m", name = "avg_npc_2246_1#1$1", focus="m")]
+[name="希爾達"]我不確定您究竟看見了什麼，但如果它使您感到平靜，不再恐懼，不再怨恨，那也許，它就是屬於您的永恆之地。
+[name="希爾達"]我很高興您見到了它。
+[charslot(slot = "m", name = "avg_npc_2235_1#4$1", focus="m")]
+[name="阿納托利"]……只是見過是不夠的。
+[charslot(slot = "m", name = "avg_npc_2235_1#9$1", focus="m")]
+[name="阿納托利"]告訴我，我們要怎樣才能抵達那裡？
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_footsteps_flock", volume=0.6, loop=true, channel="f")]
+[StopSound(channel="f", fadetime=2)]
+[delay(time=1.5)]
+[name="遠處的聲音"]——小將軍——
+[name="遠處的聲音"]你們找到他了嗎？
+[name="遠處的聲音"]該死，說是儘快啟程，結果兩個人都不見了——
+[name="遠處的聲音"]……好像在那邊？你，過去看看。
+[charslot(slot = "m", name = "avg_npc_2235_1#5$1", focus="m")]
+[name="阿納托利"]告訴我……
+[charslot(slot = "m", name = "avg_npc_2246_1#1$1", focus="m")]
+[name="希爾達"]好像有人在尋找我們。
+[name="希爾達"]讓我們先啟程吧，好嗎？在路上，我會告訴您，關於您想知道的一切。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1.5, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[PlaySound(key="$d_avg_footstep_stonestep",volume=0.6,channel="step",loop=false)]
+[stopsound(channel="step",fadetime=3)]
+[PlaySound(key="$d_avg_walk_stage", volume=1,loop="false", channel="step2")]
+[stopsound(channel="step",fadetime=3)]
+[delay(time=2)]
+[name="殷勤的衛兵"]——這邊就是集合住宅的內部，您的同伴大都也被安置在這裡。雖然位於衛星城邊緣，但相關設施都與城中是同樣級別的完善。
+[name="殷勤的衛兵"]要不要進去看看？
+[name="希爾達"]當然。謝謝您為我指路……
+[Dialog]
+[PlaySound(key="$dooropenquite", volume=1)]
+[Background(image="73_g3_exurbroom",screenadapt="coverall", fadetime=1.5,block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2259_1#1$1", focus="m")]
+[name="驚訝的流民"]是誰——
+[name="驚訝的流民"]希爾達女士？
+[charslot(slot = "m", name = "avg_npc_2246_1#3$1", focus="m")]
+[name="希爾達"]扎亞！所有人都在這裡嗎？
+[charslot(slot = "m", name = "avg_npc_2260_1#1$1", focus="m")]
+[name="友善的流民"]那些當兵的把我們趕進這棟大樓裡，還以為是什麼地方，結果雖然看起來破破爛爛的，但卻什麼東西都有……
+[name="友善的流民"]您別為我們擔心！
+[charslot(slot = "m", name = "avg_npc_2246_1#1$1", focus="m")]
+[name="希爾達"]怎麼可能不擔心呢？
+[name="希爾達"]這幾天我總是在想，你們在哪裡？會不會受凍？但現在看起來，一切都很好，甚至比我想像的更好。
+[Dialog]
+希爾達轉向領她進來的衛兵。
+[charslot(slot = "m", name = "avg_npc_2246_1#9$1", focus="m")]
+[multiline(name="希爾達")]先生，請向元帥轉達我的謝意。
+[charslot(slot = "m", name = "avg_npc_2246_1#1$1", focus="m")]
+[multiline(name="希爾達")]感謝她收留了我的同伴，還提供了能遮蔽風雪的房屋供他們居住——
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_runstop", volume=0.8)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2235_1#3$1", duration=0.5)]
+[delay(time=0.7)]
+[charslot(slot = "m", name = "avg_npc_2235_1#3$1", focus="m")]
+[name="阿納托利"]與其感謝她，倒不如感謝我。
+[charslot(slot = "m", name = "avg_npc_2246_1#1$1", focus="m")]
+[name="希爾達"]也感謝您。
+[charslot(slot = "m", name = "avg_npc_2235_1#1$1", focus="m")]
+[name="阿納托利"]……你根本不知道為什麼需要感謝我，是不是？
+[charslot(slot = "m", name = "avg_npc_2246_1#1$1", focus="m")]
+[name="希爾達"]沒有您的允許，我無法先來這裡見這些同伴。
+[charslot(slot = "m", name = "avg_npc_2235_1#3$1", focus="m")]
+[name="阿納托利"]哼，也對。
+[Dialog]
+[charslot]
+阿納托利環視四周，突然湊到希爾達身旁壓低了聲音。
+[charslot(slot = "l", name = "avg_npc_2235_1#9$1", focus="l")]
+[charslot(slot = "r", name = "avg_npc_2246_1#1$1", focus="l")]
+[name="阿納托利"]所以，他們也和我一樣。
+[charslot(slot = "r", name = "avg_npc_2246_1#1$1", focus="r")]
+[name="希爾達"]是的，我們都是相同的。我們終會在平靜的幸福中，抵達同一個目的地。
+[charslot(slot = "l", name = "avg_npc_2235_1#9$1", focus="l")]
+[name="阿納托利"]“永恆之地”？
+[charslot(slot = "r", name = "avg_npc_2246_1#9$1", focus="r")]
+[name="希爾達"]沒錯，永恆之地。就像在來的路上，我向您描繪的那樣。
+[charslot(slot = "l", name = "avg_npc_2235_1#4$1", focus="l")]
+[name="阿納托利"]“所有人都回歸一致的安寧”……
+[Dialog]
+[charslot]
+[charslot(slot = "m", name = "avg_npc_2260_1#1$1", focus="m")]
+[name="友善的流民"]希爾達女士，您身邊這位老爺也是我們的同伴嗎？
+[Dialog]
+[charslot]
+希爾達下意識抬頭，看著阿納托利的眼睛。
+[Dialog]
+[charslot(slot = "l", name = "avg_npc_2235_1#4$1", focus="r")]
+[charslot(slot = "r", name = "avg_npc_2246_1#2$1", focus="r")]
+[name="希爾達"]他——
+[charslot(slot = "l", name = "avg_npc_2235_1#4$1", focus="l")]
+[name="阿納托利"]……哼。
+[charslot(slot = "r", name = "avg_npc_2246_1#1$1", focus="r")]
+[name="希爾達"]當然……他當然是我們的同伴。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[charslot]
+[Background(image="73_g3_exurbroom",screenadapt="coverall", block=true)]
+[charslot(slot = "l", name = "avg_npc_2260_1#1$1")]
+[charslot(slot = "r", name = "avg_npc_2246_1#8$1")]
+[delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[delay(time=1)]
+[charslot(slot = "r", name = "avg_npc_2246_1#8$1", focus="r")]
+[name="希爾達"]……
+[charslot(slot = "l", name = "avg_npc_2260_1#1$1", focus="l")]
+[name="友善的流民"]我們什麼時候能離開這裡呢，女士？
+[charslot(slot = "r", name = "avg_npc_2246_1#2$1", focus="r")]
+[name="希爾達"]什麼？
+[charslot(slot = "l", name = "avg_npc_2260_1#1$1", focus="l")]
+[name="友善的流民"]我是說，我們不可能就這麼一直待在這裡，對吧？雖然這裡要什麼有什麼，但外面還有更多感染者，都需要您的幫助。
+[charslot(slot = "r", name = "avg_npc_2246_1#8$1", focus="r")]
+[name="希爾達"]是的，我們當然不會一直留在這裡，但現在……
+[Dialog]
+[charslot]
+希爾達抬頭望向外面走廊上少年瘦削的背影，指揮室中那濃重的血腥氣似乎仍然縈繞在鼻尖。
+她想起曾無意間在艦船上聽到的那些話，雙手在沉思中緊握成拳。
+[charslot(slot = "l", name = "avg_npc_2260_1#1$1", focus="r")]
+[charslot(slot = "r", name = "avg_npc_2246_1#2$1", focus="r")]
+[name="希爾達"]現在，我們都處在這裡軍隊的掌控之下，那位小將軍不會輕易放我們離開。而且我答應了他的母親，要在這段時間裡照顧他。
+[charslot(slot = "l", name = "avg_npc_2260_1#1$1", focus="l")]
+[name="友善的流民"]您是說——
+[charslot(slot = "r", name = "avg_npc_2246_1#2$1", focus="r")]
+[name="希爾達"]（低聲）在我們能夠安全離開之前，要麻煩你和扎亞了。
+[name="希爾達"]（低聲）我必須看著這位……以防他衝動的本性，不僅傷害到自己，還波及到更多人。
+[Dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_black",screenadapt="coverall", block=true)]
+[delay(time=1)]
+[PlayMusic(intro="$mist_intro", key="$mist_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=0.5)]
+[name="？？？"]……應該是，在這裡……
+[name="？？？"]停電的那幾天我用這件外套裹住過妮娜，一定是這件外套上有什麼問題，才讓她身上長了奇怪的東西——
+[name="？？？"]但是我只穿著它去幫那些白袍們洗過衣服——
+[name="？？？"]……
+[name="？？？"]不，我就該直接把它燒了。燒了就不會有問題了，就像處理被源石粉塵汙染的東西那樣……
+[name="？？？"]但是上面這些綠色的光點，跟源石粉塵根本不一樣——
+[Dialog]
+[playsound(key="$d_avg_button",volume=1)]
+[Background(image="49_g13_smallroom",screenadapt="coverall", fadetime=1,block=true)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2228_1#4$1", focus="m")]
+[name="友善的工人"]原來你躲在這裡啊？
+[charslot(slot = "m", name = "avg_npc_2228_1#1$1", focus="m")]
+[name="友善的工人"]明天去洗衣服的名額還有兩個，你去嗎？去的話，我就馬上把你的名字填上去了——
+[charslot(slot = "m", name = "avg_npc_2228_1#7$1", focus="m")]
+[name="友善的工人"]呃，你這穿的是什麼？你要去源石製品工廠工作了？但那不是都關門了嗎。
+[Dialog]
+[charslot]
+[delay(time=0.5)]
+[charslot(slot = "m", name = "avg_4225_tanya_1#1$2", duration=1)]
+[delay(time=1.5)]
+[charslot(slot = "m", name = "avg_4225_tanya_1#1$2", focus="m")]
+[name="？？？"]不是……我不去……
+[name="？？？"]妮娜還在診所，我還有事。
+[charslot(slot = "m", name = "avg_npc_2228_1#6$1", focus="m")]
+[name="友善的工人"]哦、哦，那好。家人的身體重要。
+[charslot(slot = "m", name = "avg_npc_2228_1#7$1", focus="m")]
+[name="友善的工人"]不過，你自己是不是也生病了？從前就算有事，你一天也能打三份工，現在卻放著好賺的工作不做，真是稀奇。
+[charslot(slot = "m", name = "avg_4225_tanya_1#1$2", focus="m")]
+[name="？？？"]……不……
+[name="？？？"]我得走了。你之後記得把洗衣服時穿的外套，多洗幾遍，清洗乾淨，或者——
+[name="？？？"]或者乾脆燒掉……
+[charslot(slot = "m", name = "avg_npc_2228_1#7$1", focus="m")]
+[name="友善的工人"]什麼——
+[Dialog]
+[charslot(slot = "m", name = "avg_4225_tanya_1#1$2", focus="m")]
+[delay(time=0.2)]
+[PlaySound(key="$d_gen_walk_n",volume=0.6)]
+[charslot(duration=0.7)]
+[delay(time=1)]
+[charslot(slot = "m", name = "avg_npc_2228_1#7$1", focus="m")]
+[name="友善的工人"]……喂，什麼意思啊！為什麼要我燒掉衣服？
+[name="友善的工人"]自從城裡感染者越來越多，這傢伙也越來越奇怪了……
+[charslot(slot = "m", name = "avg_npc_2228_1#6$1", focus="m")]
+[name="友善的工人"]唉，不過，我也管不著別人。
+[Dialog]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[stopmusic(fadetime=2)]
+[charslot]
+[Image]
