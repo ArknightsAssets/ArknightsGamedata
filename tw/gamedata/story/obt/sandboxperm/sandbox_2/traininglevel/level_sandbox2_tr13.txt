@@ -1,0 +1,43 @@
+[HEADER(is_tutorial=true, is_skippable=false)] 13_a
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[InputBlocker(blockInput=false)]
+[Battle.EnsureMinCost(cost=10)]
+[Tutorial(waitForSignal="put_down", charId="trap_513_xb2bas")]
+[Battle.Pause(pause=false)]
+[Battle.Delay(time=5)]
+[Battle.Pause(pause=true)]
+[InputBlocker(blockInput=true)]
+[Battle.LockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Delay(time=1)]
+[Battle.Pause(pause=true)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Tutorial(tileX=5, tileY=10, focusWidth=100, focusHeight=100, \
+          animStyle="Highlight", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=0.5, dialogHead="char_603_csnipe", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+嗯？這裡怎麼有一個被遺棄的飲品供給站？
+[SandboxBattle.LockCamera(enable=false)] 
+[InputBlocker(blockInput=true, tileX=5, tileY=10, validWidth=100, validHeight=80)]
+[Tutorial(waitForSignal="char_info", charId="trap_582_xb2dstr", tileX=5, tileY=10, focusWidth=100, focusHeight=100, \
+          dialogHead="char_601_cguard", animStyle="Click", focusStyle="HighlightCircle", black=0.5, \
+          protectTime=2, dialogHead="char_601_cguard", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+我來看看它還能不能用吧。
+[SandboxBattle.LockCamera(enable=true)] 
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=242, focusY=-111, focusWidth=480, focusHeight=235, \
+          animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black",anchor="Left", \
+          protectTime=2, dialogHead="char_601_cguard")] \
+背後寫了說明：飲品供給站在技能持續時間內會<@tu.kw>持續消耗</>飲料或能量劑來<@tu.kw>維持一定的繁榮度</>，並同時為所有幹員提供<@tu.kw>強力加成</>。
+[InputBlocker(blockInput=true)]
+[Tutorial(focusX=325, focusY=-25, focusWidth=150, focusHeight=70, anchor="Top",\
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=2, dialogHead="char_601_cguard", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+這裡顯示了我們目前的繁榮度。
+[PopupDialog(dialogHead="char_601_cguard", protectTime=2)] 當<@tu.kw>繁榮度達到一定程度</>時，<@tu.kw>建設值也會緩慢增長</>。
+[Tutorial(focusX=0, focusY=-100, focusWidth=300, focusHeight=200, anchor="Top",\
+          animStyle="Highlight", focusStyle="HighlightRect", black=0.5, \
+          protectTime=2, dialogHead="char_601_cguard", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")] \
+點擊這裡可以查看建設值的增加速度，透過提升繁榮度，建設值的增加速度也會跟著變快。
+[PopupDialog(dialogHead="char_603_csnipe", protectTime=1)] 工程部傳來了相關的圖紙，我們來試試吧！
+[InputBlocker(blockInput=false)]
+[Battle.UnlockFunction(mask="SYSTEM_MENU_INTERACT")]
+[Battle.Pause(pause=false)]

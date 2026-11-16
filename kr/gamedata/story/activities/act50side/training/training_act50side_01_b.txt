@@ -1,0 +1,30 @@
+[header(is_skippable=true, is_tutorial=true)]
+[skipnode(mode="nofirstskip")]
+[battle.delay(time=1.1)]
+[battle.lockfunction(mask="SYSTEM_MENU_INTERACT")]
+[battle.pause(pause=true)]
+[popupdialog(dialogHead="$avatar_kroos", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]봐, 지금이 기회야!
+[popupdialog(dialogHead="$avatar_fang", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]내가 이 밧줄벌레의 위력을 한 번 시험해 볼게! 이 밧줄벌레는 아군 오퍼레이터를 재배치하고 배치 방향을 바꿀 수 있어. 게다가 벌레철사 기술은 <@tu.kw>적에게 대미지를 입히고 용 조종 게이지를 누적</>시킬 수도 있지.
+[inputblocker(blockInput=false)]
+[battle.ensuremincost(cost=10)]
+[tutorial(animStyle="Drag", protectTime=0.5, waitForSignal="put_down", cardIndex=0, startCardIndex=0, endTileX=5, endTileY=1, charId="trap_274_pyctrn", posX=5, posY=1)]
+[tutorial(animStyle="Drag", waitForSignal="select_direction", startTileX=5, startTileY=0, endTileX=5, endTileY=2)]
+[inputblocker(blockInput=true)]
+[battle.pause(pause=false)]
+[battle.delay(time=2)]
+[battle.pause(pause=true)]
+[popupdialog(dialogHead="$avatar_fang", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]명중했어!
+[skipnode(mode="skip")]
+[tutorial(focusWidth=150, focusHeight=150, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", protectTime=0.5, dialogHead="$avatar_fang", tileY=2, tileX=5)]적이 <@tu.kw>용 조종 대기 상태</>에 진입했어. 이제 배치 구역에 있는 <@tu.kw>용 조종 허수아비</>를 사용하면 돼.
+[inputblocker(blockInput=false)]
+[battle.ensuremincost(cost=1)]
+[tutorial(animStyle="Drag", protectTime=0.5, waitForSignal="put_down", cardIndex=0, startCardIndex=0, endTileX=1, endTileY=2, charId="trap_281_ctlrol", posX=1, posY=2)]
+[inputblocker(blockInput=true)]
+[battle.pause(pause=false)]
+[battle.delay(time=0.5)]
+[battle.pause(pause=true)]
+[popupdialog(dialogHead="$avatar_kroos", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]화이팅, 반각귀~ 빨리 <@tu.kw>용 조종 허수아비가 있는 위치</>로 굴러가~
+[skipnode(mode="nofirstskip")]
+[SkipToThis]
+[battle.unlockfunction(mask="SYSTEM_MENU_INTERACT")]
+[battle.pause(pause=false)]

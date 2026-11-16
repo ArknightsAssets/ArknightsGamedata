@@ -1,0 +1,22 @@
+[header(is_skippable=false, is_tutorial=true)]
+[battle.delay(time=2)]
+[battle.lockfunction(mask="SYSTEM_MENU_INTERACT")]
+[battle.pause(pause=true)]
+[popupdialog(dialogHead="$avatar_kroos", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]와, 저기 엄청 큰 반각귀가 있네~
+[popupdialog(dialogHead="$avatar_kroos", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]빨리 사냥하고 싶어서 몸이 근질거려!
+[inputblocker(blockInput=false)]
+[battle.ensuremincost(cost=11)]
+[tutorial(animStyle="Drag", protectTime=0.5, waitForSignal="put_down", cardIndex=0, startCardIndex=1, endTileX=6, endTileY=2, charId="char_124_kroos", posX=6, posY=2)]
+[tutorial(animStyle="Drag", waitForSignal="select_direction", startTileX=7, startTileY=2, endTileX=5, endTileY=2)]
+[inputblocker(blockInput=true)]
+[battle.pause(pause=false)]
+[battle.delay(time=0.5)]
+[battle.pause(pause=true)]
+[popupdialog(dialogHead="$avatar_fang", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]우리가 여기에 <@tu.kw>밧줄벌레</> 사용법을 연습하러 왔다는 걸 잊지 마.
+[inputblocker(blockInput=false)]
+[battle.ensuremincost(cost=10)]
+[tutorial(animStyle="Drag", protectTime=0.5, waitForSignal="put_down", cardIndex=0, startCardIndex=0, endTileX=5, endTileY=1, charId="char_123_fang", posX=5, posY=1)]
+[tutorial(animStyle="Drag", waitForSignal="select_direction", startTileX=4, startTileY=1, endTileX=6, endTileY=1)]
+[inputblocker(blockInput=true)]
+[battle.unlockfunction(mask="SYSTEM_MENU_INTERACT")]
+[battle.pause(pause=false)]

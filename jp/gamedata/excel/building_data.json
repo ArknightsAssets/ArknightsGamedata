@@ -15226,6 +15226,97 @@
                     ]
                 }
             ]
+        },
+        "char_1048_orchd2": {
+            "charId": "char_1048_orchd2",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_hire_spd_all[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_spd&limit_tag[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_1049_catap2": {
+            "charId": "char_1049_catap2",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "train_spd_doubleProf3[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "train_spd_doubleProf3[100]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_spd[022]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4215_buddy": {
+            "charId": "char_4215_buddy",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "dorm_rec_single&tag[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "meet_spd_notOwned_P[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 30
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     },
     "buffs": {
@@ -15510,6 +15601,21 @@
             "buffCategory": "FUNCTION",
             "roomType": "CONTROL",
             "description": "制御中枢配置時、事務連絡速度が<@cc.vup>30%</>(基本連絡速度5％を含む)を下回るとき、連絡速度が<@cc.vup>+20%</>増加(同類の効果は重複適用しない、他の基地スキルの影響を受けない)",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "control_hire_spd_all[000]": {
+            "buffId": "control_hire_spd_all[000]",
+            "buffName": "事務室のキーパーソン",
+            "buffIcon": "control",
+            "skillIcon": "bskill_ctrl_orchd2",
+            "sortId": 1399,
+            "buffColor": "#005752",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "CONTROL",
+            "description": "制御中枢配置時、事務連絡速度<@cc.vup>+10%</>（同種の効果は高いほうのみ適用）",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -19213,6 +19319,21 @@
             "targetGroupSortId": 0,
             "targets": {}
         },
+        "trade_ord_spd[022]": {
+            "buffId": "trade_ord_spd[022]",
+            "buffName": "盛り上げ役",
+            "buffIcon": "trading",
+            "skillIcon": "bskill_tra_spd3&catap2",
+            "sortId": 4903,
+            "buffColor": "#0075a9",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "TRADING",
+            "description": "貿易所配置時、受注効率<@cc.vup>+35%</>",
+            "efficiency": 35,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
         "trade_ord_vodfox[000]": {
             "buffId": "trade_ord_vodfox[000]",
             "buffName": "ひそひそ話",
@@ -20050,6 +20171,21 @@
             "roomType": "TRADING",
             "description": "貿易所配置時、受注効率<@cc.vup>+5%</>、注文上限<@cc.vup>+2</>、<$cc.bd_felyne><@cc.rem>マタタビ</></>1個につき、受注効率<@cc.vup>+3%</>",
             "efficiency": 5,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "trade_ord_spd&limit_tag[000]": {
+            "buffId": "trade_ord_spd&limit_tag[000]",
+            "buffName": "隊長の自覚",
+            "buffIcon": "trading",
+            "skillIcon": "bskill_tra_orchd2",
+            "sortId": 4150,
+            "buffColor": "#0075a9",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "TRADING",
+            "description": "貿易所配置時、注文上限<@cc.vup>+3</>、貿易所に配置された<$cc.tag.mh2><@cc.kw>ホウエイの国狩猟団</></>オペレーター1人につき、受注効率<@cc.vup>+20%</>",
+            "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
         },
@@ -22814,6 +22950,42 @@
                 "PIONEER"
             ]
         },
+        "train_spd_doubleProf3[000]": {
+            "buffId": "train_spd_doubleProf3[000]",
+            "buffName": "心の赴くままα",
+            "buffIcon": "training",
+            "skillIcon": "bskill_train_mh2_guard&sniper1",
+            "sortId": 9901,
+            "buffColor": "#7d0022",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "TRAINING",
+            "description": "訓練室で協力者として配置時、<@cc.kw>前衛</>と<@cc.kw>狙撃</>の訓練速度<@cc.vup>+30%</>",
+            "efficiency": 30,
+            "targetGroupSortId": 2,
+            "targets": [
+                "WARRIOR",
+                "SNIPER"
+            ]
+        },
+        "train_spd_doubleProf3[100]": {
+            "buffId": "train_spd_doubleProf3[100]",
+            "buffName": "心の赴くままβ",
+            "buffIcon": "training",
+            "skillIcon": "bskill_train_mh2_guard&sniper2",
+            "sortId": 9901,
+            "buffColor": "#7d0022",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "TRAINING",
+            "description": "訓練室で協力者として配置時、<@cc.kw>前衛</>と<@cc.kw>狙撃</>オペレーターの訓練速度<@cc.vup>+50%</>、1時間ごとの体力消費量<@cc.vdown>+1</>",
+            "efficiency": 50,
+            "targetGroupSortId": 2,
+            "targets": [
+                "WARRIOR",
+                "SNIPER"
+            ]
+        },
         "train_spd_reduceTime[000]": {
             "buffId": "train_spd_reduceTime[000]",
             "buffName": "精神鍛錬",
@@ -24510,6 +24682,21 @@
             "buffCategory": "RECOVERY",
             "roomType": "DORMITORY",
             "description": "配置宿舎内、オペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.55</>（同種の効果は高いほうのみ適用）。対象が<@cc.kw>アズリウス</>の場合、更に<@cc.vup>+0.45</>",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "dorm_rec_single&tag[000]": {
+            "buffId": "dorm_rec_single&tag[000]",
+            "buffName": "狩猟のオトモ",
+            "buffIcon": "dormitory",
+            "skillIcon": "bskill_dorm_buddy",
+            "sortId": 5214,
+            "buffColor": "#21cdcb",
+            "textColor": "#ffffff",
+            "buffCategory": "RECOVERY",
+            "roomType": "DORMITORY",
+            "description": "宿舎配置時、自身以外のオペレーター1人の1時間ごとの体力回復量<@cc.vup>+0.55</>（同種の効果は高いほうのみ適用）。対象が<$cc.tag.mh><@cc.kw>アイルーと愉快な仲間たち</></>か<$cc.tag.mh2><@cc.kw>ホウエイの国狩猟団</></>オペレーターの場合、更に<@cc.vup>+0.45</>",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -26910,6 +27097,21 @@
             "buffCategory": "FUNCTION",
             "roomType": "MEETING",
             "description": "応接室配置時、ボード上未入手の手がかりを入手しやすい",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "meet_spd_notOwned_P[000]": {
+            "buffId": "meet_spd_notOwned_P[000]",
+            "buffName": "隠密行動の達人",
+            "buffIcon": "meeting",
+            "skillIcon": "bskill_meet_buddy",
+            "sortId": 6815,
+            "buffColor": "#dd653f",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "MEETING",
+            "description": "応接室配置時、ボード上未入手の手がかりを入手しやすい。<@cc.kw>焔狐竜オーキッド</>が制御中枢に配置されている場合、手がかり捜索速度<@cc.vup>+10%</>",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -100050,6 +100252,550 @@
                 "enableRoomType": 4112,
                 "quantity": 1
             },
+            "furni_Azuredream_hanger_01": {
+                "id": "furni_Azuredream_hanger_01",
+                "sortId": 2282,
+                "name": "燻製スタンド「烈竹」",
+                "iconId": "furni_Azuredream_hanger_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILING",
+                "subType": "DECORATION_C",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_1",
+                "width": 3,
+                "depth": 3,
+                "height": 7,
+                "comfort": 155,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "溶岩の高温で形を固定した烈竹製の、頑丈な燻製スタンド。時折、乾燥させた薬草や干し肉が吊るされている。\nハンターたちが食事を楽しむ憩いの場。出発前、彼らは決まってここに集まり、つかの間の温もりを分かち合う。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_brazier_01": {
+                "id": "furni_Azuredream_brazier_01",
+                "sortId": 2283,
+                "name": "粗鉄の火鉢",
+                "iconId": "furni_Azuredream_brazier_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "COOKING",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_1",
+                "width": 2,
+                "depth": 2,
+                "height": 3,
+                "comfort": 140,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "この部屋の中では珍しい鉄製の道具。その特殊な設計のお陰で、中の火が容易く消えることはない。\n熟練のハンターでも、野宿の際の長い夜を侮るわけにはいかない。この火鉢は、果てしなく続く夜闇の中で、唯一心を安らげてくれる光なのだ。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_shelf_01": {
+                "id": "furni_Azuredream_shelf_01",
+                "sortId": 2284,
+                "name": "職人の吊り棚",
+                "iconId": "furni_Azuredream_shelf_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "SHELF",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_2",
+                "width": 5,
+                "depth": 2,
+                "height": 3,
+                "comfort": 125,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "簡素な木板の棚。杭と麻紐で壁に固定されており、様々な物を置くことができる。\nスポノスケはしばしば、発明品を適当にこの上に置いている。そのため、棚がより多くの物を支えられるようにと、彼は幾度も補強を繰り返してきた。ある意味、この棚は彼のインスピレーションの結晶と言えるだろう。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_cabinet_01": {
+                "id": "furni_Azuredream_cabinet_01",
+                "sortId": 2285,
+                "name": "狩猟祭の料理台",
+                "iconId": "furni_Azuredream_cabinet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "STORAGE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_2",
+                "width": 7,
+                "depth": 2,
+                "height": 5,
+                "comfort": 275,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "分厚い木製の料理台。下には鍋がいくつか置かれており、天板にはお玉やフライ返しが立てかけられている。\n人々はここで幾度も食事を作り、狩人たちを旅路へと送り出してきた。この場所は、「腹を満たして、生きて帰ってきてほしい」という、何より素朴な願いを見守り続けてきたのだ。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_ceilingLight_01": {
+                "id": "furni_Azuredream_ceilingLight_01",
+                "sortId": 2286,
+                "name": "木製巣箱「蛍の家」",
+                "iconId": "furni_Azuredream_ceilingLight_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_2",
+                "width": 11,
+                "depth": 4,
+                "height": 3,
+                "comfort": 235,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "小さな木片を組み合わせて作られた照明。その隙間からは、緩やかに明滅する柔らかな光が溢れている。\nその正体はケイコウムシの巣箱である。人々はその中に特殊な樹脂を塗り、ケイコウムシを住まわせることで、その光を夜間の光源として利用している。ホウエイの国と自然の共生を示す、最たる一例と言えるだろう。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_table_01": {
+                "id": "furni_Azuredream_table_01",
+                "sortId": 2287,
+                "name": "団らんの座卓",
+                "iconId": "furni_Azuredream_table_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_1",
+                "width": 6,
+                "depth": 5,
+                "height": 3,
+                "comfort": 340,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "広々とした六角形の木製座卓。耐久性に優れ、様々な小物を並べておくことができる。\n戦術策定も、ターゲットの調査も、狩猟からの帰還を祝う宴も、すべてこの卓上で行われてきた。ここはハンターたちの一日が始まる場所であり、一日を終えて帰る場所でもある。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_carpet_01": {
+                "id": "furni_Azuredream_carpet_01",
+                "sortId": 2288,
+                "name": "紋様が織り込まれた絨毯",
+                "iconId": "furni_Azuredream_carpet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CARPET",
+                "subType": "NONE",
+                "location": "CARPET",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_2",
+                "width": 11,
+                "depth": 7,
+                "height": 1,
+                "comfort": 145,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "紋様が織り込まれた、赤と青の絨毯。二つはそれぞれ、溶岩が流れる様子と、氷の結晶を模しているようで、手触りは粗いが温かい。\nホウエイの国の織物職人たちは、自然への畏敬を織物に込めることを習わしとしている。この紋様は、雪山の下に流れる溶岩の奔流と、山々に積もる氷雪を表すのと同時に、ハンターの血脈に流れる情熱と冷静さをも象徴している。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_pillar_01": {
+                "id": "furni_Azuredream_pillar_01",
+                "sortId": 2289,
+                "name": "間仕切り「静寂の小道」",
+                "iconId": "furni_Azuredream_pillar_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "PARTITION",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 3,
+                "depth": 4,
+                "height": 9,
+                "comfort": 315,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "部屋を仕切るための装飾品。様々な飾りが吊るされている。\n視線を完全に遮ることなく、空間を区切ることができる。この大地とあの遠き国がそうであるように、夢と現もまた、往々にして紙一重の隔たりしかないものだ。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_leafWall_01": {
+                "id": "furni_Azuredream_leafWall_01",
+                "sortId": 2290,
+                "name": "祈願の竹編み飾り",
+                "iconId": "furni_Azuredream_leafWall_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "ORTHER_WD",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_3",
+                "width": 3,
+                "depth": 1,
+                "height": 3,
+                "comfort": 85,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "若竹と大きな木の葉を編んで作った花の形の壁飾り。中央の模様は作る家によって異なるらしい。\nホウエイの国では、庶民の家に「お守り」として飾られている。人々はこの飾りが「呪い」を退け、狩人が無事に狩りを終えられるよう守護してくれると信じている。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_bed_01": {
+                "id": "furni_Azuredream_bed_01",
+                "sortId": 2291,
+                "name": "隠者の寝台",
+                "iconId": "furni_Azuredream_bed_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "BEDDING",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_3",
+                "width": 9,
+                "depth": 4,
+                "height": 6,
+                "comfort": 530,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "日よけのついた木製の寝床に、色褪せた獣皮の敷布が敷かれている。厚手で暖かそうなその毛皮からは、日干ししたばかりのような心地よい香りが漂ってくる。\n十年という長い年月の間、幼き国主は幾度となくこうしたベッドで目を覚ましてきた。彼女も夢の中でだけは、巫女としての重荷を降ろし、普通の少女に戻ることができたのだ。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_chair_01": {
+                "id": "furni_Azuredream_chair_01",
+                "sortId": 2292,
+                "name": "沈黙の椅子",
+                "iconId": "furni_Azuredream_chair_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "CHAIR",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_1",
+                "width": 3,
+                "depth": 3,
+                "height": 4,
+                "comfort": 190,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "しっかりとした素材で作られた椅子。背もたれには獣の皮がかけられているが、もたれかかるには心許ないものであり、興奮した狩人が思い切り体重を預けた挙句ひっくり返ることもままある。\nミツドキ将軍はしばしばここに腰を下ろし、窓越しに遠い森と山を見つめていた。理性と感情の板挟みになりながら、彼は静かに秘密を守っていたのだ。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_crate_01": {
+                "id": "furni_Azuredream_crate_01",
+                "sortId": 2293,
+                "name": "ハンターの宝箱",
+                "iconId": "furni_Azuredream_crate_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CABINET",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_3",
+                "width": 3,
+                "depth": 2,
+                "height": 4,
+                "comfort": 155,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "雑多なものが詰め込まれた木箱。あらゆる道具や、正体不明の鉱石サンプル、さらには使い古された武器までもが入っている。\n不思議と、見た目の印象より容量が大きく、改造を経てさらに拡張することも可能。スポノスケはこのことを得意げに語るが、作り方を教えたのは自分だと、マサムネがこっそり明かしてくれた。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_column_01": {
+                "id": "furni_Azuredream_column_01",
+                "sortId": 2294,
+                "name": "羽休めの柱",
+                "iconId": "furni_Azuredream_column_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "COLUMN",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 6,
+                "depth": 3,
+                "height": 10,
+                "comfort": 445,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "自然に曲がった太い丸太の側面には、軍事情報を運ぶ「伝令」たちの拠り所となる、ちょっとした巣が作られている。\n通信技術が未発達であるホウエイの国において、小さなトランスポーターたちは防衛線と都を結ぶ命綱となっている。この柱は、数々の「急報」と「吉報」が行き交う様を見守り続けてきたのだ。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_furStand_01": {
+                "id": "furni_Azuredream_furStand_01",
+                "sortId": 2295,
+                "name": "獣皮乾燥用ラック",
+                "iconId": "furni_Azuredream_furStand_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "ORTHER_D",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_3",
+                "width": 2,
+                "depth": 4,
+                "height": 8,
+                "comfort": 260,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "獣の毛皮が丸ごと一枚張られたラック。この皮は特殊な加工を経て、なめし革のような質感を得ており、ほのかに油脂の香りが漂っている。\n一枚一枚の毛皮は、一つ一つの狩りの成功を物語るものである。そして、こうした毛皮は、やがて新たな装備へと姿を変え、狩人を守り、命を繋いでいくのだ。",
+                "obtainApproach": "購買部期間限定",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_basket_01": {
+                "id": "furni_Azuredream_basket_01",
+                "sortId": 2296,
+                "name": "幽光の吊り下げライト",
+                "iconId": "furni_Azuredream_basket_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "FLOORLAMP",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 2,
+                "depth": 2,
+                "height": 5,
+                "comfort": 175,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "精巧に編まれた竹籠の中に竹が一本立てられており、地下河川で捕獲されたケイコウムシが、ガラスのカバーの中で仄かな光を放っている。\n暗闇の中でしたたかに生きるこの小さな命は、一度は絶望の淵に立たされた狩人たちのように、今では希望の光を放っている。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_wallpaper_01": {
+                "id": "furni_Azuredream_wallpaper_01",
+                "sortId": 2297,
+                "name": "「ざわめきに耳を傾けて」",
+                "iconId": "furni_Azuredream_wallpaper_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLPAPER",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "WALL",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 34,
+                "depth": 1,
+                "height": 10,
+                "comfort": 240,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "ホウエイの国にある竹林の光景を映し出したウォールディスプレイ。窓越しに揺れる竹林が見え、風が葉を揺らす音まで聞こえてくる。\n打ち寄せる水の音に似たざわめきの中に身を置けば、そこで休息を取る者は不意に、遠い国へと足を踏み入れたかのような感覚に陥ることがある。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_floor_01": {
+                "id": "furni_Azuredream_floor_01",
+                "sortId": 2298,
+                "name": "「集会」",
+                "iconId": "furni_Azuredream_floor_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "FLOOR",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "FLOOR",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 34,
+                "depth": 10,
+                "height": 1,
+                "comfort": 240,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "大きな灰色の石が敷き詰められた床。上を歩けば、鈍い反響音が返ってくる。\nそれは時として、大収穫と共に戻ってきた狩人を迎え、また時には、下ろされる担架の重さを受け止めることもあった。この硬い地面は、去る者であれ留まる者であれ、すべての旅人をただ静かに支え続けている。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
             "furni_oct1st_deckChair_01": {
                 "id": "furni_oct1st_deckChair_01",
                 "sortId": 9998,
@@ -104104,6 +104850,38 @@
                 "comfort": 120,
                 "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
                 "description": "アーミヤとペリカをモチーフに制作された愛らしいオブジェ。モコウサたちが今、歴史的な邂逅を果たした。\n明日へと向かう旅路に、時空を超えた祝福がもたらされた。誰もが新たな物語に胸を躍らせている。",
+                "obtainApproach": "イベント報酬",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 0
+            },
+            "furni_act71d0_grill_01": {
+                "id": "furni_act71d0_grill_01",
+                "sortId": 10261,
+                "name": "肉焼きセット",
+                "iconId": "furni_act71d0_grill_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "CATERING",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "",
+                "groupId": "",
+                "width": 6,
+                "depth": 4,
+                "height": 4,
+                "comfort": 120,
+                "usage": "宿舎と活動室に飾れば、雰囲気を良くする",
+                "description": "質素な肉焼きセット。ありふれた焚き火に、簡素な木製の焼き台、どこにでもあるナイフで、最高にうまい肉が焼ける。\n「上手に焼けました～！」",
                 "obtainApproach": "イベント報酬",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -132489,6 +133267,143 @@
                     "furni_rabbitCinema_floor_01"
                 ]
             },
+            "furni_set_Azuredream": {
+                "id": "furni_set_Azuredream",
+                "enableRoomType": 4112,
+                "sortId": 129,
+                "name": "ホウエイの国風の居間",
+                "themeType": "LINKAGE",
+                "desc": "オーキッドの記憶をもとに再現したホウエイの国の居間。かの国の民は、天の御意志に従い、地の獣を狩る。そしてその国主は、幾度もの「試練」を乗り越え、一頭、また一頭と「異獣」を狩ることで、国を存続させてきた。その地において、狩猟とは単なる暮らしの一部ではなく、ある種の信仰であった。",
+                "quickSetup": [
+                    {
+                        "furnitureId": "furni_Azuredream_hanger_01",
+                        "pos0": 1,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_brazier_01",
+                        "pos0": 2,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_shelf_01",
+                        "pos0": 0,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_cabinet_01",
+                        "pos0": 1,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_ceilingLight_01",
+                        "pos0": 6,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_table_01",
+                        "pos0": 7,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_carpet_01",
+                        "pos0": 5,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_pillar_01",
+                        "pos0": 16,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_leafWall_01",
+                        "pos0": 19,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_bed_01",
+                        "pos0": 19,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_chair_01",
+                        "pos0": 13,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_crate_01",
+                        "pos0": 29,
+                        "pos1": 1,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_column_01",
+                        "pos0": 22,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_furStand_01",
+                        "pos0": 32,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_basket_01",
+                        "pos0": 32,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_wallpaper_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_floor_01",
+                        "pos0": 0,
+                        "pos1": 10,
+                        "dir": 0
+                    }
+                ],
+                "groups": [
+                    "furni_set_Azuredream_1",
+                    "furni_set_Azuredream_2",
+                    "furni_set_Azuredream_3",
+                    "furni_set_Azuredream_4"
+                ],
+                "furnitures": [
+                    "furni_Azuredream_hanger_01",
+                    "furni_Azuredream_brazier_01",
+                    "furni_Azuredream_shelf_01",
+                    "furni_Azuredream_cabinet_01",
+                    "furni_Azuredream_ceilingLight_01",
+                    "furni_Azuredream_table_01",
+                    "furni_Azuredream_carpet_01",
+                    "furni_Azuredream_pillar_01",
+                    "furni_Azuredream_leafWall_01",
+                    "furni_Azuredream_bed_01",
+                    "furni_Azuredream_chair_01",
+                    "furni_Azuredream_crate_01",
+                    "furni_Azuredream_column_01",
+                    "furni_Azuredream_furStand_01",
+                    "furni_Azuredream_basket_01",
+                    "furni_Azuredream_wallpaper_01",
+                    "furni_Azuredream_floor_01"
+                ]
+            },
             "furniM_set_basicRoom": {
                 "id": "furniM_set_basicRoom",
                 "enableRoomType": 32,
@@ -140526,6 +141441,63 @@
                     "furni_rabbitCinema_ceilinglamp_02",
                     "furni_rabbitCinema_plant_01",
                     "furni_rabbitCinema_ceilinglamp_03"
+                ]
+            },
+            "furni_set_Azuredream_1": {
+                "id": "furni_set_Azuredream_1",
+                "sortId": 1,
+                "name": "勝利の宴",
+                "themeId": "furni_set_Azuredream",
+                "comfort": 190,
+                "count": 4,
+                "furniture": [
+                    "furni_Azuredream_hanger_01",
+                    "furni_Azuredream_brazier_01",
+                    "furni_Azuredream_table_01",
+                    "furni_Azuredream_chair_01"
+                ]
+            },
+            "furni_set_Azuredream_2": {
+                "id": "furni_set_Azuredream_2",
+                "sortId": 2,
+                "name": "山林の温もり",
+                "themeId": "furni_set_Azuredream",
+                "comfort": 180,
+                "count": 4,
+                "furniture": [
+                    "furni_Azuredream_shelf_01",
+                    "furni_Azuredream_cabinet_01",
+                    "furni_Azuredream_ceilingLight_01",
+                    "furni_Azuredream_carpet_01"
+                ]
+            },
+            "furni_set_Azuredream_3": {
+                "id": "furni_set_Azuredream_3",
+                "sortId": 3,
+                "name": "翠竹の夢",
+                "themeId": "furni_set_Azuredream",
+                "comfort": 250,
+                "count": 4,
+                "furniture": [
+                    "furni_Azuredream_leafWall_01",
+                    "furni_Azuredream_bed_01",
+                    "furni_Azuredream_crate_01",
+                    "furni_Azuredream_furStand_01"
+                ]
+            },
+            "furni_set_Azuredream_4": {
+                "id": "furni_set_Azuredream_4",
+                "sortId": 4,
+                "name": "ホウエイ式建築",
+                "themeId": "furni_set_Azuredream",
+                "comfort": 330,
+                "count": 5,
+                "furniture": [
+                    "furni_Azuredream_pillar_01",
+                    "furni_Azuredream_column_01",
+                    "furni_Azuredream_basket_01",
+                    "furni_Azuredream_wallpaper_01",
+                    "furni_Azuredream_floor_01"
                 ]
             }
         },
@@ -149248,6 +150220,19 @@
                 "unlockType": "MainBG",
                 "unlockParams": [
                     "bg_sandboxv3_1"
+                ]
+            },
+            "bgm_bg_hunter": {
+                "bgmId": "bgm_bg_hunter",
+                "bgmSortId": 32,
+                "bgmStartTime": 1794812400,
+                "bgmName": "結営-雲の流れる日",
+                "gameMusicId": "music_bg_hunter",
+                "obtainApproach": "[購買部]で結営出猟パックを購入して獲得",
+                "bgmDescUnlocked": "背景付属",
+                "unlockType": "MainBG",
+                "unlockParams": [
+                    "bg_hunter_1"
                 ]
             }
         }

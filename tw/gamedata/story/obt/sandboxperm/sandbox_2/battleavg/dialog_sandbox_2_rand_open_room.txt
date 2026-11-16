@@ -1,0 +1,31 @@
+[header(actId="sandbox_2", npcId="")]
+前方地塊尚未清理，要招募施工隊前來處理嗎？新地塊存在未知風險，請做好準備。
+[decision(option1="向施工隊交付12份木材。", value1="v5_0", option2="向施工隊交付6份石材。", value2="v7_0", option3="向施工隊交付3份鐵礦石。", value3="v9_0", option4="還有別的辦法。", value4="v15_0")]
+[predicate(references="v5_0", selectableCondition="c12")]
+[deliveritem(itemId="sandbox_2_wood", value=12)]
+[withdrawsource(withoutAnim=true)]
+清理完成，新地塊開啟！
+[end]
+[predicate(references="v7_0", selectableCondition="c13")]
+[deliveritem(itemId="sandbox_2_stone", value=6)]
+[withdrawsource(withoutAnim=true)]
+清理完成，新地塊開啟！
+[end]
+[predicate(references="v9_0", selectableCondition="c14")]
+[deliveritem(itemId="sandbox_2_iron", value=3)]
+[withdrawsource(withoutAnim=true)]
+清理完成，新地塊開啟！
+[end]
+[predicate(references="v15_0")]
+[decision(option1="向施工隊交付60份粗製赤金。", value1="v16_0", option2="還是算了吧。", value2="v11_0")]
+[predicate(references="v16_0", selectableCondition="c17")]
+[deliveritem(itemId="sandbox_2_gold", value=60)]
+[withdrawsource(withoutAnim=true)]
+清理完成，新地塊開啟！
+[end]
+[predicate(references="v11_0")]
+[end]
+[condition(references="c12", key="itemGE", itemId="sandbox_2_wood", value="12")]
+[condition(references="c13", key="itemGE", itemId="sandbox_2_stone", value="6")]
+[condition(references="c14", key="itemGE", itemId="sandbox_2_iron", value="3")]
+[condition(references="c17", key="itemGE", itemId="sandbox_2_gold", value="60")]

@@ -1,0 +1,9 @@
+[header(actId="sandbox_2", npcId="")] 
+[name="警示牌"]前方新地塊存在未知風險，是否要進入？
+[decision(option1="我們已經做好了準備。", value1="1.1", option2="還是算了吧。", value2="1.2")]
+[predicate(references="1.1")]
+[withdrawsource(without=true)]
+[name="警示牌"]新地塊已開啟。
+[end]
+[predicate(references="1.2")]
+[end]

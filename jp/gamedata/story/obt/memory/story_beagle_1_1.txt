@@ -1,0 +1,780 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Delay(time=1)]
+[gridbg(imagegroup="44_g13_afterglow_L1/44_g13_afterglow_R1/44_g13_afterglow_L2/44_g13_afterglow_R2", solidwidth="1280/1280/1280/1280", solidheight="720/720/720/720",x=-640,fadetime=1)]
+[largebgtween(duration = 60,yFrom = 360, yTo = 720,block = false)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_driveincar",loop=true,channel="car",volume=0.5)]
+[PlaySound(key="$d_avg_wind",loop=true,channel="wind")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[PlayMusic(intro="$darkness01_intro", key="$darkness01_loop", volume=0.6)]
+[delay(time=0.5)]
+[name="ラヴァ"]こんな場所に、天災から身を隠せる砦なんて本当にあるのか？
+[name="クルース"]ほんとにあるよぉ。任務が終わったら、ちゃんとみんなを案内してあげるからぁ～。
+[name="ハイビスカス"]オレンジじゃなくて、金色のニンジンがあるって噂も本当なの？
+[name="クルース"]ほんとだよぉ～。変な感じのする名前だけど、すっごく美味しいんだからぁ。地元のおじさんやおばさんたちも、私たちをご飯に招待したいって言ってくれてるしぃ～。
+[name="ビーグル"]わぁ、ご馳走まであるんだ！　えへへ、じゃあ今回はクルースちゃんにガイドをお任せするね。
+[name="クルース"]任せてぇ～。
+[name="フェン"]気を緩めないで。あくまで任務が最優先だから。
+[name="一行"]はい、隊長。
+[name="フェン"]よし、みんな気を引き締めて。行動予備隊A1、出発――
+[StopSound(channel="car",fadetime=2)]
+[StopSound(channel="wind",fadetime=2)]
+[stopmusic(fadetime=2)]
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[gridbg]
+[charslot]
+[focusout(type="bg", id="46_g6_rmbtmine", from=0, to=1, duration=0, block=false)]
+[delay(time=2)]
+[curtain(direction = 0,fillfrom = 0.01,fillto = 1, grad=true, fadetime=0)]
+[curtain(direction = 4,fillfrom = 0.01,fillto = 1, grad=true, fadetime=0)]
+[Background(image="46_g6_rmbtmine",screenadapt="coverall")]
+そうして、私たちは出発した。
+もしあの夜、薬を横流ししていた傭兵たちを追わずにいたら。
+もしあの夜、坑道に下りていなかったら。
+……
+もしあの日……私がもっとちゃんと見ていたら。
+[Dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[curtain(direction = 0,fillfrom = 1,fillto = 0.3, grad=true, fadetime=3.5)]
+[focusout(type="bg", id="46_g6_rmbtmine", from=1, to=0, duration=6, block=false)]
+[curtain(direction = 4,fillfrom = 1,fillto = 0.3, grad=true, fadetime=3.5)]
+[delay(time=3.5)]
+[curtain(direction = 0,fillfrom = 0.3,fillto = 0, grad=true, fadetime=2.5)]
+[curtain(direction = 4,fillfrom = 0.3,fillto = 0, grad=true, fadetime=2.5)]
+[delay(time=2.5)]
+[PlayMusic(intro="$tense_intro", key="$tense_loop", volume=0.6)]
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=40, randomness=80, fadeout=true, block=false)]
+「クルースちゃん！　今だよ！」
+[Dialog]
+[charslot(slot="m",name="avg_122_beagle_1#3$1")]
+[charslot(slot="r",name="avg_npc_007",posfrom="0,0",posto="100,0",duration=0,block=true)]
+[delay(time=0.1)]
+[PlaySound(key="$d_avg_punch_xshield")]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=0, block=true)]
+[CameraShake(duration=0.4, xstrength=50, ystrength=50, vibrato=50, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",posfrom="0,0",posto="150,0",duration=0.5,block=true)]
+[charslot(slot="r",posfrom="100,0",posto="250,0",duration=0.5,block=true)]
+[delay(time=0.5)]
+[charslot(slot="l",name="avg_npc_007",posfrom="-500,0",posto="50,0",duration=1,block=true)]
+[delay(time=1)]
+[PlaySound(key="$d_avg_arrow")]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[delay(time=1)]
+[PlaySound(key="$bodyfalldown2")]
+[charslot(slot="l",posfrom="50,0",posto="50,-150",afrom=1, ato=0,duration=1,block=true)]
+[delay(time=1)]
+[Dialog]
+[charslot]
+戦闘は日没から深夜まで続いた。
+絶えず流れる汗が、クルースの細めた目に滲む。汗を拭う余裕すらない彼女は、暗闇に潜む情報を余すことなく捉えるべく、滲んだ汗を落とそうと思わず瞬きした。
+[PlaySound(key="$d_gen_heartbeat",loop=true,channel="heart",volume=0.6)]
+瞬きしちゃダメ！　ちゃんと見て、私！
+見えるはず……絶対に見えるはずなの！　しっかり捉えなきゃ――
+[charslot(slot="m",name="avg_123_fang_1#6")]
+[name="フェン"]ラヴァ、下がって！　クルース、二時の方向！
+[Dialog]
+[charslot]
+[PlaySound(key="$d_avg_arrow_rain",channel="1")]
+[delay(time=1.5)]
+[PlaySound(key="$bodyfalldown2",channel="2")]
+[delay(time=0.5)]
+[PlaySound(key="$bodyfalldown2",channel="3")]
+[delay(time=0.5)]
+[PlaySound(key="$bodyfalldown2",channel="4")]
+[delay(time=1.5)]
+[charslot(slot="m",name="avg_120_hibisc_1#6$1")]
+[name="ハイビスカス"]フェン隊長、左、気をつけてください！
+[Dialog]
+[charslot]
+[CameraShake(duration=0.4, xstrength=50, ystrength=50, vibrato=50, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_punch_xshield")]
+[delay(time=1)]
+[charslot(slot="m",name="avg_122_beagle_1#5$1")]
+[name="ビーグル"]隊長、肩が……
+[charslot(slot="m",name="avg_123_fang_1#6")]
+[name="フェン"]ラヴァ、敵を坑道の外に誘導して。ここでアーツを使わせちゃダメだ！
+[charslot(slot="m",name="char_121_lava_1#3")]
+[name="ラヴァ"]わかってる！
+[charslot(slot="m",name="avg_123_fang_1#6")]
+[name="フェン"]ビーグル、あの槍を持った敵を足止めして！
+[charslot(slot="m",name="avg_122_beagle_1#3$1")]
+[name="ビーグル"]はい！
+[charslot(slot="m",name="avg_123_fang_1#6")]
+[name="フェン"]クルースは、私たちの援護を！
+[Dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=1,loop=true,channel="run1")]
+[Background(image="46_g6_rmbtmine",xScale=1.1, yScale=1.1, fadetime=1, screenadapt="coverall")]
+[Delay(time=1)]
+[StopSound(channel="run1",fadetime=2)]
+[StopSound(channel="heart",fadetime=2)]
+[Background(image="46_g6_rmbtmine",xScale=1.2, yScale=1.2, fadetime=1, screenadapt="coverall")]
+[Delay(time=1)]
+[stopmusic(fadetime=2)]
+[Background(image="46_g6_rmbtmine",xScale=1.4, yScale=1.4, fadetime=1, screenadapt="coverall")]
+[Delay(time=1)]
+[name="クルース"]（……あれは何？）
+[name="クルース"]（違う、一人だけじゃない！　あの人の後ろからも――）
+[CameraShake(duration=0.3, xstrength=50, ystrength=50, vibrato=50, randomness=90, fadeout=true, block=false)]
+[name="クルース"]ビーグルちゃん、早く逃げて！　振り向いちゃダメ――
+[Dialog]
+[PlaySound(key="$d_avg_arrow_rain")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Delay(time=4)]
+[Background(image="bg_infirmary",screenadapt="coverall")]
+[PlayMusic(intro="$warm_intro", key="$warm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="char_124_kroos_1#1")]
+[name="クルース"]……みんな、そんな顔しないでよぉ……
+[charslot(slot="m",name="avg_120_hibisc_1#2$1")]
+[name="ハイビスカス"]クルースちゃん、目の下にクマが……
+[charslot(slot="m",name="char_121_lava_1#2")]
+[multiline(name="ラヴァ")]あんな状況、誰にも予想できないだろ！　アタシたちは全力を出し切ったのに……
+[charslot(slot="m",name="char_121_lava_1#3")]
+[multiline(name="ラヴァ")]チッ！　クルース、これはお前のせいじゃないからな！
+[charslot(slot="m",name="avg_123_fang_1#5")]
+[name="フェン"]クルースは自分の仕事をしただけだよ。私が、私がダメだったから――
+[charslot(slot="m",name="char_124_kroos_1#2")]
+[name="クルース"]フェンちゃん！　わ、私はほんとに大丈夫だからぁ……
+[charslot(slot="m",name="avg_122_beagle_1#5$2")]
+[name="ビーグル"]だったら、今夜はちゃんと寝てね。
+[charslot(slot="m",name="char_124_kroos_1#3")]
+[name="クルース"]ビーグルちゃんまで、なんでそんなこと――
+[charslot(slot="m",name="avg_122_beagle_1#2$2")]
+[name="ビーグル"]あの時、一番後ろにいたのがクルースちゃんだったら、きっとわたしと同じように、あの人たちを必死で食い止めてくれたでしょ？
+[charslot(slot="m",name="avg_122_beagle_1#9$2")]
+[name="ビーグル"]それに……ほら、わたしはこの通り元気いっぱいだよ。身体能力測定の成績だって「優秀」だし、このくらい――
+[characteraction(name="middle", type="jump", power=50, times=2, fadetime=0.8)]
+[name="ビーグル"]ほら！
+[Delay(time=0.5)]
+[charslot]
+[CameraShake(duration=0.2, xstrength=30, ystrength=30, vibrato=30, randomness=70, fadeout=true, block=false)]
+[name="一行"]ちょ、ちょっと、無理に動いちゃだめ！
+赤髪の少女は意気揚々と燃え上がらんとする小さな火種のようだった。しかし、彼女は少し動こうとしたところで、仲間たちによって病室のベッドへと押し戻されてしまった。
+[name="ビーグル"]大丈夫だよ、本当に何ともないってば……
+[charslot(slot="m",name="avg_npc_501_1#1$1")]
+[name="医療部オペレーター"]腕を射抜かれたのに、何ともないわけないでしょう。ちゃんと横になってなさい。
+[name="医療部オペレーター"]骨まで傷が達していなかったのは、不幸中の幸いだったわね。
+[charslot]
+ようやく少し明るさを取り戻しかけていた病室の空気は、その言葉一つでまた冷え切ってしまった。
+[name="ビーグル"]（小声）先生……
+[charslot(slot="m",name="avg_npc_501_1#1$1")]
+[name="医療部オペレーター"]こほん。ビーグル、大事にならなかったのは良かったけど、それでもしばらくの間はここにいて、安静にしていなさい。訓練は全部休んで、ほかの予定も必須のもの以外は休むこと。
+[charslot]
+[name="ビーグル"]でも――
+[charslot(slot="m",name="avg_npc_501_1#1$1")]
+[name="医療部オペレーター"]「でも」はなしよ。フェン、訓練の時にこの紙をドーベルマン教官に渡してちょうだい。教官なら見ればわかるから。
+[charslot(slot="m",name="avg_123_fang_1#2")]
+[name="フェン"]はい。
+[charslot(slot="m",name="avg_npc_501_1#1$1")]
+[name="医療部オペレーター"]それじゃあ、ビーグルが休めるように、しばらくそっとしておいてあげて。それと……クルース、今回の件はあなた一人のミスじゃないんだから、ちゃんと寝なさいね。
+[name="医療部オペレーター"]……みんなもよ。ちゃんと休むこと。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",afrom=1, ato=0,duration=1.5)]
+[Delay(time=2)]
+[Dialog]
+[charslot]
+[PlaySound(key="$doorclosequite",volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_122_beagle_1#9$2")]
+[name="ビーグル"]えへへ、じゃあ遠慮なくダラダラしちゃおうかな。
+[charslot(slot="m",name="avg_122_beagle_1#9$2",focus="n")]
+病室にはビーグルだけが残され、室内は静まり返った。
+[charslot(slot="m",name="avg_122_beagle_1#2$2")]
+[name="ビーグル"]……
+[charslot(slot="m",name="avg_122_beagle_1#5$2")]
+[name="ビーグル"]もし、あの時……
+[Dialog]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[charslot]
+[Background(image="46_g6_rmbtmine",screenadapt="coverall")]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[PlaySound(key="$d_avg_arrow_rain",channel="5")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="ビーグル"]（あの時、わたしがもう少し右に移動していたら……わたしの盾がもっと頑丈だったら……）
+[name="ビーグル"]（クルースちゃんが眠れなくなることもなかった……みんなが今みたいになることもなかったのに……わたしが……）
+[name="ビーグル"]わたしは……いつになったら、あの盾をちゃんと持ち上げられるようになるの……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="bg_infirmary",screenadapt="coverall")]
+[Delay(time=2)]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_501_1#1$1")]
+[name="医療部オペレーター"]検査の結果だけど、数値はすべて正常値に戻ったわ。今日から、少し散歩をしてきてもいいわよ。
+[charslot(slot="m",name="avg_122_beagle_1#9$2")]
+[name="ビーグル"]ありがとうございます、先生！
+[charslot(slot="m",name="avg_npc_501_1#1$1")]
+[name="医療部オペレーター"]ふふっ、喜ぶのはまだ早いわよ。訓練室に戻っていいとは言ってないからね。
+[charslot(slot="m",name="avg_122_beagle_1#11$2")]
+[name="ビーグル"]ええ～……
+[charslot(slot="m",name="avg_npc_501_1#1$1")]
+[name="医療部オペレーター"]とはいえ、適度なリハビリの範囲であれば、しても構わないわ。腕を動かしたり、脚を伸ばしたり……
+[name="医療部オペレーター"]ただし、あくまで「適度な」運動にとどめてね。身体のどこかに違和感があったり、傷が痛んだりしたら、すぐに私に言うこと。
+[charslot(slot="m",name="avg_122_beagle_1#10$2")]
+[name="ビーグル"]はい！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_corridor_4",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_122_beagle_1#6$2")]
+[name="ビーグル"]静かだなぁ……やっぱり訓練室に行って、みんなの様子を見てこようかな？
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(slot="m",posfrom="0,0",posto="-100,0",duration=1.5,block=true)]
+[Delay(time=1.5)]
+[CameraShake(duration=0.3, xstrength=50, ystrength=50, vibrato=50, randomness=90, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_122_beagle_1#6$2",focus="n")]
+[name="？？？"]その子、捕まえて！！！
+[charslot(slot="m",name="avg_122_beagle_1#4$2",focus="m")]
+[name="ビーグル"]なに……？
+[Dialog]
+[PlayMusic(intro="$farce_intro", key="$farce_loop", volume=0.6)]
+[PlaySound(key="$d_avg_pawfootstep_2",loop=true,channel="step",volume=1)]
+[charslot(slot="m",name="avg_122_beagle_1#4$2",focus="n")]
+[charslot(slot="r",name="avg_npc_602_1#1$1",posfrom="600,0",posto="600,0",duration=0,block=true)]
+[charslot(slot="r",name="avg_npc_602_1#1$1",posfrom="600,0",posto="-1200,0",duration=1.5,block=true)]
+[StopSound(channel="step",fadetime=1.5)]
+[Delay(time=1.5)]
+[charslot]
+[charslot(slot="m",name="avg_122_beagle_1#11$2",posfrom="0,0",posto="-100,0",duration=0,focus="m")]
+[name="ビーグル"]――い、今のは！？
+[Dialog]
+[charslot(slot="m",name="avg_122_beagle_1#11$2",focus="n")]
+[PlaySound(key="$rungeneral", volume=1,loop=true,channel="run2")]
+[charslot(slot="r",name="avg_npc_1559_1#1$1",posfrom="1200,0",posto="0,0",duration=1.5,block=true)]
+[StopSound(channel="run2",fadetime=1.5)]
+[Delay(time=2)]
+[name="予備オペレーター"]はぁ、はぁ……
+[name="予備オペレーター"]ビーグル……先輩……手伝ってください――
+[charslot(slot="m",name="avg_122_beagle_1#3$2",focus="m")]
+[name="ビーグル"]わかった！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="bg_corridor_4",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+小さくやんちゃな循獣は、まるで挑発するかのように、廊下に整然と積まれた段ボール箱の上に飛び乗った。そしてゆっくりと頭を上げると、目の前の少女に向けて尻尾を振ってみせる。
+[charslot(slot="m",name="avg_npc_1559_1#1$1",focus="m")]
+[name="予備オペレーター"]いい子だねー……ほら、きーちゃん、こっちにおいで……
+小柄な少女はそっと身を屈めて、循獣の注意を引きつけている。
+[charslot(slot="m",name="avg_npc_1559_1#1$1",focus="m")]
+[name="予備オペレーター"]（小声）ビーグル先輩、お願いします……！
+[charslot]
+[Dialog]
+[stopmusic(fadetime=2)]
+[charslot(slot="l",name="avg_122_beagle_1#7$2",focus="l")]
+[charslot(slot="r",name="avg_npc_602_1#1$1",posfrom="0,0",posto="200,0",duration=0,focus="n")]
+[charslot(slot="l",posfrom="0,0",posto="50,0",duration=1,block=true,focus="l")]
+[Delay(time=1)]
+[charslot(slot="l",posfrom="50,0",posto="90,0",duration=1,block=true,focus="l")]
+[Delay(time=1)]
+[name="ビーグル"]（ゆっくりと近づく）
+[charslot(slot="l",name="avg_122_beagle_1#3$2",focus="l")]
+[name="ビーグル"]えいっ！
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement")]
+[charslot(slot="l",posfrom="90,0",posto="380,-150",afrom=1, ato=0,duration=1,block=true,focus="l")]
+[Delay(time=0.2)]
+[charslot(slot="r",afrom=1, ato=0,posfrom="200,0",posto="200,-150",duration=1)]
+[Delay(time=1)]
+[charslot]
+[PlaySound(key="$d_avg_mouse",channel="mouse")]
+[Delay(time=1)]
+ビーグルはようやく、騒ぎを起こしていた循獣をその腕に抱き留めた。すると循獣は、嬉しげにきゅんきゅんと鳴く。
+[PlayMusic(key="$normal_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_1559_1#1$1",focus="m")]
+[name="予備オペレーター"]さすが先輩！　頼りになります！
+[charslot]
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement")]
+[charslot(slot="m",name="avg_122_beagle_1#9$2",posfrom="0,-150",posto="0,0",afrom=0, ato=1,duration=1.5,focus="m")]
+[Delay(time=1.5)]
+[name="ビーグル"]あはは……
+[charslot(slot="m",name="avg_122_beagle_1#10$2",focus="m")]
+[name="ビーグル"]はい、ちゃんと抱っこしてあげて。もう駆け回らせちゃわないようにね。
+[charslot(slot="m",name="avg_npc_1559_1#1$1",focus="m")]
+[name="予備オペレーター"]はい、先輩！
+[charslot(slot="m",name="avg_122_beagle_1#11$2",focus="m")]
+[name="ビーグル"]それと……
+[charslot]
+二人の少女はほぼ同時に、床にひっくり返されたダンボールの数々に目を向けた。
+[charslot(slot="m",name="avg_npc_1559_1#1$1",focus="m")]
+[name="予備オペレーター"]この箱……後方支援部の人たちがここに仮置きしてたものみたいですね……
+[charslot]
+廊下には、彼女たちが立っている場所から視界の限りまで、循獣の小さな足跡が点々と続いていた。
+[charslot(slot="m",name="avg_122_beagle_1#11$2",focus="m")]
+[name="ビーグル"]これを全部片付けるとなると、結構時間がかかりそうだね……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_rhodesgrocery",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="l",name="avg_npc_1559_1#1$1",focus="l")]
+[charslot(slot="r",name="avg_122_beagle_1#1$2",focus="n")]
+[name="予備オペレーター"]うぅ……ご迷惑おかけしたうえに、ご飯までご馳走になっちゃってすみません……
+[charslot(slot="r",name="avg_122_beagle_1#1$2",focus="r")]
+[name="ビーグル"]いいのいいの。ランチの時間は過ぎちゃってたから、パンしか残ってなかったけど、はい、どうぞ。
+[charslot(slot="r",name="avg_122_beagle_1#10$2",focus="r")]
+[name="ビーグル"]急いで食べちゃって。じゃないと、訓練の時にお腹ぺこぺこになっちゃうよ。
+[charslot(slot="l",name="avg_npc_1559_1#1$1",focus="l")]
+[name="予備オペレーター"]あっ、しまった！　そうだ、午後も訓練があるんでした――先輩、本当にありがとうございました！　私、先に失礼しますね！
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1,loop=true,channel="run2")]
+[charslot(slot="l",name="avg_npc_1559_1#1$1",afrom=1, ato=0,duration=1.5,focus="l")]
+[StopSound(channel="run2",fadetime=1.5)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_972_1#1$1",focus="m")]
+[name="売店の従業員"]ビーグル、午後の訓練には出ないのかい？
+[charslot(slot="m",name="avg_122_beagle_1#9$2",focus="m")]
+[name="ビーグル"]あはは……今はお休みをもらってるんです。
+[charslot(slot="m",name="avg_npc_972_1#1$1",focus="m")]
+[name="売店の従業員"]へえ、君が休むなんて珍しいね。ところで、ずっと悩んでたみたいだけど、どのフレーバーにするか決まったかい？
+[charslot(slot="m",name="avg_122_beagle_1#4$2",focus="m")]
+[name="ビーグル"]うーん、新しいフレーバーがたくさんあって、どれも初めて見るものなので、悩んでしまって……
+[charslot(slot="m",name="avg_npc_972_1#1$1",focus="m")]
+[name="売店の従業員"]どうしても選べないようなら、この「ジャングルカーニバル」味を試してみるのはどうかな？
+[charslot(slot="m",name="avg_122_beagle_1#11$2",focus="m")]
+[multiline(name="ビーグル")]えっ？　なんだか変わった名前ですけど……
+[charslot(slot="m",name="avg_122_beagle_1#9$2",focus="m")]
+[multiline(name="ビーグル")]でも、オススメならそれにします！
+[charslot(slot="m",name="avg_npc_972_1#1$1",focus="m")]
+[name="売店の従業員"]まいどあり。おっと、そうだ――もし時間があるのなら、このお菓子の入った箱をエンジニア部に届けてくれないか？
+[charslot(slot="m",name="avg_122_beagle_1#10$2",focus="m")]
+[name="ビーグル"]もちろん、お安いご用です！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_corridor",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$doorknockquite", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_122_beagle_1#1$2",focus="m")]
+[name="ビーグル"]失礼します。
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]あれ、ビーグルちゃん。どうして君が？　売店の子は？　っていうか、この箱……全部ひとりで運んできてくれたの？
+[charslot(slot="m",name="avg_122_beagle_1#1$2",focus="m")]
+[multiline(name="ビーグル")]ちょうど手が空いてたので代わりに運んできたんです！　ふぅ、ここに置いときますね。
+[charslot(slot="m",name="avg_122_beagle_1#4$2",focus="m")]
+[multiline(name="ビーグル")]じゃあ、わたしはこれで――
+[charslot]
+その時、少女の視線は、机の前に立てかけられた盾に思わず吸い寄せられた。
+盾の表面は滑らかで、角にはまだ取り外されていない治具がついている。
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]試してみる？　まだ改造途中なんだけど、形や材料の使い方を色々と新しく工夫してみたんだ。
+[name="エンジニア部オペレーター"]気をつけてね。まだ重さの調整が終わってないから、少し――
+[CameraShake(duration=0.3, xstrength=40, ystrength=40, vibrato=50, randomness=80, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_putonwoodenfloor_xshield", volume=1)]
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="n")]
+[name="ビーグル"]――はあっ！
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]……重いかも。
+[charslot]
+ビーグルは盾を持ち上げると、勢いのままに二度振って、その後落ち着いた動作でしっかりと床に降ろした。
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]どうだった？
+[charslot(slot="m",name="avg_122_beagle_1#1$2",focus="m")]
+[name="ビーグル"]すごくしっくりきます！　私の盾に比べると少し軽いんですが、明らかにこっちのほうが分厚そうですね。取っ手の位置も、確かにこれなら方向を変えやすいなと思いました！
+[charslot(slot="m",name="avg_122_beagle_1#10$2",focus="m")]
+[name="ビーグル"]この盾、すごいですね……！
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]ふっふーん、最近かなり時間を使ってこれの製作をしてたからね。その甲斐があったみたいでよかった。
+[charslot(slot="m",name="avg_122_beagle_1#8$2",focus="m")]
+[name="ビーグル"]……
+[Dialog]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[charslot]
+[Background(image="46_g6_rmbtmine",screenadapt="coverall")]
+[CameraEffect(effect="Grayscale", amount=0.8, keep=true)]
+[PlaySound(key="$d_avg_arrow_rain",channel="6")]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[name="ビーグル"]（あの時、わたしがもう少し右に移動していたら……わたしの盾がもっと頑丈だったら……）
+[Dialog]
+[PlaySound(key="$flashback", volume=0.8)]
+[Blocker(a=0, r=1, g=1, b=1, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=1, block=true)]
+[charslot]
+[charslot(slot="m",name="avg_122_beagle_1#2$2",focus="m")]
+[Background(image="bg_corridor",screenadapt="coverall")]
+[CameraEffect(effect="Grayscale", fadetime=0, amount=0, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_122_beagle_1#6$2",focus="m")]
+[name="ビーグル"]あの……先輩、私の盾もこんな風に改造してもらえませんか？
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]えっ？　それは構わないけど、ただ――
+[charslot(slot="m",name="avg_122_beagle_1#7$2",focus="m")]
+[name="ビーグル"]エンジニア部の責任者への申請が必要でしょうか？　あるいは、まずドーベルマン教官に報告しないといけないとか？
+[charslot]
+[name="？？？"]そのどちらでもない。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",name="avg_npc_521_1#1$1",afrom=0, ato=1,duration=1.5,focus="m")]
+[Delay(time=2)]
+[charslot(slot="m",name="avg_122_beagle_1#4$2",focus="m")]
+[name="ビーグル"]Mechanistさん！？
+[charslot(slot="m",name="avg_npc_521_1#1$1",focus="m")]
+[name="Mechanist"]この盾はまだ試作段階の物だ。それゆえデータが不足している。特に、実戦でのフィードバックという最も重要なデータがな。つまり君の盾をこのように改造したいなら、もう少し待てということだ。
+[charslot(slot="m",name="avg_122_beagle_1#5$2",focus="m")]
+[name="ビーグル"]ごめんなさい、Mechanistさん。少し焦っていたみたいです……
+[charslot(slot="m",name="avg_npc_521_1#1$1",focus="m")]
+[name="Mechanist"]……だが、仮に誰かが志願者となり、エンジニア部の人員に協力してテストを早急に終わらせてくれるなら、これが生産ラインに乗る時期も大幅に早まるだろうな。
+[charslot(slot="m",name="avg_122_beagle_1#9$2",focus="m")]
+[name="ビーグル"]わたし、お手伝いします！
+[charslot(slot="m",name="avg_npc_521_1#1$1",focus="m")]
+[name="Mechanist"]では、もう一点――君がエンジニア部に盾の改造を申請するのは、これが初めてではないだろう？　ヴァルカンから話は聞いている。彼女に何度も依頼して改造を施し、重さを増しているそうだな。
+[name="Mechanist"]となればいっそのこと、自分で武器を改造する方法を学んでみてはどうだ？
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]そうだよ！　そうすれば、この先は自力で色んな武器を作れるようになるしさ。
+[charslot(slot="m",name="avg_122_beagle_1#4$2",focus="m")]
+[name="ビーグル"]わ、わたしがですか！？　わたしなんかに、できるでしょうか？
+[charslot(slot="m",name="avg_122_beagle_1#2$2",focus="m")]
+[name="ビーグル"]でも、先輩、前に言ってましたよね？　良い武器を作るには、アイデアと設計、鍛造の技術……どれ一つ欠けてもだめなんだって。それに、何年も努力を重ねないといけないって……
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]少なくとも、ビーグルちゃんには武器を鍛えるだけのパワーは絶対にあると思うよ。
+[charslot(slot="m",name="avg_npc_521_1#1$1",focus="m")]
+[name="Mechanist"]君のように勤勉な生徒なら、機械にまつわる理論なども覚えることができるだろう。
+[charslot(slot="m",name="avg_122_beagle_1#8$2",focus="m")]
+[name="ビーグル"]そ、そうですかね……？
+[charslot(slot="m",name="avg_122_beagle_1#10$2",focus="m")]
+[name="ビーグル"]じゃあ……それなら、やってみたいです！　先輩もMechanistさんも、声をかけてくださってありがとうございます！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="bg_corridor",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]この素材だと靭性が足りないから、別のを試してみようか。
+[name="エンジニア部オペレーター"]二つの金属の性質の違いに注意して――ここは大事なポイントだから、混同して覚えないようにね。
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="bg_corridor",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]ビーグルちゃん！　盾の表面のカーブ、調整し直してみたよ！　早速、広いところで試してみよう！
+[charslot(slot="m",name="avg_122_beagle_1#1$2",focus="m")]
+[name="ビーグル"]はい！
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="bg_corridor",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]へえ～、一ヶ月も経ってないのにもう完成させたの？　見せてみて……これは、肩当てかな？
+[charslot(slot="m",name="avg_122_beagle_1#1$2",focus="m")]
+[name="ビーグル"]はい！　防具製作マニュアルを参考にして、鍛造してみました。
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]おおまかな構造は合ってるし、素材選びも適切だね。でも、ここを見て。こんなに隙間が大きいと、ちゃんと防御ができないよね？
+[charslot(slot="m",name="avg_122_beagle_1#11$2",focus="m")]
+[name="ビーグル"]そ、そうですね……
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]前の作業メモに、接合部の最適化案も書いてあるはずだから、あとでちょっと見直してみて。
+[charslot(slot="m",name="avg_122_beagle_1#4$2",focus="m")]
+[name="ビーグル"]はい！　すぐに確認してみます！
+[Dialog]
+[PlaySound(key="$rungeneral", volume=1,loop=true,channel="run3")]
+[charslot(slot="m",afrom=1, ato=0,duration=1.5)]
+[StopSound(channel="run3",fadetime=1.5)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]ビーグルちゃ――やれやれ、そんなに急がなくてもいいのに。あの子ったらもうどれくらい作業してるんだろ？　ちゃんと休憩取ってるのかな……
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[charslot]
+[Delay(time=0.5)]
+[Background(image="bg_corridor",screenadapt="coverall")]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, style = "slider", inverse = true, fadetime=2, block=true)]
+[PlaySound(key="$d_avg_goldbarhit", volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]今度こそ、ぴったりだね。これなら防御も問題なし！
+[charslot(slot="m",name="avg_122_beagle_1#1$2",focus="m")]
+[name="ビーグル"]よかった……
+[stopmusic(fadetime=2)]
+[charslot(slot="m",name="avg_122_beagle_1#11$2",focus="m")]
+[name="ビーグル"]……
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]さあ、肩当てと盾を持って。また試してみよ――
+[Dialog]
+[PlaySound(key="$bodyfalldown2")]
+[Delay(time=1)]
+[CameraShake(duration=0.3, xstrength=30, ystrength=30, vibrato=40, randomness=80, fadeout=true, block=false)]
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]ビーグルちゃん！！？
+[Dialog]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_infirmary",screenadapt="coverall")]
+[Delay(time=2)]
+[PlayMusic(intro="$warm_intro", key="$warm_loop", volume=0.6)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_npc_501_1#1$1",focus="m")]
+[name="医療部オペレーター"]どうなってるの？　しっかり休んだうえで、適度な運動であればしてもいいと伝えたはずよね？　それなのに、一ヶ月以上も夜更かしをしていいわけがないでしょう！？
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]なにそれ、初耳なんだけど……
+[charslot(slot="m",name="avg_npc_501_1#1$1",focus="m")]
+[name="医療部オペレーター"]初耳？　診断書にも書いてあるわよね！　あなたはそれをろくに見てなかったか、見ても気にしてなかったかのどっちかでしょう！？
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]あー……診断書には、少しずつならリハビリを始めてもいいって書いてあったから……
+[charslot(slot="m",name="avg_npc_501_1#1$1",focus="m")]
+[name="医療部オペレーター"]「リハビリ」というのは、軽く身体を動かす程度の運動を指すのであって、痛みに耐えてトレーニングしたり、倒れるまで働いたりすることじゃないのよ！
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]ご、ごめん……ビーグルちゃんは普段からちゃんとしてるし、あんなに重い盾だって持ち上げられるから、つい気を抜いちゃって……次は絶対気を付けるから！
+[charslot(slot="m",name="avg_npc_501_1#1$1",focus="m")]
+[name="医療部オペレーター"]この期に及んで次ですって！？　ふざけないでちょうだい！
+[charslot(slot="m",name="avg_120_hibisc_1#5$1",focus="m")]
+[name="ハイビスカス"]先生、落ち着いてください……
+[charslot(slot="m",name="avg_npc_501_1#1$1",focus="m")]
+[name="医療部オペレーター"]私は落ち着いてるわよ！！
+[charslot(slot="m",name="char_121_lava_1#2")]
+[name="ラヴァ"]先生――あっ、ビーグル、目が覚めたのか？
+[charslot]
+[name="ビーグル"]うぅ……みんな、わたしは……
+[charslot(slot="m",name="avg_npc_971_1#1$1",focus="m")]
+[name="エンジニア部オペレーター"]ビーグルちゃん、具合はどう？　気持ち悪くない？　作業台のそばで急に倒れたから、すごくびっくりしたよ！
+[charslot]
+[name="ビーグル"]わ、わたしは、大丈夫です……
+[Dialog]
+[PlaySound(key="$d_avg_clothmovement")]
+[charslot(slot="m",name="avg_122_beagle_1#2$2",posfrom="0,-150",posto="0,0",afrom=0, ato=1,duration=1.5,focus="m")]
+[Delay(time=2)]
+少女はゆっくりと上体を起こした。
+[charslot(slot="m",name="avg_122_beagle_1#2$2",focus="m")]
+[name="ビーグル"]……ちょっと頭がぼーっとするくらいで……
+[charslot(slot="m",name="avg_npc_501_1#1$1",focus="m")]
+[name="医療部オペレーター"]そういう自覚はあるのね？　それなのに、廊下の片づけはするわ、荷物運びはするわ、急な思いつきで防具の作り方なんかを学び始めるわ……正直に言いなさい、ほかにも何かしてたんじゃないの！？
+[name="医療部オペレーター"]私が初めに言ったことを覚えてる？　安静にしなさい、しっかり休みなさいって言ったのよ！　あなたはまだ怪我人なんだから、こんな無茶をして――
+[Dialog]
+[charslot(slot="r",name="avg_npc_971_1#1$1",posfrom="600,0",posto="-100,0",duration=1.5)]
+[Delay(time=1.5)]
+[charslot(slot="m",posfrom="0,0",posto="500,0",duration=1.5)]
+[charslot(slot="r",posfrom="-100,0",posto="400,0",duration=1.5)]
+[Delay(time=1.5)]
+[charslot(slot="m",name="avg_npc_501_1#1$1",focus="m")]
+[name="医療部オペレーター"]むぐっ……最後まで言わせなさい、んんっ……！！
+[charslot(slot="r",name="avg_npc_971_1#1$1",focus="r")]
+[name="エンジニア部オペレーター"]わかったから、そこまでにしてあげて。この子たちだけで話し合いたいことがあるみたいだしさ。ほら、君がずっとそうやって怒鳴ってるから、みんな固まっちゃってるじゃん。
+[name="エンジニア部オペレーター"]ビーグルちゃん、とりあえず無事みたいで安心したよ。じゃあ、またね！
+[Dialog]
+[charslot(slot="m",posfrom="500,0",posto="800,0",duration=1.5)]
+[charslot(slot="r",posfrom="400,0",posto="700,0",duration=1.5)]
+[Delay(time=2)]
+[charslot]
+[PlaySound(key="$doorclosequite",volume=1)]
+[Delay(time=1)]
+医師はまだ怒っている様子だったが、エンジニア部の同僚によって半ば強引に連れ出されてしまった。そうして、騒々しかった病室は一転して静まり返る。
+重い空気の中で、五人は顔を見合わせた。
+[charslot(slot="m",name="avg_120_hibisc_1#2$1")]
+[name="ハイビスカス"]あの肩当てに、盾……ビーグルちゃんが焦ってたのは、やっぱりあの日起きたことのせいなの？
+[charslot(slot="m",name="char_124_kroos_1#3")]
+[name="クルース"]（小声）みんな、ごめ……
+[charslot(slot="m",name="avg_122_beagle_1#2$2",focus="m")]
+[name="ビーグル"]――ごめんなさい！　全部わたしのせいだ……！
+[charslot(slot="m",name="char_121_lava_1#2")]
+[name="ラヴァ"]……は？
+[charslot(slot="m",name="avg_122_beagle_1#5$2",focus="m")]
+[name="ビーグル"]みんなに心配かけちゃったし……わ、わたし、この一ヶ月の間に何か少しでもしておかないとって思っちゃって。
+[charslot(slot="m",name="avg_123_fang_1#1")]
+[name="フェン"]今、ビーグルがしておくべきことは、ちゃんと休んで怪我を治すことだよ。私たちはみんな、ビーグルが戻って来るのを待ってるんだから。
+[charslot(slot="m",name="avg_122_beagle_1#5$2",focus="m")]
+[name="ビーグル"]だけど、一番落ち着いて見えるフェン隊長だって……最近は、心穏やかになんていられなかったんでしょう？
+[charslot(slot="m",name="avg_123_fang_1#5")]
+[name="フェン"]……
+[charslot(slot="m",name="avg_122_beagle_1#5$2",focus="m")]
+[name="ビーグル"]わたし、こっそりグレース教官のところに行って、聞いたんです。フェン隊長が毎晩、すごく遅くまで居残り訓練をしてること。
+[name="ビーグル"]隊長だって肩を怪我してるのに……その傷はもう塞がってるんですか？　真夜中に目が覚めた時、痛んだりしてないですか？
+[name="ビーグル"]それに、クルースちゃんも――
+[charslot(slot="m",name="char_124_kroos_1#2")]
+[name="クルース"]……え～？　私はいつも通りだよぉ！　昨日だって、サボってたところをドーベルマン教官に捕まってすっごく怒られちゃったくらいだし。ね、ハイビスちゃん？
+[charslot(slot="m",name="avg_120_hibisc_1#5$1")]
+[name="ハイビスカス"]えっ、そ、そうだったの？
+[charslot(slot="m",name="avg_122_beagle_1#8$2",focus="m")]
+[name="ビーグル"]でも、わたしから見ると……クルースちゃんは最近、みんなを避けてるみたいだけど？
+[charslot(slot="m",name="char_124_kroos_1#3")]
+[name="クルース"]それは……
+いつも笑顔を絶やさないコータスの少女は、珍しく耳を垂らした。
+[charslot(slot="m",name="avg_122_beagle_1#5$2",focus="m")]
+[name="ビーグル"]クルースちゃん、まだ怖いんでしょう？
+[charslot(slot="m",name="avg_122_beagle_1#9$2",focus="m")]
+[name="ビーグル"]でも、わたしたちは今もこうして、ちゃんとクルースちゃんの隣にいるよ。
+[charslot]
+[name="三人"]……
+[charslot(slot="m",name="char_121_lava_1#1")]
+[name="ラヴァ"]フンッ、今だけじゃないだろ。明日も明後日も――これから先も、ずっとそうだ！　アタシらはちゃんと、お前のそばに立ってるっての。
+[charslot(slot="m",name="avg_120_hibisc_1#10$1")]
+[name="ハイビスカス"]ラヴァちゃん？
+[charslot(slot="m",name="char_121_lava_1#3")]
+[name="ラヴァ"]っ……とにかく、安心しろ。アタシはもっと強くなる！　だからあんなことは二度と起きない！
+[charslot(slot="m",name="char_124_kroos_1#1")]
+[name="クルース"]ふふっ……
+[charslot(slot="m",name="char_121_lava_1#2")]
+[name="ラヴァ"]笑うな！　アタシは一度口に出したことは、絶対にやり遂げるからな！
+[charslot(slot="m",name="avg_120_hibisc_1#1$1")]
+[name="ハイビスカス"]じゃあ、ラヴァちゃんもフェン隊長みたいに、明日から自主訓練をするのかな？
+[charslot(slot="m",name="avg_123_fang_1#1")]
+[name="フェン"]だけど、さっき医療部の方に、「訓練は少しずつ強度を上げて無理のない範囲でやるように」と言われたばかりだよね。
+[charslot(slot="m",name="avg_122_beagle_1#10$1",focus="m")]
+[name="ビーグル"]そんなこと、隊長に言われても全然説得力ないですよ！
+[charslot(slot="m",name="avg_123_fang_1#1")]
+[name="フェン"]ビーグル――
+[charslot]
+罪悪感、不安、自己不信……そうした感情は今も少女たちに付き纏い、彼女たちが一人になった時に、音もなく膨れ上がっていく。
+その中の数名にとって、あの日の「小さな」ミスは、あの時の逸れた矢のように身体を貫き、絶え間なく風が吹き抜ける空洞を残したものだったのだ。
+それでも皆で集まっていると、そうした負の感情はふいに消え去ったように感じる。そこに残るのはちょっとした言い合いや冗談のやり取りと、賑やかな声ばかり――
+やはり、今日も皆で集まるにはぴったりの良い天気だ。
+[charslot(slot="m",name="avg_123_fang_1#1")]
+[name="フェン"]……ビーグル。
+[charslot(slot="m",name="avg_122_beagle_1#4$2",focus="m")]
+[name="ビーグル"]はい？
+[charslot(slot="m",name="avg_123_fang_1#5")]
+[name="フェン"]ビーグルが何を考えているのかは、正直、大体見当がつくよ。
+[name="フェン"]あの戦いの中での出来事も、今日エンジニア部で起きたことも……全部、自分ならできるし、やるべきことだとビーグル自身が心の底から思ったことなんだよね。
+[charslot(slot="m",name="avg_123_fang_1#1")]
+[name="フェン"]だから、私たちが何を言ったところで――「休め」とか「そんなことをするな」とか何百回も何千回も言ったところで、ビーグルは絶対にそうするつもりなんでしょう？
+[charslot(slot="m",name="avg_122_beagle_1#2$2",focus="m")]
+[name="ビーグル"]うーん……
+[charslot(slot="m",name="avg_122_beagle_1#1$2",focus="m")]
+[name="ビーグル"]フェン隊長がそれを言うのは、隊長自身も絶対やるって決めてることがあるからですよね？
+[charslot(slot="m",name="avg_123_fang_1#2")]
+若き小隊長は長いため息をつくと、一切迷いのない口調で言った。
+[name="フェン"]そうだよ。
+[charslot]
+彼女は、隊員たちに目を向けた。全員が思わずうつむいており、誰一人として互いに目を向けてはいないが、皆が何を考えているのかが彼女にはわかっていた。
+あの夜のように、あるいはこれまで戦場にいた時そうだったように――隊員たちが危機に陥った時、どのような選択をするのかを彼女は明確に理解していた。
+一番の友の前で、本心を隠すことなどできようもない。すべて言わずとも、彼女たちはとっくに通じ合っていた。
+[charslot(slot="m",name="avg_123_fang_1#1")]
+[name="フェン"]だけど、自分が正しいと信じてやったことなら、その決断について謝るべきじゃないと思うよ。
+[charslot(slot="m",name="avg_123_fang_1#5")]
+[name="フェン"]……正直に言うと、ビーグルが倒れた時私はすごく怒りを感じた。だけど、それはビーグルに対してのことじゃないから……私たちに謝る必要はないんだ。
+[charslot(slot="m",name="avg_123_fang_1#7")]
+[name="フェン"]それに、私もみんなも、ビーグルがどんなに難しい決断を下して、どんなに危険なことをしようとしていても……ビーグルの友達としては、それを諦めろと説得することなんてできない。
+[name="フェン"]だって、みんなもそれぞれ、心に決めた、絶対にやろうとしていることがあるはずだから。
+[charslot(slot="m",name="avg_120_hibisc_1#10$1")]
+[name="ハイビスカス"]フェン隊長……
+[charslot(slot="m",name="char_121_lava_1#2")]
+[name="ラヴァ"]フェンの言う通りだ。アタシも同じように思ってる！　だからビーグル、お前は誰にも謝らなくていい！　それにクルース、お前もだぞ！
+[charslot(slot="m",name="char_124_kroos_1#3")]
+[name="クルース"]うーん、ラヴァちゃんにお説教されるなんて滅多にない経験だねぇ……
+[charslot(slot="m",name="avg_120_hibisc_1#10$1")]
+[name="ハイビスカス"]それでも私は、何かする時に友達の気持ちを少しも考えられていなかった時は、やっぱりちゃんと謝るべきだと思うけどね。
+[charslot(slot="m",name="avg_120_hibisc_1#4$1")]
+[name="ハイビスカス"]とはいえ……何かを決心したのなら、安心してそれを私たちに伝えてくれていいんだよ、ビーグルちゃん。
+[charslot(slot="m",name="avg_120_hibisc_1#10$1")]
+[name="ハイビスカス"]危ない目に遭いそうなことならみんなで止めるかもしれないけど、それ以上に、みんなで解決策を考えて、一緒に背負って、悪いことが起きないように頑張りたいと思うから！
+[charslot(slot="m",name="avg_122_beagle_1#9$2",focus="m")]
+[name="ビーグル"]みんな……
+[charslot(slot="m",name="avg_123_fang_1#7")]
+[name="フェン"]だから、エンジニア部での勉強でも、ほかのやりたいことでも何でも……安心してやっていいからね。
+[charslot]
+一人が口を開き、勇気を出して皆が持つ共通の想いを言葉にし始めると、話し出す前に思い描いていた気まずさなどなく、そこには本物の喜びがあった。
+そうして、少女たちは強く抱きしめ合った。
+[Dialog]
+[PlaySound(key="$dooropenquite",volume=1)]
+[Delay(time=1)]
+[charslot(slot="m",name="char_013_riop")]
+[name="グレース教官"]こほん。ドーベルマン教官、どうやら来るタイミングを間違えたらしいな、俺たちは。
+[charslot(slot="m",name="avg_122_beagle_1#4$2",focus="m")]
+[name="ビーグル"]グレース教官！　ドーベルマン教官！
+[charslot(slot="m",name="char_013_riop")]
+[name="グレース教官"]どうだ、ドーベルマン。これで安心したか？
+[name="グレース教官"]ビーグル、頑張りすぎて夜更かしするのは、もうやめにするようにな。ドーベルマンはさっきまで、心配のあまり――
+[charslot(slot="m",name="char_130_doberm_ex#1",focus="m")]
+[name="ドーベルマン"]ビーグル、お前は今、任務にも訓練にも適さない状態だ。もうしばらく休養をとれ。どうしても焦りを感じるのなら、訓練が遅れた分は後から取り戻すという気持ちでいろ。
+[charslot(slot="m",name="char_013_riop")]
+[name="グレース教官"]お、おいおい……
+[charslot(slot="m",name="avg_122_beagle_1#9$2",focus="m")]
+[name="ビーグル"]はい、ドーベルマン教官！
+[charslot(slot="m",name="char_130_doberm_ex#1",focus="m")]
+[name="ドーベルマン"]クルース、お前には任務を与える。しばらくの間、ビーグルを見張り、十分に休ませるように。……お前自身も休養をとれ。
+[charslot(slot="m",name="char_124_kroos_1#2")]
+[name="クルース"]ドーベルマン教官……
+[charslot(slot="m",name="char_130_doberm_ex#1",focus="m")]
+[name="ドーベルマン"]フェン、ハイビスカス、ラヴァ、お前たち三人は明日の朝一番で訓練室に来い。エンジニア部から新しい防具が届き、急ぎで実戦テストが必要だ。
+[name="ドーベルマン"]Mechanistの話では、その防具の製造期間は丸一週間も前倒しになったそうでな。おかげで、これはお前たち三人にしか頼めない。
+[charslot(slot="m",name="avg_123_fang_1#1")]
+[name="フェン"]はい！
+[charslot(slot="m",name="char_130_doberm_ex#4",focus="m")]
+[name="ドーベルマン"]では、私はもう行く。訓練室に用があるのでな。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",afrom=1, ato=0,duration=1.5)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="char_013_riop")]
+[name="グレース教官"]彼女ときたら、相変わらずソツがないというか……っと、それよりビーグル、しっかり休むようにな。予備オペレーターのみんなも、君のお手本を待ってるんだ！
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",afrom=1, ato=0,duration=1.5)]
+[Delay(time=2)]
+ドーベルマンの足音が不意にドアの前で止まった。彼女は振り返ると、ベッドの上の少女を見つめる。
+病室には、楽しげな笑い声が満ちていた。
+[Dialog]
+[PlaySound(key="$doorclosequite", volume=1)]
+[Delay(time=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[charslot]
+[Background(image="bg_corridor_4",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="char_013_riop")]
+[name="グレース教官"]それで、ビーグルのエンジニア部での勉強を認めるっていうのは決まりでいいんだな？
+[charslot(slot="m",name="char_130_doberm_ex#2",focus="m")]
+[name="ドーベルマン"]彼女は多くの盾を手にしてきたからな。きっと、自分に最も相応しい盾を見つけ……そうして、仲間たちに相応しい盾となることだろう。
+[Dialog]
+[PlaySound(key="$d_gen_walk_n",volume=1)]
+[charslot(slot="m",posfrom="0,0",posto="150,0",afrom=1, ato=0,duration=1.5,block=true)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="char_013_riop")]
+[name="グレース教官"]おい、ちょっと待てって――
+[name="グレース教官"]ふぅ……だったら、俺はこう願うとするよ。ビーグルやフェンたちが――その頑丈な盾に守られて、もう少しだけゆっくり大人になっていけるように、ってな。
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

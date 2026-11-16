@@ -1,5 +1,52 @@
 {
     "basicInfo": {
+        "act58sign": {
+            "id": "act58sign",
+            "type": "CHECKIN_ONLY",
+            "displayType": "NONE",
+            "name": "狩猟の日々",
+            "startTime": 1794812400,
+            "endTime": 1795978799,
+            "rewardEndTime": 1795978799,
+            "displayOnHome": false,
+            "hasStage": false,
+            "templateShopId": null,
+            "medalGroupId": null,
+            "ungroupedMedalIds": null,
+            "isReplicate": false,
+            "needFixedSync": false,
+            "trapDomainId": null,
+            "recType": "CAN_COMPLETE",
+            "isPageEntry": false,
+            "isMagnify": false,
+            "picGroup": {},
+            "usePicGroup": false
+        },
+        "act50side": {
+            "id": "act50side",
+            "type": "TYPE_ACT24SIDE",
+            "displayType": "SIDESTORY",
+            "name": "泡影を穿つ碧雷",
+            "startTime": 1794812400,
+            "endTime": 1795978799,
+            "rewardEndTime": 1796583599,
+            "displayOnHome": true,
+            "hasStage": true,
+            "templateShopId": null,
+            "medalGroupId": null,
+            "ungroupedMedalIds": [
+                "medal_hidden_50side_01",
+                "medal_hidden_50side_02"
+            ],
+            "isReplicate": false,
+            "needFixedSync": false,
+            "trapDomainId": null,
+            "recType": "SPECIAL",
+            "isPageEntry": false,
+            "isMagnify": false,
+            "picGroup": {},
+            "usePicGroup": false
+        },
         "act42sre": {
             "id": "act42sre",
             "type": "TYPE_ACT42SIDE",
@@ -6610,6 +6657,13 @@
         }
     },
     "homeActConfig": {
+        "act58sign": {
+            "actId": "act58sign",
+            "isPopupAfterCheckin": false,
+            "showTopBarMenu": true,
+            "actTopBarColor": "029082",
+            "actTopBarText": "狩猟の日々\nスタンプ"
+        },
         "act59sign": {
             "actId": "act59sign",
             "isPopupAfterCheckin": false,
@@ -7634,6 +7688,8 @@
         }
     },
     "zoneToActivity": {
+        "act50side_zone1": "act50side",
+        "act50side_zone2": "act50side",
         "act42sre_zone1": "act42sre",
         "act42sre_zone2": "act42sre",
         "act42sre_zone3": "act42sre",
@@ -7917,6 +7973,857 @@
     },
     "actTimeTrackPoint": {},
     "missionData": [
+        {
+            "id": "50sideActivity_1",
+            "sortId": 1,
+            "description": "<カラツキイモリ>を3体以上撃破してTD-1をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageCondition",
+            "templateType": "8",
+            "param": [
+                "8",
+                "2",
+                "act50side_01",
+                "enemy_10130_pycpok",
+                "killed",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 25
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_2",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_2",
+            "sortId": 2,
+            "description": "<ヤドヌスミ>の殻を4回以上破壊してTD-2をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageCondition",
+            "templateType": "8",
+            "param": [
+                "8",
+                "2",
+                "act50side_02",
+                "enemy_10131_pycshd",
+                "shield_break",
+                "4"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 25
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_3",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_3",
+            "sortId": 3,
+            "description": "TD-3をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_03",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_2",
+                    "count": 25
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_4",
+            "sortId": 4,
+            "description": "TD-4をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_04",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "CHAR",
+                    "id": "char_4215_buddy",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_5",
+            "sortId": 5,
+            "description": "★3評価でTD-4をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_04",
+                "1",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_2",
+                    "count": 25
+                },
+                {
+                    "type": "MATERIAL",
+                    "id": "mod_unlock_token",
+                    "count": 1
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_6",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_6",
+            "sortId": 6,
+            "description": "TD-5をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_05",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 20
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_7",
+            "sortId": 7,
+            "description": "<呪鬼>を3体以上撃破してTD-6をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageCondition",
+            "templateType": "8",
+            "param": [
+                "8",
+                "2",
+                "act50side_06",
+                "enemy_10135_pycjmp",
+                "killed",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 20
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_8",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_8",
+            "sortId": 8,
+            "description": "TD-7をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_07",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_4",
+                    "count": 15
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_9",
+            "sortId": 9,
+            "description": "★3評価でTD-8をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_08",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_4",
+                    "count": 15
+                },
+                {
+                    "type": "MATERIAL",
+                    "id": "mod_unlock_token",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_10",
+            "sortId": 10,
+            "description": "全4種類の鉄蟲糸技をすべて解放し、<サカサガメ>・<カゲグモ>・<イワヨロイ>・<「雷の主」>の操竜を各1回ずつ行う",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "PassActStageAndTargetSimple",
+            "templateType": "0",
+            "param": [
+                "0",
+                "act50side",
+                "act50side_tr01;act50side_03;act50side_05;act50side_06",
+                "trap_281_ctlrol;trap_282_ctlspy;trap_283_ctlblk;trap_284_ctlzog",
+                "ride"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_5",
+                    "count": 5
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_special_level_unlock",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_11",
+            "sortId": 11,
+            "description": "「泡影を穿つ碧雷」開催期間中に、<「雷の主」>を累計3回操竜",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "StageWithCondition",
+            "templateType": "3",
+            "param": [
+                "3",
+                "act50side_01^act50side_02^act50side_03^act50side_04^act50side_05^act50side_06^act50side_07^act50side_08^act50side_p-1^act50side_ex01^act50side_ex01#f#^act50side_ex02^act50side_ex02#f#^act50side_ex03^act50side_ex03#f#^act50side_ex04^act50side_ex04#f#^act50side_ex05^act50side_ex05#f#^act50side_ex06^act50side_ex06#f#^act50side_ex07^act50side_ex07#f#^act50side_ex08^act50side_ex08#f#^act50side_s01",
+                "trap_284_ctlzog",
+                "ride",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_4",
+                    "count": 10
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_10",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_12",
+            "sortId": 12,
+            "description": "「泡影を穿つ碧雷」開催期間中に、<サカサガメ>を累計3回操竜",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "StageWithCondition",
+            "templateType": "3",
+            "param": [
+                "3",
+                "act50side_01^act50side_02^act50side_tr01^act50side_03^act50side_04^act50side_05^act50side_06^act50side_07^act50side_08^act50side_p-1^act50side_ex01^act50side_ex01#f#^act50side_ex02^act50side_ex02#f#^act50side_ex03^act50side_ex03#f#^act50side_ex04^act50side_ex04#f#^act50side_ex05^act50side_ex05#f#^act50side_ex06^act50side_ex06#f#^act50side_ex07^act50side_ex07#f#^act50side_ex08^act50side_ex08#f#^act50side_s01",
+                "trap_281_ctlrol",
+                "ride",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 20
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_5",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_13",
+            "sortId": 13,
+            "description": "「泡影を穿つ碧雷」開催期間中に、<カゲグモ>を累計3回操竜",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "StageWithCondition",
+            "templateType": "3",
+            "param": [
+                "3",
+                "act50side_01^act50side_02^act50side_03^act50side_04^act50side_05^act50side_06^act50side_07^act50side_08^act50side_p-1^act50side_ex01^act50side_ex01#f#^act50side_ex02^act50side_ex02#f#^act50side_ex03^act50side_ex03#f#^act50side_ex04^act50side_ex04#f#^act50side_ex05^act50side_ex05#f#^act50side_ex06^act50side_ex06#f#^act50side_ex07^act50side_ex07#f#^act50side_ex08^act50side_ex08#f#^act50side_s01",
+                "trap_282_ctlspy",
+                "ride",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 20
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_7",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_14",
+            "sortId": 14,
+            "description": "「泡影を穿つ碧雷」開催期間中に、<イワヨロイ>を累計3回操竜",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "StageWithCondition",
+            "templateType": "3",
+            "param": [
+                "3",
+                "act50side_01^act50side_02^act50side_03^act50side_04^act50side_05^act50side_06^act50side_07^act50side_08^act50side_p-1^act50side_ex01^act50side_ex01#f#^act50side_ex02^act50side_ex02#f#^act50side_ex03^act50side_ex03#f#^act50side_ex04^act50side_ex04#f#^act50side_ex05^act50side_ex05#f#^act50side_ex06^act50side_ex06#f#^act50side_ex07^act50side_ex07#f#^act50side_ex08^act50side_ex08#f#^act50side_s01",
+                "trap_283_ctlblk",
+                "ride",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 50
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_9",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_15",
+            "sortId": 15,
+            "description": "「泡影を穿つ碧雷」開催期間中に、<ナキトサカ>を累計100体撃破（チュートリアルを除く）",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "StageWithCondition",
+            "templateType": "0",
+            "param": [
+                "0",
+                "act50side_01^act50side_02^act50side_03^act50side_04^act50side_05^act50side_06^act50side_07^act50side_08^act50side_p-1^act50side_ex01^act50side_ex01#f#^act50side_ex02^act50side_ex02#f#^act50side_ex03^act50side_ex03#f#^act50side_ex04^act50side_ex04#f#^act50side_ex05^act50side_ex05#f#^act50side_ex06^act50side_ex06#f#^act50side_ex07^act50side_ex07#f#^act50side_ex08^act50side_ex08#f#^act50side_s01",
+                "enemy_10129_pycdog",
+                "100"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 30
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_1",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_16",
+            "sortId": 16,
+            "description": "「泡影を穿つ碧雷」開催期間中に、満腹状態になっていない<オオグライ>を累計10体撃破（チュートリアルを除く）",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "StageWithCondition",
+            "templateType": "3",
+            "param": [
+                "3",
+                "act50side_01^act50side_02^act50side_03^act50side_04^act50side_05^act50side_06^act50side_07^act50side_08^act50side_p-1^act50side_ex01^act50side_ex01#f#^act50side_ex02^act50side_ex02#f#^act50side_ex03^act50side_ex03#f#^act50side_ex04^act50side_ex04#f#^act50side_ex05^act50side_ex05#f#^act50side_ex06^act50side_ex06#f#^act50side_ex07^act50side_ex07#f#^act50side_ex08^act50side_ex08#f#^act50side_s01",
+                "enemy_10132_pyceat",
+                "killed_no_eat",
+                "10"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_2",
+                    "count": 20
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_4",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_17",
+            "sortId": 17,
+            "description": "TD-EX-1をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_ex01",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 30
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_18",
+            "sortId": 18,
+            "description": "<荒神オオグライ>を9体以上撃破してTD-EX-2をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageCondition",
+            "templateType": "8",
+            "param": [
+                "8",
+                "2",
+                "act50side_ex02",
+                "enemy_10132_pyceat_2",
+                "killed",
+                "9"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 30
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_19",
+            "sortId": 19,
+            "description": "TD-EX-3をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_ex03",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 40
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_20",
+            "sortId": 20,
+            "description": "TD-EX-4をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_ex04",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 40
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_21",
+            "sortId": 21,
+            "description": "<イワヨロイ・呪>を6体以上撃破してTD-EX-5をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageCondition",
+            "templateType": "8",
+            "param": [
+                "8",
+                "2",
+                "act50side_ex05",
+                "enemy_10136_pycblk_2",
+                "killed",
+                "6"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 20
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_22",
+            "sortId": 22,
+            "description": "TD-EX-6をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_ex06",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 20
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_23",
+            "sortId": 23,
+            "description": "<「異獣」ヨウガンツブリ>を1体以上撃破してTD-EX-7をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageCondition",
+            "templateType": "8",
+            "param": [
+                "8",
+                "2",
+                "act50side_ex07",
+                "enemy_10137_pycvol",
+                "killed",
+                "1"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 30
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_24",
+            "sortId": 24,
+            "description": "★3評価でTD-EX-8をクリア",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_ex08",
+                "1",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 30
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
         {
             "id": "42sreActivity_1",
             "sortId": 1,
@@ -118956,6 +119863,42 @@
     ],
     "missionGroup": [
         {
+            "id": "act50side",
+            "title": null,
+            "type": "ACTIVITY",
+            "preMissionGroup": null,
+            "period": null,
+            "rewards": {},
+            "missionIds": [
+                "50sideActivity_1",
+                "50sideActivity_2",
+                "50sideActivity_3",
+                "50sideActivity_4",
+                "50sideActivity_5",
+                "50sideActivity_6",
+                "50sideActivity_7",
+                "50sideActivity_8",
+                "50sideActivity_9",
+                "50sideActivity_10",
+                "50sideActivity_11",
+                "50sideActivity_12",
+                "50sideActivity_13",
+                "50sideActivity_14",
+                "50sideActivity_15",
+                "50sideActivity_16",
+                "50sideActivity_17",
+                "50sideActivity_18",
+                "50sideActivity_19",
+                "50sideActivity_20",
+                "50sideActivity_21",
+                "50sideActivity_22",
+                "50sideActivity_23",
+                "50sideActivity_24"
+            ],
+            "startTs": 1794812400,
+            "endTs": 1796583599
+        },
+        {
             "id": "act42sre",
             "title": null,
             "type": "ACTIVITY",
@@ -123903,6 +124846,205 @@
             }
         },
         "CHECKIN_ONLY": {
+            "act58sign": {
+                "checkInList": {
+                    "0": {
+                        "itemList": [
+                            {
+                                "id": "LINKAGE_TKT_GACHA_10_7401",
+                                "count": 1,
+                                "type": "LINKAGE_TKT_GACHA_10"
+                            },
+                            {
+                                "id": "ap_supply_lt_120",
+                                "count": 1,
+                                "type": "AP_SUPPLY"
+                            }
+                        ],
+                        "order": 1,
+                        "color": 0,
+                        "keyItem": 1,
+                        "showItemOrder": 1,
+                        "isDynItem": false
+                    },
+                    "1": {
+                        "itemList": [
+                            {
+                                "id": "4003",
+                                "count": 200,
+                                "type": "DIAMOND_SHD"
+                            },
+                            {
+                                "id": "mod_update_token_1",
+                                "count": 10,
+                                "type": "MATERIAL"
+                            }
+                        ],
+                        "order": 2,
+                        "color": 0,
+                        "keyItem": 0,
+                        "showItemOrder": 0,
+                        "isDynItem": false
+                    },
+                    "2": {
+                        "itemList": [
+                            {
+                                "id": "2003",
+                                "count": 20,
+                                "type": "CARD_EXP"
+                            },
+                            {
+                                "id": "7002",
+                                "count": 5,
+                                "type": "TKT_INST_FIN"
+                            }
+                        ],
+                        "order": 3,
+                        "color": 0,
+                        "keyItem": 0,
+                        "showItemOrder": 0,
+                        "isDynItem": false
+                    },
+                    "3": {
+                        "itemList": [
+                            {
+                                "id": "4003",
+                                "count": 200,
+                                "type": "DIAMOND_SHD"
+                            },
+                            {
+                                "id": "3401",
+                                "count": 300,
+                                "type": "MATERIAL"
+                            }
+                        ],
+                        "order": 4,
+                        "color": 0,
+                        "keyItem": 0,
+                        "showItemOrder": 0,
+                        "isDynItem": false
+                    },
+                    "4": {
+                        "itemList": [
+                            {
+                                "id": "avatar_special_75",
+                                "count": 1,
+                                "type": "PLAYER_AVATAR"
+                            },
+                            {
+                                "id": "3003",
+                                "count": 20,
+                                "type": "MATERIAL"
+                            }
+                        ],
+                        "order": 5,
+                        "color": 0,
+                        "keyItem": 1,
+                        "showItemOrder": 2,
+                        "isDynItem": false
+                    },
+                    "5": {
+                        "itemList": [
+                            {
+                                "id": "furni_act36d0_grill_01",
+                                "count": 1,
+                                "type": "FURN"
+                            },
+                            {
+                                "id": "2004",
+                                "count": 10,
+                                "type": "CARD_EXP"
+                            }
+                        ],
+                        "order": 6,
+                        "color": 0,
+                        "keyItem": 1,
+                        "showItemOrder": 0,
+                        "isDynItem": false
+                    },
+                    "6": {
+                        "itemList": [
+                            {
+                                "id": "4003",
+                                "count": 200,
+                                "type": "DIAMOND_SHD"
+                            },
+                            {
+                                "id": "4001",
+                                "count": 30000,
+                                "type": "GOLD"
+                            }
+                        ],
+                        "order": 7,
+                        "color": 0,
+                        "keyItem": 0,
+                        "showItemOrder": 0,
+                        "isDynItem": false
+                    },
+                    "7": {
+                        "itemList": [
+                            {
+                                "id": "LINKAGE_TKT_GACHA_10_7401",
+                                "count": 1,
+                                "type": "LINKAGE_TKT_GACHA_10"
+                            },
+                            {
+                                "id": "mod_update_token_2",
+                                "count": 3,
+                                "type": "MATERIAL"
+                            }
+                        ],
+                        "order": 8,
+                        "color": 0,
+                        "keyItem": 1,
+                        "showItemOrder": 3,
+                        "isDynItem": false
+                    },
+                    "8": {
+                        "itemList": [
+                            {
+                                "id": "furni_act36d0_MaterialBox_01",
+                                "count": 1,
+                                "type": "FURN"
+                            },
+                            {
+                                "id": "7001",
+                                "count": 5,
+                                "type": "TKT_RECRUIT"
+                            }
+                        ],
+                        "order": 9,
+                        "color": 0,
+                        "keyItem": 1,
+                        "showItemOrder": 0,
+                        "isDynItem": false
+                    },
+                    "9": {
+                        "itemList": [
+                            {
+                                "id": "mod_unlock_token",
+                                "count": 1,
+                                "type": "MATERIAL"
+                            },
+                            {
+                                "id": "3303",
+                                "count": 8,
+                                "type": "MATERIAL"
+                            }
+                        ],
+                        "order": 10,
+                        "color": 0,
+                        "keyItem": 0,
+                        "showItemOrder": 0,
+                        "isDynItem": false
+                    }
+                },
+                "apSupplyOutOfDateDict": {
+                    "ap_supply_lt_120": 1796583599
+                },
+                "dynCheckInData": null,
+                "extraCheckinList": null
+            },
             "act59sign": {
                 "checkInList": {
                     "0": {
@@ -206431,6 +207573,1975 @@
             }
         },
         "TYPE_ACT24SIDE": {
+            "act50side": {
+                "toolDataList": {
+                    "skill_turn": {
+                        "toolId": "skill_turn",
+                        "sortId": 1,
+                        "toolName": "ホウエイ流衝撃波",
+                        "toolDesc": "使用したオペレーターが翔蟲の配置方向を向き、その後前方一定範囲内の敵にダメージを与え、対象を一定時間足止め",
+                        "toolIcon1": "skill_turn_icon1",
+                        "toolIcon2": "skill_turn_icon2",
+                        "toolUnlockDesc": "TD-TR-1クリアで解放",
+                        "toolBuffId": "rune_act50side_pyctrn",
+                        "runeData": {
+                            "id": "rune_act50side_pyctrn",
+                            "points": 0.0,
+                            "mutexGroupKey": null,
+                            "description": "trn",
+                            "runes": [
+                                {
+                                    "key": "level_predefines_cards_enable",
+                                    "selector": {
+                                        "professionMask": 1023,
+                                        "buildableMask": "ALL",
+                                        "playerSideMask": "ALL",
+                                        "sideType": "ALL",
+                                        "charIdFilter": null,
+                                        "charIdExcludeFilter": null,
+                                        "enemyIdFilter": null,
+                                        "enemyIdExcludeFilter": null,
+                                        "enemyLevelTypeFilter": null,
+                                        "enemyActionHiddenGroupFilter": null,
+                                        "skillIdFilter": null,
+                                        "tileKeyFilter": null,
+                                        "groupTagFilter": null,
+                                        "filterTagFilter": null,
+                                        "filterTagExcludeFilter": null,
+                                        "subProfessionExcludeFilter": null,
+                                        "mapTagFilter": null,
+                                        "heightTypeMask": "ALL"
+                                    },
+                                    "blackboard": [
+                                        {
+                                            "key": "trap_274_pyctrn",
+                                            "value": 1.0,
+                                            "valueStr": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "toolStageId": null
+                    },
+                    "skill_gp": {
+                        "toolId": "skill_gp",
+                        "sortId": 2,
+                        "toolName": "試作版カウンターチャージ",
+                        "toolDesc": "使用したオペレーターが一定時間敵に狙われやすくなり、スタン無効になる。効果中に対象がダメージを受けると、攻撃力の一定割合のダメージで敵に反撃し、SPが一定値回復",
+                        "toolIcon1": "skill_gp_icon1",
+                        "toolIcon2": "skill_gp_icon2",
+                        "toolUnlockDesc": "TD-3クリアで解放",
+                        "toolBuffId": "rune_act50side_pycgp",
+                        "runeData": {
+                            "id": "rune_act50side_pycgp",
+                            "points": 0.0,
+                            "mutexGroupKey": null,
+                            "description": "gp",
+                            "runes": [
+                                {
+                                    "key": "level_predefines_cards_enable",
+                                    "selector": {
+                                        "professionMask": 1023,
+                                        "buildableMask": "ALL",
+                                        "playerSideMask": "ALL",
+                                        "sideType": "ALL",
+                                        "charIdFilter": null,
+                                        "charIdExcludeFilter": null,
+                                        "enemyIdFilter": null,
+                                        "enemyIdExcludeFilter": null,
+                                        "enemyLevelTypeFilter": null,
+                                        "enemyActionHiddenGroupFilter": null,
+                                        "skillIdFilter": null,
+                                        "tileKeyFilter": null,
+                                        "groupTagFilter": null,
+                                        "filterTagFilter": null,
+                                        "filterTagExcludeFilter": null,
+                                        "subProfessionExcludeFilter": null,
+                                        "mapTagFilter": null,
+                                        "heightTypeMask": "ALL"
+                                    },
+                                    "blackboard": [
+                                        {
+                                            "key": "trap_273_pycgp",
+                                            "value": 1.0,
+                                            "valueStr": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "toolStageId": null
+                    },
+                    "skill_fly": {
+                        "toolId": "skill_fly",
+                        "sortId": 3,
+                        "toolName": "翔蟲閃撃",
+                        "toolDesc": "翔蟲の配置方向の一直線上の敵全員にダメージを与え、最初に命中した敵の位置に使用したオペレーターを再配置",
+                        "toolIcon1": "skill_fly_icon1",
+                        "toolIcon2": "skill_fly_icon2",
+                        "toolUnlockDesc": "TD-5クリアで解放",
+                        "toolBuffId": "rune_act50side_pycfly",
+                        "runeData": {
+                            "id": "rune_act50side_pycfly",
+                            "points": 0.0,
+                            "mutexGroupKey": null,
+                            "description": "fly",
+                            "runes": [
+                                {
+                                    "key": "level_predefines_cards_enable",
+                                    "selector": {
+                                        "professionMask": 1023,
+                                        "buildableMask": "ALL",
+                                        "playerSideMask": "ALL",
+                                        "sideType": "ALL",
+                                        "charIdFilter": null,
+                                        "charIdExcludeFilter": null,
+                                        "enemyIdFilter": null,
+                                        "enemyIdExcludeFilter": null,
+                                        "enemyLevelTypeFilter": null,
+                                        "enemyActionHiddenGroupFilter": null,
+                                        "skillIdFilter": null,
+                                        "tileKeyFilter": null,
+                                        "groupTagFilter": null,
+                                        "filterTagFilter": null,
+                                        "filterTagExcludeFilter": null,
+                                        "subProfessionExcludeFilter": null,
+                                        "mapTagFilter": null,
+                                        "heightTypeMask": "ALL"
+                                    },
+                                    "blackboard": [
+                                        {
+                                            "key": "trap_275_pycfly",
+                                            "value": 1.0,
+                                            "valueStr": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "toolStageId": null
+                    },
+                    "skill_stop": {
+                        "toolId": "skill_stop",
+                        "sortId": 4,
+                        "toolName": "束縛鉄蟲糸",
+                        "toolDesc": "使用したオペレーターの攻撃範囲内の敵全員にダメージを与え、対象を一定時間バインド",
+                        "toolIcon1": "skill_stop_icon1",
+                        "toolIcon2": "skill_stop_icon2",
+                        "toolUnlockDesc": "TD-6クリアで解放",
+                        "toolBuffId": "rune_act50side_pycstp",
+                        "runeData": {
+                            "id": "rune_act50side_pycstp",
+                            "points": 0.0,
+                            "mutexGroupKey": null,
+                            "description": "stp",
+                            "runes": [
+                                {
+                                    "key": "level_predefines_cards_enable",
+                                    "selector": {
+                                        "professionMask": 1023,
+                                        "buildableMask": "ALL",
+                                        "playerSideMask": "ALL",
+                                        "sideType": "ALL",
+                                        "charIdFilter": null,
+                                        "charIdExcludeFilter": null,
+                                        "enemyIdFilter": null,
+                                        "enemyIdExcludeFilter": null,
+                                        "enemyLevelTypeFilter": null,
+                                        "enemyActionHiddenGroupFilter": null,
+                                        "skillIdFilter": null,
+                                        "tileKeyFilter": null,
+                                        "groupTagFilter": null,
+                                        "filterTagFilter": null,
+                                        "filterTagExcludeFilter": null,
+                                        "subProfessionExcludeFilter": null,
+                                        "mapTagFilter": null,
+                                        "heightTypeMask": "ALL"
+                                    },
+                                    "blackboard": [
+                                        {
+                                            "key": "trap_276_pycstp",
+                                            "value": 1.0,
+                                            "valueStr": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "toolStageId": null
+                    }
+                },
+                "mealDataList": null,
+                "meldingDict": {
+                    "act50side_melding_1": {
+                        "meldingId": "act50side_melding_1",
+                        "bgId": "act50side_melding_bg",
+                        "sortId": 1,
+                        "meldingPrice": 2,
+                        "rarity": "RARITY_1"
+                    },
+                    "act50side_melding_2": {
+                        "meldingId": "act50side_melding_2",
+                        "bgId": "act50side_melding_bg",
+                        "sortId": 2,
+                        "meldingPrice": 3,
+                        "rarity": "RARITY_2"
+                    },
+                    "act50side_melding_3": {
+                        "meldingId": "act50side_melding_3",
+                        "bgId": "act50side_melding_bg",
+                        "sortId": 3,
+                        "meldingPrice": 5,
+                        "rarity": "RARITY_3"
+                    },
+                    "act50side_melding_4": {
+                        "meldingId": "act50side_melding_4",
+                        "bgId": "act50side_melding_bg",
+                        "sortId": 4,
+                        "meldingPrice": 10,
+                        "rarity": "RARITY_4"
+                    },
+                    "act50side_melding_5": {
+                        "meldingId": "act50side_melding_5",
+                        "bgId": "act50side_melding_bg",
+                        "sortId": 5,
+                        "meldingPrice": 20,
+                        "rarity": "RARITY_5"
+                    },
+                    "act50side_melding_6": {
+                        "meldingId": "act50side_melding_6",
+                        "bgId": "act50side_melding_bg",
+                        "sortId": 6,
+                        "meldingPrice": 200,
+                        "rarity": "RARITY_6"
+                    }
+                },
+                "meldingGachaBoxDataList": {
+                    "gachabox1": {
+                        "gachaBoxId": "gachabox1",
+                        "gachaSortId": 1,
+                        "gachaIcon": "gachabox1",
+                        "gachaBoxName": "錬金術・夢幻",
+                        "gachaCost": 100,
+                        "gachaTimesLimit": 10,
+                        "themeColor": "#314065",
+                        "remainItemBgColor": "#3d4559"
+                    },
+                    "gachabox2": {
+                        "gachaBoxId": "gachabox2",
+                        "gachaSortId": 2,
+                        "gachaIcon": "gachabox2",
+                        "gachaBoxName": "錬金術・流転",
+                        "gachaCost": 60,
+                        "gachaTimesLimit": 10,
+                        "themeColor": "#2f484c",
+                        "remainItemBgColor": "#4b6367"
+                    }
+                },
+                "meldingGachaBoxGoodDataMap": {
+                    "gachabox1": [
+                        {
+                            "goodId": "gachabox1_8",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 8,
+                            "itemId": "furni_Azuredream_hanger_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_9",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 9,
+                            "itemId": "furni_Azuredream_brazier_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_10",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 10,
+                            "itemId": "furni_Azuredream_shelf_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_11",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 11,
+                            "itemId": "furni_Azuredream_cabinet_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_12",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 12,
+                            "itemId": "furni_Azuredream_ceilingLight_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_13",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 13,
+                            "itemId": "furni_Azuredream_table_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_14",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 14,
+                            "itemId": "furni_Azuredream_carpet_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_15",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 15,
+                            "itemId": "furni_Azuredream_pillar_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_16",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 16,
+                            "itemId": "furni_Azuredream_chair_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_17",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 17,
+                            "itemId": "furni_Azuredream_column_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_18",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 18,
+                            "itemId": "furni_Azuredream_basket_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_19",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 19,
+                            "itemId": "furni_Azuredream_wallpaper_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_20",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 20,
+                            "itemId": "furni_Azuredream_floor_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_1",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 1,
+                            "itemId": "p_char_4215_buddy",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 5,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_2",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 2,
+                            "itemId": "7003",
+                            "itemType": "TKT_GACHA",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 3,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_3",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 3,
+                            "itemId": "mod_unlock_token",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 2,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_4",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 4,
+                            "itemId": "30145",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 5,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_5",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 5,
+                            "itemId": "30165",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 5,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_6",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 6,
+                            "itemId": "mod_update_token_2",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 2,
+                            "totalCount": 5,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_7",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 7,
+                            "itemId": "mod_update_token_1",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 6,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        }
+                    ],
+                    "gachabox2": [
+                        {
+                            "goodId": "gachabox2_18",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 18,
+                            "itemId": "31043",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_1",
+                            "perCount": 1,
+                            "totalCount": 0,
+                            "gachaType": "UNLIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_19",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 19,
+                            "itemId": "31083",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_1",
+                            "perCount": 1,
+                            "totalCount": 0,
+                            "gachaType": "UNLIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_20",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 20,
+                            "itemId": "31093",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_1",
+                            "perCount": 1,
+                            "totalCount": 0,
+                            "gachaType": "UNLIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_21",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 21,
+                            "itemId": "4001",
+                            "itemType": "GOLD",
+                            "displayType": "RARE_1",
+                            "perCount": 10000,
+                            "totalCount": 0,
+                            "gachaType": "UNLIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_4",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 4,
+                            "itemId": "31043",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 3,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_5",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 5,
+                            "itemId": "31083",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 3,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_6",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 6,
+                            "itemId": "31093",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 3,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_7",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 7,
+                            "itemId": "4001",
+                            "itemType": "GOLD",
+                            "displayType": "RARE_2",
+                            "perCount": 25000,
+                            "totalCount": 20,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_8",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 8,
+                            "itemId": "2004",
+                            "itemType": "CARD_EXP",
+                            "displayType": "RARE_2",
+                            "perCount": 10,
+                            "totalCount": 5,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_9",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 9,
+                            "itemId": "2003",
+                            "itemType": "CARD_EXP",
+                            "displayType": "RARE_2",
+                            "perCount": 25,
+                            "totalCount": 4,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_10",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 10,
+                            "itemId": "2002",
+                            "itemType": "CARD_EXP",
+                            "displayType": "RARE_2",
+                            "perCount": 40,
+                            "totalCount": 3,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_11",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 11,
+                            "itemId": "3303",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 10,
+                            "totalCount": 3,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_12",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 12,
+                            "itemId": "3302",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 25,
+                            "totalCount": 2,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_13",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 13,
+                            "itemId": "30022",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 15,
+                            "totalCount": 2,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_14",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 14,
+                            "itemId": "30032",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 15,
+                            "totalCount": 2,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_15",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 15,
+                            "itemId": "30052",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 15,
+                            "totalCount": 2,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_16",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 16,
+                            "itemId": "3221",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 5,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_17",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 17,
+                            "itemId": "3401",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 200,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_1",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 1,
+                            "itemId": "30054",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_2",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 2,
+                            "itemId": "31034",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_3",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 3,
+                            "itemId": "31054",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        }
+                    ]
+                },
+                "mealWelcomeTxtDataMap": null,
+                "zoneAdditionDataMap": {
+                    "act50side_zone1": {
+                        "zoneId": "act50side_zone1",
+                        "zoneIcon": "act50side_1",
+                        "unlockText": "未解放",
+                        "displayTime": "2026-11-16 16:00:00"
+                    },
+                    "act50side_zone2": {
+                        "zoneId": "act50side_zone2",
+                        "zoneIcon": "act50side_2",
+                        "unlockText": "「碧雷を狩れ」クリア後解放",
+                        "displayTime": "2026-11-16 16:00:00"
+                    }
+                },
+                "questStageList": [
+                    {
+                        "stageId": "act50side_ex01",
+                        "stageRank": 1,
+                        "sortId": 1,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex01#f#",
+                        "stageRank": 1,
+                        "sortId": 2,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex02",
+                        "stageRank": 1,
+                        "sortId": 3,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex02#f#",
+                        "stageRank": 1,
+                        "sortId": 4,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex03",
+                        "stageRank": 1,
+                        "sortId": 5,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex03#f#",
+                        "stageRank": 1,
+                        "sortId": 6,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex04",
+                        "stageRank": 2,
+                        "sortId": 7,
+                        "isUrgentStage": true,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex04#f#",
+                        "stageRank": 2,
+                        "sortId": 8,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex05",
+                        "stageRank": 2,
+                        "sortId": 9,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex05#f#",
+                        "stageRank": 2,
+                        "sortId": 10,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex06",
+                        "stageRank": 2,
+                        "sortId": 11,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex06#f#",
+                        "stageRank": 2,
+                        "sortId": 12,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex07",
+                        "stageRank": 3,
+                        "sortId": 13,
+                        "isUrgentStage": true,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex07#f#",
+                        "stageRank": 3,
+                        "sortId": 14,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex08",
+                        "stageRank": 3,
+                        "sortId": 15,
+                        "isUrgentStage": false,
+                        "isDragonStage": true
+                    },
+                    {
+                        "stageId": "act50side_ex08#f#",
+                        "stageRank": 3,
+                        "sortId": 16,
+                        "isUrgentStage": false,
+                        "isDragonStage": true
+                    },
+                    {
+                        "stageId": "act50side_s01",
+                        "stageRank": 3,
+                        "sortId": 17,
+                        "isUrgentStage": false,
+                        "isDragonStage": true
+                    }
+                ],
+                "missionDataList": {
+                    "50sideActivity_1": {
+                        "taskTypeName": "生態調査",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "殻に隠れた臆病者",
+                        "taskClient": "村の薬師",
+                        "taskClientDesc": "なんてこった、薬草園がまた荒らされてる！今度は虫じゃなく、殻を背負ったあの連中……カラツキイモリだ！やつらときたら、足音が聞こえるとすぐに殻にこもっちまうんだが、それが石みたいに固くて追っ払いようがないんだよ。ハンター殿、どうかあの「足の生えた石」どもを追い払ってくれないか！自分でもやってはみたが、もう腰が限界なんだ！"
+                    },
+                    "50sideActivity_2": {
+                        "taskTypeName": "生態調査",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "鍋泥棒め！",
+                        "taskClient": "怒れる料理長",
+                        "taskClientDesc": "くそったれ！昨日買ったばかりの鍋が、昨日の今日で足が生えて逃げ出すわけあるか！またヤドヌスミの仕業だな！あいつら、夜中にこっそり鍋や食器にもぐりこんでは、それを被って逃げやがるんだ！ハンター殿、やつらを叩きのめして、盗まれた調理器具を取り返してくれ！"
+                    },
+                    "50sideActivity_3": {
+                        "taskTypeName": "探索クエスト",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "油断大敵",
+                        "taskClient": "「異獣ハンター」オーキッド",
+                        "taskClientDesc": "私たちはまだ狩猟の技術を完全にマスターしたわけではないわ。「異獣」に挑むなら、まずは身を守る術を学んでから、野獣を狩って戦闘技術を磨きなさい。カタパルト、あなたならこのクエストを見ているでしょう？仮にクエストを達成できなかったら、今晩の夕飯は抜きにするから。"
+                    },
+                    "50sideActivity_4": {
+                        "taskTypeName": "探索クエスト",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "赤き雪の兆し",
+                        "taskClient": "ホウエイの国の将軍ミツドキ",
+                        "taskClientDesc": "斥候より急報が入った。「御輪」の方角にある雪山から、溶岩が流出しているとのことだ。一年中雪が積もっていた山脈に突如として異変が発生したとなれば、これは紛れもなく「異獣」の仕業。ホウエイの国を安らげるため、そしてそなたらを故郷へと帰還させるためにも、調査を頼みたい。あの不吉な熱波にはくれぐれもご注意召されよ。"
+                    },
+                    "50sideActivity_5": {
+                        "taskTypeName": "生態調査",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "白き原野に残った焦げ跡",
+                        "taskClient": "ホウエイの国の国主ホフカル",
+                        "taskClientDesc": "我は独りで「異獣」ヨウガンツブリを狩る。さすれば、我には「雷の主」に挑む力があると、ミツドキに証明できよう。オーキッド殿、カタパルト殿、手出しは無用。これは我の戦いだ。——ホフカル"
+                    },
+                    "50sideActivity_6": {
+                        "taskTypeName": "探索クエスト",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "しくじりは許されない",
+                        "taskClient": "ホウエイの国の将軍ミツドキ",
+                        "taskClientDesc": "これは賭けとなる。仮に、それがしが……あの罠が功を成せぬその時は、陛下のことを頼む。何があろうと、この場を死守してもらいたい。それがしの、唯一の頼みだ。"
+                    },
+                    "50sideActivity_7": {
+                        "taskTypeName": "生態調査",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "過去より訪れし亡霊",
+                        "taskClient": "ホウエイの国の侍大将",
+                        "taskClientDesc": "信じられぬ……滅びたはずの呪鬼が復活しようとは！ハンター殿、どうか奴らを食い止めてくだされ！狼どもに此処を破られれば、都が危のうござる！"
+                    },
+                    "50sideActivity_8": {
+                        "taskTypeName": "探索クエスト",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "この国の連中ときたら、みんな頭が固すぎだろ",
+                        "taskClient": "ホウエイの国の鍛冶スポノスケ",
+                        "taskClientDesc": "ミツドキのやつめ、人使いが荒いな。まあいい、行くか。狩猟団の連中もついてこい。俺も「御輪」の下が一体どうなっているのか、正直言うと興味があるんだ。"
+                    },
+                    "50sideActivity_9": {
+                        "taskTypeName": "生態調査",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "巡る宿命、猛る碧雷",
+                        "taskClient": "ホウエイの国の国主ホフカル",
+                        "taskClientDesc": "「御輪」の暴走を止めるため、「雷の主」の力を借りねばならぬ。オーキッド殿、カタパルト殿、スポノスケ殿、そして……ミツドキ、我に力を貸してくれ！"
+                    },
+                    "50sideActivity_10": {
+                        "taskTypeName": "獣災鎮圧",
+                        "taskTypeIcon": "invasionTask",
+                        "taskType": "INVATION_TASK",
+                        "taskTitle": "百獣歓喜、狩猟の宴",
+                        "taskClient": "ホウエイの国の国主ホフカル",
+                        "taskClientDesc": "今日はホウエイの国において最も重要な日。豊年を祈るための狩猟祭が執り行われ、この狩猟の宴には誰もが参与することができるのだ。無論、我も加わろう。仮に、我より多くの獲物を持ち帰った者がおれば、褒美を与えようぞ。ホウエイの国の侍たちよ、異邦のハンターたちよ、存分に狩りを楽しむがいい。"
+                    },
+                    "50sideActivity_11": {
+                        "taskTypeName": "生態調査",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "あの稲妻に触れたくて",
+                        "taskClient": "雷光に心酔する生態学者",
+                        "taskClientDesc": "「雷の主」は恐ろしいとみんなは言うが、やつが纏う光はとても綺麗だと私は思うんだ！何せあれは、ホフカル陛下が舞い踊る時の光みたいに見えるだろう？ハンターさん、「雷の主」の背中に乗れたりしないか？雷光虫がどのようにして光っているのかを、間近で見られたら最高だろうな！頼むよ！"
+                    },
+                    "50sideActivity_12": {
+                        "taskTypeName": "生態調査",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "誰か止めてくれ！",
+                        "taskClient": "騒音に悩む門番",
+                        "taskClientDesc": "あのカメどもが地上に来てからってもの、やつらは毎晩毎晩近くの山道を転げ回ってやがるんだ！ゴロゴロゴロゴロうるさいのなんの、ちっとも眠れないやしないよ！ハンター殿、やつらを遠くへやってくれ！できるだけ遠くへな！頼んだぞ！"
+                    },
+                    "50sideActivity_13": {
+                        "taskTypeName": "生態調査",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "危険な原料",
+                        "taskClient": "ホウエイの国の将軍ミツドキ",
+                        "taskClientDesc": "オーキッド殿が言っていた通り、カゲグモが吐き出す糸は光沢が美しく、服を作る素材としても悪くない。だが、より多くの糸を吐き出させるためには、その動きを制御せねばならん。これも狩猟技術の訓練の一環だと思って、励んでくれ。"
+                    },
+                    "50sideActivity_14": {
+                        "taskTypeName": "生態調査",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "農地開墾",
+                        "taskClient": "突飛な思いつきをする農民",
+                        "taskClientDesc": "イワヨロイの逞しい前脚を目にしたときから、ずっと考えていたんだ。あの怪力を利用して、農地を開墾できないものか、と。しかし、イワヨロイはひどく凶暴で、とても手懐けられるような生物ではない。一体どうすれば……ハンター殿、どうか力を貸してもらえないだろうか？"
+                    },
+                    "50sideActivity_15": {
+                        "taskTypeName": "生態調査",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "より良い狩りのために",
+                        "taskClient": "宮廷料理長",
+                        "taskClientDesc": "将軍様は狩猟団を結成すべく、多大な資源を投じてこられました。民は将軍様を支持しておりますが、都の食糧備蓄は現状、少しばかり追いつかなくなってきています……ハンター殿、どうか狩猟の際に多くのナキトサカを獲ることができたなら、私に合図を送っていただけませんか？後の始末はお任せいただけたらと思いますので、どうかお願いします！"
+                    },
+                    "50sideActivity_16": {
+                        "taskTypeName": "生態調査",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "急募！労働力求む！",
+                        "taskClient": "焦燥する狩猟団員",
+                        "taskClientDesc": "最近、野獣による拠点への襲撃が増えてきている。建物の多くは破損しており、このままでは狩猟団の戦力も大幅に削られてしまいかねない。我々には、大量の労働力か、あるいは並外れた怪力を持つ助っ人が数人必要なのだが――悪食オオグライなら、うってつけかもしれないな。ハンター殿、悪食オオグライを何匹か捕まえてきてはくれないか？"
+                    },
+                    "50sideActivity_17": {
+                        "taskTypeName": "探索クエスト",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "すべての始まり",
+                        "taskClient": "悲哀に満ちた高貴な女性",
+                        "taskClientDesc": "あの時、我もホフカルと同じく、我が身が国主であるがゆえに全てを背負わねばならぬと考えていた。ゆえに、「異獣ハンター」マサムネとヨシツネが降臨した折、彼らにはただ我を補佐すればよいなどと言うたのだ。今思えば、真に傲慢であったな。"
+                    },
+                    "50sideActivity_18": {
+                        "taskTypeName": "生態調査",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "最高の狩りの供",
+                        "taskClient": "悲哀に満ちた高貴な女性",
+                        "taskClientDesc": "マサムネとヨシツネ。今にして思えば、最高の狩りの供と言えよう。あやつらがいなければ、我は「雷の主」との戦いで容易く命を落としていたやもしれぬ。我はあやつらに詫びねばならぬな。ハンター殿、どうかあやつらを大切にしてやってくれ。"
+                    },
+                    "50sideActivity_19": {
+                        "taskTypeName": "探索クエスト",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "悔いていること",
+                        "taskClient": "悲哀に満ちた高貴な女性",
+                        "taskClientDesc": "狩猟のため、そして使命のために、我は大切にすべきものの多くを疎かにしてしまった。あの午後のひと時、傍にいた者たちともっと言葉を交わしておけばよかったと、幾度思ったことか。"
+                    },
+                    "50sideActivity_20": {
+                        "taskTypeName": "探索クエスト",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "狩猟の喜び",
+                        "taskClient": "悲哀に満ちた高貴な女性",
+                        "taskClientDesc": "狩猟とは、それ自体に喜びが伴うもの。ましてや「異獣」を狩る過程となれば心が躍った。我にとって、狩猟は決して重荷ではなかったのだ。とはいえ……おそらくこれは始めから、我が独りで担うべき使命ではなかったのだろう。「巫女」は、狩猟の喜びを独占すべきではなかったのだ。"
+                    },
+                    "50sideActivity_21": {
+                        "taskTypeName": "生態調査",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "斬新な発想",
+                        "taskClient": "悲哀に満ちた高貴な女性",
+                        "taskClientDesc": "これはかつてスポノスケが提案してきたことだが――どうしても勝てぬのなら、国を挙げて逃げ出せばいい、とあやつは言った。当時の我はあやつを叱り飛ばしたが、今思えば、あるいはスポノスケのほうが正しかったのやもしれぬな。すべては、ホフカルの判断に委ねよう。"
+                    },
+                    "50sideActivity_22": {
+                        "taskTypeName": "探索クエスト",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "遅れて来た後悔",
+                        "taskClient": "悲哀に満ちた高貴な女性",
+                        "taskClientDesc": "かつてのミツドキは未熟であったが、今ほど頑なではなかった。あやつは我が助けにならんとして、ホフカルの成長のために拙速を諌めてくれたこともある。そんなあやつをここまで追い詰めたのは、他ならぬ我の独断専行であったのだ。それこそが、我が過ちよ。"
+                    },
+                    "50sideActivity_23": {
+                        "taskTypeName": "生態調査",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "生き残る道",
+                        "taskClient": "悲哀に満ちた高貴な女性",
+                        "taskClientDesc": "我が命の終わりを迎えようとしていたあの頃には、「雷の主」と交戦することは少なかった。それどころか、我らは幾度か、「呪い」に侵された野獣を共に討伐していた。我は次第に悟り始めていたのだ。「雷の主」もまた、道に迷った一頭の野獣に過ぎぬのだと。あやつはただ、己のやり方で生き残る術を探していたに過ぎぬ。だが我は、それに気付くのがあまりにも遅すぎたのだ。"
+                    },
+                    "50sideActivity_24": {
+                        "taskTypeName": "探索クエスト",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "最後の願い",
+                        "taskClient": "悲哀に満ちた高貴な女性",
+                        "taskClientDesc": "我が人生には悔いばかりが残っておるが、最大の心残りは「雷の主」の結末をこの目で見届けられなかったことだった。ハンター殿、これが最後の願いだ。あの日の戦いを再現し、我が魂を安らかに旅立たせてはくれぬか？"
+                    }
+                },
+                "meldingDropDict": {
+                    "act50side_01": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "SOMETIMES",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_02": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "SOMETIMES",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_03": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "SOMETIMES",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_04": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "SOMETIMES",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_05": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "SOMETIMES",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_06": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_07": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_08": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_6",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_6",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_p-1": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "COMPLETE"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "COMPLETE"
+                            }
+                        ]
+                    }
+                },
+                "stageMapPreviewDict": {},
+                "huntDatabaseDict": {
+                    "enemy_10129_pycdog": {
+                        "id": "enemy_10129_pycdog",
+                        "name": "ナキトサカ",
+                        "sortId": 1,
+                        "level": 1,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10129_pycdog_small",
+                        "iconLargeId": "enemy_10129_pycdog_big",
+                        "basicDesc": "　ホウエイの国周辺で最もよく見かける野獣。群れをなして生活し、竹を食料とする。力は弱いが繁殖力は極めて強く、ホウエイの国最古の記録にもその姿が描かれている。",
+                        "rideIcon": null,
+                        "rideDesc": null,
+                        "secretTaskId": "50sideActivity_15",
+                        "secretTaskItemId": "act50side_monster_clue_1",
+                        "secretTaskDesc": "生態調査任務「より良い狩りのために」クリア後解放",
+                        "secretContent": "　どの部位を取っても美味しかったな。ホウエイの国で一番食べてた肉はこれだったよ。――カタパルト\nこの生物は大きな鼻で土を掘り返し、エサを探す。その習性を利用して、ホウエイの国ではナキトサカを飼い、農耕に役立てている。――ミツドキ"
+                    },
+                    "enemy_10130_pycpok": {
+                        "id": "enemy_10130_pycpok",
+                        "name": "カラツキイモリ",
+                        "sortId": 2,
+                        "level": 1,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10130_pycpok_small",
+                        "iconLargeId": "enemy_10130_pycpok_big",
+                        "basicDesc": "　竹林の奥深くに生息するイモリ。臆病であり、孵化後も卵の殻を身に着け、いつでも身を隠せるようにしている。",
+                        "rideIcon": null,
+                        "rideDesc": null,
+                        "secretTaskId": "50sideActivity_1",
+                        "secretTaskItemId": "act50side_monster_clue_2",
+                        "secretTaskDesc": "生態調査任務「殻に隠れた臆病者」クリア後解放",
+                        "secretContent": "　尻尾は美味しいけど、他の部位はいまいち。——カタパルト\nこいつらの卵の殻は頑丈なんだ。武器にはできないが、ミツドキに見せてみたら、家を建てるのに使えるとか言ってたな。——スポノスケ"
+                    },
+                    "enemy_10131_pycshd": {
+                        "id": "enemy_10131_pycshd",
+                        "name": "ヤドヌスミ",
+                        "sortId": 3,
+                        "level": 1,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10131_pycshd_small",
+                        "iconLargeId": "enemy_10131_pycshd_big",
+                        "basicDesc": "　竹林に生息する軟体生物。本体は小さいが、大きな容器を探してそれをシェルターとする習性を持つ。危険を感じるとすぐさまその容器の中へと身を隠す。",
+                        "rideIcon": null,
+                        "rideDesc": null,
+                        "secretTaskId": "50sideActivity_2",
+                        "secretTaskItemId": "act50side_monster_clue_3",
+                        "secretTaskDesc": "生態調査任務「鍋泥棒め！」クリア後解放",
+                        "secretContent": "　結局オリジムシじゃん！ペッペッ、軟体生物は食べたくないって。——カタパルト\n確かに、本体はオリジムシの幼体によく似ているわね。住居の近くで暮らしていたからか、人間が捨てた容器を住処に選んで、結果的にオリジムシとは違う形になった、と……興味深いわ。——オーキッド"
+                    },
+                    "enemy_10132_pyceat": {
+                        "id": "enemy_10132_pyceat",
+                        "name": "オオグライ",
+                        "sortId": 4,
+                        "level": 1,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10132_pyceat_small",
+                        "iconLargeId": "enemy_10132_pyceat_big",
+                        "basicDesc": "　雪山に生息する大型の野獣。巨体の持ち主であり、前足が発達している。小型の野獣でも人間の大人でも容易く掴み上げ、その巨大な口へと放り込む。ホウエイの国においては、子供への教訓話として作られた伝説の多くに登場する。",
+                        "rideIcon": null,
+                        "rideDesc": null,
+                        "secretTaskId": "50sideActivity_16",
+                        "secretTaskItemId": "act50side_monster_clue_4",
+                        "secretTaskDesc": "生態調査任務「急募！労働力求む！」クリア後解放",
+                        "secretContent": "　こいつ、お腹減ってない時は意外とおとなしいんだよね。機嫌が良い時には、背中に乗せて運んでくれることだってあるんだ。——カタパルト\nオオグライとコロガシムシは時折、奇妙な共生関係を築くことがあるんだニャ。コロガシムシがオオグライの武器となり、オオグライがコロガシムシの身を守る形でニャ。と言っても大抵、コロガシムシは最後にはオオグライに食われる運命にあるんだけどニャ。——マサムネ"
+                    },
+                    "enemy_10133_pycrol": {
+                        "id": "enemy_10133_pycrol",
+                        "name": "サカサガメ",
+                        "sortId": 5,
+                        "level": 2,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10133_pycrol_small",
+                        "iconLargeId": "enemy_10133_pycrol_big",
+                        "basicDesc": "　普通のリクガメ。地下水路付近で発見された。極めて攻撃的であり、生き物と見るや殻にこもったまま突進してくる。その速度は凄まじく、初めてそれを目にした者は往々にして避けられない。",
+                        "rideIcon": "trap_281_ctlrol",
+                        "rideDesc": "配置後、操竜待機状態の<サカサガメ>全員が、配置した位置へと回転しながら移動",
+                        "secretTaskId": "50sideActivity_12",
+                        "secretTaskItemId": "act50side_monster_clue_5",
+                        "secretTaskDesc": "生態調査任務「誰か止めてくれ！」クリア後解放",
+                        "secretContent": "　こっそり観察してわかったんだけど、あいつらの首って水を飲む時はすっごく伸びて、水面まで余裕で届くようになるんだ。もしかして、あの甲羅の中身は全部首だったりするのかな！？——カタパルト\nあやつらの生活の痕跡を辿れば、地表に露出した、いにしえの崩れた壁や柱が見つかるのだ。もしや、あやつらは遺跡に沿って地表から移動してきたのだろうか？それとも、この地下世界は、何千年も前には地表だったのか？——ホフカル"
+                    },
+                    "enemy_10137_pycvol": {
+                        "id": "enemy_10137_pycvol",
+                        "name": "「異獣」ヨウガンツブリ",
+                        "sortId": 6,
+                        "level": 2,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10137_pycvol_small",
+                        "iconLargeId": "enemy_10137_pycvol_big",
+                        "basicDesc": "　当代の「異獣」。溶岩地帯を統べる王者。その身に宿す「呪い」の力で、この雪山を自らの巣窟へと変えようとしている。",
+                        "rideIcon": null,
+                        "rideDesc": null,
+                        "secretTaskId": "50sideActivity_5",
+                        "secretTaskItemId": "act50side_monster_clue_6",
+                        "secretTaskDesc": "生態調査任務「白き原野に残った焦げ跡」クリア後解放",
+                        "secretContent": "　ホフカルが浄化してくれさえすれば食べられるはずだったんだけど、機会を逃しちゃったから超残念。――カタパルト\n普通のヨウガンツブリの背中には源石がないけれど、「異獣」ヨウガンツブリの背中には源石が存在していたわ。それを思うに、もしかするとあの個体もテラから来た存在で、たまたまヨウガンツブリと見た目が似ていただけという可能性もあるわよね。でも、そんな偶然ってあるのかしら？あるいは、ホウエイの国は私たちが生きる大地と、何かの繋がりがあるのかしら？――オーキッド"
+                    },
+                    "enemy_10134_pycspy": {
+                        "id": "enemy_10134_pycspy",
+                        "name": "カゲグモ",
+                        "sortId": 7,
+                        "level": 2,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10134_pycspy_small",
+                        "iconLargeId": "enemy_10134_pycspy_big",
+                        "basicDesc": "　地下の竹林に生息するクモ。竹の間に粘着力の強い糸を張り巡らせているため、うっかり踏み入ったものは絡めとられ、餌食にされてしまう。",
+                        "rideIcon": "trap_282_ctlspy",
+                        "rideDesc": "配置後、操竜待機状態の<カゲグモ>全員が、配置した位置へと瞬間移動し、敵最大3体をバインド",
+                        "secretTaskId": "50sideActivity_13",
+                        "secretTaskItemId": "act50side_monster_clue_7",
+                        "secretTaskDesc": "生態調査任務「危険な原料」クリア後解放",
+                        "secretContent": "　奴らの吐く糸はすごく丈夫だから、俺の新作武器に使えそうなんだ！どうにかしてこのクモを繁殖させられないか？——スポノスケ\nでは、そなたを地下竹林に放り込んでやろう。あとは己で事を進めるがよい。——ミツドキ\nオーキッドが言うには、この糸は服を作るのにも向いてるらしいけど？——スポノスケ\nでは、竹林に糸が残っていないか、人員を送り調べさせるとしよう。——ミツドキ"
+                    },
+                    "enemy_10135_pycjmp": {
+                        "id": "enemy_10135_pycjmp",
+                        "name": "呪鬼",
+                        "sortId": 8,
+                        "level": 2,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10135_pycjmp_small",
+                        "iconLargeId": "enemy_10135_pycjmp_big",
+                        "basicDesc": "　ホウエイの国では絶滅したはずの狼が、厄災と共に再び姿を現した。彼らが元より持ち合わせている特質のすべて――集団行動、凶暴性、狡猾さを備えており、そしてその一つひとつが、「呪い」によってさらに厄介な形に変貌している。",
+                        "rideIcon": null,
+                        "rideDesc": null,
+                        "secretTaskId": "50sideActivity_7",
+                        "secretTaskItemId": "act50side_monster_clue_8",
+                        "secretTaskDesc": "生態調査任務「過去より訪れし亡霊」クリア後解放",
+                        "secretContent": "　無理、食べられない。——カタパルト\n伝説によると、いわゆる呪鬼とは、かつて「御輪」から「呪い」が大量に漏れ出した際、その「呪い」に侵された狼である可能性が高いという。だが、当時の人々は何が起きたのかを正確に理解できず、その怒りを狼に向け、根絶やしにしてしまったのだ。そうして、後世の人々もまた、狼を災厄の象徴と見なすようになった。我は……狼たちに対して、申し訳なく思っている。——ホフカル"
+                    },
+                    "enemy_10136_pycblk": {
+                        "id": "enemy_10136_pycblk",
+                        "name": "イワヨロイ",
+                        "sortId": 9,
+                        "level": 2,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10136_pycblk_small",
+                        "iconLargeId": "enemy_10136_pycblk_big",
+                        "basicDesc": "　ホウエイの国においては現れたことのなかった野獣。近づく敵はすべて、その強靭な前足で切り裂かれ、逃げようとする獲物は、それが隆起させる岩壁によって退路を絶たれる。",
+                        "rideIcon": "trap_283_ctlblk",
+                        "rideDesc": "配置後、操竜待機状態の<イワヨロイ>1体が、配置した位置へと瞬間移動し、隣接4マスの配置可能な地面マスに高台を生成",
+                        "secretTaskId": "50sideActivity_14",
+                        "secretTaskItemId": "act50side_monster_clue_9",
+                        "secretTaskDesc": "生態調査任務「農地開墾」クリア後解放",
+                        "secretContent": "　えーっと、レム・ビリトンかどこかで似たようなやつらを見たことあるような……？——カタパルト\n「呪い」が消えし後、この未知なる生物はホウエイの国近辺の生態系に新たな脅威をもたらした。やつらが斯様に無秩序に増え続ければ、周囲の環境に甚大な被害が出るおそれがある。狩猟団に呼びかけ、個体数の調整を行うと致そう。——ミツドキ\n根絶やしにする必要はない。あやつらがオーキッド殿やカタパルト殿と同じ場所から来たのであれば、あやつらの存在もまた、彼女たちがこの地を訪れた証になるだろうからな。——ホフカル"
+                    },
+                    "enemy_1573_pyczog": {
+                        "id": "enemy_1573_pyczog",
+                        "name": "「雷の主」",
+                        "sortId": 10,
+                        "level": 3,
+                        "isBoss": true,
+                        "bossPicId": "note_boss",
+                        "iconSmallId": "enemy_1573_pyczog_small",
+                        "iconLargeId": "enemy_1573_pyczog_big",
+                        "basicDesc": "　先代の「異獣」であり、雷光を帯びたその姿から、「雷の主」とも呼ばれている。狩りの際には無数の雷光虫を集めることでまとう電力を飛躍的に高めているとされ、「超帯電状態」と呼ばれる姿に変化する。",
+                        "rideIcon": "trap_283_ctlzog",
+                        "rideDesc": "配置後、操竜待機状態の<ジンオウガ>が配置した位置の方向に突進する。<ジンオウガ>は突進によって2回高台に衝突するとダウンする",
+                        "secretTaskId": "50sideActivity_11",
+                        "secretTaskItemId": "act50side_monster_clue_10",
+                        "secretTaskDesc": "生態調査任務「あの稲妻に触れたくて」クリア後解放",
+                        "secretContent": "驚くことに、稲妻を浴びすぎたせいか、竹林の竹までも稲妻を纏うようになった。雨の日には、竹が空に向かって稲光を放つという奇妙な光景が見られることもあるという。\n「雷の主」と共に元の場所へと帰れなかった雷光虫は多いが、彼らはこのホウエイで新たな共生相手――「ヤドヌスミ」と出会った。夜の竹林で光る缶のようなものを見たら、ほとんどの場合が共生関係にある雷光虫とヤドヌスミと見て間違いないだろう。\n多くの獣が「雷の主」を恐れて巣を移したせいで、これまでの生態系マップを丸ごと描き直さなければならない。\nたしかに「雷の主」の存在は多くの物事を変えたが、現状を見るに、大自然はその変化を受け入れたようだ。――『ホウエイ生態録』"
+                    }
+                },
+                "stageIdToUnlockItemIdDict": {
+                    "act50side_p-1": "act50side_special_level_unlock"
+                },
+                "constData": {
+                    "stageUnlockToolDesc": "道具解放",
+                    "mealLackMoney": "龍門幣が足りません",
+                    "mealDayTimesLimit": 0,
+                    "toolMaximum": 2,
+                    "stageCanNotUseToTool": [
+                        "act50side_tr01"
+                    ],
+                    "hunterGuideRewardItemId": "furni_act71d0_grill_01",
+                    "hunterGuideRewardItemType": "FURN",
+                    "hunterGuideRewardItemCount": 1,
+                    "hunterGuideDetailTabPosition": 2,
+                    "taskRewardItemNoIconDisplayId": "act50side_special_level_unlock",
+                    "specialLevelUnlockTaskId": "50sideActivity_10",
+                    "missionProgressFormat": "(<color=#1becbd>{0}</color>/{1})",
+                    "gachaDefaultProb": 0.0,
+                    "gachaExtraProb": -1.0
+                }
+            },
             "act24side": {
                 "toolDataList": {
                     "tool_trap": {
@@ -377984,6 +381095,25 @@
         }
     },
     "activityItems": {
+        "act50side": [
+            "act50side_melding_1",
+            "act50side_melding_2",
+            "act50side_melding_3",
+            "act50side_melding_4",
+            "act50side_melding_5",
+            "act50side_melding_6",
+            "act50side_special_level_unlock",
+            "act50side_monster_clue_1",
+            "act50side_monster_clue_2",
+            "act50side_monster_clue_3",
+            "act50side_monster_clue_4",
+            "act50side_monster_clue_5",
+            "act50side_monster_clue_6",
+            "act50side_monster_clue_7",
+            "act50side_monster_clue_8",
+            "act50side_monster_clue_9",
+            "act50side_monster_clue_10"
+        ],
         "act42sre": [
             "act42side_token_pacifier_rep_1"
         ],
@@ -386905,6 +390035,26 @@
             ],
             "picGroups": {},
             "startTs": 1793862000
+        },
+        {
+            "id": "dis_side_50",
+            "type": "ACTIVITY",
+            "funcId": "act50side",
+            "endTs": 1795978799,
+            "sortId": 151,
+            "itemId": null,
+            "timeNodes": [
+                {
+                    "title": "<泡影を穿つ碧雷>イベント開催中",
+                    "ts": 1794812400
+                },
+                {
+                    "title": "「泡影踏破」ステージ開放中",
+                    "ts": 1795417200
+                }
+            ],
+            "picGroups": {},
+            "startTs": 1794812400
         }
     ],
     "actFunData": {

@@ -15226,6 +15226,97 @@
                     ]
                 }
             ]
+        },
+        "char_1048_orchd2": {
+            "charId": "char_1048_orchd2",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_hire_spd_all[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_spd&limit_tag[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_1049_catap2": {
+            "charId": "char_1049_catap2",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "train_spd_doubleProf3[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "train_spd_doubleProf3[100]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_spd[022]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4215_buddy": {
+            "charId": "char_4215_buddy",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "dorm_rec_single&tag[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "meet_spd_notOwned_P[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 30
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     },
     "buffs": {
@@ -15510,6 +15601,21 @@
             "buffCategory": "FUNCTION",
             "roomType": "CONTROL",
             "description": "제어 센터에 배치 시, 인사부 사무실의 인맥 레퍼런스 누적 속도가 <@cc.vup>30%</> 미만인 경우(기본 누적 속도 5% 포함), 인맥 레퍼런스 누적 속도 추가로 <@cc.vup>+20%</> (해당 버프는 전체 효과 중 유일하며, 다른 버프의 영향을 받지 않음)",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "control_hire_spd_all[000]": {
+            "buffId": "control_hire_spd_all[000]",
+            "buffName": "사무실의 핵심 인물",
+            "buffIcon": "control",
+            "skillIcon": "bskill_ctrl_orchd2",
+            "sortId": 1399,
+            "buffColor": "#005752",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "CONTROL",
+            "description": "제어 센터에 배치 시, 인사부 사무실의 인맥 레퍼런스 누적 속도 <@cc.vup>+10%</> (동종 효과 중 가장 높은 수치만 적용)",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -19213,6 +19319,21 @@
             "targetGroupSortId": 0,
             "targets": {}
         },
+        "trade_ord_spd[022]": {
+            "buffId": "trade_ord_spd[022]",
+            "buffName": "분위기 메이커",
+            "buffIcon": "trading",
+            "skillIcon": "bskill_tra_spd3&catap2",
+            "sortId": 4903,
+            "buffColor": "#0075a9",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "TRADING",
+            "description": "무역소에 배치 시, 오더 수주 효율 <@cc.vup>+35%</>",
+            "efficiency": 35,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
         "trade_ord_vodfox[000]": {
             "buffId": "trade_ord_vodfox[000]",
             "buffName": "속삭임",
@@ -20050,6 +20171,21 @@
             "roomType": "TRADING",
             "description": "무역소에 배치 시, 오더 수주 효율 <@cc.vup>+5%</>, 오더 상한 <@cc.vup>+2</>, <$cc.bd_felyne><@cc.rem>아이룰루</></>가 1개 늘어날 때마다 오더 수주 효율 <@cc.vup>+3%</>",
             "efficiency": 5,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "trade_ord_spd&limit_tag[000]": {
+            "buffId": "trade_ord_spd&limit_tag[000]",
+            "buffName": "대장의 자각",
+            "buffIcon": "trading",
+            "skillIcon": "bskill_tra_orchd2",
+            "sortId": 4150,
+            "buffColor": "#0075a9",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "TRADING",
+            "description": "무역소에 배치 시, 오더 수주 상한 <@cc.vup>+3</>, 무역소에 배치된 <$cc.tag.mh2><@cc.kw>호우에이국 사냥팀</></> 오퍼레이터 1명당 오더 수주 효율 <@cc.vup>+20%</>",
+            "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
         },
@@ -22814,6 +22950,42 @@
                 "PIONEER"
             ]
         },
+        "train_spd_doubleProf3[000]": {
+            "buffId": "train_spd_doubleProf3[000]",
+            "buffName": "마음 가는 대로 α",
+            "buffIcon": "training",
+            "skillIcon": "bskill_train_mh2_guard&sniper1",
+            "sortId": 9901,
+            "buffColor": "#7d0022",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "TRAINING",
+            "description": "훈련실에 배치 시, <@cc.kw>가드</> 및 <@cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <@cc.vup>+30%</>",
+            "efficiency": 30,
+            "targetGroupSortId": 2,
+            "targets": [
+                "WARRIOR",
+                "SNIPER"
+            ]
+        },
+        "train_spd_doubleProf3[100]": {
+            "buffId": "train_spd_doubleProf3[100]",
+            "buffName": "마음 가는 대로 β",
+            "buffIcon": "training",
+            "skillIcon": "bskill_train_mh2_guard&sniper2",
+            "sortId": 9901,
+            "buffColor": "#7d0022",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "TRAINING",
+            "description": "훈련실에 배치 시, <@cc.kw>가드</> 및 <@cc.kw>스나이퍼</> 오퍼레이터의 스킬 훈련 속도 <@cc.vup>+50%</>, 시간당 컨디션 소모 <@cc.vdown>+1</>",
+            "efficiency": 50,
+            "targetGroupSortId": 2,
+            "targets": [
+                "WARRIOR",
+                "SNIPER"
+            ]
+        },
         "train_spd_reduceTime[000]": {
             "buffId": "train_spd_reduceTime[000]",
             "buffName": "정신 단련",
@@ -24510,6 +24682,21 @@
             "buffCategory": "RECOVERY",
             "roomType": "DORMITORY",
             "description": "숙소에 배치 시, 해당 숙소 내 컨디션이 가득 차지 않은 임의 오퍼레이터의 시간당 회복 <@cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용), 대상이 <@cc.kw>블루포이즌</>일 경우 추가로 <@cc.vup>+0.45</>",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "dorm_rec_single&tag[000]": {
+            "buffId": "dorm_rec_single&tag[000]",
+            "buffName": "수렵의 동반자",
+            "buffIcon": "dormitory",
+            "skillIcon": "bskill_dorm_buddy",
+            "sortId": 5214,
+            "buffColor": "#21cdcb",
+            "textColor": "#ffffff",
+            "buffCategory": "RECOVERY",
+            "roomType": "DORMITORY",
+            "description": "숙소에 배치 시, 해당 숙소 내 자신을 제외한 컨디션이 가득 차지 않은 임의 오퍼레이터의 시간당 컨디션 회복 <@cc.vup>+0.55</> (동종 효과 중 가장 높은 수치만 적용), 대상이 <$cc.tag.mh><@cc.kw>아이루와 유쾌한 친구들</></> 또는 <$cc.tag.mh2><@cc.kw>호우에이국 사냥팀</></>일 경우 추가로 <@cc.vup>+0.45</>",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -26910,6 +27097,21 @@
             "buffCategory": "FUNCTION",
             "roomType": "MEETING",
             "description": "응접실에 배치 시, 단서 보드 중 미보유 단서를 더 쉽게 획득",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "meet_spd_notOwned_P[000]": {
+            "buffId": "meet_spd_notOwned_P[000]",
+            "buffName": "은밀 행동의 달인",
+            "buffIcon": "meeting",
+            "skillIcon": "bskill_meet_buddy",
+            "sortId": 6815,
+            "buffColor": "#dd653f",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "MEETING",
+            "description": "응접실에 배치 시, 단서 보드 중 미보유 단서를 더 쉽게 획득, 만약 <@cc.kw>염호룡 오키드</>가 제어 센터에 배치되어 있다면 단서 수집 속도 <@cc.vup>+10%</>",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -100050,6 +100252,550 @@
                 "enableRoomType": 4112,
                 "quantity": 1
             },
+            "furni_Azuredream_hanger_01": {
+                "id": "furni_Azuredream_hanger_01",
+                "sortId": 2282,
+                "name": "'열죽' 훈제 걸이대",
+                "iconId": "furni_Azuredream_hanger_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILING",
+                "subType": "DECORATION_C",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_1",
+                "width": 3,
+                "depth": 3,
+                "height": 7,
+                "comfort": 155,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "용암의 고온으로 형태를 굳힌 대나무를 엮어 만든 튼튼한 걸이대. 갈고리에는 종종 바람에 말린 약초와 육포가 걸려 있다.\n이곳은 헌터들이 모여 맛있는 식사를 즐기는 장소다. 사냥을 떠나기 전, 헌터들은 늘 이곳에 둘러앉아 잠시나마 서로의 온기를 나눈다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_brazier_01": {
+                "id": "furni_Azuredream_brazier_01",
+                "sortId": 2283,
+                "name": "무쇠 화로",
+                "iconId": "furni_Azuredream_brazier_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "COOKING",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_1",
+                "width": 2,
+                "depth": 2,
+                "height": 3,
+                "comfort": 140,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "방에서 보기 드문 철그릇. 특별한 설계로 그 안에서 타는 불이 쉽사리 꺼지지 않는다.\n아무리 숙련된 헌터일지라도 야외에서 보내는 긴긴밤은 절대 무시할 수 없다. 이 불은 밤 동안 마음을 편하게 만드는 유일한 빛이다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_shelf_01": {
+                "id": "furni_Azuredream_shelf_01",
+                "sortId": 2284,
+                "name": "장인의 선반",
+                "iconId": "furni_Azuredream_shelf_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "SHELF",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_2",
+                "width": 5,
+                "depth": 2,
+                "height": 3,
+                "comfort": 125,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "나무 말뚝과 굵은 마끈으로 벽에 단단히 고정한 소박한 목재 선반. 위에는 온갖 물건을 올려둘 수 있다.\n스파노스케는 종종 자신의 발명품을 이곳에 무심코 던져두곤 한다. 선반이 더 많은 물건을 버티게 하려다 보니, 그는 몇 번이고 선반을 덧대어 보강할 수밖에 없었다. 어떤 의미에선 이 선반 자체가 그의 영감이 깃든 결정체가 된 셈이다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_cabinet_01": {
+                "id": "furni_Azuredream_cabinet_01",
+                "sortId": 2285,
+                "name": "수렵제 조리 준비대",
+                "iconId": "furni_Azuredream_cabinet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "STORAGE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_2",
+                "width": 7,
+                "depth": 2,
+                "height": 5,
+                "comfort": 275,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "두툼한 목재 수납장. 조리대 아래에는 각종 냄비가 놓여 있고, 위쪽의 끈 걸이에는 뒤집개와 국자가 걸려 있다.\n사람들은 이곳에서 쉴 새 없이 맛있는 요리를 만들어 내며 수많은 헌터들을 사냥길로 떠나보냈다. 이 수납장은 가장 소박하지만 간절한 기원을 묵묵히 지켜봐 왔다. 든든하게 배를 채운 뒤, 반드시 무사히 돌아오기를.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_ceilingLight_01": {
+                "id": "furni_Azuredream_ceilingLight_01",
+                "sortId": 2286,
+                "name": "'반딧불이 쉼터' 나무살 둥지",
+                "iconId": "furni_Azuredream_ceilingLight_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_2",
+                "width": 11,
+                "depth": 4,
+                "height": 3,
+                "comfort": 235,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "얇은 나무살을 엮어 만든 등. 틈새로 흘러나오는 부드러운 빛이 마치 조용히 숨을 쉬듯 일렁인다.\n사실 이 등의 정체는 반딧불이 둥지다. 안쪽에 특제 수지를 발라 반딧불이가 안에 머물도록 유도했으며, 밤이 되면 녀석들이 뿜어내는 빛을 그대로 광원으로 삼는다. 이거야말로 호우에이국이 대자연과 조화롭게 공존하는 방식을 엿볼 수 있는 가장 훌륭한 본보기다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_table_01": {
+                "id": "furni_Azuredream_table_01",
+                "sortId": 2287,
+                "name": "결집의 탁자",
+                "iconId": "furni_Azuredream_table_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_1",
+                "width": 6,
+                "depth": 5,
+                "height": 3,
+                "comfort": 340,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "넓은 육각형 목제 테이블. 아주 튼튼해서 오래 사용할 수 있으며, 위에는 여러 소품을 올려놓을 수 있다.\n전술 수립과 사냥 목표 연구, 사냥 후 귀환을 축하하는 연회 모두 이 테이블에서 진행된다. 이 테이블은 헌터에게 있어서 하루의 시작인 동시에 하루의 마무리이기도 하다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_carpet_01": {
+                "id": "furni_Azuredream_carpet_01",
+                "sortId": 2288,
+                "name": "토템 카펫",
+                "iconId": "furni_Azuredream_carpet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CARPET",
+                "subType": "NONE",
+                "location": "CARPET",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_2",
+                "width": 11,
+                "depth": 7,
+                "height": 1,
+                "comfort": 145,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "짙은 붉은색과 하늘빛 물결무늬가 어우러진 카펫. 마치 흘러내리는 용암의 궤적과 얼음 결정의 형태를 본뜬 듯하며, 거칠면서도 따스한 촉감이 특징이다.\n호우에이국의 직공들은 예로부터 대자연을 향한 경외심을 직물에 담아내곤 했다. 이 붉고 푸른 문양은 설산 아래에서 끓어오르는 지맥과 산봉우리의 만년설을 나타내는 동시에, 헌터들의 핏속에 도도하게 흐르는 뜨거운 열정과 차분한 냉정함을 상징한다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_pillar_01": {
+                "id": "furni_Azuredream_pillar_01",
+                "sortId": 2289,
+                "name": "'그윽한 오솔길' 파티션",
+                "iconId": "furni_Azuredream_pillar_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "PARTITION",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 3,
+                "depth": 4,
+                "height": 9,
+                "comfort": 315,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "방의 공간을 분리할 때 쓰이는 장식용 파티션. 나뭇가지엔 각양각색의 장식품들이 걸려 있어 방에 은은하고 고상한 운치를 더해준다.\n시야를 완전히 가리지 않으면서도 자연스럽게 공간을 나누는 절묘한 형태를 띠고 있어, 저 아득히 먼 이국의 정취를 연상케 한다. 꿈과 현실 사이의 경계 또한, 어쩌면 이 파티션의 틈새처럼 아주 얇은 한 끗 차이에 불과할지도 모른다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_leafWall_01": {
+                "id": "furni_Azuredream_leafWall_01",
+                "sortId": 2290,
+                "name": "바람을 비는 대나무 발 장식",
+                "iconId": "furni_Azuredream_leafWall_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "ORTHER_WD",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_3",
+                "width": 3,
+                "depth": 1,
+                "height": 3,
+                "comfort": 85,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "어린 대나무와 커다란 나뭇잎을 엮어 만든 꽃 모양의 벽 장식. 중앙에 새겨진 문양은 집집마다 그 형태가 다르다.\n호우에이국 평민들이 집 안에 걸어두는 일종의 '부적'이다. 사람들은 이 장식이 끔찍한 '저주'를 막아준다고 굳게 믿으며, 험난한 사냥을 떠난 가족이자 헌터가 부디 무사히 돌아오기만을 간절히 기원한다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_bed_01": {
+                "id": "furni_Azuredream_bed_01",
+                "sortId": 2291,
+                "name": "은자의 침상",
+                "iconId": "furni_Azuredream_bed_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "BEDDING",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_3",
+                "width": 9,
+                "depth": 4,
+                "height": 6,
+                "comfort": 530,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "차양이 달린 목재 침상. 하얗게 바랜 가죽 담요가 깔려 있어 두툼하고 따스해 보이며, 기분 좋은 햇볕 냄새가 풍긴다.\n그 기나긴 10년 동안, 어린 국주는 이 침상에서 수없이 눈을 떴다. 오직 꿈속에서만 그녀는 무녀라는 무거운 짐을 내려놓고 평범한 소녀가 될 수 있었다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_chair_01": {
+                "id": "furni_Azuredream_chair_01",
+                "sortId": 2292,
+                "name": "침묵의 나무 의자",
+                "iconId": "furni_Azuredream_chair_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "CHAIR",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_1",
+                "width": 3,
+                "depth": 3,
+                "height": 4,
+                "comfort": 190,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "견고한 소재로 만든 의자. 등받이에 짐승 가죽을 덧대었지만 그리 튼튼하진 않아서, 가끔 흥분한 헌터가 뒤로 기대다 넘어지곤 한다.\n미드나이트 장군은 자주 이곳에 앉아 창밖 멀리 있는 죽림과 설산을 응시했다. 그는 이성과 감정 사이에서 고뇌하며 묵묵히 그 비밀을 지켰다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_crate_01": {
+                "id": "furni_Azuredream_crate_01",
+                "sortId": 2293,
+                "name": "헌터의 보물 상자",
+                "iconId": "furni_Azuredream_crate_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CABINET",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_3",
+                "width": 3,
+                "depth": 2,
+                "height": 4,
+                "comfort": 155,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "잡동사니로 가득 찬 나무 상자. 각종 도구부터 정체를 알 수 없는 광석 표본까지 온갖 물건이 있으며, 심지어 낡은 무기까지 들어 있다.\n어째서인지 겉보기보다 수납공간이 훨씬 넓고, 개조를 통해 공간을 더 늘릴 수도 있다. 스파노스케는 이를 무척 자랑스러워하지만, 마사무네가 몰래 알려주길, 이는 자신이 스파노스케에게 가르쳐 준 것이라고 한다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_column_01": {
+                "id": "furni_Azuredream_column_01",
+                "sortId": 2294,
+                "name": "파울비스트 곡목 횃대",
+                "iconId": "furni_Azuredream_column_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "COLUMN",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 6,
+                "depth": 3,
+                "height": 10,
+                "comfort": 445,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "자연스럽게 굽은 굵은 통나무. 측면에는 조그만 파울비스트 둥지가 설치되어 있어, 군사 정보를 전달하는 전령이 잠시 내려앉아 쉴 수 있다.\n통신이 낙후된 호우에이국에서 이 작은 전령은 방어선과 수도를 잇는 생명줄이다. 이 나무 기둥은 수많은 '급보'와 '승전보'가 도착하고 떠나는 모습을 지켜보았다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_furStand_01": {
+                "id": "furni_Azuredream_furStand_01",
+                "sortId": 2295,
+                "name": "짐승 가죽 건조대",
+                "iconId": "furni_Azuredream_furStand_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "ORTHER_D",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_3",
+                "width": 2,
+                "depth": 4,
+                "height": 8,
+                "comfort": 260,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "짐승의 통가죽이 걸려 있는 목재 거치대. 특수 공정을 거쳐 가죽이 탄탄하고 질긴 질감을 띠며, 옅은 기름 향을 풍긴다.\n온전한 가죽 한 장은 곧 한 번의 성공적인 사냥을 의미한다. 이 가죽들은 전부 새로운 장비의 일부가 되어 헌터를 보호하며 끊임없이 이어질 것이다.",
+                "obtainApproach": "가구상점 한정 구매",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_basket_01": {
+                "id": "furni_Azuredream_basket_01",
+                "sortId": 2296,
+                "name": "은은한 불빛의 스탠드",
+                "iconId": "furni_Azuredream_basket_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "FLOORLAMP",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 2,
+                "depth": 2,
+                "height": 5,
+                "comfort": 175,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "정교하게 엮은 대나무 바구니 안에 대나무 가지가 서 있다. 그 위에는 지하의 강에서 채집한 반딧불이가 유리 덮개 너머로 옅은 빛을 내며 매달려 있다.\n어둠 속에서도 끈질기게 살아가는 이 작은 생명체는 한때 궁지에 몰렸던 헌터들처럼 희망의 빛을 발하고 있다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_wallpaper_01": {
+                "id": "furni_Azuredream_wallpaper_01",
+                "sortId": 2297,
+                "name": "'파도 소리'",
+                "iconId": "furni_Azuredream_wallpaper_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLPAPER",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "WALL",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 34,
+                "depth": 1,
+                "height": 10,
+                "comfort": 240,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "호우에이국의 죽림 풍경을 띄운 파노라마 디스플레이. 창문 너머로 흔들리는 죽림이 보이고, 바람에 댓잎이 스치는 소리가 들려온다.\n파도처럼 밀려오는 그 소리를 듣고 있으면, 휴식을 취하던 이는 문득 머나먼 이국땅에 들어섰다는 착각에 빠지곤 한다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_floor_01": {
+                "id": "furni_Azuredream_floor_01",
+                "sortId": 2298,
+                "name": "'집회'",
+                "iconId": "furni_Azuredream_floor_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "FLOOR",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "FLOOR",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 34,
+                "depth": 10,
+                "height": 1,
+                "comfort": 240,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "거대한 회색 석판으로 포장된 바닥. 발을 내디디면 둔탁한 울림이 퍼진다.\n풍성한 수확을 안고 돌아온 환희를 지켜봤고, 들것이 바닥에 내려지는 무거운 순간도 견뎌냈다. 떠나는 이든 머무는 이든, 이 단단한 바닥은 모든 방문객을 묵묵히 지탱해 준다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
             "furni_oct1st_deckChair_01": {
                 "id": "furni_oct1st_deckChair_01",
                 "sortId": 9998,
@@ -104072,6 +104818,38 @@
                 "comfort": 120,
                 "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
                 "description": "아미야와 펠리카의 이미지를 참고하여 만든 귀여운 장식품, 이 순간 두 사람은 역사적인 만남을 가졌다.\n내일을 향한 여정을 위해 시공간을 넘어 축복을 선물하며, 새로운 이야기로 모두가 두근두근한다.",
+                "obtainApproach": "이벤트 보상",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 0
+            },
+            "furni_act71d0_grill_01": {
+                "id": "furni_act71d0_grill_01",
+                "sortId": 10261,
+                "name": "바비큐 세트",
+                "iconId": "furni_act71d0_grill_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "CATERING",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "",
+                "groupId": "",
+                "width": 6,
+                "depth": 4,
+                "height": 4,
+                "comfort": 120,
+                "usage": "숙소와 활동실을 꾸며 분위기 수치를 높일 수 있다.",
+                "description": "소박한 바비큐 세트. 평범한 모닥불, 단출한 목제 바비큐 그릴, 흔히 볼 수 있는 칼, 그리고 가장 맛있는 고기구이.\n“잘 구워졌습니다!”",
                 "obtainApproach": "이벤트 보상",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -132393,6 +133171,143 @@
                     "furni_rabbitCinema_floor_01"
                 ]
             },
+            "furni_set_Azuredream": {
+                "id": "furni_set_Azuredream",
+                "enableRoomType": 4112,
+                "sortId": 129,
+                "name": "호우에이 거실",
+                "themeType": "LINKAGE",
+                "desc": "오키드의 기억을 바탕으로 재현한 호우에이국의 민가. 그 나라의 사람들은 하늘의 뜻을 행하고 땅의 짐승을 사냥한다. 그들의 국주 또한 거듭되는 '시련'을 이겨내고 수많은 '이쥬'를 토벌하며 국가의 명맥을 존속시켜 왔다. 이곳에서 사냥이란 단순한 생활 방식을 넘어 하나의 신앙이다.",
+                "quickSetup": [
+                    {
+                        "furnitureId": "furni_Azuredream_hanger_01",
+                        "pos0": 1,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_brazier_01",
+                        "pos0": 2,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_shelf_01",
+                        "pos0": 0,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_cabinet_01",
+                        "pos0": 1,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_ceilingLight_01",
+                        "pos0": 6,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_table_01",
+                        "pos0": 7,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_carpet_01",
+                        "pos0": 5,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_pillar_01",
+                        "pos0": 16,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_leafWall_01",
+                        "pos0": 19,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_bed_01",
+                        "pos0": 19,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_chair_01",
+                        "pos0": 13,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_crate_01",
+                        "pos0": 29,
+                        "pos1": 1,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_column_01",
+                        "pos0": 22,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_furStand_01",
+                        "pos0": 32,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_basket_01",
+                        "pos0": 32,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_wallpaper_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_floor_01",
+                        "pos0": 0,
+                        "pos1": 10,
+                        "dir": 0
+                    }
+                ],
+                "groups": [
+                    "furni_set_Azuredream_1",
+                    "furni_set_Azuredream_2",
+                    "furni_set_Azuredream_3",
+                    "furni_set_Azuredream_4"
+                ],
+                "furnitures": [
+                    "furni_Azuredream_hanger_01",
+                    "furni_Azuredream_brazier_01",
+                    "furni_Azuredream_shelf_01",
+                    "furni_Azuredream_cabinet_01",
+                    "furni_Azuredream_ceilingLight_01",
+                    "furni_Azuredream_table_01",
+                    "furni_Azuredream_carpet_01",
+                    "furni_Azuredream_pillar_01",
+                    "furni_Azuredream_leafWall_01",
+                    "furni_Azuredream_bed_01",
+                    "furni_Azuredream_chair_01",
+                    "furni_Azuredream_crate_01",
+                    "furni_Azuredream_column_01",
+                    "furni_Azuredream_furStand_01",
+                    "furni_Azuredream_basket_01",
+                    "furni_Azuredream_wallpaper_01",
+                    "furni_Azuredream_floor_01"
+                ]
+            },
             "furniM_set_basicRoom": {
                 "id": "furniM_set_basicRoom",
                 "enableRoomType": 32,
@@ -140430,6 +141345,63 @@
                     "furni_rabbitCinema_ceilinglamp_02",
                     "furni_rabbitCinema_plant_01",
                     "furni_rabbitCinema_ceilinglamp_03"
+                ]
+            },
+            "furni_set_Azuredream_1": {
+                "id": "furni_set_Azuredream_1",
+                "sortId": 1,
+                "name": "축승의 집회",
+                "themeId": "furni_set_Azuredream",
+                "comfort": 190,
+                "count": 4,
+                "furniture": [
+                    "furni_Azuredream_hanger_01",
+                    "furni_Azuredream_brazier_01",
+                    "furni_Azuredream_table_01",
+                    "furni_Azuredream_chair_01"
+                ]
+            },
+            "furni_set_Azuredream_2": {
+                "id": "furni_set_Azuredream_2",
+                "sortId": 2,
+                "name": "산림의 온기",
+                "themeId": "furni_set_Azuredream",
+                "comfort": 180,
+                "count": 4,
+                "furniture": [
+                    "furni_Azuredream_shelf_01",
+                    "furni_Azuredream_cabinet_01",
+                    "furni_Azuredream_ceilingLight_01",
+                    "furni_Azuredream_carpet_01"
+                ]
+            },
+            "furni_set_Azuredream_3": {
+                "id": "furni_set_Azuredream_3",
+                "sortId": 3,
+                "name": "푸른 대나무의 꿈나라",
+                "themeId": "furni_set_Azuredream",
+                "comfort": 250,
+                "count": 4,
+                "furniture": [
+                    "furni_Azuredream_leafWall_01",
+                    "furni_Azuredream_bed_01",
+                    "furni_Azuredream_crate_01",
+                    "furni_Azuredream_furStand_01"
+                ]
+            },
+            "furni_set_Azuredream_4": {
+                "id": "furni_set_Azuredream_4",
+                "sortId": 4,
+                "name": "호우에이 분위기",
+                "themeId": "furni_set_Azuredream",
+                "comfort": 330,
+                "count": 5,
+                "furniture": [
+                    "furni_Azuredream_pillar_01",
+                    "furni_Azuredream_column_01",
+                    "furni_Azuredream_basket_01",
+                    "furni_Azuredream_wallpaper_01",
+                    "furni_Azuredream_floor_01"
                 ]
             }
         },
@@ -149152,6 +150124,19 @@
                 "unlockType": "MainBG",
                 "unlockParams": [
                     "bg_sandboxv3_1"
+                ]
+            },
+            "bgm_bg_hunter": {
+                "bgmId": "bgm_bg_hunter",
+                "bgmSortId": 32,
+                "bgmStartTime": 1794812400,
+                "bgmName": "거점 마련 - Cloudy Day",
+                "gameMusicId": "music_bg_hunter",
+                "obtainApproach": "[구매센터]에서 거점 마련 수렵 팩 구매 시 획득",
+                "bgmDescUnlocked": "배경에 동봉된 음원",
+                "unlockType": "MainBG",
+                "unlockParams": [
+                    "bg_hunter_1"
                 ]
             }
         }

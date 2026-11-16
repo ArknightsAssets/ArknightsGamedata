@@ -1,0 +1,30 @@
+[header(is_skippable=true, is_tutorial=true)]
+[skipnode(mode="nofirstskip")]
+[battle.delay(time=1.1)]
+[battle.lockfunction(mask="SYSTEM_MENU_INTERACT")]
+[battle.pause(pause=true)]
+[popupdialog(dialogHead="$avatar_kroos", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]わかってるって～。ほら、チャンス到来だよぉ！
+[popupdialog(dialogHead="$avatar_fang", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]早速翔蟲を試してみよう。この翔蟲を使うとオペレーターを任意の向きで再配置できて、さらに鉄蟲糸技によって<@tu.kw>敵にダメージを与え、操竜ゲージを蓄積させる</>ことができるんだ。
+[inputblocker(blockInput=false)]
+[battle.ensuremincost(cost=10)]
+[tutorial(animStyle="Drag", protectTime=0.5, waitForSignal="put_down", cardIndex=0, startCardIndex=0, endTileX=5, endTileY=1, charId="trap_274_pyctrn", posX=5, posY=1)]
+[tutorial(animStyle="Drag", waitForSignal="select_direction", startTileX=5, startTileY=0, endTileX=5, endTileY=2)]
+[inputblocker(blockInput=true)]
+[battle.pause(pause=false)]
+[battle.delay(time=2)]
+[battle.pause(pause=true)]
+[popupdialog(dialogHead="$avatar_fang", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]よし、当たった！
+[skipnode(mode="skip")]
+[tutorial(focusWidth=150, focusHeight=150, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", protectTime=0.5, dialogHead="$avatar_fang", tileY=2, tileX=5)]敵が<@tu.kw>操竜準備状態</>に入ったら、配置待機エリアにある<@tu.kw>操竜カカシ</>の出番だよ。
+[inputblocker(blockInput=false)]
+[battle.ensuremincost(cost=1)]
+[tutorial(animStyle="Drag", protectTime=0.5, waitForSignal="put_down", cardIndex=0, startCardIndex=0, endTileX=1, endTileY=2, charId="trap_281_ctlrol", posX=1, posY=2)]
+[inputblocker(blockInput=true)]
+[battle.pause(pause=false)]
+[battle.delay(time=0.5)]
+[battle.pause(pause=true)]
+[popupdialog(dialogHead="$avatar_kroos", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]カメさん、<@tu.kw>操竜カカシの位置</>まで頑張って滑っていってねぇ～。
+[skipnode(mode="nofirstskip")]
+[SkipToThis]
+[battle.unlockfunction(mask="SYSTEM_MENU_INTERACT")]
+[battle.pause(pause=false)]
