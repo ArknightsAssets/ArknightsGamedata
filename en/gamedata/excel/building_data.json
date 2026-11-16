@@ -15226,6 +15226,97 @@
                     ]
                 }
             ]
+        },
+        "char_1048_orchd2": {
+            "charId": "char_1048_orchd2",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "control_hire_spd_all[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_spd&limit_tag[000]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_1049_catap2": {
+            "charId": "char_1049_catap2",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "train_spd_doubleProf3[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        },
+                        {
+                            "buffId": "train_spd_doubleProf3[100]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "trade_ord_spd[022]",
+                            "cond": {
+                                "phase": "PHASE_2",
+                                "level": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "char_4215_buddy": {
+            "charId": "char_4215_buddy",
+            "maxManpower": 8640000,
+            "buffChar": [
+                {
+                    "buffData": [
+                        {
+                            "buffId": "dorm_rec_single&tag[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "buffData": [
+                        {
+                            "buffId": "meet_spd_notOwned_P[000]",
+                            "cond": {
+                                "phase": "PHASE_0",
+                                "level": 30
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     },
     "buffs": {
@@ -15510,6 +15601,21 @@
             "buffCategory": "FUNCTION",
             "roomType": "CONTROL",
             "description": "When this Operator is assigned to the Control Center, if the HR contacting speed of the HR Office is lower than <@cc.vup>30%</> (including the base 5%), increase the HR contacting speed by <@cc.vup>+20%</> (unique effect across the entire base, unaffected by other effects)",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "control_hire_spd_all[000]": {
+            "buffId": "control_hire_spd_all[000]",
+            "buffName": "Office Person of the Year",
+            "buffIcon": "control",
+            "skillIcon": "bskill_ctrl_orchd2",
+            "sortId": 1399,
+            "buffColor": "#005752",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "CONTROL",
+            "description": "When this Operator is assigned to the Control Center, HR contacting speed <@cc.vup>+10%</> (Only the strongest effect of this type takes place)",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -19213,6 +19319,21 @@
             "targetGroupSortId": 0,
             "targets": {}
         },
+        "trade_ord_spd[022]": {
+            "buffId": "trade_ord_spd[022]",
+            "buffName": "Mood Maker",
+            "buffIcon": "trading",
+            "skillIcon": "bskill_tra_spd3&catap2",
+            "sortId": 4903,
+            "buffColor": "#0075a9",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "TRADING",
+            "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+35%</>",
+            "efficiency": 35,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
         "trade_ord_vodfox[000]": {
             "buffId": "trade_ord_vodfox[000]",
             "buffName": "Whispers",
@@ -20050,6 +20171,21 @@
             "roomType": "TRADING",
             "description": "When this Operator is assigned to a Trading Post, order acquisition efficiency <@cc.vup>+5%</>, order limit <@cc.vup>+2</>, plus an additional order acquisition efficiency <@cc.vup>+3%</> for every <$cc.bd_felyne><@cc.rem>Felvine</></>",
             "efficiency": 5,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "trade_ord_spd&limit_tag[000]": {
+            "buffId": "trade_ord_spd&limit_tag[000]",
+            "buffName": "Captain's Sense of Duty",
+            "buffIcon": "trading",
+            "skillIcon": "bskill_tra_orchd2",
+            "sortId": 4150,
+            "buffColor": "#0075a9",
+            "textColor": "#ffffff",
+            "buffCategory": "OUTPUT",
+            "roomType": "TRADING",
+            "description": "When this Operator is assigned to a Trading Post, order limit <@cc.vup>+3</>; for every <$cc.tag.mh2><@cc.kw>Houei Hunting Squad</></> Operator assigned to a Trading Post, order acquisition efficiency <@cc.vup>+20%</>",
+            "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
         },
@@ -22814,6 +22950,42 @@
                 "PIONEER"
             ]
         },
+        "train_spd_doubleProf3[000]": {
+            "buffId": "train_spd_doubleProf3[000]",
+            "buffName": "On a Whim α",
+            "buffIcon": "training",
+            "skillIcon": "bskill_train_mh2_guard&sniper1",
+            "sortId": 9901,
+            "buffColor": "#7d0022",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "TRAINING",
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Guard</> and <@cc.kw>Sniper</> Operators' Specialization training speed<@cc.vup>+30%</>",
+            "efficiency": 30,
+            "targetGroupSortId": 2,
+            "targets": [
+                "WARRIOR",
+                "SNIPER"
+            ]
+        },
+        "train_spd_doubleProf3[100]": {
+            "buffId": "train_spd_doubleProf3[100]",
+            "buffName": "On a Whim β",
+            "buffIcon": "training",
+            "skillIcon": "bskill_train_mh2_guard&sniper2",
+            "sortId": 9901,
+            "buffColor": "#7d0022",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "TRAINING",
+            "description": "When this Operator is assigned to be the Trainer in the Training Room, <@cc.kw>Guard</> and <@cc.kw>Sniper</> Operators' Specialization training speed <@cc.vup>+50%</>, Morale consumed per hour <@cc.vdown>+1</>",
+            "efficiency": 50,
+            "targetGroupSortId": 2,
+            "targets": [
+                "WARRIOR",
+                "SNIPER"
+            ]
+        },
         "train_spd_reduceTime[000]": {
             "buffId": "train_spd_reduceTime[000]",
             "buffName": "Mental Training",
@@ -24510,6 +24682,21 @@
             "buffCategory": "RECOVERY",
             "roomType": "DORMITORY",
             "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is <@cc.kw>Blue Poison</>, further increases Morale restored by <@cc.vup>+0.45</>",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "dorm_rec_single&tag[000]": {
+            "buffId": "dorm_rec_single&tag[000]",
+            "buffName": "Hunting Buddy",
+            "buffIcon": "dormitory",
+            "skillIcon": "bskill_dorm_buddy",
+            "sortId": 5214,
+            "buffColor": "#21cdcb",
+            "textColor": "#ffffff",
+            "buffCategory": "RECOVERY",
+            "roomType": "DORMITORY",
+            "description": "When this Operator is assigned to a Dormitory, restores <@cc.vup>+0.55</> Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); if the target is a member of <$cc.tag.mh><@cc.kw>Soubo Adventurers</></> or <$cc.tag.mh2><@cc.kw>Houei Hunting Squad</></>, further increases Morale restored by <@cc.vup>+0.45</>",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -26910,6 +27097,21 @@
             "buffCategory": "FUNCTION",
             "roomType": "MEETING",
             "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are not on the Clue Board.",
+            "efficiency": 0,
+            "targetGroupSortId": 0,
+            "targets": {}
+        },
+        "meet_spd_notOwned_P[000]": {
+            "buffId": "meet_spd_notOwned_P[000]",
+            "buffName": "Stealth Expert",
+            "buffIcon": "meeting",
+            "skillIcon": "bskill_meet_buddy",
+            "sortId": 6815,
+            "buffColor": "#dd653f",
+            "textColor": "#ffffff",
+            "buffCategory": "FUNCTION",
+            "roomType": "MEETING",
+            "description": "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are not on the Clue Board; if <@cc.kw>Violet Mizutsune Orchid</> is assigned to the Control Center, Clue search speed increases by <@cc.vup>10%</>",
             "efficiency": 0,
             "targetGroupSortId": 0,
             "targets": {}
@@ -100050,6 +100252,550 @@
                 "enableRoomType": 4112,
                 "quantity": 1
             },
+            "furni_Azuredream_hanger_01": {
+                "id": "furni_Azuredream_hanger_01",
+                "sortId": 2282,
+                "name": "'Blisterstalk' Smoking Rack",
+                "iconId": "furni_Azuredream_hanger_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILING",
+                "subType": "DECORATION_C",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_1",
+                "width": 3,
+                "depth": 3,
+                "height": 7,
+                "comfort": 155,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Rack made from lava-treated bamboo, with hooks sometimes holding dried herbs and jerky. The hunters' gathering spot to enjoy food. Before setting out, they always sit around here to share a moment of warmth.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_brazier_01": {
+                "id": "furni_Azuredream_brazier_01",
+                "sortId": 2283,
+                "name": "Iron Brazier",
+                "iconId": "furni_Azuredream_brazier_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "COOKING",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_1",
+                "width": 2,
+                "depth": 2,
+                "height": 3,
+                "comfort": 140,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "One of the few iron items in the room, specially designed to keep the fire from going out. Even the most experienced hunter will not underestimate a long night in the wilderness. The fire brings warmth and comfort.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_shelf_01": {
+                "id": "furni_Azuredream_shelf_01",
+                "sortId": 2284,
+                "name": "Craftsman's Rack",
+                "iconId": "furni_Azuredream_shelf_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "SHELF",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_2",
+                "width": 5,
+                "depth": 2,
+                "height": 3,
+                "comfort": 125,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Simple plank rack attached to the wall with stakes and thick rope. Suponosuke often leaves his inventions on it. Repeated reinforcements to increase its load capacity have turned it into the culmination of his inspiration.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_cabinet_01": {
+                "id": "furni_Azuredream_cabinet_01",
+                "sortId": 2285,
+                "name": "Hunting Festival Counter",
+                "iconId": "furni_Azuredream_cabinet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "STORAGE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_2",
+                "width": 7,
+                "depth": 2,
+                "height": 5,
+                "comfort": 275,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Solid wooden cabinet, with pots and pans below, and utensils on the upper rope rack. The food cooked here sends hunters on their journeys. May they fill their stomachs and return in one piece.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_ceilingLight_01": {
+                "id": "furni_Azuredream_ceilingLight_01",
+                "sortId": 2286,
+                "name": "'Hotaru' Wooden Nest Cage",
+                "iconId": "furni_Azuredream_ceilingLight_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CEILINGLAMP",
+                "subType": "NONE",
+                "location": "CEILING",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_2",
+                "width": 11,
+                "depth": 4,
+                "height": 3,
+                "comfort": 235,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Lamp woven from wooden strips, emitting a gentle light undulating through the gaps like breathing. Actually a glowbug nest, special resin painted on it draws glowbugs to glow at night, symbolizing Houei's coexistence with nature.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_table_01": {
+                "id": "furni_Azuredream_table_01",
+                "sortId": 2287,
+                "name": "Table of Gathering",
+                "iconId": "furni_Azuredream_table_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "TABLE",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_1",
+                "width": 6,
+                "depth": 5,
+                "height": 3,
+                "comfort": 340,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Large, durable hexagonal table on which various items can be placed. It is the start and end of a hunter's day, from drafting tactics to studying targets and celebrating a successful hunt.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_carpet_01": {
+                "id": "furni_Azuredream_carpet_01",
+                "sortId": 2288,
+                "name": "Totemic Rug",
+                "iconId": "furni_Azuredream_carpet_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CARPET",
+                "subType": "NONE",
+                "location": "CARPET",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_2",
+                "width": 11,
+                "depth": 7,
+                "height": 1,
+                "comfort": 145,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Red and blue carpets with patterns representing lava and ice, rough yet warm to the touch, showing Houei craftsmen's respect for nature. Snowcapped mountains, the magma beneath, and the hot and cold passions running in a hunter's blood.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_pillar_01": {
+                "id": "furni_Azuredream_pillar_01",
+                "sortId": 2289,
+                "name": "'Tranquil Path' Partition",
+                "iconId": "furni_Azuredream_pillar_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "PARTITION",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 3,
+                "depth": 4,
+                "height": 9,
+                "comfort": 315,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Room partition with various decorations hanging from it, giving a sense of elegance. A brilliant design that separates the space without completely blocking vision—a thin line between dream and reality, just like that distant country.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_leafWall_01": {
+                "id": "furni_Azuredream_leafWall_01",
+                "sortId": 2290,
+                "name": "Windstalk Wall Hanging",
+                "iconId": "furni_Azuredream_leafWall_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLDECO",
+                "subType": "ORTHER_WD",
+                "location": "WALL",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_3",
+                "width": 3,
+                "depth": 1,
+                "height": 3,
+                "comfort": 85,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Floral wall hanging woven from young bamboo and wide leaves. Every household in Houei has a different pattern. They believe it protects from the curse, ensuring that hunters return safely from the hunt.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_bed_01": {
+                "id": "furni_Azuredream_bed_01",
+                "sortId": 2291,
+                "name": "Hermit's Bunk",
+                "iconId": "furni_Azuredream_bed_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "BEDDING",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_3",
+                "width": 9,
+                "depth": 4,
+                "height": 6,
+                "comfort": 530,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Wooden bed with a canopy and a bleached fur blanket, thick and warm with the scent of sunlight. For a decade, the young lord woke up on a bed like this every morning; only in dreams could she shed her duty as a miko and be a normal girl.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_chair_01": {
+                "id": "furni_Azuredream_chair_01",
+                "sortId": 2292,
+                "name": "Silent Wooden Chair",
+                "iconId": "furni_Azuredream_chair_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "SEATING",
+                "subType": "CHAIR",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_1",
+                "width": 3,
+                "depth": 3,
+                "height": 4,
+                "comfort": 190,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Solid but unbalanced chair with fur on the backrest, sometimes toppling beneath a hunter's excitement. General Midnight often sits here gazing at the bamboo and snow mountains, torn between reason and emotion while guarding that secret.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_crate_01": {
+                "id": "furni_Azuredream_crate_01",
+                "sortId": 2293,
+                "name": "Hunter's Toolbox",
+                "iconId": "furni_Azuredream_crate_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "CABINET",
+                "subType": "NONE",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_3",
+                "width": 3,
+                "depth": 2,
+                "height": 4,
+                "comfort": 155,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Wooden box filled with everything from tools to unknown ore to old weapons. Somehow it holds more than its appearance, and can be upgraded. Suponosuke is proud of this, though Masamune let slip that he taught him the trick.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_column_01": {
+                "id": "furni_Azuredream_column_01",
+                "sortId": 2294,
+                "name": "Fowlbeast's Roost",
+                "iconId": "furni_Azuredream_column_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "COLUMN",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 6,
+                "depth": 3,
+                "height": 10,
+                "comfort": 445,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Naturally curved log with a small fowl nest, allowing military 'messengers' to rest. In poorly connected Houei, these form the lifeline between defense and capital. This post witnessed countless urgent warnings and triumphant reports.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_furStand_01": {
+                "id": "furni_Azuredream_furStand_01",
+                "sortId": 2295,
+                "name": "Tanning Rack",
+                "iconId": "furni_Azuredream_furStand_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "ORTHER_D",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_3",
+                "width": 2,
+                "depth": 4,
+                "height": 8,
+                "comfort": 260,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Wooden rack with a whole beast hide stretched out on it. Specially treated, the tough hide still smells faintly of animal fat. Every whole hide represents a successful hunt, to be turned into new gear endlessly protecting the hunter.",
+                "obtainApproach": "Purchased from the Limited Furniture Store",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_basket_01": {
+                "id": "furni_Azuredream_basket_01",
+                "sortId": 2296,
+                "name": "Firefly Stalk Lamp",
+                "iconId": "furni_Azuredream_basket_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "FLOORLAMP",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 2,
+                "depth": 2,
+                "height": 5,
+                "comfort": 175,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Glass cases hang from a branch in the bamboo basket, holding glowbugs collected from the underground river. Just like hunters who have found themselves in desperate circumstances, they glow with hope even in darkness.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_wallpaper_01": {
+                "id": "furni_Azuredream_wallpaper_01",
+                "sortId": 2297,
+                "name": "'Tide Murmur'",
+                "iconId": "furni_Azuredream_wallpaper_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "WALLPAPER",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "WALL",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 34,
+                "depth": 1,
+                "height": 10,
+                "comfort": 240,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Panoramic display showing the bamboo forests of Houei. They sway in the wind, rustling gently through the window. Fall into reverie in the rustling tide, as though you have set foot in a distant land.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
+            "furni_Azuredream_floor_01": {
+                "id": "furni_Azuredream_floor_01",
+                "sortId": 2298,
+                "name": "'Gathering'",
+                "iconId": "furni_Azuredream_floor_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "FLOOR",
+                "subType": "NONE",
+                "location": "NONE",
+                "category": "FLOOR",
+                "validOnRotate": false,
+                "enableRotate": false,
+                "rarity": 2,
+                "themeId": "furni_set_Azuredream",
+                "groupId": "furni_set_Azuredream_4",
+                "width": 34,
+                "depth": 10,
+                "height": 1,
+                "comfort": 240,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "Floor paved with huge gray slabs, making a dull echo when stepped upon. It has seen the smiles of successful hunts, and felt the weight of stretchers. It quietly supports everyone who passes through, whether they stay or go.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 1
+            },
             "furni_oct1st_deckChair_01": {
                 "id": "furni_oct1st_deckChair_01",
                 "sortId": 9998,
@@ -104072,6 +104818,38 @@
                 "comfort": 120,
                 "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
                 "description": "A cute display modeled after Amiya and Perlica. The two bunny girls finally meet in a truly unforgettable way.\nA celebration sent across time and space for the journey ahead, bringing everyone joy for the new story to come.",
+                "obtainApproach": "Event Reward",
+                "processedProductId": "3401",
+                "processedProductCount": 0,
+                "processedByProductPercentage": 0,
+                "processedByProductGroup": {},
+                "canBeDestroy": false,
+                "isOnly": 1,
+                "enableRoomType": 4112,
+                "quantity": 0
+            },
+            "furni_act71d0_grill_01": {
+                "id": "furni_act71d0_grill_01",
+                "sortId": 10261,
+                "name": "Barbecue Set",
+                "iconId": "furni_act71d0_grill_01",
+                "interactType": "NONE",
+                "musicId": "",
+                "type": "DECORATION",
+                "subType": "CATERING",
+                "location": "FLOOR",
+                "category": "FURNITURE",
+                "validOnRotate": false,
+                "enableRotate": true,
+                "rarity": 2,
+                "themeId": "",
+                "groupId": "",
+                "width": 6,
+                "depth": 4,
+                "height": 4,
+                "comfort": 120,
+                "usage": "Can be used to decorate and increase Ambience in the Activity Room and Dormitory",
+                "description": "A fire, a simple wooden rack, and basic knives. A simple and delicious barbecue setup. 'Well done!'",
                 "obtainApproach": "Event Reward",
                 "processedProductId": "3401",
                 "processedProductCount": 0,
@@ -132393,6 +133171,143 @@
                     "furni_rabbitCinema_floor_01"
                 ]
             },
+            "furni_set_Azuredream": {
+                "id": "furni_set_Azuredream",
+                "enableRoomType": 4112,
+                "sortId": 129,
+                "name": "Houei Living Room",
+                "themeType": "LINKAGE",
+                "desc": "A Houei home recreated from Orchid's memory. By Heaven's will its people abide, o'er hunts of beasts they preside, their lord inheriting a legacy of hunting the Iju. For them, hunting is not just a way of life, but their faith itself.",
+                "quickSetup": [
+                    {
+                        "furnitureId": "furni_Azuredream_hanger_01",
+                        "pos0": 1,
+                        "pos1": 3,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_brazier_01",
+                        "pos0": 2,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_shelf_01",
+                        "pos0": 0,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_cabinet_01",
+                        "pos0": 1,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_ceilingLight_01",
+                        "pos0": 6,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_table_01",
+                        "pos0": 7,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_carpet_01",
+                        "pos0": 5,
+                        "pos1": 2,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_pillar_01",
+                        "pos0": 16,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_leafWall_01",
+                        "pos0": 19,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_bed_01",
+                        "pos0": 19,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_chair_01",
+                        "pos0": 13,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_crate_01",
+                        "pos0": 29,
+                        "pos1": 1,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_column_01",
+                        "pos0": 22,
+                        "pos1": 6,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_furStand_01",
+                        "pos0": 32,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_basket_01",
+                        "pos0": 32,
+                        "pos1": 4,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_wallpaper_01",
+                        "pos0": 0,
+                        "pos1": 0,
+                        "dir": 0
+                    },
+                    {
+                        "furnitureId": "furni_Azuredream_floor_01",
+                        "pos0": 0,
+                        "pos1": 10,
+                        "dir": 0
+                    }
+                ],
+                "groups": [
+                    "furni_set_Azuredream_1",
+                    "furni_set_Azuredream_2",
+                    "furni_set_Azuredream_3",
+                    "furni_set_Azuredream_4"
+                ],
+                "furnitures": [
+                    "furni_Azuredream_hanger_01",
+                    "furni_Azuredream_brazier_01",
+                    "furni_Azuredream_shelf_01",
+                    "furni_Azuredream_cabinet_01",
+                    "furni_Azuredream_ceilingLight_01",
+                    "furni_Azuredream_table_01",
+                    "furni_Azuredream_carpet_01",
+                    "furni_Azuredream_pillar_01",
+                    "furni_Azuredream_leafWall_01",
+                    "furni_Azuredream_bed_01",
+                    "furni_Azuredream_chair_01",
+                    "furni_Azuredream_crate_01",
+                    "furni_Azuredream_column_01",
+                    "furni_Azuredream_furStand_01",
+                    "furni_Azuredream_basket_01",
+                    "furni_Azuredream_wallpaper_01",
+                    "furni_Azuredream_floor_01"
+                ]
+            },
             "furniM_set_basicRoom": {
                 "id": "furniM_set_basicRoom",
                 "enableRoomType": 32,
@@ -140430,6 +141345,63 @@
                     "furni_rabbitCinema_ceilinglamp_02",
                     "furni_rabbitCinema_plant_01",
                     "furni_rabbitCinema_ceilinglamp_03"
+                ]
+            },
+            "furni_set_Azuredream_1": {
+                "id": "furni_set_Azuredream_1",
+                "sortId": 1,
+                "name": "Gathering Celebration",
+                "themeId": "furni_set_Azuredream",
+                "comfort": 190,
+                "count": 4,
+                "furniture": [
+                    "furni_Azuredream_hanger_01",
+                    "furni_Azuredream_brazier_01",
+                    "furni_Azuredream_table_01",
+                    "furni_Azuredream_chair_01"
+                ]
+            },
+            "furni_set_Azuredream_2": {
+                "id": "furni_set_Azuredream_2",
+                "sortId": 2,
+                "name": "Forest Preserve",
+                "themeId": "furni_set_Azuredream",
+                "comfort": 180,
+                "count": 4,
+                "furniture": [
+                    "furni_Azuredream_shelf_01",
+                    "furni_Azuredream_cabinet_01",
+                    "furni_Azuredream_ceilingLight_01",
+                    "furni_Azuredream_carpet_01"
+                ]
+            },
+            "furni_set_Azuredream_3": {
+                "id": "furni_set_Azuredream_3",
+                "sortId": 3,
+                "name": "Dreams of Bamboo",
+                "themeId": "furni_set_Azuredream",
+                "comfort": 250,
+                "count": 4,
+                "furniture": [
+                    "furni_Azuredream_leafWall_01",
+                    "furni_Azuredream_bed_01",
+                    "furni_Azuredream_crate_01",
+                    "furni_Azuredream_furStand_01"
+                ]
+            },
+            "furni_set_Azuredream_4": {
+                "id": "furni_set_Azuredream_4",
+                "sortId": 4,
+                "name": "Bubble and Dream",
+                "themeId": "furni_set_Azuredream",
+                "comfort": 330,
+                "count": 5,
+                "furniture": [
+                    "furni_Azuredream_pillar_01",
+                    "furni_Azuredream_column_01",
+                    "furni_Azuredream_basket_01",
+                    "furni_Azuredream_wallpaper_01",
+                    "furni_Azuredream_floor_01"
                 ]
             }
         },
@@ -149152,6 +150124,19 @@
                 "unlockType": "MainBG",
                 "unlockParams": [
                     "bg_sandboxv3_1"
+                ]
+            },
+            "bgm_bg_hunter": {
+                "bgmId": "bgm_bg_hunter",
+                "bgmSortId": 32,
+                "bgmStartTime": 1794841200,
+                "bgmName": "Strike Camp - Rolling Clouds",
+                "gameMusicId": "music_bg_hunter",
+                "obtainApproach": "Obtained by buying Strike Camp Hunt Pack in the [Store]",
+                "bgmDescUnlocked": "Gift from background",
+                "unlockType": "MainBG",
+                "unlockParams": [
+                    "bg_hunter_1"
                 ]
             }
         }

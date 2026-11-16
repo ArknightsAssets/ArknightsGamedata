@@ -1,0 +1,431 @@
+[HEADER(key="title_test", is_skippable=true, fit_mode="BLACK_MASK")]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0, block=true)]
+[stopmusic]
+[Dialog]
+[Background(image="71_g4_bambooforest",screenadapt="coverall", block=true)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[delay(time=1.5)]
+[playMusic(intro="$drift_intro", key="$drift_loop", volume=0.6)]
+A cold breeze sweeps through the bamboo leaves, sending them rattling like a mournful cry of the dead.
+[PlaySound(key="$leaveshake", volume=1)]
+An elite squad of thirty trudges through the woods, hauling the enormous Iju corpse with ropes and logs as they struggle through the trees.
+Atop the Escorchgot's carcass, the cursed miasma writhes with life, exuding a sweet yet pungent stench like rotting flesh, and dyeing the surrounding bamboo with its dark hue on contact.
+[dialog]
+[charslot(slot="m",name="avg_1049_catap2_1#10$2",focus="m",duration=2)]
+[delay(time=2)]
+[name="Catapult"]Huh, weird. That black aura can influence the environment?
+[charslot(slot="m",name="avg_1049_catap2_1#10$2",focus="m")]
+[name="Catapult"]What exactly is this curse, Midnight?
+[charslot(slot="m",name="avg_npc_2101_1#9$1",focus="m")]
+[name="Midnight"]Many have studied it, yet none have reached a solid conclusion.
+[charslot(slot="m",name="avg_npc_2101_1#9$1",focus="m")]
+[name="Midnight"]All we know is that anyone who stays near it for too long, or eats meat tainted by it, will also be corrupted before meeting their inexplicable end.
+[charslot(slot="m",name="avg_npc_2101_1#9$1",focus="m")]
+[name="Midnight"]Anywhere tainted with it for too long will also be transformed into a strange and unapproachable land.
+[charslot(slot="m",name="avg_npc_2101_1#6$1",focus="m")]
+[name="Midnight"]In eastern Houei sits a grove. A century ago, an Iju's curse erupted, turning the place into forbidden land. It remains so even today.
+[charslot(slot="m",name="avg_1049_catap2_1#10$2",focus="m")]
+[name="Catapult"]...I gotta hand it to you guys for surviving here this long.
+[charslot(slot="m",name="avg_npc_2101_1#1$1",focus="m")]
+[name="Midnight"]Nature gives us many trials, but provides many gifts in exchange.
+[charslot(slot="m",name="avg_1049_catap2_1#1$2",focus="m")]
+[name="Catapult"]Haha, I like that. Much better than how some people talk like hunting is a savage sport, and how we should respect all life yadda yadda.
+[charslot(slot="m",name="avg_npc_2101_1#4$1",focus="m")]
+[name="Midnight"]You mean Orchid?
+[charslot(slot="m",name="avg_1049_catap2_1#14$2",focus="m")]
+[name="Catapult"]Hey, you said it, not me.
+[charslot(slot="m",name="avg_npc_2101_1#5$1",focus="m")]
+[name="Midnight"]And what about you? Are you fond of hunting?
+[charslot(slot="m",name="avg_1049_catap2_1#13$2",focus="m")]
+[name="Catapult"]Me? Uh... I'm not sure.
+[charslot(slot="m",name="avg_npc_2106_1#1$1",focus="m")]
+[name="Samurai"]Shogun! We're surrounded by beasts!
+[charslot(slot="m",name="avg_npc_2101_1#10$1",focus="m")]
+[name="Midnight"]Just as planned!
+[charslot(slot="m",name="avg_npc_2101_1#10$1",focus="m")]
+[name="Midnight"]Do not retreat or engage in battle! Keep marching, for our objective is just ahead!
+[charslot]
+[dialog]
+[stopmusic(fadetime=2)]
+[PlaySound(key="$leaveshake")]
+[charslot(slot="r",name="avg_npc_2112_1#1$1",afrom=0, ato=1,duration=1)]
+[charslot(slot="l",name="avg_npc_2112_1#1$1",afrom=0, ato=1,duration=1)]
+[Delay(time=2)]
+[charslot]
+[charslot(slot="m",name="avg_1049_catap2_1#2$2",focus="m")]
+[playMusic(intro="$frontline_intro", key="$frontline_loop", volume=0.6)]
+[name="Catapult"]Go on ahead. You can leave them to me.
+[charslot(slot="m",name="avg_npc_2101_1#1$1",focus="m")]
+[name="Midnight"]Are you sure?
+[charslot(slot="m",name="avg_1049_catap2_1#9$2",focus="m")]
+[name="Catapult"]I don't know if I like hunting, but I <i>do</i> know I'm a fan of this weapon!
+[charslot(slot="m",name="avg_1049_catap2_1#9$2",focus="m")]
+[name="Catapult"]So don't get in my way!
+[charslot(slot="m",name="avg_npc_2101_1#10$1",focus="m")]
+[name="Midnight"]...Got it.
+[charslot(slot="m",name="avg_1049_catap2_1#9$2",focus="m")]
+[name="Catapult"]Take this!
+[dialog]
+[charslot]
+[playsound(key="$MHR_caxe_attack1")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=false)]
+[playsound(key="$MHR_hit_slash_weapon01")]
+[CameraShake(duration=0.5, ystrength=40, xstrength=40,vibrato=30, randomness=90, fadeout=true, block=false)]
+[Effect(name="$eb_daoguang_blue",x = -1, y = 8.3,rox =78, roy =-50, roz =-112,yScale=1, layer = 1)]
+[delay(time=0.8)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.5, block=false)]
+[PlaySound(key="$MHR_caxe_recoil", volume=1)]
+[Effect(name="$e_spark_01_large",layer=2)]
+[CameraShake(duration=0.5, ystrength=40, xstrength=40,vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+[playsound(key="$MHR_caxe_switch")]
+[playsound(key="$MHR_drawsword_finish")]
+[Effect(name="$e_spark_01_mid",layer = 1)]
+[charslot(slot="m",name="avg_1049_catap2a_1#8$1",posto="-200,0",focus="m",duration=0.5)]
+[delay(time=0.7)]
+[name="Catapult"]Tch, it's tough!
+[charslot(slot="m",name="avg_1049_catap2a_1#8$1",focus="m")]
+[name="Catapult"]You're not getting away—
+[dialog]
+[charslot]
+[PlaySound(key="$MHR_dog_voice3", volume=1)] 
+[PlaySound(key="$MHR_dog_attack", volume=1)] 
+[PlaySound(key="$MHR_hit_slash_arrow", volume=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.3, block=true)]
+[delay(time=0.6)]
+[charslot(slot="m",name="avg_npc_2112_1#1$1")]
+[delay(time=0.5)]
+[PlaySound(key="$bodyfalldown1", volume=1)]
+[charslot(duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_4215_buddyD_1#1$1",focus="m",duration=1)]
+[delay(time=2)]
+[charslot(slot="m",name="avg_1049_catap2a_1#7$1",focus="m")]
+[name="Catapult"]Yoshitsune?!
+[charslot(slot="m",name="avg_4215_buddyD_1#1$5",focus="m")]
+[PlaySound(key="$MHR_dog_voice3")]
+[name="Yoshitsune"](Impatient growling)
+[charslot(slot="m",name="avg_1049_catap2a_1#9$1",focus="m")]
+[name="Catapult"]Alright... I guess we were thinking the same thing, but don't expect to steal my glory!
+[charslot(slot="m",name="avg_1049_catap2a_1#9$1",focus="m")]
+[name="Catapult"]Why don't we see who can defeat the most?
+[charslot(slot="m",name="avg_4215_buddyD_1#1$5",focus="m")]
+[PlaySound(key="$MHR_dog_voice3")]
+[name="Yoshitsune"](Disapproving growl)
+[charslot(slot="m",name="avg_1049_catap2a_1#9$1",focus="m")]
+[name="Catapult"]Hey, I may have gotten a little too into it back at the volcano, but I learned my lesson!
+[dialog]
+[charslot]
+[dialog]
+[charslot]
+[Effect(name="$e_spark_01_mid",layer = 1)]
+[playsound(key="$MHR_caxe_switch")]
+[playsound(key="$MHR_drawsword_finish")]
+[CameraShake(duration=0.2, ystrength=40, xstrength=40,vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.3)]
+[charslot(slot="m",name="avg_1049_catap2_1#12$2",focus="m",duration=1)]
+[delay(time=1.5)]
+[charslot]
+Catapult swiftly morphs back into sword mode, causing the gloompincer grinding down on her charge blade to lunge right into empty air.
+[dialog]
+[playsound(key="$MHR_caxe_insect")]
+[delay(time=2)]
+[playsound(key="$sheildimpact")]
+[PlaySound(key="$d_avg_rockfall", volume=1)]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=false)]
+[CameraShake(duration=0.5, ystrength=40, xstrength=40,vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=1)]
+A second gloompincer almost sinks its fangs into her, but her shield moves up just in time for a perfect guard—rather than a purely defensive maneuver, she meets the strike head on.
+The impact splits the ground below her feet, yet she remains rooted to the spot. She can clearly feel the enemy's strength flowing through her shield, becoming energy.
+[dialog]
+[Effect(name="$e_spark_01_mid",layer = 1)]
+[playsound(key="$MHR_caxe_switch")]
+[playsound(key="$MHR_drawsword_finish")]
+[CameraShake(duration=0.2, ystrength=40, xstrength=40,vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.3)]
+[charslot(slot="m",name="avg_1049_catap2a_1#8$1",afrom=0,ato=1,duration=0.4)]
+[Delay(time=0.8)]
+[name="Catapult"]My turn!
+[dialog]
+[charslot]
+[playsound(key="$MHR_caxe_attack4")]
+[playsound(key="$MHR_caxe_power1")]
+[playsound(key="$MHR_caxe_ground")]
+[playsound(key="$MHR_hit_slash_weapon02")]
+[charslot(slot="m",name="avg_npc_2112_1#1$1")]
+[Blocker(a=1, r=1, g=1, b=1, fadetime=0.05, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=false)]
+[CameraShake(duration=0.5, ystrength=40, xstrength=40,vibrato=30, randomness=90, fadeout=true, block=false)]
+[Effect(name="$eb_daoguang_blue",x =-102.4, y =141,rox =171.3, roy =-56.68, roz =24.9, layer = 1)]
+[Effect(name="$e_bladeline_red",x =-20.1, y =-70.4,rox =-40.2, roy =145, roz =96,  layer = 1)]
+[Effect(name="$e_spark_01_large",layer=2)]
+[delay(time=1)]
+[charslot]
+[Effect(name="$e_spark_01_mid",layer = 1)]
+[playsound(key="$MHR_caxe_switch")]
+[playsound(key="$MHR_drawsword_finish")]
+[CameraShake(duration=0.2, ystrength=40, xstrength=40,vibrato=30, randomness=90, fadeout=true, block=false)]
+[delay(time=0.1)]
+[charslot(slot="m",name="avg_1049_catap2_1#8$2",afrom=0,ato=1,duration=0.4)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1049_catap2_1#9$2")]
+[name="Catapult"]Thoughts, Yoshitsune? I think I'm getting pretty good at this.
+[charslot(slot="m",name="avg_4215_buddyD_1#1$1",focus="m")]
+[PlaySound(key="$MHR_dog_voice2")]
+[name="Yoshitsune"](Begrudging growl of acknowledgement)
+[charslot(slot="m",name="avg_1049_catap2_1#4$2",focus="m")]
+[name="Catapult"]Hahah, just look at you! Fine, keep your pride.
+[charslot(slot="m",name="avg_1049_catap2_1#1$2",focus="m")]
+[name="Catapult"]Well, that's enough chit-chat, let's go catch up to Midnight!
+[charslot(slot="m",name="avg_4215_buddyD_1#1$1",focus="m")]
+[PlaySound(key="$MHR_dog_voice1")]
+[name="Yoshitsune"](Excited howl)
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="71_g4_bambooforest",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[PlaySound(key="$d_avg_crowdrun", volume=1)]
+[delay(time=1)]
+[charslot(slot="m",name="avg_npc_2101_1#10$1",focus="m")]
+[name="Midnight"]Here! Cut the ropes then retreat into your designated positions! Quickly!
+[dialog]
+[charslot]
+The samurai cut the ropes, lower the corpse, then quickly dash over to an empty plateau at the edge of the clearing.
+The beasts stare at the enormous corpse exuding an irresistible smell, all reason missing from their eyes.
+They swarm it in a dense mass, biting and trampling on each other as they vie for their prize.
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"]Whoa... if that many rushed into the city...
+[charslot(slot="m",name="avg_npc_2101_1#9$1",focus="m")]
+[name="Midnight"]I trust you won't disappoint me, Suponosuke.
+[charslot(slot="m",name="avg_1049_catap2_1#12$2",focus="m")]
+[name="Catapult"]You fired the signal flare?
+[charslot(slot="m",name="avg_npc_2101_1#1$1",focus="m")]
+[name="Midnight"]Mhm.
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"]Uh... did we fail? Why isn't anything happening?
+[charslot(slot="m",name="avg_npc_2101_1#2$1",focus="m")]
+[name="Midnight"]Impossible. The plan was flawless...
+[dialog]
+[charslot]
+[CameraShake(duration=3, xstrength=50, ystrength=50, vibrato=60, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_gen_explo_n", volume=1)]
+[PlaySound(key="$d_sp_ballista")]
+[PlaySound(key="$d_avg_rockfall", volume=1)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=0.1, block=true)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=3, block=false)]
+[delay(time=3)]
+[charslot(slot="m",name="avg_npc_2101_1#1$1",focus="m")]
+[name="Midnight"]We did it... the detonation was successful.
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"]The... The ground's opening up around the corpse! It's all collapsing!
+[charslot(slot="m",name="avg_npc_2106_1#1$1",focus="m")]
+[name="Samurai"]They fell! All the beasts have fallen!
+[charslot(slot="m",name="avg_1049_catap2_1#4$2",focus="m")]
+[name="Catapult"]Hahaha! That was awesome!
+[charslot(slot="m",name="avg_npc_2101_1#10$1",focus="m")]
+[name="Midnight"]It's too early to celebrate. We must assess our casualties, then—
+[charslot(slot="m",name="avg_npc_2107_1#1$1",focus="m")]
+[name="Samurai B"]Shogun! The ground below us is opening up as well!
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"]No way, this far?!
+[charslot(slot="m",name="avg_npc_2101_1#2$1",focus="m")]
+[name="Midnight"]This is bad! The range of the collapse has exceeded our calculations! Scatter, now!
+[dialog]
+[charslot]
+[Dialog]
+[charslot]
+[CameraShake(duration=2, xstrength=25, ystrength=25, vibrato=30, randomness=90, fadeout=true, block=false)]
+[PlaySound(key="$d_avg_erthshkng",loop=false,channel="bgs",volume=0.3)]
+[PlaySound(key="$d_avg_rockfall", volume=0.6)]
+[playsound(key="$smallearthquake", volume=0.6)]
+[PlaySound(key="$d_avg_rockfall", volume=0.6)]
+[PlaySound(key="$d_avg_erthshkng", volume=1)]
+[delay(time=1.5)]
+At that moment, a giant boulder rolls down, separating the group.
+Amidst the chaos, Catapult and Yoshitsune are split from Midnight, who was protecting the soldiers who almost fell into the abyss, before another falling rock cuts him off from the main forces.
+[dialog]
+[stopmusic(fadetime=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="71_g1_impermanence_street",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$drift_intro", key="$drift_loop", volume=0.6)]
+[charslot(slot="m",name="avg_npc_2100_1#9$1",focus="m")]
+[name="Hofukaru"]Thou needst not keep watch over me. I made a promise to Midnight, and I shall not break my word.
+[charslot(slot="m",name="avg_1048_orchd2_1#6$1",focus="m")]
+[name="Orchid"]I believe you.
+[charslot(slot="m",name="avg_1048_orchd2_1#3$1",focus="m")]
+[name="Orchid"]I'm just... a little worried.
+[charslot(slot="m",name="avg_npc_2100_1#9$1",focus="m")]
+[name="Hofukaru"]Thy worry is unnecessary. This trial is mine own, after all.
+[charslot(slot="m",name="avg_npc_2100_1#9$1",focus="m")]
+[name="Hofukaru"]The Gyorin sent thee to us, and Houei owes thee.
+[charslot(slot="m",name="avg_npc_2100_1#9$1",focus="m")]
+[name="Hofukaru"]Yet we have hunted the Iju, and the Gyorin has failed us, unable to send thee home. It is my shame.
+[charslot(slot="m",name="avg_npc_2100_1#9$1",focus="m")]
+[name="Hofukaru"]The responsibility is mine to bear.
+[charslot(slot="m",name="avg_1048_orchd2_1#11$1",focus="m")]
+[name="Orchid"]You're stretching yourself too thin, Hofukaru.
+[charslot(slot="m",name="avg_1048_orchd2_1#11$1",focus="m")]
+[name="Orchid"]The problem with the Gyorin wasn't your fault, or even Houei's. You don't owe us anything.
+[charslot(slot="m",name="avg_npc_2100_1#1$1",focus="m")]
+[name="Hofukaru"]I do appreciate thy kindness, Orchid.
+[charslot(slot="m",name="avg_npc_2100_1#1$1",focus="m")]
+[name="Hofukaru"]But returning home remains thy utmost priority, no?
+[charslot(slot="m",name="avg_1048_orchd2_1#6$1",focus="m")]
+[name="Orchid"]...It does.
+[charslot(slot="m",name="avg_npc_2100_1#9$1",focus="m")]
+[name="Hofukaru"]Then rest assured, I shall find a way.
+[charslot(slot="m",name="avg_1048_orchd2_1#6$1",focus="m")]
+[name="Orchid"]I don't mean to rush you, I just—
+[charslot(slot="m",name="avg_npc_2100_1#1$1",focus="m")]
+[name="Hofukaru"]Is it because of the child I resemble?
+[charslot(slot="m",name="avg_1048_orchd2_1#4$1",focus="m")]
+[name="Orchid"]How did you...?
+[charslot(slot="m",name="avg_npc_2100_1#8$1",focus="m")]
+[name="Hofukaru"]'Twas apparent from thy treatment of me when first we met. Thou hast also used the name 'Popukar'.
+[charslot(slot="m",name="avg_npc_2100_1#8$1",focus="m")]
+[name="Hofukaru"]Thou must care very much for this child, to extend such concern to me.
+[charslot(slot="m",name="avg_1048_orchd2_1#6$1",focus="m")]
+[name="Orchid"]...It's not just that.
+[charslot(slot="m",name="avg_1048_orchd2_1#8$1",focus="m")]
+[name="Orchid"]Maybe it was at first, but not anymore.
+[charslot(slot="m",name="avg_npc_2100_1#1$1",focus="m")]
+[name="Hofukaru"]Why, then?
+[charslot(slot="m",name="avg_1048_orchd2_1#2$1",focus="m")]
+[name="Orchid"]Because it's only natural to worry about others.
+[charslot(slot="m",name="avg_npc_2100_1#1$1",focus="m")]
+[name="Hofukaru"]Yet it is wasted on me. As I have stated time and time again, I alone am sufficient to resolve the problems that face us.
+[charslot(slot="m",name="avg_npc_2100_1#1$1",focus="m")]
+[name="Hofukaru"]So thou, like Midnight, must believe I am incapable of doing so?
+[charslot(slot="m",name="avg_1048_orchd2_1#2$1",focus="m")]
+[name="Orchid"]...If it were anyone else, I would've said you were putting on a brave face. But I know you can.
+[charslot(slot="m",name="avg_npc_2100_1#1$1",focus="m")]
+[name="Hofukaru"]Then why—
+[charslot(slot="m",name="avg_1048_orchd2_1#7$1",focus="m")]
+[name="Orchid"]On some level I do understand what Midnight is afraid of.
+[charslot(slot="m",name="avg_1048_orchd2_1#7$1",focus="m")]
+[name="Orchid"]Not that you might fail, but... that you might succeed.
+[dialog]
+[charslot]
+[stopmusic(fadetime=2)]
+[playsound(key="$smallearthquake", volume=0.6)]
+[CameraShake(duration=2, xstrength=4, ystrength=4, vibrato=20, randomness=30, fadeout=true)]
+[delay(time=1)]
+The loud noise, followed by towering columns of dust flowing from the distant bamboo grove, stuns everyone back in the city.
+[charslot(slot="m",name="avg_npc_2106_1#1$1",focus="m")]
+[name="Samurai"]They did it! The shogun did it! The horde of beasts in the east is... quelled!
+[charslot(slot="m",name="avg_1048_orchd2_1#6$1",focus="m")]
+[name="Orchid"]So he wasn't all talk.
+[charslot(slot="m",name="avg_npc_2100_1#1$1",focus="m")]
+[name="Hofukaru"]Bearing all the danger on his own... as always.
+[charslot(slot="m",name="avg_1048_orchd2_1#6$1",focus="m")]
+[name="Orchid"]Considering how close you two seem to be, how did such a huge rift form between you?
+[charslot(slot="m",name="avg_npc_2100_1#8$1",focus="m")]
+[name="Hofukaru"]Mother was often occupied with affairs of state... so the shogun stayed by my side. He taught me to fight, and kept me company in my studies. Even after Mother vanished and I ascended the throne, it was he who handled the troublesome matters on my behalf.
+[charslot(slot="m",name="avg_npc_2100_1#8$1",focus="m")]
+[name="Hofukaru"]While I am grateful for his aid, I cannot stand the look in his eyes whenever the Lord of Thunder is mentioned.
+[charslot(slot="m",name="avg_npc_2100_1#8$1",focus="m")]
+[name="Hofukaru"]He hath never truly restrained my actions, yet his eyes seemed to say: 'Try, then, and when you fail you will know why.'
+[charslot(slot="m",name="avg_1048_orchd2_1#2$1",focus="m")]
+[name="Orchid"]...I'm not saying he doesn't have his issues, but how about we all get together for a meal when he gets back?
+[charslot(slot="m",name="avg_1048_orchd2_1#2$1",focus="m")]
+[name="Orchid"]You two really need to talk this out. What do you think?
+[charslot(slot="m",name="avg_npc_2100_1#3$1",focus="m")]
+[name="Hofukaru"]...As you wish.
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=2, block=true)]
+[Dialog]
+[charslot]
+[Background(image="71_g4_bambooforest",screenadapt="coverall")]
+[Delay(time=2)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=2, block=true)]
+[Delay(time=1)]
+[playMusic(intro="$nervous_intro", key="$nervous_loop", volume=0.6)]
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"]Midnight?! Where'd he go?!
+[charslot(slot="m",name="avg_npc_2106_1#1$1",focus="m")]
+[name="Samurai"]The shogun came to our rescue, and... and the rockslide carried him away!
+[dialog]
+[charslot]
+[PlaySound(key="$MHR_skillroar_hyper",volume=0.4)]
+[delay(time=3)]
+She suddenly hears a familiar regal roar echoing in the distance, freezing her in place. The sound pierces through the dust and rumbling, striking at her very soul.
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"]That sound... Was that the Lord of Thunder?! Why's it here?! Why now?!
+[charslot(slot="m",name="avg_1049_catap2_1#8$2",focus="m")]
+[name="Catapult"]Yoshitsune, let's go!
+[charslot(slot="m",name="avg_4215_buddyD_1#1$5",focus="m")]
+[PlaySound(key="$MHR_dog_voice1")]
+[name="Yoshitsune"](Anxious growl)
+[dialog]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=0, block=true)]
+[Blocker(a=1, r=0, g=0, b=0, fadetime=1, block=true)]
+[Dialog]
+[charslot]
+[PlaySound(key="$rungeneral", volume=0.9)]
+[Delay(time=1)]
+[Blocker(a=0, r=0, g=0, b=0, fadetime=1, block=true)]
+[Delay(time=1)]
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"](Are those... the samurai under Midnight's command? They've all fallen... but what's with the beast corpses around them? What happened here?)
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"](Midnight?!)
+[charslot(slot="m",name="avg_1049_catap2_1#12$2",focus="m")]
+[name="Catapult"](How is he so heavily wounded? Armor's cracked... blade's broken... hey, you gotta be kidding me. Don't die on me now!)
+[charslot(slot="m",name="avg_1049_catap2_1#12$2",focus="m")]
+[name="Catapult"]Just hold on!
+[charslot(slot="m",name="avg_1049_catap2_1#12$2",focus="m")]
+[name="Catapult"](Gah! I can't move! What's with this pressure from nowhere...?! I'm scared—my body's no longer listening to me...)
+[charslot(slot="m",name="avg_1049_catap2_1#12$2",focus="m")]
+[name="Catapult"](My head... can barely look up...)
+[charslot(slot="m",name="avg_4215_buddyD_1#1$1",focus="m")]
+[PlaySound(key="$MHR_dog_voice1")]
+[name="Yoshitsune"](Angry howl)
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"](Is that... the Lord of Thunder?!)
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"](Something seems... off...)
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"](That dark aura... gotta be the curse, right? Probably got it from those beast corpses...)
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"](Wait, it's glowing? What is that? That white light...)
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"](I've seen that before! From when Hofukaru dances! How's that possible?!)
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"](It's... absorbing the miasma! Is it using Hofukaru's power?!)
+[charslot(slot="m",name="avg_1049_catap2_1#7$2",focus="m")]
+[name="Catapult"](But how?! How can a beast use a sacred power passed down through her lineage?! Unless...)
+[dialog]
+[charslot]
+The Lord of Thunder seems satisfied after absorbing all the curse in the area.
+It looks down, casting a cold, fleeting glance at Midnight sprawled on the ground before throwing its head back for a deafening howl toward the sky.
+[dialog]
+[PlaySound(key="$MHR_skillroar_hyper",volume=1)]
+[delay(time=3)]
+The roar seems to be filled with boundless majesty... and a declaration of victory.
+[Dialog]
+[Delay(time=1)]
+[Blocker(a=1, r=0,g=0, b=0, fadetime=2, block=true)]
+[bgeffect]
+[stopmusic(fadetime=2)]
+[Image]
+[charslot]

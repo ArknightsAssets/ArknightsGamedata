@@ -1,5 +1,52 @@
 {
     "basicInfo": {
+        "act58sign": {
+            "id": "act58sign",
+            "type": "CHECKIN_ONLY",
+            "displayType": "NONE",
+            "name": "Hunting Time",
+            "startTime": 1794841200,
+            "endTime": 1796036399,
+            "rewardEndTime": 1796036399,
+            "displayOnHome": false,
+            "hasStage": false,
+            "templateShopId": null,
+            "medalGroupId": null,
+            "ungroupedMedalIds": null,
+            "isReplicate": false,
+            "needFixedSync": false,
+            "trapDomainId": null,
+            "recType": "CAN_COMPLETE",
+            "isPageEntry": false,
+            "isMagnify": false,
+            "picGroup": {},
+            "usePicGroup": false
+        },
+        "act50side": {
+            "id": "act50side",
+            "type": "TYPE_ACT24SIDE",
+            "displayType": "SIDESTORY",
+            "name": "Thunder in the Azure Dream",
+            "startTime": 1794841200,
+            "endTime": 1796036399,
+            "rewardEndTime": 1796641199,
+            "displayOnHome": true,
+            "hasStage": true,
+            "templateShopId": null,
+            "medalGroupId": null,
+            "ungroupedMedalIds": [
+                "medal_hidden_50side_01",
+                "medal_hidden_50side_02"
+            ],
+            "isReplicate": false,
+            "needFixedSync": false,
+            "trapDomainId": null,
+            "recType": "SPECIAL",
+            "isPageEntry": false,
+            "isMagnify": false,
+            "picGroup": {},
+            "usePicGroup": false
+        },
         "act42sre": {
             "id": "act42sre",
             "type": "TYPE_ACT42SIDE",
@@ -6588,6 +6635,13 @@
         }
     },
     "homeActConfig": {
+        "act58sign": {
+            "actId": "act58sign",
+            "isPopupAfterCheckin": false,
+            "showTopBarMenu": true,
+            "actTopBarColor": "029082",
+            "actTopBarText": "Hunting Time Limited Sign-In"
+        },
         "act59sign": {
             "actId": "act59sign",
             "isPopupAfterCheckin": false,
@@ -7605,6 +7659,8 @@
         }
     },
     "zoneToActivity": {
+        "act50side_zone1": "act50side",
+        "act50side_zone2": "act50side",
         "act42sre_zone1": "act42sre",
         "act42sre_zone2": "act42sre",
         "act42sre_zone3": "act42sre",
@@ -7888,6 +7944,857 @@
     },
     "actTimeTrackPoint": {},
     "missionData": [
+        {
+            "id": "50sideActivity_1",
+            "sortId": 1,
+            "description": "Clear TD-1, and defeat at least 3 Shellsnap Newts",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageCondition",
+            "templateType": "8",
+            "param": [
+                "8",
+                "2",
+                "act50side_01",
+                "enemy_10130_pycpok",
+                "killed",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 25
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_2",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_2",
+            "sortId": 2,
+            "description": "Clear TD-2, and break Snatchshell Bug vessels at least 4 times",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageCondition",
+            "templateType": "8",
+            "param": [
+                "8",
+                "2",
+                "act50side_02",
+                "enemy_10131_pycshd",
+                "shield_break",
+                "4"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 25
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_3",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_3",
+            "sortId": 3,
+            "description": "Clear TD-3",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_03",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_2",
+                    "count": 25
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_4",
+            "sortId": 4,
+            "description": "Clear TD-4",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_04",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "CHAR",
+                    "id": "char_4215_buddy",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_5",
+            "sortId": 5,
+            "description": "Clear TD-4 with a 3-star rating",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_04",
+                "1",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_2",
+                    "count": 25
+                },
+                {
+                    "type": "MATERIAL",
+                    "id": "mod_unlock_token",
+                    "count": 1
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_6",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_6",
+            "sortId": 6,
+            "description": "Clear TD-5",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_05",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 20
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_7",
+            "sortId": 7,
+            "description": "Clear TD-6, and defeat Hexhowl at least 3 times",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageCondition",
+            "templateType": "8",
+            "param": [
+                "8",
+                "2",
+                "act50side_06",
+                "enemy_10135_pycjmp",
+                "killed",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 20
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_8",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_8",
+            "sortId": 8,
+            "description": "Clear TD-7",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_07",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_4",
+                    "count": 15
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_9",
+            "sortId": 9,
+            "description": "Clear TD-8 with a 3-star rating",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_08",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_4",
+                    "count": 15
+                },
+                {
+                    "type": "MATERIAL",
+                    "id": "mod_unlock_token",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_10",
+            "sortId": 10,
+            "description": "Unlock all 4 Wirebug Actions, and perform Wyvern Riding on Flipshell Tortoises, Gloomweavers, Rockshellers, and the Lord of Thunder 1 time each",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "PassActStageAndTargetSimple",
+            "templateType": "0",
+            "param": [
+                "0",
+                "act50side",
+                "act50side_tr01;act50side_03;act50side_05;act50side_06",
+                "trap_281_ctlrol;trap_282_ctlspy;trap_283_ctlblk;trap_284_ctlzog",
+                "ride"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_5",
+                    "count": 5
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_special_level_unlock",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_11",
+            "sortId": 11,
+            "description": "During the Thunder in the Azure Dream event, perform Wyvern Riding on the Lord of Thunder a total of 3 times",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "StageWithCondition",
+            "templateType": "3",
+            "param": [
+                "3",
+                "act50side_01^act50side_02^act50side_03^act50side_04^act50side_05^act50side_06^act50side_07^act50side_08^act50side_p-1^act50side_ex01^act50side_ex01#f#^act50side_ex02^act50side_ex02#f#^act50side_ex03^act50side_ex03#f#^act50side_ex04^act50side_ex04#f#^act50side_ex05^act50side_ex05#f#^act50side_ex06^act50side_ex06#f#^act50side_ex07^act50side_ex07#f#^act50side_ex08^act50side_ex08#f#^act50side_s01",
+                "trap_284_ctlzog",
+                "ride",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_4",
+                    "count": 10
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_10",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_12",
+            "sortId": 12,
+            "description": "During the Thunder in the Azure Dream event, perform Wyvern Riding on Flipshell Tortoises a total of 3 times",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "StageWithCondition",
+            "templateType": "3",
+            "param": [
+                "3",
+                "act50side_01^act50side_02^act50side_tr01^act50side_03^act50side_04^act50side_05^act50side_06^act50side_07^act50side_08^act50side_p-1^act50side_ex01^act50side_ex01#f#^act50side_ex02^act50side_ex02#f#^act50side_ex03^act50side_ex03#f#^act50side_ex04^act50side_ex04#f#^act50side_ex05^act50side_ex05#f#^act50side_ex06^act50side_ex06#f#^act50side_ex07^act50side_ex07#f#^act50side_ex08^act50side_ex08#f#^act50side_s01",
+                "trap_281_ctlrol",
+                "ride",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 20
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_5",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_13",
+            "sortId": 13,
+            "description": "During the Thunder in the Azure Dream event, perform Wyvern Riding on Gloomweavers a total of 3 times",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "StageWithCondition",
+            "templateType": "3",
+            "param": [
+                "3",
+                "act50side_01^act50side_02^act50side_03^act50side_04^act50side_05^act50side_06^act50side_07^act50side_08^act50side_p-1^act50side_ex01^act50side_ex01#f#^act50side_ex02^act50side_ex02#f#^act50side_ex03^act50side_ex03#f#^act50side_ex04^act50side_ex04#f#^act50side_ex05^act50side_ex05#f#^act50side_ex06^act50side_ex06#f#^act50side_ex07^act50side_ex07#f#^act50side_ex08^act50side_ex08#f#^act50side_s01",
+                "trap_282_ctlspy",
+                "ride",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 20
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_7",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_14",
+            "sortId": 14,
+            "description": "During the Thunder in the Azure Dream event, perform Wyvern Riding on Rockshellers a total of 3 times",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "StageWithCondition",
+            "templateType": "3",
+            "param": [
+                "3",
+                "act50side_01^act50side_02^act50side_03^act50side_04^act50side_05^act50side_06^act50side_07^act50side_08^act50side_p-1^act50side_ex01^act50side_ex01#f#^act50side_ex02^act50side_ex02#f#^act50side_ex03^act50side_ex03#f#^act50side_ex04^act50side_ex04#f#^act50side_ex05^act50side_ex05#f#^act50side_ex06^act50side_ex06#f#^act50side_ex07^act50side_ex07#f#^act50side_ex08^act50side_ex08#f#^act50side_s01",
+                "trap_283_ctlblk",
+                "ride",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 50
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_9",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_15",
+            "sortId": 15,
+            "description": "During the Thunder in the Azure Dream event, defeat a total of 100 Crestcallers (excluding tutorials).",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "StageWithCondition",
+            "templateType": "0",
+            "param": [
+                "0",
+                "act50side_01^act50side_02^act50side_03^act50side_04^act50side_05^act50side_06^act50side_07^act50side_08^act50side_p-1^act50side_ex01^act50side_ex01#f#^act50side_ex02^act50side_ex02#f#^act50side_ex03^act50side_ex03#f#^act50side_ex04^act50side_ex04#f#^act50side_ex05^act50side_ex05#f#^act50side_ex06^act50side_ex06#f#^act50side_ex07^act50side_ex07#f#^act50side_ex08^act50side_ex08#f#^act50side_s01",
+                "enemy_10129_pycdog",
+                "100"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 30
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_1",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_16",
+            "sortId": 16,
+            "description": "During the Thunder in the Azure Dream event, defeat a total of 10 hungry Guzzlemuffs (excluding tutorials).",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "StageWithCondition",
+            "templateType": "3",
+            "param": [
+                "3",
+                "act50side_01^act50side_02^act50side_03^act50side_04^act50side_05^act50side_06^act50side_07^act50side_08^act50side_p-1^act50side_ex01^act50side_ex01#f#^act50side_ex02^act50side_ex02#f#^act50side_ex03^act50side_ex03#f#^act50side_ex04^act50side_ex04#f#^act50side_ex05^act50side_ex05#f#^act50side_ex06^act50side_ex06#f#^act50side_ex07^act50side_ex07#f#^act50side_ex08^act50side_ex08#f#^act50side_s01",
+                "enemy_10132_pyceat",
+                "killed_no_eat",
+                "10"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_2",
+                    "count": 20
+                },
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_monster_clue_4",
+                    "count": 1
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_17",
+            "sortId": 17,
+            "description": "Clear TD-EX-1",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_ex01",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 30
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_18",
+            "sortId": 18,
+            "description": "Clear TD-EX-2, and defeat at least 9 Aragami Guzzlemuffs",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageCondition",
+            "templateType": "8",
+            "param": [
+                "8",
+                "2",
+                "act50side_ex02",
+                "enemy_10132_pyceat_2",
+                "killed",
+                "9"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 30
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_19",
+            "sortId": 19,
+            "description": "Clear TD-EX-3",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_ex03",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 40
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_20",
+            "sortId": 20,
+            "description": "Clear TD-EX-4",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_ex04",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_1",
+                    "count": 40
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_21",
+            "sortId": 21,
+            "description": "Clear TD-EX-5, and defeat at least 6 Cursed Rockshellers",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageCondition",
+            "templateType": "8",
+            "param": [
+                "8",
+                "2",
+                "act50side_ex05",
+                "enemy_10136_pycblk_2",
+                "killed",
+                "6"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 20
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_22",
+            "sortId": 22,
+            "description": "Clear TD-EX-6",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_ex06",
+                "1",
+                "2"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 20
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_23",
+            "sortId": 23,
+            "description": "Clear TD-EX-7, and defeat at least 1 'Iju' Escorchgot",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageCondition",
+            "templateType": "8",
+            "param": [
+                "8",
+                "2",
+                "act50side_ex07",
+                "enemy_10137_pycvol",
+                "killed",
+                "1"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 30
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
+        {
+            "id": "50sideActivity_24",
+            "sortId": 24,
+            "description": "Clear TD-EX-8 with a 3-star rating",
+            "type": "ACTIVITY",
+            "itemBgType": "COMMON",
+            "preMissionIds": null,
+            "template": "CompleteStageAct",
+            "templateType": "1",
+            "param": [
+                "1",
+                "act50side_ex08",
+                "1",
+                "3"
+            ],
+            "unlockCondition": null,
+            "unlockParam": null,
+            "missionGroup": "act50side",
+            "toPage": null,
+            "periodicalPoint": 0,
+            "rewards": [
+                {
+                    "type": "ACTIVITY_ITEM",
+                    "id": "act50side_melding_3",
+                    "count": 30
+                }
+            ],
+            "backImagePath": null,
+            "foldId": null,
+            "haveSubMissionToUnlock": false,
+            "countEndTs": -1
+        },
         {
             "id": "42sreActivity_1",
             "sortId": 1,
@@ -117565,6 +118472,42 @@
     ],
     "missionGroup": [
         {
+            "id": "act50side",
+            "title": null,
+            "type": "ACTIVITY",
+            "preMissionGroup": null,
+            "period": null,
+            "rewards": {},
+            "missionIds": [
+                "50sideActivity_1",
+                "50sideActivity_2",
+                "50sideActivity_3",
+                "50sideActivity_4",
+                "50sideActivity_5",
+                "50sideActivity_6",
+                "50sideActivity_7",
+                "50sideActivity_8",
+                "50sideActivity_9",
+                "50sideActivity_10",
+                "50sideActivity_11",
+                "50sideActivity_12",
+                "50sideActivity_13",
+                "50sideActivity_14",
+                "50sideActivity_15",
+                "50sideActivity_16",
+                "50sideActivity_17",
+                "50sideActivity_18",
+                "50sideActivity_19",
+                "50sideActivity_20",
+                "50sideActivity_21",
+                "50sideActivity_22",
+                "50sideActivity_23",
+                "50sideActivity_24"
+            ],
+            "startTs": 1794841200,
+            "endTs": 1796641199
+        },
+        {
             "id": "act42sre",
             "title": null,
             "type": "ACTIVITY",
@@ -122455,6 +123398,205 @@
             }
         },
         "CHECKIN_ONLY": {
+            "act58sign": {
+                "checkInList": {
+                    "0": {
+                        "itemList": [
+                            {
+                                "id": "LINKAGE_TKT_GACHA_10_7401",
+                                "count": 1,
+                                "type": "LINKAGE_TKT_GACHA_10"
+                            },
+                            {
+                                "id": "ap_supply_lt_120",
+                                "count": 1,
+                                "type": "AP_SUPPLY"
+                            }
+                        ],
+                        "order": 1,
+                        "color": 0,
+                        "keyItem": 1,
+                        "showItemOrder": 1,
+                        "isDynItem": false
+                    },
+                    "1": {
+                        "itemList": [
+                            {
+                                "id": "4003",
+                                "count": 200,
+                                "type": "DIAMOND_SHD"
+                            },
+                            {
+                                "id": "mod_update_token_1",
+                                "count": 10,
+                                "type": "MATERIAL"
+                            }
+                        ],
+                        "order": 2,
+                        "color": 0,
+                        "keyItem": 0,
+                        "showItemOrder": 0,
+                        "isDynItem": false
+                    },
+                    "2": {
+                        "itemList": [
+                            {
+                                "id": "2003",
+                                "count": 20,
+                                "type": "CARD_EXP"
+                            },
+                            {
+                                "id": "7002",
+                                "count": 5,
+                                "type": "TKT_INST_FIN"
+                            }
+                        ],
+                        "order": 3,
+                        "color": 0,
+                        "keyItem": 0,
+                        "showItemOrder": 0,
+                        "isDynItem": false
+                    },
+                    "3": {
+                        "itemList": [
+                            {
+                                "id": "4003",
+                                "count": 200,
+                                "type": "DIAMOND_SHD"
+                            },
+                            {
+                                "id": "3401",
+                                "count": 300,
+                                "type": "MATERIAL"
+                            }
+                        ],
+                        "order": 4,
+                        "color": 0,
+                        "keyItem": 0,
+                        "showItemOrder": 0,
+                        "isDynItem": false
+                    },
+                    "4": {
+                        "itemList": [
+                            {
+                                "id": "avatar_special_75",
+                                "count": 1,
+                                "type": "PLAYER_AVATAR"
+                            },
+                            {
+                                "id": "3003",
+                                "count": 20,
+                                "type": "MATERIAL"
+                            }
+                        ],
+                        "order": 5,
+                        "color": 0,
+                        "keyItem": 1,
+                        "showItemOrder": 2,
+                        "isDynItem": false
+                    },
+                    "5": {
+                        "itemList": [
+                            {
+                                "id": "furni_act36d0_grill_01",
+                                "count": 1,
+                                "type": "FURN"
+                            },
+                            {
+                                "id": "2004",
+                                "count": 10,
+                                "type": "CARD_EXP"
+                            }
+                        ],
+                        "order": 6,
+                        "color": 0,
+                        "keyItem": 1,
+                        "showItemOrder": 0,
+                        "isDynItem": false
+                    },
+                    "6": {
+                        "itemList": [
+                            {
+                                "id": "4003",
+                                "count": 200,
+                                "type": "DIAMOND_SHD"
+                            },
+                            {
+                                "id": "4001",
+                                "count": 30000,
+                                "type": "GOLD"
+                            }
+                        ],
+                        "order": 7,
+                        "color": 0,
+                        "keyItem": 0,
+                        "showItemOrder": 0,
+                        "isDynItem": false
+                    },
+                    "7": {
+                        "itemList": [
+                            {
+                                "id": "LINKAGE_TKT_GACHA_10_7401",
+                                "count": 1,
+                                "type": "LINKAGE_TKT_GACHA_10"
+                            },
+                            {
+                                "id": "mod_update_token_2",
+                                "count": 3,
+                                "type": "MATERIAL"
+                            }
+                        ],
+                        "order": 8,
+                        "color": 0,
+                        "keyItem": 1,
+                        "showItemOrder": 3,
+                        "isDynItem": false
+                    },
+                    "8": {
+                        "itemList": [
+                            {
+                                "id": "furni_act36d0_MaterialBox_01",
+                                "count": 1,
+                                "type": "FURN"
+                            },
+                            {
+                                "id": "7001",
+                                "count": 5,
+                                "type": "TKT_RECRUIT"
+                            }
+                        ],
+                        "order": 9,
+                        "color": 0,
+                        "keyItem": 1,
+                        "showItemOrder": 0,
+                        "isDynItem": false
+                    },
+                    "9": {
+                        "itemList": [
+                            {
+                                "id": "mod_unlock_token",
+                                "count": 1,
+                                "type": "MATERIAL"
+                            },
+                            {
+                                "id": "3303",
+                                "count": 8,
+                                "type": "MATERIAL"
+                            }
+                        ],
+                        "order": 10,
+                        "color": 0,
+                        "keyItem": 0,
+                        "showItemOrder": 0,
+                        "isDynItem": false
+                    }
+                },
+                "apSupplyOutOfDateDict": {
+                    "ap_supply_lt_120": 1796641199
+                },
+                "dynCheckInData": null,
+                "extraCheckinList": null
+            },
             "act59sign": {
                 "checkInList": {
                     "0": {
@@ -204655,6 +205797,1975 @@
             }
         },
         "TYPE_ACT24SIDE": {
+            "act50side": {
+                "toolDataList": {
+                    "skill_turn": {
+                        "toolId": "skill_turn",
+                        "sortId": 1,
+                        "toolName": "Houei-Style Assault",
+                        "toolDesc": "Operator turns towards the direction where the Wirebug was deployed, then does damage and Slows enemies within a set distance in front of them for a period of time",
+                        "toolIcon1": "skill_turn_icon1",
+                        "toolIcon2": "skill_turn_icon2",
+                        "toolUnlockDesc": "Clear TD-TR-1 to unlock",
+                        "toolBuffId": "rune_act50side_pyctrn",
+                        "runeData": {
+                            "id": "rune_act50side_pyctrn",
+                            "points": 0.0,
+                            "mutexGroupKey": null,
+                            "description": "trn",
+                            "runes": [
+                                {
+                                    "key": "level_predefines_cards_enable",
+                                    "selector": {
+                                        "professionMask": 1023,
+                                        "buildableMask": "ALL",
+                                        "playerSideMask": "ALL",
+                                        "sideType": "ALL",
+                                        "charIdFilter": null,
+                                        "charIdExcludeFilter": null,
+                                        "enemyIdFilter": null,
+                                        "enemyIdExcludeFilter": null,
+                                        "enemyLevelTypeFilter": null,
+                                        "enemyActionHiddenGroupFilter": null,
+                                        "skillIdFilter": null,
+                                        "tileKeyFilter": null,
+                                        "groupTagFilter": null,
+                                        "filterTagFilter": null,
+                                        "filterTagExcludeFilter": null,
+                                        "subProfessionExcludeFilter": null,
+                                        "mapTagFilter": null,
+                                        "heightTypeMask": "ALL"
+                                    },
+                                    "blackboard": [
+                                        {
+                                            "key": "trap_274_pyctrn",
+                                            "value": 1.0,
+                                            "valueStr": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "toolStageId": null
+                    },
+                    "skill_gp": {
+                        "toolId": "skill_gp",
+                        "sortId": 2,
+                        "toolName": "Not-Fully-Charged Counterattack",
+                        "toolDesc": "Operators are more likely to be attacked and are immune to Stun for a period of time; when receiving damage, Operator counterattacks based on a percentage of their ATK and recovers some SP",
+                        "toolIcon1": "skill_gp_icon1",
+                        "toolIcon2": "skill_gp_icon2",
+                        "toolUnlockDesc": "Clear TD-3 to unlock",
+                        "toolBuffId": "rune_act50side_pycgp",
+                        "runeData": {
+                            "id": "rune_act50side_pycgp",
+                            "points": 0.0,
+                            "mutexGroupKey": null,
+                            "description": "gp",
+                            "runes": [
+                                {
+                                    "key": "level_predefines_cards_enable",
+                                    "selector": {
+                                        "professionMask": 1023,
+                                        "buildableMask": "ALL",
+                                        "playerSideMask": "ALL",
+                                        "sideType": "ALL",
+                                        "charIdFilter": null,
+                                        "charIdExcludeFilter": null,
+                                        "enemyIdFilter": null,
+                                        "enemyIdExcludeFilter": null,
+                                        "enemyLevelTypeFilter": null,
+                                        "enemyActionHiddenGroupFilter": null,
+                                        "skillIdFilter": null,
+                                        "tileKeyFilter": null,
+                                        "groupTagFilter": null,
+                                        "filterTagFilter": null,
+                                        "filterTagExcludeFilter": null,
+                                        "subProfessionExcludeFilter": null,
+                                        "mapTagFilter": null,
+                                        "heightTypeMask": "ALL"
+                                    },
+                                    "blackboard": [
+                                        {
+                                            "key": "trap_273_pycgp",
+                                            "value": 1.0,
+                                            "valueStr": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "toolStageId": null
+                    },
+                    "skill_fly": {
+                        "toolId": "skill_fly",
+                        "sortId": 3,
+                        "toolName": "Wirebug Blitz",
+                        "toolDesc": "Deals damage to a line of enemies based on the direction the deployed Wirebug is facing, and makes Operators in the same row redeploy at the position of the first enemy hit",
+                        "toolIcon1": "skill_fly_icon1",
+                        "toolIcon2": "skill_fly_icon2",
+                        "toolUnlockDesc": "Clear TD-5 to unlock",
+                        "toolBuffId": "rune_act50side_pycfly",
+                        "runeData": {
+                            "id": "rune_act50side_pycfly",
+                            "points": 0.0,
+                            "mutexGroupKey": null,
+                            "description": "fly",
+                            "runes": [
+                                {
+                                    "key": "level_predefines_cards_enable",
+                                    "selector": {
+                                        "professionMask": 1023,
+                                        "buildableMask": "ALL",
+                                        "playerSideMask": "ALL",
+                                        "sideType": "ALL",
+                                        "charIdFilter": null,
+                                        "charIdExcludeFilter": null,
+                                        "enemyIdFilter": null,
+                                        "enemyIdExcludeFilter": null,
+                                        "enemyLevelTypeFilter": null,
+                                        "enemyActionHiddenGroupFilter": null,
+                                        "skillIdFilter": null,
+                                        "tileKeyFilter": null,
+                                        "groupTagFilter": null,
+                                        "filterTagFilter": null,
+                                        "filterTagExcludeFilter": null,
+                                        "subProfessionExcludeFilter": null,
+                                        "mapTagFilter": null,
+                                        "heightTypeMask": "ALL"
+                                    },
+                                    "blackboard": [
+                                        {
+                                            "key": "trap_275_pycfly",
+                                            "value": 1.0,
+                                            "valueStr": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "toolStageId": null
+                    },
+                    "skill_stop": {
+                        "toolId": "skill_stop",
+                        "sortId": 4,
+                        "toolName": "Ironsilk Binding",
+                        "toolDesc": "Deals damage and Binds all enemies within the chosen Operator's Attack Range for a period of time",
+                        "toolIcon1": "skill_stop_icon1",
+                        "toolIcon2": "skill_stop_icon2",
+                        "toolUnlockDesc": "Clear TD-6 to unlock",
+                        "toolBuffId": "rune_act50side_pycstp",
+                        "runeData": {
+                            "id": "rune_act50side_pycstp",
+                            "points": 0.0,
+                            "mutexGroupKey": null,
+                            "description": "stp",
+                            "runes": [
+                                {
+                                    "key": "level_predefines_cards_enable",
+                                    "selector": {
+                                        "professionMask": 1023,
+                                        "buildableMask": "ALL",
+                                        "playerSideMask": "ALL",
+                                        "sideType": "ALL",
+                                        "charIdFilter": null,
+                                        "charIdExcludeFilter": null,
+                                        "enemyIdFilter": null,
+                                        "enemyIdExcludeFilter": null,
+                                        "enemyLevelTypeFilter": null,
+                                        "enemyActionHiddenGroupFilter": null,
+                                        "skillIdFilter": null,
+                                        "tileKeyFilter": null,
+                                        "groupTagFilter": null,
+                                        "filterTagFilter": null,
+                                        "filterTagExcludeFilter": null,
+                                        "subProfessionExcludeFilter": null,
+                                        "mapTagFilter": null,
+                                        "heightTypeMask": "ALL"
+                                    },
+                                    "blackboard": [
+                                        {
+                                            "key": "trap_276_pycstp",
+                                            "value": 1.0,
+                                            "valueStr": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "toolStageId": null
+                    }
+                },
+                "mealDataList": null,
+                "meldingDict": {
+                    "act50side_melding_1": {
+                        "meldingId": "act50side_melding_1",
+                        "bgId": "act50side_melding_bg",
+                        "sortId": 1,
+                        "meldingPrice": 2,
+                        "rarity": "RARITY_1"
+                    },
+                    "act50side_melding_2": {
+                        "meldingId": "act50side_melding_2",
+                        "bgId": "act50side_melding_bg",
+                        "sortId": 2,
+                        "meldingPrice": 3,
+                        "rarity": "RARITY_2"
+                    },
+                    "act50side_melding_3": {
+                        "meldingId": "act50side_melding_3",
+                        "bgId": "act50side_melding_bg",
+                        "sortId": 3,
+                        "meldingPrice": 5,
+                        "rarity": "RARITY_3"
+                    },
+                    "act50side_melding_4": {
+                        "meldingId": "act50side_melding_4",
+                        "bgId": "act50side_melding_bg",
+                        "sortId": 4,
+                        "meldingPrice": 10,
+                        "rarity": "RARITY_4"
+                    },
+                    "act50side_melding_5": {
+                        "meldingId": "act50side_melding_5",
+                        "bgId": "act50side_melding_bg",
+                        "sortId": 5,
+                        "meldingPrice": 20,
+                        "rarity": "RARITY_5"
+                    },
+                    "act50side_melding_6": {
+                        "meldingId": "act50side_melding_6",
+                        "bgId": "act50side_melding_bg",
+                        "sortId": 6,
+                        "meldingPrice": 200,
+                        "rarity": "RARITY_6"
+                    }
+                },
+                "meldingGachaBoxDataList": {
+                    "gachabox1": {
+                        "gachaBoxId": "gachabox1",
+                        "gachaSortId": 1,
+                        "gachaIcon": "gachabox1",
+                        "gachaBoxName": "Melding: Reverie",
+                        "gachaCost": 100,
+                        "gachaTimesLimit": 10,
+                        "themeColor": "#314065",
+                        "remainItemBgColor": "#3d4559"
+                    },
+                    "gachabox2": {
+                        "gachaBoxId": "gachabox2",
+                        "gachaSortId": 2,
+                        "gachaIcon": "gachabox2",
+                        "gachaBoxName": "Melding: Rebirth",
+                        "gachaCost": 60,
+                        "gachaTimesLimit": 10,
+                        "themeColor": "#2f484c",
+                        "remainItemBgColor": "#4b6367"
+                    }
+                },
+                "meldingGachaBoxGoodDataMap": {
+                    "gachabox1": [
+                        {
+                            "goodId": "gachabox1_8",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 8,
+                            "itemId": "furni_Azuredream_hanger_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_9",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 9,
+                            "itemId": "furni_Azuredream_brazier_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_10",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 10,
+                            "itemId": "furni_Azuredream_shelf_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_11",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 11,
+                            "itemId": "furni_Azuredream_cabinet_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_12",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 12,
+                            "itemId": "furni_Azuredream_ceilingLight_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_13",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 13,
+                            "itemId": "furni_Azuredream_table_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_14",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 14,
+                            "itemId": "furni_Azuredream_carpet_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_15",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 15,
+                            "itemId": "furni_Azuredream_pillar_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_16",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 16,
+                            "itemId": "furni_Azuredream_chair_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_17",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 17,
+                            "itemId": "furni_Azuredream_column_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_18",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 18,
+                            "itemId": "furni_Azuredream_basket_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_19",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 19,
+                            "itemId": "furni_Azuredream_wallpaper_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_20",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 20,
+                            "itemId": "furni_Azuredream_floor_01",
+                            "itemType": "FURN",
+                            "displayType": "RARE_2",
+                            "perCount": 1,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_1",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 1,
+                            "itemId": "p_char_4215_buddy",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 5,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_2",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 2,
+                            "itemId": "7003",
+                            "itemType": "TKT_GACHA",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 3,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_3",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 3,
+                            "itemId": "mod_unlock_token",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 2,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_4",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 4,
+                            "itemId": "30145",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 5,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_5",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 5,
+                            "itemId": "30165",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 5,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_6",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 6,
+                            "itemId": "mod_update_token_2",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 2,
+                            "totalCount": 5,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox1_7",
+                            "gachaBoxId": "gachabox1",
+                            "orderId": 7,
+                            "itemId": "mod_update_token_1",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 6,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        }
+                    ],
+                    "gachabox2": [
+                        {
+                            "goodId": "gachabox2_18",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 18,
+                            "itemId": "31043",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_1",
+                            "perCount": 1,
+                            "totalCount": 0,
+                            "gachaType": "UNLIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_19",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 19,
+                            "itemId": "31083",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_1",
+                            "perCount": 1,
+                            "totalCount": 0,
+                            "gachaType": "UNLIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_20",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 20,
+                            "itemId": "31093",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_1",
+                            "perCount": 1,
+                            "totalCount": 0,
+                            "gachaType": "UNLIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_21",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 21,
+                            "itemId": "4001",
+                            "itemType": "GOLD",
+                            "displayType": "RARE_1",
+                            "perCount": 10000,
+                            "totalCount": 0,
+                            "gachaType": "UNLIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_4",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 4,
+                            "itemId": "31043",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 3,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_5",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 5,
+                            "itemId": "31083",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 3,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_6",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 6,
+                            "itemId": "31093",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 3,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_7",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 7,
+                            "itemId": "4001",
+                            "itemType": "GOLD",
+                            "displayType": "RARE_2",
+                            "perCount": 25000,
+                            "totalCount": 20,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_8",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 8,
+                            "itemId": "2004",
+                            "itemType": "CARD_EXP",
+                            "displayType": "RARE_2",
+                            "perCount": 10,
+                            "totalCount": 5,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_9",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 9,
+                            "itemId": "2003",
+                            "itemType": "CARD_EXP",
+                            "displayType": "RARE_2",
+                            "perCount": 25,
+                            "totalCount": 4,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_10",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 10,
+                            "itemId": "2002",
+                            "itemType": "CARD_EXP",
+                            "displayType": "RARE_2",
+                            "perCount": 40,
+                            "totalCount": 3,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_11",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 11,
+                            "itemId": "3303",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 10,
+                            "totalCount": 3,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_12",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 12,
+                            "itemId": "3302",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 25,
+                            "totalCount": 2,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_13",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 13,
+                            "itemId": "30022",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 15,
+                            "totalCount": 2,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_14",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 14,
+                            "itemId": "30032",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 15,
+                            "totalCount": 2,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_15",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 15,
+                            "itemId": "30052",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 15,
+                            "totalCount": 2,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_16",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 16,
+                            "itemId": "3221",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 5,
+                            "totalCount": 1,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_17",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 17,
+                            "itemId": "3401",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_2",
+                            "perCount": 200,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_1",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 1,
+                            "itemId": "30054",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_2",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 2,
+                            "itemId": "31034",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        },
+                        {
+                            "goodId": "gachabox2_3",
+                            "gachaBoxId": "gachabox2",
+                            "orderId": 3,
+                            "itemId": "31054",
+                            "itemType": "MATERIAL",
+                            "displayType": "RARE_3",
+                            "perCount": 1,
+                            "totalCount": 10,
+                            "gachaType": "LIMITED",
+                            "weight": 0,
+                            "gachaOrderId": 0,
+                            "gachaNum": 0
+                        }
+                    ]
+                },
+                "mealWelcomeTxtDataMap": null,
+                "zoneAdditionDataMap": {
+                    "act50side_zone1": {
+                        "zoneId": "act50side_zone1",
+                        "zoneIcon": "act50side_1",
+                        "unlockText": "Locked",
+                        "displayTime": "2026-11-16 08:00:00"
+                    },
+                    "act50side_zone2": {
+                        "zoneId": "act50side_zone2",
+                        "zoneIcon": "act50side_2",
+                        "unlockText": "Unlocks after completing Hunting the Azure Thunder",
+                        "displayTime": "2026-11-16 08:00:00"
+                    }
+                },
+                "questStageList": [
+                    {
+                        "stageId": "act50side_ex01",
+                        "stageRank": 1,
+                        "sortId": 1,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex01#f#",
+                        "stageRank": 1,
+                        "sortId": 2,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex02",
+                        "stageRank": 1,
+                        "sortId": 3,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex02#f#",
+                        "stageRank": 1,
+                        "sortId": 4,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex03",
+                        "stageRank": 1,
+                        "sortId": 5,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex03#f#",
+                        "stageRank": 1,
+                        "sortId": 6,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex04",
+                        "stageRank": 2,
+                        "sortId": 7,
+                        "isUrgentStage": true,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex04#f#",
+                        "stageRank": 2,
+                        "sortId": 8,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex05",
+                        "stageRank": 2,
+                        "sortId": 9,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex05#f#",
+                        "stageRank": 2,
+                        "sortId": 10,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex06",
+                        "stageRank": 2,
+                        "sortId": 11,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex06#f#",
+                        "stageRank": 2,
+                        "sortId": 12,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex07",
+                        "stageRank": 3,
+                        "sortId": 13,
+                        "isUrgentStage": true,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex07#f#",
+                        "stageRank": 3,
+                        "sortId": 14,
+                        "isUrgentStage": false,
+                        "isDragonStage": false
+                    },
+                    {
+                        "stageId": "act50side_ex08",
+                        "stageRank": 3,
+                        "sortId": 15,
+                        "isUrgentStage": false,
+                        "isDragonStage": true
+                    },
+                    {
+                        "stageId": "act50side_ex08#f#",
+                        "stageRank": 3,
+                        "sortId": 16,
+                        "isUrgentStage": false,
+                        "isDragonStage": true
+                    },
+                    {
+                        "stageId": "act50side_s01",
+                        "stageRank": 3,
+                        "sortId": 17,
+                        "isUrgentStage": false,
+                        "isDragonStage": true
+                    }
+                ],
+                "missionDataList": {
+                    "50sideActivity_1": {
+                        "taskTypeName": "Monster Investigation",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "Shellbound Cowards",
+                        "taskClient": "Village Apothecary",
+                        "taskClientDesc": "Oh no, the herbs in my garden are wrecked AGAIN! It's not insects this time, but slimy scoundrels in eggshells—Shellsnap Newts! They're impossible to deal with since they hide in their rock-hard shells the moment they see you coming. O great hunters, I beseech thee, rid me of these 'long-legged rocks'! My back's killing me!"
+                    },
+                    "50sideActivity_2": {
+                        "taskTypeName": "Monster Investigation",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "Give Me Back My Pots!",
+                        "taskClient": "Irritable Chef",
+                        "taskClientDesc": "I've had it! My brand new iron pot just sprouted legs and walked away! Those Snatchshell Bugs are at it again! They love sneaking in under the cover of night then running off with my pots and pans. Good hunters, please beat the living daylight out of them and bring me back my pots!"
+                    },
+                    "50sideActivity_3": {
+                        "taskTypeName": "Exploration Mission",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "Stay Vigilant",
+                        "taskClient": "Iju Hunter Orchid",
+                        "taskClientDesc": "We still haven't mastered the skills a hunter needs. Before we challenge the Iju, we must learn how to defend ourselves and hone our fighting techniques against wild beasts. I know you'll see this, Catapult, so if you don't finish your training on time, there'll be no dinner for you."
+                    },
+                    "50sideActivity_4": {
+                        "taskTypeName": "Exploration Mission",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "Omens of Scarlet Snow",
+                        "taskClient": "Midnight, Shogun of Houei",
+                        "taskClientDesc": "An urgent report from our scouts indicates that lava is flowing from the snowy mountains towards the Gyorin. Ordinarily, they are capped in snow year-round. This change must be the work of the Iju. For Houei's safety, and for everyone to return home safely, I must request that you perform a preliminary investigation. Mind the ominous heat waves."
+                    },
+                    "50sideActivity_5": {
+                        "taskTypeName": "Monster Investigation",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "Scorch Marks Across Silver Plains",
+                        "taskClient": "Hofukaru, Lord of Houei",
+                        "taskClientDesc": "I wish to hunt the Iju Escorchgot alone. This is the only way I might prove to Midnight that I am ready to challenge the Lord of Thunder. Madam Orchid, Madam Catapult, thou needst not involve thyselves. This is my battle. —Message from Hofukaru"
+                    },
+                    "50sideActivity_6": {
+                        "taskTypeName": "Exploration Mission",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "Failure is Forbidden",
+                        "taskClient": "Midnight, Shogun of Houei",
+                        "taskClientDesc": "This will be a gamble. If I... If the trap fails, Her Majesty will have only you to rely on. No matter what happens, you must protect this land. This is my one and only wish."
+                    },
+                    "50sideActivity_7": {
+                        "taskTypeName": "Monster Investigation",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "Specters of the Past",
+                        "taskClient": "Houei Samurai Captain",
+                        "taskClientDesc": "It's hard to believe, but... those long-extinct Hexhowls have returned! Bar their way, Hunters! If the horde breaks through, the capital will be in danger!"
+                    },
+                    "50sideActivity_8": {
+                        "taskTypeName": "Exploration Mission",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "Why's This Whole Country So Stubborn?",
+                        "taskClient": "Suponosuke, Houei Craftsman",
+                        "taskClientDesc": "Midnight sure knows how to boss people around. Whatever, just go. The Association guys will be right behind you. I'm curious about what it's like under the Gyorin too."
+                    },
+                    "50sideActivity_9": {
+                        "taskTypeName": "Monster Investigation",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "Fateful Azure, Thunder's Roar",
+                        "taskClient": "Hofukaru, Lord of Houei",
+                        "taskClientDesc": "In order to rein in the Gyorin's madness, we require the Lord of Thunder's strength. Madam Orchid, Madam Catapult, Sir Suponosuke, and... Midnight. Lend me your aid!"
+                    },
+                    "50sideActivity_10": {
+                        "taskTypeName": "Beast Incursion",
+                        "taskTypeIcon": "invasionTask",
+                        "taskType": "INVATION_TASK",
+                        "taskTitle": "Celebrations of Beast and Hunter",
+                        "taskClient": "Hofukaru, Lord of Houei",
+                        "taskClientDesc": "Today is the most important day in Houei, a festival where we pray for bountiful hunts. Everyone may participate in the hunt, and I shall do the same. If anyone brings back more prey than I, they shall receive a reward. Samurai of Houei, hunters from distant lands, I bid thee happy hunting."
+                    },
+                    "50sideActivity_11": {
+                        "taskTypeName": "Monster Investigation",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "I Want to Touch the Lightning",
+                        "taskClient": "Thunderstruck Ecologist",
+                        "taskClientDesc": "Everyone else might say the Lord of Thunder is scary, but I think its light is beautiful! It's the same light that shines when Lady Hofukaru dances! Could you ride on its back, Hunter? I just want to see how those Thunderbugs glow from up close! Please!"
+                    },
+                    "50sideActivity_12": {
+                        "taskTypeName": "Monster Investigation",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "Stop Rolling!",
+                        "taskClient": "Insomniac Sentry",
+                        "taskClientDesc": "Ever since those tortoises made their way onto the surface, they've been rolling around the mountains near the capital day and night! Rolling and rolling and rolling! I can't sleep with all that rumbling! Hunter, since they're so fond of rolling, get them to roll somewhere else! The further the better!"
+                    },
+                    "50sideActivity_13": {
+                        "taskTypeName": "Monster Investigation",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "Hazardous Materials",
+                        "taskClient": "Midnight, Shogun of Houei",
+                        "taskClientDesc": "Orchid said that the silk of the Gloomweaver has a extremely fine luster, and that it would make for good clothing. However, in order to make them spit out more silk, we must first learn to control them. Ah, let us consider this hunting training. Do your best."
+                    },
+                    "50sideActivity_14": {
+                        "taskTypeName": "Monster Investigation",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "Plowing the Fields",
+                        "taskClient": "Inspired Farmer",
+                        "taskClientDesc": "I once happened to see a Rocksheller and its thick arms, which got me thinking: can we use that freakish strength to help us plow new fields? But they're proper brutes and can't be tamed, so how can we get them to do that? Could I ask you to think of a way, Hunter?"
+                    },
+                    "50sideActivity_15": {
+                        "taskTypeName": "Monster Investigation",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "For Better Hunting",
+                        "taskClient": "Palace Chef",
+                        "taskClientDesc": "The shogun spends many resources keeping the Hunter's Association organized. Though everyone supports his endeavors, our food reserves in the capital can't quite keep up. Hunter, if you happen to catch many Crestcallers, could you send me a message? Just your leftovers will be enough. Many thanks!"
+                    },
+                    "50sideActivity_16": {
+                        "taskTypeName": "Monster Investigation",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "Urgent: Help Wanted!",
+                        "taskClient": "Overwhelmed Association Hunter",
+                        "taskClientDesc": "Beasts have been attacking our stronghold more and more lately, and lots of the buildings are damaged. If we keep wasting effort on repairs, the Association's going to have a lot less fighting strength at the ready. We need lots of men, or even a few strong guys—Guzzlemuffs who aren't full yet would be a good choice too. Hunter, could you catch a few for me?"
+                    },
+                    "50sideActivity_17": {
+                        "taskTypeName": "Exploration Mission",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "The Start of Everything",
+                        "taskClient": "Sad Noblewoman",
+                        "taskClientDesc": "At the time, I was much like Hofukaru. As the lord of Houei, one should assume responsibility for everything. And so, when the Iju Hunters Masamune and Yoshitsune arrived, I told them they need only aid me. Now I see how arrogant I was."
+                    },
+                    "50sideActivity_18": {
+                        "taskTypeName": "Monster Investigation",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "The Best Hunting Partners",
+                        "taskClient": "Sad Noblewoman",
+                        "taskClientDesc": "Masamune and Yoshitsune. Upon further reflection, they might be said to be the best hunting partners one could have. Were it not for them, I would have died in combat with the Lord of Thunder at the very onset of battle. I owe them an apology. I hope you will cherish them, Hunter."
+                    },
+                    "50sideActivity_19": {
+                        "taskTypeName": "Exploration Mission",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "Unfortunate Business",
+                        "taskClient": "Sad Noblewoman",
+                        "taskClientDesc": "For the hunt, and for my duty, I have neglected too many of the things I should have treasured. In hindsight, it would have been better had I spoken more with the people by my side that afternoon. Now that I look back, I find it all so regrettable."
+                    },
+                    "50sideActivity_20": {
+                        "taskTypeName": "Exploration Mission",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "Hunter's Delight",
+                        "taskClient": "Sad Noblewoman",
+                        "taskClientDesc": "The hunt is a delightful process, and hunting an Iju an even greater rush. Hunting was never a burden to me. However... Perhaps this should not have been my duty alone. The so-called 'mikos' should never have been the only ones to know the joy of hunting."
+                    },
+                    "50sideActivity_21": {
+                        "taskTypeName": "Monster Investigation",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "Unconsidered Possibilities",
+                        "taskClient": "Sad Noblewoman",
+                        "taskClientDesc": "Suponosuke once suggested that, were we to ever fail to defeat an Iju, we should simply take the entire nation and flee. At the time, I scolded him, but looking back, he may have been right. Now, I leave everything to Hofukaru's judgment."
+                    },
+                    "50sideActivity_22": {
+                        "taskTypeName": "Exploration Mission",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "Regrets, Late in Coming",
+                        "taskClient": "Sad Noblewoman",
+                        "taskClientDesc": "Midnight was once an immature soul, with nary a hint of the stubbornness he shows now. He wished to do everything he could to help me, and advised me not to rush Hofukaru to grow up. It was my willfulness that made him like this. I... made a mistake."
+                    },
+                    "50sideActivity_23": {
+                        "taskTypeName": "Monster Investigation",
+                        "taskTypeIcon": "monsterTask",
+                        "taskType": "MONSTER_TASK",
+                        "taskTitle": "A Way to Live",
+                        "taskClient": "Sad Noblewoman",
+                        "taskClientDesc": "Near the end of my life, the Lord of Thunder and I hardly fought each other at all. In fact, we more often put down packs of cursed beasts together. I gradually realized it was nothing but a lost beast, trying to survive the only way it knew how. But this realization came far too late."
+                    },
+                    "50sideActivity_24": {
+                        "taskTypeName": "Exploration Mission",
+                        "taskTypeIcon": "explorationTask",
+                        "taskType": "EXPLORATION_TASK",
+                        "taskTitle": "One Last Wish",
+                        "taskClient": "Sad Noblewoman",
+                        "taskClientDesc": "My life was full of regrets, but my greatest was being unable to see the ending of the Lord of Thunder's tale with my own eyes. This is my final request, Hunter. Pray tell me of the battle that day, that I may rest in peace."
+                    }
+                },
+                "meldingDropDict": {
+                    "act50side_01": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "SOMETIMES",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_02": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "SOMETIMES",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_03": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "SOMETIMES",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_04": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "SOMETIMES",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_05": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "SOMETIMES",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_06": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_07": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_08": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_6",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_6",
+                                "dropType": "COMPLETE"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_1",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_2",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "USUAL",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_3",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "OFTEN",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "NORMAL"
+                            },
+                            {
+                                "occPercent": "ALMOST",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_5",
+                                "dropType": "NORMAL"
+                            }
+                        ]
+                    },
+                    "act50side_p-1": {
+                        "firstPassRewards": null,
+                        "firstCompleteRewards": null,
+                        "passRewards": null,
+                        "completeRewards": null,
+                        "displayRewards": [
+                            {
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "COMPLETE"
+                            }
+                        ],
+                        "displayDetailRewards": [
+                            {
+                                "occPercent": "ALWAYS",
+                                "type": "ACTIVITY_ITEM",
+                                "id": "act50side_melding_4",
+                                "dropType": "COMPLETE"
+                            }
+                        ]
+                    }
+                },
+                "stageMapPreviewDict": {},
+                "huntDatabaseDict": {
+                    "enemy_10129_pycdog": {
+                        "id": "enemy_10129_pycdog",
+                        "name": "Crestcaller",
+                        "sortId": 1,
+                        "level": 1,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10129_pycdog_small",
+                        "iconLargeId": "enemy_10129_pycdog_big",
+                        "basicDesc": "The most commonly seen beast in the outskirts of Houei. Herd animals that feed on bamboo. Though small and weak, they reproduce very quickly, and are depicted in even the oldest annals of Houei.",
+                        "rideIcon": null,
+                        "rideDesc": null,
+                        "secretTaskId": "50sideActivity_15",
+                        "secretTaskItemId": "act50side_monster_clue_1",
+                        "secretTaskDesc": "Unlocks after completing Monster Investigation 'For Better Hunting'",
+                        "secretContent": "Every cut of meat from it is real tasty. Most of what we ate in Houei was from these guys. —Catapult\nThese creatures enjoy using their large noses to dig for food. Due to this trait, the people of Houei are rearing some to help with farmwork. —Midnight"
+                    },
+                    "enemy_10130_pycpok": {
+                        "id": "enemy_10130_pycpok",
+                        "name": "Shellsnap Newt",
+                        "sortId": 2,
+                        "level": 1,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10130_pycpok_small",
+                        "iconLargeId": "enemy_10130_pycpok_big",
+                        "basicDesc": "Newts that dwell in the depths of the bamboo groves. Naturally timid, they carry around their own eggshells even after hatching, so that they may withdraw into them at any time.",
+                        "rideIcon": null,
+                        "rideDesc": null,
+                        "secretTaskId": "50sideActivity_1",
+                        "secretTaskItemId": "act50side_monster_clue_2",
+                        "secretTaskDesc": "Unlocks after completing Monster Investigation 'Shellbound Cowards'",
+                        "secretContent": "The tails are delicious, but the other bits aren't at all. —Catapult\nTheir eggshells are really hard. They're useless for weapons, but after I tossed a few at Midnight, he discovered you can use them to help make houses and stuff. —Suponosuke"
+                    },
+                    "enemy_10131_pycshd": {
+                        "id": "enemy_10131_pycshd",
+                        "name": "Snatchshell Bug",
+                        "sortId": 3,
+                        "level": 1,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10131_pycshd_small",
+                        "iconLargeId": "enemy_10131_pycshd_big",
+                        "basicDesc": "Soft-bodied organisms that live in bamboo groves. They possess small bodies, and are fond of finding giant vessels to make into their homes, hiding within them at the first sign of danger.",
+                        "rideIcon": null,
+                        "rideDesc": null,
+                        "secretTaskId": "50sideActivity_2",
+                        "secretTaskItemId": "act50side_monster_clue_3",
+                        "secretTaskDesc": "Unlocks after completing Monster Investigation 'Give Me Back My Pots!'",
+                        "secretContent": "These are just Originium slugs, aren't they?! Bleeehhh, I hate eating squishy things. —Catapult\nTheir true bodies do resemble Originium slug larvae. They might have chosen to live in discarded pots due to their proximity to urban habitats, which gives them a distinct appearance from Originium slugs. Something interesting to ponder over. —Orchid"
+                    },
+                    "enemy_10132_pyceat": {
+                        "id": "enemy_10132_pyceat",
+                        "name": "Guzzlemuff",
+                        "sortId": 4,
+                        "level": 1,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10132_pyceat_small",
+                        "iconLargeId": "enemy_10132_pyceat_big",
+                        "basicDesc": "Large beasts that dwell upon snowy mountains. They are huge, and their strong forelimbs are able to effortlessly grab smaller beasts—adult humans, even—before swallowing them whole in their enormous mouths. Houei has many tales involving them, mostly used to scare children.",
+                        "rideIcon": null,
+                        "rideDesc": null,
+                        "secretTaskId": "50sideActivity_16",
+                        "secretTaskItemId": "act50side_monster_clue_4",
+                        "secretTaskDesc": "Unlocks after completing Monster Investigation 'Urgent: Help Wanted!'",
+                        "secretContent": "These guys aren't even a bit aggressive once they're full. If you're lucky, they'll even happily carry you around for a bit. —Catapult\nGuzzlemuffs and Volvidrones have an awfurly subtle kind of symbiosis. The Volvidrone acts as the Guzzlemuff's weapon, while the Guzzlemuff purrotects the Volvidrone. But most of the time, the Volvidrone ends up in the Guzzlemuff's stomach. —Masamune"
+                    },
+                    "enemy_10133_pycrol": {
+                        "id": "enemy_10133_pycrol",
+                        "name": "Flipshell Tortoise",
+                        "sortId": 5,
+                        "level": 2,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10133_pycrol_small",
+                        "iconLargeId": "enemy_10133_pycrol_big",
+                        "basicDesc": "Ordinary tortoises. Discovered near an underground river. Extremely aggressive, they withdraw into their shells upon spotting another animal, only so they can launch themselves at their foes at high speeds. People seeing them for the first time are usually unable to react.",
+                        "rideIcon": "trap_281_ctlrol",
+                        "rideDesc": "Makes all Flipshell Tortoises currently in a mountable state roll towards the target position",
+                        "secretTaskId": "50sideActivity_12",
+                        "secretTaskItemId": "act50side_monster_clue_5",
+                        "secretTaskDesc": "Unlocks after completing Monster Investigation 'Stop Rolling!'",
+                        "secretContent": "I watched some for a while. When they want to drink, they can stretch their necks real long, reaching the water super easy. Don't tell me they're all neck inside their shells?! —Catapult\nWere thee to follow their traces, thou wouldst discover ruins exposed to the surface. Did they follow these ruins, migrating down from the surface? Or was this underground world once above ground, in ages past? —Hofukaru"
+                    },
+                    "enemy_10137_pycvol": {
+                        "id": "enemy_10137_pycvol",
+                        "name": "'Iju' Escorchgot",
+                        "sortId": 6,
+                        "level": 2,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10137_pycvol_small",
+                        "iconLargeId": "enemy_10137_pycvol_big",
+                        "basicDesc": "The Iju of the current cycle, the lord of the lava realm. Possesses the power of the curse, and wishes to transform the snowy mountains into its lair.",
+                        "rideIcon": null,
+                        "rideDesc": null,
+                        "secretTaskId": "50sideActivity_5",
+                        "secretTaskItemId": "act50side_monster_clue_6",
+                        "secretTaskDesc": "Unlocks after completing Monster Investigation 'Scorch Marks Across Silver Plains'",
+                        "secretContent": "They say it's edible after Hofukaru purifies it, but I never got the chance. Shame. —Catapult\nOrdinary Escorchgot don't carry Originium on their backs, but the Iju version does. This could mean that it came from Terra, and the resemblance to other Escorchgot is just a coincidence. But do such coincidences really happen? Or is there a connection between Houei and our own land? —Orchid"
+                    },
+                    "enemy_10134_pycspy": {
+                        "id": "enemy_10134_pycspy",
+                        "name": "Gloomweaver",
+                        "sortId": 7,
+                        "level": 2,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10134_pycspy_small",
+                        "iconLargeId": "enemy_10134_pycspy_big",
+                        "basicDesc": "Spiders widely found across the underground bamboo grove. They weave extremely sticky webs between the bamboo stalks. A moment of carelessness will leave you bound, turning you into their next meal.",
+                        "rideIcon": "trap_282_ctlspy",
+                        "rideDesc": "Makes all Gloomweavers currently in a mountable state move towards the target position and Bind 3 enemies",
+                        "secretTaskId": "50sideActivity_13",
+                        "secretTaskItemId": "act50side_monster_clue_7",
+                        "secretTaskDesc": "Unlocks after completing Monster Investigation 'Hazardous Materials'",
+                        "secretContent": "Their silk's tough—just the thing my new weapons need! Can we think of a way to breed them? —Suponosuke\nPerhaps I could toss you into the underground forest, and what is left of you will find a way. —Midnight\nDidn't Orchid say we could make fancy clothes with this kind of silk? —Suponosuke\nI'll send my men underground at once. —Midnight"
+                    },
+                    "enemy_10135_pycjmp": {
+                        "id": "enemy_10135_pycjmp",
+                        "name": "Hexhowl",
+                        "sortId": 8,
+                        "level": 2,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10135_pycjmp_small",
+                        "iconLargeId": "enemy_10135_pycjmp_big",
+                        "basicDesc": "Wolves that were once exterminated in Houei, reappearing alongside this new calamity. They have all the most vicious traits of ordinary wolves—pack tactics, cruelty, cunning—except heightened by the curse.",
+                        "rideIcon": null,
+                        "rideDesc": null,
+                        "secretTaskId": "50sideActivity_7",
+                        "secretTaskItemId": "act50side_monster_clue_8",
+                        "secretTaskDesc": "Unlocks after completing Monster Investigation 'Specters of the Past'",
+                        "secretContent": "Inedible. —Catapult\nAccording to legend, these 'Hexhowls' may simply be wolves afflicted with the curse, from when the Gyorin last leaked. However, our ancestors knew not the truth of what occurred, and so unleashed their wrath upon the pack, eradicating them all. Thus did later generations come to see them as a symbol of disaster. I... must apologize to them. —Hofukaru"
+                    },
+                    "enemy_10136_pycblk": {
+                        "id": "enemy_10136_pycblk",
+                        "name": "Rocksheller",
+                        "sortId": 9,
+                        "level": 2,
+                        "isBoss": false,
+                        "bossPicId": null,
+                        "iconSmallId": "enemy_10136_pycblk_small",
+                        "iconLargeId": "enemy_10136_pycblk_big",
+                        "basicDesc": "Beasts that are entirely alien to Houei. Any threat approaching them will be torn to shreds by their incredibly strong forelimbs, while any prey attempting to flee will discover they can raise rock walls to cut off their escape.",
+                        "rideIcon": "trap_283_ctlblk",
+                        "rideDesc": "Makes a Rocksheller currently in a mountable state move towards the target position and create high ground on any deployable ground tiles in the 4 adjacent tiles",
+                        "secretTaskId": "50sideActivity_14",
+                        "secretTaskItemId": "act50side_monster_clue_9",
+                        "secretTaskDesc": "Unlocks after completing Monster Investigation 'Plowing the Fields'",
+                        "secretContent": "Hey, haven't I seen guys like these in Rim Billiton before? —Catapult\nSince the fading of the curse, these unfamiliar creatures have become the latest ecological threat to Houei. Were we to allow them to breed unimpeded, I fear they will bring about great destruction. I will have the hunters control their numbers. —Midnight\nNo need to exterminate them. If they truly come from the world of Madams Orchid and Catapult, their existence shall serve as proof that they were here. —Hofukaru"
+                    },
+                    "enemy_1573_pyczog": {
+                        "id": "enemy_1573_pyczog",
+                        "name": "Lord of Thunder",
+                        "sortId": 10,
+                        "level": 3,
+                        "isBoss": true,
+                        "bossPicId": "note_boss",
+                        "iconSmallId": "enemy_1573_pyczog_small",
+                        "iconLargeId": "enemy_1573_pyczog_big",
+                        "basicDesc": "The Iju of the previous cycle, named for the thunder and lightning twisting around its form. Allegedly, it gathers countless Thunderbugs while it hunts. It can manipulate the electricity coursing over it to increase the strength of its leaps or enter a supercharged state.",
+                        "rideIcon": "trap_283_ctlzog",
+                        "rideDesc": "Makes a Zinogre currently in a mountable state charge in the specified direction; will topple after running into high ground 2 times",
+                        "secretTaskId": "50sideActivity_11",
+                        "secretTaskItemId": "act50side_monster_clue_10",
+                        "secretTaskDesc": "Unlocks after completing Monster Investigation 'I Want to Touch the Lightning'",
+                        "secretContent": "Perhaps due to overexposure to the lightning's caress, stalks of bamboo have themselves become charged with this thunderous energy, their marvelous cries ringing up towards the heavens during rainy days.\nMany Thunderbugs were left behind by the Lord of Thunder, and have found themselves a new partner: Snatchshell Bugs. If one espies a shining jug during the night, it is most likely one of them.\nMany beasts have moved their nests out of fear of the Lord. Simply put, we must redraw all our well-crafted ecological maps.\nThe Lord of Thunder changed many things, but in the end, Mother Nature has accepted these changes. —<i>Houei Chronicle of Nature</i>"
+                    }
+                },
+                "stageIdToUnlockItemIdDict": {
+                    "act50side_p-1": "act50side_special_level_unlock"
+                },
+                "constData": {
+                    "stageUnlockToolDesc": "Unlock Tools",
+                    "mealLackMoney": "Insufficient LMD",
+                    "mealDayTimesLimit": 0,
+                    "toolMaximum": 2,
+                    "stageCanNotUseToTool": [
+                        "act50side_tr01"
+                    ],
+                    "hunterGuideRewardItemId": "furni_act71d0_grill_01",
+                    "hunterGuideRewardItemType": "FURN",
+                    "hunterGuideRewardItemCount": 1,
+                    "hunterGuideDetailTabPosition": 2,
+                    "taskRewardItemNoIconDisplayId": "act50side_special_level_unlock",
+                    "specialLevelUnlockTaskId": "50sideActivity_10",
+                    "missionProgressFormat": "(<color=#1becbd>{0}</color>/{1})",
+                    "gachaDefaultProb": 0.0,
+                    "gachaExtraProb": -1.0
+                }
+            },
             "act24side": {
                 "toolDataList": {
                     "tool_trap": {
@@ -376208,6 +379319,25 @@
         }
     },
     "activityItems": {
+        "act50side": [
+            "act50side_melding_1",
+            "act50side_melding_2",
+            "act50side_melding_3",
+            "act50side_melding_4",
+            "act50side_melding_5",
+            "act50side_melding_6",
+            "act50side_special_level_unlock",
+            "act50side_monster_clue_1",
+            "act50side_monster_clue_2",
+            "act50side_monster_clue_3",
+            "act50side_monster_clue_4",
+            "act50side_monster_clue_5",
+            "act50side_monster_clue_6",
+            "act50side_monster_clue_7",
+            "act50side_monster_clue_8",
+            "act50side_monster_clue_9",
+            "act50side_monster_clue_10"
+        ],
         "act42sre": [
             "act42side_token_pacifier_rep_1"
         ],
@@ -385126,6 +388256,26 @@
             ],
             "picGroups": {},
             "startTs": 1793890800
+        },
+        {
+            "id": "dis_side_50",
+            "type": "ACTIVITY",
+            "funcId": "act50side",
+            "endTs": 1796036399,
+            "sortId": 151,
+            "itemId": null,
+            "timeNodes": [
+                {
+                    "title": "<Thunder in the Azure Dream> is now open",
+                    "ts": 1794841200
+                },
+                {
+                    "title": "'Treading on Dreams' stages opened",
+                    "ts": 1795474800
+                }
+            ],
+            "picGroups": {},
+            "startTs": 1794841200
         }
     ],
     "actFunData": {

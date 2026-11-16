@@ -1,0 +1,30 @@
+[header(is_skippable=true, is_tutorial=true)]
+[skipnode(mode="nofirstskip")]
+[battle.delay(time=1.1)]
+[battle.lockfunction(mask="SYSTEM_MENU_INTERACT")]
+[battle.pause(pause=true)]
+[popupdialog(dialogHead="$avatar_kroos", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]Look, here's our chance!
+[popupdialog(dialogHead="$avatar_fang", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]I know, let me test its power! This Wirebug allows Operators to redeploy and change their direction, and the Wirebug Action can <@tu.kw>deal damage to enemies and gain Wyvern Riding Gauge</>.
+[inputblocker(blockInput=false)]
+[battle.ensuremincost(cost=10)]
+[tutorial(animStyle="Drag", protectTime=0.5, waitForSignal="put_down", cardIndex=0, startCardIndex=0, endTileX=5, endTileY=1, charId="trap_274_pyctrn", posX=5, posY=1)]
+[tutorial(animStyle="Drag", waitForSignal="select_direction", startTileX=5, startTileY=0, endTileX=5, endTileY=2)]
+[inputblocker(blockInput=true)]
+[battle.pause(pause=false)]
+[battle.delay(time=2)]
+[battle.pause(pause=true)]
+[popupdialog(dialogHead="$avatar_fang", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]A direct hit!
+[skipnode(mode="skip")]
+[tutorial(focusWidth=150, focusHeight=150, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", protectTime=0.5, dialogHead="$avatar_fang", tileY=2, tileX=5)]The enemy has entered the <@tu.kw>Mountable State</>, and you can now use the <@tu.kw>Wyvernbait</> in the Deployment Waiting Zone.
+[inputblocker(blockInput=false)]
+[battle.ensuremincost(cost=1)]
+[tutorial(animStyle="Drag", protectTime=0.5, waitForSignal="put_down", cardIndex=0, startCardIndex=0, endTileX=1, endTileY=2, charId="trap_281_ctlrol", posX=1, posY=2)]
+[inputblocker(blockInput=true)]
+[battle.pause(pause=false)]
+[battle.delay(time=0.5)]
+[battle.pause(pause=true)]
+[popupdialog(dialogHead="$avatar_kroos", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]Come on, Flipshell Tortoise, hurry up and roll to the <@tu.kw>Wyvernbait's position</>!
+[skipnode(mode="nofirstskip")]
+[SkipToThis]
+[battle.unlockfunction(mask="SYSTEM_MENU_INTERACT")]
+[battle.pause(pause=false)]
