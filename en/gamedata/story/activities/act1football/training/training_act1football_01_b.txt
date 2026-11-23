@@ -1,0 +1,40 @@
+[header(is_skippable=false, is_tutorial=true)]足球教学关1b
+[battle.pause]
+[inputblocker(blockInput=true)]
+[popupdialog(dialogHead="$avatar_amiya")]Next, let's learn about how to defend!
+[tutorial(focusX=-600, focusY=30, focusWidth=300, focusHeight=500, animStyle="Highlight", focusStyle="HighlightRect", black="$f_tut_black", protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y", anchor="Center")]The blue Objective Points are our goalposts. We need to cooperate and prevent the enemy from scoring a goal.
+[battle.pause(pause=false)]
+[battle.delay(time=2.2)]
+[battle.pause(pause=true)]
+[tutorial(focusX=-60, focusY=50, focusWidth=150, focusHeight=150, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]This cute little musbeast is an enemy <@tu.kw>Shooter</>. They'll go after the ball and shoot it towards our goal!
+[battle.pause(pause=false)]
+[battle.delay(time=3.1)]
+[battle.pause(pause=true)]
+[tutorial(focusX=-480, focusY=40, focusWidth=200, focusHeight=200, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]We'll need to deploy operators to protect it. These specially marked tiles are <@tu.kw>Goalpost</> spots. Operators deployed onto them will become <@tu.kw>Goalkeepers</>.
+[battle.pause(pause=false)]
+[battle.delay(time=3)]
+[battle.pause(pause=true)]
+[popupdialog(dialogHead="$avatar_amiya")]Goalkeepers <@tu.kw>do not count toward the deployment limit</>, and they can catch incoming balls.
+[tutorial(focusX=600, focusY=-250, focusWidth=250, focusHeight=250, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]Balls caught by goalkeepers will <@tu.kw>enter the Deployment Waiting Zone</>.
+[cooperatebattle.lockcamera(enable=false)]
+[inputblocker(blockInput=true, validWidth=112, validHeight=116, cardIndex=0)]
+[battle.lockfunction(mask="PAUSE_BUTTON_INTERACT")]
+[tutorial(animStyle="Drag", dialogHead="$avatar_amiya", waitForSignal="put_down", startCardIndex=0, startRightStart=true, endTileX=6, endTileY=5)]You have 5 seconds to <@tu.kw>deploy them on our side of the field</> to <@tu.kw>kick off as you wish</>.
+[battle.unlockfunction(mask="PAUSE_BUTTON_INTERACT")]
+[inputblocker(blockInput=true)]
+[battle.pause(pause=false)]
+[battle.delay(time=3.7)]
+[battle.pause(pause=true)]
+[popupdialog(dialogHead="$avatar_amiya")]Now, it's time for a counterattack! Something special about this event is that you can <@tu.kw>attack enemy players</> too.
+[battle.pause(pause=false)]
+[battle.delay(time=3.7)]
+[battle.pause(pause=true)]
+[tutorial(focusX=-110, focusY=-60, focusWidth=150, focusHeight=150, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]They'll take a break once their <@tu.kw>HP reaches 0</>, and then we can move as we please!
+[battle.pause(pause=false)]
+[battle.delay(time=7.5)]
+[battle.pause(pause=true)]
+[tutorial(focusX=450, focusY=220, focusWidth=200, focusHeight=200, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]These constructs placed before the goalpost are <@tu.kw>Positional Barriers</>. They will block us from scoring.
+[battle.pause(pause=false)]
+[battle.delay(time=3.5)]
+[battle.pause(pause=true)]
+[tutorial(focusX=430, focusY=170, focusWidth=200, focusHeight=200, animStyle="Highlight", focusStyle="HighlightCircle", black="0.5", protectTime=0.5, dialogHead="$avatar_amiya", dialogX="$f_lower_dialog_pos_x", dialogY="$f_lower_dialog_pos_y")]However, we can <@tu.kw>destroy them</> with operator attacks or by hitting them with the ball itself to expose the enemy goalpost.
